@@ -1,0 +1,179 @@
+\hypertarget{classWindow}{}\section{Window Class Reference}
+\label{classWindow}\index{Window@{Window}}
+
+
+Represent the window that will print some scene (view of the application).  
+
+
+
+
+{\ttfamily \#include $<$Window.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWindow_a25fd6af55e81b781b132166f77daf77e}{Window} (const wchar\+\_\+t $\ast$window\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classWindow_a245d821e6016fa1f6970ccbbedd635f6}{$\sim$\+Window} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classWindow_aa0dde1e5d56fd85fc1615bf34d67c9e0}{failed} () const
+\begin{DoxyCompactList}\small\item\em Handle failed while building the window. \end{DoxyCompactList}\item 
+void \hyperlink{classWindow_ac9150ac221e5569e677586d5a1123518}{add\+Scene} (const String \&name, const std\+::shared\+\_\+ptr$<$ \hyperlink{classAScene}{A\+Scene} $>$ \&scene)
+\begin{DoxyCompactList}\small\item\em Allow the user to add a scene in the window. \end{DoxyCompactList}\item 
+void \hyperlink{classWindow_a9e73c1dc8b22cdf16e6446af6f7ade48}{print\+Scene} (const String \&name)
+\begin{DoxyCompactList}\small\item\em Allow the user to print a scene in the window. \end{DoxyCompactList}\item 
+void \hyperlink{classWindow_ad3a1ead02eca314e2df94e3e932fb5ae}{delete\+Scene} (const String \&name)
+\begin{DoxyCompactList}\small\item\em Allow the user ti delete a scene in the window. \end{DoxyCompactList}\item 
+void \hyperlink{classWindow_a3342dc02339a5974d5c6fcefd91d0cbf}{set\+Current\+Scene} (const String \&scene\+Name)
+\begin{DoxyCompactList}\small\item\em Set the current scene that will be print. \end{DoxyCompactList}\item 
+void \hyperlink{classWindow_af1b2a635ce47d9e841445b8b866a3b28}{change\+Scene} ()
+\begin{DoxyCompactList}\small\item\em Apply the set\+Current\+Scene\textquotesingle{}s changes. \end{DoxyCompactList}\item 
+void \hyperlink{classWindow_a9c9f1fd6ebc2b93f16ca870487a4a4c6}{loop} (const String \&scene\+Name)
+\begin{DoxyCompactList}\small\item\em Keep the window open util the end of the program\textquotesingle{}s execution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represent the window that will print some scene (view of the application). 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWindow_a25fd6af55e81b781b132166f77daf77e}\label{classWindow_a25fd6af55e81b781b132166f77daf77e}} 
+\index{Window@{Window}!Window@{Window}}
+\index{Window@{Window}!Window@{Window}}
+\subsubsection{\texorpdfstring{Window()}{Window()}}
+{\footnotesize\ttfamily Window\+::\+Window (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{window\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Build the class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \textquotesingle{}window\+Name\textquotesingle{}} & the window name that will be print on the top of the window. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWindow_a245d821e6016fa1f6970ccbbedd635f6}\label{classWindow_a245d821e6016fa1f6970ccbbedd635f6}} 
+\index{Window@{Window}!````~Window@{$\sim$\+Window}}
+\index{````~Window@{$\sim$\+Window}!Window@{Window}}
+\subsubsection{\texorpdfstring{$\sim$\+Window()}{~Window()}}
+{\footnotesize\ttfamily Window\+::$\sim$\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Destroy the class. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWindow_ac9150ac221e5569e677586d5a1123518}\label{classWindow_ac9150ac221e5569e677586d5a1123518}} 
+\index{Window@{Window}!add\+Scene@{add\+Scene}}
+\index{add\+Scene@{add\+Scene}!Window@{Window}}
+\subsubsection{\texorpdfstring{add\+Scene()}{addScene()}}
+{\footnotesize\ttfamily void Window\+::add\+Scene (\begin{DoxyParamCaption}\item[{const String \&}]{name,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{classAScene}{A\+Scene} $>$ \&}]{scene }\end{DoxyParamCaption})}
+
+
+
+Allow the user to add a scene in the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1)} & \textquotesingle{}name\textquotesingle{} of the scene that will be add. 2) \textquotesingle{}scene\textquotesingle{} a smart pointer on the scene that will be add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWindow_af1b2a635ce47d9e841445b8b866a3b28}\label{classWindow_af1b2a635ce47d9e841445b8b866a3b28}} 
+\index{Window@{Window}!change\+Scene@{change\+Scene}}
+\index{change\+Scene@{change\+Scene}!Window@{Window}}
+\subsubsection{\texorpdfstring{change\+Scene()}{changeScene()}}
+{\footnotesize\ttfamily void Window\+::change\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Apply the set\+Current\+Scene\textquotesingle{}s changes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWindow_ad3a1ead02eca314e2df94e3e932fb5ae}\label{classWindow_ad3a1ead02eca314e2df94e3e932fb5ae}} 
+\index{Window@{Window}!delete\+Scene@{delete\+Scene}}
+\index{delete\+Scene@{delete\+Scene}!Window@{Window}}
+\subsubsection{\texorpdfstring{delete\+Scene()}{deleteScene()}}
+{\footnotesize\ttfamily void Window\+::delete\+Scene (\begin{DoxyParamCaption}\item[{const String \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Allow the user ti delete a scene in the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \textquotesingle{}name\textquotesingle{}} & the name of the scene that will be delete. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWindow_aa0dde1e5d56fd85fc1615bf34d67c9e0}\label{classWindow_aa0dde1e5d56fd85fc1615bf34d67c9e0}} 
+\index{Window@{Window}!failed@{failed}}
+\index{failed@{failed}!Window@{Window}}
+\subsubsection{\texorpdfstring{failed()}{failed()}}
+{\footnotesize\ttfamily bool Window\+::failed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Handle failed while building the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWindow_a9c9f1fd6ebc2b93f16ca870487a4a4c6}\label{classWindow_a9c9f1fd6ebc2b93f16ca870487a4a4c6}} 
+\index{Window@{Window}!loop@{loop}}
+\index{loop@{loop}!Window@{Window}}
+\subsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void Window\+::loop (\begin{DoxyParamCaption}\item[{const String \&}]{scene\+Name }\end{DoxyParamCaption})}
+
+
+
+Keep the window open util the end of the program\textquotesingle{}s execution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \textquotesingle{}scene\+Name\textquotesingle{}} & the scene\textquotesingle{}s name that will be launch at the begin of the program\textquotesingle{}s execution. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWindow_a9e73c1dc8b22cdf16e6446af6f7ade48}\label{classWindow_a9e73c1dc8b22cdf16e6446af6f7ade48}} 
+\index{Window@{Window}!print\+Scene@{print\+Scene}}
+\index{print\+Scene@{print\+Scene}!Window@{Window}}
+\subsubsection{\texorpdfstring{print\+Scene()}{printScene()}}
+{\footnotesize\ttfamily void Window\+::print\+Scene (\begin{DoxyParamCaption}\item[{const String \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Allow the user to print a scene in the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \textquotesingle{}name\textquotesingle{}} & the name of the scene that will be print. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWindow_a3342dc02339a5974d5c6fcefd91d0cbf}\label{classWindow_a3342dc02339a5974d5c6fcefd91d0cbf}} 
+\index{Window@{Window}!set\+Current\+Scene@{set\+Current\+Scene}}
+\index{set\+Current\+Scene@{set\+Current\+Scene}!Window@{Window}}
+\subsubsection{\texorpdfstring{set\+Current\+Scene()}{setCurrentScene()}}
+{\footnotesize\ttfamily void Window\+::set\+Current\+Scene (\begin{DoxyParamCaption}\item[{const String \&}]{scene\+Name }\end{DoxyParamCaption})}
+
+
+
+Set the current scene that will be print. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \textquotesingle{}scene\+Name\textquotesingle{}} & the name of the scene that will be set as the current scene. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/graphics/\hyperlink{Window_8hh}{Window.\+hh}\item 
+src/graphics/Window.\+cpp\end{DoxyCompactItemize}

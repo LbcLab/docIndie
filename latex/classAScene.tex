@@ -1,0 +1,154 @@
+\hypertarget{classAScene}{}\section{A\+Scene Class Reference}
+\label{classAScene}\index{A\+Scene@{A\+Scene}}
+
+
+Represent the window\textquotesingle{}s scene that will print some widget/object of the scene \+: buttons, images, etc...  
+
+
+
+
+{\ttfamily \#include $<$A\+Scene.\+hh$>$}
+
+
+
+Inherited by Credit\+Scene, Game\+Load\+Scene, Game\+Menu\+Scene, Game\+New\+Scene, Game\+Online\+Scene, Game\+Scene, Game\+Simulation\+Scene, Intro\+Scene, Legend\+Scene, Main\+Scene, Option\+Control\+Scene, Option\+Scene, Option\+Sound\+Scene, Option\+Video\+Scene, and Score\+Scene.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAScene_ad0eacf691dbc8240fdf3a42d450c1042}{A\+Scene} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classAScene_a9faf7f1a271327227e83627432d0b210}{$\sim$\+A\+Scene} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classAScene_ae5d7463a823ed64f3846b5847340b68c}{print} (\hyperlink{classWindow}{Window} $\ast$win)
+\begin{DoxyCompactList}\small\item\em Print all the scene\textquotesingle{}s widgets into the \hyperlink{classWindow}{Window}. \end{DoxyCompactList}\item 
+void \hyperlink{classAScene_a59f0acef6ed02a578062decd0f907773}{update} (\hyperlink{classWindow}{Window} $\ast$win)
+\begin{DoxyCompactList}\small\item\em Update the Irrlicht tree, currently print into the window. \end{DoxyCompactList}\item 
+void \hyperlink{classAScene_aa711b6068dd8dee262160eedfd96ad02}{add\+Widget} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classIWidget}{I\+Widget} $>$ \&widget, Int id=-\/1)
+\begin{DoxyCompactList}\small\item\em Allow the user to add texts, images, buttons, checkboxs or 3d models into the scene. \end{DoxyCompactList}\item 
+void \hyperlink{classAScene_ad2b0ac8cd74a8523c76b681a34b5f5b4}{del\+Widget} (Int id)
+\begin{DoxyCompactList}\small\item\em Allow the user to delete texts, images, buttons, checkboxs or 3d models into the scene. \end{DoxyCompactList}\item 
+virtual irr\+::\+I\+Event\+Receiver $\ast$ \hyperlink{classAScene_af521e5e6d30a5d2e5d30eb333e4d3abd}{get\+Event\+Receiver} () const =0
+\begin{DoxyCompactList}\small\item\em Allow the user to implemente the event callback class for each scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represent the window\textquotesingle{}s scene that will print some widget/object of the scene \+: buttons, images, etc... 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAScene_ad0eacf691dbc8240fdf3a42d450c1042}\label{classAScene_ad0eacf691dbc8240fdf3a42d450c1042}} 
+\index{A\+Scene@{A\+Scene}!A\+Scene@{A\+Scene}}
+\index{A\+Scene@{A\+Scene}!A\+Scene@{A\+Scene}}
+\subsubsection{\texorpdfstring{A\+Scene()}{AScene()}}
+{\footnotesize\ttfamily A\+Scene\+::\+A\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Build the class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAScene_a9faf7f1a271327227e83627432d0b210}\label{classAScene_a9faf7f1a271327227e83627432d0b210}} 
+\index{A\+Scene@{A\+Scene}!````~A\+Scene@{$\sim$\+A\+Scene}}
+\index{````~A\+Scene@{$\sim$\+A\+Scene}!A\+Scene@{A\+Scene}}
+\subsubsection{\texorpdfstring{$\sim$\+A\+Scene()}{~AScene()}}
+{\footnotesize\ttfamily A\+Scene\+::$\sim$\+A\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Destroy the class. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAScene_aa711b6068dd8dee262160eedfd96ad02}\label{classAScene_aa711b6068dd8dee262160eedfd96ad02}} 
+\index{A\+Scene@{A\+Scene}!add\+Widget@{add\+Widget}}
+\index{add\+Widget@{add\+Widget}!A\+Scene@{A\+Scene}}
+\subsubsection{\texorpdfstring{add\+Widget()}{addWidget()}}
+{\footnotesize\ttfamily void A\+Scene\+::add\+Widget (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{classIWidget}{I\+Widget} $>$ \&}]{widget,  }\item[{Int}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Allow the user to add texts, images, buttons, checkboxs or 3d models into the scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \textquotesingle{}widget\textquotesingle{}} & the widget to add in the scene. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAScene_ad2b0ac8cd74a8523c76b681a34b5f5b4}\label{classAScene_ad2b0ac8cd74a8523c76b681a34b5f5b4}} 
+\index{A\+Scene@{A\+Scene}!del\+Widget@{del\+Widget}}
+\index{del\+Widget@{del\+Widget}!A\+Scene@{A\+Scene}}
+\subsubsection{\texorpdfstring{del\+Widget()}{delWidget()}}
+{\footnotesize\ttfamily void A\+Scene\+::del\+Widget (\begin{DoxyParamCaption}\item[{Int}]{id }\end{DoxyParamCaption})}
+
+
+
+Allow the user to delete texts, images, buttons, checkboxs or 3d models into the scene. 
+
+Example\+: scene-\/$>$add\+Widget(widget, 2); scene-\/$>$del\+Widget(2);
+
+
+\begin{DoxyParams}{Parameters}
+{\em \textquotesingle{}id\textquotesingle{}} & the widget\textquotesingle{}s id to del in the scene. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAScene_af521e5e6d30a5d2e5d30eb333e4d3abd}\label{classAScene_af521e5e6d30a5d2e5d30eb333e4d3abd}} 
+\index{A\+Scene@{A\+Scene}!get\+Event\+Receiver@{get\+Event\+Receiver}}
+\index{get\+Event\+Receiver@{get\+Event\+Receiver}!A\+Scene@{A\+Scene}}
+\subsubsection{\texorpdfstring{get\+Event\+Receiver()}{getEventReceiver()}}
+{\footnotesize\ttfamily virtual irr\+::\+I\+Event\+Receiver$\ast$ A\+Scene\+::get\+Event\+Receiver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Allow the user to implemente the event callback class for each scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The events\textquotesingle{} receiver of the scene. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAScene_ae5d7463a823ed64f3846b5847340b68c}\label{classAScene_ae5d7463a823ed64f3846b5847340b68c}} 
+\index{A\+Scene@{A\+Scene}!print@{print}}
+\index{print@{print}!A\+Scene@{A\+Scene}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void A\+Scene\+::print (\begin{DoxyParamCaption}\item[{\hyperlink{classWindow}{Window} $\ast$}]{win }\end{DoxyParamCaption})}
+
+
+
+Print all the scene\textquotesingle{}s widgets into the \hyperlink{classWindow}{Window}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \textquotesingle{}win\textquotesingle{}} & the window where the scene will be print. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAScene_a59f0acef6ed02a578062decd0f907773}\label{classAScene_a59f0acef6ed02a578062decd0f907773}} 
+\index{A\+Scene@{A\+Scene}!update@{update}}
+\index{update@{update}!A\+Scene@{A\+Scene}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void A\+Scene\+::update (\begin{DoxyParamCaption}\item[{\hyperlink{classWindow}{Window} $\ast$}]{win }\end{DoxyParamCaption})}
+
+
+
+Update the Irrlicht tree, currently print into the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \textquotesingle{}win\textquotesingle{}} & the window where the scene will be update. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/graphics/\hyperlink{AScene_8hh}{A\+Scene.\+hh}\item 
+src/graphics/A\+Scene.\+cpp\end{DoxyCompactItemize}

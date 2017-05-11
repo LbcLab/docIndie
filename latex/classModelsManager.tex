@@ -1,0 +1,86 @@
+\hypertarget{classModelsManager}{}\section{Models\+Manager Class Reference}
+\label{classModelsManager}\index{Models\+Manager@{Models\+Manager}}
+
+
+The class to load all the information about a model.  
+
+
+
+
+{\ttfamily \#include $<$Models\+Manager.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classModelsManager_a48f911933ce0a38aa78667e34e8098f4}{Models\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classModelsManager_a68352308cd93cb509b7266b0cf1bb5f3}{load\+Model} (String, String)
+\begin{DoxyCompactList}\small\item\em Allow you to load a model. \end{DoxyCompactList}\item 
+const config\+::\+Model $\ast$ \hyperlink{classModelsManager_aecbaab73572634a9e5cbc035b25864e1}{get\+Model} (String) const
+\begin{DoxyCompactList}\small\item\em Give you a pointeur to an object Model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class to load all the information about a model. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classModelsManager_a48f911933ce0a38aa78667e34e8098f4}\label{classModelsManager_a48f911933ce0a38aa78667e34e8098f4}} 
+\index{Models\+Manager@{Models\+Manager}!Models\+Manager@{Models\+Manager}}
+\index{Models\+Manager@{Models\+Manager}!Models\+Manager@{Models\+Manager}}
+\subsubsection{\texorpdfstring{Models\+Manager()}{ModelsManager()}}
+{\footnotesize\ttfamily Models\+Manager\+::\+Models\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nothing} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classModelsManager_aecbaab73572634a9e5cbc035b25864e1}\label{classModelsManager_aecbaab73572634a9e5cbc035b25864e1}} 
+\index{Models\+Manager@{Models\+Manager}!get\+Model@{get\+Model}}
+\index{get\+Model@{get\+Model}!Models\+Manager@{Models\+Manager}}
+\subsubsection{\texorpdfstring{get\+Model()}{getModel()}}
+{\footnotesize\ttfamily const config\+::\+Model $\ast$ Models\+Manager\+::get\+Model (\begin{DoxyParamCaption}\item[{String}]{to\+Find }\end{DoxyParamCaption}) const}
+
+
+
+Give you a pointeur to an object Model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & name previously given to the model \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the model 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classModelsManager_a68352308cd93cb509b7266b0cf1bb5f3}\label{classModelsManager_a68352308cd93cb509b7266b0cf1bb5f3}} 
+\index{Models\+Manager@{Models\+Manager}!load\+Model@{load\+Model}}
+\index{load\+Model@{load\+Model}!Models\+Manager@{Models\+Manager}}
+\subsubsection{\texorpdfstring{load\+Model()}{loadModel()}}
+{\footnotesize\ttfamily bool Models\+Manager\+::load\+Model (\begin{DoxyParamCaption}\item[{String}]{path,  }\item[{String}]{model\+Name }\end{DoxyParamCaption})}
+
+
+
+Allow you to load a model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & path to the xml configuration and a name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true is the model is load and false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/managers/\hyperlink{ModelsManager_8hh}{Models\+Manager.\+hh}\item 
+src/managers/Models\+Manager.\+cpp\end{DoxyCompactItemize}

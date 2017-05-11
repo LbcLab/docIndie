@@ -1,0 +1,87 @@
+\hypertarget{classButton}{}\section{Button Class Reference}
+\label{classButton}\index{Button@{Button}}
+
+
+Represent a button in the user interface.  
+
+
+
+
+{\ttfamily \#include $<$Button.\+hh$>$}
+
+Inheritance diagram for Button\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classButton}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classButton_a5729094ff8ec4ce3e64e6691c297983c}{Button} (const Rect \&rect, const wchar\+\_\+t $\ast$text, const wchar\+\_\+t $\ast$tooltext, enum indie\+::\+G\+U\+I\+Button\+Id id, const wchar\+\_\+t $\ast$background=L\char`\"{}assets/menus/transparent.\+png\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classButton_a2a001eb9c3cc8ae54768a850dd345002}{$\sim$\+Button} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classButton_aaee0c62414711ae91084b05b38d0c8c5}{print} (\hyperlink{classWindow}{Window} $\ast$win)
+\begin{DoxyCompactList}\small\item\em Print the button into the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represent a button in the user interface. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classButton_a5729094ff8ec4ce3e64e6691c297983c}\label{classButton_a5729094ff8ec4ce3e64e6691c297983c}} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\subsubsection{\texorpdfstring{Button()}{Button()}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{const Rect \&}]{rect,  }\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{const wchar\+\_\+t $\ast$}]{tooltext,  }\item[{enum indie\+::\+G\+U\+I\+Button\+Id}]{id,  }\item[{const wchar\+\_\+t $\ast$}]{background = {\ttfamily L\char`\"{}assets/menus/transparent.png\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Build the class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1)} & \textquotesingle{}rect\textquotesingle{} the rectangle who represent the button (x1, y1, x2, y2). 2) \textquotesingle{}background\textquotesingle{} the name of the image, that will be put on the background of the button. 3) \textquotesingle{}text\textquotesingle{} the text that will be write on the button. 3) \textquotesingle{}tooltext\textquotesingle{} the text displayed in the tooltip. 4) \textquotesingle{}id\textquotesingle{} the id throw the user click on the button . \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classButton_a2a001eb9c3cc8ae54768a850dd345002}\label{classButton_a2a001eb9c3cc8ae54768a850dd345002}} 
+\index{Button@{Button}!````~Button@{$\sim$\+Button}}
+\index{````~Button@{$\sim$\+Button}!Button@{Button}}
+\subsubsection{\texorpdfstring{$\sim$\+Button()}{~Button()}}
+{\footnotesize\ttfamily Button\+::$\sim$\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Destroy the class. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classButton_aaee0c62414711ae91084b05b38d0c8c5}\label{classButton_aaee0c62414711ae91084b05b38d0c8c5}} 
+\index{Button@{Button}!print@{print}}
+\index{print@{print}!Button@{Button}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Button\+::print (\begin{DoxyParamCaption}\item[{\hyperlink{classWindow}{Window} $\ast$}]{win }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Print the button into the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \textquotesingle{}window\textquotesingle{}} & the window where the button will be print. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIWidget_a0cfa49a402e9bb31808a715e048ab2f4}{I\+Widget}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/graphics/widgets/\hyperlink{Button_8hh}{Button.\+hh}\item 
+src/graphics/widgets/Button.\+cpp\end{DoxyCompactItemize}

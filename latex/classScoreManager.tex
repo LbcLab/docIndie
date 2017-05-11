@@ -1,0 +1,137 @@
+\hypertarget{classScoreManager}{}\section{Score\+Manager Class Reference}
+\label{classScoreManager}\index{Score\+Manager@{Score\+Manager}}
+
+
+The \hyperlink{classScoreManager}{Score\+Manager} class.  
+
+
+
+
+{\ttfamily \#include $<$Score\+Manager.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classScoreManager_a4f3866ff832127664543349da5c4fbf4}{Score\+Manager} ()
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classScoreManager_a3644cf37cdce0983dc8ed3005222e55a}{load\+Scores} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Allow you to load a score sheet (from a previous session) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScoreManager_aa3f390fe5076324b2d457de0c43af59f}\label{classScoreManager_aa3f390fe5076324b2d457de0c43af59f}} 
+void \hyperlink{classScoreManager_aa3f390fe5076324b2d457de0c43af59f}{save\+Scores} () const
+\begin{DoxyCompactList}\small\item\em Allow you to save the score contained in the object. \end{DoxyCompactList}\item 
+void \hyperlink{classScoreManager_a93810ab5b58af22f8af96db0787363b8}{create\+File} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Create an empty score file. \end{DoxyCompactList}\item 
+void \hyperlink{classScoreManager_a2597a2f7d0786295a6ee3445502a6d6f}{add\+Score} (std\+::string, std\+::size\+\_\+t)
+\begin{DoxyCompactList}\small\item\em Add a score. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScoreManager_ad0c38dd0a27a82230d09f29ce3d12349}\label{classScoreManager_ad0c38dd0a27a82230d09f29ce3d12349}} 
+const std\+::vector$<$ config\+::\+Score $>$ \& \hyperlink{classScoreManager_ad0c38dd0a27a82230d09f29ce3d12349}{get\+Top\+Scores} ()
+\begin{DoxyCompactList}\small\item\em Get the 10 best scores. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \hyperlink{classScoreManager_a9d529f071418d69a2b1745673d9d83b2}{get\+Player\+Score} (std\+::string) const
+\begin{DoxyCompactList}\small\item\em Get score for a specifique player. \end{DoxyCompactList}\item 
+void \hyperlink{classScoreManager_a16c1e33b2972b9609b6d568dc8b7a3b0}{change\+Score} (std\+::string, std\+::size\+\_\+t)
+\begin{DoxyCompactList}\small\item\em Change score for a specifique player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classScoreManager}{Score\+Manager} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScoreManager_a4f3866ff832127664543349da5c4fbf4}\label{classScoreManager_a4f3866ff832127664543349da5c4fbf4}} 
+\index{Score\+Manager@{Score\+Manager}!Score\+Manager@{Score\+Manager}}
+\index{Score\+Manager@{Score\+Manager}!Score\+Manager@{Score\+Manager}}
+\subsubsection{\texorpdfstring{Score\+Manager()}{ScoreManager()}}
+{\footnotesize\ttfamily Score\+Manager\+::\+Score\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nothing} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classScoreManager_a2597a2f7d0786295a6ee3445502a6d6f}\label{classScoreManager_a2597a2f7d0786295a6ee3445502a6d6f}} 
+\index{Score\+Manager@{Score\+Manager}!add\+Score@{add\+Score}}
+\index{add\+Score@{add\+Score}!Score\+Manager@{Score\+Manager}}
+\subsubsection{\texorpdfstring{add\+Score()}{addScore()}}
+{\footnotesize\ttfamily void Score\+Manager\+::add\+Score (\begin{DoxyParamCaption}\item[{std\+::string}]{player\+Name,  }\item[{std\+::size\+\_\+t}]{player\+Score }\end{DoxyParamCaption})}
+
+
+
+Add a score. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1.} & Player name 2. Is score \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScoreManager_a16c1e33b2972b9609b6d568dc8b7a3b0}\label{classScoreManager_a16c1e33b2972b9609b6d568dc8b7a3b0}} 
+\index{Score\+Manager@{Score\+Manager}!change\+Score@{change\+Score}}
+\index{change\+Score@{change\+Score}!Score\+Manager@{Score\+Manager}}
+\subsubsection{\texorpdfstring{change\+Score()}{changeScore()}}
+{\footnotesize\ttfamily void Score\+Manager\+::change\+Score (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::size\+\_\+t}]{ }\end{DoxyParamCaption})}
+
+
+
+Change score for a specifique player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1.} & Player name 2. New score \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScoreManager_a93810ab5b58af22f8af96db0787363b8}\label{classScoreManager_a93810ab5b58af22f8af96db0787363b8}} 
+\index{Score\+Manager@{Score\+Manager}!create\+File@{create\+File}}
+\index{create\+File@{create\+File}!Score\+Manager@{Score\+Manager}}
+\subsubsection{\texorpdfstring{create\+File()}{createFile()}}
+{\footnotesize\ttfamily void Score\+Manager\+::create\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Create an empty score file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Path} & to the score file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScoreManager_a9d529f071418d69a2b1745673d9d83b2}\label{classScoreManager_a9d529f071418d69a2b1745673d9d83b2}} 
+\index{Score\+Manager@{Score\+Manager}!get\+Player\+Score@{get\+Player\+Score}}
+\index{get\+Player\+Score@{get\+Player\+Score}!Score\+Manager@{Score\+Manager}}
+\subsubsection{\texorpdfstring{get\+Player\+Score()}{getPlayerScore()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Score\+Manager\+::get\+Player\+Score (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption}) const}
+
+
+
+Get score for a specifique player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Player} & name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScoreManager_a3644cf37cdce0983dc8ed3005222e55a}\label{classScoreManager_a3644cf37cdce0983dc8ed3005222e55a}} 
+\index{Score\+Manager@{Score\+Manager}!load\+Scores@{load\+Scores}}
+\index{load\+Scores@{load\+Scores}!Score\+Manager@{Score\+Manager}}
+\subsubsection{\texorpdfstring{load\+Scores()}{loadScores()}}
+{\footnotesize\ttfamily void Score\+Manager\+::load\+Scores (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Allow you to load a score sheet (from a previous session) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & path to the score file \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/managers/\hyperlink{ScoreManager_8hh}{Score\+Manager.\+hh}\item 
+src/managers/Score\+Manager.\+cpp\end{DoxyCompactItemize}
