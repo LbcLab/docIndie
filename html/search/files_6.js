@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['savemanager_2ehh',['SaveManager.hh',['../SaveManager_8hh.html',1,'']]],
-  ['scoremanager_2ehh',['ScoreManager.hh',['../ScoreManager_8hh.html',1,'']]]
+  ['optionsoundreceiver_2ehh',['OptionSoundReceiver.hh',['../OptionSoundReceiver_8hh.html',1,'']]],
+  ['optionsoundscene_2ehh',['OptionSoundScene.hh',['../OptionSoundScene_8hh.html',1,'']]]
 ];
