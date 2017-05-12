@@ -24,8 +24,6 @@ Inheritance diagram for A\+Scene\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
 void \hyperlink{classAScene_ae5d7463a823ed64f3846b5847340b68c}{print} (\hyperlink{classWindow}{Window} $\ast$win)
 \begin{DoxyCompactList}\small\item\em Print all the scene\textquotesingle{}s widgets into the \hyperlink{classWindow}{Window}. \end{DoxyCompactList}\item 
-void \hyperlink{classAScene_a59f0acef6ed02a578062decd0f907773}{update} (\hyperlink{classWindow}{Window} $\ast$win)
-\begin{DoxyCompactList}\small\item\em Update the Irrlicht tree, currently print into the window. \end{DoxyCompactList}\item 
 void \hyperlink{classAScene_aa711b6068dd8dee262160eedfd96ad02}{add\+Widget} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classIWidget}{I\+Widget} $>$ \&widget, Int id=-\/1)
 \begin{DoxyCompactList}\small\item\em Allow the user to add texts, images, buttons, checkboxs or 3d models into the scene. \end{DoxyCompactList}\item 
 void \hyperlink{classAScene_ad2b0ac8cd74a8523c76b681a34b5f5b4}{del\+Widget} (Int id)
@@ -120,7 +118,7 @@ The events\textquotesingle{} receiver of the scene.
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{classOptionSoundScene_ac71da65763f0db4b05fc32444308b677}{Option\+Sound\+Scene}.
+Implemented in \hyperlink{classOptionSoundScene_ac71da65763f0db4b05fc32444308b677}{Option\+Sound\+Scene}, \hyperlink{classGameMenuScene_adcb01430b24486c4e5d0157fc32d7611}{Game\+Menu\+Scene}, \hyperlink{classGameNewScene_a21c27ef3ea1923d975683e1bcdd134fa}{Game\+New\+Scene}, and \hyperlink{classOptionVideoScene_a84625e871c5176d7abc77a7f12c1472a}{Option\+Video\+Scene}.
 
 \mbox{\Hypertarget{classAScene_ae5d7463a823ed64f3846b5847340b68c}\label{classAScene_ae5d7463a823ed64f3846b5847340b68c}} 
 \index{A\+Scene@{A\+Scene}!print@{print}}
@@ -135,21 +133,6 @@ Print all the scene\textquotesingle{}s widgets into the \hyperlink{classWindow}{
 
 \begin{DoxyParams}{Parameters}
 {\em \textquotesingle{}win\textquotesingle{}} & the window where the scene will be print. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classAScene_a59f0acef6ed02a578062decd0f907773}\label{classAScene_a59f0acef6ed02a578062decd0f907773}} 
-\index{A\+Scene@{A\+Scene}!update@{update}}
-\index{update@{update}!A\+Scene@{A\+Scene}}
-\subsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily void A\+Scene\+::update (\begin{DoxyParamCaption}\item[{\hyperlink{classWindow}{Window} $\ast$}]{win }\end{DoxyParamCaption})}
-
-
-
-Update the Irrlicht tree, currently print into the window. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em \textquotesingle{}win\textquotesingle{}} & the window where the scene will be update. \\
 \hline
 \end{DoxyParams}
 

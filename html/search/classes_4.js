@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['image',['Image',['../classImage.html',1,'']]],
-  ['iwidget',['IWidget',['../classIWidget.html',1,'']]]
+  ['gamemenureceiver',['GameMenuReceiver',['../classGameMenuReceiver.html',1,'']]],
+  ['gamemenuscene',['GameMenuScene',['../classGameMenuScene.html',1,'']]],
+  ['gamenewreceiver',['GameNewReceiver',['../classGameNewReceiver.html',1,'']]],
+  ['gamenewscene',['GameNewScene',['../classGameNewScene.html',1,'']]]
 ];

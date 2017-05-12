@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['window_2ehh',['Window.hh',['../Window_8hh.html',1,'']]]
+  ['savemanager_2ehh',['SaveManager.hh',['../SaveManager_8hh.html',1,'']]],
+  ['scoremanager_2ehh',['ScoreManager.hh',['../ScoreManager_8hh.html',1,'']]]
 ];
