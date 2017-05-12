@@ -1,2 +1,7 @@
 \hypertarget{dir_a5b1a20ccbfc32d225990e586244a61c}{}\section{inc/game/level Directory Reference}
 \label{dir_a5b1a20ccbfc32d225990e586244a61c}\index{inc/game/level Directory Reference@{inc/game/level Directory Reference}}
+\subsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \hyperlink{Map_8hh}{Map.\+hh}
+\begin{DoxyCompactList}\small\item\em Defines the map that is related to a level. The process to create a map is relatively simple. First of all, you\textquotesingle{}ve got to load a map with Map\+::load\+Map() In a second time, you\textquotesingle{}ve got to retrieve all the nodes with a triangle selector container (meta) with load\+Scene\+Nodes Then, you can create collision response thanks to these nodes by calling init\+Collision\+Response\+Animator() Finally, you can draw the map (that should be achieved with draw\+All()  If meshs/models arent loading properly. Double check the paths in the .irr file. \end{DoxyCompactList}\end{DoxyCompactItemize}

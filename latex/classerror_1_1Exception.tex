@@ -1,0 +1,89 @@
+\hypertarget{classerror_1_1Exception}{}\section{error\+:\+:Exception Class Reference}
+\label{classerror_1_1Exception}\index{error\+::\+Exception@{error\+::\+Exception}}
+
+
+This class allow to throw some execption and handle it finely.  
+
+
+
+
+{\ttfamily \#include $<$Exception.\+hh$>$}
+
+
+
+Inherits exception.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classerror_1_1Exception_a7f444a1aa89266d62f5d17b13442afaf}{Exception} (const char $\ast$file, const char $\ast$func, int line, const std\+::string \&msg, const error\+::severity \&severity)
+\begin{DoxyCompactList}\small\item\em /brief Constructor \+: Build the class. \end{DoxyCompactList}\item 
+\hyperlink{classerror_1_1Exception_a1350d8f9d039facfd991b6782387eae5}{$\sim$\+Exception} ()
+\begin{DoxyCompactList}\small\item\em /brief Destructor \+: Destroy the class. \end{DoxyCompactList}\item 
+const error\+::severity \& \hyperlink{classerror_1_1Exception_a05f9c8eecf03bb0ca05d5fe2ec7fb36a}{get\+Severity} () const
+\begin{DoxyCompactList}\small\item\em /brief Give an access on the error\textquotesingle{}s severity. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classerror_1_1Exception_a30163f5666745344a3aeba609727fb5a}{what} () const  throw ()
+\begin{DoxyCompactList}\small\item\em /brief Describe the error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class allow to throw some execption and handle it finely. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classerror_1_1Exception_a7f444a1aa89266d62f5d17b13442afaf}\label{classerror_1_1Exception_a7f444a1aa89266d62f5d17b13442afaf}} 
+\index{error\+::\+Exception@{error\+::\+Exception}!Exception@{Exception}}
+\index{Exception@{Exception}!error\+::\+Exception@{error\+::\+Exception}}
+\subsubsection{\texorpdfstring{Exception()}{Exception()}}
+{\footnotesize\ttfamily error\+::\+Exception\+::\+Exception (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file,  }\item[{const char $\ast$}]{func,  }\item[{int}]{line,  }\item[{const std\+::string \&}]{msg,  }\item[{const error\+::severity \&}]{severity }\end{DoxyParamCaption})}
+
+
+
+/brief Constructor \+: Build the class. 
+
+/param This function take 5 parameters \+: 1) \textquotesingle{}file\textquotesingle{} is the file where the error occurred. 2) \textquotesingle{}func\textquotesingle{} is the func where the error occurred. 3) \textquotesingle{}line\textquotesingle{} is the line where the error occurred. 4) \textquotesingle{}msg\textquotesingle{} is the message who describe the error. 5) \textquotesingle{}severity\textquotesingle{} is the error\textquotesingle{}s severity.
+
+/return None. \mbox{\Hypertarget{classerror_1_1Exception_a1350d8f9d039facfd991b6782387eae5}\label{classerror_1_1Exception_a1350d8f9d039facfd991b6782387eae5}} 
+\index{error\+::\+Exception@{error\+::\+Exception}!````~Exception@{$\sim$\+Exception}}
+\index{````~Exception@{$\sim$\+Exception}!error\+::\+Exception@{error\+::\+Exception}}
+\subsubsection{\texorpdfstring{$\sim$\+Exception()}{~Exception()}}
+{\footnotesize\ttfamily error\+::\+Exception\+::$\sim$\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+/brief Destructor \+: Destroy the class. 
+
+/param None.
+
+/return None. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classerror_1_1Exception_a05f9c8eecf03bb0ca05d5fe2ec7fb36a}\label{classerror_1_1Exception_a05f9c8eecf03bb0ca05d5fe2ec7fb36a}} 
+\index{error\+::\+Exception@{error\+::\+Exception}!get\+Severity@{get\+Severity}}
+\index{get\+Severity@{get\+Severity}!error\+::\+Exception@{error\+::\+Exception}}
+\subsubsection{\texorpdfstring{get\+Severity()}{getSeverity()}}
+{\footnotesize\ttfamily const error\+::severity \& error\+::\+Exception\+::get\+Severity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+/brief Give an access on the error\textquotesingle{}s severity. 
+
+/param None.
+
+/return None. \mbox{\Hypertarget{classerror_1_1Exception_a30163f5666745344a3aeba609727fb5a}\label{classerror_1_1Exception_a30163f5666745344a3aeba609727fb5a}} 
+\index{error\+::\+Exception@{error\+::\+Exception}!what@{what}}
+\index{what@{what}!error\+::\+Exception@{error\+::\+Exception}}
+\subsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily const char $\ast$ error\+::\+Exception\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const throw  ) }
+
+
+
+/brief Describe the error. 
+
+/param None.
+
+/return the error\textquotesingle{}s message. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/exception/\hyperlink{Exception_8hh}{Exception.\+hh}\item 
+src/exception/Exception.\+cpp\end{DoxyCompactItemize}

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['text',['Text',['../classText.html',1,'']]]
+  ['savemanager',['SaveManager',['../classSaveManager.html',1,'']]],
+  ['scoremanager',['ScoreManager',['../classScoreManager.html',1,'']]]
 ];
