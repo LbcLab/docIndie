@@ -4,6 +4,7 @@ var searchData=
   ['_7eapickable',['~APickable',['../classAPickable.html#a145013963070158596ad2e0d07065f5d',1,'APickable']]],
   ['_7eascene',['~AScene',['../classAScene.html#a9faf7f1a271327227e83627432d0b210',1,'AScene']]],
   ['_7ebutton',['~Button',['../classButton.html#a2a001eb9c3cc8ae54768a850dd345002',1,'Button']]],
+  ['_7ecamera',['~Camera',['../classCamera.html#ad1897942d0ccf91052386388a497349f',1,'Camera']]],
   ['_7ecoremanager',['~CoreManager',['../classCoreManager.html#ac3489a741174a8d5e09effe11df18100',1,'CoreManager']]],
   ['_7eexception',['~Exception',['../classerror_1_1Exception.html#a1350d8f9d039facfd991b6782387eae5',1,'error::Exception']]],
   ['_7egame',['~Game',['../classGame.html#ae3d112ca6e0e55150d2fdbc704474530',1,'Game']]],
