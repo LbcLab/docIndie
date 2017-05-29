@@ -1,0 +1,88 @@
+\hypertarget{classMap}{}\section{Map Class Reference}
+\label{classMap}\index{Map@{Map}}
+
+
+Represent a level\textquotesingle{}s map.  
+
+
+
+
+{\ttfamily \#include $<$Map.\+hh$>$}
+
+Inheritance diagram for Map\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMap}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMap_a2e6d2bce865999917deae256baaa434d}{Map} (W\+String const map\+Name)
+\begin{DoxyCompactList}\small\item\em Constructs the map with the related file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMap_aa403fbe09394ccf39747588f5168e3b2}\label{classMap_aa403fbe09394ccf39747588f5168e3b2}} 
+\hyperlink{classMap_aa403fbe09394ccf39747588f5168e3b2}{$\sim$\+Map} ()
+\begin{DoxyCompactList}\small\item\em Destructor... \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMap_a031a9bf528b1d14c60931d37d68bb4e3}\label{classMap_a031a9bf528b1d14c60931d37d68bb4e3}} 
+void \hyperlink{classMap_a031a9bf528b1d14c60931d37d68bb4e3}{print} (\hyperlink{classWindow}{Window} $\ast$win)
+\begin{DoxyCompactList}\small\item\em Print the map into the window, by adding some nodes into the scene manager. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMap_a47f72d481d0ed624dfd03e63ebd281e5}\label{classMap_a47f72d481d0ed624dfd03e63ebd281e5}} 
+W\+String const \hyperlink{classMap_a47f72d481d0ed624dfd03e63ebd281e5}{get\+Map\+Path} (void) const
+\begin{DoxyCompactList}\small\item\em Accessor on map name. \end{DoxyCompactList}\item 
+bool \hyperlink{classMap_a37024e6d47ca10cf83a331635fe041b7}{load\+Map} (\hyperlink{classWindow}{Window} $\ast$win) const
+\begin{DoxyCompactList}\small\item\em Load map in global scene manager. \end{DoxyCompactList}\item 
+bool \hyperlink{classMap_a235c359c04ae1521d53804d029ddce92}{load\+Scene\+Nodes} (\hyperlink{classWindow}{Window} $\ast$win)
+\begin{DoxyCompactList}\small\item\em Load all the nodes of the map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMap_a32036203973ef41327f3f0616a30550f}\label{classMap_a32036203973ef41327f3f0616a30550f}} 
+bool \hyperlink{classMap_a32036203973ef41327f3f0616a30550f}{init\+Collision\+Response\+Animator} (\hyperlink{classWindow}{Window} $\ast$win)
+\begin{DoxyCompactList}\small\item\em Initialize the collisions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represent a level\textquotesingle{}s map. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMap_a2e6d2bce865999917deae256baaa434d}\label{classMap_a2e6d2bce865999917deae256baaa434d}} 
+\index{Map@{Map}!Map@{Map}}
+\index{Map@{Map}!Map@{Map}}
+\subsubsection{\texorpdfstring{Map()}{Map()}}
+{\footnotesize\ttfamily Map\+::\+Map (\begin{DoxyParamCaption}\item[{W\+String const}]{map\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructs the map with the related file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map\+Name} & \+: the related .irr map file \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMap_a37024e6d47ca10cf83a331635fe041b7}\label{classMap_a37024e6d47ca10cf83a331635fe041b7}} 
+\index{Map@{Map}!load\+Map@{load\+Map}}
+\index{load\+Map@{load\+Map}!Map@{Map}}
+\subsubsection{\texorpdfstring{load\+Map()}{loadMap()}}
+{\footnotesize\ttfamily bool Map\+::load\+Map (\begin{DoxyParamCaption}\item[{\hyperlink{classWindow}{Window} $\ast$}]{win }\end{DoxyParamCaption}) const}
+
+
+
+Load map in global scene manager. 
+
+.irr files can store the whole scene graph including animators, materials and particle systems. And there is also the possibility to store arbitrary user data for every scene node in that file. this example simple, we are simply loading the scene here. See the documentation at I\+Scene\+Manager\+::load\+Scene and I\+Scene\+Manager\+::save\+Scene for more information. \mbox{\Hypertarget{classMap_a235c359c04ae1521d53804d029ddce92}\label{classMap_a235c359c04ae1521d53804d029ddce92}} 
+\index{Map@{Map}!load\+Scene\+Nodes@{load\+Scene\+Nodes}}
+\index{load\+Scene\+Nodes@{load\+Scene\+Nodes}!Map@{Map}}
+\subsubsection{\texorpdfstring{load\+Scene\+Nodes()}{loadSceneNodes()}}
+{\footnotesize\ttfamily bool Map\+::load\+Scene\+Nodes (\begin{DoxyParamCaption}\item[{\hyperlink{classWindow}{Window} $\ast$}]{win }\end{DoxyParamCaption})}
+
+
+
+Load all the nodes of the map. 
+
+We find all the nodes in the scene It would be possible to make a more informed decision about which nodes to perform collision checks on. We would such capture that information in the node name/id. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/game/level/\hyperlink{Map_8hh}{Map.\+hh}\item 
+src/game/level/Map.\+cpp\end{DoxyCompactItemize}

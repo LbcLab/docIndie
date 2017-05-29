@@ -79,10 +79,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7f444a1aa89266d62f5d17b13442afaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classerror_1_1Exception.html#a7f444a1aa89266d62f5d17b13442afaf">Exception</a> (const char *file, const char *func, int line, const std::string &amp;msg, const error::severity &amp;severity)</td></tr>
-<tr class="memdesc:a7f444a1aa89266d62f5d17b13442afaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">/brief Constructor : Build the class.  <a href="#a7f444a1aa89266d62f5d17b13442afaf">More...</a><br /></td></tr>
-<tr class="separator:a7f444a1aa89266d62f5d17b13442afaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1350d8f9d039facfd991b6782387eae5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classerror_1_1Exception.html#a1350d8f9d039facfd991b6782387eae5">~Exception</a> ()</td></tr>
+<tr class="memitem:ae9193ed1c5b211c31c239c5f30caefb4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classerror_1_1Exception.html#ae9193ed1c5b211c31c239c5f30caefb4">Exception</a> (const std::string &amp;msg, const error::severity &amp;severity, const char *file, const char *func, int line)</td></tr>
+<tr class="memdesc:ae9193ed1c5b211c31c239c5f30caefb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">/brief Constructor : Build the class.  <a href="#ae9193ed1c5b211c31c239c5f30caefb4">More...</a><br /></td></tr>
+<tr class="separator:ae9193ed1c5b211c31c239c5f30caefb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1350d8f9d039facfd991b6782387eae5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classerror_1_1Exception.html#a1350d8f9d039facfd991b6782387eae5">~Exception</a> ()  throw ()</td></tr>
 <tr class="memdesc:a1350d8f9d039facfd991b6782387eae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">/brief Destructor : Destroy the class.  <a href="#a1350d8f9d039facfd991b6782387eae5">More...</a><br /></td></tr>
 <tr class="separator:a1350d8f9d039facfd991b6782387eae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05f9c8eecf03bb0ca05d5fe2ec7fb36a"><td class="memItemLeft" align="right" valign="top">const error::severity &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classerror_1_1Exception.html#a05f9c8eecf03bb0ca05d5fe2ec7fb36a">getSeverity</a> () const</td></tr>
@@ -95,8 +95,8 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class allow to throw some execption and handle it finely. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7f444a1aa89266d62f5d17b13442afaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f444a1aa89266d62f5d17b13442afaf">&#9670;&nbsp;</a></span>Exception()</h2>
+<a id="ae9193ed1c5b211c31c239c5f30caefb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9193ed1c5b211c31c239c5f30caefb4">&#9670;&nbsp;</a></span>Exception()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -104,6 +104,18 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">error::Exception::Exception </td>
           <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const error::severity &amp;&#160;</td>
+          <td class="paramname"><em>severity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>file</em>, </td>
         </tr>
@@ -117,19 +129,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>msg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const error::severity &amp;&#160;</td>
-          <td class="paramname"><em>severity</em>&#160;</td>
+          <td class="paramname"><em>line</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -150,6 +150,9 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">error::Exception::~Exception </td>
@@ -157,7 +160,18 @@ Public Member Functions</h2></td></tr>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
+        <tr>
+          <td align="right">throw </td><td>(</td><td colspan="2"></td>
+        </tr>
+        <tr>
+          <td align="right"></td><td>)</td><td></td><td></td>
+        </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>/brief Destructor : Destroy the class. </p>

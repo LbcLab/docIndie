@@ -1,0 +1,94 @@
+\hypertarget{classLevel}{}\section{Level Class Reference}
+\label{classLevel}\index{Level@{Level}}
+
+
+Represent a game\textquotesingle{}s level.  
+
+
+
+
+{\ttfamily \#include $<$Level.\+hh$>$}
+
+Inheritance diagram for Level\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLevel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLevel_a1cddef79da66a80002686199a847543f}{Level} (const W\+String \&map\+Path, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ A\+Hero $>$ $>$ players=std\+::vector$<$ std\+::shared\+\_\+ptr$<$ A\+Hero $>$ $>$(), std\+::vector$<$ std\+::shared\+\_\+ptr$<$ A\+Monster $>$ $>$ monsters=std\+::vector$<$ std\+::shared\+\_\+ptr$<$ A\+Monster $>$ $>$(), std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classAPickable}{A\+Pickable} $>$ $>$ objects=std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classAPickable}{A\+Pickable} $>$ $>$())
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classLevel_a249eac1e8f19ff44134efa5e986feaca}{$\sim$\+Level} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classLevel_aa88db36cd824320cb599d913603dc2a3}{load\+Level} ()
+\item 
+void \hyperlink{classLevel_ab8311fe64b7957d627053359331b0b6b}{print} (\hyperlink{classWindow}{Window} $\ast$win)
+\begin{DoxyCompactList}\small\item\em Print the object into the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represent a game\textquotesingle{}s level. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLevel_a1cddef79da66a80002686199a847543f}\label{classLevel_a1cddef79da66a80002686199a847543f}} 
+\index{Level@{Level}!Level@{Level}}
+\index{Level@{Level}!Level@{Level}}
+\subsubsection{\texorpdfstring{Level()}{Level()}}
+{\footnotesize\ttfamily Level\+::\+Level (\begin{DoxyParamCaption}\item[{const W\+String \&}]{map\+Path,  }\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ A\+Hero $>$ $>$}]{players = {\ttfamily std\+:\+:vector$<$~std\+:\+:shared\+\_\+ptr$<$AHero$>$~$>$()},  }\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ A\+Monster $>$ $>$}]{monsters = {\ttfamily std\+:\+:vector$<$~std\+:\+:shared\+\_\+ptr$<$AMonster$>$~$>$()},  }\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classAPickable}{A\+Pickable} $>$ $>$}]{objects = {\ttfamily std\+:\+:vector$<$~std\+:\+:shared\+\_\+ptr$<$\hyperlink{classAPickable}{A\+Pickable}$>$~$>$()} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Build the class \mbox{\Hypertarget{classLevel_a249eac1e8f19ff44134efa5e986feaca}\label{classLevel_a249eac1e8f19ff44134efa5e986feaca}} 
+\index{Level@{Level}!````~Level@{$\sim$\+Level}}
+\index{````~Level@{$\sim$\+Level}!Level@{Level}}
+\subsubsection{\texorpdfstring{$\sim$\+Level()}{~Level()}}
+{\footnotesize\ttfamily Level\+::$\sim$\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Destroy the class 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLevel_aa88db36cd824320cb599d913603dc2a3}\label{classLevel_aa88db36cd824320cb599d913603dc2a3}} 
+\index{Level@{Level}!load\+Level@{load\+Level}}
+\index{load\+Level@{load\+Level}!Level@{Level}}
+\subsubsection{\texorpdfstring{load\+Level()}{loadLevel()}}
+{\footnotesize\ttfamily void Level\+::load\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+load level according to X\+ML file xml is loaded thankfully to level\+Number Loading \+:
+\begin{DoxyItemize}
+\item map
+\item player
+\item monsters
+\item pickable objects 
+\end{DoxyItemize}\mbox{\Hypertarget{classLevel_ab8311fe64b7957d627053359331b0b6b}\label{classLevel_ab8311fe64b7957d627053359331b0b6b}} 
+\index{Level@{Level}!print@{print}}
+\index{print@{print}!Level@{Level}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Level\+::print (\begin{DoxyParamCaption}\item[{\hyperlink{classWindow}{Window} $\ast$}]{win }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Print the object into the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \textquotesingle{}window\textquotesingle{}} & the window where the object will be print. \\
+\hline
+\end{DoxyParams}
+T\+O\+DO Print player Print monsters Print pickable objects
+
+Implements \hyperlink{classIWidget_a0cfa49a402e9bb31808a715e048ab2f4}{I\+Widget}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/game/level/\hyperlink{Level_8hh}{Level.\+hh}\item 
+src/game/level/Level.\+cpp\end{DoxyCompactItemize}

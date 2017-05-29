@@ -12,42 +12,28 @@ The \hyperlink{classSaveManager}{Save\+Manager} class.
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classSaveManager_a1c5138a7d931f66e599f753102d9c148}{Save\+Manager} (Game $\ast$)
+\mbox{\Hypertarget{classSaveManager_ab8bb791be648b9b91db44aa11f6e8e14}\label{classSaveManager_ab8bb791be648b9b91db44aa11f6e8e14}} 
+\hyperlink{classSaveManager_ab8bb791be648b9b91db44aa11f6e8e14}{Save\+Manager} ()
 \begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
-Game $\ast$ \hyperlink{classSaveManager_aca377b93a5ebf5df19e313861d0ad5d4}{load\+Game} (std\+::string)
+std\+::shared\+\_\+ptr$<$ \hyperlink{classLevel}{Level} $>$ \hyperlink{classSaveManager_aa0661d6a8f9c0330755a8e03f8631992}{load\+Level} (const String \&level\+Name)
 \begin{DoxyCompactList}\small\item\em Allow you to load a game previously save. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classSaveManager_a9e9523af0b634390e6bed4edf20f4007}\label{classSaveManager_a9e9523af0b634390e6bed4edf20f4007}} 
-void \hyperlink{classSaveManager_a9e9523af0b634390e6bed4edf20f4007}{save\+Game} () const
-\begin{DoxyCompactList}\small\item\em Allow you to save the object Game passed as parameter during the construction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classSaveManager_a3fd6a2e996ee848bfec385a288f44461}\label{classSaveManager_a3fd6a2e996ee848bfec385a288f44461}} 
+void \hyperlink{classSaveManager_a3fd6a2e996ee848bfec385a288f44461}{save\+Level} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classLevel}{Level} $>$ \&level, const String \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Allow you to save the object \hyperlink{classGame}{Game} passed as parameter during the construction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSaveManager_a94d97899e285c0bbd46f4fdb42767f79}\label{classSaveManager_a94d97899e285c0bbd46f4fdb42767f79}} 
+const std\+::shared\+\_\+ptr$<$ \hyperlink{classGame}{Game} $>$ \& \hyperlink{classSaveManager_a94d97899e285c0bbd46f4fdb42767f79}{get\+Game} () const
+\begin{DoxyCompactList}\small\item\em Getter on the game\textquotesingle{}s variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 The \hyperlink{classSaveManager}{Save\+Manager} class. 
 
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classSaveManager_a1c5138a7d931f66e599f753102d9c148}\label{classSaveManager_a1c5138a7d931f66e599f753102d9c148}} 
-\index{Save\+Manager@{Save\+Manager}!Save\+Manager@{Save\+Manager}}
-\index{Save\+Manager@{Save\+Manager}!Save\+Manager@{Save\+Manager}}
-\subsubsection{\texorpdfstring{Save\+Manager()}{SaveManager()}}
-{\footnotesize\ttfamily Save\+Manager\+::\+Save\+Manager (\begin{DoxyParamCaption}\item[{Game $\ast$}]{ }\end{DoxyParamCaption})}
-
-
-
-The constructor. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em a} & pointeur to one Game object \\
-\hline
-\end{DoxyParams}
-
-
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classSaveManager_aca377b93a5ebf5df19e313861d0ad5d4}\label{classSaveManager_aca377b93a5ebf5df19e313861d0ad5d4}} 
-\index{Save\+Manager@{Save\+Manager}!load\+Game@{load\+Game}}
-\index{load\+Game@{load\+Game}!Save\+Manager@{Save\+Manager}}
-\subsubsection{\texorpdfstring{load\+Game()}{loadGame()}}
-{\footnotesize\ttfamily Game$\ast$ Save\+Manager\+::load\+Game (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classSaveManager_aa0661d6a8f9c0330755a8e03f8631992}\label{classSaveManager_aa0661d6a8f9c0330755a8e03f8631992}} 
+\index{Save\+Manager@{Save\+Manager}!load\+Level@{load\+Level}}
+\index{load\+Level@{load\+Level}!Save\+Manager@{Save\+Manager}}
+\subsubsection{\texorpdfstring{load\+Level()}{loadLevel()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classLevel}{Level} $>$ Save\+Manager\+::load\+Level (\begin{DoxyParamCaption}\item[{const String \&}]{level\+Name }\end{DoxyParamCaption})}
 
 
 
@@ -59,10 +45,11 @@ Allow you to load a game previously save.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A pointeur to a Game object 
+A pointeur to a \hyperlink{classGame}{Game} object 
 \end{DoxyReturn}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-inc/managers/\hyperlink{SaveManager_8hh}{Save\+Manager.\+hh}\end{DoxyCompactItemize}
+inc/managers/\hyperlink{SaveManager_8hh}{Save\+Manager.\+hh}\item 
+src/managers/Save\+Manager.\+cpp\end{DoxyCompactItemize}

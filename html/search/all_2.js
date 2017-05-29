@@ -2,6 +2,7 @@ var searchData=
 [
   ['changescene',['changeScene',['../classWindow.html#af1b2a635ce47d9e841445b8b866a3b28',1,'Window']]],
   ['changescore',['changeScore',['../classScoreManager.html#a16c1e33b2972b9609b6d568dc8b7a3b0',1,'ScoreManager']]],
+  ['close',['close',['../classWindow.html#a35055c04498121d39741bfcd5082705b',1,'Window']]],
   ['configmanager',['ConfigManager',['../classConfigManager.html',1,'ConfigManager'],['../classConfigManager.html#a7d3d7c10423d969f7544509f6fcca32f',1,'ConfigManager::ConfigManager()']]],
   ['configmanager_2ehh',['ConfigManager.hh',['../ConfigManager_8hh.html',1,'']]],
   ['controllers',['controllers',['../classConfigManager.html#ad6d6269ec9827af5ca12067a49383132',1,'ConfigManager']]],

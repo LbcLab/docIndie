@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exception',['Exception',['../classerror_1_1Exception.html#a7f444a1aa89266d62f5d17b13442afaf',1,'error::Exception']]]
+  ['exception',['Exception',['../classerror_1_1Exception.html#ae9193ed1c5b211c31c239c5f30caefb4',1,'error::Exception']]]
 ];

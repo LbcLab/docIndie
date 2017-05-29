@@ -16,8 +16,6 @@ Represent the window that will print some scene (view of the application).
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 \hyperlink{classWindow_a245d821e6016fa1f6970ccbbedd635f6}{$\sim$\+Window} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
-bool \hyperlink{classWindow_aa0dde1e5d56fd85fc1615bf34d67c9e0}{failed} () const
-\begin{DoxyCompactList}\small\item\em Handle failed while building the window. \end{DoxyCompactList}\item 
 void \hyperlink{classWindow_ac9150ac221e5569e677586d5a1123518}{add\+Scene} (const String \&name, const std\+::shared\+\_\+ptr$<$ \hyperlink{classAScene}{A\+Scene} $>$ \&scene)
 \begin{DoxyCompactList}\small\item\em Allow the user to add a scene in the window. \end{DoxyCompactList}\item 
 void \hyperlink{classWindow_a9e73c1dc8b22cdf16e6446af6f7ade48}{print\+Scene} (const String \&name)
@@ -28,6 +26,10 @@ void \hyperlink{classWindow_a3342dc02339a5974d5c6fcefd91d0cbf}{set\+Current\+Sce
 \begin{DoxyCompactList}\small\item\em Set the current scene that will be print. \end{DoxyCompactList}\item 
 void \hyperlink{classWindow_af1b2a635ce47d9e841445b8b866a3b28}{change\+Scene} ()
 \begin{DoxyCompactList}\small\item\em Apply the set\+Current\+Scene\textquotesingle{}s changes. \end{DoxyCompactList}\item 
+void \hyperlink{classWindow_a35055c04498121d39741bfcd5082705b}{close} ()
+\begin{DoxyCompactList}\small\item\em Close the window. \end{DoxyCompactList}\item 
+bool \hyperlink{classWindow_a761d614931fb5a5daa70e4f580c3e78e}{is\+Open} () const
+\begin{DoxyCompactList}\small\item\em Getter on the open\textquotesingle{}s statement of the window. \end{DoxyCompactList}\item 
 void \hyperlink{classWindow_a9c9f1fd6ebc2b93f16ca870487a4a4c6}{loop} (const String \&scene\+Name)
 \begin{DoxyCompactList}\small\item\em Keep the window open util the end of the program\textquotesingle{}s execution. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -96,6 +98,21 @@ Apply the set\+Current\+Scene\textquotesingle{}s changes.
 {\em None.} & \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classWindow_a35055c04498121d39741bfcd5082705b}\label{classWindow_a35055c04498121d39741bfcd5082705b}} 
+\index{Window@{Window}!close@{close}}
+\index{close@{close}!Window@{Window}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Window\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Close the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classWindow_ad3a1ead02eca314e2df94e3e932fb5ae}\label{classWindow_ad3a1ead02eca314e2df94e3e932fb5ae}} 
 \index{Window@{Window}!delete\+Scene@{delete\+Scene}}
 \index{delete\+Scene@{delete\+Scene}!Window@{Window}}
@@ -111,21 +128,24 @@ Allow the user ti delete a scene in the window.
 {\em \textquotesingle{}name\textquotesingle{}} & the name of the scene that will be delete. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classWindow_aa0dde1e5d56fd85fc1615bf34d67c9e0}\label{classWindow_aa0dde1e5d56fd85fc1615bf34d67c9e0}} 
-\index{Window@{Window}!failed@{failed}}
-\index{failed@{failed}!Window@{Window}}
-\subsubsection{\texorpdfstring{failed()}{failed()}}
-{\footnotesize\ttfamily bool Window\+::failed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+\mbox{\Hypertarget{classWindow_a761d614931fb5a5daa70e4f580c3e78e}\label{classWindow_a761d614931fb5a5daa70e4f580c3e78e}} 
+\index{Window@{Window}!is\+Open@{is\+Open}}
+\index{is\+Open@{is\+Open}!Window@{Window}}
+\subsubsection{\texorpdfstring{is\+Open()}{isOpen()}}
+{\footnotesize\ttfamily bool Window\+::is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
-Handle failed while building the window. 
+Getter on the open\textquotesingle{}s statement of the window. 
 
 
 \begin{DoxyParams}{Parameters}
 {\em None.} & \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the window is open, else false. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classWindow_a9c9f1fd6ebc2b93f16ca870487a4a4c6}\label{classWindow_a9c9f1fd6ebc2b93f16ca870487a4a4c6}} 
 \index{Window@{Window}!loop@{loop}}
 \index{loop@{loop}!Window@{Window}}

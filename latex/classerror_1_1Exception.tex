@@ -16,9 +16,9 @@ Inherits exception.
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classerror_1_1Exception_a7f444a1aa89266d62f5d17b13442afaf}{Exception} (const char $\ast$file, const char $\ast$func, int line, const std\+::string \&msg, const error\+::severity \&severity)
+\hyperlink{classerror_1_1Exception_ae9193ed1c5b211c31c239c5f30caefb4}{Exception} (const std\+::string \&msg, const error\+::severity \&severity, const char $\ast$file, const char $\ast$func, int line)
 \begin{DoxyCompactList}\small\item\em /brief Constructor \+: Build the class. \end{DoxyCompactList}\item 
-\hyperlink{classerror_1_1Exception_a1350d8f9d039facfd991b6782387eae5}{$\sim$\+Exception} ()
+\hyperlink{classerror_1_1Exception_a1350d8f9d039facfd991b6782387eae5}{$\sim$\+Exception} ()  throw ()
 \begin{DoxyCompactList}\small\item\em /brief Destructor \+: Destroy the class. \end{DoxyCompactList}\item 
 const error\+::severity \& \hyperlink{classerror_1_1Exception_a05f9c8eecf03bb0ca05d5fe2ec7fb36a}{get\+Severity} () const
 \begin{DoxyCompactList}\small\item\em /brief Give an access on the error\textquotesingle{}s severity. \end{DoxyCompactList}\item 
@@ -30,11 +30,11 @@ const char $\ast$ \hyperlink{classerror_1_1Exception_a30163f5666745344a3aeba6097
 This class allow to throw some execption and handle it finely. 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classerror_1_1Exception_a7f444a1aa89266d62f5d17b13442afaf}\label{classerror_1_1Exception_a7f444a1aa89266d62f5d17b13442afaf}} 
+\mbox{\Hypertarget{classerror_1_1Exception_ae9193ed1c5b211c31c239c5f30caefb4}\label{classerror_1_1Exception_ae9193ed1c5b211c31c239c5f30caefb4}} 
 \index{error\+::\+Exception@{error\+::\+Exception}!Exception@{Exception}}
 \index{Exception@{Exception}!error\+::\+Exception@{error\+::\+Exception}}
 \subsubsection{\texorpdfstring{Exception()}{Exception()}}
-{\footnotesize\ttfamily error\+::\+Exception\+::\+Exception (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file,  }\item[{const char $\ast$}]{func,  }\item[{int}]{line,  }\item[{const std\+::string \&}]{msg,  }\item[{const error\+::severity \&}]{severity }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily error\+::\+Exception\+::\+Exception (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg,  }\item[{const error\+::severity \&}]{severity,  }\item[{const char $\ast$}]{file,  }\item[{const char $\ast$}]{func,  }\item[{int}]{line }\end{DoxyParamCaption})}
 
 
 
@@ -46,7 +46,7 @@ This class allow to throw some execption and handle it finely.
 \index{error\+::\+Exception@{error\+::\+Exception}!````~Exception@{$\sim$\+Exception}}
 \index{````~Exception@{$\sim$\+Exception}!error\+::\+Exception@{error\+::\+Exception}}
 \subsubsection{\texorpdfstring{$\sim$\+Exception()}{~Exception()}}
-{\footnotesize\ttfamily error\+::\+Exception\+::$\sim$\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily error\+::\+Exception\+::$\sim$\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throw  ) \hspace{0.3cm}{\ttfamily [inline]}}
 
 
 

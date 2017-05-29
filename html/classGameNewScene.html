@@ -89,8 +89,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3df0ff81012d3f7dbd08c7367be22fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a3df0ff81012d3f7dbd08c7367be22fdf">More...</a><br /></td></tr>
 <tr class="separator:a3df0ff81012d3f7dbd08c7367be22fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21c27ef3ea1923d975683e1bcdd134fa"><td class="memItemLeft" align="right" valign="top">irr::IEventReceiver *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameNewScene.html#a21c27ef3ea1923d975683e1bcdd134fa">getEventReceiver</a> () const</td></tr>
-<tr class="memdesc:a21c27ef3ea1923d975683e1bcdd134fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event getter.  <a href="#a21c27ef3ea1923d975683e1bcdd134fa">More...</a><br /></td></tr>
+<tr class="memdesc:a21c27ef3ea1923d975683e1bcdd134fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the user to implemente the event callback class for each scene.  <a href="#a21c27ef3ea1923d975683e1bcdd134fa">More...</a><br /></td></tr>
 <tr class="separator:a21c27ef3ea1923d975683e1bcdd134fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aa753c0f281a3e1f0ed06fe10e070f4"><td class="memItemLeft" align="right" valign="top"><a id="a6aa753c0f281a3e1f0ed06fe10e070f4"></a>
+const std::vector&lt; std::shared_ptr&lt; AHero &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameNewScene.html#a6aa753c0f281a3e1f0ed06fe10e070f4">getPlayers</a> () const</td></tr>
+<tr class="memdesc:a6aa753c0f281a3e1f0ed06fe10e070f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the players table. <br /></td></tr>
+<tr class="separator:a6aa753c0f281a3e1f0ed06fe10e070f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classAScene"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classAScene')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classAScene.html">AScene</a></td></tr>
 <tr class="memitem:ad0eacf691dbc8240fdf3a42d450c1042 inherit pub_methods_classAScene"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAScene.html#ad0eacf691dbc8240fdf3a42d450c1042">AScene</a> ()</td></tr>
 <tr class="memdesc:ad0eacf691dbc8240fdf3a42d450c1042 inherit pub_methods_classAScene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classAScene.html#ad0eacf691dbc8240fdf3a42d450c1042">More...</a><br /></td></tr>
@@ -101,6 +105,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae5d7463a823ed64f3846b5847340b68c inherit pub_methods_classAScene"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAScene.html#ae5d7463a823ed64f3846b5847340b68c">print</a> (<a class="el" href="classWindow.html">Window</a> *win)</td></tr>
 <tr class="memdesc:ae5d7463a823ed64f3846b5847340b68c inherit pub_methods_classAScene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print all the scene's widgets into the <a class="el" href="classWindow.html" title="Represent the window that will print some scene (view of the application). ">Window</a>.  <a href="classAScene.html#ae5d7463a823ed64f3846b5847340b68c">More...</a><br /></td></tr>
 <tr class="separator:ae5d7463a823ed64f3846b5847340b68c inherit pub_methods_classAScene"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18070899d965f1811c2253ad1d939374 inherit pub_methods_classAScene"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAScene.html#a18070899d965f1811c2253ad1d939374">updateCamera</a> (<a class="el" href="classWindow.html">Window</a> *win)</td></tr>
+<tr class="memdesc:a18070899d965f1811c2253ad1d939374 inherit pub_methods_classAScene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print all the scene's widgets into the <a class="el" href="classWindow.html" title="Represent the window that will print some scene (view of the application). ">Window</a>.  <a href="classAScene.html#a18070899d965f1811c2253ad1d939374">More...</a><br /></td></tr>
+<tr class="separator:a18070899d965f1811c2253ad1d939374 inherit pub_methods_classAScene"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa711b6068dd8dee262160eedfd96ad02 inherit pub_methods_classAScene"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAScene.html#aa711b6068dd8dee262160eedfd96ad02">addWidget</a> (const std::shared_ptr&lt; <a class="el" href="classIWidget.html">IWidget</a> &gt; &amp;widget, Int id=-1)</td></tr>
 <tr class="memdesc:aa711b6068dd8dee262160eedfd96ad02 inherit pub_methods_classAScene"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the user to add texts, images, buttons, checkboxs or 3d models into the scene.  <a href="classAScene.html#aa711b6068dd8dee262160eedfd96ad02">More...</a><br /></td></tr>
 <tr class="separator:aa711b6068dd8dee262160eedfd96ad02 inherit pub_methods_classAScene"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,7 +182,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Event getter. </p>
+<p>Allow the user to implemente the event callback class for each scene. </p>
 <p>Return the event. </p>
 
 <p>Implements <a class="el" href="classAScene.html#af521e5e6d30a5d2e5d30eb333e4d3abd">AScene</a>.</p>

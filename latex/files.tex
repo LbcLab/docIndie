@@ -4,25 +4,13 @@ Here is a list of all documented files with brief descriptions\+:\begin{DoxyComp
 \item\contentsline{section}{inc/{\bfseries type\+\_\+compatibility.\+hh} }{\pageref{type__compatibility_8hh}}{}
 \item\contentsline{section}{inc/{\bfseries Video\+Controller.\+hh} }{\pageref{VideoController_8hh}}{}
 \item\contentsline{section}{inc/exception/\hyperlink{Exception_8hh}{Exception.\+hh} \\*Exception class }{\pageref{Exception_8hh}}{}
+\item\contentsline{section}{inc/game/\hyperlink{Game_8hh}{Game.\+hh} \\*Contain all the information about the game }{\pageref{Game_8hh}}{}
 \item\contentsline{section}{inc/game/character/{\bfseries A\+Character.\+hh} }{\pageref{ACharacter_8hh}}{}
 \item\contentsline{section}{inc/game/character/heros/{\bfseries A\+Hero.\+hh} }{\pageref{AHero_8hh}}{}
-\item\contentsline{section}{inc/game/character/heros/{\bfseries Inventory.\+hh} }{\pageref{Inventory_8hh}}{}
 \item\contentsline{section}{inc/game/character/heros/classtype/{\bfseries Archer.\+hh} }{\pageref{Archer_8hh}}{}
 \item\contentsline{section}{inc/game/character/heros/classtype/{\bfseries Monk.\+hh} }{\pageref{Monk_8hh}}{}
 \item\contentsline{section}{inc/game/character/heros/classtype/{\bfseries Ninja.\+hh} }{\pageref{Ninja_8hh}}{}
 \item\contentsline{section}{inc/game/character/heros/classtype/{\bfseries Warrior.\+hh} }{\pageref{Warrior_8hh}}{}
-\item\contentsline{section}{inc/game/character/heros/object/\hyperlink{AObject_8hh}{A\+Object.\+hh} \\*Use to create object }{\pageref{AObject_8hh}}{}
-\item\contentsline{section}{inc/game/character/heros/object/\hyperlink{APickable_8hh}{A\+Pickable.\+hh} \\*Use to create pickable object }{\pageref{APickable_8hh}}{}
-\item\contentsline{section}{inc/game/character/heros/object/{\bfseries Door.\+hh} }{\pageref{Door_8hh}}{}
-\item\contentsline{section}{inc/game/character/heros/object/{\bfseries Key.\+hh} }{\pageref{Key_8hh}}{}
-\item\contentsline{section}{inc/game/character/heros/object/{\bfseries Potion.\+hh} }{\pageref{Potion_8hh}}{}
-\item\contentsline{section}{inc/game/character/heros/object/{\bfseries Treasure.\+hh} }{\pageref{Treasure_8hh}}{}
-\item\contentsline{section}{inc/game/character/heros/object/{\bfseries Wall.\+hh} }{\pageref{Wall_8hh}}{}
-\item\contentsline{section}{inc/game/character/heros/object/weapon/{\bfseries A\+Weapon.\+hh} }{\pageref{AWeapon_8hh}}{}
-\item\contentsline{section}{inc/game/character/heros/object/weapon/{\bfseries Bow.\+hh} }{\pageref{Bow_8hh}}{}
-\item\contentsline{section}{inc/game/character/heros/object/weapon/{\bfseries Dual\+Dagger.\+hh} }{\pageref{DualDagger_8hh}}{}
-\item\contentsline{section}{inc/game/character/heros/object/weapon/{\bfseries Fist.\+hh} }{\pageref{Fist_8hh}}{}
-\item\contentsline{section}{inc/game/character/heros/object/weapon/{\bfseries Katana.\+hh} }{\pageref{Katana_8hh}}{}
 \item\contentsline{section}{inc/game/character/\+I\+A/{\bfseries I\+A\+Close\+Range.\+hh} }{\pageref{IACloseRange_8hh}}{}
 \item\contentsline{section}{inc/game/character/\+I\+A/{\bfseries I\+A\+Hero.\+hh} }{\pageref{IAHero_8hh}}{}
 \item\contentsline{section}{inc/game/character/\+I\+A/{\bfseries I\+A\+Long\+Range.\+hh} }{\pageref{IALongRange_8hh}}{}
@@ -32,27 +20,39 @@ Here is a list of all documented files with brief descriptions\+:\begin{DoxyComp
 \item\contentsline{section}{inc/game/character/monster/\+Crawling\+Dog/{\bfseries Crawling\+Dog.\+hh} }{\pageref{CrawlingDog_8hh}}{}
 \item\contentsline{section}{inc/game/character/monster/\+Forest\+Guard/{\bfseries Forest\+Guard.\+hh} }{\pageref{ForestGuard_8hh}}{}
 \item\contentsline{section}{inc/game/character/monster/\+Muscled\+Mutant/{\bfseries Muscled\+Mutant.\+hh} }{\pageref{MuscledMutant_8hh}}{}
-\item\contentsline{section}{inc/game/core/{\bfseries Game.\+hh} }{\pageref{Game_8hh}}{}
-\item\contentsline{section}{inc/game/level/{\bfseries Level.\+hh} }{\pageref{Level_8hh}}{}
-\item\contentsline{section}{inc/game/level/\hyperlink{Map_8hh}{Map.\+hh} \\*Defines the map that is related to a level. The process to create a map is relatively simple. First of all, you\textquotesingle{}ve got to load a map with Map\+::load\+Map() In a second time, you\textquotesingle{}ve got to retrieve all the nodes with a triangle selector container (meta) with load\+Scene\+Nodes Then, you can create collision response thanks to these nodes by calling init\+Collision\+Response\+Animator() Finally, you can draw the map (that should be achieved with draw\+All()  If meshs/models arent loading properly. Double check the paths in the .irr file }{\pageref{Map_8hh}}{}
-\item\contentsline{section}{inc/game/level/{\bfseries Map\+Factory.\+hh} }{\pageref{MapFactory_8hh}}{}
+\item\contentsline{section}{inc/game/level/\hyperlink{Level_8hh}{Level.\+hh} \\*Use to create a level of the game }{\pageref{Level_8hh}}{}
+\item\contentsline{section}{inc/game/level/\hyperlink{Map_8hh}{Map.\+hh} \\*Defines the map that is related to a level. The process to create a map is relatively simple. First of all, you\textquotesingle{}ve got to load a map with \hyperlink{classMap_a37024e6d47ca10cf83a331635fe041b7}{Map\+::load\+Map()} In a second time, you\textquotesingle{}ve got to retrieve all the nodes with a triangle selector container (meta) with load\+Scene\+Nodes Then, you can create collision response thanks to these nodes by calling init\+Collision\+Response\+Animator() Finally, you can draw the map (that should be achieved with draw\+All()  If meshs/models arent loading properly. Double check the paths in the .irr file }{\pageref{Map_8hh}}{}
+\item\contentsline{section}{inc/game/level/\hyperlink{MapFactory_8hh}{Map\+Factory.\+hh} \\*Maps\textquotesingle{} factory use to build the maps objects }{\pageref{MapFactory_8hh}}{}
+\item\contentsline{section}{inc/game/object/\hyperlink{AObject_8hh}{A\+Object.\+hh} \\*Use to create object }{\pageref{AObject_8hh}}{}
+\item\contentsline{section}{inc/game/object/\hyperlink{APickable_8hh}{A\+Pickable.\+hh} \\*Use to create pickable object }{\pageref{APickable_8hh}}{}
+\item\contentsline{section}{inc/game/object/{\bfseries Door.\+hh} }{\pageref{Door_8hh}}{}
+\item\contentsline{section}{inc/game/object/{\bfseries Inventory.\+hh} }{\pageref{Inventory_8hh}}{}
+\item\contentsline{section}{inc/game/object/{\bfseries Key.\+hh} }{\pageref{Key_8hh}}{}
+\item\contentsline{section}{inc/game/object/{\bfseries Potion.\+hh} }{\pageref{Potion_8hh}}{}
+\item\contentsline{section}{inc/game/object/{\bfseries Treasure.\+hh} }{\pageref{Treasure_8hh}}{}
+\item\contentsline{section}{inc/game/object/{\bfseries Wall.\+hh} }{\pageref{Wall_8hh}}{}
+\item\contentsline{section}{inc/game/object/weapon/{\bfseries A\+Weapon.\+hh} }{\pageref{AWeapon_8hh}}{}
+\item\contentsline{section}{inc/game/object/weapon/{\bfseries Bow.\+hh} }{\pageref{Bow_8hh}}{}
+\item\contentsline{section}{inc/game/object/weapon/{\bfseries Dual\+Dagger.\+hh} }{\pageref{DualDagger_8hh}}{}
+\item\contentsline{section}{inc/game/object/weapon/{\bfseries Fist.\+hh} }{\pageref{Fist_8hh}}{}
+\item\contentsline{section}{inc/game/object/weapon/{\bfseries Katana.\+hh} }{\pageref{Katana_8hh}}{}
 \item\contentsline{section}{inc/graphics/\hyperlink{AScene_8hh}{A\+Scene.\+hh} \\*Define a window\textquotesingle{}s scene }{\pageref{AScene_8hh}}{}
 \item\contentsline{section}{inc/graphics/\hyperlink{Window_8hh}{Window.\+hh} \\*Define a window }{\pageref{Window_8hh}}{}
 \item\contentsline{section}{inc/graphics/scenes/{\bfseries Credit\+Scene.\+hh} }{\pageref{CreditScene_8hh}}{}
-\item\contentsline{section}{inc/graphics/scenes/{\bfseries Game\+Load\+Scene.\+hh} }{\pageref{GameLoadScene_8hh}}{}
+\item\contentsline{section}{inc/graphics/scenes/\hyperlink{GameLoadScene_8hh}{Game\+Load\+Scene.\+hh} \\*Use to display the gameload scene }{\pageref{GameLoadScene_8hh}}{}
 \item\contentsline{section}{inc/graphics/scenes/\hyperlink{GameMenuScene_8hh}{Game\+Menu\+Scene.\+hh} \\*Use to choose between new game and load game }{\pageref{GameMenuScene_8hh}}{}
 \item\contentsline{section}{inc/graphics/scenes/\hyperlink{GameNewScene_8hh}{Game\+New\+Scene.\+hh} \\*Use to choose characters for each player }{\pageref{GameNewScene_8hh}}{}
-\item\contentsline{section}{inc/graphics/scenes/{\bfseries Game\+Online\+Scene.\+hh} }{\pageref{GameOnlineScene_8hh}}{}
-\item\contentsline{section}{inc/graphics/scenes/{\bfseries Game\+Scene.\+hh} }{\pageref{GameScene_8hh}}{}
-\item\contentsline{section}{inc/graphics/scenes/{\bfseries Game\+Simulation\+Scene.\+hh} }{\pageref{GameSimulationScene_8hh}}{}
-\item\contentsline{section}{inc/graphics/scenes/{\bfseries Intro\+Scene.\+hh} }{\pageref{IntroScene_8hh}}{}
-\item\contentsline{section}{inc/graphics/scenes/{\bfseries Legend\+Scene.\+hh} }{\pageref{LegendScene_8hh}}{}
-\item\contentsline{section}{inc/graphics/scenes/{\bfseries Main\+Scene.\+hh} }{\pageref{MainScene_8hh}}{}
-\item\contentsline{section}{inc/graphics/scenes/{\bfseries Option\+Control\+Scene.\+hh} }{\pageref{OptionControlScene_8hh}}{}
-\item\contentsline{section}{inc/graphics/scenes/{\bfseries Option\+Scene.\+hh} }{\pageref{OptionScene_8hh}}{}
+\item\contentsline{section}{inc/graphics/scenes/\hyperlink{GameOnlineScene_8hh}{Game\+Online\+Scene.\+hh} \\*Use to display the Game\+Online scene }{\pageref{GameOnlineScene_8hh}}{}
+\item\contentsline{section}{inc/graphics/scenes/\hyperlink{GameScene_8hh}{Game\+Scene.\+hh} \\*Use to display the \hyperlink{classGame}{Game} scene }{\pageref{GameScene_8hh}}{}
+\item\contentsline{section}{inc/graphics/scenes/\hyperlink{GameSimulationScene_8hh}{Game\+Simulation\+Scene.\+hh} \\*Use to display the Game\+Online scene }{\pageref{GameSimulationScene_8hh}}{}
+\item\contentsline{section}{inc/graphics/scenes/\hyperlink{IntroScene_8hh}{Intro\+Scene.\+hh} \\*Use to display the \hyperlink{classIntroScene}{Intro\+Scene} scene }{\pageref{IntroScene_8hh}}{}
+\item\contentsline{section}{inc/graphics/scenes/\hyperlink{LegendScene_8hh}{Legend\+Scene.\+hh} \\*Use to display the Legend scene }{\pageref{LegendScene_8hh}}{}
+\item\contentsline{section}{inc/graphics/scenes/\hyperlink{MainScene_8hh}{Main\+Scene.\+hh} \\*Main scene who lead to each menus }{\pageref{MainScene_8hh}}{}
+\item\contentsline{section}{inc/graphics/scenes/\hyperlink{OptionControlScene_8hh}{Option\+Control\+Scene.\+hh} \\*Use to display the \hyperlink{classOptionControl}{Option\+Control} scene }{\pageref{OptionControlScene_8hh}}{}
+\item\contentsline{section}{inc/graphics/scenes/\hyperlink{OptionScene_8hh}{Option\+Scene.\+hh} \\*Use to display the option menu }{\pageref{OptionScene_8hh}}{}
 \item\contentsline{section}{inc/graphics/scenes/\hyperlink{OptionSoundScene_8hh}{Option\+Sound\+Scene.\+hh} \\*Use to create the button interface of the sound setting scene }{\pageref{OptionSoundScene_8hh}}{}
 \item\contentsline{section}{inc/graphics/scenes/\hyperlink{OptionVideoScene_8hh}{Option\+Video\+Scene.\+hh} \\*Use to create the button interface of the video setting scene }{\pageref{OptionVideoScene_8hh}}{}
-\item\contentsline{section}{inc/graphics/scenes/{\bfseries Score\+Scene.\+hh} }{\pageref{ScoreScene_8hh}}{}
+\item\contentsline{section}{inc/graphics/scenes/\hyperlink{ScoreScene_8hh}{Score\+Scene.\+hh} \\*Use to display the Score scene }{\pageref{ScoreScene_8hh}}{}
 \item\contentsline{section}{inc/graphics/scenes/events/{\bfseries Credit\+Receiver.\+hh} }{\pageref{CreditReceiver_8hh}}{}
 \item\contentsline{section}{inc/graphics/scenes/events/{\bfseries Game\+Load\+Receiver.\+hh} }{\pageref{GameLoadReceiver_8hh}}{}
 \item\contentsline{section}{inc/graphics/scenes/events/\hyperlink{GameMenuReceiver_8hh}{Game\+Menu\+Receiver.\+hh} \\*Use to manage event of the game (new game / load) scene }{\pageref{GameMenuReceiver_8hh}}{}
@@ -76,13 +76,17 @@ Here is a list of all documented files with brief descriptions\+:\begin{DoxyComp
 \item\contentsline{section}{inc/indie/{\bfseries G\+U\+I\+Button\+Id.\+hh} }{\pageref{GUIButtonId_8hh}}{}
 \item\contentsline{section}{inc/managers/\hyperlink{ConfigManager_8hh}{Config\+Manager.\+hh} \\*Allow you to load, modify and save the configuration }{\pageref{ConfigManager_8hh}}{}
 \item\contentsline{section}{inc/managers/\hyperlink{CoreManager_8hh}{Core\+Manager.\+hh} \\*\hyperlink{classCoreManager}{Core\+Manager} regroups all the application\textquotesingle{}s manager }{\pageref{CoreManager_8hh}}{}
+\item\contentsline{section}{inc/managers/\hyperlink{LevelManager_8hh}{Level\+Manager.\+hh} \\*Load level configuration out of X\+ML format }{\pageref{LevelManager_8hh}}{}
 \item\contentsline{section}{inc/managers/\hyperlink{ModelsManager_8hh}{Models\+Manager.\+hh} \\*The Models manager will allow you to get all the information to load a model }{\pageref{ModelsManager_8hh}}{}
 \item\contentsline{section}{inc/managers/\hyperlink{SaveManager_8hh}{Save\+Manager.\+hh} \\*The save manager will allow you to save and restore a game }{\pageref{SaveManager_8hh}}{}
 \item\contentsline{section}{inc/managers/\hyperlink{ScoreManager_8hh}{Score\+Manager.\+hh} \\*The score manager will allow you to save, load and restore game scores }{\pageref{ScoreManager_8hh}}{}
+\item\contentsline{section}{inc/managers/{\bfseries Sound\+Manager.\+hh} }{\pageref{SoundManager_8hh}}{}
 \item\contentsline{section}{inc/managers/config/{\bfseries Devices.\+hh} }{\pageref{Devices_8hh}}{}
 \item\contentsline{section}{inc/managers/config/{\bfseries I\+Control.\+hh} }{\pageref{IControl_8hh}}{}
+\item\contentsline{section}{inc/managers/config/{\bfseries Level\+Definition.\+hh} }{\pageref{LevelDefinition_8hh}}{}
 \item\contentsline{section}{inc/managers/config/\hyperlink{Model_8hh}{Model.\+hh} \\*The Class Model allow you to manipulate model\textquotesingle{}s informations }{\pageref{Model_8hh}}{}
 \item\contentsline{section}{inc/managers/config/{\bfseries Score.\+hh} }{\pageref{Score_8hh}}{}
 \item\contentsline{section}{inc/managers/config/{\bfseries Sound.\+hh} }{\pageref{Sound_8hh}}{}
 \item\contentsline{section}{inc/managers/config/{\bfseries Video.\+hh} }{\pageref{Video_8hh}}{}
+\item\contentsline{section}{inc/tools/{\bfseries Transform.\+hh} }{\pageref{Transform_8hh}}{}
 \end{DoxyCompactList}
