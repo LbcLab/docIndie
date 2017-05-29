@@ -1,0 +1,142 @@
+\hypertarget{classirr_1_1io_1_1IArchiveLoader}{}\section{irr\+:\+:io\+:\+:I\+Archive\+Loader Class Reference}
+\label{classirr_1_1io_1_1IArchiveLoader}\index{irr\+::io\+::\+I\+Archive\+Loader@{irr\+::io\+::\+I\+Archive\+Loader}}
+
+
+Class which is able to create an archive from a file.  
+
+
+
+
+{\ttfamily \#include $<$I\+File\+Archive.\+h$>$}
+
+Inheritance diagram for irr\+:\+:io\+:\+:I\+Archive\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classirr_1_1io_1_1IArchiveLoader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classirr_1_1io_1_1IArchiveLoader_a9835ccbfd2c261edf4a738421c488ce3}{is\+A\+Loadable\+File\+Format} (const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{path} \&filename) const =0
+\begin{DoxyCompactList}\small\item\em Check if the file might be loaded by this class. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1io_1_1IArchiveLoader_acda22c3c2a5268665a4a4cf17379931b}{is\+A\+Loadable\+File\+Format} (\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$file) const =0
+\begin{DoxyCompactList}\small\item\em Check if the file might be loaded by this class. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1io_1_1IArchiveLoader_af60c081f27ab941702a4a32dfe482c05}{is\+A\+Loadable\+File\+Format} (\hyperlink{namespaceirr_1_1io_adb3e3c445ec8e608ed1f0f93306da14f}{E\+\_\+\+F\+I\+L\+E\+\_\+\+A\+R\+C\+H\+I\+V\+E\+\_\+\+T\+Y\+PE} file\+Type) const =0
+\begin{DoxyCompactList}\small\item\em Check to see if the loader can create archives of this type. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1io_1_1IFileArchive}{I\+File\+Archive} $\ast$ \hyperlink{classirr_1_1io_1_1IArchiveLoader_a55e9586f190588e5fea6d17f63fb7aad}{create\+Archive} (const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{path} \&filename, bool ignore\+Case, bool ignore\+Paths) const =0
+\begin{DoxyCompactList}\small\item\em Creates an archive from the filename. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1io_1_1IFileArchive}{I\+File\+Archive} $\ast$ \hyperlink{classirr_1_1io_1_1IArchiveLoader_acd4a78189c62db96e4e10aa89c934980}{create\+Archive} (\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$file, bool ignore\+Case, bool ignore\+Paths) const =0
+\begin{DoxyCompactList}\small\item\em Creates an archive from the file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class which is able to create an archive from a file. 
+
+If you want the Irrlicht Engine be able to load archives of currently unsupported file formats (e.\+g .wad), then implement this and add your new Archive loader with \hyperlink{classirr_1_1io_1_1IFileSystem_ad56456302b4697c49b461a909d9269b9}{I\+File\+System\+::add\+Archive\+Loader()} to the engine. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classirr_1_1io_1_1IArchiveLoader_a55e9586f190588e5fea6d17f63fb7aad}\label{classirr_1_1io_1_1IArchiveLoader_a55e9586f190588e5fea6d17f63fb7aad}} 
+\index{irr\+::io\+::\+I\+Archive\+Loader@{irr\+::io\+::\+I\+Archive\+Loader}!create\+Archive@{create\+Archive}}
+\index{create\+Archive@{create\+Archive}!irr\+::io\+::\+I\+Archive\+Loader@{irr\+::io\+::\+I\+Archive\+Loader}}
+\subsubsection{\texorpdfstring{create\+Archive()}{createArchive()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1io_1_1IFileArchive}{I\+File\+Archive}$\ast$ irr\+::io\+::\+I\+Archive\+Loader\+::create\+Archive (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{path} \&}]{filename,  }\item[{bool}]{ignore\+Case,  }\item[{bool}]{ignore\+Paths }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Creates an archive from the filename. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & File to use. \\
+\hline
+{\em ignore\+Case} & Searching is performed without regarding the case \\
+\hline
+{\em ignore\+Paths} & Files are searched for without checking for the directories \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to newly created archive, or 0 upon error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1io_1_1IArchiveLoader_acd4a78189c62db96e4e10aa89c934980}\label{classirr_1_1io_1_1IArchiveLoader_acd4a78189c62db96e4e10aa89c934980}} 
+\index{irr\+::io\+::\+I\+Archive\+Loader@{irr\+::io\+::\+I\+Archive\+Loader}!create\+Archive@{create\+Archive}}
+\index{create\+Archive@{create\+Archive}!irr\+::io\+::\+I\+Archive\+Loader@{irr\+::io\+::\+I\+Archive\+Loader}}
+\subsubsection{\texorpdfstring{create\+Archive()}{createArchive()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1io_1_1IFileArchive}{I\+File\+Archive}$\ast$ irr\+::io\+::\+I\+Archive\+Loader\+::create\+Archive (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$}]{file,  }\item[{bool}]{ignore\+Case,  }\item[{bool}]{ignore\+Paths }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Creates an archive from the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File handle to use. \\
+\hline
+{\em ignore\+Case} & Searching is performed without regarding the case \\
+\hline
+{\em ignore\+Paths} & Files are searched for without checking for the directories \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to newly created archive, or 0 upon error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1io_1_1IArchiveLoader_a9835ccbfd2c261edf4a738421c488ce3}\label{classirr_1_1io_1_1IArchiveLoader_a9835ccbfd2c261edf4a738421c488ce3}} 
+\index{irr\+::io\+::\+I\+Archive\+Loader@{irr\+::io\+::\+I\+Archive\+Loader}!is\+A\+Loadable\+File\+Format@{is\+A\+Loadable\+File\+Format}}
+\index{is\+A\+Loadable\+File\+Format@{is\+A\+Loadable\+File\+Format}!irr\+::io\+::\+I\+Archive\+Loader@{irr\+::io\+::\+I\+Archive\+Loader}}
+\subsubsection{\texorpdfstring{is\+A\+Loadable\+File\+Format()}{isALoadableFileFormat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily virtual bool irr\+::io\+::\+I\+Archive\+Loader\+::is\+A\+Loadable\+File\+Format (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{path} \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if the file might be loaded by this class. 
+
+Check based on the file extension (e.\+g. \char`\"{}.\+zip\char`\"{}) 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of file to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if file seems to be loadable. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1io_1_1IArchiveLoader_acda22c3c2a5268665a4a4cf17379931b}\label{classirr_1_1io_1_1IArchiveLoader_acda22c3c2a5268665a4a4cf17379931b}} 
+\index{irr\+::io\+::\+I\+Archive\+Loader@{irr\+::io\+::\+I\+Archive\+Loader}!is\+A\+Loadable\+File\+Format@{is\+A\+Loadable\+File\+Format}}
+\index{is\+A\+Loadable\+File\+Format@{is\+A\+Loadable\+File\+Format}!irr\+::io\+::\+I\+Archive\+Loader@{irr\+::io\+::\+I\+Archive\+Loader}}
+\subsubsection{\texorpdfstring{is\+A\+Loadable\+File\+Format()}{isALoadableFileFormat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily virtual bool irr\+::io\+::\+I\+Archive\+Loader\+::is\+A\+Loadable\+File\+Format (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$}]{file }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if the file might be loaded by this class. 
+
+This check may look into the file. 
+\begin{DoxyParams}{Parameters}
+{\em file} & File handle to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if file seems to be loadable. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1io_1_1IArchiveLoader_af60c081f27ab941702a4a32dfe482c05}\label{classirr_1_1io_1_1IArchiveLoader_af60c081f27ab941702a4a32dfe482c05}} 
+\index{irr\+::io\+::\+I\+Archive\+Loader@{irr\+::io\+::\+I\+Archive\+Loader}!is\+A\+Loadable\+File\+Format@{is\+A\+Loadable\+File\+Format}}
+\index{is\+A\+Loadable\+File\+Format@{is\+A\+Loadable\+File\+Format}!irr\+::io\+::\+I\+Archive\+Loader@{irr\+::io\+::\+I\+Archive\+Loader}}
+\subsubsection{\texorpdfstring{is\+A\+Loadable\+File\+Format()}{isALoadableFileFormat()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily virtual bool irr\+::io\+::\+I\+Archive\+Loader\+::is\+A\+Loadable\+File\+Format (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1io_adb3e3c445ec8e608ed1f0f93306da14f}{E\+\_\+\+F\+I\+L\+E\+\_\+\+A\+R\+C\+H\+I\+V\+E\+\_\+\+T\+Y\+PE}}]{file\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check to see if the loader can create archives of this type. 
+
+Check based on the archive type. 
+\begin{DoxyParams}{Parameters}
+{\em file\+Type} & The archive type to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the archile loader supports this type, false if not 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/I\+File\+Archive.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,248 @@
+\hypertarget{classirr_1_1core_1_1map}{}\section{irr\+:\+:core\+:\+:map$<$ Key\+Type, Value\+Type $>$ Class Template Reference}
+\label{classirr_1_1core_1_1map}\index{irr\+::core\+::map$<$ Key\+Type, Value\+Type $>$@{irr\+::core\+::map$<$ Key\+Type, Value\+Type $>$}}
+
+
+map template for associative arrays using a red-\/black tree  
+
+
+
+
+{\ttfamily \#include $<$irr\+Map.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classirr_1_1core_1_1map_1_1ConstIterator}{Const\+Iterator}
+\begin{DoxyCompactList}\small\item\em Const \hyperlink{classirr_1_1core_1_1map_1_1Iterator}{Iterator}. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1core_1_1map_1_1Iterator}{Iterator}
+\begin{DoxyCompactList}\small\item\em Normal \hyperlink{classirr_1_1core_1_1map_1_1Iterator}{Iterator}. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1core_1_1map_1_1ParentFirstIterator}{Parent\+First\+Iterator}
+\begin{DoxyCompactList}\small\item\em Parent First \hyperlink{classirr_1_1core_1_1map_1_1Iterator}{Iterator}. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1core_1_1map_1_1ParentLastIterator}{Parent\+Last\+Iterator}
+\begin{DoxyCompactList}\small\item\em Parent Last \hyperlink{classirr_1_1core_1_1map_1_1Iterator}{Iterator}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classirr_1_1core_1_1map_af9f8f34cab620e3bdc1ae72715ab9d15}{insert} (const Key\+Type \&key\+New, const Value\+Type \&v)
+\begin{DoxyCompactList}\small\item\em Inserts a new node into the tree. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1map_ae31213e9478dd259bdd79c7fd3249584}{set} (const Key\+Type \&k, const Value\+Type \&v)
+\begin{DoxyCompactList}\small\item\em Replaces the value if the key already exists, otherwise inserts a new element. \end{DoxyCompactList}\item 
+Node $\ast$ \hyperlink{classirr_1_1core_1_1map_a6f95533c709ef2dbe17148442aa26984}{delink} (const Key\+Type \&k)
+\begin{DoxyCompactList}\small\item\em Removes a node from the tree and returns it. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1map_a83d8a6261249668ae6a0f2bbd6e84c26}{remove} (const Key\+Type \&k)
+\begin{DoxyCompactList}\small\item\em Removes a node from the tree and deletes it. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1map_a8f8ee85b87b3764be03d78ba696e75f2}{remove} (Node $\ast$p)
+\begin{DoxyCompactList}\small\item\em Removes a node from the tree and deletes it. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1map_a0f7e7fdbb5ec7794851e32c9716dace0}\label{classirr_1_1core_1_1map_a0f7e7fdbb5ec7794851e32c9716dace0}} 
+void \hyperlink{classirr_1_1core_1_1map_a0f7e7fdbb5ec7794851e32c9716dace0}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clear the entire tree. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1map_a253070a62165cc9881cc75bc774f7034}{empty} () const
+\begin{DoxyCompactList}\small\item\em Is the tree empty? \end{DoxyCompactList}\item 
+\+\_\+\+I\+R\+R\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+ bool \hyperlink{classirr_1_1core_1_1map_a2a5b309f8737e2aca9668e32c71f05ed}{is\+Empty} () const
+\item 
+Node $\ast$ \hyperlink{classirr_1_1core_1_1map_ad6a62579dceda1da7605ee78bca3e318}{find} (const Key\+Type \&key\+To\+Find) const
+\begin{DoxyCompactList}\small\item\em Search for a node with the specified key. \end{DoxyCompactList}\item 
+Node $\ast$ \hyperlink{classirr_1_1core_1_1map_a6666acf9724e2e20cd338a6a5ff66c65}{get\+Root} () const
+\begin{DoxyCompactList}\small\item\em Gets the root element. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1map_aa4d56d82c7fe2a72327f91f2f6c92465}\label{classirr_1_1core_1_1map_aa4d56d82c7fe2a72327f91f2f6c92465}} 
+\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1core_1_1map_aa4d56d82c7fe2a72327f91f2f6c92465}{size} () const
+\begin{DoxyCompactList}\small\item\em Returns the number of nodes in the tree. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1map_a411cde5df191c16616e20eb7027b9a20}{swap} (\hyperlink{classirr_1_1core_1_1map}{map}$<$ Key\+Type, Value\+Type $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Swap the content of this map container with the content of another map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1map_ac5c4970e278272eaf28f010d8b82a4dc}\label{classirr_1_1core_1_1map_ac5c4970e278272eaf28f010d8b82a4dc}} 
+\hyperlink{classirr_1_1core_1_1map_1_1Iterator}{Iterator} \hyperlink{classirr_1_1core_1_1map_ac5c4970e278272eaf28f010d8b82a4dc}{get\+Iterator} () const
+\begin{DoxyCompactList}\small\item\em Returns an iterator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1map_ad187f7170dd13dfa6d182b478c92942a}\label{classirr_1_1core_1_1map_ad187f7170dd13dfa6d182b478c92942a}} 
+\hyperlink{classirr_1_1core_1_1map_1_1ConstIterator}{Const\+Iterator} \hyperlink{classirr_1_1core_1_1map_ad187f7170dd13dfa6d182b478c92942a}{get\+Const\+Iterator} () const
+\begin{DoxyCompactList}\small\item\em Returns a Constiterator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1map_a3c55db71cb9dca4272fd8f99e5a045de}\label{classirr_1_1core_1_1map_a3c55db71cb9dca4272fd8f99e5a045de}} 
+\hyperlink{classirr_1_1core_1_1map_1_1ParentFirstIterator}{Parent\+First\+Iterator} \hyperlink{classirr_1_1core_1_1map_a3c55db71cb9dca4272fd8f99e5a045de}{get\+Parent\+First\+Iterator} () const
+\begin{DoxyCompactList}\small\item\em Returns a \hyperlink{classirr_1_1core_1_1map_1_1ParentFirstIterator}{Parent\+First\+Iterator}. Traverses the tree from top to bottom. Typical usage is when storing the tree structure, because when reading it later (and inserting elements) the tree structure will be the same. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1map_a36bb25e9cf8b1d13cd0b5cc2301e1130}\label{classirr_1_1core_1_1map_a36bb25e9cf8b1d13cd0b5cc2301e1130}} 
+\hyperlink{classirr_1_1core_1_1map_1_1ParentLastIterator}{Parent\+Last\+Iterator} \hyperlink{classirr_1_1core_1_1map_a36bb25e9cf8b1d13cd0b5cc2301e1130}{get\+Parent\+Last\+Iterator} () const
+\begin{DoxyCompactList}\small\item\em Returns a \hyperlink{classirr_1_1core_1_1map_1_1ParentLastIterator}{Parent\+Last\+Iterator} to traverse the tree from bottom to top. Typical usage is when deleting all elements in the tree because you must delete the children before you delete their parent. \end{DoxyCompactList}\item 
+Access\+Class \hyperlink{classirr_1_1core_1_1map_a396b601a40d70eb34aa6571e29f55992}{operator\mbox{[}$\,$\mbox{]}} (const Key\+Type \&k)
+\begin{DoxyCompactList}\small\item\em operator \mbox{[}\mbox{]} for access to elements \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Key\+Type, class Value\+Type$>$\newline
+class irr\+::core\+::map$<$ Key\+Type, Value\+Type $>$}
+
+map template for associative arrays using a red-\/black tree 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classirr_1_1core_1_1map_a6f95533c709ef2dbe17148442aa26984}\label{classirr_1_1core_1_1map_a6f95533c709ef2dbe17148442aa26984}} 
+\index{irr\+::core\+::map@{irr\+::core\+::map}!delink@{delink}}
+\index{delink@{delink}!irr\+::core\+::map@{irr\+::core\+::map}}
+\subsubsection{\texorpdfstring{delink()}{delink()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Value\+Type$>$ \\
+Node$\ast$ \hyperlink{classirr_1_1core_1_1map}{irr\+::core\+::map}$<$ Key\+Type, Value\+Type $>$\+::delink (\begin{DoxyParamCaption}\item[{const Key\+Type \&}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes a node from the tree and returns it. 
+
+The returned node must be deleted by the user 
+\begin{DoxyParams}{Parameters}
+{\em k} & the key to remove \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the node, or 0 if not found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1map_a253070a62165cc9881cc75bc774f7034}\label{classirr_1_1core_1_1map_a253070a62165cc9881cc75bc774f7034}} 
+\index{irr\+::core\+::map@{irr\+::core\+::map}!empty@{empty}}
+\index{empty@{empty}!irr\+::core\+::map@{irr\+::core\+::map}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Value\+Type$>$ \\
+bool \hyperlink{classirr_1_1core_1_1map}{irr\+::core\+::map}$<$ Key\+Type, Value\+Type $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Is the tree empty? 
+
+\begin{DoxyReturn}{Returns}
+Returns true if empty, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1map_ad6a62579dceda1da7605ee78bca3e318}\label{classirr_1_1core_1_1map_ad6a62579dceda1da7605ee78bca3e318}} 
+\index{irr\+::core\+::map@{irr\+::core\+::map}!find@{find}}
+\index{find@{find}!irr\+::core\+::map@{irr\+::core\+::map}}
+\subsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Value\+Type$>$ \\
+Node$\ast$ \hyperlink{classirr_1_1core_1_1map}{irr\+::core\+::map}$<$ Key\+Type, Value\+Type $>$\+::find (\begin{DoxyParamCaption}\item[{const Key\+Type \&}]{key\+To\+Find }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Search for a node with the specified key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+To\+Find} & The key to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 if node couldn\textquotesingle{}t be found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1map_a6666acf9724e2e20cd338a6a5ff66c65}\label{classirr_1_1core_1_1map_a6666acf9724e2e20cd338a6a5ff66c65}} 
+\index{irr\+::core\+::map@{irr\+::core\+::map}!get\+Root@{get\+Root}}
+\index{get\+Root@{get\+Root}!irr\+::core\+::map@{irr\+::core\+::map}}
+\subsubsection{\texorpdfstring{get\+Root()}{getRoot()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Value\+Type$>$ \\
+Node$\ast$ \hyperlink{classirr_1_1core_1_1map}{irr\+::core\+::map}$<$ Key\+Type, Value\+Type $>$\+::get\+Root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the root element. 
+
+\begin{DoxyReturn}{Returns}
+Returns a pointer to the root node, or 0 if the tree is empty. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1map_af9f8f34cab620e3bdc1ae72715ab9d15}\label{classirr_1_1core_1_1map_af9f8f34cab620e3bdc1ae72715ab9d15}} 
+\index{irr\+::core\+::map@{irr\+::core\+::map}!insert@{insert}}
+\index{insert@{insert}!irr\+::core\+::map@{irr\+::core\+::map}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Value\+Type$>$ \\
+bool \hyperlink{classirr_1_1core_1_1map}{irr\+::core\+::map}$<$ Key\+Type, Value\+Type $>$\+::insert (\begin{DoxyParamCaption}\item[{const Key\+Type \&}]{key\+New,  }\item[{const Value\+Type \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserts a new node into the tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+New} & the index for this value \\
+\hline
+{\em v} & the value to insert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, false if it fails (already exists) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1map_a2a5b309f8737e2aca9668e32c71f05ed}\label{classirr_1_1core_1_1map_a2a5b309f8737e2aca9668e32c71f05ed}} 
+\index{irr\+::core\+::map@{irr\+::core\+::map}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!irr\+::core\+::map@{irr\+::core\+::map}}
+\subsubsection{\texorpdfstring{is\+Empty()}{isEmpty()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Value\+Type$>$ \\
+\+\_\+\+I\+R\+R\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+ bool \hyperlink{classirr_1_1core_1_1map}{irr\+::core\+::map}$<$ Key\+Type, Value\+Type $>$\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000017}{Deprecated}]Use \hyperlink{classirr_1_1core_1_1map_a253070a62165cc9881cc75bc774f7034}{empty()} instead. This method may be removed by Irrlicht 1.\+9 \end{DoxyRefDesc}
+\mbox{\Hypertarget{classirr_1_1core_1_1map_a396b601a40d70eb34aa6571e29f55992}\label{classirr_1_1core_1_1map_a396b601a40d70eb34aa6571e29f55992}} 
+\index{irr\+::core\+::map@{irr\+::core\+::map}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!irr\+::core\+::map@{irr\+::core\+::map}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Value\+Type$>$ \\
+Access\+Class \hyperlink{classirr_1_1core_1_1map}{irr\+::core\+::map}$<$ Key\+Type, Value\+Type $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const Key\+Type \&}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+operator \mbox{[}\mbox{]} for access to elements 
+
+for example my\+Map\mbox{[}\char`\"{}key\char`\"{}\mbox{]} \mbox{\Hypertarget{classirr_1_1core_1_1map_a83d8a6261249668ae6a0f2bbd6e84c26}\label{classirr_1_1core_1_1map_a83d8a6261249668ae6a0f2bbd6e84c26}} 
+\index{irr\+::core\+::map@{irr\+::core\+::map}!remove@{remove}}
+\index{remove@{remove}!irr\+::core\+::map@{irr\+::core\+::map}}
+\subsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Value\+Type$>$ \\
+bool \hyperlink{classirr_1_1core_1_1map}{irr\+::core\+::map}$<$ Key\+Type, Value\+Type $>$\+::remove (\begin{DoxyParamCaption}\item[{const Key\+Type \&}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes a node from the tree and deletes it. 
+
+\begin{DoxyReturn}{Returns}
+True if the node was found and deleted 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1map_a8f8ee85b87b3764be03d78ba696e75f2}\label{classirr_1_1core_1_1map_a8f8ee85b87b3764be03d78ba696e75f2}} 
+\index{irr\+::core\+::map@{irr\+::core\+::map}!remove@{remove}}
+\index{remove@{remove}!irr\+::core\+::map@{irr\+::core\+::map}}
+\subsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Value\+Type$>$ \\
+bool \hyperlink{classirr_1_1core_1_1map}{irr\+::core\+::map}$<$ Key\+Type, Value\+Type $>$\+::remove (\begin{DoxyParamCaption}\item[{Node $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes a node from the tree and deletes it. 
+
+\begin{DoxyReturn}{Returns}
+True if the node was found and deleted 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1map_ae31213e9478dd259bdd79c7fd3249584}\label{classirr_1_1core_1_1map_ae31213e9478dd259bdd79c7fd3249584}} 
+\index{irr\+::core\+::map@{irr\+::core\+::map}!set@{set}}
+\index{set@{set}!irr\+::core\+::map@{irr\+::core\+::map}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Value\+Type$>$ \\
+void \hyperlink{classirr_1_1core_1_1map}{irr\+::core\+::map}$<$ Key\+Type, Value\+Type $>$\+::set (\begin{DoxyParamCaption}\item[{const Key\+Type \&}]{k,  }\item[{const Value\+Type \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Replaces the value if the key already exists, otherwise inserts a new element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & The index for this value \\
+\hline
+{\em v} & The new value of \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1map_a411cde5df191c16616e20eb7027b9a20}\label{classirr_1_1core_1_1map_a411cde5df191c16616e20eb7027b9a20}} 
+\index{irr\+::core\+::map@{irr\+::core\+::map}!swap@{swap}}
+\index{swap@{swap}!irr\+::core\+::map@{irr\+::core\+::map}}
+\subsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Value\+Type$>$ \\
+void \hyperlink{classirr_1_1core_1_1map}{irr\+::core\+::map}$<$ Key\+Type, Value\+Type $>$\+::swap (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1core_1_1map}{map}$<$ Key\+Type, Value\+Type $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Swap the content of this map container with the content of another map. 
+
+Afterwards this object will contain the content of the other object and the other object will contain the content of this object. Iterators will afterwards be valid for the swapped object. 
+\begin{DoxyParams}{Parameters}
+{\em other} & Swap content with this object \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/irr\+Map.\+h\end{DoxyCompactItemize}

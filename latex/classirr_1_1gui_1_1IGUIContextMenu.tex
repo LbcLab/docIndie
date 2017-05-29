@@ -1,0 +1,346 @@
+\hypertarget{classirr_1_1gui_1_1IGUIContextMenu}{}\section{irr\+:\+:gui\+:\+:I\+G\+U\+I\+Context\+Menu Class Reference}
+\label{classirr_1_1gui_1_1IGUIContextMenu}\index{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}}
+
+
+G\+UI Context menu interface.  
+
+
+
+
+{\ttfamily \#include $<$I\+G\+U\+I\+Context\+Menu.\+h$>$}
+
+Inheritance diagram for irr\+:\+:gui\+:\+:I\+G\+U\+I\+Context\+Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classirr_1_1gui_1_1IGUIContextMenu}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_ab7201b420431830aaaf8f9a0a831c859}\label{classirr_1_1gui_1_1IGUIContextMenu_ab7201b420431830aaaf8f9a0a831c859}} 
+\hyperlink{classirr_1_1gui_1_1IGUIContextMenu_ab7201b420431830aaaf8f9a0a831c859}{I\+G\+U\+I\+Context\+Menu} (\hyperlink{classirr_1_1gui_1_1IGUIEnvironment}{I\+G\+U\+I\+Environment} $\ast$environment, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ rectangle)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_ae58a13dc73dffc7d30a907b76111a36d}\label{classirr_1_1gui_1_1IGUIContextMenu_ae58a13dc73dffc7d30a907b76111a36d}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_ae58a13dc73dffc7d30a907b76111a36d}{set\+Close\+Handling} (\hyperlink{namespaceirr_1_1gui_a0868ffd1ff3d3fc1e2db2fcd118e320d}{E\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+C\+L\+O\+SE} on\+Close)=0
+\begin{DoxyCompactList}\small\item\em set behavior when menus are closed \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_ac9f46b106a1732ab474f3b38bf564edb}\label{classirr_1_1gui_1_1IGUIContextMenu_ac9f46b106a1732ab474f3b38bf564edb}} 
+virtual \hyperlink{namespaceirr_1_1gui_a0868ffd1ff3d3fc1e2db2fcd118e320d}{E\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+E\+N\+U\+\_\+\+C\+L\+O\+SE} \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_ac9f46b106a1732ab474f3b38bf564edb}{get\+Close\+Handling} () const =0
+\begin{DoxyCompactList}\small\item\em get current behavior when the menu will be closed \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_a3e65b423c67002b64d6271072b19a829}\label{classirr_1_1gui_1_1IGUIContextMenu_a3e65b423c67002b64d6271072b19a829}} 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_a3e65b423c67002b64d6271072b19a829}{get\+Item\+Count} () const =0
+\begin{DoxyCompactList}\small\item\em Get amount of menu items. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_afa25240cb37816c3f8941ccc0f2c14ea}{add\+Item} (const wchar\+\_\+t $\ast$text, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} command\+Id=-\/1, bool enabled=true, bool has\+Sub\+Menu=false, bool checked=false, bool auto\+Checking=false)=0
+\begin{DoxyCompactList}\small\item\em Adds a menu item. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_ad4695f88c63ffc09690c5ff682c3aabc}{insert\+Item} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx, const wchar\+\_\+t $\ast$text, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} command\+Id=-\/1, bool enabled=true, bool has\+Sub\+Menu=false, bool checked=false, bool auto\+Checking=false)=0
+\begin{DoxyCompactList}\small\item\em Insert a menu item at specified position. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_ae7b399d9940ebe566b928517aa150383}{find\+Item\+With\+Command\+Id} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} command\+Id, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx\+Start\+Search=0) const =0
+\begin{DoxyCompactList}\small\item\em Find an item by it\textquotesingle{}s Command\+ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_a36e2edf23c88eed23d32af1d534d5bfc}\label{classirr_1_1gui_1_1IGUIContextMenu_a36e2edf23c88eed23d32af1d534d5bfc}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_a36e2edf23c88eed23d32af1d534d5bfc}{add\+Separator} ()=0
+\begin{DoxyCompactList}\small\item\em Adds a separator item to the menu. \end{DoxyCompactList}\item 
+virtual const wchar\+\_\+t $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_a18cf836d001f425f617c5a36db3d1ae6}{get\+Item\+Text} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx) const =0
+\begin{DoxyCompactList}\small\item\em Get text of the menu item. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_a20d0e53213a2915a8a62c54b5aa2ff08}{set\+Item\+Text} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx, const wchar\+\_\+t $\ast$text)=0
+\begin{DoxyCompactList}\small\item\em Sets text of the menu item. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_a0064345c63e1f8e124e64ca96eb486e2}{is\+Item\+Enabled} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx) const =0
+\begin{DoxyCompactList}\small\item\em Check if a menu item is enabled. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_aa3c36d6cd990f3b488be2c7f419b89ee}{set\+Item\+Enabled} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx, bool enabled)=0
+\begin{DoxyCompactList}\small\item\em Sets if the menu item should be enabled. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_a8abbd1587dcc462f60660d7e606e954e}{set\+Item\+Checked} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx, bool enabled)=0
+\begin{DoxyCompactList}\small\item\em Sets if the menu item should be checked. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_a0ff910b79e5581a97aee8ec9a0679160}{is\+Item\+Checked} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx) const =0
+\begin{DoxyCompactList}\small\item\em Check if a menu item is checked. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_af8cc0fc0f430044a318d4597f8535e9b}{remove\+Item} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx)=0
+\begin{DoxyCompactList}\small\item\em Removes a menu item. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_ac06b8d80fb076c6bed3aef2a17fb01f9}\label{classirr_1_1gui_1_1IGUIContextMenu_ac06b8d80fb076c6bed3aef2a17fb01f9}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_ac06b8d80fb076c6bed3aef2a17fb01f9}{remove\+All\+Items} ()=0
+\begin{DoxyCompactList}\small\item\em Removes all menu items. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_ae6cd391cf56d4454a855e19feddf8fdc}{get\+Selected\+Item} () const =0
+\begin{DoxyCompactList}\small\item\em Get the selected item in the menu. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_a5edfede62ed558acd68b06eeea0682c3}{get\+Item\+Command\+Id} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx) const =0
+\begin{DoxyCompactList}\small\item\em Get the command id of a menu item. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_a1380ff56d8c4c5b8de8d221062464654}{set\+Item\+Command\+Id} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id)=0
+\begin{DoxyCompactList}\small\item\em Sets the command id of a menu item. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIContextMenu}{I\+G\+U\+I\+Context\+Menu} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_a296cfd0c4944b2c0bfb88973401fb824}{get\+Sub\+Menu} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx) const =0
+\begin{DoxyCompactList}\small\item\em Get a pointer to the submenu of an item. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_ab393d00ca81ee9482c5a81d19cc6e79e}\label{classirr_1_1gui_1_1IGUIContextMenu_ab393d00ca81ee9482c5a81d19cc6e79e}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_ab393d00ca81ee9482c5a81d19cc6e79e}{set\+Item\+Auto\+Checking} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx, bool auto\+Checking)=0
+\begin{DoxyCompactList}\small\item\em should the element change the checked status on clicking \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_ae1c7364f115e633bcfc040864e30f4c1}\label{classirr_1_1gui_1_1IGUIContextMenu_ae1c7364f115e633bcfc040864e30f4c1}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_ae1c7364f115e633bcfc040864e30f4c1}{get\+Item\+Auto\+Checking} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx) const =0
+\begin{DoxyCompactList}\small\item\em does the element change the checked status on clicking \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_a2d87831a224817fc9c9dd8f41c69ac0a}\label{classirr_1_1gui_1_1IGUIContextMenu_a2d87831a224817fc9c9dd8f41c69ac0a}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_a2d87831a224817fc9c9dd8f41c69ac0a}{set\+Event\+Parent} (\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent)=0
+\begin{DoxyCompactList}\small\item\em When an eventparent is set it receives events instead of the usual parent element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+G\+UI Context menu interface. 
+
+\begin{DoxyParagraph}{This element can create the following events of type E\+G\+U\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE\+:}
+\begin{DoxyItemize}
+\item E\+G\+E\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+C\+L\+O\+S\+ED \item E\+G\+E\+T\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+S\+E\+L\+E\+C\+T\+ED \end{DoxyItemize}
+
+\end{DoxyParagraph}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_afa25240cb37816c3f8941ccc0f2c14ea}\label{classirr_1_1gui_1_1IGUIContextMenu_afa25240cb37816c3f8941ccc0f2c14ea}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}!add\+Item@{add\+Item}}
+\index{add\+Item@{add\+Item}!irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}}
+\subsubsection{\texorpdfstring{add\+Item()}{addItem()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu\+::add\+Item (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{command\+Id = {\ttfamily -\/1},  }\item[{bool}]{enabled = {\ttfamily true},  }\item[{bool}]{has\+Sub\+Menu = {\ttfamily false},  }\item[{bool}]{checked = {\ttfamily false},  }\item[{bool}]{auto\+Checking = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a menu item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \hyperlink{classText}{Text} of menu item. Set this to 0 to create an separator instead of a real item, which is the same like calling \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_a36e2edf23c88eed23d32af1d534d5bfc}{add\+Separator()}; \\
+\hline
+{\em command\+Id} & Command id of menu item, a simple id you may set to whatever you want. \\
+\hline
+{\em enabled} & Specifies if the menu item should be enabled. \\
+\hline
+{\em has\+Sub\+Menu} & Set this to true if there should be a submenu at this item. You can access this submenu via \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_a296cfd0c4944b2c0bfb88973401fb824}{get\+Sub\+Menu()}. \\
+\hline
+{\em checked} & Specifies if the menu item should be initially checked. \\
+\hline
+{\em auto\+Checking} & Specifies if the item should be checked by clicking \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the index of the new item 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_ae7b399d9940ebe566b928517aa150383}\label{classirr_1_1gui_1_1IGUIContextMenu_ae7b399d9940ebe566b928517aa150383}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}!find\+Item\+With\+Command\+Id@{find\+Item\+With\+Command\+Id}}
+\index{find\+Item\+With\+Command\+Id@{find\+Item\+With\+Command\+Id}!irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}}
+\subsubsection{\texorpdfstring{find\+Item\+With\+Command\+Id()}{findItemWithCommandId()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu\+::find\+Item\+With\+Command\+Id (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{command\+Id,  }\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{idx\+Start\+Search = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Find an item by it\textquotesingle{}s Command\+ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+Id} & We are looking for the first item which has this command\+ID \\
+\hline
+{\em idx\+Start\+Search} & Start searching from this index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the index of the item when found or otherwise -\/1. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_a5edfede62ed558acd68b06eeea0682c3}\label{classirr_1_1gui_1_1IGUIContextMenu_a5edfede62ed558acd68b06eeea0682c3}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}!get\+Item\+Command\+Id@{get\+Item\+Command\+Id}}
+\index{get\+Item\+Command\+Id@{get\+Item\+Command\+Id}!irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}}
+\subsubsection{\texorpdfstring{get\+Item\+Command\+Id()}{getItemCommandId()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu\+::get\+Item\+Command\+Id (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the command id of a menu item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Zero based index of the menu item \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_a18cf836d001f425f617c5a36db3d1ae6}\label{classirr_1_1gui_1_1IGUIContextMenu_a18cf836d001f425f617c5a36db3d1ae6}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}!get\+Item\+Text@{get\+Item\+Text}}
+\index{get\+Item\+Text@{get\+Item\+Text}!irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}}
+\subsubsection{\texorpdfstring{get\+Item\+Text()}{getItemText()}}
+{\footnotesize\ttfamily virtual const wchar\+\_\+t$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu\+::get\+Item\+Text (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get text of the menu item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Zero based index of the menu item \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_ae6cd391cf56d4454a855e19feddf8fdc}\label{classirr_1_1gui_1_1IGUIContextMenu_ae6cd391cf56d4454a855e19feddf8fdc}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}!get\+Selected\+Item@{get\+Selected\+Item}}
+\index{get\+Selected\+Item@{get\+Selected\+Item}!irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}}
+\subsubsection{\texorpdfstring{get\+Selected\+Item()}{getSelectedItem()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu\+::get\+Selected\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the selected item in the menu. 
+
+\begin{DoxyReturn}{Returns}
+Index of the selected item, -\/1 if none selected. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_a296cfd0c4944b2c0bfb88973401fb824}\label{classirr_1_1gui_1_1IGUIContextMenu_a296cfd0c4944b2c0bfb88973401fb824}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}!get\+Sub\+Menu@{get\+Sub\+Menu}}
+\index{get\+Sub\+Menu@{get\+Sub\+Menu}!irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}}
+\subsubsection{\texorpdfstring{get\+Sub\+Menu()}{getSubMenu()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIContextMenu}{I\+G\+U\+I\+Context\+Menu}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu\+::get\+Sub\+Menu (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get a pointer to the submenu of an item. 
+
+0 is returned if there is no submenu 
+\begin{DoxyParams}{Parameters}
+{\em idx} & Zero based index of the menu item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to the submenu of an item. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_ad4695f88c63ffc09690c5ff682c3aabc}\label{classirr_1_1gui_1_1IGUIContextMenu_ad4695f88c63ffc09690c5ff682c3aabc}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}!insert\+Item@{insert\+Item}}
+\index{insert\+Item@{insert\+Item}!irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}}
+\subsubsection{\texorpdfstring{insert\+Item()}{insertItem()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu\+::insert\+Item (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{idx,  }\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{command\+Id = {\ttfamily -\/1},  }\item[{bool}]{enabled = {\ttfamily true},  }\item[{bool}]{has\+Sub\+Menu = {\ttfamily false},  }\item[{bool}]{checked = {\ttfamily false},  }\item[{bool}]{auto\+Checking = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Insert a menu item at specified position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Position to insert the new element, should be smaller than itemcount otherwise the item is added to the end. \\
+\hline
+{\em text} & \hyperlink{classText}{Text} of menu item. Set this to 0 to create an separator instead of a real item, which is the same like calling \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_a36e2edf23c88eed23d32af1d534d5bfc}{add\+Separator()}; \\
+\hline
+{\em command\+Id} & Command id of menu item, a simple id you may set to whatever you want. \\
+\hline
+{\em enabled} & Specifies if the menu item should be enabled. \\
+\hline
+{\em has\+Sub\+Menu} & Set this to true if there should be a submenu at this item. You can access this submenu via \hyperlink{classirr_1_1gui_1_1IGUIContextMenu_a296cfd0c4944b2c0bfb88973401fb824}{get\+Sub\+Menu()}. \\
+\hline
+{\em checked} & Specifies if the menu item should be initially checked. \\
+\hline
+{\em auto\+Checking} & Specifies if the item should be checked by clicking \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the index of the new item 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_a0ff910b79e5581a97aee8ec9a0679160}\label{classirr_1_1gui_1_1IGUIContextMenu_a0ff910b79e5581a97aee8ec9a0679160}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}!is\+Item\+Checked@{is\+Item\+Checked}}
+\index{is\+Item\+Checked@{is\+Item\+Checked}!irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}}
+\subsubsection{\texorpdfstring{is\+Item\+Checked()}{isItemChecked()}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu\+::is\+Item\+Checked (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if a menu item is checked. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Zero based index of the menu item \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_a0064345c63e1f8e124e64ca96eb486e2}\label{classirr_1_1gui_1_1IGUIContextMenu_a0064345c63e1f8e124e64ca96eb486e2}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}!is\+Item\+Enabled@{is\+Item\+Enabled}}
+\index{is\+Item\+Enabled@{is\+Item\+Enabled}!irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}}
+\subsubsection{\texorpdfstring{is\+Item\+Enabled()}{isItemEnabled()}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu\+::is\+Item\+Enabled (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if a menu item is enabled. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Zero based index of the menu item \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_af8cc0fc0f430044a318d4597f8535e9b}\label{classirr_1_1gui_1_1IGUIContextMenu_af8cc0fc0f430044a318d4597f8535e9b}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}!remove\+Item@{remove\+Item}}
+\index{remove\+Item@{remove\+Item}!irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}}
+\subsubsection{\texorpdfstring{remove\+Item()}{removeItem()}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu\+::remove\+Item (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Removes a menu item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Zero based index of the menu item \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_a8abbd1587dcc462f60660d7e606e954e}\label{classirr_1_1gui_1_1IGUIContextMenu_a8abbd1587dcc462f60660d7e606e954e}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}!set\+Item\+Checked@{set\+Item\+Checked}}
+\index{set\+Item\+Checked@{set\+Item\+Checked}!irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}}
+\subsubsection{\texorpdfstring{set\+Item\+Checked()}{setItemChecked()}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu\+::set\+Item\+Checked (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{idx,  }\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets if the menu item should be checked. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Zero based index of the menu item \\
+\hline
+{\em enabled} & True if it is enabled, otherwise false. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_a1380ff56d8c4c5b8de8d221062464654}\label{classirr_1_1gui_1_1IGUIContextMenu_a1380ff56d8c4c5b8de8d221062464654}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}!set\+Item\+Command\+Id@{set\+Item\+Command\+Id}}
+\index{set\+Item\+Command\+Id@{set\+Item\+Command\+Id}!irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}}
+\subsubsection{\texorpdfstring{set\+Item\+Command\+Id()}{setItemCommandId()}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu\+::set\+Item\+Command\+Id (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{idx,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the command id of a menu item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Zero based index of the menu item \\
+\hline
+{\em id} & Command id of menu item, a simple id you may set to whatever you want. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_aa3c36d6cd990f3b488be2c7f419b89ee}\label{classirr_1_1gui_1_1IGUIContextMenu_aa3c36d6cd990f3b488be2c7f419b89ee}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}!set\+Item\+Enabled@{set\+Item\+Enabled}}
+\index{set\+Item\+Enabled@{set\+Item\+Enabled}!irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}}
+\subsubsection{\texorpdfstring{set\+Item\+Enabled()}{setItemEnabled()}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu\+::set\+Item\+Enabled (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{idx,  }\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets if the menu item should be enabled. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Zero based index of the menu item \\
+\hline
+{\em enabled} & True if it is enabled, otherwise false. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIContextMenu_a20d0e53213a2915a8a62c54b5aa2ff08}\label{classirr_1_1gui_1_1IGUIContextMenu_a20d0e53213a2915a8a62c54b5aa2ff08}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}!set\+Item\+Text@{set\+Item\+Text}}
+\index{set\+Item\+Text@{set\+Item\+Text}!irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu@{irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu}}
+\subsubsection{\texorpdfstring{set\+Item\+Text()}{setItemText()}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Context\+Menu\+::set\+Item\+Text (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{idx,  }\item[{const wchar\+\_\+t $\ast$}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets text of the menu item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Zero based index of the menu item \\
+\hline
+{\em text} & New text of the item. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/I\+G\+U\+I\+Context\+Menu.\+h\end{DoxyCompactItemize}

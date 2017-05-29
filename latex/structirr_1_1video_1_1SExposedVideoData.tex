@@ -1,0 +1,58 @@
+\hypertarget{structirr_1_1video_1_1SExposedVideoData}{}\section{irr\+:\+:video\+:\+:S\+Exposed\+Video\+Data Struct Reference}
+\label{structirr_1_1video_1_1SExposedVideoData}\index{irr\+::video\+::\+S\+Exposed\+Video\+Data@{irr\+::video\+::\+S\+Exposed\+Video\+Data}}
+
+
+structure for holding data describing a driver and operating system specific data.  
+
+
+
+
+{\ttfamily \#include $<$S\+Exposed\+Video\+Data.\+h$>$}
+
+
+
+\subsection{Detailed Description}
+structure for holding data describing a driver and operating system specific data. 
+
+This data can be retrived by \hyperlink{classirr_1_1video_1_1IVideoDriver_a4f3535b2125e654e2e9645745e50cc49}{I\+Video\+Driver\+::get\+Exposed\+Video\+Data()}. Use this with caution. This only should be used to make it possible to extend the engine easily without modification of its source. Note that this structure does not contain any valid data, if you are using the software or the null device. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structirr_1_1video_1_1SExposedVideoData_ad7c4d919a8c0e17ee46577fcc69fe8e6}\label{structirr_1_1video_1_1SExposedVideoData_ad7c4d919a8c0e17ee46577fcc69fe8e6}} 
+\index{irr\+::video\+::\+S\+Exposed\+Video\+Data@{irr\+::video\+::\+S\+Exposed\+Video\+Data}!H\+Dc@{H\+Dc}}
+\index{H\+Dc@{H\+Dc}!irr\+::video\+::\+S\+Exposed\+Video\+Data@{irr\+::video\+::\+S\+Exposed\+Video\+Data}}
+\subsubsection{\texorpdfstring{H\+Dc}{HDc}}
+{\footnotesize\ttfamily void$\ast$ irr\+::video\+::\+S\+Exposed\+Video\+Data\+::\+H\+Dc}
+
+
+
+Private G\+DI Device Context. 
+
+Get if for example with\+: H\+DC h = reinterpret\+\_\+cast$<$\+H\+D\+C$>$(exposed\+Data.\+Open\+G\+L\+Win32.\+H\+Dc) \mbox{\Hypertarget{structirr_1_1video_1_1SExposedVideoData_a02e3cb39affd68c68e0d2e416f078e13}\label{structirr_1_1video_1_1SExposedVideoData_a02e3cb39affd68c68e0d2e416f078e13}} 
+\index{irr\+::video\+::\+S\+Exposed\+Video\+Data@{irr\+::video\+::\+S\+Exposed\+Video\+Data}!H\+Rc@{H\+Rc}}
+\index{H\+Rc@{H\+Rc}!irr\+::video\+::\+S\+Exposed\+Video\+Data@{irr\+::video\+::\+S\+Exposed\+Video\+Data}}
+\subsubsection{\texorpdfstring{H\+Rc}{HRc}}
+{\footnotesize\ttfamily void$\ast$ irr\+::video\+::\+S\+Exposed\+Video\+Data\+::\+H\+Rc}
+
+
+
+Permanent Rendering Context. 
+
+Get if for example with\+: H\+G\+L\+RC h = reinterpret\+\_\+cast$<$\+H\+G\+L\+R\+C$>$(exposed\+Data.\+Open\+G\+L\+Win32.\+H\+Rc) \mbox{\Hypertarget{structirr_1_1video_1_1SExposedVideoData_a1811289f08d71ca61b6b88b765753b88}\label{structirr_1_1video_1_1SExposedVideoData_a1811289f08d71ca61b6b88b765753b88}} 
+\index{irr\+::video\+::\+S\+Exposed\+Video\+Data@{irr\+::video\+::\+S\+Exposed\+Video\+Data}!H\+Wnd@{H\+Wnd}}
+\index{H\+Wnd@{H\+Wnd}!irr\+::video\+::\+S\+Exposed\+Video\+Data@{irr\+::video\+::\+S\+Exposed\+Video\+Data}}
+\subsubsection{\texorpdfstring{H\+Wnd}{HWnd}}
+{\footnotesize\ttfamily void$\ast$ irr\+::video\+::\+S\+Exposed\+Video\+Data\+::\+H\+Wnd}
+
+
+
+\hyperlink{classWindow}{Window} handle. 
+
+Get with for example H\+W\+ND h = reinterpret\+\_\+cast$<$\+H\+W\+N\+D$>$(exposed\+Data.\+D3\+D9.\+H\+Wnd)
+
+Get with for example with\+: H\+W\+ND h = reinterpret\+\_\+cast$<$\+H\+W\+N\+D$>$(exposed\+Data.\+D3\+D8.\+H\+Wnd)
+
+Get with for example with\+: H\+W\+ND h = reinterpret\+\_\+cast$<$\+H\+W\+N\+D$>$(exposed\+Data.\+Open\+G\+L\+Win32.\+H\+Wnd) 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/S\+Exposed\+Video\+Data.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\hypertarget{classirr_1_1scene_1_1IQ3LevelMesh}{}\section{irr\+:\+:scene\+:\+:I\+Q3\+Level\+Mesh Class Reference}
+\label{classirr_1_1scene_1_1IQ3LevelMesh}\index{irr\+::scene\+::\+I\+Q3\+Level\+Mesh@{irr\+::scene\+::\+I\+Q3\+Level\+Mesh}}
+
+
+Interface for a Mesh which can be loaded directly from a Quake3 .bsp-\/file.  
+
+
+
+
+{\ttfamily \#include $<$I\+Q3\+Level\+Mesh.\+h$>$}
+
+Inheritance diagram for irr\+:\+:scene\+:\+:I\+Q3\+Level\+Mesh\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classirr_1_1scene_1_1IQ3LevelMesh}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const \hyperlink{structirr_1_1scene_1_1quake3_1_1IShader}{quake3\+::\+I\+Shader} $\ast$ \hyperlink{classirr_1_1scene_1_1IQ3LevelMesh_aa2f9609e950e32876665d7531a54a484}{get\+Shader} (const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$filename, bool file\+Name\+Is\+Valid=true)=0
+\begin{DoxyCompactList}\small\item\em loads the shader definition from file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IQ3LevelMesh_a71c4481a2c9b0a99210ed7d4b8a8fc20}\label{classirr_1_1scene_1_1IQ3LevelMesh_a71c4481a2c9b0a99210ed7d4b8a8fc20}} 
+virtual const \hyperlink{structirr_1_1scene_1_1quake3_1_1IShader}{quake3\+::\+I\+Shader} $\ast$ \hyperlink{classirr_1_1scene_1_1IQ3LevelMesh_a71c4481a2c9b0a99210ed7d4b8a8fc20}{get\+Shader} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index) const =0
+\begin{DoxyCompactList}\small\item\em returns a already loaded Shader \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IQ3LevelMesh_a6e95f072e7bfe1d96a587ed3c27eedfc}\label{classirr_1_1scene_1_1IQ3LevelMesh_a6e95f072e7bfe1d96a587ed3c27eedfc}} 
+virtual \hyperlink{classirr_1_1core_1_1array}{quake3\+::t\+Q3\+Entity\+List} \& \hyperlink{classirr_1_1scene_1_1IQ3LevelMesh_a6e95f072e7bfe1d96a587ed3c27eedfc}{get\+Entity\+List} ()=0
+\begin{DoxyCompactList}\small\item\em get\textquotesingle{}s an interface to the entities \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} $\ast$ \hyperlink{classirr_1_1scene_1_1IQ3LevelMesh_ad0ed15c97e55ffb02d1d48fb62a769d5}{get\+Brush\+Entity\+Mesh} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} num) const =0
+\begin{DoxyCompactList}\small\item\em returns the requested brush entity \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IQ3LevelMesh_a31276c90be36a1c7c5b8e87433dd5f63}\label{classirr_1_1scene_1_1IQ3LevelMesh_a31276c90be36a1c7c5b8e87433dd5f63}} 
+virtual \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} $\ast$ \hyperlink{classirr_1_1scene_1_1IQ3LevelMesh_a31276c90be36a1c7c5b8e87433dd5f63}{get\+Brush\+Entity\+Mesh} (\hyperlink{structirr_1_1scene_1_1quake3_1_1IShader}{quake3\+::\+I\+Entity} \&ent) const =0
+\begin{DoxyCompactList}\small\item\em returns the requested brush entity \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Interface for a Mesh which can be loaded directly from a Quake3 .bsp-\/file. 
+
+The Mesh tries to load all textures of the map. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classirr_1_1scene_1_1IQ3LevelMesh_ad0ed15c97e55ffb02d1d48fb62a769d5}\label{classirr_1_1scene_1_1IQ3LevelMesh_ad0ed15c97e55ffb02d1d48fb62a769d5}} 
+\index{irr\+::scene\+::\+I\+Q3\+Level\+Mesh@{irr\+::scene\+::\+I\+Q3\+Level\+Mesh}!get\+Brush\+Entity\+Mesh@{get\+Brush\+Entity\+Mesh}}
+\index{get\+Brush\+Entity\+Mesh@{get\+Brush\+Entity\+Mesh}!irr\+::scene\+::\+I\+Q3\+Level\+Mesh@{irr\+::scene\+::\+I\+Q3\+Level\+Mesh}}
+\subsubsection{\texorpdfstring{get\+Brush\+Entity\+Mesh()}{getBrushEntityMesh()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh}$\ast$ irr\+::scene\+::\+I\+Q3\+Level\+Mesh\+::get\+Brush\+Entity\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{num }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+returns the requested brush entity 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & The number from the model key of the entity.\\
+\hline
+\end{DoxyParams}
+Use this interface if you parse the entities yourself. \mbox{\Hypertarget{classirr_1_1scene_1_1IQ3LevelMesh_aa2f9609e950e32876665d7531a54a484}\label{classirr_1_1scene_1_1IQ3LevelMesh_aa2f9609e950e32876665d7531a54a484}} 
+\index{irr\+::scene\+::\+I\+Q3\+Level\+Mesh@{irr\+::scene\+::\+I\+Q3\+Level\+Mesh}!get\+Shader@{get\+Shader}}
+\index{get\+Shader@{get\+Shader}!irr\+::scene\+::\+I\+Q3\+Level\+Mesh@{irr\+::scene\+::\+I\+Q3\+Level\+Mesh}}
+\subsubsection{\texorpdfstring{get\+Shader()}{getShader()}}
+{\footnotesize\ttfamily virtual const \hyperlink{structirr_1_1scene_1_1quake3_1_1IShader}{quake3\+::\+I\+Shader}$\ast$ irr\+::scene\+::\+I\+Q3\+Level\+Mesh\+::get\+Shader (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$}]{filename,  }\item[{bool}]{file\+Name\+Is\+Valid = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+loads the shader definition from file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the shaderfile, defaults to /scripts if file\+Name\+Is\+Valid is false. \\
+\hline
+{\em file\+Name\+Is\+Valid} & Specifies whether the filename is valid in the current situation. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/I\+Q3\+Level\+Mesh.\+h\end{DoxyCompactItemize}

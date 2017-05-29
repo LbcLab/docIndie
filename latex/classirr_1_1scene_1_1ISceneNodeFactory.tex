@@ -1,0 +1,135 @@
+\hypertarget{classirr_1_1scene_1_1ISceneNodeFactory}{}\section{irr\+:\+:scene\+:\+:I\+Scene\+Node\+Factory Class Reference}
+\label{classirr_1_1scene_1_1ISceneNodeFactory}\index{irr\+::scene\+::\+I\+Scene\+Node\+Factory@{irr\+::scene\+::\+I\+Scene\+Node\+Factory}}
+
+
+Interface for dynamic creation of scene nodes.  
+
+
+
+
+{\ttfamily \#include $<$I\+Scene\+Node\+Factory.\+h$>$}
+
+Inheritance diagram for irr\+:\+:scene\+:\+:I\+Scene\+Node\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classirr_1_1scene_1_1ISceneNodeFactory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$ \hyperlink{classirr_1_1scene_1_1ISceneNodeFactory_a540de57f9f72a70ee622c536859f5997}{add\+Scene\+Node} (\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bd}{E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE} type, \hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$parent=0)=0
+\begin{DoxyCompactList}\small\item\em adds a scene node to the scene graph based on its type id \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$ \hyperlink{classirr_1_1scene_1_1ISceneNodeFactory_a7964a7a29260d7f0d4d052b85df78ffb}{add\+Scene\+Node} (const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$type\+Name, \hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$parent=0)=0
+\begin{DoxyCompactList}\small\item\em adds a scene node to the scene graph based on its type name \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeFactory_a3c1be487fb0169ee9fbb7169c451d16e}\label{classirr_1_1scene_1_1ISceneNodeFactory_a3c1be487fb0169ee9fbb7169c451d16e}} 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1scene_1_1ISceneNodeFactory_a3c1be487fb0169ee9fbb7169c451d16e}{get\+Creatable\+Scene\+Node\+Type\+Count} () const =0
+\begin{DoxyCompactList}\small\item\em returns amount of scene node types this factory is able to create \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bd}{E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE} \hyperlink{classirr_1_1scene_1_1ISceneNodeFactory_aaff4e3d3dc214ec83965ecbd8e8175a3}{get\+Createable\+Scene\+Node\+Type} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx) const =0
+\begin{DoxyCompactList}\small\item\em returns type of a createable scene node type \end{DoxyCompactList}\item 
+virtual const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$ \hyperlink{classirr_1_1scene_1_1ISceneNodeFactory_a259f156cc367a9a89f79159ad2b665ac}{get\+Createable\+Scene\+Node\+Type\+Name} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx) const =0
+\begin{DoxyCompactList}\small\item\em returns type name of a createable scene node type by index \end{DoxyCompactList}\item 
+virtual const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$ \hyperlink{classirr_1_1scene_1_1ISceneNodeFactory_addc09a5ab7a8d8b65182fbaa09c88b6f}{get\+Createable\+Scene\+Node\+Type\+Name} (\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bd}{E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE} type) const =0
+\begin{DoxyCompactList}\small\item\em returns type name of a createable scene node type \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Interface for dynamic creation of scene nodes. 
+
+To be able to add custom scene nodes to Irrlicht and to make it possible for the scene manager to save and load those external scene nodes, simply implement this interface and register it in you scene manager via \hyperlink{classirr_1_1scene_1_1ISceneManager_a75ac9315def74ae5e26a2d6a2f5a38e9}{I\+Scene\+Manager\+::register\+Scene\+Node\+Factory}. Note\+: When implementing your own scene node factory, don\textquotesingle{}t call I\+Scene\+Node\+Manager\+::grab() to increase the reference counter of the scene node manager. This is not necessary because the scene node manager will \hyperlink{classirr_1_1IReferenceCounted_a396f9cdbe311ada278626477b3c6f0f5}{grab()} the factory anyway, and otherwise cyclic references will be created and the scene manager and all its nodes won\textquotesingle{}t get deallocated. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeFactory_a540de57f9f72a70ee622c536859f5997}\label{classirr_1_1scene_1_1ISceneNodeFactory_a540de57f9f72a70ee622c536859f5997}} 
+\index{irr\+::scene\+::\+I\+Scene\+Node\+Factory@{irr\+::scene\+::\+I\+Scene\+Node\+Factory}!add\+Scene\+Node@{add\+Scene\+Node}}
+\index{add\+Scene\+Node@{add\+Scene\+Node}!irr\+::scene\+::\+I\+Scene\+Node\+Factory@{irr\+::scene\+::\+I\+Scene\+Node\+Factory}}
+\subsubsection{\texorpdfstring{add\+Scene\+Node()}{addSceneNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node}$\ast$ irr\+::scene\+::\+I\+Scene\+Node\+Factory\+::add\+Scene\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bd}{E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE}}]{type,  }\item[{\hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+adds a scene node to the scene graph based on its type id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Type of the scene node to add. \\
+\hline
+{\em parent} & Parent scene node of the new node, can be null to add the scene node to the root. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns pointer to the new scene node or null if not successful. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeFactory_a7964a7a29260d7f0d4d052b85df78ffb}\label{classirr_1_1scene_1_1ISceneNodeFactory_a7964a7a29260d7f0d4d052b85df78ffb}} 
+\index{irr\+::scene\+::\+I\+Scene\+Node\+Factory@{irr\+::scene\+::\+I\+Scene\+Node\+Factory}!add\+Scene\+Node@{add\+Scene\+Node}}
+\index{add\+Scene\+Node@{add\+Scene\+Node}!irr\+::scene\+::\+I\+Scene\+Node\+Factory@{irr\+::scene\+::\+I\+Scene\+Node\+Factory}}
+\subsubsection{\texorpdfstring{add\+Scene\+Node()}{addSceneNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node}$\ast$ irr\+::scene\+::\+I\+Scene\+Node\+Factory\+::add\+Scene\+Node (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$}]{type\+Name,  }\item[{\hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+adds a scene node to the scene graph based on its type name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type\+Name} & Type name of the scene node to add. \\
+\hline
+{\em parent} & Parent scene node of the new node, can be null to add the scene node to the root. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns pointer to the new scene node or null if not successful. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeFactory_aaff4e3d3dc214ec83965ecbd8e8175a3}\label{classirr_1_1scene_1_1ISceneNodeFactory_aaff4e3d3dc214ec83965ecbd8e8175a3}} 
+\index{irr\+::scene\+::\+I\+Scene\+Node\+Factory@{irr\+::scene\+::\+I\+Scene\+Node\+Factory}!get\+Createable\+Scene\+Node\+Type@{get\+Createable\+Scene\+Node\+Type}}
+\index{get\+Createable\+Scene\+Node\+Type@{get\+Createable\+Scene\+Node\+Type}!irr\+::scene\+::\+I\+Scene\+Node\+Factory@{irr\+::scene\+::\+I\+Scene\+Node\+Factory}}
+\subsubsection{\texorpdfstring{get\+Createable\+Scene\+Node\+Type()}{getCreateableSceneNodeType()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bd}{E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE} irr\+::scene\+::\+I\+Scene\+Node\+Factory\+::get\+Createable\+Scene\+Node\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+returns type of a createable scene node type 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Index of scene node type in this factory. Must be a value between 0 and \hyperlink{classirr_1_1scene_1_1ISceneNodeFactory_a3c1be487fb0169ee9fbb7169c451d16e}{get\+Creatable\+Scene\+Node\+Type\+Count()} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeFactory_a259f156cc367a9a89f79159ad2b665ac}\label{classirr_1_1scene_1_1ISceneNodeFactory_a259f156cc367a9a89f79159ad2b665ac}} 
+\index{irr\+::scene\+::\+I\+Scene\+Node\+Factory@{irr\+::scene\+::\+I\+Scene\+Node\+Factory}!get\+Createable\+Scene\+Node\+Type\+Name@{get\+Createable\+Scene\+Node\+Type\+Name}}
+\index{get\+Createable\+Scene\+Node\+Type\+Name@{get\+Createable\+Scene\+Node\+Type\+Name}!irr\+::scene\+::\+I\+Scene\+Node\+Factory@{irr\+::scene\+::\+I\+Scene\+Node\+Factory}}
+\subsubsection{\texorpdfstring{get\+Createable\+Scene\+Node\+Type\+Name()}{getCreateableSceneNodeTypeName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ irr\+::scene\+::\+I\+Scene\+Node\+Factory\+::get\+Createable\+Scene\+Node\+Type\+Name (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+returns type name of a createable scene node type by index 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Index of scene node type in this factory. Must be a value between 0 and \hyperlink{classirr_1_1scene_1_1ISceneNodeFactory_a3c1be487fb0169ee9fbb7169c451d16e}{get\+Creatable\+Scene\+Node\+Type\+Count()} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeFactory_addc09a5ab7a8d8b65182fbaa09c88b6f}\label{classirr_1_1scene_1_1ISceneNodeFactory_addc09a5ab7a8d8b65182fbaa09c88b6f}} 
+\index{irr\+::scene\+::\+I\+Scene\+Node\+Factory@{irr\+::scene\+::\+I\+Scene\+Node\+Factory}!get\+Createable\+Scene\+Node\+Type\+Name@{get\+Createable\+Scene\+Node\+Type\+Name}}
+\index{get\+Createable\+Scene\+Node\+Type\+Name@{get\+Createable\+Scene\+Node\+Type\+Name}!irr\+::scene\+::\+I\+Scene\+Node\+Factory@{irr\+::scene\+::\+I\+Scene\+Node\+Factory}}
+\subsubsection{\texorpdfstring{get\+Createable\+Scene\+Node\+Type\+Name()}{getCreateableSceneNodeTypeName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ irr\+::scene\+::\+I\+Scene\+Node\+Factory\+::get\+Createable\+Scene\+Node\+Type\+Name (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bd}{E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE}}]{type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+returns type name of a createable scene node type 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Type of scene node. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: Returns name of scene node type if this factory can create the type, otherwise 0. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/I\+Scene\+Node\+Factory.\+h\end{DoxyCompactItemize}

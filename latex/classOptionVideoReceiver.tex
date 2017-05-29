@@ -9,10 +9,12 @@ Manager of event of video setting scene.
 
 {\ttfamily \#include $<$Option\+Video\+Receiver.\+hh$>$}
 
-
-
-Inherits I\+Event\+Receiver.
-
+Inheritance diagram for Option\+Video\+Receiver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classOptionVideoReceiver}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -20,7 +22,7 @@ Inherits I\+Event\+Receiver.
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 \hyperlink{classOptionVideoReceiver_ab014b77305c68f220fa5a0c8e9e57cb9}{$\sim$\+Option\+Video\+Receiver} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
-bool \hyperlink{classOptionVideoReceiver_a203025900c489eb2df12a6b3471c3caa}{On\+Event} (const irr\+::\+S\+Event \&event)
+bool \hyperlink{classOptionVideoReceiver_a203025900c489eb2df12a6b3471c3caa}{On\+Event} (const \hyperlink{structirr_1_1SEvent}{irr\+::\+S\+Event} \&event)
 \begin{DoxyCompactList}\small\item\em Event manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -55,13 +57,17 @@ Destroy the class.
 \index{Option\+Video\+Receiver@{Option\+Video\+Receiver}!On\+Event@{On\+Event}}
 \index{On\+Event@{On\+Event}!Option\+Video\+Receiver@{Option\+Video\+Receiver}}
 \subsubsection{\texorpdfstring{On\+Event()}{OnEvent()}}
-{\footnotesize\ttfamily bool Option\+Video\+Receiver\+::\+On\+Event (\begin{DoxyParamCaption}\item[{const irr\+::\+S\+Event \&}]{event }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Option\+Video\+Receiver\+::\+On\+Event (\begin{DoxyParamCaption}\item[{const \hyperlink{structirr_1_1SEvent}{irr\+::\+S\+Event} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
 Event manager. 
 
 Return true if he know the event, false if not. 
+
+Implements \hyperlink{classirr_1_1IEventReceiver_a571f744ceffc3b4fe8a81f529163eb97}{irr\+::\+I\+Event\+Receiver}.
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

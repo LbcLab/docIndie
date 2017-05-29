@@ -1,12 +1,15 @@
 var searchData=
 [
-  ['legendscene',['LegendScene',['../classLegendScene.html#a33a4d96e0e320724e60d565dec448e38',1,'LegendScene']]],
-  ['level',['Level',['../classLevel.html#a1cddef79da66a80002686199a847543f',1,'Level']]],
-  ['loadconfig',['loadConfig',['../classConfigManager.html#a63ff6c831f037cf5bfe580b4944b0b6c',1,'ConfigManager']]],
-  ['loadlevel',['loadLevel',['../classLevel.html#aa88db36cd824320cb599d913603dc2a3',1,'Level::loadLevel()'],['../classSaveManager.html#aa0661d6a8f9c0330755a8e03f8631992',1,'SaveManager::loadLevel()']]],
-  ['loadmap',['loadMap',['../classMap.html#a37024e6d47ca10cf83a331635fe041b7',1,'Map']]],
-  ['loadmodel',['loadModel',['../classModelsManager.html#a68352308cd93cb509b7266b0cf1bb5f3',1,'ModelsManager']]],
-  ['loadscenenodes',['loadSceneNodes',['../classMap.html#a235c359c04ae1521d53804d029ddce92',1,'Map']]],
-  ['loadscores',['loadScores',['../classScoreManager.html#a3644cf37cdce0983dc8ed3005222e55a',1,'ScoreManager']]],
-  ['loop',['loop',['../classWindow.html#a9c9f1fd6ebc2b93f16ca870487a4a4c6',1,'Window']]]
+  ['hasalpha',['hasAlpha',['../classirr_1_1video_1_1ITexture.html#a5ccc3cc2463f2ac78902eccba63271d3',1,'irr::video::ITexture']]],
+  ['haschildren',['hasChildren',['../classirr_1_1gui_1_1IGUITreeViewNode.html#a64244b92443fefbd06c910daf5db3c5f',1,'irr::gui::IGUITreeViewNode']]],
+  ['haschilds',['hasChilds',['../classirr_1_1gui_1_1IGUITreeViewNode.html#a7a771fc86d39a62487184bc56bcf8c52',1,'irr::gui::IGUITreeViewNode']]],
+  ['hasfileextension',['hasFileExtension',['../namespaceirr_1_1core.html#a7a0c7be24d78c02b334c3ae5a18005a1',1,'irr::core']]],
+  ['hasfinished',['hasFinished',['../classirr_1_1scene_1_1ISceneNodeAnimator.html#a77fd626155079b11327f0bd775e85425',1,'irr::scene::ISceneNodeAnimator']]],
+  ['hasfocus',['hasFocus',['../classirr_1_1gui_1_1IGUIEnvironment.html#a88c483f30a0f35debed70e8e51836552',1,'irr::gui::IGUIEnvironment']]],
+  ['hasitemoverridecolor',['hasItemOverrideColor',['../classirr_1_1gui_1_1IGUIListBox.html#a8399578154c3cbfcdd23f3b7009c448d',1,'irr::gui::IGUIListBox']]],
+  ['hasmipmaps',['hasMipMaps',['../classirr_1_1video_1_1ITexture.html#a9da815ed3b2a3efec45f957c6918fbba',1,'irr::video::ITexture']]],
+  ['hasresizablecolumns',['hasResizableColumns',['../classirr_1_1gui_1_1IGUITable.html#a6cd99f12740e4fbd9bdc8a431879eec3',1,'irr::gui::IGUITable']]],
+  ['hastype',['hasType',['../classirr_1_1gui_1_1IGUIElement.html#a3c9f0356f89f4906c7bf5a302e57f01d',1,'irr::gui::IGUIElement']]],
+  ['heapsink',['heapsink',['../namespaceirr_1_1core.html#ab594dc7075680259e758e4368cd471d1',1,'irr::core']]],
+  ['heapsort',['heapsort',['../namespaceirr_1_1core.html#aee38facdb42325b97626099d72f9a872',1,'irr::core']]]
 ];

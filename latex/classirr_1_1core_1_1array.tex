@@ -1,0 +1,532 @@
+\hypertarget{classirr_1_1core_1_1array}{}\section{irr\+:\+:core\+:\+:array$<$ T, T\+Alloc $>$ Class Template Reference}
+\label{classirr_1_1core_1_1array}\index{irr\+::core\+::array$<$ T, T\+Alloc $>$@{irr\+::core\+::array$<$ T, T\+Alloc $>$}}
+
+
+Self reallocating template array (like stl vector) with additional features.  
+
+
+
+
+{\ttfamily \#include $<$irr\+Array.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a5e0dd817352068af92448a08716f1252}\label{classirr_1_1core_1_1array_a5e0dd817352068af92448a08716f1252}} 
+\hyperlink{classirr_1_1core_1_1array_a5e0dd817352068af92448a08716f1252}{array} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for empty array. \end{DoxyCompactList}\item 
+\hyperlink{classirr_1_1core_1_1array_ab58c4b2c09693190b43ee16e99722b43}{array} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} start\+\_\+count)
+\begin{DoxyCompactList}\small\item\em Constructs an array and allocates an initial chunk of memory. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a4e584fd375dd5f994b6bd7afd7f7a60c}\label{classirr_1_1core_1_1array_a4e584fd375dd5f994b6bd7afd7f7a60c}} 
+\hyperlink{classirr_1_1core_1_1array_a4e584fd375dd5f994b6bd7afd7f7a60c}{array} (const \hyperlink{classirr_1_1core_1_1array}{array}$<$ T, T\+Alloc $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classirr_1_1core_1_1array_aac1853f45d4c18feaacac9859efe9836}{$\sim$array} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1array_ada5735f409eca82b9031d993ee8b31c3}{reallocate} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} new\+\_\+size, bool can\+Shrink=true)
+\begin{DoxyCompactList}\small\item\em Reallocates the array, make it bigger or smaller. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1array_a7aef3e5dbf91f8d1e8f365039e2497ae}{set\+Alloc\+Strategy} (\hyperlink{namespaceirr_1_1core_aa2e91971d5e6e84de235bfabe3c7adba}{e\+Alloc\+Strategy} new\+Strategy=A\+L\+L\+O\+C\+\_\+\+S\+T\+R\+A\+T\+E\+G\+Y\+\_\+\+D\+O\+U\+B\+LE)
+\begin{DoxyCompactList}\small\item\em set a new allocation strategy \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1array_ad2c9dff8592b95c25c59f5383fc633fe}{push\+\_\+back} (const T \&element)
+\begin{DoxyCompactList}\small\item\em Adds an element at back of array. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1array_a31b686ce4b1ebae930f22bc40d30efbd}{push\+\_\+front} (const T \&element)
+\begin{DoxyCompactList}\small\item\em Adds an element at the front of the array. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1array_a3b0f73c95dd449a4de576c6b1943566c}{insert} (const T \&element, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index=0)
+\begin{DoxyCompactList}\small\item\em Insert item into array at specified position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a236e08ca44ddf3c2b47b726f90db8d39}\label{classirr_1_1core_1_1array_a236e08ca44ddf3c2b47b726f90db8d39}} 
+void \hyperlink{classirr_1_1core_1_1array_a236e08ca44ddf3c2b47b726f90db8d39}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clears the array and deletes all allocated memory. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1array_a75df5c46b08225d1ebe3c1381d85d9ff}{set\+\_\+pointer} (T $\ast$new\+Pointer, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1core_1_1array_ab10777d1bb278c29e159ec59b5dc9378}{size}, bool \+\_\+is\+\_\+sorted=false, bool \+\_\+free\+\_\+when\+\_\+destroyed=true)
+\begin{DoxyCompactList}\small\item\em Sets pointer to new array, using this as new workspace. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1array_afddd43e25d3ad6b1a3d75ceab13e6c56}{set\+\_\+free\+\_\+when\+\_\+destroyed} (bool f)
+\begin{DoxyCompactList}\small\item\em Sets if the array should delete the memory it uses upon destruction. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1array_a64d70ab89f03e2ec4deae3b6c0161305}{set\+\_\+used} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} used\+Now)
+\begin{DoxyCompactList}\small\item\em Sets the size of the array and allocates new elements if necessary. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a51c964d180507ebdef872d93886c23b2}\label{classirr_1_1core_1_1array_a51c964d180507ebdef872d93886c23b2}} 
+const \hyperlink{classirr_1_1core_1_1array}{array}$<$ T, T\+Alloc $>$ \& \hyperlink{classirr_1_1core_1_1array_a51c964d180507ebdef872d93886c23b2}{operator=} (const \hyperlink{classirr_1_1core_1_1array}{array}$<$ T, T\+Alloc $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a794059b2ff063c9604eb46ae4edb599c}\label{classirr_1_1core_1_1array_a794059b2ff063c9604eb46ae4edb599c}} 
+bool \hyperlink{classirr_1_1core_1_1array_a794059b2ff063c9604eb46ae4edb599c}{operator==} (const \hyperlink{classirr_1_1core_1_1array}{array}$<$ T, T\+Alloc $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a7177f0d74f839a3f26df8eedcdfc4391}\label{classirr_1_1core_1_1array_a7177f0d74f839a3f26df8eedcdfc4391}} 
+bool \hyperlink{classirr_1_1core_1_1array_a7177f0d74f839a3f26df8eedcdfc4391}{operator!=} (const \hyperlink{classirr_1_1core_1_1array}{array}$<$ T, T\+Alloc $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a1e09dc5cc93e88fd3a37cad011b3b531}\label{classirr_1_1core_1_1array_a1e09dc5cc93e88fd3a37cad011b3b531}} 
+T \& \hyperlink{classirr_1_1core_1_1array_a1e09dc5cc93e88fd3a37cad011b3b531}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index)
+\begin{DoxyCompactList}\small\item\em Direct access operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1array_aa3f3c984a95034950f1005f016ad0fb8}\label{classirr_1_1core_1_1array_aa3f3c984a95034950f1005f016ad0fb8}} 
+const T \& \hyperlink{classirr_1_1core_1_1array_aa3f3c984a95034950f1005f016ad0fb8}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index) const
+\begin{DoxyCompactList}\small\item\em Direct const access operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1array_ad87dc5db8bf6ec1033c945a0d3724e09}\label{classirr_1_1core_1_1array_ad87dc5db8bf6ec1033c945a0d3724e09}} 
+T \& \hyperlink{classirr_1_1core_1_1array_ad87dc5db8bf6ec1033c945a0d3724e09}{get\+Last} ()
+\begin{DoxyCompactList}\small\item\em Gets last element. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a6cc770ec657432983b7245b2b2473f42}\label{classirr_1_1core_1_1array_a6cc770ec657432983b7245b2b2473f42}} 
+const T \& \hyperlink{classirr_1_1core_1_1array_a6cc770ec657432983b7245b2b2473f42}{get\+Last} () const
+\begin{DoxyCompactList}\small\item\em Gets last element. \end{DoxyCompactList}\item 
+T $\ast$ \hyperlink{classirr_1_1core_1_1array_a7b29797486e1c2ab3e7821082dab998c}{pointer} ()
+\begin{DoxyCompactList}\small\item\em Gets a pointer to the array. \end{DoxyCompactList}\item 
+const T $\ast$ \hyperlink{classirr_1_1core_1_1array_a8df928a9e555327c085b20f392e409ee}{const\+\_\+pointer} () const
+\begin{DoxyCompactList}\small\item\em Gets a const pointer to the array. \end{DoxyCompactList}\item 
+\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1core_1_1array_ab10777d1bb278c29e159ec59b5dc9378}{size} () const
+\begin{DoxyCompactList}\small\item\em Get number of occupied elements of the array. \end{DoxyCompactList}\item 
+\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1core_1_1array_a21e5b20b7a56ba174b19b6c36c78a14b}{allocated\+\_\+size} () const
+\begin{DoxyCompactList}\small\item\em Get amount of memory allocated. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1array_a956ee1019455016e21e218b61f6371ca}{empty} () const
+\begin{DoxyCompactList}\small\item\em Check if array is empty. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1array_a870e52dd57dd67a9d59e5ca5f82bca94}{sort} ()
+\begin{DoxyCompactList}\small\item\em Sorts the array using heapsort. \end{DoxyCompactList}\item 
+\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1core_1_1array_a35412f669b983eaaf3792b82966db24a}{binary\+\_\+search} (const T \&element)
+\begin{DoxyCompactList}\small\item\em Performs a binary search for an element, returns -\/1 if not found. \end{DoxyCompactList}\item 
+\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1core_1_1array_aec40f807c683671067d52e83d7b72a82}{binary\+\_\+search} (const T \&element) const
+\begin{DoxyCompactList}\small\item\em Performs a binary search for an element if possible, returns -\/1 if not found. \end{DoxyCompactList}\item 
+\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1core_1_1array_a9f3d6ee26c52d2e231446e4069a765a3}{binary\+\_\+search} (const T \&element, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} left, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} right) const
+\begin{DoxyCompactList}\small\item\em Performs a binary search for an element, returns -\/1 if not found. \end{DoxyCompactList}\item 
+\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1core_1_1array_a62821cac92125dd76f96f21e60ca94a4}{binary\+\_\+search\+\_\+multi} (const T \&element, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \&last)
+\begin{DoxyCompactList}\small\item\em Performs a binary search for an element, returns -\/1 if not found. it is used for searching a multiset. \end{DoxyCompactList}\item 
+\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1core_1_1array_a4b5002b36bb913a3680f2412ab2ee045}{linear\+\_\+search} (const T \&element) const
+\begin{DoxyCompactList}\small\item\em Finds an element in linear time, which is very slow. \end{DoxyCompactList}\item 
+\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1core_1_1array_aef6726fc4de8ca5a01881e09664981ad}{linear\+\_\+reverse\+\_\+search} (const T \&element) const
+\begin{DoxyCompactList}\small\item\em Finds an element in linear time, which is very slow. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1array_a5ba14e37dddaecd9c3e813a78c157dc8}{erase} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index)
+\begin{DoxyCompactList}\small\item\em Erases an element from the array. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1array_ab9bb8cb0e6ebc4839fa2f7bc8e626800}{erase} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} count)
+\begin{DoxyCompactList}\small\item\em Erases some elements from the array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1array_ab73d5838db931996f66f9efcc7127b49}\label{classirr_1_1core_1_1array_ab73d5838db931996f66f9efcc7127b49}} 
+void \hyperlink{classirr_1_1core_1_1array_ab73d5838db931996f66f9efcc7127b49}{set\+\_\+sorted} (bool \+\_\+is\+\_\+sorted)
+\begin{DoxyCompactList}\small\item\em Sets if the array is sorted. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1array_a8857046f500a2990fc9930b204a3dbad}{swap} (\hyperlink{classirr_1_1core_1_1array}{array}$<$ T, T\+Alloc $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Swap the content of this array container with the content of another array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$\newline
+class irr\+::core\+::array$<$ T, T\+Alloc $>$}
+
+Self reallocating template array (like stl vector) with additional features. 
+
+Some features are\+: Heap sorting, binary search methods, easier debugging. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_ab58c4b2c09693190b43ee16e99722b43}\label{classirr_1_1core_1_1array_ab58c4b2c09693190b43ee16e99722b43}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!array@{array}}
+\index{array@{array}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{array()}{array()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+\hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::\hyperlink{classirr_1_1core_1_1array}{array} (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{start\+\_\+count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs an array and allocates an initial chunk of memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+\_\+count} & Amount of elements to pre-\/allocate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_aac1853f45d4c18feaacac9859efe9836}\label{classirr_1_1core_1_1array_aac1853f45d4c18feaacac9859efe9836}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!````~array@{$\sim$array}}
+\index{````~array@{$\sim$array}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{$\sim$array()}{~array()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+\hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::$\sim$\hyperlink{classirr_1_1core_1_1array}{array} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor. 
+
+Frees allocated memory, if set\+\_\+free\+\_\+when\+\_\+destroyed was not set to false by the user before. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a21e5b20b7a56ba174b19b6c36c78a14b}\label{classirr_1_1core_1_1array_a21e5b20b7a56ba174b19b6c36c78a14b}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!allocated\+\_\+size@{allocated\+\_\+size}}
+\index{allocated\+\_\+size@{allocated\+\_\+size}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{allocated\+\_\+size()}{allocated\_size()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::allocated\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get amount of memory allocated. 
+
+\begin{DoxyReturn}{Returns}
+Amount of memory allocated. The amount of bytes allocated would be \hyperlink{classirr_1_1core_1_1array_a21e5b20b7a56ba174b19b6c36c78a14b}{allocated\+\_\+size()} $\ast$ sizeof(\+Element\+Type\+Used); 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a35412f669b983eaaf3792b82966db24a}\label{classirr_1_1core_1_1array_a35412f669b983eaaf3792b82966db24a}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!binary\+\_\+search@{binary\+\_\+search}}
+\index{binary\+\_\+search@{binary\+\_\+search}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{binary\+\_\+search()}{binary\_search()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::binary\+\_\+search (\begin{DoxyParamCaption}\item[{const T \&}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Performs a binary search for an element, returns -\/1 if not found. 
+
+The array will be sorted before the binary search if it is not already sorted. Caution is advised! Be careful not to call this on unsorted const arrays, or the slower method will be used. 
+\begin{DoxyParams}{Parameters}
+{\em element} & Element to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the searched element if it was found, otherwise -\/1 is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_aec40f807c683671067d52e83d7b72a82}\label{classirr_1_1core_1_1array_aec40f807c683671067d52e83d7b72a82}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!binary\+\_\+search@{binary\+\_\+search}}
+\index{binary\+\_\+search@{binary\+\_\+search}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{binary\+\_\+search()}{binary\_search()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::binary\+\_\+search (\begin{DoxyParamCaption}\item[{const T \&}]{element }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Performs a binary search for an element if possible, returns -\/1 if not found. 
+
+This method is for const arrays and so cannot call \hyperlink{classirr_1_1core_1_1array_a870e52dd57dd67a9d59e5ca5f82bca94}{sort()}, if the array is not sorted then linear\+\_\+search will be used instead. Potentially very slow! 
+\begin{DoxyParams}{Parameters}
+{\em element} & Element to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the searched element if it was found, otherwise -\/1 is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a9f3d6ee26c52d2e231446e4069a765a3}\label{classirr_1_1core_1_1array_a9f3d6ee26c52d2e231446e4069a765a3}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!binary\+\_\+search@{binary\+\_\+search}}
+\index{binary\+\_\+search@{binary\+\_\+search}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{binary\+\_\+search()}{binary\_search()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::binary\+\_\+search (\begin{DoxyParamCaption}\item[{const T \&}]{element,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{left,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{right }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Performs a binary search for an element, returns -\/1 if not found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & Element to search for. \\
+\hline
+{\em left} & First left index \\
+\hline
+{\em right} & Last right index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the searched element if it was found, otherwise -\/1 is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a62821cac92125dd76f96f21e60ca94a4}\label{classirr_1_1core_1_1array_a62821cac92125dd76f96f21e60ca94a4}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!binary\+\_\+search\+\_\+multi@{binary\+\_\+search\+\_\+multi}}
+\index{binary\+\_\+search\+\_\+multi@{binary\+\_\+search\+\_\+multi}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{binary\+\_\+search\+\_\+multi()}{binary\_search\_multi()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::binary\+\_\+search\+\_\+multi (\begin{DoxyParamCaption}\item[{const T \&}]{element,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \&}]{last }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Performs a binary search for an element, returns -\/1 if not found. it is used for searching a multiset. 
+
+The array will be sorted before the binary search if it is not already sorted. 
+\begin{DoxyParams}{Parameters}
+{\em element} & Element to search for. \\
+\hline
+{\em \&last} & return last\+Index of equal elements \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the first searched element if it was found, otherwise -\/1 is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a8df928a9e555327c085b20f392e409ee}\label{classirr_1_1core_1_1array_a8df928a9e555327c085b20f392e409ee}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!const\+\_\+pointer@{const\+\_\+pointer}}
+\index{const\+\_\+pointer@{const\+\_\+pointer}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{const\+\_\+pointer()}{const\_pointer()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+const T$\ast$ \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::const\+\_\+pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets a const pointer to the array. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a956ee1019455016e21e218b61f6371ca}\label{classirr_1_1core_1_1array_a956ee1019455016e21e218b61f6371ca}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!empty@{empty}}
+\index{empty@{empty}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+bool \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if array is empty. 
+
+\begin{DoxyReturn}{Returns}
+True if the array is empty false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a5ba14e37dddaecd9c3e813a78c157dc8}\label{classirr_1_1core_1_1array_a5ba14e37dddaecd9c3e813a78c157dc8}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!erase@{erase}}
+\index{erase@{erase}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{erase()}{erase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+void \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::erase (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Erases an element from the array. 
+
+May be slow, because all elements following after the erased element have to be copied. 
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of element to be erased. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_ab9bb8cb0e6ebc4839fa2f7bc8e626800}\label{classirr_1_1core_1_1array_ab9bb8cb0e6ebc4839fa2f7bc8e626800}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!erase@{erase}}
+\index{erase@{erase}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{erase()}{erase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+void \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::erase (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{index,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Erases some elements from the array. 
+
+May be slow, because all elements following after the erased element have to be copied. 
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of the first element to be erased. \\
+\hline
+{\em count} & Amount of elements to be erased. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a3b0f73c95dd449a4de576c6b1943566c}\label{classirr_1_1core_1_1array_a3b0f73c95dd449a4de576c6b1943566c}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!insert@{insert}}
+\index{insert@{insert}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+void \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::insert (\begin{DoxyParamCaption}\item[{const T \&}]{element,  }\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{index = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Insert item into array at specified position. 
+
+Please use this only if you know what you are doing (possible performance loss). The preferred method of adding elements should be \hyperlink{classirr_1_1core_1_1array_ad2c9dff8592b95c25c59f5383fc633fe}{push\+\_\+back()}. 
+\begin{DoxyParams}{Parameters}
+{\em element} & Element to be inserted \\
+\hline
+{\em index} & Where position to insert the new element. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_aef6726fc4de8ca5a01881e09664981ad}\label{classirr_1_1core_1_1array_aef6726fc4de8ca5a01881e09664981ad}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!linear\+\_\+reverse\+\_\+search@{linear\+\_\+reverse\+\_\+search}}
+\index{linear\+\_\+reverse\+\_\+search@{linear\+\_\+reverse\+\_\+search}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{linear\+\_\+reverse\+\_\+search()}{linear\_reverse\_search()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::linear\+\_\+reverse\+\_\+search (\begin{DoxyParamCaption}\item[{const T \&}]{element }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Finds an element in linear time, which is very slow. 
+
+Use binary\+\_\+search for faster finding. Only works if ==operator is implemented. 
+\begin{DoxyParams}{Parameters}
+{\em element} & Element to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the searched element if it was found, otherwise -\/1 is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a4b5002b36bb913a3680f2412ab2ee045}\label{classirr_1_1core_1_1array_a4b5002b36bb913a3680f2412ab2ee045}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!linear\+\_\+search@{linear\+\_\+search}}
+\index{linear\+\_\+search@{linear\+\_\+search}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{linear\+\_\+search()}{linear\_search()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::linear\+\_\+search (\begin{DoxyParamCaption}\item[{const T \&}]{element }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Finds an element in linear time, which is very slow. 
+
+Use binary\+\_\+search for faster finding. Only works if ==operator is implemented. 
+\begin{DoxyParams}{Parameters}
+{\em element} & Element to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of the searched element if it was found, otherwise -\/1 is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a7b29797486e1c2ab3e7821082dab998c}\label{classirr_1_1core_1_1array_a7b29797486e1c2ab3e7821082dab998c}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!pointer@{pointer}}
+\index{pointer@{pointer}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{pointer()}{pointer()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+T$\ast$ \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets a pointer to the array. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_ad2c9dff8592b95c25c59f5383fc633fe}\label{classirr_1_1core_1_1array_ad2c9dff8592b95c25c59f5383fc633fe}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{push\+\_\+back()}{push\_back()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+void \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const T \&}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds an element at back of array. 
+
+If the array is too small to add this new element it is made bigger. 
+\begin{DoxyParams}{Parameters}
+{\em element} & Element to add at the back of the array. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a31b686ce4b1ebae930f22bc40d30efbd}\label{classirr_1_1core_1_1array_a31b686ce4b1ebae930f22bc40d30efbd}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!push\+\_\+front@{push\+\_\+front}}
+\index{push\+\_\+front@{push\+\_\+front}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{push\+\_\+front()}{push\_front()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+void \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::push\+\_\+front (\begin{DoxyParamCaption}\item[{const T \&}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds an element at the front of the array. 
+
+If the array is to small to add this new element, the array is made bigger. Please note that this is slow, because the whole array needs to be copied for this. 
+\begin{DoxyParams}{Parameters}
+{\em element} & Element to add at the back of the array. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_ada5735f409eca82b9031d993ee8b31c3}\label{classirr_1_1core_1_1array_ada5735f409eca82b9031d993ee8b31c3}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!reallocate@{reallocate}}
+\index{reallocate@{reallocate}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{reallocate()}{reallocate()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+void \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::reallocate (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{new\+\_\+size,  }\item[{bool}]{can\+Shrink = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reallocates the array, make it bigger or smaller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+size} & New size of array. \\
+\hline
+{\em can\+Shrink} & Specifies whether the array is reallocated even if enough space is available. Setting this flag to false can speed up array usage, but may use more memory than required by the data. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_afddd43e25d3ad6b1a3d75ceab13e6c56}\label{classirr_1_1core_1_1array_afddd43e25d3ad6b1a3d75ceab13e6c56}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!set\+\_\+free\+\_\+when\+\_\+destroyed@{set\+\_\+free\+\_\+when\+\_\+destroyed}}
+\index{set\+\_\+free\+\_\+when\+\_\+destroyed@{set\+\_\+free\+\_\+when\+\_\+destroyed}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{set\+\_\+free\+\_\+when\+\_\+destroyed()}{set\_free\_when\_destroyed()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+void \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::set\+\_\+free\+\_\+when\+\_\+destroyed (\begin{DoxyParamCaption}\item[{bool}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets if the array should delete the memory it uses upon destruction. 
+
+Also clear and set\+\_\+pointer will only delete the (original) memory area if this flag is set to true, which is also the default. The methods reallocate, set\+\_\+used, push\+\_\+back, push\+\_\+front, insert, and erase will still try to deallocate the original memory, which might cause troubles depending on the intended use of the memory area. 
+\begin{DoxyParams}{Parameters}
+{\em f} & If true, the array frees the allocated memory in its destructor, otherwise not. The default is true. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a75df5c46b08225d1ebe3c1381d85d9ff}\label{classirr_1_1core_1_1array_a75df5c46b08225d1ebe3c1381d85d9ff}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!set\+\_\+pointer@{set\+\_\+pointer}}
+\index{set\+\_\+pointer@{set\+\_\+pointer}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{set\+\_\+pointer()}{set\_pointer()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+void \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::set\+\_\+pointer (\begin{DoxyParamCaption}\item[{T $\ast$}]{new\+Pointer,  }\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{size,  }\item[{bool}]{\+\_\+is\+\_\+sorted = {\ttfamily false},  }\item[{bool}]{\+\_\+free\+\_\+when\+\_\+destroyed = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets pointer to new array, using this as new workspace. 
+
+Make sure that set\+\_\+free\+\_\+when\+\_\+destroyed is used properly. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Pointer} & Pointer to new array of elements. \\
+\hline
+{\em size} & Size of the new array. \\
+\hline
+{\em \+\_\+is\+\_\+sorted} & Flag which tells whether the new array is already sorted. \\
+\hline
+{\em \+\_\+free\+\_\+when\+\_\+destroyed} & Sets whether the new memory area shall be freed by the array upon destruction, or if this will be up to the user application. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a64d70ab89f03e2ec4deae3b6c0161305}\label{classirr_1_1core_1_1array_a64d70ab89f03e2ec4deae3b6c0161305}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!set\+\_\+used@{set\+\_\+used}}
+\index{set\+\_\+used@{set\+\_\+used}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{set\+\_\+used()}{set\_used()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+void \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::set\+\_\+used (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{used\+Now }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the size of the array and allocates new elements if necessary. 
+
+Please note\+: This is only secure when using it with simple types, because no default constructor will be called for the added elements. 
+\begin{DoxyParams}{Parameters}
+{\em used\+Now} & Amount of elements now used. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a7aef3e5dbf91f8d1e8f365039e2497ae}\label{classirr_1_1core_1_1array_a7aef3e5dbf91f8d1e8f365039e2497ae}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!set\+Alloc\+Strategy@{set\+Alloc\+Strategy}}
+\index{set\+Alloc\+Strategy@{set\+Alloc\+Strategy}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{set\+Alloc\+Strategy()}{setAllocStrategy()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+void \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::set\+Alloc\+Strategy (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1core_aa2e91971d5e6e84de235bfabe3c7adba}{e\+Alloc\+Strategy}}]{new\+Strategy = {\ttfamily ALLOC\+\_\+STRATEGY\+\_\+DOUBLE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+set a new allocation strategy 
+
+if the maximum size of the array is unknown, you can define how big the allocation should happen. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Strategy} & New strategy to apply to this array. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_ab10777d1bb278c29e159ec59b5dc9378}\label{classirr_1_1core_1_1array_ab10777d1bb278c29e159ec59b5dc9378}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!size@{size}}
+\index{size@{size}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get number of occupied elements of the array. 
+
+\begin{DoxyReturn}{Returns}
+Size of elements in the array which are actually occupied. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1array_a870e52dd57dd67a9d59e5ca5f82bca94}\label{classirr_1_1core_1_1array_a870e52dd57dd67a9d59e5ca5f82bca94}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!sort@{sort}}
+\index{sort@{sort}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+void \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::sort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sorts the array using heapsort. 
+
+There is no additional memory waste and the algorithm performs O(n$\ast$log n) in worst case. \mbox{\Hypertarget{classirr_1_1core_1_1array_a8857046f500a2990fc9930b204a3dbad}\label{classirr_1_1core_1_1array_a8857046f500a2990fc9930b204a3dbad}} 
+\index{irr\+::core\+::array@{irr\+::core\+::array}!swap@{swap}}
+\index{swap@{swap}!irr\+::core\+::array@{irr\+::core\+::array}}
+\subsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily template$<$class T, typename T\+Alloc = irr\+Allocator$<$\+T$>$$>$ \\
+void \hyperlink{classirr_1_1core_1_1array}{irr\+::core\+::array}$<$ T, T\+Alloc $>$\+::swap (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1core_1_1array}{array}$<$ T, T\+Alloc $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Swap the content of this array container with the content of another array. 
+
+Afterwards this object will contain the content of the other object and the other object will contain the content of this object. 
+\begin{DoxyParams}{Parameters}
+{\em other} & Swap content with this object \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/irr\+Array.\+h\end{DoxyCompactItemize}

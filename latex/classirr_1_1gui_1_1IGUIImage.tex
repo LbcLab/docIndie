@@ -1,0 +1,56 @@
+\hypertarget{classirr_1_1gui_1_1IGUIImage}{}\section{irr\+:\+:gui\+:\+:I\+G\+U\+I\+Image Class Reference}
+\label{classirr_1_1gui_1_1IGUIImage}\index{irr\+::gui\+::\+I\+G\+U\+I\+Image@{irr\+::gui\+::\+I\+G\+U\+I\+Image}}
+
+
+G\+UI element displaying an image.  
+
+
+
+
+{\ttfamily \#include $<$I\+G\+U\+I\+Image.\+h$>$}
+
+Inheritance diagram for irr\+:\+:gui\+:\+:I\+G\+U\+I\+Image\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classirr_1_1gui_1_1IGUIImage}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIImage_a079a30cd26c749a8a42b4a689678c4dc}\label{classirr_1_1gui_1_1IGUIImage_a079a30cd26c749a8a42b4a689678c4dc}} 
+\hyperlink{classirr_1_1gui_1_1IGUIImage_a079a30cd26c749a8a42b4a689678c4dc}{I\+G\+U\+I\+Image} (\hyperlink{classirr_1_1gui_1_1IGUIEnvironment}{I\+G\+U\+I\+Environment} $\ast$environment, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ rectangle)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIImage_a35a3af4957e42acb183f562d09a4ea63}\label{classirr_1_1gui_1_1IGUIImage_a35a3af4957e42acb183f562d09a4ea63}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIImage_a35a3af4957e42acb183f562d09a4ea63}{set\+Image} (\hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$image)=0
+\begin{DoxyCompactList}\small\item\em Sets an image texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIImage_a5ed7402ca9d9810d320ff11f1251e8c0}\label{classirr_1_1gui_1_1IGUIImage_a5ed7402ca9d9810d320ff11f1251e8c0}} 
+virtual \hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIImage_a5ed7402ca9d9810d320ff11f1251e8c0}{get\+Image} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the image texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIImage_ac836018aafc61f6b9fe88acfa2267d8e}\label{classirr_1_1gui_1_1IGUIImage_ac836018aafc61f6b9fe88acfa2267d8e}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIImage_ac836018aafc61f6b9fe88acfa2267d8e}{set\+Color} (\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} color)=0
+\begin{DoxyCompactList}\small\item\em Sets the color of the image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIImage_a642c5683600be82efa0cc04b4236e34d}\label{classirr_1_1gui_1_1IGUIImage_a642c5683600be82efa0cc04b4236e34d}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIImage_a642c5683600be82efa0cc04b4236e34d}{set\+Scale\+Image} (bool scale)=0
+\begin{DoxyCompactList}\small\item\em Sets if the image should scale to fit the element. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIImage_a9426b40769f4ef7614e6a94dcfa67455}\label{classirr_1_1gui_1_1IGUIImage_a9426b40769f4ef7614e6a94dcfa67455}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIImage_a9426b40769f4ef7614e6a94dcfa67455}{set\+Use\+Alpha\+Channel} (bool use)=0
+\begin{DoxyCompactList}\small\item\em Sets if the image should use its alpha channel to draw itself. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIImage_a46a6dc23dd045cb65247344bf71078e4}\label{classirr_1_1gui_1_1IGUIImage_a46a6dc23dd045cb65247344bf71078e4}} 
+virtual \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} \hyperlink{classirr_1_1gui_1_1IGUIImage_a46a6dc23dd045cb65247344bf71078e4}{get\+Color} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the color of the image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIImage_aca24045ee740242b9c8de73a8f609a27}\label{classirr_1_1gui_1_1IGUIImage_aca24045ee740242b9c8de73a8f609a27}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIImage_aca24045ee740242b9c8de73a8f609a27}{is\+Image\+Scaled} () const =0
+\begin{DoxyCompactList}\small\item\em Returns true if the image is scaled to fit, false if not. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIImage_a5be6faec4c156fc955c84a5b3f703d63}\label{classirr_1_1gui_1_1IGUIImage_a5be6faec4c156fc955c84a5b3f703d63}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIImage_a5be6faec4c156fc955c84a5b3f703d63}{is\+Alpha\+Channel\+Used} () const =0
+\begin{DoxyCompactList}\small\item\em Returns true if the image is using the alpha channel, false if not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+G\+UI element displaying an image. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/I\+G\+U\+I\+Image.\+h\end{DoxyCompactItemize}

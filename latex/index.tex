@@ -1,0 +1,80 @@
+\hypertarget{index_intro}{}\section{Introduction}\label{index_intro}
+Welcome to the Irrlicht Engine A\+PI documentation. Here you\textquotesingle{}ll find any information you\textquotesingle{}ll need to develop applications with the Irrlicht Engine. If you are looking for a tutorial on how to start, you\textquotesingle{}ll find some on the homepage of the Irrlicht Engine at \href{http://irrlicht.sourceforge.net}{\tt irrlicht.\+sourceforge.\+net} or inside the S\+DK in the examples directory.
+
+The Irrlicht Engine is intended to be an easy-\/to-\/use 3d engine, so this documentation is an important part of it. If you have any questions or suggestions, just send a email to the author of the engine, Nikolaus Gebhardt (niko (at) irrlicht3d.\+org).\hypertarget{index_links}{}\section{Links}\label{index_links}
+\href{namespaces.html}{\tt Namespaces}\+: A very good place to start reading the documentation.~\newline
+ \href{annotated.html}{\tt Class list}\+: List of all classes with descriptions.~\newline
+ \href{functions.html}{\tt Class members}\+: Good place to find forgotten features.~\newline
+\hypertarget{index_irrexample}{}\section{Short example}\label{index_irrexample}
+A simple application, starting up the engine, loading a Quake 2 animated model file and the corresponding texture, animating and displaying it in front of a blue background and placing a user controlable 3d camera would look like the following code. I think this example shows the usage of the engine quite well\+:
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{irrlicht_8h}{irrlicht.h}>}
+\textcolor{keyword}{using namespace }\hyperlink{namespaceirr}{irr};
+
+\textcolor{keywordtype}{int} main()
+\{
+ \textcolor{comment}{// start up the engine}
+ \hyperlink{classirr_1_1IrrlichtDevice}{IrrlichtDevice} *device = \hyperlink{namespaceirr_abaf4d8719cc26b0d30813abf85e47c76}{createDevice}(
+      \hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0a19a7bf582b8ea551a9cc4937e970ba8b}{video::EDT\_DIRECT3D8},
+    \hyperlink{classirr_1_1core_1_1dimension2d}{core::dimension2d<u32>}(640,480));
+
+ \hyperlink{classirr_1_1video_1_1IVideoDriver}{video::IVideoDriver}* driver = device->\hyperlink{classirr_1_1IrrlichtDevice_ada90707ba5c645d47e000e4e0f87c4c4}{getVideoDriver}();
+ \hyperlink{classirr_1_1scene_1_1ISceneManager}{scene::ISceneManager}* scenemgr = device->\hyperlink{classirr_1_1IrrlichtDevice_a891b503ff4d5041296d88f23f97d7b3d}{getSceneManager}();
+
+ device->\hyperlink{classirr_1_1IrrlichtDevice_a3d7c98d520bf18ce1973c6f1439a7c0f}{setWindowCaption}(L\textcolor{stringliteral}{"Hello World!"});
+
+ \textcolor{comment}{// load and show quake2 .md2 model}
+ \hyperlink{classirr_1_1scene_1_1ISceneNode}{scene::ISceneNode}* node = scenemgr->\hyperlink{classirr_1_1scene_1_1ISceneManager_a8e2e0cd3a27e85b4116855dd2f3365b8}{addAnimatedMeshSceneNode}(
+    scenemgr->\hyperlink{classirr_1_1scene_1_1ISceneManager_a63894c3f3d46cfc385116f1705935e03}{getMesh}(\textcolor{stringliteral}{"quake2model.md2"}));
+
+ \textcolor{comment}{// if everything worked, add a texture and disable lighting}
+ \textcolor{keywordflow}{if} (node)
+ \{
+    node->\hyperlink{classirr_1_1scene_1_1ISceneNode_a0d5d2e05ebe08e6a432fbb4fd1d28dd0}{setMaterialTexture}(0, driver->\hyperlink{classirr_1_1video_1_1IVideoDriver_af4055165190e4adf221c6dc6f2434ea0}{getTexture}(\textcolor{stringliteral}{"texture.bmp"}));
+    node->\hyperlink{classirr_1_1scene_1_1ISceneNode_a2841d5077854b9981711a403f33762cd}{setMaterialFlag}(\hyperlink{namespaceirr_1_1video_a8a3bc00ae8137535b9fbc5f40add70d3acea597a2692b8415486a464a7f954d34}{video::EMF\_LIGHTING}, \textcolor{keyword}{false});
+ \}
+
+ \textcolor{comment}{// add a first person shooter style user controlled camera}
+ scenemgr->\hyperlink{classirr_1_1scene_1_1ISceneManager_ac312cbc85161678d00192880f2cdddbb}{addCameraSceneNodeFPS}();
+
+ \textcolor{comment}{// draw everything}
+ \textcolor{keywordflow}{while}(device->\hyperlink{classirr_1_1IrrlichtDevice_a0489f8151dc43f6f41503ffb5a160b35}{run}() && driver)
+ \{
+    driver->\hyperlink{classirr_1_1video_1_1IVideoDriver_a015b8f2f18c260a00a858181be1e9945}{beginScene}(\textcolor{keyword}{true}, \textcolor{keyword}{true}, \hyperlink{classirr_1_1video_1_1SColor}{video::SColor}(255,0,0,255));
+    scenemgr->\hyperlink{classirr_1_1scene_1_1ISceneManager_a04240262904667c821bd9de5e5fd9b02}{drawAll}();
+    driver->\hyperlink{classirr_1_1video_1_1IVideoDriver_a75f61a93c5fc9fdf161c044d27bc994e}{endScene}();
+ \}
+
+ \textcolor{comment}{// delete device}
+ device->\hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{drop}();
+ \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+
+
+Irrlicht can load a lot of file formats automaticly, see \hyperlink{classirr_1_1scene_1_1ISceneManager_a63894c3f3d46cfc385116f1705935e03}{irr\+::scene\+::\+I\+Scene\+Manager\+::get\+Mesh()} for a detailed list. So if you would like to replace the simple blue screen background by a cool Quake 3 \hyperlink{classMap}{Map}, optimized by an octree, just insert this code somewhere before the while loop\+:
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// add .pk3 archive to the file system}
+device->\hyperlink{classirr_1_1IrrlichtDevice_a3d8d2dee2f57aa7e6c0d14592de3e6ed}{getFileSystem}()->\hyperlink{classirr_1_1io_1_1IFileSystem_aef11ff9b5c171d7b3a99d8a79b71f2b3}{addZipFileArchive}(\textcolor{stringliteral}{"quake3map.pk3"});
+
+\textcolor{comment}{// load .bsp file and show it using an octree}
+scenemgr->\hyperlink{classirr_1_1scene_1_1ISceneManager_a503339385ca2b33d7e8035a61c4eca84}{addOctreeSceneNode}(
+   scenemgr->\hyperlink{classirr_1_1scene_1_1ISceneManager_a63894c3f3d46cfc385116f1705935e03}{getMesh}(\textcolor{stringliteral}{"quake3map.bsp"}));
+\end{DoxyCode}
+
+
+As you can see, the engine uses namespaces. Everything in the engine is placed into the namespace \textquotesingle{}irr\textquotesingle{}, but there are also 5 sub namespaces. You can find a list of all namespaces with descriptions at the \href{namespaces.html}{\tt namespaces page}. This is also a good place to start reading the documentation. If you don\textquotesingle{}t want to write the namespace names all the time, just use all namespaces like this\+: 
+\begin{DoxyCode}
+\textcolor{keyword}{using namespace }core;
+\textcolor{keyword}{using namespace }\hyperlink{namespacescene}{scene};
+\textcolor{keyword}{using namespace }\hyperlink{namespacevideo}{video};
+\textcolor{keyword}{using namespace }\hyperlink{namespaceio}{io};
+\textcolor{keyword}{using namespace }\hyperlink{namespacegui}{gui};
+\end{DoxyCode}
+
+
+There is a lot more the engine can do, but I hope this gave a short overview over the basic features of the engine. For more examples, please take a look into the examples directory of the S\+DK. 

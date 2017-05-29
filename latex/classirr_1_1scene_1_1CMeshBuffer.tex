@@ -1,0 +1,418 @@
+\hypertarget{classirr_1_1scene_1_1CMeshBuffer}{}\section{irr\+:\+:scene\+:\+:C\+Mesh\+Buffer$<$ T $>$ Class Template Reference}
+\label{classirr_1_1scene_1_1CMeshBuffer}\index{irr\+::scene\+::\+C\+Mesh\+Buffer$<$ T $>$@{irr\+::scene\+::\+C\+Mesh\+Buffer$<$ T $>$}}
+
+
+Template implementation of the \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer} interface.  
+
+
+
+
+{\ttfamily \#include $<$C\+Mesh\+Buffer.\+h$>$}
+
+Inheritance diagram for irr\+:\+:scene\+:\+:C\+Mesh\+Buffer$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classirr_1_1scene_1_1CMeshBuffer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_aa2a6fa9d2f7b23fad0d8a86c74a56944}\label{classirr_1_1scene_1_1CMeshBuffer_aa2a6fa9d2f7b23fad0d8a86c74a56944}} 
+\hyperlink{classirr_1_1scene_1_1CMeshBuffer_aa2a6fa9d2f7b23fad0d8a86c74a56944}{C\+Mesh\+Buffer} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for empty meshbuffer. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \& \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a3e971800b0fc1a67134f839309589e43}{get\+Material} () const
+\begin{DoxyCompactList}\small\item\em Get material of this meshbuffer. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \& \hyperlink{classirr_1_1scene_1_1CMeshBuffer_af69e8356b4525a3fee1ddbf188d81e8a}{get\+Material} ()
+\begin{DoxyCompactList}\small\item\em Get material of this meshbuffer. \end{DoxyCompactList}\item 
+virtual const void $\ast$ \hyperlink{classirr_1_1scene_1_1CMeshBuffer_ad9463b97ee94bbc26bbb11bf867ea830}{get\+Vertices} () const
+\begin{DoxyCompactList}\small\item\em Get pointer to vertices. \end{DoxyCompactList}\item 
+virtual void $\ast$ \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a9173c9d0c6f32890ab75dc501aaf5be6}{get\+Vertices} ()
+\begin{DoxyCompactList}\small\item\em Get pointer to vertices. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a72ee778498eff327a20c6be179976994}{get\+Vertex\+Count} () const
+\begin{DoxyCompactList}\small\item\em Get number of vertices. \end{DoxyCompactList}\item 
+virtual video\+::\+E\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE \hyperlink{classirr_1_1scene_1_1CMeshBuffer_aa183491690fa47b4697bbfcc7902301c}{get\+Index\+Type} () const
+\begin{DoxyCompactList}\small\item\em Get type of index data which is stored in this meshbuffer. \end{DoxyCompactList}\item 
+virtual const \hyperlink{namespaceirr_ae9f8ec82692ad3b83c21f555bfa70bcc}{u16} $\ast$ \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a23af7e8ffb2ba674d1dd4448cea288bf}{get\+Indices} () const
+\begin{DoxyCompactList}\small\item\em Get pointer to indices. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ae9f8ec82692ad3b83c21f555bfa70bcc}{u16} $\ast$ \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a34a85f4868776d4cf312cdece5326c89}{get\+Indices} ()
+\begin{DoxyCompactList}\small\item\em Get pointer to indices. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1scene_1_1CMeshBuffer_ac5585f4983423a4ba1f4ab4aba112c95}{get\+Index\+Count} () const
+\begin{DoxyCompactList}\small\item\em Get number of indices. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classirr_1_1core_1_1aabbox3d}{core\+::aabbox3d}$<$ \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $>$ \& \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a759863b44c024f79747019f492a5c7cf}{get\+Bounding\+Box} () const
+\begin{DoxyCompactList}\small\item\em Get the axis aligned bounding box. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1CMeshBuffer_ab5a21d48a5af73f1ef880a48c3798a67}{set\+Bounding\+Box} (const \hyperlink{namespaceirr_1_1core_adfc8fa01b30044c55f3332a1d6c1aa19}{core\+::aabbox3df} \&box)
+\begin{DoxyCompactList}\small\item\em Set the axis aligned bounding box. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1CMeshBuffer_aad55263eaf019b090c8d1c3c5f7f4407}{recalculate\+Bounding\+Box} ()
+\begin{DoxyCompactList}\small\item\em Recalculate the bounding box. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_1_1video_a0e3b59e025e0d0db0ed2ee0ce904deac}{video\+::\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE} \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a341db661218a49d8d8fd12550700cb67}{get\+Vertex\+Type} () const
+\begin{DoxyCompactList}\small\item\em Get type of vertex data stored in this buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a4a94e12e5b3f07a795695693ed9ef18d}\label{classirr_1_1scene_1_1CMeshBuffer_a4a94e12e5b3f07a795695693ed9ef18d}} 
+virtual const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \& \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a4a94e12e5b3f07a795695693ed9ef18d}{get\+Position} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} i) const
+\begin{DoxyCompactList}\small\item\em returns position of vertex i \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a70890de5d1014a4bf1b1f9e7819f8e9b}\label{classirr_1_1scene_1_1CMeshBuffer_a70890de5d1014a4bf1b1f9e7819f8e9b}} 
+virtual \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \& \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a70890de5d1014a4bf1b1f9e7819f8e9b}{get\+Position} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} i)
+\begin{DoxyCompactList}\small\item\em returns position of vertex i \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_ac93c92c49e801141cab699484bcf818d}\label{classirr_1_1scene_1_1CMeshBuffer_ac93c92c49e801141cab699484bcf818d}} 
+virtual const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \& \hyperlink{classirr_1_1scene_1_1CMeshBuffer_ac93c92c49e801141cab699484bcf818d}{get\+Normal} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} i) const
+\begin{DoxyCompactList}\small\item\em returns normal of vertex i \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_ad8515509517384dc31e9ad46eea323a0}\label{classirr_1_1scene_1_1CMeshBuffer_ad8515509517384dc31e9ad46eea323a0}} 
+virtual \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \& \hyperlink{classirr_1_1scene_1_1CMeshBuffer_ad8515509517384dc31e9ad46eea323a0}{get\+Normal} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} i)
+\begin{DoxyCompactList}\small\item\em returns normal of vertex i \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a2823a97a353b6909e66a18dca46a8f30}\label{classirr_1_1scene_1_1CMeshBuffer_a2823a97a353b6909e66a18dca46a8f30}} 
+virtual const \hyperlink{namespaceirr_1_1core_a2cf08556d77f6f5a792973a6e27ed11b}{core\+::vector2df} \& \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a2823a97a353b6909e66a18dca46a8f30}{get\+T\+Coords} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} i) const
+\begin{DoxyCompactList}\small\item\em returns texture coord of vertex i \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a50e1a283111e3aa8325a7e774f08fb27}\label{classirr_1_1scene_1_1CMeshBuffer_a50e1a283111e3aa8325a7e774f08fb27}} 
+virtual \hyperlink{namespaceirr_1_1core_a2cf08556d77f6f5a792973a6e27ed11b}{core\+::vector2df} \& \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a50e1a283111e3aa8325a7e774f08fb27}{get\+T\+Coords} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} i)
+\begin{DoxyCompactList}\small\item\em returns texture coord of vertex i \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a7efd85cba5d5d86bee8c2ea2fe0524d9}{append} (const void $\ast$const vertices, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} num\+Vertices, const \hyperlink{namespaceirr_ae9f8ec82692ad3b83c21f555bfa70bcc}{u16} $\ast$const indices, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} num\+Indices)
+\begin{DoxyCompactList}\small\item\em Append the vertices and indices to the current buffer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1CMeshBuffer_af48b88e6c1bd79e6abd6a6803aa106c0}{append} (const \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer} $\ast$const other)
+\begin{DoxyCompactList}\small\item\em Append the meshbuffer to the current buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_adae334e8431e647d837acda0fada8bd5}\label{classirr_1_1scene_1_1CMeshBuffer_adae334e8431e647d837acda0fada8bd5}} 
+virtual \hyperlink{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27}{E\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+P\+P\+I\+NG} \hyperlink{classirr_1_1scene_1_1CMeshBuffer_adae334e8431e647d837acda0fada8bd5}{get\+Hardware\+Mapping\+Hint\+\_\+\+Vertex} () const
+\begin{DoxyCompactList}\small\item\em get the current hardware mapping hint \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a3f6eb99f71576b72225ac3eccd68efbe}\label{classirr_1_1scene_1_1CMeshBuffer_a3f6eb99f71576b72225ac3eccd68efbe}} 
+virtual \hyperlink{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27}{E\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+P\+P\+I\+NG} \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a3f6eb99f71576b72225ac3eccd68efbe}{get\+Hardware\+Mapping\+Hint\+\_\+\+Index} () const
+\begin{DoxyCompactList}\small\item\em get the current hardware mapping hint \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_aa86cd9ffbe81c9f86a6096b2e5d3410e}\label{classirr_1_1scene_1_1CMeshBuffer_aa86cd9ffbe81c9f86a6096b2e5d3410e}} 
+virtual void \hyperlink{classirr_1_1scene_1_1CMeshBuffer_aa86cd9ffbe81c9f86a6096b2e5d3410e}{set\+Hardware\+Mapping\+Hint} (\hyperlink{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27}{E\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+P\+P\+I\+NG} New\+Mapping\+Hint, \hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE} Buffer=\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca833624730c30cffccc121fe31aa0832c}{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX})
+\begin{DoxyCompactList}\small\item\em set the hardware mapping hint, for driver \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a7afead32226650c724f13f6f61282810}\label{classirr_1_1scene_1_1CMeshBuffer_a7afead32226650c724f13f6f61282810}} 
+virtual void \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a7afead32226650c724f13f6f61282810}{set\+Dirty} (\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE} Buffer=\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca833624730c30cffccc121fe31aa0832c}{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX})
+\begin{DoxyCompactList}\small\item\em flags the mesh as changed, reloads hardware buffers \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a99abc7d5f5a9f34221c58a598b33ce3a}{get\+Changed\+I\+D\+\_\+\+Vertex} () const
+\begin{DoxyCompactList}\small\item\em Get the currently used ID for identification of changes. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1scene_1_1CMeshBuffer_aec6786022abd81ddf8d4e79a23628944}{get\+Changed\+I\+D\+\_\+\+Index} () const
+\begin{DoxyCompactList}\small\item\em Get the currently used ID for identification of changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_af69f379242352b5a03bb135c02611909}\label{classirr_1_1scene_1_1CMeshBuffer_af69f379242352b5a03bb135c02611909}} 
+\hyperlink{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27}{E\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+P\+P\+I\+NG} \hyperlink{classirr_1_1scene_1_1CMeshBuffer_af69f379242352b5a03bb135c02611909}{Mapping\+Hint\+\_\+\+Vertex}
+\begin{DoxyCompactList}\small\item\em hardware mapping hint \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a0b04ea5a95cda0b914f5ca5bd01283ab}\label{classirr_1_1scene_1_1CMeshBuffer_a0b04ea5a95cda0b914f5ca5bd01283ab}} 
+\hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a0b04ea5a95cda0b914f5ca5bd01283ab}{Material}
+\begin{DoxyCompactList}\small\item\em Material for this meshbuffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a7dcab02671df7d62fadb0d996474d853}\label{classirr_1_1scene_1_1CMeshBuffer_a7dcab02671df7d62fadb0d996474d853}} 
+\hyperlink{classirr_1_1core_1_1array}{core\+::array}$<$ T $>$ \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a7dcab02671df7d62fadb0d996474d853}{Vertices}
+\begin{DoxyCompactList}\small\item\em Vertices of this buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a298043df538ddcedc6586e20723b0665}\label{classirr_1_1scene_1_1CMeshBuffer_a298043df538ddcedc6586e20723b0665}} 
+\hyperlink{classirr_1_1core_1_1array}{core\+::array}$<$ \hyperlink{namespaceirr_ae9f8ec82692ad3b83c21f555bfa70bcc}{u16} $>$ \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a298043df538ddcedc6586e20723b0665}{Indices}
+\begin{DoxyCompactList}\small\item\em Indices into the vertices of this buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a9e16abdff220a4f7a5ffff992d3ef1d6}\label{classirr_1_1scene_1_1CMeshBuffer_a9e16abdff220a4f7a5ffff992d3ef1d6}} 
+\hyperlink{classirr_1_1core_1_1aabbox3d}{core\+::aabbox3d}$<$ \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $>$ \hyperlink{classirr_1_1scene_1_1CMeshBuffer_a9e16abdff220a4f7a5ffff992d3ef1d6}{Bounding\+Box}
+\begin{DoxyCompactList}\small\item\em Bounding box of this meshbuffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class irr\+::scene\+::\+C\+Mesh\+Buffer$<$ T $>$}
+
+Template implementation of the \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer} interface. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a7efd85cba5d5d86bee8c2ea2fe0524d9}\label{classirr_1_1scene_1_1CMeshBuffer_a7efd85cba5d5d86bee8c2ea2fe0524d9}} 
+\index{irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}!append@{append}}
+\index{append@{append}!irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}}
+\subsubsection{\texorpdfstring{append()}{append()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual void \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{irr\+::scene\+::\+C\+Mesh\+Buffer}$<$ T $>$\+::append (\begin{DoxyParamCaption}\item[{const void $\ast$const}]{vertices,  }\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{num\+Vertices,  }\item[{const \hyperlink{namespaceirr_ae9f8ec82692ad3b83c21f555bfa70bcc}{u16} $\ast$const}]{indices,  }\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{num\+Indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Append the vertices and indices to the current buffer. 
+
+Only works for compatible types, i.\+e. either the same type or the main buffer is of standard type. Otherwise, behavior is undefined. 
+
+Implements \hyperlink{classirr_1_1scene_1_1IMeshBuffer_ac9e9d7fbb10175cc6f1596ba3fe4e8f9}{irr\+::scene\+::\+I\+Mesh\+Buffer}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_af48b88e6c1bd79e6abd6a6803aa106c0}\label{classirr_1_1scene_1_1CMeshBuffer_af48b88e6c1bd79e6abd6a6803aa106c0}} 
+\index{irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}!append@{append}}
+\index{append@{append}!irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}}
+\subsubsection{\texorpdfstring{append()}{append()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual void \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{irr\+::scene\+::\+C\+Mesh\+Buffer}$<$ T $>$\+::append (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer} $\ast$const}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Append the meshbuffer to the current buffer. 
+
+Only works for compatible types, i.\+e. either the same type or the main buffer is of standard type. Otherwise, behavior is undefined. 
+\begin{DoxyParams}{Parameters}
+{\em other} & Meshbuffer to be appended to this one. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classirr_1_1scene_1_1IMeshBuffer_a79d2737962579138183ed0fd324310b3}{irr\+::scene\+::\+I\+Mesh\+Buffer}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a759863b44c024f79747019f492a5c7cf}\label{classirr_1_1scene_1_1CMeshBuffer_a759863b44c024f79747019f492a5c7cf}} 
+\index{irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}!get\+Bounding\+Box@{get\+Bounding\+Box}}
+\index{get\+Bounding\+Box@{get\+Bounding\+Box}!irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Bounding\+Box()}{getBoundingBox()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual const \hyperlink{classirr_1_1core_1_1aabbox3d}{core\+::aabbox3d}$<$\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}$>$\& \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{irr\+::scene\+::\+C\+Mesh\+Buffer}$<$ T $>$\+::get\+Bounding\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the axis aligned bounding box. 
+
+\begin{DoxyReturn}{Returns}
+Axis aligned bounding box of this buffer. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classirr_1_1scene_1_1IMeshBuffer_ac53fe1096756a40f25dae25911e27c51}{irr\+::scene\+::\+I\+Mesh\+Buffer}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_aec6786022abd81ddf8d4e79a23628944}\label{classirr_1_1scene_1_1CMeshBuffer_aec6786022abd81ddf8d4e79a23628944}} 
+\index{irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}!get\+Changed\+I\+D\+\_\+\+Index@{get\+Changed\+I\+D\+\_\+\+Index}}
+\index{get\+Changed\+I\+D\+\_\+\+Index@{get\+Changed\+I\+D\+\_\+\+Index}!irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Changed\+I\+D\+\_\+\+Index()}{getChangedID\_Index()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{irr\+::scene\+::\+C\+Mesh\+Buffer}$<$ T $>$\+::get\+Changed\+I\+D\+\_\+\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the currently used ID for identification of changes. 
+
+This shouldn\textquotesingle{}t be used for anything outside the Video\+Driver. 
+
+Implements \hyperlink{classirr_1_1scene_1_1IMeshBuffer_acc389d76856dfb06c3ba45a92315e6d8}{irr\+::scene\+::\+I\+Mesh\+Buffer}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a99abc7d5f5a9f34221c58a598b33ce3a}\label{classirr_1_1scene_1_1CMeshBuffer_a99abc7d5f5a9f34221c58a598b33ce3a}} 
+\index{irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}!get\+Changed\+I\+D\+\_\+\+Vertex@{get\+Changed\+I\+D\+\_\+\+Vertex}}
+\index{get\+Changed\+I\+D\+\_\+\+Vertex@{get\+Changed\+I\+D\+\_\+\+Vertex}!irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Changed\+I\+D\+\_\+\+Vertex()}{getChangedID\_Vertex()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{irr\+::scene\+::\+C\+Mesh\+Buffer}$<$ T $>$\+::get\+Changed\+I\+D\+\_\+\+Vertex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the currently used ID for identification of changes. 
+
+This shouldn\textquotesingle{}t be used for anything outside the Video\+Driver. 
+
+Implements \hyperlink{classirr_1_1scene_1_1IMeshBuffer_aba48df31edf92a0117692c0be02298db}{irr\+::scene\+::\+I\+Mesh\+Buffer}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_ac5585f4983423a4ba1f4ab4aba112c95}\label{classirr_1_1scene_1_1CMeshBuffer_ac5585f4983423a4ba1f4ab4aba112c95}} 
+\index{irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}!get\+Index\+Count@{get\+Index\+Count}}
+\index{get\+Index\+Count@{get\+Index\+Count}!irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Index\+Count()}{getIndexCount()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{irr\+::scene\+::\+C\+Mesh\+Buffer}$<$ T $>$\+::get\+Index\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get number of indices. 
+
+\begin{DoxyReturn}{Returns}
+Number of indices. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classirr_1_1scene_1_1IMeshBuffer_a96e08662e15b1205516b87ada3301551}{irr\+::scene\+::\+I\+Mesh\+Buffer}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_aa183491690fa47b4697bbfcc7902301c}\label{classirr_1_1scene_1_1CMeshBuffer_aa183491690fa47b4697bbfcc7902301c}} 
+\index{irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}!get\+Index\+Type@{get\+Index\+Type}}
+\index{get\+Index\+Type@{get\+Index\+Type}!irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Index\+Type()}{getIndexType()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual video\+::\+E\+\_\+\+I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{irr\+::scene\+::\+C\+Mesh\+Buffer}$<$ T $>$\+::get\+Index\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get type of index data which is stored in this meshbuffer. 
+
+\begin{DoxyReturn}{Returns}
+Index type of this buffer. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classirr_1_1scene_1_1IMeshBuffer_a8a993431c2c35420b62a577dc18dbdc2}{irr\+::scene\+::\+I\+Mesh\+Buffer}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a23af7e8ffb2ba674d1dd4448cea288bf}\label{classirr_1_1scene_1_1CMeshBuffer_a23af7e8ffb2ba674d1dd4448cea288bf}} 
+\index{irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}!get\+Indices@{get\+Indices}}
+\index{get\+Indices@{get\+Indices}!irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Indices()}{getIndices()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual const \hyperlink{namespaceirr_ae9f8ec82692ad3b83c21f555bfa70bcc}{u16}$\ast$ \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{irr\+::scene\+::\+C\+Mesh\+Buffer}$<$ T $>$\+::get\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get pointer to indices. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to indices. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classirr_1_1scene_1_1IMeshBuffer_a76c0013378012af7aeb6cb8f4ea8f9a1}{irr\+::scene\+::\+I\+Mesh\+Buffer}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a34a85f4868776d4cf312cdece5326c89}\label{classirr_1_1scene_1_1CMeshBuffer_a34a85f4868776d4cf312cdece5326c89}} 
+\index{irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}!get\+Indices@{get\+Indices}}
+\index{get\+Indices@{get\+Indices}!irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Indices()}{getIndices()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual \hyperlink{namespaceirr_ae9f8ec82692ad3b83c21f555bfa70bcc}{u16}$\ast$ \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{irr\+::scene\+::\+C\+Mesh\+Buffer}$<$ T $>$\+::get\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get pointer to indices. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to indices. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classirr_1_1scene_1_1IMeshBuffer_a3d33a561023314677361e30cf07ae429}{irr\+::scene\+::\+I\+Mesh\+Buffer}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a3e971800b0fc1a67134f839309589e43}\label{classirr_1_1scene_1_1CMeshBuffer_a3e971800b0fc1a67134f839309589e43}} 
+\index{irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}!get\+Material@{get\+Material}}
+\index{get\+Material@{get\+Material}!irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Material()}{getMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material}\& \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{irr\+::scene\+::\+C\+Mesh\+Buffer}$<$ T $>$\+::get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get material of this meshbuffer. 
+
+\begin{DoxyReturn}{Returns}
+Material of this buffer 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classirr_1_1scene_1_1IMeshBuffer_a341c1da2fd0cd556a15aab06d07dbbaa}{irr\+::scene\+::\+I\+Mesh\+Buffer}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_af69e8356b4525a3fee1ddbf188d81e8a}\label{classirr_1_1scene_1_1CMeshBuffer_af69e8356b4525a3fee1ddbf188d81e8a}} 
+\index{irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}!get\+Material@{get\+Material}}
+\index{get\+Material@{get\+Material}!irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Material()}{getMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material}\& \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{irr\+::scene\+::\+C\+Mesh\+Buffer}$<$ T $>$\+::get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get material of this meshbuffer. 
+
+\begin{DoxyReturn}{Returns}
+Material of this buffer 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classirr_1_1scene_1_1IMeshBuffer_a26fd922f00fde56abbbbbe40b485238b}{irr\+::scene\+::\+I\+Mesh\+Buffer}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a72ee778498eff327a20c6be179976994}\label{classirr_1_1scene_1_1CMeshBuffer_a72ee778498eff327a20c6be179976994}} 
+\index{irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}!get\+Vertex\+Count@{get\+Vertex\+Count}}
+\index{get\+Vertex\+Count@{get\+Vertex\+Count}!irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Vertex\+Count()}{getVertexCount()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{irr\+::scene\+::\+C\+Mesh\+Buffer}$<$ T $>$\+::get\+Vertex\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get number of vertices. 
+
+\begin{DoxyReturn}{Returns}
+Number of vertices. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classirr_1_1scene_1_1IMeshBuffer_a77ab285c8c886af8ddeb0371db7bde96}{irr\+::scene\+::\+I\+Mesh\+Buffer}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a341db661218a49d8d8fd12550700cb67}\label{classirr_1_1scene_1_1CMeshBuffer_a341db661218a49d8d8fd12550700cb67}} 
+\index{irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}!get\+Vertex\+Type@{get\+Vertex\+Type}}
+\index{get\+Vertex\+Type@{get\+Vertex\+Type}!irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Vertex\+Type()}{getVertexType()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual \hyperlink{namespaceirr_1_1video_a0e3b59e025e0d0db0ed2ee0ce904deac}{video\+::\+E\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE} \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{irr\+::scene\+::\+C\+Mesh\+Buffer}$<$ T $>$\+::get\+Vertex\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get type of vertex data stored in this buffer. 
+
+\begin{DoxyReturn}{Returns}
+Type of vertex data. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classirr_1_1scene_1_1IMeshBuffer_a4d7a84ae4416487736f0ed0f519bb4f0}{irr\+::scene\+::\+I\+Mesh\+Buffer}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_ad9463b97ee94bbc26bbb11bf867ea830}\label{classirr_1_1scene_1_1CMeshBuffer_ad9463b97ee94bbc26bbb11bf867ea830}} 
+\index{irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}!get\+Vertices@{get\+Vertices}}
+\index{get\+Vertices@{get\+Vertices}!irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Vertices()}{getVertices()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual const void$\ast$ \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{irr\+::scene\+::\+C\+Mesh\+Buffer}$<$ T $>$\+::get\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get pointer to vertices. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to vertices. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classirr_1_1scene_1_1IMeshBuffer_a99891e516246b2cff13b362a435c8028}{irr\+::scene\+::\+I\+Mesh\+Buffer}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_a9173c9d0c6f32890ab75dc501aaf5be6}\label{classirr_1_1scene_1_1CMeshBuffer_a9173c9d0c6f32890ab75dc501aaf5be6}} 
+\index{irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}!get\+Vertices@{get\+Vertices}}
+\index{get\+Vertices@{get\+Vertices}!irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Vertices()}{getVertices()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual void$\ast$ \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{irr\+::scene\+::\+C\+Mesh\+Buffer}$<$ T $>$\+::get\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get pointer to vertices. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to vertices. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classirr_1_1scene_1_1IMeshBuffer_ac1695efc198b05a086487606bc2783e7}{irr\+::scene\+::\+I\+Mesh\+Buffer}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_aad55263eaf019b090c8d1c3c5f7f4407}\label{classirr_1_1scene_1_1CMeshBuffer_aad55263eaf019b090c8d1c3c5f7f4407}} 
+\index{irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}!recalculate\+Bounding\+Box@{recalculate\+Bounding\+Box}}
+\index{recalculate\+Bounding\+Box@{recalculate\+Bounding\+Box}!irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}}
+\subsubsection{\texorpdfstring{recalculate\+Bounding\+Box()}{recalculateBoundingBox()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual void \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{irr\+::scene\+::\+C\+Mesh\+Buffer}$<$ T $>$\+::recalculate\+Bounding\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Recalculate the bounding box. 
+
+should be called if the mesh changed. 
+
+Implements \hyperlink{classirr_1_1scene_1_1IMeshBuffer_a161877fc3afe29a816440db12a71785d}{irr\+::scene\+::\+I\+Mesh\+Buffer}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1CMeshBuffer_ab5a21d48a5af73f1ef880a48c3798a67}\label{classirr_1_1scene_1_1CMeshBuffer_ab5a21d48a5af73f1ef880a48c3798a67}} 
+\index{irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}!set\+Bounding\+Box@{set\+Bounding\+Box}}
+\index{set\+Bounding\+Box@{set\+Bounding\+Box}!irr\+::scene\+::\+C\+Mesh\+Buffer@{irr\+::scene\+::\+C\+Mesh\+Buffer}}
+\subsubsection{\texorpdfstring{set\+Bounding\+Box()}{setBoundingBox()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual void \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{irr\+::scene\+::\+C\+Mesh\+Buffer}$<$ T $>$\+::set\+Bounding\+Box (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_adfc8fa01b30044c55f3332a1d6c1aa19}{core\+::aabbox3df} \&}]{box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the axis aligned bounding box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & New axis aligned bounding box for this buffer. set user axis aligned bounding box \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classirr_1_1scene_1_1IMeshBuffer_adbbfb7757dfbba7357193d2280893df6}{irr\+::scene\+::\+I\+Mesh\+Buffer}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/C\+Mesh\+Buffer.\+h\end{DoxyCompactItemize}

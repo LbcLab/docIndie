@@ -1,0 +1,1243 @@
+\hypertarget{classirr_1_1gui_1_1IGUIEnvironment}{}\section{irr\+:\+:gui\+:\+:I\+G\+U\+I\+Environment Class Reference}
+\label{classirr_1_1gui_1_1IGUIEnvironment}\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+
+
+G\+UI Environment. Used as factory and manager of all other G\+UI elements.  
+
+
+
+
+{\ttfamily \#include $<$I\+G\+U\+I\+Environment.\+h$>$}
+
+Inheritance diagram for irr\+:\+:gui\+:\+:I\+G\+U\+I\+Environment\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classirr_1_1gui_1_1IGUIEnvironment}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_aa6ba29bbf3121a5954cfa5a9ca72982f}\label{classirr_1_1gui_1_1IGUIEnvironment_aa6ba29bbf3121a5954cfa5a9ca72982f}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_aa6ba29bbf3121a5954cfa5a9ca72982f}{draw\+All} ()=0
+\begin{DoxyCompactList}\small\item\em Draws all gui elements by traversing the G\+UI environment starting at the root node. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a2bfe9985ae1a2f379e708fce86902cea}{set\+Focus} (\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$element)=0
+\begin{DoxyCompactList}\small\item\em Sets the focus to an element. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a624c047cb88a5d3e3e0d17a42a627335}{get\+Focus} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the element which holds the focus. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a00fa645d517a276553b78fc1d0e78591}{get\+Hovered} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the element which was last under the mouse cursor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_ab2100753b415a9950d95572d4623bf46}{remove\+Focus} (\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$element)=0
+\begin{DoxyCompactList}\small\item\em Removes the focus from an element. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a88c483f30a0f35debed70e8e51836552}{has\+Focus} (\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$element) const =0
+\begin{DoxyCompactList}\small\item\em Returns whether the element has focus. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1video_1_1IVideoDriver}{video\+::\+I\+Video\+Driver} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a48f5e442f0a2074a531234ab83148fe2}{get\+Video\+Driver} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the current video driver. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1io_1_1IFileSystem}{io\+::\+I\+File\+System} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_ad3ae4570702000e09cacdb663f0ec363}{get\+File\+System} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the file system. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1IOSOperator}{I\+O\+S\+Operator} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_afc715b9a9d98ae3aa8e769c9fb2f4f31}{get\+O\+S\+Operator} () const =0
+\begin{DoxyCompactList}\small\item\em returns a pointer to the OS operator \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a77b0cdd0aec36dbb9c558446fab383c2}\label{classirr_1_1gui_1_1IGUIEnvironment_a77b0cdd0aec36dbb9c558446fab383c2}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a77b0cdd0aec36dbb9c558446fab383c2}{clear} ()=0
+\begin{DoxyCompactList}\small\item\em Removes all elements from the environment. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_aff1cc1109841f9bccd19634870c7cd65}{post\+Event\+From\+User} (const \hyperlink{structirr_1_1SEvent}{S\+Event} \&event)=0
+\begin{DoxyCompactList}\small\item\em Posts an input event to the environment. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a2491715aa30894c66357eb0451aa10b0}{set\+User\+Event\+Receiver} (\hyperlink{classirr_1_1IEventReceiver}{I\+Event\+Receiver} $\ast$evr)=0
+\begin{DoxyCompactList}\small\item\em This sets a new event receiver for gui events. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUISkin}{I\+G\+U\+I\+Skin} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a54ce9072ea7b89cdaea65306e93ba90c}{get\+Skin} () const =0
+\begin{DoxyCompactList}\small\item\em Returns pointer to the current gui skin. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_ae7042c520e848643e080ad4532797f23}{set\+Skin} (\hyperlink{classirr_1_1gui_1_1IGUISkin}{I\+G\+U\+I\+Skin} $\ast$skin)=0
+\begin{DoxyCompactList}\small\item\em Sets a new G\+UI Skin. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUISkin}{I\+G\+U\+I\+Skin} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a824099cd1ba9dd4b95e40dd1b15244f1}{create\+Skin} (\hyperlink{namespaceirr_1_1gui_a7b4619db540cbdf96e81023893b4eca5}{E\+G\+U\+I\+\_\+\+S\+K\+I\+N\+\_\+\+T\+Y\+PE} type)=0
+\begin{DoxyCompactList}\small\item\em Creates a new G\+UI Skin based on a template. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIImageList}{I\+G\+U\+I\+Image\+List} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_af3bd793f81b15dc534648e8a37e76467}{create\+Image\+List} (\hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$texture, \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ image\+Size, bool use\+Alpha\+Channel)=0
+\begin{DoxyCompactList}\small\item\em Creates the image list from the given texture. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a22074f9a1a5a86d5d216126bbb90b3b1}{get\+Font} (const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&filename)=0
+\begin{DoxyCompactList}\small\item\em Returns pointer to the font with the specified filename. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a2c4fefb8a67fc92aedbbff6254532c2b}{add\+Font} (const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&name, \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font} $\ast$font)=0
+\begin{DoxyCompactList}\small\item\em Adds an externally loaded font to the font list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a414f61b6901e7328448247648fdf9375}\label{classirr_1_1gui_1_1IGUIEnvironment_a414f61b6901e7328448247648fdf9375}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a414f61b6901e7328448247648fdf9375}{remove\+Font} (\hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font} $\ast$font)=0
+\begin{DoxyCompactList}\small\item\em remove loaded font \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a896fbfcbad5ccf187a835827b439da93}{get\+Built\+In\+Font} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the default built-\/in font. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUISpriteBank}{I\+G\+U\+I\+Sprite\+Bank} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a187ebb28837dbdb88810f7e493096c3f}{get\+Sprite\+Bank} (const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&filename)=0
+\begin{DoxyCompactList}\small\item\em Returns pointer to the sprite bank with the specified file name. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUISpriteBank}{I\+G\+U\+I\+Sprite\+Bank} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a62f34cdf4dd600a35eaf37d856579d98}{add\+Empty\+Sprite\+Bank} (const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&name)=0
+\begin{DoxyCompactList}\small\item\em Adds an empty sprite bank to the manager. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a35fec6d5baa9b2f65aa9ee2c336104d4}{get\+Root\+G\+U\+I\+Element} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the root gui element. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIButton}{I\+G\+U\+I\+Button} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a666749b7352a677c74acb242199e54a0}{add\+Button} (const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&rectangle, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1, const wchar\+\_\+t $\ast$text=0, const wchar\+\_\+t $\ast$tooltiptext=0)=0
+\begin{DoxyCompactList}\small\item\em Adds a button element. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIWindow}{I\+G\+U\+I\+Window} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_ac233dcbef643b5f7de9ab30ae5896e28}{add\+Window} (const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&rectangle, bool modal=false, const wchar\+\_\+t $\ast$text=0, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1)=0
+\begin{DoxyCompactList}\small\item\em Adds an empty window element. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a8bdf2e97e3694da75205ad693d849219}{add\+Modal\+Screen} (\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent)=0
+\begin{DoxyCompactList}\small\item\em Adds a modal screen. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIWindow}{I\+G\+U\+I\+Window} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_aaf8cad4624c26895523b22728098a917}{add\+Message\+Box} (const wchar\+\_\+t $\ast$caption, const wchar\+\_\+t $\ast$text=0, bool modal=true, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} flags=\hyperlink{namespaceirr_1_1gui_af55112e55731c9ad1b9fe9b372c521afaa3ffecf59885ff91a925aa3e27269db9}{E\+M\+B\+F\+\_\+\+OK}, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1, \hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$image=0)=0
+\begin{DoxyCompactList}\small\item\em Adds a message box. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIScrollBar}{I\+G\+U\+I\+Scroll\+Bar} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_aff82c4b3935eaf56ce638996f5e002c9}{add\+Scroll\+Bar} (bool horizontal, const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&rectangle, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1)=0
+\begin{DoxyCompactList}\small\item\em Adds a scrollbar. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIImage}{I\+G\+U\+I\+Image} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a35cc257b3a183551a2ed0376dcec9fe4}{add\+Image} (\hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$image, core\+::position2d$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ pos, bool use\+Alpha\+Channel=true, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1, const wchar\+\_\+t $\ast$text=0)=0
+\begin{DoxyCompactList}\small\item\em Adds an image element. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIImage}{I\+G\+U\+I\+Image} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a0f84bdf59447419bb0555f001f68d889}{add\+Image} (const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&rectangle, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1, const wchar\+\_\+t $\ast$text=0, bool use\+Alpha\+Channel=true)=0
+\begin{DoxyCompactList}\small\item\em Adds an image element. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUICheckBox}{I\+G\+U\+I\+Check\+Box} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a849a6970cda901fbcf745c757b46212e}{add\+Check\+Box} (bool checked, const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&rectangle, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1, const wchar\+\_\+t $\ast$text=0)=0
+\begin{DoxyCompactList}\small\item\em Adds a checkbox element. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIListBox}{I\+G\+U\+I\+List\+Box} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_af5990b3ad8c9bdc65e645a4cb508ad5f}{add\+List\+Box} (const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&rectangle, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1, bool draw\+Background=false)=0
+\begin{DoxyCompactList}\small\item\em Adds a list box element. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUITreeView}{I\+G\+U\+I\+Tree\+View} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a3c82300cf7eaabc451ef20a04b432c32}{add\+Tree\+View} (const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&rectangle, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1, bool draw\+Background=false, bool scroll\+Bar\+Vertical=true, bool scroll\+Bar\+Horizontal=false)=0
+\begin{DoxyCompactList}\small\item\em Adds a tree view element. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIMeshViewer}{I\+G\+U\+I\+Mesh\+Viewer} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a4e35088a4346e5a80d1362e406a628e2}{add\+Mesh\+Viewer} (const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&rectangle, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1, const wchar\+\_\+t $\ast$text=0)=0
+\begin{DoxyCompactList}\small\item\em Adds a mesh viewer. Not 100\% implemented yet. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIFileOpenDialog}{I\+G\+U\+I\+File\+Open\+Dialog} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_aaac7c786a19c5cac51a550ce77cd972a}{add\+File\+Open\+Dialog} (const wchar\+\_\+t $\ast$title=0, bool modal=true, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1, bool restore\+C\+WD=false, io\+::path\+::char\+\_\+type $\ast$start\+Dir=0)=0
+\begin{DoxyCompactList}\small\item\em Adds a file open dialog. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIColorSelectDialog}{I\+G\+U\+I\+Color\+Select\+Dialog} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a72858e14c66a1ee4687e6f51dedb0ce0}{add\+Color\+Select\+Dialog} (const wchar\+\_\+t $\ast$title=0, bool modal=true, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1)=0
+\begin{DoxyCompactList}\small\item\em Adds a color select dialog. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIStaticText}{I\+G\+U\+I\+Static\+Text} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_adb56652b23932a391b08f710a9546ef3}{add\+Static\+Text} (const wchar\+\_\+t $\ast$text, const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&rectangle, bool border=false, bool word\+Wrap=true, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1, bool fill\+Background=false)=0
+\begin{DoxyCompactList}\small\item\em Adds a static text. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIEditBox}{I\+G\+U\+I\+Edit\+Box} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_ab46cdfa5f746932166ac4ccfa86a70eb}{add\+Edit\+Box} (const wchar\+\_\+t $\ast$text, const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&rectangle, bool border=true, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1)=0
+\begin{DoxyCompactList}\small\item\em Adds an edit box. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUISpinBox}{I\+G\+U\+I\+Spin\+Box} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_ab7deca80cf9b0422fba30985612c3c99}{add\+Spin\+Box} (const wchar\+\_\+t $\ast$text, const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&rectangle, bool border=true, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1)=0
+\begin{DoxyCompactList}\small\item\em Adds a spin box. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIInOutFader}{I\+G\+U\+I\+In\+Out\+Fader} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a9ffbddbf3785b54a284d83df4ce3df02}{add\+In\+Out\+Fader} (const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ $\ast$rectangle=0, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1)=0
+\begin{DoxyCompactList}\small\item\em Adds an element for fading in or out. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUITabControl}{I\+G\+U\+I\+Tab\+Control} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_af076e5646db2e392309aef75edd28238}{add\+Tab\+Control} (const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&rectangle, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, bool fillbackground=false, bool border=true, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1)=0
+\begin{DoxyCompactList}\small\item\em Adds a tab control to the environment. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUITab}{I\+G\+U\+I\+Tab} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a67b5c558738d61f4753353de8b96f3c1}{add\+Tab} (const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&rectangle, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1)=0
+\begin{DoxyCompactList}\small\item\em Adds tab to the environment. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIContextMenu}{I\+G\+U\+I\+Context\+Menu} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a4f421209425cfe58a29c6fb2e49a2e99}{add\+Context\+Menu} (const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&rectangle, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1)=0
+\begin{DoxyCompactList}\small\item\em Adds a context menu to the environment. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIContextMenu}{I\+G\+U\+I\+Context\+Menu} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a0bed2ddf6c422117285f9602c8afd4a1}{add\+Menu} (\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1)=0
+\begin{DoxyCompactList}\small\item\em Adds a menu to the environment. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIToolBar}{I\+G\+U\+I\+Tool\+Bar} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_aa25084f8d939ca49b503162fd3370eae}{add\+Tool\+Bar} (\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1)=0
+\begin{DoxyCompactList}\small\item\em Adds a toolbar to the environment. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIComboBox}{I\+G\+U\+I\+Combo\+Box} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a24c178560277c21d3d2e3c9ba1196d2f}{add\+Combo\+Box} (const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&rectangle, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1)=0
+\begin{DoxyCompactList}\small\item\em Adds a combo box to the environment. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUITable}{I\+G\+U\+I\+Table} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a6c4a058d7c6ff21f062b5fe540ca4748}{add\+Table} (const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&rectangle, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1, bool draw\+Background=false)=0
+\begin{DoxyCompactList}\small\item\em Adds a table to the environment. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIElementFactory}{I\+G\+U\+I\+Element\+Factory} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a13ec41a31e1b9cdc317c0c6092c2b820}{get\+Default\+G\+U\+I\+Element\+Factory} () const =0
+\begin{DoxyCompactList}\small\item\em Get the default element factory which can create all built-\/in elements. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a653ac2cc8640899c23f4d55d9a5f0fdd}{register\+G\+U\+I\+Element\+Factory} (\hyperlink{classirr_1_1gui_1_1IGUIElementFactory}{I\+G\+U\+I\+Element\+Factory} $\ast$factory\+To\+Add)=0
+\begin{DoxyCompactList}\small\item\em Adds an element factory to the gui environment. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a022dcd144b1f955180569ef2ee844561}{get\+Registered\+G\+U\+I\+Element\+Factory\+Count} () const =0
+\begin{DoxyCompactList}\small\item\em Get amount of registered gui element factories. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIElementFactory}{I\+G\+U\+I\+Element\+Factory} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a3c1ec1c13e7339e2e8abb34276d6288f}{get\+G\+U\+I\+Element\+Factory} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index) const =0
+\begin{DoxyCompactList}\small\item\em Get a gui element factory by index. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a17114e35fc67f6d54df1baebb806f3b7}{add\+G\+U\+I\+Element} (const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$element\+Name, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0)=0
+\begin{DoxyCompactList}\small\item\em Adds a G\+UI element by its name. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_ac5e7b39ff2292983660a5e5999b240b3}{save\+G\+UI} (const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&filename, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$start=0)=0
+\begin{DoxyCompactList}\small\item\em Saves the current gui into a file. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a39fdeef8455813a2be2bce9212ec758a}{save\+G\+UI} (\hyperlink{classirr_1_1io_1_1IWriteFile}{io\+::\+I\+Write\+File} $\ast$file, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$start=0)=0
+\begin{DoxyCompactList}\small\item\em Saves the current gui into a file. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a6e847a40e5c97c846f2d654605ae13a0}{load\+G\+UI} (const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&filename, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0)=0
+\begin{DoxyCompactList}\small\item\em Loads the gui. Note that the current gui is not cleared before. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a23e53c388d45358c53304d095f0b029b}{load\+G\+UI} (\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$file, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent=0)=0
+\begin{DoxyCompactList}\small\item\em Loads the gui. Note that the current gui is not cleared before. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a6342ec41dcd9fbd3f587dce369d11b34}\label{classirr_1_1gui_1_1IGUIEnvironment_a6342ec41dcd9fbd3f587dce369d11b34}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a6342ec41dcd9fbd3f587dce369d11b34}{serialize\+Attributes} (\hyperlink{classirr_1_1io_1_1IAttributes}{io\+::\+I\+Attributes} $\ast$out, \hyperlink{structirr_1_1io_1_1SAttributeReadWriteOptions}{io\+::\+S\+Attribute\+Read\+Write\+Options} $\ast$options=0) const =0
+\begin{DoxyCompactList}\small\item\em Writes attributes of the gui environment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a8890a0b0cb5a08c9cca65c6efa3a1e0e}\label{classirr_1_1gui_1_1IGUIEnvironment_a8890a0b0cb5a08c9cca65c6efa3a1e0e}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a8890a0b0cb5a08c9cca65c6efa3a1e0e}{deserialize\+Attributes} (\hyperlink{classirr_1_1io_1_1IAttributes}{io\+::\+I\+Attributes} $\ast$in, \hyperlink{structirr_1_1io_1_1SAttributeReadWriteOptions}{io\+::\+S\+Attribute\+Read\+Write\+Options} $\ast$options=0)=0
+\begin{DoxyCompactList}\small\item\em Reads attributes of the gui environment. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a30fb040bf48603fd309632e9c60b3583}\label{classirr_1_1gui_1_1IGUIEnvironment_a30fb040bf48603fd309632e9c60b3583}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a30fb040bf48603fd309632e9c60b3583}{write\+G\+U\+I\+Element} (\hyperlink{classirr_1_1io_1_1IXMLWriter}{io\+::\+I\+X\+M\+L\+Writer} $\ast$writer, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$node)=0
+\begin{DoxyCompactList}\small\item\em writes an element \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_acdfcdf6330e7475e3fdfd42f43c5f6df}\label{classirr_1_1gui_1_1IGUIEnvironment_acdfcdf6330e7475e3fdfd42f43c5f6df}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_acdfcdf6330e7475e3fdfd42f43c5f6df}{read\+G\+U\+I\+Element} (\hyperlink{namespaceirr_1_1io_a9dc6291fb7e4c73155a3e3c8339f9bff}{io\+::\+I\+X\+M\+L\+Reader} $\ast$reader, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$node)=0
+\begin{DoxyCompactList}\small\item\em reads an element \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+G\+UI Environment. Used as factory and manager of all other G\+UI elements. 
+
+\begin{DoxyParagraph}{This element can create the following events of type E\+G\+U\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE (which are passed on to focused sub-\/elements)\+:}
+\begin{DoxyItemize}
+\item E\+G\+E\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+F\+O\+C\+U\+S\+\_\+\+L\+O\+ST \item E\+G\+E\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+F\+O\+C\+U\+S\+ED \item E\+G\+E\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+L\+E\+FT \item E\+G\+E\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+H\+O\+V\+E\+R\+ED \end{DoxyItemize}
+
+\end{DoxyParagraph}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a666749b7352a677c74acb242199e54a0}\label{classirr_1_1gui_1_1IGUIEnvironment_a666749b7352a677c74acb242199e54a0}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Button@{add\+Button}}
+\index{add\+Button@{add\+Button}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Button()}{addButton()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIButton}{I\+G\+U\+I\+Button}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Button (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{rectangle,  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1},  }\item[{const wchar\+\_\+t $\ast$}]{text = {\ttfamily 0},  }\item[{const wchar\+\_\+t $\ast$}]{tooltiptext = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a button element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & Rectangle specifying the borders of the button. \\
+\hline
+{\em parent} & Parent gui element of the button. \\
+\hline
+{\em id} & Id with which the gui element can be identified. \\
+\hline
+{\em text} & \hyperlink{classText}{Text} displayed on the button. \\
+\hline
+{\em tooltiptext} & \hyperlink{classText}{Text} displayed in the tooltip. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created button. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a849a6970cda901fbcf745c757b46212e}\label{classirr_1_1gui_1_1IGUIEnvironment_a849a6970cda901fbcf745c757b46212e}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Check\+Box@{add\+Check\+Box}}
+\index{add\+Check\+Box@{add\+Check\+Box}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Check\+Box()}{addCheckBox()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUICheckBox}{I\+G\+U\+I\+Check\+Box}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Check\+Box (\begin{DoxyParamCaption}\item[{bool}]{checked,  }\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{rectangle,  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1},  }\item[{const wchar\+\_\+t $\ast$}]{text = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a checkbox element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em checked} & Define the initial state of the check box. \\
+\hline
+{\em rectangle} & Rectangle specifying the borders of the check box. \\
+\hline
+{\em parent} & Parent gui element of the check box. \\
+\hline
+{\em id} & Id to identify the gui element. \\
+\hline
+{\em text} & Title text of the check box. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created check box. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a72858e14c66a1ee4687e6f51dedb0ce0}\label{classirr_1_1gui_1_1IGUIEnvironment_a72858e14c66a1ee4687e6f51dedb0ce0}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Color\+Select\+Dialog@{add\+Color\+Select\+Dialog}}
+\index{add\+Color\+Select\+Dialog@{add\+Color\+Select\+Dialog}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Color\+Select\+Dialog()}{addColorSelectDialog()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIColorSelectDialog}{I\+G\+U\+I\+Color\+Select\+Dialog}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Color\+Select\+Dialog (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{title = {\ttfamily 0},  }\item[{bool}]{modal = {\ttfamily true},  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a color select dialog. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title of the dialog. \\
+\hline
+{\em modal} & Defines if the dialog is modal. This means, that all other gui elements which were created before the dialog cannot be used until it is removed. \\
+\hline
+{\em parent} & The parent of the dialog. \\
+\hline
+{\em id} & The ID of the dialog. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created file open dialog. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a24c178560277c21d3d2e3c9ba1196d2f}\label{classirr_1_1gui_1_1IGUIEnvironment_a24c178560277c21d3d2e3c9ba1196d2f}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Combo\+Box@{add\+Combo\+Box}}
+\index{add\+Combo\+Box@{add\+Combo\+Box}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Combo\+Box()}{addComboBox()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIComboBox}{I\+G\+U\+I\+Combo\+Box}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Combo\+Box (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{rectangle,  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a combo box to the environment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & Rectangle specifying the borders of the combo box. \\
+\hline
+{\em parent} & Parent item of the element, e.\+g. a window. Set it to 0 to place the combo box directly in the environment. \\
+\hline
+{\em id} & An identifier for the combo box. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created combo box. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a4f421209425cfe58a29c6fb2e49a2e99}\label{classirr_1_1gui_1_1IGUIEnvironment_a4f421209425cfe58a29c6fb2e49a2e99}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Context\+Menu@{add\+Context\+Menu}}
+\index{add\+Context\+Menu@{add\+Context\+Menu}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Context\+Menu()}{addContextMenu()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIContextMenu}{I\+G\+U\+I\+Context\+Menu}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Context\+Menu (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{rectangle,  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a context menu to the environment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & Rectangle specifying the borders of the menu. Note that the menu is resizing itself based on what items you add. \\
+\hline
+{\em parent} & Parent item of the element, e.\+g. a window. Set it to 0 to place the menu directly in the environment. \\
+\hline
+{\em id} & An identifier for the menu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created context menu. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_ab46cdfa5f746932166ac4ccfa86a70eb}\label{classirr_1_1gui_1_1IGUIEnvironment_ab46cdfa5f746932166ac4ccfa86a70eb}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Edit\+Box@{add\+Edit\+Box}}
+\index{add\+Edit\+Box@{add\+Edit\+Box}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Edit\+Box()}{addEditBox()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIEditBox}{I\+G\+U\+I\+Edit\+Box}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Edit\+Box (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{rectangle,  }\item[{bool}]{border = {\ttfamily true},  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds an edit box. 
+
+Supports unicode input from every keyboard around the world, scrolling, copying and pasting (exchanging data with the clipboard directly), maximum character amount, marking, and all shortcuts like ctrl+X, ctrl+V, ctrl+C, shift+\+Left, shift+\+Right, Home, End, and so on. 
+\begin{DoxyParams}{Parameters}
+{\em text} & \hyperlink{classText}{Text} to be displayed. Can be altered after creation by set\+Text(). \\
+\hline
+{\em rectangle} & Rectangle specifying the borders of the edit box. \\
+\hline
+{\em border} & Set to true if the edit box should have a 3d border. \\
+\hline
+{\em parent} & Parent item of the element, e.\+g. a window. Set it to 0 to place the edit box directly in the environment. \\
+\hline
+{\em id} & The ID of the element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created edit box. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a62f34cdf4dd600a35eaf37d856579d98}\label{classirr_1_1gui_1_1IGUIEnvironment_a62f34cdf4dd600a35eaf37d856579d98}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Empty\+Sprite\+Bank@{add\+Empty\+Sprite\+Bank}}
+\index{add\+Empty\+Sprite\+Bank@{add\+Empty\+Sprite\+Bank}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Empty\+Sprite\+Bank()}{addEmptySpriteBank()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUISpriteBank}{I\+G\+U\+I\+Sprite\+Bank}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Empty\+Sprite\+Bank (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds an empty sprite bank to the manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the new sprite bank. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the sprite bank. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_aaac7c786a19c5cac51a550ce77cd972a}\label{classirr_1_1gui_1_1IGUIEnvironment_aaac7c786a19c5cac51a550ce77cd972a}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+File\+Open\+Dialog@{add\+File\+Open\+Dialog}}
+\index{add\+File\+Open\+Dialog@{add\+File\+Open\+Dialog}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+File\+Open\+Dialog()}{addFileOpenDialog()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIFileOpenDialog}{I\+G\+U\+I\+File\+Open\+Dialog}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+File\+Open\+Dialog (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{title = {\ttfamily 0},  }\item[{bool}]{modal = {\ttfamily true},  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1},  }\item[{bool}]{restore\+C\+WD = {\ttfamily false},  }\item[{io\+::path\+::char\+\_\+type $\ast$}]{start\+Dir = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a file open dialog. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & \hyperlink{classText}{Text} to be displayed as the title of the dialog. \\
+\hline
+{\em modal} & Defines if the dialog is modal. This means, that all other gui elements which were created before the message box cannot be used until this messagebox is removed. \\
+\hline
+{\em parent} & Parent gui element of the dialog. \\
+\hline
+{\em id} & Id to identify the gui element. \\
+\hline
+{\em restore\+C\+WD} & If set to true, the current workingn directory will be restored after the dialog is closed in some way. Otherwise the working directory will be the one that the file dialog was last showing. \\
+\hline
+{\em start\+Dir} & Optional path for which the file dialog will be opened. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created file open dialog. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a2c4fefb8a67fc92aedbbff6254532c2b}\label{classirr_1_1gui_1_1IGUIEnvironment_a2c4fefb8a67fc92aedbbff6254532c2b}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Font@{add\+Font}}
+\index{add\+Font@{add\+Font}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Font()}{addFont()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Font (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&}]{name,  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font} $\ast$}]{font }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds an externally loaded font to the font list. 
+
+This method allows to attach an already loaded font to the list of existing fonts. The font is grabbed if non-\/null and adding was successful. 
+\begin{DoxyParams}{Parameters}
+{\em name} & Name the font should be stored as. \\
+\hline
+{\em font} & Pointer to font to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the font stored. This can differ from given parameter if the name previously existed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a17114e35fc67f6d54df1baebb806f3b7}\label{classirr_1_1gui_1_1IGUIEnvironment_a17114e35fc67f6d54df1baebb806f3b7}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+G\+U\+I\+Element@{add\+G\+U\+I\+Element}}
+\index{add\+G\+U\+I\+Element@{add\+G\+U\+I\+Element}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+G\+U\+I\+Element()}{addGUIElement()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+G\+U\+I\+Element (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$}]{element\+Name,  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a G\+UI element by its name. 
+
+Each factory is checked if it can create an element of the given name. The first match will be created. 
+\begin{DoxyParams}{Parameters}
+{\em element\+Name} & Name of the element to be created. \\
+\hline
+{\em parent} & Parent of the new element, if not 0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New G\+UI element, or 0 if no such element exists. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a35cc257b3a183551a2ed0376dcec9fe4}\label{classirr_1_1gui_1_1IGUIEnvironment_a35cc257b3a183551a2ed0376dcec9fe4}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Image@{add\+Image}}
+\index{add\+Image@{add\+Image}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Image()}{addImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIImage}{I\+G\+U\+I\+Image}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Image (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$}]{image,  }\item[{core\+::position2d$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$}]{pos,  }\item[{bool}]{use\+Alpha\+Channel = {\ttfamily true},  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1},  }\item[{const wchar\+\_\+t $\ast$}]{text = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds an image element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & \hyperlink{classImage}{Image} to be displayed. \\
+\hline
+{\em pos} & Position of the image. The width and height of the image is taken from the image. \\
+\hline
+{\em use\+Alpha\+Channel} & Sets if the image should use the alpha channel of the texture to draw itself. \\
+\hline
+{\em parent} & Parent gui element of the image. \\
+\hline
+{\em id} & Id to identify the gui element. \\
+\hline
+{\em text} & Title text of the image. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created image element. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a0f84bdf59447419bb0555f001f68d889}\label{classirr_1_1gui_1_1IGUIEnvironment_a0f84bdf59447419bb0555f001f68d889}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Image@{add\+Image}}
+\index{add\+Image@{add\+Image}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Image()}{addImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIImage}{I\+G\+U\+I\+Image}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Image (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{rectangle,  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1},  }\item[{const wchar\+\_\+t $\ast$}]{text = {\ttfamily 0},  }\item[{bool}]{use\+Alpha\+Channel = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds an image element. 
+
+Use \hyperlink{classirr_1_1gui_1_1IGUIImage_a35a3af4957e42acb183f562d09a4ea63}{I\+G\+U\+I\+Image\+::set\+Image} later to set the image to be displayed. 
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & Rectangle specifying the borders of the image. \\
+\hline
+{\em parent} & Parent gui element of the image. \\
+\hline
+{\em id} & Id to identify the gui element. \\
+\hline
+{\em text} & Title text of the image. \\
+\hline
+{\em use\+Alpha\+Channel} & Sets if the image should use the alpha channel of the texture to draw itself. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created image element. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a9ffbddbf3785b54a284d83df4ce3df02}\label{classirr_1_1gui_1_1IGUIEnvironment_a9ffbddbf3785b54a284d83df4ce3df02}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+In\+Out\+Fader@{add\+In\+Out\+Fader}}
+\index{add\+In\+Out\+Fader@{add\+In\+Out\+Fader}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+In\+Out\+Fader()}{addInOutFader()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIInOutFader}{I\+G\+U\+I\+In\+Out\+Fader}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+In\+Out\+Fader (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ $\ast$}]{rectangle = {\ttfamily 0},  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds an element for fading in or out. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & Rectangle specifying the borders of the fader. If the pointer is N\+U\+LL, the whole screen is used. \\
+\hline
+{\em parent} & Parent item of the element, e.\+g. a window. \\
+\hline
+{\em id} & An identifier for the fader. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created in-\/out-\/fader. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_af5990b3ad8c9bdc65e645a4cb508ad5f}\label{classirr_1_1gui_1_1IGUIEnvironment_af5990b3ad8c9bdc65e645a4cb508ad5f}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+List\+Box@{add\+List\+Box}}
+\index{add\+List\+Box@{add\+List\+Box}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+List\+Box()}{addListBox()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIListBox}{I\+G\+U\+I\+List\+Box}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+List\+Box (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{rectangle,  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1},  }\item[{bool}]{draw\+Background = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a list box element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & Rectangle specifying the borders of the list box. \\
+\hline
+{\em parent} & Parent gui element of the list box. \\
+\hline
+{\em id} & Id to identify the gui element. \\
+\hline
+{\em draw\+Background} & Flag whether the background should be drawn. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created list box. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a0bed2ddf6c422117285f9602c8afd4a1}\label{classirr_1_1gui_1_1IGUIEnvironment_a0bed2ddf6c422117285f9602c8afd4a1}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Menu@{add\+Menu}}
+\index{add\+Menu@{add\+Menu}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Menu()}{addMenu()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIContextMenu}{I\+G\+U\+I\+Context\+Menu}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Menu (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a menu to the environment. 
+
+This is like the menu you can find on top of most windows in modern graphical user interfaces. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent item of the element, e.\+g. a window. Set it to 0 to place the menu directly in the environment. \\
+\hline
+{\em id} & An identifier for the menu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created menu. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a4e35088a4346e5a80d1362e406a628e2}\label{classirr_1_1gui_1_1IGUIEnvironment_a4e35088a4346e5a80d1362e406a628e2}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Mesh\+Viewer@{add\+Mesh\+Viewer}}
+\index{add\+Mesh\+Viewer@{add\+Mesh\+Viewer}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Mesh\+Viewer()}{addMeshViewer()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIMeshViewer}{I\+G\+U\+I\+Mesh\+Viewer}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Mesh\+Viewer (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{rectangle,  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1},  }\item[{const wchar\+\_\+t $\ast$}]{text = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a mesh viewer. Not 100\% implemented yet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & Rectangle specifying the borders of the mesh viewer. \\
+\hline
+{\em parent} & Parent gui element of the mesh viewer. \\
+\hline
+{\em id} & Id to identify the gui element. \\
+\hline
+{\em text} & Title text of the mesh viewer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created mesh viewer. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_aaf8cad4624c26895523b22728098a917}\label{classirr_1_1gui_1_1IGUIEnvironment_aaf8cad4624c26895523b22728098a917}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Message\+Box@{add\+Message\+Box}}
+\index{add\+Message\+Box@{add\+Message\+Box}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Message\+Box()}{addMessageBox()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIWindow}{I\+G\+U\+I\+Window}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Message\+Box (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{caption,  }\item[{const wchar\+\_\+t $\ast$}]{text = {\ttfamily 0},  }\item[{bool}]{modal = {\ttfamily true},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{flags = {\ttfamily \hyperlink{namespaceirr_1_1gui_af55112e55731c9ad1b9fe9b372c521afaa3ffecf59885ff91a925aa3e27269db9}{E\+M\+B\+F\+\_\+\+OK}},  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1},  }\item[{\hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$}]{image = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a message box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caption} & \hyperlink{classText}{Text} to be displayed the title of the message box. \\
+\hline
+{\em text} & \hyperlink{classText}{Text} to be displayed in the body of the message box. \\
+\hline
+{\em modal} & Defines if the dialog is modal. This means, that all other gui elements which were created before the message box cannot be used until this messagebox is removed. \\
+\hline
+{\em flags} & Flags specifying the layout of the message box. For example to create a message box with an OK and a C\+A\+N\+C\+EL button on it, set this to (E\+M\+B\+F\+\_\+\+OK $\vert$ E\+M\+B\+F\+\_\+\+C\+A\+N\+C\+EL). \\
+\hline
+{\em parent} & Parent gui element of the message box. \\
+\hline
+{\em id} & Id with which the gui element can be identified. \\
+\hline
+{\em image} & Optional texture which will be displayed beside the text as an image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created message box. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a8bdf2e97e3694da75205ad693d849219}\label{classirr_1_1gui_1_1IGUIEnvironment_a8bdf2e97e3694da75205ad693d849219}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Modal\+Screen@{add\+Modal\+Screen}}
+\index{add\+Modal\+Screen@{add\+Modal\+Screen}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Modal\+Screen()}{addModalScreen()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Modal\+Screen (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a modal screen. 
+
+This control stops its parent\textquotesingle{}s members from being able to receive input until its last child is removed, it then deletes itself. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent gui element of the modal. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created modal. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_aff82c4b3935eaf56ce638996f5e002c9}\label{classirr_1_1gui_1_1IGUIEnvironment_aff82c4b3935eaf56ce638996f5e002c9}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Scroll\+Bar@{add\+Scroll\+Bar}}
+\index{add\+Scroll\+Bar@{add\+Scroll\+Bar}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Scroll\+Bar()}{addScrollBar()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIScrollBar}{I\+G\+U\+I\+Scroll\+Bar}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Scroll\+Bar (\begin{DoxyParamCaption}\item[{bool}]{horizontal,  }\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{rectangle,  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a scrollbar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em horizontal} & Specifies if the scroll bar is drawn horizontal or vertical. \\
+\hline
+{\em rectangle} & Rectangle specifying the borders of the scrollbar. \\
+\hline
+{\em parent} & Parent gui element of the scroll bar. \\
+\hline
+{\em id} & Id to identify the gui element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created scrollbar. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_ab7deca80cf9b0422fba30985612c3c99}\label{classirr_1_1gui_1_1IGUIEnvironment_ab7deca80cf9b0422fba30985612c3c99}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Spin\+Box@{add\+Spin\+Box}}
+\index{add\+Spin\+Box@{add\+Spin\+Box}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Spin\+Box()}{addSpinBox()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUISpinBox}{I\+G\+U\+I\+Spin\+Box}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Spin\+Box (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{rectangle,  }\item[{bool}]{border = {\ttfamily true},  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a spin box. 
+
+An edit box with up and down buttons 
+\begin{DoxyParams}{Parameters}
+{\em text} & \hyperlink{classText}{Text} to be displayed. Can be altered after creation by set\+Text(). \\
+\hline
+{\em rectangle} & Rectangle specifying the borders of the spin box. \\
+\hline
+{\em border} & Set to true if the spin box should have a 3d border. \\
+\hline
+{\em parent} & Parent item of the element, e.\+g. a window. Set it to 0 to place the spin box directly in the environment. \\
+\hline
+{\em id} & The ID of the element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created spin box. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_adb56652b23932a391b08f710a9546ef3}\label{classirr_1_1gui_1_1IGUIEnvironment_adb56652b23932a391b08f710a9546ef3}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Static\+Text@{add\+Static\+Text}}
+\index{add\+Static\+Text@{add\+Static\+Text}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Static\+Text()}{addStaticText()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIStaticText}{I\+G\+U\+I\+Static\+Text}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Static\+Text (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{rectangle,  }\item[{bool}]{border = {\ttfamily false},  }\item[{bool}]{word\+Wrap = {\ttfamily true},  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1},  }\item[{bool}]{fill\+Background = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a static text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \hyperlink{classText}{Text} to be displayed. Can be altered after creation by Set\+Text(). \\
+\hline
+{\em rectangle} & Rectangle specifying the borders of the static text \\
+\hline
+{\em border} & Set to true if the static text should have a 3d border. \\
+\hline
+{\em word\+Wrap} & Enable if the text should wrap into multiple lines. \\
+\hline
+{\em parent} & Parent item of the element, e.\+g. a window. \\
+\hline
+{\em id} & The ID of the element. \\
+\hline
+{\em fill\+Background} & Enable if the background shall be filled. Defaults to false. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created static text. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a67b5c558738d61f4753353de8b96f3c1}\label{classirr_1_1gui_1_1IGUIEnvironment_a67b5c558738d61f4753353de8b96f3c1}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Tab@{add\+Tab}}
+\index{add\+Tab@{add\+Tab}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Tab()}{addTab()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITab}{I\+G\+U\+I\+Tab}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Tab (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{rectangle,  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds tab to the environment. 
+
+You can use this element to group other elements. This is not used for creating tabs on tab controls, please use \hyperlink{classirr_1_1gui_1_1IGUITabControl_a4b1a55fd79785abc4f5bcb05f8637a42}{I\+G\+U\+I\+Tab\+Control\+::add\+Tab()} for this instead. 
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & Rectangle specifying the borders of the tab. \\
+\hline
+{\em parent} & Parent item of the element, e.\+g. a window. Set it to 0 to place the tab directly in the environment. \\
+\hline
+{\em id} & An identifier for the tab. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created tab. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_af076e5646db2e392309aef75edd28238}\label{classirr_1_1gui_1_1IGUIEnvironment_af076e5646db2e392309aef75edd28238}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Tab\+Control@{add\+Tab\+Control}}
+\index{add\+Tab\+Control@{add\+Tab\+Control}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Tab\+Control()}{addTabControl()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITabControl}{I\+G\+U\+I\+Tab\+Control}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Tab\+Control (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{rectangle,  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{bool}]{fillbackground = {\ttfamily false},  }\item[{bool}]{border = {\ttfamily true},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a tab control to the environment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & Rectangle specifying the borders of the tab control. \\
+\hline
+{\em parent} & Parent item of the element, e.\+g. a window. Set it to 0 to place the tab control directly in the environment. \\
+\hline
+{\em fillbackground} & Specifies if the background of the tab control should be drawn. \\
+\hline
+{\em border} & Specifies if a flat 3d border should be drawn. This is usually not necessary unless you place the control directly into the environment without a window as parent. \\
+\hline
+{\em id} & An identifier for the tab control. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created tab control element. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a6c4a058d7c6ff21f062b5fe540ca4748}\label{classirr_1_1gui_1_1IGUIEnvironment_a6c4a058d7c6ff21f062b5fe540ca4748}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Table@{add\+Table}}
+\index{add\+Table@{add\+Table}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Table()}{addTable()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITable}{I\+G\+U\+I\+Table}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Table (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{rectangle,  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1},  }\item[{bool}]{draw\+Background = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a table to the environment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & Rectangle specifying the borders of the table. \\
+\hline
+{\em parent} & Parent item of the element, e.\+g. a window. Set it to 0 to place the element directly in the environment. \\
+\hline
+{\em id} & An identifier for the table. \\
+\hline
+{\em draw\+Background} & Flag whether the background should be drawn. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created table. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_aa25084f8d939ca49b503162fd3370eae}\label{classirr_1_1gui_1_1IGUIEnvironment_aa25084f8d939ca49b503162fd3370eae}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Tool\+Bar@{add\+Tool\+Bar}}
+\index{add\+Tool\+Bar@{add\+Tool\+Bar}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Tool\+Bar()}{addToolBar()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIToolBar}{I\+G\+U\+I\+Tool\+Bar}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Tool\+Bar (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a toolbar to the environment. 
+
+It is like a menu that is always placed on top of its parent, and contains buttons. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent item of the element, e.\+g. a window. Set it to 0 to place the tool bar directly in the environment. \\
+\hline
+{\em id} & An identifier for the tool bar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created tool bar. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a3c82300cf7eaabc451ef20a04b432c32}\label{classirr_1_1gui_1_1IGUIEnvironment_a3c82300cf7eaabc451ef20a04b432c32}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Tree\+View@{add\+Tree\+View}}
+\index{add\+Tree\+View@{add\+Tree\+View}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Tree\+View()}{addTreeView()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeView}{I\+G\+U\+I\+Tree\+View}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Tree\+View (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{rectangle,  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1},  }\item[{bool}]{draw\+Background = {\ttfamily false},  }\item[{bool}]{scroll\+Bar\+Vertical = {\ttfamily true},  }\item[{bool}]{scroll\+Bar\+Horizontal = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a tree view element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & Position and dimension of list box. \\
+\hline
+{\em parent} & Parent gui element of the list box. \\
+\hline
+{\em id} & Id to identify the gui element. \\
+\hline
+{\em draw\+Background} & Flag whether the background should be drawn. \\
+\hline
+{\em scroll\+Bar\+Vertical} & Flag whether a vertical scrollbar should be used \\
+\hline
+{\em scroll\+Bar\+Horizontal} & Flag whether a horizontal scrollbar should be used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created list box. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_ac233dcbef643b5f7de9ab30ae5896e28}\label{classirr_1_1gui_1_1IGUIEnvironment_ac233dcbef643b5f7de9ab30ae5896e28}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!add\+Window@{add\+Window}}
+\index{add\+Window@{add\+Window}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{add\+Window()}{addWindow()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIWindow}{I\+G\+U\+I\+Window}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::add\+Window (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{rectangle,  }\item[{bool}]{modal = {\ttfamily false},  }\item[{const wchar\+\_\+t $\ast$}]{text = {\ttfamily 0},  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds an empty window element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & Rectangle specifying the borders of the window. \\
+\hline
+{\em modal} & Defines if the dialog is modal. This means, that all other gui elements which were created before the window cannot be used until it is removed. \\
+\hline
+{\em text} & \hyperlink{classText}{Text} displayed as the window title. \\
+\hline
+{\em parent} & Parent gui element of the window. \\
+\hline
+{\em id} & Id with which the gui element can be identified. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created window. Returns 0 if an error occurred. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_af3bd793f81b15dc534648e8a37e76467}\label{classirr_1_1gui_1_1IGUIEnvironment_af3bd793f81b15dc534648e8a37e76467}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!create\+Image\+List@{create\+Image\+List}}
+\index{create\+Image\+List@{create\+Image\+List}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{create\+Image\+List()}{createImageList()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIImageList}{I\+G\+U\+I\+Image\+List}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::create\+Image\+List (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$}]{texture,  }\item[{\hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$}]{image\+Size,  }\item[{bool}]{use\+Alpha\+Channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Creates the image list from the given texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & Texture to split into images \\
+\hline
+{\em image\+Size} & Dimension of each image \\
+\hline
+{\em use\+Alpha\+Channel} & Flag whether alpha channel of the texture should be honored. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the font. Returns 0 if the font could not be loaded. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a824099cd1ba9dd4b95e40dd1b15244f1}\label{classirr_1_1gui_1_1IGUIEnvironment_a824099cd1ba9dd4b95e40dd1b15244f1}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!create\+Skin@{create\+Skin}}
+\index{create\+Skin@{create\+Skin}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{create\+Skin()}{createSkin()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUISkin}{I\+G\+U\+I\+Skin}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::create\+Skin (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1gui_a7b4619db540cbdf96e81023893b4eca5}{E\+G\+U\+I\+\_\+\+S\+K\+I\+N\+\_\+\+T\+Y\+PE}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Creates a new G\+UI Skin based on a template. 
+
+Use \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_ae7042c520e848643e080ad4532797f23}{set\+Skin()} to set the created skin. 
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the new skin. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created skin. If you no longer need it, you should call \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+G\+U\+I\+Skin\+::drop()}. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a896fbfcbad5ccf187a835827b439da93}\label{classirr_1_1gui_1_1IGUIEnvironment_a896fbfcbad5ccf187a835827b439da93}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!get\+Built\+In\+Font@{get\+Built\+In\+Font}}
+\index{get\+Built\+In\+Font@{get\+Built\+In\+Font}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{get\+Built\+In\+Font()}{getBuiltInFont()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::get\+Built\+In\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the default built-\/in font. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the default built-\/in font. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a13ec41a31e1b9cdc317c0c6092c2b820}\label{classirr_1_1gui_1_1IGUIEnvironment_a13ec41a31e1b9cdc317c0c6092c2b820}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!get\+Default\+G\+U\+I\+Element\+Factory@{get\+Default\+G\+U\+I\+Element\+Factory}}
+\index{get\+Default\+G\+U\+I\+Element\+Factory@{get\+Default\+G\+U\+I\+Element\+Factory}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{get\+Default\+G\+U\+I\+Element\+Factory()}{getDefaultGUIElementFactory()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIElementFactory}{I\+G\+U\+I\+Element\+Factory}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::get\+Default\+G\+U\+I\+Element\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the default element factory which can create all built-\/in elements. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the factory. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_ad3ae4570702000e09cacdb663f0ec363}\label{classirr_1_1gui_1_1IGUIEnvironment_ad3ae4570702000e09cacdb663f0ec363}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!get\+File\+System@{get\+File\+System}}
+\index{get\+File\+System@{get\+File\+System}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{get\+File\+System()}{getFileSystem()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1io_1_1IFileSystem}{io\+::\+I\+File\+System}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::get\+File\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the file system. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the file system. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a624c047cb88a5d3e3e0d17a42a627335}\label{classirr_1_1gui_1_1IGUIEnvironment_a624c047cb88a5d3e3e0d17a42a627335}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!get\+Focus@{get\+Focus}}
+\index{get\+Focus@{get\+Focus}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{get\+Focus()}{getFocus()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::get\+Focus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the element which holds the focus. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the element with focus. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a22074f9a1a5a86d5d216126bbb90b3b1}\label{classirr_1_1gui_1_1IGUIEnvironment_a22074f9a1a5a86d5d216126bbb90b3b1}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!get\+Font@{get\+Font}}
+\index{get\+Font@{get\+Font}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{get\+Font()}{getFont()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::get\+Font (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns pointer to the font with the specified filename. 
+
+Loads the font if it was not loaded before. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Filename of the Font. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the font. Returns 0 if the font could not be loaded. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a3c1ec1c13e7339e2e8abb34276d6288f}\label{classirr_1_1gui_1_1IGUIEnvironment_a3c1ec1c13e7339e2e8abb34276d6288f}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!get\+G\+U\+I\+Element\+Factory@{get\+G\+U\+I\+Element\+Factory}}
+\index{get\+G\+U\+I\+Element\+Factory@{get\+G\+U\+I\+Element\+Factory}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{get\+G\+U\+I\+Element\+Factory()}{getGUIElementFactory()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIElementFactory}{I\+G\+U\+I\+Element\+Factory}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::get\+G\+U\+I\+Element\+Factory (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get a gui element factory by index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of the factory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Factory at given index, or 0 if no such factory exists. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a00fa645d517a276553b78fc1d0e78591}\label{classirr_1_1gui_1_1IGUIEnvironment_a00fa645d517a276553b78fc1d0e78591}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!get\+Hovered@{get\+Hovered}}
+\index{get\+Hovered@{get\+Hovered}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{get\+Hovered()}{getHovered()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::get\+Hovered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the element which was last under the mouse cursor. 
+
+N\+O\+TE\+: This information is updated {\itshape after} the user-\/eventreceiver received it\textquotesingle{}s mouse-\/events. To find the hovered element while catching mouse events you have to use instead\+: \hyperlink{classirr_1_1gui_1_1IGUIEnvironment_a35fec6d5baa9b2f65aa9ee2c336104d4}{I\+G\+U\+I\+Environment\+::get\+Root\+G\+U\+I\+Element()}-\/$>$get\+Element\+From\+Point(mouse\+Pos); \begin{DoxyReturn}{Returns}
+Pointer to the element under the mouse. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_afc715b9a9d98ae3aa8e769c9fb2f4f31}\label{classirr_1_1gui_1_1IGUIEnvironment_afc715b9a9d98ae3aa8e769c9fb2f4f31}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!get\+O\+S\+Operator@{get\+O\+S\+Operator}}
+\index{get\+O\+S\+Operator@{get\+O\+S\+Operator}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{get\+O\+S\+Operator()}{getOSOperator()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1IOSOperator}{I\+O\+S\+Operator}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::get\+O\+S\+Operator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+returns a pointer to the OS operator 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the OS operator. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a022dcd144b1f955180569ef2ee844561}\label{classirr_1_1gui_1_1IGUIEnvironment_a022dcd144b1f955180569ef2ee844561}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!get\+Registered\+G\+U\+I\+Element\+Factory\+Count@{get\+Registered\+G\+U\+I\+Element\+Factory\+Count}}
+\index{get\+Registered\+G\+U\+I\+Element\+Factory\+Count@{get\+Registered\+G\+U\+I\+Element\+Factory\+Count}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{get\+Registered\+G\+U\+I\+Element\+Factory\+Count()}{getRegisteredGUIElementFactoryCount()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::get\+Registered\+G\+U\+I\+Element\+Factory\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get amount of registered gui element factories. 
+
+\begin{DoxyReturn}{Returns}
+Amount of registered gui element factories. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a35fec6d5baa9b2f65aa9ee2c336104d4}\label{classirr_1_1gui_1_1IGUIEnvironment_a35fec6d5baa9b2f65aa9ee2c336104d4}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!get\+Root\+G\+U\+I\+Element@{get\+Root\+G\+U\+I\+Element}}
+\index{get\+Root\+G\+U\+I\+Element@{get\+Root\+G\+U\+I\+Element}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{get\+Root\+G\+U\+I\+Element()}{getRootGUIElement()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::get\+Root\+G\+U\+I\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the root gui element. 
+
+This is the first gui element, the (direct or indirect) parent of all other gui elements. It is a valid \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element}, with dimensions the same size as the screen. \begin{DoxyReturn}{Returns}
+Pointer to the root element of the G\+UI. The returned pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a54ce9072ea7b89cdaea65306e93ba90c}\label{classirr_1_1gui_1_1IGUIEnvironment_a54ce9072ea7b89cdaea65306e93ba90c}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!get\+Skin@{get\+Skin}}
+\index{get\+Skin@{get\+Skin}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{get\+Skin()}{getSkin()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUISkin}{I\+G\+U\+I\+Skin}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::get\+Skin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns pointer to the current gui skin. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the G\+UI skin. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a187ebb28837dbdb88810f7e493096c3f}\label{classirr_1_1gui_1_1IGUIEnvironment_a187ebb28837dbdb88810f7e493096c3f}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!get\+Sprite\+Bank@{get\+Sprite\+Bank}}
+\index{get\+Sprite\+Bank@{get\+Sprite\+Bank}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{get\+Sprite\+Bank()}{getSpriteBank()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUISpriteBank}{I\+G\+U\+I\+Sprite\+Bank}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::get\+Sprite\+Bank (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns pointer to the sprite bank with the specified file name. 
+
+Loads the bank if it was not loaded before. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Filename of the sprite bank\textquotesingle{}s origin. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the sprite bank. Returns 0 if it could not be loaded. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a48f5e442f0a2074a531234ab83148fe2}\label{classirr_1_1gui_1_1IGUIEnvironment_a48f5e442f0a2074a531234ab83148fe2}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!get\+Video\+Driver@{get\+Video\+Driver}}
+\index{get\+Video\+Driver@{get\+Video\+Driver}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{get\+Video\+Driver()}{getVideoDriver()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1video_1_1IVideoDriver}{video\+::\+I\+Video\+Driver}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::get\+Video\+Driver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the current video driver. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the video driver. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a88c483f30a0f35debed70e8e51836552}\label{classirr_1_1gui_1_1IGUIEnvironment_a88c483f30a0f35debed70e8e51836552}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!has\+Focus@{has\+Focus}}
+\index{has\+Focus@{has\+Focus}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{has\+Focus()}{hasFocus()}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::has\+Focus (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{element }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns whether the element has focus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & Pointer to the element which is tested. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the element has focus, else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a6e847a40e5c97c846f2d654605ae13a0}\label{classirr_1_1gui_1_1IGUIEnvironment_a6e847a40e5c97c846f2d654605ae13a0}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!load\+G\+UI@{load\+G\+UI}}
+\index{load\+G\+UI@{load\+G\+UI}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{load\+G\+U\+I()}{loadGUI()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::load\+G\+UI (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&}]{filename,  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Loads the gui. Note that the current gui is not cleared before. 
+
+When a parent is set the elements will be added below the parent, the parent itself does not deserialize. When the file contains skin-\/settings from the gui-\/environment those are always serialized into the guienvironment independent of the parent setting. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file. \\
+\hline
+{\em parent} & Parent for the loaded G\+UI, root if 0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if loading succeeded, else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a23e53c388d45358c53304d095f0b029b}\label{classirr_1_1gui_1_1IGUIEnvironment_a23e53c388d45358c53304d095f0b029b}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!load\+G\+UI@{load\+G\+UI}}
+\index{load\+G\+UI@{load\+G\+UI}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{load\+G\+U\+I()}{loadGUI()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::load\+G\+UI (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$}]{file,  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Loads the gui. Note that the current gui is not cleared before. 
+
+When a parent is set the elements will be added below the parent, the parent itself does not deserialize. When the file contains skin-\/settings from the gui-\/environment those are always serialized into the guienvironment independent of the parent setting. 
+\begin{DoxyParams}{Parameters}
+{\em file} & The file to load from. \\
+\hline
+{\em parent} & Parent for the loaded G\+UI, root if 0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if loading succeeded, else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_aff1cc1109841f9bccd19634870c7cd65}\label{classirr_1_1gui_1_1IGUIEnvironment_aff1cc1109841f9bccd19634870c7cd65}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!post\+Event\+From\+User@{post\+Event\+From\+User}}
+\index{post\+Event\+From\+User@{post\+Event\+From\+User}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{post\+Event\+From\+User()}{postEventFromUser()}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::post\+Event\+From\+User (\begin{DoxyParamCaption}\item[{const \hyperlink{structirr_1_1SEvent}{S\+Event} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Posts an input event to the environment. 
+
+Usually you do not have to use this method, it is used by the engine internally. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The event to post. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if succeeded, else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a653ac2cc8640899c23f4d55d9a5f0fdd}\label{classirr_1_1gui_1_1IGUIEnvironment_a653ac2cc8640899c23f4d55d9a5f0fdd}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!register\+G\+U\+I\+Element\+Factory@{register\+G\+U\+I\+Element\+Factory}}
+\index{register\+G\+U\+I\+Element\+Factory@{register\+G\+U\+I\+Element\+Factory}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{register\+G\+U\+I\+Element\+Factory()}{registerGUIElementFactory()}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::register\+G\+U\+I\+Element\+Factory (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUIElementFactory}{I\+G\+U\+I\+Element\+Factory} $\ast$}]{factory\+To\+Add }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds an element factory to the gui environment. 
+
+Use this to extend the gui environment with new element types which it should be able to create automatically, for example when loading data from xml files. 
+\begin{DoxyParams}{Parameters}
+{\em factory\+To\+Add} & Pointer to new factory. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_ab2100753b415a9950d95572d4623bf46}\label{classirr_1_1gui_1_1IGUIEnvironment_ab2100753b415a9950d95572d4623bf46}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!remove\+Focus@{remove\+Focus}}
+\index{remove\+Focus@{remove\+Focus}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{remove\+Focus()}{removeFocus()}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::remove\+Focus (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Removes the focus from an element. 
+
+Causes a E\+G\+E\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+F\+O\+C\+U\+S\+\_\+\+L\+O\+ST event. If the event is absorbed then the focus will not be changed. 
+\begin{DoxyParams}{Parameters}
+{\em element} & Pointer to the element which shall lose the focus. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True on success, false on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_ac5e7b39ff2292983660a5e5999b240b3}\label{classirr_1_1gui_1_1IGUIEnvironment_ac5e7b39ff2292983660a5e5999b240b3}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!save\+G\+UI@{save\+G\+UI}}
+\index{save\+G\+UI@{save\+G\+UI}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{save\+G\+U\+I()}{saveGUI()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::save\+G\+UI (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&}]{filename,  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{start = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Saves the current gui into a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file. \\
+\hline
+{\em start} & The G\+U\+I\+Element to start with. Root if 0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if saving succeeded, else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a39fdeef8455813a2be2bce9212ec758a}\label{classirr_1_1gui_1_1IGUIEnvironment_a39fdeef8455813a2be2bce9212ec758a}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!save\+G\+UI@{save\+G\+UI}}
+\index{save\+G\+UI@{save\+G\+UI}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{save\+G\+U\+I()}{saveGUI()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::save\+G\+UI (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IWriteFile}{io\+::\+I\+Write\+File} $\ast$}]{file,  }\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{start = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Saves the current gui into a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The file to write to. \\
+\hline
+{\em start} & The G\+U\+I\+Element to start with. Root if 0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if saving succeeded, else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a2bfe9985ae1a2f379e708fce86902cea}\label{classirr_1_1gui_1_1IGUIEnvironment_a2bfe9985ae1a2f379e708fce86902cea}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!set\+Focus@{set\+Focus}}
+\index{set\+Focus@{set\+Focus}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{set\+Focus()}{setFocus()}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::set\+Focus (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the focus to an element. 
+
+Causes a E\+G\+E\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+F\+O\+C\+U\+S\+\_\+\+L\+O\+ST event followed by a E\+G\+E\+T\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+F\+O\+C\+U\+S\+ED event. If someone absorbed either of the events, then the focus will not be changed. 
+\begin{DoxyParams}{Parameters}
+{\em element} & Pointer to the element which shall get the focus. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True on success, false on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_ae7042c520e848643e080ad4532797f23}\label{classirr_1_1gui_1_1IGUIEnvironment_ae7042c520e848643e080ad4532797f23}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!set\+Skin@{set\+Skin}}
+\index{set\+Skin@{set\+Skin}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{set\+Skin()}{setSkin()}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::set\+Skin (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUISkin}{I\+G\+U\+I\+Skin} $\ast$}]{skin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets a new G\+UI Skin. 
+
+You can use this to change the appearance of the whole G\+UI Environment. You can set one of the built-\/in skins or implement your own class derived from \hyperlink{classirr_1_1gui_1_1IGUISkin}{I\+G\+U\+I\+Skin} and enable it using this method. To set for example the built-\/in Windows classic skin, use the following code\+: 
+\begin{DoxyCode}
+gui::IGUISkin* newskin = environment->createSkin(\hyperlink{namespaceirr_1_1gui_a7b4619db540cbdf96e81023893b4eca5a4bc61097b84978277791e5e4b2fcfb03}{gui::EGST\_WINDOWS\_CLASSIC});
+environment->setSkin(newskin);
+newskin->drop();
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em skin} & New skin to use. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIEnvironment_a2491715aa30894c66357eb0451aa10b0}\label{classirr_1_1gui_1_1IGUIEnvironment_a2491715aa30894c66357eb0451aa10b0}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}!set\+User\+Event\+Receiver@{set\+User\+Event\+Receiver}}
+\index{set\+User\+Event\+Receiver@{set\+User\+Event\+Receiver}!irr\+::gui\+::\+I\+G\+U\+I\+Environment@{irr\+::gui\+::\+I\+G\+U\+I\+Environment}}
+\subsubsection{\texorpdfstring{set\+User\+Event\+Receiver()}{setUserEventReceiver()}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Environment\+::set\+User\+Event\+Receiver (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1IEventReceiver}{I\+Event\+Receiver} $\ast$}]{evr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This sets a new event receiver for gui events. 
+
+Usually you do not have to use this method, it is used by the engine internally. 
+\begin{DoxyParams}{Parameters}
+{\em evr} & Pointer to the new receiver. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/I\+G\+U\+I\+Environment.\+h\end{DoxyCompactItemize}

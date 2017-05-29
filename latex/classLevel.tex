@@ -22,6 +22,8 @@ Inheritance diagram for Level\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 \hyperlink{classLevel_a249eac1e8f19ff44134efa5e986feaca}{$\sim$\+Level} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classLevel_ac679a141274c19107c288fe40b967e95}{move\+Player} (const \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{irr\+::u32} \&player\+ID, const Vector3d \&position)
+\begin{DoxyCompactList}\small\item\em Change the player\textquotesingle{}s position by adding the position passed as parameter. \end{DoxyCompactList}\item 
 void \hyperlink{classLevel_aa88db36cd824320cb599d913603dc2a3}{load\+Level} ()
 \item 
 void \hyperlink{classLevel_ab8311fe64b7957d627053359331b0b6b}{print} (\hyperlink{classWindow}{Window} $\ast$win)
@@ -67,7 +69,25 @@ load level according to X\+ML file xml is loaded thankfully to level\+Number Loa
 \item player
 \item monsters
 \item pickable objects 
-\end{DoxyItemize}\mbox{\Hypertarget{classLevel_ab8311fe64b7957d627053359331b0b6b}\label{classLevel_ab8311fe64b7957d627053359331b0b6b}} 
+\end{DoxyItemize}\mbox{\Hypertarget{classLevel_ac679a141274c19107c288fe40b967e95}\label{classLevel_ac679a141274c19107c288fe40b967e95}} 
+\index{Level@{Level}!move\+Player@{move\+Player}}
+\index{move\+Player@{move\+Player}!Level@{Level}}
+\subsubsection{\texorpdfstring{move\+Player()}{movePlayer()}}
+{\footnotesize\ttfamily void Level\+::move\+Player (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{irr\+::u32} \&}]{player\+ID,  }\item[{const Vector3d \&}]{position }\end{DoxyParamCaption})}
+
+
+
+Change the player\textquotesingle{}s position by adding the position passed as parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1)} & The player\textquotesingle{}s id who will move. 2) The player\textquotesingle{}s id who will move.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLevel_ab8311fe64b7957d627053359331b0b6b}\label{classLevel_ab8311fe64b7957d627053359331b0b6b}} 
 \index{Level@{Level}!print@{print}}
 \index{print@{print}!Level@{Level}}
 \subsubsection{\texorpdfstring{print()}{print()}}

@@ -1,0 +1,48 @@
+\hypertarget{structirr_1_1io_1_1SNamedPath}{}\section{irr\+:\+:io\+:\+:S\+Named\+Path Struct Reference}
+\label{structirr_1_1io_1_1SNamedPath}\index{irr\+::io\+::\+S\+Named\+Path@{irr\+::io\+::\+S\+Named\+Path}}
+
+
+Used in places where we identify objects by a filename, but don\textquotesingle{}t actually work with the real filename.  
+
+
+
+
+{\ttfamily \#include $<$path.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structirr_1_1io_1_1SNamedPath_a6a4926fa6d0889cc0da49cb3e74415a4}\label{structirr_1_1io_1_1SNamedPath_a6a4926fa6d0889cc0da49cb3e74415a4}} 
+\hyperlink{structirr_1_1io_1_1SNamedPath_a6a4926fa6d0889cc0da49cb3e74415a4}{S\+Named\+Path} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structirr_1_1io_1_1SNamedPath_ac23f075ced19675a5c43d042814be687}\label{structirr_1_1io_1_1SNamedPath_ac23f075ced19675a5c43d042814be687}} 
+\hyperlink{structirr_1_1io_1_1SNamedPath_ac23f075ced19675a5c43d042814be687}{S\+Named\+Path} (const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{path} \&p)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structirr_1_1io_1_1SNamedPath_ac48171feb88bacf510c4d33cf91b55bc}\label{structirr_1_1io_1_1SNamedPath_ac48171feb88bacf510c4d33cf91b55bc}} 
+bool \hyperlink{structirr_1_1io_1_1SNamedPath_ac48171feb88bacf510c4d33cf91b55bc}{operator$<$} (const \hyperlink{structirr_1_1io_1_1SNamedPath}{S\+Named\+Path} \&other) const
+\begin{DoxyCompactList}\small\item\em Is smaller comparator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structirr_1_1io_1_1SNamedPath_a2c802b7579938e06bd858d5edade3d72}\label{structirr_1_1io_1_1SNamedPath_a2c802b7579938e06bd858d5edade3d72}} 
+void \hyperlink{structirr_1_1io_1_1SNamedPath_a2c802b7579938e06bd858d5edade3d72}{set\+Path} (const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{path} \&p)
+\begin{DoxyCompactList}\small\item\em Set the path. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structirr_1_1io_1_1SNamedPath_a0e24ca02e0e983decf4cfcb502451c66}\label{structirr_1_1io_1_1SNamedPath_a0e24ca02e0e983decf4cfcb502451c66}} 
+const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{path} \& \hyperlink{structirr_1_1io_1_1SNamedPath_a0e24ca02e0e983decf4cfcb502451c66}{get\+Path} () const
+\begin{DoxyCompactList}\small\item\em Get the path. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structirr_1_1io_1_1SNamedPath_aca15cc5d5d79fc11927331c1c2108cb2}\label{structirr_1_1io_1_1SNamedPath_aca15cc5d5d79fc11927331c1c2108cb2}} 
+const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{path} \& \hyperlink{structirr_1_1io_1_1SNamedPath_aca15cc5d5d79fc11927331c1c2108cb2}{get\+Internal\+Name} () const
+\begin{DoxyCompactList}\small\item\em Get the name which is used to identify the file. This string is similar to the names and filenames used before Irrlicht 1.\+7. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structirr_1_1io_1_1SNamedPath_a414604db7696d60f759e645beee928c8}\label{structirr_1_1io_1_1SNamedPath_a414604db7696d60f759e645beee928c8}} 
+\hyperlink{structirr_1_1io_1_1SNamedPath_a414604db7696d60f759e645beee928c8}{operator core\+::stringc} () const
+\begin{DoxyCompactList}\small\item\em Implicit cast to \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structirr_1_1io_1_1SNamedPath_abe0d6bc5cf1c59bc90ea9d98750a8976}\label{structirr_1_1io_1_1SNamedPath_abe0d6bc5cf1c59bc90ea9d98750a8976}} 
+\hyperlink{structirr_1_1io_1_1SNamedPath_abe0d6bc5cf1c59bc90ea9d98750a8976}{operator core\+::stringw} () const
+\begin{DoxyCompactList}\small\item\em Implicit cast to \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used in places where we identify objects by a filename, but don\textquotesingle{}t actually work with the real filename. 
+
+Irrlicht is internally not case-\/sensitive when it comes to names. Also this class is a first step towards support for correctly serializing renamed objects. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/path.\+h\end{DoxyCompactItemize}

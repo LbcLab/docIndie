@@ -1,0 +1,100 @@
+\hypertarget{classirr_1_1gui_1_1IGUIInOutFader}{}\section{irr\+:\+:gui\+:\+:I\+G\+U\+I\+In\+Out\+Fader Class Reference}
+\label{classirr_1_1gui_1_1IGUIInOutFader}\index{irr\+::gui\+::\+I\+G\+U\+I\+In\+Out\+Fader@{irr\+::gui\+::\+I\+G\+U\+I\+In\+Out\+Fader}}
+
+
+Element for fading out or in.  
+
+
+
+
+{\ttfamily \#include $<$I\+G\+U\+I\+In\+Out\+Fader.\+h$>$}
+
+Inheritance diagram for irr\+:\+:gui\+:\+:I\+G\+U\+I\+In\+Out\+Fader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classirr_1_1gui_1_1IGUIInOutFader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIInOutFader_ad839c9be778846aa0fba823c7dd30c69}\label{classirr_1_1gui_1_1IGUIInOutFader_ad839c9be778846aa0fba823c7dd30c69}} 
+\hyperlink{classirr_1_1gui_1_1IGUIInOutFader_ad839c9be778846aa0fba823c7dd30c69}{I\+G\+U\+I\+In\+Out\+Fader} (\hyperlink{classirr_1_1gui_1_1IGUIEnvironment}{I\+G\+U\+I\+Environment} $\ast$environment, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ rectangle)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIInOutFader_adeed9c5ffd4b9ab6180cba40596742b9}\label{classirr_1_1gui_1_1IGUIInOutFader_adeed9c5ffd4b9ab6180cba40596742b9}} 
+virtual \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} \hyperlink{classirr_1_1gui_1_1IGUIInOutFader_adeed9c5ffd4b9ab6180cba40596742b9}{get\+Color} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the color to fade out to or to fade in from. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIInOutFader_aba1cdb4928662a2340aa6600850e03d1}{set\+Color} (\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} color)=0
+\begin{DoxyCompactList}\small\item\em Sets the color to fade out to or to fade in from. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIInOutFader_a407edab8f7e349612d62c39accc159e2}{fade\+In} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} time)=0
+\begin{DoxyCompactList}\small\item\em Starts the fade in process. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIInOutFader_a5006c28699050d73be11b15ffc7ba993}{fade\+Out} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} time)=0
+\begin{DoxyCompactList}\small\item\em Starts the fade out process. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIInOutFader_a8a917f7c5c74ff0bdb2ba844f1953387}\label{classirr_1_1gui_1_1IGUIInOutFader_a8a917f7c5c74ff0bdb2ba844f1953387}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIInOutFader_a8a917f7c5c74ff0bdb2ba844f1953387}{is\+Ready} () const =0
+\begin{DoxyCompactList}\small\item\em Returns if the fade in or out process is done. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Element for fading out or in. 
+
+Here is a small example on how the class is used. In this example we fade in from a total red screen in the beginning. As you can see, the fader is not only useful for dramatic in and out fading, but also to show that the player is hit in a first person shooter game for example. 
+\begin{DoxyCode}
+gui::IGUIInOutFader* fader = device->getGUIEnvironment()->addInOutFader();
+fader->setColor(video::SColor(0,255,0,0));
+fader->fadeIn(4000);
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIInOutFader_a407edab8f7e349612d62c39accc159e2}\label{classirr_1_1gui_1_1IGUIInOutFader_a407edab8f7e349612d62c39accc159e2}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+In\+Out\+Fader@{irr\+::gui\+::\+I\+G\+U\+I\+In\+Out\+Fader}!fade\+In@{fade\+In}}
+\index{fade\+In@{fade\+In}!irr\+::gui\+::\+I\+G\+U\+I\+In\+Out\+Fader@{irr\+::gui\+::\+I\+G\+U\+I\+In\+Out\+Fader}}
+\subsubsection{\texorpdfstring{fade\+In()}{fadeIn()}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+In\+Out\+Fader\+::fade\+In (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Starts the fade in process. 
+
+In the beginning the whole rect is drawn by the set color (black by default) and at the end of the overgiven time the color has faded out. 
+\begin{DoxyParams}{Parameters}
+{\em time} & Time specifying how long it should need to fade in, in milliseconds. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIInOutFader_a5006c28699050d73be11b15ffc7ba993}\label{classirr_1_1gui_1_1IGUIInOutFader_a5006c28699050d73be11b15ffc7ba993}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+In\+Out\+Fader@{irr\+::gui\+::\+I\+G\+U\+I\+In\+Out\+Fader}!fade\+Out@{fade\+Out}}
+\index{fade\+Out@{fade\+Out}!irr\+::gui\+::\+I\+G\+U\+I\+In\+Out\+Fader@{irr\+::gui\+::\+I\+G\+U\+I\+In\+Out\+Fader}}
+\subsubsection{\texorpdfstring{fade\+Out()}{fadeOut()}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+In\+Out\+Fader\+::fade\+Out (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Starts the fade out process. 
+
+In the beginning everything is visible, and at the end of the time only the set color (black by the fault) will be drawn. 
+\begin{DoxyParams}{Parameters}
+{\em time} & Time specifying how long it should need to fade out, in milliseconds. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIInOutFader_aba1cdb4928662a2340aa6600850e03d1}\label{classirr_1_1gui_1_1IGUIInOutFader_aba1cdb4928662a2340aa6600850e03d1}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+In\+Out\+Fader@{irr\+::gui\+::\+I\+G\+U\+I\+In\+Out\+Fader}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!irr\+::gui\+::\+I\+G\+U\+I\+In\+Out\+Fader@{irr\+::gui\+::\+I\+G\+U\+I\+In\+Out\+Fader}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+In\+Out\+Fader\+::set\+Color (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the color to fade out to or to fade in from. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & Color to where it is faded out od from it is faded in. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/I\+G\+U\+I\+In\+Out\+Fader.\+h\end{DoxyCompactItemize}

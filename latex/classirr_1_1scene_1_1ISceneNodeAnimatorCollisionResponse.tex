@@ -1,0 +1,268 @@
+\hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse}{}\section{irr\+:\+:scene\+:\+:I\+Scene\+Node\+Animator\+Collision\+Response Class Reference}
+\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse}\index{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}}
+
+
+Special scene node animator for doing automatic collision detection and response.  
+
+
+
+
+{\ttfamily \#include $<$I\+Scene\+Node\+Animator\+Collision\+Response.\+h$>$}
+
+Inheritance diagram for irr\+:\+:scene\+:\+:I\+Scene\+Node\+Animator\+Collision\+Response\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.720930cm]{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_ab6b85fb4f76e2d0c03cf2c6b326bddde}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_ab6b85fb4f76e2d0c03cf2c6b326bddde}} 
+virtual \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_ab6b85fb4f76e2d0c03cf2c6b326bddde}{$\sim$\+I\+Scene\+Node\+Animator\+Collision\+Response} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a66f5534c1d2ac0e2ea52e7b21a3c91d7}{is\+Falling} () const =0
+\begin{DoxyCompactList}\small\item\em Check if the attached scene node is falling. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a71af73590016ba936340a79467690d3f}{set\+Ellipsoid\+Radius} (const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&radius)=0
+\begin{DoxyCompactList}\small\item\em Sets the radius of the ellipsoid for collision detection and response. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a92965919db3dfbaab2d1f4987a2c52c1}{get\+Ellipsoid\+Radius} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the radius of the ellipsoid for collision detection and response. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_af366695a82153c144b58c65cb4d092f3}{set\+Gravity} (const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&gravity)=0
+\begin{DoxyCompactList}\small\item\em Sets the gravity of the environment. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a1b7c86e8948691ce00f2aa6253c5683a}{get\+Gravity} () const =0
+\begin{DoxyCompactList}\small\item\em Get current vector of gravity. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a409b98d04be89fb06cce3384e0188abf}{jump} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} jump\+Speed)=0
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}Jump\textquotesingle{} the animator, by adding a jump speed opposite to its gravity \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a402cbe4934ad10f18762001458c939d9}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a402cbe4934ad10f18762001458c939d9}} 
+virtual void \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a402cbe4934ad10f18762001458c939d9}{set\+Animate\+Target} (bool enable)=0
+\begin{DoxyCompactList}\small\item\em Should the Target react on collision ( default = true ) \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a234ec747d320d70dd3e2a4143782ffc7}{set\+Ellipsoid\+Translation} (const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&translation)=0
+\begin{DoxyCompactList}\small\item\em Set translation of the collision ellipsoid. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_aff0a2ad6ff375a85e08a3226e3267286}{get\+Ellipsoid\+Translation} () const =0
+\begin{DoxyCompactList}\small\item\em Get the translation of the ellipsoid for collision detection. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a42aa84d4843a734f8dd1f20b5c92ef06}{set\+World} (\hyperlink{classirr_1_1scene_1_1ITriangleSelector}{I\+Triangle\+Selector} $\ast$new\+World)=0
+\begin{DoxyCompactList}\small\item\em Sets a triangle selector holding all triangles of the world with which the scene node may collide. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a58e106171ca57a4877d7a6f0edd9762f}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a58e106171ca57a4877d7a6f0edd9762f}} 
+virtual \hyperlink{classirr_1_1scene_1_1ITriangleSelector}{I\+Triangle\+Selector} $\ast$ \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a58e106171ca57a4877d7a6f0edd9762f}{get\+World} () const =0
+\begin{DoxyCompactList}\small\item\em Get the current triangle selector containing all triangles for collision detection. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a5b291ba9249c451779f76ab2154aa3c2}{set\+Target\+Node} (\hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$node)=0
+\begin{DoxyCompactList}\small\item\em Set the single node that this animator will act on. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$ \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a11b1c54ec705f4ba8b0bb3facb0f09cb}{get\+Target\+Node} (void) const =0
+\begin{DoxyCompactList}\small\item\em Gets the single node that this animator is acting on. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a8bb04bc4d7de2203879a8392d024f466}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a8bb04bc4d7de2203879a8392d024f466}} 
+virtual bool \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a8bb04bc4d7de2203879a8392d024f466}{collision\+Occurred} () const =0
+\begin{DoxyCompactList}\small\item\em Returns true if a collision occurred during the last \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimator_ab2170d133db16de148d0f6841c06bc84}{animate\+Node()} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_acb39b68d18f721960ac73dc158968479}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_acb39b68d18f721960ac73dc158968479}} 
+virtual const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \& \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_acb39b68d18f721960ac73dc158968479}{get\+Collision\+Point} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the last point of collision. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_abb9d0576446a64e9944ef15a04722591}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_abb9d0576446a64e9944ef15a04722591}} 
+virtual const \hyperlink{namespaceirr_1_1core_a1112835405bbec5dadf031dc7934e7d0}{core\+::triangle3df} \& \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_abb9d0576446a64e9944ef15a04722591}{get\+Collision\+Triangle} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the last triangle that caused a collision. \end{DoxyCompactList}\item 
+virtual const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \& \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a788542083dda874c63e278891535a9f4}{get\+Collision\+Result\+Position} (void) const =0
+\begin{DoxyCompactList}\small\item\em Returns the position that the target node will be moved to, unless the collision is consumed in a callback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a5a975ddf3d776d6bb4c6d44c36cc74fd}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a5a975ddf3d776d6bb4c6d44c36cc74fd}} 
+virtual \hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$ \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a5a975ddf3d776d6bb4c6d44c36cc74fd}{get\+Collision\+Node} (void) const =0
+\begin{DoxyCompactList}\small\item\em Returns the node that was collided with. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a2b97f977b446200c5dd22230aec5d275}{set\+Collision\+Callback} (\hyperlink{classirr_1_1scene_1_1ICollisionCallback}{I\+Collision\+Callback} $\ast$callback)=0
+\begin{DoxyCompactList}\small\item\em Sets a callback interface which will be called if a collision occurs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Special scene node animator for doing automatic collision detection and response. 
+
+This scene node animator can be attached to any single scene node and will then prevent it from moving through specified collision geometry (e.\+g. walls and floors of the) world, as well as having it fall under gravity. This animator provides a simple implementation of first person shooter cameras. Attach it to a camera, and the camera will behave as the player control in a first person shooter game\+: The camera stops and slides at walls, walks up stairs, falls down if there is no floor under it, and so on.
+
+The animator will treat any change in the position of its target scene node as movement, including a set\+Position(), as movement. If you want to teleport the target scene node manually to a location without it being effected by collision geometry, then call set\+Target\+Node(node) after calling node-\/$>$set\+Position(). 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a788542083dda874c63e278891535a9f4}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a788542083dda874c63e278891535a9f4}} 
+\index{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}!get\+Collision\+Result\+Position@{get\+Collision\+Result\+Position}}
+\index{get\+Collision\+Result\+Position@{get\+Collision\+Result\+Position}!irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}}
+\subsubsection{\texorpdfstring{get\+Collision\+Result\+Position()}{getCollisionResultPosition()}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df}\& irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response\+::get\+Collision\+Result\+Position (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the position that the target node will be moved to, unless the collision is consumed in a callback. 
+
+If you have a collision callback registered, and it consumes the collision, then the node will ignore the collision and will not stop at this position. Instead, it will move fully to the position that caused the collision to occur. \mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a92965919db3dfbaab2d1f4987a2c52c1}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a92965919db3dfbaab2d1f4987a2c52c1}} 
+\index{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}!get\+Ellipsoid\+Radius@{get\+Ellipsoid\+Radius}}
+\index{get\+Ellipsoid\+Radius@{get\+Ellipsoid\+Radius}!irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}}
+\subsubsection{\texorpdfstring{get\+Ellipsoid\+Radius()}{getEllipsoidRadius()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response\+::get\+Ellipsoid\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the radius of the ellipsoid for collision detection and response. 
+
+\begin{DoxyReturn}{Returns}
+Radius of the ellipsoid. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_aff0a2ad6ff375a85e08a3226e3267286}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_aff0a2ad6ff375a85e08a3226e3267286}} 
+\index{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}!get\+Ellipsoid\+Translation@{get\+Ellipsoid\+Translation}}
+\index{get\+Ellipsoid\+Translation@{get\+Ellipsoid\+Translation}!irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}}
+\subsubsection{\texorpdfstring{get\+Ellipsoid\+Translation()}{getEllipsoidTranslation()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response\+::get\+Ellipsoid\+Translation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the translation of the ellipsoid for collision detection. 
+
+See \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a234ec747d320d70dd3e2a4143782ffc7}{I\+Scene\+Node\+Animator\+Collision\+Response\+::set\+Ellipsoid\+Translation()} for more details. \begin{DoxyReturn}{Returns}
+Translation of the ellipsoid relative to the position of the scene node. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a1b7c86e8948691ce00f2aa6253c5683a}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a1b7c86e8948691ce00f2aa6253c5683a}} 
+\index{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}!get\+Gravity@{get\+Gravity}}
+\index{get\+Gravity@{get\+Gravity}!irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}}
+\subsubsection{\texorpdfstring{get\+Gravity()}{getGravity()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response\+::get\+Gravity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get current vector of gravity. 
+
+\begin{DoxyReturn}{Returns}
+Gravity vector. $\ast$/ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a11b1c54ec705f4ba8b0bb3facb0f09cb}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a11b1c54ec705f4ba8b0bb3facb0f09cb}} 
+\index{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}!get\+Target\+Node@{get\+Target\+Node}}
+\index{get\+Target\+Node@{get\+Target\+Node}!irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}}
+\subsubsection{\texorpdfstring{get\+Target\+Node()}{getTargetNode()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node}$\ast$ irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response\+::get\+Target\+Node (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the single node that this animator is acting on. 
+
+\begin{DoxyReturn}{Returns}
+The node that this animator is acting on. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a66f5534c1d2ac0e2ea52e7b21a3c91d7}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a66f5534c1d2ac0e2ea52e7b21a3c91d7}} 
+\index{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}!is\+Falling@{is\+Falling}}
+\index{is\+Falling@{is\+Falling}!irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}}
+\subsubsection{\texorpdfstring{is\+Falling()}{isFalling()}}
+{\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response\+::is\+Falling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if the attached scene node is falling. 
+
+Falling means that there is no blocking wall from the scene node in the direction of the gravity. The implementation of this method is very fast, no collision detection is done when invoking it. \begin{DoxyReturn}{Returns}
+True if the scene node is falling, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a409b98d04be89fb06cce3384e0188abf}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a409b98d04be89fb06cce3384e0188abf}} 
+\index{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}!jump@{jump}}
+\index{jump@{jump}!irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}}
+\subsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response\+::jump (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{jump\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\textquotesingle{}Jump\textquotesingle{} the animator, by adding a jump speed opposite to its gravity 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jump\+Speed} & The initial speed of the jump; the velocity will be opposite to this animator\textquotesingle{}s gravity vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a2b97f977b446200c5dd22230aec5d275}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a2b97f977b446200c5dd22230aec5d275}} 
+\index{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}!set\+Collision\+Callback@{set\+Collision\+Callback}}
+\index{set\+Collision\+Callback@{set\+Collision\+Callback}!irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}}
+\subsubsection{\texorpdfstring{set\+Collision\+Callback()}{setCollisionCallback()}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response\+::set\+Collision\+Callback (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1scene_1_1ICollisionCallback}{I\+Collision\+Callback} $\ast$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets a callback interface which will be called if a collision occurs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & collision callback handler that will be called when a collision occurs. Set this to 0 to disable the callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a71af73590016ba936340a79467690d3f}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a71af73590016ba936340a79467690d3f}} 
+\index{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}!set\+Ellipsoid\+Radius@{set\+Ellipsoid\+Radius}}
+\index{set\+Ellipsoid\+Radius@{set\+Ellipsoid\+Radius}!irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}}
+\subsubsection{\texorpdfstring{set\+Ellipsoid\+Radius()}{setEllipsoidRadius()}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response\+::set\+Ellipsoid\+Radius (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the radius of the ellipsoid for collision detection and response. 
+
+If you have a scene node, and you are unsure about how big the radius should be, you could use the following code to determine it\+: 
+\begin{DoxyCode}
+core::aabbox<f32> box = yourSceneNode->getBoundingBox();
+\hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core::vector3df} radius = box.MaxEdge - box.getCenter();
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em radius} & New radius of the ellipsoid. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a234ec747d320d70dd3e2a4143782ffc7}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a234ec747d320d70dd3e2a4143782ffc7}} 
+\index{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}!set\+Ellipsoid\+Translation@{set\+Ellipsoid\+Translation}}
+\index{set\+Ellipsoid\+Translation@{set\+Ellipsoid\+Translation}!irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}}
+\subsubsection{\texorpdfstring{set\+Ellipsoid\+Translation()}{setEllipsoidTranslation()}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response\+::set\+Ellipsoid\+Translation (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&}]{translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set translation of the collision ellipsoid. 
+
+By default, the ellipsoid for collision detection is created around the center of the scene node, which means that the ellipsoid surrounds it completely. If this is not what you want, you may specify a translation for the ellipsoid. 
+\begin{DoxyParams}{Parameters}
+{\em translation} & Translation of the ellipsoid relative to the position of the scene node. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_af366695a82153c144b58c65cb4d092f3}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_af366695a82153c144b58c65cb4d092f3}} 
+\index{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}!set\+Gravity@{set\+Gravity}}
+\index{set\+Gravity@{set\+Gravity}!irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}}
+\subsubsection{\texorpdfstring{set\+Gravity()}{setGravity()}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response\+::set\+Gravity (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&}]{gravity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the gravity of the environment. 
+
+A good example value would be \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df}(0,-\/100.\+0f,0) for letting gravity affect all object to fall down. For bigger gravity, make increase the length of the vector. You can disable gravity by setting it to core\+::vector3df(0,0,0); 
+\begin{DoxyParams}{Parameters}
+{\em gravity} & New gravity vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a5b291ba9249c451779f76ab2154aa3c2}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a5b291ba9249c451779f76ab2154aa3c2}} 
+\index{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}!set\+Target\+Node@{set\+Target\+Node}}
+\index{set\+Target\+Node@{set\+Target\+Node}!irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}}
+\subsubsection{\texorpdfstring{set\+Target\+Node()}{setTargetNode()}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response\+::set\+Target\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the single node that this animator will act on. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The new target node. Setting this will force the animator to update its last target position for the node, allowing set\+Position() to teleport the node through collision geometry. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a42aa84d4843a734f8dd1f20b5c92ef06}\label{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a42aa84d4843a734f8dd1f20b5c92ef06}} 
+\index{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}!set\+World@{set\+World}}
+\index{set\+World@{set\+World}!irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response@{irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response}}
+\subsubsection{\texorpdfstring{set\+World()}{setWorld()}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Scene\+Node\+Animator\+Collision\+Response\+::set\+World (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1scene_1_1ITriangleSelector}{I\+Triangle\+Selector} $\ast$}]{new\+World }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets a triangle selector holding all triangles of the world with which the scene node may collide. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+World} & New triangle selector containing triangles to let the scene node collide with. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/I\+Scene\+Node\+Animator\+Collision\+Response.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,142 @@
+\hypertarget{classirr_1_1scene_1_1IAnimatedMesh}{}\section{irr\+:\+:scene\+:\+:I\+Animated\+Mesh Class Reference}
+\label{classirr_1_1scene_1_1IAnimatedMesh}\index{irr\+::scene\+::\+I\+Animated\+Mesh@{irr\+::scene\+::\+I\+Animated\+Mesh}}
+
+
+Interface for an animated mesh.  
+
+
+
+
+{\ttfamily \#include $<$I\+Animated\+Mesh.\+h$>$}
+
+Inheritance diagram for irr\+:\+:scene\+:\+:I\+Animated\+Mesh\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.333333cm]{classirr_1_1scene_1_1IAnimatedMesh}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1scene_1_1IAnimatedMesh_a2ec99aba081e9f37802e8ea9cd65629b}{get\+Frame\+Count} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the frame count of the animated mesh. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1scene_1_1IAnimatedMesh_acb4249295319c8240d5bedc167417435}{get\+Animation\+Speed} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the animation speed of the animated mesh. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1IAnimatedMesh_a5eb1b09d96547dbd273d489e58d62658}{set\+Animation\+Speed} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} fps)=0
+\begin{DoxyCompactList}\small\item\em Sets the animation speed of the animated mesh. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} $\ast$ \hyperlink{classirr_1_1scene_1_1IAnimatedMesh_adccb39fee83bed36a464cf7b96f3a0ca}{get\+Mesh} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} frame, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} detail\+Level=255, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} start\+Frame\+Loop=-\/1, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} end\+Frame\+Loop=-\/1)=0
+\begin{DoxyCompactList}\small\item\em Returns the \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} interface for a frame. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61}{E\+\_\+\+A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+E\+S\+H\+\_\+\+T\+Y\+PE} \hyperlink{classirr_1_1scene_1_1IAnimatedMesh_abe5a20eccfb94eefcc6cbbc0b667ce37}{get\+Mesh\+Type} () const
+\begin{DoxyCompactList}\small\item\em Returns the type of the animated mesh. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Interface for an animated mesh. 
+
+There are already simple implementations of this interface available so you don\textquotesingle{}t have to implement this interface on your own if you need to\+: You might want to use \hyperlink{structirr_1_1scene_1_1SAnimatedMesh}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SMesh}{irr\+::scene\+::\+S\+Mesh}, \hyperlink{namespaceirr_1_1scene_a76de145884afd2965d09c28d6bf89616}{irr\+::scene\+::\+S\+Mesh\+Buffer} etc. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classirr_1_1scene_1_1IAnimatedMesh_acb4249295319c8240d5bedc167417435}\label{classirr_1_1scene_1_1IAnimatedMesh_acb4249295319c8240d5bedc167417435}} 
+\index{irr\+::scene\+::\+I\+Animated\+Mesh@{irr\+::scene\+::\+I\+Animated\+Mesh}!get\+Animation\+Speed@{get\+Animation\+Speed}}
+\index{get\+Animation\+Speed@{get\+Animation\+Speed}!irr\+::scene\+::\+I\+Animated\+Mesh@{irr\+::scene\+::\+I\+Animated\+Mesh}}
+\subsubsection{\texorpdfstring{get\+Animation\+Speed()}{getAnimationSpeed()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} irr\+::scene\+::\+I\+Animated\+Mesh\+::get\+Animation\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the animation speed of the animated mesh. 
+
+\begin{DoxyReturn}{Returns}
+The number of frames per second to play the animation with by default. If the amount is 0, it is a static, non animated mesh. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_aa6b6302dad72761e22ba10cc4486b4c8}{irr\+::scene\+::\+S\+Animated\+Mesh}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1IAnimatedMesh_a2ec99aba081e9f37802e8ea9cd65629b}\label{classirr_1_1scene_1_1IAnimatedMesh_a2ec99aba081e9f37802e8ea9cd65629b}} 
+\index{irr\+::scene\+::\+I\+Animated\+Mesh@{irr\+::scene\+::\+I\+Animated\+Mesh}!get\+Frame\+Count@{get\+Frame\+Count}}
+\index{get\+Frame\+Count@{get\+Frame\+Count}!irr\+::scene\+::\+I\+Animated\+Mesh@{irr\+::scene\+::\+I\+Animated\+Mesh}}
+\subsubsection{\texorpdfstring{get\+Frame\+Count()}{getFrameCount()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} irr\+::scene\+::\+I\+Animated\+Mesh\+::get\+Frame\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the frame count of the animated mesh. 
+
+\begin{DoxyReturn}{Returns}
+The amount of frames. If the amount is 1, it is a static, non animated mesh. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a58d8940d3002792194c74e209a5f2949}{irr\+::scene\+::\+S\+Animated\+Mesh}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1IAnimatedMesh_adccb39fee83bed36a464cf7b96f3a0ca}\label{classirr_1_1scene_1_1IAnimatedMesh_adccb39fee83bed36a464cf7b96f3a0ca}} 
+\index{irr\+::scene\+::\+I\+Animated\+Mesh@{irr\+::scene\+::\+I\+Animated\+Mesh}!get\+Mesh@{get\+Mesh}}
+\index{get\+Mesh@{get\+Mesh}!irr\+::scene\+::\+I\+Animated\+Mesh@{irr\+::scene\+::\+I\+Animated\+Mesh}}
+\subsubsection{\texorpdfstring{get\+Mesh()}{getMesh()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh}$\ast$ irr\+::scene\+::\+I\+Animated\+Mesh\+::get\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{frame,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{detail\+Level = {\ttfamily 255},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{start\+Frame\+Loop = {\ttfamily -\/1},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{end\+Frame\+Loop = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} interface for a frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & Frame number as zero based index. The maximum frame number is \hyperlink{classirr_1_1scene_1_1IAnimatedMesh_a2ec99aba081e9f37802e8ea9cd65629b}{get\+Frame\+Count()} -\/ 1; \\
+\hline
+{\em detail\+Level} & \hyperlink{classLevel}{Level} of detail. 0 is the lowest, 255 the highest level of detail. Most meshes will ignore the detail level. \\
+\hline
+{\em start\+Frame\+Loop} & Because some animated meshes (.M\+D2) are blended between 2 static frames, and maybe animated in a loop, the start\+Frame\+Loop and the end\+Frame\+Loop have to be defined, to prevent the animation to be blended between frames which are outside of this loop. If start\+Frame\+Loop and end\+Frame\+Loop are both -\/1, they are ignored. \\
+\hline
+{\em end\+Frame\+Loop} & see start\+Frame\+Loop. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the animated mesh based on a detail level. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a132d5f643fe02b57480d945e8d5be2d2}{irr\+::scene\+::\+S\+Animated\+Mesh}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1IAnimatedMesh_abe5a20eccfb94eefcc6cbbc0b667ce37}\label{classirr_1_1scene_1_1IAnimatedMesh_abe5a20eccfb94eefcc6cbbc0b667ce37}} 
+\index{irr\+::scene\+::\+I\+Animated\+Mesh@{irr\+::scene\+::\+I\+Animated\+Mesh}!get\+Mesh\+Type@{get\+Mesh\+Type}}
+\index{get\+Mesh\+Type@{get\+Mesh\+Type}!irr\+::scene\+::\+I\+Animated\+Mesh@{irr\+::scene\+::\+I\+Animated\+Mesh}}
+\subsubsection{\texorpdfstring{get\+Mesh\+Type()}{getMeshType()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61}{E\+\_\+\+A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+E\+S\+H\+\_\+\+T\+Y\+PE} irr\+::scene\+::\+I\+Animated\+Mesh\+::get\+Mesh\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the type of the animated mesh. 
+
+In most cases it is not neccessary to use this method. This is useful for making a safe downcast. For example, if \hyperlink{classirr_1_1scene_1_1IAnimatedMesh_abe5a20eccfb94eefcc6cbbc0b667ce37}{get\+Mesh\+Type()} returns E\+A\+M\+T\+\_\+\+M\+D2 it\textquotesingle{}s safe to cast the \hyperlink{classirr_1_1scene_1_1IAnimatedMesh}{I\+Animated\+Mesh} to \hyperlink{classirr_1_1scene_1_1IAnimatedMeshMD2}{I\+Animated\+Mesh\+M\+D2}. \begin{DoxyReturn}{Returns}
+Type of the mesh. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a423a3a9a7d2075eac53280fdfb15fdc9}{irr\+::scene\+::\+S\+Animated\+Mesh}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1IAnimatedMesh_a5eb1b09d96547dbd273d489e58d62658}\label{classirr_1_1scene_1_1IAnimatedMesh_a5eb1b09d96547dbd273d489e58d62658}} 
+\index{irr\+::scene\+::\+I\+Animated\+Mesh@{irr\+::scene\+::\+I\+Animated\+Mesh}!set\+Animation\+Speed@{set\+Animation\+Speed}}
+\index{set\+Animation\+Speed@{set\+Animation\+Speed}!irr\+::scene\+::\+I\+Animated\+Mesh@{irr\+::scene\+::\+I\+Animated\+Mesh}}
+\subsubsection{\texorpdfstring{set\+Animation\+Speed()}{setAnimationSpeed()}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Animated\+Mesh\+::set\+Animation\+Speed (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{fps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the animation speed of the animated mesh. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fps} & Number of frames per second to play the animation with by default. If the amount is 0, it is not animated. The actual speed is set in the scene node the mesh is instantiated in. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_ae7a32638fe5c59007d044bbc3c170108}{irr\+::scene\+::\+S\+Animated\+Mesh}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/I\+Animated\+Mesh.\+h\end{DoxyCompactItemize}

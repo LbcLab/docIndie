@@ -1,0 +1,246 @@
+\hypertarget{classirr_1_1gui_1_1ICursorControl}{}\section{irr\+:\+:gui\+:\+:I\+Cursor\+Control Class Reference}
+\label{classirr_1_1gui_1_1ICursorControl}\index{irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}}
+
+
+Interface to manipulate the mouse cursor.  
+
+
+
+
+{\ttfamily \#include $<$I\+Cursor\+Control.\+h$>$}
+
+Inheritance diagram for irr\+:\+:gui\+:\+:I\+Cursor\+Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classirr_1_1gui_1_1ICursorControl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classirr_1_1gui_1_1ICursorControl_aceb41d68494e2b2076fbc6949b254c74}{set\+Visible} (bool visible)=0
+\begin{DoxyCompactList}\small\item\em Changes the visible state of the mouse cursor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1ICursorControl_ae1d1ca4c1c3042388881fabda4e53a42}{is\+Visible} () const =0
+\begin{DoxyCompactList}\small\item\em Returns if the cursor is currently visible. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1ICursorControl_a951b5afe97fa21d98ce5360d96314306}{set\+Position} (const core\+::position2d$<$ \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $>$ \&pos)=0
+\begin{DoxyCompactList}\small\item\em Sets the new position of the cursor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1ICursorControl_adca41054684f73435c9b045520f7c83b}{set\+Position} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} x, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} y)=0
+\begin{DoxyCompactList}\small\item\em Sets the new position of the cursor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1ICursorControl_a421c770ffc494f8f6082a16bef0feed2}{set\+Position} (const core\+::position2d$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&pos)=0
+\begin{DoxyCompactList}\small\item\em Sets the new position of the cursor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1ICursorControl_a3b0a59608d1d0810079349acfa01a79b}{set\+Position} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} x, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} y)=0
+\begin{DoxyCompactList}\small\item\em Sets the new position of the cursor. \end{DoxyCompactList}\item 
+virtual const core\+::position2d$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \& \hyperlink{classirr_1_1gui_1_1ICursorControl_a65d9f6e734baa02be69b7e9f5fbdd565}{get\+Position} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the current position of the mouse cursor. \end{DoxyCompactList}\item 
+virtual core\+::position2d$<$ \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $>$ \hyperlink{classirr_1_1gui_1_1ICursorControl_a8ba1cb0ff11edc5fb32cdadddece09f8}{get\+Relative\+Position} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the current position of the mouse cursor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1ICursorControl_a2a7428ef716a60f8f4b86361a69b8770}{set\+Reference\+Rect} (\hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ $\ast$rect=0)=0
+\begin{DoxyCompactList}\small\item\em Sets an absolute reference rect for setting and retrieving the cursor position. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1ICursorControl_af394700d5279b13cc0f2bcdad679469c}{set\+Active\+Icon} (\hyperlink{namespaceirr_1_1gui_aefee802dd632c5735703e40ef40f879b}{E\+C\+U\+R\+S\+O\+R\+\_\+\+I\+C\+ON} icon\+Id)
+\begin{DoxyCompactList}\small\item\em Sets the active cursor icon. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1ICursorControl_aeffb0659049614ced7a56b607177c3bb}\label{classirr_1_1gui_1_1ICursorControl_aeffb0659049614ced7a56b607177c3bb}} 
+virtual \hyperlink{namespaceirr_1_1gui_aefee802dd632c5735703e40ef40f879b}{E\+C\+U\+R\+S\+O\+R\+\_\+\+I\+C\+ON} \hyperlink{classirr_1_1gui_1_1ICursorControl_aeffb0659049614ced7a56b607177c3bb}{get\+Active\+Icon} () const
+\begin{DoxyCompactList}\small\item\em Gets the currently active icon. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_1_1gui_aefee802dd632c5735703e40ef40f879b}{E\+C\+U\+R\+S\+O\+R\+\_\+\+I\+C\+ON} \hyperlink{classirr_1_1gui_1_1ICursorControl_a102ff455c70595886281e636ef063d3b}{add\+Icon} (const \hyperlink{structirr_1_1gui_1_1SCursorSprite}{gui\+::\+S\+Cursor\+Sprite} \&icon)
+\begin{DoxyCompactList}\small\item\em Add a custom sprite as cursor icon. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1ICursorControl_a3e7c8cb1f03e1ccc31fcc3c30f717762}{change\+Icon} (\hyperlink{namespaceirr_1_1gui_aefee802dd632c5735703e40ef40f879b}{E\+C\+U\+R\+S\+O\+R\+\_\+\+I\+C\+ON} icon\+Id, const \hyperlink{structirr_1_1gui_1_1SCursorSprite}{gui\+::\+S\+Cursor\+Sprite} \&sprite)
+\begin{DoxyCompactList}\small\item\em replace a cursor icon. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1ICursorControl_a0710b659cbab1474e3486f7dd0e8c35e}\label{classirr_1_1gui_1_1ICursorControl_a0710b659cbab1474e3486f7dd0e8c35e}} 
+virtual \hyperlink{namespaceirr_1_1core_ac79bc3704cf28bc1ab72d7cd1cae78d1}{core\+::dimension2di} \hyperlink{classirr_1_1gui_1_1ICursorControl_a0710b659cbab1474e3486f7dd0e8c35e}{get\+Supported\+Icon\+Size} () const
+\begin{DoxyCompactList}\small\item\em Return a system-\/specific size which is supported for cursors. Larger icons will fail, smaller icons might work. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1ICursorControl_ad7688bb200945f15877a598e8be53878}\label{classirr_1_1gui_1_1ICursorControl_ad7688bb200945f15877a598e8be53878}} 
+virtual void \hyperlink{classirr_1_1gui_1_1ICursorControl_ad7688bb200945f15877a598e8be53878}{set\+Platform\+Behavior} (\hyperlink{namespaceirr_1_1gui_abbd186f9cfba2f805d98248df226acef}{E\+C\+U\+R\+S\+O\+R\+\_\+\+P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+B\+E\+H\+A\+V\+I\+OR} behavior)
+\begin{DoxyCompactList}\small\item\em Set platform specific behavior flags. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_1_1gui_abbd186f9cfba2f805d98248df226acef}{E\+C\+U\+R\+S\+O\+R\+\_\+\+P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+B\+E\+H\+A\+V\+I\+OR} \hyperlink{classirr_1_1gui_1_1ICursorControl_aad19b5b02de0b8bc476c66b152b745c4}{get\+Platform\+Behavior} () const
+\begin{DoxyCompactList}\small\item\em Return platform specific behavior. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Interface to manipulate the mouse cursor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classirr_1_1gui_1_1ICursorControl_a102ff455c70595886281e636ef063d3b}\label{classirr_1_1gui_1_1ICursorControl_a102ff455c70595886281e636ef063d3b}} 
+\index{irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}!add\+Icon@{add\+Icon}}
+\index{add\+Icon@{add\+Icon}!irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}}
+\subsubsection{\texorpdfstring{add\+Icon()}{addIcon()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1gui_aefee802dd632c5735703e40ef40f879b}{E\+C\+U\+R\+S\+O\+R\+\_\+\+I\+C\+ON} irr\+::gui\+::\+I\+Cursor\+Control\+::add\+Icon (\begin{DoxyParamCaption}\item[{const \hyperlink{structirr_1_1gui_1_1SCursorSprite}{gui\+::\+S\+Cursor\+Sprite} \&}]{icon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Add a custom sprite as cursor icon. 
+
+\begin{DoxyReturn}{Returns}
+Identification for the icon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1ICursorControl_a3e7c8cb1f03e1ccc31fcc3c30f717762}\label{classirr_1_1gui_1_1ICursorControl_a3e7c8cb1f03e1ccc31fcc3c30f717762}} 
+\index{irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}!change\+Icon@{change\+Icon}}
+\index{change\+Icon@{change\+Icon}!irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}}
+\subsubsection{\texorpdfstring{change\+Icon()}{changeIcon()}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+Cursor\+Control\+::change\+Icon (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1gui_aefee802dd632c5735703e40ef40f879b}{E\+C\+U\+R\+S\+O\+R\+\_\+\+I\+C\+ON}}]{icon\+Id,  }\item[{const \hyperlink{structirr_1_1gui_1_1SCursorSprite}{gui\+::\+S\+Cursor\+Sprite} \&}]{sprite }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+replace a cursor icon. 
+
+Changing cursor icons is so far only supported on Win32 and Linux Note that this only changes the icons within your application, system cursors outside your application will not be affected. \mbox{\Hypertarget{classirr_1_1gui_1_1ICursorControl_aad19b5b02de0b8bc476c66b152b745c4}\label{classirr_1_1gui_1_1ICursorControl_aad19b5b02de0b8bc476c66b152b745c4}} 
+\index{irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}!get\+Platform\+Behavior@{get\+Platform\+Behavior}}
+\index{get\+Platform\+Behavior@{get\+Platform\+Behavior}!irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}}
+\subsubsection{\texorpdfstring{get\+Platform\+Behavior()}{getPlatformBehavior()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1gui_abbd186f9cfba2f805d98248df226acef}{E\+C\+U\+R\+S\+O\+R\+\_\+\+P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+B\+E\+H\+A\+V\+I\+OR} irr\+::gui\+::\+I\+Cursor\+Control\+::get\+Platform\+Behavior (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return platform specific behavior. 
+
+\begin{DoxyReturn}{Returns}
+Behavior set by set\+Platform\+Behavior or E\+C\+P\+B\+\_\+\+N\+O\+NE for platforms not implementing specific behaviors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1ICursorControl_a65d9f6e734baa02be69b7e9f5fbdd565}\label{classirr_1_1gui_1_1ICursorControl_a65d9f6e734baa02be69b7e9f5fbdd565}} 
+\index{irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily virtual const core\+::position2d$<$\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}$>$\& irr\+::gui\+::\+I\+Cursor\+Control\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the current position of the mouse cursor. 
+
+\begin{DoxyReturn}{Returns}
+Returns the current position of the cursor. The returned position is the position of the mouse cursor in pixel units. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1ICursorControl_a8ba1cb0ff11edc5fb32cdadddece09f8}\label{classirr_1_1gui_1_1ICursorControl_a8ba1cb0ff11edc5fb32cdadddece09f8}} 
+\index{irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}!get\+Relative\+Position@{get\+Relative\+Position}}
+\index{get\+Relative\+Position@{get\+Relative\+Position}!irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}}
+\subsubsection{\texorpdfstring{get\+Relative\+Position()}{getRelativePosition()}}
+{\footnotesize\ttfamily virtual core\+::position2d$<$\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}$>$ irr\+::gui\+::\+I\+Cursor\+Control\+::get\+Relative\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the current position of the mouse cursor. 
+
+\begin{DoxyReturn}{Returns}
+Returns the current position of the cursor. The returned position is a value between (0.\+0f, 0.\+0f) and (1.\+0f, 1.\+0f), where (0.\+0f, 0.\+0f) is the top left corner and (1.\+0f, 1.\+0f) is the bottom right corner of the render window. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1ICursorControl_ae1d1ca4c1c3042388881fabda4e53a42}\label{classirr_1_1gui_1_1ICursorControl_ae1d1ca4c1c3042388881fabda4e53a42}} 
+\index{irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}!is\+Visible@{is\+Visible}}
+\index{is\+Visible@{is\+Visible}!irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}}
+\subsubsection{\texorpdfstring{is\+Visible()}{isVisible()}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+Cursor\+Control\+::is\+Visible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns if the cursor is currently visible. 
+
+\begin{DoxyReturn}{Returns}
+True if the cursor is visible, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1ICursorControl_af394700d5279b13cc0f2bcdad679469c}\label{classirr_1_1gui_1_1ICursorControl_af394700d5279b13cc0f2bcdad679469c}} 
+\index{irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}!set\+Active\+Icon@{set\+Active\+Icon}}
+\index{set\+Active\+Icon@{set\+Active\+Icon}!irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}}
+\subsubsection{\texorpdfstring{set\+Active\+Icon()}{setActiveIcon()}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+Cursor\+Control\+::set\+Active\+Icon (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1gui_aefee802dd632c5735703e40ef40f879b}{E\+C\+U\+R\+S\+O\+R\+\_\+\+I\+C\+ON}}]{icon\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sets the active cursor icon. 
+
+Setting cursor icons is so far only supported on Win32 and Linux \mbox{\Hypertarget{classirr_1_1gui_1_1ICursorControl_a951b5afe97fa21d98ce5360d96314306}\label{classirr_1_1gui_1_1ICursorControl_a951b5afe97fa21d98ce5360d96314306}} 
+\index{irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+Cursor\+Control\+::set\+Position (\begin{DoxyParamCaption}\item[{const core\+::position2d$<$ \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $>$ \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the new position of the cursor. 
+
+The position must be between (0.\+0f, 0.\+0f) and (1.\+0f, 1.\+0f), where (0.\+0f, 0.\+0f) is the top left corner and (1.\+0f, 1.\+0f) is the bottom right corner of the render window. 
+\begin{DoxyParams}{Parameters}
+{\em pos} & New position of the cursor. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1ICursorControl_adca41054684f73435c9b045520f7c83b}\label{classirr_1_1gui_1_1ICursorControl_adca41054684f73435c9b045520f7c83b}} 
+\index{irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+Cursor\+Control\+::set\+Position (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{x,  }\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the new position of the cursor. 
+
+The position must be between (0.\+0f, 0.\+0f) and (1.\+0f, 1.\+0f), where (0.\+0f, 0.\+0f) is the top left corner and (1.\+0f, 1.\+0f) is the bottom right corner of the render window. 
+\begin{DoxyParams}{Parameters}
+{\em x} & New x-\/coord of the cursor. \\
+\hline
+{\em y} & New x-\/coord of the cursor. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1ICursorControl_a421c770ffc494f8f6082a16bef0feed2}\label{classirr_1_1gui_1_1ICursorControl_a421c770ffc494f8f6082a16bef0feed2}} 
+\index{irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+Cursor\+Control\+::set\+Position (\begin{DoxyParamCaption}\item[{const core\+::position2d$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the new position of the cursor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & New position of the cursor. The coordinates are pixel units. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1ICursorControl_a3b0a59608d1d0810079349acfa01a79b}\label{classirr_1_1gui_1_1ICursorControl_a3b0a59608d1d0810079349acfa01a79b}} 
+\index{irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+Cursor\+Control\+::set\+Position (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{x,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the new position of the cursor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & New x-\/coord of the cursor. The coordinates are pixel units. \\
+\hline
+{\em y} & New y-\/coord of the cursor. The coordinates are pixel units. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1ICursorControl_a2a7428ef716a60f8f4b86361a69b8770}\label{classirr_1_1gui_1_1ICursorControl_a2a7428ef716a60f8f4b86361a69b8770}} 
+\index{irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}!set\+Reference\+Rect@{set\+Reference\+Rect}}
+\index{set\+Reference\+Rect@{set\+Reference\+Rect}!irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}}
+\subsubsection{\texorpdfstring{set\+Reference\+Rect()}{setReferenceRect()}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+Cursor\+Control\+::set\+Reference\+Rect (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ $\ast$}]{rect = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets an absolute reference rect for setting and retrieving the cursor position. 
+
+If this rect is set, the cursor position is not being calculated relative to the rendering window but to this rect. You can set the rect pointer to 0 to disable this feature again. This feature is useful when rendering into parts of foreign windows for example in an editor. 
+\begin{DoxyParams}{Parameters}
+{\em rect} & A pointer to an reference rectangle or 0 to disable the reference rectangle. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1ICursorControl_aceb41d68494e2b2076fbc6949b254c74}\label{classirr_1_1gui_1_1ICursorControl_aceb41d68494e2b2076fbc6949b254c74}} 
+\index{irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}!set\+Visible@{set\+Visible}}
+\index{set\+Visible@{set\+Visible}!irr\+::gui\+::\+I\+Cursor\+Control@{irr\+::gui\+::\+I\+Cursor\+Control}}
+\subsubsection{\texorpdfstring{set\+Visible()}{setVisible()}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+Cursor\+Control\+::set\+Visible (\begin{DoxyParamCaption}\item[{bool}]{visible }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Changes the visible state of the mouse cursor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em visible} & The new visible state. If true, the cursor will be visible, if false, it will be invisible. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/I\+Cursor\+Control.\+h\end{DoxyCompactItemize}

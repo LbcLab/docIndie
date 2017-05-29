@@ -1,0 +1,207 @@
+\hypertarget{classirr_1_1gui_1_1IGUITabControl}{}\section{irr\+:\+:gui\+:\+:I\+G\+U\+I\+Tab\+Control Class Reference}
+\label{classirr_1_1gui_1_1IGUITabControl}\index{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}}
+
+
+A standard tab control.  
+
+
+
+
+{\ttfamily \#include $<$I\+G\+U\+I\+Tab\+Control.\+h$>$}
+
+Inheritance diagram for irr\+:\+:gui\+:\+:I\+G\+U\+I\+Tab\+Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classirr_1_1gui_1_1IGUITabControl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_a01e66ddc01de0a0185407e4bd839ed31}\label{classirr_1_1gui_1_1IGUITabControl_a01e66ddc01de0a0185407e4bd839ed31}} 
+\hyperlink{classirr_1_1gui_1_1IGUITabControl_a01e66ddc01de0a0185407e4bd839ed31}{I\+G\+U\+I\+Tab\+Control} (\hyperlink{classirr_1_1gui_1_1IGUIEnvironment}{I\+G\+U\+I\+Environment} $\ast$environment, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ rectangle)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_a4b1a55fd79785abc4f5bcb05f8637a42}\label{classirr_1_1gui_1_1IGUITabControl_a4b1a55fd79785abc4f5bcb05f8637a42}} 
+virtual \hyperlink{classirr_1_1gui_1_1IGUITab}{I\+G\+U\+I\+Tab} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUITabControl_a4b1a55fd79785abc4f5bcb05f8637a42}{add\+Tab} (const wchar\+\_\+t $\ast$caption, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1)=0
+\begin{DoxyCompactList}\small\item\em Adds a tab. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUITab}{I\+G\+U\+I\+Tab} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUITabControl_a7ee37817344a547a240b751e3386b85b}{insert\+Tab} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} idx, const wchar\+\_\+t $\ast$caption, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1)=0
+\begin{DoxyCompactList}\small\item\em Insert the tab at the given index. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_a0d79c9d666527201b57e859e69b7523c}\label{classirr_1_1gui_1_1IGUITabControl_a0d79c9d666527201b57e859e69b7523c}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUITabControl_a0d79c9d666527201b57e859e69b7523c}{remove\+Tab} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} idx)=0
+\begin{DoxyCompactList}\small\item\em Removes a tab from the tabcontrol. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_ac5a41030a1fa56978da2142e00fef3f1}\label{classirr_1_1gui_1_1IGUITabControl_ac5a41030a1fa56978da2142e00fef3f1}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUITabControl_ac5a41030a1fa56978da2142e00fef3f1}{clear} ()=0
+\begin{DoxyCompactList}\small\item\em Clears the tabcontrol removing all tabs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_a9c0571f79bb538936182542562d2c520}\label{classirr_1_1gui_1_1IGUITabControl_a9c0571f79bb538936182542562d2c520}} 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUITabControl_a9c0571f79bb538936182542562d2c520}{get\+Tab\+Count} () const =0
+\begin{DoxyCompactList}\small\item\em Returns amount of tabs in the tabcontrol. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUITab}{I\+G\+U\+I\+Tab} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUITabControl_a1ce91106037c880aae15df77f42aeeda}{get\+Tab} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} idx) const =0
+\begin{DoxyCompactList}\small\item\em Returns a tab based on zero based index. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUITabControl_a2a2d810ff8a79c4226831b689a4d8b3a}{set\+Active\+Tab} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} idx)=0
+\begin{DoxyCompactList}\small\item\em Brings a tab to front. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUITabControl_acea5fca2d2a883a450d4df823eea27d5}{set\+Active\+Tab} (\hyperlink{classirr_1_1gui_1_1IGUITab}{I\+G\+U\+I\+Tab} $\ast$tab)=0
+\begin{DoxyCompactList}\small\item\em Brings a tab to front. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_adc55d313131e214646c9f654e1319792}\label{classirr_1_1gui_1_1IGUITabControl_adc55d313131e214646c9f654e1319792}} 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUITabControl_adc55d313131e214646c9f654e1319792}{get\+Active\+Tab} () const =0
+\begin{DoxyCompactList}\small\item\em Returns which tab is currently active. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUITabControl_abe529c6da00af1e156357562eafec031}{get\+Tab\+At} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} xpos, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} ypos) const =0
+\begin{DoxyCompactList}\small\item\em get the the id of the tab at the given absolute coordinates \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_aaf32295663b656a48980ee113dd0251e}\label{classirr_1_1gui_1_1IGUITabControl_aaf32295663b656a48980ee113dd0251e}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUITabControl_aaf32295663b656a48980ee113dd0251e}{set\+Tab\+Height} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} height)=0
+\begin{DoxyCompactList}\small\item\em Set the height of the tabs. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUITabControl_aff6b4e0bd1a4b641fd0e3c73a0500d72}{get\+Tab\+Height} () const =0
+\begin{DoxyCompactList}\small\item\em Get the height of the tabs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_a854b4d28fda5b9eb0ccc2f6a8c8e463c}\label{classirr_1_1gui_1_1IGUITabControl_a854b4d28fda5b9eb0ccc2f6a8c8e463c}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUITabControl_a854b4d28fda5b9eb0ccc2f6a8c8e463c}{set\+Tab\+Max\+Width} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} width)=0
+\begin{DoxyCompactList}\small\item\em set the maximal width of a tab. Per default width is 0 which means \char`\"{}no width restriction\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_a6f5c5210417d07c3f87ce2db91341f3c}\label{classirr_1_1gui_1_1IGUITabControl_a6f5c5210417d07c3f87ce2db91341f3c}} 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUITabControl_a6f5c5210417d07c3f87ce2db91341f3c}{get\+Tab\+Max\+Width} () const =0
+\begin{DoxyCompactList}\small\item\em get the maximal width of a tab \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUITabControl_a5481d1c15605d00654c12581842ad311}{set\+Tab\+Vertical\+Alignment} (\hyperlink{namespaceirr_1_1gui_a19eb5fb40e67f108cb16aba922ddaa2d}{gui\+::\+E\+G\+U\+I\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT} alignment)=0
+\begin{DoxyCompactList}\small\item\em Set the alignment of the tabs. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_1_1gui_a19eb5fb40e67f108cb16aba922ddaa2d}{gui\+::\+E\+G\+U\+I\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT} \hyperlink{classirr_1_1gui_1_1IGUITabControl_a3153a7dba26548eda6a8013e1e669c18}{get\+Tab\+Vertical\+Alignment} () const =0
+\begin{DoxyCompactList}\small\item\em Get the alignment of the tabs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_ab73b93ca48aabf376c4b10cf42db35d7}\label{classirr_1_1gui_1_1IGUITabControl_ab73b93ca48aabf376c4b10cf42db35d7}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUITabControl_ab73b93ca48aabf376c4b10cf42db35d7}{set\+Tab\+Extra\+Width} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} extra\+Width)=0
+\begin{DoxyCompactList}\small\item\em Set the extra width added to tabs on each side of the text. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUITabControl_afaeab7a998a34ab5e8398930276ab3bd}{get\+Tab\+Extra\+Width} () const =0
+\begin{DoxyCompactList}\small\item\em Get the extra width added to tabs on each side of the text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A standard tab control. 
+
+\begin{DoxyParagraph}{This element can create the following events of type E\+G\+U\+I\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE\+:}
+\begin{DoxyItemize}
+\item E\+G\+E\+T\+\_\+\+T\+A\+B\+\_\+\+C\+H\+A\+N\+G\+ED \end{DoxyItemize}
+
+\end{DoxyParagraph}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_a1ce91106037c880aae15df77f42aeeda}\label{classirr_1_1gui_1_1IGUITabControl_a1ce91106037c880aae15df77f42aeeda}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}!get\+Tab@{get\+Tab}}
+\index{get\+Tab@{get\+Tab}!irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}}
+\subsubsection{\texorpdfstring{get\+Tab()}{getTab()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITab}{I\+G\+U\+I\+Tab}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control\+::get\+Tab (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns a tab based on zero based index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & zero based index of tab. Is a value betwenn 0 and get\+Tabcount()-\/1; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns pointer to the Tab. Returns 0 if no tab is corresponding to this tab. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_abe529c6da00af1e156357562eafec031}\label{classirr_1_1gui_1_1IGUITabControl_abe529c6da00af1e156357562eafec031}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}!get\+Tab\+At@{get\+Tab\+At}}
+\index{get\+Tab\+At@{get\+Tab\+At}!irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}}
+\subsubsection{\texorpdfstring{get\+Tab\+At()}{getTabAt()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control\+::get\+Tab\+At (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{xpos,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{ypos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+get the the id of the tab at the given absolute coordinates 
+
+\begin{DoxyReturn}{Returns}
+The id of the tab or -\/1 when no tab is at those coordinates 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_afaeab7a998a34ab5e8398930276ab3bd}\label{classirr_1_1gui_1_1IGUITabControl_afaeab7a998a34ab5e8398930276ab3bd}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}!get\+Tab\+Extra\+Width@{get\+Tab\+Extra\+Width}}
+\index{get\+Tab\+Extra\+Width@{get\+Tab\+Extra\+Width}!irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}}
+\subsubsection{\texorpdfstring{get\+Tab\+Extra\+Width()}{getTabExtraWidth()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control\+::get\+Tab\+Extra\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the extra width added to tabs on each side of the text. 
+
+return Returns the extra width of the tabs \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_aff6b4e0bd1a4b641fd0e3c73a0500d72}\label{classirr_1_1gui_1_1IGUITabControl_aff6b4e0bd1a4b641fd0e3c73a0500d72}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}!get\+Tab\+Height@{get\+Tab\+Height}}
+\index{get\+Tab\+Height@{get\+Tab\+Height}!irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}}
+\subsubsection{\texorpdfstring{get\+Tab\+Height()}{getTabHeight()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control\+::get\+Tab\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the height of the tabs. 
+
+return Returns the height of the tabs \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_a3153a7dba26548eda6a8013e1e669c18}\label{classirr_1_1gui_1_1IGUITabControl_a3153a7dba26548eda6a8013e1e669c18}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}!get\+Tab\+Vertical\+Alignment@{get\+Tab\+Vertical\+Alignment}}
+\index{get\+Tab\+Vertical\+Alignment@{get\+Tab\+Vertical\+Alignment}!irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}}
+\subsubsection{\texorpdfstring{get\+Tab\+Vertical\+Alignment()}{getTabVerticalAlignment()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1gui_a19eb5fb40e67f108cb16aba922ddaa2d}{gui\+::\+E\+G\+U\+I\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT} irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control\+::get\+Tab\+Vertical\+Alignment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the alignment of the tabs. 
+
+return Returns the alignment of the tabs \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_a7ee37817344a547a240b751e3386b85b}\label{classirr_1_1gui_1_1IGUITabControl_a7ee37817344a547a240b751e3386b85b}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}!insert\+Tab@{insert\+Tab}}
+\index{insert\+Tab@{insert\+Tab}!irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}}
+\subsubsection{\texorpdfstring{insert\+Tab()}{insertTab()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITab}{I\+G\+U\+I\+Tab}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control\+::insert\+Tab (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{idx,  }\item[{const wchar\+\_\+t $\ast$}]{caption,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Insert the tab at the given index. 
+
+\begin{DoxyReturn}{Returns}
+The tab on success or N\+U\+LL on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_a2a2d810ff8a79c4226831b689a4d8b3a}\label{classirr_1_1gui_1_1IGUITabControl_a2a2d810ff8a79c4226831b689a4d8b3a}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}!set\+Active\+Tab@{set\+Active\+Tab}}
+\index{set\+Active\+Tab@{set\+Active\+Tab}!irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}}
+\subsubsection{\texorpdfstring{set\+Active\+Tab()}{setActiveTab()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control\+::set\+Active\+Tab (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Brings a tab to front. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & number of the tab. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if successful. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_acea5fca2d2a883a450d4df823eea27d5}\label{classirr_1_1gui_1_1IGUITabControl_acea5fca2d2a883a450d4df823eea27d5}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}!set\+Active\+Tab@{set\+Active\+Tab}}
+\index{set\+Active\+Tab@{set\+Active\+Tab}!irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}}
+\subsubsection{\texorpdfstring{set\+Active\+Tab()}{setActiveTab()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control\+::set\+Active\+Tab (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUITab}{I\+G\+U\+I\+Tab} $\ast$}]{tab }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Brings a tab to front. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & pointer to the tab. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if successful. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITabControl_a5481d1c15605d00654c12581842ad311}\label{classirr_1_1gui_1_1IGUITabControl_a5481d1c15605d00654c12581842ad311}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}!set\+Tab\+Vertical\+Alignment@{set\+Tab\+Vertical\+Alignment}}
+\index{set\+Tab\+Vertical\+Alignment@{set\+Tab\+Vertical\+Alignment}!irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control@{irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control}}
+\subsubsection{\texorpdfstring{set\+Tab\+Vertical\+Alignment()}{setTabVerticalAlignment()}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Tab\+Control\+::set\+Tab\+Vertical\+Alignment (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1gui_a19eb5fb40e67f108cb16aba922ddaa2d}{gui\+::\+E\+G\+U\+I\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT}}]{alignment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the alignment of the tabs. 
+
+Use E\+G\+U\+I\+A\+\_\+\+U\+P\+P\+E\+R\+L\+E\+FT or E\+G\+U\+I\+A\+\_\+\+L\+O\+W\+E\+R\+R\+I\+G\+HT 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/I\+G\+U\+I\+Tab\+Control.\+h\end{DoxyCompactItemize}

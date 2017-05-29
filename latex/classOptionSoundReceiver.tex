@@ -9,10 +9,12 @@ Manager of event of Sound scene setting.
 
 {\ttfamily \#include $<$Option\+Sound\+Receiver.\+hh$>$}
 
-
-
-Inherits I\+Event\+Receiver.
-
+Inheritance diagram for Option\+Sound\+Receiver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classOptionSoundReceiver}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -20,7 +22,7 @@ Inherits I\+Event\+Receiver.
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 \hyperlink{classOptionSoundReceiver_aca3553e7a1777ed7e39111325b09954a}{$\sim$\+Option\+Sound\+Receiver} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
-bool \hyperlink{classOptionSoundReceiver_ae7c9643b12df38a45d4e3d629274019c}{On\+Event} (const irr\+::\+S\+Event \&event)
+bool \hyperlink{classOptionSoundReceiver_ae7c9643b12df38a45d4e3d629274019c}{On\+Event} (const \hyperlink{structirr_1_1SEvent}{irr\+::\+S\+Event} \&event)
 \begin{DoxyCompactList}\small\item\em Allow the user to handle envent into a scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -55,13 +57,17 @@ Destroy the class.
 \index{Option\+Sound\+Receiver@{Option\+Sound\+Receiver}!On\+Event@{On\+Event}}
 \index{On\+Event@{On\+Event}!Option\+Sound\+Receiver@{Option\+Sound\+Receiver}}
 \subsubsection{\texorpdfstring{On\+Event()}{OnEvent()}}
-{\footnotesize\ttfamily bool Option\+Sound\+Receiver\+::\+On\+Event (\begin{DoxyParamCaption}\item[{const irr\+::\+S\+Event \&}]{event }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Option\+Sound\+Receiver\+::\+On\+Event (\begin{DoxyParamCaption}\item[{const \hyperlink{structirr_1_1SEvent}{irr\+::\+S\+Event} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
 Allow the user to handle envent into a scene. 
 
 Return true if he know the event, false if not. 
+
+Implements \hyperlink{classirr_1_1IEventReceiver_a571f744ceffc3b4fe8a81f529163eb97}{irr\+::\+I\+Event\+Receiver}.
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

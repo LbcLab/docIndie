@@ -1,0 +1,222 @@
+\hypertarget{classirr_1_1io_1_1IFileList}{}\section{irr\+:\+:io\+:\+:I\+File\+List Class Reference}
+\label{classirr_1_1io_1_1IFileList}\index{irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}}
+
+
+Provides a list of files and folders.  
+
+
+
+
+{\ttfamily \#include $<$I\+File\+List.\+h$>$}
+
+Inheritance diagram for irr\+:\+:io\+:\+:I\+File\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classirr_1_1io_1_1IFileList}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1io_1_1IFileList_a871861be76e18d58274c4580b1d103b9}{get\+File\+Count} () const =0
+\begin{DoxyCompactList}\small\item\em Get the number of files in the filelist. \end{DoxyCompactList}\item 
+virtual const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \& \hyperlink{classirr_1_1io_1_1IFileList_ab4e0330adf34afa3c21e06ff0b4e84d5}{get\+File\+Name} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index) const =0
+\begin{DoxyCompactList}\small\item\em Gets the name of a file in the list, based on an index. \end{DoxyCompactList}\item 
+virtual const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \& \hyperlink{classirr_1_1io_1_1IFileList_a063c823f58019bda79efabefabe365da}{get\+Full\+File\+Name} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index) const =0
+\begin{DoxyCompactList}\small\item\em Gets the full name of a file in the list including the path, based on an index. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1io_1_1IFileList_a305561d0c5db74ac721da5d26c461b36}{get\+File\+Size} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index) const =0
+\begin{DoxyCompactList}\small\item\em Returns the size of a file in the file list, based on an index. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1io_1_1IFileList_a97582a2cf5c05e7b8dcb702384ab76bd}{get\+File\+Offset} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index) const =0
+\begin{DoxyCompactList}\small\item\em Returns the file offset of a file in the file list, based on an index. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1io_1_1IFileList_a9f633344aa2bb36f619d1ca8472b46b6}{get\+ID} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index) const =0
+\begin{DoxyCompactList}\small\item\em Returns the ID of a file in the file list, based on an index. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1io_1_1IFileList_a0f2cb8c99e9ecc4b56d08718c885a5af}{is\+Directory} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index) const =0
+\begin{DoxyCompactList}\small\item\em Check if the file is a directory. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1io_1_1IFileList_a2b0fce45cbea72f5c6dc13eb85183054}{find\+File} (const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&filename, bool is\+Folder=false) const =0
+\begin{DoxyCompactList}\small\item\em Searches for a file or folder in the list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1io_1_1IFileList_ac3473e66ba9c3cee2e06c1fb46493e88}\label{classirr_1_1io_1_1IFileList_ac3473e66ba9c3cee2e06c1fb46493e88}} 
+virtual const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \& \hyperlink{classirr_1_1io_1_1IFileList_ac3473e66ba9c3cee2e06c1fb46493e88}{get\+Path} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the base path of the file list. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1io_1_1IFileList_ad0d90f1bb8a35910f4f877268e2f043e}{add\+Item} (const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&full\+Path, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} offset, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} size, bool \hyperlink{classirr_1_1io_1_1IFileList_a0f2cb8c99e9ecc4b56d08718c885a5af}{is\+Directory}, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} id=0)=0
+\begin{DoxyCompactList}\small\item\em Add as a file or folder to the list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1io_1_1IFileList_a2cf4f12d7ee6ab35257169ec23654da8}\label{classirr_1_1io_1_1IFileList_a2cf4f12d7ee6ab35257169ec23654da8}} 
+virtual void \hyperlink{classirr_1_1io_1_1IFileList_a2cf4f12d7ee6ab35257169ec23654da8}{sort} ()=0
+\begin{DoxyCompactList}\small\item\em Sorts the file list. You should call this after adding any items to the file list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Provides a list of files and folders. 
+
+File lists usually contain a list of all files in a given folder, but can also contain a complete directory structure. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classirr_1_1io_1_1IFileList_ad0d90f1bb8a35910f4f877268e2f043e}\label{classirr_1_1io_1_1IFileList_ad0d90f1bb8a35910f4f877268e2f043e}} 
+\index{irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}!add\+Item@{add\+Item}}
+\index{add\+Item@{add\+Item}!irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}}
+\subsubsection{\texorpdfstring{add\+Item()}{addItem()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} irr\+::io\+::\+I\+File\+List\+::add\+Item (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&}]{full\+Path,  }\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{offset,  }\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{size,  }\item[{bool}]{is\+Directory,  }\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{id = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Add as a file or folder to the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em full\+Path} & The file name including path, from the root of the file list. \\
+\hline
+{\em is\+Directory} & True if this is a directory rather than a file. \\
+\hline
+{\em offset} & The file offset inside an archive \\
+\hline
+{\em size} & The size of the file in bytes. \\
+\hline
+{\em id} & The ID of the file in the archive which owns it \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1io_1_1IFileList_a2b0fce45cbea72f5c6dc13eb85183054}\label{classirr_1_1io_1_1IFileList_a2b0fce45cbea72f5c6dc13eb85183054}} 
+\index{irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}!find\+File@{find\+File}}
+\index{find\+File@{find\+File}!irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}}
+\subsubsection{\texorpdfstring{find\+File()}{findFile()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::io\+::\+I\+File\+List\+::find\+File (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&}]{filename,  }\item[{bool}]{is\+Folder = {\ttfamily false} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Searches for a file or folder in the list. 
+
+Searches for a file by name 
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file to search for. \\
+\hline
+{\em is\+Folder} & True if you are searching for a directory path, false if you are searching for a file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the index of the file in the file list, or -\/1 if no matching name name was found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1io_1_1IFileList_a871861be76e18d58274c4580b1d103b9}\label{classirr_1_1io_1_1IFileList_a871861be76e18d58274c4580b1d103b9}} 
+\index{irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}!get\+File\+Count@{get\+File\+Count}}
+\index{get\+File\+Count@{get\+File\+Count}!irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}}
+\subsubsection{\texorpdfstring{get\+File\+Count()}{getFileCount()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} irr\+::io\+::\+I\+File\+List\+::get\+File\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the number of files in the filelist. 
+
+\begin{DoxyReturn}{Returns}
+Amount of files and directories in the file list. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1io_1_1IFileList_ab4e0330adf34afa3c21e06ff0b4e84d5}\label{classirr_1_1io_1_1IFileList_ab4e0330adf34afa3c21e06ff0b4e84d5}} 
+\index{irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}!get\+File\+Name@{get\+File\+Name}}
+\index{get\+File\+Name@{get\+File\+Name}!irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}}
+\subsubsection{\texorpdfstring{get\+File\+Name()}{getFileName()}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path}\& irr\+::io\+::\+I\+File\+List\+::get\+File\+Name (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the name of a file in the list, based on an index. 
+
+The path is not included in this name. Use get\+Full\+File\+Name for this. 
+\begin{DoxyParams}{Parameters}
+{\em index} & is the zero based index of the file which name should be returned. The index must be less than the amount \hyperlink{classirr_1_1io_1_1IFileList_a871861be76e18d58274c4580b1d103b9}{get\+File\+Count()} returns. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+File name of the file. Returns 0, if an error occured. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1io_1_1IFileList_a97582a2cf5c05e7b8dcb702384ab76bd}\label{classirr_1_1io_1_1IFileList_a97582a2cf5c05e7b8dcb702384ab76bd}} 
+\index{irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}!get\+File\+Offset@{get\+File\+Offset}}
+\index{get\+File\+Offset@{get\+File\+Offset}!irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}}
+\subsubsection{\texorpdfstring{get\+File\+Offset()}{getFileOffset()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} irr\+::io\+::\+I\+File\+List\+::get\+File\+Offset (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the file offset of a file in the file list, based on an index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & is the zero based index of the file which should be returned. The index must be less than the amount \hyperlink{classirr_1_1io_1_1IFileList_a871861be76e18d58274c4580b1d103b9}{get\+File\+Count()} returns. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The offset of the file in bytes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1io_1_1IFileList_a305561d0c5db74ac721da5d26c461b36}\label{classirr_1_1io_1_1IFileList_a305561d0c5db74ac721da5d26c461b36}} 
+\index{irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}!get\+File\+Size@{get\+File\+Size}}
+\index{get\+File\+Size@{get\+File\+Size}!irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}}
+\subsubsection{\texorpdfstring{get\+File\+Size()}{getFileSize()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} irr\+::io\+::\+I\+File\+List\+::get\+File\+Size (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the size of a file in the file list, based on an index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & is the zero based index of the file which should be returned. The index must be less than the amount \hyperlink{classirr_1_1io_1_1IFileList_a871861be76e18d58274c4580b1d103b9}{get\+File\+Count()} returns. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The size of the file in bytes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1io_1_1IFileList_a063c823f58019bda79efabefabe365da}\label{classirr_1_1io_1_1IFileList_a063c823f58019bda79efabefabe365da}} 
+\index{irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}!get\+Full\+File\+Name@{get\+Full\+File\+Name}}
+\index{get\+Full\+File\+Name@{get\+Full\+File\+Name}!irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}}
+\subsubsection{\texorpdfstring{get\+Full\+File\+Name()}{getFullFileName()}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path}\& irr\+::io\+::\+I\+File\+List\+::get\+Full\+File\+Name (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the full name of a file in the list including the path, based on an index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & is the zero based index of the file which name should be returned. The index must be less than the amount \hyperlink{classirr_1_1io_1_1IFileList_a871861be76e18d58274c4580b1d103b9}{get\+File\+Count()} returns. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+File name of the file. Returns 0 if an error occured. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1io_1_1IFileList_a9f633344aa2bb36f619d1ca8472b46b6}\label{classirr_1_1io_1_1IFileList_a9f633344aa2bb36f619d1ca8472b46b6}} 
+\index{irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} irr\+::io\+::\+I\+File\+List\+::get\+ID (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the ID of a file in the file list, based on an index. 
+
+This optional ID can be used to link the file list entry to information held elsewhere. For example this could be an index in an \hyperlink{classirr_1_1io_1_1IFileArchive}{I\+File\+Archive}, linking the entry to its data offset, uncompressed size and C\+RC. 
+\begin{DoxyParams}{Parameters}
+{\em index} & is the zero based index of the file which should be returned. The index must be less than the amount \hyperlink{classirr_1_1io_1_1IFileList_a871861be76e18d58274c4580b1d103b9}{get\+File\+Count()} returns. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of the file. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1io_1_1IFileList_a0f2cb8c99e9ecc4b56d08718c885a5af}\label{classirr_1_1io_1_1IFileList_a0f2cb8c99e9ecc4b56d08718c885a5af}} 
+\index{irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}!is\+Directory@{is\+Directory}}
+\index{is\+Directory@{is\+Directory}!irr\+::io\+::\+I\+File\+List@{irr\+::io\+::\+I\+File\+List}}
+\subsubsection{\texorpdfstring{is\+Directory()}{isDirectory()}}
+{\footnotesize\ttfamily virtual bool irr\+::io\+::\+I\+File\+List\+::is\+Directory (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if the file is a directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The zero based index which will be checked. The index must be less than the amount \hyperlink{classirr_1_1io_1_1IFileList_a871861be76e18d58274c4580b1d103b9}{get\+File\+Count()} returns. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the file is a directory, else false. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/I\+File\+List.\+h\end{DoxyCompactItemize}

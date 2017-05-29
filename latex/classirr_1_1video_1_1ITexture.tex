@@ -1,0 +1,216 @@
+\hypertarget{classirr_1_1video_1_1ITexture}{}\section{irr\+:\+:video\+:\+:I\+Texture Class Reference}
+\label{classirr_1_1video_1_1ITexture}\index{irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}}
+
+
+Interface of a Video Driver dependent Texture.  
+
+
+
+
+{\ttfamily \#include $<$I\+Texture.\+h$>$}
+
+Inheritance diagram for irr\+:\+:video\+:\+:I\+Texture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classirr_1_1video_1_1ITexture}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1ITexture_a32dbd62fef8a65f11e5b440706346c90}\label{classirr_1_1video_1_1ITexture_a32dbd62fef8a65f11e5b440706346c90}} 
+\hyperlink{classirr_1_1video_1_1ITexture_a32dbd62fef8a65f11e5b440706346c90}{I\+Texture} (const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&name)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+virtual void $\ast$ \hyperlink{classirr_1_1video_1_1ITexture_aa09ee89973a645ebdd2bd61ed859df38}{lock} (\hyperlink{namespaceirr_1_1video_a3916d259e8fe0d0d02e8ee0adc8af5bc}{E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+L\+O\+C\+K\+\_\+\+M\+O\+DE} mode=\hyperlink{namespaceirr_1_1video_a3916d259e8fe0d0d02e8ee0adc8af5bca41973750ecd380c9a17fa575262f5037}{E\+T\+L\+M\+\_\+\+R\+E\+A\+D\+\_\+\+W\+R\+I\+TE}, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} mipmap\+Level=0)=0
+\begin{DoxyCompactList}\small\item\em Lock function. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1video_1_1ITexture_a15b9a25aa18528ade37a492bd7b20a10}{unlock} ()=0
+\begin{DoxyCompactList}\small\item\em Unlock function. Must be called after a \hyperlink{classirr_1_1video_1_1ITexture_aa09ee89973a645ebdd2bd61ed859df38}{lock()} to the texture. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \& \hyperlink{classirr_1_1video_1_1ITexture_adbb05bcee8ec7fa11bb4ccfdb725cda8}{get\+Original\+Size} () const =0
+\begin{DoxyCompactList}\small\item\em Get original size of the texture. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \& \hyperlink{classirr_1_1video_1_1ITexture_adfcf9558c0f1ae543782c03f7903c48e}{get\+Size} () const =0
+\begin{DoxyCompactList}\small\item\em Get dimension (=size) of the texture. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0}{E\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+T\+Y\+PE} \hyperlink{classirr_1_1video_1_1ITexture_a4c6abdc0c789e6022e4e1b8a06cfab71}{get\+Driver\+Type} () const =0
+\begin{DoxyCompactList}\small\item\em Get driver type of texture. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_1_1video_a1d5e487888c32b1674a8f75116d829ed}{E\+C\+O\+L\+O\+R\+\_\+\+F\+O\+R\+M\+AT} \hyperlink{classirr_1_1video_1_1ITexture_a48bbc0208c046724fc3264406f774132}{get\+Color\+Format} () const =0
+\begin{DoxyCompactList}\small\item\em Get the color format of texture. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1video_1_1ITexture_a14fd1eba217a0dd86b40c4d792ab14ea}{get\+Pitch} () const =0
+\begin{DoxyCompactList}\small\item\em Get pitch of the main texture (in bytes). \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1video_1_1ITexture_a9da815ed3b2a3efec45f957c6918fbba}{has\+Mip\+Maps} () const
+\begin{DoxyCompactList}\small\item\em Check whether the texture has Mip\+Maps. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1ITexture_a5ccc3cc2463f2ac78902eccba63271d3}\label{classirr_1_1video_1_1ITexture_a5ccc3cc2463f2ac78902eccba63271d3}} 
+virtual bool \hyperlink{classirr_1_1video_1_1ITexture_a5ccc3cc2463f2ac78902eccba63271d3}{has\+Alpha} () const
+\begin{DoxyCompactList}\small\item\em Returns if the texture has an alpha channel. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1video_1_1ITexture_a9517c37f071479d0698cdf597f8fea45}{regenerate\+Mip\+Map\+Levels} (void $\ast$mipmap\+Data=0)=0
+\begin{DoxyCompactList}\small\item\em Regenerates the mip map levels of the texture. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1video_1_1ITexture_aac5c0e281e1aa49365fdb7e7fa4d7342}{is\+Render\+Target} () const
+\begin{DoxyCompactList}\small\item\em Check whether the texture is a render target. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1ITexture_ace31573b2a624446f15fe56d1e609810}\label{classirr_1_1video_1_1ITexture_ace31573b2a624446f15fe56d1e609810}} 
+const \hyperlink{structirr_1_1io_1_1SNamedPath}{io\+::\+S\+Named\+Path} \& \hyperlink{classirr_1_1video_1_1ITexture_ace31573b2a624446f15fe56d1e609810}{get\+Name} () const
+\begin{DoxyCompactList}\small\item\em Get name of texture (in most cases this is the filename) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceirr_1_1video_acaf6f7414534f7d62bff18c5bf11876f}{E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+F\+L\+AG} \hyperlink{classirr_1_1video_1_1ITexture_afff3160f6aa5f749365ae4f776a440f3}{get\+Texture\+Format\+From\+Flags} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} flags)
+\begin{DoxyCompactList}\small\item\em Helper function, helps to get the desired texture creation format from the flags. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface of a Video Driver dependent Texture. 
+
+An \hyperlink{classirr_1_1video_1_1ITexture}{I\+Texture} is created by an \hyperlink{classirr_1_1video_1_1IVideoDriver}{I\+Video\+Driver} by using \hyperlink{classirr_1_1video_1_1IVideoDriver_a8c02ee280bb738cdf38b77e7a798244e}{I\+Video\+Driver\+::add\+Texture} or \hyperlink{classirr_1_1video_1_1IVideoDriver_af4055165190e4adf221c6dc6f2434ea0}{I\+Video\+Driver\+::get\+Texture}. After that, the texture may only be used by this Video\+Driver. As you can imagine, textures of the DirectX and the Open\+GL device will, e.\+g., not be compatible. An exception is the Software device and the N\+U\+LL device, their textures are compatible. If you try to use a texture created by one device with an other device, the device will refuse to do that and write a warning or an error message to the output buffer. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classirr_1_1video_1_1ITexture_a48bbc0208c046724fc3264406f774132}\label{classirr_1_1video_1_1ITexture_a48bbc0208c046724fc3264406f774132}} 
+\index{irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}!get\+Color\+Format@{get\+Color\+Format}}
+\index{get\+Color\+Format@{get\+Color\+Format}!irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}}
+\subsubsection{\texorpdfstring{get\+Color\+Format()}{getColorFormat()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1video_a1d5e487888c32b1674a8f75116d829ed}{E\+C\+O\+L\+O\+R\+\_\+\+F\+O\+R\+M\+AT} irr\+::video\+::\+I\+Texture\+::get\+Color\+Format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the color format of texture. 
+
+\begin{DoxyReturn}{Returns}
+The color format of texture. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1ITexture_a4c6abdc0c789e6022e4e1b8a06cfab71}\label{classirr_1_1video_1_1ITexture_a4c6abdc0c789e6022e4e1b8a06cfab71}} 
+\index{irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}!get\+Driver\+Type@{get\+Driver\+Type}}
+\index{get\+Driver\+Type@{get\+Driver\+Type}!irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}}
+\subsubsection{\texorpdfstring{get\+Driver\+Type()}{getDriverType()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0}{E\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+T\+Y\+PE} irr\+::video\+::\+I\+Texture\+::get\+Driver\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get driver type of texture. 
+
+This is the driver, which created the texture. This method is used internally by the video devices, to check, if they may use a texture because textures may be incompatible between different devices. \begin{DoxyReturn}{Returns}
+Driver type of texture. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1ITexture_adbb05bcee8ec7fa11bb4ccfdb725cda8}\label{classirr_1_1video_1_1ITexture_adbb05bcee8ec7fa11bb4ccfdb725cda8}} 
+\index{irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}!get\+Original\+Size@{get\+Original\+Size}}
+\index{get\+Original\+Size@{get\+Original\+Size}!irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}}
+\subsubsection{\texorpdfstring{get\+Original\+Size()}{getOriginalSize()}}
+{\footnotesize\ttfamily virtual const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}$>$\& irr\+::video\+::\+I\+Texture\+::get\+Original\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get original size of the texture. 
+
+The texture is usually scaled, if it was created with an unoptimal size. For example if the size was not a power of two. This method returns the size of the texture it had before it was scaled. Can be useful when drawing 2d images on the screen, which should have the exact size of the original texture. Use \hyperlink{classirr_1_1video_1_1ITexture_adfcf9558c0f1ae543782c03f7903c48e}{I\+Texture\+::get\+Size()} if you want to know the real size it has now stored in the system. \begin{DoxyReturn}{Returns}
+The original size of the texture. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1ITexture_a14fd1eba217a0dd86b40c4d792ab14ea}\label{classirr_1_1video_1_1ITexture_a14fd1eba217a0dd86b40c4d792ab14ea}} 
+\index{irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}!get\+Pitch@{get\+Pitch}}
+\index{get\+Pitch@{get\+Pitch}!irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}}
+\subsubsection{\texorpdfstring{get\+Pitch()}{getPitch()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} irr\+::video\+::\+I\+Texture\+::get\+Pitch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get pitch of the main texture (in bytes). 
+
+The pitch is the amount of bytes used for a row of pixels in a texture. \begin{DoxyReturn}{Returns}
+Pitch of texture in bytes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1ITexture_adfcf9558c0f1ae543782c03f7903c48e}\label{classirr_1_1video_1_1ITexture_adfcf9558c0f1ae543782c03f7903c48e}} 
+\index{irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}}
+\subsubsection{\texorpdfstring{get\+Size()}{getSize()}}
+{\footnotesize\ttfamily virtual const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}$>$\& irr\+::video\+::\+I\+Texture\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get dimension (=size) of the texture. 
+
+\begin{DoxyReturn}{Returns}
+The size of the texture. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1ITexture_afff3160f6aa5f749365ae4f776a440f3}\label{classirr_1_1video_1_1ITexture_afff3160f6aa5f749365ae4f776a440f3}} 
+\index{irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}!get\+Texture\+Format\+From\+Flags@{get\+Texture\+Format\+From\+Flags}}
+\index{get\+Texture\+Format\+From\+Flags@{get\+Texture\+Format\+From\+Flags}!irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}}
+\subsubsection{\texorpdfstring{get\+Texture\+Format\+From\+Flags()}{getTextureFormatFromFlags()}}
+{\footnotesize\ttfamily \hyperlink{namespaceirr_1_1video_acaf6f7414534f7d62bff18c5bf11876f}{E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+F\+L\+AG} irr\+::video\+::\+I\+Texture\+::get\+Texture\+Format\+From\+Flags (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{flags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Helper function, helps to get the desired texture creation format from the flags. 
+
+\begin{DoxyReturn}{Returns}
+Either E\+T\+C\+F\+\_\+\+A\+L\+W\+A\+Y\+S\+\_\+32\+\_\+\+B\+IT, E\+T\+C\+F\+\_\+\+A\+L\+W\+A\+Y\+S\+\_\+16\+\_\+\+B\+IT, E\+T\+C\+F\+\_\+\+O\+P\+T\+I\+M\+I\+Z\+E\+D\+\_\+\+F\+O\+R\+\_\+\+Q\+U\+A\+L\+I\+TY, or E\+T\+C\+F\+\_\+\+O\+P\+T\+I\+M\+I\+Z\+E\+D\+\_\+\+F\+O\+R\+\_\+\+S\+P\+E\+ED. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1ITexture_a9da815ed3b2a3efec45f957c6918fbba}\label{classirr_1_1video_1_1ITexture_a9da815ed3b2a3efec45f957c6918fbba}} 
+\index{irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}!has\+Mip\+Maps@{has\+Mip\+Maps}}
+\index{has\+Mip\+Maps@{has\+Mip\+Maps}!irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}}
+\subsubsection{\texorpdfstring{has\+Mip\+Maps()}{hasMipMaps()}}
+{\footnotesize\ttfamily virtual bool irr\+::video\+::\+I\+Texture\+::has\+Mip\+Maps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Check whether the texture has Mip\+Maps. 
+
+\begin{DoxyReturn}{Returns}
+True if texture has Mip\+Maps, else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1ITexture_aac5c0e281e1aa49365fdb7e7fa4d7342}\label{classirr_1_1video_1_1ITexture_aac5c0e281e1aa49365fdb7e7fa4d7342}} 
+\index{irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}!is\+Render\+Target@{is\+Render\+Target}}
+\index{is\+Render\+Target@{is\+Render\+Target}!irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}}
+\subsubsection{\texorpdfstring{is\+Render\+Target()}{isRenderTarget()}}
+{\footnotesize\ttfamily virtual bool irr\+::video\+::\+I\+Texture\+::is\+Render\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Check whether the texture is a render target. 
+
+Render targets can be set as such in the video driver, in order to render a scene into the texture. Once unbound as render target, they can be used just as usual textures again. \begin{DoxyReturn}{Returns}
+True if this is a render target, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1ITexture_aa09ee89973a645ebdd2bd61ed859df38}\label{classirr_1_1video_1_1ITexture_aa09ee89973a645ebdd2bd61ed859df38}} 
+\index{irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}!lock@{lock}}
+\index{lock@{lock}!irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}}
+\subsubsection{\texorpdfstring{lock()}{lock()}}
+{\footnotesize\ttfamily virtual void$\ast$ irr\+::video\+::\+I\+Texture\+::lock (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1video_a3916d259e8fe0d0d02e8ee0adc8af5bc}{E\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+L\+O\+C\+K\+\_\+\+M\+O\+DE}}]{mode = {\ttfamily \hyperlink{namespaceirr_1_1video_a3916d259e8fe0d0d02e8ee0adc8af5bca41973750ecd380c9a17fa575262f5037}{E\+T\+L\+M\+\_\+\+R\+E\+A\+D\+\_\+\+W\+R\+I\+TE}},  }\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{mipmap\+Level = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lock function. 
+
+Locks the Texture and returns a pointer to access the pixels. After \hyperlink{classirr_1_1video_1_1ITexture_aa09ee89973a645ebdd2bd61ed859df38}{lock()} has been called and all operations on the pixels are done, you must call \hyperlink{classirr_1_1video_1_1ITexture_a15b9a25aa18528ade37a492bd7b20a10}{unlock()}. Locks are not accumulating, hence one unlock will do for an arbitrary number of previous locks. You should avoid locking different levels without unlocking inbetween, though, because only the last level locked will be unlocked. The size of the i-\/th mipmap level is defined as max(\hyperlink{classirr_1_1video_1_1ITexture_adfcf9558c0f1ae543782c03f7903c48e}{get\+Size()}.Width$>$$>$i,1) and max(\hyperlink{classirr_1_1video_1_1ITexture_adfcf9558c0f1ae543782c03f7903c48e}{get\+Size()}.Height$>$$>$i,1) 
+\begin{DoxyParams}{Parameters}
+{\em mode} & Specifies what kind of changes to the locked texture are allowed. Unspecified behavior will arise if texture is written in read only mode or read from in write only mode. Support for this feature depends on the driver, so don\textquotesingle{}t rely on the texture being write-\/protected when locking with read-\/only, etc. \\
+\hline
+{\em mipmap\+Level} & Number of the mipmap\+Level to lock. 0 is main texture. Non-\/existing levels will silently fail and return 0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to the pixel data. The format of the pixel can be determined by using \hyperlink{classirr_1_1video_1_1ITexture_a48bbc0208c046724fc3264406f774132}{get\+Color\+Format()}. 0 is returned, if the texture cannot be locked. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1ITexture_a9517c37f071479d0698cdf597f8fea45}\label{classirr_1_1video_1_1ITexture_a9517c37f071479d0698cdf597f8fea45}} 
+\index{irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}!regenerate\+Mip\+Map\+Levels@{regenerate\+Mip\+Map\+Levels}}
+\index{regenerate\+Mip\+Map\+Levels@{regenerate\+Mip\+Map\+Levels}!irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}}
+\subsubsection{\texorpdfstring{regenerate\+Mip\+Map\+Levels()}{regenerateMipMapLevels()}}
+{\footnotesize\ttfamily virtual void irr\+::video\+::\+I\+Texture\+::regenerate\+Mip\+Map\+Levels (\begin{DoxyParamCaption}\item[{void $\ast$}]{mipmap\+Data = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Regenerates the mip map levels of the texture. 
+
+Required after modifying the texture, usually after calling \hyperlink{classirr_1_1video_1_1ITexture_a15b9a25aa18528ade37a492bd7b20a10}{unlock()}. 
+\begin{DoxyParams}{Parameters}
+{\em mipmap\+Data} & Optional parameter to pass in image data which will be used instead of the previously stored or automatically generated mipmap data. The data has to be a continuous pixel data for all mipmaps until 1x1 pixel. Each mipmap has to be half the width and height of the previous level. At least one pixel will be always kept. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1video_1_1ITexture_a15b9a25aa18528ade37a492bd7b20a10}\label{classirr_1_1video_1_1ITexture_a15b9a25aa18528ade37a492bd7b20a10}} 
+\index{irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}!unlock@{unlock}}
+\index{unlock@{unlock}!irr\+::video\+::\+I\+Texture@{irr\+::video\+::\+I\+Texture}}
+\subsubsection{\texorpdfstring{unlock()}{unlock()}}
+{\footnotesize\ttfamily virtual void irr\+::video\+::\+I\+Texture\+::unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Unlock function. Must be called after a \hyperlink{classirr_1_1video_1_1ITexture_aa09ee89973a645ebdd2bd61ed859df38}{lock()} to the texture. 
+
+One should avoid to call unlock more than once before another lock. The last locked mip level will be unlocked. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/I\+Texture.\+h\end{DoxyCompactItemize}

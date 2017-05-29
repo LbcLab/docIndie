@@ -1,0 +1,139 @@
+\hypertarget{classirr_1_1video_1_1IImage}{}\section{irr\+:\+:video\+:\+:I\+Image Class Reference}
+\label{classirr_1_1video_1_1IImage}\index{irr\+::video\+::\+I\+Image@{irr\+::video\+::\+I\+Image}}
+
+
+Interface for software image data.  
+
+
+
+
+{\ttfamily \#include $<$I\+Image.\+h$>$}
+
+Inheritance diagram for irr\+:\+:video\+:\+:I\+Image\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classirr_1_1video_1_1IImage}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void $\ast$ \hyperlink{classirr_1_1video_1_1IImage_a5c4b0b5fa2a5f253f93c1b038e20d204}{lock} ()=0
+\begin{DoxyCompactList}\small\item\em Lock function. Use this to get a pointer to the image data. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1video_1_1IImage_ad0f902d74a948ee66be2d70dc90ed38d}{unlock} ()=0
+\begin{DoxyCompactList}\small\item\em Unlock function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_a3618c9793b7a1f3383a5c3944436a2be}\label{classirr_1_1video_1_1IImage_a3618c9793b7a1f3383a5c3944436a2be}} 
+virtual const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \& \hyperlink{classirr_1_1video_1_1IImage_a3618c9793b7a1f3383a5c3944436a2be}{get\+Dimension} () const =0
+\begin{DoxyCompactList}\small\item\em Returns width and height of image data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_adf842a506b2984f3f13d64b4967146e9}\label{classirr_1_1video_1_1IImage_adf842a506b2984f3f13d64b4967146e9}} 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1video_1_1IImage_adf842a506b2984f3f13d64b4967146e9}{get\+Bits\+Per\+Pixel} () const =0
+\begin{DoxyCompactList}\small\item\em Returns bits per pixel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_a14509044ca5215b9714ab1091b0e86d0}\label{classirr_1_1video_1_1IImage_a14509044ca5215b9714ab1091b0e86d0}} 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1video_1_1IImage_a14509044ca5215b9714ab1091b0e86d0}{get\+Bytes\+Per\+Pixel} () const =0
+\begin{DoxyCompactList}\small\item\em Returns bytes per pixel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_aaec5039f63d29633a07f0717baeb409b}\label{classirr_1_1video_1_1IImage_aaec5039f63d29633a07f0717baeb409b}} 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1video_1_1IImage_aaec5039f63d29633a07f0717baeb409b}{get\+Image\+Data\+Size\+In\+Bytes} () const =0
+\begin{DoxyCompactList}\small\item\em Returns image data size in bytes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_a9134a214b0919ba875a130e43dbc92f1}\label{classirr_1_1video_1_1IImage_a9134a214b0919ba875a130e43dbc92f1}} 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1video_1_1IImage_a9134a214b0919ba875a130e43dbc92f1}{get\+Image\+Data\+Size\+In\+Pixels} () const =0
+\begin{DoxyCompactList}\small\item\em Returns image data size in pixels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_a0645adce59442e67261eca084565a9df}\label{classirr_1_1video_1_1IImage_a0645adce59442e67261eca084565a9df}} 
+virtual \hyperlink{classirr_1_1video_1_1SColor}{S\+Color} \hyperlink{classirr_1_1video_1_1IImage_a0645adce59442e67261eca084565a9df}{get\+Pixel} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} x, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} y) const =0
+\begin{DoxyCompactList}\small\item\em Returns a pixel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_a89bf6020ce6ac1066e4d585ce46f79bd}\label{classirr_1_1video_1_1IImage_a89bf6020ce6ac1066e4d585ce46f79bd}} 
+virtual void \hyperlink{classirr_1_1video_1_1IImage_a89bf6020ce6ac1066e4d585ce46f79bd}{set\+Pixel} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} x, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} y, const \hyperlink{classirr_1_1video_1_1SColor}{S\+Color} \&color, bool blend=false)=0
+\begin{DoxyCompactList}\small\item\em Sets a pixel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_ad045a8d172047411d03e167b201ae8a6}\label{classirr_1_1video_1_1IImage_ad045a8d172047411d03e167b201ae8a6}} 
+virtual \hyperlink{namespaceirr_1_1video_a1d5e487888c32b1674a8f75116d829ed}{E\+C\+O\+L\+O\+R\+\_\+\+F\+O\+R\+M\+AT} \hyperlink{classirr_1_1video_1_1IImage_ad045a8d172047411d03e167b201ae8a6}{get\+Color\+Format} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the color format. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_aaf3a93ad19466928da82f54d8f286990}\label{classirr_1_1video_1_1IImage_aaf3a93ad19466928da82f54d8f286990}} 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1video_1_1IImage_aaf3a93ad19466928da82f54d8f286990}{get\+Red\+Mask} () const =0
+\begin{DoxyCompactList}\small\item\em Returns mask for red value of a pixel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_a1a12d75385fa9e0a063141c9ae0e4289}\label{classirr_1_1video_1_1IImage_a1a12d75385fa9e0a063141c9ae0e4289}} 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1video_1_1IImage_a1a12d75385fa9e0a063141c9ae0e4289}{get\+Green\+Mask} () const =0
+\begin{DoxyCompactList}\small\item\em Returns mask for green value of a pixel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_a3554ed18eb6e79213f6330d19006e9e8}\label{classirr_1_1video_1_1IImage_a3554ed18eb6e79213f6330d19006e9e8}} 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1video_1_1IImage_a3554ed18eb6e79213f6330d19006e9e8}{get\+Blue\+Mask} () const =0
+\begin{DoxyCompactList}\small\item\em Returns mask for blue value of a pixel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_a36d4f895245543080f24f99dd89930fb}\label{classirr_1_1video_1_1IImage_a36d4f895245543080f24f99dd89930fb}} 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1video_1_1IImage_a36d4f895245543080f24f99dd89930fb}{get\+Alpha\+Mask} () const =0
+\begin{DoxyCompactList}\small\item\em Returns mask for alpha value of a pixel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_aace497c2d12f217a795a546a735e2675}\label{classirr_1_1video_1_1IImage_aace497c2d12f217a795a546a735e2675}} 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1video_1_1IImage_aace497c2d12f217a795a546a735e2675}{get\+Pitch} () const =0
+\begin{DoxyCompactList}\small\item\em Returns pitch of image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_a6f57153218f5ecd4da9aeb5a37f92f59}\label{classirr_1_1video_1_1IImage_a6f57153218f5ecd4da9aeb5a37f92f59}} 
+virtual void \hyperlink{classirr_1_1video_1_1IImage_a6f57153218f5ecd4da9aeb5a37f92f59}{copy\+To\+Scaling} (void $\ast$target, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} width, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} height, \hyperlink{namespaceirr_1_1video_a1d5e487888c32b1674a8f75116d829ed}{E\+C\+O\+L\+O\+R\+\_\+\+F\+O\+R\+M\+AT} format=\hyperlink{namespaceirr_1_1video_a1d5e487888c32b1674a8f75116d829eda55c57d63efff39efe33ee733fe962df0}{E\+C\+F\+\_\+\+A8\+R8\+G8\+B8}, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} pitch=0)=0
+\begin{DoxyCompactList}\small\item\em Copies the image into the target, scaling the image to fit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_aa969bf7167171a18003e26ff7876febd}\label{classirr_1_1video_1_1IImage_aa969bf7167171a18003e26ff7876febd}} 
+virtual void \hyperlink{classirr_1_1video_1_1IImage_aa969bf7167171a18003e26ff7876febd}{copy\+To\+Scaling} (\hyperlink{classirr_1_1video_1_1IImage}{I\+Image} $\ast$target)=0
+\begin{DoxyCompactList}\small\item\em Copies the image into the target, scaling the image to fit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_ae4a8a2fc245f691224825aceffd53b8a}\label{classirr_1_1video_1_1IImage_ae4a8a2fc245f691224825aceffd53b8a}} 
+virtual void \hyperlink{classirr_1_1video_1_1IImage_ae4a8a2fc245f691224825aceffd53b8a}{copy\+To} (\hyperlink{classirr_1_1video_1_1IImage}{I\+Image} $\ast$target, const core\+::position2d$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&pos=core\+::position2d$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$(0, 0))=0
+\begin{DoxyCompactList}\small\item\em copies this surface into another \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_ac43f477f9da28077fc3573a628b33bcb}\label{classirr_1_1video_1_1IImage_ac43f477f9da28077fc3573a628b33bcb}} 
+virtual void \hyperlink{classirr_1_1video_1_1IImage_ac43f477f9da28077fc3573a628b33bcb}{copy\+To} (\hyperlink{classirr_1_1video_1_1IImage}{I\+Image} $\ast$target, const core\+::position2d$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&pos, const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&source\+Rect, const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ $\ast$clip\+Rect=0)=0
+\begin{DoxyCompactList}\small\item\em copies this surface into another \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_a7dd1e5dd19cb35be17c2fa00e38a193d}\label{classirr_1_1video_1_1IImage_a7dd1e5dd19cb35be17c2fa00e38a193d}} 
+virtual void \hyperlink{classirr_1_1video_1_1IImage_a7dd1e5dd19cb35be17c2fa00e38a193d}{copy\+To\+With\+Alpha} (\hyperlink{classirr_1_1video_1_1IImage}{I\+Image} $\ast$target, const core\+::position2d$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&pos, const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&source\+Rect, const \hyperlink{classirr_1_1video_1_1SColor}{S\+Color} \&color, const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ $\ast$clip\+Rect=0)=0
+\begin{DoxyCompactList}\small\item\em copies this surface into another, using the alpha mask and cliprect and a color to add with \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_a651c196f681a105fabfb5ff4f6b28682}\label{classirr_1_1video_1_1IImage_a651c196f681a105fabfb5ff4f6b28682}} 
+virtual void \hyperlink{classirr_1_1video_1_1IImage_a651c196f681a105fabfb5ff4f6b28682}{copy\+To\+Scaling\+Box\+Filter} (\hyperlink{classirr_1_1video_1_1IImage}{I\+Image} $\ast$target, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} bias=0, bool blend=false)=0
+\begin{DoxyCompactList}\small\item\em copies this surface into another, scaling it to fit, appyling a box filter \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_a04973e101790130f611c4c6790e5b352}\label{classirr_1_1video_1_1IImage_a04973e101790130f611c4c6790e5b352}} 
+virtual void \hyperlink{classirr_1_1video_1_1IImage_a04973e101790130f611c4c6790e5b352}{fill} (const \hyperlink{classirr_1_1video_1_1SColor}{S\+Color} \&color)=0
+\begin{DoxyCompactList}\small\item\em fills the surface with given color \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_a70b50ef1bbb6f90ec4c43a91f521c2b6}\label{classirr_1_1video_1_1IImage_a70b50ef1bbb6f90ec4c43a91f521c2b6}} 
+static \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1video_1_1IImage_a70b50ef1bbb6f90ec4c43a91f521c2b6}{get\+Bits\+Per\+Pixel\+From\+Format} (const \hyperlink{namespaceirr_1_1video_a1d5e487888c32b1674a8f75116d829ed}{E\+C\+O\+L\+O\+R\+\_\+\+F\+O\+R\+M\+AT} format)
+\begin{DoxyCompactList}\small\item\em get the amount of Bits per Pixel of the given color format \end{DoxyCompactList}\item 
+static bool \hyperlink{classirr_1_1video_1_1IImage_aafbd373ef15670708010e0064ae3b946}{is\+Render\+Target\+Only\+Format} (const \hyperlink{namespaceirr_1_1video_a1d5e487888c32b1674a8f75116d829ed}{E\+C\+O\+L\+O\+R\+\_\+\+F\+O\+R\+M\+AT} format)
+\begin{DoxyCompactList}\small\item\em test if the color format is only viable for Render\+Target textures \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Interface for software image data. 
+
+\hyperlink{classImage}{Image} loaders create these images from files. I\+Video\+Drivers convert these images into their (hardware) textures. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_aafbd373ef15670708010e0064ae3b946}\label{classirr_1_1video_1_1IImage_aafbd373ef15670708010e0064ae3b946}} 
+\index{irr\+::video\+::\+I\+Image@{irr\+::video\+::\+I\+Image}!is\+Render\+Target\+Only\+Format@{is\+Render\+Target\+Only\+Format}}
+\index{is\+Render\+Target\+Only\+Format@{is\+Render\+Target\+Only\+Format}!irr\+::video\+::\+I\+Image@{irr\+::video\+::\+I\+Image}}
+\subsubsection{\texorpdfstring{is\+Render\+Target\+Only\+Format()}{isRenderTargetOnlyFormat()}}
+{\footnotesize\ttfamily static bool irr\+::video\+::\+I\+Image\+::is\+Render\+Target\+Only\+Format (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1video_a1d5e487888c32b1674a8f75116d829ed}{E\+C\+O\+L\+O\+R\+\_\+\+F\+O\+R\+M\+AT}}]{format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+test if the color format is only viable for Render\+Target textures 
+
+Since we don\textquotesingle{}t have support for e.\+g. floating point \hyperlink{classirr_1_1video_1_1IImage}{I\+Image} formats one should test if the color format can be used for arbitrary usage, or if it is restricted to R\+T\+Ts. \mbox{\Hypertarget{classirr_1_1video_1_1IImage_a5c4b0b5fa2a5f253f93c1b038e20d204}\label{classirr_1_1video_1_1IImage_a5c4b0b5fa2a5f253f93c1b038e20d204}} 
+\index{irr\+::video\+::\+I\+Image@{irr\+::video\+::\+I\+Image}!lock@{lock}}
+\index{lock@{lock}!irr\+::video\+::\+I\+Image@{irr\+::video\+::\+I\+Image}}
+\subsubsection{\texorpdfstring{lock()}{lock()}}
+{\footnotesize\ttfamily virtual void$\ast$ irr\+::video\+::\+I\+Image\+::lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lock function. Use this to get a pointer to the image data. 
+
+After you don\textquotesingle{}t need the pointer anymore, you must call \hyperlink{classirr_1_1video_1_1IImage_ad0f902d74a948ee66be2d70dc90ed38d}{unlock()}. \begin{DoxyReturn}{Returns}
+Pointer to the image data. What type of data is pointed to depends on the color format of the image. For example if the color format is E\+C\+F\+\_\+\+A8\+R8\+G8\+B8, it is of u32. Be sure to call \hyperlink{classirr_1_1video_1_1IImage_ad0f902d74a948ee66be2d70dc90ed38d}{unlock()} after you don\textquotesingle{}t need the pointer any more. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1IImage_ad0f902d74a948ee66be2d70dc90ed38d}\label{classirr_1_1video_1_1IImage_ad0f902d74a948ee66be2d70dc90ed38d}} 
+\index{irr\+::video\+::\+I\+Image@{irr\+::video\+::\+I\+Image}!unlock@{unlock}}
+\index{unlock@{unlock}!irr\+::video\+::\+I\+Image@{irr\+::video\+::\+I\+Image}}
+\subsubsection{\texorpdfstring{unlock()}{unlock()}}
+{\footnotesize\ttfamily virtual void irr\+::video\+::\+I\+Image\+::unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Unlock function. 
+
+Should be called after the pointer received by \hyperlink{classirr_1_1video_1_1IImage_a5c4b0b5fa2a5f253f93c1b038e20d204}{lock()} is not needed anymore. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/I\+Image.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,102 @@
+\hypertarget{structirr_1_1scene_1_1SMesh}{}\section{irr\+:\+:scene\+:\+:S\+Mesh Struct Reference}
+\label{structirr_1_1scene_1_1SMesh}\index{irr\+::scene\+::\+S\+Mesh@{irr\+::scene\+::\+S\+Mesh}}
+
+
+Simple implementation of the \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} interface.  
+
+
+
+
+{\ttfamily \#include $<$S\+Mesh.\+h$>$}
+
+Inheritance diagram for irr\+:\+:scene\+:\+:S\+Mesh\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{structirr_1_1scene_1_1SMesh}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structirr_1_1scene_1_1SMesh_aab06c74fc6a28e791e09b9f91f9ded89}\label{structirr_1_1scene_1_1SMesh_aab06c74fc6a28e791e09b9f91f9ded89}} 
+\hyperlink{structirr_1_1scene_1_1SMesh_aab06c74fc6a28e791e09b9f91f9ded89}{S\+Mesh} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structirr_1_1scene_1_1SMesh_aafb289351ba15b01c139159f028928e6}\label{structirr_1_1scene_1_1SMesh_aafb289351ba15b01c139159f028928e6}} 
+virtual \hyperlink{structirr_1_1scene_1_1SMesh_aafb289351ba15b01c139159f028928e6}{$\sim$\+S\+Mesh} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structirr_1_1scene_1_1SMesh_a9a59598f69840164cc06a2059ff4de68}\label{structirr_1_1scene_1_1SMesh_a9a59598f69840164cc06a2059ff4de68}} 
+virtual void \hyperlink{structirr_1_1scene_1_1SMesh_a9a59598f69840164cc06a2059ff4de68}{clear} ()
+\begin{DoxyCompactList}\small\item\em clean mesh \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structirr_1_1scene_1_1SMesh_a08f677a62f8e3770af70293c8043fff4}\label{structirr_1_1scene_1_1SMesh_a08f677a62f8e3770af70293c8043fff4}} 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{structirr_1_1scene_1_1SMesh_a08f677a62f8e3770af70293c8043fff4}{get\+Mesh\+Buffer\+Count} () const
+\begin{DoxyCompactList}\small\item\em returns amount of mesh buffers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structirr_1_1scene_1_1SMesh_ad88b3ecd7e6f00e0ea5defb76ed205fc}\label{structirr_1_1scene_1_1SMesh_ad88b3ecd7e6f00e0ea5defb76ed205fc}} 
+virtual \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer} $\ast$ \hyperlink{structirr_1_1scene_1_1SMesh_ad88b3ecd7e6f00e0ea5defb76ed205fc}{get\+Mesh\+Buffer} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} nr) const
+\begin{DoxyCompactList}\small\item\em returns pointer to a mesh buffer \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer} $\ast$ \hyperlink{structirr_1_1scene_1_1SMesh_a768eeba9148e949d6962bee08517a056}{get\+Mesh\+Buffer} (const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&material) const
+\begin{DoxyCompactList}\small\item\em returns a meshbuffer which fits a material \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structirr_1_1scene_1_1SMesh_a379e330c863acdade37e65275903158d}\label{structirr_1_1scene_1_1SMesh_a379e330c863acdade37e65275903158d}} 
+virtual const \hyperlink{classirr_1_1core_1_1aabbox3d}{core\+::aabbox3d}$<$ \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $>$ \& \hyperlink{structirr_1_1scene_1_1SMesh_a379e330c863acdade37e65275903158d}{get\+Bounding\+Box} () const
+\begin{DoxyCompactList}\small\item\em returns an axis aligned bounding box \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structirr_1_1scene_1_1SMesh_a636e4df4054b2ed2911808cfb6df5cb3}\label{structirr_1_1scene_1_1SMesh_a636e4df4054b2ed2911808cfb6df5cb3}} 
+virtual void \hyperlink{structirr_1_1scene_1_1SMesh_a636e4df4054b2ed2911808cfb6df5cb3}{set\+Bounding\+Box} (const \hyperlink{namespaceirr_1_1core_adfc8fa01b30044c55f3332a1d6c1aa19}{core\+::aabbox3df} \&box)
+\begin{DoxyCompactList}\small\item\em set user axis aligned bounding box \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structirr_1_1scene_1_1SMesh_a7a16bc83094ab242ae779baf817dc7f9}\label{structirr_1_1scene_1_1SMesh_a7a16bc83094ab242ae779baf817dc7f9}} 
+void \hyperlink{structirr_1_1scene_1_1SMesh_a7a16bc83094ab242ae779baf817dc7f9}{recalculate\+Bounding\+Box} ()
+\begin{DoxyCompactList}\small\item\em recalculates the bounding box \end{DoxyCompactList}\item 
+void \hyperlink{structirr_1_1scene_1_1SMesh_a890e7506262b2ebaf45ff95c681452bd}{add\+Mesh\+Buffer} (\hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer} $\ast$buf)
+\begin{DoxyCompactList}\small\item\em adds a Mesh\+Buffer \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structirr_1_1scene_1_1SMesh_a0ca30440aef6ca66dfc177b2a0e41e52}\label{structirr_1_1scene_1_1SMesh_a0ca30440aef6ca66dfc177b2a0e41e52}} 
+virtual void \hyperlink{structirr_1_1scene_1_1SMesh_a0ca30440aef6ca66dfc177b2a0e41e52}{set\+Material\+Flag} (\hyperlink{namespaceirr_1_1video_a8a3bc00ae8137535b9fbc5f40add70d3}{video\+::\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+L\+AG} flag, bool newvalue)
+\begin{DoxyCompactList}\small\item\em sets a flag of all contained materials to a new value \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structirr_1_1scene_1_1SMesh_a79839b08062bfcd283e441056bf846e6}\label{structirr_1_1scene_1_1SMesh_a79839b08062bfcd283e441056bf846e6}} 
+virtual void \hyperlink{structirr_1_1scene_1_1SMesh_a79839b08062bfcd283e441056bf846e6}{set\+Hardware\+Mapping\+Hint} (\hyperlink{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27}{E\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+P\+P\+I\+NG} new\+Mapping\+Hint, \hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE} buffer=\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca833624730c30cffccc121fe31aa0832c}{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX})
+\begin{DoxyCompactList}\small\item\em set the hardware mapping hint, for driver \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structirr_1_1scene_1_1SMesh_a3ffa0e6294be831ca5be6e6ff9829ca9}\label{structirr_1_1scene_1_1SMesh_a3ffa0e6294be831ca5be6e6ff9829ca9}} 
+virtual void \hyperlink{structirr_1_1scene_1_1SMesh_a3ffa0e6294be831ca5be6e6ff9829ca9}{set\+Dirty} (\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE} buffer=\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca833624730c30cffccc121fe31aa0832c}{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX})
+\begin{DoxyCompactList}\small\item\em flags the meshbuffer as changed, reloads hardware buffers \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structirr_1_1scene_1_1SMesh_ad7b37c4de22b8ab520e310c01cea637c}\label{structirr_1_1scene_1_1SMesh_ad7b37c4de22b8ab520e310c01cea637c}} 
+\hyperlink{classirr_1_1core_1_1array}{core\+::array}$<$ \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer} $\ast$ $>$ \hyperlink{structirr_1_1scene_1_1SMesh_ad7b37c4de22b8ab520e310c01cea637c}{Mesh\+Buffers}
+\begin{DoxyCompactList}\small\item\em The meshbuffers of this mesh. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structirr_1_1scene_1_1SMesh_ac984f3a50af351326e81474aef667c7c}\label{structirr_1_1scene_1_1SMesh_ac984f3a50af351326e81474aef667c7c}} 
+\hyperlink{classirr_1_1core_1_1aabbox3d}{core\+::aabbox3d}$<$ \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $>$ \hyperlink{structirr_1_1scene_1_1SMesh_ac984f3a50af351326e81474aef667c7c}{Bounding\+Box}
+\begin{DoxyCompactList}\small\item\em The bounding box of this mesh. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Simple implementation of the \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} interface. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structirr_1_1scene_1_1SMesh_a890e7506262b2ebaf45ff95c681452bd}\label{structirr_1_1scene_1_1SMesh_a890e7506262b2ebaf45ff95c681452bd}} 
+\index{irr\+::scene\+::\+S\+Mesh@{irr\+::scene\+::\+S\+Mesh}!add\+Mesh\+Buffer@{add\+Mesh\+Buffer}}
+\index{add\+Mesh\+Buffer@{add\+Mesh\+Buffer}!irr\+::scene\+::\+S\+Mesh@{irr\+::scene\+::\+S\+Mesh}}
+\subsubsection{\texorpdfstring{add\+Mesh\+Buffer()}{addMeshBuffer()}}
+{\footnotesize\ttfamily void irr\+::scene\+::\+S\+Mesh\+::add\+Mesh\+Buffer (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer} $\ast$}]{buf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+adds a Mesh\+Buffer 
+
+The bounding box is not updated automatically. \mbox{\Hypertarget{structirr_1_1scene_1_1SMesh_a768eeba9148e949d6962bee08517a056}\label{structirr_1_1scene_1_1SMesh_a768eeba9148e949d6962bee08517a056}} 
+\index{irr\+::scene\+::\+S\+Mesh@{irr\+::scene\+::\+S\+Mesh}!get\+Mesh\+Buffer@{get\+Mesh\+Buffer}}
+\index{get\+Mesh\+Buffer@{get\+Mesh\+Buffer}!irr\+::scene\+::\+S\+Mesh@{irr\+::scene\+::\+S\+Mesh}}
+\subsubsection{\texorpdfstring{get\+Mesh\+Buffer()}{getMeshBuffer()}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer}$\ast$ irr\+::scene\+::\+S\+Mesh\+::get\+Mesh\+Buffer (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&}]{material }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+returns a meshbuffer which fits a material 
+
+reverse search 
+
+Implements \hyperlink{classirr_1_1scene_1_1IMesh_a9573dace82efb01ba1f35f9cc28a4ced}{irr\+::scene\+::\+I\+Mesh}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/S\+Mesh.\+h\end{DoxyCompactItemize}

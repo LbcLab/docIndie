@@ -1,0 +1,468 @@
+\hypertarget{classirr_1_1core_1_1aabbox3d}{}\section{irr\+:\+:core\+:\+:aabbox3d$<$ T $>$ Class Template Reference}
+\label{classirr_1_1core_1_1aabbox3d}\index{irr\+::core\+::aabbox3d$<$ T $>$@{irr\+::core\+::aabbox3d$<$ T $>$}}
+
+
+Axis aligned bounding box in 3d dimensional space.  
+
+
+
+
+{\ttfamily \#include $<$aabbox3d.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_aec7f681b248d9f0e07d62be0c921767e}\label{classirr_1_1core_1_1aabbox3d_aec7f681b248d9f0e07d62be0c921767e}} 
+\hyperlink{classirr_1_1core_1_1aabbox3d_aec7f681b248d9f0e07d62be0c921767e}{aabbox3d} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_a7281018221a7c1070a5487cb98f2ac45}\label{classirr_1_1core_1_1aabbox3d_a7281018221a7c1070a5487cb98f2ac45}} 
+\hyperlink{classirr_1_1core_1_1aabbox3d_a7281018221a7c1070a5487cb98f2ac45}{aabbox3d} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&min, const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&max)
+\begin{DoxyCompactList}\small\item\em Constructor with min edge and max edge. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_a1e1b49cb756eab5ba6dec051a6fa27c8}\label{classirr_1_1core_1_1aabbox3d_a1e1b49cb756eab5ba6dec051a6fa27c8}} 
+\hyperlink{classirr_1_1core_1_1aabbox3d_a1e1b49cb756eab5ba6dec051a6fa27c8}{aabbox3d} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&init)
+\begin{DoxyCompactList}\small\item\em Constructor with only one point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_af73ac9adeaae3abf8afaeb5f6be4a52c}\label{classirr_1_1core_1_1aabbox3d_af73ac9adeaae3abf8afaeb5f6be4a52c}} 
+\hyperlink{classirr_1_1core_1_1aabbox3d_af73ac9adeaae3abf8afaeb5f6be4a52c}{aabbox3d} (T minx, T miny, T minz, T maxx, T maxy, T maxz)
+\begin{DoxyCompactList}\small\item\em Constructor with min edge and max edge as single values, not vectors. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1aabbox3d_ac77180d63cc1726d0dec25e6f4cfd59c}{operator==} (const \hyperlink{classirr_1_1core_1_1aabbox3d}{aabbox3d}$<$ T $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1aabbox3d_a985eec4fb632d7c8ef5a5577209690b3}{operator!=} (const \hyperlink{classirr_1_1core_1_1aabbox3d}{aabbox3d}$<$ T $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1aabbox3d_afc718e96ed11aa71a30311d32bfc885a}{reset} (T x, T y, T z)
+\begin{DoxyCompactList}\small\item\em Resets the bounding box to a one-\/point box. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1aabbox3d_a5f7139087de60b4c16b5df015ade1cba}{reset} (const \hyperlink{classirr_1_1core_1_1aabbox3d}{aabbox3d}$<$ T $>$ \&init\+Value)
+\begin{DoxyCompactList}\small\item\em Resets the bounding box. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1aabbox3d_af777a607745b2bd3f4390dfee8263944}{reset} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&init\+Value)
+\begin{DoxyCompactList}\small\item\em Resets the bounding box to a one-\/point box. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1aabbox3d_a49e3765fd2f40a115f8f28bd74d62ccf}{add\+Internal\+Point} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Adds a point to the bounding box. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1aabbox3d_a7ccc210a3fb0ce82765d28f2047942c5}{add\+Internal\+Box} (const \hyperlink{classirr_1_1core_1_1aabbox3d}{aabbox3d}$<$ T $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Adds another bounding box. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1aabbox3d_a123947cb6d77a3e0d6cbb65b63e8b86f}{add\+Internal\+Point} (T x, T y, T z)
+\begin{DoxyCompactList}\small\item\em Adds a point to the bounding box. \end{DoxyCompactList}\item 
+\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \hyperlink{classirr_1_1core_1_1aabbox3d_ad2e956303fd85f900f93c067fd9c2647}{get\+Center} () const
+\begin{DoxyCompactList}\small\item\em Get center of the bounding box. \end{DoxyCompactList}\item 
+\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \hyperlink{classirr_1_1core_1_1aabbox3d_a6a1e82ae4fdb3cf9fac19905b772e03e}{get\+Extent} () const
+\begin{DoxyCompactList}\small\item\em Get extent of the box (maximal distance of two points in the box) \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1aabbox3d_a99f4afcfa29afd6e353b4377e4cbae84}{is\+Empty} () const
+\begin{DoxyCompactList}\small\item\em Check if the box is empty. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_a780f6f14562aa550ba7d90ac079f23ec}\label{classirr_1_1core_1_1aabbox3d_a780f6f14562aa550ba7d90ac079f23ec}} 
+T \hyperlink{classirr_1_1core_1_1aabbox3d_a780f6f14562aa550ba7d90ac079f23ec}{get\+Volume} () const
+\begin{DoxyCompactList}\small\item\em Get the volume enclosed by the box in cubed units. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_a8566c5c5c73b56ecd15e857a08ddc7dd}\label{classirr_1_1core_1_1aabbox3d_a8566c5c5c73b56ecd15e857a08ddc7dd}} 
+T \hyperlink{classirr_1_1core_1_1aabbox3d_a8566c5c5c73b56ecd15e857a08ddc7dd}{get\+Area} () const
+\begin{DoxyCompactList}\small\item\em Get the surface area of the box in squared units. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1aabbox3d_acb31d9c6a79559c2636c1e32a3e2e459}{get\+Edges} (\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ $\ast$edges) const
+\begin{DoxyCompactList}\small\item\em Stores all 8 edges of the box into an array. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1aabbox3d_a904b14e6b6a99187820a7407b5d7cf23}{repair} ()
+\begin{DoxyCompactList}\small\item\em Repairs the box. \end{DoxyCompactList}\item 
+\hyperlink{classirr_1_1core_1_1aabbox3d}{aabbox3d}$<$ T $>$ \hyperlink{classirr_1_1core_1_1aabbox3d_a2c2073f3693819d99906f2ae36dd19de}{get\+Interpolated} (const \hyperlink{classirr_1_1core_1_1aabbox3d}{aabbox3d}$<$ T $>$ \&other, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} d) const
+\begin{DoxyCompactList}\small\item\em Calculates a new interpolated bounding box. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1aabbox3d_ae69d28e1e512f705a6cbf95c5829f6cd}{is\+Point\+Inside} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&p) const
+\begin{DoxyCompactList}\small\item\em Determines if a point is within this box. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1aabbox3d_a0be7a03228c7af1e6c563acea4af316e}{is\+Point\+Total\+Inside} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&p) const
+\begin{DoxyCompactList}\small\item\em Determines if a point is within this box and not its borders. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1aabbox3d_a81be1b0ba25d5adff30182ce0f9670ab}{is\+Full\+Inside} (const \hyperlink{classirr_1_1core_1_1aabbox3d}{aabbox3d}$<$ T $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Check if this box is completely inside the \textquotesingle{}other\textquotesingle{} box. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1aabbox3d_a7210d8759855896ba4919a800ad69bbc}{intersects\+With\+Box} (const \hyperlink{classirr_1_1core_1_1aabbox3d}{aabbox3d}$<$ T $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Determines if the axis-\/aligned box intersects with another axis-\/aligned box. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1aabbox3d_ad0d7fec0145329dfca538066298fa3f2}{intersects\+With\+Line} (const \hyperlink{classirr_1_1core_1_1line3d}{line3d}$<$ T $>$ \&line) const
+\begin{DoxyCompactList}\small\item\em Tests if the box intersects with a line. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1aabbox3d_ad24417ef24e598bc484ea8b7af1c2187}{intersects\+With\+Line} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&linemiddle, const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&linevect, T halflength) const
+\begin{DoxyCompactList}\small\item\em Tests if the box intersects with a line. \end{DoxyCompactList}\item 
+\hyperlink{namespaceirr_1_1core_a8a9999eb0d151083f48afe5f7d17a96c}{E\+Intersection\+Relation3D} \hyperlink{classirr_1_1core_1_1aabbox3d_aa2a6c5613392e34552a31fe7b46286b1}{classify\+Plane\+Relation} (const \hyperlink{classirr_1_1core_1_1plane3d}{plane3d}$<$ T $>$ \&plane) const
+\begin{DoxyCompactList}\small\item\em Classifies a relation with a plane. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_a7501c7df834939fa25e5f70b8527e7b5}\label{classirr_1_1core_1_1aabbox3d_a7501c7df834939fa25e5f70b8527e7b5}} 
+\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \hyperlink{classirr_1_1core_1_1aabbox3d_a7501c7df834939fa25e5f70b8527e7b5}{Min\+Edge}
+\begin{DoxyCompactList}\small\item\em The near edge. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_a5aad7217e8189f09dde3ec4a69e4ac92}\label{classirr_1_1core_1_1aabbox3d_a5aad7217e8189f09dde3ec4a69e4ac92}} 
+\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \hyperlink{classirr_1_1core_1_1aabbox3d_a5aad7217e8189f09dde3ec4a69e4ac92}{Max\+Edge}
+\begin{DoxyCompactList}\small\item\em The far edge. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class irr\+::core\+::aabbox3d$<$ T $>$}
+
+Axis aligned bounding box in 3d dimensional space. 
+
+Has some useful methods used with occlusion culling or clipping. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_a7ccc210a3fb0ce82765d28f2047942c5}\label{classirr_1_1core_1_1aabbox3d_a7ccc210a3fb0ce82765d28f2047942c5}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!add\+Internal\+Box@{add\+Internal\+Box}}
+\index{add\+Internal\+Box@{add\+Internal\+Box}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{add\+Internal\+Box()}{addInternalBox()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::add\+Internal\+Box (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1aabbox3d}{aabbox3d}$<$ T $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds another bounding box. 
+
+The box grows bigger, if the new box was outside of the box. 
+\begin{DoxyParams}{Parameters}
+{\em b} & Other bounding box to add into this box. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_a49e3765fd2f40a115f8f28bd74d62ccf}\label{classirr_1_1core_1_1aabbox3d_a49e3765fd2f40a115f8f28bd74d62ccf}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!add\+Internal\+Point@{add\+Internal\+Point}}
+\index{add\+Internal\+Point@{add\+Internal\+Point}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{add\+Internal\+Point()}{addInternalPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::add\+Internal\+Point (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a point to the bounding box. 
+
+The box grows bigger, if point was outside of the box. 
+\begin{DoxyParams}{Parameters}
+{\em p} & Point to add into the box. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_a123947cb6d77a3e0d6cbb65b63e8b86f}\label{classirr_1_1core_1_1aabbox3d_a123947cb6d77a3e0d6cbb65b63e8b86f}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!add\+Internal\+Point@{add\+Internal\+Point}}
+\index{add\+Internal\+Point@{add\+Internal\+Point}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{add\+Internal\+Point()}{addInternalPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::add\+Internal\+Point (\begin{DoxyParamCaption}\item[{T}]{x,  }\item[{T}]{y,  }\item[{T}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a point to the bounding box. 
+
+The box grows bigger, if point is outside of the box. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X coordinate of the point to add to this box. \\
+\hline
+{\em y} & Y coordinate of the point to add to this box. \\
+\hline
+{\em z} & Z coordinate of the point to add to this box. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_aa2a6c5613392e34552a31fe7b46286b1}\label{classirr_1_1core_1_1aabbox3d_aa2a6c5613392e34552a31fe7b46286b1}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!classify\+Plane\+Relation@{classify\+Plane\+Relation}}
+\index{classify\+Plane\+Relation@{classify\+Plane\+Relation}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{classify\+Plane\+Relation()}{classifyPlaneRelation()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{namespaceirr_1_1core_a8a9999eb0d151083f48afe5f7d17a96c}{E\+Intersection\+Relation3D} \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::classify\+Plane\+Relation (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1plane3d}{plane3d}$<$ T $>$ \&}]{plane }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Classifies a relation with a plane. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plane} & Plane to classify relation to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns I\+S\+R\+E\+L3\+D\+\_\+\+F\+R\+O\+NT if the box is in front of the plane, I\+S\+R\+E\+L3\+D\+\_\+\+B\+A\+CK if the box is behind the plane, and I\+S\+R\+E\+L3\+D\+\_\+\+C\+L\+I\+P\+P\+ED if it is on both sides of the plane. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_ad2e956303fd85f900f93c067fd9c2647}\label{classirr_1_1core_1_1aabbox3d_ad2e956303fd85f900f93c067fd9c2647}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!get\+Center@{get\+Center}}
+\index{get\+Center@{get\+Center}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{get\+Center()}{getCenter()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$T$>$ \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::get\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get center of the bounding box. 
+
+\begin{DoxyReturn}{Returns}
+Center of the bounding box. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_acb31d9c6a79559c2636c1e32a3e2e459}\label{classirr_1_1core_1_1aabbox3d_acb31d9c6a79559c2636c1e32a3e2e459}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!get\+Edges@{get\+Edges}}
+\index{get\+Edges@{get\+Edges}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{get\+Edges()}{getEdges()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::get\+Edges (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ $\ast$}]{edges }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Stores all 8 edges of the box into an array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em edges} & Pointer to array of 8 edges. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_a6a1e82ae4fdb3cf9fac19905b772e03e}\label{classirr_1_1core_1_1aabbox3d_a6a1e82ae4fdb3cf9fac19905b772e03e}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!get\+Extent@{get\+Extent}}
+\index{get\+Extent@{get\+Extent}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{get\+Extent()}{getExtent()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$T$>$ \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::get\+Extent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get extent of the box (maximal distance of two points in the box) 
+
+\begin{DoxyReturn}{Returns}
+Extent of the bounding box. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_a2c2073f3693819d99906f2ae36dd19de}\label{classirr_1_1core_1_1aabbox3d_a2c2073f3693819d99906f2ae36dd19de}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!get\+Interpolated@{get\+Interpolated}}
+\index{get\+Interpolated@{get\+Interpolated}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{get\+Interpolated()}{getInterpolated()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classirr_1_1core_1_1aabbox3d}{aabbox3d}$<$T$>$ \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::get\+Interpolated (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1aabbox3d}{aabbox3d}$<$ T $>$ \&}]{other,  }\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{d }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates a new interpolated bounding box. 
+
+d=0 returns other, d=1 returns this, all other values blend between the two boxes. 
+\begin{DoxyParams}{Parameters}
+{\em other} & Other box to interpolate between \\
+\hline
+{\em d} & Value between 0.\+0f and 1.\+0f. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Interpolated box. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_a7210d8759855896ba4919a800ad69bbc}\label{classirr_1_1core_1_1aabbox3d_a7210d8759855896ba4919a800ad69bbc}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!intersects\+With\+Box@{intersects\+With\+Box}}
+\index{intersects\+With\+Box@{intersects\+With\+Box}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{intersects\+With\+Box()}{intersectsWithBox()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::intersects\+With\+Box (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1aabbox3d}{aabbox3d}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determines if the axis-\/aligned box intersects with another axis-\/aligned box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Other box to check a intersection with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if there is an intersection with the other box, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_ad0d7fec0145329dfca538066298fa3f2}\label{classirr_1_1core_1_1aabbox3d_ad0d7fec0145329dfca538066298fa3f2}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!intersects\+With\+Line@{intersects\+With\+Line}}
+\index{intersects\+With\+Line@{intersects\+With\+Line}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{intersects\+With\+Line()}{intersectsWithLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::intersects\+With\+Line (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1line3d}{line3d}$<$ T $>$ \&}]{line }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tests if the box intersects with a line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & Line to test intersection with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if there is an intersection , else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_ad24417ef24e598bc484ea8b7af1c2187}\label{classirr_1_1core_1_1aabbox3d_ad24417ef24e598bc484ea8b7af1c2187}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!intersects\+With\+Line@{intersects\+With\+Line}}
+\index{intersects\+With\+Line@{intersects\+With\+Line}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{intersects\+With\+Line()}{intersectsWithLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::intersects\+With\+Line (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{linemiddle,  }\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{linevect,  }\item[{T}]{halflength }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tests if the box intersects with a line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linemiddle} & Center of the line. \\
+\hline
+{\em linevect} & Vector of the line. \\
+\hline
+{\em halflength} & Half length of the line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if there is an intersection, else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_a99f4afcfa29afd6e353b4377e4cbae84}\label{classirr_1_1core_1_1aabbox3d_a99f4afcfa29afd6e353b4377e4cbae84}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{is\+Empty()}{isEmpty()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the box is empty. 
+
+This means that there is no space between the min and max edge. \begin{DoxyReturn}{Returns}
+True if box is empty, else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_a81be1b0ba25d5adff30182ce0f9670ab}\label{classirr_1_1core_1_1aabbox3d_a81be1b0ba25d5adff30182ce0f9670ab}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!is\+Full\+Inside@{is\+Full\+Inside}}
+\index{is\+Full\+Inside@{is\+Full\+Inside}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{is\+Full\+Inside()}{isFullInside()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::is\+Full\+Inside (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1aabbox3d}{aabbox3d}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if this box is completely inside the \textquotesingle{}other\textquotesingle{} box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Other box to check against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this box is completly inside the other box, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_ae69d28e1e512f705a6cbf95c5829f6cd}\label{classirr_1_1core_1_1aabbox3d_ae69d28e1e512f705a6cbf95c5829f6cd}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!is\+Point\+Inside@{is\+Point\+Inside}}
+\index{is\+Point\+Inside@{is\+Point\+Inside}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{is\+Point\+Inside()}{isPointInside()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::is\+Point\+Inside (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determines if a point is within this box. 
+
+Border is included (IS part of the box)! 
+\begin{DoxyParams}{Parameters}
+{\em p} & Point to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the point is within the box and false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_a0be7a03228c7af1e6c563acea4af316e}\label{classirr_1_1core_1_1aabbox3d_a0be7a03228c7af1e6c563acea4af316e}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!is\+Point\+Total\+Inside@{is\+Point\+Total\+Inside}}
+\index{is\+Point\+Total\+Inside@{is\+Point\+Total\+Inside}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{is\+Point\+Total\+Inside()}{isPointTotalInside()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::is\+Point\+Total\+Inside (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determines if a point is within this box and not its borders. 
+
+Border is excluded (N\+OT part of the box)! 
+\begin{DoxyParams}{Parameters}
+{\em p} & Point to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the point is within the box and false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_a985eec4fb632d7c8ef5a5577209690b3}\label{classirr_1_1core_1_1aabbox3d_a985eec4fb632d7c8ef5a5577209690b3}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1aabbox3d}{aabbox3d}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inequality operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & box to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if both boxes are different, else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_ac77180d63cc1726d0dec25e6f4cfd59c}\label{classirr_1_1core_1_1aabbox3d_ac77180d63cc1726d0dec25e6f4cfd59c}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!operator==@{operator==}}
+\index{operator==@{operator==}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1aabbox3d}{aabbox3d}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Equality operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & box to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if both boxes are equal, else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_a904b14e6b6a99187820a7407b5d7cf23}\label{classirr_1_1core_1_1aabbox3d_a904b14e6b6a99187820a7407b5d7cf23}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!repair@{repair}}
+\index{repair@{repair}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{repair()}{repair()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::repair (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Repairs the box. 
+
+Necessary if for example Min\+Edge and Max\+Edge are swapped. \mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_afc718e96ed11aa71a30311d32bfc885a}\label{classirr_1_1core_1_1aabbox3d_afc718e96ed11aa71a30311d32bfc885a}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!reset@{reset}}
+\index{reset@{reset}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::reset (\begin{DoxyParamCaption}\item[{T}]{x,  }\item[{T}]{y,  }\item[{T}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resets the bounding box to a one-\/point box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X coord of the point. \\
+\hline
+{\em y} & Y coord of the point. \\
+\hline
+{\em z} & Z coord of the point. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_a5f7139087de60b4c16b5df015ade1cba}\label{classirr_1_1core_1_1aabbox3d_a5f7139087de60b4c16b5df015ade1cba}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!reset@{reset}}
+\index{reset@{reset}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::reset (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1aabbox3d}{aabbox3d}$<$ T $>$ \&}]{init\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resets the bounding box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em init\+Value} & New box to set this one to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1aabbox3d_af777a607745b2bd3f4390dfee8263944}\label{classirr_1_1core_1_1aabbox3d_af777a607745b2bd3f4390dfee8263944}} 
+\index{irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}!reset@{reset}}
+\index{reset@{reset}!irr\+::core\+::aabbox3d@{irr\+::core\+::aabbox3d}}
+\subsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classirr_1_1core_1_1aabbox3d}{irr\+::core\+::aabbox3d}$<$ T $>$\+::reset (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{init\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resets the bounding box to a one-\/point box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em init\+Value} & New point. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indie\+\_\+share/controller/include/aabbox3d.\+h\end{DoxyCompactItemize}

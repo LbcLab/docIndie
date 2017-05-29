@@ -1,0 +1,1468 @@
+\hypertarget{namespaceirr_1_1scene}{}\section{irr\+:\+:scene Namespace Reference}
+\label{namespaceirr_1_1scene}\index{irr\+::scene@{irr\+::scene}}
+
+
+All scene management can be found in this namespace\+: Mesh loading, special scene nodes like octrees and billboards, ...  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{C\+Mesh\+Buffer}
+\begin{DoxyCompactList}\small\item\em Template implementation of the \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer} interface. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IAnimatedMesh}{I\+Animated\+Mesh}
+\begin{DoxyCompactList}\small\item\em Interface for an animated mesh. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IAnimatedMeshMD2}{I\+Animated\+Mesh\+M\+D2}
+\begin{DoxyCompactList}\small\item\em Interface for using some special functions of M\+D2 meshes. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IAnimatedMeshMD3}{I\+Animated\+Mesh\+M\+D3}
+\begin{DoxyCompactList}\small\item\em Interface for using some special functions of M\+D3 meshes. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IAnimatedMeshSceneNode}{I\+Animated\+Mesh\+Scene\+Node}
+\begin{DoxyCompactList}\small\item\em Scene node capable of displaying an animated mesh and its shadow. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IAnimationEndCallBack}{I\+Animation\+End\+Call\+Back}
+\begin{DoxyCompactList}\small\item\em Callback interface for catching events of ended animations. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IBillboardSceneNode}{I\+Billboard\+Scene\+Node}
+\begin{DoxyCompactList}\small\item\em A billboard scene node. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IBillboardTextSceneNode}{I\+Billboard\+Text\+Scene\+Node}
+\begin{DoxyCompactList}\small\item\em A billboard text scene node. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IBoneSceneNode}{I\+Bone\+Scene\+Node}
+\begin{DoxyCompactList}\small\item\em Interface for bones used for skeletal animation. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ICameraSceneNode}{I\+Camera\+Scene\+Node}
+\begin{DoxyCompactList}\small\item\em Scene Node which is a (controlable) camera. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter}{I\+Collada\+Mesh\+Writer}
+\begin{DoxyCompactList}\small\item\em Interface for writing meshes. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterNames}{I\+Collada\+Mesh\+Writer\+Names}
+\begin{DoxyCompactList}\small\item\em Callback interface to use custom names on collada writing. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties}{I\+Collada\+Mesh\+Writer\+Properties}
+\begin{DoxyCompactList}\small\item\em Callback interface for properties which can be used to influence collada writing. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ICollisionCallback}{I\+Collision\+Callback}
+\begin{DoxyCompactList}\small\item\em Callback interface for catching events of collisions. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IDummyTransformationSceneNode}{I\+Dummy\+Transformation\+Scene\+Node}
+\begin{DoxyCompactList}\small\item\em Dummy scene node for adding additional transformations to the scene graph. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IDynamicMeshBuffer}{I\+Dynamic\+Mesh\+Buffer}
+\item 
+class \hyperlink{classirr_1_1scene_1_1IGeometryCreator}{I\+Geometry\+Creator}
+\begin{DoxyCompactList}\small\item\em Helper class for creating geometry on the fly. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ILightManager}{I\+Light\+Manager}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classirr_1_1scene_1_1ILightManager}{I\+Light\+Manager} provides an interface for user applications to manipulate the list of lights in the scene. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ILightSceneNode}{I\+Light\+Scene\+Node}
+\begin{DoxyCompactList}\small\item\em Scene node which is a dynamic light. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh}
+\begin{DoxyCompactList}\small\item\em Class which holds the geometry of an object. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer}
+\begin{DoxyCompactList}\small\item\em Struct for holding a mesh with a single material. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IMeshCache}{I\+Mesh\+Cache}
+\begin{DoxyCompactList}\small\item\em The mesh cache stores already loaded meshes and provides an interface to them. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IMeshLoader}{I\+Mesh\+Loader}
+\begin{DoxyCompactList}\small\item\em Class which is able to load an animated mesh from a file. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IMeshManipulator}{I\+Mesh\+Manipulator}
+\begin{DoxyCompactList}\small\item\em An interface for easy manipulation of meshes. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IMeshSceneNode}{I\+Mesh\+Scene\+Node}
+\begin{DoxyCompactList}\small\item\em A scene node displaying a static mesh. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IMeshWriter}{I\+Mesh\+Writer}
+\begin{DoxyCompactList}\small\item\em Interface for writing meshes. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IMetaTriangleSelector}{I\+Meta\+Triangle\+Selector}
+\begin{DoxyCompactList}\small\item\em Interface for making multiple triangle selectors work as one big selector. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IParticleAffector}{I\+Particle\+Affector}
+\begin{DoxyCompactList}\small\item\em A particle affector modifies particles. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IParticleAnimatedMeshSceneNodeEmitter}{I\+Particle\+Animated\+Mesh\+Scene\+Node\+Emitter}
+\begin{DoxyCompactList}\small\item\em A particle emitter which emits particles from mesh vertices. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector}{I\+Particle\+Attraction\+Affector}
+\begin{DoxyCompactList}\small\item\em A particle affector which attracts or detracts particles. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IParticleBoxEmitter}{I\+Particle\+Box\+Emitter}
+\begin{DoxyCompactList}\small\item\em A particle emitter which emits particles from a box shaped space. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IParticleCylinderEmitter}{I\+Particle\+Cylinder\+Emitter}
+\begin{DoxyCompactList}\small\item\em A particle emitter which emits from a cylindrically shaped space. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IParticleEmitter}{I\+Particle\+Emitter}
+\begin{DoxyCompactList}\small\item\em A particle emitter for using with particle systems. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IParticleFadeOutAffector}{I\+Particle\+Fade\+Out\+Affector}
+\begin{DoxyCompactList}\small\item\em A particle affector which fades out the particles. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IParticleGravityAffector}{I\+Particle\+Gravity\+Affector}
+\begin{DoxyCompactList}\small\item\em A particle affector which applies gravity to particles. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IParticleMeshEmitter}{I\+Particle\+Mesh\+Emitter}
+\begin{DoxyCompactList}\small\item\em A particle emitter which emits from vertices of a mesh. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IParticleRingEmitter}{I\+Particle\+Ring\+Emitter}
+\begin{DoxyCompactList}\small\item\em A particle emitter which emits particles along a ring shaped area. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IParticleRotationAffector}{I\+Particle\+Rotation\+Affector}
+\begin{DoxyCompactList}\small\item\em A particle affector which rotates the particle system. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IParticleSphereEmitter}{I\+Particle\+Sphere\+Emitter}
+\begin{DoxyCompactList}\small\item\em A particle emitter which emits from a spherical space. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IParticleSystemSceneNode}{I\+Particle\+System\+Scene\+Node}
+\begin{DoxyCompactList}\small\item\em A particle system scene node for creating snow, fire, exlosions, smoke... \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IQ3LevelMesh}{I\+Q3\+Level\+Mesh}
+\begin{DoxyCompactList}\small\item\em Interface for a Mesh which can be loaded directly from a Quake3 .bsp-\/file. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ISceneCollisionManager}{I\+Scene\+Collision\+Manager}
+\begin{DoxyCompactList}\small\item\em The Scene Collision Manager provides methods for performing collision tests and picking on scene nodes. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ISceneLoader}{I\+Scene\+Loader}
+\begin{DoxyCompactList}\small\item\em Class which can load a scene into the scene manager. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ISceneManager}{I\+Scene\+Manager}
+\begin{DoxyCompactList}\small\item\em The Scene Manager manages scene nodes, mesh recources, cameras and all the other stuff. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node}
+\begin{DoxyCompactList}\small\item\em Scene node interface. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimator}{I\+Scene\+Node\+Animator}
+\begin{DoxyCompactList}\small\item\em Animates a scene node. Can animate position, rotation, material, and so on. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCameraFPS}{I\+Scene\+Node\+Animator\+Camera\+F\+PS}
+\begin{DoxyCompactList}\small\item\em Special scene node animator for F\+PS cameras. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCameraMaya}{I\+Scene\+Node\+Animator\+Camera\+Maya}
+\begin{DoxyCompactList}\small\item\em Special scene node animator for Maya-\/style cameras. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse}{I\+Scene\+Node\+Animator\+Collision\+Response}
+\begin{DoxyCompactList}\small\item\em Special scene node animator for doing automatic collision detection and response. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorFactory}{I\+Scene\+Node\+Animator\+Factory}
+\begin{DoxyCompactList}\small\item\em Interface for dynamic creation of scene node animators. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ISceneNodeFactory}{I\+Scene\+Node\+Factory}
+\begin{DoxyCompactList}\small\item\em Interface for dynamic creation of scene nodes. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ISceneUserDataSerializer}{I\+Scene\+User\+Data\+Serializer}
+\begin{DoxyCompactList}\small\item\em Interface to read and write user data to and from .irr files. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1IShadowVolumeSceneNode}{I\+Shadow\+Volume\+Scene\+Node}
+\begin{DoxyCompactList}\small\item\em Scene node for rendering a shadow volume into a stencil buffer. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ISkinnedMesh}{I\+Skinned\+Mesh}
+\begin{DoxyCompactList}\small\item\em Interface for using some special functions of Skinned meshes. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode}{I\+Terrain\+Scene\+Node}
+\begin{DoxyCompactList}\small\item\em A scene node for displaying terrain using the geo mip map algorithm. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ITextSceneNode}{I\+Text\+Scene\+Node}
+\begin{DoxyCompactList}\small\item\em A scene node for displaying 2d text at a position in three dimensional space. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1ITriangleSelector}{I\+Triangle\+Selector}
+\begin{DoxyCompactList}\small\item\em Interface to return triangles with specific properties. \end{DoxyCompactList}\item 
+struct \hyperlink{structirr_1_1scene_1_1IVertexManipulator}{I\+Vertex\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Interface for vertex manipulators. \end{DoxyCompactList}\item 
+struct \hyperlink{structirr_1_1scene_1_1SAnimatedMesh}{S\+Animated\+Mesh}
+\begin{DoxyCompactList}\small\item\em Simple implementation of the \hyperlink{classirr_1_1scene_1_1IAnimatedMesh}{I\+Animated\+Mesh} interface. \end{DoxyCompactList}\item 
+struct \hyperlink{structirr_1_1scene_1_1SMD3Face}{S\+M\+D3\+Face}
+\begin{DoxyCompactList}\small\item\em Triangle Index. \end{DoxyCompactList}\item 
+struct \hyperlink{structirr_1_1scene_1_1SMD3Header}{S\+M\+D3\+Header}
+\begin{DoxyCompactList}\small\item\em this holds the header info of the M\+D3 file \end{DoxyCompactList}\item 
+struct \hyperlink{structirr_1_1scene_1_1SMD3Mesh}{S\+M\+D3\+Mesh}
+\begin{DoxyCompactList}\small\item\em Holding Frames Buffers and Tag Infos. \end{DoxyCompactList}\item 
+struct \hyperlink{structirr_1_1scene_1_1SMD3MeshBuffer}{S\+M\+D3\+Mesh\+Buffer}
+\begin{DoxyCompactList}\small\item\em Holding Frame Data for a Mesh. \end{DoxyCompactList}\item 
+struct \hyperlink{structirr_1_1scene_1_1SMD3MeshHeader}{S\+M\+D3\+Mesh\+Header}
+\begin{DoxyCompactList}\small\item\em this holds the header info of an M\+D3 mesh section \end{DoxyCompactList}\item 
+struct \hyperlink{structirr_1_1scene_1_1SMD3QuaternionTag}{S\+M\+D3\+Quaternion\+Tag}
+\begin{DoxyCompactList}\small\item\em hold a tag info for connecting meshes \end{DoxyCompactList}\item 
+struct \hyperlink{structirr_1_1scene_1_1SMD3QuaternionTagList}{S\+M\+D3\+Quaternion\+Tag\+List}
+\begin{DoxyCompactList}\small\item\em holds a associative list of named quaternions \end{DoxyCompactList}\item 
+struct \hyperlink{structirr_1_1scene_1_1SMD3TexCoord}{S\+M\+D3\+Tex\+Coord}
+\begin{DoxyCompactList}\small\item\em Texture Coordinate. \end{DoxyCompactList}\item 
+struct \hyperlink{structirr_1_1scene_1_1SMD3Vertex}{S\+M\+D3\+Vertex}
+\begin{DoxyCompactList}\small\item\em Compressed Vertex Data. \end{DoxyCompactList}\item 
+struct \hyperlink{structirr_1_1scene_1_1SMesh}{S\+Mesh}
+\begin{DoxyCompactList}\small\item\em Simple implementation of the \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} interface. \end{DoxyCompactList}\item 
+struct \hyperlink{structirr_1_1scene_1_1SParticle}{S\+Particle}
+\begin{DoxyCompactList}\small\item\em Struct for holding particle data. \end{DoxyCompactList}\item 
+struct \hyperlink{structirr_1_1scene_1_1SSharedMeshBuffer}{S\+Shared\+Mesh\+Buffer}
+\begin{DoxyCompactList}\small\item\em Implementation of the \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer} interface with shared vertex list. \end{DoxyCompactList}\item 
+struct \hyperlink{structirr_1_1scene_1_1SSkinMeshBuffer}{S\+Skin\+Mesh\+Buffer}
+\begin{DoxyCompactList}\small\item\em A mesh buffer able to choose between S3\+D\+Vertex2\+T\+Coords, S3\+D\+Vertex and S3\+D\+Vertex\+Tangents at runtime. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1SVertexColorBrightnessManipulator}{S\+Vertex\+Color\+Brightness\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Vertex manipulator which adjusts the brightness by the given amount. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1SVertexColorContrastBrightnessManipulator}{S\+Vertex\+Color\+Contrast\+Brightness\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Vertex manipulator which adjusts the contrast by the given factor and brightness by a signed amount. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1SVertexColorContrastManipulator}{S\+Vertex\+Color\+Contrast\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Vertex manipulator which adjusts the contrast by the given factor. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1SVertexColorDesaturateToAverageManipulator}{S\+Vertex\+Color\+Desaturate\+To\+Average\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Vertex manipulator which desaturates the color values. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1SVertexColorDesaturateToLightnessManipulator}{S\+Vertex\+Color\+Desaturate\+To\+Lightness\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Vertex manipulator which desaturates the color values. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1SVertexColorDesaturateToLuminanceManipulator}{S\+Vertex\+Color\+Desaturate\+To\+Luminance\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Vertex manipulator which desaturates the color values. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1SVertexColorGammaManipulator}{S\+Vertex\+Color\+Gamma\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Vertex manipulator which adjusts the brightness by a gamma operation. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1SVertexColorInterpolateLinearManipulator}{S\+Vertex\+Color\+Interpolate\+Linear\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Vertex manipulator which interpolates the color values. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1SVertexColorInterpolateQuadraticManipulator}{S\+Vertex\+Color\+Interpolate\+Quadratic\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Vertex manipulator which interpolates the color values. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1SVertexColorInvertManipulator}{S\+Vertex\+Color\+Invert\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Vertex manipulator which invertes the R\+GB values. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1SVertexColorScaleManipulator}{S\+Vertex\+Color\+Scale\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Vertex manipulator which scales the color values. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1SVertexColorSetAlphaManipulator}{S\+Vertex\+Color\+Set\+Alpha\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Vertex manipulator to set the alpha value of the vertex color to a fixed value. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1SVertexColorSetManipulator}{S\+Vertex\+Color\+Set\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Vertex manipulator to set color to a fixed color for all vertices. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1SVertexColorThresholdManipulator}{S\+Vertex\+Color\+Threshold\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Vertex manipulator to set vertex color to one of two values depending on a given threshold. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1SVertexPositionScaleAlongNormalsManipulator}{S\+Vertex\+Position\+Scale\+Along\+Normals\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Vertex manipulator which scales the position of the vertex along the normals. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1SVertexPositionScaleManipulator}{S\+Vertex\+Position\+Scale\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Vertex manipulator which scales the position of the vertex. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1SVertexPositionTransformManipulator}{S\+Vertex\+Position\+Transform\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Vertex manipulator which transforms the position of the vertex. \end{DoxyCompactList}\item 
+class \hyperlink{classirr_1_1scene_1_1SVertexTCoordsScaleManipulator}{S\+Vertex\+T\+Coords\+Scale\+Manipulator}
+\begin{DoxyCompactList}\small\item\em Vertex manipulator which scales the T\+Coords of the vertex. \end{DoxyCompactList}\item 
+struct \hyperlink{structirr_1_1scene_1_1SViewFrustum}{S\+View\+Frustum}
+\begin{DoxyCompactList}\small\item\em Defines the view frustum. That\textquotesingle{}s the space visible by the camera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceirr_1_1scene_a76de145884afd2965d09c28d6bf89616}\label{namespaceirr_1_1scene_a76de145884afd2965d09c28d6bf89616}} 
+typedef \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{C\+Mesh\+Buffer}$<$ \hyperlink{structirr_1_1video_1_1S3DVertex}{video\+::\+S3\+D\+Vertex} $>$ \hyperlink{namespaceirr_1_1scene_a76de145884afd2965d09c28d6bf89616}{S\+Mesh\+Buffer}
+\begin{DoxyCompactList}\small\item\em Standard meshbuffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceirr_1_1scene_a0e95bd297e19ab7ab7160293b53b0584}\label{namespaceirr_1_1scene_a0e95bd297e19ab7ab7160293b53b0584}} 
+typedef \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{C\+Mesh\+Buffer}$<$ \hyperlink{structirr_1_1video_1_1S3DVertex2TCoords}{video\+::\+S3\+D\+Vertex2\+T\+Coords} $>$ \hyperlink{namespaceirr_1_1scene_a0e95bd297e19ab7ab7160293b53b0584}{S\+Mesh\+Buffer\+Light\+Map}
+\begin{DoxyCompactList}\small\item\em Meshbuffer with two texture coords per vertex, e.\+g. for lightmaps. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceirr_1_1scene_aa8137e76f0ada61f342d3de6cf07680a}\label{namespaceirr_1_1scene_aa8137e76f0ada61f342d3de6cf07680a}} 
+typedef \hyperlink{classirr_1_1scene_1_1CMeshBuffer}{C\+Mesh\+Buffer}$<$ \hyperlink{structirr_1_1video_1_1S3DVertexTangents}{video\+::\+S3\+D\+Vertex\+Tangents} $>$ \hyperlink{namespaceirr_1_1scene_aa8137e76f0ada61f342d3de6cf07680a}{S\+Mesh\+Buffer\+Tangents}
+\begin{DoxyCompactList}\small\item\em Meshbuffer with vertices having tangents stored, e.\+g. for normal mapping. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceirr_1_1scene_ac141e7443ace16ce06c0a092c6fc4fbc}\label{namespaceirr_1_1scene_ac141e7443ace16ce06c0a092c6fc4fbc}} 
+typedef \hyperlink{classirr_1_1core_1_1list}{core\+::list}$<$ \hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$ $>$ \hyperlink{namespaceirr_1_1scene_ac141e7443ace16ce06c0a092c6fc4fbc}{I\+Scene\+Node\+List}
+\begin{DoxyCompactList}\small\item\em Typedef for list of scene nodes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceirr_1_1scene_a4699e14043e59f91c454ffc13edd953c}\label{namespaceirr_1_1scene_a4699e14043e59f91c454ffc13edd953c}} 
+typedef \hyperlink{classirr_1_1core_1_1list}{core\+::list}$<$ \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimator}{I\+Scene\+Node\+Animator} $\ast$ $>$ \hyperlink{namespaceirr_1_1scene_a4699e14043e59f91c454ffc13edd953c}{I\+Scene\+Node\+Animator\+List}
+\begin{DoxyCompactList}\small\item\em Typedef for list of scene node animators. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceirr_1_1scene_acabb2772476aa3706e65a7dc77fd9cce}\label{namespaceirr_1_1scene_acabb2772476aa3706e65a7dc77fd9cce}} 
+enum \hyperlink{namespaceirr_1_1scene_acabb2772476aa3706e65a7dc77fd9cce}{E\+\_\+\+C\+U\+L\+L\+I\+N\+G\+\_\+\+T\+Y\+PE} \begin{DoxyCompactList}\small\item\em An enumeration for all types of automatic culling for built-\/in scene nodes. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbe}{E\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+C\+E\+N\+E\+\_\+\+T\+Y\+PE} \{ \newline
+\hyperlink{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea25111b15f03bee9a99498737286916dc}{E\+D\+S\+\_\+\+O\+FF} = 0, 
+\hyperlink{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea19e56bb3d3b18134fa63e0529629b427}{E\+D\+S\+\_\+\+B\+B\+OX} = 1, 
+\hyperlink{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea2713e470ee18ec9bfe40fdfb502f8b05}{E\+D\+S\+\_\+\+N\+O\+R\+M\+A\+LS} = 2, 
+\hyperlink{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbeaa7664e189b8641ac54cf27f70f6d8144}{E\+D\+S\+\_\+\+S\+K\+E\+L\+E\+T\+ON} = 4, 
+\newline
+\hyperlink{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea349b086537ac770f09935af4e31d3f3e}{E\+D\+S\+\_\+\+M\+E\+S\+H\+\_\+\+W\+I\+R\+E\+\_\+\+O\+V\+E\+R\+L\+AY} = 8, 
+\hyperlink{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea1def9e1b7d86e286b07a4b7179e6ed85}{E\+D\+S\+\_\+\+H\+A\+L\+F\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+CY} = 16, 
+\hyperlink{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea0179a3df80ac09143dfffed0bd9e99d1}{E\+D\+S\+\_\+\+B\+B\+O\+X\+\_\+\+B\+U\+F\+F\+E\+RS} = 32, 
+\hyperlink{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea80f38e42f1b8cf169e83f44092367bfe}{E\+D\+S\+\_\+\+B\+B\+O\+X\+\_\+\+A\+LL} = E\+D\+S\+\_\+\+B\+B\+OX $\vert$ E\+D\+S\+\_\+\+B\+B\+O\+X\+\_\+\+B\+U\+F\+F\+E\+RS, 
+\newline
+\hyperlink{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea24ffe5e6e99d589b3c80181e7c7dd4e2}{E\+D\+S\+\_\+\+F\+U\+LL} = 0xffffffff
+ \}\begin{DoxyCompactList}\small\item\em An enumeration for all types of debug data for built-\/in scene nodes (flags) \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27}{E\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+P\+P\+I\+NG} \{ \hyperlink{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27a6eaae9a4147dfc68ce11fa12b9ce3c0d}{E\+H\+M\+\_\+\+N\+E\+V\+ER} =0, 
+\hyperlink{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27a52a4dd2fb6fe682da24de33bb59a7cf6}{E\+H\+M\+\_\+\+S\+T\+A\+T\+IC}, 
+\hyperlink{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27a9217fb955cf965a1fd48db5e492921fe}{E\+H\+M\+\_\+\+D\+Y\+N\+A\+M\+IC}, 
+\hyperlink{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27a7a85a790b8f5fa3432a96f39f5a31e36}{E\+H\+M\+\_\+\+S\+T\+R\+E\+AM}
+ \}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE} \{ \hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8caee6d32ea2b56461fe8b0706c91b10d86}{E\+B\+T\+\_\+\+N\+O\+NE} =0, 
+\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8caee6af56d004d0171bdd3f94968be5c9d}{E\+B\+T\+\_\+\+V\+E\+R\+T\+EX}, 
+\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8cac94c9bb193455a5a064f2757eb797bac}{E\+B\+T\+\_\+\+I\+N\+D\+EX}, 
+\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca833624730c30cffccc121fe31aa0832c}{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX}
+ \}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4e}{E\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+T\+Y\+PE} \{ \newline
+\hyperlink{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4ea8f16d471fc5466a61e71c14158e7be3e}{E\+M\+W\+T\+\_\+\+I\+R\+R\+\_\+\+M\+E\+SH} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}i\textquotesingle{},\textquotesingle{}r\textquotesingle{},\textquotesingle{}r\textquotesingle{},\textquotesingle{}m\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4eab64eaf09eb12d2361e67066b86529ba8}{E\+M\+W\+T\+\_\+\+C\+O\+L\+L\+A\+DA} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}c\textquotesingle{},\textquotesingle{}o\textquotesingle{},\textquotesingle{}l\textquotesingle{},\textquotesingle{}l\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4ea8608bd1e505d53e6cc2e7c477b31d8a1}{E\+M\+W\+T\+\_\+\+S\+TL} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}s\textquotesingle{},\textquotesingle{}t\textquotesingle{},\textquotesingle{}l\textquotesingle{},0), 
+\hyperlink{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4eae22b9ef8ea7befd1368d7b90bbe12992}{E\+M\+W\+T\+\_\+\+O\+BJ} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}o\textquotesingle{},\textquotesingle{}b\textquotesingle{},\textquotesingle{}j\textquotesingle{},0), 
+\newline
+\hyperlink{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4ead00c87763ef520a5115e9920968c0108}{E\+M\+W\+T\+\_\+\+P\+LY} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}p\textquotesingle{},\textquotesingle{}l\textquotesingle{},\textquotesingle{}y\textquotesingle{},0)
+ \}\begin{DoxyCompactList}\small\item\em An enumeration for all supported types of built-\/in mesh writers. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1d}{E\+\_\+\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+F\+L\+A\+GS} \{ \hyperlink{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1daf2dfebddfd0a2cd2b558e23cb6a87464}{E\+M\+W\+F\+\_\+\+N\+O\+NE} = 0, 
+\hyperlink{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1daee23ec8ad339e67c03c424d5adb94a66}{E\+M\+W\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+L\+I\+G\+H\+T\+M\+A\+PS} = 0x1, 
+\hyperlink{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1dac7c70ee80dc1a33aac68d317cb9c2cb7}{E\+M\+W\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+ED} = 0x2, 
+\hyperlink{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1da06511a5df874b2b69a146e0bbcb70309}{E\+M\+W\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+I\+N\+A\+RY} = 0x4
+ \}\begin{DoxyCompactList}\small\item\em flags configuring mesh writing \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dc}{E\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+Y\+PE} \{ \newline
+\hyperlink{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca180689eadf794441c2c2dcd87462e203}{E\+P\+T\+\_\+\+P\+O\+I\+N\+TS} =0, 
+\hyperlink{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca5e391340a0edd5f94b7e2a977637215c}{E\+P\+T\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+IP}, 
+\hyperlink{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dcaf54da57a43051cfc6e95185b38e86625}{E\+P\+T\+\_\+\+L\+I\+N\+E\+\_\+\+L\+O\+OP}, 
+\hyperlink{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca1227c9648d4d9d7449ca1f959740b92b}{E\+P\+T\+\_\+\+L\+I\+N\+ES}, 
+\newline
+\hyperlink{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dcaef19e8b586de395af81c8cd9851a1b40}{E\+P\+T\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+S\+T\+R\+IP}, 
+\hyperlink{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca7646edca10a2b18da4c0fd49cc8f11e4}{E\+P\+T\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+F\+AN}, 
+\hyperlink{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca237fc76e4b259febd27b4b84066ca581}{E\+P\+T\+\_\+\+T\+R\+I\+A\+N\+G\+L\+ES}, 
+\hyperlink{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca534dcefd6a3db8c0d30e9af6e14b7800}{E\+P\+T\+\_\+\+Q\+U\+A\+D\+\_\+\+S\+T\+R\+IP}, 
+\newline
+\hyperlink{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca727ed6957405bfa168dbdb910f0eb0da}{E\+P\+T\+\_\+\+Q\+U\+A\+DS}, 
+\hyperlink{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dcac8a1de1f2ebd41892e66f833e42bb260}{E\+P\+T\+\_\+\+P\+O\+L\+Y\+G\+ON}, 
+\hyperlink{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dcaf2708b13ed29bcc856624e9222755ef7}{E\+P\+T\+\_\+\+P\+O\+I\+N\+T\+\_\+\+S\+P\+R\+I\+T\+ES}
+ \}\begin{DoxyCompactList}\small\item\em Enumeration for all primitive types there are. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19}{E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+A\+N\+I\+M\+A\+T\+O\+R\+\_\+\+T\+Y\+PE} \{ \newline
+\hyperlink{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19add5f15ecd6c0209d4e3d81a287ae9a66}{E\+S\+N\+A\+T\+\_\+\+F\+L\+Y\+\_\+\+C\+I\+R\+C\+LE} = 0, 
+\hyperlink{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19af71dad2be8d964a88329d2727fb53b74}{E\+S\+N\+A\+T\+\_\+\+F\+L\+Y\+\_\+\+S\+T\+R\+A\+I\+G\+HT}, 
+\hyperlink{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19addc7e3bb5180f7087546ccab14dcc4ad}{E\+S\+N\+A\+T\+\_\+\+F\+O\+L\+L\+O\+W\+\_\+\+S\+P\+L\+I\+NE}, 
+\hyperlink{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19a689aa5051e83b7f61a7abba85eb1be52}{E\+S\+N\+A\+T\+\_\+\+R\+O\+T\+A\+T\+I\+ON}, 
+\newline
+\hyperlink{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19a2f3e75035fbb3227189a0a3d8bcda993}{E\+S\+N\+A\+T\+\_\+\+T\+E\+X\+T\+U\+RE}, 
+\hyperlink{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19abbafee6e6a120e26a6e1ed6bd3cbdc86}{E\+S\+N\+A\+T\+\_\+\+D\+E\+L\+E\+T\+I\+ON}, 
+\hyperlink{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19af5889b6449faa50d3fabd005d4493490}{E\+S\+N\+A\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+R\+E\+S\+P\+O\+N\+SE}, 
+\hyperlink{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19ae40c836272ace5bf243baaca72dba55c}{E\+S\+N\+A\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+PS}, 
+\newline
+\hyperlink{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19a851338028c38a91643f70d2a2e5ff8c4}{E\+S\+N\+A\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+M\+A\+YA}, 
+\hyperlink{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19a2bcfe4fb94550fadc4b1e79b8c0d6583}{E\+S\+N\+A\+T\+\_\+\+C\+O\+U\+NT}, 
+\hyperlink{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19a070125dd5b3d35093f912dd3250253c6}{E\+S\+N\+A\+T\+\_\+\+U\+N\+K\+N\+O\+WN}, 
+\hyperlink{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19ac54f052c7c7e45e68d7460c3706a3167}{E\+S\+N\+A\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT} = 0x7fffffff
+ \}\begin{DoxyCompactList}\small\item\em An enumeration for all types of built-\/in scene node animators. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bd}{E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE} \{ \newline
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda1280c8093ea373c7a4e2a55300d875e7}{E\+S\+N\+T\+\_\+\+S\+C\+E\+N\+E\+\_\+\+M\+A\+N\+A\+G\+ER} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}s\textquotesingle{},\textquotesingle{}m\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}g\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda44d66f5c284aed4d0698d6854b6a72e3}{E\+S\+N\+T\+\_\+\+C\+U\+BE} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}c\textquotesingle{},\textquotesingle{}u\textquotesingle{},\textquotesingle{}b\textquotesingle{},\textquotesingle{}e\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda46ad007c8d7d278a6a3769714c5dacdb}{E\+S\+N\+T\+\_\+\+S\+P\+H\+E\+RE} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}s\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}h\textquotesingle{},\textquotesingle{}r\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda65e7b71bf270e10f94d88bcab8cbf184}{E\+S\+N\+T\+\_\+\+T\+E\+XT} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}t\textquotesingle{},\textquotesingle{}e\textquotesingle{},\textquotesingle{}x\textquotesingle{},\textquotesingle{}t\textquotesingle{}), 
+\newline
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda80e25755278a5e89d190c9221f2bb181}{E\+S\+N\+T\+\_\+\+W\+A\+T\+E\+R\+\_\+\+S\+U\+R\+F\+A\+CE} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}w\textquotesingle{},\textquotesingle{}a\textquotesingle{},\textquotesingle{}t\textquotesingle{},\textquotesingle{}r\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda699880de1c55e8ed4ae24b0e07df972a}{E\+S\+N\+T\+\_\+\+T\+E\+R\+R\+A\+IN} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}t\textquotesingle{},\textquotesingle{}e\textquotesingle{},\textquotesingle{}r\textquotesingle{},\textquotesingle{}r\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bdac47a4c2ad206e916f080ad28faed7f3b}{E\+S\+N\+T\+\_\+\+S\+K\+Y\+\_\+\+B\+OX} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}s\textquotesingle{},\textquotesingle{}k\textquotesingle{},\textquotesingle{}y\textquotesingle{},\textquotesingle{}\+\_\+\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda9bef60dbd27db262591c836beb472160}{E\+S\+N\+T\+\_\+\+S\+K\+Y\+\_\+\+D\+O\+ME} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}s\textquotesingle{},\textquotesingle{}k\textquotesingle{},\textquotesingle{}y\textquotesingle{},\textquotesingle{}d\textquotesingle{}), 
+\newline
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda41e004ec85286fba1d14c00273df039e}{E\+S\+N\+T\+\_\+\+S\+H\+A\+D\+O\+W\+\_\+\+V\+O\+L\+U\+ME} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}s\textquotesingle{},\textquotesingle{}h\textquotesingle{},\textquotesingle{}d\textquotesingle{},\textquotesingle{}w\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda1cbab0e001b2df07ef2a253434532a52}{E\+S\+N\+T\+\_\+\+O\+C\+T\+R\+EE} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}o\textquotesingle{},\textquotesingle{}c\textquotesingle{},\textquotesingle{}t\textquotesingle{},\textquotesingle{}r\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda25998267ed8640ca0c432df23f1b71fe}{E\+S\+N\+T\+\_\+\+M\+E\+SH} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}m\textquotesingle{},\textquotesingle{}e\textquotesingle{},\textquotesingle{}s\textquotesingle{},\textquotesingle{}h\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda73c87b4a418b0b7dc9d441cdf45f51e3}{E\+S\+N\+T\+\_\+\+L\+I\+G\+HT} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}l\textquotesingle{},\textquotesingle{}g\textquotesingle{},\textquotesingle{}h\textquotesingle{},\textquotesingle{}t\textquotesingle{}), 
+\newline
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda977d9500eeb4d4f23e5676a312367f57}{E\+S\+N\+T\+\_\+\+E\+M\+P\+TY} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}e\textquotesingle{},\textquotesingle{}m\textquotesingle{},\textquotesingle{}t\textquotesingle{},\textquotesingle{}y\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda1a0385665a70cacbf1c662e2f6a78759}{E\+S\+N\+T\+\_\+\+D\+U\+M\+M\+Y\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+A\+T\+I\+ON} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}d\textquotesingle{},\textquotesingle{}m\textquotesingle{},\textquotesingle{}m\textquotesingle{},\textquotesingle{}y\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda117834c96690a72567a0a813708cf3b6}{E\+S\+N\+T\+\_\+\+C\+A\+M\+E\+RA} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}c\textquotesingle{},\textquotesingle{}a\textquotesingle{},\textquotesingle{}m\textquotesingle{},\textquotesingle{}\+\_\+\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda85e4b3fca8fceb3de9057e91926d2a5f}{E\+S\+N\+T\+\_\+\+B\+I\+L\+L\+B\+O\+A\+RD} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}b\textquotesingle{},\textquotesingle{}i\textquotesingle{},\textquotesingle{}l\textquotesingle{},\textquotesingle{}l\textquotesingle{}), 
+\newline
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda073d7fe9dfd49f24cb13bfae56d8d3b6}{E\+S\+N\+T\+\_\+\+A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+E\+SH} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}a\textquotesingle{},\textquotesingle{}m\textquotesingle{},\textquotesingle{}s\textquotesingle{},\textquotesingle{}h\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bdab027cde22a402f6f7f19eb714acf26a4}{E\+S\+N\+T\+\_\+\+P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+S\+Y\+S\+T\+EM} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}p\textquotesingle{},\textquotesingle{}t\textquotesingle{},\textquotesingle{}c\textquotesingle{},\textquotesingle{}l\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda240e6f8e61816ea8f0cdf840b457734c}{E\+S\+N\+T\+\_\+\+Q3\+S\+H\+A\+D\+E\+R\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+DE} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}q\textquotesingle{},\textquotesingle{}3\textquotesingle{},\textquotesingle{}s\textquotesingle{},\textquotesingle{}h\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda9e1745f6f4b6772eb8b92de4436db5b6}{E\+S\+N\+T\+\_\+\+M\+D3\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+DE} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}m\textquotesingle{},\textquotesingle{}d\textquotesingle{},\textquotesingle{}3\textquotesingle{},\textquotesingle{}\+\_\+\textquotesingle{}), 
+\newline
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda4dc59bfbe8afbb4d97bbbad1b356bea6}{E\+S\+N\+T\+\_\+\+V\+O\+L\+U\+M\+E\+\_\+\+L\+I\+G\+HT} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}v\textquotesingle{},\textquotesingle{}o\textquotesingle{},\textquotesingle{}l\textquotesingle{},\textquotesingle{}l\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda0f55e02501e38f435f1cca657983f933}{E\+S\+N\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+M\+A\+YA} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}c\textquotesingle{},\textquotesingle{}a\textquotesingle{},\textquotesingle{}m\textquotesingle{},\textquotesingle{}M\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bdacbc402c4f01adcc87f3f8e9c004bdcd6}{E\+S\+N\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+PS} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}c\textquotesingle{},\textquotesingle{}a\textquotesingle{},\textquotesingle{}m\textquotesingle{},\textquotesingle{}F\textquotesingle{}), 
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda0c24ab203e5e0dc055f82fbca65d4f47}{E\+S\+N\+T\+\_\+\+U\+N\+K\+N\+O\+WN} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}u\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}k\textquotesingle{},\textquotesingle{}n\textquotesingle{}), 
+\newline
+\hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bdaa61d9ba5a5ec51a33600f83fb8bd71f5}{E\+S\+N\+T\+\_\+\+A\+NY} = M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID(\textquotesingle{}a\textquotesingle{},\textquotesingle{}n\textquotesingle{},\textquotesingle{}y\textquotesingle{},\textquotesingle{}\+\_\+\textquotesingle{})
+ \}\begin{DoxyCompactList}\small\item\em An enumeration for all types of built-\/in scene nodes. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044}{E\+\_\+\+T\+E\+R\+R\+A\+I\+N\+\_\+\+P\+A\+T\+C\+H\+\_\+\+S\+I\+ZE} \{ \newline
+\hyperlink{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044a94031c5146d368e0f634487093b5ae16}{E\+T\+P\+S\+\_\+9} = 9, 
+\hyperlink{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044abe94d6195f435b8e08a38269e63af72e}{E\+T\+P\+S\+\_\+17} = 17, 
+\hyperlink{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044adcad925a0a6f39b889909450a4b5b35c}{E\+T\+P\+S\+\_\+33} = 33, 
+\hyperlink{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044aedfd2b84fad4913885601a09ab3b7f91}{E\+T\+P\+S\+\_\+65} = 65, 
+\newline
+\hyperlink{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044af34ae7ee14ebe5bdd1e939afd3f17427}{E\+T\+P\+S\+\_\+129} = 129
+ \}\begin{DoxyCompactList}\small\item\em enumeration for patch sizes specifying the size of patches in the Terrain\+Scene\+Node \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61}{E\+\_\+\+A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+E\+S\+H\+\_\+\+T\+Y\+PE} \{ \newline
+\hyperlink{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a6f44a8730987c53332017ff74048acd0}{E\+A\+M\+T\+\_\+\+U\+N\+K\+N\+O\+WN} = 0, 
+\hyperlink{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a3b87f459cd5f287626c4fd9aaf729284}{E\+A\+M\+T\+\_\+\+M\+D2}, 
+\hyperlink{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a58cbe2b4f04ce4cb05bd209259a88e49}{E\+A\+M\+T\+\_\+\+M\+D3}, 
+\hyperlink{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61aa5e0b4b1881d9e999cf7a7a1906e82f3}{E\+A\+M\+T\+\_\+\+O\+BJ}, 
+\newline
+\hyperlink{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a2f02513e0a6ac2b377bf3a047c2a002d}{E\+A\+M\+T\+\_\+\+B\+SP}, 
+\hyperlink{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a0ffa679fb212ad86cfce62c25feb2643}{E\+A\+M\+T\+\_\+3\+DS}, 
+\hyperlink{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a5d30dfa5853b572ca852a57009ac5a39}{E\+A\+M\+T\+\_\+\+M\+Y3D}, 
+\hyperlink{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a97f8157a0c61e552ca83c93445895ec1}{E\+A\+M\+T\+\_\+\+L\+M\+TS}, 
+\newline
+\hyperlink{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a2525eebcc0c30bffe5378c0e81a88fb6}{E\+A\+M\+T\+\_\+\+C\+SM}, 
+\hyperlink{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61aea718c6b9b8485a394a5ea9118584d35}{E\+A\+M\+T\+\_\+\+O\+CT}, 
+\hyperlink{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61ad302cc4a5290c7ed6f4aecf3c6fad312}{E\+A\+M\+T\+\_\+\+M\+D\+L\+\_\+\+H\+A\+L\+F\+L\+I\+FE}, 
+\hyperlink{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a633362dee1f292db6e26ae9a029dbebc}{E\+A\+M\+T\+\_\+\+S\+K\+I\+N\+N\+ED}
+ \}\begin{DoxyCompactList}\small\item\em Possible types of (animated) meshes. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_a08d4a84966e1d2886d0d57e4acbb4f19}{E\+M\+D2\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE} \{ , \hyperlink{namespaceirr_1_1scene_a08d4a84966e1d2886d0d57e4acbb4f19a5fab9bcda993dba3607011f09f1b7c81}{E\+M\+A\+T\+\_\+\+C\+O\+U\+NT}
+ \}\begin{DoxyCompactList}\small\item\em Types of standard md2 animations. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_ac15a7915ea13336cdc38f1073888fcd3}{E\+M\+D3\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE} \{ , \hyperlink{namespaceirr_1_1scene_ac15a7915ea13336cdc38f1073888fcd3a3a9b1ea6dbd3f7a93f66e124496fb6fc}{E\+M\+D3\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+C\+O\+U\+NT}
+ \}\begin{DoxyCompactList}\small\item\em Animation list. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_a4a36461b5fa197ca3c6636c043413fa5}{E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+O\+N\+\_\+\+R\+E\+N\+D\+ER} \{ \hyperlink{namespaceirr_1_1scene_a4a36461b5fa197ca3c6636c043413fa5a0f5945f06c8d8399203f155b797ce4a9}{E\+J\+U\+O\+R\+\_\+\+N\+O\+NE} = 0, 
+\hyperlink{namespaceirr_1_1scene_a4a36461b5fa197ca3c6636c043413fa5a86ddaa95ce432966c492ecce52e98187}{E\+J\+U\+O\+R\+\_\+\+R\+E\+AD}, 
+\hyperlink{namespaceirr_1_1scene_a4a36461b5fa197ca3c6636c043413fa5aaebc2a3dd56293692e21792ed59bbc0f}{E\+J\+U\+O\+R\+\_\+\+C\+O\+N\+T\+R\+OL}
+ \}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801}{E\+\_\+\+B\+O\+N\+E\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE} \{ \hyperlink{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801ad26c52974d12b0f95256af5f9ba11bde}{E\+B\+A\+M\+\_\+\+A\+U\+T\+O\+M\+A\+T\+IC} =0, 
+\hyperlink{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801a49f9737e748ea0a6fe7e4a636edcdd1b}{E\+B\+A\+M\+\_\+\+A\+N\+I\+M\+A\+T\+ED}, 
+\hyperlink{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801a5cc55f24b347cbc72b22aff86eb3b18a}{E\+B\+A\+M\+\_\+\+U\+N\+A\+N\+I\+M\+A\+T\+ED}, 
+\hyperlink{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801a44d54a6246d59a7ab11fc0c4c86ee7ab}{E\+B\+A\+M\+\_\+\+C\+O\+U\+NT}
+ \}\begin{DoxyCompactList}\small\item\em Enumeration for different bone animation modes. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_a47bfc785c34c953f926c920cd13ba1fb}{E\+\_\+\+B\+O\+N\+E\+\_\+\+S\+K\+I\+N\+N\+I\+N\+G\+\_\+\+S\+P\+A\+CE} \{ \hyperlink{namespaceirr_1_1scene_a47bfc785c34c953f926c920cd13ba1fba024fe7bb628e922486989ca66e294811}{E\+B\+S\+S\+\_\+\+L\+O\+C\+AL} =0, 
+\hyperlink{namespaceirr_1_1scene_a47bfc785c34c953f926c920cd13ba1fbad73d241e222b6402d5e2064625d4823b}{E\+B\+S\+S\+\_\+\+G\+L\+O\+B\+AL}
+ \}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_a9ec31e84e05295892488296b0741e2b1}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+T\+E\+C\+H\+N\+I\+Q\+U\+E\+\_\+\+FX} \{ \hyperlink{namespaceirr_1_1scene_a9ec31e84e05295892488296b0741e2b1a69a2ffe63b7956eaedd3862f25d94d51}{E\+C\+T\+F\+\_\+\+B\+L\+I\+NN}, 
+\hyperlink{namespaceirr_1_1scene_a9ec31e84e05295892488296b0741e2b1a48c8725416499c9909726e14f18c3fce}{E\+C\+T\+F\+\_\+\+P\+H\+O\+NG}, 
+\hyperlink{namespaceirr_1_1scene_a9ec31e84e05295892488296b0741e2b1aef79736ffe4a0d7653644c7082061726}{E\+C\+T\+F\+\_\+\+L\+A\+M\+B\+E\+RT}
+ \}\begin{DoxyCompactList}\small\item\em Lighting models -\/ more or less the way Collada categorizes materials. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_af7dadd5b96b683cfe1800f343c4f6619}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+FX} \{ \hyperlink{namespaceirr_1_1scene_af7dadd5b96b683cfe1800f343c4f6619a93b8dbd819a9860581193a60ed6155c6}{E\+C\+O\+F\+\_\+\+A\+\_\+\+O\+NE} = 0, 
+\hyperlink{namespaceirr_1_1scene_af7dadd5b96b683cfe1800f343c4f6619aeeb0b34217f227d32be4876aeeaaf70f}{E\+C\+O\+F\+\_\+\+R\+G\+B\+\_\+\+Z\+E\+RO} = 1
+ \}\begin{DoxyCompactList}\small\item\em How to interpret the opacity in collada. \end{DoxyCompactList}
+\item 
+\mbox{\Hypertarget{namespaceirr_1_1scene_a6204218341c6b449d879cd8367b2f8d8}\label{namespaceirr_1_1scene_a6204218341c6b449d879cd8367b2f8d8}} 
+enum \hyperlink{namespaceirr_1_1scene_a6204218341c6b449d879cd8367b2f8d8}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+S\+A\+M\+P\+L\+ER} \begin{DoxyCompactList}\small\item\em Color names collada uses in it\textquotesingle{}s color samplers. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7e}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+I\+R\+R\+\_\+\+C\+O\+L\+OR} \{ \newline
+\hyperlink{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7ea46a948a882be4d21af671d4dff939a12}{E\+C\+I\+C\+\_\+\+N\+O\+NE}, 
+\hyperlink{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7eae1ff98b61069652418cc36e411de863c}{E\+C\+I\+C\+\_\+\+C\+U\+S\+T\+OM}, 
+\hyperlink{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7eac230a09c9fc579cc1776baea37731329}{E\+C\+I\+C\+\_\+\+D\+I\+F\+F\+U\+SE}, 
+\hyperlink{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7ea1508a71bf85cb6f1303df8ae240cde75}{E\+C\+I\+C\+\_\+\+A\+M\+B\+I\+E\+NT}, 
+\newline
+\hyperlink{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7ea212908c2b2af576861553e4b441ac7f3}{E\+C\+I\+C\+\_\+\+E\+M\+I\+S\+S\+I\+VE}, 
+\hyperlink{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7eae62f9539794fa526128ea1eed9840b7d}{E\+C\+I\+C\+\_\+\+S\+P\+E\+C\+U\+L\+AR}
+ \}\begin{DoxyCompactList}\small\item\em Irrlicht colors which can be mapped to E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+S\+A\+M\+P\+L\+ER values. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_a179008e7c02889459edf81394dbd6959}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+W\+R\+I\+T\+I\+NG} \{ \hyperlink{namespaceirr_1_1scene_a179008e7c02889459edf81394dbd6959a48f7ed09f68367a679cc8f6d4fd63906}{E\+C\+G\+I\+\_\+\+P\+E\+R\+\_\+\+M\+E\+SH}, 
+\hyperlink{namespaceirr_1_1scene_a179008e7c02889459edf81394dbd6959af2b6f3248808f3dbf81a7e707e508f65}{E\+C\+G\+I\+\_\+\+P\+E\+R\+\_\+\+M\+E\+S\+H\+\_\+\+A\+N\+D\+\_\+\+M\+A\+T\+E\+R\+I\+AL}
+ \}\begin{DoxyCompactList}\small\item\em Control when geometry elements are created. \end{DoxyCompactList}
+\item 
+\mbox{\Hypertarget{namespaceirr_1_1scene_a34c0f9475cfcbda8b50ad816a046010b}\label{namespaceirr_1_1scene_a34c0f9475cfcbda8b50ad816a046010b}} 
+enum \hyperlink{namespaceirr_1_1scene_a34c0f9475cfcbda8b50ad816a046010b}{E\+\_\+\+P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+A\+F\+F\+E\+C\+T\+O\+R\+\_\+\+T\+Y\+PE} \begin{DoxyCompactList}\small\item\em Types of built in particle affectors. \end{DoxyCompactList}
+\item 
+\mbox{\Hypertarget{namespaceirr_1_1scene_a3e251a881c886884a78adea2e546272b}\label{namespaceirr_1_1scene_a3e251a881c886884a78adea2e546272b}} 
+enum \hyperlink{namespaceirr_1_1scene_a3e251a881c886884a78adea2e546272b}{E\+\_\+\+P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+E\+M\+I\+T\+T\+E\+R\+\_\+\+T\+Y\+PE} \begin{DoxyCompactList}\small\item\em Types of built in particle emitters. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67f}{E\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+R\+E\+N\+D\+E\+R\+\_\+\+P\+A\+SS} \{ \newline
+\hyperlink{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fa1f79a46e7a41716dcae5c8dfe8d310bb}{E\+S\+N\+R\+P\+\_\+\+N\+O\+NE} =0, 
+\hyperlink{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fa26f6af7911240e22003f327aef126053}{E\+S\+N\+R\+P\+\_\+\+C\+A\+M\+E\+RA} =1, 
+\hyperlink{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fa1390daf021e4354eb3dc8d5d46fb7dc0}{E\+S\+N\+R\+P\+\_\+\+L\+I\+G\+HT} =2, 
+\hyperlink{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fac41f4cb4900e84b9e55462089d0e3cb8}{E\+S\+N\+R\+P\+\_\+\+S\+K\+Y\+\_\+\+B\+OX} =4, 
+\newline
+\hyperlink{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fa5ceee6e4bc2fab42c663b32018e276e8}{E\+S\+N\+R\+P\+\_\+\+A\+U\+T\+O\+M\+A\+T\+IC} =24, 
+\hyperlink{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fad058b020ab42ad745cc03fe379148e1f}{E\+S\+N\+R\+P\+\_\+\+S\+O\+L\+ID} =8, 
+\hyperlink{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fad3a1300505d0ab06133e25256b893b2b}{E\+S\+N\+R\+P\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT} =16, 
+\hyperlink{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fa3d134d3f703e328ab5798e5ff4a5c186}{E\+S\+N\+R\+P\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+E\+F\+F\+E\+CT} =32, 
+\newline
+\hyperlink{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fadbc7353e3092974abaa4d063faa22421}{E\+S\+N\+R\+P\+\_\+\+S\+H\+A\+D\+OW} =64
+ \}\begin{DoxyCompactList}\small\item\em Enumeration for render passes. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_1_1scene_a26f30865cf5527e7255a8495e280314c}{E\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE} \{ , \hyperlink{namespaceirr_1_1scene_a26f30865cf5527e7255a8495e280314ca7c2057a6943b57b8adb3358b3b33bbdf}{E\+I\+M\+\_\+\+C\+O\+U\+NT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceirr_1_1scene_afb3e3fc1668bd602189bab446801aa12}\label{namespaceirr_1_1scene_afb3e3fc1668bd602189bab446801aa12}} 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_afb3e3fc1668bd602189bab446801aa12}{Automatic\+Culling\+Names} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Names for culling type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceirr_1_1scene_a578945909729ca194b0d44852aab8021}\label{namespaceirr_1_1scene_a578945909729ca194b0d44852aab8021}} 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_a578945909729ca194b0d44852aab8021}{Bone\+Animation\+Mode\+Names} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Names for bone animation modes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceirr_1_1scene_a1ce0e47158d68b401d23d833bc70bb86}\label{namespaceirr_1_1scene_a1ce0e47158d68b401d23d833bc70bb86}} 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_a1ce0e47158d68b401d23d833bc70bb86}{Particle\+Affector\+Type\+Names} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Names for built in particle affectors. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceirr_1_1scene_adf760b7abdec907704ec6190dfc0caba}\label{namespaceirr_1_1scene_adf760b7abdec907704ec6190dfc0caba}} 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_adf760b7abdec907704ec6190dfc0caba}{Particle\+Emitter\+Type\+Names} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Names for built in particle emitters. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_ab585d23bc2a3d02cd368d8bfd0b1414a}{A\+L\+L\+O\+W\+\_\+\+Z\+W\+R\+I\+T\+E\+\_\+\+O\+N\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT} = \char`\"{}Allow\+\_\+\+Z\+Write\+\_\+\+On\+\_\+\+Transparent\char`\"{}
+\begin{DoxyCompactList}\small\item\em Name of the parameter for changing how Irrlicht handles the Z\+Write flag for transparent (blending) materials. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_aecf002b9e14bd101b455632e1c260a8d}{C\+S\+M\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH} = \char`\"{}C\+S\+M\+\_\+\+Texture\+Path\char`\"{}
+\begin{DoxyCompactList}\small\item\em Name of the parameter for changing the texture path of the built-\/in csm loader. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_a1d81a2ac8866dfa4a0ff3bdece327f75}{L\+M\+T\+S\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH} = \char`\"{}L\+M\+T\+S\+\_\+\+Texture\+Path\char`\"{}
+\begin{DoxyCompactList}\small\item\em Name of the parameter for changing the texture path of the built-\/in lmts loader. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_a54eb9ea68ba13b4689444f8d34e338b9}{M\+Y3\+D\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH} = \char`\"{}M\+Y3\+D\+\_\+\+Texture\+Path\char`\"{}
+\begin{DoxyCompactList}\small\item\em Name of the parameter for changing the texture path of the built-\/in my3d loader. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_a157681b3ef101a801ce278e6f21de946}{C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+S\+C\+E\+N\+E\+\_\+\+I\+N\+S\+T\+A\+N\+C\+ES} = \char`\"{}C\+O\+L\+L\+A\+D\+A\+\_\+\+Create\+Scene\+Instances\char`\"{}
+\begin{DoxyCompactList}\small\item\em Name of the parameter specifying the C\+O\+L\+L\+A\+DA mesh loading mode. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_a2a6e8bd33eaec1815e3e16a59c269fb5}{D\+M\+F\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH} = \char`\"{}D\+M\+F\+\_\+\+Texture\+Path\char`\"{}
+\begin{DoxyCompactList}\small\item\em Name of the parameter for changing the texture path of the built-\/in D\+MF loader. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_ae996d826263cf504dd0260d0a096b0d0}{D\+M\+F\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+S\+\_\+\+D\+I\+RS} = \char`\"{}D\+M\+F\+\_\+\+Ignore\+Materials\+Dir\char`\"{}
+\begin{DoxyCompactList}\small\item\em Name of the parameter for preserving D\+MF textures dir structure with built-\/in D\+MF loader. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_afd6e025453e80983de80371dc56718ef}{D\+M\+F\+\_\+\+A\+L\+P\+H\+A\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+R\+EF} = \char`\"{}D\+M\+F\+\_\+\+Alpha\+Ref\char`\"{}
+\begin{DoxyCompactList}\small\item\em Name of the parameter for setting reference value of alpha in transparent materials. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_acdc1ddd0bfeb4118a5d8f3ea953717f6}{D\+M\+F\+\_\+\+F\+L\+I\+P\+\_\+\+A\+L\+P\+H\+A\+\_\+\+T\+E\+X\+T\+U\+R\+ES} = \char`\"{}D\+M\+F\+\_\+\+Flip\+Alpha\char`\"{}
+\begin{DoxyCompactList}\small\item\em Name of the parameter for choose to flip or not tga files. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_a12d0b16f969fdaaf7c2161a0c7152b54}{O\+B\+J\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH} = \char`\"{}O\+B\+J\+\_\+\+Texture\+Path\char`\"{}
+\begin{DoxyCompactList}\small\item\em Name of the parameter for changing the texture path of the built-\/in obj loader. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_afb0c389302c1e7ad39f83d558dbb2699}{O\+B\+J\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+G\+R\+O\+U\+PS} = \char`\"{}O\+B\+J\+\_\+\+Ignore\+Groups\char`\"{}
+\begin{DoxyCompactList}\small\item\em Flag to avoid loading group structures in .obj files. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_ac7d5a31e2146062ddbde288115bb6c7b}{O\+B\+J\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+I\+L\+ES} = \char`\"{}O\+B\+J\+\_\+\+Ignore\+Material\+Files\char`\"{}
+\begin{DoxyCompactList}\small\item\em Flag to avoid loading material .mtl file for .obj files. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_a0a190773ebdbed9f134b17d496fc526a}{B3\+D\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+F\+L\+AG} = \char`\"{}B3\+D\+\_\+\+Ignore\+Mipmap\+Flag\char`\"{}
+\begin{DoxyCompactList}\small\item\em Flag to ignore the b3d file\textquotesingle{}s mipmapping flag. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_acaad1f28c235751815637948cc845c15}{B3\+D\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH} = \char`\"{}B3\+D\+\_\+\+Texture\+Path\char`\"{}
+\begin{DoxyCompactList}\small\item\em Name of the parameter for changing the texture path of the built-\/in b3d loader. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_a7a3f4a75d85bd2b3f6bc4dd58f3ce585}{I\+R\+R\+\_\+\+S\+C\+E\+N\+E\+\_\+\+M\+A\+N\+A\+G\+E\+R\+\_\+\+I\+S\+\_\+\+E\+D\+I\+T\+OR} = \char`\"{}I\+R\+R\+\_\+\+Editor\char`\"{}
+\begin{DoxyCompactList}\small\item\em Flag set as parameter when the scene manager is used as editor. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_a19153395855d08302b70dcfa9247eb51}{D\+E\+B\+U\+G\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+L\+E\+N\+G\+TH} = \char`\"{}D\+E\+B\+U\+G\+\_\+\+Normal\+\_\+\+Length\char`\"{}
+\begin{DoxyCompactList}\small\item\em Name of the parameter for setting the length of debug normals. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$const \hyperlink{namespaceirr_1_1scene_a767a12984dbf7a4f0917993d748d1350}{D\+E\+B\+U\+G\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+C\+O\+L\+OR} = \char`\"{}D\+E\+B\+U\+G\+\_\+\+Normal\+\_\+\+Color\char`\"{}
+\begin{DoxyCompactList}\small\item\em Name of the parameter for setting the color of debug normals. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+All scene management can be found in this namespace\+: Mesh loading, special scene nodes like octrees and billboards, ... 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61}\label{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61}} 
+\index{irr\+::scene@{irr\+::scene}!E\+\_\+\+A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+E\+S\+H\+\_\+\+T\+Y\+PE@{E\+\_\+\+A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+E\+S\+H\+\_\+\+T\+Y\+PE}}
+\index{E\+\_\+\+A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+E\+S\+H\+\_\+\+T\+Y\+PE@{E\+\_\+\+A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+E\+S\+H\+\_\+\+T\+Y\+PE}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+\_\+\+A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+E\+S\+H\+\_\+\+T\+Y\+PE}{E\_ANIMATED\_MESH\_TYPE}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61}{irr\+::scene\+::\+E\+\_\+\+A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+E\+S\+H\+\_\+\+T\+Y\+PE}}
+
+
+
+Possible types of (animated) meshes. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+A\+M\+T\+\_\+\+U\+N\+K\+N\+O\+WN@{E\+A\+M\+T\+\_\+\+U\+N\+K\+N\+O\+WN}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+A\+M\+T\+\_\+\+U\+N\+K\+N\+O\+WN@{E\+A\+M\+T\+\_\+\+U\+N\+K\+N\+O\+WN}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a6f44a8730987c53332017ff74048acd0}\label{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a6f44a8730987c53332017ff74048acd0}} 
+E\+A\+M\+T\+\_\+\+U\+N\+K\+N\+O\+WN&Unknown animated mesh type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+A\+M\+T\+\_\+\+M\+D2@{E\+A\+M\+T\+\_\+\+M\+D2}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+A\+M\+T\+\_\+\+M\+D2@{E\+A\+M\+T\+\_\+\+M\+D2}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a3b87f459cd5f287626c4fd9aaf729284}\label{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a3b87f459cd5f287626c4fd9aaf729284}} 
+E\+A\+M\+T\+\_\+\+M\+D2&Quake 2 M\+D2 model file. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+A\+M\+T\+\_\+\+M\+D3@{E\+A\+M\+T\+\_\+\+M\+D3}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+A\+M\+T\+\_\+\+M\+D3@{E\+A\+M\+T\+\_\+\+M\+D3}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a58cbe2b4f04ce4cb05bd209259a88e49}\label{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a58cbe2b4f04ce4cb05bd209259a88e49}} 
+E\+A\+M\+T\+\_\+\+M\+D3&Quake 3 M\+D3 model file. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+A\+M\+T\+\_\+\+O\+BJ@{E\+A\+M\+T\+\_\+\+O\+BJ}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+A\+M\+T\+\_\+\+O\+BJ@{E\+A\+M\+T\+\_\+\+O\+BJ}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61aa5e0b4b1881d9e999cf7a7a1906e82f3}\label{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61aa5e0b4b1881d9e999cf7a7a1906e82f3}} 
+E\+A\+M\+T\+\_\+\+O\+BJ&Maya .obj static model. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+A\+M\+T\+\_\+\+B\+SP@{E\+A\+M\+T\+\_\+\+B\+SP}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+A\+M\+T\+\_\+\+B\+SP@{E\+A\+M\+T\+\_\+\+B\+SP}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a2f02513e0a6ac2b377bf3a047c2a002d}\label{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a2f02513e0a6ac2b377bf3a047c2a002d}} 
+E\+A\+M\+T\+\_\+\+B\+SP&Quake 3 .bsp static \hyperlink{classMap}{Map}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+A\+M\+T\+\_\+3\+DS@{E\+A\+M\+T\+\_\+3\+DS}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+A\+M\+T\+\_\+3\+DS@{E\+A\+M\+T\+\_\+3\+DS}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a0ffa679fb212ad86cfce62c25feb2643}\label{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a0ffa679fb212ad86cfce62c25feb2643}} 
+E\+A\+M\+T\+\_\+3\+DS&3D Studio .3ds file \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+A\+M\+T\+\_\+\+M\+Y3D@{E\+A\+M\+T\+\_\+\+M\+Y3D}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+A\+M\+T\+\_\+\+M\+Y3D@{E\+A\+M\+T\+\_\+\+M\+Y3D}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a5d30dfa5853b572ca852a57009ac5a39}\label{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a5d30dfa5853b572ca852a57009ac5a39}} 
+E\+A\+M\+T\+\_\+\+M\+Y3D&My3D Mesh, the file format by Zhuck Dimitry. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+A\+M\+T\+\_\+\+L\+M\+TS@{E\+A\+M\+T\+\_\+\+L\+M\+TS}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+A\+M\+T\+\_\+\+L\+M\+TS@{E\+A\+M\+T\+\_\+\+L\+M\+TS}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a97f8157a0c61e552ca83c93445895ec1}\label{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a97f8157a0c61e552ca83c93445895ec1}} 
+E\+A\+M\+T\+\_\+\+L\+M\+TS&Pulsar L\+M\+Tools .lmts file. This Irrlicht loader was written by Jonas Petersen. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+A\+M\+T\+\_\+\+C\+SM@{E\+A\+M\+T\+\_\+\+C\+SM}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+A\+M\+T\+\_\+\+C\+SM@{E\+A\+M\+T\+\_\+\+C\+SM}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a2525eebcc0c30bffe5378c0e81a88fb6}\label{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a2525eebcc0c30bffe5378c0e81a88fb6}} 
+E\+A\+M\+T\+\_\+\+C\+SM&Cartography Shop .csm file. This loader was created by Saurav Mohapatra. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+A\+M\+T\+\_\+\+O\+CT@{E\+A\+M\+T\+\_\+\+O\+CT}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+A\+M\+T\+\_\+\+O\+CT@{E\+A\+M\+T\+\_\+\+O\+CT}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61aea718c6b9b8485a394a5ea9118584d35}\label{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61aea718c6b9b8485a394a5ea9118584d35}} 
+E\+A\+M\+T\+\_\+\+O\+CT&.oct file for Paul Nette\textquotesingle{}s F\+S\+Rad or from Murphy Mc\+Cauley\textquotesingle{}s Blender .oct exporter. The oct file format contains 3D geometry and lightmaps and can be loaded directly by Irrlicht \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+A\+M\+T\+\_\+\+M\+D\+L\+\_\+\+H\+A\+L\+F\+L\+I\+FE@{E\+A\+M\+T\+\_\+\+M\+D\+L\+\_\+\+H\+A\+L\+F\+L\+I\+FE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+A\+M\+T\+\_\+\+M\+D\+L\+\_\+\+H\+A\+L\+F\+L\+I\+FE@{E\+A\+M\+T\+\_\+\+M\+D\+L\+\_\+\+H\+A\+L\+F\+L\+I\+FE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61ad302cc4a5290c7ed6f4aecf3c6fad312}\label{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61ad302cc4a5290c7ed6f4aecf3c6fad312}} 
+E\+A\+M\+T\+\_\+\+M\+D\+L\+\_\+\+H\+A\+L\+F\+L\+I\+FE&Halflife M\+DL model file. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+A\+M\+T\+\_\+\+S\+K\+I\+N\+N\+ED@{E\+A\+M\+T\+\_\+\+S\+K\+I\+N\+N\+ED}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+A\+M\+T\+\_\+\+S\+K\+I\+N\+N\+ED@{E\+A\+M\+T\+\_\+\+S\+K\+I\+N\+N\+ED}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a633362dee1f292db6e26ae9a029dbebc}\label{namespaceirr_1_1scene_a2fc85a64604521ca063f1881b5dd1c61a633362dee1f292db6e26ae9a029dbebc}} 
+E\+A\+M\+T\+\_\+\+S\+K\+I\+N\+N\+ED&generic skinned mesh \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801}\label{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801}} 
+\index{irr\+::scene@{irr\+::scene}!E\+\_\+\+B\+O\+N\+E\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE@{E\+\_\+\+B\+O\+N\+E\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE}}
+\index{E\+\_\+\+B\+O\+N\+E\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE@{E\+\_\+\+B\+O\+N\+E\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+\_\+\+B\+O\+N\+E\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE}{E\_BONE\_ANIMATION\_MODE}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801}{irr\+::scene\+::\+E\+\_\+\+B\+O\+N\+E\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE}}
+
+
+
+Enumeration for different bone animation modes. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+B\+A\+M\+\_\+\+A\+U\+T\+O\+M\+A\+T\+IC@{E\+B\+A\+M\+\_\+\+A\+U\+T\+O\+M\+A\+T\+IC}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+B\+A\+M\+\_\+\+A\+U\+T\+O\+M\+A\+T\+IC@{E\+B\+A\+M\+\_\+\+A\+U\+T\+O\+M\+A\+T\+IC}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801ad26c52974d12b0f95256af5f9ba11bde}\label{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801ad26c52974d12b0f95256af5f9ba11bde}} 
+E\+B\+A\+M\+\_\+\+A\+U\+T\+O\+M\+A\+T\+IC&The bone is usually animated, unless it\textquotesingle{}s parent is not animated. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+B\+A\+M\+\_\+\+A\+N\+I\+M\+A\+T\+ED@{E\+B\+A\+M\+\_\+\+A\+N\+I\+M\+A\+T\+ED}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+B\+A\+M\+\_\+\+A\+N\+I\+M\+A\+T\+ED@{E\+B\+A\+M\+\_\+\+A\+N\+I\+M\+A\+T\+ED}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801a49f9737e748ea0a6fe7e4a636edcdd1b}\label{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801a49f9737e748ea0a6fe7e4a636edcdd1b}} 
+E\+B\+A\+M\+\_\+\+A\+N\+I\+M\+A\+T\+ED&The bone is animated by the skin, if it\textquotesingle{}s parent is not animated then animation will resume from this bone onward. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+B\+A\+M\+\_\+\+U\+N\+A\+N\+I\+M\+A\+T\+ED@{E\+B\+A\+M\+\_\+\+U\+N\+A\+N\+I\+M\+A\+T\+ED}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+B\+A\+M\+\_\+\+U\+N\+A\+N\+I\+M\+A\+T\+ED@{E\+B\+A\+M\+\_\+\+U\+N\+A\+N\+I\+M\+A\+T\+ED}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801a5cc55f24b347cbc72b22aff86eb3b18a}\label{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801a5cc55f24b347cbc72b22aff86eb3b18a}} 
+E\+B\+A\+M\+\_\+\+U\+N\+A\+N\+I\+M\+A\+T\+ED&The bone is not animated by the skin. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+B\+A\+M\+\_\+\+C\+O\+U\+NT@{E\+B\+A\+M\+\_\+\+C\+O\+U\+NT}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+B\+A\+M\+\_\+\+C\+O\+U\+NT@{E\+B\+A\+M\+\_\+\+C\+O\+U\+NT}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801a44d54a6246d59a7ab11fc0c4c86ee7ab}\label{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801a44d54a6246d59a7ab11fc0c4c86ee7ab}} 
+E\+B\+A\+M\+\_\+\+C\+O\+U\+NT&Not an animation mode, just here to count the available modes. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_a47bfc785c34c953f926c920cd13ba1fb}\label{namespaceirr_1_1scene_a47bfc785c34c953f926c920cd13ba1fb}} 
+\index{irr\+::scene@{irr\+::scene}!E\+\_\+\+B\+O\+N\+E\+\_\+\+S\+K\+I\+N\+N\+I\+N\+G\+\_\+\+S\+P\+A\+CE@{E\+\_\+\+B\+O\+N\+E\+\_\+\+S\+K\+I\+N\+N\+I\+N\+G\+\_\+\+S\+P\+A\+CE}}
+\index{E\+\_\+\+B\+O\+N\+E\+\_\+\+S\+K\+I\+N\+N\+I\+N\+G\+\_\+\+S\+P\+A\+CE@{E\+\_\+\+B\+O\+N\+E\+\_\+\+S\+K\+I\+N\+N\+I\+N\+G\+\_\+\+S\+P\+A\+CE}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+\_\+\+B\+O\+N\+E\+\_\+\+S\+K\+I\+N\+N\+I\+N\+G\+\_\+\+S\+P\+A\+CE}{E\_BONE\_SKINNING\_SPACE}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_a47bfc785c34c953f926c920cd13ba1fb}{irr\+::scene\+::\+E\+\_\+\+B\+O\+N\+E\+\_\+\+S\+K\+I\+N\+N\+I\+N\+G\+\_\+\+S\+P\+A\+CE}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+B\+S\+S\+\_\+\+L\+O\+C\+AL@{E\+B\+S\+S\+\_\+\+L\+O\+C\+AL}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+B\+S\+S\+\_\+\+L\+O\+C\+AL@{E\+B\+S\+S\+\_\+\+L\+O\+C\+AL}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a47bfc785c34c953f926c920cd13ba1fba024fe7bb628e922486989ca66e294811}\label{namespaceirr_1_1scene_a47bfc785c34c953f926c920cd13ba1fba024fe7bb628e922486989ca66e294811}} 
+E\+B\+S\+S\+\_\+\+L\+O\+C\+AL&local skinning, standard \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+B\+S\+S\+\_\+\+G\+L\+O\+B\+AL@{E\+B\+S\+S\+\_\+\+G\+L\+O\+B\+AL}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+B\+S\+S\+\_\+\+G\+L\+O\+B\+AL@{E\+B\+S\+S\+\_\+\+G\+L\+O\+B\+AL}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a47bfc785c34c953f926c920cd13ba1fbad73d241e222b6402d5e2064625d4823b}\label{namespaceirr_1_1scene_a47bfc785c34c953f926c920cd13ba1fbad73d241e222b6402d5e2064625d4823b}} 
+E\+B\+S\+S\+\_\+\+G\+L\+O\+B\+AL&global skinning \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}\label{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}} 
+\index{irr\+::scene@{irr\+::scene}!E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE@{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE}}
+\index{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE@{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE}{E\_BUFFER\_TYPE}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}{irr\+::scene\+::\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+B\+T\+\_\+\+N\+O\+NE@{E\+B\+T\+\_\+\+N\+O\+NE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+B\+T\+\_\+\+N\+O\+NE@{E\+B\+T\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8caee6d32ea2b56461fe8b0706c91b10d86}\label{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8caee6d32ea2b56461fe8b0706c91b10d86}} 
+E\+B\+T\+\_\+\+N\+O\+NE&Does not change anything. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+B\+T\+\_\+\+V\+E\+R\+T\+EX@{E\+B\+T\+\_\+\+V\+E\+R\+T\+EX}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+B\+T\+\_\+\+V\+E\+R\+T\+EX@{E\+B\+T\+\_\+\+V\+E\+R\+T\+EX}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8caee6af56d004d0171bdd3f94968be5c9d}\label{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8caee6af56d004d0171bdd3f94968be5c9d}} 
+E\+B\+T\+\_\+\+V\+E\+R\+T\+EX&Change the vertex mapping. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+B\+T\+\_\+\+I\+N\+D\+EX@{E\+B\+T\+\_\+\+I\+N\+D\+EX}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+B\+T\+\_\+\+I\+N\+D\+EX@{E\+B\+T\+\_\+\+I\+N\+D\+EX}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8cac94c9bb193455a5a064f2757eb797bac}\label{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8cac94c9bb193455a5a064f2757eb797bac}} 
+E\+B\+T\+\_\+\+I\+N\+D\+EX&Change the index mapping. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX@{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX@{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca833624730c30cffccc121fe31aa0832c}\label{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca833624730c30cffccc121fe31aa0832c}} 
+E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX&Change both vertex and index mapping to the same value. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_a179008e7c02889459edf81394dbd6959}\label{namespaceirr_1_1scene_a179008e7c02889459edf81394dbd6959}} 
+\index{irr\+::scene@{irr\+::scene}!E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+W\+R\+I\+T\+I\+NG@{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+W\+R\+I\+T\+I\+NG}}
+\index{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+W\+R\+I\+T\+I\+NG@{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+W\+R\+I\+T\+I\+NG}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+W\+R\+I\+T\+I\+NG}{E\_COLLADA\_GEOMETRY\_WRITING}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_a179008e7c02889459edf81394dbd6959}{irr\+::scene\+::\+E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+W\+R\+I\+T\+I\+NG}}
+
+
+
+Control when geometry elements are created. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+C\+G\+I\+\_\+\+P\+E\+R\+\_\+\+M\+E\+SH@{E\+C\+G\+I\+\_\+\+P\+E\+R\+\_\+\+M\+E\+SH}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+C\+G\+I\+\_\+\+P\+E\+R\+\_\+\+M\+E\+SH@{E\+C\+G\+I\+\_\+\+P\+E\+R\+\_\+\+M\+E\+SH}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a179008e7c02889459edf81394dbd6959a48f7ed09f68367a679cc8f6d4fd63906}\label{namespaceirr_1_1scene_a179008e7c02889459edf81394dbd6959a48f7ed09f68367a679cc8f6d4fd63906}} 
+E\+C\+G\+I\+\_\+\+P\+E\+R\+\_\+\+M\+E\+SH&Default -\/ write each mesh exactly once to collada. Optimal but will not work with many tools. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+C\+G\+I\+\_\+\+P\+E\+R\+\_\+\+M\+E\+S\+H\+\_\+\+A\+N\+D\+\_\+\+M\+A\+T\+E\+R\+I\+AL@{E\+C\+G\+I\+\_\+\+P\+E\+R\+\_\+\+M\+E\+S\+H\+\_\+\+A\+N\+D\+\_\+\+M\+A\+T\+E\+R\+I\+AL}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+C\+G\+I\+\_\+\+P\+E\+R\+\_\+\+M\+E\+S\+H\+\_\+\+A\+N\+D\+\_\+\+M\+A\+T\+E\+R\+I\+AL@{E\+C\+G\+I\+\_\+\+P\+E\+R\+\_\+\+M\+E\+S\+H\+\_\+\+A\+N\+D\+\_\+\+M\+A\+T\+E\+R\+I\+AL}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a179008e7c02889459edf81394dbd6959af2b6f3248808f3dbf81a7e707e508f65}\label{namespaceirr_1_1scene_a179008e7c02889459edf81394dbd6959af2b6f3248808f3dbf81a7e707e508f65}} 
+E\+C\+G\+I\+\_\+\+P\+E\+R\+\_\+\+M\+E\+S\+H\+\_\+\+A\+N\+D\+\_\+\+M\+A\+T\+E\+R\+I\+AL&Write each mesh as often as it\textquotesingle{}s used with different materials-\/names in the scene. Material names which are used here are created on export, so using the \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterNames}{I\+Collada\+Mesh\+Writer\+Names} interface you have some control over how many geometries are written. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7e}\label{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7e}} 
+\index{irr\+::scene@{irr\+::scene}!E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+I\+R\+R\+\_\+\+C\+O\+L\+OR@{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+I\+R\+R\+\_\+\+C\+O\+L\+OR}}
+\index{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+I\+R\+R\+\_\+\+C\+O\+L\+OR@{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+I\+R\+R\+\_\+\+C\+O\+L\+OR}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+I\+R\+R\+\_\+\+C\+O\+L\+OR}{E\_COLLADA\_IRR\_COLOR}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7e}{irr\+::scene\+::\+E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+I\+R\+R\+\_\+\+C\+O\+L\+OR}}
+
+
+
+Irrlicht colors which can be mapped to E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+S\+A\+M\+P\+L\+ER values. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+C\+I\+C\+\_\+\+N\+O\+NE@{E\+C\+I\+C\+\_\+\+N\+O\+NE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+C\+I\+C\+\_\+\+N\+O\+NE@{E\+C\+I\+C\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7ea46a948a882be4d21af671d4dff939a12}\label{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7ea46a948a882be4d21af671d4dff939a12}} 
+E\+C\+I\+C\+\_\+\+N\+O\+NE&Don\textquotesingle{}t write this element at all. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+C\+I\+C\+\_\+\+C\+U\+S\+T\+OM@{E\+C\+I\+C\+\_\+\+C\+U\+S\+T\+OM}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+C\+I\+C\+\_\+\+C\+U\+S\+T\+OM@{E\+C\+I\+C\+\_\+\+C\+U\+S\+T\+OM}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7eae1ff98b61069652418cc36e411de863c}\label{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7eae1ff98b61069652418cc36e411de863c}} 
+E\+C\+I\+C\+\_\+\+C\+U\+S\+T\+OM&Check \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties}{I\+Collada\+Mesh\+Writer\+Properties} for custom color. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+C\+I\+C\+\_\+\+D\+I\+F\+F\+U\+SE@{E\+C\+I\+C\+\_\+\+D\+I\+F\+F\+U\+SE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+C\+I\+C\+\_\+\+D\+I\+F\+F\+U\+SE@{E\+C\+I\+C\+\_\+\+D\+I\+F\+F\+U\+SE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7eac230a09c9fc579cc1776baea37731329}\label{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7eac230a09c9fc579cc1776baea37731329}} 
+E\+C\+I\+C\+\_\+\+D\+I\+F\+F\+U\+SE&Use S\+Material\+::\+Diffuse\+Color. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+C\+I\+C\+\_\+\+A\+M\+B\+I\+E\+NT@{E\+C\+I\+C\+\_\+\+A\+M\+B\+I\+E\+NT}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+C\+I\+C\+\_\+\+A\+M\+B\+I\+E\+NT@{E\+C\+I\+C\+\_\+\+A\+M\+B\+I\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7ea1508a71bf85cb6f1303df8ae240cde75}\label{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7ea1508a71bf85cb6f1303df8ae240cde75}} 
+E\+C\+I\+C\+\_\+\+A\+M\+B\+I\+E\+NT&Use S\+Material\+::\+Ambient\+Color. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+C\+I\+C\+\_\+\+E\+M\+I\+S\+S\+I\+VE@{E\+C\+I\+C\+\_\+\+E\+M\+I\+S\+S\+I\+VE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+C\+I\+C\+\_\+\+E\+M\+I\+S\+S\+I\+VE@{E\+C\+I\+C\+\_\+\+E\+M\+I\+S\+S\+I\+VE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7ea212908c2b2af576861553e4b441ac7f3}\label{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7ea212908c2b2af576861553e4b441ac7f3}} 
+E\+C\+I\+C\+\_\+\+E\+M\+I\+S\+S\+I\+VE&Use S\+Material\+::\+Emissive\+Color. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+C\+I\+C\+\_\+\+S\+P\+E\+C\+U\+L\+AR@{E\+C\+I\+C\+\_\+\+S\+P\+E\+C\+U\+L\+AR}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+C\+I\+C\+\_\+\+S\+P\+E\+C\+U\+L\+AR@{E\+C\+I\+C\+\_\+\+S\+P\+E\+C\+U\+L\+AR}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7eae62f9539794fa526128ea1eed9840b7d}\label{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7eae62f9539794fa526128ea1eed9840b7d}} 
+E\+C\+I\+C\+\_\+\+S\+P\+E\+C\+U\+L\+AR&Use S\+Material\+::\+Specular\+Color. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_a9ec31e84e05295892488296b0741e2b1}\label{namespaceirr_1_1scene_a9ec31e84e05295892488296b0741e2b1}} 
+\index{irr\+::scene@{irr\+::scene}!E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+T\+E\+C\+H\+N\+I\+Q\+U\+E\+\_\+\+FX@{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+T\+E\+C\+H\+N\+I\+Q\+U\+E\+\_\+\+FX}}
+\index{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+T\+E\+C\+H\+N\+I\+Q\+U\+E\+\_\+\+FX@{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+T\+E\+C\+H\+N\+I\+Q\+U\+E\+\_\+\+FX}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+T\+E\+C\+H\+N\+I\+Q\+U\+E\+\_\+\+FX}{E\_COLLADA\_TECHNIQUE\_FX}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_a9ec31e84e05295892488296b0741e2b1}{irr\+::scene\+::\+E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+T\+E\+C\+H\+N\+I\+Q\+U\+E\+\_\+\+FX}}
+
+
+
+Lighting models -\/ more or less the way Collada categorizes materials. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+C\+T\+F\+\_\+\+B\+L\+I\+NN@{E\+C\+T\+F\+\_\+\+B\+L\+I\+NN}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+C\+T\+F\+\_\+\+B\+L\+I\+NN@{E\+C\+T\+F\+\_\+\+B\+L\+I\+NN}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a9ec31e84e05295892488296b0741e2b1a69a2ffe63b7956eaedd3862f25d94d51}\label{namespaceirr_1_1scene_a9ec31e84e05295892488296b0741e2b1a69a2ffe63b7956eaedd3862f25d94d51}} 
+E\+C\+T\+F\+\_\+\+B\+L\+I\+NN&Blinn-\/phong which is default for opengl and dx fixed function pipelines. But several well-\/known renderers don\textquotesingle{}t support it and prefer phong. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+C\+T\+F\+\_\+\+P\+H\+O\+NG@{E\+C\+T\+F\+\_\+\+P\+H\+O\+NG}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+C\+T\+F\+\_\+\+P\+H\+O\+NG@{E\+C\+T\+F\+\_\+\+P\+H\+O\+NG}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a9ec31e84e05295892488296b0741e2b1a48c8725416499c9909726e14f18c3fce}\label{namespaceirr_1_1scene_a9ec31e84e05295892488296b0741e2b1a48c8725416499c9909726e14f18c3fce}} 
+E\+C\+T\+F\+\_\+\+P\+H\+O\+NG&Phong shading, default in many external renderers. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+C\+T\+F\+\_\+\+L\+A\+M\+B\+E\+RT@{E\+C\+T\+F\+\_\+\+L\+A\+M\+B\+E\+RT}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+C\+T\+F\+\_\+\+L\+A\+M\+B\+E\+RT@{E\+C\+T\+F\+\_\+\+L\+A\+M\+B\+E\+RT}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a9ec31e84e05295892488296b0741e2b1aef79736ffe4a0d7653644c7082061726}\label{namespaceirr_1_1scene_a9ec31e84e05295892488296b0741e2b1aef79736ffe4a0d7653644c7082061726}} 
+E\+C\+T\+F\+\_\+\+L\+A\+M\+B\+E\+RT&diffuse shaded surface that is independent of lighting. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_af7dadd5b96b683cfe1800f343c4f6619}\label{namespaceirr_1_1scene_af7dadd5b96b683cfe1800f343c4f6619}} 
+\index{irr\+::scene@{irr\+::scene}!E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+FX@{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+FX}}
+\index{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+FX@{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+FX}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+FX}{E\_COLLADA\_TRANSPARENT\_FX}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_af7dadd5b96b683cfe1800f343c4f6619}{irr\+::scene\+::\+E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+FX}}
+
+
+
+How to interpret the opacity in collada. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+C\+O\+F\+\_\+\+A\+\_\+\+O\+NE@{E\+C\+O\+F\+\_\+\+A\+\_\+\+O\+NE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+C\+O\+F\+\_\+\+A\+\_\+\+O\+NE@{E\+C\+O\+F\+\_\+\+A\+\_\+\+O\+NE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_af7dadd5b96b683cfe1800f343c4f6619a93b8dbd819a9860581193a60ed6155c6}\label{namespaceirr_1_1scene_af7dadd5b96b683cfe1800f343c4f6619a93b8dbd819a9860581193a60ed6155c6}} 
+E\+C\+O\+F\+\_\+\+A\+\_\+\+O\+NE&default -\/ only alpha channel of color or texture is used. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+C\+O\+F\+\_\+\+R\+G\+B\+\_\+\+Z\+E\+RO@{E\+C\+O\+F\+\_\+\+R\+G\+B\+\_\+\+Z\+E\+RO}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+C\+O\+F\+\_\+\+R\+G\+B\+\_\+\+Z\+E\+RO@{E\+C\+O\+F\+\_\+\+R\+G\+B\+\_\+\+Z\+E\+RO}}}\mbox{\Hypertarget{namespaceirr_1_1scene_af7dadd5b96b683cfe1800f343c4f6619aeeb0b34217f227d32be4876aeeaaf70f}\label{namespaceirr_1_1scene_af7dadd5b96b683cfe1800f343c4f6619aeeb0b34217f227d32be4876aeeaaf70f}} 
+E\+C\+O\+F\+\_\+\+R\+G\+B\+\_\+\+Z\+E\+RO&Alpha values for each R\+GB channel of color or texture are used. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbe}\label{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbe}} 
+\index{irr\+::scene@{irr\+::scene}!E\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+C\+E\+N\+E\+\_\+\+T\+Y\+PE@{E\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+C\+E\+N\+E\+\_\+\+T\+Y\+PE}}
+\index{E\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+C\+E\+N\+E\+\_\+\+T\+Y\+PE@{E\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+C\+E\+N\+E\+\_\+\+T\+Y\+PE}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+C\+E\+N\+E\+\_\+\+T\+Y\+PE}{E\_DEBUG\_SCENE\_TYPE}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbe}{irr\+::scene\+::\+E\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+C\+E\+N\+E\+\_\+\+T\+Y\+PE}}
+
+
+
+An enumeration for all types of debug data for built-\/in scene nodes (flags) 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+D\+S\+\_\+\+O\+FF@{E\+D\+S\+\_\+\+O\+FF}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+D\+S\+\_\+\+O\+FF@{E\+D\+S\+\_\+\+O\+FF}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea25111b15f03bee9a99498737286916dc}\label{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea25111b15f03bee9a99498737286916dc}} 
+E\+D\+S\+\_\+\+O\+FF&No Debug Data ( Default ) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+D\+S\+\_\+\+B\+B\+OX@{E\+D\+S\+\_\+\+B\+B\+OX}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+D\+S\+\_\+\+B\+B\+OX@{E\+D\+S\+\_\+\+B\+B\+OX}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea19e56bb3d3b18134fa63e0529629b427}\label{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea19e56bb3d3b18134fa63e0529629b427}} 
+E\+D\+S\+\_\+\+B\+B\+OX&Show Bounding Boxes of Scene\+Node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+D\+S\+\_\+\+N\+O\+R\+M\+A\+LS@{E\+D\+S\+\_\+\+N\+O\+R\+M\+A\+LS}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+D\+S\+\_\+\+N\+O\+R\+M\+A\+LS@{E\+D\+S\+\_\+\+N\+O\+R\+M\+A\+LS}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea2713e470ee18ec9bfe40fdfb502f8b05}\label{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea2713e470ee18ec9bfe40fdfb502f8b05}} 
+E\+D\+S\+\_\+\+N\+O\+R\+M\+A\+LS&Show Vertex Normals. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+D\+S\+\_\+\+S\+K\+E\+L\+E\+T\+ON@{E\+D\+S\+\_\+\+S\+K\+E\+L\+E\+T\+ON}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+D\+S\+\_\+\+S\+K\+E\+L\+E\+T\+ON@{E\+D\+S\+\_\+\+S\+K\+E\+L\+E\+T\+ON}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbeaa7664e189b8641ac54cf27f70f6d8144}\label{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbeaa7664e189b8641ac54cf27f70f6d8144}} 
+E\+D\+S\+\_\+\+S\+K\+E\+L\+E\+T\+ON&Shows Skeleton/\+Tags. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+D\+S\+\_\+\+M\+E\+S\+H\+\_\+\+W\+I\+R\+E\+\_\+\+O\+V\+E\+R\+L\+AY@{E\+D\+S\+\_\+\+M\+E\+S\+H\+\_\+\+W\+I\+R\+E\+\_\+\+O\+V\+E\+R\+L\+AY}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+D\+S\+\_\+\+M\+E\+S\+H\+\_\+\+W\+I\+R\+E\+\_\+\+O\+V\+E\+R\+L\+AY@{E\+D\+S\+\_\+\+M\+E\+S\+H\+\_\+\+W\+I\+R\+E\+\_\+\+O\+V\+E\+R\+L\+AY}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea349b086537ac770f09935af4e31d3f3e}\label{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea349b086537ac770f09935af4e31d3f3e}} 
+E\+D\+S\+\_\+\+M\+E\+S\+H\+\_\+\+W\+I\+R\+E\+\_\+\+O\+V\+E\+R\+L\+AY&Overlays Mesh Wireframe. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+D\+S\+\_\+\+H\+A\+L\+F\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+CY@{E\+D\+S\+\_\+\+H\+A\+L\+F\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+CY}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+D\+S\+\_\+\+H\+A\+L\+F\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+CY@{E\+D\+S\+\_\+\+H\+A\+L\+F\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+CY}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea1def9e1b7d86e286b07a4b7179e6ed85}\label{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea1def9e1b7d86e286b07a4b7179e6ed85}} 
+E\+D\+S\+\_\+\+H\+A\+L\+F\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+CY&Temporary use transparency Material Type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+D\+S\+\_\+\+B\+B\+O\+X\+\_\+\+B\+U\+F\+F\+E\+RS@{E\+D\+S\+\_\+\+B\+B\+O\+X\+\_\+\+B\+U\+F\+F\+E\+RS}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+D\+S\+\_\+\+B\+B\+O\+X\+\_\+\+B\+U\+F\+F\+E\+RS@{E\+D\+S\+\_\+\+B\+B\+O\+X\+\_\+\+B\+U\+F\+F\+E\+RS}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea0179a3df80ac09143dfffed0bd9e99d1}\label{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea0179a3df80ac09143dfffed0bd9e99d1}} 
+E\+D\+S\+\_\+\+B\+B\+O\+X\+\_\+\+B\+U\+F\+F\+E\+RS&Show Bounding Boxes of all Mesh\+Buffers. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+D\+S\+\_\+\+B\+B\+O\+X\+\_\+\+A\+LL@{E\+D\+S\+\_\+\+B\+B\+O\+X\+\_\+\+A\+LL}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+D\+S\+\_\+\+B\+B\+O\+X\+\_\+\+A\+LL@{E\+D\+S\+\_\+\+B\+B\+O\+X\+\_\+\+A\+LL}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea80f38e42f1b8cf169e83f44092367bfe}\label{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea80f38e42f1b8cf169e83f44092367bfe}} 
+E\+D\+S\+\_\+\+B\+B\+O\+X\+\_\+\+A\+LL&E\+D\+S\+\_\+\+B\+B\+OX $\vert$ E\+D\+S\+\_\+\+B\+B\+O\+X\+\_\+\+B\+U\+F\+F\+E\+RS. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+D\+S\+\_\+\+F\+U\+LL@{E\+D\+S\+\_\+\+F\+U\+LL}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+D\+S\+\_\+\+F\+U\+LL@{E\+D\+S\+\_\+\+F\+U\+LL}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea24ffe5e6e99d589b3c80181e7c7dd4e2}\label{namespaceirr_1_1scene_a52b664c4c988113735042b168fc32dbea24ffe5e6e99d589b3c80181e7c7dd4e2}} 
+E\+D\+S\+\_\+\+F\+U\+LL&Show all debug infos. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27}\label{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27}} 
+\index{irr\+::scene@{irr\+::scene}!E\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+P\+P\+I\+NG@{E\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+P\+P\+I\+NG}}
+\index{E\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+P\+P\+I\+NG@{E\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+P\+P\+I\+NG}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+P\+P\+I\+NG}{E\_HARDWARE\_MAPPING}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27}{irr\+::scene\+::\+E\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+P\+P\+I\+NG}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+H\+M\+\_\+\+N\+E\+V\+ER@{E\+H\+M\+\_\+\+N\+E\+V\+ER}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+H\+M\+\_\+\+N\+E\+V\+ER@{E\+H\+M\+\_\+\+N\+E\+V\+ER}}}\mbox{\Hypertarget{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27a6eaae9a4147dfc68ce11fa12b9ce3c0d}\label{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27a6eaae9a4147dfc68ce11fa12b9ce3c0d}} 
+E\+H\+M\+\_\+\+N\+E\+V\+ER&Don\textquotesingle{}t store on the hardware. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+H\+M\+\_\+\+S\+T\+A\+T\+IC@{E\+H\+M\+\_\+\+S\+T\+A\+T\+IC}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+H\+M\+\_\+\+S\+T\+A\+T\+IC@{E\+H\+M\+\_\+\+S\+T\+A\+T\+IC}}}\mbox{\Hypertarget{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27a52a4dd2fb6fe682da24de33bb59a7cf6}\label{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27a52a4dd2fb6fe682da24de33bb59a7cf6}} 
+E\+H\+M\+\_\+\+S\+T\+A\+T\+IC&Rarely changed, usually stored completely on the hardware. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+H\+M\+\_\+\+D\+Y\+N\+A\+M\+IC@{E\+H\+M\+\_\+\+D\+Y\+N\+A\+M\+IC}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+H\+M\+\_\+\+D\+Y\+N\+A\+M\+IC@{E\+H\+M\+\_\+\+D\+Y\+N\+A\+M\+IC}}}\mbox{\Hypertarget{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27a9217fb955cf965a1fd48db5e492921fe}\label{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27a9217fb955cf965a1fd48db5e492921fe}} 
+E\+H\+M\+\_\+\+D\+Y\+N\+A\+M\+IC&Sometimes changed, driver optimized placement. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+H\+M\+\_\+\+S\+T\+R\+E\+AM@{E\+H\+M\+\_\+\+S\+T\+R\+E\+AM}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+H\+M\+\_\+\+S\+T\+R\+E\+AM@{E\+H\+M\+\_\+\+S\+T\+R\+E\+AM}}}\mbox{\Hypertarget{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27a7a85a790b8f5fa3432a96f39f5a31e36}\label{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27a7a85a790b8f5fa3432a96f39f5a31e36}} 
+E\+H\+M\+\_\+\+S\+T\+R\+E\+AM&Always changed, cache optimizing on the G\+PU. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_a26f30865cf5527e7255a8495e280314c}\label{namespaceirr_1_1scene_a26f30865cf5527e7255a8495e280314c}} 
+\index{irr\+::scene@{irr\+::scene}!E\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE@{E\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE}}
+\index{E\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE@{E\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE}{E\_INTERPOLATION\_MODE}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_a26f30865cf5527e7255a8495e280314c}{irr\+::scene\+::\+E\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+M\+\_\+\+C\+O\+U\+NT@{E\+I\+M\+\_\+\+C\+O\+U\+NT}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+I\+M\+\_\+\+C\+O\+U\+NT@{E\+I\+M\+\_\+\+C\+O\+U\+NT}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a26f30865cf5527e7255a8495e280314ca7c2057a6943b57b8adb3358b3b33bbdf}\label{namespaceirr_1_1scene_a26f30865cf5527e7255a8495e280314ca7c2057a6943b57b8adb3358b3b33bbdf}} 
+E\+I\+M\+\_\+\+C\+O\+U\+NT&count of all available interpolation modes \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_a4a36461b5fa197ca3c6636c043413fa5}\label{namespaceirr_1_1scene_a4a36461b5fa197ca3c6636c043413fa5}} 
+\index{irr\+::scene@{irr\+::scene}!E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+O\+N\+\_\+\+R\+E\+N\+D\+ER@{E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+O\+N\+\_\+\+R\+E\+N\+D\+ER}}
+\index{E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+O\+N\+\_\+\+R\+E\+N\+D\+ER@{E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+O\+N\+\_\+\+R\+E\+N\+D\+ER}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+O\+N\+\_\+\+R\+E\+N\+D\+ER}{E\_JOINT\_UPDATE\_ON\_RENDER}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_a4a36461b5fa197ca3c6636c043413fa5}{irr\+::scene\+::\+E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+O\+N\+\_\+\+R\+E\+N\+D\+ER}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+J\+U\+O\+R\+\_\+\+N\+O\+NE@{E\+J\+U\+O\+R\+\_\+\+N\+O\+NE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+J\+U\+O\+R\+\_\+\+N\+O\+NE@{E\+J\+U\+O\+R\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a4a36461b5fa197ca3c6636c043413fa5a0f5945f06c8d8399203f155b797ce4a9}\label{namespaceirr_1_1scene_a4a36461b5fa197ca3c6636c043413fa5a0f5945f06c8d8399203f155b797ce4a9}} 
+E\+J\+U\+O\+R\+\_\+\+N\+O\+NE&do nothing \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+J\+U\+O\+R\+\_\+\+R\+E\+AD@{E\+J\+U\+O\+R\+\_\+\+R\+E\+AD}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+J\+U\+O\+R\+\_\+\+R\+E\+AD@{E\+J\+U\+O\+R\+\_\+\+R\+E\+AD}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a4a36461b5fa197ca3c6636c043413fa5a86ddaa95ce432966c492ecce52e98187}\label{namespaceirr_1_1scene_a4a36461b5fa197ca3c6636c043413fa5a86ddaa95ce432966c492ecce52e98187}} 
+E\+J\+U\+O\+R\+\_\+\+R\+E\+AD&get joints positions from the mesh (for attached nodes, etc) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+J\+U\+O\+R\+\_\+\+C\+O\+N\+T\+R\+OL@{E\+J\+U\+O\+R\+\_\+\+C\+O\+N\+T\+R\+OL}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+J\+U\+O\+R\+\_\+\+C\+O\+N\+T\+R\+OL@{E\+J\+U\+O\+R\+\_\+\+C\+O\+N\+T\+R\+OL}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a4a36461b5fa197ca3c6636c043413fa5aaebc2a3dd56293692e21792ed59bbc0f}\label{namespaceirr_1_1scene_a4a36461b5fa197ca3c6636c043413fa5aaebc2a3dd56293692e21792ed59bbc0f}} 
+E\+J\+U\+O\+R\+\_\+\+C\+O\+N\+T\+R\+OL&control joint positions in the mesh (eg. ragdolls, or set the animation from animate\+Joints() ) \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1d}\label{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1d}} 
+\index{irr\+::scene@{irr\+::scene}!E\+\_\+\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+F\+L\+A\+GS@{E\+\_\+\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+F\+L\+A\+GS}}
+\index{E\+\_\+\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+F\+L\+A\+GS@{E\+\_\+\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+F\+L\+A\+GS}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+\_\+\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+F\+L\+A\+GS}{E\_MESH\_WRITER\_FLAGS}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1d}{irr\+::scene\+::\+E\+\_\+\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+F\+L\+A\+GS}}
+
+
+
+flags configuring mesh writing 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+W\+F\+\_\+\+N\+O\+NE@{E\+M\+W\+F\+\_\+\+N\+O\+NE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+M\+W\+F\+\_\+\+N\+O\+NE@{E\+M\+W\+F\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1daf2dfebddfd0a2cd2b558e23cb6a87464}\label{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1daf2dfebddfd0a2cd2b558e23cb6a87464}} 
+E\+M\+W\+F\+\_\+\+N\+O\+NE&no writer flags \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+W\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+L\+I\+G\+H\+T\+M\+A\+PS@{E\+M\+W\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+L\+I\+G\+H\+T\+M\+A\+PS}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+M\+W\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+L\+I\+G\+H\+T\+M\+A\+PS@{E\+M\+W\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+L\+I\+G\+H\+T\+M\+A\+PS}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1daee23ec8ad339e67c03c424d5adb94a66}\label{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1daee23ec8ad339e67c03c424d5adb94a66}} 
+E\+M\+W\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+L\+I\+G\+H\+T\+M\+A\+PS&write lightmap textures out if possible \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+W\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+ED@{E\+M\+W\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+ED}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+M\+W\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+ED@{E\+M\+W\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+ED}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1dac7c70ee80dc1a33aac68d317cb9c2cb7}\label{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1dac7c70ee80dc1a33aac68d317cb9c2cb7}} 
+E\+M\+W\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+ED&write in a way that consumes less disk space \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+W\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+I\+N\+A\+RY@{E\+M\+W\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+I\+N\+A\+RY}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+M\+W\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+I\+N\+A\+RY@{E\+M\+W\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+I\+N\+A\+RY}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1da06511a5df874b2b69a146e0bbcb70309}\label{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1da06511a5df874b2b69a146e0bbcb70309}} 
+E\+M\+W\+F\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+I\+N\+A\+RY&write in binary format rather than text \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dc}\label{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dc}} 
+\index{irr\+::scene@{irr\+::scene}!E\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+Y\+PE@{E\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+Y\+PE}}
+\index{E\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+Y\+PE@{E\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+Y\+PE}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+Y\+PE}{E\_PRIMITIVE\_TYPE}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dc}{irr\+::scene\+::\+E\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+Y\+PE}}
+
+
+
+Enumeration for all primitive types there are. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+P\+T\+\_\+\+P\+O\+I\+N\+TS@{E\+P\+T\+\_\+\+P\+O\+I\+N\+TS}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+P\+T\+\_\+\+P\+O\+I\+N\+TS@{E\+P\+T\+\_\+\+P\+O\+I\+N\+TS}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca180689eadf794441c2c2dcd87462e203}\label{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca180689eadf794441c2c2dcd87462e203}} 
+E\+P\+T\+\_\+\+P\+O\+I\+N\+TS&All vertices are non-\/connected points. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+P\+T\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+IP@{E\+P\+T\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+IP}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+P\+T\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+IP@{E\+P\+T\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+IP}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca5e391340a0edd5f94b7e2a977637215c}\label{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca5e391340a0edd5f94b7e2a977637215c}} 
+E\+P\+T\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+R\+IP&All vertices form a single connected line. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+P\+T\+\_\+\+L\+I\+N\+E\+\_\+\+L\+O\+OP@{E\+P\+T\+\_\+\+L\+I\+N\+E\+\_\+\+L\+O\+OP}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+P\+T\+\_\+\+L\+I\+N\+E\+\_\+\+L\+O\+OP@{E\+P\+T\+\_\+\+L\+I\+N\+E\+\_\+\+L\+O\+OP}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dcaf54da57a43051cfc6e95185b38e86625}\label{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dcaf54da57a43051cfc6e95185b38e86625}} 
+E\+P\+T\+\_\+\+L\+I\+N\+E\+\_\+\+L\+O\+OP&Just as L\+I\+N\+E\+\_\+\+S\+T\+R\+IP, but the last and the first vertex is also connected. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+P\+T\+\_\+\+L\+I\+N\+ES@{E\+P\+T\+\_\+\+L\+I\+N\+ES}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+P\+T\+\_\+\+L\+I\+N\+ES@{E\+P\+T\+\_\+\+L\+I\+N\+ES}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca1227c9648d4d9d7449ca1f959740b92b}\label{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca1227c9648d4d9d7449ca1f959740b92b}} 
+E\+P\+T\+\_\+\+L\+I\+N\+ES&Every two vertices are connected creating n/2 lines. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+P\+T\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+S\+T\+R\+IP@{E\+P\+T\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+S\+T\+R\+IP}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+P\+T\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+S\+T\+R\+IP@{E\+P\+T\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+S\+T\+R\+IP}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dcaef19e8b586de395af81c8cd9851a1b40}\label{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dcaef19e8b586de395af81c8cd9851a1b40}} 
+E\+P\+T\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+S\+T\+R\+IP&After the first two vertices each vertex defines a new triangle. Always the two last and the new one form a new triangle. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+P\+T\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+F\+AN@{E\+P\+T\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+F\+AN}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+P\+T\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+F\+AN@{E\+P\+T\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+F\+AN}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca7646edca10a2b18da4c0fd49cc8f11e4}\label{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca7646edca10a2b18da4c0fd49cc8f11e4}} 
+E\+P\+T\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+F\+AN&After the first two vertices each vertex defines a new triangle. All around the common first vertex. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+P\+T\+\_\+\+T\+R\+I\+A\+N\+G\+L\+ES@{E\+P\+T\+\_\+\+T\+R\+I\+A\+N\+G\+L\+ES}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+P\+T\+\_\+\+T\+R\+I\+A\+N\+G\+L\+ES@{E\+P\+T\+\_\+\+T\+R\+I\+A\+N\+G\+L\+ES}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca237fc76e4b259febd27b4b84066ca581}\label{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca237fc76e4b259febd27b4b84066ca581}} 
+E\+P\+T\+\_\+\+T\+R\+I\+A\+N\+G\+L\+ES&Explicitly set all vertices for each triangle. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+P\+T\+\_\+\+Q\+U\+A\+D\+\_\+\+S\+T\+R\+IP@{E\+P\+T\+\_\+\+Q\+U\+A\+D\+\_\+\+S\+T\+R\+IP}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+P\+T\+\_\+\+Q\+U\+A\+D\+\_\+\+S\+T\+R\+IP@{E\+P\+T\+\_\+\+Q\+U\+A\+D\+\_\+\+S\+T\+R\+IP}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca534dcefd6a3db8c0d30e9af6e14b7800}\label{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca534dcefd6a3db8c0d30e9af6e14b7800}} 
+E\+P\+T\+\_\+\+Q\+U\+A\+D\+\_\+\+S\+T\+R\+IP&After the first two vertices each further tw vetices create a quad with the preceding two. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+P\+T\+\_\+\+Q\+U\+A\+DS@{E\+P\+T\+\_\+\+Q\+U\+A\+DS}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+P\+T\+\_\+\+Q\+U\+A\+DS@{E\+P\+T\+\_\+\+Q\+U\+A\+DS}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca727ed6957405bfa168dbdb910f0eb0da}\label{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dca727ed6957405bfa168dbdb910f0eb0da}} 
+E\+P\+T\+\_\+\+Q\+U\+A\+DS&Every four vertices create a quad. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+P\+T\+\_\+\+P\+O\+L\+Y\+G\+ON@{E\+P\+T\+\_\+\+P\+O\+L\+Y\+G\+ON}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+P\+T\+\_\+\+P\+O\+L\+Y\+G\+ON@{E\+P\+T\+\_\+\+P\+O\+L\+Y\+G\+ON}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dcac8a1de1f2ebd41892e66f833e42bb260}\label{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dcac8a1de1f2ebd41892e66f833e42bb260}} 
+E\+P\+T\+\_\+\+P\+O\+L\+Y\+G\+ON&Just as L\+I\+N\+E\+\_\+\+L\+O\+OP, but filled. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+P\+T\+\_\+\+P\+O\+I\+N\+T\+\_\+\+S\+P\+R\+I\+T\+ES@{E\+P\+T\+\_\+\+P\+O\+I\+N\+T\+\_\+\+S\+P\+R\+I\+T\+ES}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+P\+T\+\_\+\+P\+O\+I\+N\+T\+\_\+\+S\+P\+R\+I\+T\+ES@{E\+P\+T\+\_\+\+P\+O\+I\+N\+T\+\_\+\+S\+P\+R\+I\+T\+ES}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dcaf2708b13ed29bcc856624e9222755ef7}\label{namespaceirr_1_1scene_a5d7de82f2169761194b2f44d95cdc1dcaf2708b13ed29bcc856624e9222755ef7}} 
+E\+P\+T\+\_\+\+P\+O\+I\+N\+T\+\_\+\+S\+P\+R\+I\+T\+ES&The single vertices are expanded to quad billboards on the G\+PU. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67f}\label{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67f}} 
+\index{irr\+::scene@{irr\+::scene}!E\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+R\+E\+N\+D\+E\+R\+\_\+\+P\+A\+SS@{E\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+R\+E\+N\+D\+E\+R\+\_\+\+P\+A\+SS}}
+\index{E\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+R\+E\+N\+D\+E\+R\+\_\+\+P\+A\+SS@{E\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+R\+E\+N\+D\+E\+R\+\_\+\+P\+A\+SS}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+R\+E\+N\+D\+E\+R\+\_\+\+P\+A\+SS}{E\_SCENE\_NODE\_RENDER\_PASS}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67f}{irr\+::scene\+::\+E\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+R\+E\+N\+D\+E\+R\+\_\+\+P\+A\+SS}}
+
+
+
+Enumeration for render passes. 
+
+A parameter passed to the register\+Node\+For\+Rendering() method of the \hyperlink{classirr_1_1scene_1_1ISceneManager}{I\+Scene\+Manager}, specifying when the node wants to be drawn in relation to the other nodes. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+R\+P\+\_\+\+N\+O\+NE@{E\+S\+N\+R\+P\+\_\+\+N\+O\+NE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+R\+P\+\_\+\+N\+O\+NE@{E\+S\+N\+R\+P\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fa1f79a46e7a41716dcae5c8dfe8d310bb}\label{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fa1f79a46e7a41716dcae5c8dfe8d310bb}} 
+E\+S\+N\+R\+P\+\_\+\+N\+O\+NE&No pass currently active. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+R\+P\+\_\+\+C\+A\+M\+E\+RA@{E\+S\+N\+R\+P\+\_\+\+C\+A\+M\+E\+RA}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+R\+P\+\_\+\+C\+A\+M\+E\+RA@{E\+S\+N\+R\+P\+\_\+\+C\+A\+M\+E\+RA}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fa26f6af7911240e22003f327aef126053}\label{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fa26f6af7911240e22003f327aef126053}} 
+E\+S\+N\+R\+P\+\_\+\+C\+A\+M\+E\+RA&\hyperlink{classCamera}{Camera} pass. The active view is set up here. The very first pass. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+R\+P\+\_\+\+L\+I\+G\+HT@{E\+S\+N\+R\+P\+\_\+\+L\+I\+G\+HT}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+R\+P\+\_\+\+L\+I\+G\+HT@{E\+S\+N\+R\+P\+\_\+\+L\+I\+G\+HT}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fa1390daf021e4354eb3dc8d5d46fb7dc0}\label{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fa1390daf021e4354eb3dc8d5d46fb7dc0}} 
+E\+S\+N\+R\+P\+\_\+\+L\+I\+G\+HT&In this pass, lights are transformed into camera space and added to the driver. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+R\+P\+\_\+\+S\+K\+Y\+\_\+\+B\+OX@{E\+S\+N\+R\+P\+\_\+\+S\+K\+Y\+\_\+\+B\+OX}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+R\+P\+\_\+\+S\+K\+Y\+\_\+\+B\+OX@{E\+S\+N\+R\+P\+\_\+\+S\+K\+Y\+\_\+\+B\+OX}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fac41f4cb4900e84b9e55462089d0e3cb8}\label{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fac41f4cb4900e84b9e55462089d0e3cb8}} 
+E\+S\+N\+R\+P\+\_\+\+S\+K\+Y\+\_\+\+B\+OX&This is used for sky boxes. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+R\+P\+\_\+\+A\+U\+T\+O\+M\+A\+T\+IC@{E\+S\+N\+R\+P\+\_\+\+A\+U\+T\+O\+M\+A\+T\+IC}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+R\+P\+\_\+\+A\+U\+T\+O\+M\+A\+T\+IC@{E\+S\+N\+R\+P\+\_\+\+A\+U\+T\+O\+M\+A\+T\+IC}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fa5ceee6e4bc2fab42c663b32018e276e8}\label{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fa5ceee6e4bc2fab42c663b32018e276e8}} 
+E\+S\+N\+R\+P\+\_\+\+A\+U\+T\+O\+M\+A\+T\+IC&All normal objects can use this for registering themselves. This value will never be returned by \hyperlink{classirr_1_1scene_1_1ISceneManager_a2b8f844a1367d80648bc055a5639807b}{I\+Scene\+Manager\+::get\+Scene\+Node\+Render\+Pass()}. The scene manager will determine by itself if an object is transparent or solid and register the object as S\+N\+R\+T\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT or S\+N\+R\+T\+\_\+\+S\+O\+LD automatically if you call register\+Node\+For\+Rendering with this value (which is default). Note that it will register the node only as O\+NE type. If your scene node has both solid and transparent material types register it twice (one time as S\+N\+R\+T\+\_\+\+S\+O\+L\+ID, the other time as S\+N\+R\+T\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT) and in the render() method call get\+Scene\+Node\+Render\+Pass() to find out the current render pass and render only the corresponding parts of the node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+R\+P\+\_\+\+S\+O\+L\+ID@{E\+S\+N\+R\+P\+\_\+\+S\+O\+L\+ID}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+R\+P\+\_\+\+S\+O\+L\+ID@{E\+S\+N\+R\+P\+\_\+\+S\+O\+L\+ID}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fad058b020ab42ad745cc03fe379148e1f}\label{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fad058b020ab42ad745cc03fe379148e1f}} 
+E\+S\+N\+R\+P\+\_\+\+S\+O\+L\+ID&Solid scene nodes or special scene nodes without materials. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+R\+P\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT@{E\+S\+N\+R\+P\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+R\+P\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT@{E\+S\+N\+R\+P\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fad3a1300505d0ab06133e25256b893b2b}\label{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fad3a1300505d0ab06133e25256b893b2b}} 
+E\+S\+N\+R\+P\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT&Transparent scene nodes, drawn after solid nodes. They are sorted from back to front and drawn in that order. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+R\+P\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+E\+F\+F\+E\+CT@{E\+S\+N\+R\+P\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+E\+F\+F\+E\+CT}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+R\+P\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+E\+F\+F\+E\+CT@{E\+S\+N\+R\+P\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+E\+F\+F\+E\+CT}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fa3d134d3f703e328ab5798e5ff4a5c186}\label{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fa3d134d3f703e328ab5798e5ff4a5c186}} 
+E\+S\+N\+R\+P\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+E\+F\+F\+E\+CT&Transparent effect scene nodes, drawn after Transparent nodes. They are sorted from back to front and drawn in that order. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+R\+P\+\_\+\+S\+H\+A\+D\+OW@{E\+S\+N\+R\+P\+\_\+\+S\+H\+A\+D\+OW}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+R\+P\+\_\+\+S\+H\+A\+D\+OW@{E\+S\+N\+R\+P\+\_\+\+S\+H\+A\+D\+OW}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fadbc7353e3092974abaa4d063faa22421}\label{namespaceirr_1_1scene_a7862269bd1abc123929d4dbb8200d67fadbc7353e3092974abaa4d063faa22421}} 
+E\+S\+N\+R\+P\+\_\+\+S\+H\+A\+D\+OW&Drawn after the solid nodes, before the transparent nodes, the time for drawing shadow volumes. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044}\label{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044}} 
+\index{irr\+::scene@{irr\+::scene}!E\+\_\+\+T\+E\+R\+R\+A\+I\+N\+\_\+\+P\+A\+T\+C\+H\+\_\+\+S\+I\+ZE@{E\+\_\+\+T\+E\+R\+R\+A\+I\+N\+\_\+\+P\+A\+T\+C\+H\+\_\+\+S\+I\+ZE}}
+\index{E\+\_\+\+T\+E\+R\+R\+A\+I\+N\+\_\+\+P\+A\+T\+C\+H\+\_\+\+S\+I\+ZE@{E\+\_\+\+T\+E\+R\+R\+A\+I\+N\+\_\+\+P\+A\+T\+C\+H\+\_\+\+S\+I\+ZE}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+\_\+\+T\+E\+R\+R\+A\+I\+N\+\_\+\+P\+A\+T\+C\+H\+\_\+\+S\+I\+ZE}{E\_TERRAIN\_PATCH\_SIZE}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044}{irr\+::scene\+::\+E\+\_\+\+T\+E\+R\+R\+A\+I\+N\+\_\+\+P\+A\+T\+C\+H\+\_\+\+S\+I\+ZE}}
+
+
+
+enumeration for patch sizes specifying the size of patches in the Terrain\+Scene\+Node 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+T\+P\+S\+\_\+9@{E\+T\+P\+S\+\_\+9}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+T\+P\+S\+\_\+9@{E\+T\+P\+S\+\_\+9}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044a94031c5146d368e0f634487093b5ae16}\label{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044a94031c5146d368e0f634487093b5ae16}} 
+E\+T\+P\+S\+\_\+9&patch size of 9, at most, use 4 levels of detail with this patch size. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+T\+P\+S\+\_\+17@{E\+T\+P\+S\+\_\+17}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+T\+P\+S\+\_\+17@{E\+T\+P\+S\+\_\+17}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044abe94d6195f435b8e08a38269e63af72e}\label{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044abe94d6195f435b8e08a38269e63af72e}} 
+E\+T\+P\+S\+\_\+17&patch size of 17, at most, use 5 levels of detail with this patch size. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+T\+P\+S\+\_\+33@{E\+T\+P\+S\+\_\+33}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+T\+P\+S\+\_\+33@{E\+T\+P\+S\+\_\+33}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044adcad925a0a6f39b889909450a4b5b35c}\label{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044adcad925a0a6f39b889909450a4b5b35c}} 
+E\+T\+P\+S\+\_\+33&patch size of 33, at most, use 6 levels of detail with this patch size. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+T\+P\+S\+\_\+65@{E\+T\+P\+S\+\_\+65}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+T\+P\+S\+\_\+65@{E\+T\+P\+S\+\_\+65}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044aedfd2b84fad4913885601a09ab3b7f91}\label{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044aedfd2b84fad4913885601a09ab3b7f91}} 
+E\+T\+P\+S\+\_\+65&patch size of 65, at most, use 7 levels of detail with this patch size. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+T\+P\+S\+\_\+129@{E\+T\+P\+S\+\_\+129}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+T\+P\+S\+\_\+129@{E\+T\+P\+S\+\_\+129}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044af34ae7ee14ebe5bdd1e939afd3f17427}\label{namespaceirr_1_1scene_a6de1eb2d024f82b5b1af499d61523044af34ae7ee14ebe5bdd1e939afd3f17427}} 
+E\+T\+P\+S\+\_\+129&patch size of 129, at most, use 8 levels of detail with this patch size. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_a08d4a84966e1d2886d0d57e4acbb4f19}\label{namespaceirr_1_1scene_a08d4a84966e1d2886d0d57e4acbb4f19}} 
+\index{irr\+::scene@{irr\+::scene}!E\+M\+D2\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE@{E\+M\+D2\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}}
+\index{E\+M\+D2\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE@{E\+M\+D2\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+M\+D2\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}{EMD2\_ANIMATION\_TYPE}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_a08d4a84966e1d2886d0d57e4acbb4f19}{irr\+::scene\+::\+E\+M\+D2\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}}
+
+
+
+Types of standard md2 animations. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+A\+T\+\_\+\+C\+O\+U\+NT@{E\+M\+A\+T\+\_\+\+C\+O\+U\+NT}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+M\+A\+T\+\_\+\+C\+O\+U\+NT@{E\+M\+A\+T\+\_\+\+C\+O\+U\+NT}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a08d4a84966e1d2886d0d57e4acbb4f19a5fab9bcda993dba3607011f09f1b7c81}\label{namespaceirr_1_1scene_a08d4a84966e1d2886d0d57e4acbb4f19a5fab9bcda993dba3607011f09f1b7c81}} 
+E\+M\+A\+T\+\_\+\+C\+O\+U\+NT&Not an animation, but amount of animation types. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_ac15a7915ea13336cdc38f1073888fcd3}\label{namespaceirr_1_1scene_ac15a7915ea13336cdc38f1073888fcd3}} 
+\index{irr\+::scene@{irr\+::scene}!E\+M\+D3\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE@{E\+M\+D3\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}}
+\index{E\+M\+D3\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE@{E\+M\+D3\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+M\+D3\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}{EMD3\_ANIMATION\_TYPE}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_ac15a7915ea13336cdc38f1073888fcd3}{irr\+::scene\+::\+E\+M\+D3\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}}
+
+
+
+Animation list. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+D3\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+C\+O\+U\+NT@{E\+M\+D3\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+C\+O\+U\+NT}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+M\+D3\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+C\+O\+U\+NT@{E\+M\+D3\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+C\+O\+U\+NT}}}\mbox{\Hypertarget{namespaceirr_1_1scene_ac15a7915ea13336cdc38f1073888fcd3a3a9b1ea6dbd3f7a93f66e124496fb6fc}\label{namespaceirr_1_1scene_ac15a7915ea13336cdc38f1073888fcd3a3a9b1ea6dbd3f7a93f66e124496fb6fc}} 
+E\+M\+D3\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+C\+O\+U\+NT&Not an animation, but amount of animation types. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4e}\label{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4e}} 
+\index{irr\+::scene@{irr\+::scene}!E\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+T\+Y\+PE@{E\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+T\+Y\+PE}}
+\index{E\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+T\+Y\+PE@{E\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+T\+Y\+PE}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+T\+Y\+PE}{EMESH\_WRITER\_TYPE}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4e}{irr\+::scene\+::\+E\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+T\+Y\+PE}}
+
+
+
+An enumeration for all supported types of built-\/in mesh writers. 
+
+A scene mesh writers is represented by a four character code such as \textquotesingle{}irrm\textquotesingle{} or \textquotesingle{}coll\textquotesingle{} instead of simple numbers, to avoid name clashes with external mesh writers. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+W\+T\+\_\+\+I\+R\+R\+\_\+\+M\+E\+SH@{E\+M\+W\+T\+\_\+\+I\+R\+R\+\_\+\+M\+E\+SH}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+M\+W\+T\+\_\+\+I\+R\+R\+\_\+\+M\+E\+SH@{E\+M\+W\+T\+\_\+\+I\+R\+R\+\_\+\+M\+E\+SH}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4ea8f16d471fc5466a61e71c14158e7be3e}\label{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4ea8f16d471fc5466a61e71c14158e7be3e}} 
+E\+M\+W\+T\+\_\+\+I\+R\+R\+\_\+\+M\+E\+SH&Irrlicht native mesh writer, for static .irrmesh files. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+W\+T\+\_\+\+C\+O\+L\+L\+A\+DA@{E\+M\+W\+T\+\_\+\+C\+O\+L\+L\+A\+DA}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+M\+W\+T\+\_\+\+C\+O\+L\+L\+A\+DA@{E\+M\+W\+T\+\_\+\+C\+O\+L\+L\+A\+DA}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4eab64eaf09eb12d2361e67066b86529ba8}\label{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4eab64eaf09eb12d2361e67066b86529ba8}} 
+E\+M\+W\+T\+\_\+\+C\+O\+L\+L\+A\+DA&C\+O\+L\+L\+A\+DA mesh writer for .dae and .xml files. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+W\+T\+\_\+\+S\+TL@{E\+M\+W\+T\+\_\+\+S\+TL}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+M\+W\+T\+\_\+\+S\+TL@{E\+M\+W\+T\+\_\+\+S\+TL}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4ea8608bd1e505d53e6cc2e7c477b31d8a1}\label{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4ea8608bd1e505d53e6cc2e7c477b31d8a1}} 
+E\+M\+W\+T\+\_\+\+S\+TL&S\+TL mesh writer for .stl files. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+W\+T\+\_\+\+O\+BJ@{E\+M\+W\+T\+\_\+\+O\+BJ}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+M\+W\+T\+\_\+\+O\+BJ@{E\+M\+W\+T\+\_\+\+O\+BJ}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4eae22b9ef8ea7befd1368d7b90bbe12992}\label{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4eae22b9ef8ea7befd1368d7b90bbe12992}} 
+E\+M\+W\+T\+\_\+\+O\+BJ&O\+BJ mesh writer for .obj files. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+W\+T\+\_\+\+P\+LY@{E\+M\+W\+T\+\_\+\+P\+LY}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+M\+W\+T\+\_\+\+P\+LY@{E\+M\+W\+T\+\_\+\+P\+LY}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4ead00c87763ef520a5115e9920968c0108}\label{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4ead00c87763ef520a5115e9920968c0108}} 
+E\+M\+W\+T\+\_\+\+P\+LY&P\+LY mesh writer for .ply files. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19}\label{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19}} 
+\index{irr\+::scene@{irr\+::scene}!E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+A\+N\+I\+M\+A\+T\+O\+R\+\_\+\+T\+Y\+PE@{E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+A\+N\+I\+M\+A\+T\+O\+R\+\_\+\+T\+Y\+PE}}
+\index{E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+A\+N\+I\+M\+A\+T\+O\+R\+\_\+\+T\+Y\+PE@{E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+A\+N\+I\+M\+A\+T\+O\+R\+\_\+\+T\+Y\+PE}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+A\+N\+I\+M\+A\+T\+O\+R\+\_\+\+T\+Y\+PE}{ESCENE\_NODE\_ANIMATOR\_TYPE}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19}{irr\+::scene\+::\+E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+A\+N\+I\+M\+A\+T\+O\+R\+\_\+\+T\+Y\+PE}}
+
+
+
+An enumeration for all types of built-\/in scene node animators. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+A\+T\+\_\+\+F\+L\+Y\+\_\+\+C\+I\+R\+C\+LE@{E\+S\+N\+A\+T\+\_\+\+F\+L\+Y\+\_\+\+C\+I\+R\+C\+LE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+A\+T\+\_\+\+F\+L\+Y\+\_\+\+C\+I\+R\+C\+LE@{E\+S\+N\+A\+T\+\_\+\+F\+L\+Y\+\_\+\+C\+I\+R\+C\+LE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19add5f15ecd6c0209d4e3d81a287ae9a66}\label{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19add5f15ecd6c0209d4e3d81a287ae9a66}} 
+E\+S\+N\+A\+T\+\_\+\+F\+L\+Y\+\_\+\+C\+I\+R\+C\+LE&Fly circle scene node animator. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+A\+T\+\_\+\+F\+L\+Y\+\_\+\+S\+T\+R\+A\+I\+G\+HT@{E\+S\+N\+A\+T\+\_\+\+F\+L\+Y\+\_\+\+S\+T\+R\+A\+I\+G\+HT}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+A\+T\+\_\+\+F\+L\+Y\+\_\+\+S\+T\+R\+A\+I\+G\+HT@{E\+S\+N\+A\+T\+\_\+\+F\+L\+Y\+\_\+\+S\+T\+R\+A\+I\+G\+HT}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19af71dad2be8d964a88329d2727fb53b74}\label{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19af71dad2be8d964a88329d2727fb53b74}} 
+E\+S\+N\+A\+T\+\_\+\+F\+L\+Y\+\_\+\+S\+T\+R\+A\+I\+G\+HT&Fly straight scene node animator. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+A\+T\+\_\+\+F\+O\+L\+L\+O\+W\+\_\+\+S\+P\+L\+I\+NE@{E\+S\+N\+A\+T\+\_\+\+F\+O\+L\+L\+O\+W\+\_\+\+S\+P\+L\+I\+NE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+A\+T\+\_\+\+F\+O\+L\+L\+O\+W\+\_\+\+S\+P\+L\+I\+NE@{E\+S\+N\+A\+T\+\_\+\+F\+O\+L\+L\+O\+W\+\_\+\+S\+P\+L\+I\+NE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19addc7e3bb5180f7087546ccab14dcc4ad}\label{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19addc7e3bb5180f7087546ccab14dcc4ad}} 
+E\+S\+N\+A\+T\+\_\+\+F\+O\+L\+L\+O\+W\+\_\+\+S\+P\+L\+I\+NE&Follow spline scene node animator. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+A\+T\+\_\+\+R\+O\+T\+A\+T\+I\+ON@{E\+S\+N\+A\+T\+\_\+\+R\+O\+T\+A\+T\+I\+ON}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+A\+T\+\_\+\+R\+O\+T\+A\+T\+I\+ON@{E\+S\+N\+A\+T\+\_\+\+R\+O\+T\+A\+T\+I\+ON}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19a689aa5051e83b7f61a7abba85eb1be52}\label{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19a689aa5051e83b7f61a7abba85eb1be52}} 
+E\+S\+N\+A\+T\+\_\+\+R\+O\+T\+A\+T\+I\+ON&Rotation scene node animator. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+A\+T\+\_\+\+T\+E\+X\+T\+U\+RE@{E\+S\+N\+A\+T\+\_\+\+T\+E\+X\+T\+U\+RE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+A\+T\+\_\+\+T\+E\+X\+T\+U\+RE@{E\+S\+N\+A\+T\+\_\+\+T\+E\+X\+T\+U\+RE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19a2f3e75035fbb3227189a0a3d8bcda993}\label{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19a2f3e75035fbb3227189a0a3d8bcda993}} 
+E\+S\+N\+A\+T\+\_\+\+T\+E\+X\+T\+U\+RE&Texture scene node animator. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+A\+T\+\_\+\+D\+E\+L\+E\+T\+I\+ON@{E\+S\+N\+A\+T\+\_\+\+D\+E\+L\+E\+T\+I\+ON}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+A\+T\+\_\+\+D\+E\+L\+E\+T\+I\+ON@{E\+S\+N\+A\+T\+\_\+\+D\+E\+L\+E\+T\+I\+ON}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19abbafee6e6a120e26a6e1ed6bd3cbdc86}\label{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19abbafee6e6a120e26a6e1ed6bd3cbdc86}} 
+E\+S\+N\+A\+T\+\_\+\+D\+E\+L\+E\+T\+I\+ON&Deletion scene node animator. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+A\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+R\+E\+S\+P\+O\+N\+SE@{E\+S\+N\+A\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+R\+E\+S\+P\+O\+N\+SE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+A\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+R\+E\+S\+P\+O\+N\+SE@{E\+S\+N\+A\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+R\+E\+S\+P\+O\+N\+SE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19af5889b6449faa50d3fabd005d4493490}\label{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19af5889b6449faa50d3fabd005d4493490}} 
+E\+S\+N\+A\+T\+\_\+\+C\+O\+L\+L\+I\+S\+I\+O\+N\+\_\+\+R\+E\+S\+P\+O\+N\+SE&Collision respose scene node animator. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+A\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+PS@{E\+S\+N\+A\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+PS}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+A\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+PS@{E\+S\+N\+A\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+PS}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19ae40c836272ace5bf243baaca72dba55c}\label{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19ae40c836272ace5bf243baaca72dba55c}} 
+E\+S\+N\+A\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+PS&F\+PS camera animator. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+A\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+M\+A\+YA@{E\+S\+N\+A\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+M\+A\+YA}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+A\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+M\+A\+YA@{E\+S\+N\+A\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+M\+A\+YA}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19a851338028c38a91643f70d2a2e5ff8c4}\label{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19a851338028c38a91643f70d2a2e5ff8c4}} 
+E\+S\+N\+A\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+M\+A\+YA&Maya camera animator. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+A\+T\+\_\+\+C\+O\+U\+NT@{E\+S\+N\+A\+T\+\_\+\+C\+O\+U\+NT}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+A\+T\+\_\+\+C\+O\+U\+NT@{E\+S\+N\+A\+T\+\_\+\+C\+O\+U\+NT}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19a2bcfe4fb94550fadc4b1e79b8c0d6583}\label{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19a2bcfe4fb94550fadc4b1e79b8c0d6583}} 
+E\+S\+N\+A\+T\+\_\+\+C\+O\+U\+NT&Amount of built-\/in scene node animators. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+A\+T\+\_\+\+U\+N\+K\+N\+O\+WN@{E\+S\+N\+A\+T\+\_\+\+U\+N\+K\+N\+O\+WN}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+A\+T\+\_\+\+U\+N\+K\+N\+O\+WN@{E\+S\+N\+A\+T\+\_\+\+U\+N\+K\+N\+O\+WN}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19a070125dd5b3d35093f912dd3250253c6}\label{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19a070125dd5b3d35093f912dd3250253c6}} 
+E\+S\+N\+A\+T\+\_\+\+U\+N\+K\+N\+O\+WN&Unknown scene node animator. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+A\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT@{E\+S\+N\+A\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+A\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT@{E\+S\+N\+A\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT}}}\mbox{\Hypertarget{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19ac54f052c7c7e45e68d7460c3706a3167}\label{namespaceirr_1_1scene_a327a1e43872705cf8f3f3342fb307d19ac54f052c7c7e45e68d7460c3706a3167}} 
+E\+S\+N\+A\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT&This enum is never used, it only forces the compiler to compile this enumeration to 32 bit. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bd}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bd}} 
+\index{irr\+::scene@{irr\+::scene}!E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE@{E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE}}
+\index{E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE@{E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE}{ESCENE\_NODE\_TYPE}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bd}{irr\+::scene\+::\+E\+S\+C\+E\+N\+E\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE}}
+
+
+
+An enumeration for all types of built-\/in scene nodes. 
+
+A scene node type is represented by a four character code such as \textquotesingle{}cube\textquotesingle{} or \textquotesingle{}mesh\textquotesingle{} instead of simple numbers, to avoid name clashes with external scene nodes. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+S\+C\+E\+N\+E\+\_\+\+M\+A\+N\+A\+G\+ER@{E\+S\+N\+T\+\_\+\+S\+C\+E\+N\+E\+\_\+\+M\+A\+N\+A\+G\+ER}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+S\+C\+E\+N\+E\+\_\+\+M\+A\+N\+A\+G\+ER@{E\+S\+N\+T\+\_\+\+S\+C\+E\+N\+E\+\_\+\+M\+A\+N\+A\+G\+ER}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda1280c8093ea373c7a4e2a55300d875e7}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda1280c8093ea373c7a4e2a55300d875e7}} 
+E\+S\+N\+T\+\_\+\+S\+C\+E\+N\+E\+\_\+\+M\+A\+N\+A\+G\+ER&of type C\+Scene\+Manager (note that \hyperlink{classirr_1_1scene_1_1ISceneManager}{I\+Scene\+Manager} is not(!) an \hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node}) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+C\+U\+BE@{E\+S\+N\+T\+\_\+\+C\+U\+BE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+C\+U\+BE@{E\+S\+N\+T\+\_\+\+C\+U\+BE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda44d66f5c284aed4d0698d6854b6a72e3}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda44d66f5c284aed4d0698d6854b6a72e3}} 
+E\+S\+N\+T\+\_\+\+C\+U\+BE&simple cube scene node \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+S\+P\+H\+E\+RE@{E\+S\+N\+T\+\_\+\+S\+P\+H\+E\+RE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+S\+P\+H\+E\+RE@{E\+S\+N\+T\+\_\+\+S\+P\+H\+E\+RE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda46ad007c8d7d278a6a3769714c5dacdb}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda46ad007c8d7d278a6a3769714c5dacdb}} 
+E\+S\+N\+T\+\_\+\+S\+P\+H\+E\+RE&Sphere scene node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+T\+E\+XT@{E\+S\+N\+T\+\_\+\+T\+E\+XT}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+T\+E\+XT@{E\+S\+N\+T\+\_\+\+T\+E\+XT}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda65e7b71bf270e10f94d88bcab8cbf184}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda65e7b71bf270e10f94d88bcab8cbf184}} 
+E\+S\+N\+T\+\_\+\+T\+E\+XT&\hyperlink{classText}{Text} Scene Node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+W\+A\+T\+E\+R\+\_\+\+S\+U\+R\+F\+A\+CE@{E\+S\+N\+T\+\_\+\+W\+A\+T\+E\+R\+\_\+\+S\+U\+R\+F\+A\+CE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+W\+A\+T\+E\+R\+\_\+\+S\+U\+R\+F\+A\+CE@{E\+S\+N\+T\+\_\+\+W\+A\+T\+E\+R\+\_\+\+S\+U\+R\+F\+A\+CE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda80e25755278a5e89d190c9221f2bb181}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda80e25755278a5e89d190c9221f2bb181}} 
+E\+S\+N\+T\+\_\+\+W\+A\+T\+E\+R\+\_\+\+S\+U\+R\+F\+A\+CE&Water Surface Scene Node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+T\+E\+R\+R\+A\+IN@{E\+S\+N\+T\+\_\+\+T\+E\+R\+R\+A\+IN}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+T\+E\+R\+R\+A\+IN@{E\+S\+N\+T\+\_\+\+T\+E\+R\+R\+A\+IN}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda699880de1c55e8ed4ae24b0e07df972a}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda699880de1c55e8ed4ae24b0e07df972a}} 
+E\+S\+N\+T\+\_\+\+T\+E\+R\+R\+A\+IN&Terrain Scene Node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+S\+K\+Y\+\_\+\+B\+OX@{E\+S\+N\+T\+\_\+\+S\+K\+Y\+\_\+\+B\+OX}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+S\+K\+Y\+\_\+\+B\+OX@{E\+S\+N\+T\+\_\+\+S\+K\+Y\+\_\+\+B\+OX}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bdac47a4c2ad206e916f080ad28faed7f3b}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bdac47a4c2ad206e916f080ad28faed7f3b}} 
+E\+S\+N\+T\+\_\+\+S\+K\+Y\+\_\+\+B\+OX&Sky Box Scene Node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+S\+K\+Y\+\_\+\+D\+O\+ME@{E\+S\+N\+T\+\_\+\+S\+K\+Y\+\_\+\+D\+O\+ME}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+S\+K\+Y\+\_\+\+D\+O\+ME@{E\+S\+N\+T\+\_\+\+S\+K\+Y\+\_\+\+D\+O\+ME}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda9bef60dbd27db262591c836beb472160}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda9bef60dbd27db262591c836beb472160}} 
+E\+S\+N\+T\+\_\+\+S\+K\+Y\+\_\+\+D\+O\+ME&Sky Dome Scene Node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+S\+H\+A\+D\+O\+W\+\_\+\+V\+O\+L\+U\+ME@{E\+S\+N\+T\+\_\+\+S\+H\+A\+D\+O\+W\+\_\+\+V\+O\+L\+U\+ME}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+S\+H\+A\+D\+O\+W\+\_\+\+V\+O\+L\+U\+ME@{E\+S\+N\+T\+\_\+\+S\+H\+A\+D\+O\+W\+\_\+\+V\+O\+L\+U\+ME}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda41e004ec85286fba1d14c00273df039e}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda41e004ec85286fba1d14c00273df039e}} 
+E\+S\+N\+T\+\_\+\+S\+H\+A\+D\+O\+W\+\_\+\+V\+O\+L\+U\+ME&Shadow Volume Scene Node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+O\+C\+T\+R\+EE@{E\+S\+N\+T\+\_\+\+O\+C\+T\+R\+EE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+O\+C\+T\+R\+EE@{E\+S\+N\+T\+\_\+\+O\+C\+T\+R\+EE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda1cbab0e001b2df07ef2a253434532a52}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda1cbab0e001b2df07ef2a253434532a52}} 
+E\+S\+N\+T\+\_\+\+O\+C\+T\+R\+EE&Octree Scene Node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+M\+E\+SH@{E\+S\+N\+T\+\_\+\+M\+E\+SH}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+M\+E\+SH@{E\+S\+N\+T\+\_\+\+M\+E\+SH}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda25998267ed8640ca0c432df23f1b71fe}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda25998267ed8640ca0c432df23f1b71fe}} 
+E\+S\+N\+T\+\_\+\+M\+E\+SH&Mesh Scene Node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+L\+I\+G\+HT@{E\+S\+N\+T\+\_\+\+L\+I\+G\+HT}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+L\+I\+G\+HT@{E\+S\+N\+T\+\_\+\+L\+I\+G\+HT}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda73c87b4a418b0b7dc9d441cdf45f51e3}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda73c87b4a418b0b7dc9d441cdf45f51e3}} 
+E\+S\+N\+T\+\_\+\+L\+I\+G\+HT&Light Scene Node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+E\+M\+P\+TY@{E\+S\+N\+T\+\_\+\+E\+M\+P\+TY}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+E\+M\+P\+TY@{E\+S\+N\+T\+\_\+\+E\+M\+P\+TY}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda977d9500eeb4d4f23e5676a312367f57}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda977d9500eeb4d4f23e5676a312367f57}} 
+E\+S\+N\+T\+\_\+\+E\+M\+P\+TY&Empty Scene Node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+D\+U\+M\+M\+Y\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+A\+T\+I\+ON@{E\+S\+N\+T\+\_\+\+D\+U\+M\+M\+Y\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+A\+T\+I\+ON}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+D\+U\+M\+M\+Y\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+A\+T\+I\+ON@{E\+S\+N\+T\+\_\+\+D\+U\+M\+M\+Y\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+A\+T\+I\+ON}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda1a0385665a70cacbf1c662e2f6a78759}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda1a0385665a70cacbf1c662e2f6a78759}} 
+E\+S\+N\+T\+\_\+\+D\+U\+M\+M\+Y\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+A\+T\+I\+ON&Dummy Transformation Scene Node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+C\+A\+M\+E\+RA@{E\+S\+N\+T\+\_\+\+C\+A\+M\+E\+RA}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+C\+A\+M\+E\+RA@{E\+S\+N\+T\+\_\+\+C\+A\+M\+E\+RA}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda117834c96690a72567a0a813708cf3b6}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda117834c96690a72567a0a813708cf3b6}} 
+E\+S\+N\+T\+\_\+\+C\+A\+M\+E\+RA&\hyperlink{classCamera}{Camera} Scene Node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+B\+I\+L\+L\+B\+O\+A\+RD@{E\+S\+N\+T\+\_\+\+B\+I\+L\+L\+B\+O\+A\+RD}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+B\+I\+L\+L\+B\+O\+A\+RD@{E\+S\+N\+T\+\_\+\+B\+I\+L\+L\+B\+O\+A\+RD}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda85e4b3fca8fceb3de9057e91926d2a5f}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda85e4b3fca8fceb3de9057e91926d2a5f}} 
+E\+S\+N\+T\+\_\+\+B\+I\+L\+L\+B\+O\+A\+RD&Billboard Scene Node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+E\+SH@{E\+S\+N\+T\+\_\+\+A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+E\+SH}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+E\+SH@{E\+S\+N\+T\+\_\+\+A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+E\+SH}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda073d7fe9dfd49f24cb13bfae56d8d3b6}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda073d7fe9dfd49f24cb13bfae56d8d3b6}} 
+E\+S\+N\+T\+\_\+\+A\+N\+I\+M\+A\+T\+E\+D\+\_\+\+M\+E\+SH&Animated Mesh Scene Node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+S\+Y\+S\+T\+EM@{E\+S\+N\+T\+\_\+\+P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+S\+Y\+S\+T\+EM}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+S\+Y\+S\+T\+EM@{E\+S\+N\+T\+\_\+\+P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+S\+Y\+S\+T\+EM}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bdab027cde22a402f6f7f19eb714acf26a4}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bdab027cde22a402f6f7f19eb714acf26a4}} 
+E\+S\+N\+T\+\_\+\+P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+S\+Y\+S\+T\+EM&Particle System Scene Node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+Q3\+S\+H\+A\+D\+E\+R\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+DE@{E\+S\+N\+T\+\_\+\+Q3\+S\+H\+A\+D\+E\+R\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+DE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+Q3\+S\+H\+A\+D\+E\+R\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+DE@{E\+S\+N\+T\+\_\+\+Q3\+S\+H\+A\+D\+E\+R\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+DE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda240e6f8e61816ea8f0cdf840b457734c}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda240e6f8e61816ea8f0cdf840b457734c}} 
+E\+S\+N\+T\+\_\+\+Q3\+S\+H\+A\+D\+E\+R\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+DE&Quake3 Shader Scene Node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+M\+D3\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+DE@{E\+S\+N\+T\+\_\+\+M\+D3\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+DE}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+M\+D3\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+DE@{E\+S\+N\+T\+\_\+\+M\+D3\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+DE}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda9e1745f6f4b6772eb8b92de4436db5b6}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda9e1745f6f4b6772eb8b92de4436db5b6}} 
+E\+S\+N\+T\+\_\+\+M\+D3\+\_\+\+S\+C\+E\+N\+E\+\_\+\+N\+O\+DE&Quake3 Model Scene Node ( has tag to link to ) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+V\+O\+L\+U\+M\+E\+\_\+\+L\+I\+G\+HT@{E\+S\+N\+T\+\_\+\+V\+O\+L\+U\+M\+E\+\_\+\+L\+I\+G\+HT}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+V\+O\+L\+U\+M\+E\+\_\+\+L\+I\+G\+HT@{E\+S\+N\+T\+\_\+\+V\+O\+L\+U\+M\+E\+\_\+\+L\+I\+G\+HT}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda4dc59bfbe8afbb4d97bbbad1b356bea6}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda4dc59bfbe8afbb4d97bbbad1b356bea6}} 
+E\+S\+N\+T\+\_\+\+V\+O\+L\+U\+M\+E\+\_\+\+L\+I\+G\+HT&Volume Light Scene Node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+M\+A\+YA@{E\+S\+N\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+M\+A\+YA}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+M\+A\+YA@{E\+S\+N\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+M\+A\+YA}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda0f55e02501e38f435f1cca657983f933}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda0f55e02501e38f435f1cca657983f933}} 
+E\+S\+N\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+M\+A\+YA&Maya \hyperlink{classCamera}{Camera} Scene Node. Legacy, for loading version $<$= 1.\+4.\+x .irr files \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+PS@{E\+S\+N\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+PS}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+PS@{E\+S\+N\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+PS}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bdacbc402c4f01adcc87f3f8e9c004bdcd6}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bdacbc402c4f01adcc87f3f8e9c004bdcd6}} 
+E\+S\+N\+T\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+F\+PS&First Person Shooter \hyperlink{classCamera}{Camera}. Legacy, for loading version $<$= 1.\+4.\+x .irr files \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+U\+N\+K\+N\+O\+WN@{E\+S\+N\+T\+\_\+\+U\+N\+K\+N\+O\+WN}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+U\+N\+K\+N\+O\+WN@{E\+S\+N\+T\+\_\+\+U\+N\+K\+N\+O\+WN}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda0c24ab203e5e0dc055f82fbca65d4f47}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bda0c24ab203e5e0dc055f82fbca65d4f47}} 
+E\+S\+N\+T\+\_\+\+U\+N\+K\+N\+O\+WN&Unknown scene node. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+N\+T\+\_\+\+A\+NY@{E\+S\+N\+T\+\_\+\+A\+NY}!irr\+::scene@{irr\+::scene}}\index{irr\+::scene@{irr\+::scene}!E\+S\+N\+T\+\_\+\+A\+NY@{E\+S\+N\+T\+\_\+\+A\+NY}}}\mbox{\Hypertarget{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bdaa61d9ba5a5ec51a33600f83fb8bd71f5}\label{namespaceirr_1_1scene_acad3d7ef92a9807d391ba29120f3b7bdaa61d9ba5a5ec51a33600f83fb8bd71f5}} 
+E\+S\+N\+T\+\_\+\+A\+NY&Will match with any scene node when checking types. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceirr_1_1scene_ab585d23bc2a3d02cd368d8bfd0b1414a}\label{namespaceirr_1_1scene_ab585d23bc2a3d02cd368d8bfd0b1414a}} 
+\index{irr\+::scene@{irr\+::scene}!A\+L\+L\+O\+W\+\_\+\+Z\+W\+R\+I\+T\+E\+\_\+\+O\+N\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT@{A\+L\+L\+O\+W\+\_\+\+Z\+W\+R\+I\+T\+E\+\_\+\+O\+N\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT}}
+\index{A\+L\+L\+O\+W\+\_\+\+Z\+W\+R\+I\+T\+E\+\_\+\+O\+N\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT@{A\+L\+L\+O\+W\+\_\+\+Z\+W\+R\+I\+T\+E\+\_\+\+O\+N\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{A\+L\+L\+O\+W\+\_\+\+Z\+W\+R\+I\+T\+E\+\_\+\+O\+N\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT}{ALLOW\_ZWRITE\_ON\_TRANSPARENT}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ const irr\+::scene\+::\+A\+L\+L\+O\+W\+\_\+\+Z\+W\+R\+I\+T\+E\+\_\+\+O\+N\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT = \char`\"{}Allow\+\_\+\+Z\+Write\+\_\+\+On\+\_\+\+Transparent\char`\"{}}
+
+
+
+Name of the parameter for changing how Irrlicht handles the Z\+Write flag for transparent (blending) materials. 
+
+The default behavior in Irrlicht is to disable writing to the z-\/buffer for all really transparent, i.\+e. blending materials. This avoids problems with intersecting faces, but can also break renderings. If transparent materials should use the S\+Material flag for Z\+Write\+Enable just as other material types use this attribute. Use it like this\+: 
+\begin{DoxyCode}
+SceneManager->getParameters()->setAttribute(\hyperlink{namespaceirr_1_1scene_ab585d23bc2a3d02cd368d8bfd0b1414a}{scene::ALLOW\_ZWRITE\_ON\_TRANSPARENT}
+      , \textcolor{keyword}{true});
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceirr_1_1scene_a0a190773ebdbed9f134b17d496fc526a}\label{namespaceirr_1_1scene_a0a190773ebdbed9f134b17d496fc526a}} 
+\index{irr\+::scene@{irr\+::scene}!B3\+D\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+F\+L\+AG@{B3\+D\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+F\+L\+AG}}
+\index{B3\+D\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+F\+L\+AG@{B3\+D\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+F\+L\+AG}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{B3\+D\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+F\+L\+AG}{B3D\_LOADER\_IGNORE\_MIPMAP\_FLAG}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ const irr\+::scene\+::\+B3\+D\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+I\+P\+M\+A\+P\+\_\+\+F\+L\+AG = \char`\"{}B3\+D\+\_\+\+Ignore\+Mipmap\+Flag\char`\"{}}
+
+
+
+Flag to ignore the b3d file\textquotesingle{}s mipmapping flag. 
+
+Instead Irrlicht\textquotesingle{}s texture creation flag is used. Use it like this\+: 
+\begin{DoxyCode}
+SceneManager->getParameters()->setAttribute(\hyperlink{namespaceirr_1_1scene_a0a190773ebdbed9f134b17d496fc526a}{scene::B3D\_LOADER\_IGNORE\_MIPMAP\_FLAG}
+      , \textcolor{keyword}{true});
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceirr_1_1scene_acaad1f28c235751815637948cc845c15}\label{namespaceirr_1_1scene_acaad1f28c235751815637948cc845c15}} 
+\index{irr\+::scene@{irr\+::scene}!B3\+D\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH@{B3\+D\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}}
+\index{B3\+D\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH@{B3\+D\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{B3\+D\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}{B3D\_TEXTURE\_PATH}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ const irr\+::scene\+::\+B3\+D\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH = \char`\"{}B3\+D\+\_\+\+Texture\+Path\char`\"{}}
+
+
+
+Name of the parameter for changing the texture path of the built-\/in b3d loader. 
+
+Use it like this\+: 
+\begin{DoxyCode}
+SceneManager->getParameters()->setAttribute(\hyperlink{namespaceirr_1_1scene_acaad1f28c235751815637948cc845c15}{scene::B3D\_TEXTURE\_PATH}, \textcolor{stringliteral}{"
+      path/to/your/textures"});
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceirr_1_1scene_a157681b3ef101a801ce278e6f21de946}\label{namespaceirr_1_1scene_a157681b3ef101a801ce278e6f21de946}} 
+\index{irr\+::scene@{irr\+::scene}!C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+S\+C\+E\+N\+E\+\_\+\+I\+N\+S\+T\+A\+N\+C\+ES@{C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+S\+C\+E\+N\+E\+\_\+\+I\+N\+S\+T\+A\+N\+C\+ES}}
+\index{C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+S\+C\+E\+N\+E\+\_\+\+I\+N\+S\+T\+A\+N\+C\+ES@{C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+S\+C\+E\+N\+E\+\_\+\+I\+N\+S\+T\+A\+N\+C\+ES}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+S\+C\+E\+N\+E\+\_\+\+I\+N\+S\+T\+A\+N\+C\+ES}{COLLADA\_CREATE\_SCENE\_INSTANCES}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ const irr\+::scene\+::\+C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+S\+C\+E\+N\+E\+\_\+\+I\+N\+S\+T\+A\+N\+C\+ES = \char`\"{}C\+O\+L\+L\+A\+D\+A\+\_\+\+Create\+Scene\+Instances\char`\"{}}
+
+
+
+Name of the parameter specifying the C\+O\+L\+L\+A\+DA mesh loading mode. 
+
+Specifies if the C\+O\+L\+L\+A\+DA loader should create instances of the models, lights and cameras when loading C\+O\+L\+L\+A\+DA meshes. By default, this is set to false. If this is set to true, the \hyperlink{classirr_1_1scene_1_1ISceneManager_a63894c3f3d46cfc385116f1705935e03}{I\+Scene\+Manager\+::get\+Mesh()} method will only return a pointer to a dummy mesh and create instances of all meshes and lights and cameras in the collada file by itself. Example\+: 
+\begin{DoxyCode}
+SceneManager->getParameters()->setAttribute(
+      \hyperlink{namespaceirr_1_1scene_a157681b3ef101a801ce278e6f21de946}{scene::COLLADA\_CREATE\_SCENE\_INSTANCES}, \textcolor{keyword}{true});
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceirr_1_1scene_aecf002b9e14bd101b455632e1c260a8d}\label{namespaceirr_1_1scene_aecf002b9e14bd101b455632e1c260a8d}} 
+\index{irr\+::scene@{irr\+::scene}!C\+S\+M\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH@{C\+S\+M\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}}
+\index{C\+S\+M\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH@{C\+S\+M\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{C\+S\+M\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}{CSM\_TEXTURE\_PATH}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ const irr\+::scene\+::\+C\+S\+M\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH = \char`\"{}C\+S\+M\+\_\+\+Texture\+Path\char`\"{}}
+
+
+
+Name of the parameter for changing the texture path of the built-\/in csm loader. 
+
+Use it like this\+: 
+\begin{DoxyCode}
+SceneManager->getParameters()->setAttribute(\hyperlink{namespaceirr_1_1scene_aecf002b9e14bd101b455632e1c260a8d}{scene::CSM\_TEXTURE\_PATH}, \textcolor{stringliteral}{"
+      path/to/your/textures"});
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceirr_1_1scene_a767a12984dbf7a4f0917993d748d1350}\label{namespaceirr_1_1scene_a767a12984dbf7a4f0917993d748d1350}} 
+\index{irr\+::scene@{irr\+::scene}!D\+E\+B\+U\+G\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+C\+O\+L\+OR@{D\+E\+B\+U\+G\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+C\+O\+L\+OR}}
+\index{D\+E\+B\+U\+G\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+C\+O\+L\+OR@{D\+E\+B\+U\+G\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+C\+O\+L\+OR}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+C\+O\+L\+OR}{DEBUG\_NORMAL\_COLOR}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ const irr\+::scene\+::\+D\+E\+B\+U\+G\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+C\+O\+L\+OR = \char`\"{}D\+E\+B\+U\+G\+\_\+\+Normal\+\_\+\+Color\char`\"{}}
+
+
+
+Name of the parameter for setting the color of debug normals. 
+
+Use it like this\+: 
+\begin{DoxyCode}
+SceneManager->getParameters()->setAttributeAsColor(\hyperlink{namespaceirr_1_1scene_a767a12984dbf7a4f0917993d748d1350}{scene::DEBUG\_NORMAL\_COLOR}, 
+      video::SColor(255, 255, 255, 255));
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceirr_1_1scene_a19153395855d08302b70dcfa9247eb51}\label{namespaceirr_1_1scene_a19153395855d08302b70dcfa9247eb51}} 
+\index{irr\+::scene@{irr\+::scene}!D\+E\+B\+U\+G\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+L\+E\+N\+G\+TH@{D\+E\+B\+U\+G\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+L\+E\+N\+G\+TH}}
+\index{D\+E\+B\+U\+G\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+L\+E\+N\+G\+TH@{D\+E\+B\+U\+G\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+L\+E\+N\+G\+TH}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+L\+E\+N\+G\+TH}{DEBUG\_NORMAL\_LENGTH}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ const irr\+::scene\+::\+D\+E\+B\+U\+G\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+L\+E\+N\+G\+TH = \char`\"{}D\+E\+B\+U\+G\+\_\+\+Normal\+\_\+\+Length\char`\"{}}
+
+
+
+Name of the parameter for setting the length of debug normals. 
+
+Use it like this\+: 
+\begin{DoxyCode}
+SceneManager->getParameters()->setAttribute(\hyperlink{namespaceirr_1_1scene_a19153395855d08302b70dcfa9247eb51}{scene::DEBUG\_NORMAL\_LENGTH}, 1.5f);
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceirr_1_1scene_afd6e025453e80983de80371dc56718ef}\label{namespaceirr_1_1scene_afd6e025453e80983de80371dc56718ef}} 
+\index{irr\+::scene@{irr\+::scene}!D\+M\+F\+\_\+\+A\+L\+P\+H\+A\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+R\+EF@{D\+M\+F\+\_\+\+A\+L\+P\+H\+A\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+R\+EF}}
+\index{D\+M\+F\+\_\+\+A\+L\+P\+H\+A\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+R\+EF@{D\+M\+F\+\_\+\+A\+L\+P\+H\+A\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+R\+EF}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{D\+M\+F\+\_\+\+A\+L\+P\+H\+A\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+R\+EF}{DMF\_ALPHA\_CHANNEL\_REF}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ const irr\+::scene\+::\+D\+M\+F\+\_\+\+A\+L\+P\+H\+A\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+R\+EF = \char`\"{}D\+M\+F\+\_\+\+Alpha\+Ref\char`\"{}}
+
+
+
+Name of the parameter for setting reference value of alpha in transparent materials. 
+
+Use it like this\+: 
+\begin{DoxyCode}
+\textcolor{comment}{//this way you'll set alpha ref to 0.1}
+SceneManager->getParameters()->setAttribute(\hyperlink{namespaceirr_1_1scene_afd6e025453e80983de80371dc56718ef}{scene::DMF\_ALPHA\_CHANNEL\_REF}, 0.1);
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceirr_1_1scene_acdc1ddd0bfeb4118a5d8f3ea953717f6}\label{namespaceirr_1_1scene_acdc1ddd0bfeb4118a5d8f3ea953717f6}} 
+\index{irr\+::scene@{irr\+::scene}!D\+M\+F\+\_\+\+F\+L\+I\+P\+\_\+\+A\+L\+P\+H\+A\+\_\+\+T\+E\+X\+T\+U\+R\+ES@{D\+M\+F\+\_\+\+F\+L\+I\+P\+\_\+\+A\+L\+P\+H\+A\+\_\+\+T\+E\+X\+T\+U\+R\+ES}}
+\index{D\+M\+F\+\_\+\+F\+L\+I\+P\+\_\+\+A\+L\+P\+H\+A\+\_\+\+T\+E\+X\+T\+U\+R\+ES@{D\+M\+F\+\_\+\+F\+L\+I\+P\+\_\+\+A\+L\+P\+H\+A\+\_\+\+T\+E\+X\+T\+U\+R\+ES}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{D\+M\+F\+\_\+\+F\+L\+I\+P\+\_\+\+A\+L\+P\+H\+A\+\_\+\+T\+E\+X\+T\+U\+R\+ES}{DMF\_FLIP\_ALPHA\_TEXTURES}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ const irr\+::scene\+::\+D\+M\+F\+\_\+\+F\+L\+I\+P\+\_\+\+A\+L\+P\+H\+A\+\_\+\+T\+E\+X\+T\+U\+R\+ES = \char`\"{}D\+M\+F\+\_\+\+Flip\+Alpha\char`\"{}}
+
+
+
+Name of the parameter for choose to flip or not tga files. 
+
+Use it like this\+: 
+\begin{DoxyCode}
+\textcolor{comment}{//this way you'll choose to flip alpha textures}
+SceneManager->getParameters()->setAttribute(\hyperlink{namespaceirr_1_1scene_acdc1ddd0bfeb4118a5d8f3ea953717f6}{scene::DMF\_FLIP\_ALPHA\_TEXTURES}, \textcolor{keyword}{
+      true});
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceirr_1_1scene_ae996d826263cf504dd0260d0a096b0d0}\label{namespaceirr_1_1scene_ae996d826263cf504dd0260d0a096b0d0}} 
+\index{irr\+::scene@{irr\+::scene}!D\+M\+F\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+S\+\_\+\+D\+I\+RS@{D\+M\+F\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+S\+\_\+\+D\+I\+RS}}
+\index{D\+M\+F\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+S\+\_\+\+D\+I\+RS@{D\+M\+F\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+S\+\_\+\+D\+I\+RS}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{D\+M\+F\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+S\+\_\+\+D\+I\+RS}{DMF\_IGNORE\_MATERIALS\_DIRS}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ const irr\+::scene\+::\+D\+M\+F\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+S\+\_\+\+D\+I\+RS = \char`\"{}D\+M\+F\+\_\+\+Ignore\+Materials\+Dir\char`\"{}}
+
+
+
+Name of the parameter for preserving D\+MF textures dir structure with built-\/in D\+MF loader. 
+
+If this parameter is set to true, the texture directory defined in the Deled file is ignored, and only the texture name is used to find the proper file. Otherwise, the texture path is also used, which allows to use a nicer media layout. Use it like this\+: 
+\begin{DoxyCode}
+\textcolor{comment}{//this way you won't use this setting (default)}
+SceneManager->getParameters()->setAttribute(\hyperlink{namespaceirr_1_1scene_ae996d826263cf504dd0260d0a096b0d0}{scene::DMF\_IGNORE\_MATERIALS\_DIRS}
+      , \textcolor{keyword}{false});
+\end{DoxyCode}
+ 
+\begin{DoxyCode}
+\textcolor{comment}{//this way you'll use this setting}
+SceneManager->getParameters()->setAttribute(\hyperlink{namespaceirr_1_1scene_ae996d826263cf504dd0260d0a096b0d0}{scene::DMF\_IGNORE\_MATERIALS\_DIRS}
+      , \textcolor{keyword}{true});
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceirr_1_1scene_a2a6e8bd33eaec1815e3e16a59c269fb5}\label{namespaceirr_1_1scene_a2a6e8bd33eaec1815e3e16a59c269fb5}} 
+\index{irr\+::scene@{irr\+::scene}!D\+M\+F\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH@{D\+M\+F\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}}
+\index{D\+M\+F\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH@{D\+M\+F\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{D\+M\+F\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}{DMF\_TEXTURE\_PATH}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ const irr\+::scene\+::\+D\+M\+F\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH = \char`\"{}D\+M\+F\+\_\+\+Texture\+Path\char`\"{}}
+
+
+
+Name of the parameter for changing the texture path of the built-\/in D\+MF loader. 
+
+This path is prefixed to the file names defined in the Deled file when loading textures. This allows to alter the paths for a specific project setting. Use it like this\+: 
+\begin{DoxyCode}
+SceneManager->getStringParameters()->setAttribute(\hyperlink{namespaceirr_1_1scene_a2a6e8bd33eaec1815e3e16a59c269fb5}{scene::DMF\_TEXTURE\_PATH}, \textcolor{stringliteral}{"
+      path/to/your/textures"});
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceirr_1_1scene_a7a3f4a75d85bd2b3f6bc4dd58f3ce585}\label{namespaceirr_1_1scene_a7a3f4a75d85bd2b3f6bc4dd58f3ce585}} 
+\index{irr\+::scene@{irr\+::scene}!I\+R\+R\+\_\+\+S\+C\+E\+N\+E\+\_\+\+M\+A\+N\+A\+G\+E\+R\+\_\+\+I\+S\+\_\+\+E\+D\+I\+T\+OR@{I\+R\+R\+\_\+\+S\+C\+E\+N\+E\+\_\+\+M\+A\+N\+A\+G\+E\+R\+\_\+\+I\+S\+\_\+\+E\+D\+I\+T\+OR}}
+\index{I\+R\+R\+\_\+\+S\+C\+E\+N\+E\+\_\+\+M\+A\+N\+A\+G\+E\+R\+\_\+\+I\+S\+\_\+\+E\+D\+I\+T\+OR@{I\+R\+R\+\_\+\+S\+C\+E\+N\+E\+\_\+\+M\+A\+N\+A\+G\+E\+R\+\_\+\+I\+S\+\_\+\+E\+D\+I\+T\+OR}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{I\+R\+R\+\_\+\+S\+C\+E\+N\+E\+\_\+\+M\+A\+N\+A\+G\+E\+R\+\_\+\+I\+S\+\_\+\+E\+D\+I\+T\+OR}{IRR\_SCENE\_MANAGER\_IS\_EDITOR}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ const irr\+::scene\+::\+I\+R\+R\+\_\+\+S\+C\+E\+N\+E\+\_\+\+M\+A\+N\+A\+G\+E\+R\+\_\+\+I\+S\+\_\+\+E\+D\+I\+T\+OR = \char`\"{}I\+R\+R\+\_\+\+Editor\char`\"{}}
+
+
+
+Flag set as parameter when the scene manager is used as editor. 
+
+In this way special animators like deletion animators can be stopped from deleting scene nodes for example \mbox{\Hypertarget{namespaceirr_1_1scene_a1d81a2ac8866dfa4a0ff3bdece327f75}\label{namespaceirr_1_1scene_a1d81a2ac8866dfa4a0ff3bdece327f75}} 
+\index{irr\+::scene@{irr\+::scene}!L\+M\+T\+S\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH@{L\+M\+T\+S\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}}
+\index{L\+M\+T\+S\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH@{L\+M\+T\+S\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{L\+M\+T\+S\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}{LMTS\_TEXTURE\_PATH}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ const irr\+::scene\+::\+L\+M\+T\+S\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH = \char`\"{}L\+M\+T\+S\+\_\+\+Texture\+Path\char`\"{}}
+
+
+
+Name of the parameter for changing the texture path of the built-\/in lmts loader. 
+
+Use it like this\+: 
+\begin{DoxyCode}
+SceneManager->getParameters()->setAttribute(\hyperlink{namespaceirr_1_1scene_a1d81a2ac8866dfa4a0ff3bdece327f75}{scene::LMTS\_TEXTURE\_PATH}, \textcolor{stringliteral}{"
+      path/to/your/textures"});
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceirr_1_1scene_a54eb9ea68ba13b4689444f8d34e338b9}\label{namespaceirr_1_1scene_a54eb9ea68ba13b4689444f8d34e338b9}} 
+\index{irr\+::scene@{irr\+::scene}!M\+Y3\+D\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH@{M\+Y3\+D\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}}
+\index{M\+Y3\+D\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH@{M\+Y3\+D\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{M\+Y3\+D\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}{MY3D\_TEXTURE\_PATH}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ const irr\+::scene\+::\+M\+Y3\+D\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH = \char`\"{}M\+Y3\+D\+\_\+\+Texture\+Path\char`\"{}}
+
+
+
+Name of the parameter for changing the texture path of the built-\/in my3d loader. 
+
+Use it like this\+: 
+\begin{DoxyCode}
+SceneManager->getParameters()->setAttribute(\hyperlink{namespaceirr_1_1scene_a54eb9ea68ba13b4689444f8d34e338b9}{scene::MY3D\_TEXTURE\_PATH}, \textcolor{stringliteral}{"
+      path/to/your/textures"});
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceirr_1_1scene_afb0c389302c1e7ad39f83d558dbb2699}\label{namespaceirr_1_1scene_afb0c389302c1e7ad39f83d558dbb2699}} 
+\index{irr\+::scene@{irr\+::scene}!O\+B\+J\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+G\+R\+O\+U\+PS@{O\+B\+J\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+G\+R\+O\+U\+PS}}
+\index{O\+B\+J\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+G\+R\+O\+U\+PS@{O\+B\+J\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+G\+R\+O\+U\+PS}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{O\+B\+J\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+G\+R\+O\+U\+PS}{OBJ\_LOADER\_IGNORE\_GROUPS}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ const irr\+::scene\+::\+O\+B\+J\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+G\+R\+O\+U\+PS = \char`\"{}O\+B\+J\+\_\+\+Ignore\+Groups\char`\"{}}
+
+
+
+Flag to avoid loading group structures in .obj files. 
+
+Use it like this\+: 
+\begin{DoxyCode}
+SceneManager->getParameters()->setAttribute(\hyperlink{namespaceirr_1_1scene_afb0c389302c1e7ad39f83d558dbb2699}{scene::OBJ\_LOADER\_IGNORE\_GROUPS},
+       \textcolor{keyword}{true});
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceirr_1_1scene_ac7d5a31e2146062ddbde288115bb6c7b}\label{namespaceirr_1_1scene_ac7d5a31e2146062ddbde288115bb6c7b}} 
+\index{irr\+::scene@{irr\+::scene}!O\+B\+J\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+I\+L\+ES@{O\+B\+J\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+I\+L\+ES}}
+\index{O\+B\+J\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+I\+L\+ES@{O\+B\+J\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+I\+L\+ES}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{O\+B\+J\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+I\+L\+ES}{OBJ\_LOADER\_IGNORE\_MATERIAL\_FILES}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ const irr\+::scene\+::\+O\+B\+J\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+I\+L\+ES = \char`\"{}O\+B\+J\+\_\+\+Ignore\+Material\+Files\char`\"{}}
+
+
+
+Flag to avoid loading material .mtl file for .obj files. 
+
+Use it like this\+: 
+\begin{DoxyCode}
+SceneManager->getParameters()->setAttribute(
+      \hyperlink{namespaceirr_1_1scene_ac7d5a31e2146062ddbde288115bb6c7b}{scene::OBJ\_LOADER\_IGNORE\_MATERIAL\_FILES}, \textcolor{keyword}{true});
+\end{DoxyCode}
+ \mbox{\Hypertarget{namespaceirr_1_1scene_a12d0b16f969fdaaf7c2161a0c7152b54}\label{namespaceirr_1_1scene_a12d0b16f969fdaaf7c2161a0c7152b54}} 
+\index{irr\+::scene@{irr\+::scene}!O\+B\+J\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH@{O\+B\+J\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}}
+\index{O\+B\+J\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH@{O\+B\+J\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}!irr\+::scene@{irr\+::scene}}
+\subsubsection{\texorpdfstring{O\+B\+J\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}{OBJ\_TEXTURE\_PATH}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ const irr\+::scene\+::\+O\+B\+J\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH = \char`\"{}O\+B\+J\+\_\+\+Texture\+Path\char`\"{}}
+
+
+
+Name of the parameter for changing the texture path of the built-\/in obj loader. 
+
+Use it like this\+: 
+\begin{DoxyCode}
+SceneManager->getParameters()->setAttribute(\hyperlink{namespaceirr_1_1scene_a12d0b16f969fdaaf7c2161a0c7152b54}{scene::OBJ\_TEXTURE\_PATH}, \textcolor{stringliteral}{"
+      path/to/your/textures"});
+\end{DoxyCode}
+ 
