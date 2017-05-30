@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 60.096154
+%%BoundingBox: 0 0 500 192.307692
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,13 +19,13 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 8.320000 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 2.600000 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 5 def
-/cols 8 def
+/rows 4 def
+/cols 2 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
 
@@ -176,19 +176,7 @@ boxfont setfont
 (irr::scene::ICameraSceneNode) cw
 (irr::scene::ISceneNode) cw
 (irr::IEventReceiver) cw
-(irr::scene::ISceneNode) cw
-(irr::IEventReceiver) cw
 (irr::io::IAttributeExchangingObject) cw
-(irr::io::IAttributeExchangingObject) cw
-(irr::io::IAttributeExchangingObject) cw
-(irr::io::IAttributeExchangingObject) cw
-(irr::IReferenceCounted) cw
-(irr::IReferenceCounted) cw
-(irr::IReferenceCounted) cw
-(irr::IReferenceCounted) cw
-(irr::IReferenceCounted) cw
-(irr::IReferenceCounted) cw
-(irr::IReferenceCounted) cw
 (irr::IReferenceCounted) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
@@ -201,107 +189,31 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (irr::scene::ICameraSceneNode) 3.500000 0.000000 box
- (irr::scene::ISceneNode) 1.000000 1.000000 box
- (irr::IEventReceiver) 2.000000 1.000000 box
- (irr::scene::ISceneNode) 5.000000 1.000000 box
- (irr::IEventReceiver) 6.000000 1.000000 box
+ (irr::scene::ICameraSceneNode) 0.500000 0.000000 box
+ (irr::scene::ISceneNode) 0.000000 1.000000 box
+ (irr::IEventReceiver) 1.000000 1.000000 box
 dashed
  (irr::io::IAttributeExchangingObject) 0.000000 2.000000 box
 solid
 dashed
- (irr::io::IAttributeExchangingObject) 2.000000 2.000000 box
-solid
-dashed
- (irr::io::IAttributeExchangingObject) 4.000000 2.000000 box
-solid
-dashed
- (irr::io::IAttributeExchangingObject) 6.000000 2.000000 box
-solid
-dashed
- (irr::IReferenceCounted) 7.000000 3.000000 box
-solid
-dashed
- (irr::IReferenceCounted) 7.000000 4.000000 box
-solid
-dashed
- (irr::IReferenceCounted) 5.000000 3.000000 box
-solid
-dashed
- (irr::IReferenceCounted) 5.000000 4.000000 box
-solid
-dashed
- (irr::IReferenceCounted) 3.000000 3.000000 box
-solid
-dashed
- (irr::IReferenceCounted) 3.000000 4.000000 box
-solid
-dashed
- (irr::IReferenceCounted) 1.000000 3.000000 box
-solid
-dashed
- (irr::IReferenceCounted) 1.000000 4.000000 box
+ (irr::IReferenceCounted) 0.000000 3.000000 box
 solid
 
 % ----- relations -----
 
 solid
-0 3.500000 0.000000 out
+0 0.500000 0.000000 out
 solid
-1.000000 6.000000 1.000000 conn
+0.000000 1.000000 1.000000 conn
+solid
+1 0.000000 1.000000 in
+solid
+0 0.000000 1.000000 out
 solid
 1 1.000000 1.000000 in
-solid
-0 1.000000 1.000000 out
-solid
-0.000000 2.000000 2.000000 conn
-solid
-1 2.000000 1.000000 in
-solid
-1 5.000000 1.000000 in
-solid
-0 5.000000 1.000000 out
-solid
-4.000000 6.000000 2.000000 conn
-solid
-1 6.000000 1.000000 in
 solid
 1 0.000000 2.000000 in
 solid
 0 0.000000 2.000000 out
 solid
-1 2.000000 2.000000 in
-solid
-0 2.000000 2.000000 out
-solid
-1 4.000000 2.000000 in
-solid
-0 4.000000 2.000000 out
-solid
-1 6.000000 2.000000 in
-solid
-0 6.000000 2.000000 out
-solid
-1 0.000000 3.500000 hedge
-solid
-1 0.000000 4.500000 hedge
-solid
-0.000000 3.000000 4.500000 vedge
-solid
-1 2.000000 3.500000 hedge
-solid
-1 2.000000 4.500000 hedge
-solid
-2.000000 3.000000 4.500000 vedge
-solid
-1 4.000000 3.500000 hedge
-solid
-1 4.000000 4.500000 hedge
-solid
-4.000000 3.000000 4.500000 vedge
-solid
-1 6.000000 3.500000 hedge
-solid
-1 6.000000 4.500000 hedge
-solid
-6.000000 3.000000 4.500000 vedge
+1 0.000000 3.000000 in

@@ -18,13 +18,7 @@ Inheritance diagram for irr\+:\+:video\+:\+:I\+Image\+Loader\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual bool \hyperlink{classirr_1_1video_1_1IImageLoader_a74f191446424017b8a71fea274bd0f0a}{is\+A\+Loadable\+File\+Extension} (const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{io\+::path} \&filename) const =0
-\begin{DoxyCompactList}\small\item\em Check if the file might be loaded by this class. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classirr_1_1video_1_1IImageLoader_aeb87ae825dfdb747e826b1e001a5f5cc}{is\+A\+Loadable\+File\+Format} (\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$file) const =0
-\begin{DoxyCompactList}\small\item\em Check if the file might be loaded by this class. \end{DoxyCompactList}\item 
-virtual \hyperlink{classirr_1_1video_1_1IImage}{I\+Image} $\ast$ \hyperlink{classirr_1_1video_1_1IImageLoader_ac3cafd8396e2f6e762f91604bcacf5d3}{load\+Image} (\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$file) const =0
-\begin{DoxyCompactList}\small\item\em Creates a surface from the file. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classirr_1_1video_1_1IImageLoader_a74f191446424017b8a71fea274bd0f0a}{is\+A\+Loadable\+File\+Extension} (const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{io\+::path} \&filename) const =0
+virtual bool \hyperlink{classirr_1_1video_1_1IImageLoader_a74f191446424017b8a71fea274bd0f0a}{is\+A\+Loadable\+File\+Extension} (const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&filename) const =0
 \begin{DoxyCompactList}\small\item\em Check if the file might be loaded by this class. \end{DoxyCompactList}\item 
 virtual bool \hyperlink{classirr_1_1video_1_1IImageLoader_aeb87ae825dfdb747e826b1e001a5f5cc}{is\+A\+Loadable\+File\+Format} (\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$file) const =0
 \begin{DoxyCompactList}\small\item\em Check if the file might be loaded by this class. \end{DoxyCompactList}\item 
@@ -42,26 +36,8 @@ If you want the Irrlicht Engine be able to load textures of currently unsupporte
 \mbox{\Hypertarget{classirr_1_1video_1_1IImageLoader_a74f191446424017b8a71fea274bd0f0a}\label{classirr_1_1video_1_1IImageLoader_a74f191446424017b8a71fea274bd0f0a}} 
 \index{irr\+::video\+::\+I\+Image\+Loader@{irr\+::video\+::\+I\+Image\+Loader}!is\+A\+Loadable\+File\+Extension@{is\+A\+Loadable\+File\+Extension}}
 \index{is\+A\+Loadable\+File\+Extension@{is\+A\+Loadable\+File\+Extension}!irr\+::video\+::\+I\+Image\+Loader@{irr\+::video\+::\+I\+Image\+Loader}}
-\subsubsection{\texorpdfstring{is\+A\+Loadable\+File\+Extension()}{isALoadableFileExtension()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual bool irr\+::video\+::\+I\+Image\+Loader\+::is\+A\+Loadable\+File\+Extension (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{io\+::path} \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Check if the file might be loaded by this class. 
-
-Check is based on the file extension (e.\+g. \char`\"{}.\+tga\char`\"{}) 
-\begin{DoxyParams}{Parameters}
-{\em filename} & Name of file to check. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-True if file seems to be loadable. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1video_1_1IImageLoader_a74f191446424017b8a71fea274bd0f0a}\label{classirr_1_1video_1_1IImageLoader_a74f191446424017b8a71fea274bd0f0a}} 
-\index{irr\+::video\+::\+I\+Image\+Loader@{irr\+::video\+::\+I\+Image\+Loader}!is\+A\+Loadable\+File\+Extension@{is\+A\+Loadable\+File\+Extension}}
-\index{is\+A\+Loadable\+File\+Extension@{is\+A\+Loadable\+File\+Extension}!irr\+::video\+::\+I\+Image\+Loader@{irr\+::video\+::\+I\+Image\+Loader}}
-\subsubsection{\texorpdfstring{is\+A\+Loadable\+File\+Extension()}{isALoadableFileExtension()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily virtual bool irr\+::video\+::\+I\+Image\+Loader\+::is\+A\+Loadable\+File\+Extension (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{io\+::path} \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{is\+A\+Loadable\+File\+Extension()}{isALoadableFileExtension()}}
+{\footnotesize\ttfamily virtual bool irr\+::video\+::\+I\+Image\+Loader\+::is\+A\+Loadable\+File\+Extension (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -78,25 +54,7 @@ True if file seems to be loadable.
 \mbox{\Hypertarget{classirr_1_1video_1_1IImageLoader_aeb87ae825dfdb747e826b1e001a5f5cc}\label{classirr_1_1video_1_1IImageLoader_aeb87ae825dfdb747e826b1e001a5f5cc}} 
 \index{irr\+::video\+::\+I\+Image\+Loader@{irr\+::video\+::\+I\+Image\+Loader}!is\+A\+Loadable\+File\+Format@{is\+A\+Loadable\+File\+Format}}
 \index{is\+A\+Loadable\+File\+Format@{is\+A\+Loadable\+File\+Format}!irr\+::video\+::\+I\+Image\+Loader@{irr\+::video\+::\+I\+Image\+Loader}}
-\subsubsection{\texorpdfstring{is\+A\+Loadable\+File\+Format()}{isALoadableFileFormat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual bool irr\+::video\+::\+I\+Image\+Loader\+::is\+A\+Loadable\+File\+Format (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$}]{file }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Check if the file might be loaded by this class. 
-
-Check might look into the file. 
-\begin{DoxyParams}{Parameters}
-{\em file} & File handle to check. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-True if file seems to be loadable. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1video_1_1IImageLoader_aeb87ae825dfdb747e826b1e001a5f5cc}\label{classirr_1_1video_1_1IImageLoader_aeb87ae825dfdb747e826b1e001a5f5cc}} 
-\index{irr\+::video\+::\+I\+Image\+Loader@{irr\+::video\+::\+I\+Image\+Loader}!is\+A\+Loadable\+File\+Format@{is\+A\+Loadable\+File\+Format}}
-\index{is\+A\+Loadable\+File\+Format@{is\+A\+Loadable\+File\+Format}!irr\+::video\+::\+I\+Image\+Loader@{irr\+::video\+::\+I\+Image\+Loader}}
-\subsubsection{\texorpdfstring{is\+A\+Loadable\+File\+Format()}{isALoadableFileFormat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{is\+A\+Loadable\+File\+Format()}{isALoadableFileFormat()}}
 {\footnotesize\ttfamily virtual bool irr\+::video\+::\+I\+Image\+Loader\+::is\+A\+Loadable\+File\+Format (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$}]{file }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -114,25 +72,7 @@ True if file seems to be loadable.
 \mbox{\Hypertarget{classirr_1_1video_1_1IImageLoader_ac3cafd8396e2f6e762f91604bcacf5d3}\label{classirr_1_1video_1_1IImageLoader_ac3cafd8396e2f6e762f91604bcacf5d3}} 
 \index{irr\+::video\+::\+I\+Image\+Loader@{irr\+::video\+::\+I\+Image\+Loader}!load\+Image@{load\+Image}}
 \index{load\+Image@{load\+Image}!irr\+::video\+::\+I\+Image\+Loader@{irr\+::video\+::\+I\+Image\+Loader}}
-\subsubsection{\texorpdfstring{load\+Image()}{loadImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1video_1_1IImage}{I\+Image}$\ast$ irr\+::video\+::\+I\+Image\+Loader\+::load\+Image (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$}]{file }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Creates a surface from the file. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em file} & File handle to check. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Pointer to newly created image, or 0 upon error. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1video_1_1IImageLoader_ac3cafd8396e2f6e762f91604bcacf5d3}\label{classirr_1_1video_1_1IImageLoader_ac3cafd8396e2f6e762f91604bcacf5d3}} 
-\index{irr\+::video\+::\+I\+Image\+Loader@{irr\+::video\+::\+I\+Image\+Loader}!load\+Image@{load\+Image}}
-\index{load\+Image@{load\+Image}!irr\+::video\+::\+I\+Image\+Loader@{irr\+::video\+::\+I\+Image\+Loader}}
-\subsubsection{\texorpdfstring{load\+Image()}{loadImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{load\+Image()}{loadImage()}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1video_1_1IImage}{I\+Image}$\ast$ irr\+::video\+::\+I\+Image\+Loader\+::load\+Image (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$}]{file }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

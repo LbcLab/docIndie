@@ -12,7 +12,7 @@ Class which holds the geometry of an object.
 Inheritance diagram for irr\+:\+:scene\+:\+:I\+Mesh\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=7.583333cm]{classirr_1_1scene_1_1IMesh}
+\includegraphics[height=2.333333cm]{classirr_1_1scene_1_1IMesh}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -26,29 +26,13 @@ virtual \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer} $\ast$ \hy
 \begin{DoxyCompactList}\small\item\em Get pointer to a mesh buffer which fits a material. \end{DoxyCompactList}\item 
 virtual const \hyperlink{classirr_1_1core_1_1aabbox3d}{core\+::aabbox3d}$<$ \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $>$ \& \hyperlink{classirr_1_1scene_1_1IMesh_ada6ecee9cbebed8bb67fd92872552ea0}{get\+Bounding\+Box} () const =0
 \begin{DoxyCompactList}\small\item\em Get an axis aligned bounding box of the mesh. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1IMesh_a0aee3b5bc5d31ce996becc069f65e642}{set\+Bounding\+Box} (const \hyperlink{namespaceirr_1_1core_a60f4b4c744aba55f10530d503c6ecb04}{core\+::aabbox3df} \&box)=0
+virtual void \hyperlink{classirr_1_1scene_1_1IMesh_a0aee3b5bc5d31ce996becc069f65e642}{set\+Bounding\+Box} (const \hyperlink{namespaceirr_1_1core_adfc8fa01b30044c55f3332a1d6c1aa19}{core\+::aabbox3df} \&box)=0
 \begin{DoxyCompactList}\small\item\em Set user-\/defined axis aligned bounding box. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classirr_1_1scene_1_1IMesh_a56e034b671f52653d6c91e0ffa42febd}{set\+Material\+Flag} (\hyperlink{namespaceirr_1_1video_a8a3bc00ae8137535b9fbc5f40add70d3}{video\+::\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+L\+AG} flag, bool newvalue)=0
 \begin{DoxyCompactList}\small\item\em Sets a flag of all contained materials to a new value. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1IMesh_a1de908b8e67c28bdac546e8599043dfe}{set\+Hardware\+Mapping\+Hint} (\hyperlink{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27}{E\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+P\+P\+I\+NG} new\+Mapping\+Hint, \hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE} buffer=\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca34ea664123fbc28610408e51b014dcdd}{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX})=0
+virtual void \hyperlink{classirr_1_1scene_1_1IMesh_a1de908b8e67c28bdac546e8599043dfe}{set\+Hardware\+Mapping\+Hint} (\hyperlink{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27}{E\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+P\+P\+I\+NG} new\+Mapping\+Hint, \hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE} buffer=\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca833624730c30cffccc121fe31aa0832c}{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX})=0
 \begin{DoxyCompactList}\small\item\em Set the hardware mapping hint. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1IMesh_a496534cd4813d520d887785720f66c9b}{set\+Dirty} (\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE} buffer=\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca34ea664123fbc28610408e51b014dcdd}{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX})=0
-\begin{DoxyCompactList}\small\item\em Flag the meshbuffer as changed, reloads hardware buffers. \end{DoxyCompactList}\item 
-virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1scene_1_1IMesh_a2ebed0bdae2d6537c36b0b7ac831edb8}{get\+Mesh\+Buffer\+Count} () const =0
-\begin{DoxyCompactList}\small\item\em Get the amount of mesh buffers. \end{DoxyCompactList}\item 
-virtual \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer} $\ast$ \hyperlink{classirr_1_1scene_1_1IMesh_a2cd1a04b396235101f426befba0c5b82}{get\+Mesh\+Buffer} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} nr) const =0
-\begin{DoxyCompactList}\small\item\em Get pointer to a mesh buffer. \end{DoxyCompactList}\item 
-virtual \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer} $\ast$ \hyperlink{classirr_1_1scene_1_1IMesh_a9573dace82efb01ba1f35f9cc28a4ced}{get\+Mesh\+Buffer} (const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&material) const =0
-\begin{DoxyCompactList}\small\item\em Get pointer to a mesh buffer which fits a material. \end{DoxyCompactList}\item 
-virtual const \hyperlink{classirr_1_1core_1_1aabbox3d}{core\+::aabbox3d}$<$ \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $>$ \& \hyperlink{classirr_1_1scene_1_1IMesh_ada6ecee9cbebed8bb67fd92872552ea0}{get\+Bounding\+Box} () const =0
-\begin{DoxyCompactList}\small\item\em Get an axis aligned bounding box of the mesh. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1IMesh_a0aee3b5bc5d31ce996becc069f65e642}{set\+Bounding\+Box} (const \hyperlink{namespaceirr_1_1core_a60f4b4c744aba55f10530d503c6ecb04}{core\+::aabbox3df} \&box)=0
-\begin{DoxyCompactList}\small\item\em Set user-\/defined axis aligned bounding box. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1IMesh_a56e034b671f52653d6c91e0ffa42febd}{set\+Material\+Flag} (\hyperlink{namespaceirr_1_1video_a8a3bc00ae8137535b9fbc5f40add70d3}{video\+::\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+L\+AG} flag, bool newvalue)=0
-\begin{DoxyCompactList}\small\item\em Sets a flag of all contained materials to a new value. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1IMesh_a1de908b8e67c28bdac546e8599043dfe}{set\+Hardware\+Mapping\+Hint} (\hyperlink{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27}{E\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+P\+P\+I\+NG} new\+Mapping\+Hint, \hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE} buffer=\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca34ea664123fbc28610408e51b014dcdd}{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX})=0
-\begin{DoxyCompactList}\small\item\em Set the hardware mapping hint. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1IMesh_a496534cd4813d520d887785720f66c9b}{set\+Dirty} (\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE} buffer=\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca34ea664123fbc28610408e51b014dcdd}{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX})=0
+virtual void \hyperlink{classirr_1_1scene_1_1IMesh_a496534cd4813d520d887785720f66c9b}{set\+Dirty} (\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE} buffer=\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca833624730c30cffccc121fe31aa0832c}{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX})=0
 \begin{DoxyCompactList}\small\item\em Flag the meshbuffer as changed, reloads hardware buffers. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -62,7 +46,7 @@ An \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} is nothing more than a collec
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMesh_ada6ecee9cbebed8bb67fd92872552ea0}\label{classirr_1_1scene_1_1IMesh_ada6ecee9cbebed8bb67fd92872552ea0}} 
 \index{irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}!get\+Bounding\+Box@{get\+Bounding\+Box}}
 \index{get\+Bounding\+Box@{get\+Bounding\+Box}!irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}}
-\subsubsection{\texorpdfstring{get\+Bounding\+Box()}{getBoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{get\+Bounding\+Box()}{getBoundingBox()}}
 {\footnotesize\ttfamily virtual const \hyperlink{classirr_1_1core_1_1aabbox3d}{core\+::aabbox3d}$<$\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}$>$\& irr\+::scene\+::\+I\+Mesh\+::get\+Bounding\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -74,29 +58,12 @@ Bounding box of this mesh.
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a1494406ce8f11d47fd1e3b4af825e88f}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a1494406ce8f11d47fd1e3b4af825e88f}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SMesh_a379e330c863acdade37e65275903158d}{irr\+::scene\+::\+S\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a379e330c863acdade37e65275903158d}{irr\+::scene\+::\+S\+Mesh}.
-
-\mbox{\Hypertarget{classirr_1_1scene_1_1IMesh_ada6ecee9cbebed8bb67fd92872552ea0}\label{classirr_1_1scene_1_1IMesh_ada6ecee9cbebed8bb67fd92872552ea0}} 
-\index{irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}!get\+Bounding\+Box@{get\+Bounding\+Box}}
-\index{get\+Bounding\+Box@{get\+Bounding\+Box}!irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}}
-\subsubsection{\texorpdfstring{get\+Bounding\+Box()}{getBoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily virtual const \hyperlink{classirr_1_1core_1_1aabbox3d}{core\+::aabbox3d}$<$\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}$>$\& irr\+::scene\+::\+I\+Mesh\+::get\+Bounding\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Get an axis aligned bounding box of the mesh. 
-
-\begin{DoxyReturn}{Returns}
-Bounding box of this mesh. 
-\end{DoxyReturn}
-
-
-Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a1494406ce8f11d47fd1e3b4af825e88f}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a1494406ce8f11d47fd1e3b4af825e88f}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SMesh_a379e330c863acdade37e65275903158d}{irr\+::scene\+::\+S\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a379e330c863acdade37e65275903158d}{irr\+::scene\+::\+S\+Mesh}.
+Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a1494406ce8f11d47fd1e3b4af825e88f}{irr\+::scene\+::\+S\+Animated\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a379e330c863acdade37e65275903158d}{irr\+::scene\+::\+S\+Mesh}.
 
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMesh_a2cd1a04b396235101f426befba0c5b82}\label{classirr_1_1scene_1_1IMesh_a2cd1a04b396235101f426befba0c5b82}} 
 \index{irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}!get\+Mesh\+Buffer@{get\+Mesh\+Buffer}}
 \index{get\+Mesh\+Buffer@{get\+Mesh\+Buffer}!irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}}
-\subsubsection{\texorpdfstring{get\+Mesh\+Buffer()}{getMeshBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+\subsubsection{\texorpdfstring{get\+Mesh\+Buffer()}{getMeshBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer}$\ast$ irr\+::scene\+::\+I\+Mesh\+::get\+Mesh\+Buffer (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{nr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -113,34 +80,12 @@ Pointer to the mesh buffer or 0 if there is no such mesh buffer.
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_ac186898d77ded042569a27609195d263}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_ac186898d77ded042569a27609195d263}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SMesh_ad88b3ecd7e6f00e0ea5defb76ed205fc}{irr\+::scene\+::\+S\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_ad88b3ecd7e6f00e0ea5defb76ed205fc}{irr\+::scene\+::\+S\+Mesh}.
-
-\mbox{\Hypertarget{classirr_1_1scene_1_1IMesh_a2cd1a04b396235101f426befba0c5b82}\label{classirr_1_1scene_1_1IMesh_a2cd1a04b396235101f426befba0c5b82}} 
-\index{irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}!get\+Mesh\+Buffer@{get\+Mesh\+Buffer}}
-\index{get\+Mesh\+Buffer@{get\+Mesh\+Buffer}!irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}}
-\subsubsection{\texorpdfstring{get\+Mesh\+Buffer()}{getMeshBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer}$\ast$ irr\+::scene\+::\+I\+Mesh\+::get\+Mesh\+Buffer (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{nr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Get pointer to a mesh buffer. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em nr} & Zero based index of the mesh buffer. The maximum value is \hyperlink{classirr_1_1scene_1_1IMesh_a2ebed0bdae2d6537c36b0b7ac831edb8}{get\+Mesh\+Buffer\+Count()} -\/ 1; \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Pointer to the mesh buffer or 0 if there is no such mesh buffer. 
-\end{DoxyReturn}
-
-
-Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_ac186898d77ded042569a27609195d263}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_ac186898d77ded042569a27609195d263}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SMesh_ad88b3ecd7e6f00e0ea5defb76ed205fc}{irr\+::scene\+::\+S\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_ad88b3ecd7e6f00e0ea5defb76ed205fc}{irr\+::scene\+::\+S\+Mesh}.
+Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_ac186898d77ded042569a27609195d263}{irr\+::scene\+::\+S\+Animated\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_ad88b3ecd7e6f00e0ea5defb76ed205fc}{irr\+::scene\+::\+S\+Mesh}.
 
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMesh_a9573dace82efb01ba1f35f9cc28a4ced}\label{classirr_1_1scene_1_1IMesh_a9573dace82efb01ba1f35f9cc28a4ced}} 
 \index{irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}!get\+Mesh\+Buffer@{get\+Mesh\+Buffer}}
 \index{get\+Mesh\+Buffer@{get\+Mesh\+Buffer}!irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}}
-\subsubsection{\texorpdfstring{get\+Mesh\+Buffer()}{getMeshBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+\subsubsection{\texorpdfstring{get\+Mesh\+Buffer()}{getMeshBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer}$\ast$ irr\+::scene\+::\+I\+Mesh\+::get\+Mesh\+Buffer (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&}]{material }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -157,34 +102,12 @@ Pointer to the mesh buffer or 0 if there is no such mesh buffer.
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a3c010c881f315e56a05f40632f3c7f79}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a3c010c881f315e56a05f40632f3c7f79}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SMesh_a768eeba9148e949d6962bee08517a056}{irr\+::scene\+::\+S\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a768eeba9148e949d6962bee08517a056}{irr\+::scene\+::\+S\+Mesh}.
-
-\mbox{\Hypertarget{classirr_1_1scene_1_1IMesh_a9573dace82efb01ba1f35f9cc28a4ced}\label{classirr_1_1scene_1_1IMesh_a9573dace82efb01ba1f35f9cc28a4ced}} 
-\index{irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}!get\+Mesh\+Buffer@{get\+Mesh\+Buffer}}
-\index{get\+Mesh\+Buffer@{get\+Mesh\+Buffer}!irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}}
-\subsubsection{\texorpdfstring{get\+Mesh\+Buffer()}{getMeshBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
-{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer}$\ast$ irr\+::scene\+::\+I\+Mesh\+::get\+Mesh\+Buffer (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&}]{material }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Get pointer to a mesh buffer which fits a material. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em material} & material to search for \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Pointer to the mesh buffer or 0 if there is no such mesh buffer. 
-\end{DoxyReturn}
-
-
-Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a3c010c881f315e56a05f40632f3c7f79}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a3c010c881f315e56a05f40632f3c7f79}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SMesh_a768eeba9148e949d6962bee08517a056}{irr\+::scene\+::\+S\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a768eeba9148e949d6962bee08517a056}{irr\+::scene\+::\+S\+Mesh}.
+Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a3c010c881f315e56a05f40632f3c7f79}{irr\+::scene\+::\+S\+Animated\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a768eeba9148e949d6962bee08517a056}{irr\+::scene\+::\+S\+Mesh}.
 
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMesh_a2ebed0bdae2d6537c36b0b7ac831edb8}\label{classirr_1_1scene_1_1IMesh_a2ebed0bdae2d6537c36b0b7ac831edb8}} 
 \index{irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}!get\+Mesh\+Buffer\+Count@{get\+Mesh\+Buffer\+Count}}
 \index{get\+Mesh\+Buffer\+Count@{get\+Mesh\+Buffer\+Count}!irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}}
-\subsubsection{\texorpdfstring{get\+Mesh\+Buffer\+Count()}{getMeshBufferCount()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{get\+Mesh\+Buffer\+Count()}{getMeshBufferCount()}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} irr\+::scene\+::\+I\+Mesh\+::get\+Mesh\+Buffer\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -196,30 +119,13 @@ Amount of mesh buffers (\hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Bu
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a01dd8fd3ea4a53af90599697cd34ea01}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a01dd8fd3ea4a53af90599697cd34ea01}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SMesh_a08f677a62f8e3770af70293c8043fff4}{irr\+::scene\+::\+S\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a08f677a62f8e3770af70293c8043fff4}{irr\+::scene\+::\+S\+Mesh}.
-
-\mbox{\Hypertarget{classirr_1_1scene_1_1IMesh_a2ebed0bdae2d6537c36b0b7ac831edb8}\label{classirr_1_1scene_1_1IMesh_a2ebed0bdae2d6537c36b0b7ac831edb8}} 
-\index{irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}!get\+Mesh\+Buffer\+Count@{get\+Mesh\+Buffer\+Count}}
-\index{get\+Mesh\+Buffer\+Count@{get\+Mesh\+Buffer\+Count}!irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}}
-\subsubsection{\texorpdfstring{get\+Mesh\+Buffer\+Count()}{getMeshBufferCount()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} irr\+::scene\+::\+I\+Mesh\+::get\+Mesh\+Buffer\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Get the amount of mesh buffers. 
-
-\begin{DoxyReturn}{Returns}
-Amount of mesh buffers (\hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer}) in this mesh. 
-\end{DoxyReturn}
-
-
-Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a01dd8fd3ea4a53af90599697cd34ea01}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a01dd8fd3ea4a53af90599697cd34ea01}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SMesh_a08f677a62f8e3770af70293c8043fff4}{irr\+::scene\+::\+S\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a08f677a62f8e3770af70293c8043fff4}{irr\+::scene\+::\+S\+Mesh}.
+Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a01dd8fd3ea4a53af90599697cd34ea01}{irr\+::scene\+::\+S\+Animated\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a08f677a62f8e3770af70293c8043fff4}{irr\+::scene\+::\+S\+Mesh}.
 
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMesh_a0aee3b5bc5d31ce996becc069f65e642}\label{classirr_1_1scene_1_1IMesh_a0aee3b5bc5d31ce996becc069f65e642}} 
 \index{irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}!set\+Bounding\+Box@{set\+Bounding\+Box}}
 \index{set\+Bounding\+Box@{set\+Bounding\+Box}!irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}}
-\subsubsection{\texorpdfstring{set\+Bounding\+Box()}{setBoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Mesh\+::set\+Bounding\+Box (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_a60f4b4c744aba55f10530d503c6ecb04}{core\+::aabbox3df} \&}]{box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{set\+Bounding\+Box()}{setBoundingBox()}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Mesh\+::set\+Bounding\+Box (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_adfc8fa01b30044c55f3332a1d6c1aa19}{core\+::aabbox3df} \&}]{box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -232,32 +138,13 @@ Set user-\/defined axis aligned bounding box.
 \end{DoxyParams}
 
 
-Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_ab33614f8ef158c79260d555f69055bf5}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_ab33614f8ef158c79260d555f69055bf5}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SMesh_a636e4df4054b2ed2911808cfb6df5cb3}{irr\+::scene\+::\+S\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a636e4df4054b2ed2911808cfb6df5cb3}{irr\+::scene\+::\+S\+Mesh}.
-
-\mbox{\Hypertarget{classirr_1_1scene_1_1IMesh_a0aee3b5bc5d31ce996becc069f65e642}\label{classirr_1_1scene_1_1IMesh_a0aee3b5bc5d31ce996becc069f65e642}} 
-\index{irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}!set\+Bounding\+Box@{set\+Bounding\+Box}}
-\index{set\+Bounding\+Box@{set\+Bounding\+Box}!irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}}
-\subsubsection{\texorpdfstring{set\+Bounding\+Box()}{setBoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Mesh\+::set\+Bounding\+Box (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_a60f4b4c744aba55f10530d503c6ecb04}{core\+::aabbox3df} \&}]{box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Set user-\/defined axis aligned bounding box. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em box} & New bounding box to use for the mesh. \\
-\hline
-\end{DoxyParams}
-
-
-Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_ab33614f8ef158c79260d555f69055bf5}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_ab33614f8ef158c79260d555f69055bf5}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SMesh_a636e4df4054b2ed2911808cfb6df5cb3}{irr\+::scene\+::\+S\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a636e4df4054b2ed2911808cfb6df5cb3}{irr\+::scene\+::\+S\+Mesh}.
+Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_ab33614f8ef158c79260d555f69055bf5}{irr\+::scene\+::\+S\+Animated\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a636e4df4054b2ed2911808cfb6df5cb3}{irr\+::scene\+::\+S\+Mesh}.
 
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMesh_a496534cd4813d520d887785720f66c9b}\label{classirr_1_1scene_1_1IMesh_a496534cd4813d520d887785720f66c9b}} 
 \index{irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}!set\+Dirty@{set\+Dirty}}
 \index{set\+Dirty@{set\+Dirty}!irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}}
-\subsubsection{\texorpdfstring{set\+Dirty()}{setDirty()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Mesh\+::set\+Dirty (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE}}]{buffer = {\ttfamily \hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca34ea664123fbc28610408e51b014dcdd}{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{set\+Dirty()}{setDirty()}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Mesh\+::set\+Dirty (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE}}]{buffer = {\ttfamily \hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca833624730c30cffccc121fe31aa0832c}{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -265,27 +152,13 @@ Flag the meshbuffer as changed, reloads hardware buffers.
 
 This method has to be called every time the vertices or indices have changed. Otherwise, changes won\textquotesingle{}t be updated on the G\+PU in the next render cycle. 
 
-Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a415b9404cee43f2f460ebb32724d7793}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a415b9404cee43f2f460ebb32724d7793}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SMesh_a3ffa0e6294be831ca5be6e6ff9829ca9}{irr\+::scene\+::\+S\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a3ffa0e6294be831ca5be6e6ff9829ca9}{irr\+::scene\+::\+S\+Mesh}.
-
-\mbox{\Hypertarget{classirr_1_1scene_1_1IMesh_a496534cd4813d520d887785720f66c9b}\label{classirr_1_1scene_1_1IMesh_a496534cd4813d520d887785720f66c9b}} 
-\index{irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}!set\+Dirty@{set\+Dirty}}
-\index{set\+Dirty@{set\+Dirty}!irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}}
-\subsubsection{\texorpdfstring{set\+Dirty()}{setDirty()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Mesh\+::set\+Dirty (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE}}]{buffer = {\ttfamily \hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca34ea664123fbc28610408e51b014dcdd}{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Flag the meshbuffer as changed, reloads hardware buffers. 
-
-This method has to be called every time the vertices or indices have changed. Otherwise, changes won\textquotesingle{}t be updated on the G\+PU in the next render cycle. 
-
-Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a415b9404cee43f2f460ebb32724d7793}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a415b9404cee43f2f460ebb32724d7793}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SMesh_a3ffa0e6294be831ca5be6e6ff9829ca9}{irr\+::scene\+::\+S\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a3ffa0e6294be831ca5be6e6ff9829ca9}{irr\+::scene\+::\+S\+Mesh}.
+Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a415b9404cee43f2f460ebb32724d7793}{irr\+::scene\+::\+S\+Animated\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a3ffa0e6294be831ca5be6e6ff9829ca9}{irr\+::scene\+::\+S\+Mesh}.
 
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMesh_a1de908b8e67c28bdac546e8599043dfe}\label{classirr_1_1scene_1_1IMesh_a1de908b8e67c28bdac546e8599043dfe}} 
 \index{irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}!set\+Hardware\+Mapping\+Hint@{set\+Hardware\+Mapping\+Hint}}
 \index{set\+Hardware\+Mapping\+Hint@{set\+Hardware\+Mapping\+Hint}!irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}}
-\subsubsection{\texorpdfstring{set\+Hardware\+Mapping\+Hint()}{setHardwareMappingHint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Mesh\+::set\+Hardware\+Mapping\+Hint (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27}{E\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+P\+P\+I\+NG}}]{new\+Mapping\+Hint,  }\item[{\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE}}]{buffer = {\ttfamily \hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca34ea664123fbc28610408e51b014dcdd}{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{set\+Hardware\+Mapping\+Hint()}{setHardwareMappingHint()}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Mesh\+::set\+Hardware\+Mapping\+Hint (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27}{E\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+P\+P\+I\+NG}}]{new\+Mapping\+Hint,  }\item[{\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE}}]{buffer = {\ttfamily \hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca833624730c30cffccc121fe31aa0832c}{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -293,26 +166,12 @@ Set the hardware mapping hint.
 
 This methods allows to define optimization hints for the hardware. This enables, e.\+g., the use of hardware buffers on pltforms that support this feature. This can lead to noticeable performance gains. 
 
-Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a69448fa91bd1c6316d11d9ae3b8b88e6}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a69448fa91bd1c6316d11d9ae3b8b88e6}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SMesh_a79839b08062bfcd283e441056bf846e6}{irr\+::scene\+::\+S\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a79839b08062bfcd283e441056bf846e6}{irr\+::scene\+::\+S\+Mesh}.
-
-\mbox{\Hypertarget{classirr_1_1scene_1_1IMesh_a1de908b8e67c28bdac546e8599043dfe}\label{classirr_1_1scene_1_1IMesh_a1de908b8e67c28bdac546e8599043dfe}} 
-\index{irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}!set\+Hardware\+Mapping\+Hint@{set\+Hardware\+Mapping\+Hint}}
-\index{set\+Hardware\+Mapping\+Hint@{set\+Hardware\+Mapping\+Hint}!irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}}
-\subsubsection{\texorpdfstring{set\+Hardware\+Mapping\+Hint()}{setHardwareMappingHint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Mesh\+::set\+Hardware\+Mapping\+Hint (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1scene_ac7d8ee8d77da75f2580bb9bb17231c27}{E\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+M\+A\+P\+P\+I\+NG}}]{new\+Mapping\+Hint,  }\item[{\hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8c}{E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+Y\+PE}}]{buffer = {\ttfamily \hyperlink{namespaceirr_1_1scene_a8f59a89ffef0ad8e5b2c2cb874a93e8ca34ea664123fbc28610408e51b014dcdd}{E\+B\+T\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+A\+N\+D\+\_\+\+I\+N\+D\+EX}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Set the hardware mapping hint. 
-
-This methods allows to define optimization hints for the hardware. This enables, e.\+g., the use of hardware buffers on pltforms that support this feature. This can lead to noticeable performance gains. 
-
-Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a69448fa91bd1c6316d11d9ae3b8b88e6}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a69448fa91bd1c6316d11d9ae3b8b88e6}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SMesh_a79839b08062bfcd283e441056bf846e6}{irr\+::scene\+::\+S\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a79839b08062bfcd283e441056bf846e6}{irr\+::scene\+::\+S\+Mesh}.
+Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_a69448fa91bd1c6316d11d9ae3b8b88e6}{irr\+::scene\+::\+S\+Animated\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a79839b08062bfcd283e441056bf846e6}{irr\+::scene\+::\+S\+Mesh}.
 
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMesh_a56e034b671f52653d6c91e0ffa42febd}\label{classirr_1_1scene_1_1IMesh_a56e034b671f52653d6c91e0ffa42febd}} 
 \index{irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}!set\+Material\+Flag@{set\+Material\+Flag}}
 \index{set\+Material\+Flag@{set\+Material\+Flag}!irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}}
-\subsubsection{\texorpdfstring{set\+Material\+Flag()}{setMaterialFlag()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{set\+Material\+Flag()}{setMaterialFlag()}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Mesh\+::set\+Material\+Flag (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1video_a8a3bc00ae8137535b9fbc5f40add70d3}{video\+::\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+L\+AG}}]{flag,  }\item[{bool}]{newvalue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -328,28 +187,7 @@ Sets a flag of all contained materials to a new value.
 \end{DoxyParams}
 
 
-Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_aefe38066b9c38c6d4ea522b5d988769e}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_aefe38066b9c38c6d4ea522b5d988769e}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SMesh_a0ca30440aef6ca66dfc177b2a0e41e52}{irr\+::scene\+::\+S\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a0ca30440aef6ca66dfc177b2a0e41e52}{irr\+::scene\+::\+S\+Mesh}.
-
-\mbox{\Hypertarget{classirr_1_1scene_1_1IMesh_a56e034b671f52653d6c91e0ffa42febd}\label{classirr_1_1scene_1_1IMesh_a56e034b671f52653d6c91e0ffa42febd}} 
-\index{irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}!set\+Material\+Flag@{set\+Material\+Flag}}
-\index{set\+Material\+Flag@{set\+Material\+Flag}!irr\+::scene\+::\+I\+Mesh@{irr\+::scene\+::\+I\+Mesh}}
-\subsubsection{\texorpdfstring{set\+Material\+Flag()}{setMaterialFlag()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Mesh\+::set\+Material\+Flag (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1video_a8a3bc00ae8137535b9fbc5f40add70d3}{video\+::\+E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+L\+AG}}]{flag,  }\item[{bool}]{newvalue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Sets a flag of all contained materials to a new value. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em flag} & Flag to set in all materials. \\
-\hline
-{\em newvalue} & New value to set in all materials. \\
-\hline
-\end{DoxyParams}
-
-
-Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_aefe38066b9c38c6d4ea522b5d988769e}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_aefe38066b9c38c6d4ea522b5d988769e}{irr\+::scene\+::\+S\+Animated\+Mesh}, \hyperlink{structirr_1_1scene_1_1SMesh_a0ca30440aef6ca66dfc177b2a0e41e52}{irr\+::scene\+::\+S\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a0ca30440aef6ca66dfc177b2a0e41e52}{irr\+::scene\+::\+S\+Mesh}.
+Implemented in \hyperlink{structirr_1_1scene_1_1SAnimatedMesh_aefe38066b9c38c6d4ea522b5d988769e}{irr\+::scene\+::\+S\+Animated\+Mesh}, and \hyperlink{structirr_1_1scene_1_1SMesh_a0ca30440aef6ca66dfc177b2a0e41e52}{irr\+::scene\+::\+S\+Mesh}.
 
 
 

@@ -26,17 +26,7 @@ virtual long \hyperlink{classirr_1_1io_1_1IReadFile_a9c64fca7f1d665d7e458cd7d766
 \begin{DoxyCompactList}\small\item\em Get size of file. \end{DoxyCompactList}\item 
 virtual long \hyperlink{classirr_1_1io_1_1IReadFile_aeee143ee38871c30f240c025b100941d}{get\+Pos} () const =0
 \begin{DoxyCompactList}\small\item\em Get the current position in the file. \end{DoxyCompactList}\item 
-virtual const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{io\+::path} \& \hyperlink{classirr_1_1io_1_1IReadFile_a73b9c884319d2e4b0ff9a7ea15cbf316}{get\+File\+Name} () const =0
-\begin{DoxyCompactList}\small\item\em Get name of file. \end{DoxyCompactList}\item 
-virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1io_1_1IReadFile_ab51878d36bc9dd3964b664055fbeb13f}{read} (void $\ast$buffer, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} size\+To\+Read)=0
-\begin{DoxyCompactList}\small\item\em Reads an amount of bytes from the file. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classirr_1_1io_1_1IReadFile_ac1cd81f18832e8703838d7abd495bf34}{seek} (long final\+Pos, bool relative\+Movement=false)=0
-\begin{DoxyCompactList}\small\item\em Changes position in file. \end{DoxyCompactList}\item 
-virtual long \hyperlink{classirr_1_1io_1_1IReadFile_a9c64fca7f1d665d7e458cd7d766c35a2}{get\+Size} () const =0
-\begin{DoxyCompactList}\small\item\em Get size of file. \end{DoxyCompactList}\item 
-virtual long \hyperlink{classirr_1_1io_1_1IReadFile_aeee143ee38871c30f240c025b100941d}{get\+Pos} () const =0
-\begin{DoxyCompactList}\small\item\em Get the current position in the file. \end{DoxyCompactList}\item 
-virtual const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{io\+::path} \& \hyperlink{classirr_1_1io_1_1IReadFile_a73b9c884319d2e4b0ff9a7ea15cbf316}{get\+File\+Name} () const =0
+virtual const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \& \hyperlink{classirr_1_1io_1_1IReadFile_a73b9c884319d2e4b0ff9a7ea15cbf316}{get\+File\+Name} () const =0
 \begin{DoxyCompactList}\small\item\em Get name of file. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -48,21 +38,8 @@ Interface providing read acess to a file.
 \mbox{\Hypertarget{classirr_1_1io_1_1IReadFile_a73b9c884319d2e4b0ff9a7ea15cbf316}\label{classirr_1_1io_1_1IReadFile_a73b9c884319d2e4b0ff9a7ea15cbf316}} 
 \index{irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}!get\+File\+Name@{get\+File\+Name}}
 \index{get\+File\+Name@{get\+File\+Name}!irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}}
-\subsubsection{\texorpdfstring{get\+File\+Name()}{getFileName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{io\+::path}\& irr\+::io\+::\+I\+Read\+File\+::get\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Get name of file. 
-
-\begin{DoxyReturn}{Returns}
-File name as zero terminated character string. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1io_1_1IReadFile_a73b9c884319d2e4b0ff9a7ea15cbf316}\label{classirr_1_1io_1_1IReadFile_a73b9c884319d2e4b0ff9a7ea15cbf316}} 
-\index{irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}!get\+File\+Name@{get\+File\+Name}}
-\index{get\+File\+Name@{get\+File\+Name}!irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}}
-\subsubsection{\texorpdfstring{get\+File\+Name()}{getFileName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{io\+::path}\& irr\+::io\+::\+I\+Read\+File\+::get\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{get\+File\+Name()}{getFileName()}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path}\& irr\+::io\+::\+I\+Read\+File\+::get\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -74,20 +51,7 @@ File name as zero terminated character string.
 \mbox{\Hypertarget{classirr_1_1io_1_1IReadFile_aeee143ee38871c30f240c025b100941d}\label{classirr_1_1io_1_1IReadFile_aeee143ee38871c30f240c025b100941d}} 
 \index{irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}!get\+Pos@{get\+Pos}}
 \index{get\+Pos@{get\+Pos}!irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}}
-\subsubsection{\texorpdfstring{get\+Pos()}{getPos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual long irr\+::io\+::\+I\+Read\+File\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Get the current position in the file. 
-
-\begin{DoxyReturn}{Returns}
-Current position in the file in bytes. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1io_1_1IReadFile_aeee143ee38871c30f240c025b100941d}\label{classirr_1_1io_1_1IReadFile_aeee143ee38871c30f240c025b100941d}} 
-\index{irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}!get\+Pos@{get\+Pos}}
-\index{get\+Pos@{get\+Pos}!irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}}
-\subsubsection{\texorpdfstring{get\+Pos()}{getPos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{get\+Pos()}{getPos()}}
 {\footnotesize\ttfamily virtual long irr\+::io\+::\+I\+Read\+File\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -100,20 +64,7 @@ Current position in the file in bytes.
 \mbox{\Hypertarget{classirr_1_1io_1_1IReadFile_a9c64fca7f1d665d7e458cd7d766c35a2}\label{classirr_1_1io_1_1IReadFile_a9c64fca7f1d665d7e458cd7d766c35a2}} 
 \index{irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}!get\+Size@{get\+Size}}
 \index{get\+Size@{get\+Size}!irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}}
-\subsubsection{\texorpdfstring{get\+Size()}{getSize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual long irr\+::io\+::\+I\+Read\+File\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Get size of file. 
-
-\begin{DoxyReturn}{Returns}
-Size of the file in bytes. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1io_1_1IReadFile_a9c64fca7f1d665d7e458cd7d766c35a2}\label{classirr_1_1io_1_1IReadFile_a9c64fca7f1d665d7e458cd7d766c35a2}} 
-\index{irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}!get\+Size@{get\+Size}}
-\index{get\+Size@{get\+Size}!irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}}
-\subsubsection{\texorpdfstring{get\+Size()}{getSize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{get\+Size()}{getSize()}}
 {\footnotesize\ttfamily virtual long irr\+::io\+::\+I\+Read\+File\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -126,27 +77,7 @@ Size of the file in bytes.
 \mbox{\Hypertarget{classirr_1_1io_1_1IReadFile_ab51878d36bc9dd3964b664055fbeb13f}\label{classirr_1_1io_1_1IReadFile_ab51878d36bc9dd3964b664055fbeb13f}} 
 \index{irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}!read@{read}}
 \index{read@{read}!irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}}
-\subsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::io\+::\+I\+Read\+File\+::read (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer,  }\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{size\+To\+Read }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Reads an amount of bytes from the file. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em buffer} & Pointer to buffer where read bytes are written to. \\
-\hline
-{\em size\+To\+Read} & Amount of bytes to read from the file. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-How many bytes were read. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1io_1_1IReadFile_ab51878d36bc9dd3964b664055fbeb13f}\label{classirr_1_1io_1_1IReadFile_ab51878d36bc9dd3964b664055fbeb13f}} 
-\index{irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}!read@{read}}
-\index{read@{read}!irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}}
-\subsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{read()}{read()}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::io\+::\+I\+Read\+File\+::read (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer,  }\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{size\+To\+Read }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -166,27 +97,7 @@ How many bytes were read.
 \mbox{\Hypertarget{classirr_1_1io_1_1IReadFile_ac1cd81f18832e8703838d7abd495bf34}\label{classirr_1_1io_1_1IReadFile_ac1cd81f18832e8703838d7abd495bf34}} 
 \index{irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}!seek@{seek}}
 \index{seek@{seek}!irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}}
-\subsubsection{\texorpdfstring{seek()}{seek()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual bool irr\+::io\+::\+I\+Read\+File\+::seek (\begin{DoxyParamCaption}\item[{long}]{final\+Pos,  }\item[{bool}]{relative\+Movement = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Changes position in file. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em final\+Pos} & Destination position in the file. \\
-\hline
-{\em relative\+Movement} & If set to true, the position in the file is changed relative to current position. Otherwise the position is changed from beginning of file. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-True if successful, otherwise false. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1io_1_1IReadFile_ac1cd81f18832e8703838d7abd495bf34}\label{classirr_1_1io_1_1IReadFile_ac1cd81f18832e8703838d7abd495bf34}} 
-\index{irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}!seek@{seek}}
-\index{seek@{seek}!irr\+::io\+::\+I\+Read\+File@{irr\+::io\+::\+I\+Read\+File}}
-\subsubsection{\texorpdfstring{seek()}{seek()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{seek()}{seek()}}
 {\footnotesize\ttfamily virtual bool irr\+::io\+::\+I\+Read\+File\+::seek (\begin{DoxyParamCaption}\item[{long}]{final\+Pos,  }\item[{bool}]{relative\+Movement = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

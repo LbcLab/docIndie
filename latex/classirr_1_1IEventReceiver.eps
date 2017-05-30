@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 555.555556
+%%BoundingBox: 0 0 500 208.827717
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,13 +19,13 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 0.900000 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 2.394318 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 11 def
-/cols 2 def
+/rows 22 def
+/cols 7 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
 
@@ -177,13 +177,33 @@ boxfont setfont
 (GameMenuReceiver) cw
 (GameNewReceiver) cw
 (irr::gui::IGUIElement) cw
-(irr::gui::IGUIElement) cw
 (irr::scene::ICameraSceneNode) cw
-(irr::scene::ICameraSceneNode) cw
-(irr::scene::ISceneNodeAnimator) cw
 (irr::scene::ISceneNodeAnimator) cw
 (OptionSoundReceiver) cw
 (OptionVideoReceiver) cw
+(irr::gui::IGUIButton) cw
+(irr::gui::IGUICheckBox) cw
+(irr::gui::IGUIColorSelectDialog) cw
+(irr::gui::IGUIComboBox) cw
+(irr::gui::IGUIContextMenu) cw
+(irr::gui::IGUIEditBox) cw
+(irr::gui::IGUIFileOpenDialog) cw
+(irr::gui::IGUIImage) cw
+(irr::gui::IGUIInOutFader) cw
+(irr::gui::IGUIListBox) cw
+(irr::gui::IGUIMeshViewer) cw
+(irr::gui::IGUIScrollBar) cw
+(irr::gui::IGUISpinBox) cw
+(irr::gui::IGUIStaticText) cw
+(irr::gui::IGUITab) cw
+(irr::gui::IGUITabControl) cw
+(irr::gui::IGUITable) cw
+(irr::gui::IGUIToolBar) cw
+(irr::gui::IGUITreeView) cw
+(irr::gui::IGUIWindow) cw
+(irr::scene::ISceneNodeAnimatorCameraFPS) cw
+(irr::scene::ISceneNodeAnimatorCameraMaya) cw
+(irr::scene::ISceneNodeAnimatorCollisionResponse) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
 /yspacing boxheight disty add def
@@ -195,45 +215,109 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (irr::IEventReceiver) 0.000000 10.000000 box
- (GameMenuReceiver) 1.000000 9.000000 box
- (GameNewReceiver) 1.000000 8.000000 box
- (irr::gui::IGUIElement) 1.000000 7.000000 box
-1.000000 7.000000 mark
- (irr::gui::IGUIElement) 1.000000 6.000000 box
-1.000000 6.000000 mark
- (irr::scene::ICameraSceneNode) 1.000000 5.000000 box
- (irr::scene::ICameraSceneNode) 1.000000 4.000000 box
- (irr::scene::ISceneNodeAnimator) 1.000000 3.000000 box
-1.000000 3.000000 mark
- (irr::scene::ISceneNodeAnimator) 1.000000 2.000000 box
-1.000000 2.000000 mark
- (OptionSoundReceiver) 1.000000 1.000000 box
- (OptionVideoReceiver) 1.000000 0.000000 box
+ (irr::IEventReceiver) 3.000000 21.000000 box
+ (GameMenuReceiver) 0.000000 20.000000 box
+ (GameNewReceiver) 1.000000 20.000000 box
+ (irr::gui::IGUIElement) 2.000000 20.000000 box
+ (irr::scene::ICameraSceneNode) 3.000000 20.000000 box
+ (irr::scene::ISceneNodeAnimator) 4.000000 20.000000 box
+ (OptionSoundReceiver) 5.000000 20.000000 box
+ (OptionVideoReceiver) 6.000000 20.000000 box
+ (irr::gui::IGUIButton) 3.000000 19.000000 box
+ (irr::gui::IGUICheckBox) 3.000000 18.000000 box
+ (irr::gui::IGUIColorSelectDialog) 3.000000 17.000000 box
+ (irr::gui::IGUIComboBox) 3.000000 16.000000 box
+ (irr::gui::IGUIContextMenu) 3.000000 15.000000 box
+ (irr::gui::IGUIEditBox) 3.000000 14.000000 box
+ (irr::gui::IGUIFileOpenDialog) 3.000000 13.000000 box
+ (irr::gui::IGUIImage) 3.000000 12.000000 box
+ (irr::gui::IGUIInOutFader) 3.000000 11.000000 box
+ (irr::gui::IGUIListBox) 3.000000 10.000000 box
+ (irr::gui::IGUIMeshViewer) 3.000000 9.000000 box
+ (irr::gui::IGUIScrollBar) 3.000000 8.000000 box
+ (irr::gui::IGUISpinBox) 3.000000 7.000000 box
+ (irr::gui::IGUIStaticText) 3.000000 6.000000 box
+ (irr::gui::IGUITab) 3.000000 5.000000 box
+ (irr::gui::IGUITabControl) 3.000000 4.000000 box
+ (irr::gui::IGUITable) 3.000000 3.000000 box
+ (irr::gui::IGUIToolBar) 3.000000 2.000000 box
+ (irr::gui::IGUITreeView) 3.000000 1.000000 box
+ (irr::gui::IGUIWindow) 3.000000 0.000000 box
+ (irr::scene::ISceneNodeAnimatorCameraFPS) 5.000000 19.000000 box
+ (irr::scene::ISceneNodeAnimatorCameraMaya) 5.000000 18.000000 box
+ (irr::scene::ISceneNodeAnimatorCollisionResponse) 5.000000 17.000000 box
 
 % ----- relations -----
 
 solid
-1 0.000000 9.250000 out
+1 3.000000 20.250000 out
 solid
-0 0.000000 9.500000 hedge
+0.000000 6.000000 21.000000 conn
 solid
-0 0.000000 8.500000 hedge
+0 0.000000 20.750000 in
 solid
-0 0.000000 7.500000 hedge
+0 1.000000 20.750000 in
 solid
-0 0.000000 6.500000 hedge
+0 2.000000 20.750000 in
 solid
-0 0.000000 5.500000 hedge
+1 2.000000 19.250000 out
 solid
-0 0.000000 4.500000 hedge
+0 3.000000 20.750000 in
 solid
-0 0.000000 3.500000 hedge
+0 4.000000 20.750000 in
 solid
-0 0.000000 2.500000 hedge
+1 4.000000 19.250000 out
 solid
-0 0.000000 1.500000 hedge
+0 5.000000 20.750000 in
 solid
-0 0.000000 0.500000 hedge
+0 6.000000 20.750000 in
 solid
-0.000000 10.000000 0.500000 vedge
+0 2.000000 19.500000 hedge
+solid
+0 2.000000 18.500000 hedge
+solid
+0 2.000000 17.500000 hedge
+solid
+0 2.000000 16.500000 hedge
+solid
+0 2.000000 15.500000 hedge
+solid
+0 2.000000 14.500000 hedge
+solid
+0 2.000000 13.500000 hedge
+solid
+0 2.000000 12.500000 hedge
+solid
+0 2.000000 11.500000 hedge
+solid
+0 2.000000 10.500000 hedge
+solid
+0 2.000000 9.500000 hedge
+solid
+0 2.000000 8.500000 hedge
+solid
+0 2.000000 7.500000 hedge
+solid
+0 2.000000 6.500000 hedge
+solid
+0 2.000000 5.500000 hedge
+solid
+0 2.000000 4.500000 hedge
+solid
+0 2.000000 3.500000 hedge
+solid
+0 2.000000 2.500000 hedge
+solid
+0 2.000000 1.500000 hedge
+solid
+0 2.000000 0.500000 hedge
+solid
+2.000000 20.000000 0.500000 vedge
+solid
+0 4.000000 19.500000 hedge
+solid
+0 4.000000 18.500000 hedge
+solid
+0 4.000000 17.500000 hedge
+solid
+4.000000 20.000000 17.500000 vedge

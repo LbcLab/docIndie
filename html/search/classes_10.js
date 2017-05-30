@@ -1,27 +1,4 @@
 var searchData=
 [
-  ['vector2d',['vector2d',['../classirr_1_1core_1_1vector2d.html',1,'irr::core']]],
-  ['vector2d_3c_20f32_20_3e',['vector2d&lt; f32 &gt;',['../classirr_1_1core_1_1vector2d.html',1,'irr::core']]],
-  ['vector3d',['vector3d',['../classirr_1_1core_1_1vector3d.html',1,'irr::core']]],
-  ['vector3d_3c_20f32_20_3e',['vector3d&lt; f32 &gt;',['../classirr_1_1core_1_1vector3d.html',1,'irr::core']]],
-  ['video_5fformat_5ft',['video_format_t',['../structvideo__format__t.html',1,'']]],
-  ['video_5fsplitter_5foutput_5ft',['video_splitter_output_t',['../structvideo__splitter__output__t.html',1,'']]],
-  ['video_5fsplitter_5ft',['video_splitter_t',['../structvideo__splitter__t.html',1,'']]],
-  ['vlc_5fchroma_5fdescription_5ft',['vlc_chroma_description_t',['../structvlc__chroma__description__t.html',1,'']]],
-  ['vlc_5flist_5ft',['vlc_list_t',['../structvlc__list__t.html',1,'']]],
-  ['vlc_5flog_5ft',['vlc_log_t',['../structvlc__log__t.html',1,'']]],
-  ['vlc_5fmouse_5ft',['vlc_mouse_t',['../structvlc__mouse__t.html',1,'']]],
-  ['vlc_5fobject_5ft',['vlc_object_t',['../structvlc__object__t.html',1,'']]],
-  ['vlc_5ftls',['vlc_tls',['../structvlc__tls.html',1,'']]],
-  ['vlc_5ftls_5fcreds',['vlc_tls_creds',['../structvlc__tls__creds.html',1,'']]],
-  ['vlc_5fvalue_5ft',['vlc_value_t',['../unionvlc__value__t.html',1,'']]],
-  ['vlm_5fmedia_5finstance_5ft',['vlm_media_instance_t',['../structvlm__media__instance__t.html',1,'']]],
-  ['vlm_5fmedia_5ft',['vlm_media_t',['../structvlm__media__t.html',1,'']]],
-  ['vout_5fconfiguration_5ft',['vout_configuration_t',['../structvout__configuration__t.html',1,'']]],
-  ['vout_5fdisplay_5fcfg_5ft',['vout_display_cfg_t',['../structvout__display__cfg__t.html',1,'']]],
-  ['vout_5fdisplay_5finfo_5ft',['vout_display_info_t',['../structvout__display__info__t.html',1,'']]],
-  ['vout_5fdisplay_5fowner_5ft',['vout_display_owner_t',['../structvout__display__owner__t.html',1,'']]],
-  ['vout_5fdisplay_5fplace_5ft',['vout_display_place_t',['../structvout__display__place__t.html',1,'']]],
-  ['vout_5fthread_5ft',['vout_thread_t',['../structvout__thread__t.html',1,'']]],
-  ['vout_5fwindow_5ft',['vout_window_t',['../structvout__window__t.html',1,'']]]
+  ['window',['Window',['../classWindow.html',1,'']]]
 ];

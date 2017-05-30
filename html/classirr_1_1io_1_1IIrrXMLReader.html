@@ -73,66 +73,12 @@ $(function() {
 <p>Interface providing easy read access to a XML file.  
  <a href="classirr_1_1io_1_1IIrrXMLReader.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="indie__share_2controller_2include_2irrXML_8h_source.html">irrXML.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="irrXML_8h_source.html">irrXML.h</a>&gt;</code></p>
 
-<p>Inherits super_class, and super_class.</p>
+<p>Inherits super_class.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad1d9faeae926afc224d9dea0ad7a08ac"><td class="memItemLeft" align="right" valign="top"><a id="ad1d9faeae926afc224d9dea0ad7a08ac"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#ad1d9faeae926afc224d9dea0ad7a08ac">~IIrrXMLReader</a> ()</td></tr>
-<tr class="memdesc:ad1d9faeae926afc224d9dea0ad7a08ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
-<tr class="separator:ad1d9faeae926afc224d9dea0ad7a08ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a157f458f7dabeeff173f72a0fb443a8e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#a157f458f7dabeeff173f72a0fb443a8e">read</a> ()=0</td></tr>
-<tr class="memdesc:a157f458f7dabeeff173f72a0fb443a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads forward to the next xml node.  <a href="#a157f458f7dabeeff173f72a0fb443a8e">More...</a><br /></td></tr>
-<tr class="separator:a157f458f7dabeeff173f72a0fb443a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3482e8e6bdc15965fc6a0bcef6e9a8e0"><td class="memItemLeft" align="right" valign="top"><a id="a3482e8e6bdc15965fc6a0bcef6e9a8e0"></a>
-virtual <a class="el" href="namespaceirr_1_1io.html#a86a02676c9cbb822e04d60c81b4f33ed">EXML_NODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#a3482e8e6bdc15965fc6a0bcef6e9a8e0">getNodeType</a> () const =0</td></tr>
-<tr class="memdesc:a3482e8e6bdc15965fc6a0bcef6e9a8e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of the current XML node. <br /></td></tr>
-<tr class="separator:a3482e8e6bdc15965fc6a0bcef6e9a8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f85253d2efb15061facdb9571b9c549"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#a8f85253d2efb15061facdb9571b9c549">getAttributeCount</a> () const =0</td></tr>
-<tr class="memdesc:a8f85253d2efb15061facdb9571b9c549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns attribute count of the current XML node.  <a href="#a8f85253d2efb15061facdb9571b9c549">More...</a><br /></td></tr>
-<tr class="separator:a8f85253d2efb15061facdb9571b9c549"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0807dc565c67fcf355e656df1a326ef"><td class="memItemLeft" align="right" valign="top">virtual const char_type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#aa0807dc565c67fcf355e656df1a326ef">getAttributeName</a> (int idx) const =0</td></tr>
-<tr class="memdesc:aa0807dc565c67fcf355e656df1a326ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns name of an attribute.  <a href="#aa0807dc565c67fcf355e656df1a326ef">More...</a><br /></td></tr>
-<tr class="separator:aa0807dc565c67fcf355e656df1a326ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41bd71a1b9d4a80cd1d0257dedb35325"><td class="memItemLeft" align="right" valign="top">virtual const char_type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#a41bd71a1b9d4a80cd1d0257dedb35325">getAttributeValue</a> (int idx) const =0</td></tr>
-<tr class="memdesc:a41bd71a1b9d4a80cd1d0257dedb35325"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of an attribute.  <a href="#a41bd71a1b9d4a80cd1d0257dedb35325">More...</a><br /></td></tr>
-<tr class="separator:a41bd71a1b9d4a80cd1d0257dedb35325"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaac9a49b396e7fc2d335335f36391a9"><td class="memItemLeft" align="right" valign="top">virtual const char_type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#adaac9a49b396e7fc2d335335f36391a9">getAttributeValue</a> (const char_type *name) const =0</td></tr>
-<tr class="memdesc:adaac9a49b396e7fc2d335335f36391a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of an attribute.  <a href="#adaac9a49b396e7fc2d335335f36391a9">More...</a><br /></td></tr>
-<tr class="separator:adaac9a49b396e7fc2d335335f36391a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7674852b2e24b2710b90aab10ef1fc22"><td class="memItemLeft" align="right" valign="top">virtual const char_type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#a7674852b2e24b2710b90aab10ef1fc22">getAttributeValueSafe</a> (const char_type *name) const =0</td></tr>
-<tr class="memdesc:a7674852b2e24b2710b90aab10ef1fc22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of an attribute in a safe way.  <a href="#a7674852b2e24b2710b90aab10ef1fc22">More...</a><br /></td></tr>
-<tr class="separator:a7674852b2e24b2710b90aab10ef1fc22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab37bef58865355a7dba0011a38e6c8e7"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#ab37bef58865355a7dba0011a38e6c8e7">getAttributeValueAsInt</a> (const char_type *name) const =0</td></tr>
-<tr class="memdesc:ab37bef58865355a7dba0011a38e6c8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of an attribute as integer.  <a href="#ab37bef58865355a7dba0011a38e6c8e7">More...</a><br /></td></tr>
-<tr class="separator:ab37bef58865355a7dba0011a38e6c8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f2d57c9f358b9683fb177f440661426"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#a8f2d57c9f358b9683fb177f440661426">getAttributeValueAsInt</a> (int idx) const =0</td></tr>
-<tr class="memdesc:a8f2d57c9f358b9683fb177f440661426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of an attribute as integer.  <a href="#a8f2d57c9f358b9683fb177f440661426">More...</a><br /></td></tr>
-<tr class="separator:a8f2d57c9f358b9683fb177f440661426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b1032f213e9910827842f6057269235"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#a2b1032f213e9910827842f6057269235">getAttributeValueAsFloat</a> (const char_type *name) const =0</td></tr>
-<tr class="memdesc:a2b1032f213e9910827842f6057269235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of an attribute as float.  <a href="#a2b1032f213e9910827842f6057269235">More...</a><br /></td></tr>
-<tr class="separator:a2b1032f213e9910827842f6057269235"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a01b3cec9db01d00928074846d39add"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#a3a01b3cec9db01d00928074846d39add">getAttributeValueAsFloat</a> (int idx) const =0</td></tr>
-<tr class="memdesc:a3a01b3cec9db01d00928074846d39add"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of an attribute as float.  <a href="#a3a01b3cec9db01d00928074846d39add">More...</a><br /></td></tr>
-<tr class="separator:a3a01b3cec9db01d00928074846d39add"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d745b130c895d0f910f191d04e20e87"><td class="memItemLeft" align="right" valign="top">virtual const char_type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#a7d745b130c895d0f910f191d04e20e87">getNodeName</a> () const =0</td></tr>
-<tr class="memdesc:a7d745b130c895d0f910f191d04e20e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the current node.  <a href="#a7d745b130c895d0f910f191d04e20e87">More...</a><br /></td></tr>
-<tr class="separator:a7d745b130c895d0f910f191d04e20e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecbe0698e8f9acf88e27dd53da984210"><td class="memItemLeft" align="right" valign="top">virtual const char_type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#aecbe0698e8f9acf88e27dd53da984210">getNodeData</a> () const =0</td></tr>
-<tr class="memdesc:aecbe0698e8f9acf88e27dd53da984210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns data of the current node.  <a href="#aecbe0698e8f9acf88e27dd53da984210">More...</a><br /></td></tr>
-<tr class="separator:aecbe0698e8f9acf88e27dd53da984210"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c85b144e0376c9ff90bce1bbbc338a9"><td class="memItemLeft" align="right" valign="top"><a id="a3c85b144e0376c9ff90bce1bbbc338a9"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#a3c85b144e0376c9ff90bce1bbbc338a9">isEmptyElement</a> () const =0</td></tr>
-<tr class="memdesc:a3c85b144e0376c9ff90bce1bbbc338a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if an element is an empty element, like &lt;foo /&gt; <br /></td></tr>
-<tr class="separator:a3c85b144e0376c9ff90bce1bbbc338a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00998ef2d3a562d6b2b8302c3430322d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#ac7e51e5a6bd00451dec248f497b16a9d">ETEXT_FORMAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#a00998ef2d3a562d6b2b8302c3430322d">getSourceFormat</a> () const =0</td></tr>
-<tr class="memdesc:a00998ef2d3a562d6b2b8302c3430322d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns format of the source xml file.  <a href="#a00998ef2d3a562d6b2b8302c3430322d">More...</a><br /></td></tr>
-<tr class="separator:a00998ef2d3a562d6b2b8302c3430322d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9af7e323c292a4836bf4a7c093b4d85a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#ac7e51e5a6bd00451dec248f497b16a9d">ETEXT_FORMAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#a9af7e323c292a4836bf4a7c093b4d85a">getParserFormat</a> () const =0</td></tr>
-<tr class="memdesc:a9af7e323c292a4836bf4a7c093b4d85a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns format of the strings returned by the parser.  <a href="#a9af7e323c292a4836bf4a7c093b4d85a">More...</a><br /></td></tr>
-<tr class="separator:a9af7e323c292a4836bf4a7c093b4d85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1d9faeae926afc224d9dea0ad7a08ac"><td class="memItemLeft" align="right" valign="top"><a id="ad1d9faeae926afc224d9dea0ad7a08ac"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#ad1d9faeae926afc224d9dea0ad7a08ac">~IIrrXMLReader</a> ()</td></tr>
 <tr class="memdesc:ad1d9faeae926afc224d9dea0ad7a08ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
@@ -193,41 +139,11 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 class irr::io::IIrrXMLReader&lt; char_type, super_class &gt;</h3>
 
 <p>Interface providing easy read access to a XML file. </p>
-<p>You can create an instance of this reader using one of the factory functions <a class="el" href="namespaceirr_1_1io.html#a638e38fd4c6d6e40ce4f332be6a3b570" title="Creates an instance of an UFT-8 or ASCII character xml parser. ">createIrrXMLReader()</a>, <a class="el" href="namespaceirr_1_1io.html#a2b7451dc3f1606c80bf46be9ccc955d9" title="Creates an instance of an UFT-16 xml parser. ">createIrrXMLReaderUTF16()</a> and <a class="el" href="namespaceirr_1_1io.html#a69d4b7a461a7a0b8715d346bbe9a49b0" title="Creates an instance of an UFT-32 xml parser. ">createIrrXMLReaderUTF32()</a>. If using the parser from the Irrlicht Engine, please use <a class="el" href="classirr_1_1io_1_1IFileSystem.html#a167c9fa159d16ee5c56c074636b0865e" title="Creates a XML Reader from a file which returns all parsed strings as wide characters (wchar_t*)...">IFileSystem::createXMLReader()</a> instead. For a detailed intro how to use the parser, see <a class="el" href="/home/valkheim/rendu/cpp_indie_studio/indie_share/controller/include/irrXML.h.html#irrxmlexample">Example</a> and <a class="el" href="/home/valkheim/rendu/cpp_indie_studio/indie_share/controller/include/irrXML.h.html#features">Features</a>.</p>
-<p>The typical usage of this parser looks like this: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;irrXML.h&gt;</span></div><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespaceirr.html">irr</a>; <span class="comment">// irrXML is located in the namespace irr::io</span></div><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespaceio.html">io</a>;</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> main()</div><div class="line">{</div><div class="line">    <span class="comment">// create the reader using one of the factory functions</span></div><div class="line">    <a class="code" href="namespaceirr_1_1io.html#a682f8a2c4c57259bfde1ec8fa27a565b">IrrXMLReader</a>* xml = <a class="code" href="namespaceirr_1_1io.html#a638e38fd4c6d6e40ce4f332be6a3b570">createIrrXMLReader</a>(<span class="stringliteral">&quot;config.xml&quot;</span>);</div><div class="line"></div><div class="line">    <span class="keywordflow">if</span> (xml == 0)</div><div class="line">        <span class="keywordflow">return</span>; <span class="comment">// file could not be opened</span></div><div class="line"></div><div class="line">    <span class="comment">// parse the file until end reached</span></div><div class="line">    <span class="keywordflow">while</span>(xml-&gt;read())</div><div class="line">    {</div><div class="line">        <span class="comment">// based on xml-&gt;getNodeType(), do something.</span></div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="comment">// delete the xml parser after usage</span></div><div class="line">    <span class="keyword">delete</span> xml;</div><div class="line">}</div></div><!-- fragment --><p> See <a class="el" href="/home/valkheim/rendu/cpp_indie_studio/indie_share/controller/include/irrXML.h.html#irrxmlexample">Example</a> for a more detailed example. </p>
+<p>You can create an instance of this reader using one of the factory functions <a class="el" href="namespaceirr_1_1io.html#a581f4d4648398759c61266d63d7106b1" title="Creates an instance of an UFT-8 or ASCII character xml parser. ">createIrrXMLReader()</a>, <a class="el" href="namespaceirr_1_1io.html#a86473ef152c15b685af181a4c5461a5d" title="Creates an instance of an UFT-16 xml parser. ">createIrrXMLReaderUTF16()</a> and <a class="el" href="namespaceirr_1_1io.html#ae05bf7ee342431ea8c98fb98e75b974a" title="Creates an instance of an UFT-32 xml parser. ">createIrrXMLReaderUTF32()</a>. If using the parser from the Irrlicht Engine, please use <a class="el" href="classirr_1_1io_1_1IFileSystem.html#a167c9fa159d16ee5c56c074636b0865e" title="Creates a XML Reader from a file which returns all parsed strings as wide characters (wchar_t*)...">IFileSystem::createXMLReader()</a> instead. For a detailed intro how to use the parser, see <a class="el" href="/home/valkheim/rendu/cpp_indie_studio/indie_share/controller/include/irrXML.h.html#irrxmlexample">Example</a> and <a class="el" href="/home/valkheim/rendu/cpp_indie_studio/indie_share/controller/include/irrXML.h.html#features">Features</a>.</p>
+<p>The typical usage of this parser looks like this: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="irrXML_8h.html">irrXML.h</a>&gt;</span></div><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespaceirr.html">irr</a>; <span class="comment">// irrXML is located in the namespace irr::io</span></div><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespaceio.html">io</a>;</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> main()</div><div class="line">{</div><div class="line">    <span class="comment">// create the reader using one of the factory functions</span></div><div class="line">    <a class="code" href="namespaceirr_1_1io.html#a1628edbb9d5d53f18c82d2a92b0ad27e">IrrXMLReader</a>* xml = <a class="code" href="namespaceirr_1_1io.html#a581f4d4648398759c61266d63d7106b1">createIrrXMLReader</a>(<span class="stringliteral">&quot;config.xml&quot;</span>);</div><div class="line"></div><div class="line">    <span class="keywordflow">if</span> (xml == 0)</div><div class="line">        <span class="keywordflow">return</span>; <span class="comment">// file could not be opened</span></div><div class="line"></div><div class="line">    <span class="comment">// parse the file until end reached</span></div><div class="line">    <span class="keywordflow">while</span>(xml-&gt;read())</div><div class="line">    {</div><div class="line">        <span class="comment">// based on xml-&gt;getNodeType(), do something.</span></div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="comment">// delete the xml parser after usage</span></div><div class="line">    <span class="keyword">delete</span> xml;</div><div class="line">}</div></div><!-- fragment --><p> See <a class="el" href="/home/valkheim/rendu/cpp_indie_studio/indie_share/controller/include/irrXML.h.html#irrxmlexample">Example</a> for a more detailed example. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8f85253d2efb15061facdb9571b9c549"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f85253d2efb15061facdb9571b9c549">&#9670;&nbsp;</a></span>getAttributeCount() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class char_type , class super_class &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual unsigned int <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html">irr::io::IIrrXMLReader</a>&lt; char_type, super_class &gt;::getAttributeCount </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns attribute count of the current XML node. </p>
-<p>This is usually non null if the current node is EXN_ELEMENT, and the element has attributes. </p><dl class="section return"><dt>Returns</dt><dd>Returns amount of attributes of this xml node. </dd></dl>
-
-</div>
-</div>
-<a id="a8f85253d2efb15061facdb9571b9c549"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f85253d2efb15061facdb9571b9c549">&#9670;&nbsp;</a></span>getAttributeCount() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f85253d2efb15061facdb9571b9c549">&#9670;&nbsp;</a></span>getAttributeCount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -257,44 +173,7 @@ template&lt;class char_type , class super_class &gt; </div>
 </div>
 </div>
 <a id="aa0807dc565c67fcf355e656df1a326ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0807dc565c67fcf355e656df1a326ef">&#9670;&nbsp;</a></span>getAttributeName() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class char_type , class super_class &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char_type* <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html">irr::io::IIrrXMLReader</a>&lt; char_type, super_class &gt;::getAttributeName </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>idx</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns name of an attribute. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">idx</td><td>Zero based index, should be something between 0 and <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#a8f85253d2efb15061facdb9571b9c549" title="Returns attribute count of the current XML node. ">getAttributeCount()</a>-1. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Name of the attribute, 0 if an attribute with this index does not exist. </dd></dl>
-
-</div>
-</div>
-<a id="aa0807dc565c67fcf355e656df1a326ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0807dc565c67fcf355e656df1a326ef">&#9670;&nbsp;</a></span>getAttributeName() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0807dc565c67fcf355e656df1a326ef">&#9670;&nbsp;</a></span>getAttributeName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -331,44 +210,7 @@ template&lt;class char_type , class super_class &gt; </div>
 </div>
 </div>
 <a id="a41bd71a1b9d4a80cd1d0257dedb35325"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41bd71a1b9d4a80cd1d0257dedb35325">&#9670;&nbsp;</a></span>getAttributeValue() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class char_type , class super_class &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char_type* <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html">irr::io::IIrrXMLReader</a>&lt; char_type, super_class &gt;::getAttributeValue </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>idx</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of an attribute. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">idx</td><td>Zero based index, should be something between 0 and <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#a8f85253d2efb15061facdb9571b9c549" title="Returns attribute count of the current XML node. ">getAttributeCount()</a>-1. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Value of the attribute, 0 if an attribute with this index does not exist. </dd></dl>
-
-</div>
-</div>
-<a id="a41bd71a1b9d4a80cd1d0257dedb35325"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41bd71a1b9d4a80cd1d0257dedb35325">&#9670;&nbsp;</a></span>getAttributeValue() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a41bd71a1b9d4a80cd1d0257dedb35325">&#9670;&nbsp;</a></span>getAttributeValue() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -405,44 +247,7 @@ template&lt;class char_type , class super_class &gt; </div>
 </div>
 </div>
 <a id="adaac9a49b396e7fc2d335335f36391a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adaac9a49b396e7fc2d335335f36391a9">&#9670;&nbsp;</a></span>getAttributeValue() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class char_type , class super_class &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char_type* <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html">irr::io::IIrrXMLReader</a>&lt; char_type, super_class &gt;::getAttributeValue </td>
-          <td>(</td>
-          <td class="paramtype">const char_type *&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of an attribute. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>Name of the attribute. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Value of the attribute, 0 if an attribute with this name does not exist. </dd></dl>
-
-</div>
-</div>
-<a id="adaac9a49b396e7fc2d335335f36391a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adaac9a49b396e7fc2d335335f36391a9">&#9670;&nbsp;</a></span>getAttributeValue() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adaac9a49b396e7fc2d335335f36391a9">&#9670;&nbsp;</a></span>getAttributeValue() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -479,44 +284,7 @@ template&lt;class char_type , class super_class &gt; </div>
 </div>
 </div>
 <a id="a2b1032f213e9910827842f6057269235"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b1032f213e9910827842f6057269235">&#9670;&nbsp;</a></span>getAttributeValueAsFloat() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class char_type , class super_class &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual float <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html">irr::io::IIrrXMLReader</a>&lt; char_type, super_class &gt;::getAttributeValueAsFloat </td>
-          <td>(</td>
-          <td class="paramtype">const char_type *&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of an attribute as float. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>Name of the attribute. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Value of the attribute as float, and 0 if an attribute with this name does not exist or the value could not be interpreted as float. </dd></dl>
-
-</div>
-</div>
-<a id="a2b1032f213e9910827842f6057269235"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b1032f213e9910827842f6057269235">&#9670;&nbsp;</a></span>getAttributeValueAsFloat() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b1032f213e9910827842f6057269235">&#9670;&nbsp;</a></span>getAttributeValueAsFloat() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -553,44 +321,7 @@ template&lt;class char_type , class super_class &gt; </div>
 </div>
 </div>
 <a id="a3a01b3cec9db01d00928074846d39add"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a01b3cec9db01d00928074846d39add">&#9670;&nbsp;</a></span>getAttributeValueAsFloat() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class char_type , class super_class &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual float <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html">irr::io::IIrrXMLReader</a>&lt; char_type, super_class &gt;::getAttributeValueAsFloat </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>idx</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of an attribute as float. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">idx</td><td>Zero based index, should be something between 0 and <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#a8f85253d2efb15061facdb9571b9c549" title="Returns attribute count of the current XML node. ">getAttributeCount()</a>-1. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Value of the attribute as float, and 0 if an attribute with this index does not exist or the value could not be interpreted as float. </dd></dl>
-
-</div>
-</div>
-<a id="a3a01b3cec9db01d00928074846d39add"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a01b3cec9db01d00928074846d39add">&#9670;&nbsp;</a></span>getAttributeValueAsFloat() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a01b3cec9db01d00928074846d39add">&#9670;&nbsp;</a></span>getAttributeValueAsFloat() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -627,44 +358,7 @@ template&lt;class char_type , class super_class &gt; </div>
 </div>
 </div>
 <a id="ab37bef58865355a7dba0011a38e6c8e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab37bef58865355a7dba0011a38e6c8e7">&#9670;&nbsp;</a></span>getAttributeValueAsInt() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class char_type , class super_class &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html">irr::io::IIrrXMLReader</a>&lt; char_type, super_class &gt;::getAttributeValueAsInt </td>
-          <td>(</td>
-          <td class="paramtype">const char_type *&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of an attribute as integer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>Name of the attribute. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Value of the attribute as integer, and 0 if an attribute with this name does not exist or the value could not be interpreted as integer. </dd></dl>
-
-</div>
-</div>
-<a id="ab37bef58865355a7dba0011a38e6c8e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab37bef58865355a7dba0011a38e6c8e7">&#9670;&nbsp;</a></span>getAttributeValueAsInt() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab37bef58865355a7dba0011a38e6c8e7">&#9670;&nbsp;</a></span>getAttributeValueAsInt() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -701,44 +395,7 @@ template&lt;class char_type , class super_class &gt; </div>
 </div>
 </div>
 <a id="a8f2d57c9f358b9683fb177f440661426"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f2d57c9f358b9683fb177f440661426">&#9670;&nbsp;</a></span>getAttributeValueAsInt() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class char_type , class super_class &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html">irr::io::IIrrXMLReader</a>&lt; char_type, super_class &gt;::getAttributeValueAsInt </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>idx</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of an attribute as integer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">idx</td><td>Zero based index, should be something between 0 and <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#a8f85253d2efb15061facdb9571b9c549" title="Returns attribute count of the current XML node. ">getAttributeCount()</a>-1. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Value of the attribute as integer, and 0 if an attribute with this index does not exist or the value could not be interpreted as integer. </dd></dl>
-
-</div>
-</div>
-<a id="a8f2d57c9f358b9683fb177f440661426"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f2d57c9f358b9683fb177f440661426">&#9670;&nbsp;</a></span>getAttributeValueAsInt() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f2d57c9f358b9683fb177f440661426">&#9670;&nbsp;</a></span>getAttributeValueAsInt() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -775,44 +432,7 @@ template&lt;class char_type , class super_class &gt; </div>
 </div>
 </div>
 <a id="a7674852b2e24b2710b90aab10ef1fc22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7674852b2e24b2710b90aab10ef1fc22">&#9670;&nbsp;</a></span>getAttributeValueSafe() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class char_type , class super_class &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char_type* <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html">irr::io::IIrrXMLReader</a>&lt; char_type, super_class &gt;::getAttributeValueSafe </td>
-          <td>(</td>
-          <td class="paramtype">const char_type *&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of an attribute in a safe way. </p>
-<p>Like <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html#a41bd71a1b9d4a80cd1d0257dedb35325" title="Returns the value of an attribute. ">getAttributeValue()</a>, but does not return 0 if the attribute does not exist. An empty string ("") is returned then. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>Name of the attribute. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Value of the attribute, and "" if an attribute with this name does not exist </dd></dl>
-
-</div>
-</div>
-<a id="a7674852b2e24b2710b90aab10ef1fc22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7674852b2e24b2710b90aab10ef1fc22">&#9670;&nbsp;</a></span>getAttributeValueSafe() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7674852b2e24b2710b90aab10ef1fc22">&#9670;&nbsp;</a></span>getAttributeValueSafe()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -849,37 +469,7 @@ template&lt;class char_type , class super_class &gt; </div>
 </div>
 </div>
 <a id="aecbe0698e8f9acf88e27dd53da984210"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecbe0698e8f9acf88e27dd53da984210">&#9670;&nbsp;</a></span>getNodeData() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class char_type , class super_class &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char_type* <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html">irr::io::IIrrXMLReader</a>&lt; char_type, super_class &gt;::getNodeData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns data of the current node. </p>
-<p>Only valid if the node has some data and it is of type EXN_TEXT, EXN_COMMENT, EXN_CDATA or EXN_UNKNOWN. </p>
-
-</div>
-</div>
-<a id="aecbe0698e8f9acf88e27dd53da984210"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecbe0698e8f9acf88e27dd53da984210">&#9670;&nbsp;</a></span>getNodeData() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aecbe0698e8f9acf88e27dd53da984210">&#9670;&nbsp;</a></span>getNodeData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -909,37 +499,7 @@ template&lt;class char_type , class super_class &gt; </div>
 </div>
 </div>
 <a id="a7d745b130c895d0f910f191d04e20e87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d745b130c895d0f910f191d04e20e87">&#9670;&nbsp;</a></span>getNodeName() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class char_type , class super_class &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char_type* <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html">irr::io::IIrrXMLReader</a>&lt; char_type, super_class &gt;::getNodeName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the name of the current node. </p>
-<p>Only valid, if the node type is EXN_ELEMENT. </p><dl class="section return"><dt>Returns</dt><dd>Name of the current node or 0 if the node has no name. </dd></dl>
-
-</div>
-</div>
-<a id="a7d745b130c895d0f910f191d04e20e87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d745b130c895d0f910f191d04e20e87">&#9670;&nbsp;</a></span>getNodeName() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d745b130c895d0f910f191d04e20e87">&#9670;&nbsp;</a></span>getNodeName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -969,37 +529,7 @@ template&lt;class char_type , class super_class &gt; </div>
 </div>
 </div>
 <a id="a9af7e323c292a4836bf4a7c093b4d85a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9af7e323c292a4836bf4a7c093b4d85a">&#9670;&nbsp;</a></span>getParserFormat() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class char_type , class super_class &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#ac7e51e5a6bd00451dec248f497b16a9d">ETEXT_FORMAT</a> <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html">irr::io::IIrrXMLReader</a>&lt; char_type, super_class &gt;::getParserFormat </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns format of the strings returned by the parser. </p>
-<p>This will be UTF8 for example when you created a parser with IrrXMLReaderUTF8() and UTF32 when it has been created using IrrXMLReaderUTF32. It should not be necessary to call this method and only exists for informational purposes. </p>
-
-</div>
-</div>
-<a id="a9af7e323c292a4836bf4a7c093b4d85a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9af7e323c292a4836bf4a7c093b4d85a">&#9670;&nbsp;</a></span>getParserFormat() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9af7e323c292a4836bf4a7c093b4d85a">&#9670;&nbsp;</a></span>getParserFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1029,37 +559,7 @@ template&lt;class char_type , class super_class &gt; </div>
 </div>
 </div>
 <a id="a00998ef2d3a562d6b2b8302c3430322d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00998ef2d3a562d6b2b8302c3430322d">&#9670;&nbsp;</a></span>getSourceFormat() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class char_type , class super_class &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#ac7e51e5a6bd00451dec248f497b16a9d">ETEXT_FORMAT</a> <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html">irr::io::IIrrXMLReader</a>&lt; char_type, super_class &gt;::getSourceFormat </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns format of the source xml file. </p>
-<p>It is not necessary to use this method because the parser will convert the input file format to the format wanted by the user when creating the parser. This method is useful to get/display additional informations. </p>
-
-</div>
-</div>
-<a id="a00998ef2d3a562d6b2b8302c3430322d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00998ef2d3a562d6b2b8302c3430322d">&#9670;&nbsp;</a></span>getSourceFormat() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a00998ef2d3a562d6b2b8302c3430322d">&#9670;&nbsp;</a></span>getSourceFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1089,37 +589,7 @@ template&lt;class char_type , class super_class &gt; </div>
 </div>
 </div>
 <a id="a157f458f7dabeeff173f72a0fb443a8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a157f458f7dabeeff173f72a0fb443a8e">&#9670;&nbsp;</a></span>read() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class char_type , class super_class &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html">irr::io::IIrrXMLReader</a>&lt; char_type, super_class &gt;::read </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reads forward to the next xml node. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns false, if there was no further node. </dd></dl>
-
-</div>
-</div>
-<a id="a157f458f7dabeeff173f72a0fb443a8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a157f458f7dabeeff173f72a0fb443a8e">&#9670;&nbsp;</a></span>read() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a157f458f7dabeeff173f72a0fb443a8e">&#9670;&nbsp;</a></span>read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1149,7 +619,7 @@ template&lt;class char_type , class super_class &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>indie_share/controller/include/<a class="el" href="indie__share_2controller_2include_2irrXML_8h_source.html">irrXML.h</a></li>
+<li>indie_share/controller/include/<a class="el" href="irrXML_8h_source.html">irrXML.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -12,14 +12,14 @@ A scene node for displaying terrain using the geo mip map algorithm.
 Inheritance diagram for irr\+:\+:scene\+:\+:I\+Terrain\+Scene\+Node\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=1.682692cm]{classirr_1_1scene_1_1ITerrainSceneNode}
+\includegraphics[height=4.000000cm]{classirr_1_1scene_1_1ITerrainSceneNode}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a152a472837bbce22d1221086a47d8af5}\label{classirr_1_1scene_1_1ITerrainSceneNode_a152a472837bbce22d1221086a47d8af5}} 
-\hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a152a472837bbce22d1221086a47d8af5}{I\+Terrain\+Scene\+Node} (\hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$parent, \hyperlink{classirr_1_1scene_1_1ISceneManager}{I\+Scene\+Manager} $\ast$mgr, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&position=\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(0.\+0f, 0.\+0f, 0.\+0f), const core\+::vector3df \&rotation=core\+::vector3df(0.\+0f, 0.\+0f, 0.\+0f), const core\+::vector3df \&scale=core\+::vector3df(1.\+0f, 1.\+0f, 1.\+0f))
+\hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a152a472837bbce22d1221086a47d8af5}{I\+Terrain\+Scene\+Node} (\hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$parent, \hyperlink{classirr_1_1scene_1_1ISceneManager}{I\+Scene\+Manager} $\ast$mgr, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&position=\hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df}(0.\+0f, 0.\+0f, 0.\+0f), const core\+::vector3df \&rotation=core\+::vector3df(0.\+0f, 0.\+0f, 0.\+0f), const core\+::vector3df \&scale=core\+::vector3df(1.\+0f, 1.\+0f, 1.\+0f))
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 virtual const \hyperlink{classirr_1_1core_1_1aabbox3d}{core\+::aabbox3d}$<$ \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $>$ \& \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a02a14fe28f5a326fca819c36bee2e92e}{get\+Bounding\+Box} () const =0
 \begin{DoxyCompactList}\small\item\em Get the bounding box of the terrain. \end{DoxyCompactList}\item 
@@ -41,49 +41,7 @@ virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperli
 virtual void \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a41b7f1ee70511d648cc11217347160ad}{set\+L\+O\+D\+Of\+Patch} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} patchX, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} patchZ, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} L\+OD=0)=0
 \begin{DoxyCompactList}\small\item\em Manually sets the L\+OD of a patch. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a804241f60c853e74fcb8687cd887f1b7}\label{classirr_1_1scene_1_1ITerrainSceneNode_a804241f60c853e74fcb8687cd887f1b7}} 
-virtual const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \& \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a804241f60c853e74fcb8687cd887f1b7}{get\+Terrain\+Center} () const =0
-\begin{DoxyCompactList}\small\item\em Get center of terrain. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a9289839822ea77496af62f311f01c8bb}\label{classirr_1_1scene_1_1ITerrainSceneNode_a9289839822ea77496af62f311f01c8bb}} 
-virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a9289839822ea77496af62f311f01c8bb}{get\+Height} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} x, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} y) const =0
-\begin{DoxyCompactList}\small\item\em Get height of a point of the terrain. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_af2c07f67c1c5319de4a796ec57950ec3}{set\+Camera\+Movement\+Delta} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} delta)=0
-\begin{DoxyCompactList}\small\item\em Sets the movement camera threshold. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_ad11f3e54c291487c49868728a5228b5e}{set\+Camera\+Rotation\+Delta} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} delta)=0
-\begin{DoxyCompactList}\small\item\em Sets the rotation camera threshold. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a95cf695e54f1ef3376f7a3666c2dd834}{set\+Dynamic\+Selector\+Update} (bool b\+Val)=0
-\begin{DoxyCompactList}\small\item\em Sets whether or not the node should dynamically update its associated selector when the geomipmap data changes. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_af98b54e1a59c014d60ea888eba6010d7}{override\+L\+O\+D\+Distance} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} L\+OD, \hyperlink{namespaceirr_a1325b02603ad449f92c68fc640af9b28}{f64} new\+Distance)=0
-\begin{DoxyCompactList}\small\item\em Override the default generation of distance thresholds. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_aacfb35db09be74e32c22a10c7e13bbcc}{scale\+Texture} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} scale=1.\+0f, f32 scale2=0.\+0f)=0
-\begin{DoxyCompactList}\small\item\em Scales the base texture, similar to make\+Planar\+Texture\+Mapping. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_ae5c598195e3faafb7cc58b71beb7ee1b}{load\+Height\+Map} (\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$file, \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} vertex\+Color=\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}(255, 255, 255, 255), \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} smooth\+Factor=0)=0
-\begin{DoxyCompactList}\small\item\em Initializes the terrain data. Loads the vertices from the height\+Map\+File. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a43d92272d8d860dda1c74b9fe795f062}{load\+Height\+Map\+R\+AW} (\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$file, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} bits\+Per\+Pixel=16, bool signed\+Data=false, bool float\+Vals=false, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} width=0, \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} vertex\+Color=\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}(255, 255, 255, 255), \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} smooth\+Factor=0)=0
-\begin{DoxyCompactList}\small\item\em Initializes the terrain data. Loads the vertices from the height\+Map\+File. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a152a472837bbce22d1221086a47d8af5}\label{classirr_1_1scene_1_1ITerrainSceneNode_a152a472837bbce22d1221086a47d8af5}} 
-\hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a152a472837bbce22d1221086a47d8af5}{I\+Terrain\+Scene\+Node} (\hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$parent, \hyperlink{classirr_1_1scene_1_1ISceneManager}{I\+Scene\+Manager} $\ast$mgr, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&position=\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(0.\+0f, 0.\+0f, 0.\+0f), const core\+::vector3df \&rotation=core\+::vector3df(0.\+0f, 0.\+0f, 0.\+0f), const core\+::vector3df \&scale=core\+::vector3df(1.\+0f, 1.\+0f, 1.\+0f))
-\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
-virtual const \hyperlink{classirr_1_1core_1_1aabbox3d}{core\+::aabbox3d}$<$ \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $>$ \& \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a02a14fe28f5a326fca819c36bee2e92e}{get\+Bounding\+Box} () const =0
-\begin{DoxyCompactList}\small\item\em Get the bounding box of the terrain. \end{DoxyCompactList}\item 
-virtual const \hyperlink{classirr_1_1core_1_1aabbox3d}{core\+::aabbox3d}$<$ \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $>$ \& \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a383501cc9c5cd30176f1f7ff6f8ab817}{get\+Bounding\+Box} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} patchX, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} patchZ) const =0
-\begin{DoxyCompactList}\small\item\em Get the bounding box of a patch. \end{DoxyCompactList}\item 
-virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a0f09a8260f325570ce58f0fc6993aff9}{get\+Index\+Count} () const =0
-\begin{DoxyCompactList}\small\item\em Get the number of indices currently in the meshbuffer. \end{DoxyCompactList}\item 
-virtual \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} $\ast$ \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a6b5f5fca80e77f392e23d83dc61ae88e}{get\+Mesh} ()=0
-\begin{DoxyCompactList}\small\item\em Get pointer to the mesh. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a3383e2d453c22c31091ad8652de2bb8a}\label{classirr_1_1scene_1_1ITerrainSceneNode_a3383e2d453c22c31091ad8652de2bb8a}} 
-virtual \hyperlink{classirr_1_1scene_1_1IMeshBuffer}{I\+Mesh\+Buffer} $\ast$ \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a3383e2d453c22c31091ad8652de2bb8a}{get\+Render\+Buffer} ()=0
-\begin{DoxyCompactList}\small\item\em Get pointer to the buffer used by the terrain (most users will not need this) \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_ae23af8c2066da39ad10714dcf95dd8f1}{get\+Mesh\+Buffer\+For\+L\+OD} (\hyperlink{classirr_1_1scene_1_1IDynamicMeshBuffer}{I\+Dynamic\+Mesh\+Buffer} \&mb, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} L\+OD=0) const =0
-\begin{DoxyCompactList}\small\item\em Gets the meshbuffer data based on a specified level of detail. \end{DoxyCompactList}\item 
-virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_aec6d83c4882fad10a0b35ca5a7ec0935}{get\+Indices\+For\+Patch} (\hyperlink{classirr_1_1core_1_1array}{core\+::array}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \&indices, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} patchX, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} patchZ, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} L\+OD=0)=0
-\begin{DoxyCompactList}\small\item\em Gets the indices for a specified patch at a specified \hyperlink{classLevel}{Level} of Detail. \end{DoxyCompactList}\item 
-virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a0d310851f0ebf1fce18d3a2c0f3dceab}{get\+Current\+L\+O\+D\+Of\+Patches} (\hyperlink{classirr_1_1core_1_1array}{core\+::array}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&L\+O\+Ds) const =0
-\begin{DoxyCompactList}\small\item\em Populates an array with the Current\+L\+OD of each patch. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a41b7f1ee70511d648cc11217347160ad}{set\+L\+O\+D\+Of\+Patch} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} patchX, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} patchZ, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} L\+OD=0)=0
-\begin{DoxyCompactList}\small\item\em Manually sets the L\+OD of a patch. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a804241f60c853e74fcb8687cd887f1b7}\label{classirr_1_1scene_1_1ITerrainSceneNode_a804241f60c853e74fcb8687cd887f1b7}} 
-virtual const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \& \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a804241f60c853e74fcb8687cd887f1b7}{get\+Terrain\+Center} () const =0
+virtual const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \& \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a804241f60c853e74fcb8687cd887f1b7}{get\+Terrain\+Center} () const =0
 \begin{DoxyCompactList}\small\item\em Get center of terrain. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a9289839822ea77496af62f311f01c8bb}\label{classirr_1_1scene_1_1ITerrainSceneNode_a9289839822ea77496af62f311f01c8bb}} 
 virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1scene_1_1ITerrainSceneNode_a9289839822ea77496af62f311f01c8bb}{get\+Height} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} x, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} y) const =0
@@ -118,24 +76,7 @@ The Patch Size of the terrain must always be a size of ( 2$^\wedge$\+N+1, i.\+e.
 \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a02a14fe28f5a326fca819c36bee2e92e}\label{classirr_1_1scene_1_1ITerrainSceneNode_a02a14fe28f5a326fca819c36bee2e92e}} 
 \index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!get\+Bounding\+Box@{get\+Bounding\+Box}}
 \index{get\+Bounding\+Box@{get\+Bounding\+Box}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Bounding\+Box()}{getBoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
-{\footnotesize\ttfamily virtual const \hyperlink{classirr_1_1core_1_1aabbox3d}{core\+::aabbox3d}$<$\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}$>$\& irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::get\+Bounding\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Get the bounding box of the terrain. 
-
-\begin{DoxyReturn}{Returns}
-The bounding box of the entire terrain. 
-\end{DoxyReturn}
-
-
-Implements \hyperlink{classirr_1_1scene_1_1ISceneNode_a223f718fc2f4944b5ad28c592f6cc8c6}{irr\+::scene\+::\+I\+Scene\+Node}.
-
-\mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a02a14fe28f5a326fca819c36bee2e92e}\label{classirr_1_1scene_1_1ITerrainSceneNode_a02a14fe28f5a326fca819c36bee2e92e}} 
-\index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!get\+Bounding\+Box@{get\+Bounding\+Box}}
-\index{get\+Bounding\+Box@{get\+Bounding\+Box}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Bounding\+Box()}{getBoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+\subsubsection{\texorpdfstring{get\+Bounding\+Box()}{getBoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily virtual const \hyperlink{classirr_1_1core_1_1aabbox3d}{core\+::aabbox3d}$<$\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}$>$\& irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::get\+Bounding\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -152,20 +93,7 @@ Implements \hyperlink{classirr_1_1scene_1_1ISceneNode_a223f718fc2f4944b5ad28c592
 \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a383501cc9c5cd30176f1f7ff6f8ab817}\label{classirr_1_1scene_1_1ITerrainSceneNode_a383501cc9c5cd30176f1f7ff6f8ab817}} 
 \index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!get\+Bounding\+Box@{get\+Bounding\+Box}}
 \index{get\+Bounding\+Box@{get\+Bounding\+Box}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Bounding\+Box()}{getBoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily virtual const \hyperlink{classirr_1_1core_1_1aabbox3d}{core\+::aabbox3d}$<$\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}$>$\& irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::get\+Bounding\+Box (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{patchX,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{patchZ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Get the bounding box of a patch. 
-
-\begin{DoxyReturn}{Returns}
-The bounding box of the chosen patch. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a383501cc9c5cd30176f1f7ff6f8ab817}\label{classirr_1_1scene_1_1ITerrainSceneNode_a383501cc9c5cd30176f1f7ff6f8ab817}} 
-\index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!get\+Bounding\+Box@{get\+Bounding\+Box}}
-\index{get\+Bounding\+Box@{get\+Bounding\+Box}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Bounding\+Box()}{getBoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+\subsubsection{\texorpdfstring{get\+Bounding\+Box()}{getBoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual const \hyperlink{classirr_1_1core_1_1aabbox3d}{core\+::aabbox3d}$<$\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}$>$\& irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::get\+Bounding\+Box (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{patchX,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{patchZ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -178,25 +106,7 @@ The bounding box of the chosen patch.
 \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a0d310851f0ebf1fce18d3a2c0f3dceab}\label{classirr_1_1scene_1_1ITerrainSceneNode_a0d310851f0ebf1fce18d3a2c0f3dceab}} 
 \index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!get\+Current\+L\+O\+D\+Of\+Patches@{get\+Current\+L\+O\+D\+Of\+Patches}}
 \index{get\+Current\+L\+O\+D\+Of\+Patches@{get\+Current\+L\+O\+D\+Of\+Patches}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Current\+L\+O\+D\+Of\+Patches()}{getCurrentLODOfPatches()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::get\+Current\+L\+O\+D\+Of\+Patches (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1core_1_1array}{core\+::array}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{L\+O\+Ds }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Populates an array with the Current\+L\+OD of each patch. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em L\+O\+Ds} & A reference to a core\+::array$<$s32$>$ to hold the values \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Number of elements in the array 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a0d310851f0ebf1fce18d3a2c0f3dceab}\label{classirr_1_1scene_1_1ITerrainSceneNode_a0d310851f0ebf1fce18d3a2c0f3dceab}} 
-\index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!get\+Current\+L\+O\+D\+Of\+Patches@{get\+Current\+L\+O\+D\+Of\+Patches}}
-\index{get\+Current\+L\+O\+D\+Of\+Patches@{get\+Current\+L\+O\+D\+Of\+Patches}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Current\+L\+O\+D\+Of\+Patches()}{getCurrentLODOfPatches()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{get\+Current\+L\+O\+D\+Of\+Patches()}{getCurrentLODOfPatches()}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::get\+Current\+L\+O\+D\+Of\+Patches (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1core_1_1array}{core\+::array}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{L\+O\+Ds }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -214,20 +124,7 @@ Number of elements in the array
 \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a0f09a8260f325570ce58f0fc6993aff9}\label{classirr_1_1scene_1_1ITerrainSceneNode_a0f09a8260f325570ce58f0fc6993aff9}} 
 \index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!get\+Index\+Count@{get\+Index\+Count}}
 \index{get\+Index\+Count@{get\+Index\+Count}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Index\+Count()}{getIndexCount()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::get\+Index\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Get the number of indices currently in the meshbuffer. 
-
-\begin{DoxyReturn}{Returns}
-The index count. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a0f09a8260f325570ce58f0fc6993aff9}\label{classirr_1_1scene_1_1ITerrainSceneNode_a0f09a8260f325570ce58f0fc6993aff9}} 
-\index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!get\+Index\+Count@{get\+Index\+Count}}
-\index{get\+Index\+Count@{get\+Index\+Count}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Index\+Count()}{getIndexCount()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{get\+Index\+Count()}{getIndexCount()}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::get\+Index\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -240,31 +137,7 @@ The index count.
 \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_aec6d83c4882fad10a0b35ca5a7ec0935}\label{classirr_1_1scene_1_1ITerrainSceneNode_aec6d83c4882fad10a0b35ca5a7ec0935}} 
 \index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!get\+Indices\+For\+Patch@{get\+Indices\+For\+Patch}}
 \index{get\+Indices\+For\+Patch@{get\+Indices\+For\+Patch}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Indices\+For\+Patch()}{getIndicesForPatch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::get\+Indices\+For\+Patch (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1core_1_1array}{core\+::array}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \&}]{indices,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{patchX,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{patchZ,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{L\+OD = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Gets the indices for a specified patch at a specified \hyperlink{classLevel}{Level} of Detail. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em indices} & A reference to an array of u32 indices. \\
-\hline
-{\em patchX} & Patch x coordinate. \\
-\hline
-{\em patchZ} & Patch z coordinate. \\
-\hline
-{\em L\+OD} & The level of detail to get for that patch. If -\/1, then get the Current\+L\+OD. If the Current\+L\+OD is set to -\/1, meaning it\textquotesingle{}s not shown, then it will retrieve the triangles at the highest L\+OD (0). \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Number of indices put into the buffer. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_aec6d83c4882fad10a0b35ca5a7ec0935}\label{classirr_1_1scene_1_1ITerrainSceneNode_aec6d83c4882fad10a0b35ca5a7ec0935}} 
-\index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!get\+Indices\+For\+Patch@{get\+Indices\+For\+Patch}}
-\index{get\+Indices\+For\+Patch@{get\+Indices\+For\+Patch}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Indices\+For\+Patch()}{getIndicesForPatch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{get\+Indices\+For\+Patch()}{getIndicesForPatch()}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::get\+Indices\+For\+Patch (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1core_1_1array}{core\+::array}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \&}]{indices,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{patchX,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{patchZ,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{L\+OD = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -288,20 +161,7 @@ Number of indices put into the buffer.
 \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a6b5f5fca80e77f392e23d83dc61ae88e}\label{classirr_1_1scene_1_1ITerrainSceneNode_a6b5f5fca80e77f392e23d83dc61ae88e}} 
 \index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!get\+Mesh@{get\+Mesh}}
 \index{get\+Mesh@{get\+Mesh}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Mesh()}{getMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh}$\ast$ irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::get\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Get pointer to the mesh. 
-
-\begin{DoxyReturn}{Returns}
-Pointer to the mesh. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a6b5f5fca80e77f392e23d83dc61ae88e}\label{classirr_1_1scene_1_1ITerrainSceneNode_a6b5f5fca80e77f392e23d83dc61ae88e}} 
-\index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!get\+Mesh@{get\+Mesh}}
-\index{get\+Mesh@{get\+Mesh}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Mesh()}{getMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{get\+Mesh()}{getMesh()}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh}$\ast$ irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::get\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -314,24 +174,7 @@ Pointer to the mesh.
 \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_ae23af8c2066da39ad10714dcf95dd8f1}\label{classirr_1_1scene_1_1ITerrainSceneNode_ae23af8c2066da39ad10714dcf95dd8f1}} 
 \index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!get\+Mesh\+Buffer\+For\+L\+OD@{get\+Mesh\+Buffer\+For\+L\+OD}}
 \index{get\+Mesh\+Buffer\+For\+L\+OD@{get\+Mesh\+Buffer\+For\+L\+OD}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Mesh\+Buffer\+For\+L\+O\+D()}{getMeshBufferForLOD()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::get\+Mesh\+Buffer\+For\+L\+OD (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1scene_1_1IDynamicMeshBuffer}{I\+Dynamic\+Mesh\+Buffer} \&}]{mb,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{L\+OD = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Gets the meshbuffer data based on a specified level of detail. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em mb} & A reference to an \hyperlink{classirr_1_1scene_1_1IDynamicMeshBuffer}{I\+Dynamic\+Mesh\+Buffer} object \\
-\hline
-{\em L\+OD} & The level of detail you want the indices from. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_ae23af8c2066da39ad10714dcf95dd8f1}\label{classirr_1_1scene_1_1ITerrainSceneNode_ae23af8c2066da39ad10714dcf95dd8f1}} 
-\index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!get\+Mesh\+Buffer\+For\+L\+OD@{get\+Mesh\+Buffer\+For\+L\+OD}}
-\index{get\+Mesh\+Buffer\+For\+L\+OD@{get\+Mesh\+Buffer\+For\+L\+OD}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Mesh\+Buffer\+For\+L\+O\+D()}{getMeshBufferForLOD()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{get\+Mesh\+Buffer\+For\+L\+O\+D()}{getMeshBufferForLOD()}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::get\+Mesh\+Buffer\+For\+L\+OD (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1scene_1_1IDynamicMeshBuffer}{I\+Dynamic\+Mesh\+Buffer} \&}]{mb,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{L\+OD = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -348,26 +191,7 @@ Gets the meshbuffer data based on a specified level of detail.
 \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_ae5c598195e3faafb7cc58b71beb7ee1b}\label{classirr_1_1scene_1_1ITerrainSceneNode_ae5c598195e3faafb7cc58b71beb7ee1b}} 
 \index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!load\+Height\+Map@{load\+Height\+Map}}
 \index{load\+Height\+Map@{load\+Height\+Map}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{load\+Height\+Map()}{loadHeightMap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::load\+Height\+Map (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$}]{file,  }\item[{\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}}]{vertex\+Color = {\ttfamily \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}(255,~255,~255,~255)},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{smooth\+Factor = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Initializes the terrain data. Loads the vertices from the height\+Map\+File. 
-
-The file must contain a loadable image of the heightmap. The heightmap must be square. 
-\begin{DoxyParams}{Parameters}
-{\em file} & The file to read the image from. File is not rewinded. \\
-\hline
-{\em vertex\+Color} & Color of all vertices. \\
-\hline
-{\em smooth\+Factor} & Number of smoothing passes. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_ae5c598195e3faafb7cc58b71beb7ee1b}\label{classirr_1_1scene_1_1ITerrainSceneNode_ae5c598195e3faafb7cc58b71beb7ee1b}} 
-\index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!load\+Height\+Map@{load\+Height\+Map}}
-\index{load\+Height\+Map@{load\+Height\+Map}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{load\+Height\+Map()}{loadHeightMap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{load\+Height\+Map()}{loadHeightMap()}}
 {\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::load\+Height\+Map (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$}]{file,  }\item[{\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}}]{vertex\+Color = {\ttfamily \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}(255,~255,~255,~255)},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{smooth\+Factor = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -386,34 +210,7 @@ The file must contain a loadable image of the heightmap. The heightmap must be s
 \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a43d92272d8d860dda1c74b9fe795f062}\label{classirr_1_1scene_1_1ITerrainSceneNode_a43d92272d8d860dda1c74b9fe795f062}} 
 \index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!load\+Height\+Map\+R\+AW@{load\+Height\+Map\+R\+AW}}
 \index{load\+Height\+Map\+R\+AW@{load\+Height\+Map\+R\+AW}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{load\+Height\+Map\+R\+A\+W()}{loadHeightMapRAW()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::load\+Height\+Map\+R\+AW (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$}]{file,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{bits\+Per\+Pixel = {\ttfamily 16},  }\item[{bool}]{signed\+Data = {\ttfamily false},  }\item[{bool}]{float\+Vals = {\ttfamily false},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{width = {\ttfamily 0},  }\item[{\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}}]{vertex\+Color = {\ttfamily \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}(255,~255,~255,~255)},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{smooth\+Factor = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Initializes the terrain data. Loads the vertices from the height\+Map\+File. 
-
-The data is interpreted as (signed) integers of the given bit size or floats (with 32bits, signed). Allowed bitsizes for integers are 8, 16, and 32. The heightmap must be square. 
-\begin{DoxyParams}{Parameters}
-{\em file} & The file to read the R\+AW data from. File is not rewinded. \\
-\hline
-{\em bits\+Per\+Pixel} & Size of data if integers used, for floats always use 32. \\
-\hline
-{\em signed\+Data} & Whether we use signed or unsigned ints, ignored for floats. \\
-\hline
-{\em float\+Vals} & Whether the data is float or int. \\
-\hline
-{\em width} & Width (and also Height, as it must be square) of the heightmap. Use 0 for autocalculating from the filesize. \\
-\hline
-{\em vertex\+Color} & Color of all vertices. \\
-\hline
-{\em smooth\+Factor} & Number of smoothing passes. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a43d92272d8d860dda1c74b9fe795f062}\label{classirr_1_1scene_1_1ITerrainSceneNode_a43d92272d8d860dda1c74b9fe795f062}} 
-\index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!load\+Height\+Map\+R\+AW@{load\+Height\+Map\+R\+AW}}
-\index{load\+Height\+Map\+R\+AW@{load\+Height\+Map\+R\+AW}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{load\+Height\+Map\+R\+A\+W()}{loadHeightMapRAW()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{load\+Height\+Map\+R\+A\+W()}{loadHeightMapRAW()}}
 {\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::load\+Height\+Map\+R\+AW (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$}]{file,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{bits\+Per\+Pixel = {\ttfamily 16},  }\item[{bool}]{signed\+Data = {\ttfamily false},  }\item[{bool}]{float\+Vals = {\ttfamily false},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{width = {\ttfamily 0},  }\item[{\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}}]{vertex\+Color = {\ttfamily \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}(255,~255,~255,~255)},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{smooth\+Factor = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -440,17 +237,7 @@ The data is interpreted as (signed) integers of the given bit size or floats (wi
 \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_af98b54e1a59c014d60ea888eba6010d7}\label{classirr_1_1scene_1_1ITerrainSceneNode_af98b54e1a59c014d60ea888eba6010d7}} 
 \index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!override\+L\+O\+D\+Distance@{override\+L\+O\+D\+Distance}}
 \index{override\+L\+O\+D\+Distance@{override\+L\+O\+D\+Distance}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{override\+L\+O\+D\+Distance()}{overrideLODDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::override\+L\+O\+D\+Distance (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{L\+OD,  }\item[{\hyperlink{namespaceirr_a1325b02603ad449f92c68fc640af9b28}{f64}}]{new\+Distance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Override the default generation of distance thresholds. 
-
-For determining the L\+OD a patch is rendered at. If any L\+OD is overridden, then the scene node will no longer apply scaling factors to these values. If you override these distances, and then apply a scale to the scene node, it is your responsibility to update the new distances to work best with your new terrain size. \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_af98b54e1a59c014d60ea888eba6010d7}\label{classirr_1_1scene_1_1ITerrainSceneNode_af98b54e1a59c014d60ea888eba6010d7}} 
-\index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!override\+L\+O\+D\+Distance@{override\+L\+O\+D\+Distance}}
-\index{override\+L\+O\+D\+Distance@{override\+L\+O\+D\+Distance}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{override\+L\+O\+D\+Distance()}{overrideLODDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{override\+L\+O\+D\+Distance()}{overrideLODDistance()}}
 {\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::override\+L\+O\+D\+Distance (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{L\+OD,  }\item[{\hyperlink{namespaceirr_a1325b02603ad449f92c68fc640af9b28}{f64}}]{new\+Distance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -460,24 +247,7 @@ Override the default generation of distance thresholds.
 For determining the L\+OD a patch is rendered at. If any L\+OD is overridden, then the scene node will no longer apply scaling factors to these values. If you override these distances, and then apply a scale to the scene node, it is your responsibility to update the new distances to work best with your new terrain size. \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_aacfb35db09be74e32c22a10c7e13bbcc}\label{classirr_1_1scene_1_1ITerrainSceneNode_aacfb35db09be74e32c22a10c7e13bbcc}} 
 \index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!scale\+Texture@{scale\+Texture}}
 \index{scale\+Texture@{scale\+Texture}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{scale\+Texture()}{scaleTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::scale\+Texture (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{scale = {\ttfamily 1.0f},  }\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{scale2 = {\ttfamily 0.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Scales the base texture, similar to make\+Planar\+Texture\+Mapping. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em scale} & The scaling amount. Values above 1.\+0 increase the number of time the texture is drawn on the terrain. Values below 0 will decrease the number of times the texture is drawn on the terrain. Using negative values will flip the texture, as well as still scaling it. \\
-\hline
-{\em scale2} & If set to 0 (default value), this will set the second texture coordinate set to the same values as in the first set. If this is another value than zero, it will scale the second texture coordinate set by this value. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_aacfb35db09be74e32c22a10c7e13bbcc}\label{classirr_1_1scene_1_1ITerrainSceneNode_aacfb35db09be74e32c22a10c7e13bbcc}} 
-\index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!scale\+Texture@{scale\+Texture}}
-\index{scale\+Texture@{scale\+Texture}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{scale\+Texture()}{scaleTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{scale\+Texture()}{scaleTexture()}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::scale\+Texture (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{scale = {\ttfamily 1.0f},  }\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{scale2 = {\ttfamily 0.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -494,17 +264,7 @@ Scales the base texture, similar to make\+Planar\+Texture\+Mapping.
 \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_af2c07f67c1c5319de4a796ec57950ec3}\label{classirr_1_1scene_1_1ITerrainSceneNode_af2c07f67c1c5319de4a796ec57950ec3}} 
 \index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!set\+Camera\+Movement\+Delta@{set\+Camera\+Movement\+Delta}}
 \index{set\+Camera\+Movement\+Delta@{set\+Camera\+Movement\+Delta}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Camera\+Movement\+Delta()}{setCameraMovementDelta()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::set\+Camera\+Movement\+Delta (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Sets the movement camera threshold. 
-
-It is used to determine when to recalculate indices for the scene node. The default value is 10.\+0f. \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_af2c07f67c1c5319de4a796ec57950ec3}\label{classirr_1_1scene_1_1ITerrainSceneNode_af2c07f67c1c5319de4a796ec57950ec3}} 
-\index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!set\+Camera\+Movement\+Delta@{set\+Camera\+Movement\+Delta}}
-\index{set\+Camera\+Movement\+Delta@{set\+Camera\+Movement\+Delta}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Camera\+Movement\+Delta()}{setCameraMovementDelta()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{set\+Camera\+Movement\+Delta()}{setCameraMovementDelta()}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::set\+Camera\+Movement\+Delta (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -514,17 +274,7 @@ Sets the movement camera threshold.
 It is used to determine when to recalculate indices for the scene node. The default value is 10.\+0f. \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_ad11f3e54c291487c49868728a5228b5e}\label{classirr_1_1scene_1_1ITerrainSceneNode_ad11f3e54c291487c49868728a5228b5e}} 
 \index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!set\+Camera\+Rotation\+Delta@{set\+Camera\+Rotation\+Delta}}
 \index{set\+Camera\+Rotation\+Delta@{set\+Camera\+Rotation\+Delta}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Camera\+Rotation\+Delta()}{setCameraRotationDelta()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::set\+Camera\+Rotation\+Delta (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Sets the rotation camera threshold. 
-
-It is used to determine when to recalculate indices for the scene node. The default value is 1.\+0f. \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_ad11f3e54c291487c49868728a5228b5e}\label{classirr_1_1scene_1_1ITerrainSceneNode_ad11f3e54c291487c49868728a5228b5e}} 
-\index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!set\+Camera\+Rotation\+Delta@{set\+Camera\+Rotation\+Delta}}
-\index{set\+Camera\+Rotation\+Delta@{set\+Camera\+Rotation\+Delta}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Camera\+Rotation\+Delta()}{setCameraRotationDelta()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{set\+Camera\+Rotation\+Delta()}{setCameraRotationDelta()}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::set\+Camera\+Rotation\+Delta (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -534,22 +284,7 @@ Sets the rotation camera threshold.
 It is used to determine when to recalculate indices for the scene node. The default value is 1.\+0f. \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a95cf695e54f1ef3376f7a3666c2dd834}\label{classirr_1_1scene_1_1ITerrainSceneNode_a95cf695e54f1ef3376f7a3666c2dd834}} 
 \index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!set\+Dynamic\+Selector\+Update@{set\+Dynamic\+Selector\+Update}}
 \index{set\+Dynamic\+Selector\+Update@{set\+Dynamic\+Selector\+Update}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Dynamic\+Selector\+Update()}{setDynamicSelectorUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::set\+Dynamic\+Selector\+Update (\begin{DoxyParamCaption}\item[{bool}]{b\+Val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Sets whether or not the node should dynamically update its associated selector when the geomipmap data changes. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em b\+Val} & Boolean value representing whether or not to update selector dynamically. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a95cf695e54f1ef3376f7a3666c2dd834}\label{classirr_1_1scene_1_1ITerrainSceneNode_a95cf695e54f1ef3376f7a3666c2dd834}} 
-\index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!set\+Dynamic\+Selector\+Update@{set\+Dynamic\+Selector\+Update}}
-\index{set\+Dynamic\+Selector\+Update@{set\+Dynamic\+Selector\+Update}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Dynamic\+Selector\+Update()}{setDynamicSelectorUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{set\+Dynamic\+Selector\+Update()}{setDynamicSelectorUpdate()}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::set\+Dynamic\+Selector\+Update (\begin{DoxyParamCaption}\item[{bool}]{b\+Val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -564,26 +299,7 @@ Sets whether or not the node should dynamically update its associated selector w
 \mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a41b7f1ee70511d648cc11217347160ad}\label{classirr_1_1scene_1_1ITerrainSceneNode_a41b7f1ee70511d648cc11217347160ad}} 
 \index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!set\+L\+O\+D\+Of\+Patch@{set\+L\+O\+D\+Of\+Patch}}
 \index{set\+L\+O\+D\+Of\+Patch@{set\+L\+O\+D\+Of\+Patch}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+L\+O\+D\+Of\+Patch()}{setLODOfPatch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::set\+L\+O\+D\+Of\+Patch (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{patchX,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{patchZ,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{L\+OD = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Manually sets the L\+OD of a patch. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em patchX} & Patch x coordinate. \\
-\hline
-{\em patchZ} & Patch z coordinate. \\
-\hline
-{\em L\+OD} & The level of detail to set the patch to. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classirr_1_1scene_1_1ITerrainSceneNode_a41b7f1ee70511d648cc11217347160ad}\label{classirr_1_1scene_1_1ITerrainSceneNode_a41b7f1ee70511d648cc11217347160ad}} 
-\index{irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}!set\+L\+O\+D\+Of\+Patch@{set\+L\+O\+D\+Of\+Patch}}
-\index{set\+L\+O\+D\+Of\+Patch@{set\+L\+O\+D\+Of\+Patch}!irr\+::scene\+::\+I\+Terrain\+Scene\+Node@{irr\+::scene\+::\+I\+Terrain\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+L\+O\+D\+Of\+Patch()}{setLODOfPatch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{set\+L\+O\+D\+Of\+Patch()}{setLODOfPatch()}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Terrain\+Scene\+Node\+::set\+L\+O\+D\+Of\+Patch (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{patchX,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{patchZ,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{L\+OD = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

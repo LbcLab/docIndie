@@ -73,7 +73,7 @@ $(function() {
 <p>The FileSystem manages files and archives and provides access to them.  
  <a href="classirr_1_1io_1_1IFileSystem.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="indie__share_2controller_2include_2IFileSystem_8h_source.html">IFileSystem.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="IFileSystem_8h_source.html">IFileSystem.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for irr::io::IFileSystem:</div>
 <div class="dyncontent">
@@ -81,31 +81,30 @@ Inheritance diagram for irr::io::IFileSystem:</div>
   <img src="classirr_1_1io_1_1IFileSystem.png" usemap="#irr::io::IFileSystem_map" alt=""/>
   <map id="irr::io::IFileSystem_map" name="irr::io::IFileSystem_map">
 <area href="classirr_1_1IReferenceCounted.html" title="Base class of most objects of the Irrlicht Engine. " alt="irr::IReferenceCounted" shape="rect" coords="0,0,140,24"/>
-<area href="classirr_1_1IReferenceCounted.html" title="Base class of most objects of the Irrlicht Engine. " alt="irr::IReferenceCounted" shape="rect" coords="150,0,290,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3678bb77e12cc6ee2b3947f4c79f6c90"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a3678bb77e12cc6ee2b3947f4c79f6c90">createAndOpenFile</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename)=0</td></tr>
+<tr class="memitem:a3678bb77e12cc6ee2b3947f4c79f6c90"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a3678bb77e12cc6ee2b3947f4c79f6c90">createAndOpenFile</a> (const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;filename)=0</td></tr>
 <tr class="memdesc:a3678bb77e12cc6ee2b3947f4c79f6c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a file for read access.  <a href="#a3678bb77e12cc6ee2b3947f4c79f6c90">More...</a><br /></td></tr>
 <tr class="separator:a3678bb77e12cc6ee2b3947f4c79f6c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac60a4b7912a7f2364426dc1aaf9bccae"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#ac60a4b7912a7f2364426dc1aaf9bccae">createMemoryReadFile</a> (void *memory, <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> len, const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;fileName, bool deleteMemoryWhenDropped=false)=0</td></tr>
+<tr class="memitem:ac60a4b7912a7f2364426dc1aaf9bccae"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#ac60a4b7912a7f2364426dc1aaf9bccae">createMemoryReadFile</a> (void *memory, <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> len, const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;fileName, bool deleteMemoryWhenDropped=false)=0</td></tr>
 <tr class="memdesc:ac60a4b7912a7f2364426dc1aaf9bccae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classirr_1_1io_1_1IReadFile.html" title="Interface providing read acess to a file. ">IReadFile</a> interface for accessing memory like a file.  <a href="#ac60a4b7912a7f2364426dc1aaf9bccae">More...</a><br /></td></tr>
 <tr class="separator:ac60a4b7912a7f2364426dc1aaf9bccae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b110f1ed6f52098753b7a558c020dbc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a8b110f1ed6f52098753b7a558c020dbc">createLimitReadFile</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;fileName, <a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *alreadyOpenedFile, long pos, long areaSize)=0</td></tr>
+<tr class="memitem:a8b110f1ed6f52098753b7a558c020dbc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a8b110f1ed6f52098753b7a558c020dbc">createLimitReadFile</a> (const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;fileName, <a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *alreadyOpenedFile, long pos, long areaSize)=0</td></tr>
 <tr class="memdesc:a8b110f1ed6f52098753b7a558c020dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classirr_1_1io_1_1IReadFile.html" title="Interface providing read acess to a file. ">IReadFile</a> interface for accessing files inside files.  <a href="#a8b110f1ed6f52098753b7a558c020dbc">More...</a><br /></td></tr>
 <tr class="separator:a8b110f1ed6f52098753b7a558c020dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a568dd1e737fe3d3222b2e4ca2b6ebad3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IWriteFile.html">IWriteFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a568dd1e737fe3d3222b2e4ca2b6ebad3">createMemoryWriteFile</a> (void *memory, <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> len, const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;fileName, bool deleteMemoryWhenDropped=false)=0</td></tr>
+<tr class="memitem:a568dd1e737fe3d3222b2e4ca2b6ebad3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IWriteFile.html">IWriteFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a568dd1e737fe3d3222b2e4ca2b6ebad3">createMemoryWriteFile</a> (void *memory, <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> len, const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;fileName, bool deleteMemoryWhenDropped=false)=0</td></tr>
 <tr class="memdesc:a568dd1e737fe3d3222b2e4ca2b6ebad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classirr_1_1io_1_1IWriteFile.html" title="Interface providing write access to a file. ">IWriteFile</a> interface for accessing memory like a file.  <a href="#a568dd1e737fe3d3222b2e4ca2b6ebad3">More...</a><br /></td></tr>
 <tr class="separator:a568dd1e737fe3d3222b2e4ca2b6ebad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0ed28b697936ee8aa60a5a0877ac90a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IWriteFile.html">IWriteFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#af0ed28b697936ee8aa60a5a0877ac90a">createAndWriteFile</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename, bool append=false)=0</td></tr>
+<tr class="memitem:af0ed28b697936ee8aa60a5a0877ac90a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IWriteFile.html">IWriteFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#af0ed28b697936ee8aa60a5a0877ac90a">createAndWriteFile</a> (const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;filename, bool append=false)=0</td></tr>
 <tr class="memdesc:af0ed28b697936ee8aa60a5a0877ac90a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a file for write access.  <a href="#af0ed28b697936ee8aa60a5a0877ac90a">More...</a><br /></td></tr>
 <tr class="separator:af0ed28b697936ee8aa60a5a0877ac90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe6641c7f88a8fea0205c113b8379730"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#afe6641c7f88a8fea0205c113b8379730">addFileArchive</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename, bool ignoreCase=true, bool ignorePaths=true, <a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14f">E_FILE_ARCHIVE_TYPE</a> archiveType=<a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14fa7a4f7d9873f9705cd6dc73191e7d8359">EFAT_UNKNOWN</a>, const <a class="el" href="namespaceirr_1_1core.html#ab26a0e0359206b5a694f35c37c829d7f">core::stringc</a> &amp;password=&quot;&quot;, <a class="el" href="classirr_1_1io_1_1IFileArchive.html">IFileArchive</a> **retArchive=0)=0</td></tr>
+<tr class="memitem:afe6641c7f88a8fea0205c113b8379730"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#afe6641c7f88a8fea0205c113b8379730">addFileArchive</a> (const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;filename, bool ignoreCase=true, bool ignorePaths=true, <a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14f">E_FILE_ARCHIVE_TYPE</a> archiveType=<a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14fa2c2aea9bc955ae4e0d29071ba66ff8dc">EFAT_UNKNOWN</a>, const <a class="el" href="namespaceirr_1_1core.html#ade1071a878633f2f6d8a75c5d11fec19">core::stringc</a> &amp;password=&quot;&quot;, <a class="el" href="classirr_1_1io_1_1IFileArchive.html">IFileArchive</a> **retArchive=0)=0</td></tr>
 <tr class="memdesc:afe6641c7f88a8fea0205c113b8379730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an archive to the file system.  <a href="#afe6641c7f88a8fea0205c113b8379730">More...</a><br /></td></tr>
 <tr class="separator:afe6641c7f88a8fea0205c113b8379730"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe4d01069e7fbf0fa871197a68ad87b9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#abe4d01069e7fbf0fa871197a68ad87b9">addFileArchive</a> (<a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *file, bool ignoreCase=true, bool ignorePaths=true, <a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14f">E_FILE_ARCHIVE_TYPE</a> archiveType=<a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14fa7a4f7d9873f9705cd6dc73191e7d8359">EFAT_UNKNOWN</a>, const <a class="el" href="namespaceirr_1_1core.html#ab26a0e0359206b5a694f35c37c829d7f">core::stringc</a> &amp;password=&quot;&quot;, <a class="el" href="classirr_1_1io_1_1IFileArchive.html">IFileArchive</a> **retArchive=0)=0</td></tr>
+<tr class="memitem:abe4d01069e7fbf0fa871197a68ad87b9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#abe4d01069e7fbf0fa871197a68ad87b9">addFileArchive</a> (<a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *file, bool ignoreCase=true, bool ignorePaths=true, <a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14f">E_FILE_ARCHIVE_TYPE</a> archiveType=<a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14fa2c2aea9bc955ae4e0d29071ba66ff8dc">EFAT_UNKNOWN</a>, const <a class="el" href="namespaceirr_1_1core.html#ade1071a878633f2f6d8a75c5d11fec19">core::stringc</a> &amp;password=&quot;&quot;, <a class="el" href="classirr_1_1io_1_1IFileArchive.html">IFileArchive</a> **retArchive=0)=0</td></tr>
 <tr class="memdesc:abe4d01069e7fbf0fa871197a68ad87b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an archive to the file system.  <a href="#abe4d01069e7fbf0fa871197a68ad87b9">More...</a><br /></td></tr>
 <tr class="separator:abe4d01069e7fbf0fa871197a68ad87b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedecc2c6f4c567de8bbe54fd711f7143"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#aedecc2c6f4c567de8bbe54fd711f7143">addFileArchive</a> (<a class="el" href="classirr_1_1io_1_1IFileArchive.html">IFileArchive</a> *archive)=0</td></tr>
@@ -118,7 +117,7 @@ virtual <a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804"
 <tr class="memitem:aa509623756c9bcbc3a9bcf455ea2a3ba"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#aa509623756c9bcbc3a9bcf455ea2a3ba">removeFileArchive</a> (<a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> index)=0</td></tr>
 <tr class="memdesc:aa509623756c9bcbc3a9bcf455ea2a3ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an archive from the file system.  <a href="#aa509623756c9bcbc3a9bcf455ea2a3ba">More...</a><br /></td></tr>
 <tr class="separator:aa509623756c9bcbc3a9bcf455ea2a3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03b405c8f5346c225c590cde585eb73c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a03b405c8f5346c225c590cde585eb73c">removeFileArchive</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename)=0</td></tr>
+<tr class="memitem:a03b405c8f5346c225c590cde585eb73c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a03b405c8f5346c225c590cde585eb73c">removeFileArchive</a> (const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;filename)=0</td></tr>
 <tr class="memdesc:a03b405c8f5346c225c590cde585eb73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an archive from the file system.  <a href="#a03b405c8f5346c225c590cde585eb73c">More...</a><br /></td></tr>
 <tr class="separator:a03b405c8f5346c225c590cde585eb73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7579f5ccca7bc7c1e079f5cb38173ed"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#ab7579f5ccca7bc7c1e079f5cb38173ed">removeFileArchive</a> (const <a class="el" href="classirr_1_1io_1_1IFileArchive.html">IFileArchive</a> *archive)=0</td></tr>
@@ -150,175 +149,55 @@ virtual <a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804"
 <tr class="memitem:a5ade21d59a80b16965d57d1977ad6cc4"><td class="memItemLeft" align="right" valign="top">virtual _IRR_DEPRECATED_ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a5ade21d59a80b16965d57d1977ad6cc4">addPakFileArchive</a> (const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *filename, bool ignoreCase=true, bool ignorePaths=true)</td></tr>
 <tr class="memdesc:a5ade21d59a80b16965d57d1977ad6cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a pak archive to the file system.  <a href="#a5ade21d59a80b16965d57d1977ad6cc4">More...</a><br /></td></tr>
 <tr class="separator:a5ade21d59a80b16965d57d1977ad6cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbf7342afa6e2fc9583db3e521e66e61"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#acbf7342afa6e2fc9583db3e521e66e61">getWorkingDirectory</a> ()=0</td></tr>
+<tr class="memitem:acbf7342afa6e2fc9583db3e521e66e61"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#acbf7342afa6e2fc9583db3e521e66e61">getWorkingDirectory</a> ()=0</td></tr>
 <tr class="memdesc:acbf7342afa6e2fc9583db3e521e66e61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current working directory.  <a href="#acbf7342afa6e2fc9583db3e521e66e61">More...</a><br /></td></tr>
 <tr class="separator:acbf7342afa6e2fc9583db3e521e66e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8859a2bed44815eeccc4fbcef189b073"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a8859a2bed44815eeccc4fbcef189b073">changeWorkingDirectoryTo</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;newDirectory)=0</td></tr>
+<tr class="memitem:a8859a2bed44815eeccc4fbcef189b073"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a8859a2bed44815eeccc4fbcef189b073">changeWorkingDirectoryTo</a> (const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;newDirectory)=0</td></tr>
 <tr class="memdesc:a8859a2bed44815eeccc4fbcef189b073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the current working directory.  <a href="#a8859a2bed44815eeccc4fbcef189b073">More...</a><br /></td></tr>
 <tr class="separator:a8859a2bed44815eeccc4fbcef189b073"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77191d7917349a0200f5de3ef29acd18"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a77191d7917349a0200f5de3ef29acd18">getAbsolutePath</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename) const =0</td></tr>
+<tr class="memitem:a77191d7917349a0200f5de3ef29acd18"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a77191d7917349a0200f5de3ef29acd18">getAbsolutePath</a> (const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;filename) const =0</td></tr>
 <tr class="memdesc:a77191d7917349a0200f5de3ef29acd18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a relative path to an absolute (unique) path, resolving symbolic links if required.  <a href="#a77191d7917349a0200f5de3ef29acd18">More...</a><br /></td></tr>
 <tr class="separator:a77191d7917349a0200f5de3ef29acd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8b7b93f32f58c1ba9a8e7cacd5de80b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#ad8b7b93f32f58c1ba9a8e7cacd5de80b">getFileDir</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename) const =0</td></tr>
+<tr class="memitem:ad8b7b93f32f58c1ba9a8e7cacd5de80b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#ad8b7b93f32f58c1ba9a8e7cacd5de80b">getFileDir</a> (const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;filename) const =0</td></tr>
 <tr class="memdesc:ad8b7b93f32f58c1ba9a8e7cacd5de80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the directory a file is located in.  <a href="#ad8b7b93f32f58c1ba9a8e7cacd5de80b">More...</a><br /></td></tr>
 <tr class="separator:ad8b7b93f32f58c1ba9a8e7cacd5de80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4235989e4ec21c78f1fd1ca861980c6c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a4235989e4ec21c78f1fd1ca861980c6c">getFileBasename</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename, bool keepExtension=true) const =0</td></tr>
+<tr class="memitem:a4235989e4ec21c78f1fd1ca861980c6c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a4235989e4ec21c78f1fd1ca861980c6c">getFileBasename</a> (const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;filename, bool keepExtension=true) const =0</td></tr>
 <tr class="memdesc:a4235989e4ec21c78f1fd1ca861980c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the base part of a filename, i.e. the name without the directory part.  <a href="#a4235989e4ec21c78f1fd1ca861980c6c">More...</a><br /></td></tr>
 <tr class="separator:a4235989e4ec21c78f1fd1ca861980c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa76bbc9cc5ec7a8dbe96713f1ba20de6"><td class="memItemLeft" align="right" valign="top"><a id="aa76bbc9cc5ec7a8dbe96713f1ba20de6"></a>
-virtual <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#aa76bbc9cc5ec7a8dbe96713f1ba20de6">flattenFilename</a> (<a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;directory, const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;root=&quot;/&quot;) const =0</td></tr>
+virtual <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#aa76bbc9cc5ec7a8dbe96713f1ba20de6">flattenFilename</a> (<a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;directory, const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;root=&quot;/&quot;) const =0</td></tr>
 <tr class="memdesc:aa76bbc9cc5ec7a8dbe96713f1ba20de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">flatten a path and file name for example: "/you/me/../." becomes "/you" <br /></td></tr>
 <tr class="separator:aa76bbc9cc5ec7a8dbe96713f1ba20de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cb85c468a6cda253ff99c88010028c7"><td class="memItemLeft" align="right" valign="top"><a id="a9cb85c468a6cda253ff99c88010028c7"></a>
-virtual <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a9cb85c468a6cda253ff99c88010028c7">getRelativeFilename</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename, const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;directory) const =0</td></tr>
+virtual <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a9cb85c468a6cda253ff99c88010028c7">getRelativeFilename</a> (const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;filename, const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;directory) const =0</td></tr>
 <tr class="memdesc:a9cb85c468a6cda253ff99c88010028c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the relative filename, relative to the given directory. <br /></td></tr>
 <tr class="separator:a9cb85c468a6cda253ff99c88010028c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5820e7664377c12015ea7a6c801f7f8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IFileList.html">IFileList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#ad5820e7664377c12015ea7a6c801f7f8">createFileList</a> ()=0</td></tr>
 <tr class="memdesc:ad5820e7664377c12015ea7a6c801f7f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a list of files and directories in the current working directory and returns it.  <a href="#ad5820e7664377c12015ea7a6c801f7f8">More...</a><br /></td></tr>
 <tr class="separator:ad5820e7664377c12015ea7a6c801f7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f8a69f557f2b7022f6cd7346c3e85d2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IFileList.html">IFileList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a4f8a69f557f2b7022f6cd7346c3e85d2">createEmptyFileList</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">io::path</a> &amp;<a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a>, bool ignoreCase, bool ignorePaths)=0</td></tr>
+<tr class="memitem:a4f8a69f557f2b7022f6cd7346c3e85d2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IFileList.html">IFileList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a4f8a69f557f2b7022f6cd7346c3e85d2">createEmptyFileList</a> (const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">io::path</a> &amp;<a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a>, bool ignoreCase, bool ignorePaths)=0</td></tr>
 <tr class="memdesc:a4f8a69f557f2b7022f6cd7346c3e85d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty filelist.  <a href="#a4f8a69f557f2b7022f6cd7346c3e85d2">More...</a><br /></td></tr>
 <tr class="separator:a4f8a69f557f2b7022f6cd7346c3e85d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a767614d727f0b1ec0bc5fdaaf906169b"><td class="memItemLeft" align="right" valign="top"><a id="a767614d727f0b1ec0bc5fdaaf906169b"></a>
 virtual <a class="el" href="namespaceirr_1_1io.html#a22364f1caf06442a70f6198025af3fe9">EFileSystemType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a767614d727f0b1ec0bc5fdaaf906169b">setFileListSystem</a> (<a class="el" href="namespaceirr_1_1io.html#a22364f1caf06442a70f6198025af3fe9">EFileSystemType</a> listType)=0</td></tr>
 <tr class="memdesc:a767614d727f0b1ec0bc5fdaaf906169b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the active type of file system. <br /></td></tr>
 <tr class="separator:a767614d727f0b1ec0bc5fdaaf906169b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c5e98bc16e38b1d15b44e24b1b3bd32"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a1c5e98bc16e38b1d15b44e24b1b3bd32">existFile</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename) const =0</td></tr>
+<tr class="memitem:a1c5e98bc16e38b1d15b44e24b1b3bd32"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a1c5e98bc16e38b1d15b44e24b1b3bd32">existFile</a> (const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;filename) const =0</td></tr>
 <tr class="memdesc:a1c5e98bc16e38b1d15b44e24b1b3bd32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a file exists and could be opened.  <a href="#a1c5e98bc16e38b1d15b44e24b1b3bd32">More...</a><br /></td></tr>
 <tr class="separator:a1c5e98bc16e38b1d15b44e24b1b3bd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a167c9fa159d16ee5c56c074636b0865e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#ab620b13630f0818f3eefc000f6917fe4">IXMLReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a167c9fa159d16ee5c56c074636b0865e">createXMLReader</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename)=0</td></tr>
+<tr class="memitem:a167c9fa159d16ee5c56c074636b0865e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#a9dc6291fb7e4c73155a3e3c8339f9bff">IXMLReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a167c9fa159d16ee5c56c074636b0865e">createXMLReader</a> (const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;filename)=0</td></tr>
 <tr class="memdesc:a167c9fa159d16ee5c56c074636b0865e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a XML Reader from a file which returns all parsed strings as wide characters (wchar_t*).  <a href="#a167c9fa159d16ee5c56c074636b0865e">More...</a><br /></td></tr>
 <tr class="separator:a167c9fa159d16ee5c56c074636b0865e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38f4c90db3fd1b21473ce0cd2437bb59"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#ab620b13630f0818f3eefc000f6917fe4">IXMLReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a38f4c90db3fd1b21473ce0cd2437bb59">createXMLReader</a> (<a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *file)=0</td></tr>
+<tr class="memitem:a38f4c90db3fd1b21473ce0cd2437bb59"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#a9dc6291fb7e4c73155a3e3c8339f9bff">IXMLReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a38f4c90db3fd1b21473ce0cd2437bb59">createXMLReader</a> (<a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *file)=0</td></tr>
 <tr class="memdesc:a38f4c90db3fd1b21473ce0cd2437bb59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a XML Reader from a file which returns all parsed strings as wide characters (wchar_t*).  <a href="#a38f4c90db3fd1b21473ce0cd2437bb59">More...</a><br /></td></tr>
 <tr class="separator:a38f4c90db3fd1b21473ce0cd2437bb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affd8f622ac7c3dcd507f20f9cd23b21f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#a87616ca0bcc3d6424d2c2edfcb743193">IXMLReaderUTF8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#affd8f622ac7c3dcd507f20f9cd23b21f">createXMLReaderUTF8</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename)=0</td></tr>
+<tr class="memitem:affd8f622ac7c3dcd507f20f9cd23b21f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#a2dedc8156931082e6b147b562195e310">IXMLReaderUTF8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#affd8f622ac7c3dcd507f20f9cd23b21f">createXMLReaderUTF8</a> (const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;filename)=0</td></tr>
 <tr class="memdesc:affd8f622ac7c3dcd507f20f9cd23b21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a XML Reader from a file which returns all parsed strings as ASCII/UTF-8 characters (char*).  <a href="#affd8f622ac7c3dcd507f20f9cd23b21f">More...</a><br /></td></tr>
 <tr class="separator:affd8f622ac7c3dcd507f20f9cd23b21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acda42a761d3b2fb4d39ad1d9e2ada973"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#a87616ca0bcc3d6424d2c2edfcb743193">IXMLReaderUTF8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#acda42a761d3b2fb4d39ad1d9e2ada973">createXMLReaderUTF8</a> (<a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *file)=0</td></tr>
+<tr class="memitem:acda42a761d3b2fb4d39ad1d9e2ada973"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#a2dedc8156931082e6b147b562195e310">IXMLReaderUTF8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#acda42a761d3b2fb4d39ad1d9e2ada973">createXMLReaderUTF8</a> (<a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *file)=0</td></tr>
 <tr class="memdesc:acda42a761d3b2fb4d39ad1d9e2ada973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a XML Reader from a file which returns all parsed strings as ASCII/UTF-8 characters (char*).  <a href="#acda42a761d3b2fb4d39ad1d9e2ada973">More...</a><br /></td></tr>
 <tr class="separator:acda42a761d3b2fb4d39ad1d9e2ada973"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0737712d1c90001e5765ef46912c616d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IXMLWriter.html">IXMLWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a0737712d1c90001e5765ef46912c616d">createXMLWriter</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename)=0</td></tr>
-<tr class="memdesc:a0737712d1c90001e5765ef46912c616d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a XML Writer from a file.  <a href="#a0737712d1c90001e5765ef46912c616d">More...</a><br /></td></tr>
-<tr class="separator:a0737712d1c90001e5765ef46912c616d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2bcaf8c338e80ff579061b7056c06da"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IXMLWriter.html">IXMLWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#ac2bcaf8c338e80ff579061b7056c06da">createXMLWriter</a> (<a class="el" href="classirr_1_1io_1_1IWriteFile.html">IWriteFile</a> *file)=0</td></tr>
-<tr class="memdesc:ac2bcaf8c338e80ff579061b7056c06da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a XML Writer from a file.  <a href="#ac2bcaf8c338e80ff579061b7056c06da">More...</a><br /></td></tr>
-<tr class="separator:ac2bcaf8c338e80ff579061b7056c06da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50f91cd88b926751367dac153c1cefd2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IAttributes.html">IAttributes</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a50f91cd88b926751367dac153c1cefd2">createEmptyAttributes</a> (<a class="el" href="classirr_1_1video_1_1IVideoDriver.html">video::IVideoDriver</a> *driver=0)=0</td></tr>
-<tr class="memdesc:a50f91cd88b926751367dac153c1cefd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new empty collection of attributes, usable for serialization and more.  <a href="#a50f91cd88b926751367dac153c1cefd2">More...</a><br /></td></tr>
-<tr class="separator:a50f91cd88b926751367dac153c1cefd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3678bb77e12cc6ee2b3947f4c79f6c90"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a3678bb77e12cc6ee2b3947f4c79f6c90">createAndOpenFile</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename)=0</td></tr>
-<tr class="memdesc:a3678bb77e12cc6ee2b3947f4c79f6c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a file for read access.  <a href="#a3678bb77e12cc6ee2b3947f4c79f6c90">More...</a><br /></td></tr>
-<tr class="separator:a3678bb77e12cc6ee2b3947f4c79f6c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac60a4b7912a7f2364426dc1aaf9bccae"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#ac60a4b7912a7f2364426dc1aaf9bccae">createMemoryReadFile</a> (void *memory, <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> len, const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;fileName, bool deleteMemoryWhenDropped=false)=0</td></tr>
-<tr class="memdesc:ac60a4b7912a7f2364426dc1aaf9bccae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classirr_1_1io_1_1IReadFile.html" title="Interface providing read acess to a file. ">IReadFile</a> interface for accessing memory like a file.  <a href="#ac60a4b7912a7f2364426dc1aaf9bccae">More...</a><br /></td></tr>
-<tr class="separator:ac60a4b7912a7f2364426dc1aaf9bccae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b110f1ed6f52098753b7a558c020dbc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a8b110f1ed6f52098753b7a558c020dbc">createLimitReadFile</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;fileName, <a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *alreadyOpenedFile, long pos, long areaSize)=0</td></tr>
-<tr class="memdesc:a8b110f1ed6f52098753b7a558c020dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classirr_1_1io_1_1IReadFile.html" title="Interface providing read acess to a file. ">IReadFile</a> interface for accessing files inside files.  <a href="#a8b110f1ed6f52098753b7a558c020dbc">More...</a><br /></td></tr>
-<tr class="separator:a8b110f1ed6f52098753b7a558c020dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a568dd1e737fe3d3222b2e4ca2b6ebad3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IWriteFile.html">IWriteFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a568dd1e737fe3d3222b2e4ca2b6ebad3">createMemoryWriteFile</a> (void *memory, <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> len, const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;fileName, bool deleteMemoryWhenDropped=false)=0</td></tr>
-<tr class="memdesc:a568dd1e737fe3d3222b2e4ca2b6ebad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="classirr_1_1io_1_1IWriteFile.html" title="Interface providing write access to a file. ">IWriteFile</a> interface for accessing memory like a file.  <a href="#a568dd1e737fe3d3222b2e4ca2b6ebad3">More...</a><br /></td></tr>
-<tr class="separator:a568dd1e737fe3d3222b2e4ca2b6ebad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0ed28b697936ee8aa60a5a0877ac90a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IWriteFile.html">IWriteFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#af0ed28b697936ee8aa60a5a0877ac90a">createAndWriteFile</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename, bool append=false)=0</td></tr>
-<tr class="memdesc:af0ed28b697936ee8aa60a5a0877ac90a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a file for write access.  <a href="#af0ed28b697936ee8aa60a5a0877ac90a">More...</a><br /></td></tr>
-<tr class="separator:af0ed28b697936ee8aa60a5a0877ac90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe6641c7f88a8fea0205c113b8379730"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#afe6641c7f88a8fea0205c113b8379730">addFileArchive</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename, bool ignoreCase=true, bool ignorePaths=true, <a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14f">E_FILE_ARCHIVE_TYPE</a> archiveType=<a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14fa7a4f7d9873f9705cd6dc73191e7d8359">EFAT_UNKNOWN</a>, const <a class="el" href="namespaceirr_1_1core.html#ab26a0e0359206b5a694f35c37c829d7f">core::stringc</a> &amp;password=&quot;&quot;, <a class="el" href="classirr_1_1io_1_1IFileArchive.html">IFileArchive</a> **retArchive=0)=0</td></tr>
-<tr class="memdesc:afe6641c7f88a8fea0205c113b8379730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an archive to the file system.  <a href="#afe6641c7f88a8fea0205c113b8379730">More...</a><br /></td></tr>
-<tr class="separator:afe6641c7f88a8fea0205c113b8379730"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe4d01069e7fbf0fa871197a68ad87b9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#abe4d01069e7fbf0fa871197a68ad87b9">addFileArchive</a> (<a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *file, bool ignoreCase=true, bool ignorePaths=true, <a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14f">E_FILE_ARCHIVE_TYPE</a> archiveType=<a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14fa7a4f7d9873f9705cd6dc73191e7d8359">EFAT_UNKNOWN</a>, const <a class="el" href="namespaceirr_1_1core.html#ab26a0e0359206b5a694f35c37c829d7f">core::stringc</a> &amp;password=&quot;&quot;, <a class="el" href="classirr_1_1io_1_1IFileArchive.html">IFileArchive</a> **retArchive=0)=0</td></tr>
-<tr class="memdesc:abe4d01069e7fbf0fa871197a68ad87b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an archive to the file system.  <a href="#abe4d01069e7fbf0fa871197a68ad87b9">More...</a><br /></td></tr>
-<tr class="separator:abe4d01069e7fbf0fa871197a68ad87b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedecc2c6f4c567de8bbe54fd711f7143"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#aedecc2c6f4c567de8bbe54fd711f7143">addFileArchive</a> (<a class="el" href="classirr_1_1io_1_1IFileArchive.html">IFileArchive</a> *archive)=0</td></tr>
-<tr class="memdesc:aedecc2c6f4c567de8bbe54fd711f7143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an archive to the file system.  <a href="#aedecc2c6f4c567de8bbe54fd711f7143">More...</a><br /></td></tr>
-<tr class="separator:aedecc2c6f4c567de8bbe54fd711f7143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85862865f72b1e187402365e4236dce0"><td class="memItemLeft" align="right" valign="top"><a id="a85862865f72b1e187402365e4236dce0"></a>
-virtual <a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a85862865f72b1e187402365e4236dce0">getFileArchiveCount</a> () const =0</td></tr>
-<tr class="memdesc:a85862865f72b1e187402365e4236dce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of archives currently attached to the file system. <br /></td></tr>
-<tr class="separator:a85862865f72b1e187402365e4236dce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa509623756c9bcbc3a9bcf455ea2a3ba"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#aa509623756c9bcbc3a9bcf455ea2a3ba">removeFileArchive</a> (<a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> index)=0</td></tr>
-<tr class="memdesc:aa509623756c9bcbc3a9bcf455ea2a3ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an archive from the file system.  <a href="#aa509623756c9bcbc3a9bcf455ea2a3ba">More...</a><br /></td></tr>
-<tr class="separator:aa509623756c9bcbc3a9bcf455ea2a3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03b405c8f5346c225c590cde585eb73c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a03b405c8f5346c225c590cde585eb73c">removeFileArchive</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename)=0</td></tr>
-<tr class="memdesc:a03b405c8f5346c225c590cde585eb73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an archive from the file system.  <a href="#a03b405c8f5346c225c590cde585eb73c">More...</a><br /></td></tr>
-<tr class="separator:a03b405c8f5346c225c590cde585eb73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7579f5ccca7bc7c1e079f5cb38173ed"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#ab7579f5ccca7bc7c1e079f5cb38173ed">removeFileArchive</a> (const <a class="el" href="classirr_1_1io_1_1IFileArchive.html">IFileArchive</a> *archive)=0</td></tr>
-<tr class="memdesc:ab7579f5ccca7bc7c1e079f5cb38173ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an archive from the file system.  <a href="#ab7579f5ccca7bc7c1e079f5cb38173ed">More...</a><br /></td></tr>
-<tr class="separator:ab7579f5ccca7bc7c1e079f5cb38173ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8530fb9793373cf4dbee956090e99f6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#ae8530fb9793373cf4dbee956090e99f6">moveFileArchive</a> (<a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> sourceIndex, <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> relative)=0</td></tr>
-<tr class="memdesc:ae8530fb9793373cf4dbee956090e99f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the search order of attached archives.  <a href="#ae8530fb9793373cf4dbee956090e99f6">More...</a><br /></td></tr>
-<tr class="separator:ae8530fb9793373cf4dbee956090e99f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ac4bfb7bfd7d2961af8e5c128190fae"><td class="memItemLeft" align="right" valign="top"><a id="a1ac4bfb7bfd7d2961af8e5c128190fae"></a>
-virtual <a class="el" href="classirr_1_1io_1_1IFileArchive.html">IFileArchive</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a1ac4bfb7bfd7d2961af8e5c128190fae">getFileArchive</a> (<a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> index)=0</td></tr>
-<tr class="memdesc:a1ac4bfb7bfd7d2961af8e5c128190fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the archive at a given index. <br /></td></tr>
-<tr class="separator:a1ac4bfb7bfd7d2961af8e5c128190fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad56456302b4697c49b461a909d9269b9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#ad56456302b4697c49b461a909d9269b9">addArchiveLoader</a> (<a class="el" href="classirr_1_1io_1_1IArchiveLoader.html">IArchiveLoader</a> *loader)=0</td></tr>
-<tr class="memdesc:ad56456302b4697c49b461a909d9269b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an external archive loader to the engine.  <a href="#ad56456302b4697c49b461a909d9269b9">More...</a><br /></td></tr>
-<tr class="separator:ad56456302b4697c49b461a909d9269b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1e958f65eb8b61b40f3c71a593f852d"><td class="memItemLeft" align="right" valign="top"><a id="ae1e958f65eb8b61b40f3c71a593f852d"></a>
-virtual <a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#ae1e958f65eb8b61b40f3c71a593f852d">getArchiveLoaderCount</a> () const =0</td></tr>
-<tr class="memdesc:ae1e958f65eb8b61b40f3c71a593f852d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of archive loaders currently added. <br /></td></tr>
-<tr class="separator:ae1e958f65eb8b61b40f3c71a593f852d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a175208d74556d1a0e4fe7400bbc65d7b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IArchiveLoader.html">IArchiveLoader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a175208d74556d1a0e4fe7400bbc65d7b">getArchiveLoader</a> (<a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> index) const =0</td></tr>
-<tr class="memdesc:a175208d74556d1a0e4fe7400bbc65d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the given archive loader.  <a href="#a175208d74556d1a0e4fe7400bbc65d7b">More...</a><br /></td></tr>
-<tr class="separator:a175208d74556d1a0e4fe7400bbc65d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef11ff9b5c171d7b3a99d8a79b71f2b3"><td class="memItemLeft" align="right" valign="top">virtual _IRR_DEPRECATED_ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#aef11ff9b5c171d7b3a99d8a79b71f2b3">addZipFileArchive</a> (const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *filename, bool ignoreCase=true, bool ignorePaths=true)</td></tr>
-<tr class="memdesc:aef11ff9b5c171d7b3a99d8a79b71f2b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a zip archive to the file system.  <a href="#aef11ff9b5c171d7b3a99d8a79b71f2b3">More...</a><br /></td></tr>
-<tr class="separator:aef11ff9b5c171d7b3a99d8a79b71f2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b5235a1473ff67d97f1487211762723"><td class="memItemLeft" align="right" valign="top">virtual _IRR_DEPRECATED_ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a7b5235a1473ff67d97f1487211762723">addFolderFileArchive</a> (const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *filename, bool ignoreCase=true, bool ignorePaths=true)</td></tr>
-<tr class="memdesc:a7b5235a1473ff67d97f1487211762723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an unzipped archive (or basedirectory with subdirectories..) to the file system.  <a href="#a7b5235a1473ff67d97f1487211762723">More...</a><br /></td></tr>
-<tr class="separator:a7b5235a1473ff67d97f1487211762723"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ade21d59a80b16965d57d1977ad6cc4"><td class="memItemLeft" align="right" valign="top">virtual _IRR_DEPRECATED_ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a5ade21d59a80b16965d57d1977ad6cc4">addPakFileArchive</a> (const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *filename, bool ignoreCase=true, bool ignorePaths=true)</td></tr>
-<tr class="memdesc:a5ade21d59a80b16965d57d1977ad6cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a pak archive to the file system.  <a href="#a5ade21d59a80b16965d57d1977ad6cc4">More...</a><br /></td></tr>
-<tr class="separator:a5ade21d59a80b16965d57d1977ad6cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbf7342afa6e2fc9583db3e521e66e61"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#acbf7342afa6e2fc9583db3e521e66e61">getWorkingDirectory</a> ()=0</td></tr>
-<tr class="memdesc:acbf7342afa6e2fc9583db3e521e66e61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current working directory.  <a href="#acbf7342afa6e2fc9583db3e521e66e61">More...</a><br /></td></tr>
-<tr class="separator:acbf7342afa6e2fc9583db3e521e66e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8859a2bed44815eeccc4fbcef189b073"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a8859a2bed44815eeccc4fbcef189b073">changeWorkingDirectoryTo</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;newDirectory)=0</td></tr>
-<tr class="memdesc:a8859a2bed44815eeccc4fbcef189b073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the current working directory.  <a href="#a8859a2bed44815eeccc4fbcef189b073">More...</a><br /></td></tr>
-<tr class="separator:a8859a2bed44815eeccc4fbcef189b073"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77191d7917349a0200f5de3ef29acd18"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a77191d7917349a0200f5de3ef29acd18">getAbsolutePath</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename) const =0</td></tr>
-<tr class="memdesc:a77191d7917349a0200f5de3ef29acd18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a relative path to an absolute (unique) path, resolving symbolic links if required.  <a href="#a77191d7917349a0200f5de3ef29acd18">More...</a><br /></td></tr>
-<tr class="separator:a77191d7917349a0200f5de3ef29acd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8b7b93f32f58c1ba9a8e7cacd5de80b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#ad8b7b93f32f58c1ba9a8e7cacd5de80b">getFileDir</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename) const =0</td></tr>
-<tr class="memdesc:ad8b7b93f32f58c1ba9a8e7cacd5de80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the directory a file is located in.  <a href="#ad8b7b93f32f58c1ba9a8e7cacd5de80b">More...</a><br /></td></tr>
-<tr class="separator:ad8b7b93f32f58c1ba9a8e7cacd5de80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4235989e4ec21c78f1fd1ca861980c6c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a4235989e4ec21c78f1fd1ca861980c6c">getFileBasename</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename, bool keepExtension=true) const =0</td></tr>
-<tr class="memdesc:a4235989e4ec21c78f1fd1ca861980c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the base part of a filename, i.e. the name without the directory part.  <a href="#a4235989e4ec21c78f1fd1ca861980c6c">More...</a><br /></td></tr>
-<tr class="separator:a4235989e4ec21c78f1fd1ca861980c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa76bbc9cc5ec7a8dbe96713f1ba20de6"><td class="memItemLeft" align="right" valign="top"><a id="aa76bbc9cc5ec7a8dbe96713f1ba20de6"></a>
-virtual <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#aa76bbc9cc5ec7a8dbe96713f1ba20de6">flattenFilename</a> (<a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;directory, const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;root=&quot;/&quot;) const =0</td></tr>
-<tr class="memdesc:aa76bbc9cc5ec7a8dbe96713f1ba20de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">flatten a path and file name for example: "/you/me/../." becomes "/you" <br /></td></tr>
-<tr class="separator:aa76bbc9cc5ec7a8dbe96713f1ba20de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cb85c468a6cda253ff99c88010028c7"><td class="memItemLeft" align="right" valign="top"><a id="a9cb85c468a6cda253ff99c88010028c7"></a>
-virtual <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a9cb85c468a6cda253ff99c88010028c7">getRelativeFilename</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename, const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;directory) const =0</td></tr>
-<tr class="memdesc:a9cb85c468a6cda253ff99c88010028c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the relative filename, relative to the given directory. <br /></td></tr>
-<tr class="separator:a9cb85c468a6cda253ff99c88010028c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5820e7664377c12015ea7a6c801f7f8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IFileList.html">IFileList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#ad5820e7664377c12015ea7a6c801f7f8">createFileList</a> ()=0</td></tr>
-<tr class="memdesc:ad5820e7664377c12015ea7a6c801f7f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a list of files and directories in the current working directory and returns it.  <a href="#ad5820e7664377c12015ea7a6c801f7f8">More...</a><br /></td></tr>
-<tr class="separator:ad5820e7664377c12015ea7a6c801f7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f8a69f557f2b7022f6cd7346c3e85d2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IFileList.html">IFileList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a4f8a69f557f2b7022f6cd7346c3e85d2">createEmptyFileList</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">io::path</a> &amp;<a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a>, bool ignoreCase, bool ignorePaths)=0</td></tr>
-<tr class="memdesc:a4f8a69f557f2b7022f6cd7346c3e85d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty filelist.  <a href="#a4f8a69f557f2b7022f6cd7346c3e85d2">More...</a><br /></td></tr>
-<tr class="separator:a4f8a69f557f2b7022f6cd7346c3e85d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a767614d727f0b1ec0bc5fdaaf906169b"><td class="memItemLeft" align="right" valign="top"><a id="a767614d727f0b1ec0bc5fdaaf906169b"></a>
-virtual <a class="el" href="namespaceirr_1_1io.html#a22364f1caf06442a70f6198025af3fe9">EFileSystemType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a767614d727f0b1ec0bc5fdaaf906169b">setFileListSystem</a> (<a class="el" href="namespaceirr_1_1io.html#a22364f1caf06442a70f6198025af3fe9">EFileSystemType</a> listType)=0</td></tr>
-<tr class="memdesc:a767614d727f0b1ec0bc5fdaaf906169b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the active type of file system. <br /></td></tr>
-<tr class="separator:a767614d727f0b1ec0bc5fdaaf906169b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c5e98bc16e38b1d15b44e24b1b3bd32"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a1c5e98bc16e38b1d15b44e24b1b3bd32">existFile</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename) const =0</td></tr>
-<tr class="memdesc:a1c5e98bc16e38b1d15b44e24b1b3bd32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a file exists and could be opened.  <a href="#a1c5e98bc16e38b1d15b44e24b1b3bd32">More...</a><br /></td></tr>
-<tr class="separator:a1c5e98bc16e38b1d15b44e24b1b3bd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a167c9fa159d16ee5c56c074636b0865e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#ab620b13630f0818f3eefc000f6917fe4">IXMLReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a167c9fa159d16ee5c56c074636b0865e">createXMLReader</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename)=0</td></tr>
-<tr class="memdesc:a167c9fa159d16ee5c56c074636b0865e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a XML Reader from a file which returns all parsed strings as wide characters (wchar_t*).  <a href="#a167c9fa159d16ee5c56c074636b0865e">More...</a><br /></td></tr>
-<tr class="separator:a167c9fa159d16ee5c56c074636b0865e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38f4c90db3fd1b21473ce0cd2437bb59"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#ab620b13630f0818f3eefc000f6917fe4">IXMLReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a38f4c90db3fd1b21473ce0cd2437bb59">createXMLReader</a> (<a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *file)=0</td></tr>
-<tr class="memdesc:a38f4c90db3fd1b21473ce0cd2437bb59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a XML Reader from a file which returns all parsed strings as wide characters (wchar_t*).  <a href="#a38f4c90db3fd1b21473ce0cd2437bb59">More...</a><br /></td></tr>
-<tr class="separator:a38f4c90db3fd1b21473ce0cd2437bb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affd8f622ac7c3dcd507f20f9cd23b21f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#a87616ca0bcc3d6424d2c2edfcb743193">IXMLReaderUTF8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#affd8f622ac7c3dcd507f20f9cd23b21f">createXMLReaderUTF8</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename)=0</td></tr>
-<tr class="memdesc:affd8f622ac7c3dcd507f20f9cd23b21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a XML Reader from a file which returns all parsed strings as ASCII/UTF-8 characters (char*).  <a href="#affd8f622ac7c3dcd507f20f9cd23b21f">More...</a><br /></td></tr>
-<tr class="separator:affd8f622ac7c3dcd507f20f9cd23b21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acda42a761d3b2fb4d39ad1d9e2ada973"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1io.html#a87616ca0bcc3d6424d2c2edfcb743193">IXMLReaderUTF8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#acda42a761d3b2fb4d39ad1d9e2ada973">createXMLReaderUTF8</a> (<a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *file)=0</td></tr>
-<tr class="memdesc:acda42a761d3b2fb4d39ad1d9e2ada973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a XML Reader from a file which returns all parsed strings as ASCII/UTF-8 characters (char*).  <a href="#acda42a761d3b2fb4d39ad1d9e2ada973">More...</a><br /></td></tr>
-<tr class="separator:acda42a761d3b2fb4d39ad1d9e2ada973"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0737712d1c90001e5765ef46912c616d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IXMLWriter.html">IXMLWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a0737712d1c90001e5765ef46912c616d">createXMLWriter</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;filename)=0</td></tr>
+<tr class="memitem:a0737712d1c90001e5765ef46912c616d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IXMLWriter.html">IXMLWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#a0737712d1c90001e5765ef46912c616d">createXMLWriter</a> (const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;filename)=0</td></tr>
 <tr class="memdesc:a0737712d1c90001e5765ef46912c616d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a XML Writer from a file.  <a href="#a0737712d1c90001e5765ef46912c616d">More...</a><br /></td></tr>
 <tr class="separator:a0737712d1c90001e5765ef46912c616d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2bcaf8c338e80ff579061b7056c06da"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1io_1_1IXMLWriter.html">IXMLWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1io_1_1IFileSystem.html#ac2bcaf8c338e80ff579061b7056c06da">createXMLWriter</a> (<a class="el" href="classirr_1_1io_1_1IWriteFile.html">IWriteFile</a> *file)=0</td></tr>
@@ -348,33 +227,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memitem:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#ad336c6e3c975e4c7911a606c27b894f0">getDebugName</a> () const</td></tr>
 <tr class="memdesc:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the debug name of the object.  <a href="classirr_1_1IReferenceCounted.html#ad336c6e3c975e4c7911a606c27b894f0">More...</a><br /></td></tr>
 <tr class="separator:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8411682018e68a2752d4c82675c71040 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top"><a id="a8411682018e68a2752d4c82675c71040"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a8411682018e68a2752d4c82675c71040">IReferenceCounted</a> ()</td></tr>
-<tr class="memdesc:a8411682018e68a2752d4c82675c71040 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
-<tr class="separator:a8411682018e68a2752d4c82675c71040 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78abc75801cbb13d9db0955b3c07251c inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top"><a id="a78abc75801cbb13d9db0955b3c07251c"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a78abc75801cbb13d9db0955b3c07251c">~IReferenceCounted</a> ()</td></tr>
-<tr class="memdesc:a78abc75801cbb13d9db0955b3c07251c inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
-<tr class="separator:a78abc75801cbb13d9db0955b3c07251c inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a396f9cdbe311ada278626477b3c6f0f5 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a396f9cdbe311ada278626477b3c6f0f5">grab</a> () const</td></tr>
-<tr class="memdesc:a396f9cdbe311ada278626477b3c6f0f5 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grabs the object. Increments the reference counter by one.  <a href="classirr_1_1IReferenceCounted.html#a396f9cdbe311ada278626477b3c6f0f5">More...</a><br /></td></tr>
-<tr class="separator:a396f9cdbe311ada278626477b3c6f0f5 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03856a09355b89d178090c4a5f738543 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543">drop</a> () const</td></tr>
-<tr class="memdesc:a03856a09355b89d178090c4a5f738543 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops the object. Decrements the reference counter by one.  <a href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543">More...</a><br /></td></tr>
-<tr class="separator:a03856a09355b89d178090c4a5f738543 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9836f102c33c68068e74292e0a01819 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#ae9836f102c33c68068e74292e0a01819">getReferenceCount</a> () const</td></tr>
-<tr class="memdesc:ae9836f102c33c68068e74292e0a01819 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reference count.  <a href="classirr_1_1IReferenceCounted.html#ae9836f102c33c68068e74292e0a01819">More...</a><br /></td></tr>
-<tr class="separator:ae9836f102c33c68068e74292e0a01819 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#ad336c6e3c975e4c7911a606c27b894f0">getDebugName</a> () const</td></tr>
-<tr class="memdesc:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the debug name of the object.  <a href="classirr_1_1IReferenceCounted.html#ad336c6e3c975e4c7911a606c27b894f0">More...</a><br /></td></tr>
-<tr class="separator:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classirr_1_1IReferenceCounted"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classirr_1_1IReferenceCounted')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classirr_1_1IReferenceCounted.html">irr::IReferenceCounted</a></td></tr>
-<tr class="memitem:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a704c5042d399fe8cd3bdd65a0559002a">setDebugName</a> (const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *newName)</td></tr>
-<tr class="memdesc:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the debug name of the object.  <a href="classirr_1_1IReferenceCounted.html#a704c5042d399fe8cd3bdd65a0559002a">More...</a><br /></td></tr>
-<tr class="separator:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a704c5042d399fe8cd3bdd65a0559002a">setDebugName</a> (const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *newName)</td></tr>
 <tr class="memdesc:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the debug name of the object.  <a href="classirr_1_1IReferenceCounted.html#a704c5042d399fe8cd3bdd65a0559002a">More...</a><br /></td></tr>
 <tr class="separator:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -384,36 +240,7 @@ Additional Inherited Members</h2></td></tr>
 <p>It manages where files are, so that modules which use the the IO do not need to know where every file is located. A file could be in a .zip-Archive or as file on disk, using the <a class="el" href="classirr_1_1io_1_1IFileSystem.html" title="The FileSystem manages files and archives and provides access to them. ">IFileSystem</a> makes no difference to this. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad56456302b4697c49b461a909d9269b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad56456302b4697c49b461a909d9269b9">&#9670;&nbsp;</a></span>addArchiveLoader() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void irr::io::IFileSystem::addArchiveLoader </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classirr_1_1io_1_1IArchiveLoader.html">IArchiveLoader</a> *&#160;</td>
-          <td class="paramname"><em>loader</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Adds an external archive loader to the engine. </p>
-<p>Use this function to add support for new archive types to the engine, for example proprietary or encrypted file storage. </p>
-
-</div>
-</div>
-<a id="ad56456302b4697c49b461a909d9269b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad56456302b4697c49b461a909d9269b9">&#9670;&nbsp;</a></span>addArchiveLoader() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad56456302b4697c49b461a909d9269b9">&#9670;&nbsp;</a></span>addArchiveLoader()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -442,7 +269,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="afe6641c7f88a8fea0205c113b8379730"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe6641c7f88a8fea0205c113b8379730">&#9670;&nbsp;</a></span>addFileArchive() <span class="overload">[1/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afe6641c7f88a8fea0205c113b8379730">&#9670;&nbsp;</a></span>addFileArchive() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -453,7 +280,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual bool irr::io::IFileSystem::addFileArchive </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
         </tr>
         <tr>
@@ -472,86 +299,12 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14f">E_FILE_ARCHIVE_TYPE</a>&#160;</td>
-          <td class="paramname"><em>archiveType</em> = <code><a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14fa7a4f7d9873f9705cd6dc73191e7d8359">EFAT_UNKNOWN</a></code>, </td>
+          <td class="paramname"><em>archiveType</em> = <code><a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14fa2c2aea9bc955ae4e0d29071ba66ff8dc">EFAT_UNKNOWN</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ab26a0e0359206b5a694f35c37c829d7f">core::stringc</a> &amp;&#160;</td>
-          <td class="paramname"><em>password</em> = <code>&quot;&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classirr_1_1io_1_1IFileArchive.html">IFileArchive</a> **&#160;</td>
-          <td class="paramname"><em>retArchive</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Adds an archive to the file system. </p>
-<p>After calling this, the Irrlicht Engine will also search and open files directly from this archive. This is useful for hiding data from the end user, speeding up file access and making it possible to access for example Quake3 .pk3 files, which are just renamed .zip files. By default Irrlicht supports ZIP, PAK, TAR, PNK, and directories as archives. You can provide your own archive types by implementing <a class="el" href="classirr_1_1io_1_1IArchiveLoader.html" title="Class which is able to create an archive from a file. ">IArchiveLoader</a> and passing an instance to addArchiveLoader. Irrlicht supports AES-encrypted zip files, and the advanced compression techniques lzma and bzip2. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>Filename of the archive to add to the file system. </td></tr>
-    <tr><td class="paramname">ignoreCase</td><td>If set to true, files in the archive can be accessed without writing all letters in the right case. </td></tr>
-    <tr><td class="paramname">ignorePaths</td><td>If set to true, files in the added archive can be accessed without its complete path. </td></tr>
-    <tr><td class="paramname">archiveType</td><td>If no specific E_FILE_ARCHIVE_TYPE is selected then the type of archive will depend on the extension of the file name. If you use a different extension then you can use this parameter to force a specific type of archive. </td></tr>
-    <tr><td class="paramname">password</td><td>An optional password, which is used in case of encrypted archives. </td></tr>
-    <tr><td class="paramname">retArchive</td><td>A pointer that will be set to the archive that is added. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the archive was added successfully, false if not. </dd></dl>
-
-</div>
-</div>
-<a id="afe6641c7f88a8fea0205c113b8379730"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe6641c7f88a8fea0205c113b8379730">&#9670;&nbsp;</a></span>addFileArchive() <span class="overload">[2/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool irr::io::IFileSystem::addFileArchive </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ignoreCase</em> = <code>true</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ignorePaths</em> = <code>true</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14f">E_FILE_ARCHIVE_TYPE</a>&#160;</td>
-          <td class="paramname"><em>archiveType</em> = <code><a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14fa7a4f7d9873f9705cd6dc73191e7d8359">EFAT_UNKNOWN</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ab26a0e0359206b5a694f35c37c829d7f">core::stringc</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ade1071a878633f2f6d8a75c5d11fec19">core::stringc</a> &amp;&#160;</td>
           <td class="paramname"><em>password</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
@@ -590,7 +343,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="abe4d01069e7fbf0fa871197a68ad87b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe4d01069e7fbf0fa871197a68ad87b9">&#9670;&nbsp;</a></span>addFileArchive() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abe4d01069e7fbf0fa871197a68ad87b9">&#9670;&nbsp;</a></span>addFileArchive() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -620,86 +373,12 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14f">E_FILE_ARCHIVE_TYPE</a>&#160;</td>
-          <td class="paramname"><em>archiveType</em> = <code><a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14fa7a4f7d9873f9705cd6dc73191e7d8359">EFAT_UNKNOWN</a></code>, </td>
+          <td class="paramname"><em>archiveType</em> = <code><a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14fa2c2aea9bc955ae4e0d29071ba66ff8dc">EFAT_UNKNOWN</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ab26a0e0359206b5a694f35c37c829d7f">core::stringc</a> &amp;&#160;</td>
-          <td class="paramname"><em>password</em> = <code>&quot;&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classirr_1_1io_1_1IFileArchive.html">IFileArchive</a> **&#160;</td>
-          <td class="paramname"><em>retArchive</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Adds an archive to the file system. </p>
-<p>After calling this, the Irrlicht Engine will also search and open files directly from this archive. This is useful for hiding data from the end user, speeding up file access and making it possible to access for example Quake3 .pk3 files, which are just renamed .zip files. By default Irrlicht supports ZIP, PAK, TAR, PNK, and directories as archives. You can provide your own archive types by implementing <a class="el" href="classirr_1_1io_1_1IArchiveLoader.html" title="Class which is able to create an archive from a file. ">IArchiveLoader</a> and passing an instance to addArchiveLoader. Irrlicht supports AES-encrypted zip files, and the advanced compression techniques lzma and bzip2. If you want to add a directory as an archive, prefix its name with a slash in order to let Irrlicht recognize it as a folder mount (mypath/). Using this technique one can build up a search order, because archives are read first, and can be used more easily with relative filenames. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">file</td><td>Archive to add to the file system. </td></tr>
-    <tr><td class="paramname">ignoreCase</td><td>If set to true, files in the archive can be accessed without writing all letters in the right case. </td></tr>
-    <tr><td class="paramname">ignorePaths</td><td>If set to true, files in the added archive can be accessed without its complete path. </td></tr>
-    <tr><td class="paramname">archiveType</td><td>If no specific E_FILE_ARCHIVE_TYPE is selected then the type of archive will depend on the extension of the file name. If you use a different extension then you can use this parameter to force a specific type of archive. </td></tr>
-    <tr><td class="paramname">password</td><td>An optional password, which is used in case of encrypted archives. </td></tr>
-    <tr><td class="paramname">retArchive</td><td>A pointer that will be set to the archive that is added. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the archive was added successfully, false if not. </dd></dl>
-
-</div>
-</div>
-<a id="abe4d01069e7fbf0fa871197a68ad87b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe4d01069e7fbf0fa871197a68ad87b9">&#9670;&nbsp;</a></span>addFileArchive() <span class="overload">[4/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool irr::io::IFileSystem::addFileArchive </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *&#160;</td>
-          <td class="paramname"><em>file</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ignoreCase</em> = <code>true</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ignorePaths</em> = <code>true</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14f">E_FILE_ARCHIVE_TYPE</a>&#160;</td>
-          <td class="paramname"><em>archiveType</em> = <code><a class="el" href="namespaceirr_1_1io.html#adb3e3c445ec8e608ed1f0f93306da14fa7a4f7d9873f9705cd6dc73191e7d8359">EFAT_UNKNOWN</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ab26a0e0359206b5a694f35c37c829d7f">core::stringc</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ade1071a878633f2f6d8a75c5d11fec19">core::stringc</a> &amp;&#160;</td>
           <td class="paramname"><em>password</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
@@ -738,42 +417,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="aedecc2c6f4c567de8bbe54fd711f7143"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedecc2c6f4c567de8bbe54fd711f7143">&#9670;&nbsp;</a></span>addFileArchive() <span class="overload">[5/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool irr::io::IFileSystem::addFileArchive </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classirr_1_1io_1_1IFileArchive.html">IFileArchive</a> *&#160;</td>
-          <td class="paramname"><em>archive</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Adds an archive to the file system. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">archive</td><td>The archive to add to the file system. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the archive was added successfully, false if not. </dd></dl>
-
-</div>
-</div>
-<a id="aedecc2c6f4c567de8bbe54fd711f7143"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedecc2c6f4c567de8bbe54fd711f7143">&#9670;&nbsp;</a></span>addFileArchive() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aedecc2c6f4c567de8bbe54fd711f7143">&#9670;&nbsp;</a></span>addFileArchive() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -808,7 +452,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a7b5235a1473ff67d97f1487211762723"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b5235a1473ff67d97f1487211762723">&#9670;&nbsp;</a></span>addFolderFileArchive() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b5235a1473ff67d97f1487211762723">&#9670;&nbsp;</a></span>addFolderFileArchive()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -861,62 +505,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a7b5235a1473ff67d97f1487211762723"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b5235a1473ff67d97f1487211762723">&#9670;&nbsp;</a></span>addFolderFileArchive() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual _IRR_DEPRECATED_ bool irr::io::IFileSystem::addFolderFileArchive </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ignoreCase</em> = <code>true</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ignorePaths</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Adds an unzipped archive (or basedirectory with subdirectories..) to the file system. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">Deprecated:</a></b></dt><dd>This function is provided for compatibility with older versions of Irrlicht and may be removed in Irrlicht 1.9, you should use addFileArchive instead. Useful for handling data which will be in a zip file </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>Filename of the unzipped zip archive base directory to add to the file system. </td></tr>
-    <tr><td class="paramname">ignoreCase</td><td>If set to true, files in the archive can be accessed without writing all letters in the right case. </td></tr>
-    <tr><td class="paramname">ignorePaths</td><td>If set to true, files in the added archive can be accessed without its complete path. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the archive was added successful, false if not. </dd></dl>
-
-</div>
-</div>
 <a id="a5ade21d59a80b16965d57d1977ad6cc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ade21d59a80b16965d57d1977ad6cc4">&#9670;&nbsp;</a></span>addPakFileArchive() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ade21d59a80b16965d57d1977ad6cc4">&#9670;&nbsp;</a></span>addPakFileArchive()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -969,62 +559,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a5ade21d59a80b16965d57d1977ad6cc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ade21d59a80b16965d57d1977ad6cc4">&#9670;&nbsp;</a></span>addPakFileArchive() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual _IRR_DEPRECATED_ bool irr::io::IFileSystem::addPakFileArchive </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ignoreCase</em> = <code>true</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ignorePaths</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Adds a pak archive to the file system. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated:</a></b></dt><dd>This function is provided for compatibility with older versions of Irrlicht and may be removed in Irrlicht 1.9, you should use addFileArchive instead. After calling this, the Irrlicht Engine will search and open files directly from this archive too. This is useful for hiding data from the end user, speeding up file access and making it possible to access for example Quake2/KingPin/Hexen2 .pak files </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>Filename of the pak archive to add to the file system. </td></tr>
-    <tr><td class="paramname">ignoreCase</td><td>If set to true, files in the archive can be accessed without writing all letters in the right case. </td></tr>
-    <tr><td class="paramname">ignorePaths</td><td>If set to true, files in the added archive can be accessed without its complete path.(should not use with Quake2 paks </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the archive was added successful, false if not. </dd></dl>
-
-</div>
-</div>
 <a id="aef11ff9b5c171d7b3a99d8a79b71f2b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef11ff9b5c171d7b3a99d8a79b71f2b3">&#9670;&nbsp;</a></span>addZipFileArchive() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aef11ff9b5c171d7b3a99d8a79b71f2b3">&#9670;&nbsp;</a></span>addZipFileArchive()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1077,62 +613,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aef11ff9b5c171d7b3a99d8a79b71f2b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef11ff9b5c171d7b3a99d8a79b71f2b3">&#9670;&nbsp;</a></span>addZipFileArchive() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual _IRR_DEPRECATED_ bool irr::io::IFileSystem::addZipFileArchive </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ignoreCase</em> = <code>true</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ignorePaths</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Adds a zip archive to the file system. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated:</a></b></dt><dd>This function is provided for compatibility with older versions of Irrlicht and may be removed in Irrlicht 1.9, you should use addFileArchive instead. After calling this, the Irrlicht Engine will search and open files directly from this archive too. This is useful for hiding data from the end user, speeding up file access and making it possible to access for example Quake3 .pk3 files, which are no different than .zip files. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>Filename of the zip archive to add to the file system. </td></tr>
-    <tr><td class="paramname">ignoreCase</td><td>If set to true, files in the archive can be accessed without writing all letters in the right case. </td></tr>
-    <tr><td class="paramname">ignorePaths</td><td>If set to true, files in the added archive can be accessed without its complete path. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the archive was added successfully, false if not. </dd></dl>
-
-</div>
-</div>
 <a id="a8859a2bed44815eeccc4fbcef189b073"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8859a2bed44815eeccc4fbcef189b073">&#9670;&nbsp;</a></span>changeWorkingDirectoryTo() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8859a2bed44815eeccc4fbcef189b073">&#9670;&nbsp;</a></span>changeWorkingDirectoryTo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1143,42 +625,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual bool irr::io::IFileSystem::changeWorkingDirectoryTo </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
-          <td class="paramname"><em>newDirectory</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Changes the current working directory. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">newDirectory</td><td>A string specifying the new working directory. The string is operating system dependent. Under Windows it has the form "&lt;drive&gt;:\&lt;directory&gt;\&lt;sudirectory&gt;\&lt;..&gt;". An example would be: "C:\Windows\" </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if successful, otherwise false. </dd></dl>
-
-</div>
-</div>
-<a id="a8859a2bed44815eeccc4fbcef189b073"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8859a2bed44815eeccc4fbcef189b073">&#9670;&nbsp;</a></span>changeWorkingDirectoryTo() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool irr::io::IFileSystem::changeWorkingDirectoryTo </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;&#160;</td>
           <td class="paramname"><em>newDirectory</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1202,7 +649,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a3678bb77e12cc6ee2b3947f4c79f6c90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3678bb77e12cc6ee2b3947f4c79f6c90">&#9670;&nbsp;</a></span>createAndOpenFile() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3678bb77e12cc6ee2b3947f4c79f6c90">&#9670;&nbsp;</a></span>createAndOpenFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1213,42 +660,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a>* irr::io::IFileSystem::createAndOpenFile </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Opens a file for read access. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>Name of file to open. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the created file interface. The returned pointer should be dropped when no longer needed. See <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IReferenceCounted::drop()</a> for more information. </dd></dl>
-
-</div>
-</div>
-<a id="a3678bb77e12cc6ee2b3947f4c79f6c90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3678bb77e12cc6ee2b3947f4c79f6c90">&#9670;&nbsp;</a></span>createAndOpenFile() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a>* irr::io::IFileSystem::createAndOpenFile </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1272,7 +684,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="af0ed28b697936ee8aa60a5a0877ac90a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0ed28b697936ee8aa60a5a0877ac90a">&#9670;&nbsp;</a></span>createAndWriteFile() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af0ed28b697936ee8aa60a5a0877ac90a">&#9670;&nbsp;</a></span>createAndWriteFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1283,53 +695,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="classirr_1_1io_1_1IWriteFile.html">IWriteFile</a>* irr::io::IFileSystem::createAndWriteFile </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>append</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Opens a file for write access. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>Name of file to open. </td></tr>
-    <tr><td class="paramname">append</td><td>If the file already exist, all write operations are appended to the file. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the created file interface. 0 is returned, if the file could not created or opened for writing. The returned pointer should be dropped when no longer needed. See <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IReferenceCounted::drop()</a> for more information. </dd></dl>
-
-</div>
-</div>
-<a id="af0ed28b697936ee8aa60a5a0877ac90a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0ed28b697936ee8aa60a5a0877ac90a">&#9670;&nbsp;</a></span>createAndWriteFile() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classirr_1_1io_1_1IWriteFile.html">IWriteFile</a>* irr::io::IFileSystem::createAndWriteFile </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
         </tr>
         <tr>
@@ -1364,42 +730,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a50f91cd88b926751367dac153c1cefd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50f91cd88b926751367dac153c1cefd2">&#9670;&nbsp;</a></span>createEmptyAttributes() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classirr_1_1io_1_1IAttributes.html">IAttributes</a>* irr::io::IFileSystem::createEmptyAttributes </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classirr_1_1video_1_1IVideoDriver.html">video::IVideoDriver</a> *&#160;</td>
-          <td class="paramname"><em>driver</em> = <code>0</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a new empty collection of attributes, usable for serialization and more. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">driver</td><td>Video driver to be used to load textures when specified as attribute values. Can be null to prevent automatic texture loading by attributes. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the created object. If you no longer need the object, you should call <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IAttributes::drop()</a>. See <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IReferenceCounted::drop()</a> for more information. </dd></dl>
-
-</div>
-</div>
-<a id="a50f91cd88b926751367dac153c1cefd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50f91cd88b926751367dac153c1cefd2">&#9670;&nbsp;</a></span>createEmptyAttributes() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a50f91cd88b926751367dac153c1cefd2">&#9670;&nbsp;</a></span>createEmptyAttributes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1434,7 +765,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a4f8a69f557f2b7022f6cd7346c3e85d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f8a69f557f2b7022f6cd7346c3e85d2">&#9670;&nbsp;</a></span>createEmptyFileList() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f8a69f557f2b7022f6cd7346c3e85d2">&#9670;&nbsp;</a></span>createEmptyFileList()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1445,52 +776,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="classirr_1_1io_1_1IFileList.html">IFileList</a>* irr::io::IFileSystem::createEmptyFileList </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">io::path</a> &amp;&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ignoreCase</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ignorePaths</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates an empty filelist. </p>
-<dl class="section return"><dt>Returns</dt><dd>a Pointer to the created <a class="el" href="classirr_1_1io_1_1IFileList.html" title="Provides a list of files and folders. ">IFileList</a> is returned. After the list has been used it has to be deleted using its <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IFileList::drop()</a> method. See <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IReferenceCounted::drop()</a> for more information. </dd></dl>
-
-</div>
-</div>
-<a id="a4f8a69f557f2b7022f6cd7346c3e85d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f8a69f557f2b7022f6cd7346c3e85d2">&#9670;&nbsp;</a></span>createEmptyFileList() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classirr_1_1io_1_1IFileList.html">IFileList</a>* irr::io::IFileSystem::createEmptyFileList </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">io::path</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">io::path</a> &amp;&#160;</td>
           <td class="paramname"><em>path</em>, </td>
         </tr>
         <tr>
@@ -1524,35 +810,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ad5820e7664377c12015ea7a6c801f7f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5820e7664377c12015ea7a6c801f7f8">&#9670;&nbsp;</a></span>createFileList() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classirr_1_1io_1_1IFileList.html">IFileList</a>* irr::io::IFileSystem::createFileList </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a list of files and directories in the current working directory and returns it. </p>
-<dl class="section return"><dt>Returns</dt><dd>a Pointer to the created <a class="el" href="classirr_1_1io_1_1IFileList.html" title="Provides a list of files and folders. ">IFileList</a> is returned. After the list has been used it has to be deleted using its <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IFileList::drop()</a> method. See <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IReferenceCounted::drop()</a> for more information. </dd></dl>
-
-</div>
-</div>
-<a id="ad5820e7664377c12015ea7a6c801f7f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5820e7664377c12015ea7a6c801f7f8">&#9670;&nbsp;</a></span>createFileList() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5820e7664377c12015ea7a6c801f7f8">&#9670;&nbsp;</a></span>createFileList()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1580,7 +838,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a8b110f1ed6f52098753b7a558c020dbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b110f1ed6f52098753b7a558c020dbc">&#9670;&nbsp;</a></span>createLimitReadFile() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b110f1ed6f52098753b7a558c020dbc">&#9670;&nbsp;</a></span>createLimitReadFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1591,67 +849,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a>* irr::io::IFileSystem::createLimitReadFile </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
-          <td class="paramname"><em>fileName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *&#160;</td>
-          <td class="paramname"><em>alreadyOpenedFile</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">long&#160;</td>
-          <td class="paramname"><em>pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">long&#160;</td>
-          <td class="paramname"><em>areaSize</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates an <a class="el" href="classirr_1_1io_1_1IReadFile.html" title="Interface providing read acess to a file. ">IReadFile</a> interface for accessing files inside files. </p>
-<p>This is useful e.g. for archives. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fileName</td><td>The name given to this file </td></tr>
-    <tr><td class="paramname">alreadyOpenedFile</td><td>Pointer to the enclosing file </td></tr>
-    <tr><td class="paramname">pos</td><td>Start of the file inside alreadyOpenedFile </td></tr>
-    <tr><td class="paramname">areaSize</td><td>The length of the file </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the created file interface. The returned pointer should be dropped when no longer needed. See <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IReferenceCounted::drop()</a> for more information. </dd></dl>
-
-</div>
-</div>
-<a id="a8b110f1ed6f52098753b7a558c020dbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b110f1ed6f52098753b7a558c020dbc">&#9670;&nbsp;</a></span>createLimitReadFile() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a>* irr::io::IFileSystem::createLimitReadFile </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
         </tr>
         <tr>
@@ -1700,7 +898,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ac60a4b7912a7f2364426dc1aaf9bccae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac60a4b7912a7f2364426dc1aaf9bccae">&#9670;&nbsp;</a></span>createMemoryReadFile() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac60a4b7912a7f2364426dc1aaf9bccae">&#9670;&nbsp;</a></span>createMemoryReadFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1723,67 +921,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
-          <td class="paramname"><em>fileName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>deleteMemoryWhenDropped</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates an <a class="el" href="classirr_1_1io_1_1IReadFile.html" title="Interface providing read acess to a file. ">IReadFile</a> interface for accessing memory like a file. </p>
-<p>This allows you to use a pointer to memory where an <a class="el" href="classirr_1_1io_1_1IReadFile.html" title="Interface providing read acess to a file. ">IReadFile</a> is requested. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">memory</td><td>A pointer to the start of the file in memory </td></tr>
-    <tr><td class="paramname">len</td><td>The length of the memory in bytes </td></tr>
-    <tr><td class="paramname">fileName</td><td>The name given to this file </td></tr>
-    <tr><td class="paramname">deleteMemoryWhenDropped</td><td>True if the memory should be deleted along with the <a class="el" href="classirr_1_1io_1_1IReadFile.html" title="Interface providing read acess to a file. ">IReadFile</a> when it is dropped. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the created file interface. The returned pointer should be dropped when no longer needed. See <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IReferenceCounted::drop()</a> for more information. </dd></dl>
-
-</div>
-</div>
-<a id="ac60a4b7912a7f2364426dc1aaf9bccae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac60a4b7912a7f2364426dc1aaf9bccae">&#9670;&nbsp;</a></span>createMemoryReadFile() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a>* irr::io::IFileSystem::createMemoryReadFile </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>memory</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a>&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
         </tr>
         <tr>
@@ -1820,7 +958,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a568dd1e737fe3d3222b2e4ca2b6ebad3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a568dd1e737fe3d3222b2e4ca2b6ebad3">&#9670;&nbsp;</a></span>createMemoryWriteFile() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a568dd1e737fe3d3222b2e4ca2b6ebad3">&#9670;&nbsp;</a></span>createMemoryWriteFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1843,67 +981,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
-          <td class="paramname"><em>fileName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>deleteMemoryWhenDropped</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates an <a class="el" href="classirr_1_1io_1_1IWriteFile.html" title="Interface providing write access to a file. ">IWriteFile</a> interface for accessing memory like a file. </p>
-<p>This allows you to use a pointer to memory where an <a class="el" href="classirr_1_1io_1_1IWriteFile.html" title="Interface providing write access to a file. ">IWriteFile</a> is requested. You are responsible for allocating enough memory. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">memory</td><td>A pointer to the start of the file in memory (allocated by you) </td></tr>
-    <tr><td class="paramname">len</td><td>The length of the memory in bytes </td></tr>
-    <tr><td class="paramname">fileName</td><td>The name given to this file </td></tr>
-    <tr><td class="paramname">deleteMemoryWhenDropped</td><td>True if the memory should be deleted along with the <a class="el" href="classirr_1_1io_1_1IWriteFile.html" title="Interface providing write access to a file. ">IWriteFile</a> when it is dropped. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the created file interface. The returned pointer should be dropped when no longer needed. See <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IReferenceCounted::drop()</a> for more information. </dd></dl>
-
-</div>
-</div>
-<a id="a568dd1e737fe3d3222b2e4ca2b6ebad3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a568dd1e737fe3d3222b2e4ca2b6ebad3">&#9670;&nbsp;</a></span>createMemoryWriteFile() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classirr_1_1io_1_1IWriteFile.html">IWriteFile</a>* irr::io::IFileSystem::createMemoryWriteFile </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>memory</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a>&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
         </tr>
         <tr>
@@ -1940,7 +1018,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a167c9fa159d16ee5c56c074636b0865e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a167c9fa159d16ee5c56c074636b0865e">&#9670;&nbsp;</a></span>createXMLReader() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a167c9fa159d16ee5c56c074636b0865e">&#9670;&nbsp;</a></span>createXMLReader() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1949,38 +1027,9 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#ab620b13630f0818f3eefc000f6917fe4">IXMLReader</a>* irr::io::IFileSystem::createXMLReader </td>
+          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#a9dc6291fb7e4c73155a3e3c8339f9bff">IXMLReader</a>* irr::io::IFileSystem::createXMLReader </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a XML Reader from a file which returns all parsed strings as wide characters (wchar_t*). </p>
-<p>Use <a class="el" href="classirr_1_1io_1_1IFileSystem.html#affd8f622ac7c3dcd507f20f9cd23b21f" title="Creates a XML Reader from a file which returns all parsed strings as ASCII/UTF-8 characters (char*)...">createXMLReaderUTF8()</a> if you prefer char* instead of wchar_t*. See <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html" title="Interface providing easy read access to a XML file. ">IIrrXMLReader</a> for more information on how to use the parser. </p><dl class="section return"><dt>Returns</dt><dd>0, if file could not be opened, otherwise a pointer to the created IXMLReader is returned. After use, the reader has to be deleted using its IXMLReader::drop() method. See <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IReferenceCounted::drop()</a> for more information. </dd></dl>
-
-</div>
-</div>
-<a id="a167c9fa159d16ee5c56c074636b0865e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a167c9fa159d16ee5c56c074636b0865e">&#9670;&nbsp;</a></span>createXMLReader() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#ab620b13630f0818f3eefc000f6917fe4">IXMLReader</a>* irr::io::IFileSystem::createXMLReader </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1998,7 +1047,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a38f4c90db3fd1b21473ce0cd2437bb59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38f4c90db3fd1b21473ce0cd2437bb59">&#9670;&nbsp;</a></span>createXMLReader() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a38f4c90db3fd1b21473ce0cd2437bb59">&#9670;&nbsp;</a></span>createXMLReader() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2007,36 +1056,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#ab620b13630f0818f3eefc000f6917fe4">IXMLReader</a>* irr::io::IFileSystem::createXMLReader </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *&#160;</td>
-          <td class="paramname"><em>file</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a XML Reader from a file which returns all parsed strings as wide characters (wchar_t*). </p>
-<p>Use <a class="el" href="classirr_1_1io_1_1IFileSystem.html#affd8f622ac7c3dcd507f20f9cd23b21f" title="Creates a XML Reader from a file which returns all parsed strings as ASCII/UTF-8 characters (char*)...">createXMLReaderUTF8()</a> if you prefer char* instead of wchar_t*. See <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html" title="Interface providing easy read access to a XML file. ">IIrrXMLReader</a> for more information on how to use the parser. </p><dl class="section return"><dt>Returns</dt><dd>0, if file could not be opened, otherwise a pointer to the created IXMLReader is returned. After use, the reader has to be deleted using its IXMLReader::drop() method. See <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IReferenceCounted::drop()</a> for more information. </dd></dl>
-
-</div>
-</div>
-<a id="a38f4c90db3fd1b21473ce0cd2437bb59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38f4c90db3fd1b21473ce0cd2437bb59">&#9670;&nbsp;</a></span>createXMLReader() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#ab620b13630f0818f3eefc000f6917fe4">IXMLReader</a>* irr::io::IFileSystem::createXMLReader </td>
+          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#a9dc6291fb7e4c73155a3e3c8339f9bff">IXMLReader</a>* irr::io::IFileSystem::createXMLReader </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *&#160;</td>
           <td class="paramname"><em>file</em></td><td>)</td>
@@ -2056,7 +1076,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="affd8f622ac7c3dcd507f20f9cd23b21f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affd8f622ac7c3dcd507f20f9cd23b21f">&#9670;&nbsp;</a></span>createXMLReaderUTF8() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#affd8f622ac7c3dcd507f20f9cd23b21f">&#9670;&nbsp;</a></span>createXMLReaderUTF8() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2065,38 +1085,9 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#a87616ca0bcc3d6424d2c2edfcb743193">IXMLReaderUTF8</a>* irr::io::IFileSystem::createXMLReaderUTF8 </td>
+          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#a2dedc8156931082e6b147b562195e310">IXMLReaderUTF8</a>* irr::io::IFileSystem::createXMLReaderUTF8 </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a XML Reader from a file which returns all parsed strings as ASCII/UTF-8 characters (char*). </p>
-<p>Use <a class="el" href="classirr_1_1io_1_1IFileSystem.html#a167c9fa159d16ee5c56c074636b0865e" title="Creates a XML Reader from a file which returns all parsed strings as wide characters (wchar_t*)...">createXMLReader()</a> if you prefer wchar_t* instead of char*. See <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html" title="Interface providing easy read access to a XML file. ">IIrrXMLReader</a> for more information on how to use the parser. </p><dl class="section return"><dt>Returns</dt><dd>0, if file could not be opened, otherwise a pointer to the created IXMLReader is returned. After use, the reader has to be deleted using its IXMLReaderUTF8::drop() method. See <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IReferenceCounted::drop()</a> for more information. </dd></dl>
-
-</div>
-</div>
-<a id="affd8f622ac7c3dcd507f20f9cd23b21f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affd8f622ac7c3dcd507f20f9cd23b21f">&#9670;&nbsp;</a></span>createXMLReaderUTF8() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#a87616ca0bcc3d6424d2c2edfcb743193">IXMLReaderUTF8</a>* irr::io::IFileSystem::createXMLReaderUTF8 </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2114,7 +1105,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="acda42a761d3b2fb4d39ad1d9e2ada973"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acda42a761d3b2fb4d39ad1d9e2ada973">&#9670;&nbsp;</a></span>createXMLReaderUTF8() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acda42a761d3b2fb4d39ad1d9e2ada973">&#9670;&nbsp;</a></span>createXMLReaderUTF8() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2123,36 +1114,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#a87616ca0bcc3d6424d2c2edfcb743193">IXMLReaderUTF8</a>* irr::io::IFileSystem::createXMLReaderUTF8 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *&#160;</td>
-          <td class="paramname"><em>file</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a XML Reader from a file which returns all parsed strings as ASCII/UTF-8 characters (char*). </p>
-<p>Use <a class="el" href="classirr_1_1io_1_1IFileSystem.html#a167c9fa159d16ee5c56c074636b0865e" title="Creates a XML Reader from a file which returns all parsed strings as wide characters (wchar_t*)...">createXMLReader()</a> if you prefer wchar_t* instead of char*. See <a class="el" href="classirr_1_1io_1_1IIrrXMLReader.html" title="Interface providing easy read access to a XML file. ">IIrrXMLReader</a> for more information on how to use the parser. </p><dl class="section return"><dt>Returns</dt><dd>0, if file could not be opened, otherwise a pointer to the created IXMLReader is returned. After use, the reader has to be deleted using its IXMLReaderUTF8::drop() method. See <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IReferenceCounted::drop()</a> for more information. </dd></dl>
-
-</div>
-</div>
-<a id="acda42a761d3b2fb4d39ad1d9e2ada973"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acda42a761d3b2fb4d39ad1d9e2ada973">&#9670;&nbsp;</a></span>createXMLReaderUTF8() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#a87616ca0bcc3d6424d2c2edfcb743193">IXMLReaderUTF8</a>* irr::io::IFileSystem::createXMLReaderUTF8 </td>
+          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#a2dedc8156931082e6b147b562195e310">IXMLReaderUTF8</a>* irr::io::IFileSystem::createXMLReaderUTF8 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classirr_1_1io_1_1IReadFile.html">IReadFile</a> *&#160;</td>
           <td class="paramname"><em>file</em></td><td>)</td>
@@ -2172,7 +1134,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a0737712d1c90001e5765ef46912c616d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0737712d1c90001e5765ef46912c616d">&#9670;&nbsp;</a></span>createXMLWriter() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0737712d1c90001e5765ef46912c616d">&#9670;&nbsp;</a></span>createXMLWriter() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2183,36 +1145,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="classirr_1_1io_1_1IXMLWriter.html">IXMLWriter</a>* irr::io::IFileSystem::createXMLWriter </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a XML Writer from a file. </p>
-<dl class="section return"><dt>Returns</dt><dd>0, if file could not be opened, otherwise a pointer to the created <a class="el" href="classirr_1_1io_1_1IXMLWriter.html" title="Interface providing methods for making it easier to write XML files. ">IXMLWriter</a> is returned. After use, the reader has to be deleted using its <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IXMLWriter::drop()</a> method. See <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IReferenceCounted::drop()</a> for more information. </dd></dl>
-
-</div>
-</div>
-<a id="a0737712d1c90001e5765ef46912c616d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0737712d1c90001e5765ef46912c616d">&#9670;&nbsp;</a></span>createXMLWriter() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classirr_1_1io_1_1IXMLWriter.html">IXMLWriter</a>* irr::io::IFileSystem::createXMLWriter </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2230,36 +1163,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ac2bcaf8c338e80ff579061b7056c06da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2bcaf8c338e80ff579061b7056c06da">&#9670;&nbsp;</a></span>createXMLWriter() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classirr_1_1io_1_1IXMLWriter.html">IXMLWriter</a>* irr::io::IFileSystem::createXMLWriter </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classirr_1_1io_1_1IWriteFile.html">IWriteFile</a> *&#160;</td>
-          <td class="paramname"><em>file</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a XML Writer from a file. </p>
-<dl class="section return"><dt>Returns</dt><dd>0, if file could not be opened, otherwise a pointer to the created <a class="el" href="classirr_1_1io_1_1IXMLWriter.html" title="Interface providing methods for making it easier to write XML files. ">IXMLWriter</a> is returned. After use, the reader has to be deleted using its <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IXMLWriter::drop()</a> method. See <a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543" title="Drops the object. Decrements the reference counter by one. ">IReferenceCounted::drop()</a> for more information. </dd></dl>
-
-</div>
-</div>
-<a id="ac2bcaf8c338e80ff579061b7056c06da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2bcaf8c338e80ff579061b7056c06da">&#9670;&nbsp;</a></span>createXMLWriter() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2bcaf8c338e80ff579061b7056c06da">&#9670;&nbsp;</a></span>createXMLWriter() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2288,7 +1192,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a1c5e98bc16e38b1d15b44e24b1b3bd32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c5e98bc16e38b1d15b44e24b1b3bd32">&#9670;&nbsp;</a></span>existFile() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c5e98bc16e38b1d15b44e24b1b3bd32">&#9670;&nbsp;</a></span>existFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2299,42 +1203,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual bool irr::io::IFileSystem::existFile </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Determines if a file exists and could be opened. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>is the string identifying the file which should be tested for existence. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if file exists, and false if it does not exist or an error occured. </dd></dl>
-
-</div>
-</div>
-<a id="a1c5e98bc16e38b1d15b44e24b1b3bd32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c5e98bc16e38b1d15b44e24b1b3bd32">&#9670;&nbsp;</a></span>existFile() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool irr::io::IFileSystem::existFile </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -2358,7 +1227,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a77191d7917349a0200f5de3ef29acd18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77191d7917349a0200f5de3ef29acd18">&#9670;&nbsp;</a></span>getAbsolutePath() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a77191d7917349a0200f5de3ef29acd18">&#9670;&nbsp;</a></span>getAbsolutePath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2367,44 +1236,9 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> irr::io::IFileSystem::getAbsolutePath </td>
+          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> irr::io::IFileSystem::getAbsolutePath </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Converts a relative path to an absolute (unique) path, resolving symbolic links if required. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>Possibly relative file or directory name to query. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Absolute filename which points to the same file. </dd></dl>
-
-</div>
-</div>
-<a id="a77191d7917349a0200f5de3ef29acd18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77191d7917349a0200f5de3ef29acd18">&#9670;&nbsp;</a></span>getAbsolutePath() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> irr::io::IFileSystem::getAbsolutePath </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -2428,42 +1262,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a175208d74556d1a0e4fe7400bbc65d7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a175208d74556d1a0e4fe7400bbc65d7b">&#9670;&nbsp;</a></span>getArchiveLoader() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classirr_1_1io_1_1IArchiveLoader.html">IArchiveLoader</a>* irr::io::IFileSystem::getArchiveLoader </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a>&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Retrieve the given archive loader. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>The index of the loader to retrieve. This parameter is an 0-based array index. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the specified loader, 0 if the index is incorrect. </dd></dl>
-
-</div>
-</div>
-<a id="a175208d74556d1a0e4fe7400bbc65d7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a175208d74556d1a0e4fe7400bbc65d7b">&#9670;&nbsp;</a></span>getArchiveLoader() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a175208d74556d1a0e4fe7400bbc65d7b">&#9670;&nbsp;</a></span>getArchiveLoader()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2498,7 +1297,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a4235989e4ec21c78f1fd1ca861980c6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4235989e4ec21c78f1fd1ca861980c6c">&#9670;&nbsp;</a></span>getFileBasename() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4235989e4ec21c78f1fd1ca861980c6c">&#9670;&nbsp;</a></span>getFileBasename()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2507,54 +1306,9 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> irr::io::IFileSystem::getFileBasename </td>
+          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> irr::io::IFileSystem::getFileBasename </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>keepExtension</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the base part of a filename, i.e. the name without the directory part. </p>
-<p>If no directory is prefixed, the full name is returned. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>The file to get the basename from </td></tr>
-    <tr><td class="paramname">keepExtension</td><td>True if filename with extension is returned otherwise everything after the final '.' is removed as well. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a4235989e4ec21c78f1fd1ca861980c6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4235989e4ec21c78f1fd1ca861980c6c">&#9670;&nbsp;</a></span>getFileBasename() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> irr::io::IFileSystem::getFileBasename </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
         </tr>
         <tr>
@@ -2588,7 +1342,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ad8b7b93f32f58c1ba9a8e7cacd5de80b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8b7b93f32f58c1ba9a8e7cacd5de80b">&#9670;&nbsp;</a></span>getFileDir() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8b7b93f32f58c1ba9a8e7cacd5de80b">&#9670;&nbsp;</a></span>getFileDir()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2597,44 +1351,9 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> irr::io::IFileSystem::getFileDir </td>
+          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> irr::io::IFileSystem::getFileDir </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the directory a file is located in. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>The file to get the directory from. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>String containing the directory of the file. </dd></dl>
-
-</div>
-</div>
-<a id="ad8b7b93f32f58c1ba9a8e7cacd5de80b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8b7b93f32f58c1ba9a8e7cacd5de80b">&#9670;&nbsp;</a></span>getFileDir() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> irr::io::IFileSystem::getFileDir </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -2658,7 +1377,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="acbf7342afa6e2fc9583db3e521e66e61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbf7342afa6e2fc9583db3e521e66e61">&#9670;&nbsp;</a></span>getWorkingDirectory() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf7342afa6e2fc9583db3e521e66e61">&#9670;&nbsp;</a></span>getWorkingDirectory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2667,35 +1386,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a>&amp; irr::io::IFileSystem::getWorkingDirectory </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the current working directory. </p>
-<dl class="section return"><dt>Returns</dt><dd>Current working directory as a string. </dd></dl>
-
-</div>
-</div>
-<a id="acbf7342afa6e2fc9583db3e521e66e61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbf7342afa6e2fc9583db3e521e66e61">&#9670;&nbsp;</a></span>getWorkingDirectory() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a>&amp; irr::io::IFileSystem::getWorkingDirectory </td>
+          <td class="memname">virtual const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a>&amp; irr::io::IFileSystem::getWorkingDirectory </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2714,52 +1405,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ae8530fb9793373cf4dbee956090e99f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8530fb9793373cf4dbee956090e99f6">&#9670;&nbsp;</a></span>moveFileArchive() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool irr::io::IFileSystem::moveFileArchive </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a>&#160;</td>
-          <td class="paramname"><em>sourceIndex</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a>&#160;</td>
-          <td class="paramname"><em>relative</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Changes the search order of attached archives. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sourceIndex</td><td>The index of the archive to change </td></tr>
-    <tr><td class="paramname">relative</td><td>The relative change in position, archives with a lower index are searched first </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae8530fb9793373cf4dbee956090e99f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8530fb9793373cf4dbee956090e99f6">&#9670;&nbsp;</a></span>moveFileArchive() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8530fb9793373cf4dbee956090e99f6">&#9670;&nbsp;</a></span>moveFileArchive()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2804,42 +1450,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="aa509623756c9bcbc3a9bcf455ea2a3ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa509623756c9bcbc3a9bcf455ea2a3ba">&#9670;&nbsp;</a></span>removeFileArchive() <span class="overload">[1/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool irr::io::IFileSystem::removeFileArchive </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a>&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Removes an archive from the file system. </p>
-<p>This will close the archive and free any file handles, but will not close resources which have already been loaded and are now cached, for example textures and meshes. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>The index of the archive to remove </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True on success, false on failure </dd></dl>
-
-</div>
-</div>
-<a id="aa509623756c9bcbc3a9bcf455ea2a3ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa509623756c9bcbc3a9bcf455ea2a3ba">&#9670;&nbsp;</a></span>removeFileArchive() <span class="overload">[2/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa509623756c9bcbc3a9bcf455ea2a3ba">&#9670;&nbsp;</a></span>removeFileArchive() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2874,7 +1485,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a03b405c8f5346c225c590cde585eb73c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03b405c8f5346c225c590cde585eb73c">&#9670;&nbsp;</a></span>removeFileArchive() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a03b405c8f5346c225c590cde585eb73c">&#9670;&nbsp;</a></span>removeFileArchive() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2885,42 +1496,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual bool irr::io::IFileSystem::removeFileArchive </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Removes an archive from the file system. </p>
-<p>This will close the archive and free any file handles, but will not close resources which have already been loaded and are now cached, for example textures and meshes. Note that a relative filename might be interpreted differently on each call, depending on the current working directory. In case you want to remove an archive that was added using a relative path name, you have to change to the same working directory again. This means, that the filename given on creation is not an identifier for the archive, but just a usual filename that is used for locating the archive to work with. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>The archive pointed to by the name will be removed </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True on success, false on failure </dd></dl>
-
-</div>
-</div>
-<a id="a03b405c8f5346c225c590cde585eb73c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03b405c8f5346c225c590cde585eb73c">&#9670;&nbsp;</a></span>removeFileArchive() <span class="overload">[4/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool irr::io::IFileSystem::removeFileArchive </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">path</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">path</a> &amp;&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2944,42 +1520,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ab7579f5ccca7bc7c1e079f5cb38173ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7579f5ccca7bc7c1e079f5cb38173ed">&#9670;&nbsp;</a></span>removeFileArchive() <span class="overload">[5/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool irr::io::IFileSystem::removeFileArchive </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1io_1_1IFileArchive.html">IFileArchive</a> *&#160;</td>
-          <td class="paramname"><em>archive</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Removes an archive from the file system. </p>
-<p>This will close the archive and free any file handles, but will not close resources which have already been loaded and are now cached, for example textures and meshes. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">archive</td><td>The archive to remove. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True on success, false on failure </dd></dl>
-
-</div>
-</div>
-<a id="ab7579f5ccca7bc7c1e079f5cb38173ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7579f5ccca7bc7c1e079f5cb38173ed">&#9670;&nbsp;</a></span>removeFileArchive() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7579f5ccca7bc7c1e079f5cb38173ed">&#9670;&nbsp;</a></span>removeFileArchive() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3014,7 +1555,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>indie_share/controller/include/<a class="el" href="indie__share_2controller_2include_2IFileSystem_8h_source.html">IFileSystem.h</a></li>
+<li>indie_share/controller/include/<a class="el" href="IFileSystem_8h_source.html">IFileSystem.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

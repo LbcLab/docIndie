@@ -22,10 +22,10 @@ Quaternion class for representing rotations.
 \hyperlink{classirr_1_1core_1_1quaternion_a299947a6d5c4f3ac2aa64fcffcc11be0}{quaternion} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} x, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} y, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} z)
 \begin{DoxyCompactList}\small\item\em Constructor which converts euler angles (radians) to a quaternion. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_af8d613780a8d0e3f2775f6f9086db3b0}\label{classirr_1_1core_1_1quaternion_af8d613780a8d0e3f2775f6f9086db3b0}} 
-\hyperlink{classirr_1_1core_1_1quaternion_af8d613780a8d0e3f2775f6f9086db3b0}{quaternion} (const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{vector3df} \&vec)
+\hyperlink{classirr_1_1core_1_1quaternion_af8d613780a8d0e3f2775f6f9086db3b0}{quaternion} (const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{vector3df} \&vec)
 \begin{DoxyCompactList}\small\item\em Constructor which converts euler angles (radians) to a quaternion. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a60b4e1a97224c18da64e49861b8d0107}\label{classirr_1_1core_1_1quaternion_a60b4e1a97224c18da64e49861b8d0107}} 
-\hyperlink{classirr_1_1core_1_1quaternion_a60b4e1a97224c18da64e49861b8d0107}{quaternion} (const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{matrix4} \&mat)
+\hyperlink{classirr_1_1core_1_1quaternion_a60b4e1a97224c18da64e49861b8d0107}{quaternion} (const \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{matrix4} \&mat)
 \begin{DoxyCompactList}\small\item\em Constructor which converts a matrix to a quaternion. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a73a513d1c05be8c3007bf7f615b92dd4}\label{classirr_1_1core_1_1quaternion_a73a513d1c05be8c3007bf7f615b92dd4}} 
 bool \hyperlink{classirr_1_1core_1_1quaternion_a73a513d1c05be8c3007bf7f615b92dd4}{operator==} (const \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \&other) const
@@ -37,7 +37,7 @@ bool \hyperlink{classirr_1_1core_1_1quaternion_a5438edad0c932d06d6f23651903fed83
 \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_a14e694153904d3026eac8c9f14a5df1c}{operator=} (const \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \&other)
 \begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_aed887a4f908b44aa13ef5f77291134f0}\label{classirr_1_1core_1_1quaternion_aed887a4f908b44aa13ef5f77291134f0}} 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_aed887a4f908b44aa13ef5f77291134f0}{operator=} (const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{matrix4} \&other)
+\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_aed887a4f908b44aa13ef5f77291134f0}{operator=} (const \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{matrix4} \&other)
 \begin{DoxyCompactList}\small\item\em Matrix assignment operator. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a873b5380189dde9139aa732eb00fbc78}\label{classirr_1_1core_1_1quaternion_a873b5380189dde9139aa732eb00fbc78}} 
 \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \hyperlink{classirr_1_1core_1_1quaternion_a873b5380189dde9139aa732eb00fbc78}{operator+} (const \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \&other) const
@@ -52,7 +52,7 @@ bool \hyperlink{classirr_1_1core_1_1quaternion_a5438edad0c932d06d6f23651903fed83
 \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_a933b6bf1ace6875068c5c01741bb4096}{operator$\ast$=} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} s)
 \begin{DoxyCompactList}\small\item\em Multiplication operator with scalar. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a0bb1acde2b154e67cc6feab355f0a84c}\label{classirr_1_1core_1_1quaternion_a0bb1acde2b154e67cc6feab355f0a84c}} 
-\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{vector3df} \hyperlink{classirr_1_1core_1_1quaternion_a0bb1acde2b154e67cc6feab355f0a84c}{operator$\ast$} (const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{vector3df} \&v) const
+\hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{vector3df} \hyperlink{classirr_1_1core_1_1quaternion_a0bb1acde2b154e67cc6feab355f0a84c}{operator$\ast$} (const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{vector3df} \&v) const
 \begin{DoxyCompactList}\small\item\em Multiplication operator. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_ad6b251ec3861ae7be90ac0ddc0cd44f4}\label{classirr_1_1core_1_1quaternion_ad6b251ec3861ae7be90ac0ddc0cd44f4}} 
 \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_ad6b251ec3861ae7be90ac0ddc0cd44f4}{operator$\ast$=} (const \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \&other)
@@ -67,7 +67,7 @@ bool \hyperlink{classirr_1_1core_1_1quaternion_a5438edad0c932d06d6f23651903fed83
 \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_adb1393a5e3833622bfd6009f53ab842e}{set} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} x, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} y, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} z)
 \begin{DoxyCompactList}\small\item\em Sets new quaternion based on euler angles (radians) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a76b7f0569737c2143ca6dae47abd8fdd}\label{classirr_1_1core_1_1quaternion_a76b7f0569737c2143ca6dae47abd8fdd}} 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_a76b7f0569737c2143ca6dae47abd8fdd}{set} (const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&vec)
+\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_a76b7f0569737c2143ca6dae47abd8fdd}{set} (const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&vec)
 \begin{DoxyCompactList}\small\item\em Sets new quaternion based on euler angles (radians) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_aa99cf40ab088323e5fc31ccdbe9fa2ad}\label{classirr_1_1core_1_1quaternion_aa99cf40ab088323e5fc31ccdbe9fa2ad}} 
 \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_aa99cf40ab088323e5fc31ccdbe9fa2ad}{set} (const \hyperlink{classirr_1_1core_1_1quaternion}{core\+::quaternion} \&quat)
@@ -79,14 +79,14 @@ bool \hyperlink{classirr_1_1core_1_1quaternion_a3b659f864cfce80be65b44ecf565566c
 \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_aac7a34ffd2a14a78de12d994539b94f9}{normalize} ()
 \begin{DoxyCompactList}\small\item\em Normalizes the quaternion. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a23c2056aa77d1d53b2cebce7cf05ea47}\label{classirr_1_1core_1_1quaternion_a23c2056aa77d1d53b2cebce7cf05ea47}} 
-\hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{matrix4} \hyperlink{classirr_1_1core_1_1quaternion_a23c2056aa77d1d53b2cebce7cf05ea47}{get\+Matrix} () const
+\hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{matrix4} \hyperlink{classirr_1_1core_1_1quaternion_a23c2056aa77d1d53b2cebce7cf05ea47}{get\+Matrix} () const
 \begin{DoxyCompactList}\small\item\em Creates a matrix from this quaternion. \end{DoxyCompactList}\item 
-void \hyperlink{classirr_1_1core_1_1quaternion_a333ab73cbc2b334ea9f5fe6a5a66058e}{get\+Matrix} (\hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{matrix4} \&dest, const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&translation=\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}()) const
+void \hyperlink{classirr_1_1core_1_1quaternion_a333ab73cbc2b334ea9f5fe6a5a66058e}{get\+Matrix} (\hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{matrix4} \&dest, const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&translation=\hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df}()) const
 \begin{DoxyCompactList}\small\item\em Creates a matrix from this quaternion. \end{DoxyCompactList}\item 
-void \hyperlink{classirr_1_1core_1_1quaternion_ab0ed43e2e137b42128a80f71f03dac44}{get\+Matrix\+Center} (\hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{matrix4} \&dest, const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&center, const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&translation) const
+void \hyperlink{classirr_1_1core_1_1quaternion_ab0ed43e2e137b42128a80f71f03dac44}{get\+Matrix\+Center} (\hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{matrix4} \&dest, const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&center, const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&translation) const
 \item 
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_abb660c84e6f51d7c5415c4eaf28a7bd2}\label{classirr_1_1core_1_1quaternion_abb660c84e6f51d7c5415c4eaf28a7bd2}} 
-void \hyperlink{classirr_1_1core_1_1quaternion_abb660c84e6f51d7c5415c4eaf28a7bd2}{get\+Matrix\+\_\+transposed} (\hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{matrix4} \&dest) const
+void \hyperlink{classirr_1_1core_1_1quaternion_abb660c84e6f51d7c5415c4eaf28a7bd2}{get\+Matrix\+\_\+transposed} (\hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{matrix4} \&dest) const
 \begin{DoxyCompactList}\small\item\em Creates a matrix from this quaternion. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a2e286be8b088fa3ade0ab74880ea4508}\label{classirr_1_1core_1_1quaternion_a2e286be8b088fa3ade0ab74880ea4508}} 
 \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_a2e286be8b088fa3ade0ab74880ea4508}{make\+Inverse} ()
@@ -95,117 +95,19 @@ void \hyperlink{classirr_1_1core_1_1quaternion_abb660c84e6f51d7c5415c4eaf28a7bd2
 \begin{DoxyCompactList}\small\item\em Set this quaternion to the linear interpolation between two quaternions. \end{DoxyCompactList}\item 
 \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_a91335e9fdb50c3cfc2042aa9a4bfdf68}{slerp} (\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} q1, \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} q2, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} time, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} threshold=.\+05f)
 \begin{DoxyCompactList}\small\item\em Set this quaternion to the result of the spherical interpolation between two quaternions. \end{DoxyCompactList}\item 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_ab4f5eb86ef7a42a3021b810486faa8c8}{from\+Angle\+Axis} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} angle, const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{vector3df} \&axis)
+\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_ab4f5eb86ef7a42a3021b810486faa8c8}{from\+Angle\+Axis} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} angle, const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{vector3df} \&axis)
 \begin{DoxyCompactList}\small\item\em Create quaternion from rotation angle and rotation axis. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a8fc3d916f9220440bb49f8c8973429b8}\label{classirr_1_1core_1_1quaternion_a8fc3d916f9220440bb49f8c8973429b8}} 
-void \hyperlink{classirr_1_1core_1_1quaternion_a8fc3d916f9220440bb49f8c8973429b8}{to\+Angle\+Axis} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \&angle, \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&axis) const
+void \hyperlink{classirr_1_1core_1_1quaternion_a8fc3d916f9220440bb49f8c8973429b8}{to\+Angle\+Axis} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \&angle, \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&axis) const
 \begin{DoxyCompactList}\small\item\em Fills an angle (radians) around an axis (unit vector) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a64875f59cd61cb3d1faa652ba4c9f9e5}\label{classirr_1_1core_1_1quaternion_a64875f59cd61cb3d1faa652ba4c9f9e5}} 
-void \hyperlink{classirr_1_1core_1_1quaternion_a64875f59cd61cb3d1faa652ba4c9f9e5}{to\+Euler} (\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{vector3df} \&euler) const
+void \hyperlink{classirr_1_1core_1_1quaternion_a64875f59cd61cb3d1faa652ba4c9f9e5}{to\+Euler} (\hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{vector3df} \&euler) const
 \begin{DoxyCompactList}\small\item\em Output this quaternion to an euler angle (radians) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a3b4f6634670591f2c5be33aeaac2e928}\label{classirr_1_1core_1_1quaternion_a3b4f6634670591f2c5be33aeaac2e928}} 
 \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_a3b4f6634670591f2c5be33aeaac2e928}{make\+Identity} ()
 \begin{DoxyCompactList}\small\item\em Set quaternion to identity. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a9da1b3ddfb9722f596a73abf5212c020}\label{classirr_1_1core_1_1quaternion_a9da1b3ddfb9722f596a73abf5212c020}} 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_a9da1b3ddfb9722f596a73abf5212c020}{rotation\+From\+To} (const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{vector3df} \&from, const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{vector3df} \&to)
-\begin{DoxyCompactList}\small\item\em Set quaternion to represent a rotation from one vector to another. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_af19629224bc2ed3a3ecbc335309099c8}\label{classirr_1_1core_1_1quaternion_af19629224bc2ed3a3ecbc335309099c8}} 
-\hyperlink{classirr_1_1core_1_1quaternion_af19629224bc2ed3a3ecbc335309099c8}{quaternion} ()
-\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a7bff9d1ca51483f96094fa5ac9d97342}\label{classirr_1_1core_1_1quaternion_a7bff9d1ca51483f96094fa5ac9d97342}} 
-\hyperlink{classirr_1_1core_1_1quaternion_a7bff9d1ca51483f96094fa5ac9d97342}{quaternion} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} x, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} y, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} z, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} w)
-\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a299947a6d5c4f3ac2aa64fcffcc11be0}\label{classirr_1_1core_1_1quaternion_a299947a6d5c4f3ac2aa64fcffcc11be0}} 
-\hyperlink{classirr_1_1core_1_1quaternion_a299947a6d5c4f3ac2aa64fcffcc11be0}{quaternion} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} x, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} y, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} z)
-\begin{DoxyCompactList}\small\item\em Constructor which converts euler angles (radians) to a quaternion. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_af8d613780a8d0e3f2775f6f9086db3b0}\label{classirr_1_1core_1_1quaternion_af8d613780a8d0e3f2775f6f9086db3b0}} 
-\hyperlink{classirr_1_1core_1_1quaternion_af8d613780a8d0e3f2775f6f9086db3b0}{quaternion} (const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{vector3df} \&vec)
-\begin{DoxyCompactList}\small\item\em Constructor which converts euler angles (radians) to a quaternion. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a60b4e1a97224c18da64e49861b8d0107}\label{classirr_1_1core_1_1quaternion_a60b4e1a97224c18da64e49861b8d0107}} 
-\hyperlink{classirr_1_1core_1_1quaternion_a60b4e1a97224c18da64e49861b8d0107}{quaternion} (const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{matrix4} \&mat)
-\begin{DoxyCompactList}\small\item\em Constructor which converts a matrix to a quaternion. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a73a513d1c05be8c3007bf7f615b92dd4}\label{classirr_1_1core_1_1quaternion_a73a513d1c05be8c3007bf7f615b92dd4}} 
-bool \hyperlink{classirr_1_1core_1_1quaternion_a73a513d1c05be8c3007bf7f615b92dd4}{operator==} (const \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \&other) const
-\begin{DoxyCompactList}\small\item\em Equalilty operator. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a5438edad0c932d06d6f23651903fed83}\label{classirr_1_1core_1_1quaternion_a5438edad0c932d06d6f23651903fed83}} 
-bool \hyperlink{classirr_1_1core_1_1quaternion_a5438edad0c932d06d6f23651903fed83}{operator!=} (const \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \&other) const
-\begin{DoxyCompactList}\small\item\em inequality operator \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_ac985b164e0b1e3403fdd7352bd9de8c5}\label{classirr_1_1core_1_1quaternion_ac985b164e0b1e3403fdd7352bd9de8c5}} 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_ac985b164e0b1e3403fdd7352bd9de8c5}{operator=} (const \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \&other)
-\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_ae8323359cea70e5eafcac1cddaabf0cf}\label{classirr_1_1core_1_1quaternion_ae8323359cea70e5eafcac1cddaabf0cf}} 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_ae8323359cea70e5eafcac1cddaabf0cf}{operator=} (const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{matrix4} \&other)
-\begin{DoxyCompactList}\small\item\em Matrix assignment operator. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a873b5380189dde9139aa732eb00fbc78}\label{classirr_1_1core_1_1quaternion_a873b5380189dde9139aa732eb00fbc78}} 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \hyperlink{classirr_1_1core_1_1quaternion_a873b5380189dde9139aa732eb00fbc78}{operator+} (const \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \&other) const
-\begin{DoxyCompactList}\small\item\em Add operator. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_af0703c31757886f8ecdf33d4247923cd}\label{classirr_1_1core_1_1quaternion_af0703c31757886f8ecdf33d4247923cd}} 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \hyperlink{classirr_1_1core_1_1quaternion_af0703c31757886f8ecdf33d4247923cd}{operator$\ast$} (const \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \&other) const
-\begin{DoxyCompactList}\small\item\em Multiplication operator. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a31b25675aeb459bd052f29c440c791c3}\label{classirr_1_1core_1_1quaternion_a31b25675aeb459bd052f29c440c791c3}} 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \hyperlink{classirr_1_1core_1_1quaternion_a31b25675aeb459bd052f29c440c791c3}{operator$\ast$} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} s) const
-\begin{DoxyCompactList}\small\item\em Multiplication operator with scalar. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_aa7a73f686c392a8d30a070cc2c3eb36f}\label{classirr_1_1core_1_1quaternion_aa7a73f686c392a8d30a070cc2c3eb36f}} 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_aa7a73f686c392a8d30a070cc2c3eb36f}{operator$\ast$=} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} s)
-\begin{DoxyCompactList}\small\item\em Multiplication operator with scalar. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a0bb1acde2b154e67cc6feab355f0a84c}\label{classirr_1_1core_1_1quaternion_a0bb1acde2b154e67cc6feab355f0a84c}} 
-\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{vector3df} \hyperlink{classirr_1_1core_1_1quaternion_a0bb1acde2b154e67cc6feab355f0a84c}{operator$\ast$} (const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{vector3df} \&v) const
-\begin{DoxyCompactList}\small\item\em Multiplication operator. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_acfc5a94312c9f569d9b0d50c954dfcc0}\label{classirr_1_1core_1_1quaternion_acfc5a94312c9f569d9b0d50c954dfcc0}} 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_acfc5a94312c9f569d9b0d50c954dfcc0}{operator$\ast$=} (const \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \&other)
-\begin{DoxyCompactList}\small\item\em Multiplication operator. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a1815b23fdca2b759f7dc43e10c26439f}\label{classirr_1_1core_1_1quaternion_a1815b23fdca2b759f7dc43e10c26439f}} 
-\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1core_1_1quaternion_a1815b23fdca2b759f7dc43e10c26439f}{dot\+Product} (const \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \&other) const
-\begin{DoxyCompactList}\small\item\em Calculates the dot product. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_afe4c97f2879eb83509bde654e0b53662}\label{classirr_1_1core_1_1quaternion_afe4c97f2879eb83509bde654e0b53662}} 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_afe4c97f2879eb83509bde654e0b53662}{set} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} x, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} y, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} z, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} w)
-\begin{DoxyCompactList}\small\item\em Sets new quaternion. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a1df6728cbe89e4f0dbaeba1d68420dd4}\label{classirr_1_1core_1_1quaternion_a1df6728cbe89e4f0dbaeba1d68420dd4}} 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_a1df6728cbe89e4f0dbaeba1d68420dd4}{set} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} x, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} y, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} z)
-\begin{DoxyCompactList}\small\item\em Sets new quaternion based on euler angles (radians) \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a4c68bac24853a3314dbff9444700978a}\label{classirr_1_1core_1_1quaternion_a4c68bac24853a3314dbff9444700978a}} 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_a4c68bac24853a3314dbff9444700978a}{set} (const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&vec)
-\begin{DoxyCompactList}\small\item\em Sets new quaternion based on euler angles (radians) \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a3c1f8c5b8588f4dc2dc8140f68eb0284}\label{classirr_1_1core_1_1quaternion_a3c1f8c5b8588f4dc2dc8140f68eb0284}} 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_a3c1f8c5b8588f4dc2dc8140f68eb0284}{set} (const \hyperlink{classirr_1_1core_1_1quaternion}{core\+::quaternion} \&quat)
-\begin{DoxyCompactList}\small\item\em Sets new quaternion from other quaternion. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a3b659f864cfce80be65b44ecf565566c}\label{classirr_1_1core_1_1quaternion_a3b659f864cfce80be65b44ecf565566c}} 
-bool \hyperlink{classirr_1_1core_1_1quaternion_a3b659f864cfce80be65b44ecf565566c}{equals} (const \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \&other, const \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} tolerance=R\+O\+U\+N\+D\+I\+N\+G\+\_\+\+E\+R\+R\+O\+R\+\_\+f32) const
-\begin{DoxyCompactList}\small\item\em returns if this quaternion equals the other one, taking floating point rounding errors into account \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a513a856a7826c7fc6d3945d8184f941a}\label{classirr_1_1core_1_1quaternion_a513a856a7826c7fc6d3945d8184f941a}} 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_a513a856a7826c7fc6d3945d8184f941a}{normalize} ()
-\begin{DoxyCompactList}\small\item\em Normalizes the quaternion. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a23c2056aa77d1d53b2cebce7cf05ea47}\label{classirr_1_1core_1_1quaternion_a23c2056aa77d1d53b2cebce7cf05ea47}} 
-\hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{matrix4} \hyperlink{classirr_1_1core_1_1quaternion_a23c2056aa77d1d53b2cebce7cf05ea47}{get\+Matrix} () const
-\begin{DoxyCompactList}\small\item\em Creates a matrix from this quaternion. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a333ab73cbc2b334ea9f5fe6a5a66058e}\label{classirr_1_1core_1_1quaternion_a333ab73cbc2b334ea9f5fe6a5a66058e}} 
-void \hyperlink{classirr_1_1core_1_1quaternion_a333ab73cbc2b334ea9f5fe6a5a66058e}{get\+Matrix} (\hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{matrix4} \&dest, const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&translation=\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}()) const
-\begin{DoxyCompactList}\small\item\em Creates a matrix from this quaternion. \end{DoxyCompactList}\item 
-void \hyperlink{classirr_1_1core_1_1quaternion_ab0ed43e2e137b42128a80f71f03dac44}{get\+Matrix\+Center} (\hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{matrix4} \&dest, const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&center, const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&translation) const
-\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_abb660c84e6f51d7c5415c4eaf28a7bd2}\label{classirr_1_1core_1_1quaternion_abb660c84e6f51d7c5415c4eaf28a7bd2}} 
-void \hyperlink{classirr_1_1core_1_1quaternion_abb660c84e6f51d7c5415c4eaf28a7bd2}{get\+Matrix\+\_\+transposed} (\hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{matrix4} \&dest) const
-\begin{DoxyCompactList}\small\item\em Creates a matrix from this quaternion. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_ae61eb93a6943453995b8faa7c650c624}\label{classirr_1_1core_1_1quaternion_ae61eb93a6943453995b8faa7c650c624}} 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_ae61eb93a6943453995b8faa7c650c624}{make\+Inverse} ()
-\begin{DoxyCompactList}\small\item\em Inverts this quaternion. \end{DoxyCompactList}\item 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_af778bb1c21ea4569f085f11b1860520f}{lerp} (\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} q1, \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} q2, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} time)
-\begin{DoxyCompactList}\small\item\em Set this quaternion to the linear interpolation between two quaternions. \end{DoxyCompactList}\item 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_a21c70f1253ef5eeab00723ea6b51717c}{slerp} (\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} q1, \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} q2, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} time, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} threshold=.\+05f)
-\begin{DoxyCompactList}\small\item\em Set this quaternion to the result of the spherical interpolation between two quaternions. \end{DoxyCompactList}\item 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_a143d372d1289c811ec653e2b3bfc87d3}{from\+Angle\+Axis} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} angle, const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{vector3df} \&axis)
-\begin{DoxyCompactList}\small\item\em Create quaternion from rotation angle and rotation axis. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a8fc3d916f9220440bb49f8c8973429b8}\label{classirr_1_1core_1_1quaternion_a8fc3d916f9220440bb49f8c8973429b8}} 
-void \hyperlink{classirr_1_1core_1_1quaternion_a8fc3d916f9220440bb49f8c8973429b8}{to\+Angle\+Axis} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \&angle, \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&axis) const
-\begin{DoxyCompactList}\small\item\em Fills an angle (radians) around an axis (unit vector) \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a64875f59cd61cb3d1faa652ba4c9f9e5}\label{classirr_1_1core_1_1quaternion_a64875f59cd61cb3d1faa652ba4c9f9e5}} 
-void \hyperlink{classirr_1_1core_1_1quaternion_a64875f59cd61cb3d1faa652ba4c9f9e5}{to\+Euler} (\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{vector3df} \&euler) const
-\begin{DoxyCompactList}\small\item\em Output this quaternion to an euler angle (radians) \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a763e23956420dd58a2bffcbacdc07408}\label{classirr_1_1core_1_1quaternion_a763e23956420dd58a2bffcbacdc07408}} 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_a763e23956420dd58a2bffcbacdc07408}{make\+Identity} ()
-\begin{DoxyCompactList}\small\item\em Set quaternion to identity. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a318c7db064fd6aa6d78d6a82ca26a001}\label{classirr_1_1core_1_1quaternion_a318c7db064fd6aa6d78d6a82ca26a001}} 
-\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_a318c7db064fd6aa6d78d6a82ca26a001}{rotation\+From\+To} (const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{vector3df} \&from, const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{vector3df} \&to)
+\hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& \hyperlink{classirr_1_1core_1_1quaternion_a9da1b3ddfb9722f596a73abf5212c020}{rotation\+From\+To} (const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{vector3df} \&from, const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{vector3df} \&to)
 \begin{DoxyCompactList}\small\item\em Set quaternion to represent a rotation from one vector to another. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -224,8 +126,8 @@ It provides cheap combinations and avoids gimbal locks. Also useful for interpol
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_ab4f5eb86ef7a42a3021b810486faa8c8}\label{classirr_1_1core_1_1quaternion_ab4f5eb86ef7a42a3021b810486faa8c8}} 
 \index{irr\+::core\+::quaternion@{irr\+::core\+::quaternion}!from\+Angle\+Axis@{from\+Angle\+Axis}}
 \index{from\+Angle\+Axis@{from\+Angle\+Axis}!irr\+::core\+::quaternion@{irr\+::core\+::quaternion}}
-\subsubsection{\texorpdfstring{from\+Angle\+Axis()}{fromAngleAxis()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& irr\+::core\+::quaternion\+::from\+Angle\+Axis (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{angle,  }\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{vector3df} \&}]{axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{from\+Angle\+Axis()}{fromAngleAxis()}}
+{\footnotesize\ttfamily \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& irr\+::core\+::quaternion\+::from\+Angle\+Axis (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{angle,  }\item[{const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{vector3df} \&}]{axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -240,28 +142,11 @@ Axis must be unit length. The quaternion representing the rotation is q = cos(A/
 {\em axis} & Rotation axis. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a143d372d1289c811ec653e2b3bfc87d3}\label{classirr_1_1core_1_1quaternion_a143d372d1289c811ec653e2b3bfc87d3}} 
-\index{irr\+::core\+::quaternion@{irr\+::core\+::quaternion}!from\+Angle\+Axis@{from\+Angle\+Axis}}
-\index{from\+Angle\+Axis@{from\+Angle\+Axis}!irr\+::core\+::quaternion@{irr\+::core\+::quaternion}}
-\subsubsection{\texorpdfstring{from\+Angle\+Axis()}{fromAngleAxis()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{classirr_1_1core_1_1quaternion}{quaternion}\& irr\+::core\+::quaternion\+::from\+Angle\+Axis (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{angle,  }\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{vector3df} \&}]{axis }\end{DoxyParamCaption})}
-
-
-
-Create quaternion from rotation angle and rotation axis. 
-
-Axis must be unit length. The quaternion representing the rotation is q = cos(A/2)+sin(A/2)$\ast$(x$\ast$i+y$\ast$j+z$\ast$k). 
-\begin{DoxyParams}{Parameters}
-{\em angle} & Rotation Angle in radians. \\
-\hline
-{\em axis} & Rotation axis. \\
-\hline
-\end{DoxyParams}
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a333ab73cbc2b334ea9f5fe6a5a66058e}\label{classirr_1_1core_1_1quaternion_a333ab73cbc2b334ea9f5fe6a5a66058e}} 
 \index{irr\+::core\+::quaternion@{irr\+::core\+::quaternion}!get\+Matrix@{get\+Matrix}}
 \index{get\+Matrix@{get\+Matrix}!irr\+::core\+::quaternion@{irr\+::core\+::quaternion}}
 \subsubsection{\texorpdfstring{get\+Matrix()}{getMatrix()}}
-{\footnotesize\ttfamily void irr\+::core\+::quaternion\+::get\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{matrix4} \&}]{dest,  }\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&}]{center = {\ttfamily \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}()} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void irr\+::core\+::quaternion\+::get\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{matrix4} \&}]{dest,  }\item[{const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&}]{center = {\ttfamily \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df}()} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -270,31 +155,21 @@ Creates a matrix from this quaternion.
 Creates a matrix from this quaternion \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_ab0ed43e2e137b42128a80f71f03dac44}\label{classirr_1_1core_1_1quaternion_ab0ed43e2e137b42128a80f71f03dac44}} 
 \index{irr\+::core\+::quaternion@{irr\+::core\+::quaternion}!get\+Matrix\+Center@{get\+Matrix\+Center}}
 \index{get\+Matrix\+Center@{get\+Matrix\+Center}!irr\+::core\+::quaternion@{irr\+::core\+::quaternion}}
-\subsubsection{\texorpdfstring{get\+Matrix\+Center()}{getMatrixCenter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void irr\+::core\+::quaternion\+::get\+Matrix\+Center (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{matrix4} \&}]{dest,  }\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&}]{center,  }\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&}]{translation }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{get\+Matrix\+Center()}{getMatrixCenter()}}
+{\footnotesize\ttfamily void irr\+::core\+::quaternion\+::get\+Matrix\+Center (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{matrix4} \&}]{dest,  }\item[{const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&}]{center,  }\item[{const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&}]{translation }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 Creates a matrix from this quaternion Rotate about a center point shortcut for \hyperlink{classirr_1_1core_1_1quaternion}{core\+::quaternion} q; q.\+rotation\+From\+To ( vin\mbox{[}i\mbox{]}.Normal, forward ); q.\+get\+Matrix\+Center ( lookat, center, new\+Pos );
 
-\hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} m2; m2.\+set\+Inverse\+Translation ( center ); lookat $\ast$= m2;
+\hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4} m2; m2.\+set\+Inverse\+Translation ( center ); lookat $\ast$= m2;
 
-\hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} m3; m2.\+set\+Translation ( new\+Pos ); lookat $\ast$= m3;
+\hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4} m3; m2.\+set\+Translation ( new\+Pos ); lookat $\ast$= m3;
 
 Creates a matrix from this quaternion Rotate about a center point shortcut for \hyperlink{classirr_1_1core_1_1quaternion}{core\+::quaternion} q; q.\+rotation\+From\+To(vin\mbox{[}i\mbox{]}.Normal, forward); q.\+get\+Matrix(lookat, center);
 
-\hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} m2; m2.\+set\+Inverse\+Translation(center); lookat $\ast$= m2; \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_ab0ed43e2e137b42128a80f71f03dac44}\label{classirr_1_1core_1_1quaternion_ab0ed43e2e137b42128a80f71f03dac44}} 
-\index{irr\+::core\+::quaternion@{irr\+::core\+::quaternion}!get\+Matrix\+Center@{get\+Matrix\+Center}}
-\index{get\+Matrix\+Center@{get\+Matrix\+Center}!irr\+::core\+::quaternion@{irr\+::core\+::quaternion}}
-\subsubsection{\texorpdfstring{get\+Matrix\+Center()}{getMatrixCenter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void irr\+::core\+::quaternion\+::get\+Matrix\+Center (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{matrix4} \&}]{dest,  }\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&}]{center,  }\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&}]{translation }\end{DoxyParamCaption}) const}
-
-Creates a matrix from this quaternion Rotate about a center point shortcut for \hyperlink{classirr_1_1core_1_1quaternion}{core\+::quaternion} q; q.\+rotation\+From\+To ( vin\mbox{[}i\mbox{]}.Normal, forward ); q.\+get\+Matrix\+Center ( lookat, center, new\+Pos );
-
-\hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} m2; m2.\+set\+Inverse\+Translation ( center ); lookat $\ast$= m2;
-
-\hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} m3; m2.\+set\+Translation ( new\+Pos ); lookat $\ast$= m3; \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a75b5cb2d26397f07399e79ea20f1aff1}\label{classirr_1_1core_1_1quaternion_a75b5cb2d26397f07399e79ea20f1aff1}} 
+\hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4} m2; m2.\+set\+Inverse\+Translation(center); lookat $\ast$= m2; \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a75b5cb2d26397f07399e79ea20f1aff1}\label{classirr_1_1core_1_1quaternion_a75b5cb2d26397f07399e79ea20f1aff1}} 
 \index{irr\+::core\+::quaternion@{irr\+::core\+::quaternion}!lerp@{lerp}}
 \index{lerp@{lerp}!irr\+::core\+::quaternion@{irr\+::core\+::quaternion}}
-\subsubsection{\texorpdfstring{lerp()}{lerp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{lerp()}{lerp()}}
 {\footnotesize\ttfamily \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& irr\+::core\+::quaternion\+::lerp (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1core_1_1quaternion}{quaternion}}]{q1,  }\item[{\hyperlink{classirr_1_1core_1_1quaternion}{quaternion}}]{q2,  }\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -310,50 +185,10 @@ Set this quaternion to the linear interpolation between two quaternions.
 {\em time} & Progress of interpolation. For time=0 the result is q1, for time=1 the result is q2. Otherwise interpolation between q1 and q2. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_af778bb1c21ea4569f085f11b1860520f}\label{classirr_1_1core_1_1quaternion_af778bb1c21ea4569f085f11b1860520f}} 
-\index{irr\+::core\+::quaternion@{irr\+::core\+::quaternion}!lerp@{lerp}}
-\index{lerp@{lerp}!irr\+::core\+::quaternion@{irr\+::core\+::quaternion}}
-\subsubsection{\texorpdfstring{lerp()}{lerp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{classirr_1_1core_1_1quaternion}{quaternion}\& irr\+::core\+::quaternion\+::lerp (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1core_1_1quaternion}{quaternion}}]{q1,  }\item[{\hyperlink{classirr_1_1core_1_1quaternion}{quaternion}}]{q2,  }\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{time }\end{DoxyParamCaption})}
-
-
-
-Set this quaternion to the linear interpolation between two quaternions. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em q1} & First quaternion to be interpolated. \\
-\hline
-{\em q2} & Second quaternion to be interpolated. \\
-\hline
-{\em time} & Progress of interpolation. For time=0 the result is q1, for time=1 the result is q2. Otherwise interpolation between q1 and q2. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a21c70f1253ef5eeab00723ea6b51717c}\label{classirr_1_1core_1_1quaternion_a21c70f1253ef5eeab00723ea6b51717c}} 
-\index{irr\+::core\+::quaternion@{irr\+::core\+::quaternion}!slerp@{slerp}}
-\index{slerp@{slerp}!irr\+::core\+::quaternion@{irr\+::core\+::quaternion}}
-\subsubsection{\texorpdfstring{slerp()}{slerp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classirr_1_1core_1_1quaternion}{quaternion}\& irr\+::core\+::quaternion\+::slerp (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1core_1_1quaternion}{quaternion}}]{q1,  }\item[{\hyperlink{classirr_1_1core_1_1quaternion}{quaternion}}]{q2,  }\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{time,  }\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{threshold = {\ttfamily .05f} }\end{DoxyParamCaption})}
-
-
-
-Set this quaternion to the result of the spherical interpolation between two quaternions. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em q1} & First quaternion to be interpolated. \\
-\hline
-{\em q2} & Second quaternion to be interpolated. \\
-\hline
-{\em time} & Progress of interpolation. For time=0 the result is q1, for time=1 the result is q2. Otherwise interpolation between q1 and q2. \\
-\hline
-{\em threshold} & To avoid inaccuracies at the end (time=1) the interpolation switches to linear interpolation at some point. This value defines how much of the remaining interpolation will be calculated with lerp. Everything from 1-\/threshold up will be linear interpolation. \\
-\hline
-\end{DoxyParams}
 \mbox{\Hypertarget{classirr_1_1core_1_1quaternion_a91335e9fdb50c3cfc2042aa9a4bfdf68}\label{classirr_1_1core_1_1quaternion_a91335e9fdb50c3cfc2042aa9a4bfdf68}} 
 \index{irr\+::core\+::quaternion@{irr\+::core\+::quaternion}!slerp@{slerp}}
 \index{slerp@{slerp}!irr\+::core\+::quaternion@{irr\+::core\+::quaternion}}
-\subsubsection{\texorpdfstring{slerp()}{slerp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{slerp()}{slerp()}}
 {\footnotesize\ttfamily \hyperlink{classirr_1_1core_1_1quaternion}{quaternion} \& irr\+::core\+::quaternion\+::slerp (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1core_1_1quaternion}{quaternion}}]{q1,  }\item[{\hyperlink{classirr_1_1core_1_1quaternion}{quaternion}}]{q2,  }\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{time,  }\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{threshold = {\ttfamily .05f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 

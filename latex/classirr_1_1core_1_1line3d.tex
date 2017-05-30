@@ -18,38 +18,7 @@
 \hyperlink{classirr_1_1core_1_1line3d_a19bc6c5661d8913ac6911b2513f7804f}{line3d} (T xa, T ya, T za, T xb, T yb, T zb)
 \begin{DoxyCompactList}\small\item\em Constructor with two points. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1core_1_1line3d_a9f77afda569d38afe68c9c3db39037f4}\label{classirr_1_1core_1_1line3d_a9f77afda569d38afe68c9c3db39037f4}} 
-\hyperlink{classirr_1_1core_1_1line3d_a9f77afda569d38afe68c9c3db39037f4}{line3d} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&\hyperlink{classirr_1_1core_1_1line3d_a6b7683c8ac164e209b195fc439269a1b}{start}, const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&\hyperlink{classirr_1_1core_1_1line3d_a49cd73380569e7e6958369520fe1b7bf}{end})
-\begin{DoxyCompactList}\small\item\em Constructor with two points as vectors. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1line3d_aa691426799bff0ccf37bc09f56b8fa59}\label{classirr_1_1core_1_1line3d_aa691426799bff0ccf37bc09f56b8fa59}} 
-void \hyperlink{classirr_1_1core_1_1line3d_aa691426799bff0ccf37bc09f56b8fa59}{set\+Line} (const T \&xa, const T \&ya, const T \&za, const T \&xb, const T \&yb, const T \&zb)
-\begin{DoxyCompactList}\small\item\em Set this line to a new line going through the two points. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1line3d_af66862d06acc114567e1e0cfaa23f429}\label{classirr_1_1core_1_1line3d_af66862d06acc114567e1e0cfaa23f429}} 
-void \hyperlink{classirr_1_1core_1_1line3d_af66862d06acc114567e1e0cfaa23f429}{set\+Line} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&nstart, const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&nend)
-\begin{DoxyCompactList}\small\item\em Set this line to a new line going through the two points. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1line3d_a75d2a9f34ca66c2a1399f8b9fe0fa760}\label{classirr_1_1core_1_1line3d_a75d2a9f34ca66c2a1399f8b9fe0fa760}} 
-void \hyperlink{classirr_1_1core_1_1line3d_a75d2a9f34ca66c2a1399f8b9fe0fa760}{set\+Line} (const \hyperlink{classirr_1_1core_1_1line3d}{line3d}$<$ T $>$ \&line)
-\begin{DoxyCompactList}\small\item\em Set this line to new line given as parameter. \end{DoxyCompactList}\item 
-T \hyperlink{classirr_1_1core_1_1line3d_aa6bf257a8b227c4f5d974ee76607a700}{get\+Length} () const
-\begin{DoxyCompactList}\small\item\em Get length of line. \end{DoxyCompactList}\item 
-T \hyperlink{classirr_1_1core_1_1line3d_a4754398992c5922efe33cad0bf773ddc}{get\+Length\+SQ} () const
-\begin{DoxyCompactList}\small\item\em Get squared length of line. \end{DoxyCompactList}\item 
-\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \hyperlink{classirr_1_1core_1_1line3d_a14d8d80862836da4ecf51db9dcab95ee}{get\+Middle} () const
-\begin{DoxyCompactList}\small\item\em Get middle of line. \end{DoxyCompactList}\item 
-\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \hyperlink{classirr_1_1core_1_1line3d_a8df2350580b6be884b6f6d48c8932795}{get\+Vector} () const
-\begin{DoxyCompactList}\small\item\em Get vector of line. \end{DoxyCompactList}\item 
-bool \hyperlink{classirr_1_1core_1_1line3d_abe1e874f2058e965bc52802c41672fbc}{is\+Point\+Between\+Start\+And\+End} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&point) const
-\begin{DoxyCompactList}\small\item\em Check if the given point is between start and end of the line. \end{DoxyCompactList}\item 
-\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \hyperlink{classirr_1_1core_1_1line3d_a40fefd94d9fe0d206eb46e6db52826dc}{get\+Closest\+Point} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&point) const
-\begin{DoxyCompactList}\small\item\em Get the closest point on this line to a point. \end{DoxyCompactList}\item 
-bool \hyperlink{classirr_1_1core_1_1line3d_a1315915ed1b1fb8a11eb8b561be193a0}{get\+Intersection\+With\+Sphere} (\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ sorigin, T sradius, \hyperlink{namespaceirr_a1325b02603ad449f92c68fc640af9b28}{f64} \&outdistance) const
-\begin{DoxyCompactList}\small\item\em Check if the line intersects with a shpere. \end{DoxyCompactList}\item 
-\hyperlink{classirr_1_1core_1_1line3d_ab88640572a102a9eebd1bf483b7d7e75}{line3d} ()
-\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1line3d_a19bc6c5661d8913ac6911b2513f7804f}\label{classirr_1_1core_1_1line3d_a19bc6c5661d8913ac6911b2513f7804f}} 
-\hyperlink{classirr_1_1core_1_1line3d_a19bc6c5661d8913ac6911b2513f7804f}{line3d} (T xa, T ya, T za, T xb, T yb, T zb)
-\begin{DoxyCompactList}\small\item\em Constructor with two points. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1line3d_a9f77afda569d38afe68c9c3db39037f4}\label{classirr_1_1core_1_1line3d_a9f77afda569d38afe68c9c3db39037f4}} 
-\hyperlink{classirr_1_1core_1_1line3d_a9f77afda569d38afe68c9c3db39037f4}{line3d} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&\hyperlink{classirr_1_1core_1_1line3d_a6b7683c8ac164e209b195fc439269a1b}{start}, const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&\hyperlink{classirr_1_1core_1_1line3d_a49cd73380569e7e6958369520fe1b7bf}{end})
+\hyperlink{classirr_1_1core_1_1line3d_a9f77afda569d38afe68c9c3db39037f4}{line3d} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&\hyperlink{classirr_1_1core_1_1line3d_a8874f77324b6ef6632e66b22051a3251}{start}, const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&\hyperlink{classirr_1_1core_1_1line3d_aea19cb33971bb20e1d736facdae8a8f0}{end})
 \begin{DoxyCompactList}\small\item\em Constructor with two points as vectors. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1core_1_1line3d_aa691426799bff0ccf37bc09f56b8fa59}\label{classirr_1_1core_1_1line3d_aa691426799bff0ccf37bc09f56b8fa59}} 
 void \hyperlink{classirr_1_1core_1_1line3d_aa691426799bff0ccf37bc09f56b8fa59}{set\+Line} (const T \&xa, const T \&ya, const T \&za, const T \&xb, const T \&yb, const T \&zb)
@@ -77,11 +46,11 @@ bool \hyperlink{classirr_1_1core_1_1line3d_a1315915ed1b1fb8a11eb8b561be193a0}{ge
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classirr_1_1core_1_1line3d_a6b7683c8ac164e209b195fc439269a1b}\label{classirr_1_1core_1_1line3d_a6b7683c8ac164e209b195fc439269a1b}} 
-\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \hyperlink{classirr_1_1core_1_1line3d_a6b7683c8ac164e209b195fc439269a1b}{start}
+\mbox{\Hypertarget{classirr_1_1core_1_1line3d_a8874f77324b6ef6632e66b22051a3251}\label{classirr_1_1core_1_1line3d_a8874f77324b6ef6632e66b22051a3251}} 
+\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \hyperlink{classirr_1_1core_1_1line3d_a8874f77324b6ef6632e66b22051a3251}{start}
 \begin{DoxyCompactList}\small\item\em Start point of line. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1line3d_a49cd73380569e7e6958369520fe1b7bf}\label{classirr_1_1core_1_1line3d_a49cd73380569e7e6958369520fe1b7bf}} 
-\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \hyperlink{classirr_1_1core_1_1line3d_a49cd73380569e7e6958369520fe1b7bf}{end}
+\mbox{\Hypertarget{classirr_1_1core_1_1line3d_aea19cb33971bb20e1d736facdae8a8f0}\label{classirr_1_1core_1_1line3d_aea19cb33971bb20e1d736facdae8a8f0}} 
+\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \hyperlink{classirr_1_1core_1_1line3d_aea19cb33971bb20e1d736facdae8a8f0}{end}
 \begin{DoxyCompactList}\small\item\em End point of line. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -95,18 +64,7 @@ class irr\+::core\+::line3d$<$ T $>$}
 \mbox{\Hypertarget{classirr_1_1core_1_1line3d_ab88640572a102a9eebd1bf483b7d7e75}\label{classirr_1_1core_1_1line3d_ab88640572a102a9eebd1bf483b7d7e75}} 
 \index{irr\+::core\+::line3d@{irr\+::core\+::line3d}!line3d@{line3d}}
 \index{line3d@{line3d}!irr\+::core\+::line3d@{irr\+::core\+::line3d}}
-\subsubsection{\texorpdfstring{line3d()}{line3d()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily template$<$class T$>$ \\
-\hyperlink{classirr_1_1core_1_1line3d}{irr\+::core\+::line3d}$<$ T $>$\+::\hyperlink{classirr_1_1core_1_1line3d}{line3d} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Default constructor. 
-
-line from (0,0,0) to (1,1,1) \mbox{\Hypertarget{classirr_1_1core_1_1line3d_ab88640572a102a9eebd1bf483b7d7e75}\label{classirr_1_1core_1_1line3d_ab88640572a102a9eebd1bf483b7d7e75}} 
-\index{irr\+::core\+::line3d@{irr\+::core\+::line3d}!line3d@{line3d}}
-\index{line3d@{line3d}!irr\+::core\+::line3d@{irr\+::core\+::line3d}}
-\subsubsection{\texorpdfstring{line3d()}{line3d()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{line3d()}{line3d()}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 \hyperlink{classirr_1_1core_1_1line3d}{irr\+::core\+::line3d}$<$ T $>$\+::\hyperlink{classirr_1_1core_1_1line3d}{line3d} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -120,26 +78,7 @@ line from (0,0,0) to (1,1,1)
 \mbox{\Hypertarget{classirr_1_1core_1_1line3d_a40fefd94d9fe0d206eb46e6db52826dc}\label{classirr_1_1core_1_1line3d_a40fefd94d9fe0d206eb46e6db52826dc}} 
 \index{irr\+::core\+::line3d@{irr\+::core\+::line3d}!get\+Closest\+Point@{get\+Closest\+Point}}
 \index{get\+Closest\+Point@{get\+Closest\+Point}!irr\+::core\+::line3d@{irr\+::core\+::line3d}}
-\subsubsection{\texorpdfstring{get\+Closest\+Point()}{getClosestPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily template$<$class T$>$ \\
-\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$T$>$ \hyperlink{classirr_1_1core_1_1line3d}{irr\+::core\+::line3d}$<$ T $>$\+::get\+Closest\+Point (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Get the closest point on this line to a point. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em point} & The point to compare to. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The nearest point which is part of the line. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1core_1_1line3d_a40fefd94d9fe0d206eb46e6db52826dc}\label{classirr_1_1core_1_1line3d_a40fefd94d9fe0d206eb46e6db52826dc}} 
-\index{irr\+::core\+::line3d@{irr\+::core\+::line3d}!get\+Closest\+Point@{get\+Closest\+Point}}
-\index{get\+Closest\+Point@{get\+Closest\+Point}!irr\+::core\+::line3d@{irr\+::core\+::line3d}}
-\subsubsection{\texorpdfstring{get\+Closest\+Point()}{getClosestPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{get\+Closest\+Point()}{getClosestPoint()}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$T$>$ \hyperlink{classirr_1_1core_1_1line3d}{irr\+::core\+::line3d}$<$ T $>$\+::get\+Closest\+Point (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -158,30 +97,7 @@ The nearest point which is part of the line.
 \mbox{\Hypertarget{classirr_1_1core_1_1line3d_a1315915ed1b1fb8a11eb8b561be193a0}\label{classirr_1_1core_1_1line3d_a1315915ed1b1fb8a11eb8b561be193a0}} 
 \index{irr\+::core\+::line3d@{irr\+::core\+::line3d}!get\+Intersection\+With\+Sphere@{get\+Intersection\+With\+Sphere}}
 \index{get\+Intersection\+With\+Sphere@{get\+Intersection\+With\+Sphere}!irr\+::core\+::line3d@{irr\+::core\+::line3d}}
-\subsubsection{\texorpdfstring{get\+Intersection\+With\+Sphere()}{getIntersectionWithSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily template$<$class T$>$ \\
-bool \hyperlink{classirr_1_1core_1_1line3d}{irr\+::core\+::line3d}$<$ T $>$\+::get\+Intersection\+With\+Sphere (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$}]{sorigin,  }\item[{T}]{sradius,  }\item[{\hyperlink{namespaceirr_a1325b02603ad449f92c68fc640af9b28}{f64} \&}]{outdistance }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Check if the line intersects with a shpere. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em sorigin} & Origin of the shpere. \\
-\hline
-{\em sradius} & Radius of the sphere. \\
-\hline
-{\em outdistance} & The distance to the first intersection point. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-True if there is an intersection. If there is one, the distance to the first intersection point is stored in outdistance. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1core_1_1line3d_a1315915ed1b1fb8a11eb8b561be193a0}\label{classirr_1_1core_1_1line3d_a1315915ed1b1fb8a11eb8b561be193a0}} 
-\index{irr\+::core\+::line3d@{irr\+::core\+::line3d}!get\+Intersection\+With\+Sphere@{get\+Intersection\+With\+Sphere}}
-\index{get\+Intersection\+With\+Sphere@{get\+Intersection\+With\+Sphere}!irr\+::core\+::line3d@{irr\+::core\+::line3d}}
-\subsubsection{\texorpdfstring{get\+Intersection\+With\+Sphere()}{getIntersectionWithSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{get\+Intersection\+With\+Sphere()}{getIntersectionWithSphere()}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 bool \hyperlink{classirr_1_1core_1_1line3d}{irr\+::core\+::line3d}$<$ T $>$\+::get\+Intersection\+With\+Sphere (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$}]{sorigin,  }\item[{T}]{sradius,  }\item[{\hyperlink{namespaceirr_a1325b02603ad449f92c68fc640af9b28}{f64} \&}]{outdistance }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -204,21 +120,7 @@ True if there is an intersection. If there is one, the distance to the first int
 \mbox{\Hypertarget{classirr_1_1core_1_1line3d_aa6bf257a8b227c4f5d974ee76607a700}\label{classirr_1_1core_1_1line3d_aa6bf257a8b227c4f5d974ee76607a700}} 
 \index{irr\+::core\+::line3d@{irr\+::core\+::line3d}!get\+Length@{get\+Length}}
 \index{get\+Length@{get\+Length}!irr\+::core\+::line3d@{irr\+::core\+::line3d}}
-\subsubsection{\texorpdfstring{get\+Length()}{getLength()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily template$<$class T$>$ \\
-T \hyperlink{classirr_1_1core_1_1line3d}{irr\+::core\+::line3d}$<$ T $>$\+::get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Get length of line. 
-
-\begin{DoxyReturn}{Returns}
-Length of line. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1core_1_1line3d_aa6bf257a8b227c4f5d974ee76607a700}\label{classirr_1_1core_1_1line3d_aa6bf257a8b227c4f5d974ee76607a700}} 
-\index{irr\+::core\+::line3d@{irr\+::core\+::line3d}!get\+Length@{get\+Length}}
-\index{get\+Length@{get\+Length}!irr\+::core\+::line3d@{irr\+::core\+::line3d}}
-\subsubsection{\texorpdfstring{get\+Length()}{getLength()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{get\+Length()}{getLength()}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 T \hyperlink{classirr_1_1core_1_1line3d}{irr\+::core\+::line3d}$<$ T $>$\+::get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -232,21 +134,7 @@ Length of line.
 \mbox{\Hypertarget{classirr_1_1core_1_1line3d_a4754398992c5922efe33cad0bf773ddc}\label{classirr_1_1core_1_1line3d_a4754398992c5922efe33cad0bf773ddc}} 
 \index{irr\+::core\+::line3d@{irr\+::core\+::line3d}!get\+Length\+SQ@{get\+Length\+SQ}}
 \index{get\+Length\+SQ@{get\+Length\+SQ}!irr\+::core\+::line3d@{irr\+::core\+::line3d}}
-\subsubsection{\texorpdfstring{get\+Length\+S\+Q()}{getLengthSQ()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily template$<$class T$>$ \\
-T \hyperlink{classirr_1_1core_1_1line3d}{irr\+::core\+::line3d}$<$ T $>$\+::get\+Length\+SQ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Get squared length of line. 
-
-\begin{DoxyReturn}{Returns}
-Squared length of line. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1core_1_1line3d_a4754398992c5922efe33cad0bf773ddc}\label{classirr_1_1core_1_1line3d_a4754398992c5922efe33cad0bf773ddc}} 
-\index{irr\+::core\+::line3d@{irr\+::core\+::line3d}!get\+Length\+SQ@{get\+Length\+SQ}}
-\index{get\+Length\+SQ@{get\+Length\+SQ}!irr\+::core\+::line3d@{irr\+::core\+::line3d}}
-\subsubsection{\texorpdfstring{get\+Length\+S\+Q()}{getLengthSQ()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{get\+Length\+S\+Q()}{getLengthSQ()}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 T \hyperlink{classirr_1_1core_1_1line3d}{irr\+::core\+::line3d}$<$ T $>$\+::get\+Length\+SQ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -260,21 +148,7 @@ Squared length of line.
 \mbox{\Hypertarget{classirr_1_1core_1_1line3d_a14d8d80862836da4ecf51db9dcab95ee}\label{classirr_1_1core_1_1line3d_a14d8d80862836da4ecf51db9dcab95ee}} 
 \index{irr\+::core\+::line3d@{irr\+::core\+::line3d}!get\+Middle@{get\+Middle}}
 \index{get\+Middle@{get\+Middle}!irr\+::core\+::line3d@{irr\+::core\+::line3d}}
-\subsubsection{\texorpdfstring{get\+Middle()}{getMiddle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily template$<$class T$>$ \\
-\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$T$>$ \hyperlink{classirr_1_1core_1_1line3d}{irr\+::core\+::line3d}$<$ T $>$\+::get\+Middle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Get middle of line. 
-
-\begin{DoxyReturn}{Returns}
-Center of line. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1core_1_1line3d_a14d8d80862836da4ecf51db9dcab95ee}\label{classirr_1_1core_1_1line3d_a14d8d80862836da4ecf51db9dcab95ee}} 
-\index{irr\+::core\+::line3d@{irr\+::core\+::line3d}!get\+Middle@{get\+Middle}}
-\index{get\+Middle@{get\+Middle}!irr\+::core\+::line3d@{irr\+::core\+::line3d}}
-\subsubsection{\texorpdfstring{get\+Middle()}{getMiddle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{get\+Middle()}{getMiddle()}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$T$>$ \hyperlink{classirr_1_1core_1_1line3d}{irr\+::core\+::line3d}$<$ T $>$\+::get\+Middle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -288,21 +162,7 @@ Center of line.
 \mbox{\Hypertarget{classirr_1_1core_1_1line3d_a8df2350580b6be884b6f6d48c8932795}\label{classirr_1_1core_1_1line3d_a8df2350580b6be884b6f6d48c8932795}} 
 \index{irr\+::core\+::line3d@{irr\+::core\+::line3d}!get\+Vector@{get\+Vector}}
 \index{get\+Vector@{get\+Vector}!irr\+::core\+::line3d@{irr\+::core\+::line3d}}
-\subsubsection{\texorpdfstring{get\+Vector()}{getVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily template$<$class T$>$ \\
-\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$T$>$ \hyperlink{classirr_1_1core_1_1line3d}{irr\+::core\+::line3d}$<$ T $>$\+::get\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Get vector of line. 
-
-\begin{DoxyReturn}{Returns}
-vector of line. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1core_1_1line3d_a8df2350580b6be884b6f6d48c8932795}\label{classirr_1_1core_1_1line3d_a8df2350580b6be884b6f6d48c8932795}} 
-\index{irr\+::core\+::line3d@{irr\+::core\+::line3d}!get\+Vector@{get\+Vector}}
-\index{get\+Vector@{get\+Vector}!irr\+::core\+::line3d@{irr\+::core\+::line3d}}
-\subsubsection{\texorpdfstring{get\+Vector()}{getVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{get\+Vector()}{getVector()}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$T$>$ \hyperlink{classirr_1_1core_1_1line3d}{irr\+::core\+::line3d}$<$ T $>$\+::get\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -316,26 +176,7 @@ vector of line.
 \mbox{\Hypertarget{classirr_1_1core_1_1line3d_abe1e874f2058e965bc52802c41672fbc}\label{classirr_1_1core_1_1line3d_abe1e874f2058e965bc52802c41672fbc}} 
 \index{irr\+::core\+::line3d@{irr\+::core\+::line3d}!is\+Point\+Between\+Start\+And\+End@{is\+Point\+Between\+Start\+And\+End}}
 \index{is\+Point\+Between\+Start\+And\+End@{is\+Point\+Between\+Start\+And\+End}!irr\+::core\+::line3d@{irr\+::core\+::line3d}}
-\subsubsection{\texorpdfstring{is\+Point\+Between\+Start\+And\+End()}{isPointBetweenStartAndEnd()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily template$<$class T$>$ \\
-bool \hyperlink{classirr_1_1core_1_1line3d}{irr\+::core\+::line3d}$<$ T $>$\+::is\+Point\+Between\+Start\+And\+End (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Check if the given point is between start and end of the line. 
-
-Assumes that the point is already somewhere on the line. 
-\begin{DoxyParams}{Parameters}
-{\em point} & The point to test. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-True if point is on the line between start and end, else false. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1core_1_1line3d_abe1e874f2058e965bc52802c41672fbc}\label{classirr_1_1core_1_1line3d_abe1e874f2058e965bc52802c41672fbc}} 
-\index{irr\+::core\+::line3d@{irr\+::core\+::line3d}!is\+Point\+Between\+Start\+And\+End@{is\+Point\+Between\+Start\+And\+End}}
-\index{is\+Point\+Between\+Start\+And\+End@{is\+Point\+Between\+Start\+And\+End}!irr\+::core\+::line3d@{irr\+::core\+::line3d}}
-\subsubsection{\texorpdfstring{is\+Point\+Between\+Start\+And\+End()}{isPointBetweenStartAndEnd()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{is\+Point\+Between\+Start\+And\+End()}{isPointBetweenStartAndEnd()}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 bool \hyperlink{classirr_1_1core_1_1line3d}{irr\+::core\+::line3d}$<$ T $>$\+::is\+Point\+Between\+Start\+And\+End (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 

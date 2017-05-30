@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 1033.519553
+%%BoundingBox: 0 0 500 530.726257
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,12 +19,12 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 0.483784 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 0.942105 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 37 def
+/rows 19 def
 /cols 2 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
@@ -175,40 +175,22 @@ boxfont setfont
 1 boundaspect scale
 (irr::scene::IVertexManipulator) cw
 (irr::scene::SVertexColorBrightnessManipulator) cw
-(irr::scene::SVertexColorBrightnessManipulator) cw
-(irr::scene::SVertexColorContrastBrightnessManipulator) cw
 (irr::scene::SVertexColorContrastBrightnessManipulator) cw
 (irr::scene::SVertexColorContrastManipulator) cw
-(irr::scene::SVertexColorContrastManipulator) cw
-(irr::scene::SVertexColorDesaturateToAverageManipulator) cw
 (irr::scene::SVertexColorDesaturateToAverageManipulator) cw
 (irr::scene::SVertexColorDesaturateToLightnessManipulator) cw
-(irr::scene::SVertexColorDesaturateToLightnessManipulator) cw
-(irr::scene::SVertexColorDesaturateToLuminanceManipulator) cw
 (irr::scene::SVertexColorDesaturateToLuminanceManipulator) cw
 (irr::scene::SVertexColorGammaManipulator) cw
-(irr::scene::SVertexColorGammaManipulator) cw
-(irr::scene::SVertexColorInterpolateLinearManipulator) cw
 (irr::scene::SVertexColorInterpolateLinearManipulator) cw
 (irr::scene::SVertexColorInterpolateQuadraticManipulator) cw
-(irr::scene::SVertexColorInterpolateQuadraticManipulator) cw
-(irr::scene::SVertexColorInvertManipulator) cw
 (irr::scene::SVertexColorInvertManipulator) cw
 (irr::scene::SVertexColorScaleManipulator) cw
-(irr::scene::SVertexColorScaleManipulator) cw
-(irr::scene::SVertexColorSetAlphaManipulator) cw
 (irr::scene::SVertexColorSetAlphaManipulator) cw
 (irr::scene::SVertexColorSetManipulator) cw
-(irr::scene::SVertexColorSetManipulator) cw
-(irr::scene::SVertexColorThresholdManipulator) cw
 (irr::scene::SVertexColorThresholdManipulator) cw
 (irr::scene::SVertexPositionScaleAlongNormalsManipulator) cw
-(irr::scene::SVertexPositionScaleAlongNormalsManipulator) cw
-(irr::scene::SVertexPositionScaleManipulator) cw
 (irr::scene::SVertexPositionScaleManipulator) cw
 (irr::scene::SVertexPositionTransformManipulator) cw
-(irr::scene::SVertexPositionTransformManipulator) cw
-(irr::scene::SVertexTCoordsScaleManipulator) cw
 (irr::scene::SVertexTCoordsScaleManipulator) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
@@ -221,84 +203,30 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (irr::scene::IVertexManipulator) 0.000000 36.000000 box
- (irr::scene::SVertexColorBrightnessManipulator) 1.000000 35.000000 box
- (irr::scene::SVertexColorBrightnessManipulator) 1.000000 34.000000 box
- (irr::scene::SVertexColorContrastBrightnessManipulator) 1.000000 33.000000 box
- (irr::scene::SVertexColorContrastBrightnessManipulator) 1.000000 32.000000 box
- (irr::scene::SVertexColorContrastManipulator) 1.000000 31.000000 box
- (irr::scene::SVertexColorContrastManipulator) 1.000000 30.000000 box
- (irr::scene::SVertexColorDesaturateToAverageManipulator) 1.000000 29.000000 box
- (irr::scene::SVertexColorDesaturateToAverageManipulator) 1.000000 28.000000 box
- (irr::scene::SVertexColorDesaturateToLightnessManipulator) 1.000000 27.000000 box
- (irr::scene::SVertexColorDesaturateToLightnessManipulator) 1.000000 26.000000 box
- (irr::scene::SVertexColorDesaturateToLuminanceManipulator) 1.000000 25.000000 box
- (irr::scene::SVertexColorDesaturateToLuminanceManipulator) 1.000000 24.000000 box
- (irr::scene::SVertexColorGammaManipulator) 1.000000 23.000000 box
- (irr::scene::SVertexColorGammaManipulator) 1.000000 22.000000 box
- (irr::scene::SVertexColorInterpolateLinearManipulator) 1.000000 21.000000 box
- (irr::scene::SVertexColorInterpolateLinearManipulator) 1.000000 20.000000 box
- (irr::scene::SVertexColorInterpolateQuadraticManipulator) 1.000000 19.000000 box
- (irr::scene::SVertexColorInterpolateQuadraticManipulator) 1.000000 18.000000 box
- (irr::scene::SVertexColorInvertManipulator) 1.000000 17.000000 box
- (irr::scene::SVertexColorInvertManipulator) 1.000000 16.000000 box
- (irr::scene::SVertexColorScaleManipulator) 1.000000 15.000000 box
- (irr::scene::SVertexColorScaleManipulator) 1.000000 14.000000 box
- (irr::scene::SVertexColorSetAlphaManipulator) 1.000000 13.000000 box
- (irr::scene::SVertexColorSetAlphaManipulator) 1.000000 12.000000 box
- (irr::scene::SVertexColorSetManipulator) 1.000000 11.000000 box
- (irr::scene::SVertexColorSetManipulator) 1.000000 10.000000 box
- (irr::scene::SVertexColorThresholdManipulator) 1.000000 9.000000 box
- (irr::scene::SVertexColorThresholdManipulator) 1.000000 8.000000 box
- (irr::scene::SVertexPositionScaleAlongNormalsManipulator) 1.000000 7.000000 box
- (irr::scene::SVertexPositionScaleAlongNormalsManipulator) 1.000000 6.000000 box
- (irr::scene::SVertexPositionScaleManipulator) 1.000000 5.000000 box
- (irr::scene::SVertexPositionScaleManipulator) 1.000000 4.000000 box
- (irr::scene::SVertexPositionTransformManipulator) 1.000000 3.000000 box
- (irr::scene::SVertexPositionTransformManipulator) 1.000000 2.000000 box
- (irr::scene::SVertexTCoordsScaleManipulator) 1.000000 1.000000 box
+ (irr::scene::IVertexManipulator) 0.000000 18.000000 box
+ (irr::scene::SVertexColorBrightnessManipulator) 1.000000 17.000000 box
+ (irr::scene::SVertexColorContrastBrightnessManipulator) 1.000000 16.000000 box
+ (irr::scene::SVertexColorContrastManipulator) 1.000000 15.000000 box
+ (irr::scene::SVertexColorDesaturateToAverageManipulator) 1.000000 14.000000 box
+ (irr::scene::SVertexColorDesaturateToLightnessManipulator) 1.000000 13.000000 box
+ (irr::scene::SVertexColorDesaturateToLuminanceManipulator) 1.000000 12.000000 box
+ (irr::scene::SVertexColorGammaManipulator) 1.000000 11.000000 box
+ (irr::scene::SVertexColorInterpolateLinearManipulator) 1.000000 10.000000 box
+ (irr::scene::SVertexColorInterpolateQuadraticManipulator) 1.000000 9.000000 box
+ (irr::scene::SVertexColorInvertManipulator) 1.000000 8.000000 box
+ (irr::scene::SVertexColorScaleManipulator) 1.000000 7.000000 box
+ (irr::scene::SVertexColorSetAlphaManipulator) 1.000000 6.000000 box
+ (irr::scene::SVertexColorSetManipulator) 1.000000 5.000000 box
+ (irr::scene::SVertexColorThresholdManipulator) 1.000000 4.000000 box
+ (irr::scene::SVertexPositionScaleAlongNormalsManipulator) 1.000000 3.000000 box
+ (irr::scene::SVertexPositionScaleManipulator) 1.000000 2.000000 box
+ (irr::scene::SVertexPositionTransformManipulator) 1.000000 1.000000 box
  (irr::scene::SVertexTCoordsScaleManipulator) 1.000000 0.000000 box
 
 % ----- relations -----
 
 solid
-1 0.000000 35.250000 out
-solid
-0 0.000000 35.500000 hedge
-solid
-0 0.000000 34.500000 hedge
-solid
-0 0.000000 33.500000 hedge
-solid
-0 0.000000 32.500000 hedge
-solid
-0 0.000000 31.500000 hedge
-solid
-0 0.000000 30.500000 hedge
-solid
-0 0.000000 29.500000 hedge
-solid
-0 0.000000 28.500000 hedge
-solid
-0 0.000000 27.500000 hedge
-solid
-0 0.000000 26.500000 hedge
-solid
-0 0.000000 25.500000 hedge
-solid
-0 0.000000 24.500000 hedge
-solid
-0 0.000000 23.500000 hedge
-solid
-0 0.000000 22.500000 hedge
-solid
-0 0.000000 21.500000 hedge
-solid
-0 0.000000 20.500000 hedge
-solid
-0 0.000000 19.500000 hedge
-solid
-0 0.000000 18.500000 hedge
+1 0.000000 17.250000 out
 solid
 0 0.000000 17.500000 hedge
 solid
@@ -336,4 +264,4 @@ solid
 solid
 0 0.000000 0.500000 hedge
 solid
-0.000000 36.000000 0.500000 vedge
+0.000000 18.000000 0.500000 vedge

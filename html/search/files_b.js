@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['text_2ehh',['Text.hh',['../Text_8hh.html',1,'']]]
+  ['window_2ehh',['Window.hh',['../Window_8hh.html',1,'']]]
 ];

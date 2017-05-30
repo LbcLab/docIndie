@@ -12,49 +12,12 @@ Combobox widget.
 Inheritance diagram for irr\+:\+:gui\+:\+:I\+G\+U\+I\+Combo\+Box\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.038462cm]{classirr_1_1gui_1_1IGUIComboBox}
+\includegraphics[height=4.000000cm]{classirr_1_1gui_1_1IGUIComboBox}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIComboBox_a89e96a8ac4c47e7b202be120486f1f94}\label{classirr_1_1gui_1_1IGUIComboBox_a89e96a8ac4c47e7b202be120486f1f94}} 
-\hyperlink{classirr_1_1gui_1_1IGUIComboBox_a89e96a8ac4c47e7b202be120486f1f94}{I\+G\+U\+I\+Combo\+Box} (\hyperlink{classirr_1_1gui_1_1IGUIEnvironment}{I\+G\+U\+I\+Environment} $\ast$environment, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ rectangle)
-\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIComboBox_a573bdf5507fd9d389635cbb4d84c3757}\label{classirr_1_1gui_1_1IGUIComboBox_a573bdf5507fd9d389635cbb4d84c3757}} 
-virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1gui_1_1IGUIComboBox_a573bdf5507fd9d389635cbb4d84c3757}{get\+Item\+Count} () const =0
-\begin{DoxyCompactList}\small\item\em Returns amount of items in box. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIComboBox_afe60f75b5e8685f6a19101d31ad6d369}\label{classirr_1_1gui_1_1IGUIComboBox_afe60f75b5e8685f6a19101d31ad6d369}} 
-virtual const wchar\+\_\+t $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIComboBox_afe60f75b5e8685f6a19101d31ad6d369}{get\+Item} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx) const =0
-\begin{DoxyCompactList}\small\item\em Returns string of an item. the idx may be a value from 0 to item\+Count-\/1. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIComboBox_ac0f2189cf87e4ffe38834edea01c75fb}\label{classirr_1_1gui_1_1IGUIComboBox_ac0f2189cf87e4ffe38834edea01c75fb}} 
-virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1gui_1_1IGUIComboBox_ac0f2189cf87e4ffe38834edea01c75fb}{get\+Item\+Data} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx) const =0
-\begin{DoxyCompactList}\small\item\em Returns item data of an item. the idx may be a value from 0 to item\+Count-\/1. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIComboBox_a01c1dea5455f7a9302cea8d156787c3e}\label{classirr_1_1gui_1_1IGUIComboBox_a01c1dea5455f7a9302cea8d156787c3e}} 
-virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUIComboBox_a01c1dea5455f7a9302cea8d156787c3e}{get\+Index\+For\+Item\+Data} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} data) const =0
-\begin{DoxyCompactList}\small\item\em Returns index based on item data. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIComboBox_a1952afb705f497306cb006c502ac181c}\label{classirr_1_1gui_1_1IGUIComboBox_a1952afb705f497306cb006c502ac181c}} 
-virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1gui_1_1IGUIComboBox_a1952afb705f497306cb006c502ac181c}{add\+Item} (const wchar\+\_\+t $\ast$text, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} data=0)=0
-\begin{DoxyCompactList}\small\item\em Adds an item and returns the index of it. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1gui_1_1IGUIComboBox_aa6a351f80aa57374459a9d66f416ce3c}{remove\+Item} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} idx)=0
-\begin{DoxyCompactList}\small\item\em Removes an item from the combo box. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIComboBox_af9f5d813496af19af437a6f51fa7e029}\label{classirr_1_1gui_1_1IGUIComboBox_af9f5d813496af19af437a6f51fa7e029}} 
-virtual void \hyperlink{classirr_1_1gui_1_1IGUIComboBox_af9f5d813496af19af437a6f51fa7e029}{clear} ()=0
-\begin{DoxyCompactList}\small\item\em Deletes all items in the combo box. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIComboBox_a7cb6bb2a86fccfc78cbb3c3d56b88778}\label{classirr_1_1gui_1_1IGUIComboBox_a7cb6bb2a86fccfc78cbb3c3d56b88778}} 
-virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUIComboBox_a7cb6bb2a86fccfc78cbb3c3d56b88778}{get\+Selected} () const =0
-\begin{DoxyCompactList}\small\item\em Returns id of selected item. returns -\/1 if no item is selected. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIComboBox_a84660e6f4a677349ca7dc39024fe7b17}\label{classirr_1_1gui_1_1IGUIComboBox_a84660e6f4a677349ca7dc39024fe7b17}} 
-virtual void \hyperlink{classirr_1_1gui_1_1IGUIComboBox_a84660e6f4a677349ca7dc39024fe7b17}{set\+Selected} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} idx)=0
-\begin{DoxyCompactList}\small\item\em Sets the selected item. Set this to -\/1 if no item should be selected. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1gui_1_1IGUIComboBox_a902681b9cfc783d29270f919ab3e71d8}{set\+Text\+Alignment} (\hyperlink{namespaceirr_1_1gui_a19eb5fb40e67f108cb16aba922ddaa2d}{E\+G\+U\+I\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT} horizontal, \hyperlink{namespaceirr_1_1gui_a19eb5fb40e67f108cb16aba922ddaa2d}{E\+G\+U\+I\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT} vertical)=0
-\begin{DoxyCompactList}\small\item\em Sets text justification of the text area. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIComboBox_a273f90cfe3cf279ccae2cc612117862d}\label{classirr_1_1gui_1_1IGUIComboBox_a273f90cfe3cf279ccae2cc612117862d}} 
-virtual void \hyperlink{classirr_1_1gui_1_1IGUIComboBox_a273f90cfe3cf279ccae2cc612117862d}{set\+Max\+Selection\+Rows} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} max)=0
-\begin{DoxyCompactList}\small\item\em Set the maximal number of rows for the selection listbox. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIComboBox_afc75706835598a9016ce8a8f020c690c}\label{classirr_1_1gui_1_1IGUIComboBox_afc75706835598a9016ce8a8f020c690c}} 
-virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1gui_1_1IGUIComboBox_afc75706835598a9016ce8a8f020c690c}{get\+Max\+Selection\+Rows} () const =0
-\begin{DoxyCompactList}\small\item\em Get the maximimal number of rows for the selection listbox. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIComboBox_a89e96a8ac4c47e7b202be120486f1f94}\label{classirr_1_1gui_1_1IGUIComboBox_a89e96a8ac4c47e7b202be120486f1f94}} 
 \hyperlink{classirr_1_1gui_1_1IGUIComboBox_a89e96a8ac4c47e7b202be120486f1f94}{I\+G\+U\+I\+Combo\+Box} (\hyperlink{classirr_1_1gui_1_1IGUIEnvironment}{I\+G\+U\+I\+Environment} $\ast$environment, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ rectangle)
 \begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
@@ -109,17 +72,7 @@ Combobox widget.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIComboBox_aa6a351f80aa57374459a9d66f416ce3c}\label{classirr_1_1gui_1_1IGUIComboBox_aa6a351f80aa57374459a9d66f416ce3c}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box}!remove\+Item@{remove\+Item}}
 \index{remove\+Item@{remove\+Item}!irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box}}
-\subsubsection{\texorpdfstring{remove\+Item()}{removeItem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box\+::remove\+Item (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Removes an item from the combo box. 
-
-Warning. This will change the index of all following items \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIComboBox_aa6a351f80aa57374459a9d66f416ce3c}\label{classirr_1_1gui_1_1IGUIComboBox_aa6a351f80aa57374459a9d66f416ce3c}} 
-\index{irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box}!remove\+Item@{remove\+Item}}
-\index{remove\+Item@{remove\+Item}!irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box}}
-\subsubsection{\texorpdfstring{remove\+Item()}{removeItem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{remove\+Item()}{removeItem()}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box\+::remove\+Item (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -129,24 +82,7 @@ Removes an item from the combo box.
 Warning. This will change the index of all following items \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIComboBox_a902681b9cfc783d29270f919ab3e71d8}\label{classirr_1_1gui_1_1IGUIComboBox_a902681b9cfc783d29270f919ab3e71d8}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box}!set\+Text\+Alignment@{set\+Text\+Alignment}}
 \index{set\+Text\+Alignment@{set\+Text\+Alignment}!irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box}}
-\subsubsection{\texorpdfstring{set\+Text\+Alignment()}{setTextAlignment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box\+::set\+Text\+Alignment (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1gui_a19eb5fb40e67f108cb16aba922ddaa2d}{E\+G\+U\+I\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT}}]{horizontal,  }\item[{\hyperlink{namespaceirr_1_1gui_a19eb5fb40e67f108cb16aba922ddaa2d}{E\+G\+U\+I\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT}}]{vertical }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Sets text justification of the text area. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em horizontal} & E\+G\+U\+I\+A\+\_\+\+U\+P\+P\+E\+R\+L\+E\+FT for left justified (default), E\+G\+U\+I\+A\+\_\+\+L\+O\+W\+E\+E\+R\+R\+I\+G\+HT for right justified, or E\+G\+U\+I\+A\+\_\+\+C\+E\+N\+T\+ER for centered text. \\
-\hline
-{\em vertical} & E\+G\+U\+I\+A\+\_\+\+U\+P\+P\+E\+R\+L\+E\+FT to align with top edge, E\+G\+U\+I\+A\+\_\+\+L\+O\+W\+E\+E\+R\+R\+I\+G\+HT for bottom edge, or E\+G\+U\+I\+A\+\_\+\+C\+E\+N\+T\+ER for centered text (default). \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIComboBox_a902681b9cfc783d29270f919ab3e71d8}\label{classirr_1_1gui_1_1IGUIComboBox_a902681b9cfc783d29270f919ab3e71d8}} 
-\index{irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box}!set\+Text\+Alignment@{set\+Text\+Alignment}}
-\index{set\+Text\+Alignment@{set\+Text\+Alignment}!irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box}}
-\subsubsection{\texorpdfstring{set\+Text\+Alignment()}{setTextAlignment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{set\+Text\+Alignment()}{setTextAlignment()}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Combo\+Box\+::set\+Text\+Alignment (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1gui_a19eb5fb40e67f108cb16aba922ddaa2d}{E\+G\+U\+I\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT}}]{horizontal,  }\item[{\hyperlink{namespaceirr_1_1gui_a19eb5fb40e67f108cb16aba922ddaa2d}{E\+G\+U\+I\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT}}]{vertical }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

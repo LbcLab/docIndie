@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['f32',['f32',['../namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07',1,'irr']]],
-  ['f64',['f64',['../namespaceirr.html#a1325b02603ad449f92c68fc640af9b28',1,'irr']]],
-  ['filter_5fchain_5ft',['filter_chain_t',['../vlc__filter_8h.html#a36dbcb3bbc94c103ad2b9b6b9e5ee367',1,'vlc_filter.h']]],
-  ['fschar_5ft',['fschar_t',['../namespaceirr.html#a813cca9bac9fa0c1427d89720a451460',1,'irr']]],
-  ['funcptr_5fcreatedevice',['funcptr_createDevice',['../namespaceirr.html#ac684947a1da4b3acd8e86f5a32581ab6',1,'irr']]],
-  ['funcptr_5fcreatedeviceex',['funcptr_createDeviceEx',['../namespaceirr.html#a8951ac2554f9ccd5fe1fcb6fdc13b258',1,'irr']]]
+  ['irrxmlreader',['IrrXMLReader',['../namespaceirr_1_1io.html#a1628edbb9d5d53f18c82d2a92b0ad27e',1,'irr::io']]],
+  ['irrxmlreaderutf16',['IrrXMLReaderUTF16',['../namespaceirr_1_1io.html#a5eb4094dfd0d509e0cd8a9d1dd30a5b9',1,'irr::io']]],
+  ['irrxmlreaderutf32',['IrrXMLReaderUTF32',['../namespaceirr_1_1io.html#a70f411ff403636fb5c4e9becb090d5ec',1,'irr::io']]],
+  ['iscenenodeanimatorlist',['ISceneNodeAnimatorList',['../namespaceirr_1_1scene.html#a4699e14043e59f91c454ffc13edd953c',1,'irr::scene']]],
+  ['iscenenodelist',['ISceneNodeList',['../namespaceirr_1_1scene.html#ac141e7443ace16ce06c0a092c6fc4fbc',1,'irr::scene']]],
+  ['ixmlreader',['IXMLReader',['../namespaceirr_1_1io.html#a9dc6291fb7e4c73155a3e3c8339f9bff',1,'irr::io']]],
+  ['ixmlreaderutf8',['IXMLReaderUTF8',['../namespaceirr_1_1io.html#a2dedc8156931082e6b147b562195e310',1,'irr::io']]]
 ];

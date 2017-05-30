@@ -38,33 +38,6 @@ virtual bool \hyperlink{classirr_1_1video_1_1IMaterialRendererServices_ac81171c7
 virtual void \hyperlink{classirr_1_1video_1_1IMaterialRendererServices_af962cb878f57d1edbc0030fedb464d1d}{set\+Pixel\+Shader\+Constant} (const \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $\ast$data, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} start\+Register, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} constant\+Amount=1)=0
 \begin{DoxyCompactList}\small\item\em Sets a pixel shader constant. \end{DoxyCompactList}\item 
 virtual \hyperlink{classirr_1_1video_1_1IVideoDriver}{I\+Video\+Driver} $\ast$ \hyperlink{classirr_1_1video_1_1IMaterialRendererServices_a2a80795887e43cb743eb5ee82604d4cf}{get\+Video\+Driver} ()=0
-\begin{DoxyCompactList}\small\item\em Get pointer to the \hyperlink{classirr_1_1video_1_1IVideoDriver}{I\+Video\+Driver} interface. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1video_1_1IMaterialRendererServices_abbab02366d5303f106d14278bf88aff3}\label{classirr_1_1video_1_1IMaterialRendererServices_abbab02366d5303f106d14278bf88aff3}} 
-virtual \hyperlink{classirr_1_1video_1_1IMaterialRendererServices_abbab02366d5303f106d14278bf88aff3}{$\sim$\+I\+Material\+Renderer\+Services} ()
-\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1video_1_1IMaterialRendererServices_ab000e24fe3f65fb63b007a37895df3f2}{set\+Basic\+Render\+States} (const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&material, const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&last\+Material, bool reset\+All\+Renderstates)=0
-\begin{DoxyCompactList}\small\item\em Can be called by an \hyperlink{classirr_1_1video_1_1IMaterialRenderer}{I\+Material\+Renderer} to make its work easier. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classirr_1_1video_1_1IMaterialRendererServices_a294db14b4f3608d29d0e457246df3d16}{set\+Vertex\+Shader\+Constant} (const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$name, const \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $\ast$floats, int count)=0
-\begin{DoxyCompactList}\small\item\em Sets a constant for the vertex shader based on a name. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1video_1_1IMaterialRendererServices_aed8c3f830451ec416265202d2dc90f92}\label{classirr_1_1video_1_1IMaterialRendererServices_aed8c3f830451ec416265202d2dc90f92}} 
-virtual bool \hyperlink{classirr_1_1video_1_1IMaterialRendererServices_aed8c3f830451ec416265202d2dc90f92}{set\+Vertex\+Shader\+Constant} (const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$name, const bool $\ast$bools, int count)=0
-\begin{DoxyCompactList}\small\item\em Bool interface for the above. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1video_1_1IMaterialRendererServices_a4dc7be8f9a786b9805c46f535ff7d896}\label{classirr_1_1video_1_1IMaterialRendererServices_a4dc7be8f9a786b9805c46f535ff7d896}} 
-virtual bool \hyperlink{classirr_1_1video_1_1IMaterialRendererServices_a4dc7be8f9a786b9805c46f535ff7d896}{set\+Vertex\+Shader\+Constant} (const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$name, const \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $\ast$ints, int count)=0
-\begin{DoxyCompactList}\small\item\em Int interface for the above. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1video_1_1IMaterialRendererServices_a1f11a6df7625205511e91fb036e03929}{set\+Vertex\+Shader\+Constant} (const \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $\ast$data, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} start\+Register, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} constant\+Amount=1)=0
-\begin{DoxyCompactList}\small\item\em Sets a vertex shader constant. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classirr_1_1video_1_1IMaterialRendererServices_a6f612293300f643148bd537a8a70ff32}{set\+Pixel\+Shader\+Constant} (const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$name, const \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $\ast$floats, int count)=0
-\begin{DoxyCompactList}\small\item\em Sets a constant for the pixel shader based on a name. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1video_1_1IMaterialRendererServices_a252ccc1a6055f784c252435e1427de1b}\label{classirr_1_1video_1_1IMaterialRendererServices_a252ccc1a6055f784c252435e1427de1b}} 
-virtual bool \hyperlink{classirr_1_1video_1_1IMaterialRendererServices_a252ccc1a6055f784c252435e1427de1b}{set\+Pixel\+Shader\+Constant} (const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$name, const bool $\ast$bools, int count)=0
-\begin{DoxyCompactList}\small\item\em Bool interface for the above. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1video_1_1IMaterialRendererServices_ac81171c7c59a9cf0fc7d76de910098f4}\label{classirr_1_1video_1_1IMaterialRendererServices_ac81171c7c59a9cf0fc7d76de910098f4}} 
-virtual bool \hyperlink{classirr_1_1video_1_1IMaterialRendererServices_ac81171c7c59a9cf0fc7d76de910098f4}{set\+Pixel\+Shader\+Constant} (const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$name, const \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $\ast$ints, int count)=0
-\begin{DoxyCompactList}\small\item\em Int interface for the above. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1video_1_1IMaterialRendererServices_af962cb878f57d1edbc0030fedb464d1d}{set\+Pixel\+Shader\+Constant} (const \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $\ast$data, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} start\+Register, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} constant\+Amount=1)=0
-\begin{DoxyCompactList}\small\item\em Sets a pixel shader constant. \end{DoxyCompactList}\item 
-virtual \hyperlink{classirr_1_1video_1_1IVideoDriver}{I\+Video\+Driver} $\ast$ \hyperlink{classirr_1_1video_1_1IMaterialRendererServices_a2a80795887e43cb743eb5ee82604d4cf}{get\+Video\+Driver} ()=0
 \begin{DoxyCompactList}\small\item\em Get pointer to the \hyperlink{classirr_1_1video_1_1IVideoDriver}{I\+Video\+Driver} interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -75,20 +48,7 @@ Interface providing some methods for changing advanced, internal states of a \hy
 \mbox{\Hypertarget{classirr_1_1video_1_1IMaterialRendererServices_a2a80795887e43cb743eb5ee82604d4cf}\label{classirr_1_1video_1_1IMaterialRendererServices_a2a80795887e43cb743eb5ee82604d4cf}} 
 \index{irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}!get\+Video\+Driver@{get\+Video\+Driver}}
 \index{get\+Video\+Driver@{get\+Video\+Driver}!irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}}
-\subsubsection{\texorpdfstring{get\+Video\+Driver()}{getVideoDriver()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1video_1_1IVideoDriver}{I\+Video\+Driver}$\ast$ irr\+::video\+::\+I\+Material\+Renderer\+Services\+::get\+Video\+Driver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Get pointer to the \hyperlink{classirr_1_1video_1_1IVideoDriver}{I\+Video\+Driver} interface. 
-
-\begin{DoxyReturn}{Returns}
-Pointer to the \hyperlink{classirr_1_1video_1_1IVideoDriver}{I\+Video\+Driver} interface 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1video_1_1IMaterialRendererServices_a2a80795887e43cb743eb5ee82604d4cf}\label{classirr_1_1video_1_1IMaterialRendererServices_a2a80795887e43cb743eb5ee82604d4cf}} 
-\index{irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}!get\+Video\+Driver@{get\+Video\+Driver}}
-\index{get\+Video\+Driver@{get\+Video\+Driver}!irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}}
-\subsubsection{\texorpdfstring{get\+Video\+Driver()}{getVideoDriver()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{get\+Video\+Driver()}{getVideoDriver()}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1video_1_1IVideoDriver}{I\+Video\+Driver}$\ast$ irr\+::video\+::\+I\+Material\+Renderer\+Services\+::get\+Video\+Driver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -101,26 +61,7 @@ Pointer to the \hyperlink{classirr_1_1video_1_1IVideoDriver}{I\+Video\+Driver} i
 \mbox{\Hypertarget{classirr_1_1video_1_1IMaterialRendererServices_ab000e24fe3f65fb63b007a37895df3f2}\label{classirr_1_1video_1_1IMaterialRendererServices_ab000e24fe3f65fb63b007a37895df3f2}} 
 \index{irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}!set\+Basic\+Render\+States@{set\+Basic\+Render\+States}}
 \index{set\+Basic\+Render\+States@{set\+Basic\+Render\+States}!irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}}
-\subsubsection{\texorpdfstring{set\+Basic\+Render\+States()}{setBasicRenderStates()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual void irr\+::video\+::\+I\+Material\+Renderer\+Services\+::set\+Basic\+Render\+States (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&}]{material,  }\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&}]{last\+Material,  }\item[{bool}]{reset\+All\+Renderstates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Can be called by an \hyperlink{classirr_1_1video_1_1IMaterialRenderer}{I\+Material\+Renderer} to make its work easier. 
-
-Sets all basic renderstates if needed. Basic render states are diffuse, ambient, specular, and emissive color, specular power, bilinear and trilinear filtering, wireframe mode, grouraudshading, lighting, zbuffer, zwriteenable, backfaceculling and fog enabling. 
-\begin{DoxyParams}{Parameters}
-{\em material} & The new material to be used. \\
-\hline
-{\em last\+Material} & The material used until now. \\
-\hline
-{\em reset\+All\+Renderstates} & Set to true if all renderstates should be set, regardless of their current state. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classirr_1_1video_1_1IMaterialRendererServices_ab000e24fe3f65fb63b007a37895df3f2}\label{classirr_1_1video_1_1IMaterialRendererServices_ab000e24fe3f65fb63b007a37895df3f2}} 
-\index{irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}!set\+Basic\+Render\+States@{set\+Basic\+Render\+States}}
-\index{set\+Basic\+Render\+States@{set\+Basic\+Render\+States}!irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}}
-\subsubsection{\texorpdfstring{set\+Basic\+Render\+States()}{setBasicRenderStates()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{set\+Basic\+Render\+States()}{setBasicRenderStates()}}
 {\footnotesize\ttfamily virtual void irr\+::video\+::\+I\+Material\+Renderer\+Services\+::set\+Basic\+Render\+States (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&}]{material,  }\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&}]{last\+Material,  }\item[{bool}]{reset\+All\+Renderstates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -139,29 +80,7 @@ Sets all basic renderstates if needed. Basic render states are diffuse, ambient,
 \mbox{\Hypertarget{classirr_1_1video_1_1IMaterialRendererServices_a6f612293300f643148bd537a8a70ff32}\label{classirr_1_1video_1_1IMaterialRendererServices_a6f612293300f643148bd537a8a70ff32}} 
 \index{irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}!set\+Pixel\+Shader\+Constant@{set\+Pixel\+Shader\+Constant}}
 \index{set\+Pixel\+Shader\+Constant@{set\+Pixel\+Shader\+Constant}!irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}}
-\subsubsection{\texorpdfstring{set\+Pixel\+Shader\+Constant()}{setPixelShaderConstant()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
-{\footnotesize\ttfamily virtual bool irr\+::video\+::\+I\+Material\+Renderer\+Services\+::set\+Pixel\+Shader\+Constant (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$}]{name,  }\item[{const \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $\ast$}]{floats,  }\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Sets a constant for the pixel shader based on a name. 
-
-This can be used if you used a high level shader language like G\+L\+SL or H\+L\+SL to create a shader. See \hyperlink{classirr_1_1video_1_1IMaterialRendererServices_a294db14b4f3608d29d0e457246df3d16}{set\+Vertex\+Shader\+Constant()} for an example on how to use this. 
-\begin{DoxyParams}{Parameters}
-{\em name} & Name of the variable \\
-\hline
-{\em floats} & Pointer to array of floats \\
-\hline
-{\em count} & Amount of floats in array. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-True if successful. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1video_1_1IMaterialRendererServices_a6f612293300f643148bd537a8a70ff32}\label{classirr_1_1video_1_1IMaterialRendererServices_a6f612293300f643148bd537a8a70ff32}} 
-\index{irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}!set\+Pixel\+Shader\+Constant@{set\+Pixel\+Shader\+Constant}}
-\index{set\+Pixel\+Shader\+Constant@{set\+Pixel\+Shader\+Constant}!irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}}
-\subsubsection{\texorpdfstring{set\+Pixel\+Shader\+Constant()}{setPixelShaderConstant()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+\subsubsection{\texorpdfstring{set\+Pixel\+Shader\+Constant()}{setPixelShaderConstant()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily virtual bool irr\+::video\+::\+I\+Material\+Renderer\+Services\+::set\+Pixel\+Shader\+Constant (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$}]{name,  }\item[{const \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $\ast$}]{floats,  }\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -183,26 +102,7 @@ True if successful.
 \mbox{\Hypertarget{classirr_1_1video_1_1IMaterialRendererServices_af962cb878f57d1edbc0030fedb464d1d}\label{classirr_1_1video_1_1IMaterialRendererServices_af962cb878f57d1edbc0030fedb464d1d}} 
 \index{irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}!set\+Pixel\+Shader\+Constant@{set\+Pixel\+Shader\+Constant}}
 \index{set\+Pixel\+Shader\+Constant@{set\+Pixel\+Shader\+Constant}!irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}}
-\subsubsection{\texorpdfstring{set\+Pixel\+Shader\+Constant()}{setPixelShaderConstant()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily virtual void irr\+::video\+::\+I\+Material\+Renderer\+Services\+::set\+Pixel\+Shader\+Constant (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $\ast$}]{data,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{start\+Register,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{constant\+Amount = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Sets a pixel shader constant. 
-
-Can be used if you created a shader using pixel/vertex shader assembler or A\+R\+B\+\_\+fragment\+\_\+program or A\+R\+B\+\_\+vertex\+\_\+program. 
-\begin{DoxyParams}{Parameters}
-{\em data} & Data to be set in the constants \\
-\hline
-{\em start\+Register} & First register to be set. \\
-\hline
-{\em constant\+Amount} & Amount of registers to be set. One register consists of 4 floats. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classirr_1_1video_1_1IMaterialRendererServices_af962cb878f57d1edbc0030fedb464d1d}\label{classirr_1_1video_1_1IMaterialRendererServices_af962cb878f57d1edbc0030fedb464d1d}} 
-\index{irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}!set\+Pixel\+Shader\+Constant@{set\+Pixel\+Shader\+Constant}}
-\index{set\+Pixel\+Shader\+Constant@{set\+Pixel\+Shader\+Constant}!irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}}
-\subsubsection{\texorpdfstring{set\+Pixel\+Shader\+Constant()}{setPixelShaderConstant()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+\subsubsection{\texorpdfstring{set\+Pixel\+Shader\+Constant()}{setPixelShaderConstant()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::video\+::\+I\+Material\+Renderer\+Services\+::set\+Pixel\+Shader\+Constant (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $\ast$}]{data,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{start\+Register,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{constant\+Amount = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -221,7 +121,7 @@ Can be used if you created a shader using pixel/vertex shader assembler or A\+R\
 \mbox{\Hypertarget{classirr_1_1video_1_1IMaterialRendererServices_a294db14b4f3608d29d0e457246df3d16}\label{classirr_1_1video_1_1IMaterialRendererServices_a294db14b4f3608d29d0e457246df3d16}} 
 \index{irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}!set\+Vertex\+Shader\+Constant@{set\+Vertex\+Shader\+Constant}}
 \index{set\+Vertex\+Shader\+Constant@{set\+Vertex\+Shader\+Constant}!irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}}
-\subsubsection{\texorpdfstring{set\+Vertex\+Shader\+Constant()}{setVertexShaderConstant()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+\subsubsection{\texorpdfstring{set\+Vertex\+Shader\+Constant()}{setVertexShaderConstant()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily virtual bool irr\+::video\+::\+I\+Material\+Renderer\+Services\+::set\+Vertex\+Shader\+Constant (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$}]{name,  }\item[{const \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $\ast$}]{floats,  }\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -237,48 +137,10 @@ This can be used if you used a high level shader language like G\+L\+SL or H\+L\
     \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} time = (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32})os::Timer::getTime()/100000.0f;
     services->setVertexShaderConstant(\textcolor{stringliteral}{"fTime"}, &time, 1);
 
-    \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core::matrix4} worldViewProj(driver->getTransform(
-      \hyperlink{namespaceirr_1_1video_a15b57657a320243be03ae6f66fcff43da3e02dc0a1b7e92ea9ff2a548d54e10cc}{video::ETS\_PROJECTION}));
-    worldViewProj *= driver->getTransform(\hyperlink{namespaceirr_1_1video_a15b57657a320243be03ae6f66fcff43da9f4c5ade2cd956ef9dcc658fd8df2183}{video::ETS\_VIEW});
-    worldViewProj *= driver->getTransform(\hyperlink{namespaceirr_1_1video_a15b57657a320243be03ae6f66fcff43daf0d9765331daace35b8443c471738305}{video::ETS\_WORLD});
-    services->setVertexShaderConstant(\textcolor{stringliteral}{"mWorldViewProj"}, worldViewProj.M, 16);
-\}
-\end{DoxyCode}
- 
-\begin{DoxyParams}{Parameters}
-{\em name} & Name of the variable \\
-\hline
-{\em floats} & Pointer to array of floats \\
-\hline
-{\em count} & Amount of floats in array. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-True if successful. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1video_1_1IMaterialRendererServices_a294db14b4f3608d29d0e457246df3d16}\label{classirr_1_1video_1_1IMaterialRendererServices_a294db14b4f3608d29d0e457246df3d16}} 
-\index{irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}!set\+Vertex\+Shader\+Constant@{set\+Vertex\+Shader\+Constant}}
-\index{set\+Vertex\+Shader\+Constant@{set\+Vertex\+Shader\+Constant}!irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}}
-\subsubsection{\texorpdfstring{set\+Vertex\+Shader\+Constant()}{setVertexShaderConstant()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily virtual bool irr\+::video\+::\+I\+Material\+Renderer\+Services\+::set\+Vertex\+Shader\+Constant (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$}]{name,  }\item[{const \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $\ast$}]{floats,  }\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Sets a constant for the vertex shader based on a name. 
-
-This can be used if you used a high level shader language like G\+L\+SL or H\+L\+SL to create a shader. Example\+: If you created a shader which has variables named \textquotesingle{}m\+World\+View\+Proj\textquotesingle{} (containing the World\+View\+Projection matrix) and another one named \textquotesingle{}f\+Time\textquotesingle{} containing one float, you can set them in your \hyperlink{classirr_1_1video_1_1IShaderConstantSetCallBack}{I\+Shader\+Constant\+Set\+Call\+Back} derived class like this\+: 
-\begin{DoxyCode}
-\textcolor{keyword}{virtual} \textcolor{keywordtype}{void} OnSetConstants(video::IMaterialRendererServices* services, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} userData)
-\{
-    video::IVideoDriver* driver = services->getVideoDriver();
-
-    \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} time = (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32})os::Timer::getTime()/100000.0f;
-    services->setVertexShaderConstant(\textcolor{stringliteral}{"fTime"}, &time, 1);
-
-    \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core::matrix4} worldViewProj(driver->getTransform(
-      \hyperlink{namespaceirr_1_1video_a15b57657a320243be03ae6f66fcff43da3e02dc0a1b7e92ea9ff2a548d54e10cc}{video::ETS\_PROJECTION}));
-    worldViewProj *= driver->getTransform(\hyperlink{namespaceirr_1_1video_a15b57657a320243be03ae6f66fcff43da9f4c5ade2cd956ef9dcc658fd8df2183}{video::ETS\_VIEW});
-    worldViewProj *= driver->getTransform(\hyperlink{namespaceirr_1_1video_a15b57657a320243be03ae6f66fcff43daf0d9765331daace35b8443c471738305}{video::ETS\_WORLD});
+    \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core::matrix4} worldViewProj(driver->getTransform(
+      \hyperlink{namespaceirr_1_1video_a15b57657a320243be03ae6f66fcff43dae7ec186418508c67a7562af012d7b63f}{video::ETS\_PROJECTION}));
+    worldViewProj *= driver->getTransform(\hyperlink{namespaceirr_1_1video_a15b57657a320243be03ae6f66fcff43da152f4262d5874186e0288934c7d31e14}{video::ETS\_VIEW});
+    worldViewProj *= driver->getTransform(\hyperlink{namespaceirr_1_1video_a15b57657a320243be03ae6f66fcff43da843cf42adb3fa9caf61c9e228cf14e85}{video::ETS\_WORLD});
     services->setVertexShaderConstant(\textcolor{stringliteral}{"mWorldViewProj"}, worldViewProj.M, 16);
 \}
 \end{DoxyCode}
@@ -297,26 +159,7 @@ True if successful.
 \mbox{\Hypertarget{classirr_1_1video_1_1IMaterialRendererServices_a1f11a6df7625205511e91fb036e03929}\label{classirr_1_1video_1_1IMaterialRendererServices_a1f11a6df7625205511e91fb036e03929}} 
 \index{irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}!set\+Vertex\+Shader\+Constant@{set\+Vertex\+Shader\+Constant}}
 \index{set\+Vertex\+Shader\+Constant@{set\+Vertex\+Shader\+Constant}!irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}}
-\subsubsection{\texorpdfstring{set\+Vertex\+Shader\+Constant()}{setVertexShaderConstant()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily virtual void irr\+::video\+::\+I\+Material\+Renderer\+Services\+::set\+Vertex\+Shader\+Constant (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $\ast$}]{data,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{start\+Register,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{constant\+Amount = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Sets a vertex shader constant. 
-
-Can be used if you created a shader using pixel/vertex shader assembler or A\+R\+B\+\_\+fragment\+\_\+program or A\+R\+B\+\_\+vertex\+\_\+program. 
-\begin{DoxyParams}{Parameters}
-{\em data} & Data to be set in the constants \\
-\hline
-{\em start\+Register} & First register to be set \\
-\hline
-{\em constant\+Amount} & Amount of registers to be set. One register consists of 4 floats. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classirr_1_1video_1_1IMaterialRendererServices_a1f11a6df7625205511e91fb036e03929}\label{classirr_1_1video_1_1IMaterialRendererServices_a1f11a6df7625205511e91fb036e03929}} 
-\index{irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}!set\+Vertex\+Shader\+Constant@{set\+Vertex\+Shader\+Constant}}
-\index{set\+Vertex\+Shader\+Constant@{set\+Vertex\+Shader\+Constant}!irr\+::video\+::\+I\+Material\+Renderer\+Services@{irr\+::video\+::\+I\+Material\+Renderer\+Services}}
-\subsubsection{\texorpdfstring{set\+Vertex\+Shader\+Constant()}{setVertexShaderConstant()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+\subsubsection{\texorpdfstring{set\+Vertex\+Shader\+Constant()}{setVertexShaderConstant()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::video\+::\+I\+Material\+Renderer\+Services\+::set\+Vertex\+Shader\+Constant (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $\ast$}]{data,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{start\+Register,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{constant\+Amount = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

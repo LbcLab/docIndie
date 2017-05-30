@@ -74,7 +74,7 @@ $(function() {
 <p>Template plane class with some intersection testing methods.  
  <a href="classirr_1_1core_1_1plane3d.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="indie__share_2controller_2include_2plane3d_8h_source.html">plane3d.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="plane3d_8h_source.html">plane3d.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -114,49 +114,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ab5e41d5843bf3bb856f543186b8a7df8"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1plane3d.html#ab5e41d5843bf3bb856f543186b8a7df8">getDistanceTo</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;point) const</td></tr>
 <tr class="memdesc:ab5e41d5843bf3bb856f543186b8a7df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the distance to a point.  <a href="#ab5e41d5843bf3bb856f543186b8a7df8">More...</a><br /></td></tr>
 <tr class="separator:ab5e41d5843bf3bb856f543186b8a7df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3fb02f09788ead8b36523891fbd1288"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1plane3d.html#ae3fb02f09788ead8b36523891fbd1288">getIntersectionWithLine</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;linePoint, const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;lineVect, <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;outIntersection) const</td></tr>
-<tr class="memdesc:ae3fb02f09788ead8b36523891fbd1288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an intersection with a 3d line.  <a href="#ae3fb02f09788ead8b36523891fbd1288">More...</a><br /></td></tr>
-<tr class="separator:ae3fb02f09788ead8b36523891fbd1288"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fcd4852c2634172862324340558c634"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1plane3d.html#a5fcd4852c2634172862324340558c634">getKnownIntersectionWithLine</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;linePoint1, const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;linePoint2) const</td></tr>
-<tr class="memdesc:a5fcd4852c2634172862324340558c634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get percentage of line between two points where an intersection with this plane happens.  <a href="#a5fcd4852c2634172862324340558c634">More...</a><br /></td></tr>
-<tr class="separator:a5fcd4852c2634172862324340558c634"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bec8dcaa0eeb9f7bdd5b727f3d3561d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1plane3d.html#a6bec8dcaa0eeb9f7bdd5b727f3d3561d">getIntersectionWithLimitedLine</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;linePoint1, const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;linePoint2, <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;outIntersection) const</td></tr>
-<tr class="memdesc:a6bec8dcaa0eeb9f7bdd5b727f3d3561d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an intersection with a 3d line, limited between two 3d points.  <a href="#a6bec8dcaa0eeb9f7bdd5b727f3d3561d">More...</a><br /></td></tr>
-<tr class="separator:a6bec8dcaa0eeb9f7bdd5b727f3d3561d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14ba310b0ed9d14ce575f1c783cbd9a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceirr_1_1core.html#a8a9999eb0d151083f48afe5f7d17a96c">EIntersectionRelation3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1plane3d.html#a14ba310b0ed9d14ce575f1c783cbd9a5">classifyPointRelation</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;point) const</td></tr>
-<tr class="memdesc:a14ba310b0ed9d14ce575f1c783cbd9a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classifies the relation of a point to this plane.  <a href="#a14ba310b0ed9d14ce575f1c783cbd9a5">More...</a><br /></td></tr>
-<tr class="separator:a14ba310b0ed9d14ce575f1c783cbd9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65c1748d516ddc820b6b970f9367f1ff"><td class="memItemLeft" align="right" valign="top"><a id="a65c1748d516ddc820b6b970f9367f1ff"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1plane3d.html#a65c1748d516ddc820b6b970f9367f1ff">recalculateD</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;MPoint)</td></tr>
-<tr class="memdesc:a65c1748d516ddc820b6b970f9367f1ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalculates the distance from origin by applying a new member point to the plane. <br /></td></tr>
-<tr class="separator:a65c1748d516ddc820b6b970f9367f1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6862a53e67b3a8d616986216167d0c7a"><td class="memItemLeft" align="right" valign="top"><a id="a6862a53e67b3a8d616986216167d0c7a"></a>
-<a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1plane3d.html#a6862a53e67b3a8d616986216167d0c7a">getMemberPoint</a> () const</td></tr>
-<tr class="memdesc:a6862a53e67b3a8d616986216167d0c7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a member point of the plane. <br /></td></tr>
-<tr class="separator:a6862a53e67b3a8d616986216167d0c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62f0838578d34260a5ef664718be59b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1plane3d.html#a62f0838578d34260a5ef664718be59b4">existsIntersection</a> (const <a class="el" href="classirr_1_1core_1_1plane3d.html">plane3d</a>&lt; T &gt; &amp;other) const</td></tr>
-<tr class="memdesc:a62f0838578d34260a5ef664718be59b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests if there is an intersection with the other plane.  <a href="#a62f0838578d34260a5ef664718be59b4">More...</a><br /></td></tr>
-<tr class="separator:a62f0838578d34260a5ef664718be59b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa50063460dbcda6bc2b61ec4e9a15f0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1plane3d.html#aa50063460dbcda6bc2b61ec4e9a15f0c">getIntersectionWithPlane</a> (const <a class="el" href="classirr_1_1core_1_1plane3d.html">plane3d</a>&lt; T &gt; &amp;other, <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;outLinePoint, <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;outLineVect) const</td></tr>
-<tr class="memdesc:aa50063460dbcda6bc2b61ec4e9a15f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intersects this plane with another.  <a href="#aa50063460dbcda6bc2b61ec4e9a15f0c">More...</a><br /></td></tr>
-<tr class="separator:aa50063460dbcda6bc2b61ec4e9a15f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa211e140706ba340cc413e1dfc095efd"><td class="memItemLeft" align="right" valign="top"><a id="aa211e140706ba340cc413e1dfc095efd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1plane3d.html#aa211e140706ba340cc413e1dfc095efd">getIntersectionWithPlanes</a> (const <a class="el" href="classirr_1_1core_1_1plane3d.html">plane3d</a>&lt; T &gt; &amp;o1, const <a class="el" href="classirr_1_1core_1_1plane3d.html">plane3d</a>&lt; T &gt; &amp;o2, <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;outPoint) const</td></tr>
-<tr class="memdesc:aa211e140706ba340cc413e1dfc095efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the intersection point with two other planes if there is one. <br /></td></tr>
-<tr class="separator:aa211e140706ba340cc413e1dfc095efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca0237b25cbf4fe13d87b14a04d68df9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1plane3d.html#aca0237b25cbf4fe13d87b14a04d68df9">isFrontFacing</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;lookDirection) const</td></tr>
-<tr class="memdesc:aca0237b25cbf4fe13d87b14a04d68df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if the triangle would be front or backfacing from any point.  <a href="#aca0237b25cbf4fe13d87b14a04d68df9">More...</a><br /></td></tr>
-<tr class="separator:aca0237b25cbf4fe13d87b14a04d68df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5e41d5843bf3bb856f543186b8a7df8"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1plane3d.html#ab5e41d5843bf3bb856f543186b8a7df8">getDistanceTo</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;point) const</td></tr>
-<tr class="memdesc:ab5e41d5843bf3bb856f543186b8a7df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the distance to a point.  <a href="#ab5e41d5843bf3bb856f543186b8a7df8">More...</a><br /></td></tr>
-<tr class="separator:ab5e41d5843bf3bb856f543186b8a7df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6531e265acae238999976222f92129f1"><td class="memItemLeft" align="right" valign="top"><a id="a6531e265acae238999976222f92129f1"></a>
-<a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1plane3d.html#a6531e265acae238999976222f92129f1">Normal</a></td></tr>
-<tr class="memdesc:a6531e265acae238999976222f92129f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal vector of the plane. <br /></td></tr>
-<tr class="separator:a6531e265acae238999976222f92129f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932ca6e90e55cdceedb4f15ab706b719"><td class="memItemLeft" align="right" valign="top"><a id="a932ca6e90e55cdceedb4f15ab706b719"></a>
+<a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1plane3d.html#a932ca6e90e55cdceedb4f15ab706b719">Normal</a></td></tr>
+<tr class="memdesc:a932ca6e90e55cdceedb4f15ab706b719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal vector of the plane. <br /></td></tr>
+<tr class="separator:a932ca6e90e55cdceedb4f15ab706b719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa304cf77cf1a3aae2351d5add5606a8"><td class="memItemLeft" align="right" valign="top"><a id="afa304cf77cf1a3aae2351d5add5606a8"></a>
 T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1plane3d.html#afa304cf77cf1a3aae2351d5add5606a8">D</a></td></tr>
 <tr class="memdesc:afa304cf77cf1a3aae2351d5add5606a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distance from origin. <br /></td></tr>
@@ -170,44 +134,7 @@ class irr::core::plane3d&lt; T &gt;</h3>
 <p>It has to be ensured, that the normal is always normalized. The constructors and setters of this class will not ensure this automatically. So any normal passed in has to be normalized in advance. No change to the normal will be made by any of the class methods. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a14ba310b0ed9d14ce575f1c783cbd9a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14ba310b0ed9d14ce575f1c783cbd9a5">&#9670;&nbsp;</a></span>classifyPointRelation() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceirr_1_1core.html#a8a9999eb0d151083f48afe5f7d17a96c">EIntersectionRelation3D</a> <a class="el" href="classirr_1_1core_1_1plane3d.html">irr::core::plane3d</a>&lt; T &gt;::classifyPointRelation </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>point</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Classifies the relation of a point to this plane. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">point</td><td>Point to classify its relation. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>ISREL3D_FRONT if the point is in front of the plane, ISREL3D_BACK if the point is behind of the plane, and ISREL3D_PLANAR if the point is within the plane. </dd></dl>
-
-</div>
-</div>
-<a id="a14ba310b0ed9d14ce575f1c783cbd9a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14ba310b0ed9d14ce575f1c783cbd9a5">&#9670;&nbsp;</a></span>classifyPointRelation() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a14ba310b0ed9d14ce575f1c783cbd9a5">&#9670;&nbsp;</a></span>classifyPointRelation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,38 +171,7 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="a62f0838578d34260a5ef664718be59b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62f0838578d34260a5ef664718be59b4">&#9670;&nbsp;</a></span>existsIntersection() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classirr_1_1core_1_1plane3d.html">irr::core::plane3d</a>&lt; T &gt;::existsIntersection </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1plane3d.html">plane3d</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Tests if there is an intersection with the other plane. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if there is a intersection. </dd></dl>
-
-</div>
-</div>
-<a id="a62f0838578d34260a5ef664718be59b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62f0838578d34260a5ef664718be59b4">&#9670;&nbsp;</a></span>existsIntersection() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a62f0838578d34260a5ef664718be59b4">&#9670;&nbsp;</a></span>existsIntersection()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -306,38 +202,7 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="ab5e41d5843bf3bb856f543186b8a7df8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5e41d5843bf3bb856f543186b8a7df8">&#9670;&nbsp;</a></span>getDistanceTo() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="classirr_1_1core_1_1plane3d.html">irr::core::plane3d</a>&lt; T &gt;::getDistanceTo </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>point</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the distance to a point. </p>
-<p>Note that this only works if the normal is normalized. </p>
-
-</div>
-</div>
-<a id="ab5e41d5843bf3bb856f543186b8a7df8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5e41d5843bf3bb856f543186b8a7df8">&#9670;&nbsp;</a></span>getDistanceTo() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5e41d5843bf3bb856f543186b8a7df8">&#9670;&nbsp;</a></span>getDistanceTo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -368,62 +233,7 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="a6bec8dcaa0eeb9f7bdd5b727f3d3561d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bec8dcaa0eeb9f7bdd5b727f3d3561d">&#9670;&nbsp;</a></span>getIntersectionWithLimitedLine() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classirr_1_1core_1_1plane3d.html">irr::core::plane3d</a>&lt; T &gt;::getIntersectionWithLimitedLine </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>linePoint1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>linePoint2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>outIntersection</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get an intersection with a 3d line, limited between two 3d points. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">linePoint1</td><td>Point 1 of the line. </td></tr>
-    <tr><td class="paramname">linePoint2</td><td>Point 2 of the line. </td></tr>
-    <tr><td class="paramname">outIntersection</td><td>Place to store the intersection point, if there is one. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if there was an intersection, false if there was not. </dd></dl>
-
-</div>
-</div>
-<a id="a6bec8dcaa0eeb9f7bdd5b727f3d3561d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bec8dcaa0eeb9f7bdd5b727f3d3561d">&#9670;&nbsp;</a></span>getIntersectionWithLimitedLine() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bec8dcaa0eeb9f7bdd5b727f3d3561d">&#9670;&nbsp;</a></span>getIntersectionWithLimitedLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -478,62 +288,7 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="ae3fb02f09788ead8b36523891fbd1288"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3fb02f09788ead8b36523891fbd1288">&#9670;&nbsp;</a></span>getIntersectionWithLine() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classirr_1_1core_1_1plane3d.html">irr::core::plane3d</a>&lt; T &gt;::getIntersectionWithLine </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>linePoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>lineVect</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>outIntersection</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get an intersection with a 3d line. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lineVect</td><td>Vector of the line to intersect with. </td></tr>
-    <tr><td class="paramname">linePoint</td><td>Point of the line to intersect with. </td></tr>
-    <tr><td class="paramname">outIntersection</td><td>Place to store the intersection point, if there is one. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if there was an intersection, false if there was not. </dd></dl>
-
-</div>
-</div>
-<a id="ae3fb02f09788ead8b36523891fbd1288"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3fb02f09788ead8b36523891fbd1288">&#9670;&nbsp;</a></span>getIntersectionWithLine() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3fb02f09788ead8b36523891fbd1288">&#9670;&nbsp;</a></span>getIntersectionWithLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -588,62 +343,7 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="aa50063460dbcda6bc2b61ec4e9a15f0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa50063460dbcda6bc2b61ec4e9a15f0c">&#9670;&nbsp;</a></span>getIntersectionWithPlane() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classirr_1_1core_1_1plane3d.html">irr::core::plane3d</a>&lt; T &gt;::getIntersectionWithPlane </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1plane3d.html">plane3d</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>outLinePoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>outLineVect</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Intersects this plane with another. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">other</td><td>Other plane to intersect with. </td></tr>
-    <tr><td class="paramname">outLinePoint</td><td>Base point of intersection line. </td></tr>
-    <tr><td class="paramname">outLineVect</td><td>Vector of intersection. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if there is a intersection, false if not. </dd></dl>
-
-</div>
-</div>
-<a id="aa50063460dbcda6bc2b61ec4e9a15f0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa50063460dbcda6bc2b61ec4e9a15f0c">&#9670;&nbsp;</a></span>getIntersectionWithPlane() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa50063460dbcda6bc2b61ec4e9a15f0c">&#9670;&nbsp;</a></span>getIntersectionWithPlane()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -698,55 +398,7 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="a5fcd4852c2634172862324340558c634"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fcd4852c2634172862324340558c634">&#9670;&nbsp;</a></span>getKnownIntersectionWithLine() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> <a class="el" href="classirr_1_1core_1_1plane3d.html">irr::core::plane3d</a>&lt; T &gt;::getKnownIntersectionWithLine </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>linePoint1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>linePoint2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get percentage of line between two points where an intersection with this plane happens. </p>
-<p>Only useful if known that there is an intersection. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">linePoint1</td><td>Point1 of the line to intersect with. </td></tr>
-    <tr><td class="paramname">linePoint2</td><td>Point2 of the line to intersect with. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Where on a line between two points an intersection with this plane happened. For example, 0.5 is returned if the intersection happened exactly in the middle of the two points. </dd></dl>
-
-</div>
-</div>
-<a id="a5fcd4852c2634172862324340558c634"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fcd4852c2634172862324340558c634">&#9670;&nbsp;</a></span>getKnownIntersectionWithLine() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fcd4852c2634172862324340558c634">&#9670;&nbsp;</a></span>getKnownIntersectionWithLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -794,44 +446,7 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="aca0237b25cbf4fe13d87b14a04d68df9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca0237b25cbf4fe13d87b14a04d68df9">&#9670;&nbsp;</a></span>isFrontFacing() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classirr_1_1core_1_1plane3d.html">irr::core::plane3d</a>&lt; T &gt;::isFrontFacing </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>lookDirection</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Test if the triangle would be front or backfacing from any point. </p>
-<p>Thus, this method assumes a camera position from which the triangle is definitely visible when looking into the given direction. Note that this only works if the normal is Normalized. Do not use this method with points as it will give wrong results! </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lookDirection</td><td>Look direction. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the plane is front facing and false if it is backfacing. </dd></dl>
-
-</div>
-</div>
-<a id="aca0237b25cbf4fe13d87b14a04d68df9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca0237b25cbf4fe13d87b14a04d68df9">&#9670;&nbsp;</a></span>isFrontFacing() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aca0237b25cbf4fe13d87b14a04d68df9">&#9670;&nbsp;</a></span>isFrontFacing()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -868,7 +483,7 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>indie_share/controller/include/<a class="el" href="indie__share_2controller_2include_2plane3d_8h_source.html">plane3d.h</a></li>
+<li>indie_share/controller/include/<a class="el" href="plane3d_8h_source.html">plane3d.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -74,13 +74,10 @@ $(function() {
 <p>4x4 matrix. Mostly used as transformation matrix for 3d calculations.  
  <a href="classirr_1_1core_1_1CMatrix4.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="indie__share_2controller_2include_2matrix4_8h_source.html">matrix4.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="matrix4_8h_source.html">matrix4.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a7bb79712227617f706ed57a34f3eb4fe"><td class="memItemLeft" align="right" valign="top"><a id="a7bb79712227617f706ed57a34f3eb4fe"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a7bb79712227617f706ed57a34f3eb4fe">eConstructor</a> <tr class="memdesc:a7bb79712227617f706ed57a34f3eb4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor Flags. <br /></td></tr>
-</td></tr>
-<tr class="separator:a7bb79712227617f706ed57a34f3eb4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bb79712227617f706ed57a34f3eb4fe"><td class="memItemLeft" align="right" valign="top"><a id="a7bb79712227617f706ed57a34f3eb4fe"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a7bb79712227617f706ed57a34f3eb4fe">eConstructor</a> <tr class="memdesc:a7bb79712227617f706ed57a34f3eb4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor Flags. <br /></td></tr>
 </td></tr>
 <tr class="separator:a7bb79712227617f706ed57a34f3eb4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,35 +222,35 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a27801e0cb2d3ce458f66ff7cfbe13544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Scale.  <a href="#a27801e0cb2d3ce458f66ff7cfbe13544">More...</a><br /></td></tr>
 <tr class="separator:a27801e0cb2d3ce458f66ff7cfbe13544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7850ba9e85bff2b7d8e3bce517e0aba0"><td class="memItemLeft" align="right" valign="top"><a id="a7850ba9e85bff2b7d8e3bce517e0aba0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a7850ba9e85bff2b7d8e3bce517e0aba0">inverseTranslateVect</a> (<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;vect) const</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a7850ba9e85bff2b7d8e3bce517e0aba0">inverseTranslateVect</a> (<a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">vector3df</a> &amp;vect) const</td></tr>
 <tr class="memdesc:a7850ba9e85bff2b7d8e3bce517e0aba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate a vector by the inverse of the translation part of this matrix. <br /></td></tr>
 <tr class="separator:a7850ba9e85bff2b7d8e3bce517e0aba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed5bc8bb8e9b58549034e2f48189d35e"><td class="memItemLeft" align="right" valign="top"><a id="aed5bc8bb8e9b58549034e2f48189d35e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#aed5bc8bb8e9b58549034e2f48189d35e">inverseRotateVect</a> (<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;vect) const</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#aed5bc8bb8e9b58549034e2f48189d35e">inverseRotateVect</a> (<a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">vector3df</a> &amp;vect) const</td></tr>
 <tr class="memdesc:aed5bc8bb8e9b58549034e2f48189d35e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate a vector by the inverse of the rotation part of this matrix. <br /></td></tr>
 <tr class="separator:aed5bc8bb8e9b58549034e2f48189d35e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45e023efd5e6d0e328c63705bfb5bd06"><td class="memItemLeft" align="right" valign="top"><a id="a45e023efd5e6d0e328c63705bfb5bd06"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a45e023efd5e6d0e328c63705bfb5bd06">rotateVect</a> (<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;vect) const</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a45e023efd5e6d0e328c63705bfb5bd06">rotateVect</a> (<a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">vector3df</a> &amp;vect) const</td></tr>
 <tr class="memdesc:a45e023efd5e6d0e328c63705bfb5bd06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate a vector by the rotation part of this matrix. <br /></td></tr>
 <tr class="separator:a45e023efd5e6d0e328c63705bfb5bd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa421db751017ae447e20ac946bb4ad92"><td class="memItemLeft" align="right" valign="top"><a id="aa421db751017ae447e20ac946bb4ad92"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#aa421db751017ae447e20ac946bb4ad92">rotateVect</a> (<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;out, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;in) const</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#aa421db751017ae447e20ac946bb4ad92">rotateVect</a> (<a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;out, const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;in) const</td></tr>
 <tr class="memdesc:aa421db751017ae447e20ac946bb4ad92"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alternate transform vector method, writing into a second vector. <br /></td></tr>
 <tr class="separator:aa421db751017ae447e20ac946bb4ad92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceb5e3d8e3b1816b6df5e83717425b7f"><td class="memItemLeft" align="right" valign="top"><a id="aceb5e3d8e3b1816b6df5e83717425b7f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#aceb5e3d8e3b1816b6df5e83717425b7f">rotateVect</a> (T *out, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;in) const</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#aceb5e3d8e3b1816b6df5e83717425b7f">rotateVect</a> (T *out, const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;in) const</td></tr>
 <tr class="memdesc:aceb5e3d8e3b1816b6df5e83717425b7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alternate transform vector method, writing into an array of 3 floats. <br /></td></tr>
 <tr class="separator:aceb5e3d8e3b1816b6df5e83717425b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f100721bb28df8b71b21ec10b9c2db6"><td class="memItemLeft" align="right" valign="top"><a id="a4f100721bb28df8b71b21ec10b9c2db6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a4f100721bb28df8b71b21ec10b9c2db6">transformVect</a> (<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;vect) const</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a4f100721bb28df8b71b21ec10b9c2db6">transformVect</a> (<a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">vector3df</a> &amp;vect) const</td></tr>
 <tr class="memdesc:a4f100721bb28df8b71b21ec10b9c2db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the vector by this matrix. <br /></td></tr>
 <tr class="separator:a4f100721bb28df8b71b21ec10b9c2db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d530a7c16fa9f6c025c1508e0058451"><td class="memItemLeft" align="right" valign="top"><a id="a4d530a7c16fa9f6c025c1508e0058451"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a4d530a7c16fa9f6c025c1508e0058451">transformVect</a> (<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;out, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;in) const</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a4d530a7c16fa9f6c025c1508e0058451">transformVect</a> (<a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">vector3df</a> &amp;out, const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">vector3df</a> &amp;in) const</td></tr>
 <tr class="memdesc:a4d530a7c16fa9f6c025c1508e0058451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms input vector by this matrix and stores result in output vector. <br /></td></tr>
 <tr class="separator:a4d530a7c16fa9f6c025c1508e0058451"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f23d4c668869f28c89d400518352879"><td class="memItemLeft" align="right" valign="top"><a id="a1f23d4c668869f28c89d400518352879"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a1f23d4c668869f28c89d400518352879">transformVect</a> (T *out, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;in) const</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a1f23d4c668869f28c89d400518352879">transformVect</a> (T *out, const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;in) const</td></tr>
 <tr class="memdesc:a1f23d4c668869f28c89d400518352879"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alternate transform vector method, writing into an array of 4 floats. <br /></td></tr>
 <tr class="separator:a1f23d4c668869f28c89d400518352879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7a9dd4ba9f04fd5396dd116e8f5a1c0"><td class="memItemLeft" align="right" valign="top"><a id="ab7a9dd4ba9f04fd5396dd116e8f5a1c0"></a>
@@ -261,7 +258,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:ab7a9dd4ba9f04fd5396dd116e8f5a1c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alternate transform vector method, reading from and writing to an array of 3 floats. <br /></td></tr>
 <tr class="separator:ab7a9dd4ba9f04fd5396dd116e8f5a1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1b339a76eb0d2ce58dd69be896ed38a"><td class="memItemLeft" align="right" valign="top"><a id="ac1b339a76eb0d2ce58dd69be896ed38a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#ac1b339a76eb0d2ce58dd69be896ed38a">translateVect</a> (<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;vect) const</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#ac1b339a76eb0d2ce58dd69be896ed38a">translateVect</a> (<a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">vector3df</a> &amp;vect) const</td></tr>
 <tr class="memdesc:ac1b339a76eb0d2ce58dd69be896ed38a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate a vector by the translation part of this matrix. <br /></td></tr>
 <tr class="separator:ac1b339a76eb0d2ce58dd69be896ed38a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8324285dd538763f8e9cfa50cc04b62"><td class="memItemLeft" align="right" valign="top"><a id="aa8324285dd538763f8e9cfa50cc04b62"></a>
@@ -320,14 +317,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:ae7a837a3b2d86bfc830d25c6144b7a46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a right-handed orthogonal projection matrix. <br /></td></tr>
 <tr class="separator:ae7a837a3b2d86bfc830d25c6144b7a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78e15297c806006898df58498755ecd4"><td class="memItemLeft" align="right" valign="top"><a id="a78e15297c806006898df58498755ecd4"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a78e15297c806006898df58498755ecd4">buildCameraLookAtMatrixLH</a> (const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;position, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;target, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;upVector)</td></tr>
+<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a78e15297c806006898df58498755ecd4">buildCameraLookAtMatrixLH</a> (const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">vector3df</a> &amp;position, const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">vector3df</a> &amp;target, const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">vector3df</a> &amp;upVector)</td></tr>
 <tr class="memdesc:a78e15297c806006898df58498755ecd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a left-handed look-at matrix. <br /></td></tr>
 <tr class="separator:a78e15297c806006898df58498755ecd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62ebd6002a5018c1096ac368f6be271a"><td class="memItemLeft" align="right" valign="top"><a id="a62ebd6002a5018c1096ac368f6be271a"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a62ebd6002a5018c1096ac368f6be271a">buildCameraLookAtMatrixRH</a> (const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;position, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;target, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;upVector)</td></tr>
+<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a62ebd6002a5018c1096ac368f6be271a">buildCameraLookAtMatrixRH</a> (const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">vector3df</a> &amp;position, const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">vector3df</a> &amp;target, const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">vector3df</a> &amp;upVector)</td></tr>
 <tr class="memdesc:a62ebd6002a5018c1096ac368f6be271a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a right-handed look-at matrix. <br /></td></tr>
 <tr class="separator:a62ebd6002a5018c1096ac368f6be271a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a583d0ece1d80f69101660e1cbe441768"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a583d0ece1d80f69101660e1cbe441768">buildShadowMatrix</a> (const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;light, <a class="el" href="namespaceirr_1_1core.html#a97c9b39d4c6f71dbd9ded0153c4fa7f7">core::plane3df</a> plane, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> point=1.0f)</td></tr>
+<tr class="memitem:a583d0ece1d80f69101660e1cbe441768"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a583d0ece1d80f69101660e1cbe441768">buildShadowMatrix</a> (const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;light, <a class="el" href="namespaceirr_1_1core.html#ae7491b7985dcb74b840bfcd9c054b232">core::plane3df</a> plane, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> point=1.0f)</td></tr>
 <tr class="memdesc:a583d0ece1d80f69101660e1cbe441768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a matrix that flattens geometry into a plane.  <a href="#a583d0ece1d80f69101660e1cbe441768">More...</a><br /></td></tr>
 <tr class="separator:a583d0ece1d80f69101660e1cbe441768"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88a7d2f56d4ce637823379de308f673a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a88a7d2f56d4ce637823379de308f673a">buildNDCToDCMatrix</a> (const <a class="el" href="classirr_1_1core_1_1rect.html">core::rect</a>&lt; <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> &gt; &amp;area, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> zScale)</td></tr>
@@ -344,16 +341,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a23d169204ac8257f11f7c2934f12c1eb">getTransposed</a> (<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;dest) const</td></tr>
 <tr class="memdesc:a23d169204ac8257f11f7c2934f12c1eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets transposed matrix. <br /></td></tr>
 <tr class="separator:a23d169204ac8257f11f7c2934f12c1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4802c6a89ad813e2919f68f512fb320f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a4802c6a89ad813e2919f68f512fb320f">buildRotateFromTo</a> (const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;from, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;to)</td></tr>
+<tr class="memitem:a4802c6a89ad813e2919f68f512fb320f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a4802c6a89ad813e2919f68f512fb320f">buildRotateFromTo</a> (const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;from, const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;to)</td></tr>
 <tr class="memdesc:a4802c6a89ad813e2919f68f512fb320f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a matrix that rotates from one vector to another.  <a href="#a4802c6a89ad813e2919f68f512fb320f">More...</a><br /></td></tr>
 <tr class="separator:a4802c6a89ad813e2919f68f512fb320f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8117628146ce654b3b292af7c49e25e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a8117628146ce654b3b292af7c49e25e2">setRotationCenter</a> (const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;center, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;translate)</td></tr>
+<tr class="memitem:a8117628146ce654b3b292af7c49e25e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a8117628146ce654b3b292af7c49e25e2">setRotationCenter</a> (const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;center, const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;translate)</td></tr>
 <tr class="memdesc:a8117628146ce654b3b292af7c49e25e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a combined matrix which translates to a center before rotation and translates from origin afterwards.  <a href="#a8117628146ce654b3b292af7c49e25e2">More...</a><br /></td></tr>
 <tr class="separator:a8117628146ce654b3b292af7c49e25e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2dc80f2aed15900839389cf52f9e798"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#ad2dc80f2aed15900839389cf52f9e798">buildAxisAlignedBillboard</a> (const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;camPos, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;center, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;translation, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;axis, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;from)</td></tr>
+<tr class="memitem:ad2dc80f2aed15900839389cf52f9e798"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#ad2dc80f2aed15900839389cf52f9e798">buildAxisAlignedBillboard</a> (const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;camPos, const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;center, const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;translation, const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;axis, const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;from)</td></tr>
 <tr class="memdesc:ad2dc80f2aed15900839389cf52f9e798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a matrix which rotates a source vector to a look vector over an arbitrary axis.  <a href="#ad2dc80f2aed15900839389cf52f9e798">More...</a><br /></td></tr>
 <tr class="separator:ad2dc80f2aed15900839389cf52f9e798"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc72faaf2c883d9c0fdc1e0940d1acde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#afc72faaf2c883d9c0fdc1e0940d1acde">buildTextureTransform</a> (<a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> rotateRad, const <a class="el" href="namespaceirr_1_1core.html#a116f90bd31515724b6235014ee2b74d5">core::vector2df</a> &amp;rotatecenter, const <a class="el" href="namespaceirr_1_1core.html#a116f90bd31515724b6235014ee2b74d5">core::vector2df</a> &amp;translate, const <a class="el" href="namespaceirr_1_1core.html#a116f90bd31515724b6235014ee2b74d5">core::vector2df</a> &amp;scale)</td></tr>
+<tr class="memitem:afc72faaf2c883d9c0fdc1e0940d1acde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#afc72faaf2c883d9c0fdc1e0940d1acde">buildTextureTransform</a> (<a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> rotateRad, const <a class="el" href="namespaceirr_1_1core.html#a2cf08556d77f6f5a792973a6e27ed11b">core::vector2df</a> &amp;rotatecenter, const <a class="el" href="namespaceirr_1_1core.html#a2cf08556d77f6f5a792973a6e27ed11b">core::vector2df</a> &amp;translate, const <a class="el" href="namespaceirr_1_1core.html#a2cf08556d77f6f5a792973a6e27ed11b">core::vector2df</a> &amp;scale)</td></tr>
 <tr class="memdesc:afc72faaf2c883d9c0fdc1e0940d1acde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to a texture transformation matrix with the given parameters.  <a href="#afc72faaf2c883d9c0fdc1e0940d1acde">More...</a><br /></td></tr>
 <tr class="separator:afc72faaf2c883d9c0fdc1e0940d1acde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a445a7653292ae4ffb0baa50032a8674e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a445a7653292ae4ffb0baa50032a8674e">setTextureRotationCenter</a> (<a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> radAngle)</td></tr>
@@ -387,308 +384,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#abd3c6b6c69db075a70f65d3030113d3f">equals</a> (const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">core::CMatrix4</a>&lt; T &gt; &amp;other, const T tolerance=(T) ROUNDING_ERROR_f64) const</td></tr>
 <tr class="memdesc:abd3c6b6c69db075a70f65d3030113d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two matrices using the equal method. <br /></td></tr>
 <tr class="separator:abd3c6b6c69db075a70f65d3030113d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af771bfde63cdaa3baa4d9f6121e56411"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#af771bfde63cdaa3baa4d9f6121e56411">CMatrix4</a> (<a class="el" href="classirr_1_1core_1_1CMatrix4.html#a7bb79712227617f706ed57a34f3eb4fe">eConstructor</a> constructor=EM4CONST_IDENTITY)</td></tr>
-<tr class="memdesc:af771bfde63cdaa3baa4d9f6121e56411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#af771bfde63cdaa3baa4d9f6121e56411">More...</a><br /></td></tr>
-<tr class="separator:af771bfde63cdaa3baa4d9f6121e56411"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdb7afc2248d97a7e882cd1bdeed07b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#acdb7afc2248d97a7e882cd1bdeed07b7">CMatrix4</a> (const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;other, <a class="el" href="classirr_1_1core_1_1CMatrix4.html#a7bb79712227617f706ed57a34f3eb4fe">eConstructor</a> constructor=EM4CONST_COPY)</td></tr>
-<tr class="memdesc:acdb7afc2248d97a7e882cd1bdeed07b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#acdb7afc2248d97a7e882cd1bdeed07b7">More...</a><br /></td></tr>
-<tr class="separator:acdb7afc2248d97a7e882cd1bdeed07b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaede6824ed3ee05b928815d52e1834d1"><td class="memItemLeft" align="right" valign="top"><a id="aaede6824ed3ee05b928815d52e1834d1"></a>
-T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#aaede6824ed3ee05b928815d52e1834d1">operator()</a> (const <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> row, const <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> col)</td></tr>
-<tr class="memdesc:aaede6824ed3ee05b928815d52e1834d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple operator for directly accessing every element of the matrix. <br /></td></tr>
-<tr class="separator:aaede6824ed3ee05b928815d52e1834d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae46b8b6b47897f4bc8eee2d1c226cab8"><td class="memItemLeft" align="right" valign="top"><a id="ae46b8b6b47897f4bc8eee2d1c226cab8"></a>
-const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#ae46b8b6b47897f4bc8eee2d1c226cab8">operator()</a> (const <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> row, const <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> col) const</td></tr>
-<tr class="memdesc:ae46b8b6b47897f4bc8eee2d1c226cab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple operator for directly accessing every element of the matrix. <br /></td></tr>
-<tr class="separator:ae46b8b6b47897f4bc8eee2d1c226cab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aead4909f8bb2ab40875af175caf0085f"><td class="memItemLeft" align="right" valign="top"><a id="aead4909f8bb2ab40875af175caf0085f"></a>
-T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#aead4909f8bb2ab40875af175caf0085f">operator[]</a> (<a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> index)</td></tr>
-<tr class="memdesc:aead4909f8bb2ab40875af175caf0085f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple operator for linearly accessing every element of the matrix. <br /></td></tr>
-<tr class="separator:aead4909f8bb2ab40875af175caf0085f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e34c4b4872d7f8fe587eff776585270"><td class="memItemLeft" align="right" valign="top"><a id="a9e34c4b4872d7f8fe587eff776585270"></a>
-const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a9e34c4b4872d7f8fe587eff776585270">operator[]</a> (<a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> index) const</td></tr>
-<tr class="memdesc:a9e34c4b4872d7f8fe587eff776585270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple operator for linearly accessing every element of the matrix. <br /></td></tr>
-<tr class="separator:a9e34c4b4872d7f8fe587eff776585270"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e922139dd245292b7745458408509eb"><td class="memItemLeft" align="right" valign="top"><a id="a5e922139dd245292b7745458408509eb"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a5e922139dd245292b7745458408509eb">operator=</a> (const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;other)</td></tr>
-<tr class="memdesc:a5e922139dd245292b7745458408509eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets this matrix equal to the other matrix. <br /></td></tr>
-<tr class="separator:a5e922139dd245292b7745458408509eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4fe1607d3ba1e9ebcf8028e9171bad6"><td class="memItemLeft" align="right" valign="top"><a id="af4fe1607d3ba1e9ebcf8028e9171bad6"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#af4fe1607d3ba1e9ebcf8028e9171bad6">operator=</a> (const T &amp;scalar)</td></tr>
-<tr class="memdesc:af4fe1607d3ba1e9ebcf8028e9171bad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all elements of this matrix to the value. <br /></td></tr>
-<tr class="separator:af4fe1607d3ba1e9ebcf8028e9171bad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d258434b1baa3a52f1ae35903ca97f9"><td class="memItemLeft" align="right" valign="top"><a id="a4d258434b1baa3a52f1ae35903ca97f9"></a>
-const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a4d258434b1baa3a52f1ae35903ca97f9">pointer</a> () const</td></tr>
-<tr class="memdesc:a4d258434b1baa3a52f1ae35903ca97f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pointer to internal array. <br /></td></tr>
-<tr class="separator:a4d258434b1baa3a52f1ae35903ca97f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcff3ee7f4d4e1c9ff23193ca0827d16"><td class="memItemLeft" align="right" valign="top"><a id="abcff3ee7f4d4e1c9ff23193ca0827d16"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#abcff3ee7f4d4e1c9ff23193ca0827d16">operator==</a> (const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;other) const</td></tr>
-<tr class="memdesc:abcff3ee7f4d4e1c9ff23193ca0827d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if other matrix is equal to this matrix. <br /></td></tr>
-<tr class="separator:abcff3ee7f4d4e1c9ff23193ca0827d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58b6bf4873a479ad15e809706e02e2cf"><td class="memItemLeft" align="right" valign="top"><a id="a58b6bf4873a479ad15e809706e02e2cf"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a58b6bf4873a479ad15e809706e02e2cf">operator!=</a> (const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;other) const</td></tr>
-<tr class="memdesc:a58b6bf4873a479ad15e809706e02e2cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if other matrix is not equal to this matrix. <br /></td></tr>
-<tr class="separator:a58b6bf4873a479ad15e809706e02e2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c18e8d97db361917c2dea5ed59b1ea5"><td class="memItemLeft" align="right" valign="top"><a id="a9c18e8d97db361917c2dea5ed59b1ea5"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a9c18e8d97db361917c2dea5ed59b1ea5">operator+</a> (const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;other) const</td></tr>
-<tr class="memdesc:a9c18e8d97db361917c2dea5ed59b1ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add another matrix. <br /></td></tr>
-<tr class="separator:a9c18e8d97db361917c2dea5ed59b1ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00b1ed3d9af10bc35462231de0eff788"><td class="memItemLeft" align="right" valign="top"><a id="a00b1ed3d9af10bc35462231de0eff788"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a00b1ed3d9af10bc35462231de0eff788">operator+=</a> (const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;other)</td></tr>
-<tr class="memdesc:a00b1ed3d9af10bc35462231de0eff788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add another matrix. <br /></td></tr>
-<tr class="separator:a00b1ed3d9af10bc35462231de0eff788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada647d4659b652790436c6345ec11f3d"><td class="memItemLeft" align="right" valign="top"><a id="ada647d4659b652790436c6345ec11f3d"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#ada647d4659b652790436c6345ec11f3d">operator-</a> (const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;other) const</td></tr>
-<tr class="memdesc:ada647d4659b652790436c6345ec11f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtract another matrix. <br /></td></tr>
-<tr class="separator:ada647d4659b652790436c6345ec11f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d3031fc1609cbd2c6ad0ee209ea9e71"><td class="memItemLeft" align="right" valign="top"><a id="a6d3031fc1609cbd2c6ad0ee209ea9e71"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a6d3031fc1609cbd2c6ad0ee209ea9e71">operator-=</a> (const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;other)</td></tr>
-<tr class="memdesc:a6d3031fc1609cbd2c6ad0ee209ea9e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtract another matrix. <br /></td></tr>
-<tr class="separator:a6d3031fc1609cbd2c6ad0ee209ea9e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d2978907b0c746092e4c9891cf72893"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a8d2978907b0c746092e4c9891cf72893">setbyproduct</a> (const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;other_a, const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;other_b)</td></tr>
-<tr class="memdesc:a8d2978907b0c746092e4c9891cf72893"><td class="mdescLeft">&#160;</td><td class="mdescRight">set this matrix to the product of two matrices  <a href="#a8d2978907b0c746092e4c9891cf72893">More...</a><br /></td></tr>
-<tr class="separator:a8d2978907b0c746092e4c9891cf72893"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65b8c0c066e1105b89fbbdb753ffabd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a65b8c0c066e1105b89fbbdb753ffabd8">setbyproduct_nocheck</a> (const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;other_a, const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;other_b)</td></tr>
-<tr class="memdesc:a65b8c0c066e1105b89fbbdb753ffabd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set this matrix to the product of two matrices.  <a href="#a65b8c0c066e1105b89fbbdb753ffabd8">More...</a><br /></td></tr>
-<tr class="separator:a65b8c0c066e1105b89fbbdb753ffabd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a749eaef2610aa636e50c28aaad8fe075"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a749eaef2610aa636e50c28aaad8fe075">operator*</a> (const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;other) const</td></tr>
-<tr class="memdesc:a749eaef2610aa636e50c28aaad8fe075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply by another matrix.  <a href="#a749eaef2610aa636e50c28aaad8fe075">More...</a><br /></td></tr>
-<tr class="separator:a749eaef2610aa636e50c28aaad8fe075"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a223e7cefd4428f57affb0713bd849e46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a223e7cefd4428f57affb0713bd849e46">operator*=</a> (const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;other)</td></tr>
-<tr class="memdesc:a223e7cefd4428f57affb0713bd849e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply by another matrix.  <a href="#a223e7cefd4428f57affb0713bd849e46">More...</a><br /></td></tr>
-<tr class="separator:a223e7cefd4428f57affb0713bd849e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed5dc4e442689760c65a7e8a7a84a3a6"><td class="memItemLeft" align="right" valign="top"><a id="aed5dc4e442689760c65a7e8a7a84a3a6"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#aed5dc4e442689760c65a7e8a7a84a3a6">operator*</a> (const T &amp;scalar) const</td></tr>
-<tr class="memdesc:aed5dc4e442689760c65a7e8a7a84a3a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply by scalar. <br /></td></tr>
-<tr class="separator:aed5dc4e442689760c65a7e8a7a84a3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cefd30e6839406f9887f69cd49b6dc7"><td class="memItemLeft" align="right" valign="top"><a id="a3cefd30e6839406f9887f69cd49b6dc7"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a3cefd30e6839406f9887f69cd49b6dc7">operator*=</a> (const T &amp;scalar)</td></tr>
-<tr class="memdesc:a3cefd30e6839406f9887f69cd49b6dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply by scalar. <br /></td></tr>
-<tr class="separator:a3cefd30e6839406f9887f69cd49b6dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46812f251d4c7ba8673e8b59832bcbe1"><td class="memItemLeft" align="right" valign="top"><a id="a46812f251d4c7ba8673e8b59832bcbe1"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a46812f251d4c7ba8673e8b59832bcbe1">makeIdentity</a> ()</td></tr>
-<tr class="memdesc:a46812f251d4c7ba8673e8b59832bcbe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set matrix to identity. <br /></td></tr>
-<tr class="separator:a46812f251d4c7ba8673e8b59832bcbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01fb063cdc136aaa827c883a3ab6cac4"><td class="memItemLeft" align="right" valign="top"><a id="a01fb063cdc136aaa827c883a3ab6cac4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a01fb063cdc136aaa827c883a3ab6cac4">isIdentity</a> () const</td></tr>
-<tr class="memdesc:a01fb063cdc136aaa827c883a3ab6cac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the matrix is the identity matrix. <br /></td></tr>
-<tr class="separator:a01fb063cdc136aaa827c883a3ab6cac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7166c462168855cb8c6aeb2fb76fa3cb"><td class="memItemLeft" align="right" valign="top"><a id="a7166c462168855cb8c6aeb2fb76fa3cb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a7166c462168855cb8c6aeb2fb76fa3cb">isOrthogonal</a> () const</td></tr>
-<tr class="memdesc:a7166c462168855cb8c6aeb2fb76fa3cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the matrix is orthogonal. <br /></td></tr>
-<tr class="separator:a7166c462168855cb8c6aeb2fb76fa3cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4fc4d401a2b40074b62882873c71e62"><td class="memItemLeft" align="right" valign="top"><a id="ad4fc4d401a2b40074b62882873c71e62"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#ad4fc4d401a2b40074b62882873c71e62">isIdentity_integer_base</a> () const</td></tr>
-<tr class="memdesc:ad4fc4d401a2b40074b62882873c71e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the matrix is the identity matrix. <br /></td></tr>
-<tr class="separator:ad4fc4d401a2b40074b62882873c71e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac91944a42f1698c7d5c99a16b2e4a36b"><td class="memItemLeft" align="right" valign="top"><a id="ac91944a42f1698c7d5c99a16b2e4a36b"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#ac91944a42f1698c7d5c99a16b2e4a36b">setTranslation</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;translation)</td></tr>
-<tr class="memdesc:ac91944a42f1698c7d5c99a16b2e4a36b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the translation of the current matrix. Will erase any previous values. <br /></td></tr>
-<tr class="separator:ac91944a42f1698c7d5c99a16b2e4a36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa28e4d85af3414c5521cae48d99de887"><td class="memItemLeft" align="right" valign="top"><a id="aa28e4d85af3414c5521cae48d99de887"></a>
-<a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#aa28e4d85af3414c5521cae48d99de887">getTranslation</a> () const</td></tr>
-<tr class="memdesc:aa28e4d85af3414c5521cae48d99de887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current translation. <br /></td></tr>
-<tr class="separator:aa28e4d85af3414c5521cae48d99de887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15e4ccdadd086b0f25260ac445077208"><td class="memItemLeft" align="right" valign="top"><a id="a15e4ccdadd086b0f25260ac445077208"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a15e4ccdadd086b0f25260ac445077208">setInverseTranslation</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;translation)</td></tr>
-<tr class="memdesc:a15e4ccdadd086b0f25260ac445077208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the inverse translation of the current matrix. Will erase any previous values. <br /></td></tr>
-<tr class="separator:a15e4ccdadd086b0f25260ac445077208"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c0114129f1567ea366fa16bd6c2ae11"><td class="memItemLeft" align="right" valign="top"><a id="a8c0114129f1567ea366fa16bd6c2ae11"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a8c0114129f1567ea366fa16bd6c2ae11">setRotationRadians</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;rotation)</td></tr>
-<tr class="memdesc:a8c0114129f1567ea366fa16bd6c2ae11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a rotation matrix from Euler angles. The 4th row and column are unmodified. <br /></td></tr>
-<tr class="separator:a8c0114129f1567ea366fa16bd6c2ae11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87b9b376fbafa163885012fb371e7fbe"><td class="memItemLeft" align="right" valign="top"><a id="a87b9b376fbafa163885012fb371e7fbe"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a87b9b376fbafa163885012fb371e7fbe">setRotationDegrees</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;rotation)</td></tr>
-<tr class="memdesc:a87b9b376fbafa163885012fb371e7fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a rotation matrix from Euler angles. The 4th row and column are unmodified. <br /></td></tr>
-<tr class="separator:a87b9b376fbafa163885012fb371e7fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10abcf70d27d7b274e6277e1e1ee5907"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1vector3d.html">core::vector3d</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a10abcf70d27d7b274e6277e1e1ee5907">getRotationDegrees</a> () const</td></tr>
-<tr class="memdesc:a10abcf70d27d7b274e6277e1e1ee5907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the rotation, as set by setRotation().  <a href="#a10abcf70d27d7b274e6277e1e1ee5907">More...</a><br /></td></tr>
-<tr class="separator:a10abcf70d27d7b274e6277e1e1ee5907"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78fd2ee43a622062169762e093813311"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a78fd2ee43a622062169762e093813311">setInverseRotationRadians</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;rotation)</td></tr>
-<tr class="memdesc:a78fd2ee43a622062169762e093813311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make an inverted rotation matrix from Euler angles.  <a href="#a78fd2ee43a622062169762e093813311">More...</a><br /></td></tr>
-<tr class="separator:a78fd2ee43a622062169762e093813311"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf572f53301bb5d00ceeec9f170aff92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#abf572f53301bb5d00ceeec9f170aff92">setInverseRotationDegrees</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;rotation)</td></tr>
-<tr class="memdesc:abf572f53301bb5d00ceeec9f170aff92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make an inverted rotation matrix from Euler angles.  <a href="#abf572f53301bb5d00ceeec9f170aff92">More...</a><br /></td></tr>
-<tr class="separator:abf572f53301bb5d00ceeec9f170aff92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac00a1c59a2a499ad2f1e97f12d03998a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#ac00a1c59a2a499ad2f1e97f12d03998a">setRotationAxisRadians</a> (const T &amp;angle, const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;axis)</td></tr>
-<tr class="memdesc:ac00a1c59a2a499ad2f1e97f12d03998a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a rotation matrix from angle and axis, assuming left handed rotation.  <a href="#ac00a1c59a2a499ad2f1e97f12d03998a">More...</a><br /></td></tr>
-<tr class="separator:ac00a1c59a2a499ad2f1e97f12d03998a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdb815ec8f28876d1732cd2483027596"><td class="memItemLeft" align="right" valign="top"><a id="acdb815ec8f28876d1732cd2483027596"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#acdb815ec8f28876d1732cd2483027596">setScale</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;scale)</td></tr>
-<tr class="memdesc:acdb815ec8f28876d1732cd2483027596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Scale. <br /></td></tr>
-<tr class="separator:acdb815ec8f28876d1732cd2483027596"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18af980e2bc3575f60576b6d4b4cc0f3"><td class="memItemLeft" align="right" valign="top"><a id="a18af980e2bc3575f60576b6d4b4cc0f3"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a18af980e2bc3575f60576b6d4b4cc0f3">setScale</a> (const T scale)</td></tr>
-<tr class="memdesc:a18af980e2bc3575f60576b6d4b4cc0f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Scale. <br /></td></tr>
-<tr class="separator:a18af980e2bc3575f60576b6d4b4cc0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67d337a8fe0fe31dbd8e277be63582f6"><td class="memItemLeft" align="right" valign="top"><a id="a67d337a8fe0fe31dbd8e277be63582f6"></a>
-<a class="el" href="classirr_1_1core_1_1vector3d.html">core::vector3d</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a67d337a8fe0fe31dbd8e277be63582f6">getScale</a> () const</td></tr>
-<tr class="memdesc:a67d337a8fe0fe31dbd8e277be63582f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Scale. <br /></td></tr>
-<tr class="separator:a67d337a8fe0fe31dbd8e277be63582f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7850ba9e85bff2b7d8e3bce517e0aba0"><td class="memItemLeft" align="right" valign="top"><a id="a7850ba9e85bff2b7d8e3bce517e0aba0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a7850ba9e85bff2b7d8e3bce517e0aba0">inverseTranslateVect</a> (<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;vect) const</td></tr>
-<tr class="memdesc:a7850ba9e85bff2b7d8e3bce517e0aba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate a vector by the inverse of the translation part of this matrix. <br /></td></tr>
-<tr class="separator:a7850ba9e85bff2b7d8e3bce517e0aba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed5bc8bb8e9b58549034e2f48189d35e"><td class="memItemLeft" align="right" valign="top"><a id="aed5bc8bb8e9b58549034e2f48189d35e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#aed5bc8bb8e9b58549034e2f48189d35e">inverseRotateVect</a> (<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;vect) const</td></tr>
-<tr class="memdesc:aed5bc8bb8e9b58549034e2f48189d35e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate a vector by the inverse of the rotation part of this matrix. <br /></td></tr>
-<tr class="separator:aed5bc8bb8e9b58549034e2f48189d35e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45e023efd5e6d0e328c63705bfb5bd06"><td class="memItemLeft" align="right" valign="top"><a id="a45e023efd5e6d0e328c63705bfb5bd06"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a45e023efd5e6d0e328c63705bfb5bd06">rotateVect</a> (<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;vect) const</td></tr>
-<tr class="memdesc:a45e023efd5e6d0e328c63705bfb5bd06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate a vector by the rotation part of this matrix. <br /></td></tr>
-<tr class="separator:a45e023efd5e6d0e328c63705bfb5bd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa421db751017ae447e20ac946bb4ad92"><td class="memItemLeft" align="right" valign="top"><a id="aa421db751017ae447e20ac946bb4ad92"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#aa421db751017ae447e20ac946bb4ad92">rotateVect</a> (<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;out, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;in) const</td></tr>
-<tr class="memdesc:aa421db751017ae447e20ac946bb4ad92"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alternate transform vector method, writing into a second vector. <br /></td></tr>
-<tr class="separator:aa421db751017ae447e20ac946bb4ad92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceb5e3d8e3b1816b6df5e83717425b7f"><td class="memItemLeft" align="right" valign="top"><a id="aceb5e3d8e3b1816b6df5e83717425b7f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#aceb5e3d8e3b1816b6df5e83717425b7f">rotateVect</a> (T *out, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;in) const</td></tr>
-<tr class="memdesc:aceb5e3d8e3b1816b6df5e83717425b7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alternate transform vector method, writing into an array of 3 floats. <br /></td></tr>
-<tr class="separator:aceb5e3d8e3b1816b6df5e83717425b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f100721bb28df8b71b21ec10b9c2db6"><td class="memItemLeft" align="right" valign="top"><a id="a4f100721bb28df8b71b21ec10b9c2db6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a4f100721bb28df8b71b21ec10b9c2db6">transformVect</a> (<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;vect) const</td></tr>
-<tr class="memdesc:a4f100721bb28df8b71b21ec10b9c2db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the vector by this matrix. <br /></td></tr>
-<tr class="separator:a4f100721bb28df8b71b21ec10b9c2db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d530a7c16fa9f6c025c1508e0058451"><td class="memItemLeft" align="right" valign="top"><a id="a4d530a7c16fa9f6c025c1508e0058451"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a4d530a7c16fa9f6c025c1508e0058451">transformVect</a> (<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;out, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;in) const</td></tr>
-<tr class="memdesc:a4d530a7c16fa9f6c025c1508e0058451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms input vector by this matrix and stores result in output vector. <br /></td></tr>
-<tr class="separator:a4d530a7c16fa9f6c025c1508e0058451"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f23d4c668869f28c89d400518352879"><td class="memItemLeft" align="right" valign="top"><a id="a1f23d4c668869f28c89d400518352879"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a1f23d4c668869f28c89d400518352879">transformVect</a> (T *out, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;in) const</td></tr>
-<tr class="memdesc:a1f23d4c668869f28c89d400518352879"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alternate transform vector method, writing into an array of 4 floats. <br /></td></tr>
-<tr class="separator:a1f23d4c668869f28c89d400518352879"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a9dd4ba9f04fd5396dd116e8f5a1c0"><td class="memItemLeft" align="right" valign="top"><a id="ab7a9dd4ba9f04fd5396dd116e8f5a1c0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#ab7a9dd4ba9f04fd5396dd116e8f5a1c0">transformVec3</a> (T *out, const T *in) const</td></tr>
-<tr class="memdesc:ab7a9dd4ba9f04fd5396dd116e8f5a1c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alternate transform vector method, reading from and writing to an array of 3 floats. <br /></td></tr>
-<tr class="separator:ab7a9dd4ba9f04fd5396dd116e8f5a1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1b339a76eb0d2ce58dd69be896ed38a"><td class="memItemLeft" align="right" valign="top"><a id="ac1b339a76eb0d2ce58dd69be896ed38a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#ac1b339a76eb0d2ce58dd69be896ed38a">translateVect</a> (<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;vect) const</td></tr>
-<tr class="memdesc:ac1b339a76eb0d2ce58dd69be896ed38a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate a vector by the translation part of this matrix. <br /></td></tr>
-<tr class="separator:ac1b339a76eb0d2ce58dd69be896ed38a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8324285dd538763f8e9cfa50cc04b62"><td class="memItemLeft" align="right" valign="top"><a id="aa8324285dd538763f8e9cfa50cc04b62"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#aa8324285dd538763f8e9cfa50cc04b62">transformPlane</a> (<a class="el" href="classirr_1_1core_1_1plane3d.html">core::plane3d</a>&lt; <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> &gt; &amp;plane) const</td></tr>
-<tr class="memdesc:aa8324285dd538763f8e9cfa50cc04b62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms a plane by this matrix. <br /></td></tr>
-<tr class="separator:aa8324285dd538763f8e9cfa50cc04b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abba8dc0c37c86a50788066bba8dfb180"><td class="memItemLeft" align="right" valign="top"><a id="abba8dc0c37c86a50788066bba8dfb180"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#abba8dc0c37c86a50788066bba8dfb180">transformPlane</a> (const <a class="el" href="classirr_1_1core_1_1plane3d.html">core::plane3d</a>&lt; <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> &gt; &amp;in, <a class="el" href="classirr_1_1core_1_1plane3d.html">core::plane3d</a>&lt; <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> &gt; &amp;out) const</td></tr>
-<tr class="memdesc:abba8dc0c37c86a50788066bba8dfb180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms a plane by this matrix. <br /></td></tr>
-<tr class="separator:abba8dc0c37c86a50788066bba8dfb180"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d44428ac5dde99e21f0eb4c50195692"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a4d44428ac5dde99e21f0eb4c50195692">transformBox</a> (<a class="el" href="classirr_1_1core_1_1aabbox3d.html">core::aabbox3d</a>&lt; <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> &gt; &amp;box) const</td></tr>
-<tr class="memdesc:a4d44428ac5dde99e21f0eb4c50195692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms a axis aligned bounding box.  <a href="#a4d44428ac5dde99e21f0eb4c50195692">More...</a><br /></td></tr>
-<tr class="separator:a4d44428ac5dde99e21f0eb4c50195692"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fcdfa14ef16240470e2b46d19a5cb43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a2fcdfa14ef16240470e2b46d19a5cb43">transformBoxEx</a> (<a class="el" href="classirr_1_1core_1_1aabbox3d.html">core::aabbox3d</a>&lt; <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> &gt; &amp;box) const</td></tr>
-<tr class="memdesc:a2fcdfa14ef16240470e2b46d19a5cb43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms a axis aligned bounding box.  <a href="#a2fcdfa14ef16240470e2b46d19a5cb43">More...</a><br /></td></tr>
-<tr class="separator:a2fcdfa14ef16240470e2b46d19a5cb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21e0a68953d63bd1fca70a671a9e93b8"><td class="memItemLeft" align="right" valign="top"><a id="a21e0a68953d63bd1fca70a671a9e93b8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a21e0a68953d63bd1fca70a671a9e93b8">multiplyWith1x4Matrix</a> (T *matrix) const</td></tr>
-<tr class="memdesc:a21e0a68953d63bd1fca70a671a9e93b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies this matrix by a 1x4 matrix. <br /></td></tr>
-<tr class="separator:a21e0a68953d63bd1fca70a671a9e93b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fbface2cb6b959af64f82a5bb17540e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a3fbface2cb6b959af64f82a5bb17540e">makeInverse</a> ()</td></tr>
-<tr class="memdesc:a3fbface2cb6b959af64f82a5bb17540e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates inverse of matrix. Slow.  <a href="#a3fbface2cb6b959af64f82a5bb17540e">More...</a><br /></td></tr>
-<tr class="separator:a3fbface2cb6b959af64f82a5bb17540e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaeab6a8672ecc3d9790c8e7f141db795"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#aaeab6a8672ecc3d9790c8e7f141db795">getInversePrimitive</a> (<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;out) const</td></tr>
-<tr class="memdesc:aaeab6a8672ecc3d9790c8e7f141db795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverts a primitive matrix which only contains a translation and a rotation.  <a href="#aaeab6a8672ecc3d9790c8e7f141db795">More...</a><br /></td></tr>
-<tr class="separator:aaeab6a8672ecc3d9790c8e7f141db795"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a323bfa0e327636c9cd4a5d2b781b3a60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a323bfa0e327636c9cd4a5d2b781b3a60">getInverse</a> (<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;out) const</td></tr>
-<tr class="memdesc:a323bfa0e327636c9cd4a5d2b781b3a60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the inversed matrix of this one.  <a href="#a323bfa0e327636c9cd4a5d2b781b3a60">More...</a><br /></td></tr>
-<tr class="separator:a323bfa0e327636c9cd4a5d2b781b3a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab16b1c00864aaa6d50059554a7cf344d"><td class="memItemLeft" align="right" valign="top"><a id="ab16b1c00864aaa6d50059554a7cf344d"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#ab16b1c00864aaa6d50059554a7cf344d">buildProjectionMatrixPerspectiveFovRH</a> (<a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> fieldOfViewRadians, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> aspectRatio, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> zNear, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> zFar)</td></tr>
-<tr class="memdesc:ab16b1c00864aaa6d50059554a7cf344d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a right-handed perspective projection matrix based on a field of view. <br /></td></tr>
-<tr class="separator:ab16b1c00864aaa6d50059554a7cf344d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc198f5cb90f7a8e339c197d7dc365b4"><td class="memItemLeft" align="right" valign="top"><a id="afc198f5cb90f7a8e339c197d7dc365b4"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#afc198f5cb90f7a8e339c197d7dc365b4">buildProjectionMatrixPerspectiveFovLH</a> (<a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> fieldOfViewRadians, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> aspectRatio, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> zNear, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> zFar)</td></tr>
-<tr class="memdesc:afc198f5cb90f7a8e339c197d7dc365b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a left-handed perspective projection matrix based on a field of view. <br /></td></tr>
-<tr class="separator:afc198f5cb90f7a8e339c197d7dc365b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a235d52acde7cf2dcfe8d6e61fc840fd1"><td class="memItemLeft" align="right" valign="top"><a id="a235d52acde7cf2dcfe8d6e61fc840fd1"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a235d52acde7cf2dcfe8d6e61fc840fd1">buildProjectionMatrixPerspectiveFovInfinityLH</a> (<a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> fieldOfViewRadians, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> aspectRatio, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> zNear, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> epsilon=0)</td></tr>
-<tr class="memdesc:a235d52acde7cf2dcfe8d6e61fc840fd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a left-handed perspective projection matrix based on a field of view, with far plane at infinity. <br /></td></tr>
-<tr class="separator:a235d52acde7cf2dcfe8d6e61fc840fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cceca850e14e69b0139d2c0d5da9fb1"><td class="memItemLeft" align="right" valign="top"><a id="a4cceca850e14e69b0139d2c0d5da9fb1"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a4cceca850e14e69b0139d2c0d5da9fb1">buildProjectionMatrixPerspectiveRH</a> (<a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> widthOfViewVolume, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> heightOfViewVolume, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> zNear, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> zFar)</td></tr>
-<tr class="memdesc:a4cceca850e14e69b0139d2c0d5da9fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a right-handed perspective projection matrix. <br /></td></tr>
-<tr class="separator:a4cceca850e14e69b0139d2c0d5da9fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a877fee0f391fa7f2d56a2e16d955b2c9"><td class="memItemLeft" align="right" valign="top"><a id="a877fee0f391fa7f2d56a2e16d955b2c9"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a877fee0f391fa7f2d56a2e16d955b2c9">buildProjectionMatrixPerspectiveLH</a> (<a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> widthOfViewVolume, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> heightOfViewVolume, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> zNear, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> zFar)</td></tr>
-<tr class="memdesc:a877fee0f391fa7f2d56a2e16d955b2c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a left-handed perspective projection matrix. <br /></td></tr>
-<tr class="separator:a877fee0f391fa7f2d56a2e16d955b2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12c2f096eb8d6508e0a268ec74eaa4bc"><td class="memItemLeft" align="right" valign="top"><a id="a12c2f096eb8d6508e0a268ec74eaa4bc"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a12c2f096eb8d6508e0a268ec74eaa4bc">buildProjectionMatrixOrthoLH</a> (<a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> widthOfViewVolume, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> heightOfViewVolume, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> zNear, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> zFar)</td></tr>
-<tr class="memdesc:a12c2f096eb8d6508e0a268ec74eaa4bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a left-handed orthogonal projection matrix. <br /></td></tr>
-<tr class="separator:a12c2f096eb8d6508e0a268ec74eaa4bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c1592b3691c0b745b9d20396132373d"><td class="memItemLeft" align="right" valign="top"><a id="a0c1592b3691c0b745b9d20396132373d"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a0c1592b3691c0b745b9d20396132373d">buildProjectionMatrixOrthoRH</a> (<a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> widthOfViewVolume, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> heightOfViewVolume, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> zNear, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> zFar)</td></tr>
-<tr class="memdesc:a0c1592b3691c0b745b9d20396132373d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a right-handed orthogonal projection matrix. <br /></td></tr>
-<tr class="separator:a0c1592b3691c0b745b9d20396132373d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfdf11de888d4c03e2d004ff31633dce"><td class="memItemLeft" align="right" valign="top"><a id="abfdf11de888d4c03e2d004ff31633dce"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#abfdf11de888d4c03e2d004ff31633dce">buildCameraLookAtMatrixLH</a> (const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;position, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;target, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;upVector)</td></tr>
-<tr class="memdesc:abfdf11de888d4c03e2d004ff31633dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a left-handed look-at matrix. <br /></td></tr>
-<tr class="separator:abfdf11de888d4c03e2d004ff31633dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3dc54437739be4000c17e5596a541df"><td class="memItemLeft" align="right" valign="top"><a id="ab3dc54437739be4000c17e5596a541df"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#ab3dc54437739be4000c17e5596a541df">buildCameraLookAtMatrixRH</a> (const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;position, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;target, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">vector3df</a> &amp;upVector)</td></tr>
-<tr class="memdesc:ab3dc54437739be4000c17e5596a541df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a right-handed look-at matrix. <br /></td></tr>
-<tr class="separator:ab3dc54437739be4000c17e5596a541df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb2c7d5c4c5fdb95e2d011e604f2a5e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#aeb2c7d5c4c5fdb95e2d011e604f2a5e3">buildShadowMatrix</a> (const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;light, <a class="el" href="namespaceirr_1_1core.html#a97c9b39d4c6f71dbd9ded0153c4fa7f7">core::plane3df</a> plane, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> point=1.0f)</td></tr>
-<tr class="memdesc:aeb2c7d5c4c5fdb95e2d011e604f2a5e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a matrix that flattens geometry into a plane.  <a href="#aeb2c7d5c4c5fdb95e2d011e604f2a5e3">More...</a><br /></td></tr>
-<tr class="separator:aeb2c7d5c4c5fdb95e2d011e604f2a5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e29e924cedaad61fc24db8a5d614fe1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a9e29e924cedaad61fc24db8a5d614fe1">buildNDCToDCMatrix</a> (const <a class="el" href="classirr_1_1core_1_1rect.html">core::rect</a>&lt; <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> &gt; &amp;area, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> zScale)</td></tr>
-<tr class="memdesc:a9e29e924cedaad61fc24db8a5d614fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a matrix which transforms a normalized Device Coordinate to Device Coordinates.  <a href="#a9e29e924cedaad61fc24db8a5d614fe1">More...</a><br /></td></tr>
-<tr class="separator:a9e29e924cedaad61fc24db8a5d614fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b24a11495e27bc052aef0bfec87eaaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a6b24a11495e27bc052aef0bfec87eaaf">interpolate</a> (const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">core::CMatrix4</a>&lt; T &gt; &amp;b, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> time) const</td></tr>
-<tr class="memdesc:a6b24a11495e27bc052aef0bfec87eaaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new matrix as interpolated matrix from two other ones.  <a href="#a6b24a11495e27bc052aef0bfec87eaaf">More...</a><br /></td></tr>
-<tr class="separator:a6b24a11495e27bc052aef0bfec87eaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e192bdef1688cdcd1975a50a170ea36"><td class="memItemLeft" align="right" valign="top"><a id="a5e192bdef1688cdcd1975a50a170ea36"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a5e192bdef1688cdcd1975a50a170ea36">getTransposed</a> () const</td></tr>
-<tr class="memdesc:a5e192bdef1688cdcd1975a50a170ea36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets transposed matrix. <br /></td></tr>
-<tr class="separator:a5e192bdef1688cdcd1975a50a170ea36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23d169204ac8257f11f7c2934f12c1eb"><td class="memItemLeft" align="right" valign="top"><a id="a23d169204ac8257f11f7c2934f12c1eb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a23d169204ac8257f11f7c2934f12c1eb">getTransposed</a> (<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;dest) const</td></tr>
-<tr class="memdesc:a23d169204ac8257f11f7c2934f12c1eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets transposed matrix. <br /></td></tr>
-<tr class="separator:a23d169204ac8257f11f7c2934f12c1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04d0266c6e7b12ea4513b13c65bee7b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a04d0266c6e7b12ea4513b13c65bee7b8">buildRotateFromTo</a> (const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;from, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;to)</td></tr>
-<tr class="memdesc:a04d0266c6e7b12ea4513b13c65bee7b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a matrix that rotates from one vector to another.  <a href="#a04d0266c6e7b12ea4513b13c65bee7b8">More...</a><br /></td></tr>
-<tr class="separator:a04d0266c6e7b12ea4513b13c65bee7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8117628146ce654b3b292af7c49e25e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a8117628146ce654b3b292af7c49e25e2">setRotationCenter</a> (const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;center, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;translate)</td></tr>
-<tr class="memdesc:a8117628146ce654b3b292af7c49e25e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a combined matrix which translates to a center before rotation and translates from origin afterwards.  <a href="#a8117628146ce654b3b292af7c49e25e2">More...</a><br /></td></tr>
-<tr class="separator:a8117628146ce654b3b292af7c49e25e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2dc80f2aed15900839389cf52f9e798"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#ad2dc80f2aed15900839389cf52f9e798">buildAxisAlignedBillboard</a> (const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;camPos, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;center, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;translation, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;axis, const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;from)</td></tr>
-<tr class="memdesc:ad2dc80f2aed15900839389cf52f9e798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a matrix which rotates a source vector to a look vector over an arbitrary axis.  <a href="#ad2dc80f2aed15900839389cf52f9e798">More...</a><br /></td></tr>
-<tr class="separator:ad2dc80f2aed15900839389cf52f9e798"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a510ddc85fcfcef5f5195de9bae8d312c"><td class="memItemLeft" align="right" valign="top"><a id="a510ddc85fcfcef5f5195de9bae8d312c"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a510ddc85fcfcef5f5195de9bae8d312c">buildTextureTransform</a> (<a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> rotateRad, const <a class="el" href="namespaceirr_1_1core.html#a116f90bd31515724b6235014ee2b74d5">core::vector2df</a> &amp;rotatecenter, const <a class="el" href="namespaceirr_1_1core.html#a116f90bd31515724b6235014ee2b74d5">core::vector2df</a> &amp;translate, const <a class="el" href="namespaceirr_1_1core.html#a116f90bd31515724b6235014ee2b74d5">core::vector2df</a> &amp;scale)</td></tr>
-<tr class="memdesc:a510ddc85fcfcef5f5195de9bae8d312c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to a texture transformation matrix with the given parameters. <br /></td></tr>
-<tr class="separator:a510ddc85fcfcef5f5195de9bae8d312c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd4be8e5517bae85d64647ee5ddf2c42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#abd4be8e5517bae85d64647ee5ddf2c42">setTextureRotationCenter</a> (<a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> radAngle)</td></tr>
-<tr class="memdesc:abd4be8e5517bae85d64647ee5ddf2c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set texture transformation rotation.  <a href="#abd4be8e5517bae85d64647ee5ddf2c42">More...</a><br /></td></tr>
-<tr class="separator:abd4be8e5517bae85d64647ee5ddf2c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ebaecaf081c12b2a9e0cf22c86eb498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a8ebaecaf081c12b2a9e0cf22c86eb498">setTextureTranslate</a> (<a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> x, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> y)</td></tr>
-<tr class="memdesc:a8ebaecaf081c12b2a9e0cf22c86eb498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set texture transformation translation.  <a href="#a8ebaecaf081c12b2a9e0cf22c86eb498">More...</a><br /></td></tr>
-<tr class="separator:a8ebaecaf081c12b2a9e0cf22c86eb498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c37720b52df398bf0bbe50ff56870eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a3c37720b52df398bf0bbe50ff56870eb">setTextureTranslateTransposed</a> (<a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> x, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> y)</td></tr>
-<tr class="memdesc:a3c37720b52df398bf0bbe50ff56870eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set texture transformation translation, using a transposed representation.  <a href="#a3c37720b52df398bf0bbe50ff56870eb">More...</a><br /></td></tr>
-<tr class="separator:a3c37720b52df398bf0bbe50ff56870eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa42d504d84e1d43b0a6563914c8dbc67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#aa42d504d84e1d43b0a6563914c8dbc67">setTextureScale</a> (<a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> sx, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> sy)</td></tr>
-<tr class="memdesc:aa42d504d84e1d43b0a6563914c8dbc67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set texture transformation scale.  <a href="#aa42d504d84e1d43b0a6563914c8dbc67">More...</a><br /></td></tr>
-<tr class="separator:aa42d504d84e1d43b0a6563914c8dbc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d0eb1cc11d366bf82055f3586c6d80a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a0d0eb1cc11d366bf82055f3586c6d80a">setTextureScaleCenter</a> (<a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> sx, <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> sy)</td></tr>
-<tr class="memdesc:a0d0eb1cc11d366bf82055f3586c6d80a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set texture transformation scale, and recenter at (0.5,0.5)  <a href="#a0d0eb1cc11d366bf82055f3586c6d80a">More...</a><br /></td></tr>
-<tr class="separator:a0d0eb1cc11d366bf82055f3586c6d80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a865190db115ea93d527c82bbc1606952"><td class="memItemLeft" align="right" valign="top"><a id="a865190db115ea93d527c82bbc1606952"></a>
-<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a865190db115ea93d527c82bbc1606952">setM</a> (const T *data)</td></tr>
-<tr class="memdesc:a865190db115ea93d527c82bbc1606952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all matrix data members at once. <br /></td></tr>
-<tr class="separator:a865190db115ea93d527c82bbc1606952"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87f7195337a2bf7a49978c2ec1100c0a"><td class="memItemLeft" align="right" valign="top"><a id="a87f7195337a2bf7a49978c2ec1100c0a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a87f7195337a2bf7a49978c2ec1100c0a">setDefinitelyIdentityMatrix</a> (bool isDefinitelyIdentityMatrix)</td></tr>
-<tr class="memdesc:a87f7195337a2bf7a49978c2ec1100c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the matrix is definitely identity matrix. <br /></td></tr>
-<tr class="separator:a87f7195337a2bf7a49978c2ec1100c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af71afd95d942162c1ba5f38b01396dd3"><td class="memItemLeft" align="right" valign="top"><a id="af71afd95d942162c1ba5f38b01396dd3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#af71afd95d942162c1ba5f38b01396dd3">getDefinitelyIdentityMatrix</a> () const</td></tr>
-<tr class="memdesc:af71afd95d942162c1ba5f38b01396dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets if the matrix is definitely identity matrix. <br /></td></tr>
-<tr class="separator:af71afd95d942162c1ba5f38b01396dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd3c6b6c69db075a70f65d3030113d3f"><td class="memItemLeft" align="right" valign="top"><a id="abd3c6b6c69db075a70f65d3030113d3f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#abd3c6b6c69db075a70f65d3030113d3f">equals</a> (const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">core::CMatrix4</a>&lt; T &gt; &amp;other, const T tolerance=(T) ROUNDING_ERROR_f64) const</td></tr>
-<tr class="memdesc:abd3c6b6c69db075a70f65d3030113d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two matrices using the equal method. <br /></td></tr>
-<tr class="separator:abd3c6b6c69db075a70f65d3030113d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
@@ -698,7 +393,7 @@ class irr::core::CMatrix4&lt; T &gt;</h3>
 <p>The matrix is a D3D style matrix, row major with translations in the 4th row. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af771bfde63cdaa3baa4d9f6121e56411"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af771bfde63cdaa3baa4d9f6121e56411">&#9670;&nbsp;</a></span>CMatrix4() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af771bfde63cdaa3baa4d9f6121e56411">&#9670;&nbsp;</a></span>CMatrix4() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -734,7 +429,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="acdb7afc2248d97a7e882cd1bdeed07b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdb7afc2248d97a7e882cd1bdeed07b7">&#9670;&nbsp;</a></span>CMatrix4() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acdb7afc2248d97a7e882cd1bdeed07b7">&#9670;&nbsp;</a></span>CMatrix4() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -767,73 +462,6 @@ template&lt;class T &gt; </div>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-<p>Copy constructor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">other</td><td>Other matrix to copy from </td></tr>
-    <tr><td class="paramname">constructor</td><td>Choose the initialization style </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="af771bfde63cdaa3baa4d9f6121e56411"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af771bfde63cdaa3baa4d9f6121e56411">&#9670;&nbsp;</a></span>CMatrix4() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a7bb79712227617f706ed57a34f3eb4fe">eConstructor</a>&#160;</td>
-          <td class="paramname"><em>constructor</em> = <code>EM4CONST_IDENTITY</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Default constructor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">constructor</td><td>Choose the initialization style </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="acdb7afc2248d97a7e882cd1bdeed07b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdb7afc2248d97a7e882cd1bdeed07b7">&#9670;&nbsp;</a></span>CMatrix4() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::<a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classirr_1_1core_1_1CMatrix4.html#a7bb79712227617f706ed57a34f3eb4fe">eConstructor</a>&#160;</td>
-          <td class="paramname"><em>constructor</em> = <code>EM4CONST_COPY</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 <p>Copy constructor. </p>
@@ -849,7 +477,7 @@ template&lt;class T&gt; </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad2dc80f2aed15900839389cf52f9e798"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2dc80f2aed15900839389cf52f9e798">&#9670;&nbsp;</a></span>buildAxisAlignedBillboard() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2dc80f2aed15900839389cf52f9e798">&#9670;&nbsp;</a></span>buildAxisAlignedBillboard()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -862,31 +490,31 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::buildAxisAlignedBillboard </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;&#160;</td>
           <td class="paramname"><em>camPos</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;&#160;</td>
           <td class="paramname"><em>center</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;&#160;</td>
           <td class="paramname"><em>translation</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;&#160;</td>
           <td class="paramname"><em>axis</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;&#160;</td>
           <td class="paramname"><em>from</em>&#160;</td>
         </tr>
         <tr>
@@ -921,68 +549,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="ad2dc80f2aed15900839389cf52f9e798"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2dc80f2aed15900839389cf52f9e798">&#9670;&nbsp;</a></span>buildAxisAlignedBillboard() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::buildAxisAlignedBillboard </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
-          <td class="paramname"><em>camPos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
-          <td class="paramname"><em>center</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
-          <td class="paramname"><em>translation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
-          <td class="paramname"><em>axis</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
-          <td class="paramname"><em>from</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Builds a matrix which rotates a source vector to a look vector over an arbitrary axis. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">camPos</td><td>viewer position in world coo </td></tr>
-    <tr><td class="paramname">center</td><td>object position in world-coo and rotation pivot </td></tr>
-    <tr><td class="paramname">translation</td><td>object final translation from center </td></tr>
-    <tr><td class="paramname">axis</td><td>axis to rotate about </td></tr>
-    <tr><td class="paramname">from</td><td>source vector to rotate from </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a88a7d2f56d4ce637823379de308f673a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88a7d2f56d4ce637823379de308f673a">&#9670;&nbsp;</a></span>buildNDCToDCMatrix() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a88a7d2f56d4ce637823379de308f673a">&#9670;&nbsp;</a></span>buildNDCToDCMatrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1022,41 +590,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a9e29e924cedaad61fc24db8a5d614fe1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e29e924cedaad61fc24db8a5d614fe1">&#9670;&nbsp;</a></span>buildNDCToDCMatrix() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt;T&gt;&amp; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::buildNDCToDCMatrix </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1rect.html">core::rect</a>&lt; <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>area</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a>&#160;</td>
-          <td class="paramname"><em>zScale</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Builds a matrix which transforms a normalized Device Coordinate to Device Coordinates. </p>
-<p>Used to scale &lt;-1,-1&gt;&lt;1,1&gt; to viewport, for example from &lt;-1,-1&gt; &lt;1,1&gt; to the viewport &lt;0,0&gt;&lt;0,640&gt; </p>
-
-</div>
-</div>
 <a id="a4802c6a89ad813e2919f68f512fb320f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4802c6a89ad813e2919f68f512fb320f">&#9670;&nbsp;</a></span>buildRotateFromTo() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4802c6a89ad813e2919f68f512fb320f">&#9670;&nbsp;</a></span>buildRotateFromTo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1069,13 +604,13 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::buildRotateFromTo </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;&#160;</td>
           <td class="paramname"><em>from</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;&#160;</td>
           <td class="paramname"><em>to</em>&#160;</td>
         </tr>
         <tr>
@@ -1104,47 +639,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a04d0266c6e7b12ea4513b13c65bee7b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04d0266c6e7b12ea4513b13c65bee7b8">&#9670;&nbsp;</a></span>buildRotateFromTo() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt;T&gt;&amp; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::buildRotateFromTo </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
-          <td class="paramname"><em>from</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
-          <td class="paramname"><em>to</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Builds a matrix that rotates from one vector to another. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">from</td><td>vector to rotate from </td></tr>
-    <tr><td class="paramname">to</td><td>vector to rotate to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a583d0ece1d80f69101660e1cbe441768"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a583d0ece1d80f69101660e1cbe441768">&#9670;&nbsp;</a></span>buildShadowMatrix() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a583d0ece1d80f69101660e1cbe441768">&#9670;&nbsp;</a></span>buildShadowMatrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1157,13 +653,13 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::buildShadowMatrix </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;&#160;</td>
           <td class="paramname"><em>light</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceirr_1_1core.html#a97c9b39d4c6f71dbd9ded0153c4fa7f7">core::plane3df</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceirr_1_1core.html#ae7491b7985dcb74b840bfcd9c054b232">core::plane3df</a>&#160;</td>
           <td class="paramname"><em>plane</em>, </td>
         </tr>
         <tr>
@@ -1183,52 +679,6 @@ template&lt;class T &gt; </div>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-<p>Builds a matrix that flattens geometry into a plane. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">light</td><td>light source </td></tr>
-    <tr><td class="paramname">plane</td><td>plane into which the geometry if flattened into </td></tr>
-    <tr><td class="paramname">point</td><td>value between 0 and 1, describing the light source. If this is 1, it is a point light, if it is 0, it is a directional light. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aeb2c7d5c4c5fdb95e2d011e604f2a5e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb2c7d5c4c5fdb95e2d011e604f2a5e3">&#9670;&nbsp;</a></span>buildShadowMatrix() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt;T&gt;&amp; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::buildShadowMatrix </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
-          <td class="paramname"><em>light</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceirr_1_1core.html#a97c9b39d4c6f71dbd9ded0153c4fa7f7">core::plane3df</a>&#160;</td>
-          <td class="paramname"><em>plane</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a>&#160;</td>
-          <td class="paramname"><em>point</em> = <code>1.0f</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 <p>Builds a matrix that flattens geometry into a plane. </p>
@@ -1263,19 +713,19 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a116f90bd31515724b6235014ee2b74d5">core::vector2df</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a2cf08556d77f6f5a792973a6e27ed11b">core::vector2df</a> &amp;&#160;</td>
           <td class="paramname"><em>rotatecenter</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a116f90bd31515724b6235014ee2b74d5">core::vector2df</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a2cf08556d77f6f5a792973a6e27ed11b">core::vector2df</a> &amp;&#160;</td>
           <td class="paramname"><em>translate</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a116f90bd31515724b6235014ee2b74d5">core::vector2df</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a2cf08556d77f6f5a792973a6e27ed11b">core::vector2df</a> &amp;&#160;</td>
           <td class="paramname"><em>scale</em>&#160;</td>
         </tr>
         <tr>
@@ -1297,36 +747,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="a323bfa0e327636c9cd4a5d2b781b3a60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a323bfa0e327636c9cd4a5d2b781b3a60">&#9670;&nbsp;</a></span>getInverse() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::getInverse </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>out</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the inversed matrix of this one. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">out</td><td>where result matrix is written to. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns false if there is no inverse matrix. </dd></dl>
-
-</div>
-</div>
-<a id="a323bfa0e327636c9cd4a5d2b781b3a60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a323bfa0e327636c9cd4a5d2b781b3a60">&#9670;&nbsp;</a></span>getInverse() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a323bfa0e327636c9cd4a5d2b781b3a60">&#9670;&nbsp;</a></span>getInverse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1359,41 +780,12 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns false if there is no inverse matrix. </dd></dl>
-<p>Calculates the inverse of this Matrix The inverse is calculated using Cramers rule. If no inverse exists then 'false' is returned.</p>
 <p>Calculates the inverse of this Matrix The inverse is calculated using Cramers rule. If no inverse exists then 'false' is returned. </p>
 
 </div>
 </div>
 <a id="aaeab6a8672ecc3d9790c8e7f141db795"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaeab6a8672ecc3d9790c8e7f141db795">&#9670;&nbsp;</a></span>getInversePrimitive() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::getInversePrimitive </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>out</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Inverts a primitive matrix which only contains a translation and a rotation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">out</td><td>where result matrix is written to. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aaeab6a8672ecc3d9790c8e7f141db795"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaeab6a8672ecc3d9790c8e7f141db795">&#9670;&nbsp;</a></span>getInversePrimitive() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeab6a8672ecc3d9790c8e7f141db795">&#9670;&nbsp;</a></span>getInversePrimitive()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1429,7 +821,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="ad334281fcd12eb5acda020981706b759"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad334281fcd12eb5acda020981706b759">&#9670;&nbsp;</a></span>getRotationDegrees() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad334281fcd12eb5acda020981706b759">&#9670;&nbsp;</a></span>getRotationDegrees()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1457,28 +849,6 @@ template&lt;class T &gt; </div>
 <p>Returns a rotation that is equivalent to that set by <a class="el" href="classirr_1_1core_1_1CMatrix4.html#a8ee5ef8619d4b0f56d72ac84495ed644" title="Make a rotation matrix from Euler angles. The 4th row and column are unmodified. ">setRotationDegrees()</a>.</p>
 <p>This code was orginally written by by Chev.</p>
 <p>This code was sent in by Chev. Note that it does not necessarily return the <em>same</em> Euler angles as those set by <a class="el" href="classirr_1_1core_1_1CMatrix4.html#a8ee5ef8619d4b0f56d72ac84495ed644" title="Make a rotation matrix from Euler angles. The 4th row and column are unmodified. ">setRotationDegrees()</a>, but the rotation will be equivalent, i.e. will have the same result when used to rotate a vector or node. </p>
-
-</div>
-</div>
-<a id="a10abcf70d27d7b274e6277e1e1ee5907"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10abcf70d27d7b274e6277e1e1ee5907">&#9670;&nbsp;</a></span>getRotationDegrees() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1vector3d.html">core::vector3d</a>&lt;T&gt; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::getRotationDegrees </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the rotation, as set by setRotation(). </p>
-<p>This code was orginally written by by Chev. </p>
 
 </div>
 </div>
@@ -1514,7 +884,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="a374a0f1c43c8c8ba78317c9c59590ad1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a374a0f1c43c8c8ba78317c9c59590ad1">&#9670;&nbsp;</a></span>interpolate() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a374a0f1c43c8c8ba78317c9c59590ad1">&#9670;&nbsp;</a></span>interpolate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1560,69 +930,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a6b24a11495e27bc052aef0bfec87eaaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b24a11495e27bc052aef0bfec87eaaf">&#9670;&nbsp;</a></span>interpolate() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt;T&gt; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::interpolate </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">core::CMatrix4</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a>&#160;</td>
-          <td class="paramname"><em>time</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Creates a new matrix as interpolated matrix from two other ones. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">b</td><td>other matrix to interpolate with </td></tr>
-    <tr><td class="paramname">time</td><td>Must be a value between 0 and 1. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a3fbface2cb6b959af64f82a5bb17540e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fbface2cb6b959af64f82a5bb17540e">&#9670;&nbsp;</a></span>makeInverse() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::makeInverse </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calculates inverse of matrix. Slow. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns false if there is no inverse matrix. </dd></dl>
-
-</div>
-</div>
-<a id="a3fbface2cb6b959af64f82a5bb17540e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fbface2cb6b959af64f82a5bb17540e">&#9670;&nbsp;</a></span>makeInverse() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fbface2cb6b959af64f82a5bb17540e">&#9670;&nbsp;</a></span>makeInverse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1652,7 +961,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="af5ecb6176941d57716bb800963042183"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5ecb6176941d57716bb800963042183">&#9670;&nbsp;</a></span>operator*() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ecb6176941d57716bb800963042183">&#9670;&nbsp;</a></span>operator*()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1683,31 +992,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a749eaef2610aa636e50c28aaad8fe075"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a749eaef2610aa636e50c28aaad8fe075">&#9670;&nbsp;</a></span>operator*() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt;T&gt; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::operator* </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Multiply by another matrix. </p>
-<p>Calculate other*this </p>
-
-</div>
-</div>
 <a id="ac3d29f86c91d9d095ab155ecb8870f87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3d29f86c91d9d095ab155ecb8870f87">&#9670;&nbsp;</a></span>operator*=() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3d29f86c91d9d095ab155ecb8870f87">&#9670;&nbsp;</a></span>operator*=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1737,31 +1023,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a223e7cefd4428f57affb0713bd849e46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a223e7cefd4428f57affb0713bd849e46">&#9670;&nbsp;</a></span>operator*=() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt;T&gt;&amp; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::operator*= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Multiply by another matrix. </p>
-<p>Calculate and return other*this </p>
-
-</div>
-</div>
 <a id="a8503c58913ba9407ba00b173d8a3e25c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8503c58913ba9407ba00b173d8a3e25c">&#9670;&nbsp;</a></span>setbyproduct() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8503c58913ba9407ba00b173d8a3e25c">&#9670;&nbsp;</a></span>setbyproduct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1802,49 +1065,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a8d2978907b0c746092e4c9891cf72893"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d2978907b0c746092e4c9891cf72893">&#9670;&nbsp;</a></span>setbyproduct() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt;T&gt;&amp; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::setbyproduct </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other_a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other_b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>set this matrix to the product of two matrices </p>
-<p>Calculate b*a </p>
-
-</div>
-</div>
 <a id="a526a2a11dcd8b18c9e77deb84094778d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a526a2a11dcd8b18c9e77deb84094778d">&#9670;&nbsp;</a></span>setbyproduct_nocheck() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a526a2a11dcd8b18c9e77deb84094778d">&#9670;&nbsp;</a></span>setbyproduct_nocheck()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1885,41 +1107,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a65b8c0c066e1105b89fbbdb753ffabd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65b8c0c066e1105b89fbbdb753ffabd8">&#9670;&nbsp;</a></span>setbyproduct_nocheck() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt;T&gt;&amp; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::setbyproduct_nocheck </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other_a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other_b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set this matrix to the product of two matrices. </p>
-<p>Calculate b*a, no optimization used, use it if you know you never have a identity matrix </p>
-
-</div>
-</div>
 <a id="afd84b9c93b4c8e9dc2abefa4a28057f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd84b9c93b4c8e9dc2abefa4a28057f9">&#9670;&nbsp;</a></span>setInverseRotationDegrees() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afd84b9c93b4c8e9dc2abefa4a28057f9">&#9670;&nbsp;</a></span>setInverseRotationDegrees()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1949,70 +1138,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="abf572f53301bb5d00ceeec9f170aff92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf572f53301bb5d00ceeec9f170aff92">&#9670;&nbsp;</a></span>setInverseRotationDegrees() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt;T&gt;&amp; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::setInverseRotationDegrees </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rotation</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Make an inverted rotation matrix from Euler angles. </p>
-<p>The 4th row and column are unmodified. </p>
-
-</div>
-</div>
-<a id="a78fd2ee43a622062169762e093813311"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78fd2ee43a622062169762e093813311">&#9670;&nbsp;</a></span>setInverseRotationRadians() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt;T&gt;&amp; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::setInverseRotationRadians </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rotation</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Make an inverted rotation matrix from Euler angles. </p>
-<p>The 4th row and column are unmodified. </p>
-
-</div>
-</div>
 <a id="a1a15d7b55769678512144f0fb7e15a92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a15d7b55769678512144f0fb7e15a92">&#9670;&nbsp;</a></span>setInverseRotationRadians() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a15d7b55769678512144f0fb7e15a92">&#9670;&nbsp;</a></span>setInverseRotationRadians()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2043,49 +1170,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="ac00a1c59a2a499ad2f1e97f12d03998a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac00a1c59a2a499ad2f1e97f12d03998a">&#9670;&nbsp;</a></span>setRotationAxisRadians() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt;T&gt;&amp; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::setRotationAxisRadians </td>
-          <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>angle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>axis</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Make a rotation matrix from angle and axis, assuming left handed rotation. </p>
-<p>The 4th row and column are unmodified. </p>
-
-</div>
-</div>
 <a id="a2fad61540e78fc7dafe7f6270b0558ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fad61540e78fc7dafe7f6270b0558ac">&#9670;&nbsp;</a></span>setRotationAxisRadians() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fad61540e78fc7dafe7f6270b0558ac">&#9670;&nbsp;</a></span>setRotationAxisRadians()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2127,46 +1213,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="a8117628146ce654b3b292af7c49e25e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8117628146ce654b3b292af7c49e25e2">&#9670;&nbsp;</a></span>setRotationCenter() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::setRotationCenter </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
-          <td class="paramname"><em>center</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
-          <td class="paramname"><em>translate</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Builds a combined matrix which translates to a center before rotation and translates from origin afterwards. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">center</td><td>Position to rotate around </td></tr>
-    <tr><td class="paramname">translate</td><td>Translation applied after the rotation </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a8117628146ce654b3b292af7c49e25e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8117628146ce654b3b292af7c49e25e2">&#9670;&nbsp;</a></span>setRotationCenter() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8117628146ce654b3b292af7c49e25e2">&#9670;&nbsp;</a></span>setRotationCenter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2179,13 +1226,13 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::setRotationCenter </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;&#160;</td>
           <td class="paramname"><em>center</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a> &amp;&#160;</td>
           <td class="paramname"><em>translate</em>&#160;</td>
         </tr>
         <tr>
@@ -2214,7 +1261,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="a445a7653292ae4ffb0baa50032a8674e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a445a7653292ae4ffb0baa50032a8674e">&#9670;&nbsp;</a></span>setTextureRotationCenter() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a445a7653292ae4ffb0baa50032a8674e">&#9670;&nbsp;</a></span>setTextureRotationCenter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2250,37 +1297,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="abd4be8e5517bae85d64647ee5ddf2c42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd4be8e5517bae85d64647ee5ddf2c42">&#9670;&nbsp;</a></span>setTextureRotationCenter() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt;T&gt;&amp; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::setTextureRotationCenter </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a>&#160;</td>
-          <td class="paramname"><em>radAngle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set texture transformation rotation. </p>
-<p>Rotate about z axis, recenter at (0.5,0.5). Doesn't clear other elements than those affected </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">radAngle</td><td>Angle in radians </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Altered matrix </dd></dl>
-
-</div>
-</div>
 <a id="aed32a7a8da9c4cee5babe8f6b4aa7dd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed32a7a8da9c4cee5babe8f6b4aa7dd4">&#9670;&nbsp;</a></span>setTextureScale() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aed32a7a8da9c4cee5babe8f6b4aa7dd4">&#9670;&nbsp;</a></span>setTextureScale()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2327,88 +1345,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="aa42d504d84e1d43b0a6563914c8dbc67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa42d504d84e1d43b0a6563914c8dbc67">&#9670;&nbsp;</a></span>setTextureScale() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt;T&gt;&amp; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::setTextureScale </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a>&#160;</td>
-          <td class="paramname"><em>sx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a>&#160;</td>
-          <td class="paramname"><em>sy</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set texture transformation scale. </p>
-<p>Doesn't clear other elements than those affected. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sx</td><td>Scale factor on x axis </td></tr>
-    <tr><td class="paramname">sy</td><td>Scale factor on y axis </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Altered matrix. </dd></dl>
-
-</div>
-</div>
-<a id="a0d0eb1cc11d366bf82055f3586c6d80a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d0eb1cc11d366bf82055f3586c6d80a">&#9670;&nbsp;</a></span>setTextureScaleCenter() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt;T&gt;&amp; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::setTextureScaleCenter </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a>&#160;</td>
-          <td class="paramname"><em>sx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a>&#160;</td>
-          <td class="paramname"><em>sy</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set texture transformation scale, and recenter at (0.5,0.5) </p>
-<p>Doesn't clear other elements than those affected. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sx</td><td>Scale factor on x axis </td></tr>
-    <tr><td class="paramname">sy</td><td>Scale factor on y axis </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Altered matrix. </dd></dl>
-
-</div>
-</div>
 <a id="adbd668867d117dc9331e68abef0af221"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbd668867d117dc9331e68abef0af221">&#9670;&nbsp;</a></span>setTextureScaleCenter() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adbd668867d117dc9331e68abef0af221">&#9670;&nbsp;</a></span>setTextureScaleCenter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2456,7 +1394,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="a2bab9633697a892f08d89c7aeee6daf6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bab9633697a892f08d89c7aeee6daf6">&#9670;&nbsp;</a></span>setTextureTranslate() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bab9633697a892f08d89c7aeee6daf6">&#9670;&nbsp;</a></span>setTextureTranslate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2503,48 +1441,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a8ebaecaf081c12b2a9e0cf22c86eb498"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ebaecaf081c12b2a9e0cf22c86eb498">&#9670;&nbsp;</a></span>setTextureTranslate() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt;T&gt;&amp; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::setTextureTranslate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a>&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a>&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set texture transformation translation. </p>
-<p>Doesn't clear other elements than those affected. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>Offset on x axis </td></tr>
-    <tr><td class="paramname">y</td><td>Offset on y axis </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Altered matrix </dd></dl>
-
-</div>
-</div>
 <a id="a7d999210cc7427e9d744271e50d26c3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d999210cc7427e9d744271e50d26c3c">&#9670;&nbsp;</a></span>setTextureTranslateTransposed() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d999210cc7427e9d744271e50d26c3c">&#9670;&nbsp;</a></span>setTextureTranslateTransposed()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2591,48 +1489,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a3c37720b52df398bf0bbe50ff56870eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c37720b52df398bf0bbe50ff56870eb">&#9670;&nbsp;</a></span>setTextureTranslateTransposed() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classirr_1_1core_1_1CMatrix4.html">CMatrix4</a>&lt;T&gt;&amp; <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::setTextureTranslateTransposed </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a>&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a>&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set texture transformation translation, using a transposed representation. </p>
-<p>Doesn't clear other elements than those affected. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>Offset on x axis </td></tr>
-    <tr><td class="paramname">y</td><td>Offset on y axis </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Altered matrix </dd></dl>
-
-</div>
-</div>
 <a id="a0e6a0a3b1b20aac7313806fdb1a01316"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e6a0a3b1b20aac7313806fdb1a01316">&#9670;&nbsp;</a></span>transformBox() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e6a0a3b1b20aac7313806fdb1a01316">&#9670;&nbsp;</a></span>transformBox()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2663,54 +1521,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a4d44428ac5dde99e21f0eb4c50195692"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d44428ac5dde99e21f0eb4c50195692">&#9670;&nbsp;</a></span>transformBox() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::transformBox </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classirr_1_1core_1_1aabbox3d.html">core::aabbox3d</a>&lt; <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>box</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Transforms a axis aligned bounding box. </p>
-<p>The result box of this operation may not be accurate at all. For correct results, use <a class="el" href="classirr_1_1core_1_1CMatrix4.html#a2fcdfa14ef16240470e2b46d19a5cb43" title="Transforms a axis aligned bounding box. ">transformBoxEx()</a> </p>
-
-</div>
-</div>
 <a id="a2fcdfa14ef16240470e2b46d19a5cb43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fcdfa14ef16240470e2b46d19a5cb43">&#9670;&nbsp;</a></span>transformBoxEx() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classirr_1_1core_1_1CMatrix4.html">irr::core::CMatrix4</a>&lt; T &gt;::transformBoxEx </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classirr_1_1core_1_1aabbox3d.html">core::aabbox3d</a>&lt; <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>box</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Transforms a axis aligned bounding box. </p>
-<p>The result box of this operation should by accurate, but this operation is slower than <a class="el" href="classirr_1_1core_1_1CMatrix4.html#a0e6a0a3b1b20aac7313806fdb1a01316" title="Transforms a axis aligned bounding box. ">transformBox()</a>. </p>
-
-</div>
-</div>
-<a id="a2fcdfa14ef16240470e2b46d19a5cb43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fcdfa14ef16240470e2b46d19a5cb43">&#9670;&nbsp;</a></span>transformBoxEx() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fcdfa14ef16240470e2b46d19a5cb43">&#9670;&nbsp;</a></span>transformBoxEx()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2742,7 +1554,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>indie_share/controller/include/<a class="el" href="indie__share_2controller_2include_2matrix4_8h_source.html">matrix4.h</a></li>
+<li>indie_share/controller/include/<a class="el" href="matrix4_8h_source.html">matrix4.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

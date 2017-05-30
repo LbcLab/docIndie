@@ -12,38 +12,12 @@ Interface for bones used for skeletal animation.
 Inheritance diagram for irr\+:\+:scene\+:\+:I\+Bone\+Scene\+Node\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=1.682692cm]{classirr_1_1scene_1_1IBoneSceneNode}
+\includegraphics[height=4.000000cm]{classirr_1_1scene_1_1IBoneSceneNode}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \+\_\+\+I\+R\+R\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+ const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$ \hyperlink{classirr_1_1scene_1_1IBoneSceneNode_a1c40bee44b89fe81178782e999cbe3a8}{get\+Bone\+Name} () const
-\begin{DoxyCompactList}\small\item\em Get the name of the bone. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1scene_1_1IBoneSceneNode_ac372b2c84a3427df1fdc78deae7d00ea}\label{classirr_1_1scene_1_1IBoneSceneNode_ac372b2c84a3427df1fdc78deae7d00ea}} 
-virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1scene_1_1IBoneSceneNode_ac372b2c84a3427df1fdc78deae7d00ea}{get\+Bone\+Index} () const =0
-\begin{DoxyCompactList}\small\item\em Get the index of the bone. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classirr_1_1scene_1_1IBoneSceneNode_a424a467f045e809bcad2aa239edb9994}{set\+Animation\+Mode} (\hyperlink{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801}{E\+\_\+\+B\+O\+N\+E\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE} mode)=0
-\begin{DoxyCompactList}\small\item\em Sets the animation mode of the bone. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1scene_1_1IBoneSceneNode_a332e040471057cf6a1a0ae8dfa2c0f5f}\label{classirr_1_1scene_1_1IBoneSceneNode_a332e040471057cf6a1a0ae8dfa2c0f5f}} 
-virtual \hyperlink{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801}{E\+\_\+\+B\+O\+N\+E\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE} \hyperlink{classirr_1_1scene_1_1IBoneSceneNode_a332e040471057cf6a1a0ae8dfa2c0f5f}{get\+Animation\+Mode} () const =0
-\begin{DoxyCompactList}\small\item\em Gets the current animation mode of the bone. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1scene_1_1IBoneSceneNode_ac5d0a610b0a24a7501f29ad000d28b3b}\label{classirr_1_1scene_1_1IBoneSceneNode_ac5d0a610b0a24a7501f29ad000d28b3b}} 
-virtual const \hyperlink{classirr_1_1core_1_1aabbox3d}{core\+::aabbox3d}$<$ \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} $>$ \& \hyperlink{classirr_1_1scene_1_1IBoneSceneNode_ac5d0a610b0a24a7501f29ad000d28b3b}{get\+Bounding\+Box} () const =0
-\begin{DoxyCompactList}\small\item\em Get the axis aligned bounding box of this node. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1IBoneSceneNode_a7e21d0722e5b105e4d2a956bff110a7f}{On\+Animate} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} time\+Ms)=0
-\begin{DoxyCompactList}\small\item\em Returns the relative transformation of the scene node. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1IBoneSceneNode_ac942248f09d2db69804ea47476e3829e}{render} ()
-\begin{DoxyCompactList}\small\item\em The render method. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1scene_1_1IBoneSceneNode_a071c9edb957b67f18c8285fe7670f9d4}\label{classirr_1_1scene_1_1IBoneSceneNode_a071c9edb957b67f18c8285fe7670f9d4}} 
-virtual void \hyperlink{classirr_1_1scene_1_1IBoneSceneNode_a071c9edb957b67f18c8285fe7670f9d4}{set\+Skinning\+Space} (\hyperlink{namespaceirr_1_1scene_a47bfc785c34c953f926c920cd13ba1fb}{E\+\_\+\+B\+O\+N\+E\+\_\+\+S\+K\+I\+N\+N\+I\+N\+G\+\_\+\+S\+P\+A\+CE} space)=0
-\begin{DoxyCompactList}\small\item\em How the relative transformation of the bone is used. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1scene_1_1IBoneSceneNode_aa41c118c8fa8741c6945787c50c42df7}\label{classirr_1_1scene_1_1IBoneSceneNode_aa41c118c8fa8741c6945787c50c42df7}} 
-virtual \hyperlink{namespaceirr_1_1scene_a47bfc785c34c953f926c920cd13ba1fb}{E\+\_\+\+B\+O\+N\+E\+\_\+\+S\+K\+I\+N\+N\+I\+N\+G\+\_\+\+S\+P\+A\+CE} \hyperlink{classirr_1_1scene_1_1IBoneSceneNode_aa41c118c8fa8741c6945787c50c42df7}{get\+Skinning\+Space} () const =0
-\begin{DoxyCompactList}\small\item\em How the relative transformation of the bone is used. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1scene_1_1IBoneSceneNode_ab405c67e87dd79b7c1b9c16a6b8c3182}\label{classirr_1_1scene_1_1IBoneSceneNode_ab405c67e87dd79b7c1b9c16a6b8c3182}} 
-virtual void \hyperlink{classirr_1_1scene_1_1IBoneSceneNode_ab405c67e87dd79b7c1b9c16a6b8c3182}{update\+Absolute\+Position\+Of\+All\+Children} ()=0
-\begin{DoxyCompactList}\small\item\em Updates the absolute position based on the relative and the parents position. \end{DoxyCompactList}\item 
 virtual \+\_\+\+I\+R\+R\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+ const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$ \hyperlink{classirr_1_1scene_1_1IBoneSceneNode_a1c40bee44b89fe81178782e999cbe3a8}{get\+Bone\+Name} () const
 \begin{DoxyCompactList}\small\item\em Get the name of the bone. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1scene_1_1IBoneSceneNode_ac372b2c84a3427df1fdc78deae7d00ea}\label{classirr_1_1scene_1_1IBoneSceneNode_ac372b2c84a3427df1fdc78deae7d00ea}} 
@@ -82,7 +56,7 @@ Used with \hyperlink{classirr_1_1scene_1_1ISkinnedMesh}{I\+Skinned\+Mesh} and \h
 \mbox{\Hypertarget{classirr_1_1scene_1_1IBoneSceneNode_a1c40bee44b89fe81178782e999cbe3a8}\label{classirr_1_1scene_1_1IBoneSceneNode_a1c40bee44b89fe81178782e999cbe3a8}} 
 \index{irr\+::scene\+::\+I\+Bone\+Scene\+Node@{irr\+::scene\+::\+I\+Bone\+Scene\+Node}!get\+Bone\+Name@{get\+Bone\+Name}}
 \index{get\+Bone\+Name@{get\+Bone\+Name}!irr\+::scene\+::\+I\+Bone\+Scene\+Node@{irr\+::scene\+::\+I\+Bone\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Bone\+Name()}{getBoneName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{get\+Bone\+Name()}{getBoneName()}}
 {\footnotesize\ttfamily virtual \+\_\+\+I\+R\+R\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+ const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ irr\+::scene\+::\+I\+Bone\+Scene\+Node\+::get\+Bone\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
@@ -91,36 +65,10 @@ Get the name of the bone.
 
 \begin{DoxyRefDesc}{Deprecated}
 \item[\hyperlink{deprecated__deprecated000001}{Deprecated}]Use get\+Name instead. This method may be removed by Irrlicht 1.\+9 \end{DoxyRefDesc}
-\mbox{\Hypertarget{classirr_1_1scene_1_1IBoneSceneNode_a1c40bee44b89fe81178782e999cbe3a8}\label{classirr_1_1scene_1_1IBoneSceneNode_a1c40bee44b89fe81178782e999cbe3a8}} 
-\index{irr\+::scene\+::\+I\+Bone\+Scene\+Node@{irr\+::scene\+::\+I\+Bone\+Scene\+Node}!get\+Bone\+Name@{get\+Bone\+Name}}
-\index{get\+Bone\+Name@{get\+Bone\+Name}!irr\+::scene\+::\+I\+Bone\+Scene\+Node@{irr\+::scene\+::\+I\+Bone\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Bone\+Name()}{getBoneName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily virtual \+\_\+\+I\+R\+R\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+ const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ irr\+::scene\+::\+I\+Bone\+Scene\+Node\+::get\+Bone\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
-
-
-
-Get the name of the bone. 
-
-\begin{DoxyRefDesc}{Deprecated}
-\item[\hyperlink{deprecated__deprecated000027}{Deprecated}]Use get\+Name instead. This method may be removed by Irrlicht 1.\+9 \end{DoxyRefDesc}
 \mbox{\Hypertarget{classirr_1_1scene_1_1IBoneSceneNode_a7e21d0722e5b105e4d2a956bff110a7f}\label{classirr_1_1scene_1_1IBoneSceneNode_a7e21d0722e5b105e4d2a956bff110a7f}} 
 \index{irr\+::scene\+::\+I\+Bone\+Scene\+Node@{irr\+::scene\+::\+I\+Bone\+Scene\+Node}!On\+Animate@{On\+Animate}}
 \index{On\+Animate@{On\+Animate}!irr\+::scene\+::\+I\+Bone\+Scene\+Node@{irr\+::scene\+::\+I\+Bone\+Scene\+Node}}
-\subsubsection{\texorpdfstring{On\+Animate()}{OnAnimate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Bone\+Scene\+Node\+::\+On\+Animate (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{time\+Ms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Returns the relative transformation of the scene node. 
-
-The animation method. 
-
-Reimplemented from \hyperlink{classirr_1_1scene_1_1ISceneNode_afc1dcb5cb19116d0c7aa3d4ebdf04cc5}{irr\+::scene\+::\+I\+Scene\+Node}.
-
-\mbox{\Hypertarget{classirr_1_1scene_1_1IBoneSceneNode_a7e21d0722e5b105e4d2a956bff110a7f}\label{classirr_1_1scene_1_1IBoneSceneNode_a7e21d0722e5b105e4d2a956bff110a7f}} 
-\index{irr\+::scene\+::\+I\+Bone\+Scene\+Node@{irr\+::scene\+::\+I\+Bone\+Scene\+Node}!On\+Animate@{On\+Animate}}
-\index{On\+Animate@{On\+Animate}!irr\+::scene\+::\+I\+Bone\+Scene\+Node@{irr\+::scene\+::\+I\+Bone\+Scene\+Node}}
-\subsubsection{\texorpdfstring{On\+Animate()}{OnAnimate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{On\+Animate()}{OnAnimate()}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Bone\+Scene\+Node\+::\+On\+Animate (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{time\+Ms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -134,21 +82,7 @@ Reimplemented from \hyperlink{classirr_1_1scene_1_1ISceneNode_afc1dcb5cb19116d0c
 \mbox{\Hypertarget{classirr_1_1scene_1_1IBoneSceneNode_ac942248f09d2db69804ea47476e3829e}\label{classirr_1_1scene_1_1IBoneSceneNode_ac942248f09d2db69804ea47476e3829e}} 
 \index{irr\+::scene\+::\+I\+Bone\+Scene\+Node@{irr\+::scene\+::\+I\+Bone\+Scene\+Node}!render@{render}}
 \index{render@{render}!irr\+::scene\+::\+I\+Bone\+Scene\+Node@{irr\+::scene\+::\+I\+Bone\+Scene\+Node}}
-\subsubsection{\texorpdfstring{render()}{render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Bone\+Scene\+Node\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
-
-
-
-The render method. 
-
-Does nothing as bones are not visible. 
-
-Implements \hyperlink{classirr_1_1scene_1_1ISceneNode_aff530cc4856792101d0aedee51ce35fa}{irr\+::scene\+::\+I\+Scene\+Node}.
-
-\mbox{\Hypertarget{classirr_1_1scene_1_1IBoneSceneNode_ac942248f09d2db69804ea47476e3829e}\label{classirr_1_1scene_1_1IBoneSceneNode_ac942248f09d2db69804ea47476e3829e}} 
-\index{irr\+::scene\+::\+I\+Bone\+Scene\+Node@{irr\+::scene\+::\+I\+Bone\+Scene\+Node}!render@{render}}
-\index{render@{render}!irr\+::scene\+::\+I\+Bone\+Scene\+Node@{irr\+::scene\+::\+I\+Bone\+Scene\+Node}}
-\subsubsection{\texorpdfstring{render()}{render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{render()}{render()}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Bone\+Scene\+Node\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
@@ -162,20 +96,7 @@ Implements \hyperlink{classirr_1_1scene_1_1ISceneNode_aff530cc4856792101d0aedee5
 \mbox{\Hypertarget{classirr_1_1scene_1_1IBoneSceneNode_a424a467f045e809bcad2aa239edb9994}\label{classirr_1_1scene_1_1IBoneSceneNode_a424a467f045e809bcad2aa239edb9994}} 
 \index{irr\+::scene\+::\+I\+Bone\+Scene\+Node@{irr\+::scene\+::\+I\+Bone\+Scene\+Node}!set\+Animation\+Mode@{set\+Animation\+Mode}}
 \index{set\+Animation\+Mode@{set\+Animation\+Mode}!irr\+::scene\+::\+I\+Bone\+Scene\+Node@{irr\+::scene\+::\+I\+Bone\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Animation\+Mode()}{setAnimationMode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Bone\+Scene\+Node\+::set\+Animation\+Mode (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801}{E\+\_\+\+B\+O\+N\+E\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE}}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Sets the animation mode of the bone. 
-
-\begin{DoxyReturn}{Returns}
-True if successful. (Unused) 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1scene_1_1IBoneSceneNode_a424a467f045e809bcad2aa239edb9994}\label{classirr_1_1scene_1_1IBoneSceneNode_a424a467f045e809bcad2aa239edb9994}} 
-\index{irr\+::scene\+::\+I\+Bone\+Scene\+Node@{irr\+::scene\+::\+I\+Bone\+Scene\+Node}!set\+Animation\+Mode@{set\+Animation\+Mode}}
-\index{set\+Animation\+Mode@{set\+Animation\+Mode}!irr\+::scene\+::\+I\+Bone\+Scene\+Node@{irr\+::scene\+::\+I\+Bone\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Animation\+Mode()}{setAnimationMode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{set\+Animation\+Mode()}{setAnimationMode()}}
 {\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Bone\+Scene\+Node\+::set\+Animation\+Mode (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1scene_a318162c0a3aad1cf228ed7daddd44801}{E\+\_\+\+B\+O\+N\+E\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE}}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

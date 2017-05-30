@@ -23,14 +23,7 @@ virtual \hyperlink{classirr_1_1scene_1_1IMeshWriter_a9f92ba59b4ea9a21ccc6bcddc0d
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
 virtual \hyperlink{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4e}{E\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+T\+Y\+PE} \hyperlink{classirr_1_1scene_1_1IMeshWriter_af70d702a86e25074f96e93a2d5a15813}{get\+Type} () const =0
 \begin{DoxyCompactList}\small\item\em Get the type of the mesh writer. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classirr_1_1scene_1_1IMeshWriter_a8cc31e211dc94104c7dd4b0ce4fd2cca}{write\+Mesh} (\hyperlink{classirr_1_1io_1_1IWriteFile}{io\+::\+I\+Write\+File} $\ast$file, \hyperlink{classirr_1_1scene_1_1IMesh}{scene\+::\+I\+Mesh} $\ast$mesh, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} flags=\hyperlink{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1dac17214e9fb1a903dbe17812feff84656}{E\+M\+W\+F\+\_\+\+N\+O\+NE})=0
-\begin{DoxyCompactList}\small\item\em Write a static mesh. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1scene_1_1IMeshWriter_a9f92ba59b4ea9a21ccc6bcddc0d3ada9}\label{classirr_1_1scene_1_1IMeshWriter_a9f92ba59b4ea9a21ccc6bcddc0d3ada9}} 
-virtual \hyperlink{classirr_1_1scene_1_1IMeshWriter_a9f92ba59b4ea9a21ccc6bcddc0d3ada9}{$\sim$\+I\+Mesh\+Writer} ()
-\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
-virtual \hyperlink{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4e}{E\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+T\+Y\+PE} \hyperlink{classirr_1_1scene_1_1IMeshWriter_af70d702a86e25074f96e93a2d5a15813}{get\+Type} () const =0
-\begin{DoxyCompactList}\small\item\em Get the type of the mesh writer. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classirr_1_1scene_1_1IMeshWriter_a8cc31e211dc94104c7dd4b0ce4fd2cca}{write\+Mesh} (\hyperlink{classirr_1_1io_1_1IWriteFile}{io\+::\+I\+Write\+File} $\ast$file, \hyperlink{classirr_1_1scene_1_1IMesh}{scene\+::\+I\+Mesh} $\ast$mesh, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} flags=\hyperlink{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1dac17214e9fb1a903dbe17812feff84656}{E\+M\+W\+F\+\_\+\+N\+O\+NE})=0
+virtual bool \hyperlink{classirr_1_1scene_1_1IMeshWriter_a8cc31e211dc94104c7dd4b0ce4fd2cca}{write\+Mesh} (\hyperlink{classirr_1_1io_1_1IWriteFile}{io\+::\+I\+Write\+File} $\ast$file, \hyperlink{classirr_1_1scene_1_1IMesh}{scene\+::\+I\+Mesh} $\ast$mesh, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} flags=\hyperlink{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1daf2dfebddfd0a2cd2b558e23cb6a87464}{E\+M\+W\+F\+\_\+\+N\+O\+NE})=0
 \begin{DoxyCompactList}\small\item\em Write a static mesh. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -42,20 +35,7 @@ Interface for writing meshes.
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMeshWriter_af70d702a86e25074f96e93a2d5a15813}\label{classirr_1_1scene_1_1IMeshWriter_af70d702a86e25074f96e93a2d5a15813}} 
 \index{irr\+::scene\+::\+I\+Mesh\+Writer@{irr\+::scene\+::\+I\+Mesh\+Writer}!get\+Type@{get\+Type}}
 \index{get\+Type@{get\+Type}!irr\+::scene\+::\+I\+Mesh\+Writer@{irr\+::scene\+::\+I\+Mesh\+Writer}}
-\subsubsection{\texorpdfstring{get\+Type()}{getType()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4e}{E\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+T\+Y\+PE} irr\+::scene\+::\+I\+Mesh\+Writer\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Get the type of the mesh writer. 
-
-For own implementations, use M\+A\+K\+E\+\_\+\+I\+R\+R\+\_\+\+ID as shown in the E\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+T\+Y\+PE enumeration to return your own unique mesh type id. \begin{DoxyReturn}{Returns}
-Type of the mesh writer. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1scene_1_1IMeshWriter_af70d702a86e25074f96e93a2d5a15813}\label{classirr_1_1scene_1_1IMeshWriter_af70d702a86e25074f96e93a2d5a15813}} 
-\index{irr\+::scene\+::\+I\+Mesh\+Writer@{irr\+::scene\+::\+I\+Mesh\+Writer}!get\+Type@{get\+Type}}
-\index{get\+Type@{get\+Type}!irr\+::scene\+::\+I\+Mesh\+Writer@{irr\+::scene\+::\+I\+Mesh\+Writer}}
-\subsubsection{\texorpdfstring{get\+Type()}{getType()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1scene_a431fa15741518ba15f6d5f2608b6cb4e}{E\+M\+E\+S\+H\+\_\+\+W\+R\+I\+T\+E\+R\+\_\+\+T\+Y\+PE} irr\+::scene\+::\+I\+Mesh\+Writer\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -68,30 +48,8 @@ Type of the mesh writer.
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMeshWriter_a8cc31e211dc94104c7dd4b0ce4fd2cca}\label{classirr_1_1scene_1_1IMeshWriter_a8cc31e211dc94104c7dd4b0ce4fd2cca}} 
 \index{irr\+::scene\+::\+I\+Mesh\+Writer@{irr\+::scene\+::\+I\+Mesh\+Writer}!write\+Mesh@{write\+Mesh}}
 \index{write\+Mesh@{write\+Mesh}!irr\+::scene\+::\+I\+Mesh\+Writer@{irr\+::scene\+::\+I\+Mesh\+Writer}}
-\subsubsection{\texorpdfstring{write\+Mesh()}{writeMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Mesh\+Writer\+::write\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IWriteFile}{io\+::\+I\+Write\+File} $\ast$}]{file,  }\item[{\hyperlink{classirr_1_1scene_1_1IMesh}{scene\+::\+I\+Mesh} $\ast$}]{mesh,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{flags = {\ttfamily \hyperlink{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1dac17214e9fb1a903dbe17812feff84656}{E\+M\+W\+F\+\_\+\+N\+O\+NE}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Write a static mesh. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em file} & File handle to write the mesh to. \\
-\hline
-{\em mesh} & Pointer to mesh to be written. \\
-\hline
-{\em flags} & Optional flags to set properties of the writer. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-True if sucessful 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1scene_1_1IMeshWriter_a8cc31e211dc94104c7dd4b0ce4fd2cca}\label{classirr_1_1scene_1_1IMeshWriter_a8cc31e211dc94104c7dd4b0ce4fd2cca}} 
-\index{irr\+::scene\+::\+I\+Mesh\+Writer@{irr\+::scene\+::\+I\+Mesh\+Writer}!write\+Mesh@{write\+Mesh}}
-\index{write\+Mesh@{write\+Mesh}!irr\+::scene\+::\+I\+Mesh\+Writer@{irr\+::scene\+::\+I\+Mesh\+Writer}}
-\subsubsection{\texorpdfstring{write\+Mesh()}{writeMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Mesh\+Writer\+::write\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IWriteFile}{io\+::\+I\+Write\+File} $\ast$}]{file,  }\item[{\hyperlink{classirr_1_1scene_1_1IMesh}{scene\+::\+I\+Mesh} $\ast$}]{mesh,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{flags = {\ttfamily \hyperlink{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1dac17214e9fb1a903dbe17812feff84656}{E\+M\+W\+F\+\_\+\+N\+O\+NE}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{write\+Mesh()}{writeMesh()}}
+{\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Mesh\+Writer\+::write\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IWriteFile}{io\+::\+I\+Write\+File} $\ast$}]{file,  }\item[{\hyperlink{classirr_1_1scene_1_1IMesh}{scene\+::\+I\+Mesh} $\ast$}]{mesh,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{flags = {\ttfamily \hyperlink{namespaceirr_1_1scene_a9faae6cd9e415a0553cb4cdc190bbc1daf2dfebddfd0a2cd2b558e23cb6a87464}{E\+M\+W\+F\+\_\+\+N\+O\+NE}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 

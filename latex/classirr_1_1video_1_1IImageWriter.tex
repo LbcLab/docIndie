@@ -18,11 +18,7 @@ Inheritance diagram for irr\+:\+:video\+:\+:I\+Image\+Writer\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual bool \hyperlink{classirr_1_1video_1_1IImageWriter_a776f8a7a050572f2144848a86fe6de6b}{is\+A\+Writeable\+File\+Extension} (const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{io\+::path} \&filename) const =0
-\begin{DoxyCompactList}\small\item\em Check if this writer can write a file with the given extension. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classirr_1_1video_1_1IImageWriter_a0a7f09d1f1613adfe2bfaadc60913f7e}{write\+Image} (\hyperlink{classirr_1_1io_1_1IWriteFile}{io\+::\+I\+Write\+File} $\ast$file, \hyperlink{classirr_1_1video_1_1IImage}{I\+Image} $\ast$image, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} param=0) const =0
-\begin{DoxyCompactList}\small\item\em Write image to file. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classirr_1_1video_1_1IImageWriter_a776f8a7a050572f2144848a86fe6de6b}{is\+A\+Writeable\+File\+Extension} (const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{io\+::path} \&filename) const =0
+virtual bool \hyperlink{classirr_1_1video_1_1IImageWriter_a776f8a7a050572f2144848a86fe6de6b}{is\+A\+Writeable\+File\+Extension} (const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&filename) const =0
 \begin{DoxyCompactList}\small\item\em Check if this writer can write a file with the given extension. \end{DoxyCompactList}\item 
 virtual bool \hyperlink{classirr_1_1video_1_1IImageWriter_a0a7f09d1f1613adfe2bfaadc60913f7e}{write\+Image} (\hyperlink{classirr_1_1io_1_1IWriteFile}{io\+::\+I\+Write\+File} $\ast$file, \hyperlink{classirr_1_1video_1_1IImage}{I\+Image} $\ast$image, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} param=0) const =0
 \begin{DoxyCompactList}\small\item\em Write image to file. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -36,26 +32,8 @@ Interface for writing software image data.
 \mbox{\Hypertarget{classirr_1_1video_1_1IImageWriter_a776f8a7a050572f2144848a86fe6de6b}\label{classirr_1_1video_1_1IImageWriter_a776f8a7a050572f2144848a86fe6de6b}} 
 \index{irr\+::video\+::\+I\+Image\+Writer@{irr\+::video\+::\+I\+Image\+Writer}!is\+A\+Writeable\+File\+Extension@{is\+A\+Writeable\+File\+Extension}}
 \index{is\+A\+Writeable\+File\+Extension@{is\+A\+Writeable\+File\+Extension}!irr\+::video\+::\+I\+Image\+Writer@{irr\+::video\+::\+I\+Image\+Writer}}
-\subsubsection{\texorpdfstring{is\+A\+Writeable\+File\+Extension()}{isAWriteableFileExtension()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual bool irr\+::video\+::\+I\+Image\+Writer\+::is\+A\+Writeable\+File\+Extension (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{io\+::path} \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Check if this writer can write a file with the given extension. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em filename} & Name of the file to check. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-True if file extension specifies a writable type. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1video_1_1IImageWriter_a776f8a7a050572f2144848a86fe6de6b}\label{classirr_1_1video_1_1IImageWriter_a776f8a7a050572f2144848a86fe6de6b}} 
-\index{irr\+::video\+::\+I\+Image\+Writer@{irr\+::video\+::\+I\+Image\+Writer}!is\+A\+Writeable\+File\+Extension@{is\+A\+Writeable\+File\+Extension}}
-\index{is\+A\+Writeable\+File\+Extension@{is\+A\+Writeable\+File\+Extension}!irr\+::video\+::\+I\+Image\+Writer@{irr\+::video\+::\+I\+Image\+Writer}}
-\subsubsection{\texorpdfstring{is\+A\+Writeable\+File\+Extension()}{isAWriteableFileExtension()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily virtual bool irr\+::video\+::\+I\+Image\+Writer\+::is\+A\+Writeable\+File\+Extension (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{io\+::path} \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{is\+A\+Writeable\+File\+Extension()}{isAWriteableFileExtension()}}
+{\footnotesize\ttfamily virtual bool irr\+::video\+::\+I\+Image\+Writer\+::is\+A\+Writeable\+File\+Extension (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -72,29 +50,7 @@ True if file extension specifies a writable type.
 \mbox{\Hypertarget{classirr_1_1video_1_1IImageWriter_a0a7f09d1f1613adfe2bfaadc60913f7e}\label{classirr_1_1video_1_1IImageWriter_a0a7f09d1f1613adfe2bfaadc60913f7e}} 
 \index{irr\+::video\+::\+I\+Image\+Writer@{irr\+::video\+::\+I\+Image\+Writer}!write\+Image@{write\+Image}}
 \index{write\+Image@{write\+Image}!irr\+::video\+::\+I\+Image\+Writer@{irr\+::video\+::\+I\+Image\+Writer}}
-\subsubsection{\texorpdfstring{write\+Image()}{writeImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual bool irr\+::video\+::\+I\+Image\+Writer\+::write\+Image (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IWriteFile}{io\+::\+I\+Write\+File} $\ast$}]{file,  }\item[{\hyperlink{classirr_1_1video_1_1IImage}{I\+Image} $\ast$}]{image,  }\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{param = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Write image to file. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em file} & File handle to write to. \\
-\hline
-{\em image} & \hyperlink{classImage}{Image} to write into file. \\
-\hline
-{\em param} & Writer specific parameter, influencing e.\+g. quality. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-True if image was successfully written. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classirr_1_1video_1_1IImageWriter_a0a7f09d1f1613adfe2bfaadc60913f7e}\label{classirr_1_1video_1_1IImageWriter_a0a7f09d1f1613adfe2bfaadc60913f7e}} 
-\index{irr\+::video\+::\+I\+Image\+Writer@{irr\+::video\+::\+I\+Image\+Writer}!write\+Image@{write\+Image}}
-\index{write\+Image@{write\+Image}!irr\+::video\+::\+I\+Image\+Writer@{irr\+::video\+::\+I\+Image\+Writer}}
-\subsubsection{\texorpdfstring{write\+Image()}{writeImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{write\+Image()}{writeImage()}}
 {\footnotesize\ttfamily virtual bool irr\+::video\+::\+I\+Image\+Writer\+::write\+Image (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IWriteFile}{io\+::\+I\+Write\+File} $\ast$}]{file,  }\item[{\hyperlink{classirr_1_1video_1_1IImage}{I\+Image} $\ast$}]{image,  }\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{param = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
