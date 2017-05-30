@@ -9,12 +9,10 @@ Manager of event of new game scene.
 
 {\ttfamily \#include $<$Game\+New\+Receiver.\+hh$>$}
 
-Inheritance diagram for Game\+New\+Receiver\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{classGameNewReceiver}
-\end{center}
-\end{figure}
+
+
+Inherits I\+Event\+Receiver.
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -22,7 +20,7 @@ Inheritance diagram for Game\+New\+Receiver\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 \hyperlink{classGameNewReceiver_ab92b6653b56d291853a4e2f737eaf6fd}{$\sim$\+Game\+New\+Receiver} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
-bool \hyperlink{classGameNewReceiver_ad9ec097d8b46946ed1a21c24463fc0b6}{On\+Event} (const \hyperlink{structirr_1_1SEvent}{irr\+::\+S\+Event} \&event)
+bool \hyperlink{classGameNewReceiver_ad9ec097d8b46946ed1a21c24463fc0b6}{On\+Event} (const irr\+::\+S\+Event \&event)
 \begin{DoxyCompactList}\small\item\em Allow the user to handle envent into a scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -57,17 +55,13 @@ Destroy the class.
 \index{Game\+New\+Receiver@{Game\+New\+Receiver}!On\+Event@{On\+Event}}
 \index{On\+Event@{On\+Event}!Game\+New\+Receiver@{Game\+New\+Receiver}}
 \subsubsection{\texorpdfstring{On\+Event()}{OnEvent()}}
-{\footnotesize\ttfamily bool Game\+New\+Receiver\+::\+On\+Event (\begin{DoxyParamCaption}\item[{const \hyperlink{structirr_1_1SEvent}{irr\+::\+S\+Event} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool Game\+New\+Receiver\+::\+On\+Event (\begin{DoxyParamCaption}\item[{const irr\+::\+S\+Event \&}]{event }\end{DoxyParamCaption})}
 
 
 
 Allow the user to handle envent into a scene. 
 
 Return true if he know the event, false if not. 
-
-Implements \hyperlink{classirr_1_1IEventReceiver_a571f744ceffc3b4fe8a81f529163eb97}{irr\+::\+I\+Event\+Receiver}.
-
-
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
