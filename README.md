@@ -39,4 +39,4 @@ firefox refman.pdf
  + **Charles Paulet** - *script && README - documents code* - [LbcLab](https://lbclab.com/)
  + **Théophile Champion** - *documents code* - [LbcLab](https://lbclab.com/)
  
- See also the list of [contributors](https://github.com/LbcLab/indie_studio_landing_page/contributors) who participated in this project.
+ See also the list of [contributors](https://github.com/LbcLab/docIndie/contributors) who participated in this project.
