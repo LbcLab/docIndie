@@ -18,8 +18,10 @@ Inheritance diagram for Game\+Simulation\+Scene\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classGameSimulationScene_a6983b2c511d45278121bcf62151fbb19}\label{classGameSimulationScene_a6983b2c511d45278121bcf62151fbb19}} 
 \hyperlink{classGameSimulationScene_a6983b2c511d45278121bcf62151fbb19}{Game\+Simulation\+Scene} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classLevel}{Level} $>$ \&level)
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameSimulationScene_af45f3e7f70376e59a6f320f21ce2897b}\label{classGameSimulationScene_af45f3e7f70376e59a6f320f21ce2897b}} 
 \hyperlink{classGameSimulationScene_af45f3e7f70376e59a6f320f21ce2897b}{$\sim$\+Game\+Simulation\+Scene} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
 void \hyperlink{classGameSimulationScene_a66b107f708b5eed87a3c0a0016541d29}{update\+Camera} (\hyperlink{classWindow}{Window} $\ast$win)
@@ -30,29 +32,6 @@ irr\+::\+I\+Event\+Receiver $\ast$ \hyperlink{classGameSimulationScene_a048b2a93
 
 \subsection{Detailed Description}
 \hyperlink{classButton}{Button} interface of Game\+Simulationscene. 
-
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classGameSimulationScene_a6983b2c511d45278121bcf62151fbb19}\label{classGameSimulationScene_a6983b2c511d45278121bcf62151fbb19}} 
-\index{Game\+Simulation\+Scene@{Game\+Simulation\+Scene}!Game\+Simulation\+Scene@{Game\+Simulation\+Scene}}
-\index{Game\+Simulation\+Scene@{Game\+Simulation\+Scene}!Game\+Simulation\+Scene@{Game\+Simulation\+Scene}}
-\subsubsection{\texorpdfstring{Game\+Simulation\+Scene()}{GameSimulationScene()}}
-{\footnotesize\ttfamily Game\+Simulation\+Scene\+::\+Game\+Simulation\+Scene (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{classLevel}{Level} $>$ \&}]{level }\end{DoxyParamCaption})}
-
-
-
-Constructor. 
-
-Build the class. \mbox{\Hypertarget{classGameSimulationScene_af45f3e7f70376e59a6f320f21ce2897b}\label{classGameSimulationScene_af45f3e7f70376e59a6f320f21ce2897b}} 
-\index{Game\+Simulation\+Scene@{Game\+Simulation\+Scene}!````~Game\+Simulation\+Scene@{$\sim$\+Game\+Simulation\+Scene}}
-\index{````~Game\+Simulation\+Scene@{$\sim$\+Game\+Simulation\+Scene}!Game\+Simulation\+Scene@{Game\+Simulation\+Scene}}
-\subsubsection{\texorpdfstring{$\sim$\+Game\+Simulation\+Scene()}{~GameSimulationScene()}}
-{\footnotesize\ttfamily Game\+Simulation\+Scene\+::$\sim$\+Game\+Simulation\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Destructor. 
-
-Destroy the class. 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classGameSimulationScene_a048b2a937caff3af7b4d54f8bd404ec1}\label{classGameSimulationScene_a048b2a937caff3af7b4d54f8bd404ec1}} 
@@ -65,7 +44,10 @@ Destroy the class.
 
 Allow the user to implemente the event callback class for each scene. 
 
-Return the event. 
+\begin{DoxyReturn}{Returns}
+the event. 
+\end{DoxyReturn}
+
 
 Implements \hyperlink{classAScene_af521e5e6d30a5d2e5d30eb333e4d3abd}{A\+Scene}.
 
@@ -81,7 +63,7 @@ Update camera\textquotesingle{}s position.
 
 
 \begin{DoxyParams}{Parameters}
-{\em The} & window who contain the camera. \\
+{\em win} & The window who contain the camera. \\
 \hline
 \end{DoxyParams}
 
