@@ -12,6 +12,7 @@ This class contain all the methode to manipulate the configuration.
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classConfigManager_a7d3d7c10423d969f7544509f6fcca32f}\label{classConfigManager_a7d3d7c10423d969f7544509f6fcca32f}} 
 \hyperlink{classConfigManager_a7d3d7c10423d969f7544509f6fcca32f}{Config\+Manager} ()
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 void \hyperlink{classConfigManager_a63ff6c831f037cf5bfe580b4944b0b6c}{load\+Config} (std\+::string)
@@ -19,7 +20,7 @@ void \hyperlink{classConfigManager_a63ff6c831f037cf5bfe580b4944b0b6c}{load\+Conf
 \mbox{\Hypertarget{classConfigManager_a178e051860792271e9b1ec4434776f91}\label{classConfigManager_a178e051860792271e9b1ec4434776f91}} 
 void \hyperlink{classConfigManager_a178e051860792271e9b1ec4434776f91}{save\+Config} () const
 \begin{DoxyCompactList}\small\item\em Savethe object in the file. \end{DoxyCompactList}\item 
-void \hyperlink{classConfigManager_a4f2b06f2ef741a15b3dfe82259cfd355}{create\+File} (std\+::string)
+void \hyperlink{classConfigManager_af78f80706b5a300a738c3fde04c9c91b}{create\+File} (std\+::string file\+Name)
 \begin{DoxyCompactList}\small\item\em create an empty configuration file \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -36,28 +37,8 @@ config\+::\+Control \hyperlink{classConfigManager_abaade5dd62a670ad068376eb950e7
 \subsection{Detailed Description}
 This class contain all the methode to manipulate the configuration. 
 
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classConfigManager_a7d3d7c10423d969f7544509f6fcca32f}\label{classConfigManager_a7d3d7c10423d969f7544509f6fcca32f}} 
-\index{Config\+Manager@{Config\+Manager}!Config\+Manager@{Config\+Manager}}
-\index{Config\+Manager@{Config\+Manager}!Config\+Manager@{Config\+Manager}}
-\subsubsection{\texorpdfstring{Config\+Manager()}{ConfigManager()}}
-{\footnotesize\ttfamily Config\+Manager\+::\+Config\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Constructor. 
-
-Build the class
-
-
-\begin{DoxyParams}{Parameters}
-{\em nothing} & \\
-\hline
-\end{DoxyParams}
-
-
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classConfigManager_a4f2b06f2ef741a15b3dfe82259cfd355}\label{classConfigManager_a4f2b06f2ef741a15b3dfe82259cfd355}} 
+\mbox{\Hypertarget{classConfigManager_af78f80706b5a300a738c3fde04c9c91b}\label{classConfigManager_af78f80706b5a300a738c3fde04c9c91b}} 
 \index{Config\+Manager@{Config\+Manager}!create\+File@{create\+File}}
 \index{create\+File@{create\+File}!Config\+Manager@{Config\+Manager}}
 \subsubsection{\texorpdfstring{create\+File()}{createFile()}}
@@ -69,7 +50,7 @@ create an empty configuration file
 
 
 \begin{DoxyParams}{Parameters}
-{\em path} & to the new configuration file \\
+{\em file\+Name} & Path to the new configuration file \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classConfigManager_a63ff6c831f037cf5bfe580b4944b0b6c}\label{classConfigManager_a63ff6c831f037cf5bfe580b4944b0b6c}} 
@@ -87,9 +68,6 @@ Load the configuration.
 {\em path} & to the configuration file \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-void 
-\end{DoxyReturn}
 
 
 \subsection{Member Data Documentation}
