@@ -17,7 +17,6 @@ The \hyperlink{classSaveManager}{Save\+Manager} class.
 \begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
 std\+::shared\+\_\+ptr$<$ \hyperlink{classLevel}{Level} $>$ \hyperlink{classSaveManager_aa0661d6a8f9c0330755a8e03f8631992}{load\+Level} (const String \&level\+Name)
 \begin{DoxyCompactList}\small\item\em Allow you to load a game previously save. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classSaveManager_a3fd6a2e996ee848bfec385a288f44461}\label{classSaveManager_a3fd6a2e996ee848bfec385a288f44461}} 
 void \hyperlink{classSaveManager_a3fd6a2e996ee848bfec385a288f44461}{save\+Level} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classLevel}{Level} $>$ \&level, const String \&file\+Name)
 \begin{DoxyCompactList}\small\item\em Allow you to save the object \hyperlink{classGame}{Game} passed as parameter during the construction. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classSaveManager_a94d97899e285c0bbd46f4fdb42767f79}\label{classSaveManager_a94d97899e285c0bbd46f4fdb42767f79}} 
@@ -41,12 +40,29 @@ Allow you to load a game previously save.
 
 
 \begin{DoxyParams}{Parameters}
-{\em The} & path to the game\textquotesingle{}s file \\
+{\em level\+Name} & The path to the game\textquotesingle{}s file \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A pointeur to a \hyperlink{classGame}{Game} object 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classSaveManager_a3fd6a2e996ee848bfec385a288f44461}\label{classSaveManager_a3fd6a2e996ee848bfec385a288f44461}} 
+\index{Save\+Manager@{Save\+Manager}!save\+Level@{save\+Level}}
+\index{save\+Level@{save\+Level}!Save\+Manager@{Save\+Manager}}
+\subsubsection{\texorpdfstring{save\+Level()}{saveLevel()}}
+{\footnotesize\ttfamily void Save\+Manager\+::save\+Level (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{classLevel}{Level} $>$ \&}]{level,  }\item[{const String \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Allow you to save the object \hyperlink{classGame}{Game} passed as parameter during the construction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Reference to smart pointer that points to level to be saved \\
+\hline
+{\em file\+Name} & Filename path where to save \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

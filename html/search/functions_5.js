@@ -13,7 +13,7 @@ var searchData=
   ['getid',['getId',['../classAObject.html#aae823d79b9bfa1ef090ee9e7b764de4a',1,'AObject']]],
   ['getlevel',['getLevel',['../classGame.html#aad97bed9ceadea4fcf802feaebc66947',1,'Game']]],
   ['getmappath',['getMapPath',['../classMap.html#a47f72d481d0ed624dfd03e63ebd281e5',1,'Map']]],
-  ['getmodel',['getModel',['../classAObject.html#a3ffaa331c1842c5bf782c9a0343474bc',1,'AObject::getModel()'],['../classModelsManager.html#aecbaab73572634a9e5cbc035b25864e1',1,'ModelsManager::getModel()']]],
+  ['getmodel',['getModel',['../classAObject.html#a3ffaa331c1842c5bf782c9a0343474bc',1,'AObject::getModel()'],['../classModelsManager.html#a8fe0ee355c02692c538c7bae747b55a5',1,'ModelsManager::getModel()']]],
   ['getplayers',['getPlayers',['../classGameNewScene.html#a6aa753c0f281a3e1f0ed06fe10e070f4',1,'GameNewScene']]],
   ['getplayerscore',['getPlayerScore',['../classScoreManager.html#abc6c1d76fdcc17f1b8ebe4c7bf5550e2',1,'ScoreManager']]],
   ['getscores',['getScores',['../classScoreScene.html#af82d6c841dc42c42d83202d2c7ddf8c9',1,'ScoreScene']]],

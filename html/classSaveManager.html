@@ -80,9 +80,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa0661d6a8f9c0330755a8e03f8631992"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classLevel.html">Level</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#aa0661d6a8f9c0330755a8e03f8631992">loadLevel</a> (const String &amp;levelName)</td></tr>
 <tr class="memdesc:aa0661d6a8f9c0330755a8e03f8631992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow you to load a game previously save.  <a href="#aa0661d6a8f9c0330755a8e03f8631992">More...</a><br /></td></tr>
 <tr class="separator:aa0661d6a8f9c0330755a8e03f8631992"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fd6a2e996ee848bfec385a288f44461"><td class="memItemLeft" align="right" valign="top"><a id="a3fd6a2e996ee848bfec385a288f44461"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#a3fd6a2e996ee848bfec385a288f44461">saveLevel</a> (const std::shared_ptr&lt; <a class="el" href="classLevel.html">Level</a> &gt; &amp;level, const String &amp;fileName)</td></tr>
-<tr class="memdesc:a3fd6a2e996ee848bfec385a288f44461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow you to save the object <a class="el" href="classGame.html" title="The Game class. ">Game</a> passed as parameter during the construction. <br /></td></tr>
+<tr class="memitem:a3fd6a2e996ee848bfec385a288f44461"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#a3fd6a2e996ee848bfec385a288f44461">saveLevel</a> (const std::shared_ptr&lt; <a class="el" href="classLevel.html">Level</a> &gt; &amp;level, const String &amp;fileName)</td></tr>
+<tr class="memdesc:a3fd6a2e996ee848bfec385a288f44461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow you to save the object <a class="el" href="classGame.html" title="The Game class. ">Game</a> passed as parameter during the construction.  <a href="#a3fd6a2e996ee848bfec385a288f44461">More...</a><br /></td></tr>
 <tr class="separator:a3fd6a2e996ee848bfec385a288f44461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94d97899e285c0bbd46f4fdb42767f79"><td class="memItemLeft" align="right" valign="top"><a id="a94d97899e285c0bbd46f4fdb42767f79"></a>
 const std::shared_ptr&lt; <a class="el" href="classGame.html">Game</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#a94d97899e285c0bbd46f4fdb42767f79">getGame</a> () const</td></tr>
@@ -111,11 +110,48 @@ const std::shared_ptr&lt; <a class="el" href="classGame.html">Game</a> &gt; &amp
 <p>Allow you to load a game previously save. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">The</td><td>path to the game's file </td></tr>
+    <tr><td class="paramname">levelName</td><td>The path to the game's file </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointeur to a <a class="el" href="classGame.html" title="The Game class. ">Game</a> object </dd></dl>
+
+</div>
+</div>
+<a id="a3fd6a2e996ee848bfec385a288f44461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fd6a2e996ee848bfec385a288f44461">&#9670;&nbsp;</a></span>saveLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SaveManager::saveLevel </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classLevel.html">Level</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const String &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allow you to save the object <a class="el" href="classGame.html" title="The Game class. ">Game</a> passed as parameter during the construction. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>Reference to smart pointer that points to level to be saved </td></tr>
+    <tr><td class="paramname">fileName</td><td>Filename path where to save </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
