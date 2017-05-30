@@ -20,6 +20,7 @@ Inheritance diagram for Button\+:\begin{figure}[H]
 \item 
 \hyperlink{classButton_a5729094ff8ec4ce3e64e6691c297983c}{Button} (const Rect \&rect, const wchar\+\_\+t $\ast$text, const wchar\+\_\+t $\ast$tooltext, enum indie\+::\+G\+U\+I\+Button\+Id id, const wchar\+\_\+t $\ast$background=L\char`\"{}assets/menus/transparent.\+png\char`\"{})
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a2a001eb9c3cc8ae54768a850dd345002}\label{classButton_a2a001eb9c3cc8ae54768a850dd345002}} 
 \hyperlink{classButton_a2a001eb9c3cc8ae54768a850dd345002}{$\sim$\+Button} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
 void \hyperlink{classButton_aaee0c62414711ae91084b05b38d0c8c5}{print} (\hyperlink{classWindow}{Window} $\ast$win)
@@ -44,20 +45,18 @@ Build the class.
 
 
 \begin{DoxyParams}{Parameters}
-{\em 1)} & \textquotesingle{}rect\textquotesingle{} the rectangle who represent the button (x1, y1, x2, y2). 2) \textquotesingle{}background\textquotesingle{} the name of the image, that will be put on the background of the button. 3) \textquotesingle{}text\textquotesingle{} the text that will be write on the button. 3) \textquotesingle{}tooltext\textquotesingle{} the text displayed in the tooltip. 4) \textquotesingle{}id\textquotesingle{} the id throw the user click on the button . \\
+{\em rect} & The rectangle who represent the button (x1, y1, x2, y2). \\
+\hline
+{\em background} & The name of the image, that will be put on the background of the button. \\
+\hline
+{\em text} & the text that will be write on the button. \\
+\hline
+{\em tooltext} & The text displayed in the tooltip. \\
+\hline
+{\em id} & The id throw the user click on the button . \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classButton_a2a001eb9c3cc8ae54768a850dd345002}\label{classButton_a2a001eb9c3cc8ae54768a850dd345002}} 
-\index{Button@{Button}!````~Button@{$\sim$\+Button}}
-\index{````~Button@{$\sim$\+Button}!Button@{Button}}
-\subsubsection{\texorpdfstring{$\sim$\+Button()}{~Button()}}
-{\footnotesize\ttfamily Button\+::$\sim$\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-
-
-Destructor. 
-
-Destroy the class. 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classButton_aaee0c62414711ae91084b05b38d0c8c5}\label{classButton_aaee0c62414711ae91084b05b38d0c8c5}} 
@@ -72,7 +71,7 @@ Print the button into the window.
 
 
 \begin{DoxyParams}{Parameters}
-{\em \textquotesingle{}window\textquotesingle{}} & the window where the button will be print. \\
+{\em win} & The window where the button will be print. \\
 \hline
 \end{DoxyParams}
 
