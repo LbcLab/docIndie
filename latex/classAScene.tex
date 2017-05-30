@@ -18,8 +18,10 @@ Inheritance diagram for A\+Scene\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classAScene_ad0eacf691dbc8240fdf3a42d450c1042}\label{classAScene_ad0eacf691dbc8240fdf3a42d450c1042}} 
 \hyperlink{classAScene_ad0eacf691dbc8240fdf3a42d450c1042}{A\+Scene} ()
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAScene_a9faf7f1a271327227e83627432d0b210}\label{classAScene_a9faf7f1a271327227e83627432d0b210}} 
 \hyperlink{classAScene_a9faf7f1a271327227e83627432d0b210}{$\sim$\+A\+Scene} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
 void \hyperlink{classAScene_ae5d7463a823ed64f3846b5847340b68c}{print} (\hyperlink{classWindow}{Window} $\ast$win)
@@ -37,36 +39,6 @@ virtual irr\+::\+I\+Event\+Receiver $\ast$ \hyperlink{classAScene_af521e5e6d30a5
 \subsection{Detailed Description}
 Represent the window\textquotesingle{}s scene that will print some widget/object of the scene \+: buttons, images, etc... 
 
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classAScene_ad0eacf691dbc8240fdf3a42d450c1042}\label{classAScene_ad0eacf691dbc8240fdf3a42d450c1042}} 
-\index{A\+Scene@{A\+Scene}!A\+Scene@{A\+Scene}}
-\index{A\+Scene@{A\+Scene}!A\+Scene@{A\+Scene}}
-\subsubsection{\texorpdfstring{A\+Scene()}{AScene()}}
-{\footnotesize\ttfamily A\+Scene\+::\+A\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Constructor. 
-
-Build the class.
-
-
-\begin{DoxyParams}{Parameters}
-{\em None} & \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classAScene_a9faf7f1a271327227e83627432d0b210}\label{classAScene_a9faf7f1a271327227e83627432d0b210}} 
-\index{A\+Scene@{A\+Scene}!````~A\+Scene@{$\sim$\+A\+Scene}}
-\index{````~A\+Scene@{$\sim$\+A\+Scene}!A\+Scene@{A\+Scene}}
-\subsubsection{\texorpdfstring{$\sim$\+A\+Scene()}{~AScene()}}
-{\footnotesize\ttfamily A\+Scene\+::$\sim$\+A\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Destructor. 
-
-Destroy the class. 
-
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classAScene_aa711b6068dd8dee262160eedfd96ad02}\label{classAScene_aa711b6068dd8dee262160eedfd96ad02}} 
 \index{A\+Scene@{A\+Scene}!add\+Widget@{add\+Widget}}
@@ -80,7 +52,7 @@ Allow the user to add texts, images, buttons, checkboxs or 3d models into the sc
 
 
 \begin{DoxyParams}{Parameters}
-{\em \textquotesingle{}widget\textquotesingle{}} & the widget to add in the scene. \\
+{\em widget} & The widget to add in the scene. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classAScene_ad2b0ac8cd74a8523c76b681a34b5f5b4}\label{classAScene_ad2b0ac8cd74a8523c76b681a34b5f5b4}} 
@@ -97,7 +69,7 @@ Example\+: scene-\/$>$add\+Widget(widget, 2); scene-\/$>$del\+Widget(2);
 
 
 \begin{DoxyParams}{Parameters}
-{\em \textquotesingle{}id\textquotesingle{}} & the widget\textquotesingle{}s id to del in the scene. \\
+{\em id} & The widget\textquotesingle{}s id to del in the scene. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classAScene_af521e5e6d30a5d2e5d30eb333e4d3abd}\label{classAScene_af521e5e6d30a5d2e5d30eb333e4d3abd}} 
@@ -110,11 +82,6 @@ Example\+: scene-\/$>$add\+Widget(widget, 2); scene-\/$>$del\+Widget(2);
 
 Allow the user to implemente the event callback class for each scene. 
 
-
-\begin{DoxyParams}{Parameters}
-{\em None.} & \\
-\hline
-\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 The events\textquotesingle{} receiver of the scene. 
 \end{DoxyReturn}
@@ -134,7 +101,7 @@ Print all the scene\textquotesingle{}s widgets into the \hyperlink{classWindow}{
 
 
 \begin{DoxyParams}{Parameters}
-{\em \textquotesingle{}win\textquotesingle{}} & the window where the scene will be print. \\
+{\em win} & The window where the scene will be print. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classAScene_a18070899d965f1811c2253ad1d939374}\label{classAScene_a18070899d965f1811c2253ad1d939374}} 
@@ -149,7 +116,7 @@ Print all the scene\textquotesingle{}s widgets into the \hyperlink{classWindow}{
 
 
 \begin{DoxyParams}{Parameters}
-{\em \textquotesingle{}win\textquotesingle{}} & the window where the scene will be print. \\
+{\em win} & The window where the scene will be print. \\
 \hline
 \end{DoxyParams}
 
