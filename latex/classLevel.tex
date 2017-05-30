@@ -18,8 +18,10 @@ Inheritance diagram for Level\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classLevel_a1cddef79da66a80002686199a847543f}\label{classLevel_a1cddef79da66a80002686199a847543f}} 
 \hyperlink{classLevel_a1cddef79da66a80002686199a847543f}{Level} (const W\+String \&map\+Path, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ A\+Hero $>$ $>$ players=std\+::vector$<$ std\+::shared\+\_\+ptr$<$ A\+Hero $>$ $>$(), std\+::vector$<$ std\+::shared\+\_\+ptr$<$ A\+Monster $>$ $>$ monsters=std\+::vector$<$ std\+::shared\+\_\+ptr$<$ A\+Monster $>$ $>$(), std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classAPickable}{A\+Pickable} $>$ $>$ objects=std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classAPickable}{A\+Pickable} $>$ $>$())
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLevel_a249eac1e8f19ff44134efa5e986feaca}\label{classLevel_a249eac1e8f19ff44134efa5e986feaca}} 
 \hyperlink{classLevel_a249eac1e8f19ff44134efa5e986feaca}{$\sim$\+Level} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
 void \hyperlink{classLevel_ac679a141274c19107c288fe40b967e95}{move\+Player} (const irr\+::u32 \&player\+ID, const Vector3d \&position)
@@ -27,34 +29,11 @@ void \hyperlink{classLevel_ac679a141274c19107c288fe40b967e95}{move\+Player} (con
 void \hyperlink{classLevel_aa88db36cd824320cb599d913603dc2a3}{load\+Level} ()
 \item 
 void \hyperlink{classLevel_ab8311fe64b7957d627053359331b0b6b}{print} (\hyperlink{classWindow}{Window} $\ast$win)
-\begin{DoxyCompactList}\small\item\em Print the object into the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em print objects such as A\+Hero, A\+Monster \hyperlink{classAPickable}{A\+Pickable}, ... \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Represent a game\textquotesingle{}s level. 
-
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classLevel_a1cddef79da66a80002686199a847543f}\label{classLevel_a1cddef79da66a80002686199a847543f}} 
-\index{Level@{Level}!Level@{Level}}
-\index{Level@{Level}!Level@{Level}}
-\subsubsection{\texorpdfstring{Level()}{Level()}}
-{\footnotesize\ttfamily Level\+::\+Level (\begin{DoxyParamCaption}\item[{const W\+String \&}]{map\+Path,  }\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ A\+Hero $>$ $>$}]{players = {\ttfamily std\+:\+:vector$<$~std\+:\+:shared\+\_\+ptr$<$AHero$>$~$>$()},  }\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ A\+Monster $>$ $>$}]{monsters = {\ttfamily std\+:\+:vector$<$~std\+:\+:shared\+\_\+ptr$<$AMonster$>$~$>$()},  }\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classAPickable}{A\+Pickable} $>$ $>$}]{objects = {\ttfamily std\+:\+:vector$<$~std\+:\+:shared\+\_\+ptr$<$\hyperlink{classAPickable}{A\+Pickable}$>$~$>$()} }\end{DoxyParamCaption})}
-
-
-
-Constructor. 
-
-Build the class \mbox{\Hypertarget{classLevel_a249eac1e8f19ff44134efa5e986feaca}\label{classLevel_a249eac1e8f19ff44134efa5e986feaca}} 
-\index{Level@{Level}!````~Level@{$\sim$\+Level}}
-\index{````~Level@{$\sim$\+Level}!Level@{Level}}
-\subsubsection{\texorpdfstring{$\sim$\+Level()}{~Level()}}
-{\footnotesize\ttfamily Level\+::$\sim$\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Destructor. 
-
-Destroy the class 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classLevel_aa88db36cd824320cb599d913603dc2a3}\label{classLevel_aa88db36cd824320cb599d913603dc2a3}} 
@@ -81,12 +60,11 @@ Change the player\textquotesingle{}s position by adding the position passed as p
 
 
 \begin{DoxyParams}{Parameters}
-{\em 1)} & The player\textquotesingle{}s id who will move. 2) The player\textquotesingle{}s id who will move.\\
+{\em player\+ID} & The player\textquotesingle{}s id who will move. \\
+\hline
+{\em position} & The player\textquotesingle{}s id who will move. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-None. 
-\end{DoxyReturn}
 \mbox{\Hypertarget{classLevel_ab8311fe64b7957d627053359331b0b6b}\label{classLevel_ab8311fe64b7957d627053359331b0b6b}} 
 \index{Level@{Level}!print@{print}}
 \index{print@{print}!Level@{Level}}
@@ -95,11 +73,11 @@ None.
 
 
 
-Print the object into the window. 
+print objects such as A\+Hero, A\+Monster \hyperlink{classAPickable}{A\+Pickable}, ... 
 
 
 \begin{DoxyParams}{Parameters}
-{\em \textquotesingle{}window\textquotesingle{}} & the window where the object will be print. \\
+{\em win} & The window that handles scene manager \\
 \hline
 \end{DoxyParams}
 
