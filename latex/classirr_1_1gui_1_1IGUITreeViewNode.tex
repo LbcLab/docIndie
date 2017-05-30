@@ -115,6 +115,104 @@ virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperli
 \begin{DoxyCompactList}\small\item\em Returns the level of this node. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a8b292990c1a9c7d368d870c82d610c31}\label{classirr_1_1gui_1_1IGUITreeViewNode_a8b292990c1a9c7d368d870c82d610c31}} 
 virtual bool \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a8b292990c1a9c7d368d870c82d610c31}{is\+Visible} () const =0
+\begin{DoxyCompactList}\small\item\em Returns true if this node is visible (all parents are expanded). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_abbd99821712d9e32f222460dcad0858a}\label{classirr_1_1gui_1_1IGUITreeViewNode_abbd99821712d9e32f222460dcad0858a}} 
+virtual \hyperlink{classirr_1_1gui_1_1IGUITreeView}{I\+G\+U\+I\+Tree\+View} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_abbd99821712d9e32f222460dcad0858a}{get\+Owner} () const =0
+\begin{DoxyCompactList}\small\item\em returns the owner (tree view) of this node \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a37d30138ae01528cb1213324c511d079}{get\+Parent} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the parent node of this node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a2d0d53b4dbada5aa332ba1756722bb1c}\label{classirr_1_1gui_1_1IGUITreeViewNode_a2d0d53b4dbada5aa332ba1756722bb1c}} 
+virtual const wchar\+\_\+t $\ast$ \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a2d0d53b4dbada5aa332ba1756722bb1c}{get\+Text} () const =0
+\begin{DoxyCompactList}\small\item\em returns the text of the node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a572a16938c907034e1e7b33b2851ad52}\label{classirr_1_1gui_1_1IGUITreeViewNode_a572a16938c907034e1e7b33b2851ad52}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a572a16938c907034e1e7b33b2851ad52}{set\+Text} (const wchar\+\_\+t $\ast$text)=0
+\begin{DoxyCompactList}\small\item\em sets the text of the node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a67e7b71c369090f81d1f721bb4ca7035}\label{classirr_1_1gui_1_1IGUITreeViewNode_a67e7b71c369090f81d1f721bb4ca7035}} 
+virtual const wchar\+\_\+t $\ast$ \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a67e7b71c369090f81d1f721bb4ca7035}{get\+Icon} () const =0
+\begin{DoxyCompactList}\small\item\em returns the icon text of the node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a0e85747e30eef56d7bba846e58c597c6}\label{classirr_1_1gui_1_1IGUITreeViewNode_a0e85747e30eef56d7bba846e58c597c6}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a0e85747e30eef56d7bba846e58c597c6}{set\+Icon} (const wchar\+\_\+t $\ast$icon)=0
+\begin{DoxyCompactList}\small\item\em sets the icon text of the node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a35eb1f6c7b8623c24a842532d9511c44}\label{classirr_1_1gui_1_1IGUITreeViewNode_a35eb1f6c7b8623c24a842532d9511c44}} 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a35eb1f6c7b8623c24a842532d9511c44}{get\+Image\+Index} () const =0
+\begin{DoxyCompactList}\small\item\em returns the image index of the node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a811d621642ef25a3fcf7e2da4e17ab77}\label{classirr_1_1gui_1_1IGUITreeViewNode_a811d621642ef25a3fcf7e2da4e17ab77}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a811d621642ef25a3fcf7e2da4e17ab77}{set\+Image\+Index} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} image\+Index)=0
+\begin{DoxyCompactList}\small\item\em sets the image index of the node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a7358bbdfac0c2640a22ffe3f8fb988f4}\label{classirr_1_1gui_1_1IGUITreeViewNode_a7358bbdfac0c2640a22ffe3f8fb988f4}} 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a7358bbdfac0c2640a22ffe3f8fb988f4}{get\+Selected\+Image\+Index} () const =0
+\begin{DoxyCompactList}\small\item\em returns the image index of the node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a21e99d3f1912e859e01b0cbc9fce638d}\label{classirr_1_1gui_1_1IGUITreeViewNode_a21e99d3f1912e859e01b0cbc9fce638d}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a21e99d3f1912e859e01b0cbc9fce638d}{set\+Selected\+Image\+Index} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} image\+Index)=0
+\begin{DoxyCompactList}\small\item\em sets the image index of the node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_aa8e6747bdefb5cc8423b736c5dcefb21}\label{classirr_1_1gui_1_1IGUITreeViewNode_aa8e6747bdefb5cc8423b736c5dcefb21}} 
+virtual void $\ast$ \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_aa8e6747bdefb5cc8423b736c5dcefb21}{get\+Data} () const =0
+\begin{DoxyCompactList}\small\item\em returns the user data (void$\ast$) of this node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a2da4071958b479dbd5799d3834a0db77}\label{classirr_1_1gui_1_1IGUITreeViewNode_a2da4071958b479dbd5799d3834a0db77}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a2da4071958b479dbd5799d3834a0db77}{set\+Data} (void $\ast$data)=0
+\begin{DoxyCompactList}\small\item\em sets the user data (void$\ast$) of this node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a2fef005441c41e47a4df5c0cfd1a4b4e}\label{classirr_1_1gui_1_1IGUITreeViewNode_a2fef005441c41e47a4df5c0cfd1a4b4e}} 
+virtual \hyperlink{classirr_1_1IReferenceCounted}{I\+Reference\+Counted} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a2fef005441c41e47a4df5c0cfd1a4b4e}{get\+Data2} () const =0
+\begin{DoxyCompactList}\small\item\em returns the user data2 (\hyperlink{classirr_1_1IReferenceCounted}{I\+Reference\+Counted}) of this node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_aa837350d9f71ca6b3dae25678f17bd21}\label{classirr_1_1gui_1_1IGUITreeViewNode_aa837350d9f71ca6b3dae25678f17bd21}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_aa837350d9f71ca6b3dae25678f17bd21}{set\+Data2} (\hyperlink{classirr_1_1IReferenceCounted}{I\+Reference\+Counted} $\ast$data)=0
+\begin{DoxyCompactList}\small\item\em sets the user data2 (\hyperlink{classirr_1_1IReferenceCounted}{I\+Reference\+Counted}) of this node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a8b9aeb50e43a76b27187aa5c0d370f23}\label{classirr_1_1gui_1_1IGUITreeViewNode_a8b9aeb50e43a76b27187aa5c0d370f23}} 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a8b9aeb50e43a76b27187aa5c0d370f23}{get\+Child\+Count} () const =0
+\begin{DoxyCompactList}\small\item\em returns the child item count \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a0bc4702930d1ddb25b895c7176f5f459}\label{classirr_1_1gui_1_1IGUITreeViewNode_a0bc4702930d1ddb25b895c7176f5f459}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a0bc4702930d1ddb25b895c7176f5f459}{clear\+Children} ()=0
+\begin{DoxyCompactList}\small\item\em removes all children (recursive) from this node \end{DoxyCompactList}\item 
+\+\_\+\+I\+R\+R\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+ void \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a6c431404c8e36eb565f033c1e1dce247}{clear\+Childs} ()
+\begin{DoxyCompactList}\small\item\em removes all children (recursive) from this node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a64244b92443fefbd06c910daf5db3c5f}\label{classirr_1_1gui_1_1IGUITreeViewNode_a64244b92443fefbd06c910daf5db3c5f}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a64244b92443fefbd06c910daf5db3c5f}{has\+Children} () const =0
+\begin{DoxyCompactList}\small\item\em returns true if this node has child nodes \end{DoxyCompactList}\item 
+\+\_\+\+I\+R\+R\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+ bool \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a7a771fc86d39a62487184bc56bcf8c52}{has\+Childs} () const
+\begin{DoxyCompactList}\small\item\em returns true if this node has child nodes \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_ad0a5242042cbee79d024315e80c6db33}{add\+Child\+Back} (const wchar\+\_\+t $\ast$text, const wchar\+\_\+t $\ast$icon=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} image\+Index=-\/1, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} selected\+Image\+Index=-\/1, void $\ast$data=0, \hyperlink{classirr_1_1IReferenceCounted}{I\+Reference\+Counted} $\ast$data2=0)=0
+\begin{DoxyCompactList}\small\item\em Adds a new node behind the last child node. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a537f7bb8138f4dd416a5dcfe075f85c7}{add\+Child\+Front} (const wchar\+\_\+t $\ast$text, const wchar\+\_\+t $\ast$icon=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} image\+Index=-\/1, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} selected\+Image\+Index=-\/1, void $\ast$data=0, \hyperlink{classirr_1_1IReferenceCounted}{I\+Reference\+Counted} $\ast$data2=0)=0
+\begin{DoxyCompactList}\small\item\em Adds a new node before the first child node. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_abe890d4fde00a4a78fd5f2e39e104338}{insert\+Child\+After} (\hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$other, const wchar\+\_\+t $\ast$text, const wchar\+\_\+t $\ast$icon=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} image\+Index=-\/1, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} selected\+Image\+Index=-\/1, void $\ast$data=0, \hyperlink{classirr_1_1IReferenceCounted}{I\+Reference\+Counted} $\ast$data2=0)=0
+\begin{DoxyCompactList}\small\item\em Adds a new node behind the other node. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_adc7214ae72e9dae555348022b6568b7d}{insert\+Child\+Before} (\hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$other, const wchar\+\_\+t $\ast$text, const wchar\+\_\+t $\ast$icon=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} image\+Index=-\/1, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} selected\+Image\+Index=-\/1, void $\ast$data=0, \hyperlink{classirr_1_1IReferenceCounted}{I\+Reference\+Counted} $\ast$data2=0)=0
+\begin{DoxyCompactList}\small\item\em Adds a new node before the other node. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a33cbd8c146ec27a4812548a32d81732b}{get\+First\+Child} () const =0
+\begin{DoxyCompactList}\small\item\em Return the first child node from this node. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_ad9f08dced84c88360485988af188e296}{get\+Last\+Child} () const =0
+\begin{DoxyCompactList}\small\item\em Return the last child node from this node. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a41a756203d028a274586203091277aa9}{get\+Prev\+Sibling} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the previous sibling node from this node. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a5f54e1386055ad0b45775ebefb1b5600}{get\+Next\+Sibling} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the next sibling node from this node. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_add12cd0ee7b12a49c0f140741f9449fb}{get\+Next\+Visible} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the next visible (expanded, may be out of scrolling) node from this node. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a26d0ce5bc0a6e7814f69d68033c30242}{delete\+Child} (\hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$child)=0
+\begin{DoxyCompactList}\small\item\em Deletes a child node. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a9e55b868695250c09e53e5fa961a812c}{move\+Child\+Up} (\hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$child)=0
+\begin{DoxyCompactList}\small\item\em Moves a child node one position up. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a3c7eb8a1b15c2018f32d13c3ce2ee219}{move\+Child\+Down} (\hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$child)=0
+\begin{DoxyCompactList}\small\item\em Moves a child node one position down. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a13e837050aa776602e3d0c98d9b303f4}\label{classirr_1_1gui_1_1IGUITreeViewNode_a13e837050aa776602e3d0c98d9b303f4}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a13e837050aa776602e3d0c98d9b303f4}{get\+Expanded} () const =0
+\begin{DoxyCompactList}\small\item\em Returns true if the node is expanded (children are visible). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a1b51ea8f10dcaf1d10f22419da18574a}\label{classirr_1_1gui_1_1IGUITreeViewNode_a1b51ea8f10dcaf1d10f22419da18574a}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a1b51ea8f10dcaf1d10f22419da18574a}{set\+Expanded} (bool expanded)=0
+\begin{DoxyCompactList}\small\item\em Sets if the node is expanded. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a9ea16f64f6a1487942c2666c031f78fc}\label{classirr_1_1gui_1_1IGUITreeViewNode_a9ea16f64f6a1487942c2666c031f78fc}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a9ea16f64f6a1487942c2666c031f78fc}{get\+Selected} () const =0
+\begin{DoxyCompactList}\small\item\em Returns true if the node is currently selected. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_aaf71e030c2cf57a20bee59ab53cd997b}\label{classirr_1_1gui_1_1IGUITreeViewNode_aaf71e030c2cf57a20bee59ab53cd997b}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_aaf71e030c2cf57a20bee59ab53cd997b}{set\+Selected} (bool selected)=0
+\begin{DoxyCompactList}\small\item\em Sets this node as selected. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a8dc2086fa899b190b1d7794610b5b06f}\label{classirr_1_1gui_1_1IGUITreeViewNode_a8dc2086fa899b190b1d7794610b5b06f}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a8dc2086fa899b190b1d7794610b5b06f}{is\+Root} () const =0
+\begin{DoxyCompactList}\small\item\em Returns true if this node is the root node. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_aa57cadea8ba12bb3533ecf2845cd7971}{get\+Level} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the level of this node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a8b292990c1a9c7d368d870c82d610c31}\label{classirr_1_1gui_1_1IGUITreeViewNode_a8b292990c1a9c7d368d870c82d610c31}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a8b292990c1a9c7d368d870c82d610c31}{is\+Visible} () const =0
 \begin{DoxyCompactList}\small\item\em Returns true if this node is visible (all parents are expanded). \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -133,7 +231,35 @@ Node for gui tree view.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_ad0a5242042cbee79d024315e80c6db33}\label{classirr_1_1gui_1_1IGUITreeViewNode_ad0a5242042cbee79d024315e80c6db33}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!add\+Child\+Back@{add\+Child\+Back}}
 \index{add\+Child\+Back@{add\+Child\+Back}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
-\subsubsection{\texorpdfstring{add\+Child\+Back()}{addChildBack()}}
+\subsubsection{\texorpdfstring{add\+Child\+Back()}{addChildBack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::add\+Child\+Back (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{const wchar\+\_\+t $\ast$}]{icon = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{image\+Index = {\ttfamily -\/1},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{selected\+Image\+Index = {\ttfamily -\/1},  }\item[{void $\ast$}]{data = {\ttfamily 0},  }\item[{\hyperlink{classirr_1_1IReferenceCounted}{I\+Reference\+Counted} $\ast$}]{data2 = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a new node behind the last child node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & text of the new node \\
+\hline
+{\em icon} & icon text of the new node \\
+\hline
+{\em image\+Index} & index of the image for the new node (-\/1 = none) \\
+\hline
+{\em selected\+Image\+Index} & index of the selected image for the new node (-\/1 = same as image\+Index) \\
+\hline
+{\em data} & user data (void$\ast$) of the new node \\
+\hline
+{\em data2} & user data2 (I\+Reference\+Counted$\ast$) of the new node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new node 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_ad0a5242042cbee79d024315e80c6db33}\label{classirr_1_1gui_1_1IGUITreeViewNode_ad0a5242042cbee79d024315e80c6db33}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!add\+Child\+Back@{add\+Child\+Back}}
+\index{add\+Child\+Back@{add\+Child\+Back}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
+\subsubsection{\texorpdfstring{add\+Child\+Back()}{addChildBack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::add\+Child\+Back (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{const wchar\+\_\+t $\ast$}]{icon = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{image\+Index = {\ttfamily -\/1},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{selected\+Image\+Index = {\ttfamily -\/1},  }\item[{void $\ast$}]{data = {\ttfamily 0},  }\item[{\hyperlink{classirr_1_1IReferenceCounted}{I\+Reference\+Counted} $\ast$}]{data2 = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -161,7 +287,35 @@ The new node
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a537f7bb8138f4dd416a5dcfe075f85c7}\label{classirr_1_1gui_1_1IGUITreeViewNode_a537f7bb8138f4dd416a5dcfe075f85c7}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!add\+Child\+Front@{add\+Child\+Front}}
 \index{add\+Child\+Front@{add\+Child\+Front}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
-\subsubsection{\texorpdfstring{add\+Child\+Front()}{addChildFront()}}
+\subsubsection{\texorpdfstring{add\+Child\+Front()}{addChildFront()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::add\+Child\+Front (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{const wchar\+\_\+t $\ast$}]{icon = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{image\+Index = {\ttfamily -\/1},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{selected\+Image\+Index = {\ttfamily -\/1},  }\item[{void $\ast$}]{data = {\ttfamily 0},  }\item[{\hyperlink{classirr_1_1IReferenceCounted}{I\+Reference\+Counted} $\ast$}]{data2 = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a new node before the first child node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & text of the new node \\
+\hline
+{\em icon} & icon text of the new node \\
+\hline
+{\em image\+Index} & index of the image for the new node (-\/1 = none) \\
+\hline
+{\em selected\+Image\+Index} & index of the selected image for the new node (-\/1 = same as image\+Index) \\
+\hline
+{\em data} & user data (void$\ast$) of the new node \\
+\hline
+{\em data2} & user data2 (I\+Reference\+Counted$\ast$) of the new node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new node 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a537f7bb8138f4dd416a5dcfe075f85c7}\label{classirr_1_1gui_1_1IGUITreeViewNode_a537f7bb8138f4dd416a5dcfe075f85c7}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!add\+Child\+Front@{add\+Child\+Front}}
+\index{add\+Child\+Front@{add\+Child\+Front}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
+\subsubsection{\texorpdfstring{add\+Child\+Front()}{addChildFront()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::add\+Child\+Front (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{const wchar\+\_\+t $\ast$}]{icon = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{image\+Index = {\ttfamily -\/1},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{selected\+Image\+Index = {\ttfamily -\/1},  }\item[{void $\ast$}]{data = {\ttfamily 0},  }\item[{\hyperlink{classirr_1_1IReferenceCounted}{I\+Reference\+Counted} $\ast$}]{data2 = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -189,7 +343,7 @@ The new node
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a6c431404c8e36eb565f033c1e1dce247}\label{classirr_1_1gui_1_1IGUITreeViewNode_a6c431404c8e36eb565f033c1e1dce247}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!clear\+Childs@{clear\+Childs}}
 \index{clear\+Childs@{clear\+Childs}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
-\subsubsection{\texorpdfstring{clear\+Childs()}{clearChilds()}}
+\subsubsection{\texorpdfstring{clear\+Childs()}{clearChilds()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \+\_\+\+I\+R\+R\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+ void irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::clear\+Childs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -198,10 +352,35 @@ removes all children (recursive) from this node
 
 \begin{DoxyRefDesc}{Deprecated}
 \item[\hyperlink{deprecated__deprecated000007}{Deprecated}]Deprecated in 1.\+8, use \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a0bc4702930d1ddb25b895c7176f5f459}{clear\+Children()} instead. This method may be removed by Irrlicht 1.\+9 \end{DoxyRefDesc}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a6c431404c8e36eb565f033c1e1dce247}\label{classirr_1_1gui_1_1IGUITreeViewNode_a6c431404c8e36eb565f033c1e1dce247}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!clear\+Childs@{clear\+Childs}}
+\index{clear\+Childs@{clear\+Childs}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
+\subsubsection{\texorpdfstring{clear\+Childs()}{clearChilds()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \+\_\+\+I\+R\+R\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+ void irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::clear\+Childs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+removes all children (recursive) from this node 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000033}{Deprecated}]Deprecated in 1.\+8, use \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a0bc4702930d1ddb25b895c7176f5f459}{clear\+Children()} instead. This method may be removed by Irrlicht 1.\+9 \end{DoxyRefDesc}
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a26d0ce5bc0a6e7814f69d68033c30242}\label{classirr_1_1gui_1_1IGUITreeViewNode_a26d0ce5bc0a6e7814f69d68033c30242}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!delete\+Child@{delete\+Child}}
 \index{delete\+Child@{delete\+Child}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
-\subsubsection{\texorpdfstring{delete\+Child()}{deleteChild()}}
+\subsubsection{\texorpdfstring{delete\+Child()}{deleteChild()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::delete\+Child (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$}]{child }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Deletes a child node. 
+
+\begin{DoxyReturn}{Returns}
+Returns true if the node was found as a child and is deleted. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a26d0ce5bc0a6e7814f69d68033c30242}\label{classirr_1_1gui_1_1IGUITreeViewNode_a26d0ce5bc0a6e7814f69d68033c30242}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!delete\+Child@{delete\+Child}}
+\index{delete\+Child@{delete\+Child}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
+\subsubsection{\texorpdfstring{delete\+Child()}{deleteChild()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::delete\+Child (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$}]{child }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -214,7 +393,20 @@ Returns true if the node was found as a child and is deleted.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a33cbd8c146ec27a4812548a32d81732b}\label{classirr_1_1gui_1_1IGUITreeViewNode_a33cbd8c146ec27a4812548a32d81732b}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!get\+First\+Child@{get\+First\+Child}}
 \index{get\+First\+Child@{get\+First\+Child}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
-\subsubsection{\texorpdfstring{get\+First\+Child()}{getFirstChild()}}
+\subsubsection{\texorpdfstring{get\+First\+Child()}{getFirstChild()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::get\+First\+Child (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the first child node from this node. 
+
+\begin{DoxyReturn}{Returns}
+The first child node or 0 if this node has no children. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a33cbd8c146ec27a4812548a32d81732b}\label{classirr_1_1gui_1_1IGUITreeViewNode_a33cbd8c146ec27a4812548a32d81732b}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!get\+First\+Child@{get\+First\+Child}}
+\index{get\+First\+Child@{get\+First\+Child}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
+\subsubsection{\texorpdfstring{get\+First\+Child()}{getFirstChild()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::get\+First\+Child (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -227,7 +419,20 @@ The first child node or 0 if this node has no children.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_ad9f08dced84c88360485988af188e296}\label{classirr_1_1gui_1_1IGUITreeViewNode_ad9f08dced84c88360485988af188e296}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!get\+Last\+Child@{get\+Last\+Child}}
 \index{get\+Last\+Child@{get\+Last\+Child}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
-\subsubsection{\texorpdfstring{get\+Last\+Child()}{getLastChild()}}
+\subsubsection{\texorpdfstring{get\+Last\+Child()}{getLastChild()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::get\+Last\+Child (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the last child node from this node. 
+
+\begin{DoxyReturn}{Returns}
+The last child node or 0 if this node has no children. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_ad9f08dced84c88360485988af188e296}\label{classirr_1_1gui_1_1IGUITreeViewNode_ad9f08dced84c88360485988af188e296}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!get\+Last\+Child@{get\+Last\+Child}}
+\index{get\+Last\+Child@{get\+Last\+Child}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
+\subsubsection{\texorpdfstring{get\+Last\+Child()}{getLastChild()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::get\+Last\+Child (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -240,7 +445,17 @@ The last child node or 0 if this node has no children.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_aa57cadea8ba12bb3533ecf2845cd7971}\label{classirr_1_1gui_1_1IGUITreeViewNode_aa57cadea8ba12bb3533ecf2845cd7971}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!get\+Level@{get\+Level}}
 \index{get\+Level@{get\+Level}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
-\subsubsection{\texorpdfstring{get\+Level()}{getLevel()}}
+\subsubsection{\texorpdfstring{get\+Level()}{getLevel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::get\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the level of this node. 
+
+The root node has level 0. Direct children of the root has level 1 ... \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_aa57cadea8ba12bb3533ecf2845cd7971}\label{classirr_1_1gui_1_1IGUITreeViewNode_aa57cadea8ba12bb3533ecf2845cd7971}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!get\+Level@{get\+Level}}
+\index{get\+Level@{get\+Level}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
+\subsubsection{\texorpdfstring{get\+Level()}{getLevel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::get\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -250,7 +465,20 @@ Returns the level of this node.
 The root node has level 0. Direct children of the root has level 1 ... \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a5f54e1386055ad0b45775ebefb1b5600}\label{classirr_1_1gui_1_1IGUITreeViewNode_a5f54e1386055ad0b45775ebefb1b5600}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!get\+Next\+Sibling@{get\+Next\+Sibling}}
 \index{get\+Next\+Sibling@{get\+Next\+Sibling}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
-\subsubsection{\texorpdfstring{get\+Next\+Sibling()}{getNextSibling()}}
+\subsubsection{\texorpdfstring{get\+Next\+Sibling()}{getNextSibling()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::get\+Next\+Sibling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the next sibling node from this node. 
+
+\begin{DoxyReturn}{Returns}
+The next sibling node from this node or 0 if this is the last node from the parent node. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a5f54e1386055ad0b45775ebefb1b5600}\label{classirr_1_1gui_1_1IGUITreeViewNode_a5f54e1386055ad0b45775ebefb1b5600}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!get\+Next\+Sibling@{get\+Next\+Sibling}}
+\index{get\+Next\+Sibling@{get\+Next\+Sibling}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
+\subsubsection{\texorpdfstring{get\+Next\+Sibling()}{getNextSibling()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::get\+Next\+Sibling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -263,7 +491,20 @@ The next sibling node from this node or 0 if this is the last node from the pare
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_add12cd0ee7b12a49c0f140741f9449fb}\label{classirr_1_1gui_1_1IGUITreeViewNode_add12cd0ee7b12a49c0f140741f9449fb}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!get\+Next\+Visible@{get\+Next\+Visible}}
 \index{get\+Next\+Visible@{get\+Next\+Visible}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
-\subsubsection{\texorpdfstring{get\+Next\+Visible()}{getNextVisible()}}
+\subsubsection{\texorpdfstring{get\+Next\+Visible()}{getNextVisible()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::get\+Next\+Visible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the next visible (expanded, may be out of scrolling) node from this node. 
+
+\begin{DoxyReturn}{Returns}
+The next visible node from this node or 0 if this is the last visible node. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_add12cd0ee7b12a49c0f140741f9449fb}\label{classirr_1_1gui_1_1IGUITreeViewNode_add12cd0ee7b12a49c0f140741f9449fb}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!get\+Next\+Visible@{get\+Next\+Visible}}
+\index{get\+Next\+Visible@{get\+Next\+Visible}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
+\subsubsection{\texorpdfstring{get\+Next\+Visible()}{getNextVisible()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::get\+Next\+Visible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -276,7 +517,17 @@ The next visible node from this node or 0 if this is the last visible node.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a37d30138ae01528cb1213324c511d079}\label{classirr_1_1gui_1_1IGUITreeViewNode_a37d30138ae01528cb1213324c511d079}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!get\+Parent@{get\+Parent}}
 \index{get\+Parent@{get\+Parent}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
-\subsubsection{\texorpdfstring{get\+Parent()}{getParent()}}
+\subsubsection{\texorpdfstring{get\+Parent()}{getParent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the parent node of this node. 
+
+For the root node this will return 0. \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a37d30138ae01528cb1213324c511d079}\label{classirr_1_1gui_1_1IGUITreeViewNode_a37d30138ae01528cb1213324c511d079}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
+\subsubsection{\texorpdfstring{get\+Parent()}{getParent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -286,7 +537,20 @@ Returns the parent node of this node.
 For the root node this will return 0. \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a41a756203d028a274586203091277aa9}\label{classirr_1_1gui_1_1IGUITreeViewNode_a41a756203d028a274586203091277aa9}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!get\+Prev\+Sibling@{get\+Prev\+Sibling}}
 \index{get\+Prev\+Sibling@{get\+Prev\+Sibling}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
-\subsubsection{\texorpdfstring{get\+Prev\+Sibling()}{getPrevSibling()}}
+\subsubsection{\texorpdfstring{get\+Prev\+Sibling()}{getPrevSibling()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::get\+Prev\+Sibling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the previous sibling node from this node. 
+
+\begin{DoxyReturn}{Returns}
+The previous sibling node from this node or 0 if this is the first node from the parent node. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a41a756203d028a274586203091277aa9}\label{classirr_1_1gui_1_1IGUITreeViewNode_a41a756203d028a274586203091277aa9}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!get\+Prev\+Sibling@{get\+Prev\+Sibling}}
+\index{get\+Prev\+Sibling@{get\+Prev\+Sibling}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
+\subsubsection{\texorpdfstring{get\+Prev\+Sibling()}{getPrevSibling()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::get\+Prev\+Sibling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -299,7 +563,7 @@ The previous sibling node from this node or 0 if this is the first node from the
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a7a771fc86d39a62487184bc56bcf8c52}\label{classirr_1_1gui_1_1IGUITreeViewNode_a7a771fc86d39a62487184bc56bcf8c52}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!has\+Childs@{has\+Childs}}
 \index{has\+Childs@{has\+Childs}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
-\subsubsection{\texorpdfstring{has\+Childs()}{hasChilds()}}
+\subsubsection{\texorpdfstring{has\+Childs()}{hasChilds()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \+\_\+\+I\+R\+R\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+ bool irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::has\+Childs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -308,10 +572,52 @@ returns true if this node has child nodes
 
 \begin{DoxyRefDesc}{Deprecated}
 \item[\hyperlink{deprecated__deprecated000008}{Deprecated}]Deprecated in 1.\+8, use \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a64244b92443fefbd06c910daf5db3c5f}{has\+Children()} instead. This method may be removed by Irrlicht 1.\+9 \end{DoxyRefDesc}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a7a771fc86d39a62487184bc56bcf8c52}\label{classirr_1_1gui_1_1IGUITreeViewNode_a7a771fc86d39a62487184bc56bcf8c52}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!has\+Childs@{has\+Childs}}
+\index{has\+Childs@{has\+Childs}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
+\subsubsection{\texorpdfstring{has\+Childs()}{hasChilds()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \+\_\+\+I\+R\+R\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+ bool irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::has\+Childs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns true if this node has child nodes 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000034}{Deprecated}]Deprecated in 1.\+8, use \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode_a64244b92443fefbd06c910daf5db3c5f}{has\+Children()} instead. This method may be removed by Irrlicht 1.\+9 \end{DoxyRefDesc}
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_abe890d4fde00a4a78fd5f2e39e104338}\label{classirr_1_1gui_1_1IGUITreeViewNode_abe890d4fde00a4a78fd5f2e39e104338}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!insert\+Child\+After@{insert\+Child\+After}}
 \index{insert\+Child\+After@{insert\+Child\+After}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
-\subsubsection{\texorpdfstring{insert\+Child\+After()}{insertChildAfter()}}
+\subsubsection{\texorpdfstring{insert\+Child\+After()}{insertChildAfter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::insert\+Child\+After (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$}]{other,  }\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{const wchar\+\_\+t $\ast$}]{icon = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{image\+Index = {\ttfamily -\/1},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{selected\+Image\+Index = {\ttfamily -\/1},  }\item[{void $\ast$}]{data = {\ttfamily 0},  }\item[{\hyperlink{classirr_1_1IReferenceCounted}{I\+Reference\+Counted} $\ast$}]{data2 = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a new node behind the other node. 
+
+The other node has also te be a child node from this node. 
+\begin{DoxyParams}{Parameters}
+{\em other} & Node to insert after \\
+\hline
+{\em text} & text of the new node \\
+\hline
+{\em icon} & icon text of the new node \\
+\hline
+{\em image\+Index} & index of the image for the new node (-\/1 = none) \\
+\hline
+{\em selected\+Image\+Index} & index of the selected image for the new node (-\/1 = same as image\+Index) \\
+\hline
+{\em data} & user data (void$\ast$) of the new node \\
+\hline
+{\em data2} & user data2 (I\+Reference\+Counted$\ast$) of the new node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new node or 0 if other is no child node from this 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_abe890d4fde00a4a78fd5f2e39e104338}\label{classirr_1_1gui_1_1IGUITreeViewNode_abe890d4fde00a4a78fd5f2e39e104338}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!insert\+Child\+After@{insert\+Child\+After}}
+\index{insert\+Child\+After@{insert\+Child\+After}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
+\subsubsection{\texorpdfstring{insert\+Child\+After()}{insertChildAfter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::insert\+Child\+After (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$}]{other,  }\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{const wchar\+\_\+t $\ast$}]{icon = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{image\+Index = {\ttfamily -\/1},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{selected\+Image\+Index = {\ttfamily -\/1},  }\item[{void $\ast$}]{data = {\ttfamily 0},  }\item[{\hyperlink{classirr_1_1IReferenceCounted}{I\+Reference\+Counted} $\ast$}]{data2 = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -341,7 +647,37 @@ The new node or 0 if other is no child node from this
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_adc7214ae72e9dae555348022b6568b7d}\label{classirr_1_1gui_1_1IGUITreeViewNode_adc7214ae72e9dae555348022b6568b7d}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!insert\+Child\+Before@{insert\+Child\+Before}}
 \index{insert\+Child\+Before@{insert\+Child\+Before}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
-\subsubsection{\texorpdfstring{insert\+Child\+Before()}{insertChildBefore()}}
+\subsubsection{\texorpdfstring{insert\+Child\+Before()}{insertChildBefore()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::insert\+Child\+Before (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$}]{other,  }\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{const wchar\+\_\+t $\ast$}]{icon = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{image\+Index = {\ttfamily -\/1},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{selected\+Image\+Index = {\ttfamily -\/1},  }\item[{void $\ast$}]{data = {\ttfamily 0},  }\item[{\hyperlink{classirr_1_1IReferenceCounted}{I\+Reference\+Counted} $\ast$}]{data2 = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a new node before the other node. 
+
+The other node has also te be a child node from this node. 
+\begin{DoxyParams}{Parameters}
+{\em other} & Node to insert before \\
+\hline
+{\em text} & text of the new node \\
+\hline
+{\em icon} & icon text of the new node \\
+\hline
+{\em image\+Index} & index of the image for the new node (-\/1 = none) \\
+\hline
+{\em selected\+Image\+Index} & index of the selected image for the new node (-\/1 = same as image\+Index) \\
+\hline
+{\em data} & user data (void$\ast$) of the new node \\
+\hline
+{\em data2} & user data2 (I\+Reference\+Counted$\ast$) of the new node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new node or 0 if other is no child node from this 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_adc7214ae72e9dae555348022b6568b7d}\label{classirr_1_1gui_1_1IGUITreeViewNode_adc7214ae72e9dae555348022b6568b7d}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!insert\+Child\+Before@{insert\+Child\+Before}}
+\index{insert\+Child\+Before@{insert\+Child\+Before}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
+\subsubsection{\texorpdfstring{insert\+Child\+Before()}{insertChildBefore()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::insert\+Child\+Before (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$}]{other,  }\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{const wchar\+\_\+t $\ast$}]{icon = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{image\+Index = {\ttfamily -\/1},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{selected\+Image\+Index = {\ttfamily -\/1},  }\item[{void $\ast$}]{data = {\ttfamily 0},  }\item[{\hyperlink{classirr_1_1IReferenceCounted}{I\+Reference\+Counted} $\ast$}]{data2 = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -371,7 +707,20 @@ The new node or 0 if other is no child node from this
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a3c7eb8a1b15c2018f32d13c3ce2ee219}\label{classirr_1_1gui_1_1IGUITreeViewNode_a3c7eb8a1b15c2018f32d13c3ce2ee219}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!move\+Child\+Down@{move\+Child\+Down}}
 \index{move\+Child\+Down@{move\+Child\+Down}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
-\subsubsection{\texorpdfstring{move\+Child\+Down()}{moveChildDown()}}
+\subsubsection{\texorpdfstring{move\+Child\+Down()}{moveChildDown()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::move\+Child\+Down (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$}]{child }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Moves a child node one position down. 
+
+\begin{DoxyReturn}{Returns}
+True if the node was found as achild node and was not already the last child. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a3c7eb8a1b15c2018f32d13c3ce2ee219}\label{classirr_1_1gui_1_1IGUITreeViewNode_a3c7eb8a1b15c2018f32d13c3ce2ee219}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!move\+Child\+Down@{move\+Child\+Down}}
+\index{move\+Child\+Down@{move\+Child\+Down}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
+\subsubsection{\texorpdfstring{move\+Child\+Down()}{moveChildDown()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::move\+Child\+Down (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$}]{child }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -384,7 +733,20 @@ True if the node was found as achild node and was not already the last child.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a9e55b868695250c09e53e5fa961a812c}\label{classirr_1_1gui_1_1IGUITreeViewNode_a9e55b868695250c09e53e5fa961a812c}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!move\+Child\+Up@{move\+Child\+Up}}
 \index{move\+Child\+Up@{move\+Child\+Up}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
-\subsubsection{\texorpdfstring{move\+Child\+Up()}{moveChildUp()}}
+\subsubsection{\texorpdfstring{move\+Child\+Up()}{moveChildUp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::move\+Child\+Up (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$}]{child }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Moves a child node one position up. 
+
+\begin{DoxyReturn}{Returns}
+True if the node was found as achild node and was not already the first child. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUITreeViewNode_a9e55b868695250c09e53e5fa961a812c}\label{classirr_1_1gui_1_1IGUITreeViewNode_a9e55b868695250c09e53e5fa961a812c}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}!move\+Child\+Up@{move\+Child\+Up}}
+\index{move\+Child\+Up@{move\+Child\+Up}!irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node@{irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node}}
+\subsubsection{\texorpdfstring{move\+Child\+Up()}{moveChildUp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Tree\+View\+Node\+::move\+Child\+Up (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUITreeViewNode}{I\+G\+U\+I\+Tree\+View\+Node} $\ast$}]{child }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

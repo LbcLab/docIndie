@@ -19,6 +19,8 @@ Inheritance diagram for irr\+:\+:scene\+:\+:I\+Collision\+Callback\+:\begin{figu
 \begin{DoxyCompactItemize}
 \item 
 virtual bool \hyperlink{classirr_1_1scene_1_1ICollisionCallback_a35791df17defc6fd301dccef1cae596a}{on\+Collision} (const \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse}{I\+Scene\+Node\+Animator\+Collision\+Response} \&animator)=0
+\begin{DoxyCompactList}\small\item\em Will be called when a collision occurrs. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1scene_1_1ICollisionCallback_a35791df17defc6fd301dccef1cae596a}{on\+Collision} (const \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse}{I\+Scene\+Node\+Animator\+Collision\+Response} \&animator)=0
 \begin{DoxyCompactList}\small\item\em Will be called when a collision occurrs. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -32,7 +34,29 @@ Implement this interface and use \hyperlink{classirr_1_1scene_1_1ISceneNodeAnima
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICollisionCallback_a35791df17defc6fd301dccef1cae596a}\label{classirr_1_1scene_1_1ICollisionCallback_a35791df17defc6fd301dccef1cae596a}} 
 \index{irr\+::scene\+::\+I\+Collision\+Callback@{irr\+::scene\+::\+I\+Collision\+Callback}!on\+Collision@{on\+Collision}}
 \index{on\+Collision@{on\+Collision}!irr\+::scene\+::\+I\+Collision\+Callback@{irr\+::scene\+::\+I\+Collision\+Callback}}
-\subsubsection{\texorpdfstring{on\+Collision()}{onCollision()}}
+\subsubsection{\texorpdfstring{on\+Collision()}{onCollision()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Collision\+Callback\+::on\+Collision (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse}{I\+Scene\+Node\+Animator\+Collision\+Response} \&}]{animator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Will be called when a collision occurrs. 
+
+See \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse_a2b97f977b446200c5dd22230aec5d275}{I\+Scene\+Node\+Animator\+Collision\+Response\+::set\+Collision\+Callback} for more information. 
+\begin{DoxyParams}{Parameters}
+{\em animator} & Collision response animator in which the collision occurred. You can call this animator\textquotesingle{}s methods to find the node, collision\+Point and/or collision triangle. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if the collision was handled in the animator. The animator\textquotesingle{}s target node will {\itshape not} be stopped at the collision point, but will instead move fully to the location that triggered the collision check. \\
+\hline
+{\em false} & if the collision was not handled in the animator. The animator\textquotesingle{}s target node will be moved to the collision position. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICollisionCallback_a35791df17defc6fd301dccef1cae596a}\label{classirr_1_1scene_1_1ICollisionCallback_a35791df17defc6fd301dccef1cae596a}} 
+\index{irr\+::scene\+::\+I\+Collision\+Callback@{irr\+::scene\+::\+I\+Collision\+Callback}!on\+Collision@{on\+Collision}}
+\index{on\+Collision@{on\+Collision}!irr\+::scene\+::\+I\+Collision\+Callback@{irr\+::scene\+::\+I\+Collision\+Callback}}
+\subsubsection{\texorpdfstring{on\+Collision()}{onCollision()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Collision\+Callback\+::on\+Collision (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimatorCollisionResponse}{I\+Scene\+Node\+Animator\+Collision\+Response} \&}]{animator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

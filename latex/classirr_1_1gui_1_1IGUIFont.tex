@@ -18,7 +18,29 @@ Inheritance diagram for irr\+:\+:gui\+:\+:I\+G\+U\+I\+Font\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \hyperlink{classirr_1_1gui_1_1IGUIFont_af5627e546c474f31260fe671c24f9a33}{draw} (const \hyperlink{namespaceirr_1_1core_aef83fafbb1b36fcce44c07c9be23a7f2}{core\+::stringw} \&text, const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&position, \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} color, bool hcenter=false, bool vcenter=false, const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ $\ast$clip=0)=0
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIFont_af5627e546c474f31260fe671c24f9a33}{draw} (const \hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{core\+::stringw} \&text, const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&position, \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} color, bool hcenter=false, bool vcenter=false, const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ $\ast$clip=0)=0
+\begin{DoxyCompactList}\small\item\em Draws some text and clips it to the specified rectangle if wanted. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \hyperlink{classirr_1_1gui_1_1IGUIFont_aa7612db0c9dc2837b44a1a2fa5668797}{get\+Dimension} (const wchar\+\_\+t $\ast$text) const =0
+\begin{DoxyCompactList}\small\item\em Calculates the width and height of a given string of text. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUIFont_a60d4d0465deedd811cd0fecd11b4329f}{get\+Character\+From\+Pos} (const wchar\+\_\+t $\ast$text, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} pixel\+\_\+x) const =0
+\begin{DoxyCompactList}\small\item\em Calculates the index of the character in the text which is on a specific position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIFont_a3d5a42997a718b510b73e7d6235b993e}\label{classirr_1_1gui_1_1IGUIFont_a3d5a42997a718b510b73e7d6235b993e}} 
+virtual \hyperlink{namespaceirr_1_1gui_a3c818a164486f43300260327c5420a2f}{E\+G\+U\+I\+\_\+\+F\+O\+N\+T\+\_\+\+T\+Y\+PE} \hyperlink{classirr_1_1gui_1_1IGUIFont_a3d5a42997a718b510b73e7d6235b993e}{get\+Type} () const
+\begin{DoxyCompactList}\small\item\em Returns the type of this font. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIFont_aa683bb2535776b7f81adc050931d9b17}\label{classirr_1_1gui_1_1IGUIFont_aa683bb2535776b7f81adc050931d9b17}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIFont_aa683bb2535776b7f81adc050931d9b17}{set\+Kerning\+Width} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} kerning)=0
+\begin{DoxyCompactList}\small\item\em Sets global kerning width for the font. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIFont_a9545ecfae06592acd47508f6824bb386}\label{classirr_1_1gui_1_1IGUIFont_a9545ecfae06592acd47508f6824bb386}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIFont_a9545ecfae06592acd47508f6824bb386}{set\+Kerning\+Height} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} kerning)=0
+\begin{DoxyCompactList}\small\item\em Sets global kerning height for the font. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUIFont_a7de0b25d3d1dbdcc9036e5d788e2d9ab}{get\+Kerning\+Width} (const wchar\+\_\+t $\ast$this\+Letter=0, const wchar\+\_\+t $\ast$previous\+Letter=0) const =0
+\begin{DoxyCompactList}\small\item\em Gets kerning values (distance between letters) for the font. If no parameters are provided,. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIFont_a1f1a760be155fc0f6a632b457154a5d8}\label{classirr_1_1gui_1_1IGUIFont_a1f1a760be155fc0f6a632b457154a5d8}} 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUIFont_a1f1a760be155fc0f6a632b457154a5d8}{get\+Kerning\+Height} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the distance between letters. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIFont_acff05412dc954845add611c5f71cef49}{set\+Invisible\+Characters} (const wchar\+\_\+t $\ast$s)=0
+\begin{DoxyCompactList}\small\item\em Define which characters should not be drawn by the font. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIFont_af5627e546c474f31260fe671c24f9a33}{draw} (const \hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{core\+::stringw} \&text, const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&position, \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} color, bool hcenter=false, bool vcenter=false, const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ $\ast$clip=0)=0
 \begin{DoxyCompactList}\small\item\em Draws some text and clips it to the specified rectangle if wanted. \end{DoxyCompactList}\item 
 virtual \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \hyperlink{classirr_1_1gui_1_1IGUIFont_aa7612db0c9dc2837b44a1a2fa5668797}{get\+Dimension} (const wchar\+\_\+t $\ast$text) const =0
 \begin{DoxyCompactList}\small\item\em Calculates the width and height of a given string of text. \end{DoxyCompactList}\item 
@@ -50,8 +72,33 @@ Font interface.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIFont_af5627e546c474f31260fe671c24f9a33}\label{classirr_1_1gui_1_1IGUIFont_af5627e546c474f31260fe671c24f9a33}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}!draw@{draw}}
 \index{draw@{draw}!irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}}
-\subsubsection{\texorpdfstring{draw()}{draw()}}
-{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Font\+::draw (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_aef83fafbb1b36fcce44c07c9be23a7f2}{core\+::stringw} \&}]{text,  }\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{position,  }\item[{\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}}]{color,  }\item[{bool}]{hcenter = {\ttfamily false},  }\item[{bool}]{vcenter = {\ttfamily false},  }\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ $\ast$}]{clip = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Font\+::draw (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{core\+::stringw} \&}]{text,  }\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{position,  }\item[{\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}}]{color,  }\item[{bool}]{hcenter = {\ttfamily false},  }\item[{bool}]{vcenter = {\ttfamily false},  }\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ $\ast$}]{clip = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Draws some text and clips it to the specified rectangle if wanted. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \hyperlink{classText}{Text} to draw \\
+\hline
+{\em position} & Rectangle specifying position where to draw the text. \\
+\hline
+{\em color} & Color of the text \\
+\hline
+{\em hcenter} & Specifies if the text should be centered horizontally into the rectangle. \\
+\hline
+{\em vcenter} & Specifies if the text should be centered vertically into the rectangle. \\
+\hline
+{\em clip} & Optional pointer to a rectangle against which the text will be clipped. If the pointer is null, no clipping will be done. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIFont_af5627e546c474f31260fe671c24f9a33}\label{classirr_1_1gui_1_1IGUIFont_af5627e546c474f31260fe671c24f9a33}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}!draw@{draw}}
+\index{draw@{draw}!irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Font\+::draw (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{core\+::stringw} \&}]{text,  }\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{position,  }\item[{\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}}]{color,  }\item[{bool}]{hcenter = {\ttfamily false},  }\item[{bool}]{vcenter = {\ttfamily false},  }\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ $\ast$}]{clip = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -75,7 +122,27 @@ Draws some text and clips it to the specified rectangle if wanted.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIFont_a60d4d0465deedd811cd0fecd11b4329f}\label{classirr_1_1gui_1_1IGUIFont_a60d4d0465deedd811cd0fecd11b4329f}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}!get\+Character\+From\+Pos@{get\+Character\+From\+Pos}}
 \index{get\+Character\+From\+Pos@{get\+Character\+From\+Pos}!irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}}
-\subsubsection{\texorpdfstring{get\+Character\+From\+Pos()}{getCharacterFromPos()}}
+\subsubsection{\texorpdfstring{get\+Character\+From\+Pos()}{getCharacterFromPos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+Font\+::get\+Character\+From\+Pos (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{pixel\+\_\+x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calculates the index of the character in the text which is on a specific position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \hyperlink{classText}{Text} string. \\
+\hline
+{\em pixel\+\_\+x} & X pixel position of which the index of the character will be returned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns zero based index of the character in the text, and -\/1 if no no character is on this position. (=the text is too short). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIFont_a60d4d0465deedd811cd0fecd11b4329f}\label{classirr_1_1gui_1_1IGUIFont_a60d4d0465deedd811cd0fecd11b4329f}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}!get\+Character\+From\+Pos@{get\+Character\+From\+Pos}}
+\index{get\+Character\+From\+Pos@{get\+Character\+From\+Pos}!irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}}
+\subsubsection{\texorpdfstring{get\+Character\+From\+Pos()}{getCharacterFromPos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+Font\+::get\+Character\+From\+Pos (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{pixel\+\_\+x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -95,7 +162,20 @@ Returns zero based index of the character in the text, and -\/1 if no no charact
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIFont_aa7612db0c9dc2837b44a1a2fa5668797}\label{classirr_1_1gui_1_1IGUIFont_aa7612db0c9dc2837b44a1a2fa5668797}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}!get\+Dimension@{get\+Dimension}}
 \index{get\+Dimension@{get\+Dimension}!irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}}
-\subsubsection{\texorpdfstring{get\+Dimension()}{getDimension()}}
+\subsubsection{\texorpdfstring{get\+Dimension()}{getDimension()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}$>$ irr\+::gui\+::\+I\+G\+U\+I\+Font\+::get\+Dimension (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{text }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calculates the width and height of a given string of text. 
+
+\begin{DoxyReturn}{Returns}
+Returns width and height of the area covered by the text if it would be drawn. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIFont_aa7612db0c9dc2837b44a1a2fa5668797}\label{classirr_1_1gui_1_1IGUIFont_aa7612db0c9dc2837b44a1a2fa5668797}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}!get\+Dimension@{get\+Dimension}}
+\index{get\+Dimension@{get\+Dimension}!irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}}
+\subsubsection{\texorpdfstring{get\+Dimension()}{getDimension()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}$>$ irr\+::gui\+::\+I\+G\+U\+I\+Font\+::get\+Dimension (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{text }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -108,7 +188,7 @@ Returns width and height of the area covered by the text if it would be drawn.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIFont_a7de0b25d3d1dbdcc9036e5d788e2d9ab}\label{classirr_1_1gui_1_1IGUIFont_a7de0b25d3d1dbdcc9036e5d788e2d9ab}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}!get\+Kerning\+Width@{get\+Kerning\+Width}}
 \index{get\+Kerning\+Width@{get\+Kerning\+Width}!irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}}
-\subsubsection{\texorpdfstring{get\+Kerning\+Width()}{getKerningWidth()}}
+\subsubsection{\texorpdfstring{get\+Kerning\+Width()}{getKerningWidth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+Font\+::get\+Kerning\+Width (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{this\+Letter = {\ttfamily 0},  }\item[{const wchar\+\_\+t $\ast$}]{previous\+Letter = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -124,12 +204,48 @@ the global kerning distance is returned.
 \end{DoxyParams}
 
 
-Implemented in \hyperlink{classirr_1_1gui_1_1IGUIFontBitmap_a7bdeaea45745a10e09f7769ec3b95a12}{irr\+::gui\+::\+I\+G\+U\+I\+Font\+Bitmap}.
+Implemented in \hyperlink{classirr_1_1gui_1_1IGUIFontBitmap_a7bdeaea45745a10e09f7769ec3b95a12}{irr\+::gui\+::\+I\+G\+U\+I\+Font\+Bitmap}, and \hyperlink{classirr_1_1gui_1_1IGUIFontBitmap_a7bdeaea45745a10e09f7769ec3b95a12}{irr\+::gui\+::\+I\+G\+U\+I\+Font\+Bitmap}.
+
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIFont_a7de0b25d3d1dbdcc9036e5d788e2d9ab}\label{classirr_1_1gui_1_1IGUIFont_a7de0b25d3d1dbdcc9036e5d788e2d9ab}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}!get\+Kerning\+Width@{get\+Kerning\+Width}}
+\index{get\+Kerning\+Width@{get\+Kerning\+Width}!irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}}
+\subsubsection{\texorpdfstring{get\+Kerning\+Width()}{getKerningWidth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+Font\+::get\+Kerning\+Width (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{this\+Letter = {\ttfamily 0},  }\item[{const wchar\+\_\+t $\ast$}]{previous\+Letter = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets kerning values (distance between letters) for the font. If no parameters are provided,. 
+
+the global kerning distance is returned. 
+\begin{DoxyParams}{Parameters}
+{\em this\+Letter} & If this parameter is provided, the left side kerning for this letter is added to the global kerning value. For example, a space might only be one pixel wide, but it may be displayed as several pixels. \\
+\hline
+{\em previous\+Letter} & If provided, kerning is calculated for both letters and added to the global kerning value. For example, in a font which supports kerning pairs a string such as \textquotesingle{}Wo\textquotesingle{} may have the \textquotesingle{}o\textquotesingle{} tucked neatly under the \textquotesingle{}W\textquotesingle{}. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classirr_1_1gui_1_1IGUIFontBitmap_a7bdeaea45745a10e09f7769ec3b95a12}{irr\+::gui\+::\+I\+G\+U\+I\+Font\+Bitmap}, and \hyperlink{classirr_1_1gui_1_1IGUIFontBitmap_a7bdeaea45745a10e09f7769ec3b95a12}{irr\+::gui\+::\+I\+G\+U\+I\+Font\+Bitmap}.
 
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIFont_acff05412dc954845add611c5f71cef49}\label{classirr_1_1gui_1_1IGUIFont_acff05412dc954845add611c5f71cef49}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}!set\+Invisible\+Characters@{set\+Invisible\+Characters}}
 \index{set\+Invisible\+Characters@{set\+Invisible\+Characters}!irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}}
-\subsubsection{\texorpdfstring{set\+Invisible\+Characters()}{setInvisibleCharacters()}}
+\subsubsection{\texorpdfstring{set\+Invisible\+Characters()}{setInvisibleCharacters()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Font\+::set\+Invisible\+Characters (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Define which characters should not be drawn by the font. 
+
+For example \char`\"{} \char`\"{} would not draw any space which is usually blank in most fonts. 
+\begin{DoxyParams}{Parameters}
+{\em s} & String of symbols which are not send down to the videodriver \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIFont_acff05412dc954845add611c5f71cef49}\label{classirr_1_1gui_1_1IGUIFont_acff05412dc954845add611c5f71cef49}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}!set\+Invisible\+Characters@{set\+Invisible\+Characters}}
+\index{set\+Invisible\+Characters@{set\+Invisible\+Characters}!irr\+::gui\+::\+I\+G\+U\+I\+Font@{irr\+::gui\+::\+I\+G\+U\+I\+Font}}
+\subsubsection{\texorpdfstring{set\+Invisible\+Characters()}{setInvisibleCharacters()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Font\+::set\+Invisible\+Characters (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

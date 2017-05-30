@@ -1,0 +1,373 @@
+\hypertarget{vlc__filter_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+filter.h File Reference}
+\label{vlc__filter_8h}\index{lib/include/vlc/plugins/vlc\+\_\+filter.\+h@{lib/include/vlc/plugins/vlc\+\_\+filter.\+h}}
+{\ttfamily \#include $<$vlc\+\_\+es.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+picture.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+subpicture.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+mouse.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structfilter__t}{filter\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vlc__filter_8h_af11ceb6838529661f9569ba17c51dc32}{V\+I\+D\+E\+O\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+W\+R\+A\+P\+P\+ER}(name)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} \hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structfilter__t}{filter\+\_\+t} $\ast$ \hyperlink{vlc__filter_8h_a38aa8e962cffd6dbcbfb8e231eea1512}{filter\+\_\+\+New\+Blend} (\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$, const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$p\+\_\+dst\+\_\+chroma) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{vlc__filter_8h_a6e7e4a139fd845c9c20b3ddb58a348e6}{filter\+\_\+\+Configure\+Blend} (\hyperlink{structfilter__t}{filter\+\_\+t} $\ast$, int i\+\_\+dst\+\_\+width, int i\+\_\+dst\+\_\+height, const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$p\+\_\+src)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{vlc__filter_8h_a92a1f739bcb591af0b37d7832cdded94}{filter\+\_\+\+Blend} (\hyperlink{structfilter__t}{filter\+\_\+t} $\ast$, \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$p\+\_\+dst, int i\+\_\+dst\+\_\+x, int i\+\_\+dst\+\_\+y, const \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$p\+\_\+src, int i\+\_\+alpha)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__filter_8h_a0123678766875bfc0f185c820abc1e4d}{filter\+\_\+\+Delete\+Blend} (\hyperlink{structfilter__t}{filter\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$ \hyperlink{vlc__filter_8h_abfbf83ae955310c1f426f522227bc453}{filter\+\_\+chain\+\_\+\+New} (\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$, const char $\ast$, bool, int($\ast$)(\hyperlink{structfilter__t}{filter\+\_\+t} $\ast$, void $\ast$), void($\ast$)(\hyperlink{structfilter__t}{filter\+\_\+t} $\ast$), void $\ast$) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__filter_8h_ac4ccee8f5515c64e4ac3b1a00763801e}{filter\+\_\+chain\+\_\+\+Delete} (\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__filter_8h_adceda1250dd2df45b27d12876ce19855}{filter\+\_\+chain\+\_\+\+Reset} (\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$, const es\+\_\+format\+\_\+t $\ast$, const es\+\_\+format\+\_\+t $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structfilter__t}{filter\+\_\+t} $\ast$ \hyperlink{vlc__filter_8h_a20e7150a30d47cf6c821c449b5d1ba95}{filter\+\_\+chain\+\_\+\+Append\+Filter} (\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$, const char $\ast$, config\+\_\+chain\+\_\+t $\ast$, const es\+\_\+format\+\_\+t $\ast$, const es\+\_\+format\+\_\+t $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{vlc__filter_8h_acff43a8dcf326c39714a6b0b340f276e}{filter\+\_\+chain\+\_\+\+Append\+From\+String} (\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$, const char $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{vlc__filter_8h_a7b57e2e4422d5dca1cbf4d8a5951ed38}{filter\+\_\+chain\+\_\+\+Delete\+Filter} (\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$, \hyperlink{structfilter__t}{filter\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{vlc__filter_8h_ace5fb078992b3c2f66692bde3b323fb5}{filter\+\_\+chain\+\_\+\+Get\+Length} (\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI const es\+\_\+format\+\_\+t $\ast$ \hyperlink{vlc__filter_8h_ae244d687aea3ff129fe773fe31567846}{filter\+\_\+chain\+\_\+\+Get\+Fmt\+Out} (\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$ \hyperlink{vlc__filter_8h_aec7d16bf82393b74195c8eb2fba90f1e}{filter\+\_\+chain\+\_\+\+Video\+Filter} (\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$, \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__filter_8h_abdd5198a44123740d54884fc70f8d440}{filter\+\_\+chain\+\_\+\+Video\+Flush} (\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI block\+\_\+t $\ast$ \hyperlink{vlc__filter_8h_a09eb13a5f8c5ea0d67ae0b7de5b3cc28}{filter\+\_\+chain\+\_\+\+Audio\+Filter} (\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$, block\+\_\+t $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__filter_8h_a7a5e5f1967f8a5d89f4c8df384e9ec48}{filter\+\_\+chain\+\_\+\+Sub\+Source} (\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$, \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t})
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structsubpicture__t}{subpicture\+\_\+t} $\ast$ \hyperlink{vlc__filter_8h_a097acf1cbeebcdee5a2f30dc88eaac54}{filter\+\_\+chain\+\_\+\+Sub\+Filter} (\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$, \hyperlink{structsubpicture__t}{subpicture\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{vlc__filter_8h_afbccb32490982f6bdd1e39f076a98161}{filter\+\_\+chain\+\_\+\+Mouse\+Filter} (\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$, \hyperlink{structvlc__mouse__t}{vlc\+\_\+mouse\+\_\+t} $\ast$, const \hyperlink{structvlc__mouse__t}{vlc\+\_\+mouse\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{vlc__filter_8h_a9e8918ffbf94c426dbd6ddee4a947800}{filter\+\_\+chain\+\_\+\+Mouse\+Event} (\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$, const \hyperlink{structvlc__mouse__t}{vlc\+\_\+mouse\+\_\+t} $\ast$, const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines the structure and types used by video and audio filters 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{vlc__filter_8h_af11ceb6838529661f9569ba17c51dc32}\label{vlc__filter_8h_af11ceb6838529661f9569ba17c51dc32}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!V\+I\+D\+E\+O\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+W\+R\+A\+P\+P\+ER@{V\+I\+D\+E\+O\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+W\+R\+A\+P\+P\+ER}}
+\index{V\+I\+D\+E\+O\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+W\+R\+A\+P\+P\+ER@{V\+I\+D\+E\+O\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+W\+R\+A\+P\+P\+ER}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{V\+I\+D\+E\+O\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+W\+R\+A\+P\+P\+ER}{VIDEO\_FILTER\_WRAPPER}}
+{\footnotesize\ttfamily \#define V\+I\+D\+E\+O\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+W\+R\+A\+P\+P\+ER(\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{static} \hyperlink{structpicture__t}{picture\_t} *name ## \_Filter ( \hyperlink{structfilter__t}{filter\_t} *p\_filter,             \(\backslash\)
+                                        \hyperlink{structpicture__t}{picture\_t} *p\_pic )              \(\backslash\)
+    \{                                                                   \(\backslash\)
+        picture\_t *p\_outpic = filter\_NewPicture( p\_filter );            \(\backslash\)
+        if( p\_outpic )                                                  \(\backslash\)
+        \{                                                               \(\backslash\)
+            name( p\_filter, p\_pic, p\_outpic );                          \(\backslash\)
+            picture\_CopyProperties( p\_outpic, p\_pic );                  \(\backslash\)
+        \}                                                               \(\backslash\)
+        picture\_Release( p\_pic );                                       \(\backslash\)
+        return p\_outpic;                                                \(\backslash\)
+    \}
+\end{DoxyCode}
+Create a \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$($\ast$)( \hyperlink{structfilter__t}{filter\+\_\+t} $\ast$, \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$ ) compatible wrapper using a void ($\ast$)( \hyperlink{structfilter__t}{filter\+\_\+t} $\ast$, \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$, \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$ ) function
+
+Currently used by the chroma video filters 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}\label{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+chain\+\_\+t@{filter\+\_\+chain\+\_\+t}}
+\index{filter\+\_\+chain\+\_\+t@{filter\+\_\+chain\+\_\+t}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+chain\+\_\+t}{filter\_chain\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} \hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t}}
+
+Filter chain management A\+PI The filter chain management A\+PI is used to dynamically construct filters and add them in a chain. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{vlc__filter_8h_a92a1f739bcb591af0b37d7832cdded94}\label{vlc__filter_8h_a92a1f739bcb591af0b37d7832cdded94}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+\+Blend@{filter\+\_\+\+Blend}}
+\index{filter\+\_\+\+Blend@{filter\+\_\+\+Blend}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+\+Blend()}{filter\_Blend()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI int filter\+\_\+\+Blend (\begin{DoxyParamCaption}\item[{\hyperlink{structfilter__t}{filter\+\_\+t} $\ast$}]{,  }\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{p\+\_\+dst,  }\item[{int}]{i\+\_\+dst\+\_\+x,  }\item[{int}]{i\+\_\+dst\+\_\+y,  }\item[{const \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{p\+\_\+src,  }\item[{int}]{i\+\_\+alpha }\end{DoxyParamCaption})}
+
+It blends a picture into another one.
+
+The input picture is not modified and not released. \mbox{\Hypertarget{vlc__filter_8h_a20e7150a30d47cf6c821c449b5d1ba95}\label{vlc__filter_8h_a20e7150a30d47cf6c821c449b5d1ba95}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+chain\+\_\+\+Append\+Filter@{filter\+\_\+chain\+\_\+\+Append\+Filter}}
+\index{filter\+\_\+chain\+\_\+\+Append\+Filter@{filter\+\_\+chain\+\_\+\+Append\+Filter}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+chain\+\_\+\+Append\+Filter()}{filter\_chain\_AppendFilter()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structfilter__t}{filter\+\_\+t}$\ast$ filter\+\_\+chain\+\_\+\+Append\+Filter (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$}]{,  }\item[{const char $\ast$}]{,  }\item[{config\+\_\+chain\+\_\+t $\ast$}]{,  }\item[{const es\+\_\+format\+\_\+t $\ast$}]{,  }\item[{const es\+\_\+format\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+Append filter to the end of the chain.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+chain} & pointer to filter chain \\
+\hline
+{\em psz\+\_\+name} & name of filter \\
+\hline
+{\em p\+\_\+cfg} & \\
+\hline
+{\em p\+\_\+fmt\+\_\+in} & input es\+\_\+format\+\_\+t \\
+\hline
+{\em p\+\_\+fmt\+\_\+out} & output es\+\_\+format\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to filter chain 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vlc__filter_8h_acff43a8dcf326c39714a6b0b340f276e}\label{vlc__filter_8h_acff43a8dcf326c39714a6b0b340f276e}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+chain\+\_\+\+Append\+From\+String@{filter\+\_\+chain\+\_\+\+Append\+From\+String}}
+\index{filter\+\_\+chain\+\_\+\+Append\+From\+String@{filter\+\_\+chain\+\_\+\+Append\+From\+String}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+chain\+\_\+\+Append\+From\+String()}{filter\_chain\_AppendFromString()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI int filter\+\_\+chain\+\_\+\+Append\+From\+String (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$}]{,  }\item[{const char $\ast$}]{ }\end{DoxyParamCaption})}
+
+Append new filter to filter chain from string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+chain} & pointer to filter chain \\
+\hline
+{\em psz\+\_\+string} & string of filters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 for success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vlc__filter_8h_a09eb13a5f8c5ea0d67ae0b7de5b3cc28}\label{vlc__filter_8h_a09eb13a5f8c5ea0d67ae0b7de5b3cc28}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+chain\+\_\+\+Audio\+Filter@{filter\+\_\+chain\+\_\+\+Audio\+Filter}}
+\index{filter\+\_\+chain\+\_\+\+Audio\+Filter@{filter\+\_\+chain\+\_\+\+Audio\+Filter}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+chain\+\_\+\+Audio\+Filter()}{filter\_chain\_AudioFilter()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI block\+\_\+t$\ast$ filter\+\_\+chain\+\_\+\+Audio\+Filter (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$}]{,  }\item[{block\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+Apply the filter chain to a audio block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+chain} & pointer to filter chain \\
+\hline
+{\em p\+\_\+block} & audio frame to apply filters on \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+modified audio frame after applying all audio filters 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vlc__filter_8h_ac4ccee8f5515c64e4ac3b1a00763801e}\label{vlc__filter_8h_ac4ccee8f5515c64e4ac3b1a00763801e}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+chain\+\_\+\+Delete@{filter\+\_\+chain\+\_\+\+Delete}}
+\index{filter\+\_\+chain\+\_\+\+Delete@{filter\+\_\+chain\+\_\+\+Delete}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+chain\+\_\+\+Delete()}{filter\_chain\_Delete()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void filter\+\_\+chain\+\_\+\+Delete (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Delete filter chain will delete all filters in the chain and free all allocated data. The pointer to the filter chain is then no longer valid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+chain} & pointer to filter chain \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{vlc__filter_8h_a7b57e2e4422d5dca1cbf4d8a5951ed38}\label{vlc__filter_8h_a7b57e2e4422d5dca1cbf4d8a5951ed38}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+chain\+\_\+\+Delete\+Filter@{filter\+\_\+chain\+\_\+\+Delete\+Filter}}
+\index{filter\+\_\+chain\+\_\+\+Delete\+Filter@{filter\+\_\+chain\+\_\+\+Delete\+Filter}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+chain\+\_\+\+Delete\+Filter()}{filter\_chain\_DeleteFilter()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI int filter\+\_\+chain\+\_\+\+Delete\+Filter (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$}]{,  }\item[{\hyperlink{structfilter__t}{filter\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Delete filter from filter chain. This function also releases the filter object and unloads the filter modules. The pointer to p\+\_\+filter is no longer valid after this function successfully returns.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+chain} & pointer to filter chain \\
+\hline
+{\em p\+\_\+filter} & pointer to filter object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+V\+L\+C\+\_\+\+S\+U\+C\+C\+E\+SS on succes, else V\+L\+C\+\_\+\+E\+G\+E\+N\+E\+R\+IC 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vlc__filter_8h_ae244d687aea3ff129fe773fe31567846}\label{vlc__filter_8h_ae244d687aea3ff129fe773fe31567846}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+chain\+\_\+\+Get\+Fmt\+Out@{filter\+\_\+chain\+\_\+\+Get\+Fmt\+Out}}
+\index{filter\+\_\+chain\+\_\+\+Get\+Fmt\+Out@{filter\+\_\+chain\+\_\+\+Get\+Fmt\+Out}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+chain\+\_\+\+Get\+Fmt\+Out()}{filter\_chain\_GetFmtOut()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI const es\+\_\+format\+\_\+t$\ast$ filter\+\_\+chain\+\_\+\+Get\+Fmt\+Out (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Get last p\+\_\+fmt\+\_\+out in the chain.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+chain} & pointer to filter chain \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+last p\+\_\+fmt (es\+\_\+format\+\_\+t) of this filter chain 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vlc__filter_8h_ace5fb078992b3c2f66692bde3b323fb5}\label{vlc__filter_8h_ace5fb078992b3c2f66692bde3b323fb5}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+chain\+\_\+\+Get\+Length@{filter\+\_\+chain\+\_\+\+Get\+Length}}
+\index{filter\+\_\+chain\+\_\+\+Get\+Length@{filter\+\_\+chain\+\_\+\+Get\+Length}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+chain\+\_\+\+Get\+Length()}{filter\_chain\_GetLength()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI int filter\+\_\+chain\+\_\+\+Get\+Length (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Get the number of filters in the filter chain.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+chain} & pointer to filter chain \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of filters in this filter chain 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vlc__filter_8h_a9e8918ffbf94c426dbd6ddee4a947800}\label{vlc__filter_8h_a9e8918ffbf94c426dbd6ddee4a947800}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+chain\+\_\+\+Mouse\+Event@{filter\+\_\+chain\+\_\+\+Mouse\+Event}}
+\index{filter\+\_\+chain\+\_\+\+Mouse\+Event@{filter\+\_\+chain\+\_\+\+Mouse\+Event}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+chain\+\_\+\+Mouse\+Event()}{filter\_chain\_MouseEvent()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI int filter\+\_\+chain\+\_\+\+Mouse\+Event (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$}]{,  }\item[{const \hyperlink{structvlc__mouse__t}{vlc\+\_\+mouse\+\_\+t} $\ast$}]{,  }\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Inform the filter chain of mouse state.
+
+It makes sense only for a sub source chain. \mbox{\Hypertarget{vlc__filter_8h_afbccb32490982f6bdd1e39f076a98161}\label{vlc__filter_8h_afbccb32490982f6bdd1e39f076a98161}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+chain\+\_\+\+Mouse\+Filter@{filter\+\_\+chain\+\_\+\+Mouse\+Filter}}
+\index{filter\+\_\+chain\+\_\+\+Mouse\+Filter@{filter\+\_\+chain\+\_\+\+Mouse\+Filter}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+chain\+\_\+\+Mouse\+Filter()}{filter\_chain\_MouseFilter()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI int filter\+\_\+chain\+\_\+\+Mouse\+Filter (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$}]{,  }\item[{\hyperlink{structvlc__mouse__t}{vlc\+\_\+mouse\+\_\+t} $\ast$}]{,  }\item[{const \hyperlink{structvlc__mouse__t}{vlc\+\_\+mouse\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Apply the filter chain to a mouse state.
+
+It will be applied from the output to the input. It makes sense only for a video filter chain.
+
+The vlc\+\_\+mouse\+\_\+t$\ast$ pointers may be the same. \mbox{\Hypertarget{vlc__filter_8h_abfbf83ae955310c1f426f522227bc453}\label{vlc__filter_8h_abfbf83ae955310c1f426f522227bc453}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+chain\+\_\+\+New@{filter\+\_\+chain\+\_\+\+New}}
+\index{filter\+\_\+chain\+\_\+\+New@{filter\+\_\+chain\+\_\+\+New}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+chain\+\_\+\+New()}{filter\_chain\_New()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t}$\ast$ filter\+\_\+chain\+\_\+\+New (\begin{DoxyParamCaption}\item[{\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$}]{,  }\item[{const char $\ast$}]{,  }\item[{bool}]{,  }\item[{int($\ast$)(\hyperlink{structfilter__t}{filter\+\_\+t} $\ast$, void $\ast$)}]{,  }\item[{void($\ast$)(\hyperlink{structfilter__t}{filter\+\_\+t} $\ast$)}]{,  }\item[{void $\ast$}]{ }\end{DoxyParamCaption})}
+
+Create new filter chain
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+object} & pointer to a vlc object \\
+\hline
+{\em psz\+\_\+capability} & vlc capability of filters in filter chain \\
+\hline
+{\em b\+\_\+allow\+\_\+format\+\_\+fmt\+\_\+change} & allow changing of fmt \\
+\hline
+{\em pf\+\_\+buffer\+\_\+allocation\+\_\+init} & callback function to initialize buffer allocations \\
+\hline
+{\em pf\+\_\+buffer\+\_\+allocation\+\_\+clear} & callback function to clear buffer allocation initialization \\
+\hline
+{\em p\+\_\+buffer\+\_\+allocation\+\_\+data} & pointer to private allocation data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to a filter chain 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vlc__filter_8h_adceda1250dd2df45b27d12876ce19855}\label{vlc__filter_8h_adceda1250dd2df45b27d12876ce19855}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+chain\+\_\+\+Reset@{filter\+\_\+chain\+\_\+\+Reset}}
+\index{filter\+\_\+chain\+\_\+\+Reset@{filter\+\_\+chain\+\_\+\+Reset}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+chain\+\_\+\+Reset()}{filter\_chain\_Reset()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void filter\+\_\+chain\+\_\+\+Reset (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$}]{,  }\item[{const es\+\_\+format\+\_\+t $\ast$}]{,  }\item[{const es\+\_\+format\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+Reset filter chain will delete all filters in the chain and reset p\+\_\+fmt\+\_\+in and p\+\_\+fmt\+\_\+out to the new values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+chain} & pointer to filter chain \\
+\hline
+{\em p\+\_\+fmt\+\_\+in} & new fmt\+\_\+in params \\
+\hline
+{\em p\+\_\+fmt\+\_\+out} & new fmt\+\_\+out params \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{vlc__filter_8h_a097acf1cbeebcdee5a2f30dc88eaac54}\label{vlc__filter_8h_a097acf1cbeebcdee5a2f30dc88eaac54}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+chain\+\_\+\+Sub\+Filter@{filter\+\_\+chain\+\_\+\+Sub\+Filter}}
+\index{filter\+\_\+chain\+\_\+\+Sub\+Filter@{filter\+\_\+chain\+\_\+\+Sub\+Filter}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+chain\+\_\+\+Sub\+Filter()}{filter\_chain\_SubFilter()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structsubpicture__t}{subpicture\+\_\+t}$\ast$ filter\+\_\+chain\+\_\+\+Sub\+Filter (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$}]{,  }\item[{\hyperlink{structsubpicture__t}{subpicture\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Apply filter chain to subpictures.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+chain} & pointer to filter chain \\
+\hline
+{\em p\+\_\+subpicture} & subpicture to apply filters on \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+modified subpicture after applying all subpicture filters 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vlc__filter_8h_a7a5e5f1967f8a5d89f4c8df384e9ec48}\label{vlc__filter_8h_a7a5e5f1967f8a5d89f4c8df384e9ec48}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+chain\+\_\+\+Sub\+Source@{filter\+\_\+chain\+\_\+\+Sub\+Source}}
+\index{filter\+\_\+chain\+\_\+\+Sub\+Source@{filter\+\_\+chain\+\_\+\+Sub\+Source}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+chain\+\_\+\+Sub\+Source()}{filter\_chain\_SubSource()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void filter\+\_\+chain\+\_\+\+Sub\+Source (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$}]{,  }\item[{\hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t}}]{ }\end{DoxyParamCaption})}
+
+Apply filter chain to subpictures.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+chain} & pointer to filter chain \\
+\hline
+{\em display\+\_\+date} & of subpictures \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{vlc__filter_8h_aec7d16bf82393b74195c8eb2fba90f1e}\label{vlc__filter_8h_aec7d16bf82393b74195c8eb2fba90f1e}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+chain\+\_\+\+Video\+Filter@{filter\+\_\+chain\+\_\+\+Video\+Filter}}
+\index{filter\+\_\+chain\+\_\+\+Video\+Filter@{filter\+\_\+chain\+\_\+\+Video\+Filter}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+chain\+\_\+\+Video\+Filter()}{filter\_chain\_VideoFilter()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structpicture__t}{picture\+\_\+t}$\ast$ filter\+\_\+chain\+\_\+\+Video\+Filter (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$}]{,  }\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Apply the filter chain to a video picture.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+chain} & pointer to filter chain \\
+\hline
+{\em p\+\_\+picture} & picture to apply filters on \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+modified picture after applying all video filters 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vlc__filter_8h_abdd5198a44123740d54884fc70f8d440}\label{vlc__filter_8h_abdd5198a44123740d54884fc70f8d440}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+chain\+\_\+\+Video\+Flush@{filter\+\_\+chain\+\_\+\+Video\+Flush}}
+\index{filter\+\_\+chain\+\_\+\+Video\+Flush@{filter\+\_\+chain\+\_\+\+Video\+Flush}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+chain\+\_\+\+Video\+Flush()}{filter\_chain\_VideoFlush()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void filter\+\_\+chain\+\_\+\+Video\+Flush (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__filter_8h_a36dbcb3bbc94c103ad2b9b6b9e5ee367}{filter\+\_\+chain\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Flush a video filter chain. \mbox{\Hypertarget{vlc__filter_8h_a6e7e4a139fd845c9c20b3ddb58a348e6}\label{vlc__filter_8h_a6e7e4a139fd845c9c20b3ddb58a348e6}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+\+Configure\+Blend@{filter\+\_\+\+Configure\+Blend}}
+\index{filter\+\_\+\+Configure\+Blend@{filter\+\_\+\+Configure\+Blend}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+\+Configure\+Blend()}{filter\_ConfigureBlend()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI int filter\+\_\+\+Configure\+Blend (\begin{DoxyParamCaption}\item[{\hyperlink{structfilter__t}{filter\+\_\+t} $\ast$}]{,  }\item[{int}]{i\+\_\+dst\+\_\+width,  }\item[{int}]{i\+\_\+dst\+\_\+height,  }\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{p\+\_\+src }\end{DoxyParamCaption})}
+
+It configures blend filter parameters that are allowed to changed after the creation. \mbox{\Hypertarget{vlc__filter_8h_a0123678766875bfc0f185c820abc1e4d}\label{vlc__filter_8h_a0123678766875bfc0f185c820abc1e4d}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+\+Delete\+Blend@{filter\+\_\+\+Delete\+Blend}}
+\index{filter\+\_\+\+Delete\+Blend@{filter\+\_\+\+Delete\+Blend}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+\+Delete\+Blend()}{filter\_DeleteBlend()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void filter\+\_\+\+Delete\+Blend (\begin{DoxyParamCaption}\item[{\hyperlink{structfilter__t}{filter\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+It destroys a blend filter created by filter\+\_\+\+New\+Blend. \mbox{\Hypertarget{vlc__filter_8h_a38aa8e962cffd6dbcbfb8e231eea1512}\label{vlc__filter_8h_a38aa8e962cffd6dbcbfb8e231eea1512}} 
+\index{vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}!filter\+\_\+\+New\+Blend@{filter\+\_\+\+New\+Blend}}
+\index{filter\+\_\+\+New\+Blend@{filter\+\_\+\+New\+Blend}!vlc\+\_\+filter.\+h@{vlc\+\_\+filter.\+h}}
+\subsubsection{\texorpdfstring{filter\+\_\+\+New\+Blend()}{filter\_NewBlend()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structfilter__t}{filter\+\_\+t}$\ast$ filter\+\_\+\+New\+Blend (\begin{DoxyParamCaption}\item[{\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$}]{,  }\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{p\+\_\+dst\+\_\+chroma }\end{DoxyParamCaption})}
+
+It creates a blend filter.
+
+Only the chroma properties of the dest format is used (chroma type, rgb masks and shifts) 

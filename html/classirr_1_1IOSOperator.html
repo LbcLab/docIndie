@@ -73,7 +73,7 @@ $(function() {
 <p>The Operating system operator provides operation system specific methods and informations.  
  <a href="classirr_1_1IOSOperator.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="IOSOperator_8h_source.html">IOSOperator.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="indie__share_2controller_2include_2IOSOperator_8h_source.html">IOSOperator.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for irr::IOSOperator:</div>
 <div class="dyncontent">
@@ -81,13 +81,34 @@ Inheritance diagram for irr::IOSOperator:</div>
   <img src="classirr_1_1IOSOperator.png" usemap="#irr::IOSOperator_map" alt=""/>
   <map id="irr::IOSOperator_map" name="irr::IOSOperator_map">
 <area href="classirr_1_1IReferenceCounted.html" title="Base class of most objects of the Irrlicht Engine. " alt="irr::IReferenceCounted" shape="rect" coords="0,0,140,24"/>
+<area href="classirr_1_1IReferenceCounted.html" title="Base class of most objects of the Irrlicht Engine. " alt="irr::IReferenceCounted" shape="rect" coords="150,0,290,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acf89b7715468ad2af91807dea6d40bf8"><td class="memItemLeft" align="right" valign="top"><a id="acf89b7715468ad2af91807dea6d40bf8"></a>
-virtual const <a class="el" href="namespaceirr_1_1core.html#ade1071a878633f2f6d8a75c5d11fec19">core::stringc</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IOSOperator.html#acf89b7715468ad2af91807dea6d40bf8">getOperatingSystemVersion</a> () const =0</td></tr>
+virtual const <a class="el" href="namespaceirr_1_1core.html#ab26a0e0359206b5a694f35c37c829d7f">core::stringc</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IOSOperator.html#acf89b7715468ad2af91807dea6d40bf8">getOperatingSystemVersion</a> () const =0</td></tr>
+<tr class="memdesc:acf89b7715468ad2af91807dea6d40bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current operation system version as string. <br /></td></tr>
+<tr class="separator:acf89b7715468ad2af91807dea6d40bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d634ee79439742b7397ca7ad7a3812a"><td class="memItemLeft" align="right" valign="top">_IRR_DEPRECATED_ const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IOSOperator.html#a8d634ee79439742b7397ca7ad7a3812a">getOperationSystemVersion</a> () const</td></tr>
+<tr class="memdesc:a8d634ee79439742b7397ca7ad7a3812a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current operation system version as string.  <a href="#a8d634ee79439742b7397ca7ad7a3812a">More...</a><br /></td></tr>
+<tr class="separator:a8d634ee79439742b7397ca7ad7a3812a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba3b621ed3b64e5a421c42b06b49e0b6"><td class="memItemLeft" align="right" valign="top"><a id="aba3b621ed3b64e5a421c42b06b49e0b6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IOSOperator.html#aba3b621ed3b64e5a421c42b06b49e0b6">copyToClipboard</a> (const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *text) const =0</td></tr>
+<tr class="memdesc:aba3b621ed3b64e5a421c42b06b49e0b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies text to the clipboard. <br /></td></tr>
+<tr class="separator:aba3b621ed3b64e5a421c42b06b49e0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9026ff9f28b48615971e18fcee6fff4c"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IOSOperator.html#a9026ff9f28b48615971e18fcee6fff4c">getTextFromClipboard</a> () const =0</td></tr>
+<tr class="memdesc:a9026ff9f28b48615971e18fcee6fff4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get text from the clipboard.  <a href="#a9026ff9f28b48615971e18fcee6fff4c">More...</a><br /></td></tr>
+<tr class="separator:a9026ff9f28b48615971e18fcee6fff4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc61b8016ec35125ef94adea42209ecd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IOSOperator.html#abc61b8016ec35125ef94adea42209ecd">getProcessorSpeedMHz</a> (<a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> *MHz) const =0</td></tr>
+<tr class="memdesc:abc61b8016ec35125ef94adea42209ecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the processor speed in megahertz.  <a href="#abc61b8016ec35125ef94adea42209ecd">More...</a><br /></td></tr>
+<tr class="separator:abc61b8016ec35125ef94adea42209ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58b50cecf28f247e1f302ee0b9e8270"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IOSOperator.html#af58b50cecf28f247e1f302ee0b9e8270">getSystemMemory</a> (<a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> *Total, <a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> *Avail) const =0</td></tr>
+<tr class="memdesc:af58b50cecf28f247e1f302ee0b9e8270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total and available system RAM.  <a href="#af58b50cecf28f247e1f302ee0b9e8270">More...</a><br /></td></tr>
+<tr class="separator:af58b50cecf28f247e1f302ee0b9e8270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf89b7715468ad2af91807dea6d40bf8"><td class="memItemLeft" align="right" valign="top"><a id="acf89b7715468ad2af91807dea6d40bf8"></a>
+virtual const <a class="el" href="namespaceirr_1_1core.html#ab26a0e0359206b5a694f35c37c829d7f">core::stringc</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IOSOperator.html#acf89b7715468ad2af91807dea6d40bf8">getOperatingSystemVersion</a> () const =0</td></tr>
 <tr class="memdesc:acf89b7715468ad2af91807dea6d40bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current operation system version as string. <br /></td></tr>
 <tr class="separator:acf89b7715468ad2af91807dea6d40bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d634ee79439742b7397ca7ad7a3812a"><td class="memItemLeft" align="right" valign="top">_IRR_DEPRECATED_ const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IOSOperator.html#a8d634ee79439742b7397ca7ad7a3812a">getOperationSystemVersion</a> () const</td></tr>
@@ -127,10 +148,33 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memitem:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#ad336c6e3c975e4c7911a606c27b894f0">getDebugName</a> () const</td></tr>
 <tr class="memdesc:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the debug name of the object.  <a href="classirr_1_1IReferenceCounted.html#ad336c6e3c975e4c7911a606c27b894f0">More...</a><br /></td></tr>
 <tr class="separator:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8411682018e68a2752d4c82675c71040 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top"><a id="a8411682018e68a2752d4c82675c71040"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a8411682018e68a2752d4c82675c71040">IReferenceCounted</a> ()</td></tr>
+<tr class="memdesc:a8411682018e68a2752d4c82675c71040 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="separator:a8411682018e68a2752d4c82675c71040 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78abc75801cbb13d9db0955b3c07251c inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top"><a id="a78abc75801cbb13d9db0955b3c07251c"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a78abc75801cbb13d9db0955b3c07251c">~IReferenceCounted</a> ()</td></tr>
+<tr class="memdesc:a78abc75801cbb13d9db0955b3c07251c inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:a78abc75801cbb13d9db0955b3c07251c inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396f9cdbe311ada278626477b3c6f0f5 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a396f9cdbe311ada278626477b3c6f0f5">grab</a> () const</td></tr>
+<tr class="memdesc:a396f9cdbe311ada278626477b3c6f0f5 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grabs the object. Increments the reference counter by one.  <a href="classirr_1_1IReferenceCounted.html#a396f9cdbe311ada278626477b3c6f0f5">More...</a><br /></td></tr>
+<tr class="separator:a396f9cdbe311ada278626477b3c6f0f5 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03856a09355b89d178090c4a5f738543 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543">drop</a> () const</td></tr>
+<tr class="memdesc:a03856a09355b89d178090c4a5f738543 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops the object. Decrements the reference counter by one.  <a href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543">More...</a><br /></td></tr>
+<tr class="separator:a03856a09355b89d178090c4a5f738543 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9836f102c33c68068e74292e0a01819 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#ae9836f102c33c68068e74292e0a01819">getReferenceCount</a> () const</td></tr>
+<tr class="memdesc:ae9836f102c33c68068e74292e0a01819 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reference count.  <a href="classirr_1_1IReferenceCounted.html#ae9836f102c33c68068e74292e0a01819">More...</a><br /></td></tr>
+<tr class="separator:ae9836f102c33c68068e74292e0a01819 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#ad336c6e3c975e4c7911a606c27b894f0">getDebugName</a> () const</td></tr>
+<tr class="memdesc:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the debug name of the object.  <a href="classirr_1_1IReferenceCounted.html#ad336c6e3c975e4c7911a606c27b894f0">More...</a><br /></td></tr>
+<tr class="separator:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classirr_1_1IReferenceCounted"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classirr_1_1IReferenceCounted')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classirr_1_1IReferenceCounted.html">irr::IReferenceCounted</a></td></tr>
+<tr class="memitem:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a704c5042d399fe8cd3bdd65a0559002a">setDebugName</a> (const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *newName)</td></tr>
+<tr class="memdesc:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the debug name of the object.  <a href="classirr_1_1IReferenceCounted.html#a704c5042d399fe8cd3bdd65a0559002a">More...</a><br /></td></tr>
+<tr class="separator:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a704c5042d399fe8cd3bdd65a0559002a">setDebugName</a> (const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *newName)</td></tr>
 <tr class="memdesc:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the debug name of the object.  <a href="classirr_1_1IReferenceCounted.html#a704c5042d399fe8cd3bdd65a0559002a">More...</a><br /></td></tr>
 <tr class="separator:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,7 +183,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>The Operating system operator provides operation system specific methods and informations. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8d634ee79439742b7397ca7ad7a3812a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d634ee79439742b7397ca7ad7a3812a">&#9670;&nbsp;</a></span>getOperationSystemVersion()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d634ee79439742b7397ca7ad7a3812a">&#9670;&nbsp;</a></span>getOperationSystemVersion() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,8 +210,71 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a8d634ee79439742b7397ca7ad7a3812a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d634ee79439742b7397ca7ad7a3812a">&#9670;&nbsp;</a></span>getOperationSystemVersion() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_IRR_DEPRECATED_ const wchar_t* irr::IOSOperator::getOperationSystemVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current operation system version as string. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000042">Deprecated:</a></b></dt><dd>Use getOperatingSystemVersion instead. This method will be removed in Irrlicht 1.9. </dd></dl>
+
+</div>
+</div>
 <a id="abc61b8016ec35125ef94adea42209ecd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc61b8016ec35125ef94adea42209ecd">&#9670;&nbsp;</a></span>getProcessorSpeedMHz()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abc61b8016ec35125ef94adea42209ecd">&#9670;&nbsp;</a></span>getProcessorSpeedMHz() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool irr::IOSOperator::getProcessorSpeedMHz </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> *&#160;</td>
+          <td class="paramname"><em>MHz</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the processor speed in megahertz. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">MHz</td><td>The integer variable to store the speed in. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful, false if not </dd></dl>
+
+</div>
+</div>
+<a id="abc61b8016ec35125ef94adea42209ecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc61b8016ec35125ef94adea42209ecd">&#9670;&nbsp;</a></span>getProcessorSpeedMHz() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,7 +309,53 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="af58b50cecf28f247e1f302ee0b9e8270"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af58b50cecf28f247e1f302ee0b9e8270">&#9670;&nbsp;</a></span>getSystemMemory()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af58b50cecf28f247e1f302ee0b9e8270">&#9670;&nbsp;</a></span>getSystemMemory() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool irr::IOSOperator::getSystemMemory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> *&#160;</td>
+          <td class="paramname"><em>Total</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> *&#160;</td>
+          <td class="paramname"><em>Avail</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the total and available system RAM. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Total</td><td>will contain the total system memory </td></tr>
+    <tr><td class="paramname">Avail</td><td>will contain the available memory </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful, false if not </dd></dl>
+
+</div>
+</div>
+<a id="af58b50cecf28f247e1f302ee0b9e8270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af58b50cecf28f247e1f302ee0b9e8270">&#9670;&nbsp;</a></span>getSystemMemory() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -248,7 +401,35 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a9026ff9f28b48615971e18fcee6fff4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9026ff9f28b48615971e18fcee6fff4c">&#9670;&nbsp;</a></span>getTextFromClipboard()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9026ff9f28b48615971e18fcee6fff4c">&#9670;&nbsp;</a></span>getTextFromClipboard() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a>* irr::IOSOperator::getTextFromClipboard </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get text from the clipboard. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 if no string is in there. </dd></dl>
+
+</div>
+</div>
+<a id="a9026ff9f28b48615971e18fcee6fff4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9026ff9f28b48615971e18fcee6fff4c">&#9670;&nbsp;</a></span>getTextFromClipboard() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -276,7 +457,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>indie_share/controller/include/<a class="el" href="IOSOperator_8h_source.html">IOSOperator.h</a></li>
+<li>indie_share/controller/include/<a class="el" href="indie__share_2controller_2include_2IOSOperator_8h_source.html">IOSOperator.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

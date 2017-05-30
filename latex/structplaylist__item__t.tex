@@ -1,0 +1,79 @@
+\hypertarget{structplaylist__item__t}{}\section{playlist\+\_\+item\+\_\+t Struct Reference}
+\label{structplaylist__item__t}\index{playlist\+\_\+item\+\_\+t@{playlist\+\_\+item\+\_\+t}}
+
+
+{\ttfamily \#include $<$vlc\+\_\+playlist.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+input\+\_\+item\+\_\+t $\ast$ \hyperlink{structplaylist__item__t_a5424e765011e62b50d107300f92b0d39}{p\+\_\+input}
+\item 
+\hyperlink{structplaylist__item__t}{playlist\+\_\+item\+\_\+t} $\ast$$\ast$ \hyperlink{structplaylist__item__t_a5ef0b5fca43e022ac56e00fd7a57a5e0}{pp\+\_\+children}
+\item 
+\hyperlink{structplaylist__item__t}{playlist\+\_\+item\+\_\+t} $\ast$ \hyperlink{structplaylist__item__t_a4c5183597d06e0467dbf3526a6777a9a}{p\+\_\+parent}
+\item 
+int \hyperlink{structplaylist__item__t_a2d5e2d909e2829bf805d99352348e80c}{i\+\_\+children}
+\item 
+int \hyperlink{structplaylist__item__t_ab906400e779343ae82c41ca39ede90ce}{i\+\_\+id}
+\item 
+uint8\+\_\+t \hyperlink{structplaylist__item__t_ab0b9d31ca92b7c1eaccb9f9ec4528a19}{i\+\_\+flags}
+\item 
+\hyperlink{structplaylist__t}{playlist\+\_\+t} $\ast$ \hyperlink{structplaylist__item__t_a4723dfc8cd6ad6d775c56ffcb93174c2}{p\+\_\+playlist}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+playlist item / node 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structplaylist__item__t_a2d5e2d909e2829bf805d99352348e80c}\label{structplaylist__item__t_a2d5e2d909e2829bf805d99352348e80c}} 
+\index{playlist\+\_\+item\+\_\+t@{playlist\+\_\+item\+\_\+t}!i\+\_\+children@{i\+\_\+children}}
+\index{i\+\_\+children@{i\+\_\+children}!playlist\+\_\+item\+\_\+t@{playlist\+\_\+item\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+children}{i\_children}}
+{\footnotesize\ttfamily int playlist\+\_\+item\+\_\+t\+::i\+\_\+children}
+
+Number of children, -\/1 if not a node \mbox{\Hypertarget{structplaylist__item__t_ab0b9d31ca92b7c1eaccb9f9ec4528a19}\label{structplaylist__item__t_ab0b9d31ca92b7c1eaccb9f9ec4528a19}} 
+\index{playlist\+\_\+item\+\_\+t@{playlist\+\_\+item\+\_\+t}!i\+\_\+flags@{i\+\_\+flags}}
+\index{i\+\_\+flags@{i\+\_\+flags}!playlist\+\_\+item\+\_\+t@{playlist\+\_\+item\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+flags}{i\_flags}}
+{\footnotesize\ttfamily uint8\+\_\+t playlist\+\_\+item\+\_\+t\+::i\+\_\+flags}
+
+Flags \begin{DoxySeeAlso}{See also}
+\hyperlink{group__vlc__playlist_ga8e081f83afd54626ee47766bdca9d807}{playlist\+\_\+item\+\_\+flags\+\_\+e} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{structplaylist__item__t_ab906400e779343ae82c41ca39ede90ce}\label{structplaylist__item__t_ab906400e779343ae82c41ca39ede90ce}} 
+\index{playlist\+\_\+item\+\_\+t@{playlist\+\_\+item\+\_\+t}!i\+\_\+id@{i\+\_\+id}}
+\index{i\+\_\+id@{i\+\_\+id}!playlist\+\_\+item\+\_\+t@{playlist\+\_\+item\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+id}{i\_id}}
+{\footnotesize\ttfamily int playlist\+\_\+item\+\_\+t\+::i\+\_\+id}
+
+Playlist item specific id \mbox{\Hypertarget{structplaylist__item__t_a5424e765011e62b50d107300f92b0d39}\label{structplaylist__item__t_a5424e765011e62b50d107300f92b0d39}} 
+\index{playlist\+\_\+item\+\_\+t@{playlist\+\_\+item\+\_\+t}!p\+\_\+input@{p\+\_\+input}}
+\index{p\+\_\+input@{p\+\_\+input}!playlist\+\_\+item\+\_\+t@{playlist\+\_\+item\+\_\+t}}
+\subsubsection{\texorpdfstring{p\+\_\+input}{p\_input}}
+{\footnotesize\ttfamily input\+\_\+item\+\_\+t$\ast$ playlist\+\_\+item\+\_\+t\+::p\+\_\+input}
+
+Linked input item \mbox{\Hypertarget{structplaylist__item__t_a4c5183597d06e0467dbf3526a6777a9a}\label{structplaylist__item__t_a4c5183597d06e0467dbf3526a6777a9a}} 
+\index{playlist\+\_\+item\+\_\+t@{playlist\+\_\+item\+\_\+t}!p\+\_\+parent@{p\+\_\+parent}}
+\index{p\+\_\+parent@{p\+\_\+parent}!playlist\+\_\+item\+\_\+t@{playlist\+\_\+item\+\_\+t}}
+\subsubsection{\texorpdfstring{p\+\_\+parent}{p\_parent}}
+{\footnotesize\ttfamily \hyperlink{structplaylist__item__t}{playlist\+\_\+item\+\_\+t}$\ast$ playlist\+\_\+item\+\_\+t\+::p\+\_\+parent}
+
+Item parent \mbox{\Hypertarget{structplaylist__item__t_a4723dfc8cd6ad6d775c56ffcb93174c2}\label{structplaylist__item__t_a4723dfc8cd6ad6d775c56ffcb93174c2}} 
+\index{playlist\+\_\+item\+\_\+t@{playlist\+\_\+item\+\_\+t}!p\+\_\+playlist@{p\+\_\+playlist}}
+\index{p\+\_\+playlist@{p\+\_\+playlist}!playlist\+\_\+item\+\_\+t@{playlist\+\_\+item\+\_\+t}}
+\subsubsection{\texorpdfstring{p\+\_\+playlist}{p\_playlist}}
+{\footnotesize\ttfamily \hyperlink{structplaylist__t}{playlist\+\_\+t}$\ast$ playlist\+\_\+item\+\_\+t\+::p\+\_\+playlist}
+
+Parent playlist \mbox{\Hypertarget{structplaylist__item__t_a5ef0b5fca43e022ac56e00fd7a57a5e0}\label{structplaylist__item__t_a5ef0b5fca43e022ac56e00fd7a57a5e0}} 
+\index{playlist\+\_\+item\+\_\+t@{playlist\+\_\+item\+\_\+t}!pp\+\_\+children@{pp\+\_\+children}}
+\index{pp\+\_\+children@{pp\+\_\+children}!playlist\+\_\+item\+\_\+t@{playlist\+\_\+item\+\_\+t}}
+\subsubsection{\texorpdfstring{pp\+\_\+children}{pp\_children}}
+{\footnotesize\ttfamily \hyperlink{structplaylist__item__t}{playlist\+\_\+item\+\_\+t}$\ast$$\ast$ playlist\+\_\+item\+\_\+t\+::pp\+\_\+children}
+
+Children nodes/items 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/include/vlc/plugins/\hyperlink{vlc__playlist_8h}{vlc\+\_\+playlist.\+h}\end{DoxyCompactItemize}

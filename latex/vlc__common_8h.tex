@@ -1,0 +1,175 @@
+\hypertarget{vlc__common_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+common.h File Reference}
+\label{vlc__common_8h}\index{lib/include/vlc/plugins/vlc\+\_\+common.\+h@{lib/include/vlc/plugins/vlc\+\_\+common.\+h}}
+{\ttfamily \#include \char`\"{}vlc\+\_\+config.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$inttypes.\+h$>$}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}vlc\+\_\+mtime.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vlc\+\_\+threads.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vlc\+\_\+arrays.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}vlc\+\_\+messages.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vlc\+\_\+objects.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vlc\+\_\+variables.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vlc\+\_\+main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vlc\+\_\+configuration.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{unionvlc__value__t}{vlc\+\_\+value\+\_\+t}
+\item 
+struct \hyperlink{structvlc__list__t}{vlc\+\_\+list\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vlc__common_8h_af24cdfbdddcc5d1a33d9c9f601323f17}{V\+L\+C\+\_\+\+S\+U\+C\+C\+E\+SS}~(-\/0)
+\item 
+\#define \hyperlink{vlc__common_8h_a2baa7840673512d3c8797b9ca97fa766}{V\+L\+C\+\_\+\+E\+G\+E\+N\+E\+R\+IC}~(-\/1)
+\item 
+\#define \hyperlink{vlc__common_8h_a84ab7ec0cd6788c180ca7f85f1142851}{V\+L\+C\+\_\+\+E\+N\+O\+M\+EM}~(-\/2)
+\item 
+\#define \hyperlink{vlc__common_8h_ae567e5ec6474ded52ed3ecd285210f5c}{V\+L\+C\+\_\+\+E\+T\+I\+M\+E\+O\+UT}~(-\/3)
+\item 
+\#define \hyperlink{vlc__common_8h_a3eb1624bf9cda0cd0b894fd3e9c52efb}{V\+L\+C\+\_\+\+E\+N\+O\+M\+OD}~(-\/4)
+\item 
+\#define \hyperlink{vlc__common_8h_af67a01726560daeedbf2b81222b09170}{V\+L\+C\+\_\+\+E\+N\+O\+O\+BJ}~(-\/5)
+\item 
+\#define \hyperlink{vlc__common_8h_ac7f506c678d9b67bef1cffd80129cd9b}{V\+L\+C\+\_\+\+E\+N\+O\+V\+AR}~(-\/6)
+\item 
+\#define \hyperlink{vlc__common_8h_acbf617807e1d25175e6fe887eb6aa44c}{V\+L\+C\+\_\+\+E\+B\+A\+D\+V\+AR}~(-\/7)
+\item 
+\#define \hyperlink{vlc__common_8h_a75555a25e74d0ebaf731bf780763a887}{V\+L\+C\+\_\+\+E\+N\+O\+I\+T\+EM}~(-\/8)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int64\+\_\+t \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t}
+\item 
+typedef uint32\+\_\+t \hyperlink{vlc__common_8h_af49f89d0f752bc9cff142e43b1bd634d}{vlc\+\_\+fourcc\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758ea}{playlist\+\_\+command\+\_\+t} \{ \newline
+\hyperlink{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758eaa1fc0a642c34dcd3e9e33716d39484991}{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+P\+L\+AY}, 
+\hyperlink{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758eaa8bffdd374d0c7857e0956fd746c5092e}{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+V\+I\+E\+W\+P\+L\+AY}, 
+\hyperlink{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758eaa8b9e51046f8d9b6be3cda0765a7ccaf3}{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+P\+A\+U\+SE}, 
+\hyperlink{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758eaaacef972e543ca058e3f3412a37a8daf4}{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+S\+T\+OP}, 
+\newline
+\hyperlink{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758eaa809bef74e2742d64391be61923aa4466}{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+S\+K\+IP}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file is a collection of common definitions and types 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{vlc__common_8h_acbf617807e1d25175e6fe887eb6aa44c}\label{vlc__common_8h_acbf617807e1d25175e6fe887eb6aa44c}} 
+\index{vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}!V\+L\+C\+\_\+\+E\+B\+A\+D\+V\+AR@{V\+L\+C\+\_\+\+E\+B\+A\+D\+V\+AR}}
+\index{V\+L\+C\+\_\+\+E\+B\+A\+D\+V\+AR@{V\+L\+C\+\_\+\+E\+B\+A\+D\+V\+AR}!vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}}
+\subsubsection{\texorpdfstring{V\+L\+C\+\_\+\+E\+B\+A\+D\+V\+AR}{VLC\_EBADVAR}}
+{\footnotesize\ttfamily \#define V\+L\+C\+\_\+\+E\+B\+A\+D\+V\+AR~(-\/7)}
+
+Bad variable value \mbox{\Hypertarget{vlc__common_8h_a2baa7840673512d3c8797b9ca97fa766}\label{vlc__common_8h_a2baa7840673512d3c8797b9ca97fa766}} 
+\index{vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}!V\+L\+C\+\_\+\+E\+G\+E\+N\+E\+R\+IC@{V\+L\+C\+\_\+\+E\+G\+E\+N\+E\+R\+IC}}
+\index{V\+L\+C\+\_\+\+E\+G\+E\+N\+E\+R\+IC@{V\+L\+C\+\_\+\+E\+G\+E\+N\+E\+R\+IC}!vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}}
+\subsubsection{\texorpdfstring{V\+L\+C\+\_\+\+E\+G\+E\+N\+E\+R\+IC}{VLC\_EGENERIC}}
+{\footnotesize\ttfamily \#define V\+L\+C\+\_\+\+E\+G\+E\+N\+E\+R\+IC~(-\/1)}
+
+Unspecified error \mbox{\Hypertarget{vlc__common_8h_a75555a25e74d0ebaf731bf780763a887}\label{vlc__common_8h_a75555a25e74d0ebaf731bf780763a887}} 
+\index{vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}!V\+L\+C\+\_\+\+E\+N\+O\+I\+T\+EM@{V\+L\+C\+\_\+\+E\+N\+O\+I\+T\+EM}}
+\index{V\+L\+C\+\_\+\+E\+N\+O\+I\+T\+EM@{V\+L\+C\+\_\+\+E\+N\+O\+I\+T\+EM}!vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}}
+\subsubsection{\texorpdfstring{V\+L\+C\+\_\+\+E\+N\+O\+I\+T\+EM}{VLC\_ENOITEM}}
+{\footnotesize\ttfamily \#define V\+L\+C\+\_\+\+E\+N\+O\+I\+T\+EM~(-\/8)}
+
+Item not found \mbox{\Hypertarget{vlc__common_8h_a84ab7ec0cd6788c180ca7f85f1142851}\label{vlc__common_8h_a84ab7ec0cd6788c180ca7f85f1142851}} 
+\index{vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}!V\+L\+C\+\_\+\+E\+N\+O\+M\+EM@{V\+L\+C\+\_\+\+E\+N\+O\+M\+EM}}
+\index{V\+L\+C\+\_\+\+E\+N\+O\+M\+EM@{V\+L\+C\+\_\+\+E\+N\+O\+M\+EM}!vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}}
+\subsubsection{\texorpdfstring{V\+L\+C\+\_\+\+E\+N\+O\+M\+EM}{VLC\_ENOMEM}}
+{\footnotesize\ttfamily \#define V\+L\+C\+\_\+\+E\+N\+O\+M\+EM~(-\/2)}
+
+Not enough memory \mbox{\Hypertarget{vlc__common_8h_a3eb1624bf9cda0cd0b894fd3e9c52efb}\label{vlc__common_8h_a3eb1624bf9cda0cd0b894fd3e9c52efb}} 
+\index{vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}!V\+L\+C\+\_\+\+E\+N\+O\+M\+OD@{V\+L\+C\+\_\+\+E\+N\+O\+M\+OD}}
+\index{V\+L\+C\+\_\+\+E\+N\+O\+M\+OD@{V\+L\+C\+\_\+\+E\+N\+O\+M\+OD}!vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}}
+\subsubsection{\texorpdfstring{V\+L\+C\+\_\+\+E\+N\+O\+M\+OD}{VLC\_ENOMOD}}
+{\footnotesize\ttfamily \#define V\+L\+C\+\_\+\+E\+N\+O\+M\+OD~(-\/4)}
+
+Module not found \mbox{\Hypertarget{vlc__common_8h_af67a01726560daeedbf2b81222b09170}\label{vlc__common_8h_af67a01726560daeedbf2b81222b09170}} 
+\index{vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}!V\+L\+C\+\_\+\+E\+N\+O\+O\+BJ@{V\+L\+C\+\_\+\+E\+N\+O\+O\+BJ}}
+\index{V\+L\+C\+\_\+\+E\+N\+O\+O\+BJ@{V\+L\+C\+\_\+\+E\+N\+O\+O\+BJ}!vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}}
+\subsubsection{\texorpdfstring{V\+L\+C\+\_\+\+E\+N\+O\+O\+BJ}{VLC\_ENOOBJ}}
+{\footnotesize\ttfamily \#define V\+L\+C\+\_\+\+E\+N\+O\+O\+BJ~(-\/5)}
+
+Object not found \mbox{\Hypertarget{vlc__common_8h_ac7f506c678d9b67bef1cffd80129cd9b}\label{vlc__common_8h_ac7f506c678d9b67bef1cffd80129cd9b}} 
+\index{vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}!V\+L\+C\+\_\+\+E\+N\+O\+V\+AR@{V\+L\+C\+\_\+\+E\+N\+O\+V\+AR}}
+\index{V\+L\+C\+\_\+\+E\+N\+O\+V\+AR@{V\+L\+C\+\_\+\+E\+N\+O\+V\+AR}!vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}}
+\subsubsection{\texorpdfstring{V\+L\+C\+\_\+\+E\+N\+O\+V\+AR}{VLC\_ENOVAR}}
+{\footnotesize\ttfamily \#define V\+L\+C\+\_\+\+E\+N\+O\+V\+AR~(-\/6)}
+
+Variable not found \mbox{\Hypertarget{vlc__common_8h_ae567e5ec6474ded52ed3ecd285210f5c}\label{vlc__common_8h_ae567e5ec6474ded52ed3ecd285210f5c}} 
+\index{vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}!V\+L\+C\+\_\+\+E\+T\+I\+M\+E\+O\+UT@{V\+L\+C\+\_\+\+E\+T\+I\+M\+E\+O\+UT}}
+\index{V\+L\+C\+\_\+\+E\+T\+I\+M\+E\+O\+UT@{V\+L\+C\+\_\+\+E\+T\+I\+M\+E\+O\+UT}!vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}}
+\subsubsection{\texorpdfstring{V\+L\+C\+\_\+\+E\+T\+I\+M\+E\+O\+UT}{VLC\_ETIMEOUT}}
+{\footnotesize\ttfamily \#define V\+L\+C\+\_\+\+E\+T\+I\+M\+E\+O\+UT~(-\/3)}
+
+Timeout \mbox{\Hypertarget{vlc__common_8h_af24cdfbdddcc5d1a33d9c9f601323f17}\label{vlc__common_8h_af24cdfbdddcc5d1a33d9c9f601323f17}} 
+\index{vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}!V\+L\+C\+\_\+\+S\+U\+C\+C\+E\+SS@{V\+L\+C\+\_\+\+S\+U\+C\+C\+E\+SS}}
+\index{V\+L\+C\+\_\+\+S\+U\+C\+C\+E\+SS@{V\+L\+C\+\_\+\+S\+U\+C\+C\+E\+SS}!vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}}
+\subsubsection{\texorpdfstring{V\+L\+C\+\_\+\+S\+U\+C\+C\+E\+SS}{VLC\_SUCCESS}}
+{\footnotesize\ttfamily \#define V\+L\+C\+\_\+\+S\+U\+C\+C\+E\+SS~(-\/0)}
+
+No error 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{vlc__common_8h_a996e47c5ea061215703c26738351279e}\label{vlc__common_8h_a996e47c5ea061215703c26738351279e}} 
+\index{vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}!mtime\+\_\+t@{mtime\+\_\+t}}
+\index{mtime\+\_\+t@{mtime\+\_\+t}!vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}}
+\subsubsection{\texorpdfstring{mtime\+\_\+t}{mtime\_t}}
+{\footnotesize\ttfamily typedef int64\+\_\+t \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t}}
+
+High precision date or time interval
+
+Store a high precision date or time interval. The maximum precision is the microsecond, and a 64 bits integer is used to avoid overflows (maximum time interval is then 292271 years, which should be long enough for any video). Dates are stored as microseconds since a common date (usually the epoch). Note that date and time intervals can be manipulated using regular arithmetic operators, and that no special functions are required. \mbox{\Hypertarget{vlc__common_8h_af49f89d0f752bc9cff142e43b1bd634d}\label{vlc__common_8h_af49f89d0f752bc9cff142e43b1bd634d}} 
+\index{vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}!vlc\+\_\+fourcc\+\_\+t@{vlc\+\_\+fourcc\+\_\+t}}
+\index{vlc\+\_\+fourcc\+\_\+t@{vlc\+\_\+fourcc\+\_\+t}!vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}}
+\subsubsection{\texorpdfstring{vlc\+\_\+fourcc\+\_\+t}{vlc\_fourcc\_t}}
+{\footnotesize\ttfamily typedef uint32\+\_\+t \hyperlink{vlc__common_8h_af49f89d0f752bc9cff142e43b1bd634d}{vlc\+\_\+fourcc\+\_\+t}}
+
+The vlc\+\_\+fourcc\+\_\+t type.
+
+See \href{http://www.webartz.com/fourcc/}{\tt http\+://www.\+webartz.\+com/fourcc/} for a very detailed list. 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758ea}\label{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758ea}} 
+\index{vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}!playlist\+\_\+command\+\_\+t@{playlist\+\_\+command\+\_\+t}}
+\index{playlist\+\_\+command\+\_\+t@{playlist\+\_\+command\+\_\+t}!vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}}
+\subsubsection{\texorpdfstring{playlist\+\_\+command\+\_\+t}{playlist\_command\_t}}
+{\footnotesize\ttfamily enum \hyperlink{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758ea}{playlist\+\_\+command\+\_\+t}}
+
+Playlist commands \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+P\+L\+AY@{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+P\+L\+AY}!vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}}\index{vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}!P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+P\+L\+AY@{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+P\+L\+AY}}}\mbox{\Hypertarget{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758eaa1fc0a642c34dcd3e9e33716d39484991}\label{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758eaa1fc0a642c34dcd3e9e33716d39484991}} 
+P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+P\+L\+AY&No arg. res=can fail \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+V\+I\+E\+W\+P\+L\+AY@{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+V\+I\+E\+W\+P\+L\+AY}!vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}}\index{vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}!P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+V\+I\+E\+W\+P\+L\+AY@{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+V\+I\+E\+W\+P\+L\+AY}}}\mbox{\Hypertarget{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758eaa8bffdd374d0c7857e0956fd746c5092e}\label{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758eaa8bffdd374d0c7857e0956fd746c5092e}} 
+P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+V\+I\+E\+W\+P\+L\+AY&arg1= playlist\+\_\+item\+\_\+t$\ast$, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+P\+A\+U\+SE@{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+P\+A\+U\+SE}!vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}}\index{vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}!P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+P\+A\+U\+SE@{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+P\+A\+U\+SE}}}\mbox{\Hypertarget{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758eaa8b9e51046f8d9b6be3cda0765a7ccaf3}\label{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758eaa8b9e51046f8d9b6be3cda0765a7ccaf3}} 
+P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+P\+A\+U\+SE&arg2 = playlist\+\_\+item\+\_\+t$\ast$ , res=can fail No arg res=can fail \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+S\+T\+OP@{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+S\+T\+OP}!vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}}\index{vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}!P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+S\+T\+OP@{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+S\+T\+OP}}}\mbox{\Hypertarget{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758eaaacef972e543ca058e3f3412a37a8daf4}\label{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758eaaacef972e543ca058e3f3412a37a8daf4}} 
+P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+S\+T\+OP&No arg res=can fail \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+S\+K\+IP@{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+S\+K\+IP}!vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}}\index{vlc\+\_\+common.\+h@{vlc\+\_\+common.\+h}!P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+S\+K\+IP@{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+S\+K\+IP}}}\mbox{\Hypertarget{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758eaa809bef74e2742d64391be61923aa4466}\label{vlc__common_8h_a6fa047633b4fe99f75f7e2368e6758eaa809bef74e2742d64391be61923aa4466}} 
+P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+S\+K\+IP&arg1=int, res=can fail \\
+\hline
+
+\end{DoxyEnumFields}

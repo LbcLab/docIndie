@@ -1,0 +1,93 @@
+\hypertarget{vlc__picture__fifo_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+picture\+\_\+fifo.h File Reference}
+\label{vlc__picture__fifo_8h}\index{lib/include/vlc/plugins/vlc\+\_\+picture\+\_\+fifo.\+h@{lib/include/vlc/plugins/vlc\+\_\+picture\+\_\+fifo.\+h}}
+{\ttfamily \#include $<$vlc\+\_\+picture.\+h$>$}\newline
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}{picture\+\_\+fifo\+\_\+t} \hyperlink{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}{picture\+\_\+fifo\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}{picture\+\_\+fifo\+\_\+t} $\ast$ \hyperlink{vlc__picture__fifo_8h_a28b8deece9fe4131d12d370221904eb2}{picture\+\_\+fifo\+\_\+\+New} (void) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__picture__fifo_8h_a30db32c52504817ccbbfa3c12dfdc2df}{picture\+\_\+fifo\+\_\+\+Delete} (\hyperlink{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}{picture\+\_\+fifo\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$ \hyperlink{vlc__picture__fifo_8h_a18b1479edd11c76f4692e00e1d6d82c5}{picture\+\_\+fifo\+\_\+\+Pop} (\hyperlink{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}{picture\+\_\+fifo\+\_\+t} $\ast$) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$ \hyperlink{vlc__picture__fifo_8h_afd5c9e2eb964af4f494e127b0468826c}{picture\+\_\+fifo\+\_\+\+Peek} (\hyperlink{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}{picture\+\_\+fifo\+\_\+t} $\ast$) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__picture__fifo_8h_a7e9238d3b1eedf98797daafb5bed4892}{picture\+\_\+fifo\+\_\+\+Push} (\hyperlink{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}{picture\+\_\+fifo\+\_\+t} $\ast$, \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__picture__fifo_8h_a00f55e3189c2870b4ca4e90f9c70d642}{picture\+\_\+fifo\+\_\+\+Flush} (\hyperlink{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}{picture\+\_\+fifo\+\_\+t} $\ast$, \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} date, bool flush\+\_\+before)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__picture__fifo_8h_aa58e46d9df7416b1b7e29e02882e6d14}{picture\+\_\+fifo\+\_\+\+Offset\+Date} (\hyperlink{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}{picture\+\_\+fifo\+\_\+t} $\ast$, \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} delta)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines picture fifo structures and functions in vlc 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}\label{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}} 
+\index{vlc\+\_\+picture\+\_\+fifo.\+h@{vlc\+\_\+picture\+\_\+fifo.\+h}!picture\+\_\+fifo\+\_\+t@{picture\+\_\+fifo\+\_\+t}}
+\index{picture\+\_\+fifo\+\_\+t@{picture\+\_\+fifo\+\_\+t}!vlc\+\_\+picture\+\_\+fifo.\+h@{vlc\+\_\+picture\+\_\+fifo.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+fifo\+\_\+t}{picture\_fifo\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}{picture\+\_\+fifo\+\_\+t} \hyperlink{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}{picture\+\_\+fifo\+\_\+t}}
+
+Picture fifo handle
+
+It is thread safe (push/pop). 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{vlc__picture__fifo_8h_a30db32c52504817ccbbfa3c12dfdc2df}\label{vlc__picture__fifo_8h_a30db32c52504817ccbbfa3c12dfdc2df}} 
+\index{vlc\+\_\+picture\+\_\+fifo.\+h@{vlc\+\_\+picture\+\_\+fifo.\+h}!picture\+\_\+fifo\+\_\+\+Delete@{picture\+\_\+fifo\+\_\+\+Delete}}
+\index{picture\+\_\+fifo\+\_\+\+Delete@{picture\+\_\+fifo\+\_\+\+Delete}!vlc\+\_\+picture\+\_\+fifo.\+h@{vlc\+\_\+picture\+\_\+fifo.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+fifo\+\_\+\+Delete()}{picture\_fifo\_Delete()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void picture\+\_\+fifo\+\_\+\+Delete (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}{picture\+\_\+fifo\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+It destroys a fifo created by picture\+\_\+fifo\+\_\+\+New.
+
+All pictures inside the fifo will be released by picture\+\_\+\+Release. \mbox{\Hypertarget{vlc__picture__fifo_8h_a00f55e3189c2870b4ca4e90f9c70d642}\label{vlc__picture__fifo_8h_a00f55e3189c2870b4ca4e90f9c70d642}} 
+\index{vlc\+\_\+picture\+\_\+fifo.\+h@{vlc\+\_\+picture\+\_\+fifo.\+h}!picture\+\_\+fifo\+\_\+\+Flush@{picture\+\_\+fifo\+\_\+\+Flush}}
+\index{picture\+\_\+fifo\+\_\+\+Flush@{picture\+\_\+fifo\+\_\+\+Flush}!vlc\+\_\+picture\+\_\+fifo.\+h@{vlc\+\_\+picture\+\_\+fifo.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+fifo\+\_\+\+Flush()}{picture\_fifo\_Flush()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void picture\+\_\+fifo\+\_\+\+Flush (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}{picture\+\_\+fifo\+\_\+t} $\ast$}]{,  }\item[{\hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t}}]{date,  }\item[{bool}]{flush\+\_\+before }\end{DoxyParamCaption})}
+
+It release all picture inside the fifo that have a lower or equal date if flush\+\_\+before or higher or equal to if not flush\+\_\+before than the given one.
+
+All pictures inside the fifo will be released by picture\+\_\+\+Release. \mbox{\Hypertarget{vlc__picture__fifo_8h_a28b8deece9fe4131d12d370221904eb2}\label{vlc__picture__fifo_8h_a28b8deece9fe4131d12d370221904eb2}} 
+\index{vlc\+\_\+picture\+\_\+fifo.\+h@{vlc\+\_\+picture\+\_\+fifo.\+h}!picture\+\_\+fifo\+\_\+\+New@{picture\+\_\+fifo\+\_\+\+New}}
+\index{picture\+\_\+fifo\+\_\+\+New@{picture\+\_\+fifo\+\_\+\+New}!vlc\+\_\+picture\+\_\+fifo.\+h@{vlc\+\_\+picture\+\_\+fifo.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+fifo\+\_\+\+New()}{picture\_fifo\_New()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}{picture\+\_\+fifo\+\_\+t}$\ast$ picture\+\_\+fifo\+\_\+\+New (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+It creates an empty picture\+\_\+fifo\+\_\+t. \mbox{\Hypertarget{vlc__picture__fifo_8h_aa58e46d9df7416b1b7e29e02882e6d14}\label{vlc__picture__fifo_8h_aa58e46d9df7416b1b7e29e02882e6d14}} 
+\index{vlc\+\_\+picture\+\_\+fifo.\+h@{vlc\+\_\+picture\+\_\+fifo.\+h}!picture\+\_\+fifo\+\_\+\+Offset\+Date@{picture\+\_\+fifo\+\_\+\+Offset\+Date}}
+\index{picture\+\_\+fifo\+\_\+\+Offset\+Date@{picture\+\_\+fifo\+\_\+\+Offset\+Date}!vlc\+\_\+picture\+\_\+fifo.\+h@{vlc\+\_\+picture\+\_\+fifo.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+fifo\+\_\+\+Offset\+Date()}{picture\_fifo\_OffsetDate()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void picture\+\_\+fifo\+\_\+\+Offset\+Date (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}{picture\+\_\+fifo\+\_\+t} $\ast$}]{,  }\item[{\hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t}}]{delta }\end{DoxyParamCaption})}
+
+It applies a delta on all the picture timestamp. \mbox{\Hypertarget{vlc__picture__fifo_8h_afd5c9e2eb964af4f494e127b0468826c}\label{vlc__picture__fifo_8h_afd5c9e2eb964af4f494e127b0468826c}} 
+\index{vlc\+\_\+picture\+\_\+fifo.\+h@{vlc\+\_\+picture\+\_\+fifo.\+h}!picture\+\_\+fifo\+\_\+\+Peek@{picture\+\_\+fifo\+\_\+\+Peek}}
+\index{picture\+\_\+fifo\+\_\+\+Peek@{picture\+\_\+fifo\+\_\+\+Peek}!vlc\+\_\+picture\+\_\+fifo.\+h@{vlc\+\_\+picture\+\_\+fifo.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+fifo\+\_\+\+Peek()}{picture\_fifo\_Peek()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structpicture__t}{picture\+\_\+t}$\ast$ picture\+\_\+fifo\+\_\+\+Peek (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}{picture\+\_\+fifo\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+It returns the first \hyperlink{structpicture__t}{picture\+\_\+t} pointer from the fifo but does not remove it. The picture returned has been hold for you so you must call picture\+\_\+\+Release on it.
+
+If the fifo is empty, it return N\+U\+LL without waiting. \mbox{\Hypertarget{vlc__picture__fifo_8h_a18b1479edd11c76f4692e00e1d6d82c5}\label{vlc__picture__fifo_8h_a18b1479edd11c76f4692e00e1d6d82c5}} 
+\index{vlc\+\_\+picture\+\_\+fifo.\+h@{vlc\+\_\+picture\+\_\+fifo.\+h}!picture\+\_\+fifo\+\_\+\+Pop@{picture\+\_\+fifo\+\_\+\+Pop}}
+\index{picture\+\_\+fifo\+\_\+\+Pop@{picture\+\_\+fifo\+\_\+\+Pop}!vlc\+\_\+picture\+\_\+fifo.\+h@{vlc\+\_\+picture\+\_\+fifo.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+fifo\+\_\+\+Pop()}{picture\_fifo\_Pop()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structpicture__t}{picture\+\_\+t}$\ast$ picture\+\_\+fifo\+\_\+\+Pop (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}{picture\+\_\+fifo\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+It retreives a \hyperlink{structpicture__t}{picture\+\_\+t} from the fifo.
+
+If the fifo is empty, it return N\+U\+LL without waiting. \mbox{\Hypertarget{vlc__picture__fifo_8h_a7e9238d3b1eedf98797daafb5bed4892}\label{vlc__picture__fifo_8h_a7e9238d3b1eedf98797daafb5bed4892}} 
+\index{vlc\+\_\+picture\+\_\+fifo.\+h@{vlc\+\_\+picture\+\_\+fifo.\+h}!picture\+\_\+fifo\+\_\+\+Push@{picture\+\_\+fifo\+\_\+\+Push}}
+\index{picture\+\_\+fifo\+\_\+\+Push@{picture\+\_\+fifo\+\_\+\+Push}!vlc\+\_\+picture\+\_\+fifo.\+h@{vlc\+\_\+picture\+\_\+fifo.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+fifo\+\_\+\+Push()}{picture\_fifo\_Push()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void picture\+\_\+fifo\+\_\+\+Push (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__picture__fifo_8h_a85feba03c1d6760015b04af3a46d91d7}{picture\+\_\+fifo\+\_\+t} $\ast$}]{,  }\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+It saves a \hyperlink{structpicture__t}{picture\+\_\+t} into the fifo. 

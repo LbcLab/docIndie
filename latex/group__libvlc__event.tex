@@ -1,0 +1,129 @@
+\hypertarget{group__libvlc__event}{}\section{Lib\+V\+LC asynchronous events}
+\label{group__libvlc__event}\index{Lib\+V\+L\+C asynchronous events@{Lib\+V\+L\+C asynchronous events}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t} \hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t}
+\item 
+typedef int \hyperlink{group__libvlc__event_ga88990ac48895aa07caece9eb75c2f2da}{libvlc\+\_\+event\+\_\+type\+\_\+t}
+\item 
+typedef void($\ast$ \hyperlink{group__libvlc__event_gafb4d63849005e4dce5b2180a40144fe4}{libvlc\+\_\+callback\+\_\+t}) (const struct \hyperlink{structlibvlc__event__t}{libvlc\+\_\+event\+\_\+t} $\ast$, void $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__event_gaed9956a22efad4f466ffd4ec8ab45926}{libvlc\+\_\+event\+\_\+attach} (\hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t} $\ast$p\+\_\+event\+\_\+manager, \hyperlink{group__libvlc__event_ga88990ac48895aa07caece9eb75c2f2da}{libvlc\+\_\+event\+\_\+type\+\_\+t} i\+\_\+event\+\_\+type, \hyperlink{group__libvlc__event_gafb4d63849005e4dce5b2180a40144fe4}{libvlc\+\_\+callback\+\_\+t} f\+\_\+callback, void $\ast$user\+\_\+data)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__event_ga25b19849dc46d9a57be6815920a17e16}{libvlc\+\_\+event\+\_\+detach} (\hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t} $\ast$p\+\_\+event\+\_\+manager, \hyperlink{group__libvlc__event_ga88990ac48895aa07caece9eb75c2f2da}{libvlc\+\_\+event\+\_\+type\+\_\+t} i\+\_\+event\+\_\+type, \hyperlink{group__libvlc__event_gafb4d63849005e4dce5b2180a40144fe4}{libvlc\+\_\+callback\+\_\+t} f\+\_\+callback, void $\ast$p\+\_\+user\+\_\+data)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI const char $\ast$ \hyperlink{group__libvlc__event_gaaea649874b9a9cff0b05dd5554e00318}{libvlc\+\_\+event\+\_\+type\+\_\+name} (\hyperlink{group__libvlc__event_ga88990ac48895aa07caece9eb75c2f2da}{libvlc\+\_\+event\+\_\+type\+\_\+t} event\+\_\+type)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__libvlc__event_ga284c010ecde8abca7d3f262392f62fc6}{libvlc\+\_\+event\+\_\+e} 
+\item 
+typedef struct \hyperlink{structlibvlc__event__t}{libvlc\+\_\+event\+\_\+t} \hyperlink{group__libvlc__event_gafaddfc5a26310923408a08290bea1dab}{libvlc\+\_\+event\+\_\+t}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Lib\+V\+LC emits asynchronous events.
+
+Several Lib\+V\+LC objects (such \hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} as libvlc\+\_\+media\+\_\+player\+\_\+t) generate events asynchronously. Each of them provides \hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t} event manager. You can subscribe to events with \hyperlink{group__libvlc__event_gaed9956a22efad4f466ffd4ec8ab45926}{libvlc\+\_\+event\+\_\+attach()} and unsubscribe with \hyperlink{group__libvlc__event_ga25b19849dc46d9a57be6815920a17e16}{libvlc\+\_\+event\+\_\+detach()}. 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__libvlc__event_gafb4d63849005e4dce5b2180a40144fe4}\label{group__libvlc__event_gafb4d63849005e4dce5b2180a40144fe4}} 
+\index{Lib\+V\+L\+C asynchronous events@{Lib\+V\+L\+C asynchronous events}!libvlc\+\_\+callback\+\_\+t@{libvlc\+\_\+callback\+\_\+t}}
+\index{libvlc\+\_\+callback\+\_\+t@{libvlc\+\_\+callback\+\_\+t}!Lib\+V\+L\+C asynchronous events@{Lib\+V\+L\+C asynchronous events}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+callback\+\_\+t}{libvlc\_callback\_t}}
+{\footnotesize\ttfamily typedef void( $\ast$ libvlc\+\_\+callback\+\_\+t) (const struct \hyperlink{structlibvlc__event__t}{libvlc\+\_\+event\+\_\+t} $\ast$, void $\ast$)}
+
+Callback function notification 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+event} & the event triggering the callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}\label{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}} 
+\index{Lib\+V\+L\+C asynchronous events@{Lib\+V\+L\+C asynchronous events}!libvlc\+\_\+event\+\_\+manager\+\_\+t@{libvlc\+\_\+event\+\_\+manager\+\_\+t}}
+\index{libvlc\+\_\+event\+\_\+manager\+\_\+t@{libvlc\+\_\+event\+\_\+manager\+\_\+t}!Lib\+V\+L\+C asynchronous events@{Lib\+V\+L\+C asynchronous events}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+event\+\_\+manager\+\_\+t}{libvlc\_event\_manager\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t} \hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t}}
+
+Event manager that belongs to a libvlc object, and from whom events can be received. \mbox{\Hypertarget{group__libvlc__event_gafaddfc5a26310923408a08290bea1dab}\label{group__libvlc__event_gafaddfc5a26310923408a08290bea1dab}} 
+\index{Lib\+V\+L\+C asynchronous events@{Lib\+V\+L\+C asynchronous events}!libvlc\+\_\+event\+\_\+t@{libvlc\+\_\+event\+\_\+t}}
+\index{libvlc\+\_\+event\+\_\+t@{libvlc\+\_\+event\+\_\+t}!Lib\+V\+L\+C asynchronous events@{Lib\+V\+L\+C asynchronous events}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+event\+\_\+t}{libvlc\_event\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structlibvlc__event__t}{libvlc\+\_\+event\+\_\+t}  \hyperlink{structlibvlc__event__t}{libvlc\+\_\+event\+\_\+t}}
+
+A Lib\+V\+LC event \mbox{\Hypertarget{group__libvlc__event_ga88990ac48895aa07caece9eb75c2f2da}\label{group__libvlc__event_ga88990ac48895aa07caece9eb75c2f2da}} 
+\index{Lib\+V\+L\+C asynchronous events@{Lib\+V\+L\+C asynchronous events}!libvlc\+\_\+event\+\_\+type\+\_\+t@{libvlc\+\_\+event\+\_\+type\+\_\+t}}
+\index{libvlc\+\_\+event\+\_\+type\+\_\+t@{libvlc\+\_\+event\+\_\+type\+\_\+t}!Lib\+V\+L\+C asynchronous events@{Lib\+V\+L\+C asynchronous events}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+event\+\_\+type\+\_\+t}{libvlc\_event\_type\_t}}
+{\footnotesize\ttfamily typedef int \hyperlink{group__libvlc__event_ga88990ac48895aa07caece9eb75c2f2da}{libvlc\+\_\+event\+\_\+type\+\_\+t}}
+
+Type of a Lib\+V\+LC event. 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__libvlc__event_ga284c010ecde8abca7d3f262392f62fc6}\label{group__libvlc__event_ga284c010ecde8abca7d3f262392f62fc6}} 
+\index{Lib\+V\+L\+C asynchronous events@{Lib\+V\+L\+C asynchronous events}!libvlc\+\_\+event\+\_\+e@{libvlc\+\_\+event\+\_\+e}}
+\index{libvlc\+\_\+event\+\_\+e@{libvlc\+\_\+event\+\_\+e}!Lib\+V\+L\+C asynchronous events@{Lib\+V\+L\+C asynchronous events}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+event\+\_\+e}{libvlc\_event\_e}}
+{\footnotesize\ttfamily enum \hyperlink{group__libvlc__event_ga284c010ecde8abca7d3f262392f62fc6}{libvlc\+\_\+event\+\_\+e}}
+
+Event types 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__libvlc__event_gaed9956a22efad4f466ffd4ec8ab45926}\label{group__libvlc__event_gaed9956a22efad4f466ffd4ec8ab45926}} 
+\index{Lib\+V\+L\+C asynchronous events@{Lib\+V\+L\+C asynchronous events}!libvlc\+\_\+event\+\_\+attach@{libvlc\+\_\+event\+\_\+attach}}
+\index{libvlc\+\_\+event\+\_\+attach@{libvlc\+\_\+event\+\_\+attach}!Lib\+V\+L\+C asynchronous events@{Lib\+V\+L\+C asynchronous events}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+event\+\_\+attach()}{libvlc\_event\_attach()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+event\+\_\+attach (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t} $\ast$}]{p\+\_\+event\+\_\+manager,  }\item[{\hyperlink{group__libvlc__event_ga88990ac48895aa07caece9eb75c2f2da}{libvlc\+\_\+event\+\_\+type\+\_\+t}}]{i\+\_\+event\+\_\+type,  }\item[{\hyperlink{group__libvlc__event_gafb4d63849005e4dce5b2180a40144fe4}{libvlc\+\_\+callback\+\_\+t}}]{f\+\_\+callback,  }\item[{void $\ast$}]{user\+\_\+data }\end{DoxyParamCaption})}
+
+Register for an event notification.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+event\+\_\+manager} & the event manager to which you want to attach to. Generally it is obtained by vlc\+\_\+my\+\_\+object\+\_\+event\+\_\+manager() where my\+\_\+object is the object you want to listen to. \\
+\hline
+{\em i\+\_\+event\+\_\+type} & the desired event to which we want to listen \\
+\hline
+{\em f\+\_\+callback} & the function to call when i\+\_\+event\+\_\+type occurs \\
+\hline
+{\em user\+\_\+data} & user provided data to carry with the event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, E\+N\+O\+M\+EM on error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__event_ga25b19849dc46d9a57be6815920a17e16}\label{group__libvlc__event_ga25b19849dc46d9a57be6815920a17e16}} 
+\index{Lib\+V\+L\+C asynchronous events@{Lib\+V\+L\+C asynchronous events}!libvlc\+\_\+event\+\_\+detach@{libvlc\+\_\+event\+\_\+detach}}
+\index{libvlc\+\_\+event\+\_\+detach@{libvlc\+\_\+event\+\_\+detach}!Lib\+V\+L\+C asynchronous events@{Lib\+V\+L\+C asynchronous events}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+event\+\_\+detach()}{libvlc\_event\_detach()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+event\+\_\+detach (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t} $\ast$}]{p\+\_\+event\+\_\+manager,  }\item[{\hyperlink{group__libvlc__event_ga88990ac48895aa07caece9eb75c2f2da}{libvlc\+\_\+event\+\_\+type\+\_\+t}}]{i\+\_\+event\+\_\+type,  }\item[{\hyperlink{group__libvlc__event_gafb4d63849005e4dce5b2180a40144fe4}{libvlc\+\_\+callback\+\_\+t}}]{f\+\_\+callback,  }\item[{void $\ast$}]{p\+\_\+user\+\_\+data }\end{DoxyParamCaption})}
+
+Unregister an event notification.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+event\+\_\+manager} & the event manager \\
+\hline
+{\em i\+\_\+event\+\_\+type} & the desired event to which we want to unregister \\
+\hline
+{\em f\+\_\+callback} & the function to call when i\+\_\+event\+\_\+type occurs \\
+\hline
+{\em p\+\_\+user\+\_\+data} & user provided data to carry with the event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__event_gaaea649874b9a9cff0b05dd5554e00318}\label{group__libvlc__event_gaaea649874b9a9cff0b05dd5554e00318}} 
+\index{Lib\+V\+L\+C asynchronous events@{Lib\+V\+L\+C asynchronous events}!libvlc\+\_\+event\+\_\+type\+\_\+name@{libvlc\+\_\+event\+\_\+type\+\_\+name}}
+\index{libvlc\+\_\+event\+\_\+type\+\_\+name@{libvlc\+\_\+event\+\_\+type\+\_\+name}!Lib\+V\+L\+C asynchronous events@{Lib\+V\+L\+C asynchronous events}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+event\+\_\+type\+\_\+name()}{libvlc\_event\_type\_name()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI const char$\ast$ libvlc\+\_\+event\+\_\+type\+\_\+name (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__event_ga88990ac48895aa07caece9eb75c2f2da}{libvlc\+\_\+event\+\_\+type\+\_\+t}}]{event\+\_\+type }\end{DoxyParamCaption})}
+
+Get an event\textquotesingle{}s type name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+\_\+type} & the desired event \\
+\hline
+\end{DoxyParams}

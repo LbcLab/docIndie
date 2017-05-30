@@ -1,0 +1,63 @@
+\hypertarget{structservices__discovery__t}{}\section{services\+\_\+discovery\+\_\+t Struct Reference}
+\label{structservices__discovery__t}\index{services\+\_\+discovery\+\_\+t@{services\+\_\+discovery\+\_\+t}}
+
+
+{\ttfamily \#include $<$vlc\+\_\+services\+\_\+discovery.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+M\+B\+E\+RS module\+\_\+t $\ast$ \hyperlink{structservices__discovery__t_ad98317159b4b863f2668c45c585fcfc8}{p\+\_\+module}
+\item 
+char $\ast$ \hyperlink{structservices__discovery__t_a943a6b17e106d5ac925e4f7231254e85}{psz\+\_\+name}
+\item 
+config\+\_\+chain\+\_\+t $\ast$ \hyperlink{structservices__discovery__t_a129cd01ed2aae5d4e53cd11459f23193}{p\+\_\+cfg}
+\item 
+int($\ast$ \hyperlink{structservices__discovery__t_ae90cf2de1b188a893f2b4b1cc77bc6ad}{pf\+\_\+control} )(\hyperlink{structservices__discovery__t}{services\+\_\+discovery\+\_\+t} $\ast$, int, va\+\_\+list)
+\item 
+services\+\_\+discovery\+\_\+sys\+\_\+t $\ast$ \hyperlink{structservices__discovery__t_a354e9387c226bd847a484401726135d8}{p\+\_\+sys}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main service discovery structure to build a SD module 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structservices__discovery__t_a129cd01ed2aae5d4e53cd11459f23193}\label{structservices__discovery__t_a129cd01ed2aae5d4e53cd11459f23193}} 
+\index{services\+\_\+discovery\+\_\+t@{services\+\_\+discovery\+\_\+t}!p\+\_\+cfg@{p\+\_\+cfg}}
+\index{p\+\_\+cfg@{p\+\_\+cfg}!services\+\_\+discovery\+\_\+t@{services\+\_\+discovery\+\_\+t}}
+\subsubsection{\texorpdfstring{p\+\_\+cfg}{p\_cfg}}
+{\footnotesize\ttfamily config\+\_\+chain\+\_\+t$\ast$ services\+\_\+discovery\+\_\+t\+::p\+\_\+cfg}
+
+Configuration for the SD \mbox{\Hypertarget{structservices__discovery__t_ad98317159b4b863f2668c45c585fcfc8}\label{structservices__discovery__t_ad98317159b4b863f2668c45c585fcfc8}} 
+\index{services\+\_\+discovery\+\_\+t@{services\+\_\+discovery\+\_\+t}!p\+\_\+module@{p\+\_\+module}}
+\index{p\+\_\+module@{p\+\_\+module}!services\+\_\+discovery\+\_\+t@{services\+\_\+discovery\+\_\+t}}
+\subsubsection{\texorpdfstring{p\+\_\+module}{p\_module}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+M\+B\+E\+RS module\+\_\+t$\ast$ services\+\_\+discovery\+\_\+t\+::p\+\_\+module}
+
+Loaded module Event manager You should access it through setters, outside of the core \mbox{\Hypertarget{structservices__discovery__t_a354e9387c226bd847a484401726135d8}\label{structservices__discovery__t_a354e9387c226bd847a484401726135d8}} 
+\index{services\+\_\+discovery\+\_\+t@{services\+\_\+discovery\+\_\+t}!p\+\_\+sys@{p\+\_\+sys}}
+\index{p\+\_\+sys@{p\+\_\+sys}!services\+\_\+discovery\+\_\+t@{services\+\_\+discovery\+\_\+t}}
+\subsubsection{\texorpdfstring{p\+\_\+sys}{p\_sys}}
+{\footnotesize\ttfamily services\+\_\+discovery\+\_\+sys\+\_\+t$\ast$ services\+\_\+discovery\+\_\+t\+::p\+\_\+sys}
+
+Custom private data \mbox{\Hypertarget{structservices__discovery__t_ae90cf2de1b188a893f2b4b1cc77bc6ad}\label{structservices__discovery__t_ae90cf2de1b188a893f2b4b1cc77bc6ad}} 
+\index{services\+\_\+discovery\+\_\+t@{services\+\_\+discovery\+\_\+t}!pf\+\_\+control@{pf\+\_\+control}}
+\index{pf\+\_\+control@{pf\+\_\+control}!services\+\_\+discovery\+\_\+t@{services\+\_\+discovery\+\_\+t}}
+\subsubsection{\texorpdfstring{pf\+\_\+control}{pf\_control}}
+{\footnotesize\ttfamily int( $\ast$ services\+\_\+discovery\+\_\+t\+::pf\+\_\+control) (\hyperlink{structservices__discovery__t}{services\+\_\+discovery\+\_\+t} $\ast$, int, va\+\_\+list)}
+
+Control function \begin{DoxySeeAlso}{See also}
+\hyperlink{vlc__services__discovery_8h_a921bb104d6f034e60446f6b67bad95e8}{services\+\_\+discovery\+\_\+command\+\_\+e} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{structservices__discovery__t_a943a6b17e106d5ac925e4f7231254e85}\label{structservices__discovery__t_a943a6b17e106d5ac925e4f7231254e85}} 
+\index{services\+\_\+discovery\+\_\+t@{services\+\_\+discovery\+\_\+t}!psz\+\_\+name@{psz\+\_\+name}}
+\index{psz\+\_\+name@{psz\+\_\+name}!services\+\_\+discovery\+\_\+t@{services\+\_\+discovery\+\_\+t}}
+\subsubsection{\texorpdfstring{psz\+\_\+name}{psz\_name}}
+{\footnotesize\ttfamily char$\ast$ services\+\_\+discovery\+\_\+t\+::psz\+\_\+name}
+
+Main name of the SD 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/include/vlc/plugins/\hyperlink{vlc__services__discovery_8h}{vlc\+\_\+services\+\_\+discovery.\+h}\end{DoxyCompactItemize}

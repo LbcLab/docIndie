@@ -1,0 +1,117 @@
+\hypertarget{vlc__vout__display_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+vout\+\_\+display.h File Reference}
+\label{vlc__vout__display_8h}\index{lib/include/vlc/plugins/vlc\+\_\+vout\+\_\+display.\+h@{lib/include/vlc/plugins/vlc\+\_\+vout\+\_\+display.\+h}}
+{\ttfamily \#include $<$vlc\+\_\+es.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+picture.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+picture\+\_\+pool.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+subpicture.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+keys.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+mouse.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+vout\+\_\+window.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structvout__display__cfg__t}{vout\+\_\+display\+\_\+cfg\+\_\+t}
+\item 
+struct \hyperlink{structvout__display__info__t}{vout\+\_\+display\+\_\+info\+\_\+t}
+\item 
+struct \hyperlink{structvout__display__owner__t}{vout\+\_\+display\+\_\+owner\+\_\+t}
+\item 
+struct \hyperlink{structvout__display__place__t}{vout\+\_\+display\+\_\+place\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{vlc__vout__display_8h_a162c0d83e9bb4c08f2605b96b0ce9b91}{vout\+\_\+display\+\_\+align\+\_\+t} 
+\item 
+enum 
+\item 
+enum 
+\item 
+enum 
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__vout__display_8h_a7677c0b0daf21e43e79d7545865c7579}{vout\+\_\+display\+\_\+\+Get\+Default\+Display\+Size} (unsigned $\ast$width, unsigned $\ast$height, const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$source, const \hyperlink{structvout__display__cfg__t}{vout\+\_\+display\+\_\+cfg\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__vout__display_8h_a8e4f2d86356c7f69eb231edf5380cd0f}{vout\+\_\+display\+\_\+\+Place\+Picture} (\hyperlink{structvout__display__place__t}{vout\+\_\+display\+\_\+place\+\_\+t} $\ast$place, const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$source, const \hyperlink{structvout__display__cfg__t}{vout\+\_\+display\+\_\+cfg\+\_\+t} $\ast$cfg, bool do\+\_\+clipping)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__vout__display_8h_a2387b777e1f06eb692b7c0a37fd5de5a}{vout\+\_\+display\+\_\+\+Send\+Mouse\+Moved\+Display\+Coordinates} (vout\+\_\+display\+\_\+t $\ast$vd, \hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4}{video\+\_\+orientation\+\_\+t} orient\+\_\+display, int m\+\_\+x, int m\+\_\+y, \hyperlink{structvout__display__place__t}{vout\+\_\+display\+\_\+place\+\_\+t} $\ast$place)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines vout display structures and functions in vlc 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{vlc__vout__display_8h_a7ee8d0f117a79ca7eb1e0076a9182bcb}\label{vlc__vout__display_8h_a7ee8d0f117a79ca7eb1e0076a9182bcb}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\hyperlink{classWindow}{Window} management state. \mbox{\Hypertarget{vlc__vout__display_8h_ac34c4c978f4130a92a5068f9e21ea9fc}\label{vlc__vout__display_8h_ac34c4c978f4130a92a5068f9e21ea9fc}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+Control query for vout\+\_\+display\+\_\+t \mbox{\Hypertarget{vlc__vout__display_8h_a10e74d65d7876276a8f6061c71dcf469}\label{vlc__vout__display_8h_a10e74d65d7876276a8f6061c71dcf469}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+Event from vout\+\_\+display\+\_\+t
+
+Events modifiying the state may be sent multiple times. Only the transition will be retained and acted upon. \mbox{\Hypertarget{vlc__vout__display_8h_a162c0d83e9bb4c08f2605b96b0ce9b91}\label{vlc__vout__display_8h_a162c0d83e9bb4c08f2605b96b0ce9b91}} 
+\index{vlc\+\_\+vout\+\_\+display.\+h@{vlc\+\_\+vout\+\_\+display.\+h}!vout\+\_\+display\+\_\+align\+\_\+t@{vout\+\_\+display\+\_\+align\+\_\+t}}
+\index{vout\+\_\+display\+\_\+align\+\_\+t@{vout\+\_\+display\+\_\+align\+\_\+t}!vlc\+\_\+vout\+\_\+display.\+h@{vlc\+\_\+vout\+\_\+display.\+h}}
+\subsubsection{\texorpdfstring{vout\+\_\+display\+\_\+align\+\_\+t}{vout\_display\_align\_t}}
+{\footnotesize\ttfamily enum \hyperlink{vlc__vout__display_8h_a162c0d83e9bb4c08f2605b96b0ce9b91}{vout\+\_\+display\+\_\+align\+\_\+t}}
+
+Possible alignments for vout\+\_\+display. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{vlc__vout__display_8h_a7677c0b0daf21e43e79d7545865c7579}\label{vlc__vout__display_8h_a7677c0b0daf21e43e79d7545865c7579}} 
+\index{vlc\+\_\+vout\+\_\+display.\+h@{vlc\+\_\+vout\+\_\+display.\+h}!vout\+\_\+display\+\_\+\+Get\+Default\+Display\+Size@{vout\+\_\+display\+\_\+\+Get\+Default\+Display\+Size}}
+\index{vout\+\_\+display\+\_\+\+Get\+Default\+Display\+Size@{vout\+\_\+display\+\_\+\+Get\+Default\+Display\+Size}!vlc\+\_\+vout\+\_\+display.\+h@{vlc\+\_\+vout\+\_\+display.\+h}}
+\subsubsection{\texorpdfstring{vout\+\_\+display\+\_\+\+Get\+Default\+Display\+Size()}{vout\_display\_GetDefaultDisplaySize()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void vout\+\_\+display\+\_\+\+Get\+Default\+Display\+Size (\begin{DoxyParamCaption}\item[{unsigned $\ast$}]{width,  }\item[{unsigned $\ast$}]{height,  }\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{source,  }\item[{const \hyperlink{structvout__display__cfg__t}{vout\+\_\+display\+\_\+cfg\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Computes the default display size given the source and the display configuration.
+
+This asssumes that the picture is already cropped. \mbox{\Hypertarget{vlc__vout__display_8h_a8e4f2d86356c7f69eb231edf5380cd0f}\label{vlc__vout__display_8h_a8e4f2d86356c7f69eb231edf5380cd0f}} 
+\index{vlc\+\_\+vout\+\_\+display.\+h@{vlc\+\_\+vout\+\_\+display.\+h}!vout\+\_\+display\+\_\+\+Place\+Picture@{vout\+\_\+display\+\_\+\+Place\+Picture}}
+\index{vout\+\_\+display\+\_\+\+Place\+Picture@{vout\+\_\+display\+\_\+\+Place\+Picture}!vlc\+\_\+vout\+\_\+display.\+h@{vlc\+\_\+vout\+\_\+display.\+h}}
+\subsubsection{\texorpdfstring{vout\+\_\+display\+\_\+\+Place\+Picture()}{vout\_display\_PlacePicture()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void vout\+\_\+display\+\_\+\+Place\+Picture (\begin{DoxyParamCaption}\item[{\hyperlink{structvout__display__place__t}{vout\+\_\+display\+\_\+place\+\_\+t} $\ast$}]{place,  }\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{source,  }\item[{const \hyperlink{structvout__display__cfg__t}{vout\+\_\+display\+\_\+cfg\+\_\+t} $\ast$}]{cfg,  }\item[{bool}]{do\+\_\+clipping }\end{DoxyParamCaption})}
+
+Computes how to place a picture inside the display to respect the given parameters. This assumes that cropping is done by an external mean.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+place} & Place inside the window (window pixel unit) \\
+\hline
+{\em p\+\_\+source} & Video source format \\
+\hline
+{\em p\+\_\+cfg} & Display configuration \\
+\hline
+{\em b\+\_\+clip} & If true, prevent the video to go outside the display (break zoom). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{vlc__vout__display_8h_a2387b777e1f06eb692b7c0a37fd5de5a}\label{vlc__vout__display_8h_a2387b777e1f06eb692b7c0a37fd5de5a}} 
+\index{vlc\+\_\+vout\+\_\+display.\+h@{vlc\+\_\+vout\+\_\+display.\+h}!vout\+\_\+display\+\_\+\+Send\+Mouse\+Moved\+Display\+Coordinates@{vout\+\_\+display\+\_\+\+Send\+Mouse\+Moved\+Display\+Coordinates}}
+\index{vout\+\_\+display\+\_\+\+Send\+Mouse\+Moved\+Display\+Coordinates@{vout\+\_\+display\+\_\+\+Send\+Mouse\+Moved\+Display\+Coordinates}!vlc\+\_\+vout\+\_\+display.\+h@{vlc\+\_\+vout\+\_\+display.\+h}}
+\subsubsection{\texorpdfstring{vout\+\_\+display\+\_\+\+Send\+Mouse\+Moved\+Display\+Coordinates()}{vout\_display\_SendMouseMovedDisplayCoordinates()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void vout\+\_\+display\+\_\+\+Send\+Mouse\+Moved\+Display\+Coordinates (\begin{DoxyParamCaption}\item[{vout\+\_\+display\+\_\+t $\ast$}]{vd,  }\item[{\hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4}{video\+\_\+orientation\+\_\+t}}]{orient\+\_\+display,  }\item[{int}]{m\+\_\+x,  }\item[{int}]{m\+\_\+y,  }\item[{\hyperlink{structvout__display__place__t}{vout\+\_\+display\+\_\+place\+\_\+t} $\ast$}]{place }\end{DoxyParamCaption})}
+
+Helper function that applies the necessary transforms to the mouse position and then calls vout\+\_\+display\+\_\+\+Send\+Event\+Mouse\+Moved.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vd} & vout\+\_\+display\+\_\+t. \\
+\hline
+{\em orient\+\_\+display} & The orientation of the picture as seen on screen (probably O\+R\+I\+E\+N\+T\+\_\+\+N\+O\+R\+M\+AL). \\
+\hline
+{\em m\+\_\+x} & Mouse x position (relative to place, origin is top left). \\
+\hline
+{\em m\+\_\+y} & Mouse y position (relative to place, origin is top left). \\
+\hline
+{\em place} & Place of the picture. \\
+\hline
+\end{DoxyParams}

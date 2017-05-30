@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 452.488688
+%%BoundingBox: 0 0 500 56.561086
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,13 +19,13 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 1.105000 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 8.840000 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
 /rows 5 def
-/cols 1 def
+/cols 8 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
 
@@ -175,9 +175,19 @@ boxfont setfont
 1 boundaspect scale
 (irr::scene::IBillboardTextSceneNode) cw
 (irr::scene::IBillboardSceneNode) cw
+(irr::scene::IBillboardSceneNode) cw
+(irr::scene::ISceneNode) cw
+(irr::scene::ISceneNode) cw
+(irr::scene::ISceneNode) cw
 (irr::scene::ISceneNode) cw
 (irr::io::IAttributeExchangingObject) cw
-(irr::IReferenceCounted) cw
+(irr::io::IAttributeExchangingObject) cw
+(irr::io::IAttributeExchangingObject) cw
+(irr::io::IAttributeExchangingObject) cw
+(irr::io::IAttributeExchangingObject) cw
+(irr::io::IAttributeExchangingObject) cw
+(irr::io::IAttributeExchangingObject) cw
+(irr::io::IAttributeExchangingObject) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
 /yspacing boxheight disty add def
@@ -189,31 +199,101 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (irr::scene::IBillboardTextSceneNode) 0.000000 0.000000 box
- (irr::scene::IBillboardSceneNode) 0.000000 1.000000 box
+ (irr::scene::IBillboardTextSceneNode) 3.000000 0.000000 box
+ (irr::scene::IBillboardSceneNode) 1.000000 1.000000 box
+ (irr::scene::IBillboardSceneNode) 5.000000 1.000000 box
  (irr::scene::ISceneNode) 0.000000 2.000000 box
+ (irr::scene::ISceneNode) 2.000000 2.000000 box
+ (irr::scene::ISceneNode) 4.000000 2.000000 box
+ (irr::scene::ISceneNode) 6.000000 2.000000 box
 dashed
- (irr::io::IAttributeExchangingObject) 0.000000 3.000000 box
+ (irr::io::IAttributeExchangingObject) 7.000000 3.000000 box
+7.000000 3.000000 mark
 solid
 dashed
- (irr::IReferenceCounted) 0.000000 4.000000 box
+ (irr::io::IAttributeExchangingObject) 7.000000 4.000000 box
+7.000000 4.000000 mark
+solid
+dashed
+ (irr::io::IAttributeExchangingObject) 5.000000 3.000000 box
+5.000000 3.000000 mark
+solid
+dashed
+ (irr::io::IAttributeExchangingObject) 5.000000 4.000000 box
+5.000000 4.000000 mark
+solid
+dashed
+ (irr::io::IAttributeExchangingObject) 3.000000 3.000000 box
+3.000000 3.000000 mark
+solid
+dashed
+ (irr::io::IAttributeExchangingObject) 3.000000 4.000000 box
+3.000000 4.000000 mark
+solid
+dashed
+ (irr::io::IAttributeExchangingObject) 1.000000 3.000000 box
+1.000000 3.000000 mark
+solid
+dashed
+ (irr::io::IAttributeExchangingObject) 1.000000 4.000000 box
+1.000000 4.000000 mark
 solid
 
 % ----- relations -----
 
 solid
-0 0.000000 0.000000 out
+0 3.000000 0.000000 out
 solid
-1 0.000000 1.000000 in
+1.000000 5.000000 1.000000 conn
 solid
-0 0.000000 1.000000 out
+1 1.000000 1.000000 in
+solid
+0 1.000000 1.000000 out
+solid
+0.000000 2.000000 2.000000 conn
+solid
+1 5.000000 1.000000 in
+solid
+0 5.000000 1.000000 out
+solid
+4.000000 6.000000 2.000000 conn
 solid
 1 0.000000 2.000000 in
 solid
 0 0.000000 2.000000 out
 solid
-1 0.000000 3.000000 in
+1 2.000000 2.000000 in
 solid
-0 0.000000 3.000000 out
+0 2.000000 2.000000 out
 solid
-1 0.000000 4.000000 in
+1 4.000000 2.000000 in
+solid
+0 4.000000 2.000000 out
+solid
+1 6.000000 2.000000 in
+solid
+0 6.000000 2.000000 out
+solid
+1 0.000000 3.500000 hedge
+solid
+1 0.000000 4.500000 hedge
+solid
+0.000000 3.000000 4.500000 vedge
+solid
+1 2.000000 3.500000 hedge
+solid
+1 2.000000 4.500000 hedge
+solid
+2.000000 3.000000 4.500000 vedge
+solid
+1 4.000000 3.500000 hedge
+solid
+1 4.000000 4.500000 hedge
+solid
+4.000000 3.000000 4.500000 vedge
+solid
+1 6.000000 3.500000 hedge
+solid
+1 6.000000 4.500000 hedge
+solid
+6.000000 3.000000 4.500000 vedge

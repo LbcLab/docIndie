@@ -1,0 +1,46 @@
+\hypertarget{group__inputvariable}{}\section{Input variables}
+\label{group__inputvariable}\index{Input variables@{Input variables}}
+The input provides multiples variable you can write to and/or read from.
+
+T\+O\+DO complete the documentation. The read only variables are\+:
+\begin{DoxyItemize}
+\item \char`\"{}length\char`\"{}
+\item \char`\"{}can-\/seek\char`\"{} (if you can seek, it doesn\textquotesingle{}t say if \textquotesingle{}bar display\textquotesingle{} has be shown or not, for that check position != 0.\+0)
+\item \char`\"{}can-\/pause\char`\"{}
+\item \char`\"{}can-\/rate\char`\"{}
+\item \char`\"{}can-\/rewind\char`\"{}
+\item \char`\"{}can-\/record\char`\"{} (if a stream can be recorded while playing)
+\item \char`\"{}teletext-\/es\char`\"{} (list of id from the spu tracks (spu-\/es) that are teletext, the variable value being the one currently selected, -\/1 if no teletext)
+\item \char`\"{}signal-\/quality\char`\"{}
+\item \char`\"{}signal-\/strength\char`\"{}
+\item \char`\"{}program-\/scrambled\char`\"{} (if the current program is scrambled)
+\item \char`\"{}cache\char`\"{} (level of data cached \mbox{[}0 .. 1\mbox{]})
+\end{DoxyItemize}
+
+The read-\/write variables are\+:
+\begin{DoxyItemize}
+\item state (\begin{DoxySeeAlso}{See also}
+\hyperlink{vlc__input_8h_a50f8cb1c3cdf6bfc02752c1d41b723b4}{input\+\_\+state\+\_\+e})
+\end{DoxySeeAlso}
+
+\item rate
+\item position, position-\/offset
+\item time, time-\/offset
+\item title, next-\/title, prev-\/title
+\item chapter, next-\/chapter, next-\/chapter-\/prev
+\item program, audio-\/es, video-\/es, spu-\/es
+\item audio-\/delay, spu-\/delay
+\item bookmark (bookmark list)
+\item record
+\item frame-\/next
+\item navigation (list of \char`\"{}title \%2i\char`\"{})
+\item \char`\"{}title \%2i\char`\"{}
+\end{DoxyItemize}
+
+The variable used for event is
+\begin{DoxyItemize}
+\item intf-\/event (\begin{DoxySeeAlso}{See also}
+\hyperlink{vlc__input_8h_a4a3eb08df7f1209edd1edb4f0ed9242f}{input\+\_\+event\+\_\+type\+\_\+e}) 
+\end{DoxySeeAlso}
+
+\end{DoxyItemize}

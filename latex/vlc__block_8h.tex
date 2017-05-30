@@ -1,0 +1,141 @@
+\hypertarget{vlc__block_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+block.h File Reference}
+\label{vlc__block_8h}\index{lib/include/vlc/plugins/vlc\+\_\+block.\+h@{lib/include/vlc/plugins/vlc\+\_\+block.\+h}}
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vlc__block_8h_a82f33d56fbf301c610c2fe3a71f056cc}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+D\+I\+S\+C\+O\+N\+T\+I\+N\+U\+I\+TY}~0x0001
+\item 
+\#define \hyperlink{vlc__block_8h_a4ea1da5028885e857f9306a1657e721b}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+I}~0x0002
+\item 
+\#define \hyperlink{vlc__block_8h_a27656a9cd59fa5d82a99fb5a4273bd7d}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+P}~0x0004
+\item 
+\#define \hyperlink{vlc__block_8h_a55ed275938900370c869c1cebc19563a}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+B}~0x0008
+\item 
+\#define \hyperlink{vlc__block_8h_aa489eb15f0fc9d679f5a9a7baa4d8b32}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+PB}~0x0010
+\item 
+\#define \hyperlink{vlc__block_8h_a6b2f61be0305855aec568755ae821e54}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+H\+E\+A\+D\+ER}~0x0020
+\item 
+\#define \hyperlink{vlc__block_8h_afa0eea7c07acdcabf945c71f6dfb484d}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+F\+R\+A\+ME}~0x0040
+\item 
+\#define \hyperlink{vlc__block_8h_a82086704e5815dcd8adb674593dd68b1}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+\_\+\+K\+E\+Y\+F\+R\+A\+ME}~0x0080
+\item 
+\#define \hyperlink{vlc__block_8h_a472702509d67343c9d3f0f60cb5a1fc3}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+S\+E\+Q\+U\+E\+N\+CE}~0x0100
+\item 
+\#define \hyperlink{vlc__block_8h_adab445e19c449c99c3f581085a121321}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+C\+L\+O\+CK}~0x0200
+\item 
+\#define \hyperlink{vlc__block_8h_a9cfec273cb4b3a450691a9b15a62aa1b}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+S\+C\+R\+A\+M\+B\+L\+ED}~0x0400
+\item 
+\#define \hyperlink{vlc__block_8h_aa97962b8c5929d56e12440f08f61bfc4}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+P\+R\+E\+R\+O\+LL}~0x0800
+\item 
+\#define \hyperlink{vlc__block_8h_aff637953fe9791ceb50500735ef26413}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+C\+O\+R\+R\+U\+P\+T\+ED}~0x1000
+\item 
+\#define \hyperlink{vlc__block_8h_afd724a2d943b3971bfaa7f030810200c}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+O\+P\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+R\+ST}~0x2000
+\item 
+\#define \hyperlink{vlc__block_8h_a42dc4d050d33648a95b2690fe1d6fddb}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+R\+ST}~0x4000
+\item 
+\#define \hyperlink{vlc__block_8h_abe2b48876bd1c91380e655cff287e2a5}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+I\+N\+T\+E\+R\+L\+A\+C\+E\+D\+\_\+\+M\+A\+SK}~(\hyperlink{vlc__block_8h_afd724a2d943b3971bfaa7f030810200c}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+O\+P\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+R\+ST}$\vert$\hyperlink{vlc__block_8h_a42dc4d050d33648a95b2690fe1d6fddb}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+R\+ST})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file implements functions and structures to handle blocks of data in vlc 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{vlc__block_8h_a42dc4d050d33648a95b2690fe1d6fddb}\label{vlc__block_8h_a42dc4d050d33648a95b2690fe1d6fddb}} 
+\index{vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}!B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+R\+ST@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+R\+ST}}
+\index{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+R\+ST@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+R\+ST}!vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+R\+ST}{BLOCK\_FLAG\_BOTTOM\_FIELD\_FIRST}}
+{\footnotesize\ttfamily \#define B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+R\+ST~0x4000}
+
+This block contains an interlaced picture with bottom field first \mbox{\Hypertarget{vlc__block_8h_adab445e19c449c99c3f581085a121321}\label{vlc__block_8h_adab445e19c449c99c3f581085a121321}} 
+\index{vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}!B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+C\+L\+O\+CK@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+C\+L\+O\+CK}}
+\index{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+C\+L\+O\+CK@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+C\+L\+O\+CK}!vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+C\+L\+O\+CK}{BLOCK\_FLAG\_CLOCK}}
+{\footnotesize\ttfamily \#define B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+C\+L\+O\+CK~0x0200}
+
+This block contains a clock reference \mbox{\Hypertarget{vlc__block_8h_aff637953fe9791ceb50500735ef26413}\label{vlc__block_8h_aff637953fe9791ceb50500735ef26413}} 
+\index{vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}!B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+C\+O\+R\+R\+U\+P\+T\+ED@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+C\+O\+R\+R\+U\+P\+T\+ED}}
+\index{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+C\+O\+R\+R\+U\+P\+T\+ED@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+C\+O\+R\+R\+U\+P\+T\+ED}!vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+C\+O\+R\+R\+U\+P\+T\+ED}{BLOCK\_FLAG\_CORRUPTED}}
+{\footnotesize\ttfamily \#define B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+C\+O\+R\+R\+U\+P\+T\+ED~0x1000}
+
+This block is corrupted and/or there is data loss \mbox{\Hypertarget{vlc__block_8h_a82f33d56fbf301c610c2fe3a71f056cc}\label{vlc__block_8h_a82f33d56fbf301c610c2fe3a71f056cc}} 
+\index{vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}!B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+D\+I\+S\+C\+O\+N\+T\+I\+N\+U\+I\+TY@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+D\+I\+S\+C\+O\+N\+T\+I\+N\+U\+I\+TY}}
+\index{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+D\+I\+S\+C\+O\+N\+T\+I\+N\+U\+I\+TY@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+D\+I\+S\+C\+O\+N\+T\+I\+N\+U\+I\+TY}!vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+D\+I\+S\+C\+O\+N\+T\+I\+N\+U\+I\+TY}{BLOCK\_FLAG\_DISCONTINUITY}}
+{\footnotesize\ttfamily \#define B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+D\+I\+S\+C\+O\+N\+T\+I\+N\+U\+I\+TY~0x0001}
+
+The content doesn\textquotesingle{}t follow the last block, or is probably broken \mbox{\Hypertarget{vlc__block_8h_afa0eea7c07acdcabf945c71f6dfb484d}\label{vlc__block_8h_afa0eea7c07acdcabf945c71f6dfb484d}} 
+\index{vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}!B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+F\+R\+A\+ME@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+F\+R\+A\+ME}}
+\index{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+F\+R\+A\+ME@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+F\+R\+A\+ME}!vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+F\+R\+A\+ME}{BLOCK\_FLAG\_END\_OF\_FRAME}}
+{\footnotesize\ttfamily \#define B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+F\+R\+A\+ME~0x0040}
+
+This is the last block of the frame \mbox{\Hypertarget{vlc__block_8h_a472702509d67343c9d3f0f60cb5a1fc3}\label{vlc__block_8h_a472702509d67343c9d3f0f60cb5a1fc3}} 
+\index{vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}!B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+S\+E\+Q\+U\+E\+N\+CE@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+S\+E\+Q\+U\+E\+N\+CE}}
+\index{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+S\+E\+Q\+U\+E\+N\+CE@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+S\+E\+Q\+U\+E\+N\+CE}!vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+S\+E\+Q\+U\+E\+N\+CE}{BLOCK\_FLAG\_END\_OF\_SEQUENCE}}
+{\footnotesize\ttfamily \#define B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+S\+E\+Q\+U\+E\+N\+CE~0x0100}
+
+This block contains the last part of a sequence \mbox{\Hypertarget{vlc__block_8h_a6b2f61be0305855aec568755ae821e54}\label{vlc__block_8h_a6b2f61be0305855aec568755ae821e54}} 
+\index{vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}!B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+H\+E\+A\+D\+ER@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+H\+E\+A\+D\+ER}}
+\index{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+H\+E\+A\+D\+ER@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+H\+E\+A\+D\+ER}!vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+H\+E\+A\+D\+ER}{BLOCK\_FLAG\_HEADER}}
+{\footnotesize\ttfamily \#define B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+H\+E\+A\+D\+ER~0x0020}
+
+Warn that this block is a header one \mbox{\Hypertarget{vlc__block_8h_abe2b48876bd1c91380e655cff287e2a5}\label{vlc__block_8h_abe2b48876bd1c91380e655cff287e2a5}} 
+\index{vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}!B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+I\+N\+T\+E\+R\+L\+A\+C\+E\+D\+\_\+\+M\+A\+SK@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+I\+N\+T\+E\+R\+L\+A\+C\+E\+D\+\_\+\+M\+A\+SK}}
+\index{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+I\+N\+T\+E\+R\+L\+A\+C\+E\+D\+\_\+\+M\+A\+SK@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+I\+N\+T\+E\+R\+L\+A\+C\+E\+D\+\_\+\+M\+A\+SK}!vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+I\+N\+T\+E\+R\+L\+A\+C\+E\+D\+\_\+\+M\+A\+SK}{BLOCK\_FLAG\_INTERLACED\_MASK}}
+{\footnotesize\ttfamily \#define B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+I\+N\+T\+E\+R\+L\+A\+C\+E\+D\+\_\+\+M\+A\+SK~(\hyperlink{vlc__block_8h_afd724a2d943b3971bfaa7f030810200c}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+O\+P\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+R\+ST}$\vert$\hyperlink{vlc__block_8h_a42dc4d050d33648a95b2690fe1d6fddb}{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+R\+ST})}
+
+This block contains an interlaced picture \mbox{\Hypertarget{vlc__block_8h_a82086704e5815dcd8adb674593dd68b1}\label{vlc__block_8h_a82086704e5815dcd8adb674593dd68b1}} 
+\index{vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}!B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+\_\+\+K\+E\+Y\+F\+R\+A\+ME@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+\_\+\+K\+E\+Y\+F\+R\+A\+ME}}
+\index{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+\_\+\+K\+E\+Y\+F\+R\+A\+ME@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+\_\+\+K\+E\+Y\+F\+R\+A\+ME}!vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+\_\+\+K\+E\+Y\+F\+R\+A\+ME}{BLOCK\_FLAG\_NO\_KEYFRAME}}
+{\footnotesize\ttfamily \#define B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+\_\+\+K\+E\+Y\+F\+R\+A\+ME~0x0080}
+
+This is not a key frame for bitrate shaping \mbox{\Hypertarget{vlc__block_8h_aa97962b8c5929d56e12440f08f61bfc4}\label{vlc__block_8h_aa97962b8c5929d56e12440f08f61bfc4}} 
+\index{vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}!B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+P\+R\+E\+R\+O\+LL@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+P\+R\+E\+R\+O\+LL}}
+\index{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+P\+R\+E\+R\+O\+LL@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+P\+R\+E\+R\+O\+LL}!vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+P\+R\+E\+R\+O\+LL}{BLOCK\_FLAG\_PREROLL}}
+{\footnotesize\ttfamily \#define B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+P\+R\+E\+R\+O\+LL~0x0800}
+
+This block has to be decoded but not be displayed \mbox{\Hypertarget{vlc__block_8h_a9cfec273cb4b3a450691a9b15a62aa1b}\label{vlc__block_8h_a9cfec273cb4b3a450691a9b15a62aa1b}} 
+\index{vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}!B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+S\+C\+R\+A\+M\+B\+L\+ED@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+S\+C\+R\+A\+M\+B\+L\+ED}}
+\index{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+S\+C\+R\+A\+M\+B\+L\+ED@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+S\+C\+R\+A\+M\+B\+L\+ED}!vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+S\+C\+R\+A\+M\+B\+L\+ED}{BLOCK\_FLAG\_SCRAMBLED}}
+{\footnotesize\ttfamily \#define B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+S\+C\+R\+A\+M\+B\+L\+ED~0x0400}
+
+This block is scrambled \mbox{\Hypertarget{vlc__block_8h_afd724a2d943b3971bfaa7f030810200c}\label{vlc__block_8h_afd724a2d943b3971bfaa7f030810200c}} 
+\index{vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}!B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+O\+P\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+R\+ST@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+O\+P\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+R\+ST}}
+\index{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+O\+P\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+R\+ST@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+O\+P\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+R\+ST}!vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+O\+P\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+R\+ST}{BLOCK\_FLAG\_TOP\_FIELD\_FIRST}}
+{\footnotesize\ttfamily \#define B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+O\+P\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+R\+ST~0x2000}
+
+This block contains an interlaced picture with top field first \mbox{\Hypertarget{vlc__block_8h_a55ed275938900370c869c1cebc19563a}\label{vlc__block_8h_a55ed275938900370c869c1cebc19563a}} 
+\index{vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}!B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+B@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+B}}
+\index{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+B@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+B}!vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+B}{BLOCK\_FLAG\_TYPE\_B}}
+{\footnotesize\ttfamily \#define B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+B~0x0008}
+
+Inter frame with backward and forward reference \mbox{\Hypertarget{vlc__block_8h_a4ea1da5028885e857f9306a1657e721b}\label{vlc__block_8h_a4ea1da5028885e857f9306a1657e721b}} 
+\index{vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}!B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+I@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+I}}
+\index{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+I@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+I}!vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+I}{BLOCK\_FLAG\_TYPE\_I}}
+{\footnotesize\ttfamily \#define B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+I~0x0002}
+
+Intra frame \mbox{\Hypertarget{vlc__block_8h_a27656a9cd59fa5d82a99fb5a4273bd7d}\label{vlc__block_8h_a27656a9cd59fa5d82a99fb5a4273bd7d}} 
+\index{vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}!B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+P@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+P}}
+\index{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+P@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+P}!vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+P}{BLOCK\_FLAG\_TYPE\_P}}
+{\footnotesize\ttfamily \#define B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+P~0x0004}
+
+Inter frame with backward reference only \mbox{\Hypertarget{vlc__block_8h_aa489eb15f0fc9d679f5a9a7baa4d8b32}\label{vlc__block_8h_aa489eb15f0fc9d679f5a9a7baa4d8b32}} 
+\index{vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}!B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+PB@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+PB}}
+\index{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+PB@{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+PB}!vlc\+\_\+block.\+h@{vlc\+\_\+block.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+PB}{BLOCK\_FLAG\_TYPE\_PB}}
+{\footnotesize\ttfamily \#define B\+L\+O\+C\+K\+\_\+\+F\+L\+A\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+PB~0x0010}
+
+For inter frame when you don\textquotesingle{}t know the real type 

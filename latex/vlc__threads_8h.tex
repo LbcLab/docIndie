@@ -1,0 +1,48 @@
+\hypertarget{vlc__threads_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+threads.h File Reference}
+\label{vlc__threads_8h}\index{lib/include/vlc/plugins/vlc\+\_\+threads.\+h@{lib/include/vlc/plugins/vlc\+\_\+threads.\+h}}
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$pthread.\+h$>$}\newline
+{\ttfamily \#include $<$semaphore.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vlc__threads_8h_accd7ab1b9dbb86fe73ab02e2a0deccf4}{vlc\+\_\+cleanup\+\_\+push}(routine,  arg)~pthread\+\_\+cleanup\+\_\+push (routine, arg)
+\item 
+\#define \hyperlink{vlc__threads_8h_a027a7d8748800afff5e4535209c0d90b}{vlc\+\_\+cleanup\+\_\+pop}()~pthread\+\_\+cleanup\+\_\+pop (0)
+\item 
+\#define \hyperlink{vlc__threads_8h_a81155b24f259e9ef0c4b8d413c64f9d4}{vlc\+\_\+cleanup\+\_\+run}()~pthread\+\_\+cleanup\+\_\+pop (1)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines structures and functions for handling threads in vlc 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{vlc__threads_8h_a027a7d8748800afff5e4535209c0d90b}\label{vlc__threads_8h_a027a7d8748800afff5e4535209c0d90b}} 
+\index{vlc\+\_\+threads.\+h@{vlc\+\_\+threads.\+h}!vlc\+\_\+cleanup\+\_\+pop@{vlc\+\_\+cleanup\+\_\+pop}}
+\index{vlc\+\_\+cleanup\+\_\+pop@{vlc\+\_\+cleanup\+\_\+pop}!vlc\+\_\+threads.\+h@{vlc\+\_\+threads.\+h}}
+\subsubsection{\texorpdfstring{vlc\+\_\+cleanup\+\_\+pop}{vlc\_cleanup\_pop}}
+{\footnotesize\ttfamily \#define vlc\+\_\+cleanup\+\_\+pop(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~pthread\+\_\+cleanup\+\_\+pop (0)}
+
+Removes a cleanup procedure that was previously registered with \hyperlink{vlc__threads_8h_accd7ab1b9dbb86fe73ab02e2a0deccf4}{vlc\+\_\+cleanup\+\_\+push()}. \mbox{\Hypertarget{vlc__threads_8h_accd7ab1b9dbb86fe73ab02e2a0deccf4}\label{vlc__threads_8h_accd7ab1b9dbb86fe73ab02e2a0deccf4}} 
+\index{vlc\+\_\+threads.\+h@{vlc\+\_\+threads.\+h}!vlc\+\_\+cleanup\+\_\+push@{vlc\+\_\+cleanup\+\_\+push}}
+\index{vlc\+\_\+cleanup\+\_\+push@{vlc\+\_\+cleanup\+\_\+push}!vlc\+\_\+threads.\+h@{vlc\+\_\+threads.\+h}}
+\subsubsection{\texorpdfstring{vlc\+\_\+cleanup\+\_\+push}{vlc\_cleanup\_push}}
+{\footnotesize\ttfamily \#define vlc\+\_\+cleanup\+\_\+push(\begin{DoxyParamCaption}\item[{}]{routine,  }\item[{}]{arg }\end{DoxyParamCaption})~pthread\+\_\+cleanup\+\_\+push (routine, arg)}
+
+Registers a new procedure to run if the thread is cancelled (or otherwise exits prematurely). Any call to \hyperlink{vlc__threads_8h_accd7ab1b9dbb86fe73ab02e2a0deccf4}{vlc\+\_\+cleanup\+\_\+push()} {\bfseries must} paired with a call to either \hyperlink{vlc__threads_8h_a027a7d8748800afff5e4535209c0d90b}{vlc\+\_\+cleanup\+\_\+pop()} or \hyperlink{vlc__threads_8h_a81155b24f259e9ef0c4b8d413c64f9d4}{vlc\+\_\+cleanup\+\_\+run()}. Branching into or out of the block between these two function calls is not allowed (read\+: it will likely crash the whole process). If multiple procedures are registered, they are handled in last-\/in first-\/out order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em routine} & procedure to call if the thread ends \\
+\hline
+{\em arg} & argument for the procedure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{vlc__threads_8h_a81155b24f259e9ef0c4b8d413c64f9d4}\label{vlc__threads_8h_a81155b24f259e9ef0c4b8d413c64f9d4}} 
+\index{vlc\+\_\+threads.\+h@{vlc\+\_\+threads.\+h}!vlc\+\_\+cleanup\+\_\+run@{vlc\+\_\+cleanup\+\_\+run}}
+\index{vlc\+\_\+cleanup\+\_\+run@{vlc\+\_\+cleanup\+\_\+run}!vlc\+\_\+threads.\+h@{vlc\+\_\+threads.\+h}}
+\subsubsection{\texorpdfstring{vlc\+\_\+cleanup\+\_\+run}{vlc\_cleanup\_run}}
+{\footnotesize\ttfamily \#define vlc\+\_\+cleanup\+\_\+run(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~pthread\+\_\+cleanup\+\_\+pop (1)}
+
+Removes a cleanup procedure that was previously registered with \hyperlink{vlc__threads_8h_accd7ab1b9dbb86fe73ab02e2a0deccf4}{vlc\+\_\+cleanup\+\_\+push()}, and executes it. 

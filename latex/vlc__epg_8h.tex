@@ -1,0 +1,79 @@
+\hypertarget{vlc__epg_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+epg.h File Reference}
+\label{vlc__epg_8h}\index{lib/include/vlc/plugins/vlc\+\_\+epg.\+h@{lib/include/vlc/plugins/vlc\+\_\+epg.\+h}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__epg_8h_adee67156a3cb932b5567c6bf21573121}{vlc\+\_\+epg\+\_\+\+Init} (vlc\+\_\+epg\+\_\+t $\ast$p\+\_\+epg, const char $\ast$psz\+\_\+name)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__epg_8h_a2daab1d1cc44d3f9886dd58093c91d8e}{vlc\+\_\+epg\+\_\+\+Clean} (vlc\+\_\+epg\+\_\+t $\ast$p\+\_\+epg)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__epg_8h_a3ca3ec0f2e184c04ca2045d0f0c1fd3a}{vlc\+\_\+epg\+\_\+\+Add\+Event} (vlc\+\_\+epg\+\_\+t $\ast$p\+\_\+epg, int64\+\_\+t i\+\_\+start, int i\+\_\+duration, const char $\ast$psz\+\_\+name, const char $\ast$psz\+\_\+short\+\_\+description, const char $\ast$psz\+\_\+description, uint8\+\_\+t i\+\_\+rating)
+\item 
+V\+L\+C\+\_\+\+A\+PI vlc\+\_\+epg\+\_\+t $\ast$ \hyperlink{vlc__epg_8h_a1dd817c51ca0e266f90e5fbda28cba89}{vlc\+\_\+epg\+\_\+\+New} (const char $\ast$psz\+\_\+name) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__epg_8h_a6050c74b041c83a7a247dafa93303e62}{vlc\+\_\+epg\+\_\+\+Delete} (vlc\+\_\+epg\+\_\+t $\ast$p\+\_\+epg)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__epg_8h_a14227d24f7199ed75671886822c95561}{vlc\+\_\+epg\+\_\+\+Set\+Current} (vlc\+\_\+epg\+\_\+t $\ast$p\+\_\+epg, int64\+\_\+t i\+\_\+start)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__epg_8h_aed905ef574987700f24c3e6c57db815b}{vlc\+\_\+epg\+\_\+\+Merge} (vlc\+\_\+epg\+\_\+t $\ast$p\+\_\+dst, const vlc\+\_\+epg\+\_\+t $\ast$p\+\_\+src)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines functions and structures for storing dvb epg information 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{vlc__epg_8h_a3ca3ec0f2e184c04ca2045d0f0c1fd3a}\label{vlc__epg_8h_a3ca3ec0f2e184c04ca2045d0f0c1fd3a}} 
+\index{vlc\+\_\+epg.\+h@{vlc\+\_\+epg.\+h}!vlc\+\_\+epg\+\_\+\+Add\+Event@{vlc\+\_\+epg\+\_\+\+Add\+Event}}
+\index{vlc\+\_\+epg\+\_\+\+Add\+Event@{vlc\+\_\+epg\+\_\+\+Add\+Event}!vlc\+\_\+epg.\+h@{vlc\+\_\+epg.\+h}}
+\subsubsection{\texorpdfstring{vlc\+\_\+epg\+\_\+\+Add\+Event()}{vlc\_epg\_AddEvent()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void vlc\+\_\+epg\+\_\+\+Add\+Event (\begin{DoxyParamCaption}\item[{vlc\+\_\+epg\+\_\+t $\ast$}]{p\+\_\+epg,  }\item[{int64\+\_\+t}]{i\+\_\+start,  }\item[{int}]{i\+\_\+duration,  }\item[{const char $\ast$}]{psz\+\_\+name,  }\item[{const char $\ast$}]{psz\+\_\+short\+\_\+description,  }\item[{const char $\ast$}]{psz\+\_\+description,  }\item[{uint8\+\_\+t}]{i\+\_\+rating }\end{DoxyParamCaption})}
+
+It creates and appends a new vlc\+\_\+epg\+\_\+event\+\_\+t to a vlc\+\_\+epg\+\_\+t.
+
+\begin{DoxySeeAlso}{See also}
+vlc\+\_\+epg\+\_\+t for the definitions of the parameters. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{vlc__epg_8h_a2daab1d1cc44d3f9886dd58093c91d8e}\label{vlc__epg_8h_a2daab1d1cc44d3f9886dd58093c91d8e}} 
+\index{vlc\+\_\+epg.\+h@{vlc\+\_\+epg.\+h}!vlc\+\_\+epg\+\_\+\+Clean@{vlc\+\_\+epg\+\_\+\+Clean}}
+\index{vlc\+\_\+epg\+\_\+\+Clean@{vlc\+\_\+epg\+\_\+\+Clean}!vlc\+\_\+epg.\+h@{vlc\+\_\+epg.\+h}}
+\subsubsection{\texorpdfstring{vlc\+\_\+epg\+\_\+\+Clean()}{vlc\_epg\_Clean()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void vlc\+\_\+epg\+\_\+\+Clean (\begin{DoxyParamCaption}\item[{vlc\+\_\+epg\+\_\+t $\ast$}]{p\+\_\+epg }\end{DoxyParamCaption})}
+
+It releases all resources associated to a vlc\+\_\+epg\+\_\+t \mbox{\Hypertarget{vlc__epg_8h_a6050c74b041c83a7a247dafa93303e62}\label{vlc__epg_8h_a6050c74b041c83a7a247dafa93303e62}} 
+\index{vlc\+\_\+epg.\+h@{vlc\+\_\+epg.\+h}!vlc\+\_\+epg\+\_\+\+Delete@{vlc\+\_\+epg\+\_\+\+Delete}}
+\index{vlc\+\_\+epg\+\_\+\+Delete@{vlc\+\_\+epg\+\_\+\+Delete}!vlc\+\_\+epg.\+h@{vlc\+\_\+epg.\+h}}
+\subsubsection{\texorpdfstring{vlc\+\_\+epg\+\_\+\+Delete()}{vlc\_epg\_Delete()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void vlc\+\_\+epg\+\_\+\+Delete (\begin{DoxyParamCaption}\item[{vlc\+\_\+epg\+\_\+t $\ast$}]{p\+\_\+epg }\end{DoxyParamCaption})}
+
+It releases a vlc\+\_\+epg\+\_\+t$\ast$. \mbox{\Hypertarget{vlc__epg_8h_adee67156a3cb932b5567c6bf21573121}\label{vlc__epg_8h_adee67156a3cb932b5567c6bf21573121}} 
+\index{vlc\+\_\+epg.\+h@{vlc\+\_\+epg.\+h}!vlc\+\_\+epg\+\_\+\+Init@{vlc\+\_\+epg\+\_\+\+Init}}
+\index{vlc\+\_\+epg\+\_\+\+Init@{vlc\+\_\+epg\+\_\+\+Init}!vlc\+\_\+epg.\+h@{vlc\+\_\+epg.\+h}}
+\subsubsection{\texorpdfstring{vlc\+\_\+epg\+\_\+\+Init()}{vlc\_epg\_Init()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void vlc\+\_\+epg\+\_\+\+Init (\begin{DoxyParamCaption}\item[{vlc\+\_\+epg\+\_\+t $\ast$}]{p\+\_\+epg,  }\item[{const char $\ast$}]{psz\+\_\+name }\end{DoxyParamCaption})}
+
+It initializes a vlc\+\_\+epg\+\_\+t.
+
+You must call vlc\+\_\+epg\+\_\+\+Clean to release the associated resource. \mbox{\Hypertarget{vlc__epg_8h_aed905ef574987700f24c3e6c57db815b}\label{vlc__epg_8h_aed905ef574987700f24c3e6c57db815b}} 
+\index{vlc\+\_\+epg.\+h@{vlc\+\_\+epg.\+h}!vlc\+\_\+epg\+\_\+\+Merge@{vlc\+\_\+epg\+\_\+\+Merge}}
+\index{vlc\+\_\+epg\+\_\+\+Merge@{vlc\+\_\+epg\+\_\+\+Merge}!vlc\+\_\+epg.\+h@{vlc\+\_\+epg.\+h}}
+\subsubsection{\texorpdfstring{vlc\+\_\+epg\+\_\+\+Merge()}{vlc\_epg\_Merge()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void vlc\+\_\+epg\+\_\+\+Merge (\begin{DoxyParamCaption}\item[{vlc\+\_\+epg\+\_\+t $\ast$}]{p\+\_\+dst,  }\item[{const vlc\+\_\+epg\+\_\+t $\ast$}]{p\+\_\+src }\end{DoxyParamCaption})}
+
+It merges all the event of {\ttfamily p\+\_\+src} and {\ttfamily p\+\_\+dst} into {\ttfamily p\+\_\+dst}.
+
+{\ttfamily p\+\_\+src} is not modified. \mbox{\Hypertarget{vlc__epg_8h_a1dd817c51ca0e266f90e5fbda28cba89}\label{vlc__epg_8h_a1dd817c51ca0e266f90e5fbda28cba89}} 
+\index{vlc\+\_\+epg.\+h@{vlc\+\_\+epg.\+h}!vlc\+\_\+epg\+\_\+\+New@{vlc\+\_\+epg\+\_\+\+New}}
+\index{vlc\+\_\+epg\+\_\+\+New@{vlc\+\_\+epg\+\_\+\+New}!vlc\+\_\+epg.\+h@{vlc\+\_\+epg.\+h}}
+\subsubsection{\texorpdfstring{vlc\+\_\+epg\+\_\+\+New()}{vlc\_epg\_New()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI vlc\+\_\+epg\+\_\+t$\ast$ vlc\+\_\+epg\+\_\+\+New (\begin{DoxyParamCaption}\item[{const char $\ast$}]{psz\+\_\+name }\end{DoxyParamCaption})}
+
+It creates a new vlc\+\_\+epg\+\_\+t$\ast$
+
+You must call vlc\+\_\+epg\+\_\+\+Delete to release the associated resource. \mbox{\Hypertarget{vlc__epg_8h_a14227d24f7199ed75671886822c95561}\label{vlc__epg_8h_a14227d24f7199ed75671886822c95561}} 
+\index{vlc\+\_\+epg.\+h@{vlc\+\_\+epg.\+h}!vlc\+\_\+epg\+\_\+\+Set\+Current@{vlc\+\_\+epg\+\_\+\+Set\+Current}}
+\index{vlc\+\_\+epg\+\_\+\+Set\+Current@{vlc\+\_\+epg\+\_\+\+Set\+Current}!vlc\+\_\+epg.\+h@{vlc\+\_\+epg.\+h}}
+\subsubsection{\texorpdfstring{vlc\+\_\+epg\+\_\+\+Set\+Current()}{vlc\_epg\_SetCurrent()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void vlc\+\_\+epg\+\_\+\+Set\+Current (\begin{DoxyParamCaption}\item[{vlc\+\_\+epg\+\_\+t $\ast$}]{p\+\_\+epg,  }\item[{int64\+\_\+t}]{i\+\_\+start }\end{DoxyParamCaption})}
+
+It set the current event of a vlc\+\_\+epg\+\_\+t given a start time 

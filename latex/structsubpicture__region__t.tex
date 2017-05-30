@@ -1,0 +1,118 @@
+\hypertarget{structsubpicture__region__t}{}\section{subpicture\+\_\+region\+\_\+t Struct Reference}
+\label{structsubpicture__region__t}\index{subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}}
+
+
+{\ttfamily \#include $<$vlc\+\_\+subpicture.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} \hyperlink{structsubpicture__region__t_a6f825fe2ca5b424933af974e4ed03035}{fmt}
+\item 
+\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$ \hyperlink{structsubpicture__region__t_a7718ba018aad1f2a5bb2f737fee32369}{p\+\_\+picture}
+\item 
+int \hyperlink{structsubpicture__region__t_a146642dcb44d19b7423b19232b54c7ba}{i\+\_\+x}
+\item 
+int \hyperlink{structsubpicture__region__t_a0600117ddc4abe0b9fb32d08c843eaf3}{i\+\_\+y}
+\item 
+int \hyperlink{structsubpicture__region__t_a06d8795f35bdeb4843dcfc460d96b1a7}{i\+\_\+align}
+\item 
+int \hyperlink{structsubpicture__region__t_ab162574cede4407425a1959ab6f4dcc0}{i\+\_\+alpha}
+\item 
+char $\ast$ \hyperlink{structsubpicture__region__t_af1e658d75fc6d2bab50687cdc118f6b3}{psz\+\_\+text}
+\item 
+char $\ast$ \hyperlink{structsubpicture__region__t_ac75809bfd319e5130ef4228fc0a221c8}{psz\+\_\+html}
+\item 
+\hyperlink{structtext__style__t}{text\+\_\+style\+\_\+t} $\ast$ \hyperlink{structsubpicture__region__t_a551cb1ab6cfbc446c596d85d55e837e8}{p\+\_\+style}
+\item 
+bool \hyperlink{structsubpicture__region__t_aec9a691c5feb0113665dc32baad447ac}{b\+\_\+renderbg}
+\item 
+\hyperlink{structsubpicture__region__t}{subpicture\+\_\+region\+\_\+t} $\ast$ \hyperlink{structsubpicture__region__t_a0466ea80782a86f63c76be2811b7be93}{p\+\_\+next}
+\item 
+\hyperlink{group__subpicture_ga9be3c246cffef0547fcebbc5d9282ebb}{subpicture\+\_\+region\+\_\+private\+\_\+t} $\ast$ \hyperlink{structsubpicture__region__t_a9244567cb06c6a792f5bace4fa51ecaf}{p\+\_\+private}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Video subtitle region
+
+A subtitle region is defined by a picture (graphic) and its rendering coordinates. Subtitles contain a list of regions. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structsubpicture__region__t_aec9a691c5feb0113665dc32baad447ac}\label{structsubpicture__region__t_aec9a691c5feb0113665dc32baad447ac}} 
+\index{subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}!b\+\_\+renderbg@{b\+\_\+renderbg}}
+\index{b\+\_\+renderbg@{b\+\_\+renderbg}!subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}}
+\subsubsection{\texorpdfstring{b\+\_\+renderbg}{b\_renderbg}}
+{\footnotesize\ttfamily bool subpicture\+\_\+region\+\_\+t\+::b\+\_\+renderbg}
+
+render black background under text \mbox{\Hypertarget{structsubpicture__region__t_a6f825fe2ca5b424933af974e4ed03035}\label{structsubpicture__region__t_a6f825fe2ca5b424933af974e4ed03035}} 
+\index{subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}!fmt@{fmt}}
+\index{fmt@{fmt}!subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}}
+\subsubsection{\texorpdfstring{fmt}{fmt}}
+{\footnotesize\ttfamily \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} subpicture\+\_\+region\+\_\+t\+::fmt}
+
+format of the picture \mbox{\Hypertarget{structsubpicture__region__t_a06d8795f35bdeb4843dcfc460d96b1a7}\label{structsubpicture__region__t_a06d8795f35bdeb4843dcfc460d96b1a7}} 
+\index{subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}!i\+\_\+align@{i\+\_\+align}}
+\index{i\+\_\+align@{i\+\_\+align}!subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+align}{i\_align}}
+{\footnotesize\ttfamily int subpicture\+\_\+region\+\_\+t\+::i\+\_\+align}
+
+alignment within a region \mbox{\Hypertarget{structsubpicture__region__t_ab162574cede4407425a1959ab6f4dcc0}\label{structsubpicture__region__t_ab162574cede4407425a1959ab6f4dcc0}} 
+\index{subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}!i\+\_\+alpha@{i\+\_\+alpha}}
+\index{i\+\_\+alpha@{i\+\_\+alpha}!subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+alpha}{i\_alpha}}
+{\footnotesize\ttfamily int subpicture\+\_\+region\+\_\+t\+::i\+\_\+alpha}
+
+transparency \mbox{\Hypertarget{structsubpicture__region__t_a146642dcb44d19b7423b19232b54c7ba}\label{structsubpicture__region__t_a146642dcb44d19b7423b19232b54c7ba}} 
+\index{subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}!i\+\_\+x@{i\+\_\+x}}
+\index{i\+\_\+x@{i\+\_\+x}!subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+x}{i\_x}}
+{\footnotesize\ttfamily int subpicture\+\_\+region\+\_\+t\+::i\+\_\+x}
+
+position of region \mbox{\Hypertarget{structsubpicture__region__t_a0600117ddc4abe0b9fb32d08c843eaf3}\label{structsubpicture__region__t_a0600117ddc4abe0b9fb32d08c843eaf3}} 
+\index{subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}!i\+\_\+y@{i\+\_\+y}}
+\index{i\+\_\+y@{i\+\_\+y}!subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+y}{i\_y}}
+{\footnotesize\ttfamily int subpicture\+\_\+region\+\_\+t\+::i\+\_\+y}
+
+position of region \mbox{\Hypertarget{structsubpicture__region__t_a0466ea80782a86f63c76be2811b7be93}\label{structsubpicture__region__t_a0466ea80782a86f63c76be2811b7be93}} 
+\index{subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}!p\+\_\+next@{p\+\_\+next}}
+\index{p\+\_\+next@{p\+\_\+next}!subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}}
+\subsubsection{\texorpdfstring{p\+\_\+next}{p\_next}}
+{\footnotesize\ttfamily \hyperlink{structsubpicture__region__t}{subpicture\+\_\+region\+\_\+t}$\ast$ subpicture\+\_\+region\+\_\+t\+::p\+\_\+next}
+
+next region in the list \mbox{\Hypertarget{structsubpicture__region__t_a7718ba018aad1f2a5bb2f737fee32369}\label{structsubpicture__region__t_a7718ba018aad1f2a5bb2f737fee32369}} 
+\index{subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}!p\+\_\+picture@{p\+\_\+picture}}
+\index{p\+\_\+picture@{p\+\_\+picture}!subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}}
+\subsubsection{\texorpdfstring{p\+\_\+picture}{p\_picture}}
+{\footnotesize\ttfamily \hyperlink{structpicture__t}{picture\+\_\+t}$\ast$ subpicture\+\_\+region\+\_\+t\+::p\+\_\+picture}
+
+picture comprising this region \mbox{\Hypertarget{structsubpicture__region__t_a9244567cb06c6a792f5bace4fa51ecaf}\label{structsubpicture__region__t_a9244567cb06c6a792f5bace4fa51ecaf}} 
+\index{subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}!p\+\_\+private@{p\+\_\+private}}
+\index{p\+\_\+private@{p\+\_\+private}!subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}}
+\subsubsection{\texorpdfstring{p\+\_\+private}{p\_private}}
+{\footnotesize\ttfamily \hyperlink{group__subpicture_ga9be3c246cffef0547fcebbc5d9282ebb}{subpicture\+\_\+region\+\_\+private\+\_\+t}$\ast$ subpicture\+\_\+region\+\_\+t\+::p\+\_\+private}
+
+Private data for \hyperlink{structspu__t}{spu\+\_\+t} {\itshape only} \mbox{\Hypertarget{structsubpicture__region__t_a551cb1ab6cfbc446c596d85d55e837e8}\label{structsubpicture__region__t_a551cb1ab6cfbc446c596d85d55e837e8}} 
+\index{subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}!p\+\_\+style@{p\+\_\+style}}
+\index{p\+\_\+style@{p\+\_\+style}!subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}}
+\subsubsection{\texorpdfstring{p\+\_\+style}{p\_style}}
+{\footnotesize\ttfamily \hyperlink{structtext__style__t}{text\+\_\+style\+\_\+t}$\ast$ subpicture\+\_\+region\+\_\+t\+::p\+\_\+style}
+
+a description of the text style formatting \mbox{\Hypertarget{structsubpicture__region__t_ac75809bfd319e5130ef4228fc0a221c8}\label{structsubpicture__region__t_ac75809bfd319e5130ef4228fc0a221c8}} 
+\index{subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}!psz\+\_\+html@{psz\+\_\+html}}
+\index{psz\+\_\+html@{psz\+\_\+html}!subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}}
+\subsubsection{\texorpdfstring{psz\+\_\+html}{psz\_html}}
+{\footnotesize\ttfamily char$\ast$ subpicture\+\_\+region\+\_\+t\+::psz\+\_\+html}
+
+H\+T\+ML version of subtitle (N\+U\+LL = use psz\+\_\+text) \mbox{\Hypertarget{structsubpicture__region__t_af1e658d75fc6d2bab50687cdc118f6b3}\label{structsubpicture__region__t_af1e658d75fc6d2bab50687cdc118f6b3}} 
+\index{subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}!psz\+\_\+text@{psz\+\_\+text}}
+\index{psz\+\_\+text@{psz\+\_\+text}!subpicture\+\_\+region\+\_\+t@{subpicture\+\_\+region\+\_\+t}}
+\subsubsection{\texorpdfstring{psz\+\_\+text}{psz\_text}}
+{\footnotesize\ttfamily char$\ast$ subpicture\+\_\+region\+\_\+t\+::psz\+\_\+text}
+
+text string comprising this region 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/include/vlc/plugins/\hyperlink{vlc__subpicture_8h}{vlc\+\_\+subpicture.\+h}\end{DoxyCompactItemize}

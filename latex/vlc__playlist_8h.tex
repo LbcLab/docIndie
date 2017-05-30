@@ -1,0 +1,63 @@
+\hypertarget{vlc__playlist_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+playlist.h File Reference}
+\label{vlc__playlist_8h}\index{lib/include/vlc/plugins/vlc\+\_\+playlist.\+h@{lib/include/vlc/plugins/vlc\+\_\+playlist.\+h}}
+{\ttfamily \#include $<$vlc\+\_\+input.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+events.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structplaylist__export__t}{playlist\+\_\+export\+\_\+t}
+\item 
+struct \hyperlink{structplaylist__item__t}{playlist\+\_\+item\+\_\+t}
+\item 
+struct \hyperlink{structplaylist__t}{playlist\+\_\+t}
+\item 
+struct \hyperlink{structplaylist__add__t}{playlist\+\_\+add\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structplaylist__export__t}{playlist\+\_\+export\+\_\+t} \hyperlink{group__vlc__playlist_ga6b0ee051ff356a72cbf0f35bf3089938}{playlist\+\_\+export\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__vlc__playlist_ga8e081f83afd54626ee47766bdca9d807}{playlist\+\_\+item\+\_\+flags\+\_\+e} \{ \newline
+\hyperlink{group__vlc__playlist_gga8e081f83afd54626ee47766bdca9d807a40f17a1c7fb6b4e10bf4dc5008853df0}{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+S\+A\+V\+E\+\_\+\+F\+L\+AG} = 0x0001, 
+\hyperlink{group__vlc__playlist_gga8e081f83afd54626ee47766bdca9d807a741ab93586d5d86a665671a22b0ee8b0}{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+S\+K\+I\+P\+\_\+\+F\+L\+AG} = 0x0002, 
+\hyperlink{group__vlc__playlist_gga8e081f83afd54626ee47766bdca9d807a10a7b303d1fee999da2024bc3587f2af}{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+D\+B\+L\+\_\+\+F\+L\+AG} = 0x0004, 
+\hyperlink{group__vlc__playlist_gga8e081f83afd54626ee47766bdca9d807ad48dc29aba68fa4b09f67bc826358d70}{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+R\+O\+\_\+\+F\+L\+AG} = 0x0008, 
+\newline
+\hyperlink{group__vlc__playlist_gga8e081f83afd54626ee47766bdca9d807acd6c25537909dce5a91f50d12d44a8f8}{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+F\+L\+AG} = 0x0010, 
+\hyperlink{group__vlc__playlist_gga8e081f83afd54626ee47766bdca9d807a732f62326a21cd842054d40f8620e16f}{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+E\+X\+P\+A\+N\+D\+E\+D\+\_\+\+F\+L\+AG} = 0x0020, 
+\hyperlink{group__vlc__playlist_gga8e081f83afd54626ee47766bdca9d807a2fae7fdabe05ad19f3846b93a3d89c9e}{P\+L\+A\+Y\+L\+I\+S\+T\+\_\+\+S\+U\+B\+I\+T\+E\+M\+\_\+\+S\+T\+O\+P\+\_\+\+F\+L\+AG} = 0x0040
+ \}
+\item 
+enum \hyperlink{group__vlc__playlist_gaccdaf2247d258fb3d8d6cb008a7d0cfa}{playlist\+\_\+status\+\_\+t} 
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__vlc__playlist_ga3f0e893ab6167f3c85067330cb5f2b78}{playlist\+\_\+\+Control} (\hyperlink{structplaylist__t}{playlist\+\_\+t} $\ast$p\+\_\+playlist, int i\+\_\+query, bool b\+\_\+locked,...)
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structinput__thread__t}{input\+\_\+thread\+\_\+t} $\ast$ \hyperlink{group__vlc__playlist_gae2e41a3f7512cc5e341b2fa303a6dccf}{playlist\+\_\+\+Current\+Input} (\hyperlink{structplaylist__t}{playlist\+\_\+t} $\ast$p\+\_\+playlist) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} \hyperlink{group__vlc__playlist_gabd5adb1acdd870e7cbab434262108036}{playlist\+\_\+\+Get\+Node\+Duration} (\hyperlink{structplaylist__item__t}{playlist\+\_\+item\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__vlc__playlist_ga08a4c79407d2cde206127095aa7baa13}{playlist\+\_\+\+Clear} (\hyperlink{structplaylist__t}{playlist\+\_\+t} $\ast$, bool)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__vlc__playlist_ga19fc398fcc814e32f514364d168b29da}{playlist\+\_\+\+Export} (\hyperlink{structplaylist__t}{playlist\+\_\+t} $\ast$p\+\_\+playlist, const char $\ast$psz\+\_\+name, \hyperlink{structplaylist__item__t}{playlist\+\_\+item\+\_\+t} $\ast$p\+\_\+export\+\_\+root, const char $\ast$psz\+\_\+type)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__vlc__playlist_ga3433d0da5875ba97b0e42d6fd5d947fc}{playlist\+\_\+\+Import} (\hyperlink{structplaylist__t}{playlist\+\_\+t} $\ast$p\+\_\+playlist, const char $\ast$psz\+\_\+file)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__vlc__playlist_gafcfd2f1e287c4ca7a3356a1f4875c88d}{playlist\+\_\+\+Services\+Discovery\+Add} (\hyperlink{structplaylist__t}{playlist\+\_\+t} $\ast$, const char $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__vlc__playlist_ga91ffcf04d843ab08f7a460296d37595d}{playlist\+\_\+\+Services\+Discovery\+Remove} (\hyperlink{structplaylist__t}{playlist\+\_\+t} $\ast$, const char $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI bool \hyperlink{group__vlc__playlist_ga2cb2591cf33c213b064947677794ec67}{playlist\+\_\+\+Is\+Services\+Discovery\+Loaded} (\hyperlink{structplaylist__t}{playlist\+\_\+t} $\ast$, const char $\ast$) V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__vlc__playlist_gae68b5f21bde9697bf08ff9b3d0353105}{playlist\+\_\+\+Services\+Discovery\+Control} (\hyperlink{structplaylist__t}{playlist\+\_\+t} $\ast$, const char $\ast$, int,...)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contain structures and function prototypes related to the playlist in vlc 

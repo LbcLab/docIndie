@@ -19,11 +19,36 @@ Struct for holding parameters for a material renderer.
 \begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
 \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \& \hyperlink{classirr_1_1video_1_1SMaterial_a752ea337daa705d8d7035f0ee93d178d}{operator=} (const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&other)
 \begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
-\hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4} \& \hyperlink{classirr_1_1video_1_1SMaterial_a102aec38ea69a7c609edfad74b40463c}{get\+Texture\+Matrix} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} i)
+\hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \& \hyperlink{classirr_1_1video_1_1SMaterial_a102aec38ea69a7c609edfad74b40463c}{get\+Texture\+Matrix} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} i)
 \begin{DoxyCompactList}\small\item\em Gets the texture transformation matrix for level i. \end{DoxyCompactList}\item 
-const \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4} \& \hyperlink{classirr_1_1video_1_1SMaterial_a6b0adff4b14c80da0be8e8d600252fcd}{get\+Texture\+Matrix} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} i) const
+const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \& \hyperlink{classirr_1_1video_1_1SMaterial_a6b0adff4b14c80da0be8e8d600252fcd}{get\+Texture\+Matrix} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} i) const
 \begin{DoxyCompactList}\small\item\em Gets the immutable texture transformation matrix for level i. \end{DoxyCompactList}\item 
-void \hyperlink{classirr_1_1video_1_1SMaterial_a6e1a89f5005226a9cecb5272ef44ba7d}{set\+Texture\+Matrix} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} i, const \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4} \&mat)
+void \hyperlink{classirr_1_1video_1_1SMaterial_a6e1a89f5005226a9cecb5272ef44ba7d}{set\+Texture\+Matrix} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} i, const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \&mat)
+\begin{DoxyCompactList}\small\item\em Sets the i-\/th texture transformation matrix. \end{DoxyCompactList}\item 
+\hyperlink{classirr_1_1video_1_1ITexture}{I\+Texture} $\ast$ \hyperlink{classirr_1_1video_1_1SMaterial_ad5883da3db8087fbbb74f7bb23e82874}{get\+Texture} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} i) const
+\begin{DoxyCompactList}\small\item\em Gets the i-\/th texture. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1video_1_1SMaterial_a44dc38e7d4a78434d12ffd02e88e3d60}{set\+Texture} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} i, \hyperlink{classirr_1_1video_1_1ITexture}{I\+Texture} $\ast$tex)
+\begin{DoxyCompactList}\small\item\em Sets the i-\/th texture. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1video_1_1SMaterial_a460db947d8e2022c6be895b77a65bbda}{set\+Flag} (\hyperlink{namespaceirr_1_1video_a8a3bc00ae8137535b9fbc5f40add70d3}{E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+L\+AG} flag, bool value)
+\begin{DoxyCompactList}\small\item\em Sets the Material flag to the given value. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1video_1_1SMaterial_a3811e59a69983b4a7fce2d8e7aaf91f1}{get\+Flag} (\hyperlink{namespaceirr_1_1video_a8a3bc00ae8137535b9fbc5f40add70d3}{E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+L\+AG} flag) const
+\begin{DoxyCompactList}\small\item\em Gets the Material flag. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1video_1_1SMaterial_aeb4cd5880d7fbf330dc4d5cca0177407}{operator!=} (const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&b) const
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1video_1_1SMaterial_a32066f6f8ee564be1cabc73de1d0cb6a}{operator==} (const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&b) const
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_ae5002c3c8ea002539228a9ca95cc8003}\label{classirr_1_1video_1_1SMaterial_ae5002c3c8ea002539228a9ca95cc8003}} 
+\hyperlink{classirr_1_1video_1_1SMaterial_ae5002c3c8ea002539228a9ca95cc8003}{S\+Material} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. Creates a solid, lit material with white colors. \end{DoxyCompactList}\item 
+\hyperlink{classirr_1_1video_1_1SMaterial_a66f175294b99e3cc2816e9cc0f372ce3}{S\+Material} (const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \& \hyperlink{classirr_1_1video_1_1SMaterial_a752ea337daa705d8d7035f0ee93d178d}{operator=} (const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&other)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \& \hyperlink{classirr_1_1video_1_1SMaterial_a102aec38ea69a7c609edfad74b40463c}{get\+Texture\+Matrix} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} i)
+\begin{DoxyCompactList}\small\item\em Gets the texture transformation matrix for level i. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \& \hyperlink{classirr_1_1video_1_1SMaterial_a6b0adff4b14c80da0be8e8d600252fcd}{get\+Texture\+Matrix} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} i) const
+\begin{DoxyCompactList}\small\item\em Gets the immutable texture transformation matrix for level i. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1video_1_1SMaterial_a6e1a89f5005226a9cecb5272ef44ba7d}{set\+Texture\+Matrix} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} i, const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \&mat)
 \begin{DoxyCompactList}\small\item\em Sets the i-\/th texture transformation matrix. \end{DoxyCompactList}\item 
 \hyperlink{classirr_1_1video_1_1ITexture}{I\+Texture} $\ast$ \hyperlink{classirr_1_1video_1_1SMaterial_ad5883da3db8087fbbb74f7bb23e82874}{get\+Texture} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} i) const
 \begin{DoxyCompactList}\small\item\em Gets the i-\/th texture. \end{DoxyCompactList}\item 
@@ -40,8 +65,8 @@ bool \hyperlink{classirr_1_1video_1_1SMaterial_a32066f6f8ee564be1cabc73de1d0cb6a
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a2a722a68bcc2cb3e779882785a409890}\label{classirr_1_1video_1_1SMaterial_a2a722a68bcc2cb3e779882785a409890}} 
-\hyperlink{classirr_1_1video_1_1SMaterialLayer}{S\+Material\+Layer} \hyperlink{classirr_1_1video_1_1SMaterial_a2a722a68bcc2cb3e779882785a409890}{Texture\+Layer} \mbox{[}\hyperlink{namespaceirr_1_1video_ad41ca808200ca2e8e9d9326355020052}{M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+M\+A\+X\+\_\+\+T\+E\+X\+T\+U\+R\+ES}\mbox{]}
+\mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a344dee541a244e864c60514e5e740cec}\label{classirr_1_1video_1_1SMaterial_a344dee541a244e864c60514e5e740cec}} 
+\hyperlink{classirr_1_1video_1_1SMaterialLayer}{S\+Material\+Layer} \hyperlink{classirr_1_1video_1_1SMaterial_a344dee541a244e864c60514e5e740cec}{Texture\+Layer} \mbox{[}\hyperlink{namespaceirr_1_1video_ad41ca808200ca2e8e9d9326355020052}{M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+M\+A\+X\+\_\+\+T\+E\+X\+T\+U\+R\+ES}\mbox{]}
 \begin{DoxyCompactList}\small\item\em Texture layer array. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a8cb63ab4b49ae1c61fbca8353e6b2f8a}\label{classirr_1_1video_1_1SMaterial_a8cb63ab4b49ae1c61fbca8353e6b2f8a}} 
 \hyperlink{namespaceirr_1_1video_ac8e9b6c66f7cebabd1a6d30cbc5430f1}{E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+T\+Y\+PE} \hyperlink{classirr_1_1video_1_1SMaterial_a8cb63ab4b49ae1c61fbca8353e6b2f8a}{Material\+Type}
@@ -113,7 +138,22 @@ Struct for holding parameters for a material renderer.
 \mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a66f175294b99e3cc2816e9cc0f372ce3}\label{classirr_1_1video_1_1SMaterial_a66f175294b99e3cc2816e9cc0f372ce3}} 
 \index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!S\+Material@{S\+Material}}
 \index{S\+Material@{S\+Material}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
-\subsubsection{\texorpdfstring{S\+Material()}{SMaterial()}}
+\subsubsection{\texorpdfstring{S\+Material()}{SMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily irr\+::video\+::\+S\+Material\+::\+S\+Material (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Material to copy from. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a66f175294b99e3cc2816e9cc0f372ce3}\label{classirr_1_1video_1_1SMaterial_a66f175294b99e3cc2816e9cc0f372ce3}} 
+\index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!S\+Material@{S\+Material}}
+\index{S\+Material@{S\+Material}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
+\subsubsection{\texorpdfstring{S\+Material()}{SMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily irr\+::video\+::\+S\+Material\+::\+S\+Material (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -131,7 +171,25 @@ Copy constructor.
 \mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a3811e59a69983b4a7fce2d8e7aaf91f1}\label{classirr_1_1video_1_1SMaterial_a3811e59a69983b4a7fce2d8e7aaf91f1}} 
 \index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!get\+Flag@{get\+Flag}}
 \index{get\+Flag@{get\+Flag}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
-\subsubsection{\texorpdfstring{get\+Flag()}{getFlag()}}
+\subsubsection{\texorpdfstring{get\+Flag()}{getFlag()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool irr\+::video\+::\+S\+Material\+::get\+Flag (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1video_a8a3bc00ae8137535b9fbc5f40add70d3}{E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+L\+AG}}]{flag }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the Material flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & The flag to query. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current value of the flag. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a3811e59a69983b4a7fce2d8e7aaf91f1}\label{classirr_1_1video_1_1SMaterial_a3811e59a69983b4a7fce2d8e7aaf91f1}} 
+\index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!get\+Flag@{get\+Flag}}
+\index{get\+Flag@{get\+Flag}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
+\subsubsection{\texorpdfstring{get\+Flag()}{getFlag()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily bool irr\+::video\+::\+S\+Material\+::get\+Flag (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1video_a8a3bc00ae8137535b9fbc5f40add70d3}{E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+L\+AG}}]{flag }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -149,7 +207,25 @@ The current value of the flag.
 \mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_ad5883da3db8087fbbb74f7bb23e82874}\label{classirr_1_1video_1_1SMaterial_ad5883da3db8087fbbb74f7bb23e82874}} 
 \index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!get\+Texture@{get\+Texture}}
 \index{get\+Texture@{get\+Texture}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
-\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classirr_1_1video_1_1ITexture}{I\+Texture}$\ast$ irr\+::video\+::\+S\+Material\+::get\+Texture (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the i-\/th texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The desired level. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Texture for texture level i, if defined, else 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_ad5883da3db8087fbbb74f7bb23e82874}\label{classirr_1_1video_1_1SMaterial_ad5883da3db8087fbbb74f7bb23e82874}} 
+\index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classirr_1_1video_1_1ITexture}{I\+Texture}$\ast$ irr\+::video\+::\+S\+Material\+::get\+Texture (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -167,8 +243,26 @@ Texture for texture level i, if defined, else 0.
 \mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a102aec38ea69a7c609edfad74b40463c}\label{classirr_1_1video_1_1SMaterial_a102aec38ea69a7c609edfad74b40463c}} 
 \index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!get\+Texture\+Matrix@{get\+Texture\+Matrix}}
 \index{get\+Texture\+Matrix@{get\+Texture\+Matrix}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
-\subsubsection{\texorpdfstring{get\+Texture\+Matrix()}{getTextureMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4}\& irr\+::video\+::\+S\+Material\+::get\+Texture\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{get\+Texture\+Matrix()}{getTextureMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4}\& irr\+::video\+::\+S\+Material\+::get\+Texture\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the texture transformation matrix for level i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The desired level. Must not be larger than M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+M\+A\+X\+\_\+\+T\+E\+X\+T\+U\+R\+ES. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Texture matrix for texture level i. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a102aec38ea69a7c609edfad74b40463c}\label{classirr_1_1video_1_1SMaterial_a102aec38ea69a7c609edfad74b40463c}} 
+\index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!get\+Texture\+Matrix@{get\+Texture\+Matrix}}
+\index{get\+Texture\+Matrix@{get\+Texture\+Matrix}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
+\subsubsection{\texorpdfstring{get\+Texture\+Matrix()}{getTextureMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4}\& irr\+::video\+::\+S\+Material\+::get\+Texture\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -185,8 +279,26 @@ Texture matrix for texture level i.
 \mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a6b0adff4b14c80da0be8e8d600252fcd}\label{classirr_1_1video_1_1SMaterial_a6b0adff4b14c80da0be8e8d600252fcd}} 
 \index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!get\+Texture\+Matrix@{get\+Texture\+Matrix}}
 \index{get\+Texture\+Matrix@{get\+Texture\+Matrix}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
-\subsubsection{\texorpdfstring{get\+Texture\+Matrix()}{getTextureMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily const \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4}\& irr\+::video\+::\+S\+Material\+::get\+Texture\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{get\+Texture\+Matrix()}{getTextureMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4}\& irr\+::video\+::\+S\+Material\+::get\+Texture\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the immutable texture transformation matrix for level i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The desired level. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Texture matrix for texture level i, or identity matrix for levels larger than M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+M\+A\+X\+\_\+\+T\+E\+X\+T\+U\+R\+ES. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a6b0adff4b14c80da0be8e8d600252fcd}\label{classirr_1_1video_1_1SMaterial_a6b0adff4b14c80da0be8e8d600252fcd}} 
+\index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!get\+Texture\+Matrix@{get\+Texture\+Matrix}}
+\index{get\+Texture\+Matrix@{get\+Texture\+Matrix}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
+\subsubsection{\texorpdfstring{get\+Texture\+Matrix()}{getTextureMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4}\& irr\+::video\+::\+S\+Material\+::get\+Texture\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -203,7 +315,25 @@ Texture matrix for texture level i, or identity matrix for levels larger than M\
 \mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_aeb4cd5880d7fbf330dc4d5cca0177407}\label{classirr_1_1video_1_1SMaterial_aeb4cd5880d7fbf330dc4d5cca0177407}} 
 \index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!operator"!=@{operator"!=}}
 \index{operator"!=@{operator"!=}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
-\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool irr\+::video\+::\+S\+Material\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&}]{b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inequality operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & Material to compare to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the materials differ, else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_aeb4cd5880d7fbf330dc4d5cca0177407}\label{classirr_1_1video_1_1SMaterial_aeb4cd5880d7fbf330dc4d5cca0177407}} 
+\index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily bool irr\+::video\+::\+S\+Material\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&}]{b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -221,7 +351,22 @@ True if the materials differ, else false.
 \mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a752ea337daa705d8d7035f0ee93d178d}\label{classirr_1_1video_1_1SMaterial_a752ea337daa705d8d7035f0ee93d178d}} 
 \index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!operator=@{operator=}}
 \index{operator=@{operator=}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
-\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material}\& irr\+::video\+::\+S\+Material\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Material to copy from. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a752ea337daa705d8d7035f0ee93d178d}\label{classirr_1_1video_1_1SMaterial_a752ea337daa705d8d7035f0ee93d178d}} 
+\index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!operator=@{operator=}}
+\index{operator=@{operator=}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material}\& irr\+::video\+::\+S\+Material\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -236,7 +381,25 @@ Assignment operator.
 \mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a32066f6f8ee564be1cabc73de1d0cb6a}\label{classirr_1_1video_1_1SMaterial_a32066f6f8ee564be1cabc73de1d0cb6a}} 
 \index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!operator==@{operator==}}
 \index{operator==@{operator==}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
-\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool irr\+::video\+::\+S\+Material\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&}]{b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Equality operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & Material to compare to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the materials are equal, else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a32066f6f8ee564be1cabc73de1d0cb6a}\label{classirr_1_1video_1_1SMaterial_a32066f6f8ee564be1cabc73de1d0cb6a}} 
+\index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!operator==@{operator==}}
+\index{operator==@{operator==}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily bool irr\+::video\+::\+S\+Material\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&}]{b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -254,7 +417,24 @@ True if the materials are equal, else false.
 \mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a460db947d8e2022c6be895b77a65bbda}\label{classirr_1_1video_1_1SMaterial_a460db947d8e2022c6be895b77a65bbda}} 
 \index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!set\+Flag@{set\+Flag}}
 \index{set\+Flag@{set\+Flag}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
-\subsubsection{\texorpdfstring{set\+Flag()}{setFlag()}}
+\subsubsection{\texorpdfstring{set\+Flag()}{setFlag()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void irr\+::video\+::\+S\+Material\+::set\+Flag (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1video_a8a3bc00ae8137535b9fbc5f40add70d3}{E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+L\+AG}}]{flag,  }\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the Material flag to the given value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & The flag to be set. \\
+\hline
+{\em value} & The new value for the flag. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a460db947d8e2022c6be895b77a65bbda}\label{classirr_1_1video_1_1SMaterial_a460db947d8e2022c6be895b77a65bbda}} 
+\index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!set\+Flag@{set\+Flag}}
+\index{set\+Flag@{set\+Flag}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
+\subsubsection{\texorpdfstring{set\+Flag()}{setFlag()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void irr\+::video\+::\+S\+Material\+::set\+Flag (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1video_a8a3bc00ae8137535b9fbc5f40add70d3}{E\+\_\+\+M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+F\+L\+AG}}]{flag,  }\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -271,7 +451,24 @@ Sets the Material flag to the given value.
 \mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a44dc38e7d4a78434d12ffd02e88e3d60}\label{classirr_1_1video_1_1SMaterial_a44dc38e7d4a78434d12ffd02e88e3d60}} 
 \index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!set\+Texture@{set\+Texture}}
 \index{set\+Texture@{set\+Texture}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
-\subsubsection{\texorpdfstring{set\+Texture()}{setTexture()}}
+\subsubsection{\texorpdfstring{set\+Texture()}{setTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void irr\+::video\+::\+S\+Material\+::set\+Texture (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{i,  }\item[{\hyperlink{classirr_1_1video_1_1ITexture}{I\+Texture} $\ast$}]{tex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the i-\/th texture. 
+
+If i$>$=M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+M\+A\+X\+\_\+\+T\+E\+X\+T\+U\+R\+ES this setting will be ignored. 
+\begin{DoxyParams}{Parameters}
+{\em i} & The desired level. \\
+\hline
+{\em tex} & Texture for texture level i. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a44dc38e7d4a78434d12ffd02e88e3d60}\label{classirr_1_1video_1_1SMaterial_a44dc38e7d4a78434d12ffd02e88e3d60}} 
+\index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!set\+Texture@{set\+Texture}}
+\index{set\+Texture@{set\+Texture}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
+\subsubsection{\texorpdfstring{set\+Texture()}{setTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void irr\+::video\+::\+S\+Material\+::set\+Texture (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{i,  }\item[{\hyperlink{classirr_1_1video_1_1ITexture}{I\+Texture} $\ast$}]{tex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -288,8 +485,25 @@ If i$>$=M\+A\+T\+E\+R\+I\+A\+L\+\_\+\+M\+A\+X\+\_\+\+T\+E\+X\+T\+U\+R\+ES this s
 \mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a6e1a89f5005226a9cecb5272ef44ba7d}\label{classirr_1_1video_1_1SMaterial_a6e1a89f5005226a9cecb5272ef44ba7d}} 
 \index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!set\+Texture\+Matrix@{set\+Texture\+Matrix}}
 \index{set\+Texture\+Matrix@{set\+Texture\+Matrix}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
-\subsubsection{\texorpdfstring{set\+Texture\+Matrix()}{setTextureMatrix()}}
-{\footnotesize\ttfamily void irr\+::video\+::\+S\+Material\+::set\+Texture\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{i,  }\item[{const \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4} \&}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{set\+Texture\+Matrix()}{setTextureMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void irr\+::video\+::\+S\+Material\+::set\+Texture\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{i,  }\item[{const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \&}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the i-\/th texture transformation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The desired level. \\
+\hline
+{\em mat} & Texture matrix for texture level i. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a6e1a89f5005226a9cecb5272ef44ba7d}\label{classirr_1_1video_1_1SMaterial_a6e1a89f5005226a9cecb5272ef44ba7d}} 
+\index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!set\+Texture\+Matrix@{set\+Texture\+Matrix}}
+\index{set\+Texture\+Matrix@{set\+Texture\+Matrix}!irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}}
+\subsubsection{\texorpdfstring{set\+Texture\+Matrix()}{setTextureMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void irr\+::video\+::\+S\+Material\+::set\+Texture\+Matrix (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{i,  }\item[{const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \&}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -443,12 +657,12 @@ The specular color of the dynamic lights (\hyperlink{structirr_1_1video_1_1SLigh
 scene::IAnimatedMeshSceneNode* node = smgr->addAnimatedMeshSceneNode(
 smgr->getMesh(\textcolor{stringliteral}{"data/faerie.md2"}));
 node->setMaterialTexture(0, driver->getTexture(\textcolor{stringliteral}{"data/Faerie2.pcx"})); \textcolor{comment}{// set diffuse texture}
-node->setMaterialFlag(\hyperlink{namespaceirr_1_1video_a8a3bc00ae8137535b9fbc5f40add70d3acea597a2692b8415486a464a7f954d34}{video::EMF\_LIGHTING}, \textcolor{keyword}{true}); \textcolor{comment}{// enable dynamic lighting}
+node->setMaterialFlag(\hyperlink{namespaceirr_1_1video_a8a3bc00ae8137535b9fbc5f40add70d3ad583050ff32bf10b7c6dd1f3c3189aa2}{video::EMF\_LIGHTING}, \textcolor{keyword}{true}); \textcolor{comment}{// enable dynamic lighting}
 node->getMaterial(0).Shininess = 20.0f; \textcolor{comment}{// set size of specular highlights}
 
 \textcolor{comment}{// add white light}
 scene::ILightSceneNode* light = smgr->addLightSceneNode(0,
-    \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core::vector3df}(5,5,5), video::SColorf(1.0f, 1.0f, 1.0f));
+    \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core::vector3df}(5,5,5), video::SColorf(1.0f, 1.0f, 1.0f));
 \end{DoxyCode}
  \mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a253c2acbafe6698e3d16b3e3a1e199ed}\label{classirr_1_1video_1_1SMaterial_a253c2acbafe6698e3d16b3e3a1e199ed}} 
 \index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!Specular\+Color@{Specular\+Color}}
@@ -486,7 +700,7 @@ material.Wireframe=\textcolor{keyword}{true}
 \end{DoxyCode}
  or
 \begin{DoxyCode}
-material.setFlag(\hyperlink{namespaceirr_1_1video_a8a3bc00ae8137535b9fbc5f40add70d3abc620823efed8d6bdbd46c8a0180893a}{EMF\_WIREFRAME}, \textcolor{keyword}{true}); 
+material.setFlag(\hyperlink{namespaceirr_1_1video_a8a3bc00ae8137535b9fbc5f40add70d3acf89a74faf666bad4b8ce8d12750e158}{EMF\_WIREFRAME}, \textcolor{keyword}{true}); 
 \end{DoxyCode}
  \mbox{\Hypertarget{classirr_1_1video_1_1SMaterial_a7e604773b2ac61ab7a15ec9afef0dabf}\label{classirr_1_1video_1_1SMaterial_a7e604773b2ac61ab7a15ec9afef0dabf}} 
 \index{irr\+::video\+::\+S\+Material@{irr\+::video\+::\+S\+Material}!Z\+Buffer@{Z\+Buffer}}

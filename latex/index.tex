@@ -10,13 +10,13 @@ A simple application, starting up the engine, loading a Quake 2 animated model f
 
 
 \begin{DoxyCode}
-\textcolor{preprocessor}{#include <\hyperlink{irrlicht_8h}{irrlicht.h}>}
+\textcolor{preprocessor}{#include <irrlicht.h>}
 \textcolor{keyword}{using namespace }\hyperlink{namespaceirr}{irr};
 
 \textcolor{keywordtype}{int} main()
 \{
  \textcolor{comment}{// start up the engine}
- \hyperlink{classirr_1_1IrrlichtDevice}{IrrlichtDevice} *device = \hyperlink{namespaceirr_abaf4d8719cc26b0d30813abf85e47c76}{createDevice}(
+ \hyperlink{classirr_1_1IrrlichtDevice}{IrrlichtDevice} *device = \hyperlink{namespaceirr_a57653fdaf6b2746b141ba2bb07d8bba6}{createDevice}(
       \hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0a19a7bf582b8ea551a9cc4937e970ba8b}{video::EDT\_DIRECT3D8},
     \hyperlink{classirr_1_1core_1_1dimension2d}{core::dimension2d<u32>}(640,480));
 
@@ -33,7 +33,7 @@ A simple application, starting up the engine, loading a Quake 2 animated model f
  \textcolor{keywordflow}{if} (node)
  \{
     node->\hyperlink{classirr_1_1scene_1_1ISceneNode_a0d5d2e05ebe08e6a432fbb4fd1d28dd0}{setMaterialTexture}(0, driver->\hyperlink{classirr_1_1video_1_1IVideoDriver_af4055165190e4adf221c6dc6f2434ea0}{getTexture}(\textcolor{stringliteral}{"texture.bmp"}));
-    node->\hyperlink{classirr_1_1scene_1_1ISceneNode_a2841d5077854b9981711a403f33762cd}{setMaterialFlag}(\hyperlink{namespaceirr_1_1video_a8a3bc00ae8137535b9fbc5f40add70d3acea597a2692b8415486a464a7f954d34}{video::EMF\_LIGHTING}, \textcolor{keyword}{false});
+    node->\hyperlink{classirr_1_1scene_1_1ISceneNode_a2841d5077854b9981711a403f33762cd}{setMaterialFlag}(\hyperlink{namespaceirr_1_1video_a8a3bc00ae8137535b9fbc5f40add70d3ad583050ff32bf10b7c6dd1f3c3189aa2}{video::EMF\_LIGHTING}, \textcolor{keyword}{false});
  \}
 
  \textcolor{comment}{// add a first person shooter style user controlled camera}

@@ -12,12 +12,17 @@ Interface of an object which can receive events.
 Inheritance diagram for irr\+:\+:I\+Event\+Receiver\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=5.847177cm]{classirr_1_1IEventReceiver}
+\includegraphics[height=11.000000cm]{classirr_1_1IEventReceiver}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classirr_1_1IEventReceiver_a4ec011612f02017d95654cf5b5d567b6}\label{classirr_1_1IEventReceiver_a4ec011612f02017d95654cf5b5d567b6}} 
+virtual \hyperlink{classirr_1_1IEventReceiver_a4ec011612f02017d95654cf5b5d567b6}{$\sim$\+I\+Event\+Receiver} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1IEventReceiver_a571f744ceffc3b4fe8a81f529163eb97}{On\+Event} (const \hyperlink{structirr_1_1SEvent}{S\+Event} \&event)=0
+\begin{DoxyCompactList}\small\item\em Called if an event happened. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1IEventReceiver_a4ec011612f02017d95654cf5b5d567b6}\label{classirr_1_1IEventReceiver_a4ec011612f02017d95654cf5b5d567b6}} 
 virtual \hyperlink{classirr_1_1IEventReceiver_a4ec011612f02017d95654cf5b5d567b6}{$\sim$\+I\+Event\+Receiver} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
@@ -34,7 +39,7 @@ Many of the engine\textquotesingle{}s classes inherit \hyperlink{classirr_1_1IEv
 \mbox{\Hypertarget{classirr_1_1IEventReceiver_a571f744ceffc3b4fe8a81f529163eb97}\label{classirr_1_1IEventReceiver_a571f744ceffc3b4fe8a81f529163eb97}} 
 \index{irr\+::\+I\+Event\+Receiver@{irr\+::\+I\+Event\+Receiver}!On\+Event@{On\+Event}}
 \index{On\+Event@{On\+Event}!irr\+::\+I\+Event\+Receiver@{irr\+::\+I\+Event\+Receiver}}
-\subsubsection{\texorpdfstring{On\+Event()}{OnEvent()}}
+\subsubsection{\texorpdfstring{On\+Event()}{OnEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily virtual bool irr\+::\+I\+Event\+Receiver\+::\+On\+Event (\begin{DoxyParamCaption}\item[{const \hyperlink{structirr_1_1SEvent}{S\+Event} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -46,7 +51,24 @@ True if the event was processed.
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{classirr_1_1gui_1_1IGUIElement_a54b1799e21722d9e6ce5b8e4bdb2e80a}{irr\+::gui\+::\+I\+G\+U\+I\+Element}, \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_af27145518f43a17f803cdea086f68f3c}{irr\+::scene\+::\+I\+Camera\+Scene\+Node}, \hyperlink{classOptionSoundReceiver_ae7c9643b12df38a45d4e3d629274019c}{Option\+Sound\+Receiver}, \hyperlink{classOptionVideoReceiver_a203025900c489eb2df12a6b3471c3caa}{Option\+Video\+Receiver}, \hyperlink{classGameMenuReceiver_af6774556abc7e3718b7bf904cc62ead0}{Game\+Menu\+Receiver}, \hyperlink{classGameNewReceiver_ad9ec097d8b46946ed1a21c24463fc0b6}{Game\+New\+Receiver}, and \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimator_aca20b841bb586cd9654464b001a7b6aa}{irr\+::scene\+::\+I\+Scene\+Node\+Animator}.
+Implemented in \hyperlink{classirr_1_1gui_1_1IGUIElement_a54b1799e21722d9e6ce5b8e4bdb2e80a}{irr\+::gui\+::\+I\+G\+U\+I\+Element}, \hyperlink{classirr_1_1gui_1_1IGUIElement_a54b1799e21722d9e6ce5b8e4bdb2e80a}{irr\+::gui\+::\+I\+G\+U\+I\+Element}, \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_af27145518f43a17f803cdea086f68f3c}{irr\+::scene\+::\+I\+Camera\+Scene\+Node}, \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_af27145518f43a17f803cdea086f68f3c}{irr\+::scene\+::\+I\+Camera\+Scene\+Node}, \hyperlink{classOptionSoundReceiver_ae7c9643b12df38a45d4e3d629274019c}{Option\+Sound\+Receiver}, \hyperlink{classOptionVideoReceiver_a203025900c489eb2df12a6b3471c3caa}{Option\+Video\+Receiver}, \hyperlink{classGameMenuReceiver_af6774556abc7e3718b7bf904cc62ead0}{Game\+Menu\+Receiver}, \hyperlink{classGameNewReceiver_ad9ec097d8b46946ed1a21c24463fc0b6}{Game\+New\+Receiver}, \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimator_aca20b841bb586cd9654464b001a7b6aa}{irr\+::scene\+::\+I\+Scene\+Node\+Animator}, and \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimator_aca20b841bb586cd9654464b001a7b6aa}{irr\+::scene\+::\+I\+Scene\+Node\+Animator}.
+
+\mbox{\Hypertarget{classirr_1_1IEventReceiver_a571f744ceffc3b4fe8a81f529163eb97}\label{classirr_1_1IEventReceiver_a571f744ceffc3b4fe8a81f529163eb97}} 
+\index{irr\+::\+I\+Event\+Receiver@{irr\+::\+I\+Event\+Receiver}!On\+Event@{On\+Event}}
+\index{On\+Event@{On\+Event}!irr\+::\+I\+Event\+Receiver@{irr\+::\+I\+Event\+Receiver}}
+\subsubsection{\texorpdfstring{On\+Event()}{OnEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::\+I\+Event\+Receiver\+::\+On\+Event (\begin{DoxyParamCaption}\item[{const \hyperlink{structirr_1_1SEvent}{S\+Event} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Called if an event happened. 
+
+Please take care that you should only return \textquotesingle{}true\textquotesingle{} when you want to {\itshape prevent} Irrlicht from processing the event any further. So \textquotesingle{}true\textquotesingle{} does mean that an event is completely done. Therefore your return value for all unprocessed events should be \textquotesingle{}false\textquotesingle{}. \begin{DoxyReturn}{Returns}
+True if the event was processed. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classirr_1_1gui_1_1IGUIElement_a54b1799e21722d9e6ce5b8e4bdb2e80a}{irr\+::gui\+::\+I\+G\+U\+I\+Element}, \hyperlink{classirr_1_1gui_1_1IGUIElement_a54b1799e21722d9e6ce5b8e4bdb2e80a}{irr\+::gui\+::\+I\+G\+U\+I\+Element}, \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_af27145518f43a17f803cdea086f68f3c}{irr\+::scene\+::\+I\+Camera\+Scene\+Node}, \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_af27145518f43a17f803cdea086f68f3c}{irr\+::scene\+::\+I\+Camera\+Scene\+Node}, \hyperlink{classOptionSoundReceiver_ae7c9643b12df38a45d4e3d629274019c}{Option\+Sound\+Receiver}, \hyperlink{classOptionVideoReceiver_a203025900c489eb2df12a6b3471c3caa}{Option\+Video\+Receiver}, \hyperlink{classGameMenuReceiver_af6774556abc7e3718b7bf904cc62ead0}{Game\+Menu\+Receiver}, \hyperlink{classGameNewReceiver_ad9ec097d8b46946ed1a21c24463fc0b6}{Game\+New\+Receiver}, \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimator_aca20b841bb586cd9654464b001a7b6aa}{irr\+::scene\+::\+I\+Scene\+Node\+Animator}, and \hyperlink{classirr_1_1scene_1_1ISceneNodeAnimator_aca20b841bb586cd9654464b001a7b6aa}{irr\+::scene\+::\+I\+Scene\+Node\+Animator}.
 
 
 

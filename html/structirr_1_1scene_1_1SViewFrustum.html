@@ -75,19 +75,49 @@ $(function() {
 <p>Defines the view frustum. That's the space visible by the camera.  
  <a href="structirr_1_1scene_1_1SViewFrustum.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="SViewFrustum_8h_source.html">SViewFrustum.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="indie__share_2controller_2include_2SViewFrustum_8h_source.html">SViewFrustum.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ae3a96797aec028717f0589e82926b9f0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0">VFPLANES</a> { <br />
-&#160;&#160;<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a33c11636c0cf3a29df16551fb3222f89">VF_FAR_PLANE</a> = 0, 
-<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0ad4e37002c2f3f5c9aa7219ca74ffb48e">VF_NEAR_PLANE</a>, 
-<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a4d611f15cd215819287e533b45715d5c">VF_LEFT_PLANE</a>, 
-<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0acc02c8b170e35f1416f1511646b051aa">VF_RIGHT_PLANE</a>, 
+&#160;&#160;<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0abebcfddceda4cc76cfe9caf3cd5b8d8b">VF_FAR_PLANE</a> = 0, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a0ffaa967a41adafef0624278de008794">VF_NEAR_PLANE</a>, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a72499be967faf81040946da69897b7a2">VF_LEFT_PLANE</a>, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a4452dc587615afa96c2ebd9bc58fd208">VF_RIGHT_PLANE</a>, 
 <br />
-&#160;&#160;<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0aa230be71193da774ddcb735ec7b10dd1">VF_BOTTOM_PLANE</a>, 
-<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0adc6f550cf3890b19837cd8f0d7b1020a">VF_TOP_PLANE</a>, 
-<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a6c3c4cb8060a23a2365cf1df46fcefd7">VF_PLANE_COUNT</a>
+&#160;&#160;<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a49c8d9c02e5b2a6ba8e712ef177073cc">VF_BOTTOM_PLANE</a>, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0afadeb5949d9e3f098427bd7985fd1969">VF_TOP_PLANE</a>, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0aa5eedad81f8586cd580eced0c7e33eed">VF_PLANE_COUNT</a>, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0abebcfddceda4cc76cfe9caf3cd5b8d8b">VF_FAR_PLANE</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a0ffaa967a41adafef0624278de008794">VF_NEAR_PLANE</a>, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a72499be967faf81040946da69897b7a2">VF_LEFT_PLANE</a>, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a4452dc587615afa96c2ebd9bc58fd208">VF_RIGHT_PLANE</a>, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a49c8d9c02e5b2a6ba8e712ef177073cc">VF_BOTTOM_PLANE</a>, 
+<br />
+&#160;&#160;<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0afadeb5949d9e3f098427bd7985fd1969">VF_TOP_PLANE</a>, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0aa5eedad81f8586cd580eced0c7e33eed">VF_PLANE_COUNT</a>
+<br />
+ }</td></tr>
+<tr class="separator:ae3a96797aec028717f0589e82926b9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a96797aec028717f0589e82926b9f0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0">VFPLANES</a> { <br />
+&#160;&#160;<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0abebcfddceda4cc76cfe9caf3cd5b8d8b">VF_FAR_PLANE</a> = 0, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a0ffaa967a41adafef0624278de008794">VF_NEAR_PLANE</a>, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a72499be967faf81040946da69897b7a2">VF_LEFT_PLANE</a>, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a4452dc587615afa96c2ebd9bc58fd208">VF_RIGHT_PLANE</a>, 
+<br />
+&#160;&#160;<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a49c8d9c02e5b2a6ba8e712ef177073cc">VF_BOTTOM_PLANE</a>, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0afadeb5949d9e3f098427bd7985fd1969">VF_TOP_PLANE</a>, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0aa5eedad81f8586cd580eced0c7e33eed">VF_PLANE_COUNT</a>, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0abebcfddceda4cc76cfe9caf3cd5b8d8b">VF_FAR_PLANE</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a0ffaa967a41adafef0624278de008794">VF_NEAR_PLANE</a>, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a72499be967faf81040946da69897b7a2">VF_LEFT_PLANE</a>, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a4452dc587615afa96c2ebd9bc58fd208">VF_RIGHT_PLANE</a>, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a49c8d9c02e5b2a6ba8e712ef177073cc">VF_BOTTOM_PLANE</a>, 
+<br />
+&#160;&#160;<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0afadeb5949d9e3f098427bd7985fd1969">VF_TOP_PLANE</a>, 
+<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0aa5eedad81f8586cd580eced0c7e33eed">VF_PLANE_COUNT</a>
 <br />
  }</td></tr>
 <tr class="separator:ae3a96797aec028717f0589e82926b9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -102,46 +132,46 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa7cfed3ee9feee79efe02d26f3b14b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy Constructor.  <a href="#aa7cfed3ee9feee79efe02d26f3b14b0c">More...</a><br /></td></tr>
 <tr class="separator:aa7cfed3ee9feee79efe02d26f3b14b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfcbb01f1e26f73ee1d9c7695302a508"><td class="memItemLeft" align="right" valign="top"><a id="acfcbb01f1e26f73ee1d9c7695302a508"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#acfcbb01f1e26f73ee1d9c7695302a508">SViewFrustum</a> (const <a class="el" href="namespaceirr_1_1core.html#a73fa92e638c5ca97efd72da307cc9b65">core::matrix4</a> &amp;mat)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#acfcbb01f1e26f73ee1d9c7695302a508">SViewFrustum</a> (const <a class="el" href="namespaceirr_1_1core.html#a4c9d4e29899535971052810954a14431">core::matrix4</a> &amp;mat)</td></tr>
 <tr class="memdesc:acfcbb01f1e26f73ee1d9c7695302a508"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constructor creates a view frustum based on a projection and/or view matrix. <br /></td></tr>
 <tr class="separator:acfcbb01f1e26f73ee1d9c7695302a508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2517bde9292aa26119d75b9ff0b92833"><td class="memItemLeft" align="right" valign="top"><a id="a2517bde9292aa26119d75b9ff0b92833"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a2517bde9292aa26119d75b9ff0b92833">setFrom</a> (const <a class="el" href="namespaceirr_1_1core.html#a73fa92e638c5ca97efd72da307cc9b65">core::matrix4</a> &amp;mat)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a2517bde9292aa26119d75b9ff0b92833">setFrom</a> (const <a class="el" href="namespaceirr_1_1core.html#a4c9d4e29899535971052810954a14431">core::matrix4</a> &amp;mat)</td></tr>
 <tr class="memdesc:a2517bde9292aa26119d75b9ff0b92833"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constructor creates a view frustum based on a projection and/or view matrix. <br /></td></tr>
 <tr class="separator:a2517bde9292aa26119d75b9ff0b92833"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeabadaf532f08ba3cb98b897ff0619f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#aeabadaf532f08ba3cb98b897ff0619f2">transform</a> (const <a class="el" href="namespaceirr_1_1core.html#a73fa92e638c5ca97efd72da307cc9b65">core::matrix4</a> &amp;mat)</td></tr>
+<tr class="memitem:aeabadaf532f08ba3cb98b897ff0619f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#aeabadaf532f08ba3cb98b897ff0619f2">transform</a> (const <a class="el" href="namespaceirr_1_1core.html#a4c9d4e29899535971052810954a14431">core::matrix4</a> &amp;mat)</td></tr>
 <tr class="memdesc:aeabadaf532f08ba3cb98b897ff0619f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">transforms the frustum by the matrix  <a href="#aeabadaf532f08ba3cb98b897ff0619f2">More...</a><br /></td></tr>
 <tr class="separator:aeabadaf532f08ba3cb98b897ff0619f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa88c3024a6d2b5dc67e53014d2632df8"><td class="memItemLeft" align="right" valign="top"><a id="aa88c3024a6d2b5dc67e53014d2632df8"></a>
-<a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#aa88c3024a6d2b5dc67e53014d2632df8">getFarLeftUp</a> () const</td></tr>
+<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#aa88c3024a6d2b5dc67e53014d2632df8">getFarLeftUp</a> () const</td></tr>
 <tr class="memdesc:aa88c3024a6d2b5dc67e53014d2632df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the point which is on the far left upper corner inside the the view frustum. <br /></td></tr>
 <tr class="separator:aa88c3024a6d2b5dc67e53014d2632df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83216ce3be2990e7e4849bf985d89fd6"><td class="memItemLeft" align="right" valign="top"><a id="a83216ce3be2990e7e4849bf985d89fd6"></a>
-<a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a83216ce3be2990e7e4849bf985d89fd6">getFarLeftDown</a> () const</td></tr>
+<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a83216ce3be2990e7e4849bf985d89fd6">getFarLeftDown</a> () const</td></tr>
 <tr class="memdesc:a83216ce3be2990e7e4849bf985d89fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the point which is on the far left bottom corner inside the the view frustum. <br /></td></tr>
 <tr class="separator:a83216ce3be2990e7e4849bf985d89fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cce344ced4939aebfe3c9d9396cb4ec"><td class="memItemLeft" align="right" valign="top"><a id="a2cce344ced4939aebfe3c9d9396cb4ec"></a>
-<a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a2cce344ced4939aebfe3c9d9396cb4ec">getFarRightUp</a> () const</td></tr>
+<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a2cce344ced4939aebfe3c9d9396cb4ec">getFarRightUp</a> () const</td></tr>
 <tr class="memdesc:a2cce344ced4939aebfe3c9d9396cb4ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the point which is on the far right top corner inside the the view frustum. <br /></td></tr>
 <tr class="separator:a2cce344ced4939aebfe3c9d9396cb4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1bf1b3cf323812ed4259268ce7ecf76"><td class="memItemLeft" align="right" valign="top"><a id="ab1bf1b3cf323812ed4259268ce7ecf76"></a>
-<a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ab1bf1b3cf323812ed4259268ce7ecf76">getFarRightDown</a> () const</td></tr>
+<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ab1bf1b3cf323812ed4259268ce7ecf76">getFarRightDown</a> () const</td></tr>
 <tr class="memdesc:ab1bf1b3cf323812ed4259268ce7ecf76"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the point which is on the far right bottom corner inside the the view frustum. <br /></td></tr>
 <tr class="separator:ab1bf1b3cf323812ed4259268ce7ecf76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2fae0821834125e0d34bb2fab27c643"><td class="memItemLeft" align="right" valign="top"><a id="ae2fae0821834125e0d34bb2fab27c643"></a>
-<a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae2fae0821834125e0d34bb2fab27c643">getNearLeftUp</a> () const</td></tr>
+<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae2fae0821834125e0d34bb2fab27c643">getNearLeftUp</a> () const</td></tr>
 <tr class="memdesc:ae2fae0821834125e0d34bb2fab27c643"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the point which is on the near left upper corner inside the the view frustum. <br /></td></tr>
 <tr class="separator:ae2fae0821834125e0d34bb2fab27c643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae73eb80d9fe631b8795bb9f9afdf5eff"><td class="memItemLeft" align="right" valign="top"><a id="ae73eb80d9fe631b8795bb9f9afdf5eff"></a>
-<a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae73eb80d9fe631b8795bb9f9afdf5eff">getNearLeftDown</a> () const</td></tr>
+<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae73eb80d9fe631b8795bb9f9afdf5eff">getNearLeftDown</a> () const</td></tr>
 <tr class="memdesc:ae73eb80d9fe631b8795bb9f9afdf5eff"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the point which is on the near left bottom corner inside the the view frustum. <br /></td></tr>
 <tr class="separator:ae73eb80d9fe631b8795bb9f9afdf5eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a498ea58e0ce6c52e655aa9d7fe387b84"><td class="memItemLeft" align="right" valign="top"><a id="a498ea58e0ce6c52e655aa9d7fe387b84"></a>
-<a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a498ea58e0ce6c52e655aa9d7fe387b84">getNearRightUp</a> () const</td></tr>
+<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a498ea58e0ce6c52e655aa9d7fe387b84">getNearRightUp</a> () const</td></tr>
 <tr class="memdesc:a498ea58e0ce6c52e655aa9d7fe387b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the point which is on the near right top corner inside the the view frustum. <br /></td></tr>
 <tr class="separator:a498ea58e0ce6c52e655aa9d7fe387b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6143916b2000537b33834cfb9aa898fa"><td class="memItemLeft" align="right" valign="top"><a id="a6143916b2000537b33834cfb9aa898fa"></a>
-<a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a6143916b2000537b33834cfb9aa898fa">getNearRightDown</a> () const</td></tr>
+<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a6143916b2000537b33834cfb9aa898fa">getNearRightDown</a> () const</td></tr>
 <tr class="memdesc:a6143916b2000537b33834cfb9aa898fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the point which is on the near right bottom corner inside the the view frustum. <br /></td></tr>
 <tr class="separator:a6143916b2000537b33834cfb9aa898fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b7fd2736250d34ff399bc17d66867c0"><td class="memItemLeft" align="right" valign="top"><a id="a1b7fd2736250d34ff399bc17d66867c0"></a>
@@ -152,12 +182,82 @@ const <a class="el" href="classirr_1_1core_1_1aabbox3d.html">core::aabbox3d</a>&
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a458eb19a23bcad50da0f9d3163e3621b">recalculateBoundingBox</a> ()</td></tr>
 <tr class="memdesc:a458eb19a23bcad50da0f9d3163e3621b"><td class="mdescLeft">&#160;</td><td class="mdescRight">recalculates the bounding box member based on the planes <br /></td></tr>
 <tr class="separator:a458eb19a23bcad50da0f9d3163e3621b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf8edd203e7479d2b444ed548075ffa6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceirr_1_1core.html#a73fa92e638c5ca97efd72da307cc9b65">core::matrix4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#acf8edd203e7479d2b444ed548075ffa6">getTransform</a> (<a class="el" href="namespaceirr_1_1video.html#a15b57657a320243be03ae6f66fcff43d">video::E_TRANSFORMATION_STATE</a> state)</td></tr>
+<tr class="memitem:acf8edd203e7479d2b444ed548075ffa6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceirr_1_1core.html#a4c9d4e29899535971052810954a14431">core::matrix4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#acf8edd203e7479d2b444ed548075ffa6">getTransform</a> (<a class="el" href="namespaceirr_1_1video.html#a15b57657a320243be03ae6f66fcff43d">video::E_TRANSFORMATION_STATE</a> state)</td></tr>
 <tr class="memdesc:acf8edd203e7479d2b444ed548075ffa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the given state's matrix based on frustum E_TRANSFORMATION_STATE  <a href="#acf8edd203e7479d2b444ed548075ffa6">More...</a><br /></td></tr>
 <tr class="separator:acf8edd203e7479d2b444ed548075ffa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9afbd4a90f330de3fde6b534da3920f8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceirr_1_1core.html#a73fa92e638c5ca97efd72da307cc9b65">core::matrix4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a9afbd4a90f330de3fde6b534da3920f8">getTransform</a> (<a class="el" href="namespaceirr_1_1video.html#a15b57657a320243be03ae6f66fcff43d">video::E_TRANSFORMATION_STATE</a> state) const</td></tr>
+<tr class="memitem:a9afbd4a90f330de3fde6b534da3920f8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceirr_1_1core.html#a4c9d4e29899535971052810954a14431">core::matrix4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a9afbd4a90f330de3fde6b534da3920f8">getTransform</a> (<a class="el" href="namespaceirr_1_1video.html#a15b57657a320243be03ae6f66fcff43d">video::E_TRANSFORMATION_STATE</a> state) const</td></tr>
 <tr class="memdesc:a9afbd4a90f330de3fde6b534da3920f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the given state's matrix based on frustum E_TRANSFORMATION_STATE  <a href="#a9afbd4a90f330de3fde6b534da3920f8">More...</a><br /></td></tr>
 <tr class="separator:a9afbd4a90f330de3fde6b534da3920f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d4a42afc55dde3b193ad0b1311f9dfe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a8d4a42afc55dde3b193ad0b1311f9dfe">clipLine</a> (<a class="el" href="classirr_1_1core_1_1line3d.html">core::line3d</a>&lt; <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> &gt; &amp;line) const</td></tr>
+<tr class="memdesc:a8d4a42afc55dde3b193ad0b1311f9dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">clips a line to the view frustum.  <a href="#a8d4a42afc55dde3b193ad0b1311f9dfe">More...</a><br /></td></tr>
+<tr class="separator:a8d4a42afc55dde3b193ad0b1311f9dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7052e88c612bd1239115929e94e6210d"><td class="memItemLeft" align="right" valign="top"><a id="a7052e88c612bd1239115929e94e6210d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a7052e88c612bd1239115929e94e6210d">SViewFrustum</a> ()</td></tr>
+<tr class="memdesc:a7052e88c612bd1239115929e94e6210d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Constructor. <br /></td></tr>
+<tr class="separator:a7052e88c612bd1239115929e94e6210d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7cfed3ee9feee79efe02d26f3b14b0c"><td class="memItemLeft" align="right" valign="top"><a id="aa7cfed3ee9feee79efe02d26f3b14b0c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#aa7cfed3ee9feee79efe02d26f3b14b0c">SViewFrustum</a> (const <a class="el" href="structirr_1_1scene_1_1SViewFrustum.html">SViewFrustum</a> &amp;other)</td></tr>
+<tr class="memdesc:aa7cfed3ee9feee79efe02d26f3b14b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy Constructor. <br /></td></tr>
+<tr class="separator:aa7cfed3ee9feee79efe02d26f3b14b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfcbb01f1e26f73ee1d9c7695302a508"><td class="memItemLeft" align="right" valign="top"><a id="acfcbb01f1e26f73ee1d9c7695302a508"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#acfcbb01f1e26f73ee1d9c7695302a508">SViewFrustum</a> (const <a class="el" href="namespaceirr_1_1core.html#a4c9d4e29899535971052810954a14431">core::matrix4</a> &amp;mat)</td></tr>
+<tr class="memdesc:acfcbb01f1e26f73ee1d9c7695302a508"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constructor creates a view frustum based on a projection and/or view matrix. <br /></td></tr>
+<tr class="separator:acfcbb01f1e26f73ee1d9c7695302a508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2517bde9292aa26119d75b9ff0b92833"><td class="memItemLeft" align="right" valign="top"><a id="a2517bde9292aa26119d75b9ff0b92833"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a2517bde9292aa26119d75b9ff0b92833">setFrom</a> (const <a class="el" href="namespaceirr_1_1core.html#a4c9d4e29899535971052810954a14431">core::matrix4</a> &amp;mat)</td></tr>
+<tr class="memdesc:a2517bde9292aa26119d75b9ff0b92833"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constructor creates a view frustum based on a projection and/or view matrix. <br /></td></tr>
+<tr class="separator:a2517bde9292aa26119d75b9ff0b92833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeabadaf532f08ba3cb98b897ff0619f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#aeabadaf532f08ba3cb98b897ff0619f2">transform</a> (const <a class="el" href="namespaceirr_1_1core.html#a4c9d4e29899535971052810954a14431">core::matrix4</a> &amp;mat)</td></tr>
+<tr class="memdesc:aeabadaf532f08ba3cb98b897ff0619f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">transforms the frustum by the matrix  <a href="#aeabadaf532f08ba3cb98b897ff0619f2">More...</a><br /></td></tr>
+<tr class="separator:aeabadaf532f08ba3cb98b897ff0619f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88c3024a6d2b5dc67e53014d2632df8"><td class="memItemLeft" align="right" valign="top"><a id="aa88c3024a6d2b5dc67e53014d2632df8"></a>
+<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#aa88c3024a6d2b5dc67e53014d2632df8">getFarLeftUp</a> () const</td></tr>
+<tr class="memdesc:aa88c3024a6d2b5dc67e53014d2632df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the point which is on the far left upper corner inside the the view frustum. <br /></td></tr>
+<tr class="separator:aa88c3024a6d2b5dc67e53014d2632df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83216ce3be2990e7e4849bf985d89fd6"><td class="memItemLeft" align="right" valign="top"><a id="a83216ce3be2990e7e4849bf985d89fd6"></a>
+<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a83216ce3be2990e7e4849bf985d89fd6">getFarLeftDown</a> () const</td></tr>
+<tr class="memdesc:a83216ce3be2990e7e4849bf985d89fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the point which is on the far left bottom corner inside the the view frustum. <br /></td></tr>
+<tr class="separator:a83216ce3be2990e7e4849bf985d89fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cce344ced4939aebfe3c9d9396cb4ec"><td class="memItemLeft" align="right" valign="top"><a id="a2cce344ced4939aebfe3c9d9396cb4ec"></a>
+<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a2cce344ced4939aebfe3c9d9396cb4ec">getFarRightUp</a> () const</td></tr>
+<tr class="memdesc:a2cce344ced4939aebfe3c9d9396cb4ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the point which is on the far right top corner inside the the view frustum. <br /></td></tr>
+<tr class="separator:a2cce344ced4939aebfe3c9d9396cb4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1bf1b3cf323812ed4259268ce7ecf76"><td class="memItemLeft" align="right" valign="top"><a id="ab1bf1b3cf323812ed4259268ce7ecf76"></a>
+<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ab1bf1b3cf323812ed4259268ce7ecf76">getFarRightDown</a> () const</td></tr>
+<tr class="memdesc:ab1bf1b3cf323812ed4259268ce7ecf76"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the point which is on the far right bottom corner inside the the view frustum. <br /></td></tr>
+<tr class="separator:ab1bf1b3cf323812ed4259268ce7ecf76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2fae0821834125e0d34bb2fab27c643"><td class="memItemLeft" align="right" valign="top"><a id="ae2fae0821834125e0d34bb2fab27c643"></a>
+<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae2fae0821834125e0d34bb2fab27c643">getNearLeftUp</a> () const</td></tr>
+<tr class="memdesc:ae2fae0821834125e0d34bb2fab27c643"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the point which is on the near left upper corner inside the the view frustum. <br /></td></tr>
+<tr class="separator:ae2fae0821834125e0d34bb2fab27c643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73eb80d9fe631b8795bb9f9afdf5eff"><td class="memItemLeft" align="right" valign="top"><a id="ae73eb80d9fe631b8795bb9f9afdf5eff"></a>
+<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae73eb80d9fe631b8795bb9f9afdf5eff">getNearLeftDown</a> () const</td></tr>
+<tr class="memdesc:ae73eb80d9fe631b8795bb9f9afdf5eff"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the point which is on the near left bottom corner inside the the view frustum. <br /></td></tr>
+<tr class="separator:ae73eb80d9fe631b8795bb9f9afdf5eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a498ea58e0ce6c52e655aa9d7fe387b84"><td class="memItemLeft" align="right" valign="top"><a id="a498ea58e0ce6c52e655aa9d7fe387b84"></a>
+<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a498ea58e0ce6c52e655aa9d7fe387b84">getNearRightUp</a> () const</td></tr>
+<tr class="memdesc:a498ea58e0ce6c52e655aa9d7fe387b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the point which is on the near right top corner inside the the view frustum. <br /></td></tr>
+<tr class="separator:a498ea58e0ce6c52e655aa9d7fe387b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6143916b2000537b33834cfb9aa898fa"><td class="memItemLeft" align="right" valign="top"><a id="a6143916b2000537b33834cfb9aa898fa"></a>
+<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a6143916b2000537b33834cfb9aa898fa">getNearRightDown</a> () const</td></tr>
+<tr class="memdesc:a6143916b2000537b33834cfb9aa898fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the point which is on the near right bottom corner inside the the view frustum. <br /></td></tr>
+<tr class="separator:a6143916b2000537b33834cfb9aa898fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc58cc7eb251b6911a68c5633acb7f7"><td class="memItemLeft" align="right" valign="top"><a id="a4cc58cc7eb251b6911a68c5633acb7f7"></a>
+const <a class="el" href="classirr_1_1core_1_1aabbox3d.html">core::aabbox3d</a>&lt; <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a4cc58cc7eb251b6911a68c5633acb7f7">getBoundingBox</a> () const</td></tr>
+<tr class="memdesc:a4cc58cc7eb251b6911a68c5633acb7f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a bounding box enclosing the whole view frustum <br /></td></tr>
+<tr class="separator:a4cc58cc7eb251b6911a68c5633acb7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a458eb19a23bcad50da0f9d3163e3621b"><td class="memItemLeft" align="right" valign="top"><a id="a458eb19a23bcad50da0f9d3163e3621b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a458eb19a23bcad50da0f9d3163e3621b">recalculateBoundingBox</a> ()</td></tr>
+<tr class="memdesc:a458eb19a23bcad50da0f9d3163e3621b"><td class="mdescLeft">&#160;</td><td class="mdescRight">recalculates the bounding box member based on the planes <br /></td></tr>
+<tr class="separator:a458eb19a23bcad50da0f9d3163e3621b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09f990be73e386e0a2acedf2e647f695"><td class="memItemLeft" align="right" valign="top"><a id="a09f990be73e386e0a2acedf2e647f695"></a>
+<a class="el" href="namespaceirr_1_1core.html#a4c9d4e29899535971052810954a14431">core::matrix4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a09f990be73e386e0a2acedf2e647f695">getTransform</a> (<a class="el" href="namespaceirr_1_1video.html#a15b57657a320243be03ae6f66fcff43d">video::E_TRANSFORMATION_STATE</a> state)</td></tr>
+<tr class="memdesc:a09f990be73e386e0a2acedf2e647f695"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the given state's matrix based on frustum E_TRANSFORMATION_STATE <br /></td></tr>
+<tr class="separator:a09f990be73e386e0a2acedf2e647f695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad663508eeee5cf4996a91a6bc926bea2"><td class="memItemLeft" align="right" valign="top"><a id="ad663508eeee5cf4996a91a6bc926bea2"></a>
+const <a class="el" href="namespaceirr_1_1core.html#a4c9d4e29899535971052810954a14431">core::matrix4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ad663508eeee5cf4996a91a6bc926bea2">getTransform</a> (<a class="el" href="namespaceirr_1_1video.html#a15b57657a320243be03ae6f66fcff43d">video::E_TRANSFORMATION_STATE</a> state) const</td></tr>
+<tr class="memdesc:ad663508eeee5cf4996a91a6bc926bea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the given state's matrix based on frustum E_TRANSFORMATION_STATE <br /></td></tr>
+<tr class="separator:ad663508eeee5cf4996a91a6bc926bea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d4a42afc55dde3b193ad0b1311f9dfe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a8d4a42afc55dde3b193ad0b1311f9dfe">clipLine</a> (<a class="el" href="classirr_1_1core_1_1line3d.html">core::line3d</a>&lt; <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> &gt; &amp;line) const</td></tr>
 <tr class="memdesc:a8d4a42afc55dde3b193ad0b1311f9dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">clips a line to the view frustum.  <a href="#a8d4a42afc55dde3b193ad0b1311f9dfe">More...</a><br /></td></tr>
 <tr class="separator:a8d4a42afc55dde3b193ad0b1311f9dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,24 +265,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a77726fa084f416d69f058a7b2f887545"><td class="memItemLeft" align="right" valign="top"><a id="a77726fa084f416d69f058a7b2f887545"></a>
-<a class="el" href="namespaceirr_1_1core.html#a06f169d08b5c429f5575acb7edbad811">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a77726fa084f416d69f058a7b2f887545">cameraPosition</a></td></tr>
+<a class="el" href="namespaceirr_1_1core.html#ae6e2b2a6c552833ebbd5b7463d03586b">core::vector3df</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a77726fa084f416d69f058a7b2f887545">cameraPosition</a></td></tr>
 <tr class="memdesc:a77726fa084f416d69f058a7b2f887545"><td class="mdescLeft">&#160;</td><td class="mdescRight">the position of the camera <br /></td></tr>
 <tr class="separator:a77726fa084f416d69f058a7b2f887545"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa59258f22c23b6f1dc4bcaff142dba2"><td class="memItemLeft" align="right" valign="top"><a id="afa59258f22c23b6f1dc4bcaff142dba2"></a>
-<a class="el" href="classirr_1_1core_1_1plane3d.html">core::plane3d</a>&lt; <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#afa59258f22c23b6f1dc4bcaff142dba2">planes</a> [<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0a6c3c4cb8060a23a2365cf1df46fcefd7">VF_PLANE_COUNT</a>]</td></tr>
-<tr class="memdesc:afa59258f22c23b6f1dc4bcaff142dba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">all planes enclosing the view frustum. <br /></td></tr>
-<tr class="separator:afa59258f22c23b6f1dc4bcaff142dba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4c8605ad3494093e3e5860e0332fe8a"><td class="memItemLeft" align="right" valign="top"><a id="ad4c8605ad3494093e3e5860e0332fe8a"></a>
-<a class="el" href="classirr_1_1core_1_1aabbox3d.html">core::aabbox3d</a>&lt; <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ad4c8605ad3494093e3e5860e0332fe8a">boundingBox</a></td></tr>
-<tr class="memdesc:ad4c8605ad3494093e3e5860e0332fe8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">bounding box around the view frustum <br /></td></tr>
-<tr class="separator:ad4c8605ad3494093e3e5860e0332fe8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab525201a382d1e43c6c29cf32c1c2c"><td class="memItemLeft" align="right" valign="top"><a id="adab525201a382d1e43c6c29cf32c1c2c"></a>
+<a class="el" href="classirr_1_1core_1_1plane3d.html">core::plane3d</a>&lt; <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#adab525201a382d1e43c6c29cf32c1c2c">planes</a> [<a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0aa5eedad81f8586cd580eced0c7e33eed">VF_PLANE_COUNT</a>]</td></tr>
+<tr class="memdesc:adab525201a382d1e43c6c29cf32c1c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">all planes enclosing the view frustum. <br /></td></tr>
+<tr class="separator:adab525201a382d1e43c6c29cf32c1c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f0e146026122b6a3a40b8846275dc7"><td class="memItemLeft" align="right" valign="top"><a id="a32f0e146026122b6a3a40b8846275dc7"></a>
+<a class="el" href="classirr_1_1core_1_1aabbox3d.html">core::aabbox3d</a>&lt; <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#a32f0e146026122b6a3a40b8846275dc7">boundingBox</a></td></tr>
+<tr class="memdesc:a32f0e146026122b6a3a40b8846275dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">bounding box around the view frustum <br /></td></tr>
+<tr class="separator:a32f0e146026122b6a3a40b8846275dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines the view frustum. That's the space visible by the camera. </p>
 <p>The view frustum is enclosed by 6 planes. These six planes share eight points. A bounding box around these eight points is also stored in this structure. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ae3a96797aec028717f0589e82926b9f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3a96797aec028717f0589e82926b9f0">&#9670;&nbsp;</a></span>VFPLANES</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3a96797aec028717f0589e82926b9f0">&#9670;&nbsp;</a></span>VFPLANES <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,19 +293,77 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a33c11636c0cf3a29df16551fb3222f89"></a>VF_FAR_PLANE&#160;</td><td class="fielddoc"><p>Far plane of the frustum. That is the plane farest away from the eye. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0abebcfddceda4cc76cfe9caf3cd5b8d8b"></a>VF_FAR_PLANE&#160;</td><td class="fielddoc"><p>Far plane of the frustum. That is the plane farest away from the eye. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0ad4e37002c2f3f5c9aa7219ca74ffb48e"></a>VF_NEAR_PLANE&#160;</td><td class="fielddoc"><p>Near plane of the frustum. That is the plane nearest to the eye. </p>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a0ffaa967a41adafef0624278de008794"></a>VF_NEAR_PLANE&#160;</td><td class="fielddoc"><p>Near plane of the frustum. That is the plane nearest to the eye. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a4d611f15cd215819287e533b45715d5c"></a>VF_LEFT_PLANE&#160;</td><td class="fielddoc"><p>Left plane of the frustum. </p>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a72499be967faf81040946da69897b7a2"></a>VF_LEFT_PLANE&#160;</td><td class="fielddoc"><p>Left plane of the frustum. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0acc02c8b170e35f1416f1511646b051aa"></a>VF_RIGHT_PLANE&#160;</td><td class="fielddoc"><p>Right plane of the frustum. </p>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a4452dc587615afa96c2ebd9bc58fd208"></a>VF_RIGHT_PLANE&#160;</td><td class="fielddoc"><p>Right plane of the frustum. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0aa230be71193da774ddcb735ec7b10dd1"></a>VF_BOTTOM_PLANE&#160;</td><td class="fielddoc"><p>Bottom plane of the frustum. </p>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a49c8d9c02e5b2a6ba8e712ef177073cc"></a>VF_BOTTOM_PLANE&#160;</td><td class="fielddoc"><p>Bottom plane of the frustum. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0adc6f550cf3890b19837cd8f0d7b1020a"></a>VF_TOP_PLANE&#160;</td><td class="fielddoc"><p>Top plane of the frustum. </p>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0afadeb5949d9e3f098427bd7985fd1969"></a>VF_TOP_PLANE&#160;</td><td class="fielddoc"><p>Top plane of the frustum. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a6c3c4cb8060a23a2365cf1df46fcefd7"></a>VF_PLANE_COUNT&#160;</td><td class="fielddoc"><p>Amount of planes enclosing the view frustum. Should be 6. </p>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0aa5eedad81f8586cd580eced0c7e33eed"></a>VF_PLANE_COUNT&#160;</td><td class="fielddoc"><p>Amount of planes enclosing the view frustum. Should be 6. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0abebcfddceda4cc76cfe9caf3cd5b8d8b"></a>VF_FAR_PLANE&#160;</td><td class="fielddoc"><p>Far plane of the frustum. That is the plane farest away from the eye. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a0ffaa967a41adafef0624278de008794"></a>VF_NEAR_PLANE&#160;</td><td class="fielddoc"><p>Near plane of the frustum. That is the plane nearest to the eye. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a72499be967faf81040946da69897b7a2"></a>VF_LEFT_PLANE&#160;</td><td class="fielddoc"><p>Left plane of the frustum. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a4452dc587615afa96c2ebd9bc58fd208"></a>VF_RIGHT_PLANE&#160;</td><td class="fielddoc"><p>Right plane of the frustum. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a49c8d9c02e5b2a6ba8e712ef177073cc"></a>VF_BOTTOM_PLANE&#160;</td><td class="fielddoc"><p>Bottom plane of the frustum. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0afadeb5949d9e3f098427bd7985fd1969"></a>VF_TOP_PLANE&#160;</td><td class="fielddoc"><p>Top plane of the frustum. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0aa5eedad81f8586cd580eced0c7e33eed"></a>VF_PLANE_COUNT&#160;</td><td class="fielddoc"><p>Amount of planes enclosing the view frustum. Should be 6. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ae3a96797aec028717f0589e82926b9f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3a96797aec028717f0589e82926b9f0">&#9670;&nbsp;</a></span>VFPLANES <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="structirr_1_1scene_1_1SViewFrustum.html#ae3a96797aec028717f0589e82926b9f0">irr::scene::SViewFrustum::VFPLANES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0abebcfddceda4cc76cfe9caf3cd5b8d8b"></a>VF_FAR_PLANE&#160;</td><td class="fielddoc"><p>Far plane of the frustum. That is the plane farest away from the eye. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a0ffaa967a41adafef0624278de008794"></a>VF_NEAR_PLANE&#160;</td><td class="fielddoc"><p>Near plane of the frustum. That is the plane nearest to the eye. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a72499be967faf81040946da69897b7a2"></a>VF_LEFT_PLANE&#160;</td><td class="fielddoc"><p>Left plane of the frustum. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a4452dc587615afa96c2ebd9bc58fd208"></a>VF_RIGHT_PLANE&#160;</td><td class="fielddoc"><p>Right plane of the frustum. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a49c8d9c02e5b2a6ba8e712ef177073cc"></a>VF_BOTTOM_PLANE&#160;</td><td class="fielddoc"><p>Bottom plane of the frustum. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0afadeb5949d9e3f098427bd7985fd1969"></a>VF_TOP_PLANE&#160;</td><td class="fielddoc"><p>Top plane of the frustum. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0aa5eedad81f8586cd580eced0c7e33eed"></a>VF_PLANE_COUNT&#160;</td><td class="fielddoc"><p>Amount of planes enclosing the view frustum. Should be 6. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0abebcfddceda4cc76cfe9caf3cd5b8d8b"></a>VF_FAR_PLANE&#160;</td><td class="fielddoc"><p>Far plane of the frustum. That is the plane farest away from the eye. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a0ffaa967a41adafef0624278de008794"></a>VF_NEAR_PLANE&#160;</td><td class="fielddoc"><p>Near plane of the frustum. That is the plane nearest to the eye. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a72499be967faf81040946da69897b7a2"></a>VF_LEFT_PLANE&#160;</td><td class="fielddoc"><p>Left plane of the frustum. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a4452dc587615afa96c2ebd9bc58fd208"></a>VF_RIGHT_PLANE&#160;</td><td class="fielddoc"><p>Right plane of the frustum. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0a49c8d9c02e5b2a6ba8e712ef177073cc"></a>VF_BOTTOM_PLANE&#160;</td><td class="fielddoc"><p>Bottom plane of the frustum. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0afadeb5949d9e3f098427bd7985fd1969"></a>VF_TOP_PLANE&#160;</td><td class="fielddoc"><p>Top plane of the frustum. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae3a96797aec028717f0589e82926b9f0aa5eedad81f8586cd580eced0c7e33eed"></a>VF_PLANE_COUNT&#160;</td><td class="fielddoc"><p>Amount of planes enclosing the view frustum. Should be 6. </p>
 </td></tr>
 </table>
 
@@ -243,7 +401,7 @@ Public Attributes</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8d4a42afc55dde3b193ad0b1311f9dfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d4a42afc55dde3b193ad0b1311f9dfe">&#9670;&nbsp;</a></span>clipLine()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d4a42afc55dde3b193ad0b1311f9dfe">&#9670;&nbsp;</a></span>clipLine() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -272,6 +430,27 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a8d4a42afc55dde3b193ad0b1311f9dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d4a42afc55dde3b193ad0b1311f9dfe">&#9670;&nbsp;</a></span>clipLine() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool irr::scene::SViewFrustum::clipLine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classirr_1_1core_1_1line3d.html">core::line3d</a>&lt; <a class="el" href="namespaceirr.html#a0277be98d67dc26ff93b1a6a1d086b07">f32</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>line</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>clips a line to the view frustum. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the line was clipped, false if not </dd></dl>
+
+</div>
+</div>
 <a id="acf8edd203e7479d2b444ed548075ffa6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acf8edd203e7479d2b444ed548075ffa6">&#9670;&nbsp;</a></span>getTransform() <span class="overload">[1/2]</span></h2>
 
@@ -282,7 +461,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceirr_1_1core.html#a73fa92e638c5ca97efd72da307cc9b65">core::matrix4</a> &amp; irr::scene::SViewFrustum::getTransform </td>
+          <td class="memname"><a class="el" href="namespaceirr_1_1core.html#a4c9d4e29899535971052810954a14431">core::matrix4</a> &amp; irr::scene::SViewFrustum::getTransform </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceirr_1_1video.html#a15b57657a320243be03ae6f66fcff43d">video::E_TRANSFORMATION_STATE</a>&#160;</td>
           <td class="paramname"><em>state</em></td><td>)</td>
@@ -311,7 +490,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="namespaceirr_1_1core.html#a73fa92e638c5ca97efd72da307cc9b65">core::matrix4</a> &amp; irr::scene::SViewFrustum::getTransform </td>
+          <td class="memname">const <a class="el" href="namespaceirr_1_1core.html#a4c9d4e29899535971052810954a14431">core::matrix4</a> &amp; irr::scene::SViewFrustum::getTransform </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceirr_1_1video.html#a15b57657a320243be03ae6f66fcff43d">video::E_TRANSFORMATION_STATE</a>&#160;</td>
           <td class="paramname"><em>state</em></td><td>)</td>
@@ -331,7 +510,33 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="aeabadaf532f08ba3cb98b897ff0619f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeabadaf532f08ba3cb98b897ff0619f2">&#9670;&nbsp;</a></span>transform()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeabadaf532f08ba3cb98b897ff0619f2">&#9670;&nbsp;</a></span>transform() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void irr::scene::SViewFrustum::transform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a4c9d4e29899535971052810954a14431">core::matrix4</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>transforms the frustum by the matrix </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>Matrix by which the view frustum is transformed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeabadaf532f08ba3cb98b897ff0619f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeabadaf532f08ba3cb98b897ff0619f2">&#9670;&nbsp;</a></span>transform() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -342,7 +547,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void irr::scene::SViewFrustum::transform </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a73fa92e638c5ca97efd72da307cc9b65">core::matrix4</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceirr_1_1core.html#a4c9d4e29899535971052810954a14431">core::matrix4</a> &amp;&#160;</td>
           <td class="paramname"><em>mat</em></td><td>)</td>
           <td></td>
         </tr>
@@ -365,7 +570,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>indie_share/controller/include/<a class="el" href="SViewFrustum_8h_source.html">SViewFrustum.h</a></li>
+<li>indie_share/controller/include/<a class="el" href="indie__share_2controller_2include_2SViewFrustum_8h_source.html">SViewFrustum.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

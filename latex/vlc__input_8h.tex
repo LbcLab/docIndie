@@ -1,0 +1,229 @@
+\hypertarget{vlc__input_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+input.h File Reference}
+\label{vlc__input_8h}\index{lib/include/vlc/plugins/vlc\+\_\+input.\+h@{lib/include/vlc/plugins/vlc\+\_\+input.\+h}}
+{\ttfamily \#include $<$vlc\+\_\+es.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+meta.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+epg.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+events.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+input\+\_\+item.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+vout\+\_\+osd.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structinput__thread__t}{input\+\_\+thread\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vlc__input_8h_a7a3aa0997c538539af76ed182fdaca98}{I\+N\+P\+U\+T\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+P\+R\+E\+F\+IX}~\char`\"{}vlc-\/record-\/\%Y-\/\%m-\/\%d-\/\%Hh\%Mm\%Ss-\/\$ N-\/\$ p\char`\"{}
+\item 
+\#define \hyperlink{vlc__input_8h_a3b545c60e0490722c8a507d5a29cb945}{I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+D\+E\+F\+A\+U\+LT}~1000
+\item 
+\#define \hyperlink{vlc__input_8h_a7ecfc916204c1fa9686cf9411c5507ff}{I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+IN}~32            /$\ast$ Up to 32/1 $\ast$/
+\item 
+\#define \hyperlink{vlc__input_8h_a0d13008429b6e80cc5d5a7f6b8ddb337}{I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+AX}~32000            /$\ast$ Up to 1/32 $\ast$/
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{vlc__input_8h_a23c2376c08da097a930a83199de4815a}{input\+\_\+thread\+\_\+private\+\_\+t} \hyperlink{vlc__input_8h_a23c2376c08da097a930a83199de4815a}{input\+\_\+thread\+\_\+private\+\_\+t}
+\item 
+typedef struct \hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t} \hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t}
+\item 
+typedef enum \hyperlink{vlc__input_8h_a50f8cb1c3cdf6bfc02752c1d41b723b4}{input\+\_\+state\+\_\+e} \hyperlink{vlc__input_8h_a158f30c7fe25669dd399e71e5924ae3f}{input\+\_\+state\+\_\+e}
+\item 
+typedef enum \hyperlink{vlc__input_8h_a4a3eb08df7f1209edd1edb4f0ed9242f}{input\+\_\+event\+\_\+type\+\_\+e} \hyperlink{vlc__input_8h_aef4f5ce234f96b30585ef75d40bdf193}{input\+\_\+event\+\_\+type\+\_\+e}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{vlc__input_8h_a50f8cb1c3cdf6bfc02752c1d41b723b4}{input\+\_\+state\+\_\+e} 
+\item 
+enum \hyperlink{vlc__input_8h_a4a3eb08df7f1209edd1edb4f0ed9242f}{input\+\_\+event\+\_\+type\+\_\+e} 
+\item 
+enum \hyperlink{vlc__input_8h_a51e953c6c4b0a10e18282dcc64c9c20c}{input\+\_\+query\+\_\+e} 
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI input\+\_\+item\+\_\+t $\ast$ \hyperlink{vlc__input_8h_a65eb661b1158fc7f1e08877fbcc39f3a}{input\+\_\+\+Get\+Item} (\hyperlink{structinput__thread__t}{input\+\_\+thread\+\_\+t} $\ast$) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI char $\ast$ \hyperlink{vlc__input_8h_abadd1eeb9e4118633eab793e733650a4}{input\+\_\+\+Create\+Filename} (\hyperlink{structinput__thread__t}{input\+\_\+thread\+\_\+t} $\ast$, const char $\ast$psz\+\_\+path, const char $\ast$psz\+\_\+prefix, const char $\ast$psz\+\_\+extension) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t} $\ast$ \hyperlink{vlc__input_8h_acd972bd79a4f0fc3da9460320117188c}{input\+\_\+resource\+\_\+\+New} (\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__input_8h_a4d269829245c335d7e62e62bd217f9d0}{input\+\_\+resource\+\_\+\+Release} (\hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__input_8h_a9ea4899b295befe59663c7435947865c}{input\+\_\+resource\+\_\+\+Terminate\+Vout} (\hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__input_8h_a419ed5f1817a69644327313b55d07e98}{input\+\_\+resource\+\_\+\+Terminate} (\hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$ \hyperlink{vlc__input_8h_a53c8e5fcdc6ca9c46f5cb17f4ff406c1}{input\+\_\+resource\+\_\+\+Hold\+Aout} (\hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$ \hyperlink{vlc__input_8h_a610b18001f3b558869774364e488052a}{input\+\_\+resource\+\_\+\+Get\+Aout} (\hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__input_8h_a584f237a40a424b49a4b4275726b577d}{input\+\_\+resource\+\_\+\+Put\+Aout} (\hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t} $\ast$, \hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__input_8h_a17dc42632867c745626690c7fc3cf5e6}{input\+\_\+resource\+\_\+\+Reset\+Aout} (\hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines functions, structures and enums for input objects in vlc 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{vlc__input_8h_a3b545c60e0490722c8a507d5a29cb945}\label{vlc__input_8h_a3b545c60e0490722c8a507d5a29cb945}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+D\+E\+F\+A\+U\+LT@{I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+D\+E\+F\+A\+U\+LT}}
+\index{I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+D\+E\+F\+A\+U\+LT@{I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+D\+E\+F\+A\+U\+LT}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+D\+E\+F\+A\+U\+LT}{INPUT\_RATE\_DEFAULT}}
+{\footnotesize\ttfamily \#define I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+D\+E\+F\+A\+U\+LT~1000}
+
+Input rate.
+
+It is an float used by the variable \char`\"{}rate\char`\"{} in the range \mbox{[}I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T/\+I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+AX, I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T/\+I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+IN\mbox{]} the default value being 1. It represents the ratio of playback speed to nominal speed (bigger is faster).
+
+Internally, the rate is stored as a value in the range \mbox{[}I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+IN, I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+AX\mbox{]}. internal rate = I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+D\+E\+F\+A\+U\+LT / rate variable Default rate value \mbox{\Hypertarget{vlc__input_8h_a0d13008429b6e80cc5d5a7f6b8ddb337}\label{vlc__input_8h_a0d13008429b6e80cc5d5a7f6b8ddb337}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+AX@{I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+AX}}
+\index{I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+AX@{I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+AX}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+AX}{INPUT\_RATE\_MAX}}
+{\footnotesize\ttfamily \#define I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+AX~32000            /$\ast$ Up to 1/32 $\ast$/}
+
+Maximal rate value \mbox{\Hypertarget{vlc__input_8h_a7ecfc916204c1fa9686cf9411c5507ff}\label{vlc__input_8h_a7ecfc916204c1fa9686cf9411c5507ff}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+IN@{I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+IN}}
+\index{I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+IN@{I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+IN}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+IN}{INPUT\_RATE\_MIN}}
+{\footnotesize\ttfamily \#define I\+N\+P\+U\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+IN~32            /$\ast$ Up to 32/1 $\ast$/}
+
+Minimal rate value \mbox{\Hypertarget{vlc__input_8h_a7a3aa0997c538539af76ed182fdaca98}\label{vlc__input_8h_a7a3aa0997c538539af76ed182fdaca98}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!I\+N\+P\+U\+T\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+P\+R\+E\+F\+IX@{I\+N\+P\+U\+T\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+P\+R\+E\+F\+IX}}
+\index{I\+N\+P\+U\+T\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+P\+R\+E\+F\+IX@{I\+N\+P\+U\+T\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+P\+R\+E\+F\+IX}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+P\+U\+T\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+P\+R\+E\+F\+IX}{INPUT\_RECORD\_PREFIX}}
+{\footnotesize\ttfamily \#define I\+N\+P\+U\+T\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+P\+R\+E\+F\+IX~\char`\"{}vlc-\/record-\/\%Y-\/\%m-\/\%d-\/\%Hh\%Mm\%Ss-\/\$ N-\/\$ p\char`\"{}}
+
+Record prefix string. T\+O\+DO make it configurable. 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{vlc__input_8h_aef4f5ce234f96b30585ef75d40bdf193}\label{vlc__input_8h_aef4f5ce234f96b30585ef75d40bdf193}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!input\+\_\+event\+\_\+type\+\_\+e@{input\+\_\+event\+\_\+type\+\_\+e}}
+\index{input\+\_\+event\+\_\+type\+\_\+e@{input\+\_\+event\+\_\+type\+\_\+e}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+event\+\_\+type\+\_\+e}{input\_event\_type\_e}}
+{\footnotesize\ttfamily typedef enum \hyperlink{vlc__input_8h_a4a3eb08df7f1209edd1edb4f0ed9242f}{input\+\_\+event\+\_\+type\+\_\+e}  \hyperlink{vlc__input_8h_a4a3eb08df7f1209edd1edb4f0ed9242f}{input\+\_\+event\+\_\+type\+\_\+e}}
+
+Input events
+
+You can catch input event by adding a callback on the variable \char`\"{}intf-\/event\char`\"{}. This variable is an integer that will hold a input\+\_\+event\+\_\+type\+\_\+e value. \mbox{\Hypertarget{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}\label{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!input\+\_\+resource\+\_\+t@{input\+\_\+resource\+\_\+t}}
+\index{input\+\_\+resource\+\_\+t@{input\+\_\+resource\+\_\+t}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+resource\+\_\+t}{input\_resource\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t} \hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t}}
+
+This defines an opaque input resource handler. \mbox{\Hypertarget{vlc__input_8h_a158f30c7fe25669dd399e71e5924ae3f}\label{vlc__input_8h_a158f30c7fe25669dd399e71e5924ae3f}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!input\+\_\+state\+\_\+e@{input\+\_\+state\+\_\+e}}
+\index{input\+\_\+state\+\_\+e@{input\+\_\+state\+\_\+e}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+state\+\_\+e}{input\_state\_e}}
+{\footnotesize\ttfamily typedef enum \hyperlink{vlc__input_8h_a50f8cb1c3cdf6bfc02752c1d41b723b4}{input\+\_\+state\+\_\+e}  \hyperlink{vlc__input_8h_a50f8cb1c3cdf6bfc02752c1d41b723b4}{input\+\_\+state\+\_\+e}}
+
+Input state
+
+This enum is used by the variable \char`\"{}state\char`\"{} \mbox{\Hypertarget{vlc__input_8h_a23c2376c08da097a930a83199de4815a}\label{vlc__input_8h_a23c2376c08da097a930a83199de4815a}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!input\+\_\+thread\+\_\+private\+\_\+t@{input\+\_\+thread\+\_\+private\+\_\+t}}
+\index{input\+\_\+thread\+\_\+private\+\_\+t@{input\+\_\+thread\+\_\+private\+\_\+t}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+thread\+\_\+private\+\_\+t}{input\_thread\_private\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{vlc__input_8h_a23c2376c08da097a930a83199de4815a}{input\+\_\+thread\+\_\+private\+\_\+t} \hyperlink{vlc__input_8h_a23c2376c08da097a930a83199de4815a}{input\+\_\+thread\+\_\+private\+\_\+t}}
+
+This defines private core storage for an input. 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{vlc__input_8h_a4a3eb08df7f1209edd1edb4f0ed9242f}\label{vlc__input_8h_a4a3eb08df7f1209edd1edb4f0ed9242f}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!input\+\_\+event\+\_\+type\+\_\+e@{input\+\_\+event\+\_\+type\+\_\+e}}
+\index{input\+\_\+event\+\_\+type\+\_\+e@{input\+\_\+event\+\_\+type\+\_\+e}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+event\+\_\+type\+\_\+e}{input\_event\_type\_e}}
+{\footnotesize\ttfamily enum \hyperlink{vlc__input_8h_a4a3eb08df7f1209edd1edb4f0ed9242f}{input\+\_\+event\+\_\+type\+\_\+e}}
+
+Input events
+
+You can catch input event by adding a callback on the variable \char`\"{}intf-\/event\char`\"{}. This variable is an integer that will hold a input\+\_\+event\+\_\+type\+\_\+e value. \mbox{\Hypertarget{vlc__input_8h_a51e953c6c4b0a10e18282dcc64c9c20c}\label{vlc__input_8h_a51e953c6c4b0a10e18282dcc64c9c20c}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!input\+\_\+query\+\_\+e@{input\+\_\+query\+\_\+e}}
+\index{input\+\_\+query\+\_\+e@{input\+\_\+query\+\_\+e}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+query\+\_\+e}{input\_query\_e}}
+{\footnotesize\ttfamily enum \hyperlink{vlc__input_8h_a51e953c6c4b0a10e18282dcc64c9c20c}{input\+\_\+query\+\_\+e}}
+
+Input queries \mbox{\Hypertarget{vlc__input_8h_a50f8cb1c3cdf6bfc02752c1d41b723b4}\label{vlc__input_8h_a50f8cb1c3cdf6bfc02752c1d41b723b4}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!input\+\_\+state\+\_\+e@{input\+\_\+state\+\_\+e}}
+\index{input\+\_\+state\+\_\+e@{input\+\_\+state\+\_\+e}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+state\+\_\+e}{input\_state\_e}}
+{\footnotesize\ttfamily enum \hyperlink{vlc__input_8h_a50f8cb1c3cdf6bfc02752c1d41b723b4}{input\+\_\+state\+\_\+e}}
+
+Input state
+
+This enum is used by the variable \char`\"{}state\char`\"{} 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{vlc__input_8h_abadd1eeb9e4118633eab793e733650a4}\label{vlc__input_8h_abadd1eeb9e4118633eab793e733650a4}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!input\+\_\+\+Create\+Filename@{input\+\_\+\+Create\+Filename}}
+\index{input\+\_\+\+Create\+Filename@{input\+\_\+\+Create\+Filename}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+\+Create\+Filename()}{input\_CreateFilename()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI char$\ast$ input\+\_\+\+Create\+Filename (\begin{DoxyParamCaption}\item[{\hyperlink{structinput__thread__t}{input\+\_\+thread\+\_\+t} $\ast$}]{,  }\item[{const char $\ast$}]{psz\+\_\+path,  }\item[{const char $\ast$}]{psz\+\_\+prefix,  }\item[{const char $\ast$}]{psz\+\_\+extension }\end{DoxyParamCaption})}
+
+This function creates a sane filename path. \mbox{\Hypertarget{vlc__input_8h_a65eb661b1158fc7f1e08877fbcc39f3a}\label{vlc__input_8h_a65eb661b1158fc7f1e08877fbcc39f3a}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!input\+\_\+\+Get\+Item@{input\+\_\+\+Get\+Item}}
+\index{input\+\_\+\+Get\+Item@{input\+\_\+\+Get\+Item}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+\+Get\+Item()}{input\_GetItem()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI input\+\_\+item\+\_\+t$\ast$ input\+\_\+\+Get\+Item (\begin{DoxyParamCaption}\item[{\hyperlink{structinput__thread__t}{input\+\_\+thread\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Get the input item for an input thread
+
+You have to keep a reference to the input or to the input\+\_\+item\+\_\+t until you do not need it anymore. \mbox{\Hypertarget{vlc__input_8h_a610b18001f3b558869774364e488052a}\label{vlc__input_8h_a610b18001f3b558869774364e488052a}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!input\+\_\+resource\+\_\+\+Get\+Aout@{input\+\_\+resource\+\_\+\+Get\+Aout}}
+\index{input\+\_\+resource\+\_\+\+Get\+Aout@{input\+\_\+resource\+\_\+\+Get\+Aout}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+resource\+\_\+\+Get\+Aout()}{input\_resource\_GetAout()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t}$\ast$ input\+\_\+resource\+\_\+\+Get\+Aout (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function creates or recycles an audio output. \mbox{\Hypertarget{vlc__input_8h_a53c8e5fcdc6ca9c46f5cb17f4ff406c1}\label{vlc__input_8h_a53c8e5fcdc6ca9c46f5cb17f4ff406c1}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!input\+\_\+resource\+\_\+\+Hold\+Aout@{input\+\_\+resource\+\_\+\+Hold\+Aout}}
+\index{input\+\_\+resource\+\_\+\+Hold\+Aout@{input\+\_\+resource\+\_\+\+Hold\+Aout}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+resource\+\_\+\+Hold\+Aout()}{input\_resource\_HoldAout()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t}$\ast$ input\+\_\+resource\+\_\+\+Hold\+Aout (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+the current audio output if any. Use vlc\+\_\+object\+\_\+release() to drop the reference. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vlc__input_8h_acd972bd79a4f0fc3da9460320117188c}\label{vlc__input_8h_acd972bd79a4f0fc3da9460320117188c}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!input\+\_\+resource\+\_\+\+New@{input\+\_\+resource\+\_\+\+New}}
+\index{input\+\_\+resource\+\_\+\+New@{input\+\_\+resource\+\_\+\+New}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+resource\+\_\+\+New()}{input\_resource\_New()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t}$\ast$ input\+\_\+resource\+\_\+\+New (\begin{DoxyParamCaption}\item[{\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+It creates an empty input resource handler.
+
+The given object M\+U\+ST stay alive as long as the input\+\_\+resource\+\_\+t is not deleted. \mbox{\Hypertarget{vlc__input_8h_a584f237a40a424b49a4b4275726b577d}\label{vlc__input_8h_a584f237a40a424b49a4b4275726b577d}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!input\+\_\+resource\+\_\+\+Put\+Aout@{input\+\_\+resource\+\_\+\+Put\+Aout}}
+\index{input\+\_\+resource\+\_\+\+Put\+Aout@{input\+\_\+resource\+\_\+\+Put\+Aout}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+resource\+\_\+\+Put\+Aout()}{input\_resource\_PutAout()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void input\+\_\+resource\+\_\+\+Put\+Aout (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t} $\ast$}]{,  }\item[{\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function retains or destroys an audio output. \mbox{\Hypertarget{vlc__input_8h_a4d269829245c335d7e62e62bd217f9d0}\label{vlc__input_8h_a4d269829245c335d7e62e62bd217f9d0}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!input\+\_\+resource\+\_\+\+Release@{input\+\_\+resource\+\_\+\+Release}}
+\index{input\+\_\+resource\+\_\+\+Release@{input\+\_\+resource\+\_\+\+Release}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+resource\+\_\+\+Release()}{input\_resource\_Release()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void input\+\_\+resource\+\_\+\+Release (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+It releases an input resource. \mbox{\Hypertarget{vlc__input_8h_a17dc42632867c745626690c7fc3cf5e6}\label{vlc__input_8h_a17dc42632867c745626690c7fc3cf5e6}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!input\+\_\+resource\+\_\+\+Reset\+Aout@{input\+\_\+resource\+\_\+\+Reset\+Aout}}
+\index{input\+\_\+resource\+\_\+\+Reset\+Aout@{input\+\_\+resource\+\_\+\+Reset\+Aout}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+resource\+\_\+\+Reset\+Aout()}{input\_resource\_ResetAout()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void input\+\_\+resource\+\_\+\+Reset\+Aout (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Prevents the existing audio output (if any) from being recycled. \mbox{\Hypertarget{vlc__input_8h_a419ed5f1817a69644327313b55d07e98}\label{vlc__input_8h_a419ed5f1817a69644327313b55d07e98}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!input\+\_\+resource\+\_\+\+Terminate@{input\+\_\+resource\+\_\+\+Terminate}}
+\index{input\+\_\+resource\+\_\+\+Terminate@{input\+\_\+resource\+\_\+\+Terminate}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+resource\+\_\+\+Terminate()}{input\_resource\_Terminate()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void input\+\_\+resource\+\_\+\+Terminate (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function releases all resources (object). \mbox{\Hypertarget{vlc__input_8h_a9ea4899b295befe59663c7435947865c}\label{vlc__input_8h_a9ea4899b295befe59663c7435947865c}} 
+\index{vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}!input\+\_\+resource\+\_\+\+Terminate\+Vout@{input\+\_\+resource\+\_\+\+Terminate\+Vout}}
+\index{input\+\_\+resource\+\_\+\+Terminate\+Vout@{input\+\_\+resource\+\_\+\+Terminate\+Vout}!vlc\+\_\+input.\+h@{vlc\+\_\+input.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+resource\+\_\+\+Terminate\+Vout()}{input\_resource\_TerminateVout()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void input\+\_\+resource\+\_\+\+Terminate\+Vout (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__input_8h_acb60e654936ed16f31c50fbbf57f921f}{input\+\_\+resource\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Forcefully destroys the video output (e.\+g. when the playlist is stopped). 

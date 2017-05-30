@@ -1,0 +1,78 @@
+\hypertarget{group__spu}{}\section{Subpicture Unit}
+\label{group__spu}\index{Subpicture Unit@{Subpicture Unit}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structspu__t}{spu\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__spu_gad59fdd18b195cf3f1009ae648462570a}{spu\+\_\+\+Put\+Subpicture} (\hyperlink{structspu__t}{spu\+\_\+t} $\ast$, \hyperlink{structsubpicture__t}{subpicture\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structsubpicture__t}{subpicture\+\_\+t} $\ast$ \hyperlink{group__spu_gad38e4d1f1ab12232d521a670b450fb90}{spu\+\_\+\+Render} (\hyperlink{structspu__t}{spu\+\_\+t} $\ast$, const \hyperlink{vlc__common_8h_af49f89d0f752bc9cff142e43b1bd634d}{vlc\+\_\+fourcc\+\_\+t} $\ast$p\+\_\+chroma\+\_\+list, const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$p\+\_\+fmt\+\_\+dst, const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$p\+\_\+fmt\+\_\+src, \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} render\+\_\+subtitle\+\_\+date, \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} render\+\_\+osd\+\_\+date, bool ignore\+\_\+osd)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__spu_gaf4b3f9a5ac28cd9ead38e2f9fd9aeff0}{spu\+\_\+\+Register\+Channel} (\hyperlink{structspu__t}{spu\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__spu_ga01ff3c370e1b70cb0f0d560a59334e37}{spu\+\_\+\+Clear\+Channel} (\hyperlink{structspu__t}{spu\+\_\+t} $\ast$, int)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__spu_ga231064c2e066598ebcab3f97486c98f7}{spu\+\_\+\+Change\+Sources} (\hyperlink{structspu__t}{spu\+\_\+t} $\ast$, const char $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__spu_gae8503a836229a6afba988668e9cbbcff}{spu\+\_\+\+Change\+Filters} (\hyperlink{structspu__t}{spu\+\_\+t} $\ast$, const char $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This module describes the programming interface for the subpicture unit. It includes functions allowing to create/destroy an spu, and render subpictures. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__spu_gae8503a836229a6afba988668e9cbbcff}\label{group__spu_gae8503a836229a6afba988668e9cbbcff}} 
+\index{Subpicture Unit@{Subpicture Unit}!spu\+\_\+\+Change\+Filters@{spu\+\_\+\+Change\+Filters}}
+\index{spu\+\_\+\+Change\+Filters@{spu\+\_\+\+Change\+Filters}!Subpicture Unit@{Subpicture Unit}}
+\subsubsection{\texorpdfstring{spu\+\_\+\+Change\+Filters()}{spu\_ChangeFilters()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void spu\+\_\+\+Change\+Filters (\begin{DoxyParamCaption}\item[{\hyperlink{structspu__t}{spu\+\_\+t} $\ast$}]{,  }\item[{const char $\ast$}]{ }\end{DoxyParamCaption})}
+
+It changes the sub filters list \mbox{\Hypertarget{group__spu_ga231064c2e066598ebcab3f97486c98f7}\label{group__spu_ga231064c2e066598ebcab3f97486c98f7}} 
+\index{Subpicture Unit@{Subpicture Unit}!spu\+\_\+\+Change\+Sources@{spu\+\_\+\+Change\+Sources}}
+\index{spu\+\_\+\+Change\+Sources@{spu\+\_\+\+Change\+Sources}!Subpicture Unit@{Subpicture Unit}}
+\subsubsection{\texorpdfstring{spu\+\_\+\+Change\+Sources()}{spu\_ChangeSources()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void spu\+\_\+\+Change\+Sources (\begin{DoxyParamCaption}\item[{\hyperlink{structspu__t}{spu\+\_\+t} $\ast$}]{,  }\item[{const char $\ast$}]{ }\end{DoxyParamCaption})}
+
+It changes the sub sources list \mbox{\Hypertarget{group__spu_ga01ff3c370e1b70cb0f0d560a59334e37}\label{group__spu_ga01ff3c370e1b70cb0f0d560a59334e37}} 
+\index{Subpicture Unit@{Subpicture Unit}!spu\+\_\+\+Clear\+Channel@{spu\+\_\+\+Clear\+Channel}}
+\index{spu\+\_\+\+Clear\+Channel@{spu\+\_\+\+Clear\+Channel}!Subpicture Unit@{Subpicture Unit}}
+\subsubsection{\texorpdfstring{spu\+\_\+\+Clear\+Channel()}{spu\_ClearChannel()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void spu\+\_\+\+Clear\+Channel (\begin{DoxyParamCaption}\item[{\hyperlink{structspu__t}{spu\+\_\+t} $\ast$}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+It clears all subpictures associated to a S\+PU channel. \mbox{\Hypertarget{group__spu_gad59fdd18b195cf3f1009ae648462570a}\label{group__spu_gad59fdd18b195cf3f1009ae648462570a}} 
+\index{Subpicture Unit@{Subpicture Unit}!spu\+\_\+\+Put\+Subpicture@{spu\+\_\+\+Put\+Subpicture}}
+\index{spu\+\_\+\+Put\+Subpicture@{spu\+\_\+\+Put\+Subpicture}!Subpicture Unit@{Subpicture Unit}}
+\subsubsection{\texorpdfstring{spu\+\_\+\+Put\+Subpicture()}{spu\_PutSubpicture()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void spu\+\_\+\+Put\+Subpicture (\begin{DoxyParamCaption}\item[{\hyperlink{structspu__t}{spu\+\_\+t} $\ast$}]{,  }\item[{\hyperlink{structsubpicture__t}{subpicture\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function sends a subpicture to the \hyperlink{structspu__t}{spu\+\_\+t} core.
+
+You cannot use the provided subpicture anymore. The \hyperlink{structspu__t}{spu\+\_\+t} core will destroy it at its convenience. \mbox{\Hypertarget{group__spu_gaf4b3f9a5ac28cd9ead38e2f9fd9aeff0}\label{group__spu_gaf4b3f9a5ac28cd9ead38e2f9fd9aeff0}} 
+\index{Subpicture Unit@{Subpicture Unit}!spu\+\_\+\+Register\+Channel@{spu\+\_\+\+Register\+Channel}}
+\index{spu\+\_\+\+Register\+Channel@{spu\+\_\+\+Register\+Channel}!Subpicture Unit@{Subpicture Unit}}
+\subsubsection{\texorpdfstring{spu\+\_\+\+Register\+Channel()}{spu\_RegisterChannel()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI int spu\+\_\+\+Register\+Channel (\begin{DoxyParamCaption}\item[{\hyperlink{structspu__t}{spu\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+It registers a new S\+PU channel. \mbox{\Hypertarget{group__spu_gad38e4d1f1ab12232d521a670b450fb90}\label{group__spu_gad38e4d1f1ab12232d521a670b450fb90}} 
+\index{Subpicture Unit@{Subpicture Unit}!spu\+\_\+\+Render@{spu\+\_\+\+Render}}
+\index{spu\+\_\+\+Render@{spu\+\_\+\+Render}!Subpicture Unit@{Subpicture Unit}}
+\subsubsection{\texorpdfstring{spu\+\_\+\+Render()}{spu\_Render()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structsubpicture__t}{subpicture\+\_\+t}$\ast$ spu\+\_\+\+Render (\begin{DoxyParamCaption}\item[{\hyperlink{structspu__t}{spu\+\_\+t} $\ast$}]{,  }\item[{const \hyperlink{vlc__common_8h_af49f89d0f752bc9cff142e43b1bd634d}{vlc\+\_\+fourcc\+\_\+t} $\ast$}]{p\+\_\+chroma\+\_\+list,  }\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{p\+\_\+fmt\+\_\+dst,  }\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{p\+\_\+fmt\+\_\+src,  }\item[{\hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t}}]{render\+\_\+subtitle\+\_\+date,  }\item[{\hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t}}]{render\+\_\+osd\+\_\+date,  }\item[{bool}]{ignore\+\_\+osd }\end{DoxyParamCaption})}
+
+This function will return an unique subpicture containing the O\+SD and subtitles visibles at the requested date.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+chroma\+\_\+list} & is a list of supported chroma for the output (can be N\+U\+LL) \\
+\hline
+{\em p\+\_\+fmt\+\_\+dst} & is the format of the picture on which the return subpicture will be rendered. \\
+\hline
+{\em p\+\_\+fmt\+\_\+src} & is the format of the original(source) video.\\
+\hline
+\end{DoxyParams}
+The returned value if non N\+U\+LL must be released by \hyperlink{group__subpicture_ga86b24b8b7a37505a97ce99e34b8fa83e}{subpicture\+\_\+\+Delete()}. 

@@ -12,12 +12,38 @@ Single line edit box + spin buttons.
 Inheritance diagram for irr\+:\+:gui\+:\+:I\+G\+U\+I\+Spin\+Box\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{classirr_1_1gui_1_1IGUISpinBox}
+\includegraphics[height=4.038462cm]{classirr_1_1gui_1_1IGUISpinBox}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUISpinBox_a9e9c785f73b8fadbaff330f1cbb61adf}\label{classirr_1_1gui_1_1IGUISpinBox_a9e9c785f73b8fadbaff330f1cbb61adf}} 
+\hyperlink{classirr_1_1gui_1_1IGUISpinBox_a9e9c785f73b8fadbaff330f1cbb61adf}{I\+G\+U\+I\+Spin\+Box} (\hyperlink{classirr_1_1gui_1_1IGUIEnvironment}{I\+G\+U\+I\+Environment} $\ast$environment, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ rectangle)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUISpinBox_a04bd863724a7b37b97e7f9368fda77ef}\label{classirr_1_1gui_1_1IGUISpinBox_a04bd863724a7b37b97e7f9368fda77ef}} 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIEditBox}{I\+G\+U\+I\+Edit\+Box} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUISpinBox_a04bd863724a7b37b97e7f9368fda77ef}{get\+Edit\+Box} () const =0
+\begin{DoxyCompactList}\small\item\em Access the edit box used in the spin control. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUISpinBox_a28e388e3767d4257f712d899c744bc20}{set\+Value} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} val)=0
+\begin{DoxyCompactList}\small\item\em set the current value of the spinbox \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUISpinBox_acfb0ebe7ab30b58e9d34b7925e785bb8}\label{classirr_1_1gui_1_1IGUISpinBox_acfb0ebe7ab30b58e9d34b7925e785bb8}} 
+virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1gui_1_1IGUISpinBox_acfb0ebe7ab30b58e9d34b7925e785bb8}{get\+Value} () const =0
+\begin{DoxyCompactList}\small\item\em Get the current value of the spinbox. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUISpinBox_af7bc07a7be30d16a6ff27750782aaa80}{set\+Range} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} min, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} max)=0
+\begin{DoxyCompactList}\small\item\em set the range of values which can be used in the spinbox \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUISpinBox_a22f2211e612a7cfe7847d249724cadc1}\label{classirr_1_1gui_1_1IGUISpinBox_a22f2211e612a7cfe7847d249724cadc1}} 
+virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1gui_1_1IGUISpinBox_a22f2211e612a7cfe7847d249724cadc1}{get\+Min} () const =0
+\begin{DoxyCompactList}\small\item\em get the minimum value which can be used in the spinbox \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUISpinBox_af332d184560dee8f273b50d1beca45cc}\label{classirr_1_1gui_1_1IGUISpinBox_af332d184560dee8f273b50d1beca45cc}} 
+virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1gui_1_1IGUISpinBox_af332d184560dee8f273b50d1beca45cc}{get\+Max} () const =0
+\begin{DoxyCompactList}\small\item\em get the maximum value which can be used in the spinbox \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUISpinBox_a64296e93b52129fcf9068279baf0697d}{set\+Step\+Size} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} step=1.f)=0
+\begin{DoxyCompactList}\small\item\em Step size by which values are changed when pressing the spinbuttons. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUISpinBox_a8a335d32cbdb7f43ca814422f8cee098}{set\+Decimal\+Places} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} places)=0
+\begin{DoxyCompactList}\small\item\em Sets the number of decimal places to display. Note that this also rounds the range to the same number of decimal places. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUISpinBox_a5c66183b25860667488ff6c97df241bd}\label{classirr_1_1gui_1_1IGUISpinBox_a5c66183b25860667488ff6c97df241bd}} 
+virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1gui_1_1IGUISpinBox_a5c66183b25860667488ff6c97df241bd}{get\+Step\+Size} () const =0
+\begin{DoxyCompactList}\small\item\em get the current step size \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUISpinBox_a9e9c785f73b8fadbaff330f1cbb61adf}\label{classirr_1_1gui_1_1IGUISpinBox_a9e9c785f73b8fadbaff330f1cbb61adf}} 
 \hyperlink{classirr_1_1gui_1_1IGUISpinBox_a9e9c785f73b8fadbaff330f1cbb61adf}{I\+G\+U\+I\+Spin\+Box} (\hyperlink{classirr_1_1gui_1_1IGUIEnvironment}{I\+G\+U\+I\+Environment} $\ast$environment, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ rectangle)
 \begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
@@ -61,7 +87,22 @@ Single line edit box + spin buttons.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUISpinBox_a8a335d32cbdb7f43ca814422f8cee098}\label{classirr_1_1gui_1_1IGUISpinBox_a8a335d32cbdb7f43ca814422f8cee098}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box}!set\+Decimal\+Places@{set\+Decimal\+Places}}
 \index{set\+Decimal\+Places@{set\+Decimal\+Places}!irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box}}
-\subsubsection{\texorpdfstring{set\+Decimal\+Places()}{setDecimalPlaces()}}
+\subsubsection{\texorpdfstring{set\+Decimal\+Places()}{setDecimalPlaces()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box\+::set\+Decimal\+Places (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{places }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the number of decimal places to display. Note that this also rounds the range to the same number of decimal places. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em places} & The number of decimal places to display, use -\/1 to reset \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUISpinBox_a8a335d32cbdb7f43ca814422f8cee098}\label{classirr_1_1gui_1_1IGUISpinBox_a8a335d32cbdb7f43ca814422f8cee098}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box}!set\+Decimal\+Places@{set\+Decimal\+Places}}
+\index{set\+Decimal\+Places@{set\+Decimal\+Places}!irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box}}
+\subsubsection{\texorpdfstring{set\+Decimal\+Places()}{setDecimalPlaces()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box\+::set\+Decimal\+Places (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{places }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -76,7 +117,24 @@ Sets the number of decimal places to display. Note that this also rounds the ran
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUISpinBox_af7bc07a7be30d16a6ff27750782aaa80}\label{classirr_1_1gui_1_1IGUISpinBox_af7bc07a7be30d16a6ff27750782aaa80}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box}!set\+Range@{set\+Range}}
 \index{set\+Range@{set\+Range}!irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box}}
-\subsubsection{\texorpdfstring{set\+Range()}{setRange()}}
+\subsubsection{\texorpdfstring{set\+Range()}{setRange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box\+::set\+Range (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{min,  }\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+set the range of values which can be used in the spinbox 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & minimum value \\
+\hline
+{\em max} & maximum value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUISpinBox_af7bc07a7be30d16a6ff27750782aaa80}\label{classirr_1_1gui_1_1IGUISpinBox_af7bc07a7be30d16a6ff27750782aaa80}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box}!set\+Range@{set\+Range}}
+\index{set\+Range@{set\+Range}!irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box}}
+\subsubsection{\texorpdfstring{set\+Range()}{setRange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box\+::set\+Range (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{min,  }\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -93,7 +151,22 @@ set the range of values which can be used in the spinbox
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUISpinBox_a64296e93b52129fcf9068279baf0697d}\label{classirr_1_1gui_1_1IGUISpinBox_a64296e93b52129fcf9068279baf0697d}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box}!set\+Step\+Size@{set\+Step\+Size}}
 \index{set\+Step\+Size@{set\+Step\+Size}!irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box}}
-\subsubsection{\texorpdfstring{set\+Step\+Size()}{setStepSize()}}
+\subsubsection{\texorpdfstring{set\+Step\+Size()}{setStepSize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box\+::set\+Step\+Size (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{step = {\ttfamily 1.f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Step size by which values are changed when pressing the spinbuttons. 
+
+The step size also determines the number of decimal places to display 
+\begin{DoxyParams}{Parameters}
+{\em step} & stepsize used for value changes when pressing spinbuttons \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUISpinBox_a64296e93b52129fcf9068279baf0697d}\label{classirr_1_1gui_1_1IGUISpinBox_a64296e93b52129fcf9068279baf0697d}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box}!set\+Step\+Size@{set\+Step\+Size}}
+\index{set\+Step\+Size@{set\+Step\+Size}!irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box}}
+\subsubsection{\texorpdfstring{set\+Step\+Size()}{setStepSize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box\+::set\+Step\+Size (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{step = {\ttfamily 1.f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -108,7 +181,22 @@ The step size also determines the number of decimal places to display
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUISpinBox_a28e388e3767d4257f712d899c744bc20}\label{classirr_1_1gui_1_1IGUISpinBox_a28e388e3767d4257f712d899c744bc20}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box}!set\+Value@{set\+Value}}
 \index{set\+Value@{set\+Value}!irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box}}
-\subsubsection{\texorpdfstring{set\+Value()}{setValue()}}
+\subsubsection{\texorpdfstring{set\+Value()}{setValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box\+::set\+Value (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+set the current value of the spinbox 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & value to be set in the spinbox \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUISpinBox_a28e388e3767d4257f712d899c744bc20}\label{classirr_1_1gui_1_1IGUISpinBox_a28e388e3767d4257f712d899c744bc20}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box}!set\+Value@{set\+Value}}
+\index{set\+Value@{set\+Value}!irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box}}
+\subsubsection{\texorpdfstring{set\+Value()}{setValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Spin\+Box\+::set\+Value (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

@@ -1,0 +1,340 @@
+\hypertarget{group__libvlc__core}{}\section{Lib\+V\+LC core}
+\label{group__libvlc__core}\index{Lib\+V\+L\+C core@{Lib\+V\+L\+C core}}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__libvlc__error}{Lib\+V\+L\+C error handling}
+\item 
+\hyperlink{group__libvlc__event}{Lib\+V\+L\+C asynchronous events}
+\item 
+\hyperlink{group__libvlc__log}{Lib\+V\+L\+C logging}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structlibvlc__module__description__t}{libvlc\+\_\+module\+\_\+description\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structlibvlc__module__description__t}{libvlc\+\_\+module\+\_\+description\+\_\+t} \hyperlink{group__libvlc__core_ga22f982caec39eee2f7bcb853513c9ebe}{libvlc\+\_\+module\+\_\+description\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$ \hyperlink{group__libvlc__core_ga1ecba605b37df9e62d2f8c0290ef3893}{libvlc\+\_\+new} (int argc, const char $\ast$const $\ast$argv)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__core_ga42f80821f3b5e2e9a1fe38c96d40ee71}{libvlc\+\_\+release} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__core_ga7a09a1aa563f098a11c0b34682a790ca}{libvlc\+\_\+retain} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__core_gaee76d8daf854191af20a93eecea1dc6e}{libvlc\+\_\+add\+\_\+intf} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance, const char $\ast$name)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__core_ga9fb333dac01fe3e28bbf4256be87f006}{libvlc\+\_\+set\+\_\+exit\+\_\+handler} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance, void($\ast$cb)(void $\ast$), void $\ast$opaque)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__core_ga8b60fa21d15392338a17c89414502d40}{libvlc\+\_\+wait} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__core_ga78044d14fe2a8ea0f2a216f5ad084ec6}{libvlc\+\_\+set\+\_\+user\+\_\+agent} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance, const char $\ast$name, const char $\ast$http)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__core_ga2b5434e2f27d19df8646b8240ed719f8}{libvlc\+\_\+set\+\_\+app\+\_\+id} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance, const char $\ast$id, const char $\ast$version, const char $\ast$icon)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI const char $\ast$ \hyperlink{group__libvlc__core_ga950b9828d1391f06fe56ce5d03483b9f}{libvlc\+\_\+get\+\_\+version} (void)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI const char $\ast$ \hyperlink{group__libvlc__core_ga7cac13c14411e4764f119a368af78c1b}{libvlc\+\_\+get\+\_\+compiler} (void)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI const char $\ast$ \hyperlink{group__libvlc__core_gad308de3b963863e211c952636b2bde40}{libvlc\+\_\+get\+\_\+changeset} (void)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__core_gab42b9c99de37cddea9b4e817cf14524f}{libvlc\+\_\+free} (void $\ast$ptr)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__core_ga6f077c04819910cf821e107be8b258a9}{libvlc\+\_\+module\+\_\+description\+\_\+list\+\_\+release} (\hyperlink{structlibvlc__module__description__t}{libvlc\+\_\+module\+\_\+description\+\_\+t} $\ast$p\+\_\+list)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{structlibvlc__module__description__t}{libvlc\+\_\+module\+\_\+description\+\_\+t} $\ast$ \hyperlink{group__libvlc__core_ga2a9b8d8c7282b7602aa6a9ea4550cf18}{libvlc\+\_\+audio\+\_\+filter\+\_\+list\+\_\+get} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{structlibvlc__module__description__t}{libvlc\+\_\+module\+\_\+description\+\_\+t} $\ast$ \hyperlink{group__libvlc__core_ga03f3afbc3208d6fa817a80359297c7c8}{libvlc\+\_\+video\+\_\+filter\+\_\+list\+\_\+get} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} \hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Before it can do anything useful, Lib\+V\+LC must be initialized. You can create one (or more) instance(s) of Lib\+V\+LC in a given process, with \hyperlink{group__libvlc__core_ga1ecba605b37df9e62d2f8c0290ef3893}{libvlc\+\_\+new()} and destroy them with \hyperlink{group__libvlc__core_ga42f80821f3b5e2e9a1fe38c96d40ee71}{libvlc\+\_\+release()}.
+
+\begin{DoxyVersion}{Version}
+Unless otherwise stated, these functions are available from Lib\+V\+LC versions numbered 1.\+1.\+0 or more. Earlier versions (0.\+9.\+x and 1.\+0.\+x) are {\bfseries not} compatible. 
+\end{DoxyVersion}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}\label{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}} 
+\index{Lib\+V\+L\+C core@{Lib\+V\+L\+C core}!libvlc\+\_\+instance\+\_\+t@{libvlc\+\_\+instance\+\_\+t}}
+\index{libvlc\+\_\+instance\+\_\+t@{libvlc\+\_\+instance\+\_\+t}!Lib\+V\+L\+C core@{Lib\+V\+L\+C core}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+instance\+\_\+t}{libvlc\_instance\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} \hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t}}
+
+This structure is opaque. It represents a libvlc instance \mbox{\Hypertarget{group__libvlc__core_ga22f982caec39eee2f7bcb853513c9ebe}\label{group__libvlc__core_ga22f982caec39eee2f7bcb853513c9ebe}} 
+\index{Lib\+V\+L\+C core@{Lib\+V\+L\+C core}!libvlc\+\_\+module\+\_\+description\+\_\+t@{libvlc\+\_\+module\+\_\+description\+\_\+t}}
+\index{libvlc\+\_\+module\+\_\+description\+\_\+t@{libvlc\+\_\+module\+\_\+description\+\_\+t}!Lib\+V\+L\+C core@{Lib\+V\+L\+C core}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+module\+\_\+description\+\_\+t}{libvlc\_module\_description\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structlibvlc__module__description__t}{libvlc\+\_\+module\+\_\+description\+\_\+t}  \hyperlink{structlibvlc__module__description__t}{libvlc\+\_\+module\+\_\+description\+\_\+t}}
+
+Description of a module. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__libvlc__core_gaee76d8daf854191af20a93eecea1dc6e}\label{group__libvlc__core_gaee76d8daf854191af20a93eecea1dc6e}} 
+\index{Lib\+V\+L\+C core@{Lib\+V\+L\+C core}!libvlc\+\_\+add\+\_\+intf@{libvlc\+\_\+add\+\_\+intf}}
+\index{libvlc\+\_\+add\+\_\+intf@{libvlc\+\_\+add\+\_\+intf}!Lib\+V\+L\+C core@{Lib\+V\+L\+C core}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+add\+\_\+intf()}{libvlc\_add\_intf()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+add\+\_\+intf (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+Try to start a user interface for the libvlc instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & the instance \\
+\hline
+{\em name} & interface name, or N\+U\+LL for default \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, -\/1 on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__core_ga2a9b8d8c7282b7602aa6a9ea4550cf18}\label{group__libvlc__core_ga2a9b8d8c7282b7602aa6a9ea4550cf18}} 
+\index{Lib\+V\+L\+C core@{Lib\+V\+L\+C core}!libvlc\+\_\+audio\+\_\+filter\+\_\+list\+\_\+get@{libvlc\+\_\+audio\+\_\+filter\+\_\+list\+\_\+get}}
+\index{libvlc\+\_\+audio\+\_\+filter\+\_\+list\+\_\+get@{libvlc\+\_\+audio\+\_\+filter\+\_\+list\+\_\+get}!Lib\+V\+L\+C core@{Lib\+V\+L\+C core}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+filter\+\_\+list\+\_\+get()}{libvlc\_audio\_filter\_list\_get()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{structlibvlc__module__description__t}{libvlc\+\_\+module\+\_\+description\+\_\+t}$\ast$ libvlc\+\_\+audio\+\_\+filter\+\_\+list\+\_\+get (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance }\end{DoxyParamCaption})}
+
+Returns a list of audio filters that are available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & libvlc instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a list of module descriptions. It should be freed with \hyperlink{group__libvlc__core_ga6f077c04819910cf821e107be8b258a9}{libvlc\+\_\+module\+\_\+description\+\_\+list\+\_\+release()}. In case of an error, N\+U\+LL is returned.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structlibvlc__module__description__t}{libvlc\+\_\+module\+\_\+description\+\_\+t} 
+
+\hyperlink{group__libvlc__core_ga6f077c04819910cf821e107be8b258a9}{libvlc\+\_\+module\+\_\+description\+\_\+list\+\_\+release} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__libvlc__core_gab42b9c99de37cddea9b4e817cf14524f}\label{group__libvlc__core_gab42b9c99de37cddea9b4e817cf14524f}} 
+\index{Lib\+V\+L\+C core@{Lib\+V\+L\+C core}!libvlc\+\_\+free@{libvlc\+\_\+free}}
+\index{libvlc\+\_\+free@{libvlc\+\_\+free}!Lib\+V\+L\+C core@{Lib\+V\+L\+C core}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+free()}{libvlc\_free()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+free (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})}
+
+Frees an heap allocation returned by a Lib\+V\+LC function. If you know you\textquotesingle{}re using the same underlying C run-\/time as the Lib\+V\+LC implementation, then you can call A\+N\+SI C free() directly instead.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ptr} & the pointer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__core_gad308de3b963863e211c952636b2bde40}\label{group__libvlc__core_gad308de3b963863e211c952636b2bde40}} 
+\index{Lib\+V\+L\+C core@{Lib\+V\+L\+C core}!libvlc\+\_\+get\+\_\+changeset@{libvlc\+\_\+get\+\_\+changeset}}
+\index{libvlc\+\_\+get\+\_\+changeset@{libvlc\+\_\+get\+\_\+changeset}!Lib\+V\+L\+C core@{Lib\+V\+L\+C core}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+get\+\_\+changeset()}{libvlc\_get\_changeset()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI const char$\ast$ libvlc\+\_\+get\+\_\+changeset (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Retrieve libvlc changeset.
+
+Example\+: \char`\"{}aa9bce0bc4\char`\"{}
+
+\begin{DoxyReturn}{Returns}
+a string containing the libvlc changeset 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__core_ga7cac13c14411e4764f119a368af78c1b}\label{group__libvlc__core_ga7cac13c14411e4764f119a368af78c1b}} 
+\index{Lib\+V\+L\+C core@{Lib\+V\+L\+C core}!libvlc\+\_\+get\+\_\+compiler@{libvlc\+\_\+get\+\_\+compiler}}
+\index{libvlc\+\_\+get\+\_\+compiler@{libvlc\+\_\+get\+\_\+compiler}!Lib\+V\+L\+C core@{Lib\+V\+L\+C core}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+get\+\_\+compiler()}{libvlc\_get\_compiler()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI const char$\ast$ libvlc\+\_\+get\+\_\+compiler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Retrieve libvlc compiler version.
+
+Example\+: \char`\"{}gcc version 4.\+2.\+3 (\+Ubuntu 4.\+2.\+3-\/2ubuntu6)\char`\"{}
+
+\begin{DoxyReturn}{Returns}
+a string containing the libvlc compiler version 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__core_ga950b9828d1391f06fe56ce5d03483b9f}\label{group__libvlc__core_ga950b9828d1391f06fe56ce5d03483b9f}} 
+\index{Lib\+V\+L\+C core@{Lib\+V\+L\+C core}!libvlc\+\_\+get\+\_\+version@{libvlc\+\_\+get\+\_\+version}}
+\index{libvlc\+\_\+get\+\_\+version@{libvlc\+\_\+get\+\_\+version}!Lib\+V\+L\+C core@{Lib\+V\+L\+C core}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+get\+\_\+version()}{libvlc\_get\_version()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI const char$\ast$ libvlc\+\_\+get\+\_\+version (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Retrieve libvlc version.
+
+Example\+: \char`\"{}1.\+1.\+0-\/git The Luggage\char`\"{}
+
+\begin{DoxyReturn}{Returns}
+a string containing the libvlc version 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__core_ga6f077c04819910cf821e107be8b258a9}\label{group__libvlc__core_ga6f077c04819910cf821e107be8b258a9}} 
+\index{Lib\+V\+L\+C core@{Lib\+V\+L\+C core}!libvlc\+\_\+module\+\_\+description\+\_\+list\+\_\+release@{libvlc\+\_\+module\+\_\+description\+\_\+list\+\_\+release}}
+\index{libvlc\+\_\+module\+\_\+description\+\_\+list\+\_\+release@{libvlc\+\_\+module\+\_\+description\+\_\+list\+\_\+release}!Lib\+V\+L\+C core@{Lib\+V\+L\+C core}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+module\+\_\+description\+\_\+list\+\_\+release()}{libvlc\_module\_description\_list\_release()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+module\+\_\+description\+\_\+list\+\_\+release (\begin{DoxyParamCaption}\item[{\hyperlink{structlibvlc__module__description__t}{libvlc\+\_\+module\+\_\+description\+\_\+t} $\ast$}]{p\+\_\+list }\end{DoxyParamCaption})}
+
+Release a list of module descriptions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+list} & the list to be released \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__core_ga1ecba605b37df9e62d2f8c0290ef3893}\label{group__libvlc__core_ga1ecba605b37df9e62d2f8c0290ef3893}} 
+\index{Lib\+V\+L\+C core@{Lib\+V\+L\+C core}!libvlc\+\_\+new@{libvlc\+\_\+new}}
+\index{libvlc\+\_\+new@{libvlc\+\_\+new}!Lib\+V\+L\+C core@{Lib\+V\+L\+C core}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+new()}{libvlc\_new()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t}$\ast$ libvlc\+\_\+new (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{const char $\ast$const $\ast$}]{argv }\end{DoxyParamCaption})}
+
+Create and initialize a libvlc instance. This functions accept a list of \char`\"{}command line\char`\"{} arguments similar to the main(). These arguments affect the Lib\+V\+LC instance default configuration.
+
+\begin{DoxyVersion}{Version}
+Arguments are meant to be passed from the command line to Lib\+V\+LC, just like V\+LC media player does. The list of valid arguments depends on the Lib\+V\+LC version, the operating system and platform, and set of available Lib\+V\+LC plugins. Invalid or unsupported arguments will cause the function to fail (i.\+e. return N\+U\+LL). Also, some arguments may alter the behaviour or otherwise interfere with other Lib\+V\+LC functions.
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+There is absolutely no warranty or promise of forward, backward and cross-\/platform compatibility with regards to \hyperlink{group__libvlc__core_ga1ecba605b37df9e62d2f8c0290ef3893}{libvlc\+\_\+new()} arguments. We recommend that you do not use them, other than when debugging.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & the number of arguments (should be 0) \\
+\hline
+{\em argv} & list of arguments (should be N\+U\+LL) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the libvlc instance or N\+U\+LL in case of error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__core_ga42f80821f3b5e2e9a1fe38c96d40ee71}\label{group__libvlc__core_ga42f80821f3b5e2e9a1fe38c96d40ee71}} 
+\index{Lib\+V\+L\+C core@{Lib\+V\+L\+C core}!libvlc\+\_\+release@{libvlc\+\_\+release}}
+\index{libvlc\+\_\+release@{libvlc\+\_\+release}!Lib\+V\+L\+C core@{Lib\+V\+L\+C core}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+release()}{libvlc\_release()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+release (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance }\end{DoxyParamCaption})}
+
+Decrement the reference count of a libvlc instance, and destroy it if it reaches zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & the instance to destroy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__core_ga7a09a1aa563f098a11c0b34682a790ca}\label{group__libvlc__core_ga7a09a1aa563f098a11c0b34682a790ca}} 
+\index{Lib\+V\+L\+C core@{Lib\+V\+L\+C core}!libvlc\+\_\+retain@{libvlc\+\_\+retain}}
+\index{libvlc\+\_\+retain@{libvlc\+\_\+retain}!Lib\+V\+L\+C core@{Lib\+V\+L\+C core}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+retain()}{libvlc\_retain()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+retain (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance }\end{DoxyParamCaption})}
+
+Increments the reference count of a libvlc instance. The initial reference count is 1 after \hyperlink{group__libvlc__core_ga1ecba605b37df9e62d2f8c0290ef3893}{libvlc\+\_\+new()} returns.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & the instance to reference \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__core_ga2b5434e2f27d19df8646b8240ed719f8}\label{group__libvlc__core_ga2b5434e2f27d19df8646b8240ed719f8}} 
+\index{Lib\+V\+L\+C core@{Lib\+V\+L\+C core}!libvlc\+\_\+set\+\_\+app\+\_\+id@{libvlc\+\_\+set\+\_\+app\+\_\+id}}
+\index{libvlc\+\_\+set\+\_\+app\+\_\+id@{libvlc\+\_\+set\+\_\+app\+\_\+id}!Lib\+V\+L\+C core@{Lib\+V\+L\+C core}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+set\+\_\+app\+\_\+id()}{libvlc\_set\_app\_id()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+set\+\_\+app\+\_\+id (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance,  }\item[{const char $\ast$}]{id,  }\item[{const char $\ast$}]{version,  }\item[{const char $\ast$}]{icon }\end{DoxyParamCaption})}
+
+Sets some meta-\/information about the application. See also \hyperlink{group__libvlc__core_ga78044d14fe2a8ea0f2a216f5ad084ec6}{libvlc\+\_\+set\+\_\+user\+\_\+agent()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & Lib\+V\+LC instance \\
+\hline
+{\em id} & Java-\/style application identifier, e.\+g. \char`\"{}com.\+acme.\+foobar\char`\"{} \\
+\hline
+{\em version} & application version numbers, e.\+g. \char`\"{}1.\+2.\+3\char`\"{} \\
+\hline
+{\em icon} & application icon name, e.\+g. \char`\"{}foobar\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+1.\+0 or later. 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__core_ga9fb333dac01fe3e28bbf4256be87f006}\label{group__libvlc__core_ga9fb333dac01fe3e28bbf4256be87f006}} 
+\index{Lib\+V\+L\+C core@{Lib\+V\+L\+C core}!libvlc\+\_\+set\+\_\+exit\+\_\+handler@{libvlc\+\_\+set\+\_\+exit\+\_\+handler}}
+\index{libvlc\+\_\+set\+\_\+exit\+\_\+handler@{libvlc\+\_\+set\+\_\+exit\+\_\+handler}!Lib\+V\+L\+C core@{Lib\+V\+L\+C core}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+set\+\_\+exit\+\_\+handler()}{libvlc\_set\_exit\_handler()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+set\+\_\+exit\+\_\+handler (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance,  }\item[{void($\ast$)(void $\ast$)}]{cb,  }\item[{void $\ast$}]{opaque }\end{DoxyParamCaption})}
+
+Registers a callback for the Lib\+V\+LC exit event. This is mostly useful if the V\+LC playlist and/or at least one interface are started with \hyperlink{group__libvlc__playlist_ga6382c543b2a88894cb7bfc4e2f9fbe74}{libvlc\+\_\+playlist\+\_\+play()} or \hyperlink{group__libvlc__core_gaee76d8daf854191af20a93eecea1dc6e}{libvlc\+\_\+add\+\_\+intf()} respectively. Typically, this function will wake up your application main loop (from another thread).
+
+\begin{DoxyNote}{Note}
+This function should be called before the playlist or interface are started. Otherwise, there is a small race condition\+: the exit event could be raised before the handler is registered.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & Lib\+V\+LC instance \\
+\hline
+{\em cb} & callback to invoke when Lib\+V\+LC wants to exit, or N\+U\+LL to disable the exit handler (as by default) \\
+\hline
+{\em opaque} & data pointer for the callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This function and \hyperlink{group__libvlc__core_ga8b60fa21d15392338a17c89414502d40}{libvlc\+\_\+wait()} cannot be used at the same time. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{group__libvlc__core_ga78044d14fe2a8ea0f2a216f5ad084ec6}\label{group__libvlc__core_ga78044d14fe2a8ea0f2a216f5ad084ec6}} 
+\index{Lib\+V\+L\+C core@{Lib\+V\+L\+C core}!libvlc\+\_\+set\+\_\+user\+\_\+agent@{libvlc\+\_\+set\+\_\+user\+\_\+agent}}
+\index{libvlc\+\_\+set\+\_\+user\+\_\+agent@{libvlc\+\_\+set\+\_\+user\+\_\+agent}!Lib\+V\+L\+C core@{Lib\+V\+L\+C core}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+set\+\_\+user\+\_\+agent()}{libvlc\_set\_user\_agent()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+set\+\_\+user\+\_\+agent (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance,  }\item[{const char $\ast$}]{name,  }\item[{const char $\ast$}]{http }\end{DoxyParamCaption})}
+
+Sets the application name. Lib\+V\+LC passes this as the user agent string when a protocol requires it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & Lib\+V\+LC instance \\
+\hline
+{\em name} & human-\/readable application name, e.\+g. \char`\"{}\+Foo\+Bar player 1.\+2.\+3\char`\"{} \\
+\hline
+{\em http} & H\+T\+TP User Agent, e.\+g. \char`\"{}\+Foo\+Bar/1.\+2.\+3 Python/2.\+6.\+0\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 1.\+1.\+1 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__core_ga03f3afbc3208d6fa817a80359297c7c8}\label{group__libvlc__core_ga03f3afbc3208d6fa817a80359297c7c8}} 
+\index{Lib\+V\+L\+C core@{Lib\+V\+L\+C core}!libvlc\+\_\+video\+\_\+filter\+\_\+list\+\_\+get@{libvlc\+\_\+video\+\_\+filter\+\_\+list\+\_\+get}}
+\index{libvlc\+\_\+video\+\_\+filter\+\_\+list\+\_\+get@{libvlc\+\_\+video\+\_\+filter\+\_\+list\+\_\+get}!Lib\+V\+L\+C core@{Lib\+V\+L\+C core}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+video\+\_\+filter\+\_\+list\+\_\+get()}{libvlc\_video\_filter\_list\_get()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{structlibvlc__module__description__t}{libvlc\+\_\+module\+\_\+description\+\_\+t}$\ast$ libvlc\+\_\+video\+\_\+filter\+\_\+list\+\_\+get (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance }\end{DoxyParamCaption})}
+
+Returns a list of video filters that are available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & libvlc instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a list of module descriptions. It should be freed with \hyperlink{group__libvlc__core_ga6f077c04819910cf821e107be8b258a9}{libvlc\+\_\+module\+\_\+description\+\_\+list\+\_\+release()}. In case of an error, N\+U\+LL is returned.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structlibvlc__module__description__t}{libvlc\+\_\+module\+\_\+description\+\_\+t} 
+
+\hyperlink{group__libvlc__core_ga6f077c04819910cf821e107be8b258a9}{libvlc\+\_\+module\+\_\+description\+\_\+list\+\_\+release} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__libvlc__core_ga8b60fa21d15392338a17c89414502d40}\label{group__libvlc__core_ga8b60fa21d15392338a17c89414502d40}} 
+\index{Lib\+V\+L\+C core@{Lib\+V\+L\+C core}!libvlc\+\_\+wait@{libvlc\+\_\+wait}}
+\index{libvlc\+\_\+wait@{libvlc\+\_\+wait}!Lib\+V\+L\+C core@{Lib\+V\+L\+C core}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+wait()}{libvlc\_wait()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+wait (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance }\end{DoxyParamCaption})}
+
+Waits until an interface causes the instance to exit. You should start at least one interface first, using \hyperlink{group__libvlc__core_gaee76d8daf854191af20a93eecea1dc6e}{libvlc\+\_\+add\+\_\+intf()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & the instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This function wastes one thread doing basically nothing. \hyperlink{group__libvlc__core_ga9fb333dac01fe3e28bbf4256be87f006}{libvlc\+\_\+set\+\_\+exit\+\_\+handler()} should be used instead. 
+\end{DoxyWarning}

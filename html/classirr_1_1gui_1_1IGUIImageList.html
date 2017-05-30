@@ -73,7 +73,7 @@ $(function() {
 <p>Font interface.  
  <a href="classirr_1_1gui_1_1IGUIImageList.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="IGUIImageList_8h_source.html">IGUIImageList.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="indie__share_2controller_2include_2IGUIImageList_8h_source.html">IGUIImageList.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for irr::gui::IGUIImageList:</div>
 <div class="dyncontent">
@@ -81,11 +81,25 @@ Inheritance diagram for irr::gui::IGUIImageList:</div>
   <img src="classirr_1_1gui_1_1IGUIImageList.png" usemap="#irr::gui::IGUIImageList_map" alt=""/>
   <map id="irr::gui::IGUIImageList_map" name="irr::gui::IGUIImageList_map">
 <area href="classirr_1_1IReferenceCounted.html" title="Base class of most objects of the Irrlicht Engine. " alt="irr::IReferenceCounted" shape="rect" coords="0,0,140,24"/>
+<area href="classirr_1_1IReferenceCounted.html" title="Base class of most objects of the Irrlicht Engine. " alt="irr::IReferenceCounted" shape="rect" coords="150,0,290,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad6be754893f7ba902d821d215761075f"><td class="memItemLeft" align="right" valign="top"><a id="ad6be754893f7ba902d821d215761075f"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1gui_1_1IGUIImageList.html#ad6be754893f7ba902d821d215761075f">~IGUIImageList</a> ()</td></tr>
+<tr class="memdesc:ad6be754893f7ba902d821d215761075f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:ad6be754893f7ba902d821d215761075f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae19fa00cece01c5914dfc0a3e33a882c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1gui_1_1IGUIImageList.html#ae19fa00cece01c5914dfc0a3e33a882c">draw</a> (<a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> index, const core::position2d&lt; <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> &gt; &amp;destPos, const <a class="el" href="classirr_1_1core_1_1rect.html">core::rect</a>&lt; <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> &gt; *clip=0)=0</td></tr>
+<tr class="memdesc:ae19fa00cece01c5914dfc0a3e33a882c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws an image and clips it to the specified rectangle if wanted.  <a href="#ae19fa00cece01c5914dfc0a3e33a882c">More...</a><br /></td></tr>
+<tr class="separator:ae19fa00cece01c5914dfc0a3e33a882c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cc8626cacd608f343d103394423753e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1gui_1_1IGUIImageList.html#a1cc8626cacd608f343d103394423753e">getImageCount</a> () const =0</td></tr>
+<tr class="memdesc:a1cc8626cacd608f343d103394423753e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the count of Images in the list.  <a href="#a1cc8626cacd608f343d103394423753e">More...</a><br /></td></tr>
+<tr class="separator:a1cc8626cacd608f343d103394423753e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5973353355625da76b24100f16f90539"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classirr_1_1core_1_1dimension2d.html">core::dimension2d</a>&lt; <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1gui_1_1IGUIImageList.html#a5973353355625da76b24100f16f90539">getImageSize</a> () const =0</td></tr>
+<tr class="memdesc:a5973353355625da76b24100f16f90539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the images in the list.  <a href="#a5973353355625da76b24100f16f90539">More...</a><br /></td></tr>
+<tr class="separator:a5973353355625da76b24100f16f90539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6be754893f7ba902d821d215761075f"><td class="memItemLeft" align="right" valign="top"><a id="ad6be754893f7ba902d821d215761075f"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1gui_1_1IGUIImageList.html#ad6be754893f7ba902d821d215761075f">~IGUIImageList</a> ()</td></tr>
 <tr class="memdesc:ad6be754893f7ba902d821d215761075f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
@@ -120,10 +134,33 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memitem:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#ad336c6e3c975e4c7911a606c27b894f0">getDebugName</a> () const</td></tr>
 <tr class="memdesc:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the debug name of the object.  <a href="classirr_1_1IReferenceCounted.html#ad336c6e3c975e4c7911a606c27b894f0">More...</a><br /></td></tr>
 <tr class="separator:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8411682018e68a2752d4c82675c71040 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top"><a id="a8411682018e68a2752d4c82675c71040"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a8411682018e68a2752d4c82675c71040">IReferenceCounted</a> ()</td></tr>
+<tr class="memdesc:a8411682018e68a2752d4c82675c71040 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="separator:a8411682018e68a2752d4c82675c71040 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78abc75801cbb13d9db0955b3c07251c inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top"><a id="a78abc75801cbb13d9db0955b3c07251c"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a78abc75801cbb13d9db0955b3c07251c">~IReferenceCounted</a> ()</td></tr>
+<tr class="memdesc:a78abc75801cbb13d9db0955b3c07251c inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:a78abc75801cbb13d9db0955b3c07251c inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396f9cdbe311ada278626477b3c6f0f5 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a396f9cdbe311ada278626477b3c6f0f5">grab</a> () const</td></tr>
+<tr class="memdesc:a396f9cdbe311ada278626477b3c6f0f5 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grabs the object. Increments the reference counter by one.  <a href="classirr_1_1IReferenceCounted.html#a396f9cdbe311ada278626477b3c6f0f5">More...</a><br /></td></tr>
+<tr class="separator:a396f9cdbe311ada278626477b3c6f0f5 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03856a09355b89d178090c4a5f738543 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543">drop</a> () const</td></tr>
+<tr class="memdesc:a03856a09355b89d178090c4a5f738543 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops the object. Decrements the reference counter by one.  <a href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543">More...</a><br /></td></tr>
+<tr class="separator:a03856a09355b89d178090c4a5f738543 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9836f102c33c68068e74292e0a01819 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#ae9836f102c33c68068e74292e0a01819">getReferenceCount</a> () const</td></tr>
+<tr class="memdesc:ae9836f102c33c68068e74292e0a01819 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reference count.  <a href="classirr_1_1IReferenceCounted.html#ae9836f102c33c68068e74292e0a01819">More...</a><br /></td></tr>
+<tr class="separator:ae9836f102c33c68068e74292e0a01819 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#ad336c6e3c975e4c7911a606c27b894f0">getDebugName</a> () const</td></tr>
+<tr class="memdesc:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the debug name of the object.  <a href="classirr_1_1IReferenceCounted.html#ad336c6e3c975e4c7911a606c27b894f0">More...</a><br /></td></tr>
+<tr class="separator:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classirr_1_1IReferenceCounted"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classirr_1_1IReferenceCounted')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classirr_1_1IReferenceCounted.html">irr::IReferenceCounted</a></td></tr>
+<tr class="memitem:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a704c5042d399fe8cd3bdd65a0559002a">setDebugName</a> (const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *newName)</td></tr>
+<tr class="memdesc:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the debug name of the object.  <a href="classirr_1_1IReferenceCounted.html#a704c5042d399fe8cd3bdd65a0559002a">More...</a><br /></td></tr>
+<tr class="separator:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a704c5042d399fe8cd3bdd65a0559002a">setDebugName</a> (const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *newName)</td></tr>
 <tr class="memdesc:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the debug name of the object.  <a href="classirr_1_1IReferenceCounted.html#a704c5042d399fe8cd3bdd65a0559002a">More...</a><br /></td></tr>
 <tr class="separator:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,7 +169,59 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Font interface. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae19fa00cece01c5914dfc0a3e33a882c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae19fa00cece01c5914dfc0a3e33a882c">&#9670;&nbsp;</a></span>draw()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae19fa00cece01c5914dfc0a3e33a882c">&#9670;&nbsp;</a></span>draw() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void irr::gui::IGUIImageList::draw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const core::position2d&lt; <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>destPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1rect.html">core::rect</a>&lt; <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> &gt; *&#160;</td>
+          <td class="paramname"><em>clip</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Draws an image and clips it to the specified rectangle if wanted. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Index of the image </td></tr>
+    <tr><td class="paramname">destPos</td><td>Position of the image to draw </td></tr>
+    <tr><td class="paramname">clip</td><td>Optional pointer to a rectalgle against which the text will be clipped. If the pointer is null, no clipping will be done. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae19fa00cece01c5914dfc0a3e33a882c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae19fa00cece01c5914dfc0a3e33a882c">&#9670;&nbsp;</a></span>draw() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,7 +273,35 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a1cc8626cacd608f343d103394423753e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1cc8626cacd608f343d103394423753e">&#9670;&nbsp;</a></span>getImageCount()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cc8626cacd608f343d103394423753e">&#9670;&nbsp;</a></span>getImageCount() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> irr::gui::IGUIImageList::getImageCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the count of Images in the list. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns the count of Images in the list. </dd></dl>
+
+</div>
+</div>
+<a id="a1cc8626cacd608f343d103394423753e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cc8626cacd608f343d103394423753e">&#9670;&nbsp;</a></span>getImageCount() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +329,35 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a5973353355625da76b24100f16f90539"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5973353355625da76b24100f16f90539">&#9670;&nbsp;</a></span>getImageSize()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5973353355625da76b24100f16f90539">&#9670;&nbsp;</a></span>getImageSize() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classirr_1_1core_1_1dimension2d.html">core::dimension2d</a>&lt;<a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a>&gt; irr::gui::IGUIImageList::getImageSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the size of the images in the list. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns the size of the images in the list. </dd></dl>
+
+</div>
+</div>
+<a id="a5973353355625da76b24100f16f90539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5973353355625da76b24100f16f90539">&#9670;&nbsp;</a></span>getImageSize() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,7 +385,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>indie_share/controller/include/<a class="el" href="IGUIImageList_8h_source.html">IGUIImageList.h</a></li>
+<li>indie_share/controller/include/<a class="el" href="indie__share_2controller_2include_2IGUIImageList_8h_source.html">IGUIImageList.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

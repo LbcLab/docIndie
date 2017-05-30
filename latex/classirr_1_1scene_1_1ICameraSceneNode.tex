@@ -12,36 +12,97 @@ Scene Node which is a (controlable) camera.
 Inheritance diagram for irr\+:\+:scene\+:\+:I\+Camera\+Scene\+Node\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{classirr_1_1scene_1_1ICameraSceneNode}
+\includegraphics[height=1.682692cm]{classirr_1_1scene_1_1ICameraSceneNode}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a80e2a6e96feaf3191129eb6abefebc6f}\label{classirr_1_1scene_1_1ICameraSceneNode_a80e2a6e96feaf3191129eb6abefebc6f}} 
-\hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a80e2a6e96feaf3191129eb6abefebc6f}{I\+Camera\+Scene\+Node} (\hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$parent, \hyperlink{classirr_1_1scene_1_1ISceneManager}{I\+Scene\+Manager} $\ast$mgr, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&position=\hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df}(0, 0, 0), const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&rotation=\hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df}(0, 0, 0), const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&scale=\hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df}(1.\+0f, 1.\+0f, 1.\+0f))
+\hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a80e2a6e96feaf3191129eb6abefebc6f}{I\+Camera\+Scene\+Node} (\hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$parent, \hyperlink{classirr_1_1scene_1_1ISceneManager}{I\+Scene\+Manager} $\ast$mgr, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&position=\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(0, 0, 0), const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&rotation=\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(0, 0, 0), const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&scale=\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(1.\+0f, 1.\+0f, 1.\+0f))
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a022415e06070ad77c6053eba64ba62ae}{set\+Projection\+Matrix} (const \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4} \&projection, bool \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a5cfd588d836004923f01667543837d6c}{is\+Orthogonal}=false)=0
+virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a022415e06070ad77c6053eba64ba62ae}{set\+Projection\+Matrix} (const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \&projection, bool \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a5cfd588d836004923f01667543837d6c}{is\+Orthogonal}=false)=0
 \begin{DoxyCompactList}\small\item\em Sets the projection matrix of the camera. \end{DoxyCompactList}\item 
-virtual const \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4} \& \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a80f4a43d24dc31d797a84e0e2f62f1a1}{get\+Projection\+Matrix} () const =0
+virtual const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \& \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a80f4a43d24dc31d797a84e0e2f62f1a1}{get\+Projection\+Matrix} () const =0
 \begin{DoxyCompactList}\small\item\em Gets the current projection matrix of the camera. \end{DoxyCompactList}\item 
-virtual const \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4} \& \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_aef40bb2f8f4a95a66dbb7fc3abee3e49}{get\+View\+Matrix} () const =0
+virtual const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \& \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_aef40bb2f8f4a95a66dbb7fc3abee3e49}{get\+View\+Matrix} () const =0
 \begin{DoxyCompactList}\small\item\em Gets the current view matrix of the camera. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_adb3500cac2a8a47e6a3f48aa343ce2fd}{set\+View\+Matrix\+Affector} (const \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4} \&affector)=0
+virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_adb3500cac2a8a47e6a3f48aa343ce2fd}{set\+View\+Matrix\+Affector} (const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \&affector)=0
 \begin{DoxyCompactList}\small\item\em Sets a custom view matrix affector. \end{DoxyCompactList}\item 
-virtual const \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4} \& \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a033018cccdb26f94cc33256e23d764c6}{get\+View\+Matrix\+Affector} () const =0
+virtual const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \& \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a033018cccdb26f94cc33256e23d764c6}{get\+View\+Matrix\+Affector} () const =0
 \begin{DoxyCompactList}\small\item\em Get the custom view matrix affector. \end{DoxyCompactList}\item 
 virtual bool \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_af27145518f43a17f803cdea086f68f3c}{On\+Event} (const \hyperlink{structirr_1_1SEvent}{S\+Event} \&event)=0
 \begin{DoxyCompactList}\small\item\em It is possible to send mouse and key events to the camera. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a7280b07fd7915c64350db5a132b4ba07}{set\+Target} (const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&pos)=0
+virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a7280b07fd7915c64350db5a132b4ba07}{set\+Target} (const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&pos)=0
 \begin{DoxyCompactList}\small\item\em Sets the look at target of the camera. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_af95d5f50c192f212e11f3f050e92a470}{set\+Rotation} (const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&rotation)=0
+virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_af95d5f50c192f212e11f3f050e92a470}{set\+Rotation} (const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&rotation)=0
 \begin{DoxyCompactList}\small\item\em Sets the rotation of the node. \end{DoxyCompactList}\item 
-virtual const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \& \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a3ce50433986650eea15b20e4ed19c952}{get\+Target} () const =0
+virtual const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \& \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a3ce50433986650eea15b20e4ed19c952}{get\+Target} () const =0
 \begin{DoxyCompactList}\small\item\em Gets the current look at target of the camera. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a1e74c17d89979fde4738276ccdcc0d3a}{set\+Up\+Vector} (const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&pos)=0
+virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a1e74c17d89979fde4738276ccdcc0d3a}{set\+Up\+Vector} (const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&pos)=0
 \begin{DoxyCompactList}\small\item\em Sets the up vector of the camera. \end{DoxyCompactList}\item 
-virtual const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \& \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a0dfb97859302021b9a44f2ead59fa230}{get\+Up\+Vector} () const =0
+virtual const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \& \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a0dfb97859302021b9a44f2ead59fa230}{get\+Up\+Vector} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the up vector of the camera. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_aee5dfccee2ec0b0cbcdb1079a6430a25}{get\+Near\+Value} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the value of the near plane of the camera. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a7a6603b808522605276359b834d48245}{get\+Far\+Value} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the value of the far plane of the camera. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_aed7af13bc5a076d61a10a1998f71742e}{get\+Aspect\+Ratio} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the aspect ratio of the camera. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a8396148b1c3e27e79a615a859ae7d75d}{get\+F\+OV} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the field of view of the camera. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_aab5107ae5d0373d6fb005a87741e7057}{set\+Near\+Value} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} zn)=0
+\begin{DoxyCompactList}\small\item\em Sets the value of the near clipping plane. (default\+: 1.\+0f) \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_ab7e427dd639b6bb63f648d6d087da1ea}{set\+Far\+Value} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} zf)=0
+\begin{DoxyCompactList}\small\item\em Sets the value of the far clipping plane (default\+: 2000.\+0f) \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a5c3728a61a208376b9df6a701f4a5b3c}{set\+Aspect\+Ratio} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} aspect)=0
+\begin{DoxyCompactList}\small\item\em Sets the aspect ratio (default\+: 4.\+0f / 3.\+0f) \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a43ee11523e9cf842d4b5d8c6a572241c}{set\+F\+OV} (\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} fovy)=0
+\begin{DoxyCompactList}\small\item\em Sets the field of view (Default\+: PI / 2.\+5f) \end{DoxyCompactList}\item 
+virtual const \hyperlink{structirr_1_1scene_1_1SViewFrustum}{S\+View\+Frustum} $\ast$ \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_add0cba097d3e59714546f04f2c53477e}{get\+View\+Frustum} () const =0
+\begin{DoxyCompactList}\small\item\em Get the view frustum. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a5b5c89233c1805676d6fcb392236dfec}{set\+Input\+Receiver\+Enabled} (bool enabled)=0
+\begin{DoxyCompactList}\small\item\em Disables or enables the camera to get key or mouse inputs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a15eeaf8a5c69af91d920b8243f76796f}\label{classirr_1_1scene_1_1ICameraSceneNode_a15eeaf8a5c69af91d920b8243f76796f}} 
+virtual bool \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a15eeaf8a5c69af91d920b8243f76796f}{is\+Input\+Receiver\+Enabled} () const =0
+\begin{DoxyCompactList}\small\item\em Checks if the input receiver of the camera is currently enabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a5cfd588d836004923f01667543837d6c}\label{classirr_1_1scene_1_1ICameraSceneNode_a5cfd588d836004923f01667543837d6c}} 
+virtual bool \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a5cfd588d836004923f01667543837d6c}{is\+Orthogonal} () const
+\begin{DoxyCompactList}\small\item\em Checks if a camera is orthogonal. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_ad8785d7b2f730933a8d4425ac54e7205}{bind\+Target\+And\+Rotation} (bool bound)=0
+\begin{DoxyCompactList}\small\item\em Binds the camera scene node\textquotesingle{}s rotation to its target position and vice vera, or unbinds them. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a343be24b2c43db7580127229db2dec6a}{get\+Target\+And\+Rotation\+Binding} (void) const =0
+\begin{DoxyCompactList}\small\item\em Queries if the camera scene node\textquotesingle{}s rotation and its target position are bound together. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a0a78a29638be1665ee5dba22c2c3b846}\label{classirr_1_1scene_1_1ICameraSceneNode_a0a78a29638be1665ee5dba22c2c3b846}} 
+virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a0a78a29638be1665ee5dba22c2c3b846}{serialize\+Attributes} (\hyperlink{classirr_1_1io_1_1IAttributes}{io\+::\+I\+Attributes} $\ast$out, \hyperlink{structirr_1_1io_1_1SAttributeReadWriteOptions}{io\+::\+S\+Attribute\+Read\+Write\+Options} $\ast$options=0) const
+\begin{DoxyCompactList}\small\item\em Writes attributes of the camera node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a0df881cb5e2a55562399281061151ae8}\label{classirr_1_1scene_1_1ICameraSceneNode_a0df881cb5e2a55562399281061151ae8}} 
+virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a0df881cb5e2a55562399281061151ae8}{deserialize\+Attributes} (\hyperlink{classirr_1_1io_1_1IAttributes}{io\+::\+I\+Attributes} $\ast$in, \hyperlink{structirr_1_1io_1_1SAttributeReadWriteOptions}{io\+::\+S\+Attribute\+Read\+Write\+Options} $\ast$options=0)
+\begin{DoxyCompactList}\small\item\em Reads attributes of the camera node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a80e2a6e96feaf3191129eb6abefebc6f}\label{classirr_1_1scene_1_1ICameraSceneNode_a80e2a6e96feaf3191129eb6abefebc6f}} 
+\hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a80e2a6e96feaf3191129eb6abefebc6f}{I\+Camera\+Scene\+Node} (\hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$parent, \hyperlink{classirr_1_1scene_1_1ISceneManager}{I\+Scene\+Manager} $\ast$mgr, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&position=\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(0, 0, 0), const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&rotation=\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(0, 0, 0), const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&scale=\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(1.\+0f, 1.\+0f, 1.\+0f))
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a022415e06070ad77c6053eba64ba62ae}{set\+Projection\+Matrix} (const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \&projection, bool \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a5cfd588d836004923f01667543837d6c}{is\+Orthogonal}=false)=0
+\begin{DoxyCompactList}\small\item\em Sets the projection matrix of the camera. \end{DoxyCompactList}\item 
+virtual const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \& \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a80f4a43d24dc31d797a84e0e2f62f1a1}{get\+Projection\+Matrix} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the current projection matrix of the camera. \end{DoxyCompactList}\item 
+virtual const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \& \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_aef40bb2f8f4a95a66dbb7fc3abee3e49}{get\+View\+Matrix} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the current view matrix of the camera. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_adb3500cac2a8a47e6a3f48aa343ce2fd}{set\+View\+Matrix\+Affector} (const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \&affector)=0
+\begin{DoxyCompactList}\small\item\em Sets a custom view matrix affector. \end{DoxyCompactList}\item 
+virtual const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \& \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a033018cccdb26f94cc33256e23d764c6}{get\+View\+Matrix\+Affector} () const =0
+\begin{DoxyCompactList}\small\item\em Get the custom view matrix affector. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_af27145518f43a17f803cdea086f68f3c}{On\+Event} (const \hyperlink{structirr_1_1SEvent}{S\+Event} \&event)=0
+\begin{DoxyCompactList}\small\item\em It is possible to send mouse and key events to the camera. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a7280b07fd7915c64350db5a132b4ba07}{set\+Target} (const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&pos)=0
+\begin{DoxyCompactList}\small\item\em Sets the look at target of the camera. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_af95d5f50c192f212e11f3f050e92a470}{set\+Rotation} (const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&rotation)=0
+\begin{DoxyCompactList}\small\item\em Sets the rotation of the node. \end{DoxyCompactList}\item 
+virtual const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \& \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a3ce50433986650eea15b20e4ed19c952}{get\+Target} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the current look at target of the camera. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a1e74c17d89979fde4738276ccdcc0d3a}{set\+Up\+Vector} (const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&pos)=0
+\begin{DoxyCompactList}\small\item\em Sets the up vector of the camera. \end{DoxyCompactList}\item 
+virtual const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \& \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a0dfb97859302021b9a44f2ead59fa230}{get\+Up\+Vector} () const =0
 \begin{DoxyCompactList}\small\item\em Gets the up vector of the camera. \end{DoxyCompactList}\item 
 virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_aee5dfccee2ec0b0cbcdb1079a6430a25}{get\+Near\+Value} () const =0
 \begin{DoxyCompactList}\small\item\em Gets the value of the near plane of the camera. \end{DoxyCompactList}\item 
@@ -91,7 +152,25 @@ The whole scene will be rendered from the cameras point of view. Because the I\+
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_ad8785d7b2f730933a8d4425ac54e7205}\label{classirr_1_1scene_1_1ICameraSceneNode_ad8785d7b2f730933a8d4425ac54e7205}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!bind\+Target\+And\+Rotation@{bind\+Target\+And\+Rotation}}
 \index{bind\+Target\+And\+Rotation@{bind\+Target\+And\+Rotation}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{bind\+Target\+And\+Rotation()}{bindTargetAndRotation()}}
+\subsubsection{\texorpdfstring{bind\+Target\+And\+Rotation()}{bindTargetAndRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::bind\+Target\+And\+Rotation (\begin{DoxyParamCaption}\item[{bool}]{bound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Binds the camera scene node\textquotesingle{}s rotation to its target position and vice vera, or unbinds them. 
+
+When bound, calling \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_af95d5f50c192f212e11f3f050e92a470}{set\+Rotation()} will update the camera\textquotesingle{}s target position to be along its +Z axis, and likewise calling \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a7280b07fd7915c64350db5a132b4ba07}{set\+Target()} will update its rotation so that its +Z axis will point at the target point. F\+PS camera use this binding by default; other cameras do not. 
+\begin{DoxyParams}{Parameters}
+{\em bound} & True to bind the camera\textquotesingle{}s scene node rotation and targetting, false to unbind them. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a343be24b2c43db7580127229db2dec6a}{get\+Target\+And\+Rotation\+Binding()} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_ad8785d7b2f730933a8d4425ac54e7205}\label{classirr_1_1scene_1_1ICameraSceneNode_ad8785d7b2f730933a8d4425ac54e7205}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!bind\+Target\+And\+Rotation@{bind\+Target\+And\+Rotation}}
+\index{bind\+Target\+And\+Rotation@{bind\+Target\+And\+Rotation}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{bind\+Target\+And\+Rotation()}{bindTargetAndRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::bind\+Target\+And\+Rotation (\begin{DoxyParamCaption}\item[{bool}]{bound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -109,7 +188,20 @@ When bound, calling \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_af95d5f50c1
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_aed7af13bc5a076d61a10a1998f71742e}\label{classirr_1_1scene_1_1ICameraSceneNode_aed7af13bc5a076d61a10a1998f71742e}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+Aspect\+Ratio@{get\+Aspect\+Ratio}}
 \index{get\+Aspect\+Ratio@{get\+Aspect\+Ratio}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Aspect\+Ratio()}{getAspectRatio()}}
+\subsubsection{\texorpdfstring{get\+Aspect\+Ratio()}{getAspectRatio()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+Aspect\+Ratio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the aspect ratio of the camera. 
+
+\begin{DoxyReturn}{Returns}
+The aspect ratio of the camera. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_aed7af13bc5a076d61a10a1998f71742e}\label{classirr_1_1scene_1_1ICameraSceneNode_aed7af13bc5a076d61a10a1998f71742e}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+Aspect\+Ratio@{get\+Aspect\+Ratio}}
+\index{get\+Aspect\+Ratio@{get\+Aspect\+Ratio}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{get\+Aspect\+Ratio()}{getAspectRatio()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+Aspect\+Ratio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -122,7 +214,20 @@ The aspect ratio of the camera.
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a7a6603b808522605276359b834d48245}\label{classirr_1_1scene_1_1ICameraSceneNode_a7a6603b808522605276359b834d48245}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+Far\+Value@{get\+Far\+Value}}
 \index{get\+Far\+Value@{get\+Far\+Value}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Far\+Value()}{getFarValue()}}
+\subsubsection{\texorpdfstring{get\+Far\+Value()}{getFarValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+Far\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the value of the far plane of the camera. 
+
+\begin{DoxyReturn}{Returns}
+The value of the far plane of the camera. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a7a6603b808522605276359b834d48245}\label{classirr_1_1scene_1_1ICameraSceneNode_a7a6603b808522605276359b834d48245}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+Far\+Value@{get\+Far\+Value}}
+\index{get\+Far\+Value@{get\+Far\+Value}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{get\+Far\+Value()}{getFarValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+Far\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -135,7 +240,20 @@ The value of the far plane of the camera.
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a8396148b1c3e27e79a615a859ae7d75d}\label{classirr_1_1scene_1_1ICameraSceneNode_a8396148b1c3e27e79a615a859ae7d75d}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+F\+OV@{get\+F\+OV}}
 \index{get\+F\+OV@{get\+F\+OV}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+F\+O\+V()}{getFOV()}}
+\subsubsection{\texorpdfstring{get\+F\+O\+V()}{getFOV()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+F\+OV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the field of view of the camera. 
+
+\begin{DoxyReturn}{Returns}
+The field of view of the camera in radians. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a8396148b1c3e27e79a615a859ae7d75d}\label{classirr_1_1scene_1_1ICameraSceneNode_a8396148b1c3e27e79a615a859ae7d75d}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+F\+OV@{get\+F\+OV}}
+\index{get\+F\+OV@{get\+F\+OV}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{get\+F\+O\+V()}{getFOV()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+F\+OV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -148,7 +266,20 @@ The field of view of the camera in radians.
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_aee5dfccee2ec0b0cbcdb1079a6430a25}\label{classirr_1_1scene_1_1ICameraSceneNode_aee5dfccee2ec0b0cbcdb1079a6430a25}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+Near\+Value@{get\+Near\+Value}}
 \index{get\+Near\+Value@{get\+Near\+Value}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Near\+Value()}{getNearValue()}}
+\subsubsection{\texorpdfstring{get\+Near\+Value()}{getNearValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+Near\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the value of the near plane of the camera. 
+
+\begin{DoxyReturn}{Returns}
+The value of the near plane of the camera. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_aee5dfccee2ec0b0cbcdb1079a6430a25}\label{classirr_1_1scene_1_1ICameraSceneNode_aee5dfccee2ec0b0cbcdb1079a6430a25}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+Near\+Value@{get\+Near\+Value}}
+\index{get\+Near\+Value@{get\+Near\+Value}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{get\+Near\+Value()}{getNearValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+Near\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -161,8 +292,21 @@ The value of the near plane of the camera.
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a80f4a43d24dc31d797a84e0e2f62f1a1}\label{classirr_1_1scene_1_1ICameraSceneNode_a80f4a43d24dc31d797a84e0e2f62f1a1}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+Projection\+Matrix@{get\+Projection\+Matrix}}
 \index{get\+Projection\+Matrix@{get\+Projection\+Matrix}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Projection\+Matrix()}{getProjectionMatrix()}}
-{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4}\& irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{get\+Projection\+Matrix()}{getProjectionMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4}\& irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the current projection matrix of the camera. 
+
+\begin{DoxyReturn}{Returns}
+The current projection matrix of the camera. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a80f4a43d24dc31d797a84e0e2f62f1a1}\label{classirr_1_1scene_1_1ICameraSceneNode_a80f4a43d24dc31d797a84e0e2f62f1a1}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+Projection\+Matrix@{get\+Projection\+Matrix}}
+\index{get\+Projection\+Matrix@{get\+Projection\+Matrix}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{get\+Projection\+Matrix()}{getProjectionMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4}\& irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -174,8 +318,21 @@ The current projection matrix of the camera.
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a3ce50433986650eea15b20e4ed19c952}\label{classirr_1_1scene_1_1ICameraSceneNode_a3ce50433986650eea15b20e4ed19c952}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+Target@{get\+Target}}
 \index{get\+Target@{get\+Target}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Target()}{getTarget()}}
-{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df}\& irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{get\+Target()}{getTarget()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}\& irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the current look at target of the camera. 
+
+\begin{DoxyReturn}{Returns}
+The current look at target of the camera, in world co-\/ordinates 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a3ce50433986650eea15b20e4ed19c952}\label{classirr_1_1scene_1_1ICameraSceneNode_a3ce50433986650eea15b20e4ed19c952}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+Target@{get\+Target}}
+\index{get\+Target@{get\+Target}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{get\+Target()}{getTarget()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}\& irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -187,7 +344,20 @@ The current look at target of the camera, in world co-\/ordinates
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a343be24b2c43db7580127229db2dec6a}\label{classirr_1_1scene_1_1ICameraSceneNode_a343be24b2c43db7580127229db2dec6a}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+Target\+And\+Rotation\+Binding@{get\+Target\+And\+Rotation\+Binding}}
 \index{get\+Target\+And\+Rotation\+Binding@{get\+Target\+And\+Rotation\+Binding}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Target\+And\+Rotation\+Binding()}{getTargetAndRotationBinding()}}
+\subsubsection{\texorpdfstring{get\+Target\+And\+Rotation\+Binding()}{getTargetAndRotationBinding()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+Target\+And\+Rotation\+Binding (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Queries if the camera scene node\textquotesingle{}s rotation and its target position are bound together. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classirr_1_1scene_1_1ICameraSceneNode_ad8785d7b2f730933a8d4425ac54e7205}{bind\+Target\+And\+Rotation()} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a343be24b2c43db7580127229db2dec6a}\label{classirr_1_1scene_1_1ICameraSceneNode_a343be24b2c43db7580127229db2dec6a}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+Target\+And\+Rotation\+Binding@{get\+Target\+And\+Rotation\+Binding}}
+\index{get\+Target\+And\+Rotation\+Binding@{get\+Target\+And\+Rotation\+Binding}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{get\+Target\+And\+Rotation\+Binding()}{getTargetAndRotationBinding()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+Target\+And\+Rotation\+Binding (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -200,8 +370,21 @@ Queries if the camera scene node\textquotesingle{}s rotation and its target posi
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a0dfb97859302021b9a44f2ead59fa230}\label{classirr_1_1scene_1_1ICameraSceneNode_a0dfb97859302021b9a44f2ead59fa230}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+Up\+Vector@{get\+Up\+Vector}}
 \index{get\+Up\+Vector@{get\+Up\+Vector}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Up\+Vector()}{getUpVector()}}
-{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df}\& irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+Up\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{get\+Up\+Vector()}{getUpVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}\& irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+Up\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the up vector of the camera. 
+
+\begin{DoxyReturn}{Returns}
+The up vector of the camera, in world space. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a0dfb97859302021b9a44f2ead59fa230}\label{classirr_1_1scene_1_1ICameraSceneNode_a0dfb97859302021b9a44f2ead59fa230}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+Up\+Vector@{get\+Up\+Vector}}
+\index{get\+Up\+Vector@{get\+Up\+Vector}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{get\+Up\+Vector()}{getUpVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}\& irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+Up\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -213,7 +396,20 @@ The up vector of the camera, in world space.
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_add0cba097d3e59714546f04f2c53477e}\label{classirr_1_1scene_1_1ICameraSceneNode_add0cba097d3e59714546f04f2c53477e}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+View\+Frustum@{get\+View\+Frustum}}
 \index{get\+View\+Frustum@{get\+View\+Frustum}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+View\+Frustum()}{getViewFrustum()}}
+\subsubsection{\texorpdfstring{get\+View\+Frustum()}{getViewFrustum()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual const \hyperlink{structirr_1_1scene_1_1SViewFrustum}{S\+View\+Frustum}$\ast$ irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+View\+Frustum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the view frustum. 
+
+Needed sometimes by bsp\+Tree or L\+OD render nodes. \begin{DoxyReturn}{Returns}
+The current view frustum. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_add0cba097d3e59714546f04f2c53477e}\label{classirr_1_1scene_1_1ICameraSceneNode_add0cba097d3e59714546f04f2c53477e}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+View\+Frustum@{get\+View\+Frustum}}
+\index{get\+View\+Frustum@{get\+View\+Frustum}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{get\+View\+Frustum()}{getViewFrustum()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual const \hyperlink{structirr_1_1scene_1_1SViewFrustum}{S\+View\+Frustum}$\ast$ irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+View\+Frustum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -226,8 +422,21 @@ The current view frustum.
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_aef40bb2f8f4a95a66dbb7fc3abee3e49}\label{classirr_1_1scene_1_1ICameraSceneNode_aef40bb2f8f4a95a66dbb7fc3abee3e49}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+View\+Matrix@{get\+View\+Matrix}}
 \index{get\+View\+Matrix@{get\+View\+Matrix}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+View\+Matrix()}{getViewMatrix()}}
-{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4}\& irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+View\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{get\+View\+Matrix()}{getViewMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4}\& irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+View\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the current view matrix of the camera. 
+
+\begin{DoxyReturn}{Returns}
+The current view matrix of the camera. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_aef40bb2f8f4a95a66dbb7fc3abee3e49}\label{classirr_1_1scene_1_1ICameraSceneNode_aef40bb2f8f4a95a66dbb7fc3abee3e49}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+View\+Matrix@{get\+View\+Matrix}}
+\index{get\+View\+Matrix@{get\+View\+Matrix}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{get\+View\+Matrix()}{getViewMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4}\& irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+View\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -239,8 +448,21 @@ The current view matrix of the camera.
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a033018cccdb26f94cc33256e23d764c6}\label{classirr_1_1scene_1_1ICameraSceneNode_a033018cccdb26f94cc33256e23d764c6}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+View\+Matrix\+Affector@{get\+View\+Matrix\+Affector}}
 \index{get\+View\+Matrix\+Affector@{get\+View\+Matrix\+Affector}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+View\+Matrix\+Affector()}{getViewMatrixAffector()}}
-{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4}\& irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+View\+Matrix\+Affector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{get\+View\+Matrix\+Affector()}{getViewMatrixAffector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4}\& irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+View\+Matrix\+Affector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the custom view matrix affector. 
+
+\begin{DoxyReturn}{Returns}
+The affector matrix. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a033018cccdb26f94cc33256e23d764c6}\label{classirr_1_1scene_1_1ICameraSceneNode_a033018cccdb26f94cc33256e23d764c6}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!get\+View\+Matrix\+Affector@{get\+View\+Matrix\+Affector}}
+\index{get\+View\+Matrix\+Affector@{get\+View\+Matrix\+Affector}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{get\+View\+Matrix\+Affector()}{getViewMatrixAffector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4}\& irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::get\+View\+Matrix\+Affector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -252,7 +474,21 @@ The affector matrix.
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_af27145518f43a17f803cdea086f68f3c}\label{classirr_1_1scene_1_1ICameraSceneNode_af27145518f43a17f803cdea086f68f3c}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!On\+Event@{On\+Event}}
 \index{On\+Event@{On\+Event}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{On\+Event()}{OnEvent()}}
+\subsubsection{\texorpdfstring{On\+Event()}{OnEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::\+On\+Event (\begin{DoxyParamCaption}\item[{const \hyperlink{structirr_1_1SEvent}{S\+Event} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+It is possible to send mouse and key events to the camera. 
+
+Most cameras may ignore this input, but camera scene nodes which are created for example with \hyperlink{classirr_1_1scene_1_1ISceneManager_a18e81a59e02231567ac938ea287fe523}{I\+Scene\+Manager\+::add\+Camera\+Scene\+Node\+Maya} or \hyperlink{classirr_1_1scene_1_1ISceneManager_ac312cbc85161678d00192880f2cdddbb}{I\+Scene\+Manager\+::add\+Camera\+Scene\+Node\+F\+PS}, may want to get this input for changing their position, look at target or whatever. 
+
+Implements \hyperlink{classirr_1_1IEventReceiver_a571f744ceffc3b4fe8a81f529163eb97}{irr\+::\+I\+Event\+Receiver}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_af27145518f43a17f803cdea086f68f3c}\label{classirr_1_1scene_1_1ICameraSceneNode_af27145518f43a17f803cdea086f68f3c}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!On\+Event@{On\+Event}}
+\index{On\+Event@{On\+Event}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{On\+Event()}{OnEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::\+On\+Event (\begin{DoxyParamCaption}\item[{const \hyperlink{structirr_1_1SEvent}{S\+Event} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -266,7 +502,22 @@ Implements \hyperlink{classirr_1_1IEventReceiver_a571f744ceffc3b4fe8a81f529163eb
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a5c3728a61a208376b9df6a701f4a5b3c}\label{classirr_1_1scene_1_1ICameraSceneNode_a5c3728a61a208376b9df6a701f4a5b3c}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+Aspect\+Ratio@{set\+Aspect\+Ratio}}
 \index{set\+Aspect\+Ratio@{set\+Aspect\+Ratio}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Aspect\+Ratio()}{setAspectRatio()}}
+\subsubsection{\texorpdfstring{set\+Aspect\+Ratio()}{setAspectRatio()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Aspect\+Ratio (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{aspect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the aspect ratio (default\+: 4.\+0f / 3.\+0f) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aspect} & New aspect ratio. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a5c3728a61a208376b9df6a701f4a5b3c}\label{classirr_1_1scene_1_1ICameraSceneNode_a5c3728a61a208376b9df6a701f4a5b3c}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+Aspect\+Ratio@{set\+Aspect\+Ratio}}
+\index{set\+Aspect\+Ratio@{set\+Aspect\+Ratio}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{set\+Aspect\+Ratio()}{setAspectRatio()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Aspect\+Ratio (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{aspect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -281,7 +532,22 @@ Sets the aspect ratio (default\+: 4.\+0f / 3.\+0f)
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_ab7e427dd639b6bb63f648d6d087da1ea}\label{classirr_1_1scene_1_1ICameraSceneNode_ab7e427dd639b6bb63f648d6d087da1ea}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+Far\+Value@{set\+Far\+Value}}
 \index{set\+Far\+Value@{set\+Far\+Value}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Far\+Value()}{setFarValue()}}
+\subsubsection{\texorpdfstring{set\+Far\+Value()}{setFarValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Far\+Value (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{zf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the value of the far clipping plane (default\+: 2000.\+0f) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zf} & New z far value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_ab7e427dd639b6bb63f648d6d087da1ea}\label{classirr_1_1scene_1_1ICameraSceneNode_ab7e427dd639b6bb63f648d6d087da1ea}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+Far\+Value@{set\+Far\+Value}}
+\index{set\+Far\+Value@{set\+Far\+Value}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{set\+Far\+Value()}{setFarValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Far\+Value (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{zf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -296,7 +562,22 @@ Sets the value of the far clipping plane (default\+: 2000.\+0f)
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a43ee11523e9cf842d4b5d8c6a572241c}\label{classirr_1_1scene_1_1ICameraSceneNode_a43ee11523e9cf842d4b5d8c6a572241c}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+F\+OV@{set\+F\+OV}}
 \index{set\+F\+OV@{set\+F\+OV}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+F\+O\+V()}{setFOV()}}
+\subsubsection{\texorpdfstring{set\+F\+O\+V()}{setFOV()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+F\+OV (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{fovy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the field of view (Default\+: PI / 2.\+5f) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fovy} & New field of view in radians. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a43ee11523e9cf842d4b5d8c6a572241c}\label{classirr_1_1scene_1_1ICameraSceneNode_a43ee11523e9cf842d4b5d8c6a572241c}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+F\+OV@{set\+F\+OV}}
+\index{set\+F\+OV@{set\+F\+OV}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{set\+F\+O\+V()}{setFOV()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+F\+OV (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{fovy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -311,7 +592,17 @@ Sets the field of view (Default\+: PI / 2.\+5f)
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a5b5c89233c1805676d6fcb392236dfec}\label{classirr_1_1scene_1_1ICameraSceneNode_a5b5c89233c1805676d6fcb392236dfec}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+Input\+Receiver\+Enabled@{set\+Input\+Receiver\+Enabled}}
 \index{set\+Input\+Receiver\+Enabled@{set\+Input\+Receiver\+Enabled}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Input\+Receiver\+Enabled()}{setInputReceiverEnabled()}}
+\subsubsection{\texorpdfstring{set\+Input\+Receiver\+Enabled()}{setInputReceiverEnabled()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Input\+Receiver\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Disables or enables the camera to get key or mouse inputs. 
+
+If this is set to true, the camera will respond to key inputs otherwise not. \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a5b5c89233c1805676d6fcb392236dfec}\label{classirr_1_1scene_1_1ICameraSceneNode_a5b5c89233c1805676d6fcb392236dfec}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+Input\+Receiver\+Enabled@{set\+Input\+Receiver\+Enabled}}
+\index{set\+Input\+Receiver\+Enabled@{set\+Input\+Receiver\+Enabled}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{set\+Input\+Receiver\+Enabled()}{setInputReceiverEnabled()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Input\+Receiver\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -321,7 +612,22 @@ Disables or enables the camera to get key or mouse inputs.
 If this is set to true, the camera will respond to key inputs otherwise not. \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_aab5107ae5d0373d6fb005a87741e7057}\label{classirr_1_1scene_1_1ICameraSceneNode_aab5107ae5d0373d6fb005a87741e7057}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+Near\+Value@{set\+Near\+Value}}
 \index{set\+Near\+Value@{set\+Near\+Value}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Near\+Value()}{setNearValue()}}
+\subsubsection{\texorpdfstring{set\+Near\+Value()}{setNearValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Near\+Value (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{zn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the value of the near clipping plane. (default\+: 1.\+0f) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zn} & New z near value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_aab5107ae5d0373d6fb005a87741e7057}\label{classirr_1_1scene_1_1ICameraSceneNode_aab5107ae5d0373d6fb005a87741e7057}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+Near\+Value@{set\+Near\+Value}}
+\index{set\+Near\+Value@{set\+Near\+Value}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{set\+Near\+Value()}{setNearValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Near\+Value (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{zn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -336,14 +642,31 @@ Sets the value of the near clipping plane. (default\+: 1.\+0f)
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a022415e06070ad77c6053eba64ba62ae}\label{classirr_1_1scene_1_1ICameraSceneNode_a022415e06070ad77c6053eba64ba62ae}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+Projection\+Matrix@{set\+Projection\+Matrix}}
 \index{set\+Projection\+Matrix@{set\+Projection\+Matrix}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Projection\+Matrix()}{setProjectionMatrix()}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Projection\+Matrix (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4} \&}]{projection,  }\item[{bool}]{is\+Orthogonal = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{set\+Projection\+Matrix()}{setProjectionMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Projection\+Matrix (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \&}]{projection,  }\item[{bool}]{is\+Orthogonal = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
 Sets the projection matrix of the camera. 
 
-The \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4} class has some methods to build a projection matrix. e.\+g\+: \hyperlink{classirr_1_1core_1_1CMatrix4_a1895b967a8f8c9d7ad90fe5434f2499f}{core\+::matrix4\+::build\+Projection\+Matrix\+Perspective\+Fov\+LH}. Note that the matrix will only stay as set by this method until one of the following Methods are called\+: set\+Near\+Value, set\+Far\+Value, set\+Aspect\+Ratio, set\+F\+OV. 
+The \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} class has some methods to build a projection matrix. e.\+g\+: \hyperlink{classirr_1_1core_1_1CMatrix4_a1895b967a8f8c9d7ad90fe5434f2499f}{core\+::matrix4\+::build\+Projection\+Matrix\+Perspective\+Fov\+LH}. Note that the matrix will only stay as set by this method until one of the following Methods are called\+: set\+Near\+Value, set\+Far\+Value, set\+Aspect\+Ratio, set\+F\+OV. 
+\begin{DoxyParams}{Parameters}
+{\em projection} & The new projection matrix of the camera. \\
+\hline
+{\em is\+Orthogonal} & Set this to true if the matrix is an orthogonal one (e.\+g. from matrix4\+::build\+Projection\+Matrix\+Ortho). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a022415e06070ad77c6053eba64ba62ae}\label{classirr_1_1scene_1_1ICameraSceneNode_a022415e06070ad77c6053eba64ba62ae}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+Projection\+Matrix@{set\+Projection\+Matrix}}
+\index{set\+Projection\+Matrix@{set\+Projection\+Matrix}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{set\+Projection\+Matrix()}{setProjectionMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Projection\+Matrix (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \&}]{projection,  }\item[{bool}]{is\+Orthogonal = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the projection matrix of the camera. 
+
+The \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} class has some methods to build a projection matrix. e.\+g\+: \hyperlink{classirr_1_1core_1_1CMatrix4_a1895b967a8f8c9d7ad90fe5434f2499f}{core\+::matrix4\+::build\+Projection\+Matrix\+Perspective\+Fov\+LH}. Note that the matrix will only stay as set by this method until one of the following Methods are called\+: set\+Near\+Value, set\+Far\+Value, set\+Aspect\+Ratio, set\+F\+OV. 
 \begin{DoxyParams}{Parameters}
 {\em projection} & The new projection matrix of the camera. \\
 \hline
@@ -353,8 +676,30 @@ The \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::m
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_af95d5f50c192f212e11f3f050e92a470}\label{classirr_1_1scene_1_1ICameraSceneNode_af95d5f50c192f212e11f3f050e92a470}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+Rotation@{set\+Rotation}}
 \index{set\+Rotation@{set\+Rotation}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Rotation (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Rotation (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the rotation of the node. 
+
+This only modifies the relative rotation of the node. If the camera\textquotesingle{}s target and rotation are bound ( \begin{DoxySeeAlso}{See also}
+\hyperlink{classirr_1_1scene_1_1ICameraSceneNode_ad8785d7b2f730933a8d4425ac54e7205}{bind\+Target\+And\+Rotation()} ) then calling this will also change the camera\textquotesingle{}s target to match the rotation. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em rotation} & New rotation of the node in degrees. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classirr_1_1scene_1_1ISceneNode_adb6ff54f52d3a9e1514cd487a550935c}{irr\+::scene\+::\+I\+Scene\+Node}.
+
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_af95d5f50c192f212e11f3f050e92a470}\label{classirr_1_1scene_1_1ICameraSceneNode_af95d5f50c192f212e11f3f050e92a470}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+Rotation@{set\+Rotation}}
+\index{set\+Rotation@{set\+Rotation}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Rotation (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -375,8 +720,26 @@ Reimplemented from \hyperlink{classirr_1_1scene_1_1ISceneNode_adb6ff54f52d3a9e15
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a7280b07fd7915c64350db5a132b4ba07}\label{classirr_1_1scene_1_1ICameraSceneNode_a7280b07fd7915c64350db5a132b4ba07}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+Target@{set\+Target}}
 \index{set\+Target@{set\+Target}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Target()}{setTarget()}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Target (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{set\+Target()}{setTarget()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Target (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the look at target of the camera. 
+
+If the camera\textquotesingle{}s target and rotation are bound ( \begin{DoxySeeAlso}{See also}
+\hyperlink{classirr_1_1scene_1_1ICameraSceneNode_ad8785d7b2f730933a8d4425ac54e7205}{bind\+Target\+And\+Rotation()} ) then calling this will also change the camera\textquotesingle{}s \hyperlink{namespaceirr_1_1scene}{scene} node rotation to match the target. Note that \hyperlink{classirr_1_1scene_1_1ICameraSceneNode_a7280b07fd7915c64350db5a132b4ba07}{set\+Target} uses the current absolute position internally, so if you changed \hyperlink{classirr_1_1scene_1_1ISceneNode_a2166eb0a92cc0e46c49266f41a68ed50}{set\+Position} since last rendering you must call \hyperlink{classirr_1_1scene_1_1ISceneNode_aeb6e0dc034bb2101600ce87acbcf0f6e}{update\+Absolute\+Position} before using this function. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Look at target of the camera, in world co-\/ordinates. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a7280b07fd7915c64350db5a132b4ba07}\label{classirr_1_1scene_1_1ICameraSceneNode_a7280b07fd7915c64350db5a132b4ba07}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+Target@{set\+Target}}
+\index{set\+Target@{set\+Target}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{set\+Target()}{setTarget()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Target (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -393,8 +756,23 @@ If the camera\textquotesingle{}s target and rotation are bound ( \begin{DoxySeeA
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a1e74c17d89979fde4738276ccdcc0d3a}\label{classirr_1_1scene_1_1ICameraSceneNode_a1e74c17d89979fde4738276ccdcc0d3a}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+Up\+Vector@{set\+Up\+Vector}}
 \index{set\+Up\+Vector@{set\+Up\+Vector}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Up\+Vector()}{setUpVector()}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Up\+Vector (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{set\+Up\+Vector()}{setUpVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Up\+Vector (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the up vector of the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & New upvector of the camera. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_a1e74c17d89979fde4738276ccdcc0d3a}\label{classirr_1_1scene_1_1ICameraSceneNode_a1e74c17d89979fde4738276ccdcc0d3a}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+Up\+Vector@{set\+Up\+Vector}}
+\index{set\+Up\+Vector@{set\+Up\+Vector}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{set\+Up\+Vector()}{setUpVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+Up\+Vector (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -408,8 +786,23 @@ Sets the up vector of the camera.
 \mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_adb3500cac2a8a47e6a3f48aa343ce2fd}\label{classirr_1_1scene_1_1ICameraSceneNode_adb3500cac2a8a47e6a3f48aa343ce2fd}} 
 \index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+View\+Matrix\+Affector@{set\+View\+Matrix\+Affector}}
 \index{set\+View\+Matrix\+Affector@{set\+View\+Matrix\+Affector}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+View\+Matrix\+Affector()}{setViewMatrixAffector()}}
-{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+View\+Matrix\+Affector (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core\+::matrix4} \&}]{affector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{set\+View\+Matrix\+Affector()}{setViewMatrixAffector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+View\+Matrix\+Affector (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \&}]{affector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets a custom view matrix affector. 
+
+The matrix passed here, will be multiplied with the view matrix when it gets updated. This allows for custom camera setups like, for example, a reflection camera. 
+\begin{DoxyParams}{Parameters}
+{\em affector} & The affector matrix. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1ICameraSceneNode_adb3500cac2a8a47e6a3f48aa343ce2fd}\label{classirr_1_1scene_1_1ICameraSceneNode_adb3500cac2a8a47e6a3f48aa343ce2fd}} 
+\index{irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}!set\+View\+Matrix\+Affector@{set\+View\+Matrix\+Affector}}
+\index{set\+View\+Matrix\+Affector@{set\+View\+Matrix\+Affector}!irr\+::scene\+::\+I\+Camera\+Scene\+Node@{irr\+::scene\+::\+I\+Camera\+Scene\+Node}}
+\subsubsection{\texorpdfstring{set\+View\+Matrix\+Affector()}{setViewMatrixAffector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Camera\+Scene\+Node\+::set\+View\+Matrix\+Affector (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core\+::matrix4} \&}]{affector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 

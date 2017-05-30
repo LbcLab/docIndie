@@ -1,0 +1,118 @@
+\hypertarget{group__libvlc__media__discoverer}{}\section{Lib\+V\+LC media discovery}
+\label{group__libvlc__media__discoverer}\index{Lib\+V\+L\+C media discovery@{Lib\+V\+L\+C media discovery}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+discoverer\+\_\+t $\ast$ \hyperlink{group__libvlc__media__discoverer_gacf768ef894b3d9eb3f655bdc31a31f66}{libvlc\+\_\+media\+\_\+discoverer\+\_\+new\+\_\+from\+\_\+name} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+inst, const char $\ast$psz\+\_\+name)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__discoverer_ga44bb5d3112f1844c420660ac50f03e1b}{libvlc\+\_\+media\+\_\+discoverer\+\_\+release} (libvlc\+\_\+media\+\_\+discoverer\+\_\+t $\ast$p\+\_\+mdis)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI char $\ast$ \hyperlink{group__libvlc__media__discoverer_ga27a1fcfeceedcb2649a92c83f7081617}{libvlc\+\_\+media\+\_\+discoverer\+\_\+localized\+\_\+name} (libvlc\+\_\+media\+\_\+discoverer\+\_\+t $\ast$p\+\_\+mdis)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$ \hyperlink{group__libvlc__media__discoverer_gad6a6daa2d4a4ce2634969380b4b6151c}{libvlc\+\_\+media\+\_\+discoverer\+\_\+media\+\_\+list} (libvlc\+\_\+media\+\_\+discoverer\+\_\+t $\ast$p\+\_\+mdis)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t} $\ast$ \hyperlink{group__libvlc__media__discoverer_ga60cca8ee74b3dd433f447436ca3e2578}{libvlc\+\_\+media\+\_\+discoverer\+\_\+event\+\_\+manager} (libvlc\+\_\+media\+\_\+discoverer\+\_\+t $\ast$p\+\_\+mdis)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__discoverer_gaa4cd385d67fd8099a23209d2245ddd16}{libvlc\+\_\+media\+\_\+discoverer\+\_\+is\+\_\+running} (libvlc\+\_\+media\+\_\+discoverer\+\_\+t $\ast$p\+\_\+mdis)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Lib\+V\+LC media discovery finds available media via various means. This corresponds to the service discovery functionality in V\+LC media player. Different plugins find potential medias locally (e.\+g. user media directory), from peripherals (e.\+g. video capture device), on the local network (e.\+g. S\+AP) or on the Internet (e.\+g. Internet radios). 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__libvlc__media__discoverer_ga60cca8ee74b3dd433f447436ca3e2578}\label{group__libvlc__media__discoverer_ga60cca8ee74b3dd433f447436ca3e2578}} 
+\index{Lib\+V\+L\+C media discovery@{Lib\+V\+L\+C media discovery}!libvlc\+\_\+media\+\_\+discoverer\+\_\+event\+\_\+manager@{libvlc\+\_\+media\+\_\+discoverer\+\_\+event\+\_\+manager}}
+\index{libvlc\+\_\+media\+\_\+discoverer\+\_\+event\+\_\+manager@{libvlc\+\_\+media\+\_\+discoverer\+\_\+event\+\_\+manager}!Lib\+V\+L\+C media discovery@{Lib\+V\+L\+C media discovery}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+discoverer\+\_\+event\+\_\+manager()}{libvlc\_media\_discoverer\_event\_manager()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t}$\ast$ libvlc\+\_\+media\+\_\+discoverer\+\_\+event\+\_\+manager (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+discoverer\+\_\+t $\ast$}]{p\+\_\+mdis }\end{DoxyParamCaption})}
+
+Get event manager from media service discover object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mdis} & media service discover object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+event manager object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__discoverer_gaa4cd385d67fd8099a23209d2245ddd16}\label{group__libvlc__media__discoverer_gaa4cd385d67fd8099a23209d2245ddd16}} 
+\index{Lib\+V\+L\+C media discovery@{Lib\+V\+L\+C media discovery}!libvlc\+\_\+media\+\_\+discoverer\+\_\+is\+\_\+running@{libvlc\+\_\+media\+\_\+discoverer\+\_\+is\+\_\+running}}
+\index{libvlc\+\_\+media\+\_\+discoverer\+\_\+is\+\_\+running@{libvlc\+\_\+media\+\_\+discoverer\+\_\+is\+\_\+running}!Lib\+V\+L\+C media discovery@{Lib\+V\+L\+C media discovery}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+discoverer\+\_\+is\+\_\+running()}{libvlc\_media\_discoverer\_is\_running()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+discoverer\+\_\+is\+\_\+running (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+discoverer\+\_\+t $\ast$}]{p\+\_\+mdis }\end{DoxyParamCaption})}
+
+Query if media service discover object is running.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mdis} & media service discover object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if running, false if not
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__discoverer_ga27a1fcfeceedcb2649a92c83f7081617}\label{group__libvlc__media__discoverer_ga27a1fcfeceedcb2649a92c83f7081617}} 
+\index{Lib\+V\+L\+C media discovery@{Lib\+V\+L\+C media discovery}!libvlc\+\_\+media\+\_\+discoverer\+\_\+localized\+\_\+name@{libvlc\+\_\+media\+\_\+discoverer\+\_\+localized\+\_\+name}}
+\index{libvlc\+\_\+media\+\_\+discoverer\+\_\+localized\+\_\+name@{libvlc\+\_\+media\+\_\+discoverer\+\_\+localized\+\_\+name}!Lib\+V\+L\+C media discovery@{Lib\+V\+L\+C media discovery}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+discoverer\+\_\+localized\+\_\+name()}{libvlc\_media\_discoverer\_localized\_name()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI char$\ast$ libvlc\+\_\+media\+\_\+discoverer\+\_\+localized\+\_\+name (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+discoverer\+\_\+t $\ast$}]{p\+\_\+mdis }\end{DoxyParamCaption})}
+
+Get media service discover object its localized name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mdis} & media discover object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+localized name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__discoverer_gad6a6daa2d4a4ce2634969380b4b6151c}\label{group__libvlc__media__discoverer_gad6a6daa2d4a4ce2634969380b4b6151c}} 
+\index{Lib\+V\+L\+C media discovery@{Lib\+V\+L\+C media discovery}!libvlc\+\_\+media\+\_\+discoverer\+\_\+media\+\_\+list@{libvlc\+\_\+media\+\_\+discoverer\+\_\+media\+\_\+list}}
+\index{libvlc\+\_\+media\+\_\+discoverer\+\_\+media\+\_\+list@{libvlc\+\_\+media\+\_\+discoverer\+\_\+media\+\_\+list}!Lib\+V\+L\+C media discovery@{Lib\+V\+L\+C media discovery}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+discoverer\+\_\+media\+\_\+list()}{libvlc\_media\_discoverer\_media\_list()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+list\+\_\+t$\ast$ libvlc\+\_\+media\+\_\+discoverer\+\_\+media\+\_\+list (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+discoverer\+\_\+t $\ast$}]{p\+\_\+mdis }\end{DoxyParamCaption})}
+
+Get media service discover media list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mdis} & media service discover object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of media items 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__discoverer_gacf768ef894b3d9eb3f655bdc31a31f66}\label{group__libvlc__media__discoverer_gacf768ef894b3d9eb3f655bdc31a31f66}} 
+\index{Lib\+V\+L\+C media discovery@{Lib\+V\+L\+C media discovery}!libvlc\+\_\+media\+\_\+discoverer\+\_\+new\+\_\+from\+\_\+name@{libvlc\+\_\+media\+\_\+discoverer\+\_\+new\+\_\+from\+\_\+name}}
+\index{libvlc\+\_\+media\+\_\+discoverer\+\_\+new\+\_\+from\+\_\+name@{libvlc\+\_\+media\+\_\+discoverer\+\_\+new\+\_\+from\+\_\+name}!Lib\+V\+L\+C media discovery@{Lib\+V\+L\+C media discovery}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+discoverer\+\_\+new\+\_\+from\+\_\+name()}{libvlc\_media\_discoverer\_new\_from\_name()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+discoverer\+\_\+t$\ast$ libvlc\+\_\+media\+\_\+discoverer\+\_\+new\+\_\+from\+\_\+name (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+inst,  }\item[{const char $\ast$}]{psz\+\_\+name }\end{DoxyParamCaption})}
+
+Discover media service by name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+inst} & libvlc instance \\
+\hline
+{\em psz\+\_\+name} & service name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+media discover object or N\+U\+LL in case of error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__discoverer_ga44bb5d3112f1844c420660ac50f03e1b}\label{group__libvlc__media__discoverer_ga44bb5d3112f1844c420660ac50f03e1b}} 
+\index{Lib\+V\+L\+C media discovery@{Lib\+V\+L\+C media discovery}!libvlc\+\_\+media\+\_\+discoverer\+\_\+release@{libvlc\+\_\+media\+\_\+discoverer\+\_\+release}}
+\index{libvlc\+\_\+media\+\_\+discoverer\+\_\+release@{libvlc\+\_\+media\+\_\+discoverer\+\_\+release}!Lib\+V\+L\+C media discovery@{Lib\+V\+L\+C media discovery}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+discoverer\+\_\+release()}{libvlc\_media\_discoverer\_release()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+discoverer\+\_\+release (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+discoverer\+\_\+t $\ast$}]{p\+\_\+mdis }\end{DoxyParamCaption})}
+
+Release media discover object. If the reference count reaches 0, then the object will be released.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mdis} & media service discover object \\
+\hline
+\end{DoxyParams}

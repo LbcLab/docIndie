@@ -1,0 +1,1416 @@
+\hypertarget{group__libvlc__media__player}{}\section{Lib\+V\+LC media player}
+\label{group__libvlc__media__player}\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__libvlc__video}{Lib\+V\+L\+C video controls}
+\item 
+\hyperlink{group__libvlc__audio}{Lib\+V\+L\+C audio controls}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structlibvlc__track__description__t}{libvlc\+\_\+track\+\_\+description\+\_\+t}
+\item 
+struct \hyperlink{structlibvlc__audio__output__t}{libvlc\+\_\+audio\+\_\+output\+\_\+t}
+\item 
+struct \hyperlink{structlibvlc__audio__output__device__t}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+t}
+\item 
+struct \hyperlink{structlibvlc__rectangle__t}{libvlc\+\_\+rectangle\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structlibvlc__track__description__t}{libvlc\+\_\+track\+\_\+description\+\_\+t} \hyperlink{group__libvlc__media__player_gada3edbe8acd22ebc12e33993330e0494}{libvlc\+\_\+track\+\_\+description\+\_\+t}
+\item 
+typedef struct \hyperlink{structlibvlc__audio__output__t}{libvlc\+\_\+audio\+\_\+output\+\_\+t} \hyperlink{group__libvlc__media__player_gad740a59b9fe0043e1836f864a71cda01}{libvlc\+\_\+audio\+\_\+output\+\_\+t}
+\item 
+typedef struct \hyperlink{structlibvlc__audio__output__device__t}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+t} \hyperlink{group__libvlc__media__player_ga88bc71eb38580ffea67174c817b51c8f}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+t}
+\item 
+typedef struct \hyperlink{structlibvlc__rectangle__t}{libvlc\+\_\+rectangle\+\_\+t} \hyperlink{group__libvlc__media__player_gad0cdc4dd53f2b27a293bdb2f25f195f8}{libvlc\+\_\+rectangle\+\_\+t}
+\item 
+typedef enum \hyperlink{group__libvlc__media__player_ga412d5b45da5bda967f656cb17ecc83fd}{libvlc\+\_\+video\+\_\+marquee\+\_\+option\+\_\+t} \hyperlink{group__libvlc__media__player_ga82dd5710df44a4c244785c0150402844}{libvlc\+\_\+video\+\_\+marquee\+\_\+option\+\_\+t}
+\item 
+typedef enum \hyperlink{group__libvlc__media__player_ga6e6b601e219aafd4ffc6063c1dbf11b1}{libvlc\+\_\+navigate\+\_\+mode\+\_\+t} \hyperlink{group__libvlc__media__player_gae3ecf5a98d792f95033453c65adcc3a5}{libvlc\+\_\+navigate\+\_\+mode\+\_\+t}
+\item 
+typedef enum \hyperlink{group__libvlc__media__player_ga948997d1c6ab5fee8051417ac7dfa1c7}{libvlc\+\_\+position\+\_\+t} \hyperlink{group__libvlc__media__player_gad591cf9e00646a6e95199a1acb4b4bd2}{libvlc\+\_\+position\+\_\+t}
+\item 
+typedef struct \hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t} \hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t}
+\item 
+typedef void $\ast$($\ast$ \hyperlink{group__libvlc__media__player_ga193de3e82f6de3f9d8f5ccd8b5f2aa98}{libvlc\+\_\+video\+\_\+lock\+\_\+cb}) (void $\ast$opaque, void $\ast$$\ast$planes)
+\item 
+typedef void($\ast$ \hyperlink{group__libvlc__media__player_ga024c0f0bba9d3b32a881c40f3cb479bb}{libvlc\+\_\+video\+\_\+unlock\+\_\+cb}) (void $\ast$opaque, void $\ast$picture, void $\ast$const $\ast$planes)
+\item 
+typedef void($\ast$ \hyperlink{group__libvlc__media__player_ga2189c9deefc2154ddc5d5f1871b0a106}{libvlc\+\_\+video\+\_\+display\+\_\+cb}) (void $\ast$opaque, void $\ast$picture)
+\item 
+typedef unsigned($\ast$ \hyperlink{group__libvlc__media__player_gae46128c21d0d0151aca3ba017d1d6b35}{libvlc\+\_\+video\+\_\+format\+\_\+cb}) (void $\ast$$\ast$opaque, char $\ast$chroma, unsigned $\ast$width, unsigned $\ast$height, unsigned $\ast$pitches, unsigned $\ast$lines)
+\item 
+typedef void($\ast$ \hyperlink{group__libvlc__media__player_ga47f87563b82ed4b6d70ef51243003ae9}{libvlc\+\_\+video\+\_\+cleanup\+\_\+cb}) (void $\ast$opaque)
+\item 
+typedef void($\ast$ \hyperlink{group__libvlc__media__player_ga9a242251d11378ecdc43b8ef0cc0254e}{libvlc\+\_\+audio\+\_\+play\+\_\+cb}) (void $\ast$data, const void $\ast$samples, unsigned count, int64\+\_\+t pts)
+\item 
+typedef void($\ast$ \hyperlink{group__libvlc__media__player_gaac6c92b1a3d331c73fbbba11140fca4e}{libvlc\+\_\+audio\+\_\+pause\+\_\+cb}) (void $\ast$data, int64\+\_\+t pts)
+\item 
+typedef void($\ast$ \hyperlink{group__libvlc__media__player_ga4c61b5ee287be1aa176882cef004e4ca}{libvlc\+\_\+audio\+\_\+resume\+\_\+cb}) (void $\ast$data, int64\+\_\+t pts)
+\item 
+typedef void($\ast$ \hyperlink{group__libvlc__media__player_ga7ab971890ddbf306331989d60b88c171}{libvlc\+\_\+audio\+\_\+flush\+\_\+cb}) (void $\ast$data, int64\+\_\+t pts)
+\item 
+typedef void($\ast$ \hyperlink{group__libvlc__media__player_gaf25ee69cefcb19ae1a1751b7ba73cf41}{libvlc\+\_\+audio\+\_\+drain\+\_\+cb}) (void $\ast$data)
+\item 
+typedef void($\ast$ \hyperlink{group__libvlc__media__player_ga1f41552fa452e3d5d53d079485eb0749}{libvlc\+\_\+audio\+\_\+set\+\_\+volume\+\_\+cb}) (void $\ast$data, float volume, bool mute)
+\item 
+typedef int($\ast$ \hyperlink{group__libvlc__media__player_gaa8c228a30286c9b0b26ad436d69e6f8b}{libvlc\+\_\+audio\+\_\+setup\+\_\+cb}) (void $\ast$$\ast$data, char $\ast$format, unsigned $\ast$rate, unsigned $\ast$channels)
+\item 
+typedef void($\ast$ \hyperlink{group__libvlc__media__player_ga90303960d8c56bc1cd9902e80b011843}{libvlc\+\_\+audio\+\_\+cleanup\+\_\+cb}) (void $\ast$data)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__libvlc__media__player_ga412d5b45da5bda967f656cb17ecc83fd}{libvlc\+\_\+video\+\_\+marquee\+\_\+option\+\_\+t} \{ , \hyperlink{group__libvlc__media__player_gga412d5b45da5bda967f656cb17ecc83fda46d8b92b1bf73d727e5f9fad4bb9ee2d}{libvlc\+\_\+marquee\+\_\+\+Color}
+ \}
+\item 
+enum \hyperlink{group__libvlc__media__player_ga6e6b601e219aafd4ffc6063c1dbf11b1}{libvlc\+\_\+navigate\+\_\+mode\+\_\+t} 
+\item 
+enum \hyperlink{group__libvlc__media__player_ga948997d1c6ab5fee8051417ac7dfa1c7}{libvlc\+\_\+position\+\_\+t} 
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$ \hyperlink{group__libvlc__media__player_ga210a0f60ad0a2a7ac0460269b5ac2b34}{libvlc\+\_\+media\+\_\+player\+\_\+new} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+libvlc\+\_\+instance)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$ \hyperlink{group__libvlc__media__player_gaf6897a4ef07c684555fc600c7a63a8c4}{libvlc\+\_\+media\+\_\+player\+\_\+new\+\_\+from\+\_\+media} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_gac8d8236f3dfa549d3637100ae6d07e72}{libvlc\+\_\+media\+\_\+player\+\_\+release} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_gac05d1395d425db194eda5a29a03c346a}{libvlc\+\_\+media\+\_\+player\+\_\+retain} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_gadeb7ac440f41dbb2aa1a7811904099b1}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+media} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t $\ast$ \hyperlink{group__libvlc__media__player_gacd3e2cbc0303a8ba8bdcb891da10876c}{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+media} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t} $\ast$ \hyperlink{group__libvlc__media__player_ga123b91853ed24304d2e33f082b38948e}{libvlc\+\_\+media\+\_\+player\+\_\+event\+\_\+manager} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__player_ga70fd26f9bbca7eda021a49680e7fbc1c}{libvlc\+\_\+media\+\_\+player\+\_\+is\+\_\+playing} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__player_gac5da60e52d11c81c7a6a61f470aa1646}{libvlc\+\_\+media\+\_\+player\+\_\+play} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_ga6e39882b33a22337cec9fd49dd7e23c4}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+pause} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$mp, int do\+\_\+pause)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_ga61712d4eb8f63232c712a81fb19ee8fa}{libvlc\+\_\+media\+\_\+player\+\_\+pause} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_gacefc05e7806905447a436d3fc242e6de}{libvlc\+\_\+media\+\_\+player\+\_\+stop} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_ga612605f2e5c638d9f4ed59021d714bf0}{libvlc\+\_\+video\+\_\+set\+\_\+callbacks} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$mp, \hyperlink{group__libvlc__media__player_ga193de3e82f6de3f9d8f5ccd8b5f2aa98}{libvlc\+\_\+video\+\_\+lock\+\_\+cb} lock, \hyperlink{group__libvlc__media__player_ga024c0f0bba9d3b32a881c40f3cb479bb}{libvlc\+\_\+video\+\_\+unlock\+\_\+cb} unlock, \hyperlink{group__libvlc__media__player_ga2189c9deefc2154ddc5d5f1871b0a106}{libvlc\+\_\+video\+\_\+display\+\_\+cb} display, void $\ast$opaque)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_ga6518394e05d458731c11c86edb23f4cc}{libvlc\+\_\+video\+\_\+set\+\_\+format} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$mp, const char $\ast$chroma, unsigned width, unsigned height, unsigned pitch)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_gafbeef69fb76b4c4d6cb25145aee1ad99}{libvlc\+\_\+video\+\_\+set\+\_\+format\+\_\+callbacks} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$mp, \hyperlink{group__libvlc__media__player_gae46128c21d0d0151aca3ba017d1d6b35}{libvlc\+\_\+video\+\_\+format\+\_\+cb} setup, \hyperlink{group__libvlc__media__player_ga47f87563b82ed4b6d70ef51243003ae9}{libvlc\+\_\+video\+\_\+cleanup\+\_\+cb} cleanup)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_ga46c26a395b496e48917101198acc31f6}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+nsobject} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, void $\ast$drawable)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void $\ast$ \hyperlink{group__libvlc__media__player_gac331dd7523df7c754d6ce4bb3cdb7e08}{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+nsobject} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_gadc35c9afb5789c16fbe8e1f358ec141b}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+agl} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, uint32\+\_\+t drawable)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI uint32\+\_\+t \hyperlink{group__libvlc__media__player_ga143905045e1be83d8ae3764d1d589b24}{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+agl} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_ga31827df3a665a72410cb95695147ba5b}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+xwindow} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, uint32\+\_\+t drawable)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI uint32\+\_\+t \hyperlink{group__libvlc__media__player_gac0ccdaeef127b62ce26adfa195f0bba1}{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+xwindow} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_ga0ee3abb85cd9735fdeace4882eb711f3}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+hwnd} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, void $\ast$drawable)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void $\ast$ \hyperlink{group__libvlc__media__player_ga9543ef07c220ccaf6250c2c3022efb46}{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+hwnd} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_gaac7abb1d8be3f60bb9da20c000703790}{libvlc\+\_\+audio\+\_\+set\+\_\+callbacks} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$mp, \hyperlink{group__libvlc__media__player_ga9a242251d11378ecdc43b8ef0cc0254e}{libvlc\+\_\+audio\+\_\+play\+\_\+cb} play, \hyperlink{group__libvlc__media__player_gaac6c92b1a3d331c73fbbba11140fca4e}{libvlc\+\_\+audio\+\_\+pause\+\_\+cb} pause, \hyperlink{group__libvlc__media__player_ga4c61b5ee287be1aa176882cef004e4ca}{libvlc\+\_\+audio\+\_\+resume\+\_\+cb} resume, \hyperlink{group__libvlc__media__player_ga7ab971890ddbf306331989d60b88c171}{libvlc\+\_\+audio\+\_\+flush\+\_\+cb} flush, \hyperlink{group__libvlc__media__player_gaf25ee69cefcb19ae1a1751b7ba73cf41}{libvlc\+\_\+audio\+\_\+drain\+\_\+cb} drain, void $\ast$opaque)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_gaabd876baf98d23a49ad55b2cd53e81b9}{libvlc\+\_\+audio\+\_\+set\+\_\+volume\+\_\+callback} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$mp, \hyperlink{group__libvlc__media__player_ga1f41552fa452e3d5d53d079485eb0749}{libvlc\+\_\+audio\+\_\+set\+\_\+volume\+\_\+cb} set\+\_\+volume)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_gae1c8bcbd10157da11331e46d30ecd058}{libvlc\+\_\+audio\+\_\+set\+\_\+format\+\_\+callbacks} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$mp, \hyperlink{group__libvlc__media__player_gaa8c228a30286c9b0b26ad436d69e6f8b}{libvlc\+\_\+audio\+\_\+setup\+\_\+cb} setup, \hyperlink{group__libvlc__media__player_ga90303960d8c56bc1cd9902e80b011843}{libvlc\+\_\+audio\+\_\+cleanup\+\_\+cb} cleanup)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_gaf7af18f5f09e34234e5f1bf4681dfe43}{libvlc\+\_\+audio\+\_\+set\+\_\+format} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$mp, const char $\ast$format, unsigned rate, unsigned channels)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+time\+\_\+t \hyperlink{group__libvlc__media__player_ga057b0d82fb84f60ee24a6d76c1f135f3}{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+length} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+time\+\_\+t \hyperlink{group__libvlc__media__player_ga1a5ccaa2c044ded47205cd0754f68370}{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+time} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_ga2f3347645100660ffae553387171e398}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+time} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, libvlc\+\_\+time\+\_\+t i\+\_\+time)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI float \hyperlink{group__libvlc__media__player_gaa6ee9d95f5b6ee0c34b92ab8c86a5c1c}{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+position} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_ga4b672fe24ed2defbf732452d5ccbb4ac}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+position} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, float f\+\_\+pos)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_gae8f1cbc7f17ab01c99511adf1b457860}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+chapter} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, int i\+\_\+chapter)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__player_gabd8bdd2acfab5d780917f9afec77256a}{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__player_gaca201f5b20c3e8f2aeb4b65089620a64}{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter\+\_\+count} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__player_ga3c38df27467a03f96f9ed0f6b585baaa}{libvlc\+\_\+media\+\_\+player\+\_\+will\+\_\+play} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__player_ga65061437d5b8f6ef9811f750118adaba}{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter\+\_\+count\+\_\+for\+\_\+title} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, int i\+\_\+title)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_ga39d28c13c551c195d4228dec1aa0b5e6}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+title} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, int i\+\_\+title)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__player_gafdaefc462fcab5c4fdd862d5ee3a226d}{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+title} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__player_gaa82c224660d1c88588dc9391be905396}{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+title\+\_\+count} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_ga2b29595d53bcb7c0eed22e259b4f48c6}{libvlc\+\_\+media\+\_\+player\+\_\+previous\+\_\+chapter} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_ga6dfdfc7d9929c95d04b99d5d77847d48}{libvlc\+\_\+media\+\_\+player\+\_\+next\+\_\+chapter} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI float \hyperlink{group__libvlc__media__player_ga1ae5393783c03bd23a6b0c198aacf3cd}{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+rate} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__player_gaa81be3afb20eddedf7ae56e98d4b1e06}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+rate} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, float rate)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__media_gac88ad60037ea05e1f23675a2ebe31efc}{libvlc\+\_\+state\+\_\+t} \hyperlink{group__libvlc__media__player_gac6537a6b1387db3a96b48947b0aa8b87}{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+state} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI float \hyperlink{group__libvlc__media__player_ga96f0bc4a9d11c1880c40ec152fad3c0c}{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+fps} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI unsigned \hyperlink{group__libvlc__media__player_ga2458b35abe7063cdfe5e6ef87a3be3b6}{libvlc\+\_\+media\+\_\+player\+\_\+has\+\_\+vout} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__player_gaf39dbbcb37cd5bcc3cdf203de8e117e3}{libvlc\+\_\+media\+\_\+player\+\_\+is\+\_\+seekable} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__player_ga764022fed72e41c7cb2988a93834ec5c}{libvlc\+\_\+media\+\_\+player\+\_\+can\+\_\+pause} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__player_gadce5576edbd7817b130cbeeea9973e86}{libvlc\+\_\+media\+\_\+player\+\_\+program\+\_\+scrambled} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_gadbfec72aef61dd499c7a5c06271911bc}{libvlc\+\_\+media\+\_\+player\+\_\+next\+\_\+frame} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_ga8fe3bb8a48af33a012040196b0953a93}{libvlc\+\_\+media\+\_\+player\+\_\+navigate} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, unsigned navigate)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_gacc22e10e72cf10bc81ab3065eae96716}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+video\+\_\+title\+\_\+display} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, \hyperlink{group__libvlc__media__player_ga948997d1c6ab5fee8051417ac7dfa1c7}{libvlc\+\_\+position\+\_\+t} position, unsigned int timeout)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_gaffdae51d73f23127456631b87457beb2}{libvlc\+\_\+track\+\_\+description\+\_\+list\+\_\+release} (\hyperlink{structlibvlc__track__description__t}{libvlc\+\_\+track\+\_\+description\+\_\+t} $\ast$p\+\_\+track\+\_\+description)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__player_ga952b5c8fffa72a993f0ea61bf5b5711c}{libvlc\+\_\+track\+\_\+description\+\_\+release} (\hyperlink{structlibvlc__track__description__t}{libvlc\+\_\+track\+\_\+description\+\_\+t} $\ast$p\+\_\+track\+\_\+description)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Lib\+V\+LC media player plays one media (usually in a custom drawable). 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__libvlc__media__player_ga90303960d8c56bc1cd9902e80b011843}\label{group__libvlc__media__player_ga90303960d8c56bc1cd9902e80b011843}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+audio\+\_\+cleanup\+\_\+cb@{libvlc\+\_\+audio\+\_\+cleanup\+\_\+cb}}
+\index{libvlc\+\_\+audio\+\_\+cleanup\+\_\+cb@{libvlc\+\_\+audio\+\_\+cleanup\+\_\+cb}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+cleanup\+\_\+cb}{libvlc\_audio\_cleanup\_cb}}
+{\footnotesize\ttfamily typedef void($\ast$ libvlc\+\_\+audio\+\_\+cleanup\+\_\+cb) (void $\ast$data)}
+
+Callback prototype for audio playback cleanup. This is called when the media player no longer needs an audio output. 
+\begin{DoxyParams}{Parameters}
+{\em opaque} & data pointer as passed to \hyperlink{group__libvlc__media__player_gaac7abb1d8be3f60bb9da20c000703790}{libvlc\+\_\+audio\+\_\+set\+\_\+callbacks()} \mbox{[}IN\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_gaf25ee69cefcb19ae1a1751b7ba73cf41}\label{group__libvlc__media__player_gaf25ee69cefcb19ae1a1751b7ba73cf41}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+audio\+\_\+drain\+\_\+cb@{libvlc\+\_\+audio\+\_\+drain\+\_\+cb}}
+\index{libvlc\+\_\+audio\+\_\+drain\+\_\+cb@{libvlc\+\_\+audio\+\_\+drain\+\_\+cb}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+drain\+\_\+cb}{libvlc\_audio\_drain\_cb}}
+{\footnotesize\ttfamily typedef void($\ast$ libvlc\+\_\+audio\+\_\+drain\+\_\+cb) (void $\ast$data)}
+
+Callback prototype for audio buffer drain (i.\+e. wait for pending buffers to be played). 
+\begin{DoxyParams}{Parameters}
+{\em data} & data pointer as passed to \hyperlink{group__libvlc__media__player_gaac7abb1d8be3f60bb9da20c000703790}{libvlc\+\_\+audio\+\_\+set\+\_\+callbacks()} \mbox{[}IN\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_ga7ab971890ddbf306331989d60b88c171}\label{group__libvlc__media__player_ga7ab971890ddbf306331989d60b88c171}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+audio\+\_\+flush\+\_\+cb@{libvlc\+\_\+audio\+\_\+flush\+\_\+cb}}
+\index{libvlc\+\_\+audio\+\_\+flush\+\_\+cb@{libvlc\+\_\+audio\+\_\+flush\+\_\+cb}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+flush\+\_\+cb}{libvlc\_audio\_flush\_cb}}
+{\footnotesize\ttfamily typedef void($\ast$ libvlc\+\_\+audio\+\_\+flush\+\_\+cb) (void $\ast$data, int64\+\_\+t pts)}
+
+Callback prototype for audio buffer flush (i.\+e. discard all pending buffers and stop playback as soon as possible). 
+\begin{DoxyParams}{Parameters}
+{\em data} & data pointer as passed to \hyperlink{group__libvlc__media__player_gaac7abb1d8be3f60bb9da20c000703790}{libvlc\+\_\+audio\+\_\+set\+\_\+callbacks()} \mbox{[}IN\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_ga88bc71eb38580ffea67174c817b51c8f}\label{group__libvlc__media__player_ga88bc71eb38580ffea67174c817b51c8f}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+t@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+t}}
+\index{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+t@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+t}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+t}{libvlc\_audio\_output\_device\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structlibvlc__audio__output__device__t}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+t}  \hyperlink{structlibvlc__audio__output__device__t}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+t}}
+
+Description for audio output device. \mbox{\Hypertarget{group__libvlc__media__player_gad740a59b9fe0043e1836f864a71cda01}\label{group__libvlc__media__player_gad740a59b9fe0043e1836f864a71cda01}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+audio\+\_\+output\+\_\+t@{libvlc\+\_\+audio\+\_\+output\+\_\+t}}
+\index{libvlc\+\_\+audio\+\_\+output\+\_\+t@{libvlc\+\_\+audio\+\_\+output\+\_\+t}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+output\+\_\+t}{libvlc\_audio\_output\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structlibvlc__audio__output__t}{libvlc\+\_\+audio\+\_\+output\+\_\+t}  \hyperlink{structlibvlc__audio__output__t}{libvlc\+\_\+audio\+\_\+output\+\_\+t}}
+
+Description for audio output. It contains name, description and pointer to next record. \mbox{\Hypertarget{group__libvlc__media__player_gaac6c92b1a3d331c73fbbba11140fca4e}\label{group__libvlc__media__player_gaac6c92b1a3d331c73fbbba11140fca4e}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+audio\+\_\+pause\+\_\+cb@{libvlc\+\_\+audio\+\_\+pause\+\_\+cb}}
+\index{libvlc\+\_\+audio\+\_\+pause\+\_\+cb@{libvlc\+\_\+audio\+\_\+pause\+\_\+cb}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+pause\+\_\+cb}{libvlc\_audio\_pause\_cb}}
+{\footnotesize\ttfamily typedef void($\ast$ libvlc\+\_\+audio\+\_\+pause\+\_\+cb) (void $\ast$data, int64\+\_\+t pts)}
+
+Callback prototype for audio pause. \begin{DoxyNote}{Note}
+The pause callback is never called if the audio is already paused. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em data} & data pointer as passed to \hyperlink{group__libvlc__media__player_gaac7abb1d8be3f60bb9da20c000703790}{libvlc\+\_\+audio\+\_\+set\+\_\+callbacks()} \mbox{[}IN\mbox{]} \\
+\hline
+{\em pts} & time stamp of the pause request (should be elapsed already) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_ga9a242251d11378ecdc43b8ef0cc0254e}\label{group__libvlc__media__player_ga9a242251d11378ecdc43b8ef0cc0254e}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+audio\+\_\+play\+\_\+cb@{libvlc\+\_\+audio\+\_\+play\+\_\+cb}}
+\index{libvlc\+\_\+audio\+\_\+play\+\_\+cb@{libvlc\+\_\+audio\+\_\+play\+\_\+cb}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+play\+\_\+cb}{libvlc\_audio\_play\_cb}}
+{\footnotesize\ttfamily typedef void($\ast$ libvlc\+\_\+audio\+\_\+play\+\_\+cb) (void $\ast$data, const void $\ast$samples, unsigned count, int64\+\_\+t pts)}
+
+Callback prototype for audio playback. 
+\begin{DoxyParams}{Parameters}
+{\em data} & data pointer as passed to \hyperlink{group__libvlc__media__player_gaac7abb1d8be3f60bb9da20c000703790}{libvlc\+\_\+audio\+\_\+set\+\_\+callbacks()} \mbox{[}IN\mbox{]} \\
+\hline
+{\em samples} & pointer to the first audio sample to play back \mbox{[}IN\mbox{]} \\
+\hline
+{\em count} & number of audio samples to play back \\
+\hline
+{\em pts} & expected play time stamp (see libvlc\+\_\+delay()) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_ga4c61b5ee287be1aa176882cef004e4ca}\label{group__libvlc__media__player_ga4c61b5ee287be1aa176882cef004e4ca}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+audio\+\_\+resume\+\_\+cb@{libvlc\+\_\+audio\+\_\+resume\+\_\+cb}}
+\index{libvlc\+\_\+audio\+\_\+resume\+\_\+cb@{libvlc\+\_\+audio\+\_\+resume\+\_\+cb}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+resume\+\_\+cb}{libvlc\_audio\_resume\_cb}}
+{\footnotesize\ttfamily typedef void($\ast$ libvlc\+\_\+audio\+\_\+resume\+\_\+cb) (void $\ast$data, int64\+\_\+t pts)}
+
+Callback prototype for audio resumption (i.\+e. restart from pause). \begin{DoxyNote}{Note}
+The resume callback is never called if the audio is not paused. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em data} & data pointer as passed to \hyperlink{group__libvlc__media__player_gaac7abb1d8be3f60bb9da20c000703790}{libvlc\+\_\+audio\+\_\+set\+\_\+callbacks()} \mbox{[}IN\mbox{]} \\
+\hline
+{\em pts} & time stamp of the resumption request (should be elapsed already) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_ga1f41552fa452e3d5d53d079485eb0749}\label{group__libvlc__media__player_ga1f41552fa452e3d5d53d079485eb0749}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+audio\+\_\+set\+\_\+volume\+\_\+cb@{libvlc\+\_\+audio\+\_\+set\+\_\+volume\+\_\+cb}}
+\index{libvlc\+\_\+audio\+\_\+set\+\_\+volume\+\_\+cb@{libvlc\+\_\+audio\+\_\+set\+\_\+volume\+\_\+cb}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+set\+\_\+volume\+\_\+cb}{libvlc\_audio\_set\_volume\_cb}}
+{\footnotesize\ttfamily typedef void($\ast$ libvlc\+\_\+audio\+\_\+set\+\_\+volume\+\_\+cb) (void $\ast$data, float volume, bool mute)}
+
+Callback prototype for audio volume change. 
+\begin{DoxyParams}{Parameters}
+{\em data} & data pointer as passed to \hyperlink{group__libvlc__media__player_gaac7abb1d8be3f60bb9da20c000703790}{libvlc\+\_\+audio\+\_\+set\+\_\+callbacks()} \mbox{[}IN\mbox{]} \\
+\hline
+{\em volume} & software volume (1. = nominal, 0. = mute) \\
+\hline
+{\em mute} & muted flag \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_gaa8c228a30286c9b0b26ad436d69e6f8b}\label{group__libvlc__media__player_gaa8c228a30286c9b0b26ad436d69e6f8b}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+audio\+\_\+setup\+\_\+cb@{libvlc\+\_\+audio\+\_\+setup\+\_\+cb}}
+\index{libvlc\+\_\+audio\+\_\+setup\+\_\+cb@{libvlc\+\_\+audio\+\_\+setup\+\_\+cb}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+setup\+\_\+cb}{libvlc\_audio\_setup\_cb}}
+{\footnotesize\ttfamily typedef int($\ast$ libvlc\+\_\+audio\+\_\+setup\+\_\+cb) (void $\ast$$\ast$data, char $\ast$format, unsigned $\ast$rate, unsigned $\ast$channels)}
+
+Callback prototype to setup the audio playback. This is called when the media player needs to create a new audio output. 
+\begin{DoxyParams}{Parameters}
+{\em opaque} & pointer to the data pointer passed to \hyperlink{group__libvlc__media__player_gaac7abb1d8be3f60bb9da20c000703790}{libvlc\+\_\+audio\+\_\+set\+\_\+callbacks()} \mbox{[}I\+N/\+O\+UT\mbox{]} \\
+\hline
+{\em format} & 4 bytes sample format \mbox{[}I\+N/\+O\+UT\mbox{]} \\
+\hline
+{\em rate} & sample rate \mbox{[}I\+N/\+O\+UT\mbox{]} \\
+\hline
+{\em channels} & channels count \mbox{[}I\+N/\+O\+UT\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, anything else to skip audio playback 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}\label{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+equalizer\+\_\+t@{libvlc\+\_\+equalizer\+\_\+t}}
+\index{libvlc\+\_\+equalizer\+\_\+t@{libvlc\+\_\+equalizer\+\_\+t}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+equalizer\+\_\+t}{libvlc\_equalizer\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t} \hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t}}
+
+Opaque equalizer handle.
+
+Equalizer settings can be applied to a media player. \mbox{\Hypertarget{group__libvlc__media__player_gae3ecf5a98d792f95033453c65adcc3a5}\label{group__libvlc__media__player_gae3ecf5a98d792f95033453c65adcc3a5}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+navigate\+\_\+mode\+\_\+t@{libvlc\+\_\+navigate\+\_\+mode\+\_\+t}}
+\index{libvlc\+\_\+navigate\+\_\+mode\+\_\+t@{libvlc\+\_\+navigate\+\_\+mode\+\_\+t}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+navigate\+\_\+mode\+\_\+t}{libvlc\_navigate\_mode\_t}}
+{\footnotesize\ttfamily typedef enum \hyperlink{group__libvlc__media__player_ga6e6b601e219aafd4ffc6063c1dbf11b1}{libvlc\+\_\+navigate\+\_\+mode\+\_\+t}  \hyperlink{group__libvlc__media__player_ga6e6b601e219aafd4ffc6063c1dbf11b1}{libvlc\+\_\+navigate\+\_\+mode\+\_\+t}}
+
+Navigation mode \mbox{\Hypertarget{group__libvlc__media__player_gad591cf9e00646a6e95199a1acb4b4bd2}\label{group__libvlc__media__player_gad591cf9e00646a6e95199a1acb4b4bd2}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+position\+\_\+t@{libvlc\+\_\+position\+\_\+t}}
+\index{libvlc\+\_\+position\+\_\+t@{libvlc\+\_\+position\+\_\+t}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+position\+\_\+t}{libvlc\_position\_t}}
+{\footnotesize\ttfamily typedef enum \hyperlink{group__libvlc__media__player_ga948997d1c6ab5fee8051417ac7dfa1c7}{libvlc\+\_\+position\+\_\+t}  \hyperlink{group__libvlc__media__player_ga948997d1c6ab5fee8051417ac7dfa1c7}{libvlc\+\_\+position\+\_\+t}}
+
+Enumeration of values used to set position (e.\+g. of video title). \mbox{\Hypertarget{group__libvlc__media__player_gad0cdc4dd53f2b27a293bdb2f25f195f8}\label{group__libvlc__media__player_gad0cdc4dd53f2b27a293bdb2f25f195f8}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+rectangle\+\_\+t@{libvlc\+\_\+rectangle\+\_\+t}}
+\index{libvlc\+\_\+rectangle\+\_\+t@{libvlc\+\_\+rectangle\+\_\+t}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+rectangle\+\_\+t}{libvlc\_rectangle\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structlibvlc__rectangle__t}{libvlc\+\_\+rectangle\+\_\+t}  \hyperlink{structlibvlc__rectangle__t}{libvlc\+\_\+rectangle\+\_\+t}}
+
+Rectangle type for video geometry \mbox{\Hypertarget{group__libvlc__media__player_gada3edbe8acd22ebc12e33993330e0494}\label{group__libvlc__media__player_gada3edbe8acd22ebc12e33993330e0494}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+track\+\_\+description\+\_\+t@{libvlc\+\_\+track\+\_\+description\+\_\+t}}
+\index{libvlc\+\_\+track\+\_\+description\+\_\+t@{libvlc\+\_\+track\+\_\+description\+\_\+t}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+track\+\_\+description\+\_\+t}{libvlc\_track\_description\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structlibvlc__track__description__t}{libvlc\+\_\+track\+\_\+description\+\_\+t}  \hyperlink{structlibvlc__track__description__t}{libvlc\+\_\+track\+\_\+description\+\_\+t}}
+
+Description for video, audio tracks and subtitles. It contains id, name (description string) and pointer to next record. \mbox{\Hypertarget{group__libvlc__media__player_ga47f87563b82ed4b6d70ef51243003ae9}\label{group__libvlc__media__player_ga47f87563b82ed4b6d70ef51243003ae9}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+video\+\_\+cleanup\+\_\+cb@{libvlc\+\_\+video\+\_\+cleanup\+\_\+cb}}
+\index{libvlc\+\_\+video\+\_\+cleanup\+\_\+cb@{libvlc\+\_\+video\+\_\+cleanup\+\_\+cb}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+video\+\_\+cleanup\+\_\+cb}{libvlc\_video\_cleanup\_cb}}
+{\footnotesize\ttfamily typedef void($\ast$ libvlc\+\_\+video\+\_\+cleanup\+\_\+cb) (void $\ast$opaque)}
+
+Callback prototype to configure picture buffers format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em opaque} & private pointer as passed to \hyperlink{group__libvlc__media__player_ga612605f2e5c638d9f4ed59021d714bf0}{libvlc\+\_\+video\+\_\+set\+\_\+callbacks()} (and possibly modified by \hyperlink{group__libvlc__media__player_gae46128c21d0d0151aca3ba017d1d6b35}{libvlc\+\_\+video\+\_\+format\+\_\+cb}) \mbox{[}IN\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_ga2189c9deefc2154ddc5d5f1871b0a106}\label{group__libvlc__media__player_ga2189c9deefc2154ddc5d5f1871b0a106}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+video\+\_\+display\+\_\+cb@{libvlc\+\_\+video\+\_\+display\+\_\+cb}}
+\index{libvlc\+\_\+video\+\_\+display\+\_\+cb@{libvlc\+\_\+video\+\_\+display\+\_\+cb}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+video\+\_\+display\+\_\+cb}{libvlc\_video\_display\_cb}}
+{\footnotesize\ttfamily typedef void($\ast$ libvlc\+\_\+video\+\_\+display\+\_\+cb) (void $\ast$opaque, void $\ast$picture)}
+
+Callback prototype to display a picture.
+
+When the video frame needs to be shown, as determined by the media playback clock, the display callback is invoked.
+
+
+\begin{DoxyParams}{Parameters}
+{\em opaque} & private pointer as passed to \hyperlink{group__libvlc__media__player_ga612605f2e5c638d9f4ed59021d714bf0}{libvlc\+\_\+video\+\_\+set\+\_\+callbacks()} \mbox{[}IN\mbox{]} \\
+\hline
+{\em picture} & private pointer returned from the \hyperlink{group__libvlc__media__player_ga193de3e82f6de3f9d8f5ccd8b5f2aa98}{libvlc\+\_\+video\+\_\+lock\+\_\+cb} callback \mbox{[}IN\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_gae46128c21d0d0151aca3ba017d1d6b35}\label{group__libvlc__media__player_gae46128c21d0d0151aca3ba017d1d6b35}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+video\+\_\+format\+\_\+cb@{libvlc\+\_\+video\+\_\+format\+\_\+cb}}
+\index{libvlc\+\_\+video\+\_\+format\+\_\+cb@{libvlc\+\_\+video\+\_\+format\+\_\+cb}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+video\+\_\+format\+\_\+cb}{libvlc\_video\_format\_cb}}
+{\footnotesize\ttfamily typedef unsigned($\ast$ libvlc\+\_\+video\+\_\+format\+\_\+cb) (void $\ast$$\ast$opaque, char $\ast$chroma, unsigned $\ast$width, unsigned $\ast$height, unsigned $\ast$pitches, unsigned $\ast$lines)}
+
+Callback prototype to configure picture buffers format. This callback gets the format of the video as output by the video decoder and the chain of video filters (if any). It can opt to change any parameter as it needs. In that case, Lib\+V\+LC will attempt to convert the video format (rescaling and chroma conversion) but these operations can be C\+PU intensive.
+
+
+\begin{DoxyParams}{Parameters}
+{\em opaque} & pointer to the private pointer passed to \hyperlink{group__libvlc__media__player_ga612605f2e5c638d9f4ed59021d714bf0}{libvlc\+\_\+video\+\_\+set\+\_\+callbacks()} \mbox{[}I\+N/\+O\+UT\mbox{]} \\
+\hline
+{\em chroma} & pointer to the 4 bytes video format identifier \mbox{[}I\+N/\+O\+UT\mbox{]} \\
+\hline
+{\em width} & pointer to the pixel width \mbox{[}I\+N/\+O\+UT\mbox{]} \\
+\hline
+{\em height} & pointer to the pixel height \mbox{[}I\+N/\+O\+UT\mbox{]} \\
+\hline
+{\em pitches} & table of scanline pitches in bytes for each pixel plane (the table is allocated by Lib\+V\+LC) \mbox{[}O\+UT\mbox{]} \\
+\hline
+{\em lines} & table of scanlines count for each plane \mbox{[}O\+UT\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of picture buffers allocated, 0 indicates failure
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+For each pixels plane, the scanline pitch must be bigger than or equal to the number of bytes per pixel multiplied by the pixel width. Similarly, the number of scanlines must be bigger than of equal to the pixel height. Furthermore, we recommend that pitches and lines be multiple of 32 to not break assumption that might be made by various optimizations in the video decoders, video filters and/or video converters. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__libvlc__media__player_ga193de3e82f6de3f9d8f5ccd8b5f2aa98}\label{group__libvlc__media__player_ga193de3e82f6de3f9d8f5ccd8b5f2aa98}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+video\+\_\+lock\+\_\+cb@{libvlc\+\_\+video\+\_\+lock\+\_\+cb}}
+\index{libvlc\+\_\+video\+\_\+lock\+\_\+cb@{libvlc\+\_\+video\+\_\+lock\+\_\+cb}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+video\+\_\+lock\+\_\+cb}{libvlc\_video\_lock\_cb}}
+{\footnotesize\ttfamily typedef void$\ast$($\ast$ libvlc\+\_\+video\+\_\+lock\+\_\+cb) (void $\ast$opaque, void $\ast$$\ast$planes)}
+
+Callback prototype to allocate and lock a picture buffer.
+
+Whenever a new video frame needs to be decoded, the lock callback is invoked. Depending on the video chroma, one or three pixel planes of adequate dimensions must be returned via the second parameter. Those planes must be aligned on 32-\/bytes boundaries.
+
+
+\begin{DoxyParams}{Parameters}
+{\em opaque} & private pointer as passed to \hyperlink{group__libvlc__media__player_ga612605f2e5c638d9f4ed59021d714bf0}{libvlc\+\_\+video\+\_\+set\+\_\+callbacks()} \mbox{[}IN\mbox{]} \\
+\hline
+{\em planes} & start address of the pixel planes (Lib\+V\+LC allocates the array of void pointers, this callback must initialize the array) \mbox{[}O\+UT\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a private pointer for the display and unlock callbacks to identify the picture buffers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_ga82dd5710df44a4c244785c0150402844}\label{group__libvlc__media__player_ga82dd5710df44a4c244785c0150402844}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+video\+\_\+marquee\+\_\+option\+\_\+t@{libvlc\+\_\+video\+\_\+marquee\+\_\+option\+\_\+t}}
+\index{libvlc\+\_\+video\+\_\+marquee\+\_\+option\+\_\+t@{libvlc\+\_\+video\+\_\+marquee\+\_\+option\+\_\+t}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+video\+\_\+marquee\+\_\+option\+\_\+t}{libvlc\_video\_marquee\_option\_t}}
+{\footnotesize\ttfamily typedef enum \hyperlink{group__libvlc__media__player_ga412d5b45da5bda967f656cb17ecc83fd}{libvlc\+\_\+video\+\_\+marquee\+\_\+option\+\_\+t}  \hyperlink{group__libvlc__media__player_ga412d5b45da5bda967f656cb17ecc83fd}{libvlc\+\_\+video\+\_\+marquee\+\_\+option\+\_\+t}}
+
+Marq options definition \mbox{\Hypertarget{group__libvlc__media__player_ga024c0f0bba9d3b32a881c40f3cb479bb}\label{group__libvlc__media__player_ga024c0f0bba9d3b32a881c40f3cb479bb}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+video\+\_\+unlock\+\_\+cb@{libvlc\+\_\+video\+\_\+unlock\+\_\+cb}}
+\index{libvlc\+\_\+video\+\_\+unlock\+\_\+cb@{libvlc\+\_\+video\+\_\+unlock\+\_\+cb}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+video\+\_\+unlock\+\_\+cb}{libvlc\_video\_unlock\_cb}}
+{\footnotesize\ttfamily typedef void($\ast$ libvlc\+\_\+video\+\_\+unlock\+\_\+cb) (void $\ast$opaque, void $\ast$picture, void $\ast$const $\ast$planes)}
+
+Callback prototype to unlock a picture buffer.
+
+When the video frame decoding is complete, the unlock callback is invoked. This callback might not be needed at all. It is only an indication that the application can now read the pixel values if it needs to.
+
+\begin{DoxyWarning}{Warning}
+A picture buffer is unlocked after the picture is decoded, but before the picture is displayed.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em opaque} & private pointer as passed to \hyperlink{group__libvlc__media__player_ga612605f2e5c638d9f4ed59021d714bf0}{libvlc\+\_\+video\+\_\+set\+\_\+callbacks()} \mbox{[}IN\mbox{]} \\
+\hline
+{\em picture} & private pointer returned from the \hyperlink{group__libvlc__media__player_ga193de3e82f6de3f9d8f5ccd8b5f2aa98}{libvlc\+\_\+video\+\_\+lock\+\_\+cb} callback \mbox{[}IN\mbox{]} \\
+\hline
+{\em planes} & pixel planes as defined by the \hyperlink{group__libvlc__media__player_ga193de3e82f6de3f9d8f5ccd8b5f2aa98}{libvlc\+\_\+video\+\_\+lock\+\_\+cb} callback (this parameter is only for convenience) \mbox{[}IN\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__libvlc__media__player_ga6e6b601e219aafd4ffc6063c1dbf11b1}\label{group__libvlc__media__player_ga6e6b601e219aafd4ffc6063c1dbf11b1}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+navigate\+\_\+mode\+\_\+t@{libvlc\+\_\+navigate\+\_\+mode\+\_\+t}}
+\index{libvlc\+\_\+navigate\+\_\+mode\+\_\+t@{libvlc\+\_\+navigate\+\_\+mode\+\_\+t}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+navigate\+\_\+mode\+\_\+t}{libvlc\_navigate\_mode\_t}}
+{\footnotesize\ttfamily enum \hyperlink{group__libvlc__media__player_ga6e6b601e219aafd4ffc6063c1dbf11b1}{libvlc\+\_\+navigate\+\_\+mode\+\_\+t}}
+
+Navigation mode \mbox{\Hypertarget{group__libvlc__media__player_ga948997d1c6ab5fee8051417ac7dfa1c7}\label{group__libvlc__media__player_ga948997d1c6ab5fee8051417ac7dfa1c7}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+position\+\_\+t@{libvlc\+\_\+position\+\_\+t}}
+\index{libvlc\+\_\+position\+\_\+t@{libvlc\+\_\+position\+\_\+t}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+position\+\_\+t}{libvlc\_position\_t}}
+{\footnotesize\ttfamily enum \hyperlink{group__libvlc__media__player_ga948997d1c6ab5fee8051417ac7dfa1c7}{libvlc\+\_\+position\+\_\+t}}
+
+Enumeration of values used to set position (e.\+g. of video title). \mbox{\Hypertarget{group__libvlc__media__player_ga412d5b45da5bda967f656cb17ecc83fd}\label{group__libvlc__media__player_ga412d5b45da5bda967f656cb17ecc83fd}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+video\+\_\+marquee\+\_\+option\+\_\+t@{libvlc\+\_\+video\+\_\+marquee\+\_\+option\+\_\+t}}
+\index{libvlc\+\_\+video\+\_\+marquee\+\_\+option\+\_\+t@{libvlc\+\_\+video\+\_\+marquee\+\_\+option\+\_\+t}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+video\+\_\+marquee\+\_\+option\+\_\+t}{libvlc\_video\_marquee\_option\_t}}
+{\footnotesize\ttfamily enum \hyperlink{group__libvlc__media__player_ga412d5b45da5bda967f656cb17ecc83fd}{libvlc\+\_\+video\+\_\+marquee\+\_\+option\+\_\+t}}
+
+Marq options definition \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{libvlc\+\_\+marquee\+\_\+\+Color@{libvlc\+\_\+marquee\+\_\+\+Color}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+marquee\+\_\+\+Color@{libvlc\+\_\+marquee\+\_\+\+Color}}}\mbox{\Hypertarget{group__libvlc__media__player_gga412d5b45da5bda967f656cb17ecc83fda46d8b92b1bf73d727e5f9fad4bb9ee2d}\label{group__libvlc__media__player_gga412d5b45da5bda967f656cb17ecc83fda46d8b92b1bf73d727e5f9fad4bb9ee2d}} 
+libvlc\+\_\+marquee\+\_\+\+Color&string argument \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__libvlc__media__player_gaac7abb1d8be3f60bb9da20c000703790}\label{group__libvlc__media__player_gaac7abb1d8be3f60bb9da20c000703790}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+audio\+\_\+set\+\_\+callbacks@{libvlc\+\_\+audio\+\_\+set\+\_\+callbacks}}
+\index{libvlc\+\_\+audio\+\_\+set\+\_\+callbacks@{libvlc\+\_\+audio\+\_\+set\+\_\+callbacks}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+set\+\_\+callbacks()}{libvlc\_audio\_set\_callbacks()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+audio\+\_\+set\+\_\+callbacks (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{mp,  }\item[{\hyperlink{group__libvlc__media__player_ga9a242251d11378ecdc43b8ef0cc0254e}{libvlc\+\_\+audio\+\_\+play\+\_\+cb}}]{play,  }\item[{\hyperlink{group__libvlc__media__player_gaac6c92b1a3d331c73fbbba11140fca4e}{libvlc\+\_\+audio\+\_\+pause\+\_\+cb}}]{pause,  }\item[{\hyperlink{group__libvlc__media__player_ga4c61b5ee287be1aa176882cef004e4ca}{libvlc\+\_\+audio\+\_\+resume\+\_\+cb}}]{resume,  }\item[{\hyperlink{group__libvlc__media__player_ga7ab971890ddbf306331989d60b88c171}{libvlc\+\_\+audio\+\_\+flush\+\_\+cb}}]{flush,  }\item[{\hyperlink{group__libvlc__media__player_gaf25ee69cefcb19ae1a1751b7ba73cf41}{libvlc\+\_\+audio\+\_\+drain\+\_\+cb}}]{drain,  }\item[{void $\ast$}]{opaque }\end{DoxyParamCaption})}
+
+Set callbacks and private data for decoded audio. Use \hyperlink{group__libvlc__media__player_gaf7af18f5f09e34234e5f1bf4681dfe43}{libvlc\+\_\+audio\+\_\+set\+\_\+format()} or \hyperlink{group__libvlc__media__player_gae1c8bcbd10157da11331e46d30ecd058}{libvlc\+\_\+audio\+\_\+set\+\_\+format\+\_\+callbacks()} to configure the decoded audio format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mp} & the media player \\
+\hline
+{\em play} & callback to play audio samples (must not be N\+U\+LL) \\
+\hline
+{\em pause} & callback to pause playback (or N\+U\+LL to ignore) \\
+\hline
+{\em resume} & callback to resume playback (or N\+U\+LL to ignore) \\
+\hline
+{\em flush} & callback to flush audio buffers (or N\+U\+LL to ignore) \\
+\hline
+{\em drain} & callback to drain audio buffers (or N\+U\+LL to ignore) \\
+\hline
+{\em opaque} & private pointer for the audio callbacks (as first parameter) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+0.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__media__player_gaf7af18f5f09e34234e5f1bf4681dfe43}\label{group__libvlc__media__player_gaf7af18f5f09e34234e5f1bf4681dfe43}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+audio\+\_\+set\+\_\+format@{libvlc\+\_\+audio\+\_\+set\+\_\+format}}
+\index{libvlc\+\_\+audio\+\_\+set\+\_\+format@{libvlc\+\_\+audio\+\_\+set\+\_\+format}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+set\+\_\+format()}{libvlc\_audio\_set\_format()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+audio\+\_\+set\+\_\+format (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{mp,  }\item[{const char $\ast$}]{format,  }\item[{unsigned}]{rate,  }\item[{unsigned}]{channels }\end{DoxyParamCaption})}
+
+Set decoded audio format. This only works in combination with \hyperlink{group__libvlc__media__player_gaac7abb1d8be3f60bb9da20c000703790}{libvlc\+\_\+audio\+\_\+set\+\_\+callbacks()}, and is mutually exclusive with \hyperlink{group__libvlc__media__player_gae1c8bcbd10157da11331e46d30ecd058}{libvlc\+\_\+audio\+\_\+set\+\_\+format\+\_\+callbacks()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mp} & the media player \\
+\hline
+{\em format} & a four-\/characters string identifying the sample format (e.\+g. \char`\"{}\+S16\+N\char`\"{} or \char`\"{}\+F\+L32\char`\"{}) \\
+\hline
+{\em rate} & sample rate (expressed in Hz) \\
+\hline
+{\em channels} & channels count \\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+0.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__media__player_gae1c8bcbd10157da11331e46d30ecd058}\label{group__libvlc__media__player_gae1c8bcbd10157da11331e46d30ecd058}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+audio\+\_\+set\+\_\+format\+\_\+callbacks@{libvlc\+\_\+audio\+\_\+set\+\_\+format\+\_\+callbacks}}
+\index{libvlc\+\_\+audio\+\_\+set\+\_\+format\+\_\+callbacks@{libvlc\+\_\+audio\+\_\+set\+\_\+format\+\_\+callbacks}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+set\+\_\+format\+\_\+callbacks()}{libvlc\_audio\_set\_format\_callbacks()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+audio\+\_\+set\+\_\+format\+\_\+callbacks (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{mp,  }\item[{\hyperlink{group__libvlc__media__player_gaa8c228a30286c9b0b26ad436d69e6f8b}{libvlc\+\_\+audio\+\_\+setup\+\_\+cb}}]{setup,  }\item[{\hyperlink{group__libvlc__media__player_ga90303960d8c56bc1cd9902e80b011843}{libvlc\+\_\+audio\+\_\+cleanup\+\_\+cb}}]{cleanup }\end{DoxyParamCaption})}
+
+Set decoded audio format. This only works in combination with \hyperlink{group__libvlc__media__player_gaac7abb1d8be3f60bb9da20c000703790}{libvlc\+\_\+audio\+\_\+set\+\_\+callbacks()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mp} & the media player \\
+\hline
+{\em setup} & callback to select the audio format (cannot be N\+U\+LL) \\
+\hline
+{\em cleanup} & callback to release any allocated resources (or N\+U\+LL) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+0.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__media__player_gaabd876baf98d23a49ad55b2cd53e81b9}\label{group__libvlc__media__player_gaabd876baf98d23a49ad55b2cd53e81b9}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+audio\+\_\+set\+\_\+volume\+\_\+callback@{libvlc\+\_\+audio\+\_\+set\+\_\+volume\+\_\+callback}}
+\index{libvlc\+\_\+audio\+\_\+set\+\_\+volume\+\_\+callback@{libvlc\+\_\+audio\+\_\+set\+\_\+volume\+\_\+callback}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+set\+\_\+volume\+\_\+callback()}{libvlc\_audio\_set\_volume\_callback()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+audio\+\_\+set\+\_\+volume\+\_\+callback (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{mp,  }\item[{\hyperlink{group__libvlc__media__player_ga1f41552fa452e3d5d53d079485eb0749}{libvlc\+\_\+audio\+\_\+set\+\_\+volume\+\_\+cb}}]{set\+\_\+volume }\end{DoxyParamCaption})}
+
+Set callbacks and private data for decoded audio. This only works in combination with \hyperlink{group__libvlc__media__player_gaac7abb1d8be3f60bb9da20c000703790}{libvlc\+\_\+audio\+\_\+set\+\_\+callbacks()}. Use \hyperlink{group__libvlc__media__player_gaf7af18f5f09e34234e5f1bf4681dfe43}{libvlc\+\_\+audio\+\_\+set\+\_\+format()} or \hyperlink{group__libvlc__media__player_gae1c8bcbd10157da11331e46d30ecd058}{libvlc\+\_\+audio\+\_\+set\+\_\+format\+\_\+callbacks()} to configure the decoded audio format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mp} & the media player \\
+\hline
+{\em set\+\_\+volume} & callback to apply audio volume, or N\+U\+LL to apply volume in software \\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+0.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__media__player_ga764022fed72e41c7cb2988a93834ec5c}\label{group__libvlc__media__player_ga764022fed72e41c7cb2988a93834ec5c}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+can\+\_\+pause@{libvlc\+\_\+media\+\_\+player\+\_\+can\+\_\+pause}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+can\+\_\+pause@{libvlc\+\_\+media\+\_\+player\+\_\+can\+\_\+pause}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+can\+\_\+pause()}{libvlc\_media\_player\_can\_pause()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+player\+\_\+can\+\_\+pause (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Can this media player be paused?
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the media player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the media player can pause
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_ga123b91853ed24304d2e33f082b38948e}\label{group__libvlc__media__player_ga123b91853ed24304d2e33f082b38948e}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+event\+\_\+manager@{libvlc\+\_\+media\+\_\+player\+\_\+event\+\_\+manager}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+event\+\_\+manager@{libvlc\+\_\+media\+\_\+player\+\_\+event\+\_\+manager}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+event\+\_\+manager()}{libvlc\_media\_player\_event\_manager()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t}$\ast$ libvlc\+\_\+media\+\_\+player\+\_\+event\+\_\+manager (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get the Event Manager from which the media player send event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the event manager associated with p\+\_\+mi 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_ga143905045e1be83d8ae3764d1d589b24}\label{group__libvlc__media__player_ga143905045e1be83d8ae3764d1d589b24}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+agl@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+agl}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+agl@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+agl}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+agl()}{libvlc\_media\_player\_get\_agl()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI uint32\+\_\+t libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+agl (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get the agl handler previously set with \hyperlink{group__libvlc__media__player_gadc35c9afb5789c16fbe8e1f358ec141b}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+agl()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the agl handler or 0 if none where set 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_gabd8bdd2acfab5d780917f9afec77256a}\label{group__libvlc__media__player_gabd8bdd2acfab5d780917f9afec77256a}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter()}{libvlc\_media\_player\_get\_chapter()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get movie chapter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+chapter number currently playing, or -\/1 if there is no media. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_gaca201f5b20c3e8f2aeb4b65089620a64}\label{group__libvlc__media__player_gaca201f5b20c3e8f2aeb4b65089620a64}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter\+\_\+count@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter\+\_\+count}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter\+\_\+count@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter\+\_\+count}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter\+\_\+count()}{libvlc\_media\_player\_get\_chapter\_count()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter\+\_\+count (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get movie chapter count
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of chapters in movie, or -\/1. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_ga65061437d5b8f6ef9811f750118adaba}\label{group__libvlc__media__player_ga65061437d5b8f6ef9811f750118adaba}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter\+\_\+count\+\_\+for\+\_\+title@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter\+\_\+count\+\_\+for\+\_\+title}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter\+\_\+count\+\_\+for\+\_\+title@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter\+\_\+count\+\_\+for\+\_\+title}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter\+\_\+count\+\_\+for\+\_\+title()}{libvlc\_media\_player\_get\_chapter\_count\_for\_title()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+chapter\+\_\+count\+\_\+for\+\_\+title (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{int}]{i\+\_\+title }\end{DoxyParamCaption})}
+
+Get title chapter count
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+{\em i\+\_\+title} & title \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of chapters in title, or -\/1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_ga96f0bc4a9d11c1880c40ec152fad3c0c}\label{group__libvlc__media__player_ga96f0bc4a9d11c1880c40ec152fad3c0c}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+fps@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+fps}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+fps@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+fps}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+fps()}{libvlc\_media\_player\_get\_fps()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI float libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+fps (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get movie fps rate
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+frames per second (fps) for this playing movie, or 0 if unspecified 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_ga9543ef07c220ccaf6250c2c3022efb46}\label{group__libvlc__media__player_ga9543ef07c220ccaf6250c2c3022efb46}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+hwnd@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+hwnd}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+hwnd@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+hwnd}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+hwnd()}{libvlc\_media\_player\_get\_hwnd()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void$\ast$ libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+hwnd (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get the Windows A\+PI window handle (H\+W\+ND) previously set with \hyperlink{group__libvlc__media__player_ga0ee3abb85cd9735fdeace4882eb711f3}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+hwnd()}. The handle will be returned even if Lib\+V\+LC is not currently outputting any video to it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a window handle or N\+U\+LL if there are none. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_ga057b0d82fb84f60ee24a6d76c1f135f3}\label{group__libvlc__media__player_ga057b0d82fb84f60ee24a6d76c1f135f3}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+length@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+length}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+length@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+length}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+length()}{libvlc\_media\_player\_get\_length()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+time\+\_\+t libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+length (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000002}{Bug}]This might go away ... to be replaced by a broader system \end{DoxyRefDesc}
+Get the current movie length (in ms).
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the movie length (in ms), or -\/1 if there is no media. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_gacd3e2cbc0303a8ba8bdcb891da10876c}\label{group__libvlc__media__player_gacd3e2cbc0303a8ba8bdcb891da10876c}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+media@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+media}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+media@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+media}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+media()}{libvlc\_media\_player\_get\_media()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t$\ast$ libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+media (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get the media used by the media\+\_\+player.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the media associated with p\+\_\+mi, or N\+U\+LL if no media is associated 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_gac331dd7523df7c754d6ce4bb3cdb7e08}\label{group__libvlc__media__player_gac331dd7523df7c754d6ce4bb3cdb7e08}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+nsobject@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+nsobject}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+nsobject@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+nsobject}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+nsobject()}{libvlc\_media\_player\_get\_nsobject()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void$\ast$ libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+nsobject (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get the N\+S\+View handler previously set with \hyperlink{group__libvlc__media__player_ga46c26a395b496e48917101198acc31f6}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+nsobject()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the N\+S\+View handler or 0 if none where set 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_gaa6ee9d95f5b6ee0c34b92ab8c86a5c1c}\label{group__libvlc__media__player_gaa6ee9d95f5b6ee0c34b92ab8c86a5c1c}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+position@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+position}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+position@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+position}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+position()}{libvlc\_media\_player\_get\_position()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI float libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+position (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get movie position as percentage between 0.\+0 and 1.\+0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+movie position, or -\/1. in case of error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_ga1ae5393783c03bd23a6b0c198aacf3cd}\label{group__libvlc__media__player_ga1ae5393783c03bd23a6b0c198aacf3cd}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+rate@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+rate}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+rate@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+rate}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+rate()}{libvlc\_media\_player\_get\_rate()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI float libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+rate (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get the requested movie play rate. \begin{DoxyWarning}{Warning}
+Depending on the underlying media, the requested rate may be different from the real playback rate.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+movie play rate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_gac6537a6b1387db3a96b48947b0aa8b87}\label{group__libvlc__media__player_gac6537a6b1387db3a96b48947b0aa8b87}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+state@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+state}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+state@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+state}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+state()}{libvlc\_media\_player\_get\_state()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__media_gac88ad60037ea05e1f23675a2ebe31efc}{libvlc\+\_\+state\+\_\+t} libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+state (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get current movie state
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the current state of the media player (playing, paused, ...) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__libvlc__media_gaffb7eef042375f78ec9a6f1ae11ae0c3}{libvlc\+\_\+state\+\_\+t} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__libvlc__media__player_ga1a5ccaa2c044ded47205cd0754f68370}\label{group__libvlc__media__player_ga1a5ccaa2c044ded47205cd0754f68370}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+time@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+time}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+time@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+time}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+time()}{libvlc\_media\_player\_get\_time()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+time\+\_\+t libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+time (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get the current movie time (in ms).
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the movie time (in ms), or -\/1 if there is no media. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_gafdaefc462fcab5c4fdd862d5ee3a226d}\label{group__libvlc__media__player_gafdaefc462fcab5c4fdd862d5ee3a226d}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+title@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+title}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+title@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+title}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+title()}{libvlc\_media\_player\_get\_title()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+title (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get movie title
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+title number currently playing, or -\/1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_gaa82c224660d1c88588dc9391be905396}\label{group__libvlc__media__player_gaa82c224660d1c88588dc9391be905396}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+title\+\_\+count@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+title\+\_\+count}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+title\+\_\+count@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+title\+\_\+count}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+title\+\_\+count()}{libvlc\_media\_player\_get\_title\_count()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+title\+\_\+count (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get movie title count
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+title number count, or -\/1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_gac0ccdaeef127b62ce26adfa195f0bba1}\label{group__libvlc__media__player_gac0ccdaeef127b62ce26adfa195f0bba1}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+xwindow@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+xwindow}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+xwindow@{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+xwindow}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+xwindow()}{libvlc\_media\_player\_get\_xwindow()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI uint32\+\_\+t libvlc\+\_\+media\+\_\+player\+\_\+get\+\_\+xwindow (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get the X \hyperlink{classWindow}{Window} System window identifier previously set with \hyperlink{group__libvlc__media__player_ga31827df3a665a72410cb95695147ba5b}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+xwindow()}. Note that this will return the identifier even if V\+LC is not currently using it (for instance if it is playing an audio-\/only input).
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an X window ID, or 0 if none where set. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_ga2458b35abe7063cdfe5e6ef87a3be3b6}\label{group__libvlc__media__player_ga2458b35abe7063cdfe5e6ef87a3be3b6}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+has\+\_\+vout@{libvlc\+\_\+media\+\_\+player\+\_\+has\+\_\+vout}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+has\+\_\+vout@{libvlc\+\_\+media\+\_\+player\+\_\+has\+\_\+vout}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+has\+\_\+vout()}{libvlc\_media\_player\_has\_vout()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI unsigned libvlc\+\_\+media\+\_\+player\+\_\+has\+\_\+vout (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+end bug How many video outputs does this media player have?
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the media player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of video outputs 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_ga70fd26f9bbca7eda021a49680e7fbc1c}\label{group__libvlc__media__player_ga70fd26f9bbca7eda021a49680e7fbc1c}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+is\+\_\+playing@{libvlc\+\_\+media\+\_\+player\+\_\+is\+\_\+playing}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+is\+\_\+playing@{libvlc\+\_\+media\+\_\+player\+\_\+is\+\_\+playing}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+is\+\_\+playing()}{libvlc\_media\_player\_is\_playing()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+player\+\_\+is\+\_\+playing (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+is\+\_\+playing
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the media player is playing, 0 otherwise
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_gaf39dbbcb37cd5bcc3cdf203de8e117e3}\label{group__libvlc__media__player_gaf39dbbcb37cd5bcc3cdf203de8e117e3}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+is\+\_\+seekable@{libvlc\+\_\+media\+\_\+player\+\_\+is\+\_\+seekable}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+is\+\_\+seekable@{libvlc\+\_\+media\+\_\+player\+\_\+is\+\_\+seekable}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+is\+\_\+seekable()}{libvlc\_media\_player\_is\_seekable()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+player\+\_\+is\+\_\+seekable (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Is this media player seekable?
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the media player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the media player can seek
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_ga8fe3bb8a48af33a012040196b0953a93}\label{group__libvlc__media__player_ga8fe3bb8a48af33a012040196b0953a93}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+navigate@{libvlc\+\_\+media\+\_\+player\+\_\+navigate}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+navigate@{libvlc\+\_\+media\+\_\+player\+\_\+navigate}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+navigate()}{libvlc\_media\_player\_navigate()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+navigate (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{unsigned}]{navigate }\end{DoxyParamCaption})}
+
+Navigate through D\+VD Menu
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+{\em navigate} & the Navigation mode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+lib\+V\+LC 2.\+0.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__media__player_ga210a0f60ad0a2a7ac0460269b5ac2b34}\label{group__libvlc__media__player_ga210a0f60ad0a2a7ac0460269b5ac2b34}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+new@{libvlc\+\_\+media\+\_\+player\+\_\+new}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+new@{libvlc\+\_\+media\+\_\+player\+\_\+new}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+new()}{libvlc\_media\_player\_new()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+player\+\_\+t$\ast$ libvlc\+\_\+media\+\_\+player\+\_\+new (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+libvlc\+\_\+instance }\end{DoxyParamCaption})}
+
+Create an empty Media Player object
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+libvlc\+\_\+instance} & the libvlc instance in which the Media Player should be created. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new media player object, or N\+U\+LL on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_gaf6897a4ef07c684555fc600c7a63a8c4}\label{group__libvlc__media__player_gaf6897a4ef07c684555fc600c7a63a8c4}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+new\+\_\+from\+\_\+media@{libvlc\+\_\+media\+\_\+player\+\_\+new\+\_\+from\+\_\+media}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+new\+\_\+from\+\_\+media@{libvlc\+\_\+media\+\_\+player\+\_\+new\+\_\+from\+\_\+media}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+new\+\_\+from\+\_\+media()}{libvlc\_media\_player\_new\_from\_media()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+player\+\_\+t$\ast$ libvlc\+\_\+media\+\_\+player\+\_\+new\+\_\+from\+\_\+media (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md }\end{DoxyParamCaption})}
+
+Create a Media Player object from a Media
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & the media. Afterwards the p\+\_\+md can be safely destroyed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new media player object, or N\+U\+LL on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_ga6dfdfc7d9929c95d04b99d5d77847d48}\label{group__libvlc__media__player_ga6dfdfc7d9929c95d04b99d5d77847d48}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+next\+\_\+chapter@{libvlc\+\_\+media\+\_\+player\+\_\+next\+\_\+chapter}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+next\+\_\+chapter@{libvlc\+\_\+media\+\_\+player\+\_\+next\+\_\+chapter}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+next\+\_\+chapter()}{libvlc\_media\_player\_next\_chapter()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+next\+\_\+chapter (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Set next chapter (if applicable)
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_gadbfec72aef61dd499c7a5c06271911bc}\label{group__libvlc__media__player_gadbfec72aef61dd499c7a5c06271911bc}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+next\+\_\+frame@{libvlc\+\_\+media\+\_\+player\+\_\+next\+\_\+frame}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+next\+\_\+frame@{libvlc\+\_\+media\+\_\+player\+\_\+next\+\_\+frame}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+next\+\_\+frame()}{libvlc\_media\_player\_next\_frame()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+next\+\_\+frame (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Display the next frame (if supported)
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the media player \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_ga61712d4eb8f63232c712a81fb19ee8fa}\label{group__libvlc__media__player_ga61712d4eb8f63232c712a81fb19ee8fa}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+pause@{libvlc\+\_\+media\+\_\+player\+\_\+pause}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+pause@{libvlc\+\_\+media\+\_\+player\+\_\+pause}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+pause()}{libvlc\_media\_player\_pause()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+pause (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Toggle pause (no effect if there is no media)
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_gac5da60e52d11c81c7a6a61f470aa1646}\label{group__libvlc__media__player_gac5da60e52d11c81c7a6a61f470aa1646}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+play@{libvlc\+\_\+media\+\_\+player\+\_\+play}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+play@{libvlc\+\_\+media\+\_\+player\+\_\+play}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+play()}{libvlc\_media\_player\_play()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+player\+\_\+play (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Play
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if playback started (and was already started), or -\/1 on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_ga2b29595d53bcb7c0eed22e259b4f48c6}\label{group__libvlc__media__player_ga2b29595d53bcb7c0eed22e259b4f48c6}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+previous\+\_\+chapter@{libvlc\+\_\+media\+\_\+player\+\_\+previous\+\_\+chapter}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+previous\+\_\+chapter@{libvlc\+\_\+media\+\_\+player\+\_\+previous\+\_\+chapter}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+previous\+\_\+chapter()}{libvlc\_media\_player\_previous\_chapter()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+previous\+\_\+chapter (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Set previous chapter (if applicable)
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_gadce5576edbd7817b130cbeeea9973e86}\label{group__libvlc__media__player_gadce5576edbd7817b130cbeeea9973e86}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+program\+\_\+scrambled@{libvlc\+\_\+media\+\_\+player\+\_\+program\+\_\+scrambled}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+program\+\_\+scrambled@{libvlc\+\_\+media\+\_\+player\+\_\+program\+\_\+scrambled}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+program\+\_\+scrambled()}{libvlc\_media\_player\_program\_scrambled()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+player\+\_\+program\+\_\+scrambled (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Check if the current program is scrambled
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the media player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the current program is scrambled
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+2.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__media__player_gac8d8236f3dfa549d3637100ae6d07e72}\label{group__libvlc__media__player_gac8d8236f3dfa549d3637100ae6d07e72}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+release@{libvlc\+\_\+media\+\_\+player\+\_\+release}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+release@{libvlc\+\_\+media\+\_\+player\+\_\+release}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+release()}{libvlc\_media\_player\_release()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+release (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Release a media\+\_\+player after use Decrement the reference count of a media player object. If the reference count is 0, then \hyperlink{group__libvlc__media__player_gac8d8236f3dfa549d3637100ae6d07e72}{libvlc\+\_\+media\+\_\+player\+\_\+release()} will release the media player object. If the media player object has been released, then it should not be used again.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player to free \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_gac05d1395d425db194eda5a29a03c346a}\label{group__libvlc__media__player_gac05d1395d425db194eda5a29a03c346a}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+retain@{libvlc\+\_\+media\+\_\+player\+\_\+retain}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+retain@{libvlc\+\_\+media\+\_\+player\+\_\+retain}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+retain()}{libvlc\_media\_player\_retain()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+retain (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Retain a reference to a media player object. Use \hyperlink{group__libvlc__media__player_gac8d8236f3dfa549d3637100ae6d07e72}{libvlc\+\_\+media\+\_\+player\+\_\+release()} to decrement reference count.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & media player object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_gadc35c9afb5789c16fbe8e1f358ec141b}\label{group__libvlc__media__player_gadc35c9afb5789c16fbe8e1f358ec141b}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+agl@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+agl}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+agl@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+agl}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+agl()}{libvlc\_media\_player\_set\_agl()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+agl (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{uint32\+\_\+t}]{drawable }\end{DoxyParamCaption})}
+
+Set the agl handler where the media player should render its video output.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+{\em drawable} & the agl handler \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_gae8f1cbc7f17ab01c99511adf1b457860}\label{group__libvlc__media__player_gae8f1cbc7f17ab01c99511adf1b457860}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+chapter@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+chapter}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+chapter@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+chapter}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+chapter()}{libvlc\_media\_player\_set\_chapter()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+chapter (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{int}]{i\+\_\+chapter }\end{DoxyParamCaption})}
+
+Set movie chapter (if applicable).
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+{\em i\+\_\+chapter} & chapter number to play \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_ga0ee3abb85cd9735fdeace4882eb711f3}\label{group__libvlc__media__player_ga0ee3abb85cd9735fdeace4882eb711f3}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+hwnd@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+hwnd}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+hwnd@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+hwnd}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+hwnd()}{libvlc\_media\_player\_set\_hwnd()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+hwnd (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{void $\ast$}]{drawable }\end{DoxyParamCaption})}
+
+Set a Win32/\+Win64 A\+PI window handle (H\+W\+ND) where the media player should render its video output. If Lib\+V\+LC was built without Win32/\+Win64 A\+PI output support, then this has no effects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+{\em drawable} & windows handle of the drawable \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_gadeb7ac440f41dbb2aa1a7811904099b1}\label{group__libvlc__media__player_gadeb7ac440f41dbb2aa1a7811904099b1}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+media@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+media}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+media@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+media}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+media()}{libvlc\_media\_player\_set\_media()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+media (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md }\end{DoxyParamCaption})}
+
+Set the media that will be used by the media\+\_\+player. If any, previous md will be released.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+{\em p\+\_\+md} & the Media. Afterwards the p\+\_\+md can be safely destroyed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_ga46c26a395b496e48917101198acc31f6}\label{group__libvlc__media__player_ga46c26a395b496e48917101198acc31f6}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+nsobject@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+nsobject}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+nsobject@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+nsobject}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+nsobject()}{libvlc\_media\_player\_set\_nsobject()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+nsobject (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{void $\ast$}]{drawable }\end{DoxyParamCaption})}
+
+Set the N\+S\+View handler where the media player should render its video output.
+
+Use the vout called \char`\"{}macosx\char`\"{}.
+
+The drawable is an N\+S\+Object that follow the V\+L\+C\+Open\+G\+L\+Video\+View\+Embedding protocol\+:
+
+@protocol V\+L\+C\+Open\+G\+L\+Video\+View\+Embedding $<$\+N\+S\+Object$>$
+\begin{DoxyItemize}
+\item (void)add\+Vout\+Subview\+:(\+N\+S\+View $\ast$)view;
+\item (void)remove\+Vout\+Subview\+:(\+N\+S\+View $\ast$)view; @end 
+\end{DoxyItemize}
+
+Or it can be an N\+S\+View object.
+
+If you want to use it along with Qt4 see the Q\+Mac\+Cocoa\+View\+Container. Then the following code should work\+:  \{ N\+S\+View $\ast$video = \mbox{[}\mbox{[}N\+S\+View alloc\mbox{]} init\mbox{]}; Q\+Mac\+Cocoa\+View\+Container $\ast$container = new Q\+Mac\+Cocoa\+View\+Container(video, parent); libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+nsobject(mp, video); \mbox{[}video release\mbox{]}; \} 
+
+You can find a live example in V\+L\+C\+Video\+View in V\+L\+C\+Kit.\+framework.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+{\em drawable} & the drawable that is either an N\+S\+View or an object following the V\+L\+C\+Open\+G\+L\+Video\+View\+Embedding protocol. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_ga6e39882b33a22337cec9fd49dd7e23c4}\label{group__libvlc__media__player_ga6e39882b33a22337cec9fd49dd7e23c4}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+pause@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+pause}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+pause@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+pause}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+pause()}{libvlc\_media\_player\_set\_pause()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+pause (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{mp,  }\item[{int}]{do\+\_\+pause }\end{DoxyParamCaption})}
+
+Pause or resume (no effect if there is no media)
+
+
+\begin{DoxyParams}{Parameters}
+{\em mp} & the Media Player \\
+\hline
+{\em do\+\_\+pause} & play/resume if zero, pause if non-\/zero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 1.\+1.\+1 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__media__player_ga4b672fe24ed2defbf732452d5ccbb4ac}\label{group__libvlc__media__player_ga4b672fe24ed2defbf732452d5ccbb4ac}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+position@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+position}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+position@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+position}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+position()}{libvlc\_media\_player\_set\_position()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+position (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{float}]{f\+\_\+pos }\end{DoxyParamCaption})}
+
+Set movie position as percentage between 0.\+0 and 1.\+0. This has no effect if playback is not enabled. This might not work depending on the underlying input format and protocol.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+{\em f\+\_\+pos} & the position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_gaa81be3afb20eddedf7ae56e98d4b1e06}\label{group__libvlc__media__player_gaa81be3afb20eddedf7ae56e98d4b1e06}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+rate@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+rate}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+rate@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+rate}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+rate()}{libvlc\_media\_player\_set\_rate()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+rate (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{float}]{rate }\end{DoxyParamCaption})}
+
+Set movie play rate
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+{\em rate} & movie play rate to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 if an error was detected, 0 otherwise (but even then, it might not actually work depending on the underlying media protocol) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_ga2f3347645100660ffae553387171e398}\label{group__libvlc__media__player_ga2f3347645100660ffae553387171e398}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+time@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+time}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+time@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+time}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+time()}{libvlc\_media\_player\_set\_time()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+time (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{libvlc\+\_\+time\+\_\+t}]{i\+\_\+time }\end{DoxyParamCaption})}
+
+Set the movie time (in ms). This has no effect if no media is being played. Not all formats and protocols support this.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+{\em i\+\_\+time} & the movie time (in ms). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_ga39d28c13c551c195d4228dec1aa0b5e6}\label{group__libvlc__media__player_ga39d28c13c551c195d4228dec1aa0b5e6}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+title@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+title}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+title@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+title}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+title()}{libvlc\_media\_player\_set\_title()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+title (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{int}]{i\+\_\+title }\end{DoxyParamCaption})}
+
+Set movie title
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+{\em i\+\_\+title} & title number to play \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_gacc22e10e72cf10bc81ab3065eae96716}\label{group__libvlc__media__player_gacc22e10e72cf10bc81ab3065eae96716}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+video\+\_\+title\+\_\+display@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+video\+\_\+title\+\_\+display}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+video\+\_\+title\+\_\+display@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+video\+\_\+title\+\_\+display}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+video\+\_\+title\+\_\+display()}{libvlc\_media\_player\_set\_video\_title\_display()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+video\+\_\+title\+\_\+display (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{\hyperlink{group__libvlc__media__player_ga948997d1c6ab5fee8051417ac7dfa1c7}{libvlc\+\_\+position\+\_\+t}}]{position,  }\item[{unsigned int}]{timeout }\end{DoxyParamCaption})}
+
+Set if, and how, the video title will be shown when media is played.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the media player \\
+\hline
+{\em position} & position at which to display the title, or libvlc\+\_\+position\+\_\+disable to prevent the title from being displayed \\
+\hline
+{\em timeout} & title display timeout in milliseconds (ignored if libvlc\+\_\+position\+\_\+disable) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+lib\+V\+LC 2.\+1.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__media__player_ga31827df3a665a72410cb95695147ba5b}\label{group__libvlc__media__player_ga31827df3a665a72410cb95695147ba5b}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+xwindow@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+xwindow}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+xwindow@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+xwindow}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+xwindow()}{libvlc\_media\_player\_set\_xwindow()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+xwindow (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{uint32\+\_\+t}]{drawable }\end{DoxyParamCaption})}
+
+Set an X \hyperlink{classWindow}{Window} System drawable where the media player should render its video output. If Lib\+V\+LC was built without X11 output support, then this has no effects.
+
+The specified identifier must correspond to an existing Input/\+Output class X11 window. Pixmaps are {\bfseries not} supported. The caller shall ensure that the X11 server is the same as the one the V\+LC instance has been configured with. This function must be called before video playback is started; otherwise it will only take effect after playback stop and restart.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+{\em drawable} & the ID of the X window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_gacefc05e7806905447a436d3fc242e6de}\label{group__libvlc__media__player_gacefc05e7806905447a436d3fc242e6de}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+stop@{libvlc\+\_\+media\+\_\+player\+\_\+stop}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+stop@{libvlc\+\_\+media\+\_\+player\+\_\+stop}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+stop()}{libvlc\_media\_player\_stop()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+player\+\_\+stop (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Stop (no effect if there is no media)
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_ga3c38df27467a03f96f9ed0f6b585baaa}\label{group__libvlc__media__player_ga3c38df27467a03f96f9ed0f6b585baaa}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+media\+\_\+player\+\_\+will\+\_\+play@{libvlc\+\_\+media\+\_\+player\+\_\+will\+\_\+play}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+will\+\_\+play@{libvlc\+\_\+media\+\_\+player\+\_\+will\+\_\+play}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+will\+\_\+play()}{libvlc\_media\_player\_will\_play()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+player\+\_\+will\+\_\+play (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Is the player able to play
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & the Media Player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__player_gaffdae51d73f23127456631b87457beb2}\label{group__libvlc__media__player_gaffdae51d73f23127456631b87457beb2}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+track\+\_\+description\+\_\+list\+\_\+release@{libvlc\+\_\+track\+\_\+description\+\_\+list\+\_\+release}}
+\index{libvlc\+\_\+track\+\_\+description\+\_\+list\+\_\+release@{libvlc\+\_\+track\+\_\+description\+\_\+list\+\_\+release}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+track\+\_\+description\+\_\+list\+\_\+release()}{libvlc\_track\_description\_list\_release()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+track\+\_\+description\+\_\+list\+\_\+release (\begin{DoxyParamCaption}\item[{\hyperlink{structlibvlc__track__description__t}{libvlc\+\_\+track\+\_\+description\+\_\+t} $\ast$}]{p\+\_\+track\+\_\+description }\end{DoxyParamCaption})}
+
+Release (free) \hyperlink{structlibvlc__track__description__t}{libvlc\+\_\+track\+\_\+description\+\_\+t}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+track\+\_\+description} & the structure to release \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__player_ga952b5c8fffa72a993f0ea61bf5b5711c}\label{group__libvlc__media__player_ga952b5c8fffa72a993f0ea61bf5b5711c}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+track\+\_\+description\+\_\+release@{libvlc\+\_\+track\+\_\+description\+\_\+release}}
+\index{libvlc\+\_\+track\+\_\+description\+\_\+release@{libvlc\+\_\+track\+\_\+description\+\_\+release}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+track\+\_\+description\+\_\+release()}{libvlc\_track\_description\_release()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+track\+\_\+description\+\_\+release (\begin{DoxyParamCaption}\item[{\hyperlink{structlibvlc__track__description__t}{libvlc\+\_\+track\+\_\+description\+\_\+t} $\ast$}]{p\+\_\+track\+\_\+description }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000055}{Deprecated}]Use libvlc\+\_\+track\+\_\+description\+\_\+list\+\_\+release instead \end{DoxyRefDesc}
+\mbox{\Hypertarget{group__libvlc__media__player_ga612605f2e5c638d9f4ed59021d714bf0}\label{group__libvlc__media__player_ga612605f2e5c638d9f4ed59021d714bf0}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+video\+\_\+set\+\_\+callbacks@{libvlc\+\_\+video\+\_\+set\+\_\+callbacks}}
+\index{libvlc\+\_\+video\+\_\+set\+\_\+callbacks@{libvlc\+\_\+video\+\_\+set\+\_\+callbacks}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+video\+\_\+set\+\_\+callbacks()}{libvlc\_video\_set\_callbacks()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+video\+\_\+set\+\_\+callbacks (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{mp,  }\item[{\hyperlink{group__libvlc__media__player_ga193de3e82f6de3f9d8f5ccd8b5f2aa98}{libvlc\+\_\+video\+\_\+lock\+\_\+cb}}]{lock,  }\item[{\hyperlink{group__libvlc__media__player_ga024c0f0bba9d3b32a881c40f3cb479bb}{libvlc\+\_\+video\+\_\+unlock\+\_\+cb}}]{unlock,  }\item[{\hyperlink{group__libvlc__media__player_ga2189c9deefc2154ddc5d5f1871b0a106}{libvlc\+\_\+video\+\_\+display\+\_\+cb}}]{display,  }\item[{void $\ast$}]{opaque }\end{DoxyParamCaption})}
+
+Set callbacks and private data to render decoded video to a custom area in memory. Use \hyperlink{group__libvlc__media__player_ga6518394e05d458731c11c86edb23f4cc}{libvlc\+\_\+video\+\_\+set\+\_\+format()} or \hyperlink{group__libvlc__media__player_gafbeef69fb76b4c4d6cb25145aee1ad99}{libvlc\+\_\+video\+\_\+set\+\_\+format\+\_\+callbacks()} to configure the decoded format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mp} & the media player \\
+\hline
+{\em lock} & callback to lock video memory (must not be N\+U\+LL) \\
+\hline
+{\em unlock} & callback to unlock video memory (or N\+U\+LL if not needed) \\
+\hline
+{\em display} & callback to display video (or N\+U\+LL if not needed) \\
+\hline
+{\em opaque} & private pointer for the three callbacks (as first parameter) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 1.\+1.\+1 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__media__player_ga6518394e05d458731c11c86edb23f4cc}\label{group__libvlc__media__player_ga6518394e05d458731c11c86edb23f4cc}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+video\+\_\+set\+\_\+format@{libvlc\+\_\+video\+\_\+set\+\_\+format}}
+\index{libvlc\+\_\+video\+\_\+set\+\_\+format@{libvlc\+\_\+video\+\_\+set\+\_\+format}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+video\+\_\+set\+\_\+format()}{libvlc\_video\_set\_format()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+video\+\_\+set\+\_\+format (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{mp,  }\item[{const char $\ast$}]{chroma,  }\item[{unsigned}]{width,  }\item[{unsigned}]{height,  }\item[{unsigned}]{pitch }\end{DoxyParamCaption})}
+
+Set decoded video chroma and dimensions. This only works in combination with \hyperlink{group__libvlc__media__player_ga612605f2e5c638d9f4ed59021d714bf0}{libvlc\+\_\+video\+\_\+set\+\_\+callbacks()}, and is mutually exclusive with \hyperlink{group__libvlc__media__player_gafbeef69fb76b4c4d6cb25145aee1ad99}{libvlc\+\_\+video\+\_\+set\+\_\+format\+\_\+callbacks()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mp} & the media player \\
+\hline
+{\em chroma} & a four-\/characters string identifying the chroma (e.\+g. \char`\"{}\+R\+V32\char`\"{} or \char`\"{}\+Y\+U\+Y\+V\char`\"{}) \\
+\hline
+{\em width} & pixel width \\
+\hline
+{\em height} & pixel height \\
+\hline
+{\em pitch} & line pitch (in bytes) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 1.\+1.\+1 or later 
+\end{DoxyVersion}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000001}{Bug}]All pixel planes are expected to have the same pitch. To use the Y\+Cb\+Cr color space with chrominance subsampling, consider using \hyperlink{group__libvlc__media__player_gafbeef69fb76b4c4d6cb25145aee1ad99}{libvlc\+\_\+video\+\_\+set\+\_\+format\+\_\+callbacks()} instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{group__libvlc__media__player_gafbeef69fb76b4c4d6cb25145aee1ad99}\label{group__libvlc__media__player_gafbeef69fb76b4c4d6cb25145aee1ad99}} 
+\index{Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}!libvlc\+\_\+video\+\_\+set\+\_\+format\+\_\+callbacks@{libvlc\+\_\+video\+\_\+set\+\_\+format\+\_\+callbacks}}
+\index{libvlc\+\_\+video\+\_\+set\+\_\+format\+\_\+callbacks@{libvlc\+\_\+video\+\_\+set\+\_\+format\+\_\+callbacks}!Lib\+V\+L\+C media player@{Lib\+V\+L\+C media player}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+video\+\_\+set\+\_\+format\+\_\+callbacks()}{libvlc\_video\_set\_format\_callbacks()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+video\+\_\+set\+\_\+format\+\_\+callbacks (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{mp,  }\item[{\hyperlink{group__libvlc__media__player_gae46128c21d0d0151aca3ba017d1d6b35}{libvlc\+\_\+video\+\_\+format\+\_\+cb}}]{setup,  }\item[{\hyperlink{group__libvlc__media__player_ga47f87563b82ed4b6d70ef51243003ae9}{libvlc\+\_\+video\+\_\+cleanup\+\_\+cb}}]{cleanup }\end{DoxyParamCaption})}
+
+Set decoded video chroma and dimensions. This only works in combination with \hyperlink{group__libvlc__media__player_ga612605f2e5c638d9f4ed59021d714bf0}{libvlc\+\_\+video\+\_\+set\+\_\+callbacks()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mp} & the media player \\
+\hline
+{\em setup} & callback to select the video format (cannot be N\+U\+LL) \\
+\hline
+{\em cleanup} & callback to release any allocated resources (or N\+U\+LL) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+0.\+0 or later 
+\end{DoxyVersion}

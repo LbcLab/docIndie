@@ -12,13 +12,25 @@ A scene node displaying a static mesh.
 Inheritance diagram for irr\+:\+:scene\+:\+:I\+Mesh\+Scene\+Node\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{classirr_1_1scene_1_1IMeshSceneNode}
+\includegraphics[height=1.682692cm]{classirr_1_1scene_1_1IMeshSceneNode}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classirr_1_1scene_1_1IMeshSceneNode_a491d6cac4ec270ab01c24e27c88e6ca4}{I\+Mesh\+Scene\+Node} (\hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$parent, \hyperlink{classirr_1_1scene_1_1ISceneManager}{I\+Scene\+Manager} $\ast$mgr, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&position=\hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df}(0, 0, 0), const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&rotation=\hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df}(0, 0, 0), const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&scale=\hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df}(1, 1, 1))
+\hyperlink{classirr_1_1scene_1_1IMeshSceneNode_a491d6cac4ec270ab01c24e27c88e6ca4}{I\+Mesh\+Scene\+Node} (\hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$parent, \hyperlink{classirr_1_1scene_1_1ISceneManager}{I\+Scene\+Manager} $\ast$mgr, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&position=\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(0, 0, 0), const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&rotation=\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(0, 0, 0), const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&scale=\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(1, 1, 1))
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1IMeshSceneNode_a8d7e98ddfb990bfc354c9c410a4d788f}{set\+Mesh} (\hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} $\ast$mesh)=0
+\begin{DoxyCompactList}\small\item\em Sets a new mesh to display. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} $\ast$ \hyperlink{classirr_1_1scene_1_1IMeshSceneNode_afe540de69bc3a058919cd5ce465be634}{get\+Mesh} (void)=0
+\begin{DoxyCompactList}\small\item\em Get the currently defined mesh for display. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1scene_1_1IShadowVolumeSceneNode}{I\+Shadow\+Volume\+Scene\+Node} $\ast$ \hyperlink{classirr_1_1scene_1_1IMeshSceneNode_ad7cd00b302466dea891c7a0b6b28de19}{add\+Shadow\+Volume\+Scene\+Node} (const \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} $\ast$shadow\+Mesh=0, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id=-\/1, bool zfailmethod=true, \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} infinity=1000.\+0f)=0
+\begin{DoxyCompactList}\small\item\em Creates shadow volume scene node as child of this node. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1IMeshSceneNode_a3bae73b4f7b1a6b265a62ece964c008f}{set\+Read\+Only\+Materials} (bool readonly)=0
+\begin{DoxyCompactList}\small\item\em Sets if the scene node should not copy the materials of the mesh but use them in a read only style. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1scene_1_1IMeshSceneNode_a1d7de4331b84480598f636c929418e3d}{is\+Read\+Only\+Materials} () const =0
+\begin{DoxyCompactList}\small\item\em Check if the scene node should not copy the materials of the mesh but use them in a read only style. \end{DoxyCompactList}\item 
+\hyperlink{classirr_1_1scene_1_1IMeshSceneNode_a491d6cac4ec270ab01c24e27c88e6ca4}{I\+Mesh\+Scene\+Node} (\hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$parent, \hyperlink{classirr_1_1scene_1_1ISceneManager}{I\+Scene\+Manager} $\ast$mgr, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&position=\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(0, 0, 0), const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&rotation=\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(0, 0, 0), const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&scale=\hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(1, 1, 1))
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classirr_1_1scene_1_1IMeshSceneNode_a8d7e98ddfb990bfc354c9c410a4d788f}{set\+Mesh} (\hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} $\ast$mesh)=0
 \begin{DoxyCompactList}\small\item\em Sets a new mesh to display. \end{DoxyCompactList}\item 
@@ -40,8 +52,18 @@ A scene node displaying a static mesh.
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMeshSceneNode_a491d6cac4ec270ab01c24e27c88e6ca4}\label{classirr_1_1scene_1_1IMeshSceneNode_a491d6cac4ec270ab01c24e27c88e6ca4}} 
 \index{irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}!I\+Mesh\+Scene\+Node@{I\+Mesh\+Scene\+Node}}
 \index{I\+Mesh\+Scene\+Node@{I\+Mesh\+Scene\+Node}!irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}}
-\subsubsection{\texorpdfstring{I\+Mesh\+Scene\+Node()}{IMeshSceneNode()}}
-{\footnotesize\ttfamily irr\+::scene\+::\+I\+Mesh\+Scene\+Node\+::\+I\+Mesh\+Scene\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$}]{parent,  }\item[{\hyperlink{classirr_1_1scene_1_1ISceneManager}{I\+Scene\+Manager} $\ast$}]{mgr,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id,  }\item[{const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&}]{position = {\ttfamily \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df}(0,0,0)},  }\item[{const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&}]{rotation = {\ttfamily \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df}(0,0,0)},  }\item[{const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&}]{scale = {\ttfamily \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df}(1,1,1)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{I\+Mesh\+Scene\+Node()}{IMeshSceneNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily irr\+::scene\+::\+I\+Mesh\+Scene\+Node\+::\+I\+Mesh\+Scene\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$}]{parent,  }\item[{\hyperlink{classirr_1_1scene_1_1ISceneManager}{I\+Scene\+Manager} $\ast$}]{mgr,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id,  }\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&}]{position = {\ttfamily \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(0,0,0)},  }\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&}]{rotation = {\ttfamily \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(0,0,0)},  }\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&}]{scale = {\ttfamily \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(1,1,1)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+Use \hyperlink{classirr_1_1scene_1_1IMeshSceneNode_a8d7e98ddfb990bfc354c9c410a4d788f}{set\+Mesh()} to set the mesh to display. \mbox{\Hypertarget{classirr_1_1scene_1_1IMeshSceneNode_a491d6cac4ec270ab01c24e27c88e6ca4}\label{classirr_1_1scene_1_1IMeshSceneNode_a491d6cac4ec270ab01c24e27c88e6ca4}} 
+\index{irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}!I\+Mesh\+Scene\+Node@{I\+Mesh\+Scene\+Node}}
+\index{I\+Mesh\+Scene\+Node@{I\+Mesh\+Scene\+Node}!irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}}
+\subsubsection{\texorpdfstring{I\+Mesh\+Scene\+Node()}{IMeshSceneNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily irr\+::scene\+::\+I\+Mesh\+Scene\+Node\+::\+I\+Mesh\+Scene\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$}]{parent,  }\item[{\hyperlink{classirr_1_1scene_1_1ISceneManager}{I\+Scene\+Manager} $\ast$}]{mgr,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id,  }\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&}]{position = {\ttfamily \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(0,0,0)},  }\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&}]{rotation = {\ttfamily \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(0,0,0)},  }\item[{const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&}]{scale = {\ttfamily \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df}(1,1,1)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -53,7 +75,31 @@ Use \hyperlink{classirr_1_1scene_1_1IMeshSceneNode_a8d7e98ddfb990bfc354c9c410a4d
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMeshSceneNode_ad7cd00b302466dea891c7a0b6b28de19}\label{classirr_1_1scene_1_1IMeshSceneNode_ad7cd00b302466dea891c7a0b6b28de19}} 
 \index{irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}!add\+Shadow\+Volume\+Scene\+Node@{add\+Shadow\+Volume\+Scene\+Node}}
 \index{add\+Shadow\+Volume\+Scene\+Node@{add\+Shadow\+Volume\+Scene\+Node}!irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}}
-\subsubsection{\texorpdfstring{add\+Shadow\+Volume\+Scene\+Node()}{addShadowVolumeSceneNode()}}
+\subsubsection{\texorpdfstring{add\+Shadow\+Volume\+Scene\+Node()}{addShadowVolumeSceneNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1scene_1_1IShadowVolumeSceneNode}{I\+Shadow\+Volume\+Scene\+Node}$\ast$ irr\+::scene\+::\+I\+Mesh\+Scene\+Node\+::add\+Shadow\+Volume\+Scene\+Node (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} $\ast$}]{shadow\+Mesh = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1},  }\item[{bool}]{zfailmethod = {\ttfamily true},  }\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{infinity = {\ttfamily 1000.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Creates shadow volume scene node as child of this node. 
+
+The shadow can be rendered using the Z\+Pass or the zfail method. Z\+Pass is a little bit faster because the shadow volume creation is easier, but with this method there occur ugly looking artifacs when the camera is inside the shadow volume. These error do not occur with the Z\+Fail method. 
+\begin{DoxyParams}{Parameters}
+{\em shadow\+Mesh} & Optional custom mesh for shadow volume. \\
+\hline
+{\em id} & Id of the shadow scene node. This id can be used to identify the node later. \\
+\hline
+{\em zfailmethod} & If set to true, the shadow will use the zfail method, if not, zpass is used. \\
+\hline
+{\em infinity} & Value used by the shadow volume algorithm to scale the shadow volume (for zfail shadow volume we support only finite shadows, so camera zfar must be larger than shadow back cap, which is depend on infinity parameter). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created shadow scene node. This pointer should not be dropped. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1IMeshSceneNode_ad7cd00b302466dea891c7a0b6b28de19}\label{classirr_1_1scene_1_1IMeshSceneNode_ad7cd00b302466dea891c7a0b6b28de19}} 
+\index{irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}!add\+Shadow\+Volume\+Scene\+Node@{add\+Shadow\+Volume\+Scene\+Node}}
+\index{add\+Shadow\+Volume\+Scene\+Node@{add\+Shadow\+Volume\+Scene\+Node}!irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}}
+\subsubsection{\texorpdfstring{add\+Shadow\+Volume\+Scene\+Node()}{addShadowVolumeSceneNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1scene_1_1IShadowVolumeSceneNode}{I\+Shadow\+Volume\+Scene\+Node}$\ast$ irr\+::scene\+::\+I\+Mesh\+Scene\+Node\+::add\+Shadow\+Volume\+Scene\+Node (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} $\ast$}]{shadow\+Mesh = {\ttfamily 0},  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{id = {\ttfamily -\/1},  }\item[{bool}]{zfailmethod = {\ttfamily true},  }\item[{\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32}}]{infinity = {\ttfamily 1000.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -77,7 +123,20 @@ Pointer to the created shadow scene node. This pointer should not be dropped. Se
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMeshSceneNode_afe540de69bc3a058919cd5ce465be634}\label{classirr_1_1scene_1_1IMeshSceneNode_afe540de69bc3a058919cd5ce465be634}} 
 \index{irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}!get\+Mesh@{get\+Mesh}}
 \index{get\+Mesh@{get\+Mesh}!irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}}
-\subsubsection{\texorpdfstring{get\+Mesh()}{getMesh()}}
+\subsubsection{\texorpdfstring{get\+Mesh()}{getMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh}$\ast$ irr\+::scene\+::\+I\+Mesh\+Scene\+Node\+::get\+Mesh (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the currently defined mesh for display. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to mesh which is displayed by this node. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1IMeshSceneNode_afe540de69bc3a058919cd5ce465be634}\label{classirr_1_1scene_1_1IMeshSceneNode_afe540de69bc3a058919cd5ce465be634}} 
+\index{irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}!get\+Mesh@{get\+Mesh}}
+\index{get\+Mesh@{get\+Mesh}!irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}}
+\subsubsection{\texorpdfstring{get\+Mesh()}{getMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh}$\ast$ irr\+::scene\+::\+I\+Mesh\+Scene\+Node\+::get\+Mesh (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -90,7 +149,20 @@ Pointer to mesh which is displayed by this node.
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMeshSceneNode_a1d7de4331b84480598f636c929418e3d}\label{classirr_1_1scene_1_1IMeshSceneNode_a1d7de4331b84480598f636c929418e3d}} 
 \index{irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}!is\+Read\+Only\+Materials@{is\+Read\+Only\+Materials}}
 \index{is\+Read\+Only\+Materials@{is\+Read\+Only\+Materials}!irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}}
-\subsubsection{\texorpdfstring{is\+Read\+Only\+Materials()}{isReadOnlyMaterials()}}
+\subsubsection{\texorpdfstring{is\+Read\+Only\+Materials()}{isReadOnlyMaterials()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Mesh\+Scene\+Node\+::is\+Read\+Only\+Materials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if the scene node should not copy the materials of the mesh but use them in a read only style. 
+
+This flag can be set by \hyperlink{classirr_1_1scene_1_1IMeshSceneNode_a3bae73b4f7b1a6b265a62ece964c008f}{set\+Read\+Only\+Materials()}. \begin{DoxyReturn}{Returns}
+Whether the materials are read-\/only. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1IMeshSceneNode_a1d7de4331b84480598f636c929418e3d}\label{classirr_1_1scene_1_1IMeshSceneNode_a1d7de4331b84480598f636c929418e3d}} 
+\index{irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}!is\+Read\+Only\+Materials@{is\+Read\+Only\+Materials}}
+\index{is\+Read\+Only\+Materials@{is\+Read\+Only\+Materials}!irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}}
+\subsubsection{\texorpdfstring{is\+Read\+Only\+Materials()}{isReadOnlyMaterials()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Mesh\+Scene\+Node\+::is\+Read\+Only\+Materials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -103,7 +175,22 @@ Whether the materials are read-\/only.
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMeshSceneNode_a8d7e98ddfb990bfc354c9c410a4d788f}\label{classirr_1_1scene_1_1IMeshSceneNode_a8d7e98ddfb990bfc354c9c410a4d788f}} 
 \index{irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}!set\+Mesh@{set\+Mesh}}
 \index{set\+Mesh@{set\+Mesh}!irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Mesh()}{setMesh()}}
+\subsubsection{\texorpdfstring{set\+Mesh()}{setMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Mesh\+Scene\+Node\+::set\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} $\ast$}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets a new mesh to display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh} & Mesh to display. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1IMeshSceneNode_a8d7e98ddfb990bfc354c9c410a4d788f}\label{classirr_1_1scene_1_1IMeshSceneNode_a8d7e98ddfb990bfc354c9c410a4d788f}} 
+\index{irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}!set\+Mesh@{set\+Mesh}}
+\index{set\+Mesh@{set\+Mesh}!irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}}
+\subsubsection{\texorpdfstring{set\+Mesh()}{setMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Mesh\+Scene\+Node\+::set\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} $\ast$}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -118,7 +205,22 @@ Sets a new mesh to display.
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMeshSceneNode_a3bae73b4f7b1a6b265a62ece964c008f}\label{classirr_1_1scene_1_1IMeshSceneNode_a3bae73b4f7b1a6b265a62ece964c008f}} 
 \index{irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}!set\+Read\+Only\+Materials@{set\+Read\+Only\+Materials}}
 \index{set\+Read\+Only\+Materials@{set\+Read\+Only\+Materials}!irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Read\+Only\+Materials()}{setReadOnlyMaterials()}}
+\subsubsection{\texorpdfstring{set\+Read\+Only\+Materials()}{setReadOnlyMaterials()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Mesh\+Scene\+Node\+::set\+Read\+Only\+Materials (\begin{DoxyParamCaption}\item[{bool}]{readonly }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets if the scene node should not copy the materials of the mesh but use them in a read only style. 
+
+In this way it is possible to change the materials of a mesh causing all mesh scene nodes referencing this mesh to change, too. 
+\begin{DoxyParams}{Parameters}
+{\em readonly} & Flag if the materials shall be read-\/only. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1IMeshSceneNode_a3bae73b4f7b1a6b265a62ece964c008f}\label{classirr_1_1scene_1_1IMeshSceneNode_a3bae73b4f7b1a6b265a62ece964c008f}} 
+\index{irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}!set\+Read\+Only\+Materials@{set\+Read\+Only\+Materials}}
+\index{set\+Read\+Only\+Materials@{set\+Read\+Only\+Materials}!irr\+::scene\+::\+I\+Mesh\+Scene\+Node@{irr\+::scene\+::\+I\+Mesh\+Scene\+Node}}
+\subsubsection{\texorpdfstring{set\+Read\+Only\+Materials()}{setReadOnlyMaterials()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Mesh\+Scene\+Node\+::set\+Read\+Only\+Materials (\begin{DoxyParamCaption}\item[{bool}]{readonly }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

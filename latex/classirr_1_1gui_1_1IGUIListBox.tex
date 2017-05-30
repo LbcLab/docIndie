@@ -12,12 +12,89 @@ Default list box G\+UI element.
 Inheritance diagram for irr\+:\+:gui\+:\+:I\+G\+U\+I\+List\+Box\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{classirr_1_1gui_1_1IGUIListBox}
+\includegraphics[height=4.038462cm]{classirr_1_1gui_1_1IGUIListBox}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a6f6e6a84f3d2035a0874eb9f4a4d52ef}\label{classirr_1_1gui_1_1IGUIListBox_a6f6e6a84f3d2035a0874eb9f4a4d52ef}} 
+\hyperlink{classirr_1_1gui_1_1IGUIListBox_a6f6e6a84f3d2035a0874eb9f4a4d52ef}{I\+G\+U\+I\+List\+Box} (\hyperlink{classirr_1_1gui_1_1IGUIEnvironment}{I\+G\+U\+I\+Environment} $\ast$environment, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ rectangle)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a9ae7e4858dd1dee26efab7e7c9c94ab7}\label{classirr_1_1gui_1_1IGUIListBox_a9ae7e4858dd1dee26efab7e7c9c94ab7}} 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1gui_1_1IGUIListBox_a9ae7e4858dd1dee26efab7e7c9c94ab7}{get\+Item\+Count} () const =0
+\begin{DoxyCompactList}\small\item\em returns amount of list items \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_af68ea08c93b0959ea464146bc1f4d82f}\label{classirr_1_1gui_1_1IGUIListBox_af68ea08c93b0959ea464146bc1f4d82f}} 
+virtual const wchar\+\_\+t $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIListBox_af68ea08c93b0959ea464146bc1f4d82f}{get\+List\+Item} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} id) const =0
+\begin{DoxyCompactList}\small\item\em returns string of a list item. the may id be a value from 0 to item\+Count-\/1 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a298dbba8da28248b563a906c520dc3be}\label{classirr_1_1gui_1_1IGUIListBox_a298dbba8da28248b563a906c520dc3be}} 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1gui_1_1IGUIListBox_a298dbba8da28248b563a906c520dc3be}{add\+Item} (const wchar\+\_\+t $\ast$text)=0
+\begin{DoxyCompactList}\small\item\em adds an list item, returns id of item \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} \hyperlink{classirr_1_1gui_1_1IGUIListBox_a2cfc2ff5f8f5114a92bd3618e79327e0}{add\+Item} (const wchar\+\_\+t $\ast$text, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} icon)=0
+\begin{DoxyCompactList}\small\item\em adds an list item with an icon \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a6c19c6db0bcf52756d9bb866063a770b}\label{classirr_1_1gui_1_1IGUIListBox_a6c19c6db0bcf52756d9bb866063a770b}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIListBox_a6c19c6db0bcf52756d9bb866063a770b}{remove\+Item} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index)=0
+\begin{DoxyCompactList}\small\item\em Removes an item from the list. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUIListBox_a8e1fe86805d9b970b89878291f0ccd25}{get\+Item\+At} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} xpos, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} ypos) const =0
+\begin{DoxyCompactList}\small\item\em get the the id of the item at the given absolute coordinates \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a8e5f9751a7a1a32dde5a243733b3ddc6}\label{classirr_1_1gui_1_1IGUIListBox_a8e5f9751a7a1a32dde5a243733b3ddc6}} 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUIListBox_a8e5f9751a7a1a32dde5a243733b3ddc6}{get\+Icon} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index) const =0
+\begin{DoxyCompactList}\small\item\em Returns the icon of an item. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIListBox_ad139cef6f71bb8d36624b48e8a695ed4}{set\+Sprite\+Bank} (\hyperlink{classirr_1_1gui_1_1IGUISpriteBank}{I\+G\+U\+I\+Sprite\+Bank} $\ast$bank)=0
+\begin{DoxyCompactList}\small\item\em Sets the sprite bank which should be used to draw list icons. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_aaffa1f9f823dbb254c1901dba67e31c4}\label{classirr_1_1gui_1_1IGUIListBox_aaffa1f9f823dbb254c1901dba67e31c4}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIListBox_aaffa1f9f823dbb254c1901dba67e31c4}{clear} ()=0
+\begin{DoxyCompactList}\small\item\em clears the list, deletes all items in the listbox \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a321626d92d63ce5c309466201a02b12d}\label{classirr_1_1gui_1_1IGUIListBox_a321626d92d63ce5c309466201a02b12d}} 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUIListBox_a321626d92d63ce5c309466201a02b12d}{get\+Selected} () const =0
+\begin{DoxyCompactList}\small\item\em returns id of selected item. returns -\/1 if no item is selected. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_ac981fa5b285115333b67202819230f6f}\label{classirr_1_1gui_1_1IGUIListBox_ac981fa5b285115333b67202819230f6f}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIListBox_ac981fa5b285115333b67202819230f6f}{set\+Selected} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} index)=0
+\begin{DoxyCompactList}\small\item\em sets the selected item. Set this to -\/1 if no item should be selected \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_aa6031e2a0ecbcfe80484d8271b1c9529}\label{classirr_1_1gui_1_1IGUIListBox_aa6031e2a0ecbcfe80484d8271b1c9529}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIListBox_aa6031e2a0ecbcfe80484d8271b1c9529}{set\+Selected} (const wchar\+\_\+t $\ast$item)=0
+\begin{DoxyCompactList}\small\item\em sets the selected item. Set this to 0 if no item should be selected \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a4d8ada56cafff847e98564283b2d06ac}\label{classirr_1_1gui_1_1IGUIListBox_a4d8ada56cafff847e98564283b2d06ac}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIListBox_a4d8ada56cafff847e98564283b2d06ac}{set\+Auto\+Scroll\+Enabled} (bool scroll)=0
+\begin{DoxyCompactList}\small\item\em set whether the listbox should scroll to newly selected items \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_af04876e1e3173e9c13bb099076743137}\label{classirr_1_1gui_1_1IGUIListBox_af04876e1e3173e9c13bb099076743137}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIListBox_af04876e1e3173e9c13bb099076743137}{is\+Auto\+Scroll\+Enabled} () const =0
+\begin{DoxyCompactList}\small\item\em returns true if automatic scrolling is enabled, false if not. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_ae2f09b02e7428175e13fa6b3216ced67}\label{classirr_1_1gui_1_1IGUIListBox_ae2f09b02e7428175e13fa6b3216ced67}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIListBox_ae2f09b02e7428175e13fa6b3216ced67}{set\+Item\+Override\+Color} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index, \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} color)=0
+\begin{DoxyCompactList}\small\item\em set all item colors at given index to color \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a84444d888931d79dcc50a8f229aad2c7}\label{classirr_1_1gui_1_1IGUIListBox_a84444d888931d79dcc50a8f229aad2c7}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIListBox_a84444d888931d79dcc50a8f229aad2c7}{set\+Item\+Override\+Color} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index, \hyperlink{namespaceirr_1_1gui_a7da705f0a0b4aa5385e6842adf409cb6}{E\+G\+U\+I\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+C\+O\+L\+OR} color\+Type, \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} color)=0
+\begin{DoxyCompactList}\small\item\em set all item colors of specified type at given index to color \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_aca681d4d4814cde0678109e3bce2471e}\label{classirr_1_1gui_1_1IGUIListBox_aca681d4d4814cde0678109e3bce2471e}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIListBox_aca681d4d4814cde0678109e3bce2471e}{clear\+Item\+Override\+Color} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index)=0
+\begin{DoxyCompactList}\small\item\em clear all item colors at index \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_aa0bb8fd96be94e8de5d4496b7d5e2ffd}\label{classirr_1_1gui_1_1IGUIListBox_aa0bb8fd96be94e8de5d4496b7d5e2ffd}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIListBox_aa0bb8fd96be94e8de5d4496b7d5e2ffd}{clear\+Item\+Override\+Color} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index, \hyperlink{namespaceirr_1_1gui_a7da705f0a0b4aa5385e6842adf409cb6}{E\+G\+U\+I\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+C\+O\+L\+OR} color\+Type)=0
+\begin{DoxyCompactList}\small\item\em clear item color at index for given colortype \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a8399578154c3cbfcdd23f3b7009c448d}\label{classirr_1_1gui_1_1IGUIListBox_a8399578154c3cbfcdd23f3b7009c448d}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIListBox_a8399578154c3cbfcdd23f3b7009c448d}{has\+Item\+Override\+Color} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index, \hyperlink{namespaceirr_1_1gui_a7da705f0a0b4aa5385e6842adf409cb6}{E\+G\+U\+I\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+C\+O\+L\+OR} color\+Type) const =0
+\begin{DoxyCompactList}\small\item\em has the item at index its color overwritten? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a504c669eae86307521b643288c4ef196}\label{classirr_1_1gui_1_1IGUIListBox_a504c669eae86307521b643288c4ef196}} 
+virtual \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} \hyperlink{classirr_1_1gui_1_1IGUIListBox_a504c669eae86307521b643288c4ef196}{get\+Item\+Override\+Color} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index, \hyperlink{namespaceirr_1_1gui_a7da705f0a0b4aa5385e6842adf409cb6}{E\+G\+U\+I\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+C\+O\+L\+OR} color\+Type) const =0
+\begin{DoxyCompactList}\small\item\em return the overwrite color at given item index. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_ae755a88721a458b3255df08519b72e85}\label{classirr_1_1gui_1_1IGUIListBox_ae755a88721a458b3255df08519b72e85}} 
+virtual \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} \hyperlink{classirr_1_1gui_1_1IGUIListBox_ae755a88721a458b3255df08519b72e85}{get\+Item\+Default\+Color} (\hyperlink{namespaceirr_1_1gui_a7da705f0a0b4aa5385e6842adf409cb6}{E\+G\+U\+I\+\_\+\+L\+I\+S\+T\+B\+O\+X\+\_\+\+C\+O\+L\+OR} color\+Type) const =0
+\begin{DoxyCompactList}\small\item\em return the default color which is used for the given color\+Type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a643ca28110a7de59a378e5ba79b1c37a}\label{classirr_1_1gui_1_1IGUIListBox_a643ca28110a7de59a378e5ba79b1c37a}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIListBox_a643ca28110a7de59a378e5ba79b1c37a}{set\+Item} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index, const wchar\+\_\+t $\ast$text, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} icon)=0
+\begin{DoxyCompactList}\small\item\em set the item at the given index \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUIListBox_a1da5cc33687efee5ff1e33ab9f0d5b26}{insert\+Item} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index, const wchar\+\_\+t $\ast$text, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} icon)=0
+\begin{DoxyCompactList}\small\item\em Insert the item at the given index. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_accb47d6f72558ea5d3034b3e4e4ccd81}\label{classirr_1_1gui_1_1IGUIListBox_accb47d6f72558ea5d3034b3e4e4ccd81}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIListBox_accb47d6f72558ea5d3034b3e4e4ccd81}{swap\+Items} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index1, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index2)=0
+\begin{DoxyCompactList}\small\item\em Swap the items at the given indices. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a83fb9c6f32039a39197cf799dd5e0c8f}\label{classirr_1_1gui_1_1IGUIListBox_a83fb9c6f32039a39197cf799dd5e0c8f}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIListBox_a83fb9c6f32039a39197cf799dd5e0c8f}{set\+Item\+Height} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} height)=0
+\begin{DoxyCompactList}\small\item\em set global item\+Height \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_ad323fdf0b083dbc1870d7fa5869cff8f}\label{classirr_1_1gui_1_1IGUIListBox_ad323fdf0b083dbc1870d7fa5869cff8f}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIListBox_ad323fdf0b083dbc1870d7fa5869cff8f}{set\+Draw\+Background} (bool \hyperlink{classirr_1_1gui_1_1IGUIElement_a1ef7eeaff67b8a9f4f37cacdc7e54be2}{draw})=0
+\begin{DoxyCompactList}\small\item\em Sets whether to draw the background. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a6f6e6a84f3d2035a0874eb9f4a4d52ef}\label{classirr_1_1gui_1_1IGUIListBox_a6f6e6a84f3d2035a0874eb9f4a4d52ef}} 
 \hyperlink{classirr_1_1gui_1_1IGUIListBox_a6f6e6a84f3d2035a0874eb9f4a4d52ef}{I\+G\+U\+I\+List\+Box} (\hyperlink{classirr_1_1gui_1_1IGUIEnvironment}{I\+G\+U\+I\+Environment} $\ast$environment, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ rectangle)
 \begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
@@ -112,7 +189,27 @@ Default list box G\+UI element.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a2cfc2ff5f8f5114a92bd3618e79327e0}\label{classirr_1_1gui_1_1IGUIListBox_a2cfc2ff5f8f5114a92bd3618e79327e0}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box}!add\+Item@{add\+Item}}
 \index{add\+Item@{add\+Item}!irr\+::gui\+::\+I\+G\+U\+I\+List\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box}}
-\subsubsection{\texorpdfstring{add\+Item()}{addItem()}}
+\subsubsection{\texorpdfstring{add\+Item()}{addItem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} irr\+::gui\+::\+I\+G\+U\+I\+List\+Box\+::add\+Item (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{icon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+adds an list item with an icon 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \hyperlink{classText}{Text} of list entry \\
+\hline
+{\em icon} & Sprite index of the Icon within the current sprite bank. Set it to -\/1 if you want no icon \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The id of the new created item 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a2cfc2ff5f8f5114a92bd3618e79327e0}\label{classirr_1_1gui_1_1IGUIListBox_a2cfc2ff5f8f5114a92bd3618e79327e0}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box}!add\+Item@{add\+Item}}
+\index{add\+Item@{add\+Item}!irr\+::gui\+::\+I\+G\+U\+I\+List\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box}}
+\subsubsection{\texorpdfstring{add\+Item()}{addItem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} irr\+::gui\+::\+I\+G\+U\+I\+List\+Box\+::add\+Item (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{icon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -132,7 +229,20 @@ The id of the new created item
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a8e1fe86805d9b970b89878291f0ccd25}\label{classirr_1_1gui_1_1IGUIListBox_a8e1fe86805d9b970b89878291f0ccd25}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box}!get\+Item\+At@{get\+Item\+At}}
 \index{get\+Item\+At@{get\+Item\+At}!irr\+::gui\+::\+I\+G\+U\+I\+List\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box}}
-\subsubsection{\texorpdfstring{get\+Item\+At()}{getItemAt()}}
+\subsubsection{\texorpdfstring{get\+Item\+At()}{getItemAt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+List\+Box\+::get\+Item\+At (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{xpos,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{ypos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+get the the id of the item at the given absolute coordinates 
+
+\begin{DoxyReturn}{Returns}
+The id of the listitem or -\/1 when no item is at those coordinates 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a8e1fe86805d9b970b89878291f0ccd25}\label{classirr_1_1gui_1_1IGUIListBox_a8e1fe86805d9b970b89878291f0ccd25}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box}!get\+Item\+At@{get\+Item\+At}}
+\index{get\+Item\+At@{get\+Item\+At}!irr\+::gui\+::\+I\+G\+U\+I\+List\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box}}
+\subsubsection{\texorpdfstring{get\+Item\+At()}{getItemAt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+List\+Box\+::get\+Item\+At (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{xpos,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{ypos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -145,7 +255,20 @@ The id of the listitem or -\/1 when no item is at those coordinates
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a1da5cc33687efee5ff1e33ab9f0d5b26}\label{classirr_1_1gui_1_1IGUIListBox_a1da5cc33687efee5ff1e33ab9f0d5b26}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box}!insert\+Item@{insert\+Item}}
 \index{insert\+Item@{insert\+Item}!irr\+::gui\+::\+I\+G\+U\+I\+List\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box}}
-\subsubsection{\texorpdfstring{insert\+Item()}{insertItem()}}
+\subsubsection{\texorpdfstring{insert\+Item()}{insertItem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+List\+Box\+::insert\+Item (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{index,  }\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{icon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Insert the item at the given index. 
+
+\begin{DoxyReturn}{Returns}
+The index on success or -\/1 on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_a1da5cc33687efee5ff1e33ab9f0d5b26}\label{classirr_1_1gui_1_1IGUIListBox_a1da5cc33687efee5ff1e33ab9f0d5b26}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box}!insert\+Item@{insert\+Item}}
+\index{insert\+Item@{insert\+Item}!irr\+::gui\+::\+I\+G\+U\+I\+List\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box}}
+\subsubsection{\texorpdfstring{insert\+Item()}{insertItem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+List\+Box\+::insert\+Item (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{index,  }\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{icon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -158,7 +281,17 @@ The index on success or -\/1 on failure.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_ad139cef6f71bb8d36624b48e8a695ed4}\label{classirr_1_1gui_1_1IGUIListBox_ad139cef6f71bb8d36624b48e8a695ed4}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box}!set\+Sprite\+Bank@{set\+Sprite\+Bank}}
 \index{set\+Sprite\+Bank@{set\+Sprite\+Bank}!irr\+::gui\+::\+I\+G\+U\+I\+List\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box}}
-\subsubsection{\texorpdfstring{set\+Sprite\+Bank()}{setSpriteBank()}}
+\subsubsection{\texorpdfstring{set\+Sprite\+Bank()}{setSpriteBank()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+List\+Box\+::set\+Sprite\+Bank (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUISpriteBank}{I\+G\+U\+I\+Sprite\+Bank} $\ast$}]{bank }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the sprite bank which should be used to draw list icons. 
+
+This font is set to the sprite bank of the built-\/in-\/font by default. A sprite can be displayed in front of every list item. An icon is an index within the icon sprite bank. Several default icons are available in the skin through get\+Icon. \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIListBox_ad139cef6f71bb8d36624b48e8a695ed4}\label{classirr_1_1gui_1_1IGUIListBox_ad139cef6f71bb8d36624b48e8a695ed4}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box}!set\+Sprite\+Bank@{set\+Sprite\+Bank}}
+\index{set\+Sprite\+Bank@{set\+Sprite\+Bank}!irr\+::gui\+::\+I\+G\+U\+I\+List\+Box@{irr\+::gui\+::\+I\+G\+U\+I\+List\+Box}}
+\subsubsection{\texorpdfstring{set\+Sprite\+Bank()}{setSpriteBank()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+List\+Box\+::set\+Sprite\+Bank (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUISpriteBank}{I\+G\+U\+I\+Sprite\+Bank} $\ast$}]{bank }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

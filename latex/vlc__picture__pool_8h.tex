@@ -1,0 +1,114 @@
+\hypertarget{vlc__picture__pool_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+picture\+\_\+pool.h File Reference}
+\label{vlc__picture__pool_8h}\index{lib/include/vlc/plugins/vlc\+\_\+picture\+\_\+pool.\+h@{lib/include/vlc/plugins/vlc\+\_\+picture\+\_\+pool.\+h}}
+{\ttfamily \#include $<$vlc\+\_\+picture.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structpicture__pool__configuration__t}{picture\+\_\+pool\+\_\+configuration\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t} \hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t} $\ast$ \hyperlink{vlc__picture__pool_8h_a44202d33b77e0bd09630285c7abf83c3}{picture\+\_\+pool\+\_\+\+New\+Extended} (const \hyperlink{structpicture__pool__configuration__t}{picture\+\_\+pool\+\_\+configuration\+\_\+t} $\ast$) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t} $\ast$ \hyperlink{vlc__picture__pool_8h_a08c4eea75a1e18ca4ef4374703b9353d}{picture\+\_\+pool\+\_\+\+New} (int picture\+\_\+count, \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$picture\mbox{[}$\,$\mbox{]}) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t} $\ast$ \hyperlink{vlc__picture__pool_8h_a66eeff3244cda21d1c3a4aa7f9cd6815}{picture\+\_\+pool\+\_\+\+New\+From\+Format} (const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$, int picture\+\_\+count) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__picture__pool_8h_a85cb5f307672c82a61b195529e55855a}{picture\+\_\+pool\+\_\+\+Delete} (\hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$ \hyperlink{vlc__picture__pool_8h_ab3bd8af44f80246178ef9762709d6034}{picture\+\_\+pool\+\_\+\+Get} (\hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t} $\ast$) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__picture__pool_8h_a7e046c9b8e0b5b55fb1e9784d38e6051}{picture\+\_\+pool\+\_\+\+Non\+Empty} (\hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t} $\ast$, bool reset)
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t} $\ast$ \hyperlink{vlc__picture__pool_8h_acdee5612887e054b53cc917fa265653f}{picture\+\_\+pool\+\_\+\+Reserve} (\hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t} $\ast$, int picture\+\_\+count) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{vlc__picture__pool_8h_a7349eb65a8993fef5c8b9fd3e031f2c7}{picture\+\_\+pool\+\_\+\+Get\+Size} (\hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines picture pool structures and functions in vlc 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}\label{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}} 
+\index{vlc\+\_\+picture\+\_\+pool.\+h@{vlc\+\_\+picture\+\_\+pool.\+h}!picture\+\_\+pool\+\_\+t@{picture\+\_\+pool\+\_\+t}}
+\index{picture\+\_\+pool\+\_\+t@{picture\+\_\+pool\+\_\+t}!vlc\+\_\+picture\+\_\+pool.\+h@{vlc\+\_\+picture\+\_\+pool.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+pool\+\_\+t}{picture\_pool\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t} \hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t}}
+
+Picture pool handle
+
+X\+XX it is not thread safe, all pool manipulations and picture\+\_\+\+Release must be properly locked if needed. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{vlc__picture__pool_8h_a85cb5f307672c82a61b195529e55855a}\label{vlc__picture__pool_8h_a85cb5f307672c82a61b195529e55855a}} 
+\index{vlc\+\_\+picture\+\_\+pool.\+h@{vlc\+\_\+picture\+\_\+pool.\+h}!picture\+\_\+pool\+\_\+\+Delete@{picture\+\_\+pool\+\_\+\+Delete}}
+\index{picture\+\_\+pool\+\_\+\+Delete@{picture\+\_\+pool\+\_\+\+Delete}!vlc\+\_\+picture\+\_\+pool.\+h@{vlc\+\_\+picture\+\_\+pool.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+pool\+\_\+\+Delete()}{picture\_pool\_Delete()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void picture\+\_\+pool\+\_\+\+Delete (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+It destroys a pool created by picture\+\_\+pool\+\_\+\+New.
+
+All pictures must already be released to the pool. The pool will then released them. \mbox{\Hypertarget{vlc__picture__pool_8h_ab3bd8af44f80246178ef9762709d6034}\label{vlc__picture__pool_8h_ab3bd8af44f80246178ef9762709d6034}} 
+\index{vlc\+\_\+picture\+\_\+pool.\+h@{vlc\+\_\+picture\+\_\+pool.\+h}!picture\+\_\+pool\+\_\+\+Get@{picture\+\_\+pool\+\_\+\+Get}}
+\index{picture\+\_\+pool\+\_\+\+Get@{picture\+\_\+pool\+\_\+\+Get}!vlc\+\_\+picture\+\_\+pool.\+h@{vlc\+\_\+picture\+\_\+pool.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+pool\+\_\+\+Get()}{picture\_pool\_Get()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structpicture__t}{picture\+\_\+t}$\ast$ picture\+\_\+pool\+\_\+\+Get (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+It retreives a \hyperlink{structpicture__t}{picture\+\_\+t} from a pool.
+
+The picture must be release by using picture\+\_\+\+Release. \mbox{\Hypertarget{vlc__picture__pool_8h_a7349eb65a8993fef5c8b9fd3e031f2c7}\label{vlc__picture__pool_8h_a7349eb65a8993fef5c8b9fd3e031f2c7}} 
+\index{vlc\+\_\+picture\+\_\+pool.\+h@{vlc\+\_\+picture\+\_\+pool.\+h}!picture\+\_\+pool\+\_\+\+Get\+Size@{picture\+\_\+pool\+\_\+\+Get\+Size}}
+\index{picture\+\_\+pool\+\_\+\+Get\+Size@{picture\+\_\+pool\+\_\+\+Get\+Size}!vlc\+\_\+picture\+\_\+pool.\+h@{vlc\+\_\+picture\+\_\+pool.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+pool\+\_\+\+Get\+Size()}{picture\_pool\_GetSize()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI int picture\+\_\+pool\+\_\+\+Get\+Size (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+It returns the size of the given pool. \mbox{\Hypertarget{vlc__picture__pool_8h_a08c4eea75a1e18ca4ef4374703b9353d}\label{vlc__picture__pool_8h_a08c4eea75a1e18ca4ef4374703b9353d}} 
+\index{vlc\+\_\+picture\+\_\+pool.\+h@{vlc\+\_\+picture\+\_\+pool.\+h}!picture\+\_\+pool\+\_\+\+New@{picture\+\_\+pool\+\_\+\+New}}
+\index{picture\+\_\+pool\+\_\+\+New@{picture\+\_\+pool\+\_\+\+New}!vlc\+\_\+picture\+\_\+pool.\+h@{vlc\+\_\+picture\+\_\+pool.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+pool\+\_\+\+New()}{picture\_pool\_New()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t}$\ast$ picture\+\_\+pool\+\_\+\+New (\begin{DoxyParamCaption}\item[{int}]{picture\+\_\+count,  }\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{picture\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+It creates a picture\+\_\+pool\+\_\+t wrapping the given arrays of picture.
+
+It is provided as convenience. \mbox{\Hypertarget{vlc__picture__pool_8h_a44202d33b77e0bd09630285c7abf83c3}\label{vlc__picture__pool_8h_a44202d33b77e0bd09630285c7abf83c3}} 
+\index{vlc\+\_\+picture\+\_\+pool.\+h@{vlc\+\_\+picture\+\_\+pool.\+h}!picture\+\_\+pool\+\_\+\+New\+Extended@{picture\+\_\+pool\+\_\+\+New\+Extended}}
+\index{picture\+\_\+pool\+\_\+\+New\+Extended@{picture\+\_\+pool\+\_\+\+New\+Extended}!vlc\+\_\+picture\+\_\+pool.\+h@{vlc\+\_\+picture\+\_\+pool.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+pool\+\_\+\+New\+Extended()}{picture\_pool\_NewExtended()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t}$\ast$ picture\+\_\+pool\+\_\+\+New\+Extended (\begin{DoxyParamCaption}\item[{const \hyperlink{structpicture__pool__configuration__t}{picture\+\_\+pool\+\_\+configuration\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+It creates a picture\+\_\+pool\+\_\+t wrapping the given configuration.
+
+It avoids useless picture creations/destructions. The given picture must not have a reference count greater than 1. The pool takes ownership of the picture and M\+U\+ST not be used directly. When deleted, the pool will release the pictures using picture\+\_\+\+Release. If defined, picture\+\_\+pool\+\_\+configuration\+\_\+t\+::lock will be called before a picture is used, and picture\+\_\+pool\+\_\+configuration\+\_\+t\+::unlock will be called as soon as a picture is unused. They are allowed to modify \hyperlink{structpicture__t_af31189ca20dbc6790415f499fb90ecd0}{picture\+\_\+t\+::p} and access \hyperlink{structpicture__t_a142c5b32188e3c5f5ba11612ddb92f01}{picture\+\_\+t\+::p\+\_\+sys}. \mbox{\Hypertarget{vlc__picture__pool_8h_a66eeff3244cda21d1c3a4aa7f9cd6815}\label{vlc__picture__pool_8h_a66eeff3244cda21d1c3a4aa7f9cd6815}} 
+\index{vlc\+\_\+picture\+\_\+pool.\+h@{vlc\+\_\+picture\+\_\+pool.\+h}!picture\+\_\+pool\+\_\+\+New\+From\+Format@{picture\+\_\+pool\+\_\+\+New\+From\+Format}}
+\index{picture\+\_\+pool\+\_\+\+New\+From\+Format@{picture\+\_\+pool\+\_\+\+New\+From\+Format}!vlc\+\_\+picture\+\_\+pool.\+h@{vlc\+\_\+picture\+\_\+pool.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+pool\+\_\+\+New\+From\+Format()}{picture\_pool\_NewFromFormat()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t}$\ast$ picture\+\_\+pool\+\_\+\+New\+From\+Format (\begin{DoxyParamCaption}\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{,  }\item[{int}]{picture\+\_\+count }\end{DoxyParamCaption})}
+
+It creates a picture\+\_\+pool\+\_\+t creating images using the given format.
+
+Provided for convenience. \mbox{\Hypertarget{vlc__picture__pool_8h_a7e046c9b8e0b5b55fb1e9784d38e6051}\label{vlc__picture__pool_8h_a7e046c9b8e0b5b55fb1e9784d38e6051}} 
+\index{vlc\+\_\+picture\+\_\+pool.\+h@{vlc\+\_\+picture\+\_\+pool.\+h}!picture\+\_\+pool\+\_\+\+Non\+Empty@{picture\+\_\+pool\+\_\+\+Non\+Empty}}
+\index{picture\+\_\+pool\+\_\+\+Non\+Empty@{picture\+\_\+pool\+\_\+\+Non\+Empty}!vlc\+\_\+picture\+\_\+pool.\+h@{vlc\+\_\+picture\+\_\+pool.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+pool\+\_\+\+Non\+Empty()}{picture\_pool\_NonEmpty()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void picture\+\_\+pool\+\_\+\+Non\+Empty (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t} $\ast$}]{,  }\item[{bool}]{reset }\end{DoxyParamCaption})}
+
+It forces the next picture\+\_\+pool\+\_\+\+Get to return a picture even if no pictures are free.
+
+If b\+\_\+reset is true, all pictures will be marked as free.
+
+It does it by releasing itself the oldest used picture if none is available. X\+XX it should be used with great care, the only reason you may need it is to workaround a bug. \mbox{\Hypertarget{vlc__picture__pool_8h_acdee5612887e054b53cc917fa265653f}\label{vlc__picture__pool_8h_acdee5612887e054b53cc917fa265653f}} 
+\index{vlc\+\_\+picture\+\_\+pool.\+h@{vlc\+\_\+picture\+\_\+pool.\+h}!picture\+\_\+pool\+\_\+\+Reserve@{picture\+\_\+pool\+\_\+\+Reserve}}
+\index{picture\+\_\+pool\+\_\+\+Reserve@{picture\+\_\+pool\+\_\+\+Reserve}!vlc\+\_\+picture\+\_\+pool.\+h@{vlc\+\_\+picture\+\_\+pool.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+pool\+\_\+\+Reserve()}{picture\_pool\_Reserve()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t}$\ast$ picture\+\_\+pool\+\_\+\+Reserve (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__picture__pool_8h_a7db264f2fbaa4b83664bb62cbaddca95}{picture\+\_\+pool\+\_\+t} $\ast$}]{,  }\item[{int}]{picture\+\_\+count }\end{DoxyParamCaption})}
+
+It reserves picture\+\_\+count pictures from the given pool and returns a new pool with thoses pictures.
+
+The master pool must be full. The returned pool must be deleted before the master pool. When deleted, all pictures return to the master pool. 

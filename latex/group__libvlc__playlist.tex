@@ -1,0 +1,36 @@
+\hypertarget{group__libvlc__playlist}{}\section{Lib\+V\+LC playlist (legacy)}
+\label{group__libvlc__playlist}\index{Lib\+V\+L\+C playlist (legacy)@{Lib\+V\+L\+C playlist (legacy)}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__playlist_ga6382c543b2a88894cb7bfc4e2f9fbe74}{libvlc\+\_\+playlist\+\_\+play} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance, int i\+\_\+id, int i\+\_\+options, char $\ast$$\ast$ppsz\+\_\+options)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000053}{Deprecated}]Use \hyperlink{group__libvlc__media__list}{Lib\+V\+LC media list} instead.\end{DoxyRefDesc}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__libvlc__playlist_ga6382c543b2a88894cb7bfc4e2f9fbe74}\label{group__libvlc__playlist_ga6382c543b2a88894cb7bfc4e2f9fbe74}} 
+\index{Lib\+V\+L\+C playlist (legacy)@{Lib\+V\+L\+C playlist (legacy)}!libvlc\+\_\+playlist\+\_\+play@{libvlc\+\_\+playlist\+\_\+play}}
+\index{libvlc\+\_\+playlist\+\_\+play@{libvlc\+\_\+playlist\+\_\+play}!Lib\+V\+L\+C playlist (legacy)@{Lib\+V\+L\+C playlist (legacy)}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+playlist\+\_\+play()}{libvlc\_playlist\_play()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+playlist\+\_\+play (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance,  }\item[{int}]{i\+\_\+id,  }\item[{int}]{i\+\_\+options,  }\item[{char $\ast$$\ast$}]{ppsz\+\_\+options }\end{DoxyParamCaption})}
+
+Start playing (if there is any item in the playlist).
+
+Additionnal playlist item options can be specified for addition to the item before it is played.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & the playlist instance \\
+\hline
+{\em i\+\_\+id} & the item to play. If this is a negative number, the next item will be selected. Otherwise, the item with the given ID will be played \\
+\hline
+{\em i\+\_\+options} & the number of options to add to the item \\
+\hline
+{\em ppsz\+\_\+options} & the options to add to the item \\
+\hline
+\end{DoxyParams}

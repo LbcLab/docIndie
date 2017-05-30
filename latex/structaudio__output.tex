@@ -1,0 +1,176 @@
+\hypertarget{structaudio__output}{}\section{audio\+\_\+output Struct Reference}
+\label{structaudio__output}\index{audio\+\_\+output@{audio\+\_\+output}}
+
+
+{\ttfamily \#include $<$vlc\+\_\+aout.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+M\+B\+E\+RS struct aout\+\_\+sys\+\_\+t $\ast$ \hyperlink{structaudio__output_a88143cf6018fefbba4a9a0e8284067b9}{sys}
+\item 
+int($\ast$ \hyperlink{structaudio__output_a41bc9e8671e11adb721781af2a277cc7}{start} )(\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$, \hyperlink{structaudio__format__t}{audio\+\_\+sample\+\_\+format\+\_\+t} $\ast$fmt)
+\item 
+void($\ast$ \hyperlink{structaudio__output_ad045b1c68f0e60ed577046bd77e3591b}{stop} )(\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$)
+\item 
+int($\ast$ \hyperlink{structaudio__output_a91330839cf46e7f8ef80dc61f5d490ad}{time\+\_\+get} )(\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$, \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} $\ast$delay)
+\item 
+void($\ast$ \hyperlink{structaudio__output_aed30544225e26db43e161ac68782fb48}{play} )(\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$, block\+\_\+t $\ast$)
+\item 
+void($\ast$ \hyperlink{structaudio__output_aa43086ee0feb50b08ebff9b6f4ccb643}{pause} )(\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$, bool pause, \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} date)
+\item 
+void($\ast$ \hyperlink{structaudio__output_ac88458a193c7b6656f043df672f3687b}{flush} )(\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$, bool wait)
+\item 
+int($\ast$ \hyperlink{structaudio__output_a38d3e01f0ae4d0a266510a7321b3a9f2}{volume\+\_\+set} )(\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$, float volume)
+\item 
+int($\ast$ \hyperlink{structaudio__output_a9ed26f41b18750a73cd52b4c1b3e9369}{mute\+\_\+set} )(\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$, bool mute)
+\item 
+int($\ast$ \hyperlink{structaudio__output_a9e4f5e7ddf9fafe634225ca67de65b39}{device\+\_\+select} )(\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$, const char $\ast$id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Audio output object 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structaudio__output_a9e4f5e7ddf9fafe634225ca67de65b39}\label{structaudio__output_a9e4f5e7ddf9fafe634225ca67de65b39}} 
+\index{audio\+\_\+output@{audio\+\_\+output}!device\+\_\+select@{device\+\_\+select}}
+\index{device\+\_\+select@{device\+\_\+select}!audio\+\_\+output@{audio\+\_\+output}}
+\subsubsection{\texorpdfstring{device\+\_\+select}{device\_select}}
+{\footnotesize\ttfamily int($\ast$ audio\+\_\+output\+::device\+\_\+select) (\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$, const char $\ast$id)}
+
+Selects an audio output device (optional, may be N\+U\+LL). 
+\begin{DoxyParams}{Parameters}
+{\em id} & nul-\/terminated device unique identifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero on failure. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+A stream may or may not have been started when called. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{structaudio__output_ac88458a193c7b6656f043df672f3687b}\label{structaudio__output_ac88458a193c7b6656f043df672f3687b}} 
+\index{audio\+\_\+output@{audio\+\_\+output}!flush@{flush}}
+\index{flush@{flush}!audio\+\_\+output@{audio\+\_\+output}}
+\subsubsection{\texorpdfstring{flush}{flush}}
+{\footnotesize\ttfamily void($\ast$ audio\+\_\+output\+::flush) (\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$, bool wait)}
+
+Flushes or drains the playback buffers (mandatory, cannot be N\+U\+LL). 
+\begin{DoxyParams}{Parameters}
+{\em wait} & true to wait for playback of pending buffers (drain), false to discard pending buffers (flush) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+A stream must have been started when called. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structaudio__output_a9ed26f41b18750a73cd52b4c1b3e9369}\label{structaudio__output_a9ed26f41b18750a73cd52b4c1b3e9369}} 
+\index{audio\+\_\+output@{audio\+\_\+output}!mute\+\_\+set@{mute\+\_\+set}}
+\index{mute\+\_\+set@{mute\+\_\+set}!audio\+\_\+output@{audio\+\_\+output}}
+\subsubsection{\texorpdfstring{mute\+\_\+set}{mute\_set}}
+{\footnotesize\ttfamily int($\ast$ audio\+\_\+output\+::mute\+\_\+set) (\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$, bool mute)}
+
+Changes muting (optinal, may be N\+U\+LL). 
+\begin{DoxyParams}{Parameters}
+{\em mute} & true to mute, false to unmute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+A stream may or may not have been started when called. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{structaudio__output_aa43086ee0feb50b08ebff9b6f4ccb643}\label{structaudio__output_aa43086ee0feb50b08ebff9b6f4ccb643}} 
+\index{audio\+\_\+output@{audio\+\_\+output}!pause@{pause}}
+\index{pause@{pause}!audio\+\_\+output@{audio\+\_\+output}}
+\subsubsection{\texorpdfstring{pause}{pause}}
+{\footnotesize\ttfamily void($\ast$ audio\+\_\+output\+::pause) (\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$, bool pause, \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} date)}
+
+Pauses or resumes playback (optional, may be N\+U\+LL). 
+\begin{DoxyParams}{Parameters}
+{\em pause} & pause if true, resume from pause if false \\
+\hline
+{\em date} & timestamp when the pause or resume was requested \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+A stream must have been started when called. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structaudio__output_aed30544225e26db43e161ac68782fb48}\label{structaudio__output_aed30544225e26db43e161ac68782fb48}} 
+\index{audio\+\_\+output@{audio\+\_\+output}!play@{play}}
+\index{play@{play}!audio\+\_\+output@{audio\+\_\+output}}
+\subsubsection{\texorpdfstring{play}{play}}
+{\footnotesize\ttfamily void($\ast$ audio\+\_\+output\+::play) (\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$, block\+\_\+t $\ast$)}
+
+Queues a block of samples for playback (mandatory, cannot be N\+U\+LL). \begin{DoxyNote}{Note}
+A stream must have been started when called. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structaudio__output_a41bc9e8671e11adb721781af2a277cc7}\label{structaudio__output_a41bc9e8671e11adb721781af2a277cc7}} 
+\index{audio\+\_\+output@{audio\+\_\+output}!start@{start}}
+\index{start@{start}!audio\+\_\+output@{audio\+\_\+output}}
+\subsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily int($\ast$ audio\+\_\+output\+::start) (\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$, \hyperlink{structaudio__format__t}{audio\+\_\+sample\+\_\+format\+\_\+t} $\ast$fmt)}
+
+Starts a new stream (mandatory, cannot be N\+U\+LL). 
+\begin{DoxyParams}{Parameters}
+{\em fmt} & input stream sample format upon entry, output stream sample format upon return \mbox{[}I\+N/\+O\+UT\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+V\+L\+C\+\_\+\+S\+U\+C\+C\+E\+SS on success, non-\/zero on failure 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+No other stream may be already started when called. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structaudio__output_ad045b1c68f0e60ed577046bd77e3591b}\label{structaudio__output_ad045b1c68f0e60ed577046bd77e3591b}} 
+\index{audio\+\_\+output@{audio\+\_\+output}!stop@{stop}}
+\index{stop@{stop}!audio\+\_\+output@{audio\+\_\+output}}
+\subsubsection{\texorpdfstring{stop}{stop}}
+{\footnotesize\ttfamily void($\ast$ audio\+\_\+output\+::stop) (\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$)}
+
+Stops the existing stream (optional, may be N\+U\+LL). \begin{DoxyNote}{Note}
+A stream must have been started when called. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structaudio__output_a88143cf6018fefbba4a9a0e8284067b9}\label{structaudio__output_a88143cf6018fefbba4a9a0e8284067b9}} 
+\index{audio\+\_\+output@{audio\+\_\+output}!sys@{sys}}
+\index{sys@{sys}!audio\+\_\+output@{audio\+\_\+output}}
+\subsubsection{\texorpdfstring{sys}{sys}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+M\+E\+M\+B\+E\+RS struct aout\+\_\+sys\+\_\+t$\ast$ audio\+\_\+output\+::sys}
+
+Private data for callbacks \mbox{\Hypertarget{structaudio__output_a91330839cf46e7f8ef80dc61f5d490ad}\label{structaudio__output_a91330839cf46e7f8ef80dc61f5d490ad}} 
+\index{audio\+\_\+output@{audio\+\_\+output}!time\+\_\+get@{time\+\_\+get}}
+\index{time\+\_\+get@{time\+\_\+get}!audio\+\_\+output@{audio\+\_\+output}}
+\subsubsection{\texorpdfstring{time\+\_\+get}{time\_get}}
+{\footnotesize\ttfamily int($\ast$ audio\+\_\+output\+::time\+\_\+get) (\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$, \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} $\ast$delay)}
+
+Estimates playback buffer latency (optional, may be N\+U\+LL). 
+\begin{DoxyParams}{Parameters}
+{\em delay} & pointer to the delay until the next sample to be written to the playback buffer is rendered \mbox{[}O\+UT\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero on failure or lack of data 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+A stream must have been started when called. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structaudio__output_a38d3e01f0ae4d0a266510a7321b3a9f2}\label{structaudio__output_a38d3e01f0ae4d0a266510a7321b3a9f2}} 
+\index{audio\+\_\+output@{audio\+\_\+output}!volume\+\_\+set@{volume\+\_\+set}}
+\index{volume\+\_\+set@{volume\+\_\+set}!audio\+\_\+output@{audio\+\_\+output}}
+\subsubsection{\texorpdfstring{volume\+\_\+set}{volume\_set}}
+{\footnotesize\ttfamily int($\ast$ audio\+\_\+output\+::volume\+\_\+set) (\hyperlink{structaudio__output}{audio\+\_\+output\+\_\+t} $\ast$, float volume)}
+
+Changes playback volume (optional, may be N\+U\+LL). 
+\begin{DoxyParams}{Parameters}
+{\em volume} & requested volume (0. = mute, 1. = nominal) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The volume is always a positive number. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+A stream may or may not have been started when called. 
+\end{DoxyWarning}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/include/vlc/plugins/\hyperlink{vlc__aout_8h}{vlc\+\_\+aout.\+h}\end{DoxyCompactItemize}

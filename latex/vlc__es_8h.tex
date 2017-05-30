@@ -1,0 +1,326 @@
+\hypertarget{vlc__es_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+es.h File Reference}
+\label{vlc__es_8h}\index{lib/include/vlc/plugins/vlc\+\_\+es.\+h@{lib/include/vlc/plugins/vlc\+\_\+es.\+h}}
+{\ttfamily \#include $<$vlc\+\_\+fourcc.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+text\+\_\+style.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structaudio__format__t}{audio\+\_\+format\+\_\+t}
+\item 
+struct \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t}
+\item 
+struct \hyperlink{structsubs__format__t}{subs\+\_\+format\+\_\+t}
+\item 
+struct \hyperlink{structextra__languages__t}{extra\+\_\+languages\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vlc__es_8h_a8340a2ee33e7ada465e683471f634b39}{V\+I\+D\+E\+O\+\_\+\+P\+A\+L\+E\+T\+T\+E\+\_\+\+C\+O\+L\+O\+R\+S\+\_\+\+M\+AX}~256
+\item 
+\#define \hyperlink{vlc__es_8h_ae20ed71492d51be26e8c018011044ff8}{A\+U\+D\+I\+O\+\_\+\+R\+E\+P\+L\+A\+Y\+\_\+\+G\+A\+I\+N\+\_\+\+M\+AX}~(2)
+\item 
+\#define \hyperlink{vlc__es_8h_ac515ec6aa33083f155e2de3161b7d6c6}{O\+R\+I\+E\+N\+T\+\_\+\+F\+R\+O\+M\+\_\+\+E\+X\+IF}(exif)~((0x01324675\+U $>$$>$ (4 $\ast$ ((exif) -\/ 1))) \& 7)
+\item 
+\#define \hyperlink{vlc__es_8h_ab1737abe67b424ef8d5f3fa3441f50a0}{O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+\_\+\+E\+X\+IF}(orient)~((0x12435867\+U $>$$>$ (4 $\ast$ (orient))) \& 15)
+\item 
+\#define \hyperlink{vlc__es_8h_adf6f2f96462b79dc3f97fba454d01b2e}{O\+R\+I\+E\+N\+T\+\_\+\+I\+S\+\_\+\+M\+I\+R\+R\+OR}(orient)~parity(orient)
+\item 
+\#define \hyperlink{vlc__es_8h_a3507479b69fc44b69fbe64c89bc23ba8}{O\+R\+I\+E\+N\+T\+\_\+\+I\+S\+\_\+\+S\+W\+AP}(orient)~(((orient) \& 4) != 0)
+\item 
+\#define \hyperlink{vlc__es_8h_af207f3dbb5a97dd42d0ca710abc473b2}{O\+R\+I\+E\+N\+T\+\_\+\+H\+F\+L\+IP}(orient)~((orient) $^\wedge$ 1)
+\item 
+\#define \hyperlink{vlc__es_8h_a4b475755ae0e495f22bde45b00a40b29}{O\+R\+I\+E\+N\+T\+\_\+\+V\+F\+L\+IP}(orient)~((orient) $^\wedge$ 2)
+\item 
+\#define \hyperlink{vlc__es_8h_a2b3bec216ead2a26569d05f0c5274d42}{O\+R\+I\+E\+N\+T\+\_\+\+R\+O\+T\+A\+T\+E\+\_\+180}(orient)~((orient) $^\wedge$ 3)
+\item 
+\#define \hyperlink{vlc__es_8h_a86f5d73ac49068f843b565949a1f66cb}{E\+S\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+N\+O\+T\+\_\+\+S\+E\+L\+E\+C\+T\+A\+B\+LE}~-\/2
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4}{video\+\_\+orientation\+\_\+t} \hyperlink{vlc__es_8h_a4d2029463ee69669e90b473055db8509}{video\+\_\+orientation\+\_\+t}
+\item 
+typedef struct \hyperlink{structextra__languages__t}{extra\+\_\+languages\+\_\+t} \hyperlink{vlc__es_8h_aad58b2d128ad0436b137f4fc167b33af}{extra\+\_\+languages\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4}{video\+\_\+orientation\+\_\+t} \{ \newline
+\hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4afa3c7ba167c033d1c7965f8bee0b79ab}{O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+P\+\_\+\+L\+E\+FT} = 0, 
+\hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4a7f736c818922458df2f5ee014ec44962}{O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+P\+\_\+\+R\+I\+G\+HT}, 
+\hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4aead6c5af9b7bece6a96f523f5ccf5373}{O\+R\+I\+E\+N\+T\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+L\+E\+FT}, 
+\hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4a7eef904f3437f1d16ad0d01a1eab23b3}{O\+R\+I\+E\+N\+T\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+R\+I\+G\+HT}, 
+\newline
+\hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4a13e45c4447aa2d69159ccb9797d5a954}{O\+R\+I\+E\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+T\+OP}, 
+\hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4ad2b1f1fb0ce4de3d7c35a4d4a1c34a8d}{O\+R\+I\+E\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+B\+O\+T\+T\+OM}, 
+\hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4a1aa551a4acce6c6b44d6dd2af652a3b6}{O\+R\+I\+E\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+T\+OP}, 
+\hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4a58c341a11666d149c4823163d5b52c9a}{O\+R\+I\+E\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+O\+T\+T\+OM}
+ \}
+\item 
+enum \hyperlink{vlc__es_8h_a11361ceefbdf060af4c4c2d1fdc8b74a}{es\+\_\+format\+\_\+category\+\_\+e} 
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__es_8h_a5a77d366bb2fe6d53be544499181647c}{video\+\_\+format\+\_\+\+Setup} (\hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$, \hyperlink{vlc__common_8h_af49f89d0f752bc9cff142e43b1bd634d}{vlc\+\_\+fourcc\+\_\+t} i\+\_\+chroma, int i\+\_\+width, int i\+\_\+height, int i\+\_\+visible\+\_\+width, int i\+\_\+visible\+\_\+height, int i\+\_\+sar\+\_\+num, int i\+\_\+sar\+\_\+den)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__es_8h_a7388353f7765bf4dba76e2c674dde6d0}{video\+\_\+format\+\_\+\+Copy\+Crop} (\hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$, const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__es_8h_a28756b87d3b888ddb2338d1dd03d6d44}{video\+\_\+format\+\_\+\+Scale\+Crop\+Ar} (\hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$, const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__es_8h_a036565057e2c9889bcd8df9c4963d5a2}{video\+\_\+format\+\_\+\+Apply\+Rotation} (\hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$out, const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$in)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__es_8h_a3a7df7cf4a0ca762b77fb8a0f3d5ad45}{video\+\_\+format\+\_\+\+Transform\+By} (\hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$fmt, video\+\_\+transform\+\_\+t transform)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__es_8h_a503b3fb2a581d3402255281355ed2cf2}{video\+\_\+format\+\_\+\+Transform\+To} (\hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$fmt, \hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4}{video\+\_\+orientation\+\_\+t} dst\+\_\+orientation)
+\item 
+V\+L\+C\+\_\+\+A\+PI video\+\_\+transform\+\_\+t \hyperlink{vlc__es_8h_aa0583e5d271c7be91d943416d7a97182}{video\+\_\+format\+\_\+\+Get\+Transform} (\hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4}{video\+\_\+orientation\+\_\+t} src, \hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4}{video\+\_\+orientation\+\_\+t} dst)
+\item 
+V\+L\+C\+\_\+\+A\+PI bool \hyperlink{vlc__es_8h_afef4e8eeb948ce8588b2cfceee3a2c3a}{video\+\_\+format\+\_\+\+Is\+Similar} (const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$, const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__es_8h_adf59bf0f47c0c9435402e8b7e33d1600}{video\+\_\+format\+\_\+\+Print} (\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$, const char $\ast$, const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__es_8h_a24f7d6f644b3320411d7fb5b1f269210}{video\+\_\+format\+\_\+\+Fix\+Rgb} (\hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__es_8h_a6dae13161bbd24d2c0cd2b8f1e678d26}{es\+\_\+format\+\_\+\+Init} (es\+\_\+format\+\_\+t $\ast$, int i\+\_\+cat, \hyperlink{vlc__common_8h_af49f89d0f752bc9cff142e43b1bd634d}{vlc\+\_\+fourcc\+\_\+t} i\+\_\+codec)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__es_8h_a59d4a6f0397299874f627b0ef822e49a}{es\+\_\+format\+\_\+\+Init\+From\+Video} (es\+\_\+format\+\_\+t $\ast$, const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{vlc__es_8h_a0f9dbee25a8e5f9369f09f7a67875e01}{es\+\_\+format\+\_\+\+Copy} (es\+\_\+format\+\_\+t $\ast$p\+\_\+dst, const es\+\_\+format\+\_\+t $\ast$p\+\_\+src)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__es_8h_aea3226e280d800a8890615b23f6a0f44}{es\+\_\+format\+\_\+\+Clean} (es\+\_\+format\+\_\+t $\ast$fmt)
+\item 
+V\+L\+C\+\_\+\+A\+PI bool \hyperlink{vlc__es_8h_adcd60b4ef11817d73ed096b13f33f235}{es\+\_\+format\+\_\+\+Is\+Similar} (const es\+\_\+format\+\_\+t $\ast$, const es\+\_\+format\+\_\+t $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines the elementary streams format types 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{vlc__es_8h_ae20ed71492d51be26e8c018011044ff8}\label{vlc__es_8h_ae20ed71492d51be26e8c018011044ff8}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!A\+U\+D\+I\+O\+\_\+\+R\+E\+P\+L\+A\+Y\+\_\+\+G\+A\+I\+N\+\_\+\+M\+AX@{A\+U\+D\+I\+O\+\_\+\+R\+E\+P\+L\+A\+Y\+\_\+\+G\+A\+I\+N\+\_\+\+M\+AX}}
+\index{A\+U\+D\+I\+O\+\_\+\+R\+E\+P\+L\+A\+Y\+\_\+\+G\+A\+I\+N\+\_\+\+M\+AX@{A\+U\+D\+I\+O\+\_\+\+R\+E\+P\+L\+A\+Y\+\_\+\+G\+A\+I\+N\+\_\+\+M\+AX}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{A\+U\+D\+I\+O\+\_\+\+R\+E\+P\+L\+A\+Y\+\_\+\+G\+A\+I\+N\+\_\+\+M\+AX}{AUDIO\_REPLAY\_GAIN\_MAX}}
+{\footnotesize\ttfamily \#define A\+U\+D\+I\+O\+\_\+\+R\+E\+P\+L\+A\+Y\+\_\+\+G\+A\+I\+N\+\_\+\+M\+AX~(2)}
+
+audio replay gain description \mbox{\Hypertarget{vlc__es_8h_a86f5d73ac49068f843b565949a1f66cb}\label{vlc__es_8h_a86f5d73ac49068f843b565949a1f66cb}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!E\+S\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+N\+O\+T\+\_\+\+S\+E\+L\+E\+C\+T\+A\+B\+LE@{E\+S\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+N\+O\+T\+\_\+\+S\+E\+L\+E\+C\+T\+A\+B\+LE}}
+\index{E\+S\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+N\+O\+T\+\_\+\+S\+E\+L\+E\+C\+T\+A\+B\+LE@{E\+S\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+N\+O\+T\+\_\+\+S\+E\+L\+E\+C\+T\+A\+B\+LE}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{E\+S\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+N\+O\+T\+\_\+\+S\+E\+L\+E\+C\+T\+A\+B\+LE}{ES\_PRIORITY\_NOT\_SELECTABLE}}
+{\footnotesize\ttfamily \#define E\+S\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+N\+O\+T\+\_\+\+S\+E\+L\+E\+C\+T\+A\+B\+LE~-\/2}
+
+ES format definition \mbox{\Hypertarget{vlc__es_8h_ac515ec6aa33083f155e2de3161b7d6c6}\label{vlc__es_8h_ac515ec6aa33083f155e2de3161b7d6c6}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!O\+R\+I\+E\+N\+T\+\_\+\+F\+R\+O\+M\+\_\+\+E\+X\+IF@{O\+R\+I\+E\+N\+T\+\_\+\+F\+R\+O\+M\+\_\+\+E\+X\+IF}}
+\index{O\+R\+I\+E\+N\+T\+\_\+\+F\+R\+O\+M\+\_\+\+E\+X\+IF@{O\+R\+I\+E\+N\+T\+\_\+\+F\+R\+O\+M\+\_\+\+E\+X\+IF}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{O\+R\+I\+E\+N\+T\+\_\+\+F\+R\+O\+M\+\_\+\+E\+X\+IF}{ORIENT\_FROM\_EXIF}}
+{\footnotesize\ttfamily \#define O\+R\+I\+E\+N\+T\+\_\+\+F\+R\+O\+M\+\_\+\+E\+X\+IF(\begin{DoxyParamCaption}\item[{}]{exif }\end{DoxyParamCaption})~((0x01324675\+U $>$$>$ (4 $\ast$ ((exif) -\/ 1))) \& 7)}
+
+Convert E\+X\+IF orientation to enum video\+\_\+orientation\+\_\+t \mbox{\Hypertarget{vlc__es_8h_af207f3dbb5a97dd42d0ca710abc473b2}\label{vlc__es_8h_af207f3dbb5a97dd42d0ca710abc473b2}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!O\+R\+I\+E\+N\+T\+\_\+\+H\+F\+L\+IP@{O\+R\+I\+E\+N\+T\+\_\+\+H\+F\+L\+IP}}
+\index{O\+R\+I\+E\+N\+T\+\_\+\+H\+F\+L\+IP@{O\+R\+I\+E\+N\+T\+\_\+\+H\+F\+L\+IP}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{O\+R\+I\+E\+N\+T\+\_\+\+H\+F\+L\+IP}{ORIENT\_HFLIP}}
+{\footnotesize\ttfamily \#define O\+R\+I\+E\+N\+T\+\_\+\+H\+F\+L\+IP(\begin{DoxyParamCaption}\item[{}]{orient }\end{DoxyParamCaption})~((orient) $^\wedge$ 1)}
+
+Applies horizontal flip to an orientation \mbox{\Hypertarget{vlc__es_8h_adf6f2f96462b79dc3f97fba454d01b2e}\label{vlc__es_8h_adf6f2f96462b79dc3f97fba454d01b2e}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!O\+R\+I\+E\+N\+T\+\_\+\+I\+S\+\_\+\+M\+I\+R\+R\+OR@{O\+R\+I\+E\+N\+T\+\_\+\+I\+S\+\_\+\+M\+I\+R\+R\+OR}}
+\index{O\+R\+I\+E\+N\+T\+\_\+\+I\+S\+\_\+\+M\+I\+R\+R\+OR@{O\+R\+I\+E\+N\+T\+\_\+\+I\+S\+\_\+\+M\+I\+R\+R\+OR}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{O\+R\+I\+E\+N\+T\+\_\+\+I\+S\+\_\+\+M\+I\+R\+R\+OR}{ORIENT\_IS\_MIRROR}}
+{\footnotesize\ttfamily \#define O\+R\+I\+E\+N\+T\+\_\+\+I\+S\+\_\+\+M\+I\+R\+R\+OR(\begin{DoxyParamCaption}\item[{}]{orient }\end{DoxyParamCaption})~parity(orient)}
+
+If the orientation is natural or mirrored \mbox{\Hypertarget{vlc__es_8h_a3507479b69fc44b69fbe64c89bc23ba8}\label{vlc__es_8h_a3507479b69fc44b69fbe64c89bc23ba8}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!O\+R\+I\+E\+N\+T\+\_\+\+I\+S\+\_\+\+S\+W\+AP@{O\+R\+I\+E\+N\+T\+\_\+\+I\+S\+\_\+\+S\+W\+AP}}
+\index{O\+R\+I\+E\+N\+T\+\_\+\+I\+S\+\_\+\+S\+W\+AP@{O\+R\+I\+E\+N\+T\+\_\+\+I\+S\+\_\+\+S\+W\+AP}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{O\+R\+I\+E\+N\+T\+\_\+\+I\+S\+\_\+\+S\+W\+AP}{ORIENT\_IS\_SWAP}}
+{\footnotesize\ttfamily \#define O\+R\+I\+E\+N\+T\+\_\+\+I\+S\+\_\+\+S\+W\+AP(\begin{DoxyParamCaption}\item[{}]{orient }\end{DoxyParamCaption})~(((orient) \& 4) != 0)}
+
+If the orientation swaps dimensions \mbox{\Hypertarget{vlc__es_8h_a2b3bec216ead2a26569d05f0c5274d42}\label{vlc__es_8h_a2b3bec216ead2a26569d05f0c5274d42}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!O\+R\+I\+E\+N\+T\+\_\+\+R\+O\+T\+A\+T\+E\+\_\+180@{O\+R\+I\+E\+N\+T\+\_\+\+R\+O\+T\+A\+T\+E\+\_\+180}}
+\index{O\+R\+I\+E\+N\+T\+\_\+\+R\+O\+T\+A\+T\+E\+\_\+180@{O\+R\+I\+E\+N\+T\+\_\+\+R\+O\+T\+A\+T\+E\+\_\+180}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{O\+R\+I\+E\+N\+T\+\_\+\+R\+O\+T\+A\+T\+E\+\_\+180}{ORIENT\_ROTATE\_180}}
+{\footnotesize\ttfamily \#define O\+R\+I\+E\+N\+T\+\_\+\+R\+O\+T\+A\+T\+E\+\_\+180(\begin{DoxyParamCaption}\item[{}]{orient }\end{DoxyParamCaption})~((orient) $^\wedge$ 3)}
+
+Applies horizontal flip to an orientation \mbox{\Hypertarget{vlc__es_8h_ab1737abe67b424ef8d5f3fa3441f50a0}\label{vlc__es_8h_ab1737abe67b424ef8d5f3fa3441f50a0}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+\_\+\+E\+X\+IF@{O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+\_\+\+E\+X\+IF}}
+\index{O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+\_\+\+E\+X\+IF@{O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+\_\+\+E\+X\+IF}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+\_\+\+E\+X\+IF}{ORIENT\_TO\_EXIF}}
+{\footnotesize\ttfamily \#define O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+\_\+\+E\+X\+IF(\begin{DoxyParamCaption}\item[{}]{orient }\end{DoxyParamCaption})~((0x12435867\+U $>$$>$ (4 $\ast$ (orient))) \& 15)}
+
+Convert enum video\+\_\+orientation\+\_\+t to E\+X\+IF \mbox{\Hypertarget{vlc__es_8h_a4b475755ae0e495f22bde45b00a40b29}\label{vlc__es_8h_a4b475755ae0e495f22bde45b00a40b29}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!O\+R\+I\+E\+N\+T\+\_\+\+V\+F\+L\+IP@{O\+R\+I\+E\+N\+T\+\_\+\+V\+F\+L\+IP}}
+\index{O\+R\+I\+E\+N\+T\+\_\+\+V\+F\+L\+IP@{O\+R\+I\+E\+N\+T\+\_\+\+V\+F\+L\+IP}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{O\+R\+I\+E\+N\+T\+\_\+\+V\+F\+L\+IP}{ORIENT\_VFLIP}}
+{\footnotesize\ttfamily \#define O\+R\+I\+E\+N\+T\+\_\+\+V\+F\+L\+IP(\begin{DoxyParamCaption}\item[{}]{orient }\end{DoxyParamCaption})~((orient) $^\wedge$ 2)}
+
+Applies vertical flip to an orientation \mbox{\Hypertarget{vlc__es_8h_a8340a2ee33e7ada465e683471f634b39}\label{vlc__es_8h_a8340a2ee33e7ada465e683471f634b39}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!V\+I\+D\+E\+O\+\_\+\+P\+A\+L\+E\+T\+T\+E\+\_\+\+C\+O\+L\+O\+R\+S\+\_\+\+M\+AX@{V\+I\+D\+E\+O\+\_\+\+P\+A\+L\+E\+T\+T\+E\+\_\+\+C\+O\+L\+O\+R\+S\+\_\+\+M\+AX}}
+\index{V\+I\+D\+E\+O\+\_\+\+P\+A\+L\+E\+T\+T\+E\+\_\+\+C\+O\+L\+O\+R\+S\+\_\+\+M\+AX@{V\+I\+D\+E\+O\+\_\+\+P\+A\+L\+E\+T\+T\+E\+\_\+\+C\+O\+L\+O\+R\+S\+\_\+\+M\+AX}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{V\+I\+D\+E\+O\+\_\+\+P\+A\+L\+E\+T\+T\+E\+\_\+\+C\+O\+L\+O\+R\+S\+\_\+\+M\+AX}{VIDEO\_PALETTE\_COLORS\_MAX}}
+{\footnotesize\ttfamily \#define V\+I\+D\+E\+O\+\_\+\+P\+A\+L\+E\+T\+T\+E\+\_\+\+C\+O\+L\+O\+R\+S\+\_\+\+M\+AX~256}
+
+video palette data \begin{DoxySeeAlso}{See also}
+\hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} 
+
+\hyperlink{structsubs__format__t}{subs\+\_\+format\+\_\+t} 
+\end{DoxySeeAlso}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{vlc__es_8h_aad58b2d128ad0436b137f4fc167b33af}\label{vlc__es_8h_aad58b2d128ad0436b137f4fc167b33af}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!extra\+\_\+languages\+\_\+t@{extra\+\_\+languages\+\_\+t}}
+\index{extra\+\_\+languages\+\_\+t@{extra\+\_\+languages\+\_\+t}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{extra\+\_\+languages\+\_\+t}{extra\_languages\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structextra__languages__t}{extra\+\_\+languages\+\_\+t}  \hyperlink{structextra__languages__t}{extra\+\_\+languages\+\_\+t}}
+
+ES language definition \mbox{\Hypertarget{vlc__es_8h_a4d2029463ee69669e90b473055db8509}\label{vlc__es_8h_a4d2029463ee69669e90b473055db8509}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!video\+\_\+orientation\+\_\+t@{video\+\_\+orientation\+\_\+t}}
+\index{video\+\_\+orientation\+\_\+t@{video\+\_\+orientation\+\_\+t}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{video\+\_\+orientation\+\_\+t}{video\_orientation\_t}}
+{\footnotesize\ttfamily typedef enum \hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4}{video\+\_\+orientation\+\_\+t}  \hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4}{video\+\_\+orientation\+\_\+t}}
+
+Picture orientation. 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{vlc__es_8h_a11361ceefbdf060af4c4c2d1fdc8b74a}\label{vlc__es_8h_a11361ceefbdf060af4c4c2d1fdc8b74a}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!es\+\_\+format\+\_\+category\+\_\+e@{es\+\_\+format\+\_\+category\+\_\+e}}
+\index{es\+\_\+format\+\_\+category\+\_\+e@{es\+\_\+format\+\_\+category\+\_\+e}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{es\+\_\+format\+\_\+category\+\_\+e}{es\_format\_category\_e}}
+{\footnotesize\ttfamily enum \hyperlink{vlc__es_8h_a11361ceefbdf060af4c4c2d1fdc8b74a}{es\+\_\+format\+\_\+category\+\_\+e}}
+
+ES Categories \mbox{\Hypertarget{vlc__es_8h_a1a6878c41244a468be3869ca422934a4}\label{vlc__es_8h_a1a6878c41244a468be3869ca422934a4}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!video\+\_\+orientation\+\_\+t@{video\+\_\+orientation\+\_\+t}}
+\index{video\+\_\+orientation\+\_\+t@{video\+\_\+orientation\+\_\+t}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{video\+\_\+orientation\+\_\+t}{video\_orientation\_t}}
+{\footnotesize\ttfamily enum \hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4}{video\+\_\+orientation\+\_\+t}}
+
+Picture orientation. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+P\+\_\+\+L\+E\+FT@{O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+P\+\_\+\+L\+E\+FT}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+P\+\_\+\+L\+E\+FT@{O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+P\+\_\+\+L\+E\+FT}}}\mbox{\Hypertarget{vlc__es_8h_a1a6878c41244a468be3869ca422934a4afa3c7ba167c033d1c7965f8bee0b79ab}\label{vlc__es_8h_a1a6878c41244a468be3869ca422934a4afa3c7ba167c033d1c7965f8bee0b79ab}} 
+O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+P\+\_\+\+L\+E\+FT&Top line represents top, left column left. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+P\+\_\+\+R\+I\+G\+HT@{O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+P\+\_\+\+R\+I\+G\+HT}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+P\+\_\+\+R\+I\+G\+HT@{O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+P\+\_\+\+R\+I\+G\+HT}}}\mbox{\Hypertarget{vlc__es_8h_a1a6878c41244a468be3869ca422934a4a7f736c818922458df2f5ee014ec44962}\label{vlc__es_8h_a1a6878c41244a468be3869ca422934a4a7f736c818922458df2f5ee014ec44962}} 
+O\+R\+I\+E\+N\+T\+\_\+\+T\+O\+P\+\_\+\+R\+I\+G\+HT&Flipped horizontally \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+R\+I\+E\+N\+T\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+L\+E\+FT@{O\+R\+I\+E\+N\+T\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+L\+E\+FT}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!O\+R\+I\+E\+N\+T\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+L\+E\+FT@{O\+R\+I\+E\+N\+T\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+L\+E\+FT}}}\mbox{\Hypertarget{vlc__es_8h_a1a6878c41244a468be3869ca422934a4aead6c5af9b7bece6a96f523f5ccf5373}\label{vlc__es_8h_a1a6878c41244a468be3869ca422934a4aead6c5af9b7bece6a96f523f5ccf5373}} 
+O\+R\+I\+E\+N\+T\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+L\+E\+FT&Flipped vertically \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+R\+I\+E\+N\+T\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+R\+I\+G\+HT@{O\+R\+I\+E\+N\+T\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+R\+I\+G\+HT}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!O\+R\+I\+E\+N\+T\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+R\+I\+G\+HT@{O\+R\+I\+E\+N\+T\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+R\+I\+G\+HT}}}\mbox{\Hypertarget{vlc__es_8h_a1a6878c41244a468be3869ca422934a4a7eef904f3437f1d16ad0d01a1eab23b3}\label{vlc__es_8h_a1a6878c41244a468be3869ca422934a4a7eef904f3437f1d16ad0d01a1eab23b3}} 
+O\+R\+I\+E\+N\+T\+\_\+\+B\+O\+T\+T\+O\+M\+\_\+\+R\+I\+G\+HT&Rotated 180 degrees \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+R\+I\+E\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+T\+OP@{O\+R\+I\+E\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+T\+OP}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!O\+R\+I\+E\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+T\+OP@{O\+R\+I\+E\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+T\+OP}}}\mbox{\Hypertarget{vlc__es_8h_a1a6878c41244a468be3869ca422934a4a13e45c4447aa2d69159ccb9797d5a954}\label{vlc__es_8h_a1a6878c41244a468be3869ca422934a4a13e45c4447aa2d69159ccb9797d5a954}} 
+O\+R\+I\+E\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+T\+OP&Transposed \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+R\+I\+E\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+B\+O\+T\+T\+OM@{O\+R\+I\+E\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+B\+O\+T\+T\+OM}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!O\+R\+I\+E\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+B\+O\+T\+T\+OM@{O\+R\+I\+E\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+B\+O\+T\+T\+OM}}}\mbox{\Hypertarget{vlc__es_8h_a1a6878c41244a468be3869ca422934a4ad2b1f1fb0ce4de3d7c35a4d4a1c34a8d}\label{vlc__es_8h_a1a6878c41244a468be3869ca422934a4ad2b1f1fb0ce4de3d7c35a4d4a1c34a8d}} 
+O\+R\+I\+E\+N\+T\+\_\+\+L\+E\+F\+T\+\_\+\+B\+O\+T\+T\+OM&Rotated 90 degrees clockwise \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+R\+I\+E\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+T\+OP@{O\+R\+I\+E\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+T\+OP}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!O\+R\+I\+E\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+T\+OP@{O\+R\+I\+E\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+T\+OP}}}\mbox{\Hypertarget{vlc__es_8h_a1a6878c41244a468be3869ca422934a4a1aa551a4acce6c6b44d6dd2af652a3b6}\label{vlc__es_8h_a1a6878c41244a468be3869ca422934a4a1aa551a4acce6c6b44d6dd2af652a3b6}} 
+O\+R\+I\+E\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+T\+OP&Rotated 90 degrees anti-\/clockwise \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+R\+I\+E\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+O\+T\+T\+OM@{O\+R\+I\+E\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+O\+T\+T\+OM}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!O\+R\+I\+E\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+O\+T\+T\+OM@{O\+R\+I\+E\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+O\+T\+T\+OM}}}\mbox{\Hypertarget{vlc__es_8h_a1a6878c41244a468be3869ca422934a4a58c341a11666d149c4823163d5b52c9a}\label{vlc__es_8h_a1a6878c41244a468be3869ca422934a4a58c341a11666d149c4823163d5b52c9a}} 
+O\+R\+I\+E\+N\+T\+\_\+\+R\+I\+G\+H\+T\+\_\+\+B\+O\+T\+T\+OM&Anti-\/transposed \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{vlc__es_8h_aea3226e280d800a8890615b23f6a0f44}\label{vlc__es_8h_aea3226e280d800a8890615b23f6a0f44}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!es\+\_\+format\+\_\+\+Clean@{es\+\_\+format\+\_\+\+Clean}}
+\index{es\+\_\+format\+\_\+\+Clean@{es\+\_\+format\+\_\+\+Clean}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{es\+\_\+format\+\_\+\+Clean()}{es\_format\_Clean()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void es\+\_\+format\+\_\+\+Clean (\begin{DoxyParamCaption}\item[{es\+\_\+format\+\_\+t $\ast$}]{fmt }\end{DoxyParamCaption})}
+
+This function will clean up a es\+\_\+format\+\_\+t and release all associated resources. You can call it multiple times on the same structure. \mbox{\Hypertarget{vlc__es_8h_a0f9dbee25a8e5f9369f09f7a67875e01}\label{vlc__es_8h_a0f9dbee25a8e5f9369f09f7a67875e01}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!es\+\_\+format\+\_\+\+Copy@{es\+\_\+format\+\_\+\+Copy}}
+\index{es\+\_\+format\+\_\+\+Copy@{es\+\_\+format\+\_\+\+Copy}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{es\+\_\+format\+\_\+\+Copy()}{es\_format\_Copy()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI int es\+\_\+format\+\_\+\+Copy (\begin{DoxyParamCaption}\item[{es\+\_\+format\+\_\+t $\ast$}]{p\+\_\+dst,  }\item[{const es\+\_\+format\+\_\+t $\ast$}]{p\+\_\+src }\end{DoxyParamCaption})}
+
+This functions will copy a es\+\_\+format\+\_\+t. \mbox{\Hypertarget{vlc__es_8h_a6dae13161bbd24d2c0cd2b8f1e678d26}\label{vlc__es_8h_a6dae13161bbd24d2c0cd2b8f1e678d26}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!es\+\_\+format\+\_\+\+Init@{es\+\_\+format\+\_\+\+Init}}
+\index{es\+\_\+format\+\_\+\+Init@{es\+\_\+format\+\_\+\+Init}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{es\+\_\+format\+\_\+\+Init()}{es\_format\_Init()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void es\+\_\+format\+\_\+\+Init (\begin{DoxyParamCaption}\item[{es\+\_\+format\+\_\+t $\ast$}]{,  }\item[{int}]{i\+\_\+cat,  }\item[{\hyperlink{vlc__common_8h_af49f89d0f752bc9cff142e43b1bd634d}{vlc\+\_\+fourcc\+\_\+t}}]{i\+\_\+codec }\end{DoxyParamCaption})}
+
+This function will initialize a es\+\_\+format\+\_\+t structure. \mbox{\Hypertarget{vlc__es_8h_a59d4a6f0397299874f627b0ef822e49a}\label{vlc__es_8h_a59d4a6f0397299874f627b0ef822e49a}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!es\+\_\+format\+\_\+\+Init\+From\+Video@{es\+\_\+format\+\_\+\+Init\+From\+Video}}
+\index{es\+\_\+format\+\_\+\+Init\+From\+Video@{es\+\_\+format\+\_\+\+Init\+From\+Video}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{es\+\_\+format\+\_\+\+Init\+From\+Video()}{es\_format\_InitFromVideo()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void es\+\_\+format\+\_\+\+Init\+From\+Video (\begin{DoxyParamCaption}\item[{es\+\_\+format\+\_\+t $\ast$}]{,  }\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function will initialize a es\+\_\+format\+\_\+t structure from a \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t}. \mbox{\Hypertarget{vlc__es_8h_adcd60b4ef11817d73ed096b13f33f235}\label{vlc__es_8h_adcd60b4ef11817d73ed096b13f33f235}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!es\+\_\+format\+\_\+\+Is\+Similar@{es\+\_\+format\+\_\+\+Is\+Similar}}
+\index{es\+\_\+format\+\_\+\+Is\+Similar@{es\+\_\+format\+\_\+\+Is\+Similar}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{es\+\_\+format\+\_\+\+Is\+Similar()}{es\_format\_IsSimilar()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI bool es\+\_\+format\+\_\+\+Is\+Similar (\begin{DoxyParamCaption}\item[{const es\+\_\+format\+\_\+t $\ast$}]{,  }\item[{const es\+\_\+format\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function will check if the first ES format is similar to the second one.
+
+All descriptive fields are ignored. \mbox{\Hypertarget{vlc__es_8h_a036565057e2c9889bcd8df9c4963d5a2}\label{vlc__es_8h_a036565057e2c9889bcd8df9c4963d5a2}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!video\+\_\+format\+\_\+\+Apply\+Rotation@{video\+\_\+format\+\_\+\+Apply\+Rotation}}
+\index{video\+\_\+format\+\_\+\+Apply\+Rotation@{video\+\_\+format\+\_\+\+Apply\+Rotation}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{video\+\_\+format\+\_\+\+Apply\+Rotation()}{video\_format\_ApplyRotation()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void video\+\_\+format\+\_\+\+Apply\+Rotation (\begin{DoxyParamCaption}\item[{\hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{out,  }\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{in }\end{DoxyParamCaption})}
+
+This function \char`\"{}normalizes\char`\"{} the formats orientation, by switching the a/r according to the orientation, producing a format whose orientation is O\+R\+I\+E\+N\+T\+\_\+\+N\+O\+R\+M\+AL. It makes a shallow copy (pallette is not alloc\textquotesingle{}ed). \mbox{\Hypertarget{vlc__es_8h_a7388353f7765bf4dba76e2c674dde6d0}\label{vlc__es_8h_a7388353f7765bf4dba76e2c674dde6d0}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!video\+\_\+format\+\_\+\+Copy\+Crop@{video\+\_\+format\+\_\+\+Copy\+Crop}}
+\index{video\+\_\+format\+\_\+\+Copy\+Crop@{video\+\_\+format\+\_\+\+Copy\+Crop}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{video\+\_\+format\+\_\+\+Copy\+Crop()}{video\_format\_CopyCrop()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void video\+\_\+format\+\_\+\+Copy\+Crop (\begin{DoxyParamCaption}\item[{\hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{,  }\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+It will copy the crop properties from a \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} to another. \mbox{\Hypertarget{vlc__es_8h_a24f7d6f644b3320411d7fb5b1f269210}\label{vlc__es_8h_a24f7d6f644b3320411d7fb5b1f269210}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!video\+\_\+format\+\_\+\+Fix\+Rgb@{video\+\_\+format\+\_\+\+Fix\+Rgb}}
+\index{video\+\_\+format\+\_\+\+Fix\+Rgb@{video\+\_\+format\+\_\+\+Fix\+Rgb}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{video\+\_\+format\+\_\+\+Fix\+Rgb()}{video\_format\_FixRgb()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void video\+\_\+format\+\_\+\+Fix\+Rgb (\begin{DoxyParamCaption}\item[{\hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function will fill all R\+GB shift from R\+GB masks. \mbox{\Hypertarget{vlc__es_8h_aa0583e5d271c7be91d943416d7a97182}\label{vlc__es_8h_aa0583e5d271c7be91d943416d7a97182}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!video\+\_\+format\+\_\+\+Get\+Transform@{video\+\_\+format\+\_\+\+Get\+Transform}}
+\index{video\+\_\+format\+\_\+\+Get\+Transform@{video\+\_\+format\+\_\+\+Get\+Transform}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{video\+\_\+format\+\_\+\+Get\+Transform()}{video\_format\_GetTransform()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI video\+\_\+transform\+\_\+t video\+\_\+format\+\_\+\+Get\+Transform (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4}{video\+\_\+orientation\+\_\+t}}]{src,  }\item[{\hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4}{video\+\_\+orientation\+\_\+t}}]{dst }\end{DoxyParamCaption})}
+
+Returns the operation required to transform src into dst. \mbox{\Hypertarget{vlc__es_8h_afef4e8eeb948ce8588b2cfceee3a2c3a}\label{vlc__es_8h_afef4e8eeb948ce8588b2cfceee3a2c3a}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!video\+\_\+format\+\_\+\+Is\+Similar@{video\+\_\+format\+\_\+\+Is\+Similar}}
+\index{video\+\_\+format\+\_\+\+Is\+Similar@{video\+\_\+format\+\_\+\+Is\+Similar}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{video\+\_\+format\+\_\+\+Is\+Similar()}{video\_format\_IsSimilar()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI bool video\+\_\+format\+\_\+\+Is\+Similar (\begin{DoxyParamCaption}\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{,  }\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function will check if the first video format is similar to the second one. \mbox{\Hypertarget{vlc__es_8h_adf59bf0f47c0c9435402e8b7e33d1600}\label{vlc__es_8h_adf59bf0f47c0c9435402e8b7e33d1600}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!video\+\_\+format\+\_\+\+Print@{video\+\_\+format\+\_\+\+Print}}
+\index{video\+\_\+format\+\_\+\+Print@{video\+\_\+format\+\_\+\+Print}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{video\+\_\+format\+\_\+\+Print()}{video\_format\_Print()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void video\+\_\+format\+\_\+\+Print (\begin{DoxyParamCaption}\item[{\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$}]{,  }\item[{const char $\ast$}]{,  }\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+It prints details about the given \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} \mbox{\Hypertarget{vlc__es_8h_a28756b87d3b888ddb2338d1dd03d6d44}\label{vlc__es_8h_a28756b87d3b888ddb2338d1dd03d6d44}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!video\+\_\+format\+\_\+\+Scale\+Crop\+Ar@{video\+\_\+format\+\_\+\+Scale\+Crop\+Ar}}
+\index{video\+\_\+format\+\_\+\+Scale\+Crop\+Ar@{video\+\_\+format\+\_\+\+Scale\+Crop\+Ar}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{video\+\_\+format\+\_\+\+Scale\+Crop\+Ar()}{video\_format\_ScaleCropAr()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void video\+\_\+format\+\_\+\+Scale\+Crop\+Ar (\begin{DoxyParamCaption}\item[{\hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{,  }\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+It will compute the crop/ar properties when scaling. \mbox{\Hypertarget{vlc__es_8h_a5a77d366bb2fe6d53be544499181647c}\label{vlc__es_8h_a5a77d366bb2fe6d53be544499181647c}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!video\+\_\+format\+\_\+\+Setup@{video\+\_\+format\+\_\+\+Setup}}
+\index{video\+\_\+format\+\_\+\+Setup@{video\+\_\+format\+\_\+\+Setup}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{video\+\_\+format\+\_\+\+Setup()}{video\_format\_Setup()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void video\+\_\+format\+\_\+\+Setup (\begin{DoxyParamCaption}\item[{\hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{,  }\item[{\hyperlink{vlc__common_8h_af49f89d0f752bc9cff142e43b1bd634d}{vlc\+\_\+fourcc\+\_\+t}}]{i\+\_\+chroma,  }\item[{int}]{i\+\_\+width,  }\item[{int}]{i\+\_\+height,  }\item[{int}]{i\+\_\+visible\+\_\+width,  }\item[{int}]{i\+\_\+visible\+\_\+height,  }\item[{int}]{i\+\_\+sar\+\_\+num,  }\item[{int}]{i\+\_\+sar\+\_\+den }\end{DoxyParamCaption})}
+
+It will fill up a \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} using the given arguments. Note that the \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} must already be initialized. \mbox{\Hypertarget{vlc__es_8h_a3a7df7cf4a0ca762b77fb8a0f3d5ad45}\label{vlc__es_8h_a3a7df7cf4a0ca762b77fb8a0f3d5ad45}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!video\+\_\+format\+\_\+\+Transform\+By@{video\+\_\+format\+\_\+\+Transform\+By}}
+\index{video\+\_\+format\+\_\+\+Transform\+By@{video\+\_\+format\+\_\+\+Transform\+By}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{video\+\_\+format\+\_\+\+Transform\+By()}{video\_format\_TransformBy()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void video\+\_\+format\+\_\+\+Transform\+By (\begin{DoxyParamCaption}\item[{\hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{fmt,  }\item[{video\+\_\+transform\+\_\+t}]{transform }\end{DoxyParamCaption})}
+
+This function applies the transform operation to fmt. \mbox{\Hypertarget{vlc__es_8h_a503b3fb2a581d3402255281355ed2cf2}\label{vlc__es_8h_a503b3fb2a581d3402255281355ed2cf2}} 
+\index{vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}!video\+\_\+format\+\_\+\+Transform\+To@{video\+\_\+format\+\_\+\+Transform\+To}}
+\index{video\+\_\+format\+\_\+\+Transform\+To@{video\+\_\+format\+\_\+\+Transform\+To}!vlc\+\_\+es.\+h@{vlc\+\_\+es.\+h}}
+\subsubsection{\texorpdfstring{video\+\_\+format\+\_\+\+Transform\+To()}{video\_format\_TransformTo()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void video\+\_\+format\+\_\+\+Transform\+To (\begin{DoxyParamCaption}\item[{\hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{fmt,  }\item[{\hyperlink{vlc__es_8h_a1a6878c41244a468be3869ca422934a4}{video\+\_\+orientation\+\_\+t}}]{dst\+\_\+orientation }\end{DoxyParamCaption})}
+
+This function applies the transforms necessary to fmt so that the resulting fmt has the dst\+\_\+orientation. 

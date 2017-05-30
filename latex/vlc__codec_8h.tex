@@ -1,0 +1,98 @@
+\hypertarget{vlc__codec_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+codec.h File Reference}
+\label{vlc__codec_8h}\index{lib/include/vlc/plugins/vlc\+\_\+codec.\+h@{lib/include/vlc/plugins/vlc\+\_\+codec.\+h}}
+{\ttfamily \#include $<$vlc\+\_\+block.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+es.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+picture.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+subpicture.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$ \hyperlink{vlc__codec_8h_acdc4e19e67d17fb27b5578ae735f10cf}{decoder\+\_\+\+New\+Picture} (decoder\+\_\+t $\ast$) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__codec_8h_a8125f26319cfc45fd6aa073e4f4c39ec}{decoder\+\_\+\+Delete\+Picture} (decoder\+\_\+t $\ast$, \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$p\+\_\+picture)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__codec_8h_a10e888a24a4dc776e66ebf09300c8604}{decoder\+\_\+\+Link\+Picture} (decoder\+\_\+t $\ast$, \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__codec_8h_ad25a530b7e41374d5d362493db000714}{decoder\+\_\+\+Unlink\+Picture} (decoder\+\_\+t $\ast$, \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI block\+\_\+t $\ast$ \hyperlink{vlc__codec_8h_aae2a47cde9340133507d164c3ca6bb4d}{decoder\+\_\+\+New\+Audio\+Buffer} (decoder\+\_\+t $\ast$, int i\+\_\+size) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structsubpicture__t}{subpicture\+\_\+t} $\ast$ \hyperlink{vlc__codec_8h_a37dbb1036fed614add08f6955b706722}{decoder\+\_\+\+New\+Subpicture} (decoder\+\_\+t $\ast$, const subpicture\+\_\+updater\+\_\+t $\ast$) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__codec_8h_ac905991b198e8cf4d0c3ec2eecca5f17}{decoder\+\_\+\+Delete\+Subpicture} (decoder\+\_\+t $\ast$, \hyperlink{structsubpicture__t}{subpicture\+\_\+t} $\ast$p\+\_\+subpicture)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{vlc__codec_8h_a1248ebb93e36501550a673432fad641c}{decoder\+\_\+\+Get\+Input\+Attachments} (decoder\+\_\+t $\ast$, input\+\_\+attachment\+\_\+t $\ast$$\ast$$\ast$ppp\+\_\+attachment, int $\ast$pi\+\_\+attachment)
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} \hyperlink{vlc__codec_8h_a36e365134ee0597549edeee4ddccad9b}{decoder\+\_\+\+Get\+Display\+Date} (decoder\+\_\+t $\ast$, \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t}) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{vlc__codec_8h_acb65b57992d741b82818653921aa98d8}{decoder\+\_\+\+Get\+Display\+Rate} (decoder\+\_\+t $\ast$) V\+L\+C\+\_\+\+U\+S\+ED
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines the structure and types used by decoders and encoders 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{vlc__codec_8h_a8125f26319cfc45fd6aa073e4f4c39ec}\label{vlc__codec_8h_a8125f26319cfc45fd6aa073e4f4c39ec}} 
+\index{vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}!decoder\+\_\+\+Delete\+Picture@{decoder\+\_\+\+Delete\+Picture}}
+\index{decoder\+\_\+\+Delete\+Picture@{decoder\+\_\+\+Delete\+Picture}!vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}}
+\subsubsection{\texorpdfstring{decoder\+\_\+\+Delete\+Picture()}{decoder\_DeletePicture()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void decoder\+\_\+\+Delete\+Picture (\begin{DoxyParamCaption}\item[{decoder\+\_\+t $\ast$}]{,  }\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{p\+\_\+picture }\end{DoxyParamCaption})}
+
+This function will release a picture create by decoder\+\_\+\+New\+Picture. \mbox{\Hypertarget{vlc__codec_8h_ac905991b198e8cf4d0c3ec2eecca5f17}\label{vlc__codec_8h_ac905991b198e8cf4d0c3ec2eecca5f17}} 
+\index{vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}!decoder\+\_\+\+Delete\+Subpicture@{decoder\+\_\+\+Delete\+Subpicture}}
+\index{decoder\+\_\+\+Delete\+Subpicture@{decoder\+\_\+\+Delete\+Subpicture}!vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}}
+\subsubsection{\texorpdfstring{decoder\+\_\+\+Delete\+Subpicture()}{decoder\_DeleteSubpicture()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void decoder\+\_\+\+Delete\+Subpicture (\begin{DoxyParamCaption}\item[{decoder\+\_\+t $\ast$}]{,  }\item[{\hyperlink{structsubpicture__t}{subpicture\+\_\+t} $\ast$}]{p\+\_\+subpicture }\end{DoxyParamCaption})}
+
+This function will release a subpicture created by decoder\+\_\+\+New\+Subicture. \mbox{\Hypertarget{vlc__codec_8h_a36e365134ee0597549edeee4ddccad9b}\label{vlc__codec_8h_a36e365134ee0597549edeee4ddccad9b}} 
+\index{vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}!decoder\+\_\+\+Get\+Display\+Date@{decoder\+\_\+\+Get\+Display\+Date}}
+\index{decoder\+\_\+\+Get\+Display\+Date@{decoder\+\_\+\+Get\+Display\+Date}!vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}}
+\subsubsection{\texorpdfstring{decoder\+\_\+\+Get\+Display\+Date()}{decoder\_GetDisplayDate()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} decoder\+\_\+\+Get\+Display\+Date (\begin{DoxyParamCaption}\item[{decoder\+\_\+t $\ast$}]{,  }\item[{\hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t}}]{ }\end{DoxyParamCaption})}
+
+This function converts a decoder timestamp into a display date comparable to mdate(). You M\+U\+ST use it {\itshape only} for gathering statistics about speed. \mbox{\Hypertarget{vlc__codec_8h_acb65b57992d741b82818653921aa98d8}\label{vlc__codec_8h_acb65b57992d741b82818653921aa98d8}} 
+\index{vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}!decoder\+\_\+\+Get\+Display\+Rate@{decoder\+\_\+\+Get\+Display\+Rate}}
+\index{decoder\+\_\+\+Get\+Display\+Rate@{decoder\+\_\+\+Get\+Display\+Rate}!vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}}
+\subsubsection{\texorpdfstring{decoder\+\_\+\+Get\+Display\+Rate()}{decoder\_GetDisplayRate()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI int decoder\+\_\+\+Get\+Display\+Rate (\begin{DoxyParamCaption}\item[{decoder\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function returns the current input rate. You M\+U\+ST use it {\itshape only} for gathering statistics about speed. \mbox{\Hypertarget{vlc__codec_8h_a1248ebb93e36501550a673432fad641c}\label{vlc__codec_8h_a1248ebb93e36501550a673432fad641c}} 
+\index{vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}!decoder\+\_\+\+Get\+Input\+Attachments@{decoder\+\_\+\+Get\+Input\+Attachments}}
+\index{decoder\+\_\+\+Get\+Input\+Attachments@{decoder\+\_\+\+Get\+Input\+Attachments}!vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}}
+\subsubsection{\texorpdfstring{decoder\+\_\+\+Get\+Input\+Attachments()}{decoder\_GetInputAttachments()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI int decoder\+\_\+\+Get\+Input\+Attachments (\begin{DoxyParamCaption}\item[{decoder\+\_\+t $\ast$}]{,  }\item[{input\+\_\+attachment\+\_\+t $\ast$$\ast$$\ast$}]{ppp\+\_\+attachment,  }\item[{int $\ast$}]{pi\+\_\+attachment }\end{DoxyParamCaption})}
+
+This function gives all input attachments at once.
+
+You M\+U\+ST release the returned values \mbox{\Hypertarget{vlc__codec_8h_a10e888a24a4dc776e66ebf09300c8604}\label{vlc__codec_8h_a10e888a24a4dc776e66ebf09300c8604}} 
+\index{vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}!decoder\+\_\+\+Link\+Picture@{decoder\+\_\+\+Link\+Picture}}
+\index{decoder\+\_\+\+Link\+Picture@{decoder\+\_\+\+Link\+Picture}!vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}}
+\subsubsection{\texorpdfstring{decoder\+\_\+\+Link\+Picture()}{decoder\_LinkPicture()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void decoder\+\_\+\+Link\+Picture (\begin{DoxyParamCaption}\item[{decoder\+\_\+t $\ast$}]{,  }\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function will increase the picture reference count. (picture\+\_\+\+Hold is not usable.) \mbox{\Hypertarget{vlc__codec_8h_aae2a47cde9340133507d164c3ca6bb4d}\label{vlc__codec_8h_aae2a47cde9340133507d164c3ca6bb4d}} 
+\index{vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}!decoder\+\_\+\+New\+Audio\+Buffer@{decoder\+\_\+\+New\+Audio\+Buffer}}
+\index{decoder\+\_\+\+New\+Audio\+Buffer@{decoder\+\_\+\+New\+Audio\+Buffer}!vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}}
+\subsubsection{\texorpdfstring{decoder\+\_\+\+New\+Audio\+Buffer()}{decoder\_NewAudioBuffer()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI block\+\_\+t$\ast$ decoder\+\_\+\+New\+Audio\+Buffer (\begin{DoxyParamCaption}\item[{decoder\+\_\+t $\ast$}]{,  }\item[{int}]{i\+\_\+size }\end{DoxyParamCaption})}
+
+This function will return a new audio buffer usable by a decoder as an output buffer. You have to release it using decoder\+\_\+\+Delete\+Audio\+Buffer or by returning it to the caller as a pf\+\_\+decode\+\_\+audio return value. \mbox{\Hypertarget{vlc__codec_8h_acdc4e19e67d17fb27b5578ae735f10cf}\label{vlc__codec_8h_acdc4e19e67d17fb27b5578ae735f10cf}} 
+\index{vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}!decoder\+\_\+\+New\+Picture@{decoder\+\_\+\+New\+Picture}}
+\index{decoder\+\_\+\+New\+Picture@{decoder\+\_\+\+New\+Picture}!vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}}
+\subsubsection{\texorpdfstring{decoder\+\_\+\+New\+Picture()}{decoder\_NewPicture()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structpicture__t}{picture\+\_\+t}$\ast$ decoder\+\_\+\+New\+Picture (\begin{DoxyParamCaption}\item[{decoder\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function will return a new picture usable by a decoder as an output buffer. You have to release it using decoder\+\_\+\+Delete\+Picture or by returning it to the caller as a pf\+\_\+decode\+\_\+video return value. \mbox{\Hypertarget{vlc__codec_8h_a37dbb1036fed614add08f6955b706722}\label{vlc__codec_8h_a37dbb1036fed614add08f6955b706722}} 
+\index{vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}!decoder\+\_\+\+New\+Subpicture@{decoder\+\_\+\+New\+Subpicture}}
+\index{decoder\+\_\+\+New\+Subpicture@{decoder\+\_\+\+New\+Subpicture}!vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}}
+\subsubsection{\texorpdfstring{decoder\+\_\+\+New\+Subpicture()}{decoder\_NewSubpicture()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structsubpicture__t}{subpicture\+\_\+t}$\ast$ decoder\+\_\+\+New\+Subpicture (\begin{DoxyParamCaption}\item[{decoder\+\_\+t $\ast$}]{,  }\item[{const subpicture\+\_\+updater\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function will return a new subpicture usable by a decoder as an output buffer. You have to release it using decoder\+\_\+\+Delete\+Subpicture or by returning it to the caller as a pf\+\_\+decode\+\_\+sub return value. \mbox{\Hypertarget{vlc__codec_8h_ad25a530b7e41374d5d362493db000714}\label{vlc__codec_8h_ad25a530b7e41374d5d362493db000714}} 
+\index{vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}!decoder\+\_\+\+Unlink\+Picture@{decoder\+\_\+\+Unlink\+Picture}}
+\index{decoder\+\_\+\+Unlink\+Picture@{decoder\+\_\+\+Unlink\+Picture}!vlc\+\_\+codec.\+h@{vlc\+\_\+codec.\+h}}
+\subsubsection{\texorpdfstring{decoder\+\_\+\+Unlink\+Picture()}{decoder\_UnlinkPicture()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void decoder\+\_\+\+Unlink\+Picture (\begin{DoxyParamCaption}\item[{decoder\+\_\+t $\ast$}]{,  }\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function will decrease the picture reference count. (picture\+\_\+\+Release is not usable.) 

@@ -1,0 +1,633 @@
+\hypertarget{group__libvlc__media}{}\section{Lib\+V\+LC media}
+\label{group__libvlc__media}\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structlibvlc__media__stats__t}{libvlc\+\_\+media\+\_\+stats\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{group__libvlc__media_gac88ad60037ea05e1f23675a2ebe31efc}{libvlc\+\_\+state\+\_\+t} \hyperlink{group__libvlc__media_gaffb7eef042375f78ec9a6f1ae11ae0c3}{libvlc\+\_\+state\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__libvlc__media_gac88ad60037ea05e1f23675a2ebe31efc}{libvlc\+\_\+state\+\_\+t} 
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t $\ast$ \hyperlink{group__libvlc__media_gae1d3baee3f4610c6fe5818defcad3e6f}{libvlc\+\_\+media\+\_\+new\+\_\+location} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance, const char $\ast$psz\+\_\+mrl)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t $\ast$ \hyperlink{group__libvlc__media_ga051342375370f3bf3821a537d4413435}{libvlc\+\_\+media\+\_\+new\+\_\+path} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance, const char $\ast$path)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t $\ast$ \hyperlink{group__libvlc__media_ga192451a6b5fef7be482313876a4c3054}{libvlc\+\_\+media\+\_\+new\+\_\+fd} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance, int fd)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t $\ast$ \hyperlink{group__libvlc__media_ga1ccfa7815260b22adf96cc538a45fe77}{libvlc\+\_\+media\+\_\+new\+\_\+as\+\_\+node} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance, const char $\ast$psz\+\_\+name)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media_ga39511e64baa7c1fdbf89eddc88bf9e15}{libvlc\+\_\+media\+\_\+add\+\_\+option} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md, const char $\ast$psz\+\_\+options)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media_ga96d5e0f418eecf74149057796160fd3a}{libvlc\+\_\+media\+\_\+add\+\_\+option\+\_\+flag} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md, const char $\ast$psz\+\_\+options, unsigned i\+\_\+flags)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media_gaf4be74c918bc34ea4182e8028ea5f0ba}{libvlc\+\_\+media\+\_\+retain} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media_gaffccede262624a361e20c3e887fa9b42}{libvlc\+\_\+media\+\_\+release} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI char $\ast$ \hyperlink{group__libvlc__media_ga88cd51e19ac7848bb15352eeddd32b9c}{libvlc\+\_\+media\+\_\+get\+\_\+mrl} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t $\ast$ \hyperlink{group__libvlc__media_ga638229cdb4fbb5708df632dd631534f9}{libvlc\+\_\+media\+\_\+duplicate} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI char $\ast$ \hyperlink{group__libvlc__media_ga47684ea1970f0c5cddb96a717a75ed6f}{libvlc\+\_\+media\+\_\+get\+\_\+meta} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md, \hyperlink{group__libvlc__media_ga90e7814a020f87d4c443d8d09b6dd4a0}{libvlc\+\_\+meta\+\_\+t} e\+\_\+meta)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media_gae116bf2e93c0e51aa5824f6e69aeaa64}{libvlc\+\_\+media\+\_\+set\+\_\+meta} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md, \hyperlink{group__libvlc__media_ga90e7814a020f87d4c443d8d09b6dd4a0}{libvlc\+\_\+meta\+\_\+t} e\+\_\+meta, const char $\ast$psz\+\_\+value)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media_ga7b5c8c9206b71627a1a600e165d3c1e5}{libvlc\+\_\+media\+\_\+save\+\_\+meta} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__media_gac88ad60037ea05e1f23675a2ebe31efc}{libvlc\+\_\+state\+\_\+t} \hyperlink{group__libvlc__media_ga894c92329fb83d8b55f105b4e1fdfbb8}{libvlc\+\_\+media\+\_\+get\+\_\+state} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media_ga8043c9dbf07c6286e918d7d38e467c3e}{libvlc\+\_\+media\+\_\+get\+\_\+stats} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md, \hyperlink{structlibvlc__media__stats__t}{libvlc\+\_\+media\+\_\+stats\+\_\+t} $\ast$p\+\_\+stats)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__media_gaacfff95cbbba67b39a47b7bdbfff1dba}{V\+L\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+O\+B\+J\+E\+CT} (libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$) libvlc\+\_\+media\+\_\+subitems(libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t} $\ast$ \hyperlink{group__libvlc__media_ga92b9e97a3e37e91abe9dcafd2387f2cc}{libvlc\+\_\+media\+\_\+event\+\_\+manager} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+time\+\_\+t \hyperlink{group__libvlc__media_gadd2c47a0112a31e200a0145d0504873b}{libvlc\+\_\+media\+\_\+get\+\_\+duration} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media_gad9e48150dcb1a066c51688f6e4a216f1}{libvlc\+\_\+media\+\_\+parse} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media_gada166e6385518f9d5826c2dce647a475}{libvlc\+\_\+media\+\_\+parse\+\_\+async} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media_ga9b8ce78027b0dadfa555fc33d2a033a6}{libvlc\+\_\+media\+\_\+is\+\_\+parsed} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media_ga56dac0c5cb70b417ada18b2ebb9cd0e3}{libvlc\+\_\+media\+\_\+set\+\_\+user\+\_\+data} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md, void $\ast$p\+\_\+new\+\_\+user\+\_\+data)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void $\ast$ \hyperlink{group__libvlc__media_ga1aa2355e48bbb47a7f8d7f1bb4a8101f}{libvlc\+\_\+media\+\_\+get\+\_\+user\+\_\+data} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media_ga2102c151df0ab66d6158a80b7734f0f9}{libvlc\+\_\+media\+\_\+get\+\_\+tracks\+\_\+info} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md, libvlc\+\_\+media\+\_\+track\+\_\+info\+\_\+t $\ast$$\ast$tracks)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI unsigned \hyperlink{group__libvlc__media_ga33f5fef54e3750ab55744007e0e80f02}{libvlc\+\_\+media\+\_\+tracks\+\_\+get} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md, libvlc\+\_\+media\+\_\+track\+\_\+t $\ast$$\ast$$\ast$tracks)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media_ga9db98f62bb939cc49fbbd227d027850c}{libvlc\+\_\+media\+\_\+tracks\+\_\+release} (libvlc\+\_\+media\+\_\+track\+\_\+t $\ast$$\ast$p\+\_\+tracks, unsigned i\+\_\+count)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__libvlc__media_ga90e7814a020f87d4c443d8d09b6dd4a0}{libvlc\+\_\+meta\+\_\+t} 
+\item 
+typedef enum \hyperlink{group__libvlc__media_ga90e7814a020f87d4c443d8d09b6dd4a0}{libvlc\+\_\+meta\+\_\+t} \hyperlink{group__libvlc__media_gada00e7231546f7af82a8e3f7bda01994}{libvlc\+\_\+meta\+\_\+t}
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structlibvlc__media__stats__t}{libvlc\+\_\+media\+\_\+stats\+\_\+t} \hyperlink{group__libvlc__media_ga7fc3997423872bc339619d3d14a31724}{libvlc\+\_\+media\+\_\+stats\+\_\+t}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+libvlc\+\_\+media\+\_\+t is an abstract representation of a playable media. It consists of a media location and various optional meta data. 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__libvlc__media_ga7fc3997423872bc339619d3d14a31724}\label{group__libvlc__media_ga7fc3997423872bc339619d3d14a31724}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+stats\+\_\+t@{libvlc\+\_\+media\+\_\+stats\+\_\+t}}
+\index{libvlc\+\_\+media\+\_\+stats\+\_\+t@{libvlc\+\_\+media\+\_\+stats\+\_\+t}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+stats\+\_\+t}{libvlc\_media\_stats\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structlibvlc__media__stats__t}{libvlc\+\_\+media\+\_\+stats\+\_\+t}  \hyperlink{structlibvlc__media__stats__t}{libvlc\+\_\+media\+\_\+stats\+\_\+t}}
+
+defgroup \hyperlink{structlibvlc__media__stats__t}{libvlc\+\_\+media\+\_\+stats\+\_\+t} Lib\+V\+LC media statistics \mbox{\Hypertarget{group__libvlc__media_gada00e7231546f7af82a8e3f7bda01994}\label{group__libvlc__media_gada00e7231546f7af82a8e3f7bda01994}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+meta\+\_\+t@{libvlc\+\_\+meta\+\_\+t}}
+\index{libvlc\+\_\+meta\+\_\+t@{libvlc\+\_\+meta\+\_\+t}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+meta\+\_\+t}{libvlc\_meta\_t}}
+{\footnotesize\ttfamily typedef enum \hyperlink{group__libvlc__media_ga90e7814a020f87d4c443d8d09b6dd4a0}{libvlc\+\_\+meta\+\_\+t}  \hyperlink{group__libvlc__media_ga90e7814a020f87d4c443d8d09b6dd4a0}{libvlc\+\_\+meta\+\_\+t}}
+
+defgroup libvlc\+\_\+meta Lib\+V\+LC meta data\+Meta data types \mbox{\Hypertarget{group__libvlc__media_gaffb7eef042375f78ec9a6f1ae11ae0c3}\label{group__libvlc__media_gaffb7eef042375f78ec9a6f1ae11ae0c3}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+state\+\_\+t@{libvlc\+\_\+state\+\_\+t}}
+\index{libvlc\+\_\+state\+\_\+t@{libvlc\+\_\+state\+\_\+t}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+state\+\_\+t}{libvlc\_state\_t}}
+{\footnotesize\ttfamily typedef enum \hyperlink{group__libvlc__media_gac88ad60037ea05e1f23675a2ebe31efc}{libvlc\+\_\+state\+\_\+t}  \hyperlink{group__libvlc__media_gac88ad60037ea05e1f23675a2ebe31efc}{libvlc\+\_\+state\+\_\+t}}
+
+Note the order of libvlc\+\_\+state\+\_\+t enum must match exactly the order of \begin{DoxySeeAlso}{See also}
+mediacontrol\+\_\+\+Player\+Status, 
+
+\hyperlink{vlc__input_8h_a158f30c7fe25669dd399e71e5924ae3f}{input\+\_\+state\+\_\+e} enums, and Video\+L\+A\+N.\+Lib\+V\+L\+C.\+State (at bindings/cil/src/media.\+cs).
+\end{DoxySeeAlso}
+Expected states by web plugins are\+: I\+D\+L\+E/\+C\+L\+O\+SE=0, O\+P\+E\+N\+I\+NG=1, B\+U\+F\+F\+E\+R\+I\+NG=2, P\+L\+A\+Y\+I\+NG=3, P\+A\+U\+S\+ED=4, S\+T\+O\+P\+P\+I\+NG=5, E\+N\+D\+ED=6, E\+R\+R\+OR=7 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__libvlc__media_ga90e7814a020f87d4c443d8d09b6dd4a0}\label{group__libvlc__media_ga90e7814a020f87d4c443d8d09b6dd4a0}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+meta\+\_\+t@{libvlc\+\_\+meta\+\_\+t}}
+\index{libvlc\+\_\+meta\+\_\+t@{libvlc\+\_\+meta\+\_\+t}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+meta\+\_\+t}{libvlc\_meta\_t}}
+{\footnotesize\ttfamily enum \hyperlink{group__libvlc__media_ga90e7814a020f87d4c443d8d09b6dd4a0}{libvlc\+\_\+meta\+\_\+t}}
+
+defgroup libvlc\+\_\+meta Lib\+V\+LC meta data\+Meta data types \mbox{\Hypertarget{group__libvlc__media_gac88ad60037ea05e1f23675a2ebe31efc}\label{group__libvlc__media_gac88ad60037ea05e1f23675a2ebe31efc}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+state\+\_\+t@{libvlc\+\_\+state\+\_\+t}}
+\index{libvlc\+\_\+state\+\_\+t@{libvlc\+\_\+state\+\_\+t}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+state\+\_\+t}{libvlc\_state\_t}}
+{\footnotesize\ttfamily enum \hyperlink{group__libvlc__media_gac88ad60037ea05e1f23675a2ebe31efc}{libvlc\+\_\+state\+\_\+t}}
+
+Note the order of libvlc\+\_\+state\+\_\+t enum must match exactly the order of \begin{DoxySeeAlso}{See also}
+mediacontrol\+\_\+\+Player\+Status, 
+
+\hyperlink{vlc__input_8h_a158f30c7fe25669dd399e71e5924ae3f}{input\+\_\+state\+\_\+e} enums, and Video\+L\+A\+N.\+Lib\+V\+L\+C.\+State (at bindings/cil/src/media.\+cs).
+\end{DoxySeeAlso}
+Expected states by web plugins are\+: I\+D\+L\+E/\+C\+L\+O\+SE=0, O\+P\+E\+N\+I\+NG=1, B\+U\+F\+F\+E\+R\+I\+NG=2, P\+L\+A\+Y\+I\+NG=3, P\+A\+U\+S\+ED=4, S\+T\+O\+P\+P\+I\+NG=5, E\+N\+D\+ED=6, E\+R\+R\+OR=7 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__libvlc__media_ga39511e64baa7c1fdbf89eddc88bf9e15}\label{group__libvlc__media_ga39511e64baa7c1fdbf89eddc88bf9e15}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+add\+\_\+option@{libvlc\+\_\+media\+\_\+add\+\_\+option}}
+\index{libvlc\+\_\+media\+\_\+add\+\_\+option@{libvlc\+\_\+media\+\_\+add\+\_\+option}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+add\+\_\+option()}{libvlc\_media\_add\_option()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+add\+\_\+option (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md,  }\item[{const char $\ast$}]{psz\+\_\+options }\end{DoxyParamCaption})}
+
+Add an option to the media.
+
+This option will be used to determine how the media\+\_\+player will read the media. This allows to use V\+LC\textquotesingle{}s advanced reading/streaming options on a per-\/media basis.
+
+\begin{DoxyNote}{Note}
+The options are listed in \textquotesingle{}vlc --long-\/help\textquotesingle{} from the command line, e.\+g. \char`\"{}-\/sout-\/all\char`\"{}. Keep in mind that available options and their semantics vary across Lib\+V\+LC versions and builds. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Not all options affects libvlc\+\_\+media\+\_\+t objects\+: Specifically, due to architectural issues most audio and video options, such as text renderer options, have no effects on an individual media. These options must be set through \hyperlink{group__libvlc__core_ga1ecba605b37df9e62d2f8c0290ef3893}{libvlc\+\_\+new()} instead.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & the media descriptor \\
+\hline
+{\em psz\+\_\+options} & the options (as a string) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media_ga96d5e0f418eecf74149057796160fd3a}\label{group__libvlc__media_ga96d5e0f418eecf74149057796160fd3a}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+add\+\_\+option\+\_\+flag@{libvlc\+\_\+media\+\_\+add\+\_\+option\+\_\+flag}}
+\index{libvlc\+\_\+media\+\_\+add\+\_\+option\+\_\+flag@{libvlc\+\_\+media\+\_\+add\+\_\+option\+\_\+flag}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+add\+\_\+option\+\_\+flag()}{libvlc\_media\_add\_option\_flag()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+add\+\_\+option\+\_\+flag (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md,  }\item[{const char $\ast$}]{psz\+\_\+options,  }\item[{unsigned}]{i\+\_\+flags }\end{DoxyParamCaption})}
+
+Add an option to the media with configurable flags.
+
+This option will be used to determine how the media\+\_\+player will read the media. This allows to use V\+LC\textquotesingle{}s advanced reading/streaming options on a per-\/media basis.
+
+The options are detailed in vlc --long-\/help, for instance \char`\"{}-\/-\/sout-\/all\char`\"{}. Note that all options are not usable on medias\+: specifically, due to architectural issues, video-\/related options such as text renderer options cannot be set on a single media. They must be set on the whole libvlc instance instead.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & the media descriptor \\
+\hline
+{\em psz\+\_\+options} & the options (as a string) \\
+\hline
+{\em i\+\_\+flags} & the flags for this option \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media_ga638229cdb4fbb5708df632dd631534f9}\label{group__libvlc__media_ga638229cdb4fbb5708df632dd631534f9}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+duplicate@{libvlc\+\_\+media\+\_\+duplicate}}
+\index{libvlc\+\_\+media\+\_\+duplicate@{libvlc\+\_\+media\+\_\+duplicate}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+duplicate()}{libvlc\_media\_duplicate()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t$\ast$ libvlc\+\_\+media\+\_\+duplicate (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md }\end{DoxyParamCaption})}
+
+Duplicate a media descriptor object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & a media descriptor object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media_ga92b9e97a3e37e91abe9dcafd2387f2cc}\label{group__libvlc__media_ga92b9e97a3e37e91abe9dcafd2387f2cc}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+event\+\_\+manager@{libvlc\+\_\+media\+\_\+event\+\_\+manager}}
+\index{libvlc\+\_\+media\+\_\+event\+\_\+manager@{libvlc\+\_\+media\+\_\+event\+\_\+manager}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+event\+\_\+manager()}{libvlc\_media\_event\_manager()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t}$\ast$ libvlc\+\_\+media\+\_\+event\+\_\+manager (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md }\end{DoxyParamCaption})}
+
+Get event manager from media descriptor object. N\+O\+TE\+: this function doesn\textquotesingle{}t increment reference counting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & a media descriptor object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+event manager object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media_gadd2c47a0112a31e200a0145d0504873b}\label{group__libvlc__media_gadd2c47a0112a31e200a0145d0504873b}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+get\+\_\+duration@{libvlc\+\_\+media\+\_\+get\+\_\+duration}}
+\index{libvlc\+\_\+media\+\_\+get\+\_\+duration@{libvlc\+\_\+media\+\_\+get\+\_\+duration}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+get\+\_\+duration()}{libvlc\_media\_get\_duration()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+time\+\_\+t libvlc\+\_\+media\+\_\+get\+\_\+duration (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md }\end{DoxyParamCaption})}
+
+Get duration (in ms) of media descriptor object item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & media descriptor object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+duration of media item or -\/1 on error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media_ga47684ea1970f0c5cddb96a717a75ed6f}\label{group__libvlc__media_ga47684ea1970f0c5cddb96a717a75ed6f}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+get\+\_\+meta@{libvlc\+\_\+media\+\_\+get\+\_\+meta}}
+\index{libvlc\+\_\+media\+\_\+get\+\_\+meta@{libvlc\+\_\+media\+\_\+get\+\_\+meta}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+get\+\_\+meta()}{libvlc\_media\_get\_meta()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI char$\ast$ libvlc\+\_\+media\+\_\+get\+\_\+meta (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md,  }\item[{\hyperlink{group__libvlc__media_ga90e7814a020f87d4c443d8d09b6dd4a0}{libvlc\+\_\+meta\+\_\+t}}]{e\+\_\+meta }\end{DoxyParamCaption})}
+
+Read the meta of the media.
+
+If the media has not yet been parsed this will return N\+U\+LL.
+
+This methods automatically calls \hyperlink{group__libvlc__media_gada166e6385518f9d5826c2dce647a475}{libvlc\+\_\+media\+\_\+parse\+\_\+async()}, so after calling it you may receive a libvlc\+\_\+\+Media\+Meta\+Changed event. If you prefer a synchronous version ensure that you call \hyperlink{group__libvlc__media_gad9e48150dcb1a066c51688f6e4a216f1}{libvlc\+\_\+media\+\_\+parse()} before get\+\_\+meta().
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__libvlc__media_gad9e48150dcb1a066c51688f6e4a216f1}{libvlc\+\_\+media\+\_\+parse} 
+
+\hyperlink{group__libvlc__media_gada166e6385518f9d5826c2dce647a475}{libvlc\+\_\+media\+\_\+parse\+\_\+async} 
+
+libvlc\+\_\+\+Media\+Meta\+Changed
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & the media descriptor \\
+\hline
+{\em e\+\_\+meta} & the meta to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the media\textquotesingle{}s meta 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media_ga88cd51e19ac7848bb15352eeddd32b9c}\label{group__libvlc__media_ga88cd51e19ac7848bb15352eeddd32b9c}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+get\+\_\+mrl@{libvlc\+\_\+media\+\_\+get\+\_\+mrl}}
+\index{libvlc\+\_\+media\+\_\+get\+\_\+mrl@{libvlc\+\_\+media\+\_\+get\+\_\+mrl}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+get\+\_\+mrl()}{libvlc\_media\_get\_mrl()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI char$\ast$ libvlc\+\_\+media\+\_\+get\+\_\+mrl (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md }\end{DoxyParamCaption})}
+
+Get the media resource locator (mrl) from a media descriptor object
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & a media descriptor object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string with mrl of media descriptor object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media_ga894c92329fb83d8b55f105b4e1fdfbb8}\label{group__libvlc__media_ga894c92329fb83d8b55f105b4e1fdfbb8}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+get\+\_\+state@{libvlc\+\_\+media\+\_\+get\+\_\+state}}
+\index{libvlc\+\_\+media\+\_\+get\+\_\+state@{libvlc\+\_\+media\+\_\+get\+\_\+state}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+get\+\_\+state()}{libvlc\_media\_get\_state()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__media_gac88ad60037ea05e1f23675a2ebe31efc}{libvlc\+\_\+state\+\_\+t} libvlc\+\_\+media\+\_\+get\+\_\+state (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md }\end{DoxyParamCaption})}
+
+Get current state of media descriptor object. Possible media states are defined in libvlc\+\_\+structures.\+c ( libvlc\+\_\+\+Nothing\+Special=0, libvlc\+\_\+\+Opening, libvlc\+\_\+\+Buffering, libvlc\+\_\+\+Playing, libvlc\+\_\+\+Paused, libvlc\+\_\+\+Stopped, libvlc\+\_\+\+Ended, libvlc\+\_\+\+Error).
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__libvlc__media_gac88ad60037ea05e1f23675a2ebe31efc}{libvlc\+\_\+state\+\_\+t} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & a media descriptor object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state of media descriptor object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media_ga8043c9dbf07c6286e918d7d38e467c3e}\label{group__libvlc__media_ga8043c9dbf07c6286e918d7d38e467c3e}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+get\+\_\+stats@{libvlc\+\_\+media\+\_\+get\+\_\+stats}}
+\index{libvlc\+\_\+media\+\_\+get\+\_\+stats@{libvlc\+\_\+media\+\_\+get\+\_\+stats}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+get\+\_\+stats()}{libvlc\_media\_get\_stats()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+get\+\_\+stats (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md,  }\item[{\hyperlink{structlibvlc__media__stats__t}{libvlc\+\_\+media\+\_\+stats\+\_\+t} $\ast$}]{p\+\_\+stats }\end{DoxyParamCaption})}
+
+Get the current statistics about the media 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & media descriptor object \\
+\hline
+{\em p\+\_\+stats} & structure that contain the statistics about the media (this structure must be allocated by the caller) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the statistics are available, false otherwise
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media_ga2102c151df0ab66d6158a80b7734f0f9}\label{group__libvlc__media_ga2102c151df0ab66d6158a80b7734f0f9}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+get\+\_\+tracks\+\_\+info@{libvlc\+\_\+media\+\_\+get\+\_\+tracks\+\_\+info}}
+\index{libvlc\+\_\+media\+\_\+get\+\_\+tracks\+\_\+info@{libvlc\+\_\+media\+\_\+get\+\_\+tracks\+\_\+info}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+get\+\_\+tracks\+\_\+info()}{libvlc\_media\_get\_tracks\_info()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+get\+\_\+tracks\+\_\+info (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md,  }\item[{libvlc\+\_\+media\+\_\+track\+\_\+info\+\_\+t $\ast$$\ast$}]{tracks }\end{DoxyParamCaption})}
+
+Get media descriptor\textquotesingle{}s elementary streams description
+
+Note, you need to call \hyperlink{group__libvlc__media_gad9e48150dcb1a066c51688f6e4a216f1}{libvlc\+\_\+media\+\_\+parse()} or play the media at least once before calling this function. Not doing this will result in an empty array.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000054}{Deprecated}]Use libvlc\+\_\+media\+\_\+tracks\+\_\+get instead\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & media descriptor object \\
+\hline
+{\em tracks} & address to store an allocated array of Elementary Streams descriptions (must be freed by the caller) \mbox{[}O\+UT\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of Elementary Streams 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media_ga1aa2355e48bbb47a7f8d7f1bb4a8101f}\label{group__libvlc__media_ga1aa2355e48bbb47a7f8d7f1bb4a8101f}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+get\+\_\+user\+\_\+data@{libvlc\+\_\+media\+\_\+get\+\_\+user\+\_\+data}}
+\index{libvlc\+\_\+media\+\_\+get\+\_\+user\+\_\+data@{libvlc\+\_\+media\+\_\+get\+\_\+user\+\_\+data}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+get\+\_\+user\+\_\+data()}{libvlc\_media\_get\_user\_data()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void$\ast$ libvlc\+\_\+media\+\_\+get\+\_\+user\+\_\+data (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md }\end{DoxyParamCaption})}
+
+Get media descriptor\textquotesingle{}s user\+\_\+data. user\+\_\+data is specialized data accessed by the host application, V\+L\+C.\+framework uses it as a pointer to an native object that references a libvlc\+\_\+media\+\_\+t pointer
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & media descriptor object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media_ga9b8ce78027b0dadfa555fc33d2a033a6}\label{group__libvlc__media_ga9b8ce78027b0dadfa555fc33d2a033a6}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+is\+\_\+parsed@{libvlc\+\_\+media\+\_\+is\+\_\+parsed}}
+\index{libvlc\+\_\+media\+\_\+is\+\_\+parsed@{libvlc\+\_\+media\+\_\+is\+\_\+parsed}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+is\+\_\+parsed()}{libvlc\_media\_is\_parsed()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+is\+\_\+parsed (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md }\end{DoxyParamCaption})}
+
+Get Parsed status for media descriptor object.
+
+\begin{DoxySeeAlso}{See also}
+libvlc\+\_\+\+Media\+Parsed\+Changed
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & media descriptor object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if media object has been parsed otherwise it returns false
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media_ga1ccfa7815260b22adf96cc538a45fe77}\label{group__libvlc__media_ga1ccfa7815260b22adf96cc538a45fe77}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+new\+\_\+as\+\_\+node@{libvlc\+\_\+media\+\_\+new\+\_\+as\+\_\+node}}
+\index{libvlc\+\_\+media\+\_\+new\+\_\+as\+\_\+node@{libvlc\+\_\+media\+\_\+new\+\_\+as\+\_\+node}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+new\+\_\+as\+\_\+node()}{libvlc\_media\_new\_as\_node()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t$\ast$ libvlc\+\_\+media\+\_\+new\+\_\+as\+\_\+node (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance,  }\item[{const char $\ast$}]{psz\+\_\+name }\end{DoxyParamCaption})}
+
+Create a media as an empty node with a given name.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__libvlc__media_gaffccede262624a361e20c3e887fa9b42}{libvlc\+\_\+media\+\_\+release}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & the instance \\
+\hline
+{\em psz\+\_\+name} & the name of the node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new empty media or N\+U\+LL on error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media_ga192451a6b5fef7be482313876a4c3054}\label{group__libvlc__media_ga192451a6b5fef7be482313876a4c3054}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+new\+\_\+fd@{libvlc\+\_\+media\+\_\+new\+\_\+fd}}
+\index{libvlc\+\_\+media\+\_\+new\+\_\+fd@{libvlc\+\_\+media\+\_\+new\+\_\+fd}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+new\+\_\+fd()}{libvlc\_media\_new\_fd()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t$\ast$ libvlc\+\_\+media\+\_\+new\+\_\+fd (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance,  }\item[{int}]{fd }\end{DoxyParamCaption})}
+
+Create a media for an already open file descriptor. The file descriptor shall be open for reading (or reading and writing).
+
+Regular file descriptors, pipe read descriptors and character device descriptors (including T\+T\+Ys) are supported on all platforms. Block device descriptors are supported where available. Directory descriptors are supported on systems that provide fdopendir(). Sockets are supported on all platforms where they are file descriptors, i.\+e. all except Windows.
+
+\begin{DoxyNote}{Note}
+This library will {\bfseries not} automatically close the file descriptor under any circumstance. Nevertheless, a file descriptor can usually only be rendered once in a media player. To render it a second time, the file descriptor should probably be rewound to the beginning with lseek().
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__libvlc__media_gaffccede262624a361e20c3e887fa9b42}{libvlc\+\_\+media\+\_\+release}
+\end{DoxySeeAlso}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 1.\+1.\+5 and later.
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & the instance \\
+\hline
+{\em fd} & open file descriptor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the newly created media or N\+U\+LL on error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media_gae1d3baee3f4610c6fe5818defcad3e6f}\label{group__libvlc__media_gae1d3baee3f4610c6fe5818defcad3e6f}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+new\+\_\+location@{libvlc\+\_\+media\+\_\+new\+\_\+location}}
+\index{libvlc\+\_\+media\+\_\+new\+\_\+location@{libvlc\+\_\+media\+\_\+new\+\_\+location}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+new\+\_\+location()}{libvlc\_media\_new\_location()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t$\ast$ libvlc\+\_\+media\+\_\+new\+\_\+location (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance,  }\item[{const char $\ast$}]{psz\+\_\+mrl }\end{DoxyParamCaption})}
+
+Create a media with a certain given media resource location, for instance a valid U\+RL.
+
+\begin{DoxyNote}{Note}
+To refer to a local file with this function, the \href{file://..}{\tt file\+://..}. U\+RI syntax {\bfseries must} be used (see I\+E\+TF R\+F\+C3986). We recommend using \hyperlink{group__libvlc__media_ga051342375370f3bf3821a537d4413435}{libvlc\+\_\+media\+\_\+new\+\_\+path()} instead when dealing with local files.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__libvlc__media_gaffccede262624a361e20c3e887fa9b42}{libvlc\+\_\+media\+\_\+release}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & the instance \\
+\hline
+{\em psz\+\_\+mrl} & the media location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the newly created media or N\+U\+LL on error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media_ga051342375370f3bf3821a537d4413435}\label{group__libvlc__media_ga051342375370f3bf3821a537d4413435}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+new\+\_\+path@{libvlc\+\_\+media\+\_\+new\+\_\+path}}
+\index{libvlc\+\_\+media\+\_\+new\+\_\+path@{libvlc\+\_\+media\+\_\+new\+\_\+path}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+new\+\_\+path()}{libvlc\_media\_new\_path()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t$\ast$ libvlc\+\_\+media\+\_\+new\+\_\+path (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance,  }\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+Create a media for a certain file path.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__libvlc__media_gaffccede262624a361e20c3e887fa9b42}{libvlc\+\_\+media\+\_\+release}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & the instance \\
+\hline
+{\em path} & local filesystem path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the newly created media or N\+U\+LL on error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media_gad9e48150dcb1a066c51688f6e4a216f1}\label{group__libvlc__media_gad9e48150dcb1a066c51688f6e4a216f1}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+parse@{libvlc\+\_\+media\+\_\+parse}}
+\index{libvlc\+\_\+media\+\_\+parse@{libvlc\+\_\+media\+\_\+parse}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+parse()}{libvlc\_media\_parse()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+parse (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md }\end{DoxyParamCaption})}
+
+Parse a media.
+
+This fetches (local) meta data and tracks information. The method is synchronous.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__libvlc__media_gada166e6385518f9d5826c2dce647a475}{libvlc\+\_\+media\+\_\+parse\+\_\+async} 
+
+\hyperlink{group__libvlc__media_ga47684ea1970f0c5cddb96a717a75ed6f}{libvlc\+\_\+media\+\_\+get\+\_\+meta} 
+
+\hyperlink{group__libvlc__media_ga2102c151df0ab66d6158a80b7734f0f9}{libvlc\+\_\+media\+\_\+get\+\_\+tracks\+\_\+info}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & media descriptor object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media_gada166e6385518f9d5826c2dce647a475}\label{group__libvlc__media_gada166e6385518f9d5826c2dce647a475}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+parse\+\_\+async@{libvlc\+\_\+media\+\_\+parse\+\_\+async}}
+\index{libvlc\+\_\+media\+\_\+parse\+\_\+async@{libvlc\+\_\+media\+\_\+parse\+\_\+async}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+parse\+\_\+async()}{libvlc\_media\_parse\_async()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+parse\+\_\+async (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md }\end{DoxyParamCaption})}
+
+Parse a media.
+
+This fetches (local) meta data and tracks information. The method is the asynchronous of \hyperlink{group__libvlc__media_gad9e48150dcb1a066c51688f6e4a216f1}{libvlc\+\_\+media\+\_\+parse()}.
+
+To track when this is over you can listen to libvlc\+\_\+\+Media\+Parsed\+Changed event. However if the media was already parsed you will not receive this event.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__libvlc__media_gad9e48150dcb1a066c51688f6e4a216f1}{libvlc\+\_\+media\+\_\+parse} 
+
+libvlc\+\_\+\+Media\+Parsed\+Changed 
+
+\hyperlink{group__libvlc__media_ga47684ea1970f0c5cddb96a717a75ed6f}{libvlc\+\_\+media\+\_\+get\+\_\+meta} 
+
+\hyperlink{group__libvlc__media_ga2102c151df0ab66d6158a80b7734f0f9}{libvlc\+\_\+media\+\_\+get\+\_\+tracks\+\_\+info}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & media descriptor object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media_gaffccede262624a361e20c3e887fa9b42}\label{group__libvlc__media_gaffccede262624a361e20c3e887fa9b42}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+release@{libvlc\+\_\+media\+\_\+release}}
+\index{libvlc\+\_\+media\+\_\+release@{libvlc\+\_\+media\+\_\+release}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+release()}{libvlc\_media\_release()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+release (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md }\end{DoxyParamCaption})}
+
+Decrement the reference count of a media descriptor object. If the reference count is 0, then \hyperlink{group__libvlc__media_gaffccede262624a361e20c3e887fa9b42}{libvlc\+\_\+media\+\_\+release()} will release the media descriptor object. It will send out an libvlc\+\_\+\+Media\+Freed event to all listeners. If the media descriptor object has been released it should not be used again.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & the media descriptor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media_gaf4be74c918bc34ea4182e8028ea5f0ba}\label{group__libvlc__media_gaf4be74c918bc34ea4182e8028ea5f0ba}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+retain@{libvlc\+\_\+media\+\_\+retain}}
+\index{libvlc\+\_\+media\+\_\+retain@{libvlc\+\_\+media\+\_\+retain}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+retain()}{libvlc\_media\_retain()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+retain (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md }\end{DoxyParamCaption})}
+
+Retain a reference to a media descriptor object (libvlc\+\_\+media\+\_\+t). Use \hyperlink{group__libvlc__media_gaffccede262624a361e20c3e887fa9b42}{libvlc\+\_\+media\+\_\+release()} to decrement the reference count of a media descriptor object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & the media descriptor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media_ga7b5c8c9206b71627a1a600e165d3c1e5}\label{group__libvlc__media_ga7b5c8c9206b71627a1a600e165d3c1e5}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+save\+\_\+meta@{libvlc\+\_\+media\+\_\+save\+\_\+meta}}
+\index{libvlc\+\_\+media\+\_\+save\+\_\+meta@{libvlc\+\_\+media\+\_\+save\+\_\+meta}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+save\+\_\+meta()}{libvlc\_media\_save\_meta()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+save\+\_\+meta (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md }\end{DoxyParamCaption})}
+
+Save the meta previously set
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & the media desriptor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the write operation was successful 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media_gae116bf2e93c0e51aa5824f6e69aeaa64}\label{group__libvlc__media_gae116bf2e93c0e51aa5824f6e69aeaa64}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+set\+\_\+meta@{libvlc\+\_\+media\+\_\+set\+\_\+meta}}
+\index{libvlc\+\_\+media\+\_\+set\+\_\+meta@{libvlc\+\_\+media\+\_\+set\+\_\+meta}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+set\+\_\+meta()}{libvlc\_media\_set\_meta()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+set\+\_\+meta (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md,  }\item[{\hyperlink{group__libvlc__media_ga90e7814a020f87d4c443d8d09b6dd4a0}{libvlc\+\_\+meta\+\_\+t}}]{e\+\_\+meta,  }\item[{const char $\ast$}]{psz\+\_\+value }\end{DoxyParamCaption})}
+
+Set the meta of the media (this function will not save the meta, call libvlc\+\_\+media\+\_\+save\+\_\+meta in order to save the meta)
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & the media descriptor \\
+\hline
+{\em e\+\_\+meta} & the meta to write \\
+\hline
+{\em psz\+\_\+value} & the media\textquotesingle{}s meta \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media_ga56dac0c5cb70b417ada18b2ebb9cd0e3}\label{group__libvlc__media_ga56dac0c5cb70b417ada18b2ebb9cd0e3}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+set\+\_\+user\+\_\+data@{libvlc\+\_\+media\+\_\+set\+\_\+user\+\_\+data}}
+\index{libvlc\+\_\+media\+\_\+set\+\_\+user\+\_\+data@{libvlc\+\_\+media\+\_\+set\+\_\+user\+\_\+data}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+set\+\_\+user\+\_\+data()}{libvlc\_media\_set\_user\_data()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+set\+\_\+user\+\_\+data (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md,  }\item[{void $\ast$}]{p\+\_\+new\+\_\+user\+\_\+data }\end{DoxyParamCaption})}
+
+Sets media descriptor\textquotesingle{}s user\+\_\+data. user\+\_\+data is specialized data accessed by the host application, V\+L\+C.\+framework uses it as a pointer to an native object that references a libvlc\+\_\+media\+\_\+t pointer
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & media descriptor object \\
+\hline
+{\em p\+\_\+new\+\_\+user\+\_\+data} & pointer to user data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media_ga33f5fef54e3750ab55744007e0e80f02}\label{group__libvlc__media_ga33f5fef54e3750ab55744007e0e80f02}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+tracks\+\_\+get@{libvlc\+\_\+media\+\_\+tracks\+\_\+get}}
+\index{libvlc\+\_\+media\+\_\+tracks\+\_\+get@{libvlc\+\_\+media\+\_\+tracks\+\_\+get}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+tracks\+\_\+get()}{libvlc\_media\_tracks\_get()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI unsigned libvlc\+\_\+media\+\_\+tracks\+\_\+get (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md,  }\item[{libvlc\+\_\+media\+\_\+track\+\_\+t $\ast$$\ast$$\ast$}]{tracks }\end{DoxyParamCaption})}
+
+Get media descriptor\textquotesingle{}s elementary streams description
+
+Note, you need to call \hyperlink{group__libvlc__media_gad9e48150dcb1a066c51688f6e4a216f1}{libvlc\+\_\+media\+\_\+parse()} or play the media at least once before calling this function. Not doing this will result in an empty array.
+
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+1.\+0 and later.
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & media descriptor object \\
+\hline
+{\em tracks} & address to store an allocated array of Elementary Streams descriptions (must be freed with libvlc\+\_\+media\+\_\+tracks\+\_\+release by the caller) \mbox{[}O\+UT\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of Elementary Streams (zero on error) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media_ga9db98f62bb939cc49fbbd227d027850c}\label{group__libvlc__media_ga9db98f62bb939cc49fbbd227d027850c}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!libvlc\+\_\+media\+\_\+tracks\+\_\+release@{libvlc\+\_\+media\+\_\+tracks\+\_\+release}}
+\index{libvlc\+\_\+media\+\_\+tracks\+\_\+release@{libvlc\+\_\+media\+\_\+tracks\+\_\+release}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+tracks\+\_\+release()}{libvlc\_media\_tracks\_release()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+tracks\+\_\+release (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+track\+\_\+t $\ast$$\ast$}]{p\+\_\+tracks,  }\item[{unsigned}]{i\+\_\+count }\end{DoxyParamCaption})}
+
+Release media descriptor\textquotesingle{}s elementary streams description array
+
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+1.\+0 and later.
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+tracks} & tracks info array to release \\
+\hline
+{\em i\+\_\+count} & number of elements in the array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media_gaacfff95cbbba67b39a47b7bdbfff1dba}\label{group__libvlc__media_gaacfff95cbbba67b39a47b7bdbfff1dba}} 
+\index{Lib\+V\+L\+C media@{Lib\+V\+L\+C media}!V\+L\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+O\+B\+J\+E\+CT@{V\+L\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+O\+B\+J\+E\+CT}}
+\index{V\+L\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+O\+B\+J\+E\+CT@{V\+L\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+O\+B\+J\+E\+CT}!Lib\+V\+L\+C media@{Lib\+V\+L\+C media}}
+\subsubsection{\texorpdfstring{V\+L\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+O\+B\+J\+E\+C\+T()}{VLC\_FORWARD\_DECLARE\_OBJECT()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI V\+L\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+O\+B\+J\+E\+CT (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+Get subitems of media descriptor object. This will increment the reference count of supplied media descriptor object. Use \hyperlink{group__libvlc__media__list_ga690973281c2f7f32cd366914a08c68dc}{libvlc\+\_\+media\+\_\+list\+\_\+release()} to decrement the reference counting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+md} & media descriptor object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of media descriptor subitems or N\+U\+LL 
+\end{DoxyReturn}

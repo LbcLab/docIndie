@@ -12,12 +12,41 @@ Default moveable window G\+UI element with border, caption and close icons.
 Inheritance diagram for irr\+:\+:gui\+:\+:I\+G\+U\+I\+Window\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{classirr_1_1gui_1_1IGUIWindow}
+\includegraphics[height=4.038462cm]{classirr_1_1gui_1_1IGUIWindow}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIWindow_a964282be17981b8287b0a85d65a4008d}\label{classirr_1_1gui_1_1IGUIWindow_a964282be17981b8287b0a85d65a4008d}} 
+\hyperlink{classirr_1_1gui_1_1IGUIWindow_a964282be17981b8287b0a85d65a4008d}{I\+G\+U\+I\+Window} (\hyperlink{classirr_1_1gui_1_1IGUIEnvironment}{I\+G\+U\+I\+Environment} $\ast$environment, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ rectangle)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIButton}{I\+G\+U\+I\+Button} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIWindow_ae5b6abf3c9d8d0af5539adf3fea8db70}{get\+Close\+Button} () const =0
+\begin{DoxyCompactList}\small\item\em Returns pointer to the close button. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIButton}{I\+G\+U\+I\+Button} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIWindow_a9c9b5060ca57c46bfece1339ef30facb}{get\+Minimize\+Button} () const =0
+\begin{DoxyCompactList}\small\item\em Returns pointer to the minimize button. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIButton}{I\+G\+U\+I\+Button} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIWindow_a7b5976907664ed8603f3a603079d3b15}{get\+Maximize\+Button} () const =0
+\begin{DoxyCompactList}\small\item\em Returns pointer to the maximize button. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIWindow_a466621df62d0dd97eb008efd3d31d4d9}\label{classirr_1_1gui_1_1IGUIWindow_a466621df62d0dd97eb008efd3d31d4d9}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIWindow_a466621df62d0dd97eb008efd3d31d4d9}{is\+Draggable} () const =0
+\begin{DoxyCompactList}\small\item\em Returns true if the window can be dragged with the mouse, false if not. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIWindow_aeec78bc610444411cafd5925ab7650a7}\label{classirr_1_1gui_1_1IGUIWindow_aeec78bc610444411cafd5925ab7650a7}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIWindow_aeec78bc610444411cafd5925ab7650a7}{set\+Draggable} (bool draggable)=0
+\begin{DoxyCompactList}\small\item\em Sets whether the window can be dragged by the mouse. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIWindow_a76f7d790554c6bd60b601a64a4127169}\label{classirr_1_1gui_1_1IGUIWindow_a76f7d790554c6bd60b601a64a4127169}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIWindow_a76f7d790554c6bd60b601a64a4127169}{set\+Draw\+Background} (bool \hyperlink{classirr_1_1gui_1_1IGUIElement_a1ef7eeaff67b8a9f4f37cacdc7e54be2}{draw})=0
+\begin{DoxyCompactList}\small\item\em Set if the window background will be drawn. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIWindow_a6a7720d558220d29125bc494961f4463}\label{classirr_1_1gui_1_1IGUIWindow_a6a7720d558220d29125bc494961f4463}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIWindow_a6a7720d558220d29125bc494961f4463}{get\+Draw\+Background} () const =0
+\begin{DoxyCompactList}\small\item\em Get if the window background will be drawn. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIWindow_ae8fa25bf5eec28b8fd663f2e3856200b}\label{classirr_1_1gui_1_1IGUIWindow_ae8fa25bf5eec28b8fd663f2e3856200b}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIWindow_ae8fa25bf5eec28b8fd663f2e3856200b}{set\+Draw\+Titlebar} (bool \hyperlink{classirr_1_1gui_1_1IGUIElement_a1ef7eeaff67b8a9f4f37cacdc7e54be2}{draw})=0
+\begin{DoxyCompactList}\small\item\em Set if the window titlebar will be drawn Note\+: If the background is not drawn, then the titlebar is automatically also not drawn. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIWindow_a634a224a31577fb7eeef578c9a351b69}\label{classirr_1_1gui_1_1IGUIWindow_a634a224a31577fb7eeef578c9a351b69}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIWindow_a634a224a31577fb7eeef578c9a351b69}{get\+Draw\+Titlebar} () const =0
+\begin{DoxyCompactList}\small\item\em Get if the window titlebar will be drawn. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \hyperlink{classirr_1_1gui_1_1IGUIWindow_aa6d240eb9d5b9b44c0e45fcef47e6216}{get\+Client\+Rect} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the rectangle of the drawable area (without border and without titlebar) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIWindow_a964282be17981b8287b0a85d65a4008d}\label{classirr_1_1gui_1_1IGUIWindow_a964282be17981b8287b0a85d65a4008d}} 
 \hyperlink{classirr_1_1gui_1_1IGUIWindow_a964282be17981b8287b0a85d65a4008d}{I\+G\+U\+I\+Window} (\hyperlink{classirr_1_1gui_1_1IGUIEnvironment}{I\+G\+U\+I\+Environment} $\ast$environment, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ rectangle)
 \begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
@@ -64,7 +93,19 @@ Default moveable window G\+UI element with border, caption and close icons.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIWindow_aa6d240eb9d5b9b44c0e45fcef47e6216}\label{classirr_1_1gui_1_1IGUIWindow_aa6d240eb9d5b9b44c0e45fcef47e6216}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Window@{irr\+::gui\+::\+I\+G\+U\+I\+Window}!get\+Client\+Rect@{get\+Client\+Rect}}
 \index{get\+Client\+Rect@{get\+Client\+Rect}!irr\+::gui\+::\+I\+G\+U\+I\+Window@{irr\+::gui\+::\+I\+G\+U\+I\+Window}}
-\subsubsection{\texorpdfstring{get\+Client\+Rect()}{getClientRect()}}
+\subsubsection{\texorpdfstring{get\+Client\+Rect()}{getClientRect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}$>$ irr\+::gui\+::\+I\+G\+U\+I\+Window\+::get\+Client\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the rectangle of the drawable area (without border and without titlebar) 
+
+The coordinates are given relative to the top-\/left position of the gui element.~\newline
+ So to get absolute positions you have to add the resulting rectangle to \hyperlink{classirr_1_1gui_1_1IGUIElement_a6c5b94dd889533a306a03e25d0998bdf}{get\+Absolute\+Position()}.Upper\+Left\+Corner.~\newline
+ To get it relative to the parent element you have to add the resulting rectangle to \hyperlink{classirr_1_1gui_1_1IGUIElement_a056c893bcfe330c9c6058b6027a45cef}{get\+Relative\+Position()}.Upper\+Left\+Corner. Beware that adding a menu will not change the client\+Rect as menus are own gui elements, so in that case you might want to subtract the menu area additionally. \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIWindow_aa6d240eb9d5b9b44c0e45fcef47e6216}\label{classirr_1_1gui_1_1IGUIWindow_aa6d240eb9d5b9b44c0e45fcef47e6216}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Window@{irr\+::gui\+::\+I\+G\+U\+I\+Window}!get\+Client\+Rect@{get\+Client\+Rect}}
+\index{get\+Client\+Rect@{get\+Client\+Rect}!irr\+::gui\+::\+I\+G\+U\+I\+Window@{irr\+::gui\+::\+I\+G\+U\+I\+Window}}
+\subsubsection{\texorpdfstring{get\+Client\+Rect()}{getClientRect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}$>$ irr\+::gui\+::\+I\+G\+U\+I\+Window\+::get\+Client\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -76,7 +117,17 @@ The coordinates are given relative to the top-\/left position of the gui element
  To get it relative to the parent element you have to add the resulting rectangle to \hyperlink{classirr_1_1gui_1_1IGUIElement_a056c893bcfe330c9c6058b6027a45cef}{get\+Relative\+Position()}.Upper\+Left\+Corner. Beware that adding a menu will not change the client\+Rect as menus are own gui elements, so in that case you might want to subtract the menu area additionally. \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIWindow_ae5b6abf3c9d8d0af5539adf3fea8db70}\label{classirr_1_1gui_1_1IGUIWindow_ae5b6abf3c9d8d0af5539adf3fea8db70}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Window@{irr\+::gui\+::\+I\+G\+U\+I\+Window}!get\+Close\+Button@{get\+Close\+Button}}
 \index{get\+Close\+Button@{get\+Close\+Button}!irr\+::gui\+::\+I\+G\+U\+I\+Window@{irr\+::gui\+::\+I\+G\+U\+I\+Window}}
-\subsubsection{\texorpdfstring{get\+Close\+Button()}{getCloseButton()}}
+\subsubsection{\texorpdfstring{get\+Close\+Button()}{getCloseButton()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIButton}{I\+G\+U\+I\+Button}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Window\+::get\+Close\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns pointer to the close button. 
+
+You can hide the button by calling set\+Visible(false) on the result. \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIWindow_ae5b6abf3c9d8d0af5539adf3fea8db70}\label{classirr_1_1gui_1_1IGUIWindow_ae5b6abf3c9d8d0af5539adf3fea8db70}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Window@{irr\+::gui\+::\+I\+G\+U\+I\+Window}!get\+Close\+Button@{get\+Close\+Button}}
+\index{get\+Close\+Button@{get\+Close\+Button}!irr\+::gui\+::\+I\+G\+U\+I\+Window@{irr\+::gui\+::\+I\+G\+U\+I\+Window}}
+\subsubsection{\texorpdfstring{get\+Close\+Button()}{getCloseButton()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIButton}{I\+G\+U\+I\+Button}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Window\+::get\+Close\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -86,7 +137,17 @@ Returns pointer to the close button.
 You can hide the button by calling set\+Visible(false) on the result. \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIWindow_a7b5976907664ed8603f3a603079d3b15}\label{classirr_1_1gui_1_1IGUIWindow_a7b5976907664ed8603f3a603079d3b15}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Window@{irr\+::gui\+::\+I\+G\+U\+I\+Window}!get\+Maximize\+Button@{get\+Maximize\+Button}}
 \index{get\+Maximize\+Button@{get\+Maximize\+Button}!irr\+::gui\+::\+I\+G\+U\+I\+Window@{irr\+::gui\+::\+I\+G\+U\+I\+Window}}
-\subsubsection{\texorpdfstring{get\+Maximize\+Button()}{getMaximizeButton()}}
+\subsubsection{\texorpdfstring{get\+Maximize\+Button()}{getMaximizeButton()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIButton}{I\+G\+U\+I\+Button}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Window\+::get\+Maximize\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns pointer to the maximize button. 
+
+You can hide the button by calling set\+Visible(false) on the result. \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIWindow_a7b5976907664ed8603f3a603079d3b15}\label{classirr_1_1gui_1_1IGUIWindow_a7b5976907664ed8603f3a603079d3b15}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Window@{irr\+::gui\+::\+I\+G\+U\+I\+Window}!get\+Maximize\+Button@{get\+Maximize\+Button}}
+\index{get\+Maximize\+Button@{get\+Maximize\+Button}!irr\+::gui\+::\+I\+G\+U\+I\+Window@{irr\+::gui\+::\+I\+G\+U\+I\+Window}}
+\subsubsection{\texorpdfstring{get\+Maximize\+Button()}{getMaximizeButton()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIButton}{I\+G\+U\+I\+Button}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Window\+::get\+Maximize\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -96,7 +157,17 @@ Returns pointer to the maximize button.
 You can hide the button by calling set\+Visible(false) on the result. \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIWindow_a9c9b5060ca57c46bfece1339ef30facb}\label{classirr_1_1gui_1_1IGUIWindow_a9c9b5060ca57c46bfece1339ef30facb}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Window@{irr\+::gui\+::\+I\+G\+U\+I\+Window}!get\+Minimize\+Button@{get\+Minimize\+Button}}
 \index{get\+Minimize\+Button@{get\+Minimize\+Button}!irr\+::gui\+::\+I\+G\+U\+I\+Window@{irr\+::gui\+::\+I\+G\+U\+I\+Window}}
-\subsubsection{\texorpdfstring{get\+Minimize\+Button()}{getMinimizeButton()}}
+\subsubsection{\texorpdfstring{get\+Minimize\+Button()}{getMinimizeButton()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIButton}{I\+G\+U\+I\+Button}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Window\+::get\+Minimize\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns pointer to the minimize button. 
+
+You can hide the button by calling set\+Visible(false) on the result. \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIWindow_a9c9b5060ca57c46bfece1339ef30facb}\label{classirr_1_1gui_1_1IGUIWindow_a9c9b5060ca57c46bfece1339ef30facb}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Window@{irr\+::gui\+::\+I\+G\+U\+I\+Window}!get\+Minimize\+Button@{get\+Minimize\+Button}}
+\index{get\+Minimize\+Button@{get\+Minimize\+Button}!irr\+::gui\+::\+I\+G\+U\+I\+Window@{irr\+::gui\+::\+I\+G\+U\+I\+Window}}
+\subsubsection{\texorpdfstring{get\+Minimize\+Button()}{getMinimizeButton()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIButton}{I\+G\+U\+I\+Button}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Window\+::get\+Minimize\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

@@ -74,10 +74,117 @@ $(function() {
 <p>3d vector template class with lots of operators and methods.  
  <a href="classirr_1_1core_1_1vector3d.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="vector3d_8h_source.html">vector3d.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="indie__share_2controller_2include_2vector3d_8h_source.html">vector3d.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aed8875ec8b9653857ea87fdb8213daf1"><td class="memItemLeft" align="right" valign="top"><a id="aed8875ec8b9653857ea87fdb8213daf1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#aed8875ec8b9653857ea87fdb8213daf1">vector3d</a> ()</td></tr>
+<tr class="memdesc:aed8875ec8b9653857ea87fdb8213daf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor (null vector). <br /></td></tr>
+<tr class="separator:aed8875ec8b9653857ea87fdb8213daf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10687f6e33f8f795961a9b8f0a71c79b"><td class="memItemLeft" align="right" valign="top"><a id="a10687f6e33f8f795961a9b8f0a71c79b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a10687f6e33f8f795961a9b8f0a71c79b">vector3d</a> (T nx, T ny, T nz)</td></tr>
+<tr class="memdesc:a10687f6e33f8f795961a9b8f0a71c79b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with three different values. <br /></td></tr>
+<tr class="separator:a10687f6e33f8f795961a9b8f0a71c79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08093c70044d66a5c3cdec2522b868f2"><td class="memItemLeft" align="right" valign="top"><a id="a08093c70044d66a5c3cdec2522b868f2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a08093c70044d66a5c3cdec2522b868f2">vector3d</a> (T n)</td></tr>
+<tr class="memdesc:a08093c70044d66a5c3cdec2522b868f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with the same value for all elements. <br /></td></tr>
+<tr class="separator:a08093c70044d66a5c3cdec2522b868f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039600f48ce75c9eca6c0899135e60d5"><td class="memItemLeft" align="right" valign="top"><a id="a039600f48ce75c9eca6c0899135e60d5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a039600f48ce75c9eca6c0899135e60d5">vector3d</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;other)</td></tr>
+<tr class="memdesc:a039600f48ce75c9eca6c0899135e60d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor. <br /></td></tr>
+<tr class="separator:a039600f48ce75c9eca6c0899135e60d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c48c162085c20e19be6630551bde0a"><td class="memItemLeft" align="right" valign="top"><a id="a57c48c162085c20e19be6630551bde0a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a57c48c162085c20e19be6630551bde0a">operator&lt;=</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;other) const</td></tr>
+<tr class="memdesc:a57c48c162085c20e19be6630551bde0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">sort in order X, Y, Z. Equality with rounding tolerance. <br /></td></tr>
+<tr class="separator:a57c48c162085c20e19be6630551bde0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a875266ef671a17b2e6646aeeaaa362d4"><td class="memItemLeft" align="right" valign="top"><a id="a875266ef671a17b2e6646aeeaaa362d4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a875266ef671a17b2e6646aeeaaa362d4">operator&gt;=</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;other) const</td></tr>
+<tr class="memdesc:a875266ef671a17b2e6646aeeaaa362d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">sort in order X, Y, Z. Equality with rounding tolerance. <br /></td></tr>
+<tr class="separator:a875266ef671a17b2e6646aeeaaa362d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351356db0565148c5d50da21a8509dc8"><td class="memItemLeft" align="right" valign="top"><a id="a351356db0565148c5d50da21a8509dc8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a351356db0565148c5d50da21a8509dc8">operator&lt;</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;other) const</td></tr>
+<tr class="memdesc:a351356db0565148c5d50da21a8509dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">sort in order X, Y, Z. Difference must be above rounding tolerance. <br /></td></tr>
+<tr class="separator:a351356db0565148c5d50da21a8509dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbbef0f4f396dc128c694631df71e18a"><td class="memItemLeft" align="right" valign="top"><a id="adbbef0f4f396dc128c694631df71e18a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#adbbef0f4f396dc128c694631df71e18a">operator&gt;</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;other) const</td></tr>
+<tr class="memdesc:adbbef0f4f396dc128c694631df71e18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">sort in order X, Y, Z. Difference must be above rounding tolerance. <br /></td></tr>
+<tr class="separator:adbbef0f4f396dc128c694631df71e18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd6ef83df8148b84a2220abb4847972f"><td class="memItemLeft" align="right" valign="top"><a id="afd6ef83df8148b84a2220abb4847972f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#afd6ef83df8148b84a2220abb4847972f">operator==</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;other) const</td></tr>
+<tr class="memdesc:afd6ef83df8148b84a2220abb4847972f"><td class="mdescLeft">&#160;</td><td class="mdescRight">use weak float compare <br /></td></tr>
+<tr class="separator:afd6ef83df8148b84a2220abb4847972f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d0853fe269182d76502724566db429e"><td class="memItemLeft" align="right" valign="top"><a id="a5d0853fe269182d76502724566db429e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a5d0853fe269182d76502724566db429e">equals</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;other, const T tolerance=(T) ROUNDING_ERROR_f32) const</td></tr>
+<tr class="memdesc:a5d0853fe269182d76502724566db429e"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns if this vector equals the other one, taking floating point rounding errors into account <br /></td></tr>
+<tr class="separator:a5d0853fe269182d76502724566db429e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1d3aec798edf0b2c34594c7260ad0e"><td class="memItemLeft" align="right" valign="top"><a id="a7f1d3aec798edf0b2c34594c7260ad0e"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a7f1d3aec798edf0b2c34594c7260ad0e">getLength</a> () const</td></tr>
+<tr class="memdesc:a7f1d3aec798edf0b2c34594c7260ad0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get length of the vector. <br /></td></tr>
+<tr class="separator:a7f1d3aec798edf0b2c34594c7260ad0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a480a5d34b0ebaa39b5da403249746cf0"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a480a5d34b0ebaa39b5da403249746cf0">getLengthSQ</a> () const</td></tr>
+<tr class="memdesc:a480a5d34b0ebaa39b5da403249746cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get squared length of the vector.  <a href="#a480a5d34b0ebaa39b5da403249746cf0">More...</a><br /></td></tr>
+<tr class="separator:a480a5d34b0ebaa39b5da403249746cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae220d3f24173601c5957961382588394"><td class="memItemLeft" align="right" valign="top"><a id="ae220d3f24173601c5957961382588394"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#ae220d3f24173601c5957961382588394">dotProduct</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;other) const</td></tr>
+<tr class="memdesc:ae220d3f24173601c5957961382588394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the dot product with another vector. <br /></td></tr>
+<tr class="separator:ae220d3f24173601c5957961382588394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab838ab8784f4e53453eb45223f624760"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#ab838ab8784f4e53453eb45223f624760">getDistanceFrom</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;other) const</td></tr>
+<tr class="memdesc:ab838ab8784f4e53453eb45223f624760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get distance from another point.  <a href="#ab838ab8784f4e53453eb45223f624760">More...</a><br /></td></tr>
+<tr class="separator:ab838ab8784f4e53453eb45223f624760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ba1b5d0cbf1b47245304e62c7fb5a1"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a01ba1b5d0cbf1b47245304e62c7fb5a1">getDistanceFromSQ</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;other) const</td></tr>
+<tr class="memdesc:a01ba1b5d0cbf1b47245304e62c7fb5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns squared distance from another point.  <a href="#a01ba1b5d0cbf1b47245304e62c7fb5a1">More...</a><br /></td></tr>
+<tr class="separator:a01ba1b5d0cbf1b47245304e62c7fb5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a868da2be92d9b5c05858a17bc580ddd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a868da2be92d9b5c05858a17bc580ddd6">crossProduct</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;p) const</td></tr>
+<tr class="memdesc:a868da2be92d9b5c05858a17bc580ddd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the cross product with another vector.  <a href="#a868da2be92d9b5c05858a17bc580ddd6">More...</a><br /></td></tr>
+<tr class="separator:a868da2be92d9b5c05858a17bc580ddd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbde78a7c345e22a6fd42f4c84e9038c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#abbde78a7c345e22a6fd42f4c84e9038c">isBetweenPoints</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;begin, const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;end) const</td></tr>
+<tr class="memdesc:abbde78a7c345e22a6fd42f4c84e9038c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if this vector interpreted as a point is on a line between two other points.  <a href="#abbde78a7c345e22a6fd42f4c84e9038c">More...</a><br /></td></tr>
+<tr class="separator:abbde78a7c345e22a6fd42f4c84e9038c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84a1861464ef70e6965c146732103c09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a84a1861464ef70e6965c146732103c09">normalize</a> ()</td></tr>
+<tr class="memdesc:a84a1861464ef70e6965c146732103c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes the vector.  <a href="#a84a1861464ef70e6965c146732103c09">More...</a><br /></td></tr>
+<tr class="separator:a84a1861464ef70e6965c146732103c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae593448ac63803b3d254b0e6c7600f28"><td class="memItemLeft" align="right" valign="top"><a id="ae593448ac63803b3d254b0e6c7600f28"></a>
+<a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#ae593448ac63803b3d254b0e6c7600f28">setLength</a> (T newlength)</td></tr>
+<tr class="memdesc:ae593448ac63803b3d254b0e6c7600f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the length of the vector to a new value. <br /></td></tr>
+<tr class="separator:ae593448ac63803b3d254b0e6c7600f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a10e03bc09f87b95fc81ea0d508722"><td class="memItemLeft" align="right" valign="top"><a id="a55a10e03bc09f87b95fc81ea0d508722"></a>
+<a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a55a10e03bc09f87b95fc81ea0d508722">invert</a> ()</td></tr>
+<tr class="memdesc:a55a10e03bc09f87b95fc81ea0d508722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverts the vector. <br /></td></tr>
+<tr class="separator:a55a10e03bc09f87b95fc81ea0d508722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a621fbddb42814edd3d14410252cf7b7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a621fbddb42814edd3d14410252cf7b7a">rotateXZBy</a> (<a class="el" href="namespaceirr.html#a1325b02603ad449f92c68fc640af9b28">f64</a> degrees, const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;center=<a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt;())</td></tr>
+<tr class="memdesc:a621fbddb42814edd3d14410252cf7b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the vector by a specified number of degrees around the Y axis and the specified center.  <a href="#a621fbddb42814edd3d14410252cf7b7a">More...</a><br /></td></tr>
+<tr class="separator:a621fbddb42814edd3d14410252cf7b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac38b75735ec06716305fbb09ec71784d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#ac38b75735ec06716305fbb09ec71784d">rotateXYBy</a> (<a class="el" href="namespaceirr.html#a1325b02603ad449f92c68fc640af9b28">f64</a> degrees, const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;center=<a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt;())</td></tr>
+<tr class="memdesc:ac38b75735ec06716305fbb09ec71784d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the vector by a specified number of degrees around the Z axis and the specified center.  <a href="#ac38b75735ec06716305fbb09ec71784d">More...</a><br /></td></tr>
+<tr class="separator:ac38b75735ec06716305fbb09ec71784d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa048312f75f152861479cb48e2ddfe4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#aaa048312f75f152861479cb48e2ddfe4">rotateYZBy</a> (<a class="el" href="namespaceirr.html#a1325b02603ad449f92c68fc640af9b28">f64</a> degrees, const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;center=<a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt;())</td></tr>
+<tr class="memdesc:aaa048312f75f152861479cb48e2ddfe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the vector by a specified number of degrees around the X axis and the specified center.  <a href="#aaa048312f75f152861479cb48e2ddfe4">More...</a><br /></td></tr>
+<tr class="separator:aaa048312f75f152861479cb48e2ddfe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee3351232fa6ebd6241a89bebdaeaedf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#aee3351232fa6ebd6241a89bebdaeaedf">getInterpolated</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;other, <a class="el" href="namespaceirr.html#a1325b02603ad449f92c68fc640af9b28">f64</a> d) const</td></tr>
+<tr class="memdesc:aee3351232fa6ebd6241a89bebdaeaedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an interpolated vector between this vector and another vector.  <a href="#aee3351232fa6ebd6241a89bebdaeaedf">More...</a><br /></td></tr>
+<tr class="separator:aee3351232fa6ebd6241a89bebdaeaedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacaa4bbf35d509b1264d1e8e2d48360e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#aacaa4bbf35d509b1264d1e8e2d48360e">getInterpolated_quadratic</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;v2, const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;v3, <a class="el" href="namespaceirr.html#a1325b02603ad449f92c68fc640af9b28">f64</a> d) const</td></tr>
+<tr class="memdesc:aacaa4bbf35d509b1264d1e8e2d48360e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quadratically interpolated vector between this and two other vectors.  <a href="#aacaa4bbf35d509b1264d1e8e2d48360e">More...</a><br /></td></tr>
+<tr class="separator:aacaa4bbf35d509b1264d1e8e2d48360e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a888e0f608a20deee98c794a321c4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a32a888e0f608a20deee98c794a321c4c">interpolate</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;a, const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;b, <a class="el" href="namespaceirr.html#a1325b02603ad449f92c68fc640af9b28">f64</a> d)</td></tr>
+<tr class="memdesc:a32a888e0f608a20deee98c794a321c4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets this vector to the linearly interpolated vector between a and b.  <a href="#a32a888e0f608a20deee98c794a321c4c">More...</a><br /></td></tr>
+<tr class="separator:a32a888e0f608a20deee98c794a321c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c622aa988b4ea1d2e381632f99f8015"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a2c622aa988b4ea1d2e381632f99f8015">getHorizontalAngle</a> () const</td></tr>
+<tr class="memdesc:a2c622aa988b4ea1d2e381632f99f8015"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the rotations that would make a (0,0,1) direction vector point in the same direction as this direction vector.  <a href="#a2c622aa988b4ea1d2e381632f99f8015">More...</a><br /></td></tr>
+<tr class="separator:a2c622aa988b4ea1d2e381632f99f8015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae65962051f40aabe305bbb71f1956b95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#ae65962051f40aabe305bbb71f1956b95">getSphericalCoordinateAngles</a> () const</td></tr>
+<tr class="memdesc:ae65962051f40aabe305bbb71f1956b95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the spherical coordinate angles.  <a href="#ae65962051f40aabe305bbb71f1956b95">More...</a><br /></td></tr>
+<tr class="separator:ae65962051f40aabe305bbb71f1956b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d222e7aace72513210bddb2b25376f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a53d222e7aace72513210bddb2b25376f">rotationToDirection</a> (const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;forwards=<a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt;(0, 0, 1)) const</td></tr>
+<tr class="memdesc:a53d222e7aace72513210bddb2b25376f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a direction vector from (this) rotation vector.  <a href="#a53d222e7aace72513210bddb2b25376f">More...</a><br /></td></tr>
+<tr class="separator:a53d222e7aace72513210bddb2b25376f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa661941fdf725c83dc560b15232fdf6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#aa661941fdf725c83dc560b15232fdf6e">getAs4Values</a> (T *<a class="el" href="classirr_1_1core_1_1array.html">array</a>) const</td></tr>
+<tr class="memdesc:aa661941fdf725c83dc560b15232fdf6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills an array of 4 values with the vector data (usually floats).  <a href="#aa661941fdf725c83dc560b15232fdf6e">More...</a><br /></td></tr>
+<tr class="separator:aa661941fdf725c83dc560b15232fdf6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e676bc10fe34e49e544373a33d7d21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#af9e676bc10fe34e49e544373a33d7d21">getAs3Values</a> (T *<a class="el" href="classirr_1_1core_1_1array.html">array</a>) const</td></tr>
+<tr class="memdesc:af9e676bc10fe34e49e544373a33d7d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills an array of 3 values with the vector data (usually floats).  <a href="#af9e676bc10fe34e49e544373a33d7d21">More...</a><br /></td></tr>
+<tr class="separator:af9e676bc10fe34e49e544373a33d7d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed8875ec8b9653857ea87fdb8213daf1"><td class="memItemLeft" align="right" valign="top"><a id="aed8875ec8b9653857ea87fdb8213daf1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#aed8875ec8b9653857ea87fdb8213daf1">vector3d</a> ()</td></tr>
 <tr class="memdesc:aed8875ec8b9653857ea87fdb8213daf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor (null vector). <br /></td></tr>
@@ -190,6 +297,11 @@ template&lt;&gt; </td></tr>
 <tr class="memitem:a7597f07300c420146117f2e5854153c2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a7597f07300c420146117f2e5854153c2">operator/</a> (<a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> val) const</td></tr>
 <tr class="memdesc:a7597f07300c420146117f2e5854153c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">partial specialization for integer vectors <br /></td></tr>
 <tr class="separator:a7597f07300c420146117f2e5854153c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7597f07300c420146117f2e5854153c2"><td class="memTemplParams" colspan="2"><a id="a7597f07300c420146117f2e5854153c2"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a7597f07300c420146117f2e5854153c2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; <a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classirr_1_1core_1_1vector3d.html#a7597f07300c420146117f2e5854153c2">operator/</a> (<a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a> val) const</td></tr>
+<tr class="memdesc:a7597f07300c420146117f2e5854153c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">partial specialization for integer vectors <br /></td></tr>
+<tr class="separator:a7597f07300c420146117f2e5854153c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -214,7 +326,44 @@ class irr::core::vector3d&lt; T &gt;</h3>
 <p>The <a class="el" href="classirr_1_1core_1_1vector3d.html" title="3d vector template class with lots of operators and methods. ">vector3d</a> class is used in Irrlicht for three main purposes: 1) As a direction vector (most of the methods assume this). 2) As a position in 3d space (which is synonymous with a direction vector from the origin to this position). 3) To hold three Euler rotations, where X is pitch, Y is yaw and Z is roll. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a868da2be92d9b5c05858a17bc580ddd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a868da2be92d9b5c05858a17bc580ddd6">&#9670;&nbsp;</a></span>crossProduct()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a868da2be92d9b5c05858a17bc580ddd6">&#9670;&nbsp;</a></span>crossProduct() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt;T&gt; <a class="el" href="classirr_1_1core_1_1vector3d.html">irr::core::vector3d</a>&lt; T &gt;::crossProduct </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the cross product with another vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Vector to multiply with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Crossproduct of this vector with p. </dd></dl>
+
+</div>
+</div>
+<a id="a868da2be92d9b5c05858a17bc580ddd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a868da2be92d9b5c05858a17bc580ddd6">&#9670;&nbsp;</a></span>crossProduct() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,7 +400,38 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="af9e676bc10fe34e49e544373a33d7d21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9e676bc10fe34e49e544373a33d7d21">&#9670;&nbsp;</a></span>getAs3Values()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af9e676bc10fe34e49e544373a33d7d21">&#9670;&nbsp;</a></span>getAs3Values() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classirr_1_1core_1_1vector3d.html">irr::core::vector3d</a>&lt; T &gt;::getAs3Values </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>array</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fills an array of 3 values with the vector data (usually floats). </p>
+<p>Useful for setting in shader constants for example. </p>
+
+</div>
+</div>
+<a id="af9e676bc10fe34e49e544373a33d7d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9e676bc10fe34e49e544373a33d7d21">&#9670;&nbsp;</a></span>getAs3Values() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -282,7 +462,38 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="aa661941fdf725c83dc560b15232fdf6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa661941fdf725c83dc560b15232fdf6e">&#9670;&nbsp;</a></span>getAs4Values()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa661941fdf725c83dc560b15232fdf6e">&#9670;&nbsp;</a></span>getAs4Values() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classirr_1_1core_1_1vector3d.html">irr::core::vector3d</a>&lt; T &gt;::getAs4Values </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>array</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fills an array of 4 values with the vector data (usually floats). </p>
+<p>Useful for setting in shader constants for example. The fourth value will always be 0. </p>
+
+</div>
+</div>
+<a id="aa661941fdf725c83dc560b15232fdf6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa661941fdf725c83dc560b15232fdf6e">&#9670;&nbsp;</a></span>getAs4Values() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -313,7 +524,38 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="ab838ab8784f4e53453eb45223f624760"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab838ab8784f4e53453eb45223f624760">&#9670;&nbsp;</a></span>getDistanceFrom()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab838ab8784f4e53453eb45223f624760">&#9670;&nbsp;</a></span>getDistanceFrom() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classirr_1_1core_1_1vector3d.html">irr::core::vector3d</a>&lt; T &gt;::getDistanceFrom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get distance from another point. </p>
+<p>Here, the vector is interpreted as point in 3 dimensional space. </p>
+
+</div>
+</div>
+<a id="ab838ab8784f4e53453eb45223f624760"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab838ab8784f4e53453eb45223f624760">&#9670;&nbsp;</a></span>getDistanceFrom() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -344,7 +586,38 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="a01ba1b5d0cbf1b47245304e62c7fb5a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01ba1b5d0cbf1b47245304e62c7fb5a1">&#9670;&nbsp;</a></span>getDistanceFromSQ()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a01ba1b5d0cbf1b47245304e62c7fb5a1">&#9670;&nbsp;</a></span>getDistanceFromSQ() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classirr_1_1core_1_1vector3d.html">irr::core::vector3d</a>&lt; T &gt;::getDistanceFromSQ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns squared distance from another point. </p>
+<p>Here, the vector is interpreted as point in 3 dimensional space. </p>
+
+</div>
+</div>
+<a id="a01ba1b5d0cbf1b47245304e62c7fb5a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01ba1b5d0cbf1b47245304e62c7fb5a1">&#9670;&nbsp;</a></span>getDistanceFromSQ() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -375,7 +648,38 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="a2c622aa988b4ea1d2e381632f99f8015"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c622aa988b4ea1d2e381632f99f8015">&#9670;&nbsp;</a></span>getHorizontalAngle()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c622aa988b4ea1d2e381632f99f8015">&#9670;&nbsp;</a></span>getHorizontalAngle() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt;T&gt; <a class="el" href="classirr_1_1core_1_1vector3d.html">irr::core::vector3d</a>&lt; T &gt;::getHorizontalAngle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the rotations that would make a (0,0,1) direction vector point in the same direction as this direction vector. </p>
+<p>Thanks to Arras on the Irrlicht forums for this method. This utility method is very useful for orienting scene nodes towards specific targets. For example, if this vector represents the difference between two scene nodes, then applying the result of <a class="el" href="classirr_1_1core_1_1vector3d.html#a2c622aa988b4ea1d2e381632f99f8015" title="Get the rotations that would make a (0,0,1) direction vector point in the same direction as this dire...">getHorizontalAngle()</a> to one scene node will point it at the other one. Example code: Where target and seeker are of type ISceneNode* const vector3df toTarget(target-&gt;getAbsolutePosition() - seeker-&gt;getAbsolutePosition()); const vector3df requiredRotation = toTarget.getHorizontalAngle(); seeker-&gt;setRotation(requiredRotation);</p>
+<dl class="section return"><dt>Returns</dt><dd>A rotation vector containing the X (pitch) and Y (raw) rotations (in degrees) that when applied to a +Z (e.g. 0, 0, 1) direction vector would make it point in the same direction as this vector. The Z (roll) rotation is always 0, since two Euler rotations are sufficient to point in any given direction. </dd></dl>
+
+</div>
+</div>
+<a id="a2c622aa988b4ea1d2e381632f99f8015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c622aa988b4ea1d2e381632f99f8015">&#9670;&nbsp;</a></span>getHorizontalAngle() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -406,7 +710,55 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="aee3351232fa6ebd6241a89bebdaeaedf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee3351232fa6ebd6241a89bebdaeaedf">&#9670;&nbsp;</a></span>getInterpolated()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aee3351232fa6ebd6241a89bebdaeaedf">&#9670;&nbsp;</a></span>getInterpolated() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt;T&gt; <a class="el" href="classirr_1_1core_1_1vector3d.html">irr::core::vector3d</a>&lt; T &gt;::getInterpolated </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceirr.html#a1325b02603ad449f92c68fc640af9b28">f64</a>&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an interpolated vector between this vector and another vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The other vector to interpolate with. </td></tr>
+    <tr><td class="paramname">d</td><td>Interpolation value between 0.0f (all the other vector) and 1.0f (all this vector). Note that this is the opposite direction of interpolation to <a class="el" href="classirr_1_1core_1_1vector3d.html#aacaa4bbf35d509b1264d1e8e2d48360e" title="Creates a quadratically interpolated vector between this and two other vectors. ">getInterpolated_quadratic()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An interpolated vector. This vector is not modified. </dd></dl>
+
+</div>
+</div>
+<a id="aee3351232fa6ebd6241a89bebdaeaedf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee3351232fa6ebd6241a89bebdaeaedf">&#9670;&nbsp;</a></span>getInterpolated() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -454,7 +806,62 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="aacaa4bbf35d509b1264d1e8e2d48360e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacaa4bbf35d509b1264d1e8e2d48360e">&#9670;&nbsp;</a></span>getInterpolated_quadratic()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aacaa4bbf35d509b1264d1e8e2d48360e">&#9670;&nbsp;</a></span>getInterpolated_quadratic() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt;T&gt; <a class="el" href="classirr_1_1core_1_1vector3d.html">irr::core::vector3d</a>&lt; T &gt;::getInterpolated_quadratic </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceirr.html#a1325b02603ad449f92c68fc640af9b28">f64</a>&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a quadratically interpolated vector between this and two other vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v2</td><td>Second vector to interpolate with. </td></tr>
+    <tr><td class="paramname">v3</td><td>Third vector to interpolate with (maximum at 1.0f) </td></tr>
+    <tr><td class="paramname">d</td><td>Interpolation value between 0.0f (all this vector) and 1.0f (all the 3rd vector). Note that this is the opposite direction of interpolation to <a class="el" href="classirr_1_1core_1_1vector3d.html#aee3351232fa6ebd6241a89bebdaeaedf" title="Creates an interpolated vector between this vector and another vector. ">getInterpolated()</a> and <a class="el" href="classirr_1_1core_1_1vector3d.html#a32a888e0f608a20deee98c794a321c4c" title="Sets this vector to the linearly interpolated vector between a and b. ">interpolate()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An interpolated vector. This vector is not modified. </dd></dl>
+
+</div>
+</div>
+<a id="aacaa4bbf35d509b1264d1e8e2d48360e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacaa4bbf35d509b1264d1e8e2d48360e">&#9670;&nbsp;</a></span>getInterpolated_quadratic() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -509,7 +916,37 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="a480a5d34b0ebaa39b5da403249746cf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a480a5d34b0ebaa39b5da403249746cf0">&#9670;&nbsp;</a></span>getLengthSQ()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a480a5d34b0ebaa39b5da403249746cf0">&#9670;&nbsp;</a></span>getLengthSQ() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classirr_1_1core_1_1vector3d.html">irr::core::vector3d</a>&lt; T &gt;::getLengthSQ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get squared length of the vector. </p>
+<p>This is useful because it is much faster than <a class="el" href="classirr_1_1core_1_1vector3d.html#a7f1d3aec798edf0b2c34594c7260ad0e" title="Get length of the vector. ">getLength()</a>. </p><dl class="section return"><dt>Returns</dt><dd>Squared length of the vector. </dd></dl>
+
+</div>
+</div>
+<a id="a480a5d34b0ebaa39b5da403249746cf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a480a5d34b0ebaa39b5da403249746cf0">&#9670;&nbsp;</a></span>getLengthSQ() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -539,7 +976,37 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="ae65962051f40aabe305bbb71f1956b95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae65962051f40aabe305bbb71f1956b95">&#9670;&nbsp;</a></span>getSphericalCoordinateAngles()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae65962051f40aabe305bbb71f1956b95">&#9670;&nbsp;</a></span>getSphericalCoordinateAngles() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt;T&gt; <a class="el" href="classirr_1_1core_1_1vector3d.html">irr::core::vector3d</a>&lt; T &gt;::getSphericalCoordinateAngles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the spherical coordinate angles. </p>
+<p>This returns Euler degrees for the point represented by this vector. The calculation assumes the pole at (0,1,0) and returns the angles in X and Y. </p>
+
+</div>
+</div>
+<a id="ae65962051f40aabe305bbb71f1956b95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae65962051f40aabe305bbb71f1956b95">&#9670;&nbsp;</a></span>getSphericalCoordinateAngles() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -569,7 +1036,61 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="a32a888e0f608a20deee98c794a321c4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32a888e0f608a20deee98c794a321c4c">&#9670;&nbsp;</a></span>interpolate()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a888e0f608a20deee98c794a321c4c">&#9670;&nbsp;</a></span>interpolate() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt;T&gt;&amp; <a class="el" href="classirr_1_1core_1_1vector3d.html">irr::core::vector3d</a>&lt; T &gt;::interpolate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceirr.html#a1325b02603ad449f92c68fc640af9b28">f64</a>&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets this vector to the linearly interpolated vector between a and b. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>first vector to interpolate with, maximum at 1.0f </td></tr>
+    <tr><td class="paramname">b</td><td>second vector to interpolate with, maximum at 0.0f </td></tr>
+    <tr><td class="paramname">d</td><td>Interpolation value between 0.0f (all vector b) and 1.0f (all vector a) Note that this is the opposite direction of interpolation to <a class="el" href="classirr_1_1core_1_1vector3d.html#aacaa4bbf35d509b1264d1e8e2d48360e" title="Creates a quadratically interpolated vector between this and two other vectors. ">getInterpolated_quadratic()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a32a888e0f608a20deee98c794a321c4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a888e0f608a20deee98c794a321c4c">&#9670;&nbsp;</a></span>interpolate() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -623,7 +1144,55 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="abbde78a7c345e22a6fd42f4c84e9038c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbde78a7c345e22a6fd42f4c84e9038c">&#9670;&nbsp;</a></span>isBetweenPoints()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abbde78a7c345e22a6fd42f4c84e9038c">&#9670;&nbsp;</a></span>isBetweenPoints() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classirr_1_1core_1_1vector3d.html">irr::core::vector3d</a>&lt; T &gt;::isBetweenPoints </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns if this vector interpreted as a point is on a line between two other points. </p>
+<p>It is assumed that the point is on the line. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">begin</td><td>Beginning vector to compare between. </td></tr>
+    <tr><td class="paramname">end</td><td>Ending vector to compare between. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if this vector is between begin and end, false if not. </dd></dl>
+
+</div>
+</div>
+<a id="abbde78a7c345e22a6fd42f4c84e9038c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbde78a7c345e22a6fd42f4c84e9038c">&#9670;&nbsp;</a></span>isBetweenPoints() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -671,7 +1240,37 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="a84a1861464ef70e6965c146732103c09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84a1861464ef70e6965c146732103c09">&#9670;&nbsp;</a></span>normalize()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a84a1861464ef70e6965c146732103c09">&#9670;&nbsp;</a></span>normalize() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt;T&gt;&amp; <a class="el" href="classirr_1_1core_1_1vector3d.html">irr::core::vector3d</a>&lt; T &gt;::normalize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Normalizes the vector. </p>
+<p>In case of the 0 vector the result is still 0, otherwise the length of the vector will be 1. </p><dl class="section return"><dt>Returns</dt><dd>Reference to this vector after normalization. </dd></dl>
+
+</div>
+</div>
+<a id="a84a1861464ef70e6965c146732103c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84a1861464ef70e6965c146732103c09">&#9670;&nbsp;</a></span>normalize() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -701,7 +1300,54 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="ac38b75735ec06716305fbb09ec71784d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac38b75735ec06716305fbb09ec71784d">&#9670;&nbsp;</a></span>rotateXYBy()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac38b75735ec06716305fbb09ec71784d">&#9670;&nbsp;</a></span>rotateXYBy() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classirr_1_1core_1_1vector3d.html">irr::core::vector3d</a>&lt; T &gt;::rotateXYBy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceirr.html#a1325b02603ad449f92c68fc640af9b28">f64</a>&#160;</td>
+          <td class="paramname"><em>degrees</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>center</em> = <code><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt;T&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rotates the vector by a specified number of degrees around the Z axis and the specified center. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">degrees</td><td>Number of degrees to rotate around the Z axis. </td></tr>
+    <tr><td class="paramname">center</td><td>The center of the rotation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac38b75735ec06716305fbb09ec71784d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac38b75735ec06716305fbb09ec71784d">&#9670;&nbsp;</a></span>rotateXYBy() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -748,7 +1394,54 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="a621fbddb42814edd3d14410252cf7b7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a621fbddb42814edd3d14410252cf7b7a">&#9670;&nbsp;</a></span>rotateXZBy()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a621fbddb42814edd3d14410252cf7b7a">&#9670;&nbsp;</a></span>rotateXZBy() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classirr_1_1core_1_1vector3d.html">irr::core::vector3d</a>&lt; T &gt;::rotateXZBy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceirr.html#a1325b02603ad449f92c68fc640af9b28">f64</a>&#160;</td>
+          <td class="paramname"><em>degrees</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>center</em> = <code><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt;T&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rotates the vector by a specified number of degrees around the Y axis and the specified center. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">degrees</td><td>Number of degrees to rotate around the Y axis. </td></tr>
+    <tr><td class="paramname">center</td><td>The center of the rotation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a621fbddb42814edd3d14410252cf7b7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a621fbddb42814edd3d14410252cf7b7a">&#9670;&nbsp;</a></span>rotateXZBy() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -795,7 +1488,54 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="aaa048312f75f152861479cb48e2ddfe4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa048312f75f152861479cb48e2ddfe4">&#9670;&nbsp;</a></span>rotateYZBy()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa048312f75f152861479cb48e2ddfe4">&#9670;&nbsp;</a></span>rotateYZBy() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classirr_1_1core_1_1vector3d.html">irr::core::vector3d</a>&lt; T &gt;::rotateYZBy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceirr.html#a1325b02603ad449f92c68fc640af9b28">f64</a>&#160;</td>
+          <td class="paramname"><em>degrees</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>center</em> = <code><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt;T&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rotates the vector by a specified number of degrees around the X axis and the specified center. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">degrees</td><td>Number of degrees to rotate around the X axis. </td></tr>
+    <tr><td class="paramname">center</td><td>The center of the rotation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa048312f75f152861479cb48e2ddfe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa048312f75f152861479cb48e2ddfe4">&#9670;&nbsp;</a></span>rotateYZBy() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -842,7 +1582,45 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <a id="a53d222e7aace72513210bddb2b25376f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53d222e7aace72513210bddb2b25376f">&#9670;&nbsp;</a></span>rotationToDirection()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a53d222e7aace72513210bddb2b25376f">&#9670;&nbsp;</a></span>rotationToDirection() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt;T&gt; <a class="el" href="classirr_1_1core_1_1vector3d.html">irr::core::vector3d</a>&lt; T &gt;::rotationToDirection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>forwards</em> = <code><a class="el" href="classirr_1_1core_1_1vector3d.html">vector3d</a>&lt;T&gt;(0,&#160;0,&#160;1)</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Builds a direction vector from (this) rotation vector. </p>
+<p>This vector is assumed to be a rotation vector composed of 3 Euler angle rotations, in degrees. The implementation performs the same calculations as using a matrix to do the rotation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">forwards</td><td>The direction representing "forwards" which will be rotated by this vector. If you do not provide a direction, then the +Z axis (0, 0, 1) will be assumed to be forwards. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A direction vector calculated by rotating the forwards direction by the 3 Euler angles (in degrees) represented by this vector. </dd></dl>
+
+</div>
+</div>
+<a id="a53d222e7aace72513210bddb2b25376f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53d222e7aace72513210bddb2b25376f">&#9670;&nbsp;</a></span>rotationToDirection() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -880,7 +1658,7 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>indie_share/controller/include/<a class="el" href="vector3d_8h_source.html">vector3d.h</a></li>
+<li>indie_share/controller/include/<a class="el" href="indie__share_2controller_2include_2vector3d_8h_source.html">vector3d.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,0 +1,30 @@
+\hypertarget{vlc__vout_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+vout.h File Reference}
+\label{vlc__vout_8h}\index{lib/include/vlc/plugins/vlc\+\_\+vout.\+h@{lib/include/vlc/plugins/vlc\+\_\+vout.\+h}}
+{\ttfamily \#include $<$vlc\+\_\+picture.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+filter.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+subpicture.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structvout__configuration__t}{vout\+\_\+configuration\+\_\+t}
+\item 
+struct \hyperlink{structvout__thread__t}{vout\+\_\+thread\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{group__video__output_ga88d1c41dc17e170ca31480d77bb7a924}{vout\+\_\+thread\+\_\+sys\+\_\+t} \hyperlink{group__video__output_ga88d1c41dc17e170ca31480d77bb7a924}{vout\+\_\+thread\+\_\+sys\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structvout__thread__t}{vout\+\_\+thread\+\_\+t} $\ast$ \hyperlink{group__video__output_ga4c225701bb02847e303ab12bd7740394}{vout\+\_\+\+Request} (\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$object, const \hyperlink{structvout__configuration__t}{vout\+\_\+configuration\+\_\+t} $\ast$cfg)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__video__output_gac4265e793646e4730afe6ce9495205ae}{vout\+\_\+\+Close} (\hyperlink{structvout__thread__t}{vout\+\_\+thread\+\_\+t} $\ast$p\+\_\+vout)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__video__output_gaf9bf2ff7f4467dd658cb0469b5c0b5ed}{vout\+\_\+\+Get\+Snapshot} (\hyperlink{structvout__thread__t}{vout\+\_\+thread\+\_\+t} $\ast$p\+\_\+vout, block\+\_\+t $\ast$$\ast$pp\+\_\+image, \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$$\ast$pp\+\_\+picture, \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$p\+\_\+fmt, const char $\ast$psz\+\_\+format, \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} i\+\_\+timeout)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines common video output structures and functions in vlc 

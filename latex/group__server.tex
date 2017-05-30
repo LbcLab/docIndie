@@ -1,0 +1,35 @@
+\hypertarget{group__server}{}\section{V\+LM}
+\label{group__server}\index{V\+LM@{V\+LM}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structvlm__media__t}{vlm\+\_\+media\+\_\+t}
+\item 
+struct \hyperlink{structvlm__media__instance__t}{vlm\+\_\+media\+\_\+instance\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__server_gae0b625cfc0da775854684b1acd329d66}{vlm\+\_\+event\+\_\+type\+\_\+e} 
+\item 
+enum \hyperlink{group__server_gab547769cc956818fbebbe18a14ac0d98}{vlm\+\_\+query\+\_\+e} 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+V\+LM is the server core in vlc that allows streaming of multiple media streams at the same time. It provides broadcast, schedule and video on demand features for streaming using several streaming and network protocols. 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__server_gae0b625cfc0da775854684b1acd329d66}\label{group__server_gae0b625cfc0da775854684b1acd329d66}} 
+\index{V\+LM@{V\+LM}!vlm\+\_\+event\+\_\+type\+\_\+e@{vlm\+\_\+event\+\_\+type\+\_\+e}}
+\index{vlm\+\_\+event\+\_\+type\+\_\+e@{vlm\+\_\+event\+\_\+type\+\_\+e}!V\+LM@{V\+LM}}
+\subsubsection{\texorpdfstring{vlm\+\_\+event\+\_\+type\+\_\+e}{vlm\_event\_type\_e}}
+{\footnotesize\ttfamily enum \hyperlink{group__server_gae0b625cfc0da775854684b1acd329d66}{vlm\+\_\+event\+\_\+type\+\_\+e}}
+
+V\+LM events You can catch vlm event by adding a callback on the variable \char`\"{}intf-\/event\char`\"{} of the V\+LM object. This variable is an address that will hold a vlm\+\_\+event\+\_\+t$\ast$ value. \mbox{\Hypertarget{group__server_gab547769cc956818fbebbe18a14ac0d98}\label{group__server_gab547769cc956818fbebbe18a14ac0d98}} 
+\index{V\+LM@{V\+LM}!vlm\+\_\+query\+\_\+e@{vlm\+\_\+query\+\_\+e}}
+\index{vlm\+\_\+query\+\_\+e@{vlm\+\_\+query\+\_\+e}!V\+LM@{V\+LM}}
+\subsubsection{\texorpdfstring{vlm\+\_\+query\+\_\+e}{vlm\_query\_e}}
+{\footnotesize\ttfamily enum \hyperlink{group__server_gab547769cc956818fbebbe18a14ac0d98}{vlm\+\_\+query\+\_\+e}}
+
+V\+LM control query 

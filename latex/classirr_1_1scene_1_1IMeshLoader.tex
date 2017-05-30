@@ -21,7 +21,14 @@ Inheritance diagram for irr\+:\+:scene\+:\+:I\+Mesh\+Loader\+:\begin{figure}[H]
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMeshLoader_ad20920b323a9902d50e8d09211730d4d}\label{classirr_1_1scene_1_1IMeshLoader_ad20920b323a9902d50e8d09211730d4d}} 
 virtual \hyperlink{classirr_1_1scene_1_1IMeshLoader_ad20920b323a9902d50e8d09211730d4d}{$\sim$\+I\+Mesh\+Loader} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
-virtual bool \hyperlink{classirr_1_1scene_1_1IMeshLoader_a64bd3f1f17b4ff1f0f4f929c850614f3}{is\+A\+Loadable\+File\+Extension} (const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&filename) const =0
+virtual bool \hyperlink{classirr_1_1scene_1_1IMeshLoader_a64bd3f1f17b4ff1f0f4f929c850614f3}{is\+A\+Loadable\+File\+Extension} (const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{io\+::path} \&filename) const =0
+\begin{DoxyCompactList}\small\item\em Returns true if the file might be loaded by this class. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1scene_1_1IAnimatedMesh}{I\+Animated\+Mesh} $\ast$ \hyperlink{classirr_1_1scene_1_1IMeshLoader_ad09c19dd8c8608f0e49c40102e2aaee1}{create\+Mesh} (\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$file)=0
+\begin{DoxyCompactList}\small\item\em Creates/loads an animated mesh from the file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IMeshLoader_ad20920b323a9902d50e8d09211730d4d}\label{classirr_1_1scene_1_1IMeshLoader_ad20920b323a9902d50e8d09211730d4d}} 
+virtual \hyperlink{classirr_1_1scene_1_1IMeshLoader_ad20920b323a9902d50e8d09211730d4d}{$\sim$\+I\+Mesh\+Loader} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1scene_1_1IMeshLoader_a64bd3f1f17b4ff1f0f4f929c850614f3}{is\+A\+Loadable\+File\+Extension} (const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{io\+::path} \&filename) const =0
 \begin{DoxyCompactList}\small\item\em Returns true if the file might be loaded by this class. \end{DoxyCompactList}\item 
 virtual \hyperlink{classirr_1_1scene_1_1IAnimatedMesh}{I\+Animated\+Mesh} $\ast$ \hyperlink{classirr_1_1scene_1_1IMeshLoader_ad09c19dd8c8608f0e49c40102e2aaee1}{create\+Mesh} (\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$file)=0
 \begin{DoxyCompactList}\small\item\em Creates/loads an animated mesh from the file. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -37,7 +44,25 @@ If you want Irrlicht be able to load meshes of currently unsupported file format
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMeshLoader_ad09c19dd8c8608f0e49c40102e2aaee1}\label{classirr_1_1scene_1_1IMeshLoader_ad09c19dd8c8608f0e49c40102e2aaee1}} 
 \index{irr\+::scene\+::\+I\+Mesh\+Loader@{irr\+::scene\+::\+I\+Mesh\+Loader}!create\+Mesh@{create\+Mesh}}
 \index{create\+Mesh@{create\+Mesh}!irr\+::scene\+::\+I\+Mesh\+Loader@{irr\+::scene\+::\+I\+Mesh\+Loader}}
-\subsubsection{\texorpdfstring{create\+Mesh()}{createMesh()}}
+\subsubsection{\texorpdfstring{create\+Mesh()}{createMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1scene_1_1IAnimatedMesh}{I\+Animated\+Mesh}$\ast$ irr\+::scene\+::\+I\+Mesh\+Loader\+::create\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Creates/loads an animated mesh from the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File handler to load the file from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created mesh. Returns 0 if loading failed. If you no longer need the mesh, you should call \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Animated\+Mesh\+::drop()}. See \hyperlink{classirr_1_1IReferenceCounted_a03856a09355b89d178090c4a5f738543}{I\+Reference\+Counted\+::drop()} for more information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1IMeshLoader_ad09c19dd8c8608f0e49c40102e2aaee1}\label{classirr_1_1scene_1_1IMeshLoader_ad09c19dd8c8608f0e49c40102e2aaee1}} 
+\index{irr\+::scene\+::\+I\+Mesh\+Loader@{irr\+::scene\+::\+I\+Mesh\+Loader}!create\+Mesh@{create\+Mesh}}
+\index{create\+Mesh@{create\+Mesh}!irr\+::scene\+::\+I\+Mesh\+Loader@{irr\+::scene\+::\+I\+Mesh\+Loader}}
+\subsubsection{\texorpdfstring{create\+Mesh()}{createMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1scene_1_1IAnimatedMesh}{I\+Animated\+Mesh}$\ast$ irr\+::scene\+::\+I\+Mesh\+Loader\+::create\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1io_1_1IReadFile}{io\+::\+I\+Read\+File} $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -55,8 +80,26 @@ Pointer to the created mesh. Returns 0 if loading failed. If you no longer need 
 \mbox{\Hypertarget{classirr_1_1scene_1_1IMeshLoader_a64bd3f1f17b4ff1f0f4f929c850614f3}\label{classirr_1_1scene_1_1IMeshLoader_a64bd3f1f17b4ff1f0f4f929c850614f3}} 
 \index{irr\+::scene\+::\+I\+Mesh\+Loader@{irr\+::scene\+::\+I\+Mesh\+Loader}!is\+A\+Loadable\+File\+Extension@{is\+A\+Loadable\+File\+Extension}}
 \index{is\+A\+Loadable\+File\+Extension@{is\+A\+Loadable\+File\+Extension}!irr\+::scene\+::\+I\+Mesh\+Loader@{irr\+::scene\+::\+I\+Mesh\+Loader}}
-\subsubsection{\texorpdfstring{is\+A\+Loadable\+File\+Extension()}{isALoadableFileExtension()}}
-{\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Mesh\+Loader\+::is\+A\+Loadable\+File\+Extension (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{io\+::path} \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{is\+A\+Loadable\+File\+Extension()}{isALoadableFileExtension()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Mesh\+Loader\+::is\+A\+Loadable\+File\+Extension (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{io\+::path} \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns true if the file might be loaded by this class. 
+
+This decision should be based on the file extension (e.\+g. \char`\"{}.\+cob\char`\"{}) only. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file to test. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the file might be loaded by this class. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1IMeshLoader_a64bd3f1f17b4ff1f0f4f929c850614f3}\label{classirr_1_1scene_1_1IMeshLoader_a64bd3f1f17b4ff1f0f4f929c850614f3}} 
+\index{irr\+::scene\+::\+I\+Mesh\+Loader@{irr\+::scene\+::\+I\+Mesh\+Loader}!is\+A\+Loadable\+File\+Extension@{is\+A\+Loadable\+File\+Extension}}
+\index{is\+A\+Loadable\+File\+Extension@{is\+A\+Loadable\+File\+Extension}!irr\+::scene\+::\+I\+Mesh\+Loader@{irr\+::scene\+::\+I\+Mesh\+Loader}}
+\subsubsection{\texorpdfstring{is\+A\+Loadable\+File\+Extension()}{isALoadableFileExtension()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Mesh\+Loader\+::is\+A\+Loadable\+File\+Extension (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{io\+::path} \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 

@@ -36,12 +36,37 @@ bool \hyperlink{classirr_1_1core_1_1plane3d_aa211e140706ba340cc413e1dfc095efd}{g
 bool \hyperlink{classirr_1_1core_1_1plane3d_aca0237b25cbf4fe13d87b14a04d68df9}{is\+Front\+Facing} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&look\+Direction) const
 \begin{DoxyCompactList}\small\item\em Test if the triangle would be front or backfacing from any point. \end{DoxyCompactList}\item 
 T \hyperlink{classirr_1_1core_1_1plane3d_ab5e41d5843bf3bb856f543186b8a7df8}{get\+Distance\+To} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&point) const
+\begin{DoxyCompactList}\small\item\em Get the distance to a point. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1plane3d_ae3fb02f09788ead8b36523891fbd1288}{get\+Intersection\+With\+Line} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&line\+Point, const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&line\+Vect, \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&out\+Intersection) const
+\begin{DoxyCompactList}\small\item\em Get an intersection with a 3d line. \end{DoxyCompactList}\item 
+\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1core_1_1plane3d_a5fcd4852c2634172862324340558c634}{get\+Known\+Intersection\+With\+Line} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&line\+Point1, const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&line\+Point2) const
+\begin{DoxyCompactList}\small\item\em Get percentage of line between two points where an intersection with this plane happens. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1plane3d_a6bec8dcaa0eeb9f7bdd5b727f3d3561d}{get\+Intersection\+With\+Limited\+Line} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&line\+Point1, const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&line\+Point2, \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&out\+Intersection) const
+\begin{DoxyCompactList}\small\item\em Get an intersection with a 3d line, limited between two 3d points. \end{DoxyCompactList}\item 
+\hyperlink{namespaceirr_1_1core_a8a9999eb0d151083f48afe5f7d17a96c}{E\+Intersection\+Relation3D} \hyperlink{classirr_1_1core_1_1plane3d_a14ba310b0ed9d14ce575f1c783cbd9a5}{classify\+Point\+Relation} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&point) const
+\begin{DoxyCompactList}\small\item\em Classifies the relation of a point to this plane. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1plane3d_a65c1748d516ddc820b6b970f9367f1ff}\label{classirr_1_1core_1_1plane3d_a65c1748d516ddc820b6b970f9367f1ff}} 
+void \hyperlink{classirr_1_1core_1_1plane3d_a65c1748d516ddc820b6b970f9367f1ff}{recalculateD} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&M\+Point)
+\begin{DoxyCompactList}\small\item\em Recalculates the distance from origin by applying a new member point to the plane. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1plane3d_a6862a53e67b3a8d616986216167d0c7a}\label{classirr_1_1core_1_1plane3d_a6862a53e67b3a8d616986216167d0c7a}} 
+\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \hyperlink{classirr_1_1core_1_1plane3d_a6862a53e67b3a8d616986216167d0c7a}{get\+Member\+Point} () const
+\begin{DoxyCompactList}\small\item\em Gets a member point of the plane. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1plane3d_a62f0838578d34260a5ef664718be59b4}{exists\+Intersection} (const \hyperlink{classirr_1_1core_1_1plane3d}{plane3d}$<$ T $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Tests if there is an intersection with the other plane. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1plane3d_aa50063460dbcda6bc2b61ec4e9a15f0c}{get\+Intersection\+With\+Plane} (const \hyperlink{classirr_1_1core_1_1plane3d}{plane3d}$<$ T $>$ \&other, \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&out\+Line\+Point, \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&out\+Line\+Vect) const
+\begin{DoxyCompactList}\small\item\em Intersects this plane with another. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1plane3d_aa211e140706ba340cc413e1dfc095efd}\label{classirr_1_1core_1_1plane3d_aa211e140706ba340cc413e1dfc095efd}} 
+bool \hyperlink{classirr_1_1core_1_1plane3d_aa211e140706ba340cc413e1dfc095efd}{get\+Intersection\+With\+Planes} (const \hyperlink{classirr_1_1core_1_1plane3d}{plane3d}$<$ T $>$ \&o1, const \hyperlink{classirr_1_1core_1_1plane3d}{plane3d}$<$ T $>$ \&o2, \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&out\+Point) const
+\begin{DoxyCompactList}\small\item\em Get the intersection point with two other planes if there is one. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1plane3d_aca0237b25cbf4fe13d87b14a04d68df9}{is\+Front\+Facing} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&look\+Direction) const
+\begin{DoxyCompactList}\small\item\em Test if the triangle would be front or backfacing from any point. \end{DoxyCompactList}\item 
+T \hyperlink{classirr_1_1core_1_1plane3d_ab5e41d5843bf3bb856f543186b8a7df8}{get\+Distance\+To} (const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&point) const
 \begin{DoxyCompactList}\small\item\em Get the distance to a point. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classirr_1_1core_1_1plane3d_a932ca6e90e55cdceedb4f15ab706b719}\label{classirr_1_1core_1_1plane3d_a932ca6e90e55cdceedb4f15ab706b719}} 
-\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \hyperlink{classirr_1_1core_1_1plane3d_a932ca6e90e55cdceedb4f15ab706b719}{Normal}
+\mbox{\Hypertarget{classirr_1_1core_1_1plane3d_a6531e265acae238999976222f92129f1}\label{classirr_1_1core_1_1plane3d_a6531e265acae238999976222f92129f1}} 
+\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \hyperlink{classirr_1_1core_1_1plane3d_a6531e265acae238999976222f92129f1}{Normal}
 \begin{DoxyCompactList}\small\item\em Normal vector of the plane. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1core_1_1plane3d_afa304cf77cf1a3aae2351d5add5606a8}\label{classirr_1_1core_1_1plane3d_afa304cf77cf1a3aae2351d5add5606a8}} 
 T \hyperlink{classirr_1_1core_1_1plane3d_afa304cf77cf1a3aae2351d5add5606a8}{D}
@@ -60,7 +85,26 @@ It has to be ensured, that the normal is always normalized. The constructors and
 \mbox{\Hypertarget{classirr_1_1core_1_1plane3d_a14ba310b0ed9d14ce575f1c783cbd9a5}\label{classirr_1_1core_1_1plane3d_a14ba310b0ed9d14ce575f1c783cbd9a5}} 
 \index{irr\+::core\+::plane3d@{irr\+::core\+::plane3d}!classify\+Point\+Relation@{classify\+Point\+Relation}}
 \index{classify\+Point\+Relation@{classify\+Point\+Relation}!irr\+::core\+::plane3d@{irr\+::core\+::plane3d}}
-\subsubsection{\texorpdfstring{classify\+Point\+Relation()}{classifyPointRelation()}}
+\subsubsection{\texorpdfstring{classify\+Point\+Relation()}{classifyPointRelation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{namespaceirr_1_1core_a8a9999eb0d151083f48afe5f7d17a96c}{E\+Intersection\+Relation3D} \hyperlink{classirr_1_1core_1_1plane3d}{irr\+::core\+::plane3d}$<$ T $>$\+::classify\+Point\+Relation (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Classifies the relation of a point to this plane. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & Point to classify its relation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+S\+R\+E\+L3\+D\+\_\+\+F\+R\+O\+NT if the point is in front of the plane, I\+S\+R\+E\+L3\+D\+\_\+\+B\+A\+CK if the point is behind of the plane, and I\+S\+R\+E\+L3\+D\+\_\+\+P\+L\+A\+N\+AR if the point is within the plane. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1plane3d_a14ba310b0ed9d14ce575f1c783cbd9a5}\label{classirr_1_1core_1_1plane3d_a14ba310b0ed9d14ce575f1c783cbd9a5}} 
+\index{irr\+::core\+::plane3d@{irr\+::core\+::plane3d}!classify\+Point\+Relation@{classify\+Point\+Relation}}
+\index{classify\+Point\+Relation@{classify\+Point\+Relation}!irr\+::core\+::plane3d@{irr\+::core\+::plane3d}}
+\subsubsection{\texorpdfstring{classify\+Point\+Relation()}{classifyPointRelation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 \hyperlink{namespaceirr_1_1core_a8a9999eb0d151083f48afe5f7d17a96c}{E\+Intersection\+Relation3D} \hyperlink{classirr_1_1core_1_1plane3d}{irr\+::core\+::plane3d}$<$ T $>$\+::classify\+Point\+Relation (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -79,7 +123,21 @@ I\+S\+R\+E\+L3\+D\+\_\+\+F\+R\+O\+NT if the point is in front of the plane, I\+S
 \mbox{\Hypertarget{classirr_1_1core_1_1plane3d_a62f0838578d34260a5ef664718be59b4}\label{classirr_1_1core_1_1plane3d_a62f0838578d34260a5ef664718be59b4}} 
 \index{irr\+::core\+::plane3d@{irr\+::core\+::plane3d}!exists\+Intersection@{exists\+Intersection}}
 \index{exists\+Intersection@{exists\+Intersection}!irr\+::core\+::plane3d@{irr\+::core\+::plane3d}}
-\subsubsection{\texorpdfstring{exists\+Intersection()}{existsIntersection()}}
+\subsubsection{\texorpdfstring{exists\+Intersection()}{existsIntersection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classirr_1_1core_1_1plane3d}{irr\+::core\+::plane3d}$<$ T $>$\+::exists\+Intersection (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1plane3d}{plane3d}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tests if there is an intersection with the other plane. 
+
+\begin{DoxyReturn}{Returns}
+True if there is a intersection. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1plane3d_a62f0838578d34260a5ef664718be59b4}\label{classirr_1_1core_1_1plane3d_a62f0838578d34260a5ef664718be59b4}} 
+\index{irr\+::core\+::plane3d@{irr\+::core\+::plane3d}!exists\+Intersection@{exists\+Intersection}}
+\index{exists\+Intersection@{exists\+Intersection}!irr\+::core\+::plane3d@{irr\+::core\+::plane3d}}
+\subsubsection{\texorpdfstring{exists\+Intersection()}{existsIntersection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 bool \hyperlink{classirr_1_1core_1_1plane3d}{irr\+::core\+::plane3d}$<$ T $>$\+::exists\+Intersection (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1plane3d}{plane3d}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -93,7 +151,18 @@ True if there is a intersection.
 \mbox{\Hypertarget{classirr_1_1core_1_1plane3d_ab5e41d5843bf3bb856f543186b8a7df8}\label{classirr_1_1core_1_1plane3d_ab5e41d5843bf3bb856f543186b8a7df8}} 
 \index{irr\+::core\+::plane3d@{irr\+::core\+::plane3d}!get\+Distance\+To@{get\+Distance\+To}}
 \index{get\+Distance\+To@{get\+Distance\+To}!irr\+::core\+::plane3d@{irr\+::core\+::plane3d}}
-\subsubsection{\texorpdfstring{get\+Distance\+To()}{getDistanceTo()}}
+\subsubsection{\texorpdfstring{get\+Distance\+To()}{getDistanceTo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T \hyperlink{classirr_1_1core_1_1plane3d}{irr\+::core\+::plane3d}$<$ T $>$\+::get\+Distance\+To (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the distance to a point. 
+
+Note that this only works if the normal is normalized. \mbox{\Hypertarget{classirr_1_1core_1_1plane3d_ab5e41d5843bf3bb856f543186b8a7df8}\label{classirr_1_1core_1_1plane3d_ab5e41d5843bf3bb856f543186b8a7df8}} 
+\index{irr\+::core\+::plane3d@{irr\+::core\+::plane3d}!get\+Distance\+To@{get\+Distance\+To}}
+\index{get\+Distance\+To@{get\+Distance\+To}!irr\+::core\+::plane3d@{irr\+::core\+::plane3d}}
+\subsubsection{\texorpdfstring{get\+Distance\+To()}{getDistanceTo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 T \hyperlink{classirr_1_1core_1_1plane3d}{irr\+::core\+::plane3d}$<$ T $>$\+::get\+Distance\+To (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -104,7 +173,30 @@ Get the distance to a point.
 Note that this only works if the normal is normalized. \mbox{\Hypertarget{classirr_1_1core_1_1plane3d_a6bec8dcaa0eeb9f7bdd5b727f3d3561d}\label{classirr_1_1core_1_1plane3d_a6bec8dcaa0eeb9f7bdd5b727f3d3561d}} 
 \index{irr\+::core\+::plane3d@{irr\+::core\+::plane3d}!get\+Intersection\+With\+Limited\+Line@{get\+Intersection\+With\+Limited\+Line}}
 \index{get\+Intersection\+With\+Limited\+Line@{get\+Intersection\+With\+Limited\+Line}!irr\+::core\+::plane3d@{irr\+::core\+::plane3d}}
-\subsubsection{\texorpdfstring{get\+Intersection\+With\+Limited\+Line()}{getIntersectionWithLimitedLine()}}
+\subsubsection{\texorpdfstring{get\+Intersection\+With\+Limited\+Line()}{getIntersectionWithLimitedLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classirr_1_1core_1_1plane3d}{irr\+::core\+::plane3d}$<$ T $>$\+::get\+Intersection\+With\+Limited\+Line (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{line\+Point1,  }\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{line\+Point2,  }\item[{\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{out\+Intersection }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get an intersection with a 3d line, limited between two 3d points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line\+Point1} & Point 1 of the line. \\
+\hline
+{\em line\+Point2} & Point 2 of the line. \\
+\hline
+{\em out\+Intersection} & Place to store the intersection point, if there is one. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if there was an intersection, false if there was not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1plane3d_a6bec8dcaa0eeb9f7bdd5b727f3d3561d}\label{classirr_1_1core_1_1plane3d_a6bec8dcaa0eeb9f7bdd5b727f3d3561d}} 
+\index{irr\+::core\+::plane3d@{irr\+::core\+::plane3d}!get\+Intersection\+With\+Limited\+Line@{get\+Intersection\+With\+Limited\+Line}}
+\index{get\+Intersection\+With\+Limited\+Line@{get\+Intersection\+With\+Limited\+Line}!irr\+::core\+::plane3d@{irr\+::core\+::plane3d}}
+\subsubsection{\texorpdfstring{get\+Intersection\+With\+Limited\+Line()}{getIntersectionWithLimitedLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 bool \hyperlink{classirr_1_1core_1_1plane3d}{irr\+::core\+::plane3d}$<$ T $>$\+::get\+Intersection\+With\+Limited\+Line (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{line\+Point1,  }\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{line\+Point2,  }\item[{\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{out\+Intersection }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -127,7 +219,30 @@ True if there was an intersection, false if there was not.
 \mbox{\Hypertarget{classirr_1_1core_1_1plane3d_ae3fb02f09788ead8b36523891fbd1288}\label{classirr_1_1core_1_1plane3d_ae3fb02f09788ead8b36523891fbd1288}} 
 \index{irr\+::core\+::plane3d@{irr\+::core\+::plane3d}!get\+Intersection\+With\+Line@{get\+Intersection\+With\+Line}}
 \index{get\+Intersection\+With\+Line@{get\+Intersection\+With\+Line}!irr\+::core\+::plane3d@{irr\+::core\+::plane3d}}
-\subsubsection{\texorpdfstring{get\+Intersection\+With\+Line()}{getIntersectionWithLine()}}
+\subsubsection{\texorpdfstring{get\+Intersection\+With\+Line()}{getIntersectionWithLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classirr_1_1core_1_1plane3d}{irr\+::core\+::plane3d}$<$ T $>$\+::get\+Intersection\+With\+Line (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{line\+Point,  }\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{line\+Vect,  }\item[{\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{out\+Intersection }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get an intersection with a 3d line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line\+Vect} & Vector of the line to intersect with. \\
+\hline
+{\em line\+Point} & Point of the line to intersect with. \\
+\hline
+{\em out\+Intersection} & Place to store the intersection point, if there is one. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if there was an intersection, false if there was not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1plane3d_ae3fb02f09788ead8b36523891fbd1288}\label{classirr_1_1core_1_1plane3d_ae3fb02f09788ead8b36523891fbd1288}} 
+\index{irr\+::core\+::plane3d@{irr\+::core\+::plane3d}!get\+Intersection\+With\+Line@{get\+Intersection\+With\+Line}}
+\index{get\+Intersection\+With\+Line@{get\+Intersection\+With\+Line}!irr\+::core\+::plane3d@{irr\+::core\+::plane3d}}
+\subsubsection{\texorpdfstring{get\+Intersection\+With\+Line()}{getIntersectionWithLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 bool \hyperlink{classirr_1_1core_1_1plane3d}{irr\+::core\+::plane3d}$<$ T $>$\+::get\+Intersection\+With\+Line (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{line\+Point,  }\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{line\+Vect,  }\item[{\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{out\+Intersection }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -150,7 +265,30 @@ True if there was an intersection, false if there was not.
 \mbox{\Hypertarget{classirr_1_1core_1_1plane3d_aa50063460dbcda6bc2b61ec4e9a15f0c}\label{classirr_1_1core_1_1plane3d_aa50063460dbcda6bc2b61ec4e9a15f0c}} 
 \index{irr\+::core\+::plane3d@{irr\+::core\+::plane3d}!get\+Intersection\+With\+Plane@{get\+Intersection\+With\+Plane}}
 \index{get\+Intersection\+With\+Plane@{get\+Intersection\+With\+Plane}!irr\+::core\+::plane3d@{irr\+::core\+::plane3d}}
-\subsubsection{\texorpdfstring{get\+Intersection\+With\+Plane()}{getIntersectionWithPlane()}}
+\subsubsection{\texorpdfstring{get\+Intersection\+With\+Plane()}{getIntersectionWithPlane()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classirr_1_1core_1_1plane3d}{irr\+::core\+::plane3d}$<$ T $>$\+::get\+Intersection\+With\+Plane (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1plane3d}{plane3d}$<$ T $>$ \&}]{other,  }\item[{\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{out\+Line\+Point,  }\item[{\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{out\+Line\+Vect }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Intersects this plane with another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Other plane to intersect with. \\
+\hline
+{\em out\+Line\+Point} & Base point of intersection line. \\
+\hline
+{\em out\+Line\+Vect} & Vector of intersection. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if there is a intersection, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1plane3d_aa50063460dbcda6bc2b61ec4e9a15f0c}\label{classirr_1_1core_1_1plane3d_aa50063460dbcda6bc2b61ec4e9a15f0c}} 
+\index{irr\+::core\+::plane3d@{irr\+::core\+::plane3d}!get\+Intersection\+With\+Plane@{get\+Intersection\+With\+Plane}}
+\index{get\+Intersection\+With\+Plane@{get\+Intersection\+With\+Plane}!irr\+::core\+::plane3d@{irr\+::core\+::plane3d}}
+\subsubsection{\texorpdfstring{get\+Intersection\+With\+Plane()}{getIntersectionWithPlane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 bool \hyperlink{classirr_1_1core_1_1plane3d}{irr\+::core\+::plane3d}$<$ T $>$\+::get\+Intersection\+With\+Plane (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1plane3d}{plane3d}$<$ T $>$ \&}]{other,  }\item[{\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{out\+Line\+Point,  }\item[{\hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{out\+Line\+Vect }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -173,7 +311,28 @@ True if there is a intersection, false if not.
 \mbox{\Hypertarget{classirr_1_1core_1_1plane3d_a5fcd4852c2634172862324340558c634}\label{classirr_1_1core_1_1plane3d_a5fcd4852c2634172862324340558c634}} 
 \index{irr\+::core\+::plane3d@{irr\+::core\+::plane3d}!get\+Known\+Intersection\+With\+Line@{get\+Known\+Intersection\+With\+Line}}
 \index{get\+Known\+Intersection\+With\+Line@{get\+Known\+Intersection\+With\+Line}!irr\+::core\+::plane3d@{irr\+::core\+::plane3d}}
-\subsubsection{\texorpdfstring{get\+Known\+Intersection\+With\+Line()}{getKnownIntersectionWithLine()}}
+\subsubsection{\texorpdfstring{get\+Known\+Intersection\+With\+Line()}{getKnownIntersectionWithLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1core_1_1plane3d}{irr\+::core\+::plane3d}$<$ T $>$\+::get\+Known\+Intersection\+With\+Line (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{line\+Point1,  }\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{line\+Point2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get percentage of line between two points where an intersection with this plane happens. 
+
+Only useful if known that there is an intersection. 
+\begin{DoxyParams}{Parameters}
+{\em line\+Point1} & Point1 of the line to intersect with. \\
+\hline
+{\em line\+Point2} & Point2 of the line to intersect with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Where on a line between two points an intersection with this plane happened. For example, 0.\+5 is returned if the intersection happened exactly in the middle of the two points. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1plane3d_a5fcd4852c2634172862324340558c634}\label{classirr_1_1core_1_1plane3d_a5fcd4852c2634172862324340558c634}} 
+\index{irr\+::core\+::plane3d@{irr\+::core\+::plane3d}!get\+Known\+Intersection\+With\+Line@{get\+Known\+Intersection\+With\+Line}}
+\index{get\+Known\+Intersection\+With\+Line@{get\+Known\+Intersection\+With\+Line}!irr\+::core\+::plane3d@{irr\+::core\+::plane3d}}
+\subsubsection{\texorpdfstring{get\+Known\+Intersection\+With\+Line()}{getKnownIntersectionWithLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1core_1_1plane3d}{irr\+::core\+::plane3d}$<$ T $>$\+::get\+Known\+Intersection\+With\+Line (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{line\+Point1,  }\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{line\+Point2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -194,7 +353,26 @@ Where on a line between two points an intersection with this plane happened. For
 \mbox{\Hypertarget{classirr_1_1core_1_1plane3d_aca0237b25cbf4fe13d87b14a04d68df9}\label{classirr_1_1core_1_1plane3d_aca0237b25cbf4fe13d87b14a04d68df9}} 
 \index{irr\+::core\+::plane3d@{irr\+::core\+::plane3d}!is\+Front\+Facing@{is\+Front\+Facing}}
 \index{is\+Front\+Facing@{is\+Front\+Facing}!irr\+::core\+::plane3d@{irr\+::core\+::plane3d}}
-\subsubsection{\texorpdfstring{is\+Front\+Facing()}{isFrontFacing()}}
+\subsubsection{\texorpdfstring{is\+Front\+Facing()}{isFrontFacing()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classirr_1_1core_1_1plane3d}{irr\+::core\+::plane3d}$<$ T $>$\+::is\+Front\+Facing (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{look\+Direction }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Test if the triangle would be front or backfacing from any point. 
+
+Thus, this method assumes a camera position from which the triangle is definitely visible when looking into the given direction. Note that this only works if the normal is Normalized. Do not use this method with points as it will give wrong results! 
+\begin{DoxyParams}{Parameters}
+{\em look\+Direction} & Look direction. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the plane is front facing and false if it is backfacing. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1plane3d_aca0237b25cbf4fe13d87b14a04d68df9}\label{classirr_1_1core_1_1plane3d_aca0237b25cbf4fe13d87b14a04d68df9}} 
+\index{irr\+::core\+::plane3d@{irr\+::core\+::plane3d}!is\+Front\+Facing@{is\+Front\+Facing}}
+\index{is\+Front\+Facing@{is\+Front\+Facing}!irr\+::core\+::plane3d@{irr\+::core\+::plane3d}}
+\subsubsection{\texorpdfstring{is\+Front\+Facing()}{isFrontFacing()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 bool \hyperlink{classirr_1_1core_1_1plane3d}{irr\+::core\+::plane3d}$<$ T $>$\+::is\+Front\+Facing (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1vector3d}{vector3d}$<$ T $>$ \&}]{look\+Direction }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 

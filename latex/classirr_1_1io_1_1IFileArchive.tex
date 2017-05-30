@@ -18,7 +18,16 @@ Inheritance diagram for irr\+:\+:io\+:\+:I\+File\+Archive\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \hyperlink{classirr_1_1io_1_1IReadFile}{I\+Read\+File} $\ast$ \hyperlink{classirr_1_1io_1_1IFileArchive_a5c3b4994ae63447d2634dd86b3069988}{create\+And\+Open\+File} (const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{path} \&filename)=0
+virtual \hyperlink{classirr_1_1io_1_1IReadFile}{I\+Read\+File} $\ast$ \hyperlink{classirr_1_1io_1_1IFileArchive_a5c3b4994ae63447d2634dd86b3069988}{create\+And\+Open\+File} (const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{path} \&filename)=0
+\begin{DoxyCompactList}\small\item\em Opens a file based on its name. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1io_1_1IReadFile}{I\+Read\+File} $\ast$ \hyperlink{classirr_1_1io_1_1IFileArchive_ab6bc8fbd660bbbe42b4d30a9d4f26c7d}{create\+And\+Open\+File} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index)=0
+\begin{DoxyCompactList}\small\item\em Opens a file based on its position in the file list. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classirr_1_1io_1_1IFileList}{I\+File\+List} $\ast$ \hyperlink{classirr_1_1io_1_1IFileArchive_a73c683318837b13d16843373da00ded3}{get\+File\+List} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the complete file tree. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1io_1_1IFileArchive_ae991b223b7f3b8b47916d82d842e3004}\label{classirr_1_1io_1_1IFileArchive_ae991b223b7f3b8b47916d82d842e3004}} 
+virtual \hyperlink{namespaceirr_1_1io_adb3e3c445ec8e608ed1f0f93306da14f}{E\+\_\+\+F\+I\+L\+E\+\_\+\+A\+R\+C\+H\+I\+V\+E\+\_\+\+T\+Y\+PE} \hyperlink{classirr_1_1io_1_1IFileArchive_ae991b223b7f3b8b47916d82d842e3004}{get\+Type} () const
+\begin{DoxyCompactList}\small\item\em get the archive type \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1io_1_1IReadFile}{I\+Read\+File} $\ast$ \hyperlink{classirr_1_1io_1_1IFileArchive_a5c3b4994ae63447d2634dd86b3069988}{create\+And\+Open\+File} (const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{path} \&filename)=0
 \begin{DoxyCompactList}\small\item\em Opens a file based on its name. \end{DoxyCompactList}\item 
 virtual \hyperlink{classirr_1_1io_1_1IReadFile}{I\+Read\+File} $\ast$ \hyperlink{classirr_1_1io_1_1IFileArchive_ab6bc8fbd660bbbe42b4d30a9d4f26c7d}{create\+And\+Open\+File} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} index)=0
 \begin{DoxyCompactList}\small\item\em Opens a file based on its position in the file list. \end{DoxyCompactList}\item 
@@ -30,7 +39,7 @@ virtual \hyperlink{namespaceirr_1_1io_adb3e3c445ec8e608ed1f0f93306da14f}{E\+\_\+
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{namespaceirr_1_1core_ade1071a878633f2f6d8a75c5d11fec19}{core\+::stringc} \hyperlink{classirr_1_1io_1_1IFileArchive_ae5b574864226b09c70518e163e59b6ba}{Password}
+\hyperlink{namespaceirr_1_1core_ab26a0e0359206b5a694f35c37c829d7f}{core\+::stringc} \hyperlink{classirr_1_1io_1_1IFileArchive_ae5b574864226b09c70518e163e59b6ba}{Password}
 \begin{DoxyCompactList}\small\item\em An optionally used password string. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -42,8 +51,26 @@ The File\+Archive manages archives and provides access to files inside them.
 \mbox{\Hypertarget{classirr_1_1io_1_1IFileArchive_a5c3b4994ae63447d2634dd86b3069988}\label{classirr_1_1io_1_1IFileArchive_a5c3b4994ae63447d2634dd86b3069988}} 
 \index{irr\+::io\+::\+I\+File\+Archive@{irr\+::io\+::\+I\+File\+Archive}!create\+And\+Open\+File@{create\+And\+Open\+File}}
 \index{create\+And\+Open\+File@{create\+And\+Open\+File}!irr\+::io\+::\+I\+File\+Archive@{irr\+::io\+::\+I\+File\+Archive}}
-\subsubsection{\texorpdfstring{create\+And\+Open\+File()}{createAndOpenFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1io_1_1IReadFile}{I\+Read\+File}$\ast$ irr\+::io\+::\+I\+File\+Archive\+::create\+And\+Open\+File (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_ab1bdc45edb3f94d8319c02bc0f840ee1}{path} \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{create\+And\+Open\+File()}{createAndOpenFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1io_1_1IReadFile}{I\+Read\+File}$\ast$ irr\+::io\+::\+I\+File\+Archive\+::create\+And\+Open\+File (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{path} \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Opens a file based on its name. 
+
+Creates and returns a new \hyperlink{classirr_1_1io_1_1IReadFile}{I\+Read\+File} for a file in the archive. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & The file to open \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns A pointer to the created file on success, or 0 on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1io_1_1IFileArchive_a5c3b4994ae63447d2634dd86b3069988}\label{classirr_1_1io_1_1IFileArchive_a5c3b4994ae63447d2634dd86b3069988}} 
+\index{irr\+::io\+::\+I\+File\+Archive@{irr\+::io\+::\+I\+File\+Archive}!create\+And\+Open\+File@{create\+And\+Open\+File}}
+\index{create\+And\+Open\+File@{create\+And\+Open\+File}!irr\+::io\+::\+I\+File\+Archive@{irr\+::io\+::\+I\+File\+Archive}}
+\subsubsection{\texorpdfstring{create\+And\+Open\+File()}{createAndOpenFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1io_1_1IReadFile}{I\+Read\+File}$\ast$ irr\+::io\+::\+I\+File\+Archive\+::create\+And\+Open\+File (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1io_a6468281622ce3a1c46b72e19f32dded5}{path} \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -60,7 +87,25 @@ Returns A pointer to the created file on success, or 0 on failure.
 \mbox{\Hypertarget{classirr_1_1io_1_1IFileArchive_ab6bc8fbd660bbbe42b4d30a9d4f26c7d}\label{classirr_1_1io_1_1IFileArchive_ab6bc8fbd660bbbe42b4d30a9d4f26c7d}} 
 \index{irr\+::io\+::\+I\+File\+Archive@{irr\+::io\+::\+I\+File\+Archive}!create\+And\+Open\+File@{create\+And\+Open\+File}}
 \index{create\+And\+Open\+File@{create\+And\+Open\+File}!irr\+::io\+::\+I\+File\+Archive@{irr\+::io\+::\+I\+File\+Archive}}
-\subsubsection{\texorpdfstring{create\+And\+Open\+File()}{createAndOpenFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{create\+And\+Open\+File()}{createAndOpenFile()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1io_1_1IReadFile}{I\+Read\+File}$\ast$ irr\+::io\+::\+I\+File\+Archive\+::create\+And\+Open\+File (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Opens a file based on its position in the file list. 
+
+Creates and returns 
+\begin{DoxyParams}{Parameters}
+{\em index} & The zero based index of the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to the created file on success, or 0 on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1io_1_1IFileArchive_ab6bc8fbd660bbbe42b4d30a9d4f26c7d}\label{classirr_1_1io_1_1IFileArchive_ab6bc8fbd660bbbe42b4d30a9d4f26c7d}} 
+\index{irr\+::io\+::\+I\+File\+Archive@{irr\+::io\+::\+I\+File\+Archive}!create\+And\+Open\+File@{create\+And\+Open\+File}}
+\index{create\+And\+Open\+File@{create\+And\+Open\+File}!irr\+::io\+::\+I\+File\+Archive@{irr\+::io\+::\+I\+File\+Archive}}
+\subsubsection{\texorpdfstring{create\+And\+Open\+File()}{createAndOpenFile()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1io_1_1IReadFile}{I\+Read\+File}$\ast$ irr\+::io\+::\+I\+File\+Archive\+::create\+And\+Open\+File (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -78,7 +123,20 @@ Returns a pointer to the created file on success, or 0 on failure.
 \mbox{\Hypertarget{classirr_1_1io_1_1IFileArchive_a73c683318837b13d16843373da00ded3}\label{classirr_1_1io_1_1IFileArchive_a73c683318837b13d16843373da00ded3}} 
 \index{irr\+::io\+::\+I\+File\+Archive@{irr\+::io\+::\+I\+File\+Archive}!get\+File\+List@{get\+File\+List}}
 \index{get\+File\+List@{get\+File\+List}!irr\+::io\+::\+I\+File\+Archive@{irr\+::io\+::\+I\+File\+Archive}}
-\subsubsection{\texorpdfstring{get\+File\+List()}{getFileList()}}
+\subsubsection{\texorpdfstring{get\+File\+List()}{getFileList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual const \hyperlink{classirr_1_1io_1_1IFileList}{I\+File\+List}$\ast$ irr\+::io\+::\+I\+File\+Archive\+::get\+File\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the complete file tree. 
+
+\begin{DoxyReturn}{Returns}
+Returns the complete directory tree for the archive, including all files and folders 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1io_1_1IFileArchive_a73c683318837b13d16843373da00ded3}\label{classirr_1_1io_1_1IFileArchive_a73c683318837b13d16843373da00ded3}} 
+\index{irr\+::io\+::\+I\+File\+Archive@{irr\+::io\+::\+I\+File\+Archive}!get\+File\+List@{get\+File\+List}}
+\index{get\+File\+List@{get\+File\+List}!irr\+::io\+::\+I\+File\+Archive@{irr\+::io\+::\+I\+File\+Archive}}
+\subsubsection{\texorpdfstring{get\+File\+List()}{getFileList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual const \hyperlink{classirr_1_1io_1_1IFileList}{I\+File\+List}$\ast$ irr\+::io\+::\+I\+File\+Archive\+::get\+File\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -95,7 +153,7 @@ Returns the complete directory tree for the archive, including all files and fol
 \index{irr\+::io\+::\+I\+File\+Archive@{irr\+::io\+::\+I\+File\+Archive}!Password@{Password}}
 \index{Password@{Password}!irr\+::io\+::\+I\+File\+Archive@{irr\+::io\+::\+I\+File\+Archive}}
 \subsubsection{\texorpdfstring{Password}{Password}}
-{\footnotesize\ttfamily \hyperlink{namespaceirr_1_1core_ade1071a878633f2f6d8a75c5d11fec19}{core\+::stringc} irr\+::io\+::\+I\+File\+Archive\+::\+Password}
+{\footnotesize\ttfamily \hyperlink{namespaceirr_1_1core_ab26a0e0359206b5a694f35c37c829d7f}{core\+::stringc} irr\+::io\+::\+I\+File\+Archive\+::\+Password}
 
 
 

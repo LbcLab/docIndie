@@ -21,6 +21,10 @@ Inheritance diagram for irr\+:\+:video\+:\+:I\+Shader\+Constant\+Set\+Call\+Back
 virtual void \hyperlink{classirr_1_1video_1_1IShaderConstantSetCallBack_a837ad9419ca4c17b011af75bb24e7a72}{On\+Set\+Material} (const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&material)
 \begin{DoxyCompactList}\small\item\em Called to let the call\+Back know the used material (optional method) \end{DoxyCompactList}\item 
 virtual void \hyperlink{classirr_1_1video_1_1IShaderConstantSetCallBack_a91cf4eb8d20d278defaca4e3c9390396}{On\+Set\+Constants} (\hyperlink{classirr_1_1video_1_1IMaterialRendererServices}{I\+Material\+Renderer\+Services} $\ast$services, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} user\+Data)=0
+\begin{DoxyCompactList}\small\item\em Called by the engine when the vertex and/or pixel shader constants for an material renderer should be set. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1video_1_1IShaderConstantSetCallBack_a837ad9419ca4c17b011af75bb24e7a72}{On\+Set\+Material} (const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&material)
+\begin{DoxyCompactList}\small\item\em Called to let the call\+Back know the used material (optional method) \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1video_1_1IShaderConstantSetCallBack_a91cf4eb8d20d278defaca4e3c9390396}{On\+Set\+Constants} (\hyperlink{classirr_1_1video_1_1IMaterialRendererServices}{I\+Material\+Renderer\+Services} $\ast$services, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} user\+Data)=0
 \begin{DoxyCompactList}\small\item\em Called by the engine when the vertex and/or pixel shader constants for an material renderer should be set. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -34,7 +38,7 @@ Implement this interface in an own class and pass a pointer to it to one of the 
 \mbox{\Hypertarget{classirr_1_1video_1_1IShaderConstantSetCallBack_a91cf4eb8d20d278defaca4e3c9390396}\label{classirr_1_1video_1_1IShaderConstantSetCallBack_a91cf4eb8d20d278defaca4e3c9390396}} 
 \index{irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back@{irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back}!On\+Set\+Constants@{On\+Set\+Constants}}
 \index{On\+Set\+Constants@{On\+Set\+Constants}!irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back@{irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back}}
-\subsubsection{\texorpdfstring{On\+Set\+Constants()}{OnSetConstants()}}
+\subsubsection{\texorpdfstring{On\+Set\+Constants()}{OnSetConstants()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily virtual void irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back\+::\+On\+Set\+Constants (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1video_1_1IMaterialRendererServices}{I\+Material\+Renderer\+Services} $\ast$}]{services,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{user\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -49,10 +53,50 @@ Implement the \hyperlink{classirr_1_1video_1_1IShaderConstantSetCallBack}{I\+Sha
     video::IVideoDriver* driver = services->getVideoDriver();
 
     \textcolor{comment}{// set clip matrix at register 4}
-    \hyperlink{namespaceirr_1_1core_a73fa92e638c5ca97efd72da307cc9b65}{core::matrix4} worldViewProj(driver->getTransform(
-      \hyperlink{namespaceirr_1_1video_a15b57657a320243be03ae6f66fcff43dae7ec186418508c67a7562af012d7b63f}{video::ETS\_PROJECTION}));
-    worldViewProj *= driver->getTransform(\hyperlink{namespaceirr_1_1video_a15b57657a320243be03ae6f66fcff43da152f4262d5874186e0288934c7d31e14}{video::ETS\_VIEW});
-    worldViewProj *= driver->getTransform(\hyperlink{namespaceirr_1_1video_a15b57657a320243be03ae6f66fcff43da843cf42adb3fa9caf61c9e228cf14e85}{video::ETS\_WORLD});
+    \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core::matrix4} worldViewProj(driver->getTransform(
+      \hyperlink{namespaceirr_1_1video_a15b57657a320243be03ae6f66fcff43da3e02dc0a1b7e92ea9ff2a548d54e10cc}{video::ETS\_PROJECTION}));
+    worldViewProj *= driver->getTransform(\hyperlink{namespaceirr_1_1video_a15b57657a320243be03ae6f66fcff43da9f4c5ade2cd956ef9dcc658fd8df2183}{video::ETS\_VIEW});
+    worldViewProj *= driver->getTransform(\hyperlink{namespaceirr_1_1video_a15b57657a320243be03ae6f66fcff43daf0d9765331daace35b8443c471738305}{video::ETS\_WORLD});
+    services->setVertexShaderConstant(&worldViewProj.M[0], 4, 4);
+    \textcolor{comment}{// for high level shading languages, this would be another solution:}
+    \textcolor{comment}{//services->setVertexShaderConstant("mWorldViewProj", worldViewProj.M, 16);}
+
+    \textcolor{comment}{// set some light color at register 9}
+    video::SColorf col(0.0f,1.0f,1.0f,0.0f);
+    services->setVertexShaderConstant(reinterpret\_cast<const f32*>(&col), 9, 1);
+    \textcolor{comment}{// for high level shading languages, this would be another solution:}
+    \textcolor{comment}{//services->setVertexShaderConstant("myColor", reinterpret\_cast<f32*>(&col), 4);}
+\}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em services} & Pointer to an interface providing methods to set the constants for the shader. \\
+\hline
+{\em user\+Data} & Userdata int which can be specified when creating the shader. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1video_1_1IShaderConstantSetCallBack_a91cf4eb8d20d278defaca4e3c9390396}\label{classirr_1_1video_1_1IShaderConstantSetCallBack_a91cf4eb8d20d278defaca4e3c9390396}} 
+\index{irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back@{irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back}!On\+Set\+Constants@{On\+Set\+Constants}}
+\index{On\+Set\+Constants@{On\+Set\+Constants}!irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back@{irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back}}
+\subsubsection{\texorpdfstring{On\+Set\+Constants()}{OnSetConstants()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back\+::\+On\+Set\+Constants (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1video_1_1IMaterialRendererServices}{I\+Material\+Renderer\+Services} $\ast$}]{services,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{user\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Called by the engine when the vertex and/or pixel shader constants for an material renderer should be set. 
+
+Implement the \hyperlink{classirr_1_1video_1_1IShaderConstantSetCallBack}{I\+Shader\+Constant\+Set\+Call\+Back} in an own class and implement your own On\+Set\+Constants method using the given \hyperlink{classirr_1_1video_1_1IMaterialRendererServices}{I\+Material\+Renderer\+Services} interface. Pass a pointer to this class to one of the methods in \hyperlink{classirr_1_1video_1_1IGPUProgrammingServices}{I\+G\+P\+U\+Programming\+Services} when creating a shader. The On\+Set\+Constants method will now be called every time before geometry is being drawn using your shader material. A sample implementation would look like this\+: 
+\begin{DoxyCode}
+\textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classirr_1_1video_1_1IShaderConstantSetCallBack_a91cf4eb8d20d278defaca4e3c9390396}{OnSetConstants}(video::IMaterialRendererServices* services, 
+      \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} userData)
+\{
+    video::IVideoDriver* driver = services->getVideoDriver();
+
+    \textcolor{comment}{// set clip matrix at register 4}
+    \hyperlink{namespaceirr_1_1core_a4c9d4e29899535971052810954a14431}{core::matrix4} worldViewProj(driver->getTransform(
+      \hyperlink{namespaceirr_1_1video_a15b57657a320243be03ae6f66fcff43da3e02dc0a1b7e92ea9ff2a548d54e10cc}{video::ETS\_PROJECTION}));
+    worldViewProj *= driver->getTransform(\hyperlink{namespaceirr_1_1video_a15b57657a320243be03ae6f66fcff43da9f4c5ade2cd956ef9dcc658fd8df2183}{video::ETS\_VIEW});
+    worldViewProj *= driver->getTransform(\hyperlink{namespaceirr_1_1video_a15b57657a320243be03ae6f66fcff43daf0d9765331daace35b8443c471738305}{video::ETS\_WORLD});
     services->setVertexShaderConstant(&worldViewProj.M[0], 4, 4);
     \textcolor{comment}{// for high level shading languages, this would be another solution:}
     \textcolor{comment}{//services->setVertexShaderConstant("mWorldViewProj", worldViewProj.M, 16);}
@@ -74,7 +118,34 @@ Implement the \hyperlink{classirr_1_1video_1_1IShaderConstantSetCallBack}{I\+Sha
 \mbox{\Hypertarget{classirr_1_1video_1_1IShaderConstantSetCallBack_a837ad9419ca4c17b011af75bb24e7a72}\label{classirr_1_1video_1_1IShaderConstantSetCallBack_a837ad9419ca4c17b011af75bb24e7a72}} 
 \index{irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back@{irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back}!On\+Set\+Material@{On\+Set\+Material}}
 \index{On\+Set\+Material@{On\+Set\+Material}!irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back@{irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back}}
-\subsubsection{\texorpdfstring{On\+Set\+Material()}{OnSetMaterial()}}
+\subsubsection{\texorpdfstring{On\+Set\+Material()}{OnSetMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back\+::\+On\+Set\+Material (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Called to let the call\+Back know the used material (optional method) 
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{class }MyCallBack : \textcolor{keyword}{public} IShaderConstantSetCallBack
+\{
+    \textcolor{keyword}{const} video::SMaterial *UsedMaterial;
+
+    \hyperlink{classirr_1_1video_1_1IShaderConstantSetCallBack_a837ad9419ca4c17b011af75bb24e7a72}{OnSetMaterial}(\textcolor{keyword}{const} video::SMaterial& material)
+    \{
+        UsedMaterial=&material;
+    \}
+
+    \hyperlink{classirr_1_1video_1_1IShaderConstantSetCallBack_a91cf4eb8d20d278defaca4e3c9390396}{OnSetConstants}(IMaterialRendererServices* services, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} userData)
+    \{
+        services->setVertexShaderConstant(\textcolor{stringliteral}{"myColor"}, reinterpret\_cast<f32*>(&UsedMaterial->color), 4);
+    \}
+\}
+\end{DoxyCode}
+ \mbox{\Hypertarget{classirr_1_1video_1_1IShaderConstantSetCallBack_a837ad9419ca4c17b011af75bb24e7a72}\label{classirr_1_1video_1_1IShaderConstantSetCallBack_a837ad9419ca4c17b011af75bb24e7a72}} 
+\index{irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back@{irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back}!On\+Set\+Material@{On\+Set\+Material}}
+\index{On\+Set\+Material@{On\+Set\+Material}!irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back@{irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back}}
+\subsubsection{\texorpdfstring{On\+Set\+Material()}{OnSetMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::video\+::\+I\+Shader\+Constant\+Set\+Call\+Back\+::\+On\+Set\+Material (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{S\+Material} \&}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 

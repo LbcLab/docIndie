@@ -12,7 +12,7 @@ Interface for writing meshes.
 Inheritance diagram for irr\+:\+:scene\+:\+:I\+Collada\+Mesh\+Writer\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3.000000cm]{classirr_1_1scene_1_1IColladaMeshWriter}
+\includegraphics[height=2.210526cm]{classirr_1_1scene_1_1IColladaMeshWriter}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -63,7 +63,54 @@ virtual \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterNames}{I\+Collada\+Mes
 \begin{DoxyCompactList}\small\item\em Get currently used name generator. \end{DoxyCompactList}\item 
 \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterNames}{I\+Collada\+Mesh\+Writer\+Names} $\ast$ \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_acd10fcf2458271d59cf76284613288f6}{get\+Default\+Name\+Generator} () const
 \begin{DoxyCompactList}\small\item\em Return the original default name generator of the writer. \end{DoxyCompactList}\item 
-virtual \hyperlink{namespaceirr_1_1core_aef83fafbb1b36fcce44c07c9be23a7f2}{irr\+::core\+::stringw} \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_ac9c48beab095aa6f4cb4f696bb2ecd45}{to\+N\+C\+Name} (const \hyperlink{namespaceirr_1_1core_aef83fafbb1b36fcce44c07c9be23a7f2}{irr\+::core\+::stringw} \&old\+String, const \hyperlink{namespaceirr_1_1core_aef83fafbb1b36fcce44c07c9be23a7f2}{irr\+::core\+::stringw} \&prefix=\hyperlink{namespaceirr_1_1core_aef83fafbb1b36fcce44c07c9be23a7f2}{irr\+::core\+::stringw}(L\char`\"{}\+\_\+\+N\+C\+\_\+\char`\"{})) const =0
+virtual \hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{irr\+::core\+::stringw} \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_ac9c48beab095aa6f4cb4f696bb2ecd45}{to\+N\+C\+Name} (const \hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{irr\+::core\+::stringw} \&old\+String, const \hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{irr\+::core\+::stringw} \&prefix=\hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{irr\+::core\+::stringw}(L\char`\"{}\+\_\+\+N\+C\+\_\+\char`\"{})) const =0
+\begin{DoxyCompactList}\small\item\em Restrict the characters of old\+String a set of allowed characters in xs\+::\+N\+C\+Name and add the prefix. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_a85ed9eb856663c6698e1f7c4535b9057}\label{classirr_1_1scene_1_1IColladaMeshWriter_a85ed9eb856663c6698e1f7c4535b9057}} 
+virtual \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_a85ed9eb856663c6698e1f7c4535b9057}{$\sim$\+I\+Collada\+Mesh\+Writer} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_ad2e6e7617052c83d5f19d7811e0d5fd7}\label{classirr_1_1scene_1_1IColladaMeshWriter_ad2e6e7617052c83d5f19d7811e0d5fd7}} 
+virtual bool \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_ad2e6e7617052c83d5f19d7811e0d5fd7}{write\+Scene} (\hyperlink{classirr_1_1io_1_1IWriteFile}{io\+::\+I\+Write\+File} $\ast$file, \hyperlink{classirr_1_1scene_1_1ISceneNode}{scene\+::\+I\+Scene\+Node} $\ast$root)=0
+\begin{DoxyCompactList}\small\item\em writes a scene starting with the given node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_a2fa67e9fcfefdc6cf71d682e9891d15e}\label{classirr_1_1scene_1_1IColladaMeshWriter_a2fa67e9fcfefdc6cf71d682e9891d15e}} 
+virtual void \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_a2fa67e9fcfefdc6cf71d682e9891d15e}{set\+Write\+Textures} (bool write)
+\begin{DoxyCompactList}\small\item\em Set if texture information should be written. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_a55088db1ff55ebb1a657fac22f52386b}\label{classirr_1_1scene_1_1IColladaMeshWriter_a55088db1ff55ebb1a657fac22f52386b}} 
+virtual bool \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_a55088db1ff55ebb1a657fac22f52386b}{get\+Write\+Textures} () const
+\begin{DoxyCompactList}\small\item\em Get if texture information should be written. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_acf1952c459b4b2bde5b479b6d9717c35}{set\+Write\+Default\+Scene} (bool write)
+\begin{DoxyCompactList}\small\item\em Set if a default scene should be written when writing meshes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_a311c259b48fade63a30c9b5f422571d4}\label{classirr_1_1scene_1_1IColladaMeshWriter_a311c259b48fade63a30c9b5f422571d4}} 
+virtual bool \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_a311c259b48fade63a30c9b5f422571d4}{get\+Write\+Default\+Scene} () const
+\begin{DoxyCompactList}\small\item\em Get if a default scene should be written. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_a410fb9e46db6250ff8bbf4ddb18ef1f2}\label{classirr_1_1scene_1_1IColladaMeshWriter_a410fb9e46db6250ff8bbf4ddb18ef1f2}} 
+virtual void \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_a410fb9e46db6250ff8bbf4ddb18ef1f2}{set\+Ambient\+Light} (const \hyperlink{classirr_1_1video_1_1SColorf}{video\+::\+S\+Colorf} \&ambient\+Color)
+\begin{DoxyCompactList}\small\item\em Sets ambient color of the scene to write. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_af263653d1159795a9aeead92c4e94b44}\label{classirr_1_1scene_1_1IColladaMeshWriter_af263653d1159795a9aeead92c4e94b44}} 
+virtual \hyperlink{classirr_1_1video_1_1SColorf}{video\+::\+S\+Colorf} \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_af263653d1159795a9aeead92c4e94b44}{get\+Ambient\+Light} () const
+\begin{DoxyCompactList}\small\item\em Return ambient light of the scene which is written. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_a25d2e1ff0bf04375c822800b0b3a4b01}{set\+Geometry\+Writing} (\hyperlink{namespaceirr_1_1scene_a179008e7c02889459edf81394dbd6959}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+W\+R\+I\+T\+I\+NG} write\+Style)
+\begin{DoxyCompactList}\small\item\em Control when and how often a mesh is written. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_ab83b1690e233d6742e716aa5a1cf32f2}\label{classirr_1_1scene_1_1IColladaMeshWriter_ab83b1690e233d6742e716aa5a1cf32f2}} 
+virtual \hyperlink{namespaceirr_1_1scene_a179008e7c02889459edf81394dbd6959}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+W\+R\+I\+T\+I\+NG} \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_ab83b1690e233d6742e716aa5a1cf32f2}{get\+Geometry\+Writing} () const
+\begin{DoxyCompactList}\small\item\em Get the current style of geometry writing. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_af6f37ca4a1ef6238cc079f3f5d5eb612}{set\+Export\+S\+Materials\+Only\+Once} (bool export\+Once)
+\begin{DoxyCompactList}\small\item\em Make certain there is only one collada material generated per Irrlicht material. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_acffa89579171224f10e30f2c0d09f8c1}{set\+Properties} (\hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties}{I\+Collada\+Mesh\+Writer\+Properties} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Set properties to use by the meshwriter instead of it\textquotesingle{}s default properties. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_acce5ebec91c7f655da4557953df80a7a}\label{classirr_1_1scene_1_1IColladaMeshWriter_acce5ebec91c7f655da4557953df80a7a}} 
+virtual \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties}{I\+Collada\+Mesh\+Writer\+Properties} $\ast$ \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_acce5ebec91c7f655da4557953df80a7a}{get\+Properties} () const
+\begin{DoxyCompactList}\small\item\em Get properties which are currently used. \end{DoxyCompactList}\item 
+\hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties}{I\+Collada\+Mesh\+Writer\+Properties} $\ast$ \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_ae5d7e19d6d4bba65bcfb006c011cb6f2}{get\+Default\+Properties} () const
+\begin{DoxyCompactList}\small\item\em Return the original default properties of the writer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_a7e48b43c91133e482e76da54849ef153}\label{classirr_1_1scene_1_1IColladaMeshWriter_a7e48b43c91133e482e76da54849ef153}} 
+virtual void \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_a7e48b43c91133e482e76da54849ef153}{set\+Name\+Generator} (\hyperlink{classirr_1_1scene_1_1IColladaMeshWriterNames}{I\+Collada\+Mesh\+Writer\+Names} $\ast$name\+Generator)
+\begin{DoxyCompactList}\small\item\em Install a generator to create custom names on export. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_ad519f6ce64dcf1013b6fe0b9aaa67b40}\label{classirr_1_1scene_1_1IColladaMeshWriter_ad519f6ce64dcf1013b6fe0b9aaa67b40}} 
+virtual \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterNames}{I\+Collada\+Mesh\+Writer\+Names} $\ast$ \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_ad519f6ce64dcf1013b6fe0b9aaa67b40}{get\+Name\+Generator} () const
+\begin{DoxyCompactList}\small\item\em Get currently used name generator. \end{DoxyCompactList}\item 
+\hyperlink{classirr_1_1scene_1_1IColladaMeshWriterNames}{I\+Collada\+Mesh\+Writer\+Names} $\ast$ \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_acd10fcf2458271d59cf76284613288f6}{get\+Default\+Name\+Generator} () const
+\begin{DoxyCompactList}\small\item\em Return the original default name generator of the writer. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{irr\+::core\+::stringw} \hyperlink{classirr_1_1scene_1_1IColladaMeshWriter_ac9c48beab095aa6f4cb4f696bb2ecd45}{to\+N\+C\+Name} (const \hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{irr\+::core\+::stringw} \&old\+String, const \hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{irr\+::core\+::stringw} \&prefix=\hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{irr\+::core\+::stringw}(L\char`\"{}\+\_\+\+N\+C\+\_\+\char`\"{})) const =0
 \begin{DoxyCompactList}\small\item\em Restrict the characters of old\+String a set of allowed characters in xs\+::\+N\+C\+Name and add the prefix. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -75,7 +122,17 @@ Interface for writing meshes.
 \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_acd10fcf2458271d59cf76284613288f6}\label{classirr_1_1scene_1_1IColladaMeshWriter_acd10fcf2458271d59cf76284613288f6}} 
 \index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}!get\+Default\+Name\+Generator@{get\+Default\+Name\+Generator}}
 \index{get\+Default\+Name\+Generator@{get\+Default\+Name\+Generator}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}}
-\subsubsection{\texorpdfstring{get\+Default\+Name\+Generator()}{getDefaultNameGenerator()}}
+\subsubsection{\texorpdfstring{get\+Default\+Name\+Generator()}{getDefaultNameGenerator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterNames}{I\+Collada\+Mesh\+Writer\+Names}$\ast$ irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+::get\+Default\+Name\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the original default name generator of the writer. 
+
+You can use this pointer in your own generator to access and return default values. \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_acd10fcf2458271d59cf76284613288f6}\label{classirr_1_1scene_1_1IColladaMeshWriter_acd10fcf2458271d59cf76284613288f6}} 
+\index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}!get\+Default\+Name\+Generator@{get\+Default\+Name\+Generator}}
+\index{get\+Default\+Name\+Generator@{get\+Default\+Name\+Generator}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}}
+\subsubsection{\texorpdfstring{get\+Default\+Name\+Generator()}{getDefaultNameGenerator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterNames}{I\+Collada\+Mesh\+Writer\+Names}$\ast$ irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+::get\+Default\+Name\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -85,7 +142,17 @@ Return the original default name generator of the writer.
 You can use this pointer in your own generator to access and return default values. \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_ae5d7e19d6d4bba65bcfb006c011cb6f2}\label{classirr_1_1scene_1_1IColladaMeshWriter_ae5d7e19d6d4bba65bcfb006c011cb6f2}} 
 \index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}!get\+Default\+Properties@{get\+Default\+Properties}}
 \index{get\+Default\+Properties@{get\+Default\+Properties}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}}
-\subsubsection{\texorpdfstring{get\+Default\+Properties()}{getDefaultProperties()}}
+\subsubsection{\texorpdfstring{get\+Default\+Properties()}{getDefaultProperties()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties}{I\+Collada\+Mesh\+Writer\+Properties}$\ast$ irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+::get\+Default\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the original default properties of the writer. 
+
+You can use this pointer in your own properties to access and return default values. \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_ae5d7e19d6d4bba65bcfb006c011cb6f2}\label{classirr_1_1scene_1_1IColladaMeshWriter_ae5d7e19d6d4bba65bcfb006c011cb6f2}} 
+\index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}!get\+Default\+Properties@{get\+Default\+Properties}}
+\index{get\+Default\+Properties@{get\+Default\+Properties}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}}
+\subsubsection{\texorpdfstring{get\+Default\+Properties()}{getDefaultProperties()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties}{I\+Collada\+Mesh\+Writer\+Properties}$\ast$ irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+::get\+Default\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -95,7 +162,17 @@ Return the original default properties of the writer.
 You can use this pointer in your own properties to access and return default values. \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_af6f37ca4a1ef6238cc079f3f5d5eb612}\label{classirr_1_1scene_1_1IColladaMeshWriter_af6f37ca4a1ef6238cc079f3f5d5eb612}} 
 \index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}!set\+Export\+S\+Materials\+Only\+Once@{set\+Export\+S\+Materials\+Only\+Once}}
 \index{set\+Export\+S\+Materials\+Only\+Once@{set\+Export\+S\+Materials\+Only\+Once}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}}
-\subsubsection{\texorpdfstring{set\+Export\+S\+Materials\+Only\+Once()}{setExportSMaterialsOnlyOnce()}}
+\subsubsection{\texorpdfstring{set\+Export\+S\+Materials\+Only\+Once()}{setExportSMaterialsOnlyOnce()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+::set\+Export\+S\+Materials\+Only\+Once (\begin{DoxyParamCaption}\item[{bool}]{export\+Once }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Make certain there is only one collada material generated per Irrlicht material. 
+
+Checks before creating a collada material-\/name if an identical irr\+:\+::video\+::\+S\+Material has been exported already. If so don\textquotesingle{}t export it with another name. This is set by default and leads to way smaller .dae files. Note that if you need to disable this flag for some reason you can still get a similar effect using the \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterNames_acb5c8f38769d3fedcc76df73d9350c07}{I\+Collada\+Mesh\+Writer\+Names\+::name\+For\+Material} by returning identical names for identical materials there. \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_af6f37ca4a1ef6238cc079f3f5d5eb612}\label{classirr_1_1scene_1_1IColladaMeshWriter_af6f37ca4a1ef6238cc079f3f5d5eb612}} 
+\index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}!set\+Export\+S\+Materials\+Only\+Once@{set\+Export\+S\+Materials\+Only\+Once}}
+\index{set\+Export\+S\+Materials\+Only\+Once@{set\+Export\+S\+Materials\+Only\+Once}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}}
+\subsubsection{\texorpdfstring{set\+Export\+S\+Materials\+Only\+Once()}{setExportSMaterialsOnlyOnce()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+::set\+Export\+S\+Materials\+Only\+Once (\begin{DoxyParamCaption}\item[{bool}]{export\+Once }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
@@ -105,7 +182,22 @@ Make certain there is only one collada material generated per Irrlicht material.
 Checks before creating a collada material-\/name if an identical irr\+:\+::video\+::\+S\+Material has been exported already. If so don\textquotesingle{}t export it with another name. This is set by default and leads to way smaller .dae files. Note that if you need to disable this flag for some reason you can still get a similar effect using the \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterNames_acb5c8f38769d3fedcc76df73d9350c07}{I\+Collada\+Mesh\+Writer\+Names\+::name\+For\+Material} by returning identical names for identical materials there. \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_a25d2e1ff0bf04375c822800b0b3a4b01}\label{classirr_1_1scene_1_1IColladaMeshWriter_a25d2e1ff0bf04375c822800b0b3a4b01}} 
 \index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}!set\+Geometry\+Writing@{set\+Geometry\+Writing}}
 \index{set\+Geometry\+Writing@{set\+Geometry\+Writing}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}}
-\subsubsection{\texorpdfstring{set\+Geometry\+Writing()}{setGeometryWriting()}}
+\subsubsection{\texorpdfstring{set\+Geometry\+Writing()}{setGeometryWriting()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+::set\+Geometry\+Writing (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1scene_a179008e7c02889459edf81394dbd6959}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+W\+R\+I\+T\+I\+NG}}]{write\+Style }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Control when and how often a mesh is written. 
+
+Optimally E\+C\+G\+I\+\_\+\+P\+E\+R\+\_\+\+M\+E\+SH would be always sufficent -\/ writing geometry once per mesh. Unfortunately many tools (at the time of writing this nearly all of them) have trouble on import when different materials are used per node. So when you override materials per node and importing the resuling collada has materials problems in other tools try using other values here. 
+\begin{DoxyParams}{Parameters}
+{\em write\+Style} & One of the E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+W\+R\+I\+T\+I\+NG settings. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_a25d2e1ff0bf04375c822800b0b3a4b01}\label{classirr_1_1scene_1_1IColladaMeshWriter_a25d2e1ff0bf04375c822800b0b3a4b01}} 
+\index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}!set\+Geometry\+Writing@{set\+Geometry\+Writing}}
+\index{set\+Geometry\+Writing@{set\+Geometry\+Writing}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}}
+\subsubsection{\texorpdfstring{set\+Geometry\+Writing()}{setGeometryWriting()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+::set\+Geometry\+Writing (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1scene_a179008e7c02889459edf81394dbd6959}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+W\+R\+I\+T\+I\+NG}}]{write\+Style }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
@@ -120,7 +212,17 @@ Optimally E\+C\+G\+I\+\_\+\+P\+E\+R\+\_\+\+M\+E\+SH would be always sufficent -\
 \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_acffa89579171224f10e30f2c0d09f8c1}\label{classirr_1_1scene_1_1IColladaMeshWriter_acffa89579171224f10e30f2c0d09f8c1}} 
 \index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}!set\+Properties@{set\+Properties}}
 \index{set\+Properties@{set\+Properties}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}}
-\subsubsection{\texorpdfstring{set\+Properties()}{setProperties()}}
+\subsubsection{\texorpdfstring{set\+Properties()}{setProperties()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+::set\+Properties (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties}{I\+Collada\+Mesh\+Writer\+Properties} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set properties to use by the meshwriter instead of it\textquotesingle{}s default properties. 
+
+Overloading properties with an own class allows modifying the writing process in certain ways. By default properties are set to the Default\+Properties. \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_acffa89579171224f10e30f2c0d09f8c1}\label{classirr_1_1scene_1_1IColladaMeshWriter_acffa89579171224f10e30f2c0d09f8c1}} 
+\index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}!set\+Properties@{set\+Properties}}
+\index{set\+Properties@{set\+Properties}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}}
+\subsubsection{\texorpdfstring{set\+Properties()}{setProperties()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+::set\+Properties (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties}{I\+Collada\+Mesh\+Writer\+Properties} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
@@ -130,7 +232,17 @@ Set properties to use by the meshwriter instead of it\textquotesingle{}s default
 Overloading properties with an own class allows modifying the writing process in certain ways. By default properties are set to the Default\+Properties. \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_acf1952c459b4b2bde5b479b6d9717c35}\label{classirr_1_1scene_1_1IColladaMeshWriter_acf1952c459b4b2bde5b479b6d9717c35}} 
 \index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}!set\+Write\+Default\+Scene@{set\+Write\+Default\+Scene}}
 \index{set\+Write\+Default\+Scene@{set\+Write\+Default\+Scene}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}}
-\subsubsection{\texorpdfstring{set\+Write\+Default\+Scene()}{setWriteDefaultScene()}}
+\subsubsection{\texorpdfstring{set\+Write\+Default\+Scene()}{setWriteDefaultScene()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+::set\+Write\+Default\+Scene (\begin{DoxyParamCaption}\item[{bool}]{write }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set if a default scene should be written when writing meshes. 
+
+Many collada readers fail to read a mesh if the collada files doesn\textquotesingle{}t contain a scene as well. The scene is doing an instantiation of the mesh. When using write\+Scene this flag is ignored (as we have scene there already) \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_acf1952c459b4b2bde5b479b6d9717c35}\label{classirr_1_1scene_1_1IColladaMeshWriter_acf1952c459b4b2bde5b479b6d9717c35}} 
+\index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}!set\+Write\+Default\+Scene@{set\+Write\+Default\+Scene}}
+\index{set\+Write\+Default\+Scene@{set\+Write\+Default\+Scene}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}}
+\subsubsection{\texorpdfstring{set\+Write\+Default\+Scene()}{setWriteDefaultScene()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+::set\+Write\+Default\+Scene (\begin{DoxyParamCaption}\item[{bool}]{write }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
@@ -140,8 +252,18 @@ Set if a default scene should be written when writing meshes.
 Many collada readers fail to read a mesh if the collada files doesn\textquotesingle{}t contain a scene as well. The scene is doing an instantiation of the mesh. When using write\+Scene this flag is ignored (as we have scene there already) \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_ac9c48beab095aa6f4cb4f696bb2ecd45}\label{classirr_1_1scene_1_1IColladaMeshWriter_ac9c48beab095aa6f4cb4f696bb2ecd45}} 
 \index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}!to\+N\+C\+Name@{to\+N\+C\+Name}}
 \index{to\+N\+C\+Name@{to\+N\+C\+Name}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}}
-\subsubsection{\texorpdfstring{to\+N\+C\+Name()}{toNCName()}}
-{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1core_aef83fafbb1b36fcce44c07c9be23a7f2}{irr\+::core\+::stringw} irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+::to\+N\+C\+Name (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_aef83fafbb1b36fcce44c07c9be23a7f2}{irr\+::core\+::stringw} \&}]{old\+String,  }\item[{const \hyperlink{namespaceirr_1_1core_aef83fafbb1b36fcce44c07c9be23a7f2}{irr\+::core\+::stringw} \&}]{prefix = {\ttfamily \hyperlink{namespaceirr_1_1core_aef83fafbb1b36fcce44c07c9be23a7f2}{irr\+::core\+::stringw}(L\char`\"{}\+\_\+NC\+\_\+\char`\"{})} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\subsubsection{\texorpdfstring{to\+N\+C\+Name()}{toNCName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{irr\+::core\+::stringw} irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+::to\+N\+C\+Name (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{irr\+::core\+::stringw} \&}]{old\+String,  }\item[{const \hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{irr\+::core\+::stringw} \&}]{prefix = {\ttfamily \hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{irr\+::core\+::stringw}(L\char`\"{}\+\_\+NC\+\_\+\char`\"{})} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Restrict the characters of old\+String a set of allowed characters in xs\+::\+N\+C\+Name and add the prefix. 
+
+A tool function to help when using a custom name generator to generative valid names for collada names and id\textquotesingle{}s. \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriter_ac9c48beab095aa6f4cb4f696bb2ecd45}\label{classirr_1_1scene_1_1IColladaMeshWriter_ac9c48beab095aa6f4cb4f696bb2ecd45}} 
+\index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}!to\+N\+C\+Name@{to\+N\+C\+Name}}
+\index{to\+N\+C\+Name@{to\+N\+C\+Name}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer}}
+\subsubsection{\texorpdfstring{to\+N\+C\+Name()}{toNCName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{irr\+::core\+::stringw} irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+::to\+N\+C\+Name (\begin{DoxyParamCaption}\item[{const \hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{irr\+::core\+::stringw} \&}]{old\+String,  }\item[{const \hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{irr\+::core\+::stringw} \&}]{prefix = {\ttfamily \hyperlink{namespaceirr_1_1core_a5aedb62cb47cf01d1c548ab5e6344d2d}{irr\+::core\+::stringw}(L\char`\"{}\+\_\+NC\+\_\+\char`\"{})} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 

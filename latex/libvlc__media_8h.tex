@@ -1,0 +1,88 @@
+\hypertarget{libvlc__media_8h}{}\section{lib/include/vlc/libvlc\+\_\+media.h File Reference}
+\label{libvlc__media_8h}\index{lib/include/vlc/libvlc\+\_\+media.\+h@{lib/include/vlc/libvlc\+\_\+media.\+h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structlibvlc__media__stats__t}{libvlc\+\_\+media\+\_\+stats\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{group__libvlc__media_gac88ad60037ea05e1f23675a2ebe31efc}{libvlc\+\_\+state\+\_\+t} \hyperlink{group__libvlc__media_gaffb7eef042375f78ec9a6f1ae11ae0c3}{libvlc\+\_\+state\+\_\+t}
+\end{DoxyCompactItemize}
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structlibvlc__media__stats__t}{libvlc\+\_\+media\+\_\+stats\+\_\+t} \hyperlink{group__libvlc__media_ga7fc3997423872bc339619d3d14a31724}{libvlc\+\_\+media\+\_\+stats\+\_\+t}
+\end{DoxyCompactItemize}
+
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__libvlc__media_gac88ad60037ea05e1f23675a2ebe31efc}{libvlc\+\_\+state\+\_\+t} 
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t $\ast$ \hyperlink{group__libvlc__media_gae1d3baee3f4610c6fe5818defcad3e6f}{libvlc\+\_\+media\+\_\+new\+\_\+location} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance, const char $\ast$psz\+\_\+mrl)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t $\ast$ \hyperlink{group__libvlc__media_ga051342375370f3bf3821a537d4413435}{libvlc\+\_\+media\+\_\+new\+\_\+path} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance, const char $\ast$path)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t $\ast$ \hyperlink{group__libvlc__media_ga192451a6b5fef7be482313876a4c3054}{libvlc\+\_\+media\+\_\+new\+\_\+fd} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance, int fd)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t $\ast$ \hyperlink{group__libvlc__media_ga1ccfa7815260b22adf96cc538a45fe77}{libvlc\+\_\+media\+\_\+new\+\_\+as\+\_\+node} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance, const char $\ast$psz\+\_\+name)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media_ga39511e64baa7c1fdbf89eddc88bf9e15}{libvlc\+\_\+media\+\_\+add\+\_\+option} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md, const char $\ast$psz\+\_\+options)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media_ga96d5e0f418eecf74149057796160fd3a}{libvlc\+\_\+media\+\_\+add\+\_\+option\+\_\+flag} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md, const char $\ast$psz\+\_\+options, unsigned i\+\_\+flags)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media_gaf4be74c918bc34ea4182e8028ea5f0ba}{libvlc\+\_\+media\+\_\+retain} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media_gaffccede262624a361e20c3e887fa9b42}{libvlc\+\_\+media\+\_\+release} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI char $\ast$ \hyperlink{group__libvlc__media_ga88cd51e19ac7848bb15352eeddd32b9c}{libvlc\+\_\+media\+\_\+get\+\_\+mrl} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t $\ast$ \hyperlink{group__libvlc__media_ga638229cdb4fbb5708df632dd631534f9}{libvlc\+\_\+media\+\_\+duplicate} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI char $\ast$ \hyperlink{group__libvlc__media_ga47684ea1970f0c5cddb96a717a75ed6f}{libvlc\+\_\+media\+\_\+get\+\_\+meta} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md, \hyperlink{group__libvlc__media_ga90e7814a020f87d4c443d8d09b6dd4a0}{libvlc\+\_\+meta\+\_\+t} e\+\_\+meta)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media_gae116bf2e93c0e51aa5824f6e69aeaa64}{libvlc\+\_\+media\+\_\+set\+\_\+meta} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md, \hyperlink{group__libvlc__media_ga90e7814a020f87d4c443d8d09b6dd4a0}{libvlc\+\_\+meta\+\_\+t} e\+\_\+meta, const char $\ast$psz\+\_\+value)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media_ga7b5c8c9206b71627a1a600e165d3c1e5}{libvlc\+\_\+media\+\_\+save\+\_\+meta} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__media_gac88ad60037ea05e1f23675a2ebe31efc}{libvlc\+\_\+state\+\_\+t} \hyperlink{group__libvlc__media_ga894c92329fb83d8b55f105b4e1fdfbb8}{libvlc\+\_\+media\+\_\+get\+\_\+state} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media_ga8043c9dbf07c6286e918d7d38e467c3e}{libvlc\+\_\+media\+\_\+get\+\_\+stats} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md, \hyperlink{structlibvlc__media__stats__t}{libvlc\+\_\+media\+\_\+stats\+\_\+t} $\ast$p\+\_\+stats)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__media_gaacfff95cbbba67b39a47b7bdbfff1dba}{V\+L\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+O\+B\+J\+E\+CT} (libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$) libvlc\+\_\+media\+\_\+subitems(libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t} $\ast$ \hyperlink{group__libvlc__media_ga92b9e97a3e37e91abe9dcafd2387f2cc}{libvlc\+\_\+media\+\_\+event\+\_\+manager} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+time\+\_\+t \hyperlink{group__libvlc__media_gadd2c47a0112a31e200a0145d0504873b}{libvlc\+\_\+media\+\_\+get\+\_\+duration} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media_gad9e48150dcb1a066c51688f6e4a216f1}{libvlc\+\_\+media\+\_\+parse} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media_gada166e6385518f9d5826c2dce647a475}{libvlc\+\_\+media\+\_\+parse\+\_\+async} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media_ga9b8ce78027b0dadfa555fc33d2a033a6}{libvlc\+\_\+media\+\_\+is\+\_\+parsed} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media_ga56dac0c5cb70b417ada18b2ebb9cd0e3}{libvlc\+\_\+media\+\_\+set\+\_\+user\+\_\+data} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md, void $\ast$p\+\_\+new\+\_\+user\+\_\+data)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void $\ast$ \hyperlink{group__libvlc__media_ga1aa2355e48bbb47a7f8d7f1bb4a8101f}{libvlc\+\_\+media\+\_\+get\+\_\+user\+\_\+data} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media_ga2102c151df0ab66d6158a80b7734f0f9}{libvlc\+\_\+media\+\_\+get\+\_\+tracks\+\_\+info} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md, libvlc\+\_\+media\+\_\+track\+\_\+info\+\_\+t $\ast$$\ast$tracks)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI unsigned \hyperlink{group__libvlc__media_ga33f5fef54e3750ab55744007e0e80f02}{libvlc\+\_\+media\+\_\+tracks\+\_\+get} (libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md, libvlc\+\_\+media\+\_\+track\+\_\+t $\ast$$\ast$$\ast$tracks)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media_ga9db98f62bb939cc49fbbd227d027850c}{libvlc\+\_\+media\+\_\+tracks\+\_\+release} (libvlc\+\_\+media\+\_\+track\+\_\+t $\ast$$\ast$p\+\_\+tracks, unsigned i\+\_\+count)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__libvlc__media_ga90e7814a020f87d4c443d8d09b6dd4a0}{libvlc\+\_\+meta\+\_\+t} 
+\item 
+typedef enum \hyperlink{group__libvlc__media_ga90e7814a020f87d4c443d8d09b6dd4a0}{libvlc\+\_\+meta\+\_\+t} \hyperlink{group__libvlc__media_gada00e7231546f7af82a8e3f7bda01994}{libvlc\+\_\+meta\+\_\+t}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines libvlc\+\_\+media external A\+PI 

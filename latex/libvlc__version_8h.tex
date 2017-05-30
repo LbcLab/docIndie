@@ -1,0 +1,63 @@
+\hypertarget{libvlc__version_8h}{}\section{lib/include/vlc/libvlc\+\_\+version.h File Reference}
+\label{libvlc__version_8h}\index{lib/include/vlc/libvlc\+\_\+version.\+h@{lib/include/vlc/libvlc\+\_\+version.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{libvlc__version_8h_a2740e78a53f75d1d7d828c7e5dd80cea}{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+A\+J\+OR}~(2)
+\item 
+\#define \hyperlink{libvlc__version_8h_a66afbe96dcf270148f006fe88858fd68}{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+I\+N\+OR}~(2)
+\item 
+\#define \hyperlink{libvlc__version_8h_accc522437eda1b48bb4fbcaadca5c5d4}{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+R\+E\+V\+I\+S\+I\+ON}~(2)
+\item 
+\#define \hyperlink{libvlc__version_8h_a2be15be307ffee98280cd06567a79e26}{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+ON}(maj,  min,  rev,  extra)~((maj $<$$<$ 24) $\vert$ (min $<$$<$ 16) $\vert$ (rev $<$$<$ 8) $\vert$ (extra))
+\item 
+\#define \hyperlink{libvlc__version_8h_a39f72ca839245aa0b9170a12012d3f95}{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+I\+NT}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines version macros for Lib\+V\+LC. Those macros are primilarly intended for conditional (pre)compilation. To get the run-\/time Lib\+V\+LC version, use \hyperlink{group__libvlc__core_ga950b9828d1391f06fe56ce5d03483b9f}{libvlc\+\_\+get\+\_\+version()} instead (the run-\/time version may be more recent than build-\/time one, thanks to backward binary compatibility).
+
+\begin{DoxyVersion}{Version}
+This header file is available in Lib\+V\+LC 1.\+1.\+4 and higher. 
+\end{DoxyVersion}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{libvlc__version_8h_a2be15be307ffee98280cd06567a79e26}\label{libvlc__version_8h_a2be15be307ffee98280cd06567a79e26}} 
+\index{libvlc\+\_\+version.\+h@{libvlc\+\_\+version.\+h}!L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+ON@{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+ON@{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+ON}!libvlc\+\_\+version.\+h@{libvlc\+\_\+version.\+h}}
+\subsubsection{\texorpdfstring{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+ON}{LIBVLC\_VERSION}}
+{\footnotesize\ttfamily \#define L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+ON(\begin{DoxyParamCaption}\item[{}]{maj,  }\item[{}]{min,  }\item[{}]{rev,  }\item[{}]{extra }\end{DoxyParamCaption})~((maj $<$$<$ 24) $\vert$ (min $<$$<$ 16) $\vert$ (rev $<$$<$ 8) $\vert$ (extra))}
+
+Makes a single integer from a Lib\+V\+LC version numbers \mbox{\Hypertarget{libvlc__version_8h_a39f72ca839245aa0b9170a12012d3f95}\label{libvlc__version_8h_a39f72ca839245aa0b9170a12012d3f95}} 
+\index{libvlc\+\_\+version.\+h@{libvlc\+\_\+version.\+h}!L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+I\+NT@{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+I\+NT}}
+\index{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+I\+NT@{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+I\+NT}!libvlc\+\_\+version.\+h@{libvlc\+\_\+version.\+h}}
+\subsubsection{\texorpdfstring{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+I\+NT}{LIBVLC\_VERSION\_INT}}
+{\footnotesize\ttfamily \#define L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+I\+NT}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{libvlc__version_8h_a2be15be307ffee98280cd06567a79e26}{LIBVLC\_VERSION}(\hyperlink{libvlc__version_8h_a2740e78a53f75d1d7d828c7e5dd80cea}{LIBVLC\_VERSION\_MAJOR}, 
+      \hyperlink{libvlc__version_8h_a66afbe96dcf270148f006fe88858fd68}{LIBVLC\_VERSION\_MINOR}, \(\backslash\)
+                        \hyperlink{libvlc__version_8h_accc522437eda1b48bb4fbcaadca5c5d4}{LIBVLC\_VERSION\_REVISION}, LIBVLC\_VERSION\_EXTRA)
+\end{DoxyCode}
+Lib\+V\+LC full version as a single integer (for comparison) \mbox{\Hypertarget{libvlc__version_8h_a2740e78a53f75d1d7d828c7e5dd80cea}\label{libvlc__version_8h_a2740e78a53f75d1d7d828c7e5dd80cea}} 
+\index{libvlc\+\_\+version.\+h@{libvlc\+\_\+version.\+h}!L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+A\+J\+OR@{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+A\+J\+OR}}
+\index{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+A\+J\+OR@{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+A\+J\+OR}!libvlc\+\_\+version.\+h@{libvlc\+\_\+version.\+h}}
+\subsubsection{\texorpdfstring{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+A\+J\+OR}{LIBVLC\_VERSION\_MAJOR}}
+{\footnotesize\ttfamily \#define L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+A\+J\+OR~(2)}
+
+Lib\+V\+LC major version number \mbox{\Hypertarget{libvlc__version_8h_a66afbe96dcf270148f006fe88858fd68}\label{libvlc__version_8h_a66afbe96dcf270148f006fe88858fd68}} 
+\index{libvlc\+\_\+version.\+h@{libvlc\+\_\+version.\+h}!L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+I\+N\+OR@{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+I\+N\+OR}}
+\index{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+I\+N\+OR@{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+I\+N\+OR}!libvlc\+\_\+version.\+h@{libvlc\+\_\+version.\+h}}
+\subsubsection{\texorpdfstring{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+I\+N\+OR}{LIBVLC\_VERSION\_MINOR}}
+{\footnotesize\ttfamily \#define L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+I\+N\+OR~(2)}
+
+Lib\+V\+LC minor version number \mbox{\Hypertarget{libvlc__version_8h_accc522437eda1b48bb4fbcaadca5c5d4}\label{libvlc__version_8h_accc522437eda1b48bb4fbcaadca5c5d4}} 
+\index{libvlc\+\_\+version.\+h@{libvlc\+\_\+version.\+h}!L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+R\+E\+V\+I\+S\+I\+ON@{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+R\+E\+V\+I\+S\+I\+ON}}
+\index{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+R\+E\+V\+I\+S\+I\+ON@{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+R\+E\+V\+I\+S\+I\+ON}!libvlc\+\_\+version.\+h@{libvlc\+\_\+version.\+h}}
+\subsubsection{\texorpdfstring{L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+R\+E\+V\+I\+S\+I\+ON}{LIBVLC\_VERSION\_REVISION}}
+{\footnotesize\ttfamily \#define L\+I\+B\+V\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+R\+E\+V\+I\+S\+I\+ON~(2)}
+
+Lib\+V\+LC revision 

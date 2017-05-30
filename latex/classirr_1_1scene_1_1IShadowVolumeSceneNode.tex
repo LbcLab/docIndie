@@ -12,12 +12,20 @@ Scene node for rendering a shadow volume into a stencil buffer.
 Inheritance diagram for irr\+:\+:scene\+:\+:I\+Shadow\+Volume\+Scene\+Node\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{classirr_1_1scene_1_1IShadowVolumeSceneNode}
+\includegraphics[height=1.489362cm]{classirr_1_1scene_1_1IShadowVolumeSceneNode}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IShadowVolumeSceneNode_aa2d604d5c4ec96b053c7f711a1ade25e}\label{classirr_1_1scene_1_1IShadowVolumeSceneNode_aa2d604d5c4ec96b053c7f711a1ade25e}} 
+\hyperlink{classirr_1_1scene_1_1IShadowVolumeSceneNode_aa2d604d5c4ec96b053c7f711a1ade25e}{I\+Shadow\+Volume\+Scene\+Node} (\hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$parent, \hyperlink{classirr_1_1scene_1_1ISceneManager}{I\+Scene\+Manager} $\ast$mgr, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1scene_1_1IShadowVolumeSceneNode_a69af3aa713c909106bacccdbab01184d}{set\+Shadow\+Mesh} (const \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} $\ast$mesh)=0
+\begin{DoxyCompactList}\small\item\em Sets the mesh from which the shadow volume should be generated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IShadowVolumeSceneNode_a3fa8470e9aa103a449eb365bfff4ef13}\label{classirr_1_1scene_1_1IShadowVolumeSceneNode_a3fa8470e9aa103a449eb365bfff4ef13}} 
+virtual void \hyperlink{classirr_1_1scene_1_1IShadowVolumeSceneNode_a3fa8470e9aa103a449eb365bfff4ef13}{update\+Shadow\+Volumes} ()=0
+\begin{DoxyCompactList}\small\item\em Updates the shadow volumes for current light positions. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1scene_1_1IShadowVolumeSceneNode_aa2d604d5c4ec96b053c7f711a1ade25e}\label{classirr_1_1scene_1_1IShadowVolumeSceneNode_aa2d604d5c4ec96b053c7f711a1ade25e}} 
 \hyperlink{classirr_1_1scene_1_1IShadowVolumeSceneNode_aa2d604d5c4ec96b053c7f711a1ade25e}{I\+Shadow\+Volume\+Scene\+Node} (\hyperlink{classirr_1_1scene_1_1ISceneNode}{I\+Scene\+Node} $\ast$parent, \hyperlink{classirr_1_1scene_1_1ISceneManager}{I\+Scene\+Manager} $\ast$mgr, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id)
 \begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
@@ -36,7 +44,17 @@ Scene node for rendering a shadow volume into a stencil buffer.
 \mbox{\Hypertarget{classirr_1_1scene_1_1IShadowVolumeSceneNode_a69af3aa713c909106bacccdbab01184d}\label{classirr_1_1scene_1_1IShadowVolumeSceneNode_a69af3aa713c909106bacccdbab01184d}} 
 \index{irr\+::scene\+::\+I\+Shadow\+Volume\+Scene\+Node@{irr\+::scene\+::\+I\+Shadow\+Volume\+Scene\+Node}!set\+Shadow\+Mesh@{set\+Shadow\+Mesh}}
 \index{set\+Shadow\+Mesh@{set\+Shadow\+Mesh}!irr\+::scene\+::\+I\+Shadow\+Volume\+Scene\+Node@{irr\+::scene\+::\+I\+Shadow\+Volume\+Scene\+Node}}
-\subsubsection{\texorpdfstring{set\+Shadow\+Mesh()}{setShadowMesh()}}
+\subsubsection{\texorpdfstring{set\+Shadow\+Mesh()}{setShadowMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Shadow\+Volume\+Scene\+Node\+::set\+Shadow\+Mesh (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} $\ast$}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the mesh from which the shadow volume should be generated. 
+
+To optimize shadow rendering, use a simpler mesh for shadows. \mbox{\Hypertarget{classirr_1_1scene_1_1IShadowVolumeSceneNode_a69af3aa713c909106bacccdbab01184d}\label{classirr_1_1scene_1_1IShadowVolumeSceneNode_a69af3aa713c909106bacccdbab01184d}} 
+\index{irr\+::scene\+::\+I\+Shadow\+Volume\+Scene\+Node@{irr\+::scene\+::\+I\+Shadow\+Volume\+Scene\+Node}!set\+Shadow\+Mesh@{set\+Shadow\+Mesh}}
+\index{set\+Shadow\+Mesh@{set\+Shadow\+Mesh}!irr\+::scene\+::\+I\+Shadow\+Volume\+Scene\+Node@{irr\+::scene\+::\+I\+Shadow\+Volume\+Scene\+Node}}
+\subsubsection{\texorpdfstring{set\+Shadow\+Mesh()}{setShadowMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::scene\+::\+I\+Shadow\+Volume\+Scene\+Node\+::set\+Shadow\+Mesh (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} $\ast$}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

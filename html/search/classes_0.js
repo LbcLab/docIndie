@@ -29,5 +29,8 @@ var searchData=
   ['array_3c_20t_20_3e',['array&lt; T &gt;',['../classirr_1_1core_1_1array.html',1,'irr::core']]],
   ['array_3c_20u16_20_3e',['array&lt; u16 &gt;',['../classirr_1_1core_1_1array.html',1,'irr::core']]],
   ['array_3c_20u32_20_3e',['array&lt; u32 &gt;',['../classirr_1_1core_1_1array.html',1,'irr::core']]],
-  ['ascene',['AScene',['../classAScene.html',1,'']]]
+  ['ascene',['AScene',['../classAScene.html',1,'']]],
+  ['audio_5fformat_5ft',['audio_format_t',['../structaudio__format__t.html',1,'']]],
+  ['audio_5foutput',['audio_output',['../structaudio__output.html',1,'']]],
+  ['audio_5fvolume',['audio_volume',['../structaudio__volume.html',1,'']]]
 ];

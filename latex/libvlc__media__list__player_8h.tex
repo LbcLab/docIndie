@@ -1,0 +1,51 @@
+\hypertarget{libvlc__media__list__player_8h}{}\section{lib/include/vlc/libvlc\+\_\+media\+\_\+list\+\_\+player.h File Reference}
+\label{libvlc__media__list__player_8h}\index{lib/include/vlc/libvlc\+\_\+media\+\_\+list\+\_\+player.\+h@{lib/include/vlc/libvlc\+\_\+media\+\_\+list\+\_\+player.\+h}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{group__libvlc__media__list__player_ga1f0139f9220d7578fab37a3c1a74af9c}{libvlc\+\_\+playback\+\_\+mode\+\_\+t} \hyperlink{group__libvlc__media__list__player_gac1548e6f3b89aaa57779225fef404c2c}{libvlc\+\_\+playback\+\_\+mode\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__libvlc__media__list__player_ga1f0139f9220d7578fab37a3c1a74af9c}{libvlc\+\_\+playback\+\_\+mode\+\_\+t} 
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+t $\ast$ \hyperlink{group__libvlc__media__list__player_ga9db1d492204698de525e138c1ddc531d}{libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+new} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__list__player_ga50768b609de18646d8339c31bd57d41d}{libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+release} (libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+t $\ast$p\+\_\+mlp)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__list__player_ga322f8fd8487aef71d0d914ca57e59bf6}{libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+retain} (libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+t $\ast$p\+\_\+mlp)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t} $\ast$ \hyperlink{group__libvlc__media__list__player_gaa1db515ea843cfb5f9ef9c69cc6133b6}{libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+event\+\_\+manager} (libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+t $\ast$p\+\_\+mlp)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__list__player_ga64b89e6639ac62c5cd7875050d2fabc8}{libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+set\+\_\+media\+\_\+player} (libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+t $\ast$p\+\_\+mlp, libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__list__player_ga81289f13efd011a195f1728a12e348db}{libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+set\+\_\+media\+\_\+list} (libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+t $\ast$p\+\_\+mlp, libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$p\+\_\+mlist)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__list__player_ga7dea457c92634ff9db3037a054e3fa31}{libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+play} (libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+t $\ast$p\+\_\+mlp)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__list__player_ga405ee667bd3c08ac0d11bff9647ca806}{libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+pause} (libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+t $\ast$p\+\_\+mlp)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__list__player_gaa325957bb8304d3898686b6bb8eaaec7}{libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+is\+\_\+playing} (libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+t $\ast$p\+\_\+mlp)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__media_gac88ad60037ea05e1f23675a2ebe31efc}{libvlc\+\_\+state\+\_\+t} \hyperlink{group__libvlc__media__list__player_gaed0e4d07d32dab2dff865d4f632e55cd}{libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+get\+\_\+state} (libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+t $\ast$p\+\_\+mlp)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__list__player_ga95fbed543f78fee243f31d45d638dd4c}{libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+play\+\_\+item\+\_\+at\+\_\+index} (libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+t $\ast$p\+\_\+mlp, int i\+\_\+index)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__list__player_ga37a259c6a4216de2a6dca317eab97156}{libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+play\+\_\+item} (libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+t $\ast$p\+\_\+mlp, libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__list__player_ga06d8e55e82ef254099826f33ff09ff69}{libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+stop} (libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+t $\ast$p\+\_\+mlp)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__list__player_ga9f0ed5dfcc90d36b96942e9fb9e7b748}{libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+next} (libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+t $\ast$p\+\_\+mlp)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__list__player_ga0b6550b4d026f04220203b2130573b90}{libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+previous} (libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+t $\ast$p\+\_\+mlp)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__list__player_ga90ec154fa4c8d0c336404653f3c2223a}{libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+set\+\_\+playback\+\_\+mode} (libvlc\+\_\+media\+\_\+list\+\_\+player\+\_\+t $\ast$p\+\_\+mlp, \hyperlink{group__libvlc__media__list__player_ga1f0139f9220d7578fab37a3c1a74af9c}{libvlc\+\_\+playback\+\_\+mode\+\_\+t} e\+\_\+mode)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines libvlc\+\_\+media\+\_\+list\+\_\+player A\+PI 

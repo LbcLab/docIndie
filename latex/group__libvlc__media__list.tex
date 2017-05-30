@@ -1,0 +1,280 @@
+\hypertarget{group__libvlc__media__list}{}\section{Lib\+V\+LC media list}
+\label{group__libvlc__media__list}\index{Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$ \hyperlink{group__libvlc__media__list_ga441500e86c4b21cb32afbc96a0733f57}{libvlc\+\_\+media\+\_\+list\+\_\+new} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__list_ga690973281c2f7f32cd366914a08c68dc}{libvlc\+\_\+media\+\_\+list\+\_\+release} (libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$p\+\_\+ml)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__list_ga2e6c93ff61c6380eb3c07d22ef47da8c}{libvlc\+\_\+media\+\_\+list\+\_\+retain} (libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$p\+\_\+ml)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__list_ga96a38e5aabb5781c2f1932d332363eef}{libvlc\+\_\+media\+\_\+list\+\_\+set\+\_\+media} (libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$p\+\_\+ml, libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t $\ast$ \hyperlink{group__libvlc__media__list_ga39f047f672f608104a599e827c2e7533}{libvlc\+\_\+media\+\_\+list\+\_\+media} (libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$p\+\_\+ml)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__list_gab1dea4f59a23ee3e151a34704f2b8bc5}{libvlc\+\_\+media\+\_\+list\+\_\+add\+\_\+media} (libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$p\+\_\+ml, libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__list_ga96d55d4e9222ad4370774c4662b084e6}{libvlc\+\_\+media\+\_\+list\+\_\+insert\+\_\+media} (libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$p\+\_\+ml, libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md, int i\+\_\+pos)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__list_ga19bdb775f747bd6aaf31b542e600bb87}{libvlc\+\_\+media\+\_\+list\+\_\+remove\+\_\+index} (libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$p\+\_\+ml, int i\+\_\+pos)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__list_ga91adfaf535ae4a6338a53865f45444d7}{libvlc\+\_\+media\+\_\+list\+\_\+count} (libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$p\+\_\+ml)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t $\ast$ \hyperlink{group__libvlc__media__list_ga92305e7bffe1c30ba6f0f2ebf7ad3c9e}{libvlc\+\_\+media\+\_\+list\+\_\+item\+\_\+at\+\_\+index} (libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$p\+\_\+ml, int i\+\_\+pos)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__list_ga7ba4219836788ca58127199da06a6550}{libvlc\+\_\+media\+\_\+list\+\_\+index\+\_\+of\+\_\+item} (libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$p\+\_\+ml, libvlc\+\_\+media\+\_\+t $\ast$p\+\_\+md)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__list_ga93b9fc524ba86c1fd3151a49f6486f54}{libvlc\+\_\+media\+\_\+list\+\_\+is\+\_\+readonly} (libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$p\+\_\+ml)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__list_ga908ca009b4ebecbccdeb5650c72cd7a9}{libvlc\+\_\+media\+\_\+list\+\_\+lock} (libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$p\+\_\+ml)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__list_gaa91574447f7b7baa18e4054cf1957c51}{libvlc\+\_\+media\+\_\+list\+\_\+unlock} (libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$p\+\_\+ml)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t} $\ast$ \hyperlink{group__libvlc__media__list_gae2623249eb6571b5b007ddc74497bba6}{libvlc\+\_\+media\+\_\+list\+\_\+event\+\_\+manager} (libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$p\+\_\+ml)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Lib\+V\+LC media list holds multiple libvlc\+\_\+media\+\_\+t media descriptors. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__libvlc__media__list_gab1dea4f59a23ee3e151a34704f2b8bc5}\label{group__libvlc__media__list_gab1dea4f59a23ee3e151a34704f2b8bc5}} 
+\index{Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}!libvlc\+\_\+media\+\_\+list\+\_\+add\+\_\+media@{libvlc\+\_\+media\+\_\+list\+\_\+add\+\_\+media}}
+\index{libvlc\+\_\+media\+\_\+list\+\_\+add\+\_\+media@{libvlc\+\_\+media\+\_\+list\+\_\+add\+\_\+media}!Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+list\+\_\+add\+\_\+media()}{libvlc\_media\_list\_add\_media()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+list\+\_\+add\+\_\+media (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$}]{p\+\_\+ml,  }\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md }\end{DoxyParamCaption})}
+
+Add media instance to media list The libvlc\+\_\+media\+\_\+list\+\_\+lock should be held upon entering this function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+ml} & a media list instance \\
+\hline
+{\em p\+\_\+md} & a media instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, -\/1 if the media list is read-\/only 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__list_ga91adfaf535ae4a6338a53865f45444d7}\label{group__libvlc__media__list_ga91adfaf535ae4a6338a53865f45444d7}} 
+\index{Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}!libvlc\+\_\+media\+\_\+list\+\_\+count@{libvlc\+\_\+media\+\_\+list\+\_\+count}}
+\index{libvlc\+\_\+media\+\_\+list\+\_\+count@{libvlc\+\_\+media\+\_\+list\+\_\+count}!Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+list\+\_\+count()}{libvlc\_media\_list\_count()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+list\+\_\+count (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$}]{p\+\_\+ml }\end{DoxyParamCaption})}
+
+Get count on media list items The libvlc\+\_\+media\+\_\+list\+\_\+lock should be held upon entering this function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+ml} & a media list instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of items in media list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__list_gae2623249eb6571b5b007ddc74497bba6}\label{group__libvlc__media__list_gae2623249eb6571b5b007ddc74497bba6}} 
+\index{Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}!libvlc\+\_\+media\+\_\+list\+\_\+event\+\_\+manager@{libvlc\+\_\+media\+\_\+list\+\_\+event\+\_\+manager}}
+\index{libvlc\+\_\+media\+\_\+list\+\_\+event\+\_\+manager@{libvlc\+\_\+media\+\_\+list\+\_\+event\+\_\+manager}!Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+list\+\_\+event\+\_\+manager()}{libvlc\_media\_list\_event\_manager()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__event_gaa82f247503d3558b9117550e8d3c9259}{libvlc\+\_\+event\+\_\+manager\+\_\+t}$\ast$ libvlc\+\_\+media\+\_\+list\+\_\+event\+\_\+manager (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$}]{p\+\_\+ml }\end{DoxyParamCaption})}
+
+Get libvlc\+\_\+event\+\_\+manager from this media list instance. The p\+\_\+event\+\_\+manager is immutable, so you don\textquotesingle{}t have to hold the lock
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+ml} & a media list instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+libvlc\+\_\+event\+\_\+manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__list_ga7ba4219836788ca58127199da06a6550}\label{group__libvlc__media__list_ga7ba4219836788ca58127199da06a6550}} 
+\index{Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}!libvlc\+\_\+media\+\_\+list\+\_\+index\+\_\+of\+\_\+item@{libvlc\+\_\+media\+\_\+list\+\_\+index\+\_\+of\+\_\+item}}
+\index{libvlc\+\_\+media\+\_\+list\+\_\+index\+\_\+of\+\_\+item@{libvlc\+\_\+media\+\_\+list\+\_\+index\+\_\+of\+\_\+item}!Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+list\+\_\+index\+\_\+of\+\_\+item()}{libvlc\_media\_list\_index\_of\_item()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+list\+\_\+index\+\_\+of\+\_\+item (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$}]{p\+\_\+ml,  }\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md }\end{DoxyParamCaption})}
+
+Find index position of List media instance in media list. Warning\+: the function will return the first matched position. The libvlc\+\_\+media\+\_\+list\+\_\+lock should be held upon entering this function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+ml} & a media list instance \\
+\hline
+{\em p\+\_\+md} & media instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+position of media instance or -\/1 if media not found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__list_ga96d55d4e9222ad4370774c4662b084e6}\label{group__libvlc__media__list_ga96d55d4e9222ad4370774c4662b084e6}} 
+\index{Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}!libvlc\+\_\+media\+\_\+list\+\_\+insert\+\_\+media@{libvlc\+\_\+media\+\_\+list\+\_\+insert\+\_\+media}}
+\index{libvlc\+\_\+media\+\_\+list\+\_\+insert\+\_\+media@{libvlc\+\_\+media\+\_\+list\+\_\+insert\+\_\+media}!Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+list\+\_\+insert\+\_\+media()}{libvlc\_media\_list\_insert\_media()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+list\+\_\+insert\+\_\+media (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$}]{p\+\_\+ml,  }\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md,  }\item[{int}]{i\+\_\+pos }\end{DoxyParamCaption})}
+
+Insert media instance in media list on a position The libvlc\+\_\+media\+\_\+list\+\_\+lock should be held upon entering this function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+ml} & a media list instance \\
+\hline
+{\em p\+\_\+md} & a media instance \\
+\hline
+{\em i\+\_\+pos} & position in array where to insert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, -\/1 if the media list is read-\/only 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__list_ga93b9fc524ba86c1fd3151a49f6486f54}\label{group__libvlc__media__list_ga93b9fc524ba86c1fd3151a49f6486f54}} 
+\index{Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}!libvlc\+\_\+media\+\_\+list\+\_\+is\+\_\+readonly@{libvlc\+\_\+media\+\_\+list\+\_\+is\+\_\+readonly}}
+\index{libvlc\+\_\+media\+\_\+list\+\_\+is\+\_\+readonly@{libvlc\+\_\+media\+\_\+list\+\_\+is\+\_\+readonly}!Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+list\+\_\+is\+\_\+readonly()}{libvlc\_media\_list\_is\_readonly()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+list\+\_\+is\+\_\+readonly (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$}]{p\+\_\+ml }\end{DoxyParamCaption})}
+
+This indicates if this media list is read-\/only from a user point of view
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+ml} & media list instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 on readonly, 0 on readwrite
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__list_ga92305e7bffe1c30ba6f0f2ebf7ad3c9e}\label{group__libvlc__media__list_ga92305e7bffe1c30ba6f0f2ebf7ad3c9e}} 
+\index{Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}!libvlc\+\_\+media\+\_\+list\+\_\+item\+\_\+at\+\_\+index@{libvlc\+\_\+media\+\_\+list\+\_\+item\+\_\+at\+\_\+index}}
+\index{libvlc\+\_\+media\+\_\+list\+\_\+item\+\_\+at\+\_\+index@{libvlc\+\_\+media\+\_\+list\+\_\+item\+\_\+at\+\_\+index}!Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+list\+\_\+item\+\_\+at\+\_\+index()}{libvlc\_media\_list\_item\_at\_index()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t$\ast$ libvlc\+\_\+media\+\_\+list\+\_\+item\+\_\+at\+\_\+index (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$}]{p\+\_\+ml,  }\item[{int}]{i\+\_\+pos }\end{DoxyParamCaption})}
+
+List media instance in media list at a position The libvlc\+\_\+media\+\_\+list\+\_\+lock should be held upon entering this function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+ml} & a media list instance \\
+\hline
+{\em i\+\_\+pos} & position in array where to insert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+media instance at position i\+\_\+pos, or N\+U\+LL if not found. In case of success, \hyperlink{group__libvlc__media_gaf4be74c918bc34ea4182e8028ea5f0ba}{libvlc\+\_\+media\+\_\+retain()} is called to increase the refcount on the media. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__list_ga908ca009b4ebecbccdeb5650c72cd7a9}\label{group__libvlc__media__list_ga908ca009b4ebecbccdeb5650c72cd7a9}} 
+\index{Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}!libvlc\+\_\+media\+\_\+list\+\_\+lock@{libvlc\+\_\+media\+\_\+list\+\_\+lock}}
+\index{libvlc\+\_\+media\+\_\+list\+\_\+lock@{libvlc\+\_\+media\+\_\+list\+\_\+lock}!Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+list\+\_\+lock()}{libvlc\_media\_list\_lock()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+list\+\_\+lock (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$}]{p\+\_\+ml }\end{DoxyParamCaption})}
+
+Get lock on media list items
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+ml} & a media list instance \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__list_ga39f047f672f608104a599e827c2e7533}\label{group__libvlc__media__list_ga39f047f672f608104a599e827c2e7533}} 
+\index{Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}!libvlc\+\_\+media\+\_\+list\+\_\+media@{libvlc\+\_\+media\+\_\+list\+\_\+media}}
+\index{libvlc\+\_\+media\+\_\+list\+\_\+media@{libvlc\+\_\+media\+\_\+list\+\_\+media}!Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+list\+\_\+media()}{libvlc\_media\_list\_media()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+t$\ast$ libvlc\+\_\+media\+\_\+list\+\_\+media (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$}]{p\+\_\+ml }\end{DoxyParamCaption})}
+
+Get media instance from this media list instance. This action will increase the refcount on the media instance. The libvlc\+\_\+media\+\_\+list\+\_\+lock should N\+OT be held upon entering this function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+ml} & a media list instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+media instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__list_ga441500e86c4b21cb32afbc96a0733f57}\label{group__libvlc__media__list_ga441500e86c4b21cb32afbc96a0733f57}} 
+\index{Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}!libvlc\+\_\+media\+\_\+list\+\_\+new@{libvlc\+\_\+media\+\_\+list\+\_\+new}}
+\index{libvlc\+\_\+media\+\_\+list\+\_\+new@{libvlc\+\_\+media\+\_\+list\+\_\+new}!Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+list\+\_\+new()}{libvlc\_media\_list\_new()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+list\+\_\+t$\ast$ libvlc\+\_\+media\+\_\+list\+\_\+new (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance }\end{DoxyParamCaption})}
+
+Create an empty media list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & libvlc instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+empty media list, or N\+U\+LL on error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__list_ga690973281c2f7f32cd366914a08c68dc}\label{group__libvlc__media__list_ga690973281c2f7f32cd366914a08c68dc}} 
+\index{Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}!libvlc\+\_\+media\+\_\+list\+\_\+release@{libvlc\+\_\+media\+\_\+list\+\_\+release}}
+\index{libvlc\+\_\+media\+\_\+list\+\_\+release@{libvlc\+\_\+media\+\_\+list\+\_\+release}!Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+list\+\_\+release()}{libvlc\_media\_list\_release()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+list\+\_\+release (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$}]{p\+\_\+ml }\end{DoxyParamCaption})}
+
+Release media list created with \hyperlink{group__libvlc__media__list_ga441500e86c4b21cb32afbc96a0733f57}{libvlc\+\_\+media\+\_\+list\+\_\+new()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+ml} & a media list created with \hyperlink{group__libvlc__media__list_ga441500e86c4b21cb32afbc96a0733f57}{libvlc\+\_\+media\+\_\+list\+\_\+new()} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__list_ga19bdb775f747bd6aaf31b542e600bb87}\label{group__libvlc__media__list_ga19bdb775f747bd6aaf31b542e600bb87}} 
+\index{Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}!libvlc\+\_\+media\+\_\+list\+\_\+remove\+\_\+index@{libvlc\+\_\+media\+\_\+list\+\_\+remove\+\_\+index}}
+\index{libvlc\+\_\+media\+\_\+list\+\_\+remove\+\_\+index@{libvlc\+\_\+media\+\_\+list\+\_\+remove\+\_\+index}!Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+list\+\_\+remove\+\_\+index()}{libvlc\_media\_list\_remove\_index()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+list\+\_\+remove\+\_\+index (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$}]{p\+\_\+ml,  }\item[{int}]{i\+\_\+pos }\end{DoxyParamCaption})}
+
+Remove media instance from media list on a position The libvlc\+\_\+media\+\_\+list\+\_\+lock should be held upon entering this function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+ml} & a media list instance \\
+\hline
+{\em i\+\_\+pos} & position in array where to insert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, -\/1 if the list is read-\/only or the item was not found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__list_ga2e6c93ff61c6380eb3c07d22ef47da8c}\label{group__libvlc__media__list_ga2e6c93ff61c6380eb3c07d22ef47da8c}} 
+\index{Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}!libvlc\+\_\+media\+\_\+list\+\_\+retain@{libvlc\+\_\+media\+\_\+list\+\_\+retain}}
+\index{libvlc\+\_\+media\+\_\+list\+\_\+retain@{libvlc\+\_\+media\+\_\+list\+\_\+retain}!Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+list\+\_\+retain()}{libvlc\_media\_list\_retain()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+list\+\_\+retain (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$}]{p\+\_\+ml }\end{DoxyParamCaption})}
+
+Retain reference to a media list
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+ml} & a media list created with \hyperlink{group__libvlc__media__list_ga441500e86c4b21cb32afbc96a0733f57}{libvlc\+\_\+media\+\_\+list\+\_\+new()} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__list_ga96a38e5aabb5781c2f1932d332363eef}\label{group__libvlc__media__list_ga96a38e5aabb5781c2f1932d332363eef}} 
+\index{Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}!libvlc\+\_\+media\+\_\+list\+\_\+set\+\_\+media@{libvlc\+\_\+media\+\_\+list\+\_\+set\+\_\+media}}
+\index{libvlc\+\_\+media\+\_\+list\+\_\+set\+\_\+media@{libvlc\+\_\+media\+\_\+list\+\_\+set\+\_\+media}!Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+list\+\_\+set\+\_\+media()}{libvlc\_media\_list\_set\_media()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+list\+\_\+set\+\_\+media (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$}]{p\+\_\+ml,  }\item[{libvlc\+\_\+media\+\_\+t $\ast$}]{p\+\_\+md }\end{DoxyParamCaption})}
+
+Associate media instance with this media list instance. If another media instance was present it will be released. The libvlc\+\_\+media\+\_\+list\+\_\+lock should N\+OT be held upon entering this function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+ml} & a media list instance \\
+\hline
+{\em p\+\_\+md} & media instance to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__list_gaa91574447f7b7baa18e4054cf1957c51}\label{group__libvlc__media__list_gaa91574447f7b7baa18e4054cf1957c51}} 
+\index{Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}!libvlc\+\_\+media\+\_\+list\+\_\+unlock@{libvlc\+\_\+media\+\_\+list\+\_\+unlock}}
+\index{libvlc\+\_\+media\+\_\+list\+\_\+unlock@{libvlc\+\_\+media\+\_\+list\+\_\+unlock}!Lib\+V\+L\+C media list@{Lib\+V\+L\+C media list}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+list\+\_\+unlock()}{libvlc\_media\_list\_unlock()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+list\+\_\+unlock (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$}]{p\+\_\+ml }\end{DoxyParamCaption})}
+
+Release lock on media list items The libvlc\+\_\+media\+\_\+list\+\_\+lock should be held upon entering this function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+ml} & a media list instance \\
+\hline
+\end{DoxyParams}

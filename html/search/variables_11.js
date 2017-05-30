@@ -1,22 +1,24 @@
 var searchData=
 [
-  ['sbuiltinmaterialtypenames',['sBuiltInMaterialTypeNames',['../namespaceirr_1_1video.html#a833460ba01098710b6df3ec5c281c873',1,'irr::video']]],
-  ['sbuiltinvertextypenames',['sBuiltInVertexTypeNames',['../namespaceirr_1_1video.html#a0f4d6a80a8777457dc9fbe966588f6a6',1,'irr::video']]],
-  ['scalekeys',['ScaleKeys',['../structirr_1_1scene_1_1ISkinnedMesh_1_1SJoint.html#aaf8b629afa21dc3a887c0e2bfe253eac',1,'irr::scene::ISkinnedMesh::SJoint']]],
-  ['scalerect',['ScaleRect',['../classirr_1_1gui_1_1IGUIElement.html#af8fc66b7504e9a073b02fc69a63f0b49',1,'irr::gui::IGUIElement']]],
-  ['scenemanager',['SceneManager',['../classirr_1_1scene_1_1ISceneNode.html#a062a201ee9b870398fe5aa8f36ce54a5',1,'irr::scene::ISceneNode']]],
-  ['sdk_5fversion_5fdo_5fnot_5fuse',['SDK_version_do_not_use',['../structirr_1_1SIrrlichtCreationParameters.html#af30f104af135b97d3e19fecaf2c10e45',1,'irr::SIrrlichtCreationParameters']]],
+  ['sbuiltinmaterialtypenames',['sBuiltInMaterialTypeNames',['../namespaceirr_1_1video.html#afcf17e217ef40e3d389ea061d7ea6215',1,'irr::video']]],
+  ['sbuiltinvertextypenames',['sBuiltInVertexTypeNames',['../namespaceirr_1_1video.html#a230dd759f8acc5fa67073cff0bb464bc',1,'irr::video']]],
+  ['scalekeys',['ScaleKeys',['../structirr_1_1scene_1_1ISkinnedMesh_1_1SJoint.html#a83852d0978f866012c8b487bb3b2c63d',1,'irr::scene::ISkinnedMesh::SJoint']]],
+  ['scalerect',['ScaleRect',['../classirr_1_1gui_1_1IGUIElement.html#ae983089017102cfb3fb016ce0186cbc3',1,'irr::gui::IGUIElement']]],
+  ['scenemanager',['SceneManager',['../classirr_1_1scene_1_1ISceneNode.html#a679d313cbe74b0c62285494a54334311',1,'irr::scene::ISceneNode']]],
+  ['sdk_5fversion_5fdo_5fnot_5fuse',['SDK_version_do_not_use',['../structirr_1_1SIrrlichtCreationParameters.html#af1810ed8c5451fabb15722b6971faa3f',1,'irr::SIrrlichtCreationParameters']]],
   ['shift',['Shift',['../structirr_1_1SEvent_1_1SMouseInput.html#afa1f5dca47f1378ccc27157ba225feda',1,'irr::SEvent::SMouseInput::Shift()'],['../structirr_1_1SEvent_1_1SKeyInput.html#a54b1c282890d6f6da7ba2f73d795d45a',1,'irr::SEvent::SKeyInput::Shift()']]],
   ['shininess',['Shininess',['../classirr_1_1video_1_1SMaterial.html#a877106a83108db6d1f30a38379d28494',1,'irr::video::SMaterial']]],
   ['size',['size',['../structirr_1_1scene_1_1SParticle.html#a548dc843e9db5db26e0005a2cb29a609',1,'irr::scene::SParticle']]],
   ['sound',['sound',['../classConfigManager.html#a010e2da02ebc90d7ce930d1c57a79e96',1,'ConfigManager']]],
   ['specularcolor',['SpecularColor',['../structirr_1_1video_1_1SLight.html#a2d66ad28850a8588b2ba727103710604',1,'irr::video::SLight::SpecularColor()'],['../classirr_1_1video_1_1SMaterial.html#a253c2acbafe6698e3d16b3e3a1e199ed',1,'irr::video::SMaterial::SpecularColor()']]],
-  ['start',['start',['../classirr_1_1core_1_1line2d.html#ae9a3be281b33b15eb7de868b51651ad8',1,'irr::core::line2d::start()'],['../classirr_1_1core_1_1line3d.html#a8874f77324b6ef6632e66b22051a3251',1,'irr::core::line3d::start()']]],
+  ['start',['start',['../classirr_1_1core_1_1line2d.html#a1d8c9b41f3c8d9c352deb5160f100c65',1,'irr::core::line2d::start()'],['../classirr_1_1core_1_1line3d.html#a6b7683c8ac164e209b195fc439269a1b',1,'irr::core::line3d::start()'],['../structaudio__output.html#a41bc9e8671e11adb721781af2a277cc7',1,'audio_output::start()']]],
   ['startcolor',['startColor',['../structirr_1_1scene_1_1SParticle.html#a23325221f845c68dd331edb38d90374f',1,'irr::scene::SParticle']]],
   ['startsize',['startSize',['../structirr_1_1scene_1_1SParticle.html#a753df7de54e742cd7d50ff10154906ee',1,'irr::scene::SParticle']]],
   ['starttime',['startTime',['../structirr_1_1scene_1_1SParticle.html#aa546b47d4a54889e568a4c067816765c',1,'irr::scene::SParticle']]],
   ['startvector',['startVector',['../structirr_1_1scene_1_1SParticle.html#a5e8b1dcb8825e467b6ed2d4f48c321e2',1,'irr::scene::SParticle']]],
   ['stencilbuffer',['Stencilbuffer',['../structirr_1_1SIrrlichtCreationParameters.html#a8120cfeac3fbf8b12b1e5f6bd6a8ec2f',1,'irr::SIrrlichtCreationParameters']]],
   ['stereobuffer',['Stereobuffer',['../structirr_1_1SIrrlichtCreationParameters.html#ae5dd722bd6c5a7001b73ef92264220a5',1,'irr::SIrrlichtCreationParameters']]],
-  ['strength',['strength',['../structirr_1_1scene_1_1ISkinnedMesh_1_1SWeight.html#a090246843a5a57bb5ac1afb15c02538b',1,'irr::scene::ISkinnedMesh::SWeight']]]
+  ['stop',['stop',['../structaudio__output.html#ad045b1c68f0e60ed577046bd77e3591b',1,'audio_output']]],
+  ['strength',['strength',['../structirr_1_1scene_1_1ISkinnedMesh_1_1SWeight.html#a090246843a5a57bb5ac1afb15c02538b',1,'irr::scene::ISkinnedMesh::SWeight']]],
+  ['sys',['sys',['../structaudio__output.html#a88143cf6018fefbba4a9a0e8284067b9',1,'audio_output']]]
 ];

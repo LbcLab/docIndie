@@ -1,0 +1,113 @@
+\hypertarget{group__subpicture}{}\section{Video Subpictures}
+\label{group__subpicture}\index{Video Subpictures@{Video Subpictures}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsubpicture__region__t}{subpicture\+\_\+region\+\_\+t}
+\item 
+struct \hyperlink{structsubpicture__t}{subpicture\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__subpicture_ga8dcf59c7d34d151f9e34e1019041fb2c}{S\+U\+B\+P\+I\+C\+T\+U\+R\+E\+\_\+\+A\+L\+I\+G\+N\+\_\+\+L\+E\+A\+V\+E\+T\+E\+XT}~0x10
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{group__subpicture_ga9be3c246cffef0547fcebbc5d9282ebb}{subpicture\+\_\+region\+\_\+private\+\_\+t} \hyperlink{group__subpicture_ga9be3c246cffef0547fcebbc5d9282ebb}{subpicture\+\_\+region\+\_\+private\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structsubpicture__region__t}{subpicture\+\_\+region\+\_\+t} $\ast$ \hyperlink{group__subpicture_ga3cf9611325cfd60f346be7f6d2075cf3}{subpicture\+\_\+region\+\_\+\+New} (const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$p\+\_\+fmt)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__subpicture_gacac77af39686761bc175d12b769c3dfb}{subpicture\+\_\+region\+\_\+\+Delete} (\hyperlink{structsubpicture__region__t}{subpicture\+\_\+region\+\_\+t} $\ast$p\+\_\+region)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__subpicture_gac38fccf7b141ea5d16d875d05412dace}{subpicture\+\_\+region\+\_\+\+Chain\+Delete} (\hyperlink{structsubpicture__region__t}{subpicture\+\_\+region\+\_\+t} $\ast$p\+\_\+head)
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structsubpicture__t}{subpicture\+\_\+t} $\ast$ \hyperlink{group__subpicture_gaf44acd238f14210dad9199f48080f762}{subpicture\+\_\+\+New} (const subpicture\+\_\+updater\+\_\+t $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__subpicture_ga86b24b8b7a37505a97ce99e34b8fa83e}{subpicture\+\_\+\+Delete} (\hyperlink{structsubpicture__t}{subpicture\+\_\+t} $\ast$p\+\_\+subpic)
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structsubpicture__t}{subpicture\+\_\+t} $\ast$ \hyperlink{group__subpicture_gabbb6ca1aaee0248a446430c0c734c1ab}{subpicture\+\_\+\+New\+From\+Picture} (\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$, \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$, \hyperlink{vlc__common_8h_af49f89d0f752bc9cff142e43b1bd634d}{vlc\+\_\+fourcc\+\_\+t} i\+\_\+chroma)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__subpicture_gaece760ee2ccc467fc2eb91fda3163d9b}{subpicture\+\_\+\+Update} (\hyperlink{structsubpicture__t}{subpicture\+\_\+t} $\ast$, const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$src, const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$, \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Subpictures are pictures that should be displayed on top of the video, like subtitles and O\+SD 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__subpicture_ga8dcf59c7d34d151f9e34e1019041fb2c}\label{group__subpicture_ga8dcf59c7d34d151f9e34e1019041fb2c}} 
+\index{Video Subpictures@{Video Subpictures}!S\+U\+B\+P\+I\+C\+T\+U\+R\+E\+\_\+\+A\+L\+I\+G\+N\+\_\+\+L\+E\+A\+V\+E\+T\+E\+XT@{S\+U\+B\+P\+I\+C\+T\+U\+R\+E\+\_\+\+A\+L\+I\+G\+N\+\_\+\+L\+E\+A\+V\+E\+T\+E\+XT}}
+\index{S\+U\+B\+P\+I\+C\+T\+U\+R\+E\+\_\+\+A\+L\+I\+G\+N\+\_\+\+L\+E\+A\+V\+E\+T\+E\+XT@{S\+U\+B\+P\+I\+C\+T\+U\+R\+E\+\_\+\+A\+L\+I\+G\+N\+\_\+\+L\+E\+A\+V\+E\+T\+E\+XT}!Video Subpictures@{Video Subpictures}}
+\subsubsection{\texorpdfstring{S\+U\+B\+P\+I\+C\+T\+U\+R\+E\+\_\+\+A\+L\+I\+G\+N\+\_\+\+L\+E\+A\+V\+E\+T\+E\+XT}{SUBPICTURE\_ALIGN\_LEAVETEXT}}
+{\footnotesize\ttfamily \#define S\+U\+B\+P\+I\+C\+T\+U\+R\+E\+\_\+\+A\+L\+I\+G\+N\+\_\+\+L\+E\+A\+V\+E\+T\+E\+XT~0x10}
+
+Align the subpicture, but not the text inside 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__subpicture_ga9be3c246cffef0547fcebbc5d9282ebb}\label{group__subpicture_ga9be3c246cffef0547fcebbc5d9282ebb}} 
+\index{Video Subpictures@{Video Subpictures}!subpicture\+\_\+region\+\_\+private\+\_\+t@{subpicture\+\_\+region\+\_\+private\+\_\+t}}
+\index{subpicture\+\_\+region\+\_\+private\+\_\+t@{subpicture\+\_\+region\+\_\+private\+\_\+t}!Video Subpictures@{Video Subpictures}}
+\subsubsection{\texorpdfstring{subpicture\+\_\+region\+\_\+private\+\_\+t}{subpicture\_region\_private\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{group__subpicture_ga9be3c246cffef0547fcebbc5d9282ebb}{subpicture\+\_\+region\+\_\+private\+\_\+t} \hyperlink{group__subpicture_ga9be3c246cffef0547fcebbc5d9282ebb}{subpicture\+\_\+region\+\_\+private\+\_\+t}}
+
+Video subtitle region spu core private 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__subpicture_ga86b24b8b7a37505a97ce99e34b8fa83e}\label{group__subpicture_ga86b24b8b7a37505a97ce99e34b8fa83e}} 
+\index{Video Subpictures@{Video Subpictures}!subpicture\+\_\+\+Delete@{subpicture\+\_\+\+Delete}}
+\index{subpicture\+\_\+\+Delete@{subpicture\+\_\+\+Delete}!Video Subpictures@{Video Subpictures}}
+\subsubsection{\texorpdfstring{subpicture\+\_\+\+Delete()}{subpicture\_Delete()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void subpicture\+\_\+\+Delete (\begin{DoxyParamCaption}\item[{\hyperlink{structsubpicture__t}{subpicture\+\_\+t} $\ast$}]{p\+\_\+subpic }\end{DoxyParamCaption})}
+
+This function delete a subpicture created by subpicture\+\_\+\+New. You may give it N\+U\+LL. \mbox{\Hypertarget{group__subpicture_gaf44acd238f14210dad9199f48080f762}\label{group__subpicture_gaf44acd238f14210dad9199f48080f762}} 
+\index{Video Subpictures@{Video Subpictures}!subpicture\+\_\+\+New@{subpicture\+\_\+\+New}}
+\index{subpicture\+\_\+\+New@{subpicture\+\_\+\+New}!Video Subpictures@{Video Subpictures}}
+\subsubsection{\texorpdfstring{subpicture\+\_\+\+New()}{subpicture\_New()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structsubpicture__t}{subpicture\+\_\+t}$\ast$ subpicture\+\_\+\+New (\begin{DoxyParamCaption}\item[{const subpicture\+\_\+updater\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function create a new empty subpicture.
+
+You must use subpicture\+\_\+\+Delete to destroy it. \mbox{\Hypertarget{group__subpicture_gabbb6ca1aaee0248a446430c0c734c1ab}\label{group__subpicture_gabbb6ca1aaee0248a446430c0c734c1ab}} 
+\index{Video Subpictures@{Video Subpictures}!subpicture\+\_\+\+New\+From\+Picture@{subpicture\+\_\+\+New\+From\+Picture}}
+\index{subpicture\+\_\+\+New\+From\+Picture@{subpicture\+\_\+\+New\+From\+Picture}!Video Subpictures@{Video Subpictures}}
+\subsubsection{\texorpdfstring{subpicture\+\_\+\+New\+From\+Picture()}{subpicture\_NewFromPicture()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structsubpicture__t}{subpicture\+\_\+t}$\ast$ subpicture\+\_\+\+New\+From\+Picture (\begin{DoxyParamCaption}\item[{\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$}]{,  }\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{,  }\item[{\hyperlink{vlc__common_8h_af49f89d0f752bc9cff142e43b1bd634d}{vlc\+\_\+fourcc\+\_\+t}}]{i\+\_\+chroma }\end{DoxyParamCaption})}
+
+This function will create a subpicture having one region in the requested chroma showing the given picture.
+
+The \hyperlink{structpicture__t}{picture\+\_\+t} given is not released nor used inside the returned \hyperlink{structsubpicture__t}{subpicture\+\_\+t}. \mbox{\Hypertarget{group__subpicture_gac38fccf7b141ea5d16d875d05412dace}\label{group__subpicture_gac38fccf7b141ea5d16d875d05412dace}} 
+\index{Video Subpictures@{Video Subpictures}!subpicture\+\_\+region\+\_\+\+Chain\+Delete@{subpicture\+\_\+region\+\_\+\+Chain\+Delete}}
+\index{subpicture\+\_\+region\+\_\+\+Chain\+Delete@{subpicture\+\_\+region\+\_\+\+Chain\+Delete}!Video Subpictures@{Video Subpictures}}
+\subsubsection{\texorpdfstring{subpicture\+\_\+region\+\_\+\+Chain\+Delete()}{subpicture\_region\_ChainDelete()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void subpicture\+\_\+region\+\_\+\+Chain\+Delete (\begin{DoxyParamCaption}\item[{\hyperlink{structsubpicture__region__t}{subpicture\+\_\+region\+\_\+t} $\ast$}]{p\+\_\+head }\end{DoxyParamCaption})}
+
+This function will destroy a list of subpicture regions allocated by subpicture\+\_\+region\+\_\+\+New.
+
+Provided for convenience. \mbox{\Hypertarget{group__subpicture_gacac77af39686761bc175d12b769c3dfb}\label{group__subpicture_gacac77af39686761bc175d12b769c3dfb}} 
+\index{Video Subpictures@{Video Subpictures}!subpicture\+\_\+region\+\_\+\+Delete@{subpicture\+\_\+region\+\_\+\+Delete}}
+\index{subpicture\+\_\+region\+\_\+\+Delete@{subpicture\+\_\+region\+\_\+\+Delete}!Video Subpictures@{Video Subpictures}}
+\subsubsection{\texorpdfstring{subpicture\+\_\+region\+\_\+\+Delete()}{subpicture\_region\_Delete()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void subpicture\+\_\+region\+\_\+\+Delete (\begin{DoxyParamCaption}\item[{\hyperlink{structsubpicture__region__t}{subpicture\+\_\+region\+\_\+t} $\ast$}]{p\+\_\+region }\end{DoxyParamCaption})}
+
+This function will destroy a subpicture region allocated by subpicture\+\_\+region\+\_\+\+New.
+
+You may give it N\+U\+LL. \mbox{\Hypertarget{group__subpicture_ga3cf9611325cfd60f346be7f6d2075cf3}\label{group__subpicture_ga3cf9611325cfd60f346be7f6d2075cf3}} 
+\index{Video Subpictures@{Video Subpictures}!subpicture\+\_\+region\+\_\+\+New@{subpicture\+\_\+region\+\_\+\+New}}
+\index{subpicture\+\_\+region\+\_\+\+New@{subpicture\+\_\+region\+\_\+\+New}!Video Subpictures@{Video Subpictures}}
+\subsubsection{\texorpdfstring{subpicture\+\_\+region\+\_\+\+New()}{subpicture\_region\_New()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structsubpicture__region__t}{subpicture\+\_\+region\+\_\+t}$\ast$ subpicture\+\_\+region\+\_\+\+New (\begin{DoxyParamCaption}\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{p\+\_\+fmt }\end{DoxyParamCaption})}
+
+This function will create a new subpicture region.
+
+You must use subpicture\+\_\+region\+\_\+\+Delete to destroy it. \mbox{\Hypertarget{group__subpicture_gaece760ee2ccc467fc2eb91fda3163d9b}\label{group__subpicture_gaece760ee2ccc467fc2eb91fda3163d9b}} 
+\index{Video Subpictures@{Video Subpictures}!subpicture\+\_\+\+Update@{subpicture\+\_\+\+Update}}
+\index{subpicture\+\_\+\+Update@{subpicture\+\_\+\+Update}!Video Subpictures@{Video Subpictures}}
+\subsubsection{\texorpdfstring{subpicture\+\_\+\+Update()}{subpicture\_Update()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void subpicture\+\_\+\+Update (\begin{DoxyParamCaption}\item[{\hyperlink{structsubpicture__t}{subpicture\+\_\+t} $\ast$}]{,  }\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{src,  }\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{,  }\item[{\hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t}}]{ }\end{DoxyParamCaption})}
+
+This function will update the content of a subpicture created with a non N\+U\+LL subpicture\+\_\+updater\+\_\+t. 

@@ -19,7 +19,21 @@ Inheritance diagram for irr\+:\+:I\+O\+S\+Operator\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classirr_1_1IOSOperator_acf89b7715468ad2af91807dea6d40bf8}\label{classirr_1_1IOSOperator_acf89b7715468ad2af91807dea6d40bf8}} 
-virtual const \hyperlink{namespaceirr_1_1core_ade1071a878633f2f6d8a75c5d11fec19}{core\+::stringc} \& \hyperlink{classirr_1_1IOSOperator_acf89b7715468ad2af91807dea6d40bf8}{get\+Operating\+System\+Version} () const =0
+virtual const \hyperlink{namespaceirr_1_1core_ab26a0e0359206b5a694f35c37c829d7f}{core\+::stringc} \& \hyperlink{classirr_1_1IOSOperator_acf89b7715468ad2af91807dea6d40bf8}{get\+Operating\+System\+Version} () const =0
+\begin{DoxyCompactList}\small\item\em Get the current operation system version as string. \end{DoxyCompactList}\item 
+\+\_\+\+I\+R\+R\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+ const wchar\+\_\+t $\ast$ \hyperlink{classirr_1_1IOSOperator_a8d634ee79439742b7397ca7ad7a3812a}{get\+Operation\+System\+Version} () const
+\begin{DoxyCompactList}\small\item\em Get the current operation system version as string. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1IOSOperator_aba3b621ed3b64e5a421c42b06b49e0b6}\label{classirr_1_1IOSOperator_aba3b621ed3b64e5a421c42b06b49e0b6}} 
+virtual void \hyperlink{classirr_1_1IOSOperator_aba3b621ed3b64e5a421c42b06b49e0b6}{copy\+To\+Clipboard} (const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$text) const =0
+\begin{DoxyCompactList}\small\item\em Copies text to the clipboard. \end{DoxyCompactList}\item 
+virtual const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8} $\ast$ \hyperlink{classirr_1_1IOSOperator_a9026ff9f28b48615971e18fcee6fff4c}{get\+Text\+From\+Clipboard} () const =0
+\begin{DoxyCompactList}\small\item\em Get text from the clipboard. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1IOSOperator_abc61b8016ec35125ef94adea42209ecd}{get\+Processor\+Speed\+M\+Hz} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $\ast$M\+Hz) const =0
+\begin{DoxyCompactList}\small\item\em Get the processor speed in megahertz. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1IOSOperator_af58b50cecf28f247e1f302ee0b9e8270}{get\+System\+Memory} (\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $\ast$Total, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $\ast$Avail) const =0
+\begin{DoxyCompactList}\small\item\em Get the total and available system R\+AM. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1IOSOperator_acf89b7715468ad2af91807dea6d40bf8}\label{classirr_1_1IOSOperator_acf89b7715468ad2af91807dea6d40bf8}} 
+virtual const \hyperlink{namespaceirr_1_1core_ab26a0e0359206b5a694f35c37c829d7f}{core\+::stringc} \& \hyperlink{classirr_1_1IOSOperator_acf89b7715468ad2af91807dea6d40bf8}{get\+Operating\+System\+Version} () const =0
 \begin{DoxyCompactList}\small\item\em Get the current operation system version as string. \end{DoxyCompactList}\item 
 \+\_\+\+I\+R\+R\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+ const wchar\+\_\+t $\ast$ \hyperlink{classirr_1_1IOSOperator_a8d634ee79439742b7397ca7ad7a3812a}{get\+Operation\+System\+Version} () const
 \begin{DoxyCompactList}\small\item\em Get the current operation system version as string. \end{DoxyCompactList}\item 
@@ -42,7 +56,7 @@ The Operating system operator provides operation system specific methods and inf
 \mbox{\Hypertarget{classirr_1_1IOSOperator_a8d634ee79439742b7397ca7ad7a3812a}\label{classirr_1_1IOSOperator_a8d634ee79439742b7397ca7ad7a3812a}} 
 \index{irr\+::\+I\+O\+S\+Operator@{irr\+::\+I\+O\+S\+Operator}!get\+Operation\+System\+Version@{get\+Operation\+System\+Version}}
 \index{get\+Operation\+System\+Version@{get\+Operation\+System\+Version}!irr\+::\+I\+O\+S\+Operator@{irr\+::\+I\+O\+S\+Operator}}
-\subsubsection{\texorpdfstring{get\+Operation\+System\+Version()}{getOperationSystemVersion()}}
+\subsubsection{\texorpdfstring{get\+Operation\+System\+Version()}{getOperationSystemVersion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \+\_\+\+I\+R\+R\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+ const wchar\+\_\+t$\ast$ irr\+::\+I\+O\+S\+Operator\+::get\+Operation\+System\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -51,10 +65,40 @@ Get the current operation system version as string.
 
 \begin{DoxyRefDesc}{Deprecated}
 \item[\hyperlink{deprecated__deprecated000016}{Deprecated}]Use get\+Operating\+System\+Version instead. This method will be removed in Irrlicht 1.\+9. \end{DoxyRefDesc}
+\mbox{\Hypertarget{classirr_1_1IOSOperator_a8d634ee79439742b7397ca7ad7a3812a}\label{classirr_1_1IOSOperator_a8d634ee79439742b7397ca7ad7a3812a}} 
+\index{irr\+::\+I\+O\+S\+Operator@{irr\+::\+I\+O\+S\+Operator}!get\+Operation\+System\+Version@{get\+Operation\+System\+Version}}
+\index{get\+Operation\+System\+Version@{get\+Operation\+System\+Version}!irr\+::\+I\+O\+S\+Operator@{irr\+::\+I\+O\+S\+Operator}}
+\subsubsection{\texorpdfstring{get\+Operation\+System\+Version()}{getOperationSystemVersion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \+\_\+\+I\+R\+R\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+ const wchar\+\_\+t$\ast$ irr\+::\+I\+O\+S\+Operator\+::get\+Operation\+System\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the current operation system version as string. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000042}{Deprecated}]Use get\+Operating\+System\+Version instead. This method will be removed in Irrlicht 1.\+9. \end{DoxyRefDesc}
 \mbox{\Hypertarget{classirr_1_1IOSOperator_abc61b8016ec35125ef94adea42209ecd}\label{classirr_1_1IOSOperator_abc61b8016ec35125ef94adea42209ecd}} 
 \index{irr\+::\+I\+O\+S\+Operator@{irr\+::\+I\+O\+S\+Operator}!get\+Processor\+Speed\+M\+Hz@{get\+Processor\+Speed\+M\+Hz}}
 \index{get\+Processor\+Speed\+M\+Hz@{get\+Processor\+Speed\+M\+Hz}!irr\+::\+I\+O\+S\+Operator@{irr\+::\+I\+O\+S\+Operator}}
-\subsubsection{\texorpdfstring{get\+Processor\+Speed\+M\+Hz()}{getProcessorSpeedMHz()}}
+\subsubsection{\texorpdfstring{get\+Processor\+Speed\+M\+Hz()}{getProcessorSpeedMHz()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::\+I\+O\+S\+Operator\+::get\+Processor\+Speed\+M\+Hz (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $\ast$}]{M\+Hz }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the processor speed in megahertz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M\+Hz} & The integer variable to store the speed in. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1IOSOperator_abc61b8016ec35125ef94adea42209ecd}\label{classirr_1_1IOSOperator_abc61b8016ec35125ef94adea42209ecd}} 
+\index{irr\+::\+I\+O\+S\+Operator@{irr\+::\+I\+O\+S\+Operator}!get\+Processor\+Speed\+M\+Hz@{get\+Processor\+Speed\+M\+Hz}}
+\index{get\+Processor\+Speed\+M\+Hz@{get\+Processor\+Speed\+M\+Hz}!irr\+::\+I\+O\+S\+Operator@{irr\+::\+I\+O\+S\+Operator}}
+\subsubsection{\texorpdfstring{get\+Processor\+Speed\+M\+Hz()}{getProcessorSpeedMHz()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual bool irr\+::\+I\+O\+S\+Operator\+::get\+Processor\+Speed\+M\+Hz (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $\ast$}]{M\+Hz }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -72,7 +116,27 @@ True if successful, false if not
 \mbox{\Hypertarget{classirr_1_1IOSOperator_af58b50cecf28f247e1f302ee0b9e8270}\label{classirr_1_1IOSOperator_af58b50cecf28f247e1f302ee0b9e8270}} 
 \index{irr\+::\+I\+O\+S\+Operator@{irr\+::\+I\+O\+S\+Operator}!get\+System\+Memory@{get\+System\+Memory}}
 \index{get\+System\+Memory@{get\+System\+Memory}!irr\+::\+I\+O\+S\+Operator@{irr\+::\+I\+O\+S\+Operator}}
-\subsubsection{\texorpdfstring{get\+System\+Memory()}{getSystemMemory()}}
+\subsubsection{\texorpdfstring{get\+System\+Memory()}{getSystemMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::\+I\+O\+S\+Operator\+::get\+System\+Memory (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $\ast$}]{Total,  }\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $\ast$}]{Avail }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the total and available system R\+AM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Total} & will contain the total system memory \\
+\hline
+{\em Avail} & will contain the available memory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1IOSOperator_af58b50cecf28f247e1f302ee0b9e8270}\label{classirr_1_1IOSOperator_af58b50cecf28f247e1f302ee0b9e8270}} 
+\index{irr\+::\+I\+O\+S\+Operator@{irr\+::\+I\+O\+S\+Operator}!get\+System\+Memory@{get\+System\+Memory}}
+\index{get\+System\+Memory@{get\+System\+Memory}!irr\+::\+I\+O\+S\+Operator@{irr\+::\+I\+O\+S\+Operator}}
+\subsubsection{\texorpdfstring{get\+System\+Memory()}{getSystemMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual bool irr\+::\+I\+O\+S\+Operator\+::get\+System\+Memory (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $\ast$}]{Total,  }\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $\ast$}]{Avail }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -92,7 +156,20 @@ True if successful, false if not
 \mbox{\Hypertarget{classirr_1_1IOSOperator_a9026ff9f28b48615971e18fcee6fff4c}\label{classirr_1_1IOSOperator_a9026ff9f28b48615971e18fcee6fff4c}} 
 \index{irr\+::\+I\+O\+S\+Operator@{irr\+::\+I\+O\+S\+Operator}!get\+Text\+From\+Clipboard@{get\+Text\+From\+Clipboard}}
 \index{get\+Text\+From\+Clipboard@{get\+Text\+From\+Clipboard}!irr\+::\+I\+O\+S\+Operator@{irr\+::\+I\+O\+S\+Operator}}
-\subsubsection{\texorpdfstring{get\+Text\+From\+Clipboard()}{getTextFromClipboard()}}
+\subsubsection{\texorpdfstring{get\+Text\+From\+Clipboard()}{getTextFromClipboard()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ irr\+::\+I\+O\+S\+Operator\+::get\+Text\+From\+Clipboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get text from the clipboard. 
+
+\begin{DoxyReturn}{Returns}
+Returns 0 if no string is in there. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1IOSOperator_a9026ff9f28b48615971e18fcee6fff4c}\label{classirr_1_1IOSOperator_a9026ff9f28b48615971e18fcee6fff4c}} 
+\index{irr\+::\+I\+O\+S\+Operator@{irr\+::\+I\+O\+S\+Operator}!get\+Text\+From\+Clipboard@{get\+Text\+From\+Clipboard}}
+\index{get\+Text\+From\+Clipboard@{get\+Text\+From\+Clipboard}!irr\+::\+I\+O\+S\+Operator@{irr\+::\+I\+O\+S\+Operator}}
+\subsubsection{\texorpdfstring{get\+Text\+From\+Clipboard()}{getTextFromClipboard()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual const \hyperlink{namespaceirr_a9395eaea339bcb546b319e9c96bf7410}{c8}$\ast$ irr\+::\+I\+O\+S\+Operator\+::get\+Text\+From\+Clipboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

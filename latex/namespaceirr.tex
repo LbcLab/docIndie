@@ -32,7 +32,7 @@ class \hyperlink{classirr_1_1IRandomizer}{I\+Randomizer}
 class \hyperlink{classirr_1_1IReferenceCounted}{I\+Reference\+Counted}
 \begin{DoxyCompactList}\small\item\em Base class of most objects of the Irrlicht Engine. \end{DoxyCompactList}\item 
 class \hyperlink{classirr_1_1IrrlichtDevice}{Irrlicht\+Device}
-\begin{DoxyCompactList}\small\item\em The Irrlicht device. You can create it with \hyperlink{namespaceirr_abaf4d8719cc26b0d30813abf85e47c76}{create\+Device()} or \hyperlink{namespaceirr_ac83a30d674204dcb94d70f849e9b4a62}{create\+Device\+Ex()}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em The Irrlicht device. You can create it with \hyperlink{namespaceirr_a57653fdaf6b2746b141ba2bb07d8bba6}{create\+Device()} or \hyperlink{namespaceirr_ae0a823eb5404bbf156965e7051798496}{create\+Device\+Ex()}. \end{DoxyCompactList}\item 
 class \hyperlink{classirr_1_1ITimer}{I\+Timer}
 \begin{DoxyCompactList}\small\item\em Interface for getting and manipulating the virtual time. \end{DoxyCompactList}\item 
 struct \hyperlink{structirr_1_1SEvent}{S\+Event}
@@ -46,11 +46,11 @@ struct \hyperlink{structirr_1_1SKeyMap}{S\+Key\+Map}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{namespaceirr_a0ab845f2df3820e04106b7625e9919cd}\label{namespaceirr_a0ab845f2df3820e04106b7625e9919cd}} 
-typedef \hyperlink{classirr_1_1IrrlichtDevice}{Irrlicht\+Device} $\ast$I\+R\+R\+C\+A\+L\+L\+C\+O\+NV $\ast$ \hyperlink{namespaceirr_a0ab845f2df3820e04106b7625e9919cd}{funcptr\+\_\+create\+Device}(\hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0}{video\+::\+E\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+T\+Y\+PE} device\+Type, const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \&window\+Size, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} bits, bool fullscreen, bool stencilbuffer, bool vsync, \hyperlink{classirr_1_1IEventReceiver}{I\+Event\+Receiver} $\ast$receiver)
+\mbox{\Hypertarget{namespaceirr_ac684947a1da4b3acd8e86f5a32581ab6}\label{namespaceirr_ac684947a1da4b3acd8e86f5a32581ab6}} 
+typedef \hyperlink{classirr_1_1IrrlichtDevice}{Irrlicht\+Device} $\ast$I\+R\+R\+C\+A\+L\+L\+C\+O\+NV $\ast$ \hyperlink{namespaceirr_ac684947a1da4b3acd8e86f5a32581ab6}{funcptr\+\_\+create\+Device}(\hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0}{video\+::\+E\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+T\+Y\+PE} device\+Type, const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \&window\+Size, \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} bits, bool fullscreen, bool stencilbuffer, bool vsync, \hyperlink{classirr_1_1IEventReceiver}{I\+Event\+Receiver} $\ast$receiver)
 \begin{DoxyCompactList}\small\item\em typedef for Function Pointer \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{namespaceirr_a5137701377b2241305607fc37a27e9f8}\label{namespaceirr_a5137701377b2241305607fc37a27e9f8}} 
-typedef \hyperlink{classirr_1_1IrrlichtDevice}{Irrlicht\+Device} $\ast$I\+R\+R\+C\+A\+L\+L\+C\+O\+NV $\ast$ \hyperlink{namespaceirr_a5137701377b2241305607fc37a27e9f8}{funcptr\+\_\+create\+Device\+Ex}(const \hyperlink{structirr_1_1SIrrlichtCreationParameters}{S\+Irrlicht\+Creation\+Parameters} \&parameters)
+\mbox{\Hypertarget{namespaceirr_a8951ac2554f9ccd5fe1fcb6fdc13b258}\label{namespaceirr_a8951ac2554f9ccd5fe1fcb6fdc13b258}} 
+typedef \hyperlink{classirr_1_1IrrlichtDevice}{Irrlicht\+Device} $\ast$I\+R\+R\+C\+A\+L\+L\+C\+O\+NV $\ast$ \hyperlink{namespaceirr_a8951ac2554f9ccd5fe1fcb6fdc13b258}{funcptr\+\_\+create\+Device\+Ex}(const \hyperlink{structirr_1_1SIrrlichtCreationParameters}{S\+Irrlicht\+Creation\+Parameters} \&parameters)
 \begin{DoxyCompactList}\small\item\em typedef for Function Pointer \end{DoxyCompactList}\item 
 typedef unsigned char \hyperlink{namespaceirr_a646874f69af8ff87fc10201b0254a761}{u8}
 \begin{DoxyCompactList}\small\item\em 8 bit unsigned variable. \end{DoxyCompactList}\item 
@@ -80,71 +80,225 @@ typedef char \hyperlink{namespaceirr_a813cca9bac9fa0c1427d89720a451460}{fschar\+
 \begin{DoxyCompactItemize}
 \item 
 enum \hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505}{E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE} \{ \newline
-\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a20fb61ff76bfa2269a5f9e41d50018f1}{E\+I\+D\+T\+\_\+\+W\+I\+N32}, 
-\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a839d8602c1a118791425d3df0d31ced1}{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE}, 
-\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505aa084c40bd6cc595378d28182dd74ff80}{E\+I\+D\+T\+\_\+\+X11}, 
-\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a140f80a523981af1487cd774e9a2a656}{E\+I\+D\+T\+\_\+\+O\+SX}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a74a0f53e26d1051bd9ca4c2037dbb537}{E\+I\+D\+T\+\_\+\+W\+I\+N32}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af6fa37cd50bdb3f9a034eb3e57123af5}{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a8dd561e331ff4f323f44747d3fb35bb5}{E\+I\+D\+T\+\_\+\+X11}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a7c8df4ef15bda4b4b11b83734e3be0b6}{E\+I\+D\+T\+\_\+\+O\+SX}, 
 \newline
-\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505ab9cafb4f0108f3fd5da94e886b529979}{E\+I\+D\+T\+\_\+\+S\+DL}, 
-\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a5516da97d0b6ef1708a3a13cdb157bee}{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}, 
-\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a54387cdabc602203abce675b027a3ede}{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE}, 
-\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505ad00f870da762af833dbab2eacc96ae0b}{E\+I\+D\+T\+\_\+\+B\+E\+ST}
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a62b34998421801536f4ae49476f69be2}{E\+I\+D\+T\+\_\+\+S\+DL}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af7aa11b07722db344ccaf08f9a3d2e6f}{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a0d68abff77029bb1614af7eab7e25e89}{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a133810710c44d1e9dc38fed7eeaba1cb}{E\+I\+D\+T\+\_\+\+B\+E\+ST}, 
+\newline
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a74a0f53e26d1051bd9ca4c2037dbb537}{E\+I\+D\+T\+\_\+\+W\+I\+N32}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af6fa37cd50bdb3f9a034eb3e57123af5}{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a8dd561e331ff4f323f44747d3fb35bb5}{E\+I\+D\+T\+\_\+\+X11}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a7c8df4ef15bda4b4b11b83734e3be0b6}{E\+I\+D\+T\+\_\+\+O\+SX}, 
+\newline
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a62b34998421801536f4ae49476f69be2}{E\+I\+D\+T\+\_\+\+S\+DL}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af7aa11b07722db344ccaf08f9a3d2e6f}{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a0d68abff77029bb1614af7eab7e25e89}{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a133810710c44d1e9dc38fed7eeaba1cb}{E\+I\+D\+T\+\_\+\+B\+E\+ST}
  \}\begin{DoxyCompactList}\small\item\em An enum for the different device types supported by the Irrlicht Engine. \end{DoxyCompactList}
 \item 
 enum \hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0c}{E\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE} \{ \newline
-\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cae85bb44dd09a29c879d64a05047fc1d2}{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT} = 0, 
-\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0caa230b748674e074aa67f661819ad5891}{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}, 
-\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca6f90390f3147a1693e5e2e3422d6ca09}{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}, 
-\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cac81558e4607ad260e96ae0f7b889e9a5}{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca722f7807c115f23756853584a3f6d5f6}{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT} = 0, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca5467579b5240c886d12f33854e74a93d}{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca34037c6b7c7e042c174c4c89e517e8f3}{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca3c71131272d5c66959fb4ab8fdd6d1b3}{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}, 
 \newline
-\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca8553b889c8da285c96b90116ae019952}{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT}, 
-\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca4cc15ca95969a8b5d150c3d952ad06e4}{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT}, 
-\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca736f79f0892ace68311f62939cae5678}{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT} = 0x7fffffff
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cab71b0164e7055521844b640d685ee56a}{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT}, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cadce0b261078c067d4e70e0cbaf04c409}{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT}, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca9569c3a72b431df78c5d98c23e93c765}{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT} = 0x7fffffff, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca722f7807c115f23756853584a3f6d5f6}{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT} = 0, 
+\newline
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca5467579b5240c886d12f33854e74a93d}{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca34037c6b7c7e042c174c4c89e517e8f3}{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca3c71131272d5c66959fb4ab8fdd6d1b3}{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cab71b0164e7055521844b640d685ee56a}{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT}, 
+\newline
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cadce0b261078c067d4e70e0cbaf04c409}{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT}, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca9569c3a72b431df78c5d98c23e93c765}{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT} = 0x7fffffff
  \}\begin{DoxyCompactList}\small\item\em Enumeration for all event types there are. \end{DoxyCompactList}
 \item 
 enum \hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739f}{E\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT} \{ \newline
-\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa3f551814f5f38596ea1f3ed7c6c7bad7}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN} = 0, 
-\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fab54734344dc9cc7c00b33afcc6443575}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}, 
-\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa3daff77552ab92abc317afe09b41bc76}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}, 
-\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa26d91b99a8912ff622133f02c60f306a}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa97da2023031b6a09a5c0a5e0b7a6a1cd}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN} = 0, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fac63e1a354120bef0af2804a4d1a2cff1}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faaa118e764df89576ddf1af5b3ed5206e}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9f9d015145923927f4366f6abc3fea68}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}, 
 \newline
-\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fadb92d5c1011534b2b18065573182d9f4}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}, 
-\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa13e6b5b0964334f1dbefae9848dc26df}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}, 
-\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fae3288f42ed4b8372853c1822bbc0a7a1}{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED}, 
-\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fad091f4f4144d57e46be11b029c3c6720}{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa91a422840ca05b2a500c576279d723fe}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fad31369b11e2d23a8f8c1fb4ad2c60011}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faccbca74faad3c53d2aea0bebe955d70b}{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9e14b6982339a47a22972f89a809a683}{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL}, 
 \newline
-\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa689d3c959226829a85d5dc005400c7ce}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}, 
-\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa90865e216488a0a92c030f220a5a69d6}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}, 
-\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa89b46e2e0e79ee26d9c2478ebe1dd9ee}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}, 
-\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa1145828528f7999720df3dd10a3a7de3}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa11de650b5677f659bbb54f70a91e4a89}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa2d50dedf6e4ca3e855b68cc28604ccc5}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa270f8c7c82492a7683ac5e74d42db99a}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faeb59ca6852df839875db239a9c1894ae}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}, 
 \newline
-\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fab24cbd2197b888022531799561c12b49}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}, 
-\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa72b90a632c6063a6f8e2fbf26187c9c6}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}, 
-\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa2cda06d009d09fc263752310cc64340f}{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT}
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa72bab8b71a62b53e1bab3e5d67041a0b}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa4a1bdc4adfa1cd5bb969dfb8a93cfbf7}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa6daf05317a5903aa5c6726f5dee514ba}{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa97da2023031b6a09a5c0a5e0b7a6a1cd}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN} = 0, 
+\newline
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fac63e1a354120bef0af2804a4d1a2cff1}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faaa118e764df89576ddf1af5b3ed5206e}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9f9d015145923927f4366f6abc3fea68}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa91a422840ca05b2a500c576279d723fe}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}, 
+\newline
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fad31369b11e2d23a8f8c1fb4ad2c60011}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faccbca74faad3c53d2aea0bebe955d70b}{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9e14b6982339a47a22972f89a809a683}{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa11de650b5677f659bbb54f70a91e4a89}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\newline
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa2d50dedf6e4ca3e855b68cc28604ccc5}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa270f8c7c82492a7683ac5e74d42db99a}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faeb59ca6852df839875db239a9c1894ae}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa72bab8b71a62b53e1bab3e5d67041a0b}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\newline
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa4a1bdc4adfa1cd5bb969dfb8a93cfbf7}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa6daf05317a5903aa5c6726f5dee514ba}{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT}
  \}\begin{DoxyCompactList}\small\item\em Enumeration for all mouse input events. \end{DoxyCompactList}
 \item 
-enum \hyperlink{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86}{E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+A\+SK} \{ , \hyperlink{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86ac0a92aabd6e6789f71b94f249f957f74}{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1} = 0x08, 
-\hyperlink{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86ac560dffdf74df8ceebaedc79f1bb7c11}{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2} = 0x10
+enum \hyperlink{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86}{E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+A\+SK} \{ , \hyperlink{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86a00f1fa58dfbfb318a01d0753d88c0519}{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1} = 0x08, 
+\hyperlink{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86ad108523dca5d7c537c3e1eb6b78625d3}{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2} = 0x10
+, \hyperlink{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86a00f1fa58dfbfb318a01d0753d88c0519}{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1} = 0x08, 
+\hyperlink{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86ad108523dca5d7c537c3e1eb6b78625d3}{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2} = 0x10
  \}\begin{DoxyCompactList}\small\item\em Masks for mouse button states. \end{DoxyCompactList}
 \item 
 enum \hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92}{E\+L\+O\+G\+\_\+\+L\+E\+V\+EL} \{ \newline
-\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a58d2a62ce004018e8bb6a29c732c70e3}{E\+L\+L\+\_\+\+D\+E\+B\+UG}, 
-\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a9d74de15737e326a91aec6f38c23f9cf}{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}, 
-\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92ad3d7f6bdd2f842cfc17561ba4be95001}{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG}, 
-\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a1c16e615e15fc3f75bacb50faaeb73ff}{E\+L\+L\+\_\+\+E\+R\+R\+OR}, 
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92acb213ad3a563100198dbd7609da56151}{E\+L\+L\+\_\+\+D\+E\+B\+UG}, 
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92aaed3e0f449ad8851a1bb501d4df1c0e7}{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}, 
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a0f67af3d2f419bf35ca3616c4a704ff5}{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG}, 
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a702f1169109f7c4e2d5551a542fb333c}{E\+L\+L\+\_\+\+E\+R\+R\+OR}, 
 \newline
-\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a558fe286a76cbba090c8301f7b1f7dcb}{E\+L\+L\+\_\+\+N\+O\+NE}
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a1756c34c5b4a66210560fc5ade78450a}{E\+L\+L\+\_\+\+N\+O\+NE}, 
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92acb213ad3a563100198dbd7609da56151}{E\+L\+L\+\_\+\+D\+E\+B\+UG}, 
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92aaed3e0f449ad8851a1bb501d4df1c0e7}{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}, 
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a0f67af3d2f419bf35ca3616c4a704ff5}{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG}, 
+\newline
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a702f1169109f7c4e2d5551a542fb333c}{E\+L\+L\+\_\+\+E\+R\+R\+OR}, 
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a1756c34c5b4a66210560fc5ade78450a}{E\+L\+L\+\_\+\+N\+O\+NE}
  \}\begin{DoxyCompactList}\small\item\em Possible log levels. When used has filter E\+L\+L\+\_\+\+D\+E\+B\+UG means =$>$ log everything and E\+L\+L\+\_\+\+N\+O\+NE means =$>$ log (nearly) nothing. When used to print logging information E\+L\+L\+\_\+\+D\+E\+B\+UG will have lowest priority while E\+L\+L\+\_\+\+N\+O\+NE messages are never filtered and always printed. \end{DoxyCompactList}
 \item 
-enum \hyperlink{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168}{E\+K\+E\+Y\+\_\+\+A\+C\+T\+I\+ON} \{ , \hyperlink{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168a27e7067f9bc0bc5143b0bac183ca6c6b}{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT} = 0x7fffffff
+enum \hyperlink{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168}{E\+K\+E\+Y\+\_\+\+A\+C\+T\+I\+ON} \{ , \hyperlink{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168a8329ce2269a20c9da94c54bc9a2d2312}{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT} = 0x7fffffff
+, \hyperlink{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168a8329ce2269a20c9da94c54bc9a2d2312}{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT} = 0x7fffffff
+ \}\begin{DoxyCompactList}\small\item\em enumeration for key actions. Used for example in the F\+PS \hyperlink{classCamera}{Camera}. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505}{E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE} \{ \newline
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a74a0f53e26d1051bd9ca4c2037dbb537}{E\+I\+D\+T\+\_\+\+W\+I\+N32}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af6fa37cd50bdb3f9a034eb3e57123af5}{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a8dd561e331ff4f323f44747d3fb35bb5}{E\+I\+D\+T\+\_\+\+X11}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a7c8df4ef15bda4b4b11b83734e3be0b6}{E\+I\+D\+T\+\_\+\+O\+SX}, 
+\newline
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a62b34998421801536f4ae49476f69be2}{E\+I\+D\+T\+\_\+\+S\+DL}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af7aa11b07722db344ccaf08f9a3d2e6f}{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a0d68abff77029bb1614af7eab7e25e89}{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a133810710c44d1e9dc38fed7eeaba1cb}{E\+I\+D\+T\+\_\+\+B\+E\+ST}, 
+\newline
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a74a0f53e26d1051bd9ca4c2037dbb537}{E\+I\+D\+T\+\_\+\+W\+I\+N32}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af6fa37cd50bdb3f9a034eb3e57123af5}{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a8dd561e331ff4f323f44747d3fb35bb5}{E\+I\+D\+T\+\_\+\+X11}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a7c8df4ef15bda4b4b11b83734e3be0b6}{E\+I\+D\+T\+\_\+\+O\+SX}, 
+\newline
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a62b34998421801536f4ae49476f69be2}{E\+I\+D\+T\+\_\+\+S\+DL}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af7aa11b07722db344ccaf08f9a3d2e6f}{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a0d68abff77029bb1614af7eab7e25e89}{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE}, 
+\hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a133810710c44d1e9dc38fed7eeaba1cb}{E\+I\+D\+T\+\_\+\+B\+E\+ST}
+ \}\begin{DoxyCompactList}\small\item\em An enum for the different device types supported by the Irrlicht Engine. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0c}{E\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE} \{ \newline
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca722f7807c115f23756853584a3f6d5f6}{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT} = 0, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca5467579b5240c886d12f33854e74a93d}{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca34037c6b7c7e042c174c4c89e517e8f3}{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca3c71131272d5c66959fb4ab8fdd6d1b3}{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}, 
+\newline
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cab71b0164e7055521844b640d685ee56a}{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT}, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cadce0b261078c067d4e70e0cbaf04c409}{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT}, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca9569c3a72b431df78c5d98c23e93c765}{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT} = 0x7fffffff, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca722f7807c115f23756853584a3f6d5f6}{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT} = 0, 
+\newline
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca5467579b5240c886d12f33854e74a93d}{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca34037c6b7c7e042c174c4c89e517e8f3}{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca3c71131272d5c66959fb4ab8fdd6d1b3}{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cab71b0164e7055521844b640d685ee56a}{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT}, 
+\newline
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cadce0b261078c067d4e70e0cbaf04c409}{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT}, 
+\hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca9569c3a72b431df78c5d98c23e93c765}{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT} = 0x7fffffff
+ \}\begin{DoxyCompactList}\small\item\em Enumeration for all event types there are. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739f}{E\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT} \{ \newline
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa97da2023031b6a09a5c0a5e0b7a6a1cd}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN} = 0, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fac63e1a354120bef0af2804a4d1a2cff1}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faaa118e764df89576ddf1af5b3ed5206e}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9f9d015145923927f4366f6abc3fea68}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}, 
+\newline
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa91a422840ca05b2a500c576279d723fe}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fad31369b11e2d23a8f8c1fb4ad2c60011}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faccbca74faad3c53d2aea0bebe955d70b}{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9e14b6982339a47a22972f89a809a683}{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL}, 
+\newline
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa11de650b5677f659bbb54f70a91e4a89}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa2d50dedf6e4ca3e855b68cc28604ccc5}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa270f8c7c82492a7683ac5e74d42db99a}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faeb59ca6852df839875db239a9c1894ae}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\newline
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa72bab8b71a62b53e1bab3e5d67041a0b}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa4a1bdc4adfa1cd5bb969dfb8a93cfbf7}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa6daf05317a5903aa5c6726f5dee514ba}{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa97da2023031b6a09a5c0a5e0b7a6a1cd}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN} = 0, 
+\newline
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fac63e1a354120bef0af2804a4d1a2cff1}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faaa118e764df89576ddf1af5b3ed5206e}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9f9d015145923927f4366f6abc3fea68}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa91a422840ca05b2a500c576279d723fe}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}, 
+\newline
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fad31369b11e2d23a8f8c1fb4ad2c60011}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faccbca74faad3c53d2aea0bebe955d70b}{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9e14b6982339a47a22972f89a809a683}{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa11de650b5677f659bbb54f70a91e4a89}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\newline
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa2d50dedf6e4ca3e855b68cc28604ccc5}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa270f8c7c82492a7683ac5e74d42db99a}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faeb59ca6852df839875db239a9c1894ae}{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa72bab8b71a62b53e1bab3e5d67041a0b}{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\newline
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa4a1bdc4adfa1cd5bb969dfb8a93cfbf7}{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}, 
+\hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa6daf05317a5903aa5c6726f5dee514ba}{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT}
+ \}\begin{DoxyCompactList}\small\item\em Enumeration for all mouse input events. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86}{E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+A\+SK} \{ , \hyperlink{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86a00f1fa58dfbfb318a01d0753d88c0519}{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1} = 0x08, 
+\hyperlink{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86ad108523dca5d7c537c3e1eb6b78625d3}{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2} = 0x10
+, \hyperlink{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86a00f1fa58dfbfb318a01d0753d88c0519}{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1} = 0x08, 
+\hyperlink{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86ad108523dca5d7c537c3e1eb6b78625d3}{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2} = 0x10
+ \}\begin{DoxyCompactList}\small\item\em Masks for mouse button states. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92}{E\+L\+O\+G\+\_\+\+L\+E\+V\+EL} \{ \newline
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92acb213ad3a563100198dbd7609da56151}{E\+L\+L\+\_\+\+D\+E\+B\+UG}, 
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92aaed3e0f449ad8851a1bb501d4df1c0e7}{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}, 
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a0f67af3d2f419bf35ca3616c4a704ff5}{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG}, 
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a702f1169109f7c4e2d5551a542fb333c}{E\+L\+L\+\_\+\+E\+R\+R\+OR}, 
+\newline
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a1756c34c5b4a66210560fc5ade78450a}{E\+L\+L\+\_\+\+N\+O\+NE}, 
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92acb213ad3a563100198dbd7609da56151}{E\+L\+L\+\_\+\+D\+E\+B\+UG}, 
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92aaed3e0f449ad8851a1bb501d4df1c0e7}{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}, 
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a0f67af3d2f419bf35ca3616c4a704ff5}{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG}, 
+\newline
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a702f1169109f7c4e2d5551a542fb333c}{E\+L\+L\+\_\+\+E\+R\+R\+OR}, 
+\hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a1756c34c5b4a66210560fc5ade78450a}{E\+L\+L\+\_\+\+N\+O\+NE}
+ \}\begin{DoxyCompactList}\small\item\em Possible log levels. When used has filter E\+L\+L\+\_\+\+D\+E\+B\+UG means =$>$ log everything and E\+L\+L\+\_\+\+N\+O\+NE means =$>$ log (nearly) nothing. When used to print logging information E\+L\+L\+\_\+\+D\+E\+B\+UG will have lowest priority while E\+L\+L\+\_\+\+N\+O\+NE messages are never filtered and always printed. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168}{E\+K\+E\+Y\+\_\+\+A\+C\+T\+I\+ON} \{ , \hyperlink{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168a8329ce2269a20c9da94c54bc9a2d2312}{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT} = 0x7fffffff
+, \hyperlink{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168a8329ce2269a20c9da94c54bc9a2d2312}{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT} = 0x7fffffff
  \}\begin{DoxyCompactList}\small\item\em enumeration for key actions. Used for example in the F\+PS \hyperlink{classCamera}{Camera}. \end{DoxyCompactList}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-I\+R\+R\+L\+I\+C\+H\+T\+\_\+\+A\+PI \hyperlink{classirr_1_1IrrlichtDevice}{Irrlicht\+Device} $\ast$I\+R\+R\+C\+A\+L\+L\+C\+O\+NV \hyperlink{namespaceirr_abaf4d8719cc26b0d30813abf85e47c76}{create\+Device} (\hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0}{video\+::\+E\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+T\+Y\+PE} device\+Type=\hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0ad863d9225d42c1f9ea1eb7ad89a712ce}{video\+::\+E\+D\+T\+\_\+\+S\+O\+F\+T\+W\+A\+RE}, const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \&window\+Size=(\hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$(640, 480)), \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} bits=16, bool fullscreen=false, bool stencilbuffer=false, bool vsync=false, \hyperlink{classirr_1_1IEventReceiver}{I\+Event\+Receiver} $\ast$receiver=0)
+I\+R\+R\+L\+I\+C\+H\+T\+\_\+\+A\+PI \hyperlink{classirr_1_1IrrlichtDevice}{Irrlicht\+Device} $\ast$I\+R\+R\+C\+A\+L\+L\+C\+O\+NV \hyperlink{namespaceirr_a57653fdaf6b2746b141ba2bb07d8bba6}{create\+Device} (\hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0}{video\+::\+E\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+T\+Y\+PE} device\+Type=\hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0ad863d9225d42c1f9ea1eb7ad89a712ce}{video\+::\+E\+D\+T\+\_\+\+S\+O\+F\+T\+W\+A\+RE}, const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \&window\+Size=(\hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$(640, 480)), \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} bits=16, bool fullscreen=false, bool stencilbuffer=false, bool vsync=false, \hyperlink{classirr_1_1IEventReceiver}{I\+Event\+Receiver} $\ast$receiver=0)
 \begin{DoxyCompactList}\small\item\em Creates an Irrlicht device. The Irrlicht device is the root object for using the engine. \end{DoxyCompactList}\item 
-I\+R\+R\+L\+I\+C\+H\+T\+\_\+\+A\+PI \hyperlink{classirr_1_1IrrlichtDevice}{Irrlicht\+Device} $\ast$I\+R\+R\+C\+A\+L\+L\+C\+O\+NV \hyperlink{namespaceirr_ac83a30d674204dcb94d70f849e9b4a62}{create\+Device\+Ex} (const \hyperlink{structirr_1_1SIrrlichtCreationParameters}{S\+Irrlicht\+Creation\+Parameters} \&parameters)
+I\+R\+R\+L\+I\+C\+H\+T\+\_\+\+A\+PI \hyperlink{classirr_1_1IrrlichtDevice}{Irrlicht\+Device} $\ast$I\+R\+R\+C\+A\+L\+L\+C\+O\+NV \hyperlink{namespaceirr_ae0a823eb5404bbf156965e7051798496}{create\+Device\+Ex} (const \hyperlink{structirr_1_1SIrrlichtCreationParameters}{S\+Irrlicht\+Creation\+Parameters} \&parameters)
 \begin{DoxyCompactList}\small\item\em Creates an Irrlicht device with the option to specify advanced parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -282,7 +436,7 @@ This is a typedef for unsigned char, it ensures portability of the engine.
 \mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505}} 
 \index{irr@{irr}!E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE@{E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}}
 \index{E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE@{E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}!irr@{irr}}
-\subsubsection{\texorpdfstring{E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}{E\_DEVICE\_TYPE}}
+\subsubsection{\texorpdfstring{E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}{E\_DEVICE\_TYPE}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily enum \hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505}{irr\+::\+E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}}
 
 
@@ -290,35 +444,143 @@ This is a typedef for unsigned char, it ensures portability of the engine.
 An enum for the different device types supported by the Irrlicht Engine. 
 
 \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+W\+I\+N32@{E\+I\+D\+T\+\_\+\+W\+I\+N32}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+W\+I\+N32@{E\+I\+D\+T\+\_\+\+W\+I\+N32}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a20fb61ff76bfa2269a5f9e41d50018f1}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a20fb61ff76bfa2269a5f9e41d50018f1}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+W\+I\+N32@{E\+I\+D\+T\+\_\+\+W\+I\+N32}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+W\+I\+N32@{E\+I\+D\+T\+\_\+\+W\+I\+N32}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a74a0f53e26d1051bd9ca4c2037dbb537}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a74a0f53e26d1051bd9ca4c2037dbb537}} 
 E\+I\+D\+T\+\_\+\+W\+I\+N32&A device native to Microsoft Windows. This device uses the Win32 A\+PI and works in all versions of Windows. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE@{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+W\+I\+N\+CE@{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a839d8602c1a118791425d3df0d31ced1}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a839d8602c1a118791425d3df0d31ced1}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE@{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+W\+I\+N\+CE@{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af6fa37cd50bdb3f9a034eb3e57123af5}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af6fa37cd50bdb3f9a034eb3e57123af5}} 
 E\+I\+D\+T\+\_\+\+W\+I\+N\+CE&A device native to Windows CE devices. This device works on Windows Mobile, Pocket PC and Microsoft Smart\+Phone devices \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+X11@{E\+I\+D\+T\+\_\+\+X11}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+X11@{E\+I\+D\+T\+\_\+\+X11}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505aa084c40bd6cc595378d28182dd74ff80}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505aa084c40bd6cc595378d28182dd74ff80}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+X11@{E\+I\+D\+T\+\_\+\+X11}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+X11@{E\+I\+D\+T\+\_\+\+X11}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a8dd561e331ff4f323f44747d3fb35bb5}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a8dd561e331ff4f323f44747d3fb35bb5}} 
 E\+I\+D\+T\+\_\+\+X11&A device native to Unix style operating systems. This device uses the X11 windowing system and works in Linux, Solaris, Free\+B\+SD, O\+SX and other operating systems which support X11. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+O\+SX@{E\+I\+D\+T\+\_\+\+O\+SX}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+O\+SX@{E\+I\+D\+T\+\_\+\+O\+SX}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a140f80a523981af1487cd774e9a2a656}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a140f80a523981af1487cd774e9a2a656}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+O\+SX@{E\+I\+D\+T\+\_\+\+O\+SX}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+O\+SX@{E\+I\+D\+T\+\_\+\+O\+SX}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a7c8df4ef15bda4b4b11b83734e3be0b6}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a7c8df4ef15bda4b4b11b83734e3be0b6}} 
 E\+I\+D\+T\+\_\+\+O\+SX&A device native to Mac O\+SX. This device uses Apple\textquotesingle{}s Cocoa A\+PI and works in Mac O\+SX 10.\+2 and above. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+S\+DL@{E\+I\+D\+T\+\_\+\+S\+DL}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+S\+DL@{E\+I\+D\+T\+\_\+\+S\+DL}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505ab9cafb4f0108f3fd5da94e886b529979}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505ab9cafb4f0108f3fd5da94e886b529979}} 
-E\+I\+D\+T\+\_\+\+S\+DL&A device which uses Simple Direct\+Media Layer. The S\+DL device works under all platforms supported by S\+DL but first must be compiled in by defining the I\+R\+R\+\_\+\+U\+S\+E\+\_\+\+S\+D\+L\+\_\+\+D\+E\+V\+I\+CE macro in \hyperlink{IrrCompileConfig_8h_source}{Irr\+Compile\+Config.\+h} \\
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+S\+DL@{E\+I\+D\+T\+\_\+\+S\+DL}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+S\+DL@{E\+I\+D\+T\+\_\+\+S\+DL}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a62b34998421801536f4ae49476f69be2}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a62b34998421801536f4ae49476f69be2}} 
+E\+I\+D\+T\+\_\+\+S\+DL&A device which uses Simple Direct\+Media Layer. The S\+DL device works under all platforms supported by S\+DL but first must be compiled in by defining the I\+R\+R\+\_\+\+U\+S\+E\+\_\+\+S\+D\+L\+\_\+\+D\+E\+V\+I\+CE macro in Irr\+Compile\+Config.\+h \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER@{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER@{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a5516da97d0b6ef1708a3a13cdb157bee}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a5516da97d0b6ef1708a3a13cdb157bee}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER@{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER@{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af7aa11b07722db344ccaf08f9a3d2e6f}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af7aa11b07722db344ccaf08f9a3d2e6f}} 
 E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER&A device for raw framebuffer access. Best used with embedded devices and mobile systems. Does not need X11 or other graphical subsystems. May support hw-\/acceleration via Open\+G\+L-\/\+ES for F\+B\+Direct \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE@{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE@{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a54387cdabc602203abce675b027a3ede}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a54387cdabc602203abce675b027a3ede}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE@{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE@{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a0d68abff77029bb1614af7eab7e25e89}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a0d68abff77029bb1614af7eab7e25e89}} 
 E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE&A simple text only device supported by all platforms. This device allows applications to run from the command line without opening a window. It can render the output of the software drivers to the console as A\+S\+C\+II. It only supports mouse and keyboard in Windows operating systems. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+B\+E\+ST@{E\+I\+D\+T\+\_\+\+B\+E\+ST}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+B\+E\+ST@{E\+I\+D\+T\+\_\+\+B\+E\+ST}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505ad00f870da762af833dbab2eacc96ae0b}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505ad00f870da762af833dbab2eacc96ae0b}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+B\+E\+ST@{E\+I\+D\+T\+\_\+\+B\+E\+ST}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+B\+E\+ST@{E\+I\+D\+T\+\_\+\+B\+E\+ST}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a133810710c44d1e9dc38fed7eeaba1cb}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a133810710c44d1e9dc38fed7eeaba1cb}} 
+E\+I\+D\+T\+\_\+\+B\+E\+ST&This selection allows Irrlicht to choose the best device from the ones available. If this selection is chosen then Irrlicht will try to use the \hyperlink{classirr_1_1IrrlichtDevice}{Irrlicht\+Device} native to your operating system. If this is unavailable then the X11, S\+DL and then console device will be tried. This ensures that Irrlicht will run even if your platform is unsupported, although it may not be able to render anything. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+W\+I\+N32@{E\+I\+D\+T\+\_\+\+W\+I\+N32}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+W\+I\+N32@{E\+I\+D\+T\+\_\+\+W\+I\+N32}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a74a0f53e26d1051bd9ca4c2037dbb537}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a74a0f53e26d1051bd9ca4c2037dbb537}} 
+E\+I\+D\+T\+\_\+\+W\+I\+N32&A device native to Microsoft Windows. This device uses the Win32 A\+PI and works in all versions of Windows. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE@{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+W\+I\+N\+CE@{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af6fa37cd50bdb3f9a034eb3e57123af5}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af6fa37cd50bdb3f9a034eb3e57123af5}} 
+E\+I\+D\+T\+\_\+\+W\+I\+N\+CE&A device native to Windows CE devices. This device works on Windows Mobile, Pocket PC and Microsoft Smart\+Phone devices \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+X11@{E\+I\+D\+T\+\_\+\+X11}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+X11@{E\+I\+D\+T\+\_\+\+X11}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a8dd561e331ff4f323f44747d3fb35bb5}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a8dd561e331ff4f323f44747d3fb35bb5}} 
+E\+I\+D\+T\+\_\+\+X11&A device native to Unix style operating systems. This device uses the X11 windowing system and works in Linux, Solaris, Free\+B\+SD, O\+SX and other operating systems which support X11. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+O\+SX@{E\+I\+D\+T\+\_\+\+O\+SX}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+O\+SX@{E\+I\+D\+T\+\_\+\+O\+SX}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a7c8df4ef15bda4b4b11b83734e3be0b6}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a7c8df4ef15bda4b4b11b83734e3be0b6}} 
+E\+I\+D\+T\+\_\+\+O\+SX&A device native to Mac O\+SX. This device uses Apple\textquotesingle{}s Cocoa A\+PI and works in Mac O\+SX 10.\+2 and above. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+S\+DL@{E\+I\+D\+T\+\_\+\+S\+DL}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+S\+DL@{E\+I\+D\+T\+\_\+\+S\+DL}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a62b34998421801536f4ae49476f69be2}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a62b34998421801536f4ae49476f69be2}} 
+E\+I\+D\+T\+\_\+\+S\+DL&A device which uses Simple Direct\+Media Layer. The S\+DL device works under all platforms supported by S\+DL but first must be compiled in by defining the I\+R\+R\+\_\+\+U\+S\+E\+\_\+\+S\+D\+L\+\_\+\+D\+E\+V\+I\+CE macro in Irr\+Compile\+Config.\+h \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER@{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER@{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af7aa11b07722db344ccaf08f9a3d2e6f}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af7aa11b07722db344ccaf08f9a3d2e6f}} 
+E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER&A device for raw framebuffer access. Best used with embedded devices and mobile systems. Does not need X11 or other graphical subsystems. May support hw-\/acceleration via Open\+G\+L-\/\+ES for F\+B\+Direct \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE@{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE@{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a0d68abff77029bb1614af7eab7e25e89}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a0d68abff77029bb1614af7eab7e25e89}} 
+E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE&A simple text only device supported by all platforms. This device allows applications to run from the command line without opening a window. It can render the output of the software drivers to the console as A\+S\+C\+II. It only supports mouse and keyboard in Windows operating systems. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+B\+E\+ST@{E\+I\+D\+T\+\_\+\+B\+E\+ST}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+B\+E\+ST@{E\+I\+D\+T\+\_\+\+B\+E\+ST}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a133810710c44d1e9dc38fed7eeaba1cb}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a133810710c44d1e9dc38fed7eeaba1cb}} 
+E\+I\+D\+T\+\_\+\+B\+E\+ST&This selection allows Irrlicht to choose the best device from the ones available. If this selection is chosen then Irrlicht will try to use the \hyperlink{classirr_1_1IrrlichtDevice}{Irrlicht\+Device} native to your operating system. If this is unavailable then the X11, S\+DL and then console device will be tried. This ensures that Irrlicht will run even if your platform is unsupported, although it may not be able to render anything. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505}} 
+\index{irr@{irr}!E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE@{E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}}
+\index{E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE@{E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}!irr@{irr}}
+\subsubsection{\texorpdfstring{E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}{E\_DEVICE\_TYPE}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505}{irr\+::\+E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}}
+
+
+
+An enum for the different device types supported by the Irrlicht Engine. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+W\+I\+N32@{E\+I\+D\+T\+\_\+\+W\+I\+N32}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+W\+I\+N32@{E\+I\+D\+T\+\_\+\+W\+I\+N32}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a74a0f53e26d1051bd9ca4c2037dbb537}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a74a0f53e26d1051bd9ca4c2037dbb537}} 
+E\+I\+D\+T\+\_\+\+W\+I\+N32&A device native to Microsoft Windows. This device uses the Win32 A\+PI and works in all versions of Windows. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE@{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+W\+I\+N\+CE@{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af6fa37cd50bdb3f9a034eb3e57123af5}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af6fa37cd50bdb3f9a034eb3e57123af5}} 
+E\+I\+D\+T\+\_\+\+W\+I\+N\+CE&A device native to Windows CE devices. This device works on Windows Mobile, Pocket PC and Microsoft Smart\+Phone devices \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+X11@{E\+I\+D\+T\+\_\+\+X11}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+X11@{E\+I\+D\+T\+\_\+\+X11}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a8dd561e331ff4f323f44747d3fb35bb5}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a8dd561e331ff4f323f44747d3fb35bb5}} 
+E\+I\+D\+T\+\_\+\+X11&A device native to Unix style operating systems. This device uses the X11 windowing system and works in Linux, Solaris, Free\+B\+SD, O\+SX and other operating systems which support X11. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+O\+SX@{E\+I\+D\+T\+\_\+\+O\+SX}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+O\+SX@{E\+I\+D\+T\+\_\+\+O\+SX}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a7c8df4ef15bda4b4b11b83734e3be0b6}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a7c8df4ef15bda4b4b11b83734e3be0b6}} 
+E\+I\+D\+T\+\_\+\+O\+SX&A device native to Mac O\+SX. This device uses Apple\textquotesingle{}s Cocoa A\+PI and works in Mac O\+SX 10.\+2 and above. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+S\+DL@{E\+I\+D\+T\+\_\+\+S\+DL}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+S\+DL@{E\+I\+D\+T\+\_\+\+S\+DL}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a62b34998421801536f4ae49476f69be2}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a62b34998421801536f4ae49476f69be2}} 
+E\+I\+D\+T\+\_\+\+S\+DL&A device which uses Simple Direct\+Media Layer. The S\+DL device works under all platforms supported by S\+DL but first must be compiled in by defining the I\+R\+R\+\_\+\+U\+S\+E\+\_\+\+S\+D\+L\+\_\+\+D\+E\+V\+I\+CE macro in Irr\+Compile\+Config.\+h \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER@{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER@{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af7aa11b07722db344ccaf08f9a3d2e6f}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af7aa11b07722db344ccaf08f9a3d2e6f}} 
+E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER&A device for raw framebuffer access. Best used with embedded devices and mobile systems. Does not need X11 or other graphical subsystems. May support hw-\/acceleration via Open\+G\+L-\/\+ES for F\+B\+Direct \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE@{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE@{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a0d68abff77029bb1614af7eab7e25e89}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a0d68abff77029bb1614af7eab7e25e89}} 
+E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE&A simple text only device supported by all platforms. This device allows applications to run from the command line without opening a window. It can render the output of the software drivers to the console as A\+S\+C\+II. It only supports mouse and keyboard in Windows operating systems. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+B\+E\+ST@{E\+I\+D\+T\+\_\+\+B\+E\+ST}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+B\+E\+ST@{E\+I\+D\+T\+\_\+\+B\+E\+ST}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a133810710c44d1e9dc38fed7eeaba1cb}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a133810710c44d1e9dc38fed7eeaba1cb}} 
+E\+I\+D\+T\+\_\+\+B\+E\+ST&This selection allows Irrlicht to choose the best device from the ones available. If this selection is chosen then Irrlicht will try to use the \hyperlink{classirr_1_1IrrlichtDevice}{Irrlicht\+Device} native to your operating system. If this is unavailable then the X11, S\+DL and then console device will be tried. This ensures that Irrlicht will run even if your platform is unsupported, although it may not be able to render anything. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+W\+I\+N32@{E\+I\+D\+T\+\_\+\+W\+I\+N32}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+W\+I\+N32@{E\+I\+D\+T\+\_\+\+W\+I\+N32}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a74a0f53e26d1051bd9ca4c2037dbb537}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a74a0f53e26d1051bd9ca4c2037dbb537}} 
+E\+I\+D\+T\+\_\+\+W\+I\+N32&A device native to Microsoft Windows. This device uses the Win32 A\+PI and works in all versions of Windows. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE@{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+W\+I\+N\+CE@{E\+I\+D\+T\+\_\+\+W\+I\+N\+CE}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af6fa37cd50bdb3f9a034eb3e57123af5}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af6fa37cd50bdb3f9a034eb3e57123af5}} 
+E\+I\+D\+T\+\_\+\+W\+I\+N\+CE&A device native to Windows CE devices. This device works on Windows Mobile, Pocket PC and Microsoft Smart\+Phone devices \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+X11@{E\+I\+D\+T\+\_\+\+X11}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+X11@{E\+I\+D\+T\+\_\+\+X11}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a8dd561e331ff4f323f44747d3fb35bb5}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a8dd561e331ff4f323f44747d3fb35bb5}} 
+E\+I\+D\+T\+\_\+\+X11&A device native to Unix style operating systems. This device uses the X11 windowing system and works in Linux, Solaris, Free\+B\+SD, O\+SX and other operating systems which support X11. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+O\+SX@{E\+I\+D\+T\+\_\+\+O\+SX}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+O\+SX@{E\+I\+D\+T\+\_\+\+O\+SX}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a7c8df4ef15bda4b4b11b83734e3be0b6}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a7c8df4ef15bda4b4b11b83734e3be0b6}} 
+E\+I\+D\+T\+\_\+\+O\+SX&A device native to Mac O\+SX. This device uses Apple\textquotesingle{}s Cocoa A\+PI and works in Mac O\+SX 10.\+2 and above. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+S\+DL@{E\+I\+D\+T\+\_\+\+S\+DL}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+S\+DL@{E\+I\+D\+T\+\_\+\+S\+DL}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a62b34998421801536f4ae49476f69be2}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a62b34998421801536f4ae49476f69be2}} 
+E\+I\+D\+T\+\_\+\+S\+DL&A device which uses Simple Direct\+Media Layer. The S\+DL device works under all platforms supported by S\+DL but first must be compiled in by defining the I\+R\+R\+\_\+\+U\+S\+E\+\_\+\+S\+D\+L\+\_\+\+D\+E\+V\+I\+CE macro in Irr\+Compile\+Config.\+h \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER@{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER@{E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af7aa11b07722db344ccaf08f9a3d2e6f}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505af7aa11b07722db344ccaf08f9a3d2e6f}} 
+E\+I\+D\+T\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER&A device for raw framebuffer access. Best used with embedded devices and mobile systems. Does not need X11 or other graphical subsystems. May support hw-\/acceleration via Open\+G\+L-\/\+ES for F\+B\+Direct \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE@{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE@{E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a0d68abff77029bb1614af7eab7e25e89}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a0d68abff77029bb1614af7eab7e25e89}} 
+E\+I\+D\+T\+\_\+\+C\+O\+N\+S\+O\+LE&A simple text only device supported by all platforms. This device allows applications to run from the command line without opening a window. It can render the output of the software drivers to the console as A\+S\+C\+II. It only supports mouse and keyboard in Windows operating systems. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+I\+D\+T\+\_\+\+B\+E\+ST@{E\+I\+D\+T\+\_\+\+B\+E\+ST}!irr@{irr}}\index{irr@{irr}!E\+I\+D\+T\+\_\+\+B\+E\+ST@{E\+I\+D\+T\+\_\+\+B\+E\+ST}}}\mbox{\Hypertarget{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a133810710c44d1e9dc38fed7eeaba1cb}\label{namespaceirr_ac25d94cf2e1037c7ca18ee79b3bd4505a133810710c44d1e9dc38fed7eeaba1cb}} 
 E\+I\+D\+T\+\_\+\+B\+E\+ST&This selection allows Irrlicht to choose the best device from the ones available. If this selection is chosen then Irrlicht will try to use the \hyperlink{classirr_1_1IrrlichtDevice}{Irrlicht\+Device} native to your operating system. If this is unavailable then the X11, S\+DL and then console device will be tried. This ensures that Irrlicht will run even if your platform is unsupported, although it may not be able to render anything. \\
 \hline
 
@@ -326,7 +588,7 @@ E\+I\+D\+T\+\_\+\+B\+E\+ST&This selection allows Irrlicht to choose the best dev
 \mbox{\Hypertarget{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86}\label{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86}} 
 \index{irr@{irr}!E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+A\+SK@{E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+A\+SK}}
 \index{E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+A\+SK@{E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+A\+SK}!irr@{irr}}
-\subsubsection{\texorpdfstring{E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+A\+SK}{E\_MOUSE\_BUTTON\_STATE\_MASK}}
+\subsubsection{\texorpdfstring{E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+A\+SK}{E\_MOUSE\_BUTTON\_STATE\_MASK}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily enum \hyperlink{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86}{irr\+::\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+A\+SK}}
 
 
@@ -334,11 +596,47 @@ E\+I\+D\+T\+\_\+\+B\+E\+ST&This selection allows Irrlicht to choose the best dev
 Masks for mouse button states. 
 
 \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1}!irr@{irr}}\index{irr@{irr}!E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1}}}\mbox{\Hypertarget{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86ac0a92aabd6e6789f71b94f249f957f74}\label{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86ac0a92aabd6e6789f71b94f249f957f74}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1}!irr@{irr}}\index{irr@{irr}!E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1}}}\mbox{\Hypertarget{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86a00f1fa58dfbfb318a01d0753d88c0519}\label{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86a00f1fa58dfbfb318a01d0753d88c0519}} 
 E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1&currently only on windows \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2}!irr@{irr}}\index{irr@{irr}!E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2}}}\mbox{\Hypertarget{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86ac560dffdf74df8ceebaedc79f1bb7c11}\label{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86ac560dffdf74df8ceebaedc79f1bb7c11}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2}!irr@{irr}}\index{irr@{irr}!E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2}}}\mbox{\Hypertarget{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86ad108523dca5d7c537c3e1eb6b78625d3}\label{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86ad108523dca5d7c537c3e1eb6b78625d3}} 
+E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2&currently only on windows \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1}!irr@{irr}}\index{irr@{irr}!E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1}}}\mbox{\Hypertarget{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86a00f1fa58dfbfb318a01d0753d88c0519}\label{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86a00f1fa58dfbfb318a01d0753d88c0519}} 
+E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1&currently only on windows \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2}!irr@{irr}}\index{irr@{irr}!E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2}}}\mbox{\Hypertarget{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86ad108523dca5d7c537c3e1eb6b78625d3}\label{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86ad108523dca5d7c537c3e1eb6b78625d3}} 
+E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2&currently only on windows \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86}\label{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86}} 
+\index{irr@{irr}!E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+A\+SK@{E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+A\+SK}}
+\index{E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+A\+SK@{E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+A\+SK}!irr@{irr}}
+\subsubsection{\texorpdfstring{E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+A\+SK}{E\_MOUSE\_BUTTON\_STATE\_MASK}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86}{irr\+::\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+A\+SK}}
+
+
+
+Masks for mouse button states. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1}!irr@{irr}}\index{irr@{irr}!E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1}}}\mbox{\Hypertarget{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86a00f1fa58dfbfb318a01d0753d88c0519}\label{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86a00f1fa58dfbfb318a01d0753d88c0519}} 
+E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1&currently only on windows \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2}!irr@{irr}}\index{irr@{irr}!E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2}}}\mbox{\Hypertarget{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86ad108523dca5d7c537c3e1eb6b78625d3}\label{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86ad108523dca5d7c537c3e1eb6b78625d3}} 
+E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2&currently only on windows \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1}!irr@{irr}}\index{irr@{irr}!E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1}}}\mbox{\Hypertarget{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86a00f1fa58dfbfb318a01d0753d88c0519}\label{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86a00f1fa58dfbfb318a01d0753d88c0519}} 
+E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A1&currently only on windows \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2}!irr@{irr}}\index{irr@{irr}!E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2@{E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2}}}\mbox{\Hypertarget{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86ad108523dca5d7c537c3e1eb6b78625d3}\label{namespaceirr_a7057ec6fd3bba7cbbab3593c9e405a86ad108523dca5d7c537c3e1eb6b78625d3}} 
 E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2&currently only on windows \\
 \hline
 
@@ -346,7 +644,7 @@ E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2&currently only on windows \\
 \mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0c}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0c}} 
 \index{irr@{irr}!E\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE@{E\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}}
 \index{E\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE@{E\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}!irr@{irr}}
-\subsubsection{\texorpdfstring{E\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}{EEVENT\_TYPE}}
+\subsubsection{\texorpdfstring{E\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}{EEVENT\_TYPE}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily enum \hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0c}{irr\+::\+E\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}}
 
 
@@ -354,31 +652,127 @@ E\+M\+B\+S\+M\+\_\+\+E\+X\+T\+R\+A2&currently only on windows \\
 Enumeration for all event types there are. 
 
 \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cae85bb44dd09a29c879d64a05047fc1d2}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cae85bb44dd09a29c879d64a05047fc1d2}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca722f7807c115f23756853584a3f6d5f6}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca722f7807c115f23756853584a3f6d5f6}} 
 E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT&An event of the graphical user interface. G\+UI events are created by the G\+UI environment or the G\+UI elements in response to mouse or keyboard events. When a G\+UI element receives an event it will either process it and return true, or pass the event to its parent. If an event is not absorbed before it reaches the root element then it will then be passed to the user receiver. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0caa230b748674e074aa67f661819ad5891}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0caa230b748674e074aa67f661819ad5891}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca5467579b5240c886d12f33854e74a93d}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca5467579b5240c886d12f33854e74a93d}} 
 E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT&A mouse input event. Mouse events are created by the device and passed to \hyperlink{classirr_1_1IrrlichtDevice_abf859e39f017b0403c6ed331e48e01df}{Irrlicht\+Device\+::post\+Event\+From\+User} in response to mouse input received from the operating system. Mouse events are first passed to the user receiver, then to the G\+UI environment and its elements, then finally the input receiving scene manager where it is passed to the active camera. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca6f90390f3147a1693e5e2e3422d6ca09}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca6f90390f3147a1693e5e2e3422d6ca09}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca34037c6b7c7e042c174c4c89e517e8f3}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca34037c6b7c7e042c174c4c89e517e8f3}} 
 E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT&A key input event. Like mouse events, keyboard events are created by the device and passed to \hyperlink{classirr_1_1IrrlichtDevice_abf859e39f017b0403c6ed331e48e01df}{Irrlicht\+Device\+::post\+Event\+From\+User}. They take the same path as mouse events. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cac81558e4607ad260e96ae0f7b889e9a5}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cac81558e4607ad260e96ae0f7b889e9a5}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca3c71131272d5c66959fb4ab8fdd6d1b3}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca3c71131272d5c66959fb4ab8fdd6d1b3}} 
 E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT&A joystick (joypad, gamepad) input event. Joystick events are created by polling all connected joysticks once per device run() and then passing the events to \hyperlink{classirr_1_1IrrlichtDevice_abf859e39f017b0403c6ed331e48e01df}{Irrlicht\+Device\+::post\+Event\+From\+User}. They take the same path as mouse events. Windows, S\+DL\+: Implemented. Linux\+: Implemented, with P\+OV hat issues. Mac\+OS / Other\+: Not yet implemented. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca8553b889c8da285c96b90116ae019952}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca8553b889c8da285c96b90116ae019952}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cab71b0164e7055521844b640d685ee56a}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cab71b0164e7055521844b640d685ee56a}} 
 E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT&A log event. Log events are only passed to the user receiver if there is one. If they are absorbed by the user receiver then no text will be sent to the console. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca4cc15ca95969a8b5d150c3d952ad06e4}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca4cc15ca95969a8b5d150c3d952ad06e4}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cadce0b261078c067d4e70e0cbaf04c409}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cadce0b261078c067d4e70e0cbaf04c409}} 
 E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT&A user event with user data. This is not used by Irrlicht and can be used to send user specific data though the system. The Irrlicht \textquotesingle{}window handle\textquotesingle{} can be obtained from Irrlicht\+Device\+::get\+Exposed\+Video\+Data() The usage and behavior depends on the operating system\+: Windows\+: send a W\+M\+\_\+\+U\+S\+ER message to the Irrlicht \hyperlink{classWindow}{Window}; the w\+Param and l\+Param will be used to populate the User\+Data1 and User\+Data2 members of the S\+User\+Event. Linux\+: send a Client\+Message via X\+Send\+Event to the Irrlicht \hyperlink{classWindow}{Window}; the data.\+l\mbox{[}0\mbox{]} and data.\+l\mbox{[}1\mbox{]} members will be casted to s32 and used as User\+Data1 and User\+Data2. Mac\+OS\+: Not yet implemented \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT@{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT}!irr@{irr}}\index{irr@{irr}!E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT@{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca736f79f0892ace68311f62939cae5678}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca736f79f0892ace68311f62939cae5678}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT@{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT}!irr@{irr}}\index{irr@{irr}!E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT@{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca9569c3a72b431df78c5d98c23e93c765}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca9569c3a72b431df78c5d98c23e93c765}} 
+E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT&This enum is never used, it only forces the compiler to compile these enumeration values to 32 bit. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca722f7807c115f23756853584a3f6d5f6}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca722f7807c115f23756853584a3f6d5f6}} 
+E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT&An event of the graphical user interface. G\+UI events are created by the G\+UI environment or the G\+UI elements in response to mouse or keyboard events. When a G\+UI element receives an event it will either process it and return true, or pass the event to its parent. If an event is not absorbed before it reaches the root element then it will then be passed to the user receiver. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca5467579b5240c886d12f33854e74a93d}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca5467579b5240c886d12f33854e74a93d}} 
+E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT&A mouse input event. Mouse events are created by the device and passed to \hyperlink{classirr_1_1IrrlichtDevice_abf859e39f017b0403c6ed331e48e01df}{Irrlicht\+Device\+::post\+Event\+From\+User} in response to mouse input received from the operating system. Mouse events are first passed to the user receiver, then to the G\+UI environment and its elements, then finally the input receiving scene manager where it is passed to the active camera. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca34037c6b7c7e042c174c4c89e517e8f3}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca34037c6b7c7e042c174c4c89e517e8f3}} 
+E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT&A key input event. Like mouse events, keyboard events are created by the device and passed to \hyperlink{classirr_1_1IrrlichtDevice_abf859e39f017b0403c6ed331e48e01df}{Irrlicht\+Device\+::post\+Event\+From\+User}. They take the same path as mouse events. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca3c71131272d5c66959fb4ab8fdd6d1b3}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca3c71131272d5c66959fb4ab8fdd6d1b3}} 
+E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT&A joystick (joypad, gamepad) input event. Joystick events are created by polling all connected joysticks once per device run() and then passing the events to \hyperlink{classirr_1_1IrrlichtDevice_abf859e39f017b0403c6ed331e48e01df}{Irrlicht\+Device\+::post\+Event\+From\+User}. They take the same path as mouse events. Windows, S\+DL\+: Implemented. Linux\+: Implemented, with P\+OV hat issues. Mac\+OS / Other\+: Not yet implemented. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cab71b0164e7055521844b640d685ee56a}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cab71b0164e7055521844b640d685ee56a}} 
+E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT&A log event. Log events are only passed to the user receiver if there is one. If they are absorbed by the user receiver then no text will be sent to the console. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cadce0b261078c067d4e70e0cbaf04c409}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cadce0b261078c067d4e70e0cbaf04c409}} 
+E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT&A user event with user data. This is not used by Irrlicht and can be used to send user specific data though the system. The Irrlicht \textquotesingle{}window handle\textquotesingle{} can be obtained from Irrlicht\+Device\+::get\+Exposed\+Video\+Data() The usage and behavior depends on the operating system\+: Windows\+: send a W\+M\+\_\+\+U\+S\+ER message to the Irrlicht \hyperlink{classWindow}{Window}; the w\+Param and l\+Param will be used to populate the User\+Data1 and User\+Data2 members of the S\+User\+Event. Linux\+: send a Client\+Message via X\+Send\+Event to the Irrlicht \hyperlink{classWindow}{Window}; the data.\+l\mbox{[}0\mbox{]} and data.\+l\mbox{[}1\mbox{]} members will be casted to s32 and used as User\+Data1 and User\+Data2. Mac\+OS\+: Not yet implemented \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT@{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT}!irr@{irr}}\index{irr@{irr}!E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT@{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca9569c3a72b431df78c5d98c23e93c765}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca9569c3a72b431df78c5d98c23e93c765}} 
+E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT&This enum is never used, it only forces the compiler to compile these enumeration values to 32 bit. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0c}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0c}} 
+\index{irr@{irr}!E\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE@{E\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}}
+\index{E\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE@{E\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}!irr@{irr}}
+\subsubsection{\texorpdfstring{E\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}{EEVENT\_TYPE}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0c}{irr\+::\+E\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE}}
+
+
+
+Enumeration for all event types there are. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca722f7807c115f23756853584a3f6d5f6}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca722f7807c115f23756853584a3f6d5f6}} 
+E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT&An event of the graphical user interface. G\+UI events are created by the G\+UI environment or the G\+UI elements in response to mouse or keyboard events. When a G\+UI element receives an event it will either process it and return true, or pass the event to its parent. If an event is not absorbed before it reaches the root element then it will then be passed to the user receiver. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca5467579b5240c886d12f33854e74a93d}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca5467579b5240c886d12f33854e74a93d}} 
+E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT&A mouse input event. Mouse events are created by the device and passed to \hyperlink{classirr_1_1IrrlichtDevice_abf859e39f017b0403c6ed331e48e01df}{Irrlicht\+Device\+::post\+Event\+From\+User} in response to mouse input received from the operating system. Mouse events are first passed to the user receiver, then to the G\+UI environment and its elements, then finally the input receiving scene manager where it is passed to the active camera. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca34037c6b7c7e042c174c4c89e517e8f3}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca34037c6b7c7e042c174c4c89e517e8f3}} 
+E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT&A key input event. Like mouse events, keyboard events are created by the device and passed to \hyperlink{classirr_1_1IrrlichtDevice_abf859e39f017b0403c6ed331e48e01df}{Irrlicht\+Device\+::post\+Event\+From\+User}. They take the same path as mouse events. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca3c71131272d5c66959fb4ab8fdd6d1b3}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca3c71131272d5c66959fb4ab8fdd6d1b3}} 
+E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT&A joystick (joypad, gamepad) input event. Joystick events are created by polling all connected joysticks once per device run() and then passing the events to \hyperlink{classirr_1_1IrrlichtDevice_abf859e39f017b0403c6ed331e48e01df}{Irrlicht\+Device\+::post\+Event\+From\+User}. They take the same path as mouse events. Windows, S\+DL\+: Implemented. Linux\+: Implemented, with P\+OV hat issues. Mac\+OS / Other\+: Not yet implemented. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cab71b0164e7055521844b640d685ee56a}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cab71b0164e7055521844b640d685ee56a}} 
+E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT&A log event. Log events are only passed to the user receiver if there is one. If they are absorbed by the user receiver then no text will be sent to the console. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cadce0b261078c067d4e70e0cbaf04c409}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cadce0b261078c067d4e70e0cbaf04c409}} 
+E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT&A user event with user data. This is not used by Irrlicht and can be used to send user specific data though the system. The Irrlicht \textquotesingle{}window handle\textquotesingle{} can be obtained from Irrlicht\+Device\+::get\+Exposed\+Video\+Data() The usage and behavior depends on the operating system\+: Windows\+: send a W\+M\+\_\+\+U\+S\+ER message to the Irrlicht \hyperlink{classWindow}{Window}; the w\+Param and l\+Param will be used to populate the User\+Data1 and User\+Data2 members of the S\+User\+Event. Linux\+: send a Client\+Message via X\+Send\+Event to the Irrlicht \hyperlink{classWindow}{Window}; the data.\+l\mbox{[}0\mbox{]} and data.\+l\mbox{[}1\mbox{]} members will be casted to s32 and used as User\+Data1 and User\+Data2. Mac\+OS\+: Not yet implemented \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT@{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT}!irr@{irr}}\index{irr@{irr}!E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT@{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca9569c3a72b431df78c5d98c23e93c765}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca9569c3a72b431df78c5d98c23e93c765}} 
+E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT&This enum is never used, it only forces the compiler to compile these enumeration values to 32 bit. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca722f7807c115f23756853584a3f6d5f6}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca722f7807c115f23756853584a3f6d5f6}} 
+E\+E\+T\+\_\+\+G\+U\+I\+\_\+\+E\+V\+E\+NT&An event of the graphical user interface. G\+UI events are created by the G\+UI environment or the G\+UI elements in response to mouse or keyboard events. When a G\+UI element receives an event it will either process it and return true, or pass the event to its parent. If an event is not absorbed before it reaches the root element then it will then be passed to the user receiver. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca5467579b5240c886d12f33854e74a93d}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca5467579b5240c886d12f33854e74a93d}} 
+E\+E\+T\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT&A mouse input event. Mouse events are created by the device and passed to \hyperlink{classirr_1_1IrrlichtDevice_abf859e39f017b0403c6ed331e48e01df}{Irrlicht\+Device\+::post\+Event\+From\+User} in response to mouse input received from the operating system. Mouse events are first passed to the user receiver, then to the G\+UI environment and its elements, then finally the input receiving scene manager where it is passed to the active camera. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca34037c6b7c7e042c174c4c89e517e8f3}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca34037c6b7c7e042c174c4c89e517e8f3}} 
+E\+E\+T\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT&A key input event. Like mouse events, keyboard events are created by the device and passed to \hyperlink{classirr_1_1IrrlichtDevice_abf859e39f017b0403c6ed331e48e01df}{Irrlicht\+Device\+::post\+Event\+From\+User}. They take the same path as mouse events. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca3c71131272d5c66959fb4ab8fdd6d1b3}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca3c71131272d5c66959fb4ab8fdd6d1b3}} 
+E\+E\+T\+\_\+\+J\+O\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT&A joystick (joypad, gamepad) input event. Joystick events are created by polling all connected joysticks once per device run() and then passing the events to \hyperlink{classirr_1_1IrrlichtDevice_abf859e39f017b0403c6ed331e48e01df}{Irrlicht\+Device\+::post\+Event\+From\+User}. They take the same path as mouse events. Windows, S\+DL\+: Implemented. Linux\+: Implemented, with P\+OV hat issues. Mac\+OS / Other\+: Not yet implemented. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cab71b0164e7055521844b640d685ee56a}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cab71b0164e7055521844b640d685ee56a}} 
+E\+E\+T\+\_\+\+L\+O\+G\+\_\+\+T\+E\+X\+T\+\_\+\+E\+V\+E\+NT&A log event. Log events are only passed to the user receiver if there is one. If they are absorbed by the user receiver then no text will be sent to the console. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT}!irr@{irr}}\index{irr@{irr}!E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT@{E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cadce0b261078c067d4e70e0cbaf04c409}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0cadce0b261078c067d4e70e0cbaf04c409}} 
+E\+E\+T\+\_\+\+U\+S\+E\+R\+\_\+\+E\+V\+E\+NT&A user event with user data. This is not used by Irrlicht and can be used to send user specific data though the system. The Irrlicht \textquotesingle{}window handle\textquotesingle{} can be obtained from Irrlicht\+Device\+::get\+Exposed\+Video\+Data() The usage and behavior depends on the operating system\+: Windows\+: send a W\+M\+\_\+\+U\+S\+ER message to the Irrlicht \hyperlink{classWindow}{Window}; the w\+Param and l\+Param will be used to populate the User\+Data1 and User\+Data2 members of the S\+User\+Event. Linux\+: send a Client\+Message via X\+Send\+Event to the Irrlicht \hyperlink{classWindow}{Window}; the data.\+l\mbox{[}0\mbox{]} and data.\+l\mbox{[}1\mbox{]} members will be casted to s32 and used as User\+Data1 and User\+Data2. Mac\+OS\+: Not yet implemented \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT@{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT}!irr@{irr}}\index{irr@{irr}!E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT@{E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT}}}\mbox{\Hypertarget{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca9569c3a72b431df78c5d98c23e93c765}\label{namespaceirr_ac9eed96e06e85ce3c86fcbbbe9e48a0ca9569c3a72b431df78c5d98c23e93c765}} 
 E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT&This enum is never used, it only forces the compiler to compile these enumeration values to 32 bit. \\
 \hline
 
@@ -386,7 +780,7 @@ E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT&This enum is never us
 \mbox{\Hypertarget{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168}\label{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168}} 
 \index{irr@{irr}!E\+K\+E\+Y\+\_\+\+A\+C\+T\+I\+ON@{E\+K\+E\+Y\+\_\+\+A\+C\+T\+I\+ON}}
 \index{E\+K\+E\+Y\+\_\+\+A\+C\+T\+I\+ON@{E\+K\+E\+Y\+\_\+\+A\+C\+T\+I\+ON}!irr@{irr}}
-\subsubsection{\texorpdfstring{E\+K\+E\+Y\+\_\+\+A\+C\+T\+I\+ON}{EKEY\_ACTION}}
+\subsubsection{\texorpdfstring{E\+K\+E\+Y\+\_\+\+A\+C\+T\+I\+ON}{EKEY\_ACTION}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily enum \hyperlink{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168}{irr\+::\+E\+K\+E\+Y\+\_\+\+A\+C\+T\+I\+ON}}
 
 
@@ -394,7 +788,31 @@ E\+G\+U\+I\+E\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+\_\+\+B\+IT&This enum is never us
 enumeration for key actions. Used for example in the F\+PS \hyperlink{classCamera}{Camera}. 
 
 \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT@{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT}!irr@{irr}}\index{irr@{irr}!E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT@{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT}}}\mbox{\Hypertarget{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168a27e7067f9bc0bc5143b0bac183ca6c6b}\label{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168a27e7067f9bc0bc5143b0bac183ca6c6b}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT@{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT}!irr@{irr}}\index{irr@{irr}!E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT@{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT}}}\mbox{\Hypertarget{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168a8329ce2269a20c9da94c54bc9a2d2312}\label{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168a8329ce2269a20c9da94c54bc9a2d2312}} 
+E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT&This value is not used. It only forces this enumeration to compile in 32 bit. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT@{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT}!irr@{irr}}\index{irr@{irr}!E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT@{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT}}}\mbox{\Hypertarget{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168a8329ce2269a20c9da94c54bc9a2d2312}\label{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168a8329ce2269a20c9da94c54bc9a2d2312}} 
+E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT&This value is not used. It only forces this enumeration to compile in 32 bit. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168}\label{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168}} 
+\index{irr@{irr}!E\+K\+E\+Y\+\_\+\+A\+C\+T\+I\+ON@{E\+K\+E\+Y\+\_\+\+A\+C\+T\+I\+ON}}
+\index{E\+K\+E\+Y\+\_\+\+A\+C\+T\+I\+ON@{E\+K\+E\+Y\+\_\+\+A\+C\+T\+I\+ON}!irr@{irr}}
+\subsubsection{\texorpdfstring{E\+K\+E\+Y\+\_\+\+A\+C\+T\+I\+ON}{EKEY\_ACTION}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168}{irr\+::\+E\+K\+E\+Y\+\_\+\+A\+C\+T\+I\+ON}}
+
+
+
+enumeration for key actions. Used for example in the F\+PS \hyperlink{classCamera}{Camera}. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT@{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT}!irr@{irr}}\index{irr@{irr}!E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT@{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT}}}\mbox{\Hypertarget{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168a8329ce2269a20c9da94c54bc9a2d2312}\label{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168a8329ce2269a20c9da94c54bc9a2d2312}} 
+E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT&This value is not used. It only forces this enumeration to compile in 32 bit. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT@{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT}!irr@{irr}}\index{irr@{irr}!E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT@{E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT}}}\mbox{\Hypertarget{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168a8329ce2269a20c9da94c54bc9a2d2312}\label{namespaceirr_aa9946ac9f3142f9e790ce52d59fd6168a8329ce2269a20c9da94c54bc9a2d2312}} 
 E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT&This value is not used. It only forces this enumeration to compile in 32 bit. \\
 \hline
 
@@ -402,7 +820,7 @@ E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT&This value is not used. It only forc
 \mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92}} 
 \index{irr@{irr}!E\+L\+O\+G\+\_\+\+L\+E\+V\+EL@{E\+L\+O\+G\+\_\+\+L\+E\+V\+EL}}
 \index{E\+L\+O\+G\+\_\+\+L\+E\+V\+EL@{E\+L\+O\+G\+\_\+\+L\+E\+V\+EL}!irr@{irr}}
-\subsubsection{\texorpdfstring{E\+L\+O\+G\+\_\+\+L\+E\+V\+EL}{ELOG\_LEVEL}}
+\subsubsection{\texorpdfstring{E\+L\+O\+G\+\_\+\+L\+E\+V\+EL}{ELOG\_LEVEL}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily enum \hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92}{irr\+::\+E\+L\+O\+G\+\_\+\+L\+E\+V\+EL}}
 
 
@@ -410,23 +828,95 @@ E\+K\+A\+\_\+\+F\+O\+R\+C\+E\+\_\+32\+B\+IT&This value is not used. It only forc
 Possible log levels. When used has filter E\+L\+L\+\_\+\+D\+E\+B\+UG means =$>$ log everything and E\+L\+L\+\_\+\+N\+O\+NE means =$>$ log (nearly) nothing. When used to print logging information E\+L\+L\+\_\+\+D\+E\+B\+UG will have lowest priority while E\+L\+L\+\_\+\+N\+O\+NE messages are never filtered and always printed. 
 
 \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+D\+E\+B\+UG@{E\+L\+L\+\_\+\+D\+E\+B\+UG}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+D\+E\+B\+UG@{E\+L\+L\+\_\+\+D\+E\+B\+UG}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a58d2a62ce004018e8bb6a29c732c70e3}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a58d2a62ce004018e8bb6a29c732c70e3}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+D\+E\+B\+UG@{E\+L\+L\+\_\+\+D\+E\+B\+UG}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+D\+E\+B\+UG@{E\+L\+L\+\_\+\+D\+E\+B\+UG}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92acb213ad3a563100198dbd7609da56151}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92acb213ad3a563100198dbd7609da56151}} 
 E\+L\+L\+\_\+\+D\+E\+B\+UG&Used for printing information helpful in debugging. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON@{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON@{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a9d74de15737e326a91aec6f38c23f9cf}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a9d74de15737e326a91aec6f38c23f9cf}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON@{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON@{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92aaed3e0f449ad8851a1bb501d4df1c0e7}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92aaed3e0f449ad8851a1bb501d4df1c0e7}} 
 E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON&Useful information to print. For example hardware infos or something started/stopped. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG@{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG@{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92ad3d7f6bdd2f842cfc17561ba4be95001}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92ad3d7f6bdd2f842cfc17561ba4be95001}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG@{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG@{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a0f67af3d2f419bf35ca3616c4a704ff5}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a0f67af3d2f419bf35ca3616c4a704ff5}} 
 E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG&Warnings that something isn\textquotesingle{}t as expected and can cause oddities. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+E\+R\+R\+OR@{E\+L\+L\+\_\+\+E\+R\+R\+OR}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+E\+R\+R\+OR@{E\+L\+L\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a1c16e615e15fc3f75bacb50faaeb73ff}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a1c16e615e15fc3f75bacb50faaeb73ff}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+E\+R\+R\+OR@{E\+L\+L\+\_\+\+E\+R\+R\+OR}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+E\+R\+R\+OR@{E\+L\+L\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a702f1169109f7c4e2d5551a542fb333c}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a702f1169109f7c4e2d5551a542fb333c}} 
 E\+L\+L\+\_\+\+E\+R\+R\+OR&Something did go wrong. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+N\+O\+NE@{E\+L\+L\+\_\+\+N\+O\+NE}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+N\+O\+NE@{E\+L\+L\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a558fe286a76cbba090c8301f7b1f7dcb}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a558fe286a76cbba090c8301f7b1f7dcb}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+N\+O\+NE@{E\+L\+L\+\_\+\+N\+O\+NE}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+N\+O\+NE@{E\+L\+L\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a1756c34c5b4a66210560fc5ade78450a}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a1756c34c5b4a66210560fc5ade78450a}} 
+E\+L\+L\+\_\+\+N\+O\+NE&Logs with E\+L\+L\+\_\+\+N\+O\+NE will never be filtered. And used as filter it will remove all logging except E\+L\+L\+\_\+\+N\+O\+NE messages. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+D\+E\+B\+UG@{E\+L\+L\+\_\+\+D\+E\+B\+UG}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+D\+E\+B\+UG@{E\+L\+L\+\_\+\+D\+E\+B\+UG}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92acb213ad3a563100198dbd7609da56151}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92acb213ad3a563100198dbd7609da56151}} 
+E\+L\+L\+\_\+\+D\+E\+B\+UG&Used for printing information helpful in debugging. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON@{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON@{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92aaed3e0f449ad8851a1bb501d4df1c0e7}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92aaed3e0f449ad8851a1bb501d4df1c0e7}} 
+E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON&Useful information to print. For example hardware infos or something started/stopped. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG@{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG@{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a0f67af3d2f419bf35ca3616c4a704ff5}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a0f67af3d2f419bf35ca3616c4a704ff5}} 
+E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG&Warnings that something isn\textquotesingle{}t as expected and can cause oddities. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+E\+R\+R\+OR@{E\+L\+L\+\_\+\+E\+R\+R\+OR}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+E\+R\+R\+OR@{E\+L\+L\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a702f1169109f7c4e2d5551a542fb333c}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a702f1169109f7c4e2d5551a542fb333c}} 
+E\+L\+L\+\_\+\+E\+R\+R\+OR&Something did go wrong. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+N\+O\+NE@{E\+L\+L\+\_\+\+N\+O\+NE}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+N\+O\+NE@{E\+L\+L\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a1756c34c5b4a66210560fc5ade78450a}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a1756c34c5b4a66210560fc5ade78450a}} 
+E\+L\+L\+\_\+\+N\+O\+NE&Logs with E\+L\+L\+\_\+\+N\+O\+NE will never be filtered. And used as filter it will remove all logging except E\+L\+L\+\_\+\+N\+O\+NE messages. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92}} 
+\index{irr@{irr}!E\+L\+O\+G\+\_\+\+L\+E\+V\+EL@{E\+L\+O\+G\+\_\+\+L\+E\+V\+EL}}
+\index{E\+L\+O\+G\+\_\+\+L\+E\+V\+EL@{E\+L\+O\+G\+\_\+\+L\+E\+V\+EL}!irr@{irr}}
+\subsubsection{\texorpdfstring{E\+L\+O\+G\+\_\+\+L\+E\+V\+EL}{ELOG\_LEVEL}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92}{irr\+::\+E\+L\+O\+G\+\_\+\+L\+E\+V\+EL}}
+
+
+
+Possible log levels. When used has filter E\+L\+L\+\_\+\+D\+E\+B\+UG means =$>$ log everything and E\+L\+L\+\_\+\+N\+O\+NE means =$>$ log (nearly) nothing. When used to print logging information E\+L\+L\+\_\+\+D\+E\+B\+UG will have lowest priority while E\+L\+L\+\_\+\+N\+O\+NE messages are never filtered and always printed. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+D\+E\+B\+UG@{E\+L\+L\+\_\+\+D\+E\+B\+UG}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+D\+E\+B\+UG@{E\+L\+L\+\_\+\+D\+E\+B\+UG}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92acb213ad3a563100198dbd7609da56151}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92acb213ad3a563100198dbd7609da56151}} 
+E\+L\+L\+\_\+\+D\+E\+B\+UG&Used for printing information helpful in debugging. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON@{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON@{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92aaed3e0f449ad8851a1bb501d4df1c0e7}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92aaed3e0f449ad8851a1bb501d4df1c0e7}} 
+E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON&Useful information to print. For example hardware infos or something started/stopped. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG@{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG@{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a0f67af3d2f419bf35ca3616c4a704ff5}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a0f67af3d2f419bf35ca3616c4a704ff5}} 
+E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG&Warnings that something isn\textquotesingle{}t as expected and can cause oddities. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+E\+R\+R\+OR@{E\+L\+L\+\_\+\+E\+R\+R\+OR}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+E\+R\+R\+OR@{E\+L\+L\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a702f1169109f7c4e2d5551a542fb333c}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a702f1169109f7c4e2d5551a542fb333c}} 
+E\+L\+L\+\_\+\+E\+R\+R\+OR&Something did go wrong. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+N\+O\+NE@{E\+L\+L\+\_\+\+N\+O\+NE}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+N\+O\+NE@{E\+L\+L\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a1756c34c5b4a66210560fc5ade78450a}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a1756c34c5b4a66210560fc5ade78450a}} 
+E\+L\+L\+\_\+\+N\+O\+NE&Logs with E\+L\+L\+\_\+\+N\+O\+NE will never be filtered. And used as filter it will remove all logging except E\+L\+L\+\_\+\+N\+O\+NE messages. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+D\+E\+B\+UG@{E\+L\+L\+\_\+\+D\+E\+B\+UG}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+D\+E\+B\+UG@{E\+L\+L\+\_\+\+D\+E\+B\+UG}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92acb213ad3a563100198dbd7609da56151}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92acb213ad3a563100198dbd7609da56151}} 
+E\+L\+L\+\_\+\+D\+E\+B\+UG&Used for printing information helpful in debugging. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON@{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON@{E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92aaed3e0f449ad8851a1bb501d4df1c0e7}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92aaed3e0f449ad8851a1bb501d4df1c0e7}} 
+E\+L\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON&Useful information to print. For example hardware infos or something started/stopped. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG@{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG@{E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a0f67af3d2f419bf35ca3616c4a704ff5}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a0f67af3d2f419bf35ca3616c4a704ff5}} 
+E\+L\+L\+\_\+\+W\+A\+R\+N\+I\+NG&Warnings that something isn\textquotesingle{}t as expected and can cause oddities. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+E\+R\+R\+OR@{E\+L\+L\+\_\+\+E\+R\+R\+OR}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+E\+R\+R\+OR@{E\+L\+L\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a702f1169109f7c4e2d5551a542fb333c}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a702f1169109f7c4e2d5551a542fb333c}} 
+E\+L\+L\+\_\+\+E\+R\+R\+OR&Something did go wrong. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+L\+\_\+\+N\+O\+NE@{E\+L\+L\+\_\+\+N\+O\+NE}!irr@{irr}}\index{irr@{irr}!E\+L\+L\+\_\+\+N\+O\+NE@{E\+L\+L\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a1756c34c5b4a66210560fc5ade78450a}\label{namespaceirr_aa2d1cac68606a25ed24cfffccfa30a92a1756c34c5b4a66210560fc5ade78450a}} 
 E\+L\+L\+\_\+\+N\+O\+NE&Logs with E\+L\+L\+\_\+\+N\+O\+NE will never be filtered. And used as filter it will remove all logging except E\+L\+L\+\_\+\+N\+O\+NE messages. \\
 \hline
 
@@ -434,7 +924,7 @@ E\+L\+L\+\_\+\+N\+O\+NE&Logs with E\+L\+L\+\_\+\+N\+O\+NE will never be filtered
 \mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739f}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739f}} 
 \index{irr@{irr}!E\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}
 \index{E\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}
-\subsubsection{\texorpdfstring{E\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}{EMOUSE\_INPUT\_EVENT}}
+\subsubsection{\texorpdfstring{E\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}{EMOUSE\_INPUT\_EVENT}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily enum \hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739f}{irr\+::\+E\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}
 
 
@@ -442,63 +932,255 @@ E\+L\+L\+\_\+\+N\+O\+NE&Logs with E\+L\+L\+\_\+\+N\+O\+NE will never be filtered
 Enumeration for all mouse input events. 
 
 \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa3f551814f5f38596ea1f3ed7c6c7bad7}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa3f551814f5f38596ea1f3ed7c6c7bad7}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa97da2023031b6a09a5c0a5e0b7a6a1cd}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa97da2023031b6a09a5c0a5e0b7a6a1cd}} 
 E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN&Left mouse button was pressed down. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fab54734344dc9cc7c00b33afcc6443575}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fab54734344dc9cc7c00b33afcc6443575}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fac63e1a354120bef0af2804a4d1a2cff1}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fac63e1a354120bef0af2804a4d1a2cff1}} 
 E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN&Right mouse button was pressed down. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa3daff77552ab92abc317afe09b41bc76}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa3daff77552ab92abc317afe09b41bc76}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faaa118e764df89576ddf1af5b3ed5206e}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faaa118e764df89576ddf1af5b3ed5206e}} 
 E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN&Middle mouse button was pressed down. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa26d91b99a8912ff622133f02c60f306a}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa26d91b99a8912ff622133f02c60f306a}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9f9d015145923927f4366f6abc3fea68}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9f9d015145923927f4366f6abc3fea68}} 
 E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP&Left mouse button was left up. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fadb92d5c1011534b2b18065573182d9f4}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fadb92d5c1011534b2b18065573182d9f4}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa91a422840ca05b2a500c576279d723fe}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa91a422840ca05b2a500c576279d723fe}} 
 E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP&Right mouse button was left up. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa13e6b5b0964334f1dbefae9848dc26df}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa13e6b5b0964334f1dbefae9848dc26df}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fad31369b11e2d23a8f8c1fb4ad2c60011}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fad31369b11e2d23a8f8c1fb4ad2c60011}} 
 E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP&Middle mouse button was left up. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fae3288f42ed4b8372853c1822bbc0a7a1}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fae3288f42ed4b8372853c1822bbc0a7a1}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faccbca74faad3c53d2aea0bebe955d70b}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faccbca74faad3c53d2aea0bebe955d70b}} 
 E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED&The mouse cursor changed its position. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fad091f4f4144d57e46be11b029c3c6720}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fad091f4f4144d57e46be11b029c3c6720}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9e14b6982339a47a22972f89a809a683}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9e14b6982339a47a22972f89a809a683}} 
 E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL&The mouse wheel was moved. Use Wheel value in event data to find out in what direction and how fast. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa689d3c959226829a85d5dc005400c7ce}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa689d3c959226829a85d5dc005400c7ce}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa11de650b5677f659bbb54f70a91e4a89}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa11de650b5677f659bbb54f70a91e4a89}} 
 E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK&Left mouse button double click. This event is generated after the second E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa90865e216488a0a92c030f220a5a69d6}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa90865e216488a0a92c030f220a5a69d6}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa2d50dedf6e4ca3e855b68cc28604ccc5}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa2d50dedf6e4ca3e855b68cc28604ccc5}} 
 E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK&Right mouse button double click. This event is generated after the second E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa89b46e2e0e79ee26d9c2478ebe1dd9ee}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa89b46e2e0e79ee26d9c2478ebe1dd9ee}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa270f8c7c82492a7683ac5e74d42db99a}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa270f8c7c82492a7683ac5e74d42db99a}} 
 E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK&Middle mouse button double click. This event is generated after the second E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa1145828528f7999720df3dd10a3a7de3}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa1145828528f7999720df3dd10a3a7de3}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faeb59ca6852df839875db239a9c1894ae}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faeb59ca6852df839875db239a9c1894ae}} 
 E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK&Left mouse button triple click. This event is generated after the third E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fab24cbd2197b888022531799561c12b49}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fab24cbd2197b888022531799561c12b49}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa72bab8b71a62b53e1bab3e5d67041a0b}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa72bab8b71a62b53e1bab3e5d67041a0b}} 
 E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK&Right mouse button triple click. This event is generated after the third E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa72b90a632c6063a6f8e2fbf26187c9c6}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa72b90a632c6063a6f8e2fbf26187c9c6}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa4a1bdc4adfa1cd5bb969dfb8a93cfbf7}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa4a1bdc4adfa1cd5bb969dfb8a93cfbf7}} 
 E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK&Middle mouse button triple click. This event is generated after the third E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT@{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+C\+O\+U\+NT@{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa2cda06d009d09fc263752310cc64340f}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa2cda06d009d09fc263752310cc64340f}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT@{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+C\+O\+U\+NT@{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa6daf05317a5903aa5c6726f5dee514ba}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa6daf05317a5903aa5c6726f5dee514ba}} 
+E\+M\+I\+E\+\_\+\+C\+O\+U\+NT&No real event. Just for convenience to get number of events. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa97da2023031b6a09a5c0a5e0b7a6a1cd}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa97da2023031b6a09a5c0a5e0b7a6a1cd}} 
+E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN&Left mouse button was pressed down. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fac63e1a354120bef0af2804a4d1a2cff1}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fac63e1a354120bef0af2804a4d1a2cff1}} 
+E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN&Right mouse button was pressed down. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faaa118e764df89576ddf1af5b3ed5206e}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faaa118e764df89576ddf1af5b3ed5206e}} 
+E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN&Middle mouse button was pressed down. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9f9d015145923927f4366f6abc3fea68}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9f9d015145923927f4366f6abc3fea68}} 
+E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP&Left mouse button was left up. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa91a422840ca05b2a500c576279d723fe}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa91a422840ca05b2a500c576279d723fe}} 
+E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP&Right mouse button was left up. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fad31369b11e2d23a8f8c1fb4ad2c60011}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fad31369b11e2d23a8f8c1fb4ad2c60011}} 
+E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP&Middle mouse button was left up. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faccbca74faad3c53d2aea0bebe955d70b}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faccbca74faad3c53d2aea0bebe955d70b}} 
+E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED&The mouse cursor changed its position. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9e14b6982339a47a22972f89a809a683}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9e14b6982339a47a22972f89a809a683}} 
+E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL&The mouse wheel was moved. Use Wheel value in event data to find out in what direction and how fast. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa11de650b5677f659bbb54f70a91e4a89}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa11de650b5677f659bbb54f70a91e4a89}} 
+E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK&Left mouse button double click. This event is generated after the second E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa2d50dedf6e4ca3e855b68cc28604ccc5}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa2d50dedf6e4ca3e855b68cc28604ccc5}} 
+E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK&Right mouse button double click. This event is generated after the second E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa270f8c7c82492a7683ac5e74d42db99a}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa270f8c7c82492a7683ac5e74d42db99a}} 
+E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK&Middle mouse button double click. This event is generated after the second E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faeb59ca6852df839875db239a9c1894ae}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faeb59ca6852df839875db239a9c1894ae}} 
+E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK&Left mouse button triple click. This event is generated after the third E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa72bab8b71a62b53e1bab3e5d67041a0b}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa72bab8b71a62b53e1bab3e5d67041a0b}} 
+E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK&Right mouse button triple click. This event is generated after the third E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa4a1bdc4adfa1cd5bb969dfb8a93cfbf7}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa4a1bdc4adfa1cd5bb969dfb8a93cfbf7}} 
+E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK&Middle mouse button triple click. This event is generated after the third E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT@{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+C\+O\+U\+NT@{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa6daf05317a5903aa5c6726f5dee514ba}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa6daf05317a5903aa5c6726f5dee514ba}} 
+E\+M\+I\+E\+\_\+\+C\+O\+U\+NT&No real event. Just for convenience to get number of events. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739f}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739f}} 
+\index{irr@{irr}!E\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}
+\index{E\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT@{E\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}!irr@{irr}}
+\subsubsection{\texorpdfstring{E\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}{EMOUSE\_INPUT\_EVENT}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739f}{irr\+::\+E\+M\+O\+U\+S\+E\+\_\+\+I\+N\+P\+U\+T\+\_\+\+E\+V\+E\+NT}}
+
+
+
+Enumeration for all mouse input events. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa97da2023031b6a09a5c0a5e0b7a6a1cd}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa97da2023031b6a09a5c0a5e0b7a6a1cd}} 
+E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN&Left mouse button was pressed down. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fac63e1a354120bef0af2804a4d1a2cff1}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fac63e1a354120bef0af2804a4d1a2cff1}} 
+E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN&Right mouse button was pressed down. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faaa118e764df89576ddf1af5b3ed5206e}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faaa118e764df89576ddf1af5b3ed5206e}} 
+E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN&Middle mouse button was pressed down. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9f9d015145923927f4366f6abc3fea68}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9f9d015145923927f4366f6abc3fea68}} 
+E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP&Left mouse button was left up. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa91a422840ca05b2a500c576279d723fe}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa91a422840ca05b2a500c576279d723fe}} 
+E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP&Right mouse button was left up. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fad31369b11e2d23a8f8c1fb4ad2c60011}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fad31369b11e2d23a8f8c1fb4ad2c60011}} 
+E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP&Middle mouse button was left up. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faccbca74faad3c53d2aea0bebe955d70b}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faccbca74faad3c53d2aea0bebe955d70b}} 
+E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED&The mouse cursor changed its position. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9e14b6982339a47a22972f89a809a683}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9e14b6982339a47a22972f89a809a683}} 
+E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL&The mouse wheel was moved. Use Wheel value in event data to find out in what direction and how fast. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa11de650b5677f659bbb54f70a91e4a89}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa11de650b5677f659bbb54f70a91e4a89}} 
+E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK&Left mouse button double click. This event is generated after the second E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa2d50dedf6e4ca3e855b68cc28604ccc5}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa2d50dedf6e4ca3e855b68cc28604ccc5}} 
+E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK&Right mouse button double click. This event is generated after the second E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa270f8c7c82492a7683ac5e74d42db99a}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa270f8c7c82492a7683ac5e74d42db99a}} 
+E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK&Middle mouse button double click. This event is generated after the second E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faeb59ca6852df839875db239a9c1894ae}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faeb59ca6852df839875db239a9c1894ae}} 
+E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK&Left mouse button triple click. This event is generated after the third E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa72bab8b71a62b53e1bab3e5d67041a0b}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa72bab8b71a62b53e1bab3e5d67041a0b}} 
+E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK&Right mouse button triple click. This event is generated after the third E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa4a1bdc4adfa1cd5bb969dfb8a93cfbf7}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa4a1bdc4adfa1cd5bb969dfb8a93cfbf7}} 
+E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK&Middle mouse button triple click. This event is generated after the third E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT@{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+C\+O\+U\+NT@{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa6daf05317a5903aa5c6726f5dee514ba}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa6daf05317a5903aa5c6726f5dee514ba}} 
+E\+M\+I\+E\+\_\+\+C\+O\+U\+NT&No real event. Just for convenience to get number of events. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa97da2023031b6a09a5c0a5e0b7a6a1cd}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa97da2023031b6a09a5c0a5e0b7a6a1cd}} 
+E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN&Left mouse button was pressed down. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fac63e1a354120bef0af2804a4d1a2cff1}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fac63e1a354120bef0af2804a4d1a2cff1}} 
+E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN&Right mouse button was pressed down. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faaa118e764df89576ddf1af5b3ed5206e}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faaa118e764df89576ddf1af5b3ed5206e}} 
+E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN&Middle mouse button was pressed down. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9f9d015145923927f4366f6abc3fea68}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9f9d015145923927f4366f6abc3fea68}} 
+E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP&Left mouse button was left up. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa91a422840ca05b2a500c576279d723fe}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa91a422840ca05b2a500c576279d723fe}} 
+E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP&Right mouse button was left up. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fad31369b11e2d23a8f8c1fb4ad2c60011}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fad31369b11e2d23a8f8c1fb4ad2c60011}} 
+E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+L\+E\+F\+T\+\_\+\+UP&Middle mouse button was left up. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faccbca74faad3c53d2aea0bebe955d70b}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faccbca74faad3c53d2aea0bebe955d70b}} 
+E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+M\+O\+V\+ED&The mouse cursor changed its position. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL@{E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9e14b6982339a47a22972f89a809a683}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa9e14b6982339a47a22972f89a809a683}} 
+E\+M\+I\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+W\+H\+E\+EL&The mouse wheel was moved. Use Wheel value in event data to find out in what direction and how fast. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa11de650b5677f659bbb54f70a91e4a89}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa11de650b5677f659bbb54f70a91e4a89}} 
+E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK&Left mouse button double click. This event is generated after the second E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa2d50dedf6e4ca3e855b68cc28604ccc5}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa2d50dedf6e4ca3e855b68cc28604ccc5}} 
+E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK&Right mouse button double click. This event is generated after the second E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa270f8c7c82492a7683ac5e74d42db99a}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa270f8c7c82492a7683ac5e74d42db99a}} 
+E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+L\+I\+CK&Middle mouse button double click. This event is generated after the second E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faeb59ca6852df839875db239a9c1894ae}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739faeb59ca6852df839875db239a9c1894ae}} 
+E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK&Left mouse button triple click. This event is generated after the third E\+M\+I\+E\+\_\+\+L\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa72bab8b71a62b53e1bab3e5d67041a0b}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa72bab8b71a62b53e1bab3e5d67041a0b}} 
+E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK&Right mouse button triple click. This event is generated after the third E\+M\+I\+E\+\_\+\+R\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK@{E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa4a1bdc4adfa1cd5bb969dfb8a93cfbf7}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa4a1bdc4adfa1cd5bb969dfb8a93cfbf7}} 
+E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+C\+L\+I\+CK&Middle mouse button triple click. This event is generated after the third E\+M\+I\+E\+\_\+\+M\+M\+O\+U\+S\+E\+\_\+\+P\+R\+E\+S\+S\+E\+D\+\_\+\+D\+O\+WN event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT@{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT}!irr@{irr}}\index{irr@{irr}!E\+M\+I\+E\+\_\+\+C\+O\+U\+NT@{E\+M\+I\+E\+\_\+\+C\+O\+U\+NT}}}\mbox{\Hypertarget{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa6daf05317a5903aa5c6726f5dee514ba}\label{namespaceirr_a2dbf2a247aa17a9eeefbbf36ebd5739fa6daf05317a5903aa5c6726f5dee514ba}} 
 E\+M\+I\+E\+\_\+\+C\+O\+U\+NT&No real event. Just for convenience to get number of events. \\
 \hline
 
@@ -506,17 +1188,17 @@ E\+M\+I\+E\+\_\+\+C\+O\+U\+NT&No real event. Just for convenience to get number 
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{namespaceirr_abaf4d8719cc26b0d30813abf85e47c76}\label{namespaceirr_abaf4d8719cc26b0d30813abf85e47c76}} 
+\mbox{\Hypertarget{namespaceirr_a57653fdaf6b2746b141ba2bb07d8bba6}\label{namespaceirr_a57653fdaf6b2746b141ba2bb07d8bba6}} 
 \index{irr@{irr}!create\+Device@{create\+Device}}
 \index{create\+Device@{create\+Device}!irr@{irr}}
 \subsubsection{\texorpdfstring{create\+Device()}{createDevice()}}
-{\footnotesize\ttfamily I\+R\+R\+L\+I\+C\+H\+T\+\_\+\+A\+PI \hyperlink{classirr_1_1IrrlichtDevice}{Irrlicht\+Device}$\ast$ I\+R\+R\+C\+A\+L\+L\+C\+O\+NV irr\+::create\+Device (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0}{video\+::\+E\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+T\+Y\+PE}}]{device\+Type = {\ttfamily \hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0ad863d9225d42c1f9ea1eb7ad89a712ce}{video\+::\+E\+D\+T\+\_\+\+S\+O\+F\+T\+W\+A\+RE}},  }\item[{const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \&}]{window\+Size = {\ttfamily (\hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$~\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}~$>$(640,~480))},  }\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{bits = {\ttfamily 16},  }\item[{bool}]{fullscreen = {\ttfamily false},  }\item[{bool}]{stencilbuffer = {\ttfamily false},  }\item[{bool}]{vsync = {\ttfamily false},  }\item[{\hyperlink{classirr_1_1IEventReceiver}{I\+Event\+Receiver} $\ast$}]{receiver = {\ttfamily 0} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily I\+R\+R\+L\+I\+C\+H\+T\+\_\+\+A\+PI \hyperlink{classirr_1_1IrrlichtDevice}{Irrlicht\+Device} $\ast$I\+R\+R\+C\+A\+L\+L\+C\+O\+NV irr\+::create\+Device (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0}{video\+::\+E\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+T\+Y\+PE}}]{device\+Type = {\ttfamily \hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0ad863d9225d42c1f9ea1eb7ad89a712ce}{video\+::\+E\+D\+T\+\_\+\+S\+O\+F\+T\+W\+A\+RE}},  }\item[{const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \&}]{window\+Size = {\ttfamily (\hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$~\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}~$>$(640,~480))},  }\item[{\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}}]{bits = {\ttfamily 16},  }\item[{bool}]{fullscreen = {\ttfamily false},  }\item[{bool}]{stencilbuffer = {\ttfamily false},  }\item[{bool}]{vsync = {\ttfamily false},  }\item[{\hyperlink{classirr_1_1IEventReceiver}{I\+Event\+Receiver} $\ast$}]{receiver = {\ttfamily 0} }\end{DoxyParamCaption})}
 
 
 
 Creates an Irrlicht device. The Irrlicht device is the root object for using the engine. 
 
-If you need more parameters to be passed to the creation of the Irrlicht Engine device, use the \hyperlink{namespaceirr_ac83a30d674204dcb94d70f849e9b4a62}{create\+Device\+Ex()} function. 
+If you need more parameters to be passed to the creation of the Irrlicht Engine device, use the \hyperlink{namespaceirr_ae0a823eb5404bbf156965e7051798496}{create\+Device\+Ex()} function. 
 \begin{DoxyParams}{Parameters}
 {\em device\+Type} & Type of the device. This can currently be \hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0a847cc228389396d6228c00aadf461ecb}{video\+::\+E\+D\+T\+\_\+\+N\+U\+LL}, \hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0ad863d9225d42c1f9ea1eb7ad89a712ce}{video\+::\+E\+D\+T\+\_\+\+S\+O\+F\+T\+W\+A\+RE}, \hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0aa87258b02ce4380dccb0eb430310ec1c}{video\+::\+E\+D\+T\+\_\+\+B\+U\+R\+N\+I\+N\+G\+S\+V\+I\+D\+EO}, \hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0a19a7bf582b8ea551a9cc4937e970ba8b}{video\+::\+E\+D\+T\+\_\+\+D\+I\+R\+E\+C\+T3\+D8}, \hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0ac922b56714df5a2ed7b8181c56ac7e99}{video\+::\+E\+D\+T\+\_\+\+D\+I\+R\+E\+C\+T3\+D9} and \hyperlink{namespaceirr_1_1video_ae35a6de6d436c76107ad157fe42356d0a5ab2832f3a74d496e443105ab943cd6c}{video\+::\+E\+D\+T\+\_\+\+O\+P\+E\+N\+GL}. \\
 \hline
@@ -536,17 +1218,17 @@ If you need more parameters to be passed to the creation of the Irrlicht Engine 
 \begin{DoxyReturn}{Returns}
 Returns pointer to the created \hyperlink{classirr_1_1IrrlichtDevice}{Irrlicht\+Device} or null if the device could not be created. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespaceirr_ac83a30d674204dcb94d70f849e9b4a62}\label{namespaceirr_ac83a30d674204dcb94d70f849e9b4a62}} 
+\mbox{\Hypertarget{namespaceirr_ae0a823eb5404bbf156965e7051798496}\label{namespaceirr_ae0a823eb5404bbf156965e7051798496}} 
 \index{irr@{irr}!create\+Device\+Ex@{create\+Device\+Ex}}
 \index{create\+Device\+Ex@{create\+Device\+Ex}!irr@{irr}}
 \subsubsection{\texorpdfstring{create\+Device\+Ex()}{createDeviceEx()}}
-{\footnotesize\ttfamily I\+R\+R\+L\+I\+C\+H\+T\+\_\+\+A\+PI \hyperlink{classirr_1_1IrrlichtDevice}{Irrlicht\+Device}$\ast$ I\+R\+R\+C\+A\+L\+L\+C\+O\+NV irr\+::create\+Device\+Ex (\begin{DoxyParamCaption}\item[{const \hyperlink{structirr_1_1SIrrlichtCreationParameters}{S\+Irrlicht\+Creation\+Parameters} \&}]{parameters }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily I\+R\+R\+L\+I\+C\+H\+T\+\_\+\+A\+PI \hyperlink{classirr_1_1IrrlichtDevice}{Irrlicht\+Device} $\ast$I\+R\+R\+C\+A\+L\+L\+C\+O\+NV irr\+::create\+Device\+Ex (\begin{DoxyParamCaption}\item[{const \hyperlink{structirr_1_1SIrrlichtCreationParameters}{S\+Irrlicht\+Creation\+Parameters} \&}]{parameters }\end{DoxyParamCaption})}
 
 
 
 Creates an Irrlicht device with the option to specify advanced parameters. 
 
-Usually you should used \hyperlink{namespaceirr_abaf4d8719cc26b0d30813abf85e47c76}{create\+Device()} for creating an Irrlicht Engine device. Use this function only if you wish to specify advanced parameters like a window handle in which the device should be created. 
+Usually you should used \hyperlink{namespaceirr_a57653fdaf6b2746b141ba2bb07d8bba6}{create\+Device()} for creating an Irrlicht Engine device. Use this function only if you wish to specify advanced parameters like a window handle in which the device should be created. 
 \begin{DoxyParams}{Parameters}
 {\em parameters} & Structure containing advanced parameters for the creation of the device. See \hyperlink{structirr_1_1SIrrlichtCreationParameters}{irr\+::\+S\+Irrlicht\+Creation\+Parameters} for details. \\
 \hline

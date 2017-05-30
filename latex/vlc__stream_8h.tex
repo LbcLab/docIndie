@@ -1,0 +1,55 @@
+\hypertarget{vlc__stream_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+stream.h File Reference}
+\label{vlc__stream_8h}\index{lib/include/vlc/plugins/vlc\+\_\+stream.\+h@{lib/include/vlc/plugins/vlc\+\_\+stream.\+h}}
+{\ttfamily \#include $<$vlc\+\_\+block.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structstream__t}{stream\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__stream_gac90a8aaf65579464a5604c9de255929a}{stream\+\_\+query\+\_\+e} \{ \newline
+\hyperlink{group__stream_ggac90a8aaf65579464a5604c9de255929aaa8713b90e0df50b9ce6653211d20f4f9}{S\+T\+R\+E\+A\+M\+\_\+\+C\+A\+N\+\_\+\+S\+E\+EK}, 
+\hyperlink{group__stream_ggac90a8aaf65579464a5604c9de255929aa8aec9890f93fde818e3fe8bacd7496ec}{S\+T\+R\+E\+A\+M\+\_\+\+C\+A\+N\+\_\+\+F\+A\+S\+T\+S\+E\+EK}, 
+\hyperlink{group__stream_ggac90a8aaf65579464a5604c9de255929aa8dd0cea80134003f8582ff8e8c5d48d3}{S\+T\+R\+E\+A\+M\+\_\+\+C\+A\+N\+\_\+\+P\+A\+U\+SE}, 
+\hyperlink{group__stream_ggac90a8aaf65579464a5604c9de255929aa4ad696863f1d78fdce009c9d3ca249a0}{S\+T\+R\+E\+A\+M\+\_\+\+C\+A\+N\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+A\+CE}, 
+\newline
+\hyperlink{group__stream_ggac90a8aaf65579464a5604c9de255929aaa2200d3aaa6b35f4eb4bfc9b0c9a4dd9}{S\+T\+R\+E\+A\+M\+\_\+\+S\+E\+T\+\_\+\+P\+O\+S\+I\+T\+I\+ON}, 
+\hyperlink{group__stream_ggac90a8aaf65579464a5604c9de255929aa90d98a3ef92e3829177249d2987b334d}{S\+T\+R\+E\+A\+M\+\_\+\+G\+E\+T\+\_\+\+P\+O\+S\+I\+T\+I\+ON}, 
+\hyperlink{group__stream_ggac90a8aaf65579464a5604c9de255929aad711fafff9c55278e65102af584a235b}{S\+T\+R\+E\+A\+M\+\_\+\+G\+E\+T\+\_\+\+S\+I\+ZE}
+, \hyperlink{group__stream_ggac90a8aaf65579464a5604c9de255929aa63fe5c80dc98e616cc68efb5a677bdd2}{S\+T\+R\+E\+A\+M\+\_\+\+G\+E\+T\+\_\+\+P\+T\+S\+\_\+\+D\+E\+L\+AY} = 0x101, 
+\newline
+\hyperlink{group__stream_ggac90a8aaf65579464a5604c9de255929aaff4a61fe8c4a4bb2d9ed917189481f00}{S\+T\+R\+E\+A\+M\+\_\+\+G\+E\+T\+\_\+\+T\+I\+T\+L\+E\+\_\+\+I\+N\+FO}, 
+\hyperlink{group__stream_ggac90a8aaf65579464a5604c9de255929aa22189e0c84cb9b67b10cf7266873eaa7}{S\+T\+R\+E\+A\+M\+\_\+\+G\+E\+T\+\_\+\+T\+I\+T\+LE}, 
+\hyperlink{group__stream_ggac90a8aaf65579464a5604c9de255929aacaee16aa8d513def9f83897a84c63378}{S\+T\+R\+E\+A\+M\+\_\+\+G\+E\+T\+\_\+\+S\+E\+E\+K\+P\+O\+I\+NT}, 
+\hyperlink{group__stream_ggac90a8aaf65579464a5604c9de255929aaff64344cb822f1b6cb88f1cfe6289044}{S\+T\+R\+E\+A\+M\+\_\+\+G\+E\+T\+\_\+\+M\+E\+TA}, 
+\newline
+\hyperlink{group__stream_ggac90a8aaf65579464a5604c9de255929aa7ebc58a0d76f4fa44444305d3116bf2f}{S\+T\+R\+E\+A\+M\+\_\+\+G\+E\+T\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+T\+Y\+PE}, 
+\hyperlink{group__stream_ggac90a8aaf65579464a5604c9de255929aaacf5c3f2478728f39372ebf0881c6c2c}{S\+T\+R\+E\+A\+M\+\_\+\+G\+E\+T\+\_\+\+S\+I\+G\+N\+AL}, 
+\hyperlink{group__stream_ggac90a8aaf65579464a5604c9de255929aa52b071c3972f120269b8e694954717e8}{S\+T\+R\+E\+A\+M\+\_\+\+S\+E\+T\+\_\+\+P\+A\+U\+S\+E\+\_\+\+S\+T\+A\+TE} = 0x200, 
+\hyperlink{group__stream_ggac90a8aaf65579464a5604c9de255929aa975e8a0d165a9dd46717374368de6c1b}{S\+T\+R\+E\+A\+M\+\_\+\+S\+E\+T\+\_\+\+T\+I\+T\+LE}, 
+\newline
+\hyperlink{group__stream_ggac90a8aaf65579464a5604c9de255929aafff7614b422eff8e6c2caefaaf98453c}{S\+T\+R\+E\+A\+M\+\_\+\+S\+E\+T\+\_\+\+S\+E\+E\+K\+P\+O\+I\+NT}, 
+\hyperlink{group__stream_ggac90a8aaf65579464a5604c9de255929aa603f56e65f3d97803a81de2a578907af}{S\+T\+R\+E\+A\+M\+\_\+\+S\+E\+T\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+S\+T\+A\+TE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structstream__t}{stream\+\_\+t} $\ast$ \hyperlink{group__stream_gaa9684498d9b82c8d7af5ede5a1692a2a}{stream\+\_\+\+Demux\+New} (demux\+\_\+t $\ast$p\+\_\+demux, const char $\ast$psz\+\_\+demux, es\+\_\+out\+\_\+t $\ast$out)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__stream_ga337f45a362c389f9cb7f74fb8c48bee7}{stream\+\_\+\+Demux\+Send} (\hyperlink{structstream__t}{stream\+\_\+t} $\ast$s, block\+\_\+t $\ast$p\+\_\+block)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__stream_ga4fb865659a20694bf5c907cffd97d8ed}{stream\+\_\+\+Demux\+Control\+Va} (\hyperlink{structstream__t}{stream\+\_\+t} $\ast$s, int, va\+\_\+list)
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structstream__t}{stream\+\_\+t} $\ast$ \hyperlink{group__stream_gaeadba02749316baec20ef3f5996b00f7}{stream\+\_\+\+Memory\+New} (\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$p\+\_\+obj, uint8\+\_\+t $\ast$p\+\_\+buffer, uint64\+\_\+t i\+\_\+size, bool b\+\_\+preserve\+\_\+memory)
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structstream__t}{stream\+\_\+t} $\ast$ \hyperlink{group__stream_gab36b7d73660ca25c2e1505cd5bd33712}{stream\+\_\+\+Url\+New} (\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$p\+\_\+this, const char $\ast$psz\+\_\+url)
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structstream__t}{stream\+\_\+t} $\ast$ \hyperlink{group__stream_gaa479a3900d7a3ea607d162f41be93d51}{stream\+\_\+\+Filter\+New} (\hyperlink{structstream__t}{stream\+\_\+t} $\ast$p\+\_\+source, const char $\ast$psz\+\_\+stream\+\_\+filter)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines structures and functions for stream (between access and demux) descriptor in vlc 

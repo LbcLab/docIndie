@@ -1,0 +1,836 @@
+\hypertarget{group__libvlc__audio}{}\section{Lib\+V\+LC audio controls}
+\label{group__libvlc__audio}\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{group__libvlc__audio_ga588fc66806ea8599a17ab92c455c3cf2}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+types\+\_\+t} \hyperlink{group__libvlc__audio_ga059f2f96f5c47f3b7878e21b4d879613}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+types\+\_\+t}
+\item 
+typedef enum \hyperlink{group__libvlc__audio_ga50e752d67eaa2738e0f914805b1b3a05}{libvlc\+\_\+audio\+\_\+output\+\_\+channel\+\_\+t} \hyperlink{group__libvlc__audio_ga7f84a7c868f1111778ef7e9e30bc3690}{libvlc\+\_\+audio\+\_\+output\+\_\+channel\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__libvlc__audio_ga588fc66806ea8599a17ab92c455c3cf2}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+types\+\_\+t} 
+\item 
+enum \hyperlink{group__libvlc__audio_ga50e752d67eaa2738e0f914805b1b3a05}{libvlc\+\_\+audio\+\_\+output\+\_\+channel\+\_\+t} 
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{structlibvlc__audio__output__t}{libvlc\+\_\+audio\+\_\+output\+\_\+t} $\ast$ \hyperlink{group__libvlc__audio_gabdb1104576d289121beb13cb4def720f}{libvlc\+\_\+audio\+\_\+output\+\_\+list\+\_\+get} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__audio_ga9f573074e83bd671b90468b459dc9577}{libvlc\+\_\+audio\+\_\+output\+\_\+list\+\_\+release} (\hyperlink{structlibvlc__audio__output__t}{libvlc\+\_\+audio\+\_\+output\+\_\+t} $\ast$p\+\_\+list)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__audio_ga1e0e783b4b68a4544cc688d8f8c38284}{libvlc\+\_\+audio\+\_\+output\+\_\+set} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, const char $\ast$psz\+\_\+name)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__audio_gaa1ed7a231ff2020d60152c235f15f4cf}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+count} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$, const char $\ast$)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI char $\ast$ \hyperlink{group__libvlc__audio_gac5da6f9bf242c2c11fd2ea69e316fddb}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+longname} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$, const char $\ast$, int)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI char $\ast$ \hyperlink{group__libvlc__audio_gaa54dc93a0adeb65752d3a72848db630c}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+id} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$, const char $\ast$, int)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{structlibvlc__audio__output__device__t}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+t} $\ast$ \hyperlink{group__libvlc__audio_ga5d13bb70351f6fa597d8f1b553da81d5}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+enum} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$mp)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{structlibvlc__audio__output__device__t}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+t} $\ast$ \hyperlink{group__libvlc__audio_ga4f94073a71cd9ee6641ce9bbbfdaf5f3}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+get} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance, const char $\ast$aout)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__audio_gae96430562ae07bfba7d0e841391be8b3}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+release} (\hyperlink{structlibvlc__audio__output__device__t}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+t} $\ast$p\+\_\+list)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__audio_ga4553bc34b90313e6592ad1af0067f31d}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+set} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$mp, const char $\ast$module, const char $\ast$device\+\_\+id)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__audio_ga8c4c8a6c886a9ed33c7de477f363f76f}{libvlc\+\_\+audio\+\_\+output\+\_\+get\+\_\+device\+\_\+type} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__audio_ga94d41f5e5f0f98a6560c8519f6b9b0d0}{libvlc\+\_\+audio\+\_\+output\+\_\+set\+\_\+device\+\_\+type} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$, int)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__audio_ga3066a6b5b7b2648ca403ecc506b02116}{libvlc\+\_\+audio\+\_\+toggle\+\_\+mute} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__audio_ga665d35d090ddd16d971438755ccadb63}{libvlc\+\_\+audio\+\_\+get\+\_\+mute} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__audio_ga438620a3c817b8b4faceb77c476b89fe}{libvlc\+\_\+audio\+\_\+set\+\_\+mute} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, int status)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__audio_ga73a9fef5a0614659261c2d8f1d29b3b7}{libvlc\+\_\+audio\+\_\+get\+\_\+volume} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__audio_ga56911e6b6cd4878796277c19203302a3}{libvlc\+\_\+audio\+\_\+set\+\_\+volume} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, int i\+\_\+volume)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__audio_ga1144b135e4b05e839ee17afa59014d01}{libvlc\+\_\+audio\+\_\+get\+\_\+track\+\_\+count} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{structlibvlc__track__description__t}{libvlc\+\_\+track\+\_\+description\+\_\+t} $\ast$ \hyperlink{group__libvlc__audio_ga1e404c0c8d57ea0d9725c96f12ff494f}{libvlc\+\_\+audio\+\_\+get\+\_\+track\+\_\+description} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__audio_gadabd5adec2b51568225004c3e58fbc2d}{libvlc\+\_\+audio\+\_\+get\+\_\+track} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__audio_gae013e4cf0ae73c093f1a1da1af765d21}{libvlc\+\_\+audio\+\_\+set\+\_\+track} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, int i\+\_\+track)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__audio_gad8f6f73c42a73a189100bb9eb6418be0}{libvlc\+\_\+audio\+\_\+get\+\_\+channel} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__audio_ga9a3227c877b304588b3bd0e1c093b737}{libvlc\+\_\+audio\+\_\+set\+\_\+channel} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, int channel)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int64\+\_\+t \hyperlink{group__libvlc__audio_gab843aa707ea125e630acb086909d5962}{libvlc\+\_\+audio\+\_\+get\+\_\+delay} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__audio_ga8e2d21265f597723e978d325cab285b5}{libvlc\+\_\+audio\+\_\+set\+\_\+delay} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, int64\+\_\+t i\+\_\+delay)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI unsigned \hyperlink{group__libvlc__audio_gad75abcc5fbdc2d620808df6516a8e7fe}{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preset\+\_\+count} (void)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI const char $\ast$ \hyperlink{group__libvlc__audio_ga6d49eeb9252e31111054b2154ce54ced}{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preset\+\_\+name} (unsigned u\+\_\+index)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI unsigned \hyperlink{group__libvlc__audio_ga28ddee836a9398d91d5267831a46f1aa}{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+band\+\_\+count} (void)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI float \hyperlink{group__libvlc__audio_ga4dd31672321d9e2656ca32681d8cdbe6}{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+band\+\_\+frequency} (unsigned u\+\_\+index)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t} $\ast$ \hyperlink{group__libvlc__audio_gad252fff10bf02bc8436b3beab4badef9}{libvlc\+\_\+audio\+\_\+equalizer\+\_\+new} (void)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t} $\ast$ \hyperlink{group__libvlc__audio_ga41d6921b8a10f90c4ad9fd3bf844f035}{libvlc\+\_\+audio\+\_\+equalizer\+\_\+new\+\_\+from\+\_\+preset} (unsigned u\+\_\+index)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__audio_gae574f86a29c7dbe9eeb1f3d397262e55}{libvlc\+\_\+audio\+\_\+equalizer\+\_\+release} (\hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t} $\ast$p\+\_\+equalizer)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__audio_ga3830180c636eee2903517d89d6b57616}{libvlc\+\_\+audio\+\_\+equalizer\+\_\+set\+\_\+preamp} (\hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t} $\ast$p\+\_\+equalizer, float f\+\_\+preamp)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI float \hyperlink{group__libvlc__audio_ga4ed1997fdc55963df5c7ae26c3ffa735}{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preamp} (\hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t} $\ast$p\+\_\+equalizer)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__audio_ga619c39485ef5f963be8829bc627326f0}{libvlc\+\_\+audio\+\_\+equalizer\+\_\+set\+\_\+amp\+\_\+at\+\_\+index} (\hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t} $\ast$p\+\_\+equalizer, float f\+\_\+amp, unsigned u\+\_\+band)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI float \hyperlink{group__libvlc__audio_gaa8947288ffe0d92a486e8da51ae8c3fb}{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+amp\+\_\+at\+\_\+index} (\hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t} $\ast$p\+\_\+equalizer, unsigned u\+\_\+band)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__audio_ga0d355443d391d0bc2dafe9b6963a8f53}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+equalizer} (libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$p\+\_\+mi, \hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t} $\ast$p\+\_\+equalizer)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__libvlc__audio_ga7f84a7c868f1111778ef7e9e30bc3690}\label{group__libvlc__audio_ga7f84a7c868f1111778ef7e9e30bc3690}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+output\+\_\+channel\+\_\+t@{libvlc\+\_\+audio\+\_\+output\+\_\+channel\+\_\+t}}
+\index{libvlc\+\_\+audio\+\_\+output\+\_\+channel\+\_\+t@{libvlc\+\_\+audio\+\_\+output\+\_\+channel\+\_\+t}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+output\+\_\+channel\+\_\+t}{libvlc\_audio\_output\_channel\_t}}
+{\footnotesize\ttfamily typedef enum \hyperlink{group__libvlc__audio_ga50e752d67eaa2738e0f914805b1b3a05}{libvlc\+\_\+audio\+\_\+output\+\_\+channel\+\_\+t}  \hyperlink{group__libvlc__audio_ga50e752d67eaa2738e0f914805b1b3a05}{libvlc\+\_\+audio\+\_\+output\+\_\+channel\+\_\+t}}
+
+Audio channels \mbox{\Hypertarget{group__libvlc__audio_ga059f2f96f5c47f3b7878e21b4d879613}\label{group__libvlc__audio_ga059f2f96f5c47f3b7878e21b4d879613}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+types\+\_\+t@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+types\+\_\+t}}
+\index{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+types\+\_\+t@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+types\+\_\+t}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+types\+\_\+t}{libvlc\_audio\_output\_device\_types\_t}}
+{\footnotesize\ttfamily typedef enum \hyperlink{group__libvlc__audio_ga588fc66806ea8599a17ab92c455c3cf2}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+types\+\_\+t}  \hyperlink{group__libvlc__audio_ga588fc66806ea8599a17ab92c455c3cf2}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+types\+\_\+t}}
+
+Audio device types 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__libvlc__audio_ga50e752d67eaa2738e0f914805b1b3a05}\label{group__libvlc__audio_ga50e752d67eaa2738e0f914805b1b3a05}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+output\+\_\+channel\+\_\+t@{libvlc\+\_\+audio\+\_\+output\+\_\+channel\+\_\+t}}
+\index{libvlc\+\_\+audio\+\_\+output\+\_\+channel\+\_\+t@{libvlc\+\_\+audio\+\_\+output\+\_\+channel\+\_\+t}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+output\+\_\+channel\+\_\+t}{libvlc\_audio\_output\_channel\_t}}
+{\footnotesize\ttfamily enum \hyperlink{group__libvlc__audio_ga50e752d67eaa2738e0f914805b1b3a05}{libvlc\+\_\+audio\+\_\+output\+\_\+channel\+\_\+t}}
+
+Audio channels \mbox{\Hypertarget{group__libvlc__audio_ga588fc66806ea8599a17ab92c455c3cf2}\label{group__libvlc__audio_ga588fc66806ea8599a17ab92c455c3cf2}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+types\+\_\+t@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+types\+\_\+t}}
+\index{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+types\+\_\+t@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+types\+\_\+t}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+types\+\_\+t}{libvlc\_audio\_output\_device\_types\_t}}
+{\footnotesize\ttfamily enum \hyperlink{group__libvlc__audio_ga588fc66806ea8599a17ab92c455c3cf2}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+types\+\_\+t}}
+
+Audio device types 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__libvlc__audio_gaa8947288ffe0d92a486e8da51ae8c3fb}\label{group__libvlc__audio_gaa8947288ffe0d92a486e8da51ae8c3fb}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+amp\+\_\+at\+\_\+index@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+amp\+\_\+at\+\_\+index}}
+\index{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+amp\+\_\+at\+\_\+index@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+amp\+\_\+at\+\_\+index}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+amp\+\_\+at\+\_\+index()}{libvlc\_audio\_equalizer\_get\_amp\_at\_index()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI float libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+amp\+\_\+at\+\_\+index (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t} $\ast$}]{p\+\_\+equalizer,  }\item[{unsigned}]{u\+\_\+band }\end{DoxyParamCaption})}
+
+Get the amplification value for a particular equalizer frequency band.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+equalizer} & valid equalizer handle, must not be N\+U\+LL \\
+\hline
+{\em u\+\_\+band} & index, counting from zero, of the frequency band to get \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+amplification value (Hz); NaN if there is no such frequency band 
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+2.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__audio_ga28ddee836a9398d91d5267831a46f1aa}\label{group__libvlc__audio_ga28ddee836a9398d91d5267831a46f1aa}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+band\+\_\+count@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+band\+\_\+count}}
+\index{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+band\+\_\+count@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+band\+\_\+count}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+band\+\_\+count()}{libvlc\_audio\_equalizer\_get\_band\_count()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI unsigned libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+band\+\_\+count (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get the number of distinct frequency bands for an equalizer.
+
+\begin{DoxyReturn}{Returns}
+number of frequency bands 
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+2.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__audio_ga4dd31672321d9e2656ca32681d8cdbe6}\label{group__libvlc__audio_ga4dd31672321d9e2656ca32681d8cdbe6}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+band\+\_\+frequency@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+band\+\_\+frequency}}
+\index{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+band\+\_\+frequency@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+band\+\_\+frequency}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+band\+\_\+frequency()}{libvlc\_audio\_equalizer\_get\_band\_frequency()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI float libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+band\+\_\+frequency (\begin{DoxyParamCaption}\item[{unsigned}]{u\+\_\+index }\end{DoxyParamCaption})}
+
+Get a particular equalizer band frequency.
+
+This value can be used, for example, to create a label for an equalizer band control in a user interface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\+\_\+index} & index of the band, counting from zero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+equalizer band frequency (Hz), or -\/1 if there is no such band 
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+2.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__audio_ga4ed1997fdc55963df5c7ae26c3ffa735}\label{group__libvlc__audio_ga4ed1997fdc55963df5c7ae26c3ffa735}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preamp@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preamp}}
+\index{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preamp@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preamp}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preamp()}{libvlc\_audio\_equalizer\_get\_preamp()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI float libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preamp (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t} $\ast$}]{p\+\_\+equalizer }\end{DoxyParamCaption})}
+
+Get the current pre-\/amplification value from an equalizer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+equalizer} & valid equalizer handle, must not be N\+U\+LL \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+preamp value (Hz) 
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+2.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__audio_gad75abcc5fbdc2d620808df6516a8e7fe}\label{group__libvlc__audio_gad75abcc5fbdc2d620808df6516a8e7fe}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preset\+\_\+count@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preset\+\_\+count}}
+\index{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preset\+\_\+count@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preset\+\_\+count}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preset\+\_\+count()}{libvlc\_audio\_equalizer\_get\_preset\_count()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI unsigned libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preset\+\_\+count (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get the number of equalizer presets.
+
+\begin{DoxyReturn}{Returns}
+number of presets 
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+2.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__audio_ga6d49eeb9252e31111054b2154ce54ced}\label{group__libvlc__audio_ga6d49eeb9252e31111054b2154ce54ced}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preset\+\_\+name@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preset\+\_\+name}}
+\index{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preset\+\_\+name@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preset\+\_\+name}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preset\+\_\+name()}{libvlc\_audio\_equalizer\_get\_preset\_name()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI const char$\ast$ libvlc\+\_\+audio\+\_\+equalizer\+\_\+get\+\_\+preset\+\_\+name (\begin{DoxyParamCaption}\item[{unsigned}]{u\+\_\+index }\end{DoxyParamCaption})}
+
+Get the name of a particular equalizer preset.
+
+This name can be used, for example, to prepare a preset label or menu in a user interface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\+\_\+index} & index of the preset, counting from zero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+preset name, or N\+U\+LL if there is no such preset 
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+2.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__audio_gad252fff10bf02bc8436b3beab4badef9}\label{group__libvlc__audio_gad252fff10bf02bc8436b3beab4badef9}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+equalizer\+\_\+new@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+new}}
+\index{libvlc\+\_\+audio\+\_\+equalizer\+\_\+new@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+new}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+equalizer\+\_\+new()}{libvlc\_audio\_equalizer\_new()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t}$\ast$ libvlc\+\_\+audio\+\_\+equalizer\+\_\+new (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Create a new default equalizer, with all frequency values zeroed.
+
+The new equalizer can subsequently be applied to a media player by invoking \hyperlink{group__libvlc__audio_ga0d355443d391d0bc2dafe9b6963a8f53}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+equalizer()}.
+
+The returned handle should be freed via \hyperlink{group__libvlc__audio_gae574f86a29c7dbe9eeb1f3d397262e55}{libvlc\+\_\+audio\+\_\+equalizer\+\_\+release()} when it is no longer needed.
+
+\begin{DoxyReturn}{Returns}
+opaque equalizer handle, or N\+U\+LL on error 
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+2.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__audio_ga41d6921b8a10f90c4ad9fd3bf844f035}\label{group__libvlc__audio_ga41d6921b8a10f90c4ad9fd3bf844f035}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+equalizer\+\_\+new\+\_\+from\+\_\+preset@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+new\+\_\+from\+\_\+preset}}
+\index{libvlc\+\_\+audio\+\_\+equalizer\+\_\+new\+\_\+from\+\_\+preset@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+new\+\_\+from\+\_\+preset}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+equalizer\+\_\+new\+\_\+from\+\_\+preset()}{libvlc\_audio\_equalizer\_new\_from\_preset()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t}$\ast$ libvlc\+\_\+audio\+\_\+equalizer\+\_\+new\+\_\+from\+\_\+preset (\begin{DoxyParamCaption}\item[{unsigned}]{u\+\_\+index }\end{DoxyParamCaption})}
+
+Create a new equalizer, with initial frequency values copied from an existing preset.
+
+The new equalizer can subsequently be applied to a media player by invoking \hyperlink{group__libvlc__audio_ga0d355443d391d0bc2dafe9b6963a8f53}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+equalizer()}.
+
+The returned handle should be freed via \hyperlink{group__libvlc__audio_gae574f86a29c7dbe9eeb1f3d397262e55}{libvlc\+\_\+audio\+\_\+equalizer\+\_\+release()} when it is no longer needed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\+\_\+index} & index of the preset, counting from zero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+opaque equalizer handle, or N\+U\+LL on error 
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+2.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__audio_gae574f86a29c7dbe9eeb1f3d397262e55}\label{group__libvlc__audio_gae574f86a29c7dbe9eeb1f3d397262e55}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+equalizer\+\_\+release@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+release}}
+\index{libvlc\+\_\+audio\+\_\+equalizer\+\_\+release@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+release}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+equalizer\+\_\+release()}{libvlc\_audio\_equalizer\_release()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+audio\+\_\+equalizer\+\_\+release (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t} $\ast$}]{p\+\_\+equalizer }\end{DoxyParamCaption})}
+
+Release a previously created equalizer instance.
+
+The equalizer was previously created by using \hyperlink{group__libvlc__audio_gad252fff10bf02bc8436b3beab4badef9}{libvlc\+\_\+audio\+\_\+equalizer\+\_\+new()} or \hyperlink{group__libvlc__audio_ga41d6921b8a10f90c4ad9fd3bf844f035}{libvlc\+\_\+audio\+\_\+equalizer\+\_\+new\+\_\+from\+\_\+preset()}.
+
+It is safe to invoke this method with a N\+U\+LL p\+\_\+equalizer parameter for no effect.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+equalizer} & opaque equalizer handle, or N\+U\+LL \\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+2.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__audio_ga619c39485ef5f963be8829bc627326f0}\label{group__libvlc__audio_ga619c39485ef5f963be8829bc627326f0}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+equalizer\+\_\+set\+\_\+amp\+\_\+at\+\_\+index@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+set\+\_\+amp\+\_\+at\+\_\+index}}
+\index{libvlc\+\_\+audio\+\_\+equalizer\+\_\+set\+\_\+amp\+\_\+at\+\_\+index@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+set\+\_\+amp\+\_\+at\+\_\+index}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+equalizer\+\_\+set\+\_\+amp\+\_\+at\+\_\+index()}{libvlc\_audio\_equalizer\_set\_amp\_at\_index()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+audio\+\_\+equalizer\+\_\+set\+\_\+amp\+\_\+at\+\_\+index (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t} $\ast$}]{p\+\_\+equalizer,  }\item[{float}]{f\+\_\+amp,  }\item[{unsigned}]{u\+\_\+band }\end{DoxyParamCaption})}
+
+Set a new amplification value for a particular equalizer frequency band.
+
+The new equalizer settings are subsequently applied to a media player by invoking \hyperlink{group__libvlc__audio_ga0d355443d391d0bc2dafe9b6963a8f53}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+equalizer()}.
+
+The supplied amplification value will be clamped to the -\/20.\+0 to +20.0 range.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+equalizer} & valid equalizer handle, must not be N\+U\+LL \\
+\hline
+{\em f\+\_\+amp} & amplification value (-\/20.\+0 to 20.\+0 Hz) \\
+\hline
+{\em u\+\_\+band} & index, counting from zero, of the frequency band to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zero on success, -\/1 on error 
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+2.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__audio_ga3830180c636eee2903517d89d6b57616}\label{group__libvlc__audio_ga3830180c636eee2903517d89d6b57616}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+equalizer\+\_\+set\+\_\+preamp@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+set\+\_\+preamp}}
+\index{libvlc\+\_\+audio\+\_\+equalizer\+\_\+set\+\_\+preamp@{libvlc\+\_\+audio\+\_\+equalizer\+\_\+set\+\_\+preamp}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+equalizer\+\_\+set\+\_\+preamp()}{libvlc\_audio\_equalizer\_set\_preamp()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+audio\+\_\+equalizer\+\_\+set\+\_\+preamp (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t} $\ast$}]{p\+\_\+equalizer,  }\item[{float}]{f\+\_\+preamp }\end{DoxyParamCaption})}
+
+Set a new pre-\/amplification value for an equalizer.
+
+The new equalizer settings are subsequently applied to a media player by invoking \hyperlink{group__libvlc__audio_ga0d355443d391d0bc2dafe9b6963a8f53}{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+equalizer()}.
+
+The supplied amplification value will be clamped to the -\/20.\+0 to +20.0 range.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+equalizer} & valid equalizer handle, must not be N\+U\+LL \\
+\hline
+{\em f\+\_\+preamp} & preamp value (-\/20.\+0 to 20.\+0 Hz) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zero on success, -\/1 on error 
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+2.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__audio_gad8f6f73c42a73a189100bb9eb6418be0}\label{group__libvlc__audio_gad8f6f73c42a73a189100bb9eb6418be0}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+get\+\_\+channel@{libvlc\+\_\+audio\+\_\+get\+\_\+channel}}
+\index{libvlc\+\_\+audio\+\_\+get\+\_\+channel@{libvlc\+\_\+audio\+\_\+get\+\_\+channel}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+get\+\_\+channel()}{libvlc\_audio\_get\_channel()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+audio\+\_\+get\+\_\+channel (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get current audio channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & media player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the audio channel 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__libvlc__audio_ga50e752d67eaa2738e0f914805b1b3a05}{libvlc\+\_\+audio\+\_\+output\+\_\+channel\+\_\+t} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__libvlc__audio_gab843aa707ea125e630acb086909d5962}\label{group__libvlc__audio_gab843aa707ea125e630acb086909d5962}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+get\+\_\+delay@{libvlc\+\_\+audio\+\_\+get\+\_\+delay}}
+\index{libvlc\+\_\+audio\+\_\+get\+\_\+delay@{libvlc\+\_\+audio\+\_\+get\+\_\+delay}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+get\+\_\+delay()}{libvlc\_audio\_get\_delay()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int64\+\_\+t libvlc\+\_\+audio\+\_\+get\+\_\+delay (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get current audio delay.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & media player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the audio delay (microseconds) 
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 1.\+1.\+1 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__audio_ga665d35d090ddd16d971438755ccadb63}\label{group__libvlc__audio_ga665d35d090ddd16d971438755ccadb63}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+get\+\_\+mute@{libvlc\+\_\+audio\+\_\+get\+\_\+mute}}
+\index{libvlc\+\_\+audio\+\_\+get\+\_\+mute@{libvlc\+\_\+audio\+\_\+get\+\_\+mute}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+get\+\_\+mute()}{libvlc\_audio\_get\_mute()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+audio\+\_\+get\+\_\+mute (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get current mute status.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & media player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the mute status (boolean) if defined, -\/1 if undefined/unapplicable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__audio_gadabd5adec2b51568225004c3e58fbc2d}\label{group__libvlc__audio_gadabd5adec2b51568225004c3e58fbc2d}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+get\+\_\+track@{libvlc\+\_\+audio\+\_\+get\+\_\+track}}
+\index{libvlc\+\_\+audio\+\_\+get\+\_\+track@{libvlc\+\_\+audio\+\_\+get\+\_\+track}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+get\+\_\+track()}{libvlc\_audio\_get\_track()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+audio\+\_\+get\+\_\+track (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get current audio track.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & media player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the audio track ID or -\/1 if no active input. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__audio_ga1144b135e4b05e839ee17afa59014d01}\label{group__libvlc__audio_ga1144b135e4b05e839ee17afa59014d01}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+get\+\_\+track\+\_\+count@{libvlc\+\_\+audio\+\_\+get\+\_\+track\+\_\+count}}
+\index{libvlc\+\_\+audio\+\_\+get\+\_\+track\+\_\+count@{libvlc\+\_\+audio\+\_\+get\+\_\+track\+\_\+count}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+get\+\_\+track\+\_\+count()}{libvlc\_audio\_get\_track\_count()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+audio\+\_\+get\+\_\+track\+\_\+count (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get number of available audio tracks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & media player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of available audio tracks (int), or -\/1 if unavailable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__audio_ga1e404c0c8d57ea0d9725c96f12ff494f}\label{group__libvlc__audio_ga1e404c0c8d57ea0d9725c96f12ff494f}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+get\+\_\+track\+\_\+description@{libvlc\+\_\+audio\+\_\+get\+\_\+track\+\_\+description}}
+\index{libvlc\+\_\+audio\+\_\+get\+\_\+track\+\_\+description@{libvlc\+\_\+audio\+\_\+get\+\_\+track\+\_\+description}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+get\+\_\+track\+\_\+description()}{libvlc\_audio\_get\_track\_description()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{structlibvlc__track__description__t}{libvlc\+\_\+track\+\_\+description\+\_\+t}$\ast$ libvlc\+\_\+audio\+\_\+get\+\_\+track\+\_\+description (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get the description of available audio tracks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & media player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list with description of available audio tracks, or N\+U\+LL 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__audio_ga73a9fef5a0614659261c2d8f1d29b3b7}\label{group__libvlc__audio_ga73a9fef5a0614659261c2d8f1d29b3b7}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+get\+\_\+volume@{libvlc\+\_\+audio\+\_\+get\+\_\+volume}}
+\index{libvlc\+\_\+audio\+\_\+get\+\_\+volume@{libvlc\+\_\+audio\+\_\+get\+\_\+volume}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+get\+\_\+volume()}{libvlc\_audio\_get\_volume()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+audio\+\_\+get\+\_\+volume (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Get current software audio volume.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & media player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the software volume in percents (0 = mute, 100 = nominal / 0dB) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__audio_gaa1ed7a231ff2020d60152c235f15f4cf}\label{group__libvlc__audio_gaa1ed7a231ff2020d60152c235f15f4cf}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+count@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+count}}
+\index{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+count@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+count}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+count()}{libvlc\_audio\_output\_device\_count()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+count (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{,  }\item[{const char $\ast$}]{ }\end{DoxyParamCaption})}
+
+Backward compatibility stub. Do not use in new code. Use \hyperlink{group__libvlc__audio_ga4f94073a71cd9ee6641ce9bbbfdaf5f3}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+get()} instead. \begin{DoxyReturn}{Returns}
+always 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__audio_ga5d13bb70351f6fa597d8f1b553da81d5}\label{group__libvlc__audio_ga5d13bb70351f6fa597d8f1b553da81d5}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+enum@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+enum}}
+\index{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+enum@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+enum}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+enum()}{libvlc\_audio\_output\_device\_enum()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{structlibvlc__audio__output__device__t}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+t}$\ast$ libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+enum (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{mp }\end{DoxyParamCaption})}
+
+Gets a list of potential audio output devices, \begin{DoxySeeAlso}{See also}
+\hyperlink{group__libvlc__audio_ga4553bc34b90313e6592ad1af0067f31d}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+set()}.
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+Not all audio outputs support enumerating devices. The audio output may be functional even if the list is empty (N\+U\+LL).
+
+The list may not be exhaustive.
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Some audio output devices in the list might not actually work in some circumstances. By default, it is recommended to not specify any explicit audio device.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em mp} & media player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A N\+U\+L\+L-\/terminated linked list of potential audio output devices. It must be freed it with \hyperlink{group__libvlc__audio_gae96430562ae07bfba7d0e841391be8b3}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+release()} 
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+2.\+0 or later. 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__audio_gaa54dc93a0adeb65752d3a72848db630c}\label{group__libvlc__audio_gaa54dc93a0adeb65752d3a72848db630c}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+id@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+id}}
+\index{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+id@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+id}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+id()}{libvlc\_audio\_output\_device\_id()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI char$\ast$ libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+id (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{,  }\item[{const char $\ast$}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+Backward compatibility stub. Do not use in new code. Use \hyperlink{group__libvlc__audio_ga4f94073a71cd9ee6641ce9bbbfdaf5f3}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+get()} instead. \begin{DoxyReturn}{Returns}
+always N\+U\+LL. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__audio_ga4f94073a71cd9ee6641ce9bbbfdaf5f3}\label{group__libvlc__audio_ga4f94073a71cd9ee6641ce9bbbfdaf5f3}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+get@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+get}}
+\index{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+get@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+get}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+get()}{libvlc\_audio\_output\_device\_list\_get()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{structlibvlc__audio__output__device__t}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+t}$\ast$ libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+get (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance,  }\item[{const char $\ast$}]{aout }\end{DoxyParamCaption})}
+
+Gets a list of audio output devices for a given audio output module, \begin{DoxySeeAlso}{See also}
+\hyperlink{group__libvlc__audio_ga4553bc34b90313e6592ad1af0067f31d}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+set()}.
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+Not all audio outputs support this. In particular, an empty (N\+U\+LL) list of devices does {\bfseries not} imply that the specified audio output does not work.
+
+The list might not be exhaustive.
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Some audio output devices in the list might not actually work in some circumstances. By default, it is recommended to not specify any explicit audio device.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & libvlc instance \\
+\hline
+{\em psz\+\_\+aout} & audio output name (as returned by \hyperlink{group__libvlc__audio_gabdb1104576d289121beb13cb4def720f}{libvlc\+\_\+audio\+\_\+output\+\_\+list\+\_\+get()}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A N\+U\+L\+L-\/terminated linked list of potential audio output devices. It must be freed it with \hyperlink{group__libvlc__audio_gae96430562ae07bfba7d0e841391be8b3}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+release()} 
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+1.\+0 or later. 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__audio_gae96430562ae07bfba7d0e841391be8b3}\label{group__libvlc__audio_gae96430562ae07bfba7d0e841391be8b3}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+release@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+release}}
+\index{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+release@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+release}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+release()}{libvlc\_audio\_output\_device\_list\_release()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+release (\begin{DoxyParamCaption}\item[{\hyperlink{structlibvlc__audio__output__device__t}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+t} $\ast$}]{p\+\_\+list }\end{DoxyParamCaption})}
+
+Frees a list of available audio output devices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+list} & list with audio outputs for release \\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+1.\+0 or later. 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__audio_gac5da6f9bf242c2c11fd2ea69e316fddb}\label{group__libvlc__audio_gac5da6f9bf242c2c11fd2ea69e316fddb}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+longname@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+longname}}
+\index{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+longname@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+longname}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+longname()}{libvlc\_audio\_output\_device\_longname()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI char$\ast$ libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+longname (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{,  }\item[{const char $\ast$}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+Backward compatibility stub. Do not use in new code. Use \hyperlink{group__libvlc__audio_ga4f94073a71cd9ee6641ce9bbbfdaf5f3}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+get()} instead. \begin{DoxyReturn}{Returns}
+always N\+U\+LL. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__audio_ga4553bc34b90313e6592ad1af0067f31d}\label{group__libvlc__audio_ga4553bc34b90313e6592ad1af0067f31d}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+set@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+set}}
+\index{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+set@{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+set}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+set()}{libvlc\_audio\_output\_device\_set()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+set (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{mp,  }\item[{const char $\ast$}]{module,  }\item[{const char $\ast$}]{device\+\_\+id }\end{DoxyParamCaption})}
+
+Configures an explicit audio output device.
+
+If the module paramater is N\+U\+LL, audio output will be moved to the device specified by the device identifier string immediately. This is the recommended usage.
+
+A list of adequate potential device strings can be obtained with \hyperlink{group__libvlc__audio_ga5d13bb70351f6fa597d8f1b553da81d5}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+enum()}.
+
+However passing N\+U\+LL is supported in Lib\+V\+LC version 2.\+2.\+0 and later only; in earlier versions, this function would have no effects when the module parameter was N\+U\+LL.
+
+If the module parameter is not N\+U\+LL, the device parameter of the corresponding audio output, if it exists, will be set to the specified string. Note that some audio output modules do not have such a parameter (notably M\+M\+Device and Pulse\+Audio).
+
+A list of adequate potential device strings can be obtained with \hyperlink{group__libvlc__audio_ga4f94073a71cd9ee6641ce9bbbfdaf5f3}{libvlc\+\_\+audio\+\_\+output\+\_\+device\+\_\+list\+\_\+get()}.
+
+\begin{DoxyNote}{Note}
+This function does not select the specified audio output plugin. \hyperlink{group__libvlc__audio_ga1e0e783b4b68a4544cc688d8f8c38284}{libvlc\+\_\+audio\+\_\+output\+\_\+set()} is used for that purpose.
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+The syntax for the device parameter depends on the audio output.
+\end{DoxyWarning}
+Some audio output modules require further parameters (e.\+g. a channels map in the case of A\+L\+SA).
+
+
+\begin{DoxyParams}{Parameters}
+{\em mp} & media player \\
+\hline
+{\em module} & If N\+U\+LL, current audio output module. if non-\/\+N\+U\+LL, name of audio output module (\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structlibvlc__audio__output__t}{libvlc\+\_\+audio\+\_\+output\+\_\+t}) 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em device\+\_\+id} & device identifier string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing. Errors are ignored (this is a design bug). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__audio_ga8c4c8a6c886a9ed33c7de477f363f76f}\label{group__libvlc__audio_ga8c4c8a6c886a9ed33c7de477f363f76f}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+output\+\_\+get\+\_\+device\+\_\+type@{libvlc\+\_\+audio\+\_\+output\+\_\+get\+\_\+device\+\_\+type}}
+\index{libvlc\+\_\+audio\+\_\+output\+\_\+get\+\_\+device\+\_\+type@{libvlc\+\_\+audio\+\_\+output\+\_\+get\+\_\+device\+\_\+type}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+output\+\_\+get\+\_\+device\+\_\+type()}{libvlc\_audio\_output\_get\_device\_type()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+audio\+\_\+output\+\_\+get\+\_\+device\+\_\+type (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Stub for backward compatibility. \begin{DoxyReturn}{Returns}
+always -\/1. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__audio_gabdb1104576d289121beb13cb4def720f}\label{group__libvlc__audio_gabdb1104576d289121beb13cb4def720f}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+output\+\_\+list\+\_\+get@{libvlc\+\_\+audio\+\_\+output\+\_\+list\+\_\+get}}
+\index{libvlc\+\_\+audio\+\_\+output\+\_\+list\+\_\+get@{libvlc\+\_\+audio\+\_\+output\+\_\+list\+\_\+get}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+output\+\_\+list\+\_\+get()}{libvlc\_audio\_output\_list\_get()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{structlibvlc__audio__output__t}{libvlc\+\_\+audio\+\_\+output\+\_\+t}$\ast$ libvlc\+\_\+audio\+\_\+output\+\_\+list\+\_\+get (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance }\end{DoxyParamCaption})}
+
+Gets the list of available audio output modules.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & libvlc instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of available audio outputs. It must be freed it with 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__libvlc__audio_ga9f573074e83bd671b90468b459dc9577}{libvlc\+\_\+audio\+\_\+output\+\_\+list\+\_\+release} 
+
+\hyperlink{structlibvlc__audio__output__t}{libvlc\+\_\+audio\+\_\+output\+\_\+t} . In case of error, N\+U\+LL is returned. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__libvlc__audio_ga9f573074e83bd671b90468b459dc9577}\label{group__libvlc__audio_ga9f573074e83bd671b90468b459dc9577}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+output\+\_\+list\+\_\+release@{libvlc\+\_\+audio\+\_\+output\+\_\+list\+\_\+release}}
+\index{libvlc\+\_\+audio\+\_\+output\+\_\+list\+\_\+release@{libvlc\+\_\+audio\+\_\+output\+\_\+list\+\_\+release}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+output\+\_\+list\+\_\+release()}{libvlc\_audio\_output\_list\_release()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+audio\+\_\+output\+\_\+list\+\_\+release (\begin{DoxyParamCaption}\item[{\hyperlink{structlibvlc__audio__output__t}{libvlc\+\_\+audio\+\_\+output\+\_\+t} $\ast$}]{p\+\_\+list }\end{DoxyParamCaption})}
+
+Frees the list of available audio output modules.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+list} & list with audio outputs for release \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__audio_ga1e0e783b4b68a4544cc688d8f8c38284}\label{group__libvlc__audio_ga1e0e783b4b68a4544cc688d8f8c38284}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+output\+\_\+set@{libvlc\+\_\+audio\+\_\+output\+\_\+set}}
+\index{libvlc\+\_\+audio\+\_\+output\+\_\+set@{libvlc\+\_\+audio\+\_\+output\+\_\+set}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+output\+\_\+set()}{libvlc\_audio\_output\_set()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+audio\+\_\+output\+\_\+set (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{const char $\ast$}]{psz\+\_\+name }\end{DoxyParamCaption})}
+
+Selects an audio output module. \begin{DoxyNote}{Note}
+Any change will take be effect only after playback is stopped and restarted. Audio output cannot be changed while playing.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & media player \\
+\hline
+{\em psz\+\_\+name} & name of audio output, use psz\+\_\+name of \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structlibvlc__audio__output__t}{libvlc\+\_\+audio\+\_\+output\+\_\+t} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+0 if function succeded, -\/1 on error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__audio_ga94d41f5e5f0f98a6560c8519f6b9b0d0}\label{group__libvlc__audio_ga94d41f5e5f0f98a6560c8519f6b9b0d0}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+output\+\_\+set\+\_\+device\+\_\+type@{libvlc\+\_\+audio\+\_\+output\+\_\+set\+\_\+device\+\_\+type}}
+\index{libvlc\+\_\+audio\+\_\+output\+\_\+set\+\_\+device\+\_\+type@{libvlc\+\_\+audio\+\_\+output\+\_\+set\+\_\+device\+\_\+type}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+output\+\_\+set\+\_\+device\+\_\+type()}{libvlc\_audio\_output\_set\_device\_type()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+audio\+\_\+output\+\_\+set\+\_\+device\+\_\+type (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+Stub for backward compatibility. \mbox{\Hypertarget{group__libvlc__audio_ga9a3227c877b304588b3bd0e1c093b737}\label{group__libvlc__audio_ga9a3227c877b304588b3bd0e1c093b737}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+set\+\_\+channel@{libvlc\+\_\+audio\+\_\+set\+\_\+channel}}
+\index{libvlc\+\_\+audio\+\_\+set\+\_\+channel@{libvlc\+\_\+audio\+\_\+set\+\_\+channel}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+set\+\_\+channel()}{libvlc\_audio\_set\_channel()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+audio\+\_\+set\+\_\+channel (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{int}]{channel }\end{DoxyParamCaption})}
+
+Set current audio channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & media player \\
+\hline
+{\em channel} & the audio channel, \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__libvlc__audio_ga50e752d67eaa2738e0f914805b1b3a05}{libvlc\+\_\+audio\+\_\+output\+\_\+channel\+\_\+t} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+0 on success, -\/1 on error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__audio_ga8e2d21265f597723e978d325cab285b5}\label{group__libvlc__audio_ga8e2d21265f597723e978d325cab285b5}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+set\+\_\+delay@{libvlc\+\_\+audio\+\_\+set\+\_\+delay}}
+\index{libvlc\+\_\+audio\+\_\+set\+\_\+delay@{libvlc\+\_\+audio\+\_\+set\+\_\+delay}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+set\+\_\+delay()}{libvlc\_audio\_set\_delay()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+audio\+\_\+set\+\_\+delay (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{int64\+\_\+t}]{i\+\_\+delay }\end{DoxyParamCaption})}
+
+Set current audio delay. The audio delay will be reset to zero each time the media changes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & media player \\
+\hline
+{\em i\+\_\+delay} & the audio delay (microseconds) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, -\/1 on error 
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 1.\+1.\+1 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__audio_ga438620a3c817b8b4faceb77c476b89fe}\label{group__libvlc__audio_ga438620a3c817b8b4faceb77c476b89fe}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+set\+\_\+mute@{libvlc\+\_\+audio\+\_\+set\+\_\+mute}}
+\index{libvlc\+\_\+audio\+\_\+set\+\_\+mute@{libvlc\+\_\+audio\+\_\+set\+\_\+mute}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+set\+\_\+mute()}{libvlc\_audio\_set\_mute()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+audio\+\_\+set\+\_\+mute (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{int}]{status }\end{DoxyParamCaption})}
+
+Set mute status.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & media player \\
+\hline
+{\em status} & If status is true then mute, otherwise unmute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This function does not always work. If there are no active audio playback stream, the mute status might not be available. If digital pass-\/through (S/\+P\+D\+IF, H\+D\+MI...) is in use, muting may be unapplicable. Also some audio output plugins do not support muting at all. 
+\end{DoxyWarning}
+\begin{DoxyNote}{Note}
+To force silent playback, disable all audio tracks. This is more efficient and reliable than mute. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__libvlc__audio_gae013e4cf0ae73c093f1a1da1af765d21}\label{group__libvlc__audio_gae013e4cf0ae73c093f1a1da1af765d21}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+set\+\_\+track@{libvlc\+\_\+audio\+\_\+set\+\_\+track}}
+\index{libvlc\+\_\+audio\+\_\+set\+\_\+track@{libvlc\+\_\+audio\+\_\+set\+\_\+track}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+set\+\_\+track()}{libvlc\_audio\_set\_track()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+audio\+\_\+set\+\_\+track (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{int}]{i\+\_\+track }\end{DoxyParamCaption})}
+
+Set current audio track.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & media player \\
+\hline
+{\em i\+\_\+track} & the track ID (i\+\_\+id field from track description) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, -\/1 on error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__audio_ga56911e6b6cd4878796277c19203302a3}\label{group__libvlc__audio_ga56911e6b6cd4878796277c19203302a3}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+set\+\_\+volume@{libvlc\+\_\+audio\+\_\+set\+\_\+volume}}
+\index{libvlc\+\_\+audio\+\_\+set\+\_\+volume@{libvlc\+\_\+audio\+\_\+set\+\_\+volume}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+set\+\_\+volume()}{libvlc\_audio\_set\_volume()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+audio\+\_\+set\+\_\+volume (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{int}]{i\+\_\+volume }\end{DoxyParamCaption})}
+
+Set current software audio volume.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & media player \\
+\hline
+{\em i\+\_\+volume} & the volume in percents (0 = mute, 100 = 0dB) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the volume was set, -\/1 if it was out of range 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__audio_ga3066a6b5b7b2648ca403ecc506b02116}\label{group__libvlc__audio_ga3066a6b5b7b2648ca403ecc506b02116}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+audio\+\_\+toggle\+\_\+mute@{libvlc\+\_\+audio\+\_\+toggle\+\_\+mute}}
+\index{libvlc\+\_\+audio\+\_\+toggle\+\_\+mute@{libvlc\+\_\+audio\+\_\+toggle\+\_\+mute}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+audio\+\_\+toggle\+\_\+mute()}{libvlc\_audio\_toggle\_mute()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+audio\+\_\+toggle\+\_\+mute (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi }\end{DoxyParamCaption})}
+
+Toggle mute status.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & media player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Toggling mute atomically is not always possible\+: On some platforms, other processes can mute the V\+LC audio playback stream asynchronously. Thus, there is a small race condition where toggling will not work. See also the limitations of \hyperlink{group__libvlc__audio_ga438620a3c817b8b4faceb77c476b89fe}{libvlc\+\_\+audio\+\_\+set\+\_\+mute()}. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{group__libvlc__audio_ga0d355443d391d0bc2dafe9b6963a8f53}\label{group__libvlc__audio_ga0d355443d391d0bc2dafe9b6963a8f53}} 
+\index{Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}!libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+equalizer@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+equalizer}}
+\index{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+equalizer@{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+equalizer}!Lib\+V\+L\+C audio controls@{Lib\+V\+L\+C audio controls}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+equalizer()}{libvlc\_media\_player\_set\_equalizer()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+player\+\_\+set\+\_\+equalizer (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+player\+\_\+t $\ast$}]{p\+\_\+mi,  }\item[{\hyperlink{group__libvlc__media__player_ga1ea141a84d68d0147fc58d99bfc83ab7}{libvlc\+\_\+equalizer\+\_\+t} $\ast$}]{p\+\_\+equalizer }\end{DoxyParamCaption})}
+
+Apply new equalizer settings to a media player.
+
+The equalizer is first created by invoking \hyperlink{group__libvlc__audio_gad252fff10bf02bc8436b3beab4badef9}{libvlc\+\_\+audio\+\_\+equalizer\+\_\+new()} or \hyperlink{group__libvlc__audio_ga41d6921b8a10f90c4ad9fd3bf844f035}{libvlc\+\_\+audio\+\_\+equalizer\+\_\+new\+\_\+from\+\_\+preset()}.
+
+It is possible to apply new equalizer settings to a media player whether the media player is currently playing media or not.
+
+Invoking this method will immediately apply the new equalizer settings to the audio output of the currently playing media if there is any.
+
+If there is no currently playing media, the new equalizer settings will be applied later if and when new media is played.
+
+Equalizer settings will automatically be applied to subsequently played media.
+
+To disable the equalizer for a media player invoke this method passing N\+U\+LL for the p\+\_\+equalizer parameter.
+
+The media player does not keep a reference to the supplied equalizer so it is safe for an application to release the equalizer reference any time after this method returns.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mi} & opaque media player handle \\
+\hline
+{\em p\+\_\+equalizer} & opaque equalizer handle, or N\+U\+LL to disable the equalizer for this media player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zero on success, -\/1 on error 
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+2.\+0 or later 
+\end{DoxyVersion}

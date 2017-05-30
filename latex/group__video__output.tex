@@ -1,0 +1,90 @@
+\hypertarget{group__video__output}{}\section{Video Output}
+\label{group__video__output}\index{Video Output@{Video Output}}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__subpicture}{Video Subpictures}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structvout__configuration__t}{vout\+\_\+configuration\+\_\+t}
+\item 
+struct \hyperlink{structvout__thread__t}{vout\+\_\+thread\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{group__video__output_ga88d1c41dc17e170ca31480d77bb7a924}{vout\+\_\+thread\+\_\+sys\+\_\+t} \hyperlink{group__video__output_ga88d1c41dc17e170ca31480d77bb7a924}{vout\+\_\+thread\+\_\+sys\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structvout__thread__t}{vout\+\_\+thread\+\_\+t} $\ast$ \hyperlink{group__video__output_ga4c225701bb02847e303ab12bd7740394}{vout\+\_\+\+Request} (\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$object, const \hyperlink{structvout__configuration__t}{vout\+\_\+configuration\+\_\+t} $\ast$cfg)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__video__output_gac4265e793646e4730afe6ce9495205ae}{vout\+\_\+\+Close} (\hyperlink{structvout__thread__t}{vout\+\_\+thread\+\_\+t} $\ast$p\+\_\+vout)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__video__output_gaf9bf2ff7f4467dd658cb0469b5c0b5ed}{vout\+\_\+\+Get\+Snapshot} (\hyperlink{structvout__thread__t}{vout\+\_\+thread\+\_\+t} $\ast$p\+\_\+vout, block\+\_\+t $\ast$$\ast$pp\+\_\+image, \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$$\ast$pp\+\_\+picture, \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$p\+\_\+fmt, const char $\ast$psz\+\_\+format, \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} i\+\_\+timeout)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This module describes the programming interface for video output threads. It includes functions allowing to open a new thread, send pictures to a thread, and destroy a previously opened video output thread. 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__video__output_ga88d1c41dc17e170ca31480d77bb7a924}\label{group__video__output_ga88d1c41dc17e170ca31480d77bb7a924}} 
+\index{Video Output@{Video Output}!vout\+\_\+thread\+\_\+sys\+\_\+t@{vout\+\_\+thread\+\_\+sys\+\_\+t}}
+\index{vout\+\_\+thread\+\_\+sys\+\_\+t@{vout\+\_\+thread\+\_\+sys\+\_\+t}!Video Output@{Video Output}}
+\subsubsection{\texorpdfstring{vout\+\_\+thread\+\_\+sys\+\_\+t}{vout\_thread\_sys\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{group__video__output_ga88d1c41dc17e170ca31480d77bb7a924}{vout\+\_\+thread\+\_\+sys\+\_\+t} \hyperlink{group__video__output_ga88d1c41dc17e170ca31480d77bb7a924}{vout\+\_\+thread\+\_\+sys\+\_\+t}}
+
+Video output thread private structure 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__video__output_gac4265e793646e4730afe6ce9495205ae}\label{group__video__output_gac4265e793646e4730afe6ce9495205ae}} 
+\index{Video Output@{Video Output}!vout\+\_\+\+Close@{vout\+\_\+\+Close}}
+\index{vout\+\_\+\+Close@{vout\+\_\+\+Close}!Video Output@{Video Output}}
+\subsubsection{\texorpdfstring{vout\+\_\+\+Close()}{vout\_Close()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void vout\+\_\+\+Close (\begin{DoxyParamCaption}\item[{\hyperlink{structvout__thread__t}{vout\+\_\+thread\+\_\+t} $\ast$}]{p\+\_\+vout }\end{DoxyParamCaption})}
+
+This function will close a vout created by vout\+\_\+\+Request. The associated vout module is closed. Note\+: It is not released yet, you\textquotesingle{}ll have to call vlc\+\_\+object\+\_\+release() or use the convenient vout\+\_\+\+Close\+And\+Release().
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+vout} & the vout to close \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__video__output_gaf9bf2ff7f4467dd658cb0469b5c0b5ed}\label{group__video__output_gaf9bf2ff7f4467dd658cb0469b5c0b5ed}} 
+\index{Video Output@{Video Output}!vout\+\_\+\+Get\+Snapshot@{vout\+\_\+\+Get\+Snapshot}}
+\index{vout\+\_\+\+Get\+Snapshot@{vout\+\_\+\+Get\+Snapshot}!Video Output@{Video Output}}
+\subsubsection{\texorpdfstring{vout\+\_\+\+Get\+Snapshot()}{vout\_GetSnapshot()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI int vout\+\_\+\+Get\+Snapshot (\begin{DoxyParamCaption}\item[{\hyperlink{structvout__thread__t}{vout\+\_\+thread\+\_\+t} $\ast$}]{p\+\_\+vout,  }\item[{block\+\_\+t $\ast$$\ast$}]{pp\+\_\+image,  }\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$$\ast$}]{pp\+\_\+picture,  }\item[{\hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{p\+\_\+fmt,  }\item[{const char $\ast$}]{psz\+\_\+format,  }\item[{\hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t}}]{i\+\_\+timeout }\end{DoxyParamCaption})}
+
+This function will handle a snapshot request.
+
+pp\+\_\+image, pp\+\_\+picture and p\+\_\+fmt can be N\+U\+LL otherwise they will be set with returned value in case of success.
+
+pp\+\_\+image will hold an encoded picture in psz\+\_\+format format.
+
+i\+\_\+timeout specifies the time the function will wait for a snapshot to be available. \mbox{\Hypertarget{group__video__output_ga4c225701bb02847e303ab12bd7740394}\label{group__video__output_ga4c225701bb02847e303ab12bd7740394}} 
+\index{Video Output@{Video Output}!vout\+\_\+\+Request@{vout\+\_\+\+Request}}
+\index{vout\+\_\+\+Request@{vout\+\_\+\+Request}!Video Output@{Video Output}}
+\subsubsection{\texorpdfstring{vout\+\_\+\+Request()}{vout\_Request()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structvout__thread__t}{vout\+\_\+thread\+\_\+t}$\ast$ vout\+\_\+\+Request (\begin{DoxyParamCaption}\item[{\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$}]{object,  }\item[{const \hyperlink{structvout__configuration__t}{vout\+\_\+configuration\+\_\+t} $\ast$}]{cfg }\end{DoxyParamCaption})}
+
+Returns a suitable vout or release the given one.
+
+If cfg-\/$>$fmt is non N\+U\+LL and valid, a vout will be returned, reusing cfg-\/$>$vout is possible, otherwise it returns N\+U\+LL. If cfg-\/$>$vout is not used, it will be closed and released.
+
+You can release the returned value either by vout\+\_\+\+Request or \hyperlink{group__video__output_gac4265e793646e4730afe6ce9495205ae}{vout\+\_\+\+Close()} followed by a vlc\+\_\+object\+\_\+release() or shorter vout\+\_\+\+Close\+And\+Release()
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a vlc object \\
+\hline
+{\em cfg} & the video configuration requested. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vout 
+\end{DoxyReturn}

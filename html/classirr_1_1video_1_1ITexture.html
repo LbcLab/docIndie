@@ -74,7 +74,7 @@ $(function() {
 <p>Interface of a Video Driver dependent Texture.  
  <a href="classirr_1_1video_1_1ITexture.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="ITexture_8h_source.html">ITexture.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="indie__share_2controller_2include_2ITexture_8h_source.html">ITexture.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for irr::video::ITexture:</div>
 <div class="dyncontent">
@@ -82,16 +82,59 @@ Inheritance diagram for irr::video::ITexture:</div>
   <img src="classirr_1_1video_1_1ITexture.png" usemap="#irr::video::ITexture_map" alt=""/>
   <map id="irr::video::ITexture_map" name="irr::video::ITexture_map">
 <area href="classirr_1_1IReferenceCounted.html" title="Base class of most objects of the Irrlicht Engine. " alt="irr::IReferenceCounted" shape="rect" coords="0,0,140,24"/>
+<area href="classirr_1_1IReferenceCounted.html" title="Base class of most objects of the Irrlicht Engine. " alt="irr::IReferenceCounted" shape="rect" coords="150,0,290,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a32dbd62fef8a65f11e5b440706346c90"><td class="memItemLeft" align="right" valign="top"><a id="a32dbd62fef8a65f11e5b440706346c90"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#a32dbd62fef8a65f11e5b440706346c90">ITexture</a> (const <a class="el" href="namespaceirr_1_1io.html#ab1bdc45edb3f94d8319c02bc0f840ee1">io::path</a> &amp;name)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#a32dbd62fef8a65f11e5b440706346c90">ITexture</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">io::path</a> &amp;name)</td></tr>
 <tr class="memdesc:a32dbd62fef8a65f11e5b440706346c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor <br /></td></tr>
 <tr class="separator:a32dbd62fef8a65f11e5b440706346c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa09ee89973a645ebdd2bd61ed859df38"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#aa09ee89973a645ebdd2bd61ed859df38">lock</a> (<a class="el" href="namespaceirr_1_1video.html#a3916d259e8fe0d0d02e8ee0adc8af5bc">E_TEXTURE_LOCK_MODE</a> mode=<a class="el" href="namespaceirr_1_1video.html#a3916d259e8fe0d0d02e8ee0adc8af5bca41973750ecd380c9a17fa575262f5037">ETLM_READ_WRITE</a>, <a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> mipmapLevel=0)=0</td></tr>
+<tr class="memitem:aa09ee89973a645ebdd2bd61ed859df38"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#aa09ee89973a645ebdd2bd61ed859df38">lock</a> (<a class="el" href="namespaceirr_1_1video.html#a3916d259e8fe0d0d02e8ee0adc8af5bc">E_TEXTURE_LOCK_MODE</a> mode=<a class="el" href="namespaceirr_1_1video.html#a3916d259e8fe0d0d02e8ee0adc8af5bcad742bd0e885e6a08c86b8d3d5c601952">ETLM_READ_WRITE</a>, <a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> mipmapLevel=0)=0</td></tr>
+<tr class="memdesc:aa09ee89973a645ebdd2bd61ed859df38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock function.  <a href="#aa09ee89973a645ebdd2bd61ed859df38">More...</a><br /></td></tr>
+<tr class="separator:aa09ee89973a645ebdd2bd61ed859df38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b9a25aa18528ade37a492bd7b20a10"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#a15b9a25aa18528ade37a492bd7b20a10">unlock</a> ()=0</td></tr>
+<tr class="memdesc:a15b9a25aa18528ade37a492bd7b20a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock function. Must be called after a <a class="el" href="classirr_1_1video_1_1ITexture.html#aa09ee89973a645ebdd2bd61ed859df38" title="Lock function. ">lock()</a> to the texture.  <a href="#a15b9a25aa18528ade37a492bd7b20a10">More...</a><br /></td></tr>
+<tr class="separator:a15b9a25aa18528ade37a492bd7b20a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbb05bcee8ec7fa11bb4ccfdb725cda8"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classirr_1_1core_1_1dimension2d.html">core::dimension2d</a>&lt; <a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#adbb05bcee8ec7fa11bb4ccfdb725cda8">getOriginalSize</a> () const =0</td></tr>
+<tr class="memdesc:adbb05bcee8ec7fa11bb4ccfdb725cda8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get original size of the texture.  <a href="#adbb05bcee8ec7fa11bb4ccfdb725cda8">More...</a><br /></td></tr>
+<tr class="separator:adbb05bcee8ec7fa11bb4ccfdb725cda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfcf9558c0f1ae543782c03f7903c48e"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classirr_1_1core_1_1dimension2d.html">core::dimension2d</a>&lt; <a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#adfcf9558c0f1ae543782c03f7903c48e">getSize</a> () const =0</td></tr>
+<tr class="memdesc:adfcf9558c0f1ae543782c03f7903c48e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get dimension (=size) of the texture.  <a href="#adfcf9558c0f1ae543782c03f7903c48e">More...</a><br /></td></tr>
+<tr class="separator:adfcf9558c0f1ae543782c03f7903c48e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c6abdc0c789e6022e4e1b8a06cfab71"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1video.html#ae35a6de6d436c76107ad157fe42356d0">E_DRIVER_TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#a4c6abdc0c789e6022e4e1b8a06cfab71">getDriverType</a> () const =0</td></tr>
+<tr class="memdesc:a4c6abdc0c789e6022e4e1b8a06cfab71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get driver type of texture.  <a href="#a4c6abdc0c789e6022e4e1b8a06cfab71">More...</a><br /></td></tr>
+<tr class="separator:a4c6abdc0c789e6022e4e1b8a06cfab71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48bbc0208c046724fc3264406f774132"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr_1_1video.html#a1d5e487888c32b1674a8f75116d829ed">ECOLOR_FORMAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#a48bbc0208c046724fc3264406f774132">getColorFormat</a> () const =0</td></tr>
+<tr class="memdesc:a48bbc0208c046724fc3264406f774132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the color format of texture.  <a href="#a48bbc0208c046724fc3264406f774132">More...</a><br /></td></tr>
+<tr class="separator:a48bbc0208c046724fc3264406f774132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14fd1eba217a0dd86b40c4d792ab14ea"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#a14fd1eba217a0dd86b40c4d792ab14ea">getPitch</a> () const =0</td></tr>
+<tr class="memdesc:a14fd1eba217a0dd86b40c4d792ab14ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pitch of the main texture (in bytes).  <a href="#a14fd1eba217a0dd86b40c4d792ab14ea">More...</a><br /></td></tr>
+<tr class="separator:a14fd1eba217a0dd86b40c4d792ab14ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9da815ed3b2a3efec45f957c6918fbba"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#a9da815ed3b2a3efec45f957c6918fbba">hasMipMaps</a> () const</td></tr>
+<tr class="memdesc:a9da815ed3b2a3efec45f957c6918fbba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the texture has MipMaps.  <a href="#a9da815ed3b2a3efec45f957c6918fbba">More...</a><br /></td></tr>
+<tr class="separator:a9da815ed3b2a3efec45f957c6918fbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ccc3cc2463f2ac78902eccba63271d3"><td class="memItemLeft" align="right" valign="top"><a id="a5ccc3cc2463f2ac78902eccba63271d3"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#a5ccc3cc2463f2ac78902eccba63271d3">hasAlpha</a> () const</td></tr>
+<tr class="memdesc:a5ccc3cc2463f2ac78902eccba63271d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if the texture has an alpha channel. <br /></td></tr>
+<tr class="separator:a5ccc3cc2463f2ac78902eccba63271d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9517c37f071479d0698cdf597f8fea45"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#a9517c37f071479d0698cdf597f8fea45">regenerateMipMapLevels</a> (void *mipmapData=0)=0</td></tr>
+<tr class="memdesc:a9517c37f071479d0698cdf597f8fea45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regenerates the mip map levels of the texture.  <a href="#a9517c37f071479d0698cdf597f8fea45">More...</a><br /></td></tr>
+<tr class="separator:a9517c37f071479d0698cdf597f8fea45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac5c0e281e1aa49365fdb7e7fa4d7342"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#aac5c0e281e1aa49365fdb7e7fa4d7342">isRenderTarget</a> () const</td></tr>
+<tr class="memdesc:aac5c0e281e1aa49365fdb7e7fa4d7342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the texture is a render target.  <a href="#aac5c0e281e1aa49365fdb7e7fa4d7342">More...</a><br /></td></tr>
+<tr class="separator:aac5c0e281e1aa49365fdb7e7fa4d7342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace31573b2a624446f15fe56d1e609810"><td class="memItemLeft" align="right" valign="top"><a id="ace31573b2a624446f15fe56d1e609810"></a>
+const <a class="el" href="structirr_1_1io_1_1SNamedPath.html">io::SNamedPath</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#ace31573b2a624446f15fe56d1e609810">getName</a> () const</td></tr>
+<tr class="memdesc:ace31573b2a624446f15fe56d1e609810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get name of texture (in most cases this is the filename) <br /></td></tr>
+<tr class="separator:ace31573b2a624446f15fe56d1e609810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32dbd62fef8a65f11e5b440706346c90"><td class="memItemLeft" align="right" valign="top"><a id="a32dbd62fef8a65f11e5b440706346c90"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#a32dbd62fef8a65f11e5b440706346c90">ITexture</a> (const <a class="el" href="namespaceirr_1_1io.html#a6468281622ce3a1c46b72e19f32dded5">io::path</a> &amp;name)</td></tr>
+<tr class="memdesc:a32dbd62fef8a65f11e5b440706346c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor <br /></td></tr>
+<tr class="separator:a32dbd62fef8a65f11e5b440706346c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa09ee89973a645ebdd2bd61ed859df38"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#aa09ee89973a645ebdd2bd61ed859df38">lock</a> (<a class="el" href="namespaceirr_1_1video.html#a3916d259e8fe0d0d02e8ee0adc8af5bc">E_TEXTURE_LOCK_MODE</a> mode=<a class="el" href="namespaceirr_1_1video.html#a3916d259e8fe0d0d02e8ee0adc8af5bcad742bd0e885e6a08c86b8d3d5c601952">ETLM_READ_WRITE</a>, <a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> mipmapLevel=0)=0</td></tr>
 <tr class="memdesc:aa09ee89973a645ebdd2bd61ed859df38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock function.  <a href="#aa09ee89973a645ebdd2bd61ed859df38">More...</a><br /></td></tr>
 <tr class="separator:aa09ee89973a645ebdd2bd61ed859df38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15b9a25aa18528ade37a492bd7b20a10"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#a15b9a25aa18528ade37a492bd7b20a10">unlock</a> ()=0</td></tr>
@@ -150,13 +193,39 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memitem:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#ad336c6e3c975e4c7911a606c27b894f0">getDebugName</a> () const</td></tr>
 <tr class="memdesc:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the debug name of the object.  <a href="classirr_1_1IReferenceCounted.html#ad336c6e3c975e4c7911a606c27b894f0">More...</a><br /></td></tr>
 <tr class="separator:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8411682018e68a2752d4c82675c71040 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top"><a id="a8411682018e68a2752d4c82675c71040"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a8411682018e68a2752d4c82675c71040">IReferenceCounted</a> ()</td></tr>
+<tr class="memdesc:a8411682018e68a2752d4c82675c71040 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="separator:a8411682018e68a2752d4c82675c71040 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78abc75801cbb13d9db0955b3c07251c inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top"><a id="a78abc75801cbb13d9db0955b3c07251c"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a78abc75801cbb13d9db0955b3c07251c">~IReferenceCounted</a> ()</td></tr>
+<tr class="memdesc:a78abc75801cbb13d9db0955b3c07251c inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:a78abc75801cbb13d9db0955b3c07251c inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396f9cdbe311ada278626477b3c6f0f5 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a396f9cdbe311ada278626477b3c6f0f5">grab</a> () const</td></tr>
+<tr class="memdesc:a396f9cdbe311ada278626477b3c6f0f5 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grabs the object. Increments the reference counter by one.  <a href="classirr_1_1IReferenceCounted.html#a396f9cdbe311ada278626477b3c6f0f5">More...</a><br /></td></tr>
+<tr class="separator:a396f9cdbe311ada278626477b3c6f0f5 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03856a09355b89d178090c4a5f738543 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543">drop</a> () const</td></tr>
+<tr class="memdesc:a03856a09355b89d178090c4a5f738543 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops the object. Decrements the reference counter by one.  <a href="classirr_1_1IReferenceCounted.html#a03856a09355b89d178090c4a5f738543">More...</a><br /></td></tr>
+<tr class="separator:a03856a09355b89d178090c4a5f738543 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9836f102c33c68068e74292e0a01819 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceirr.html#ac66849b7a6ed16e30ebede579f9b47c6">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#ae9836f102c33c68068e74292e0a01819">getReferenceCount</a> () const</td></tr>
+<tr class="memdesc:ae9836f102c33c68068e74292e0a01819 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reference count.  <a href="classirr_1_1IReferenceCounted.html#ae9836f102c33c68068e74292e0a01819">More...</a><br /></td></tr>
+<tr class="separator:ae9836f102c33c68068e74292e0a01819 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#ad336c6e3c975e4c7911a606c27b894f0">getDebugName</a> () const</td></tr>
+<tr class="memdesc:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the debug name of the object.  <a href="classirr_1_1IReferenceCounted.html#ad336c6e3c975e4c7911a606c27b894f0">More...</a><br /></td></tr>
+<tr class="separator:ad336c6e3c975e4c7911a606c27b894f0 inherit pub_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:afff3160f6aa5f749365ae4f776a440f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceirr_1_1video.html#acaf6f7414534f7d62bff18c5bf11876f">E_TEXTURE_CREATION_FLAG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#afff3160f6aa5f749365ae4f776a440f3">getTextureFormatFromFlags</a> (<a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> flags)</td></tr>
 <tr class="memdesc:afff3160f6aa5f749365ae4f776a440f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function, helps to get the desired texture creation format from the flags.  <a href="#afff3160f6aa5f749365ae4f776a440f3">More...</a><br /></td></tr>
 <tr class="separator:afff3160f6aa5f749365ae4f776a440f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff3160f6aa5f749365ae4f776a440f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceirr_1_1video.html#acaf6f7414534f7d62bff18c5bf11876f">E_TEXTURE_CREATION_FLAG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1video_1_1ITexture.html#afff3160f6aa5f749365ae4f776a440f3">getTextureFormatFromFlags</a> (<a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> flags)</td></tr>
+<tr class="memdesc:afff3160f6aa5f749365ae4f776a440f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function, helps to get the desired texture creation format from the flags.  <a href="#afff3160f6aa5f749365ae4f776a440f3">More...</a><br /></td></tr>
+<tr class="separator:afff3160f6aa5f749365ae4f776a440f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classirr_1_1IReferenceCounted"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classirr_1_1IReferenceCounted')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classirr_1_1IReferenceCounted.html">irr::IReferenceCounted</a></td></tr>
+<tr class="memitem:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a704c5042d399fe8cd3bdd65a0559002a">setDebugName</a> (const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *newName)</td></tr>
+<tr class="memdesc:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the debug name of the object.  <a href="classirr_1_1IReferenceCounted.html#a704c5042d399fe8cd3bdd65a0559002a">More...</a><br /></td></tr>
+<tr class="separator:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classirr_1_1IReferenceCounted.html#a704c5042d399fe8cd3bdd65a0559002a">setDebugName</a> (const <a class="el" href="namespaceirr.html#a9395eaea339bcb546b319e9c96bf7410">c8</a> *newName)</td></tr>
 <tr class="memdesc:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the debug name of the object.  <a href="classirr_1_1IReferenceCounted.html#a704c5042d399fe8cd3bdd65a0559002a">More...</a><br /></td></tr>
 <tr class="separator:a704c5042d399fe8cd3bdd65a0559002a inherit pro_methods_classirr_1_1IReferenceCounted"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,7 +235,35 @@ Protected Member Functions</h2></td></tr>
 <p>An <a class="el" href="classirr_1_1video_1_1ITexture.html" title="Interface of a Video Driver dependent Texture. ">ITexture</a> is created by an <a class="el" href="classirr_1_1video_1_1IVideoDriver.html" title="Interface to driver which is able to perform 2d and 3d graphics functions. ">IVideoDriver</a> by using <a class="el" href="classirr_1_1video_1_1IVideoDriver.html#a8c02ee280bb738cdf38b77e7a798244e" title="Creates an empty texture of specified size. ">IVideoDriver::addTexture</a> or <a class="el" href="classirr_1_1video_1_1IVideoDriver.html#af4055165190e4adf221c6dc6f2434ea0" title="Get access to a named texture. ">IVideoDriver::getTexture</a>. After that, the texture may only be used by this VideoDriver. As you can imagine, textures of the DirectX and the OpenGL device will, e.g., not be compatible. An exception is the Software device and the NULL device, their textures are compatible. If you try to use a texture created by one device with an other device, the device will refuse to do that and write a warning or an error message to the output buffer. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a48bbc0208c046724fc3264406f774132"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48bbc0208c046724fc3264406f774132">&#9670;&nbsp;</a></span>getColorFormat()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a48bbc0208c046724fc3264406f774132">&#9670;&nbsp;</a></span>getColorFormat() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceirr_1_1video.html#a1d5e487888c32b1674a8f75116d829ed">ECOLOR_FORMAT</a> irr::video::ITexture::getColorFormat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the color format of texture. </p>
+<dl class="section return"><dt>Returns</dt><dd>The color format of texture. </dd></dl>
+
+</div>
+</div>
+<a id="a48bbc0208c046724fc3264406f774132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48bbc0208c046724fc3264406f774132">&#9670;&nbsp;</a></span>getColorFormat() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,7 +291,35 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a4c6abdc0c789e6022e4e1b8a06cfab71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c6abdc0c789e6022e4e1b8a06cfab71">&#9670;&nbsp;</a></span>getDriverType()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c6abdc0c789e6022e4e1b8a06cfab71">&#9670;&nbsp;</a></span>getDriverType() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceirr_1_1video.html#ae35a6de6d436c76107ad157fe42356d0">E_DRIVER_TYPE</a> irr::video::ITexture::getDriverType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get driver type of texture. </p>
+<p>This is the driver, which created the texture. This method is used internally by the video devices, to check, if they may use a texture because textures may be incompatible between different devices. </p><dl class="section return"><dt>Returns</dt><dd>Driver type of texture. </dd></dl>
+
+</div>
+</div>
+<a id="a4c6abdc0c789e6022e4e1b8a06cfab71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c6abdc0c789e6022e4e1b8a06cfab71">&#9670;&nbsp;</a></span>getDriverType() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,7 +347,35 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="adbb05bcee8ec7fa11bb4ccfdb725cda8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbb05bcee8ec7fa11bb4ccfdb725cda8">&#9670;&nbsp;</a></span>getOriginalSize()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adbb05bcee8ec7fa11bb4ccfdb725cda8">&#9670;&nbsp;</a></span>getOriginalSize() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="classirr_1_1core_1_1dimension2d.html">core::dimension2d</a>&lt;<a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a>&gt;&amp; irr::video::ITexture::getOriginalSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get original size of the texture. </p>
+<p>The texture is usually scaled, if it was created with an unoptimal size. For example if the size was not a power of two. This method returns the size of the texture it had before it was scaled. Can be useful when drawing 2d images on the screen, which should have the exact size of the original texture. Use <a class="el" href="classirr_1_1video_1_1ITexture.html#adfcf9558c0f1ae543782c03f7903c48e" title="Get dimension (=size) of the texture. ">ITexture::getSize()</a> if you want to know the real size it has now stored in the system. </p><dl class="section return"><dt>Returns</dt><dd>The original size of the texture. </dd></dl>
+
+</div>
+</div>
+<a id="adbb05bcee8ec7fa11bb4ccfdb725cda8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbb05bcee8ec7fa11bb4ccfdb725cda8">&#9670;&nbsp;</a></span>getOriginalSize() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -250,7 +403,35 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a14fd1eba217a0dd86b40c4d792ab14ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14fd1eba217a0dd86b40c4d792ab14ea">&#9670;&nbsp;</a></span>getPitch()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a14fd1eba217a0dd86b40c4d792ab14ea">&#9670;&nbsp;</a></span>getPitch() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a> irr::video::ITexture::getPitch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get pitch of the main texture (in bytes). </p>
+<p>The pitch is the amount of bytes used for a row of pixels in a texture. </p><dl class="section return"><dt>Returns</dt><dd>Pitch of texture in bytes. </dd></dl>
+
+</div>
+</div>
+<a id="a14fd1eba217a0dd86b40c4d792ab14ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14fd1eba217a0dd86b40c4d792ab14ea">&#9670;&nbsp;</a></span>getPitch() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,7 +459,35 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="adfcf9558c0f1ae543782c03f7903c48e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfcf9558c0f1ae543782c03f7903c48e">&#9670;&nbsp;</a></span>getSize()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adfcf9558c0f1ae543782c03f7903c48e">&#9670;&nbsp;</a></span>getSize() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="classirr_1_1core_1_1dimension2d.html">core::dimension2d</a>&lt;<a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a>&gt;&amp; irr::video::ITexture::getSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get dimension (=size) of the texture. </p>
+<dl class="section return"><dt>Returns</dt><dd>The size of the texture. </dd></dl>
+
+</div>
+</div>
+<a id="adfcf9558c0f1ae543782c03f7903c48e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfcf9558c0f1ae543782c03f7903c48e">&#9670;&nbsp;</a></span>getSize() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -306,7 +515,36 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="afff3160f6aa5f749365ae4f776a440f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afff3160f6aa5f749365ae4f776a440f3">&#9670;&nbsp;</a></span>getTextureFormatFromFlags()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afff3160f6aa5f749365ae4f776a440f3">&#9670;&nbsp;</a></span>getTextureFormatFromFlags() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceirr_1_1video.html#acaf6f7414534f7d62bff18c5bf11876f">E_TEXTURE_CREATION_FLAG</a> irr::video::ITexture::getTextureFormatFromFlags </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a>&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper function, helps to get the desired texture creation format from the flags. </p>
+<dl class="section return"><dt>Returns</dt><dd>Either ETCF_ALWAYS_32_BIT, ETCF_ALWAYS_16_BIT, ETCF_OPTIMIZED_FOR_QUALITY, or ETCF_OPTIMIZED_FOR_SPEED. </dd></dl>
+
+</div>
+</div>
+<a id="afff3160f6aa5f749365ae4f776a440f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afff3160f6aa5f749365ae4f776a440f3">&#9670;&nbsp;</a></span>getTextureFormatFromFlags() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -335,7 +573,35 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9da815ed3b2a3efec45f957c6918fbba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9da815ed3b2a3efec45f957c6918fbba">&#9670;&nbsp;</a></span>hasMipMaps()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9da815ed3b2a3efec45f957c6918fbba">&#9670;&nbsp;</a></span>hasMipMaps() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool irr::video::ITexture::hasMipMaps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check whether the texture has MipMaps. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if texture has MipMaps, else false. </dd></dl>
+
+</div>
+</div>
+<a id="a9da815ed3b2a3efec45f957c6918fbba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9da815ed3b2a3efec45f957c6918fbba">&#9670;&nbsp;</a></span>hasMipMaps() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -363,7 +629,35 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aac5c0e281e1aa49365fdb7e7fa4d7342"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac5c0e281e1aa49365fdb7e7fa4d7342">&#9670;&nbsp;</a></span>isRenderTarget()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aac5c0e281e1aa49365fdb7e7fa4d7342">&#9670;&nbsp;</a></span>isRenderTarget() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool irr::video::ITexture::isRenderTarget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check whether the texture is a render target. </p>
+<p>Render targets can be set as such in the video driver, in order to render a scene into the texture. Once unbound as render target, they can be used just as usual textures again. </p><dl class="section return"><dt>Returns</dt><dd>True if this is a render target, otherwise false. </dd></dl>
+
+</div>
+</div>
+<a id="aac5c0e281e1aa49365fdb7e7fa4d7342"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac5c0e281e1aa49365fdb7e7fa4d7342">&#9670;&nbsp;</a></span>isRenderTarget() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -391,7 +685,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa09ee89973a645ebdd2bd61ed859df38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa09ee89973a645ebdd2bd61ed859df38">&#9670;&nbsp;</a></span>lock()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa09ee89973a645ebdd2bd61ed859df38">&#9670;&nbsp;</a></span>lock() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -403,7 +697,53 @@ Protected Member Functions</h2></td></tr>
           <td class="memname">virtual void* irr::video::ITexture::lock </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceirr_1_1video.html#a3916d259e8fe0d0d02e8ee0adc8af5bc">E_TEXTURE_LOCK_MODE</a>&#160;</td>
-          <td class="paramname"><em>mode</em> = <code><a class="el" href="namespaceirr_1_1video.html#a3916d259e8fe0d0d02e8ee0adc8af5bca41973750ecd380c9a17fa575262f5037">ETLM_READ_WRITE</a></code>, </td>
+          <td class="paramname"><em>mode</em> = <code><a class="el" href="namespaceirr_1_1video.html#a3916d259e8fe0d0d02e8ee0adc8af5bcad742bd0e885e6a08c86b8d3d5c601952">ETLM_READ_WRITE</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceirr.html#a0416a53257075833e7002efd0a18e804">u32</a>&#160;</td>
+          <td class="paramname"><em>mipmapLevel</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lock function. </p>
+<p>Locks the Texture and returns a pointer to access the pixels. After <a class="el" href="classirr_1_1video_1_1ITexture.html#aa09ee89973a645ebdd2bd61ed859df38" title="Lock function. ">lock()</a> has been called and all operations on the pixels are done, you must call <a class="el" href="classirr_1_1video_1_1ITexture.html#a15b9a25aa18528ade37a492bd7b20a10" title="Unlock function. Must be called after a lock() to the texture. ">unlock()</a>. Locks are not accumulating, hence one unlock will do for an arbitrary number of previous locks. You should avoid locking different levels without unlocking inbetween, though, because only the last level locked will be unlocked. The size of the i-th mipmap level is defined as max(<a class="el" href="classirr_1_1video_1_1ITexture.html#adfcf9558c0f1ae543782c03f7903c48e" title="Get dimension (=size) of the texture. ">getSize()</a>.Width&gt;&gt;i,1) and max(<a class="el" href="classirr_1_1video_1_1ITexture.html#adfcf9558c0f1ae543782c03f7903c48e" title="Get dimension (=size) of the texture. ">getSize()</a>.Height&gt;&gt;i,1) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Specifies what kind of changes to the locked texture are allowed. Unspecified behavior will arise if texture is written in read only mode or read from in write only mode. Support for this feature depends on the driver, so don't rely on the texture being write-protected when locking with read-only, etc. </td></tr>
+    <tr><td class="paramname">mipmapLevel</td><td>Number of the mipmapLevel to lock. 0 is main texture. Non-existing levels will silently fail and return 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the pixel data. The format of the pixel can be determined by using <a class="el" href="classirr_1_1video_1_1ITexture.html#a48bbc0208c046724fc3264406f774132" title="Get the color format of texture. ">getColorFormat()</a>. 0 is returned, if the texture cannot be locked. </dd></dl>
+
+</div>
+</div>
+<a id="aa09ee89973a645ebdd2bd61ed859df38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa09ee89973a645ebdd2bd61ed859df38">&#9670;&nbsp;</a></span>lock() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void* irr::video::ITexture::lock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceirr_1_1video.html#a3916d259e8fe0d0d02e8ee0adc8af5bc">E_TEXTURE_LOCK_MODE</a>&#160;</td>
+          <td class="paramname"><em>mode</em> = <code><a class="el" href="namespaceirr_1_1video.html#a3916d259e8fe0d0d02e8ee0adc8af5bcad742bd0e885e6a08c86b8d3d5c601952">ETLM_READ_WRITE</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -437,7 +777,41 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9517c37f071479d0698cdf597f8fea45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9517c37f071479d0698cdf597f8fea45">&#9670;&nbsp;</a></span>regenerateMipMapLevels()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9517c37f071479d0698cdf597f8fea45">&#9670;&nbsp;</a></span>regenerateMipMapLevels() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void irr::video::ITexture::regenerateMipMapLevels </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>mipmapData</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Regenerates the mip map levels of the texture. </p>
+<p>Required after modifying the texture, usually after calling <a class="el" href="classirr_1_1video_1_1ITexture.html#a15b9a25aa18528ade37a492bd7b20a10" title="Unlock function. Must be called after a lock() to the texture. ">unlock()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mipmapData</td><td>Optional parameter to pass in image data which will be used instead of the previously stored or automatically generated mipmap data. The data has to be a continuous pixel data for all mipmaps until 1x1 pixel. Each mipmap has to be half the width and height of the previous level. At least one pixel will be always kept. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9517c37f071479d0698cdf597f8fea45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9517c37f071479d0698cdf597f8fea45">&#9670;&nbsp;</a></span>regenerateMipMapLevels() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -471,7 +845,35 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a15b9a25aa18528ade37a492bd7b20a10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15b9a25aa18528ade37a492bd7b20a10">&#9670;&nbsp;</a></span>unlock()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b9a25aa18528ade37a492bd7b20a10">&#9670;&nbsp;</a></span>unlock() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void irr::video::ITexture::unlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unlock function. Must be called after a <a class="el" href="classirr_1_1video_1_1ITexture.html#aa09ee89973a645ebdd2bd61ed859df38" title="Lock function. ">lock()</a> to the texture. </p>
+<p>One should avoid to call unlock more than once before another lock. The last locked mip level will be unlocked. </p>
+
+</div>
+</div>
+<a id="a15b9a25aa18528ade37a492bd7b20a10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b9a25aa18528ade37a492bd7b20a10">&#9670;&nbsp;</a></span>unlock() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -499,7 +901,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>indie_share/controller/include/<a class="el" href="ITexture_8h_source.html">ITexture.h</a></li>
+<li>indie_share/controller/include/<a class="el" href="indie__share_2controller_2include_2ITexture_8h_source.html">ITexture.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

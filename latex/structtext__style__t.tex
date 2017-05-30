@@ -1,0 +1,158 @@
+\hypertarget{structtext__style__t}{}\section{text\+\_\+style\+\_\+t Struct Reference}
+\label{structtext__style__t}\index{text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}}
+
+
+{\ttfamily \#include $<$vlc\+\_\+text\+\_\+style.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{structtext__style__t_a638ddc05711093db5ce4b05870c19b1e}{psz\+\_\+fontname}
+\item 
+char $\ast$ \hyperlink{structtext__style__t_a9c58ccd12a4cb539c8547f3f8d2ac007}{psz\+\_\+monofontname}
+\item 
+int \hyperlink{structtext__style__t_aadf1b22a226a577aa980f35bf5423ac0}{i\+\_\+font\+\_\+size}
+\item 
+int \hyperlink{structtext__style__t_a5affe9feec6414c59bb1fc362a963ab0}{i\+\_\+font\+\_\+color}
+\item 
+unsigned \hyperlink{structtext__style__t_a9c75b8f8809919db291b007fa6e931ee}{i\+\_\+font\+\_\+alpha}
+\item 
+int \hyperlink{structtext__style__t_a5eed3da14743434cdd9f3ad856b0057a}{i\+\_\+style\+\_\+flags}
+\item 
+int \hyperlink{structtext__style__t_a35f89735e0d56f877ec2c733b3917e49}{i\+\_\+outline\+\_\+color}
+\item 
+int \hyperlink{structtext__style__t_ac76e87986a24abee8d93e1a1c8c5a22f}{i\+\_\+outline\+\_\+alpha}
+\item 
+int \hyperlink{structtext__style__t_a3683079cf56fdbb5c90f0289d65eb3b7}{i\+\_\+shadow\+\_\+color}
+\item 
+int \hyperlink{structtext__style__t_affa114228bf1f3667c702f31b719fb75}{i\+\_\+shadow\+\_\+alpha}
+\item 
+int \hyperlink{structtext__style__t_ade4abd12624ab5c6c494df602e6c09bf}{i\+\_\+background\+\_\+color}
+\item 
+int \hyperlink{structtext__style__t_a230dca3f2b2aeebccf9cd913354cb8d1}{i\+\_\+background\+\_\+alpha}
+\item 
+int \hyperlink{structtext__style__t_aa96cf8501ead619adcdd68ae0725ba1a}{i\+\_\+karaoke\+\_\+background\+\_\+color}
+\item 
+int \hyperlink{structtext__style__t_a43efb7d518903da3089588ab0e8c7b4b}{i\+\_\+karaoke\+\_\+background\+\_\+alpha}
+\item 
+int \hyperlink{structtext__style__t_a89567371e6328ab481d3dfefca59693b}{i\+\_\+outline\+\_\+width}
+\item 
+int \hyperlink{structtext__style__t_a9aff4ee5643cffe0508cdbb867980127}{i\+\_\+shadow\+\_\+width}
+\item 
+int \hyperlink{structtext__style__t_a2280d36ffa825efb34586276be989ca0}{i\+\_\+spacing}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classText}{Text} style
+
+A text style is used to specify the formatting of text. A font renderer can use the supplied information to render the text specified. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structtext__style__t_a230dca3f2b2aeebccf9cd913354cb8d1}\label{structtext__style__t_a230dca3f2b2aeebccf9cd913354cb8d1}} 
+\index{text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}!i\+\_\+background\+\_\+alpha@{i\+\_\+background\+\_\+alpha}}
+\index{i\+\_\+background\+\_\+alpha@{i\+\_\+background\+\_\+alpha}!text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+background\+\_\+alpha}{i\_background\_alpha}}
+{\footnotesize\ttfamily int text\+\_\+style\+\_\+t\+::i\+\_\+background\+\_\+alpha}
+
+The transparency of the background. 0x00 is fully opaque, 0x\+FF fully transparent \mbox{\Hypertarget{structtext__style__t_ade4abd12624ab5c6c494df602e6c09bf}\label{structtext__style__t_ade4abd12624ab5c6c494df602e6c09bf}} 
+\index{text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}!i\+\_\+background\+\_\+color@{i\+\_\+background\+\_\+color}}
+\index{i\+\_\+background\+\_\+color@{i\+\_\+background\+\_\+color}!text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+background\+\_\+color}{i\_background\_color}}
+{\footnotesize\ttfamily int text\+\_\+style\+\_\+t\+::i\+\_\+background\+\_\+color}
+
+The color of the background 0x\+R\+R\+G\+G\+BB \mbox{\Hypertarget{structtext__style__t_a9c75b8f8809919db291b007fa6e931ee}\label{structtext__style__t_a9c75b8f8809919db291b007fa6e931ee}} 
+\index{text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}!i\+\_\+font\+\_\+alpha@{i\+\_\+font\+\_\+alpha}}
+\index{i\+\_\+font\+\_\+alpha@{i\+\_\+font\+\_\+alpha}!text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+font\+\_\+alpha}{i\_font\_alpha}}
+{\footnotesize\ttfamily unsigned text\+\_\+style\+\_\+t\+::i\+\_\+font\+\_\+alpha}
+
+The transparency of the text. 0x00 is fully opaque, 0x\+FF fully transparent \mbox{\Hypertarget{structtext__style__t_a5affe9feec6414c59bb1fc362a963ab0}\label{structtext__style__t_a5affe9feec6414c59bb1fc362a963ab0}} 
+\index{text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}!i\+\_\+font\+\_\+color@{i\+\_\+font\+\_\+color}}
+\index{i\+\_\+font\+\_\+color@{i\+\_\+font\+\_\+color}!text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+font\+\_\+color}{i\_font\_color}}
+{\footnotesize\ttfamily int text\+\_\+style\+\_\+t\+::i\+\_\+font\+\_\+color}
+
+The color of the text 0x\+R\+R\+G\+G\+BB (native endianness) \mbox{\Hypertarget{structtext__style__t_aadf1b22a226a577aa980f35bf5423ac0}\label{structtext__style__t_aadf1b22a226a577aa980f35bf5423ac0}} 
+\index{text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}!i\+\_\+font\+\_\+size@{i\+\_\+font\+\_\+size}}
+\index{i\+\_\+font\+\_\+size@{i\+\_\+font\+\_\+size}!text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+font\+\_\+size}{i\_font\_size}}
+{\footnotesize\ttfamily int text\+\_\+style\+\_\+t\+::i\+\_\+font\+\_\+size}
+
+The font size in pixels \mbox{\Hypertarget{structtext__style__t_a43efb7d518903da3089588ab0e8c7b4b}\label{structtext__style__t_a43efb7d518903da3089588ab0e8c7b4b}} 
+\index{text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}!i\+\_\+karaoke\+\_\+background\+\_\+alpha@{i\+\_\+karaoke\+\_\+background\+\_\+alpha}}
+\index{i\+\_\+karaoke\+\_\+background\+\_\+alpha@{i\+\_\+karaoke\+\_\+background\+\_\+alpha}!text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+karaoke\+\_\+background\+\_\+alpha}{i\_karaoke\_background\_alpha}}
+{\footnotesize\ttfamily int text\+\_\+style\+\_\+t\+::i\+\_\+karaoke\+\_\+background\+\_\+alpha}
+
+The transparency of the karaoke bg. 0x00 is fully opaque, 0x\+FF fully transparent \mbox{\Hypertarget{structtext__style__t_aa96cf8501ead619adcdd68ae0725ba1a}\label{structtext__style__t_aa96cf8501ead619adcdd68ae0725ba1a}} 
+\index{text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}!i\+\_\+karaoke\+\_\+background\+\_\+color@{i\+\_\+karaoke\+\_\+background\+\_\+color}}
+\index{i\+\_\+karaoke\+\_\+background\+\_\+color@{i\+\_\+karaoke\+\_\+background\+\_\+color}!text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+karaoke\+\_\+background\+\_\+color}{i\_karaoke\_background\_color}}
+{\footnotesize\ttfamily int text\+\_\+style\+\_\+t\+::i\+\_\+karaoke\+\_\+background\+\_\+color}
+
+Background color for karaoke 0x\+R\+R\+G\+G\+BB \mbox{\Hypertarget{structtext__style__t_ac76e87986a24abee8d93e1a1c8c5a22f}\label{structtext__style__t_ac76e87986a24abee8d93e1a1c8c5a22f}} 
+\index{text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}!i\+\_\+outline\+\_\+alpha@{i\+\_\+outline\+\_\+alpha}}
+\index{i\+\_\+outline\+\_\+alpha@{i\+\_\+outline\+\_\+alpha}!text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+outline\+\_\+alpha}{i\_outline\_alpha}}
+{\footnotesize\ttfamily int text\+\_\+style\+\_\+t\+::i\+\_\+outline\+\_\+alpha}
+
+The transparency of the outline. 0x00 is fully opaque, 0x\+FF fully transparent \mbox{\Hypertarget{structtext__style__t_a35f89735e0d56f877ec2c733b3917e49}\label{structtext__style__t_a35f89735e0d56f877ec2c733b3917e49}} 
+\index{text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}!i\+\_\+outline\+\_\+color@{i\+\_\+outline\+\_\+color}}
+\index{i\+\_\+outline\+\_\+color@{i\+\_\+outline\+\_\+color}!text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+outline\+\_\+color}{i\_outline\_color}}
+{\footnotesize\ttfamily int text\+\_\+style\+\_\+t\+::i\+\_\+outline\+\_\+color}
+
+The color of the outline 0x\+R\+R\+G\+G\+BB \mbox{\Hypertarget{structtext__style__t_a89567371e6328ab481d3dfefca59693b}\label{structtext__style__t_a89567371e6328ab481d3dfefca59693b}} 
+\index{text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}!i\+\_\+outline\+\_\+width@{i\+\_\+outline\+\_\+width}}
+\index{i\+\_\+outline\+\_\+width@{i\+\_\+outline\+\_\+width}!text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+outline\+\_\+width}{i\_outline\_width}}
+{\footnotesize\ttfamily int text\+\_\+style\+\_\+t\+::i\+\_\+outline\+\_\+width}
+
+The width of the outline in pixels \mbox{\Hypertarget{structtext__style__t_affa114228bf1f3667c702f31b719fb75}\label{structtext__style__t_affa114228bf1f3667c702f31b719fb75}} 
+\index{text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}!i\+\_\+shadow\+\_\+alpha@{i\+\_\+shadow\+\_\+alpha}}
+\index{i\+\_\+shadow\+\_\+alpha@{i\+\_\+shadow\+\_\+alpha}!text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+shadow\+\_\+alpha}{i\_shadow\_alpha}}
+{\footnotesize\ttfamily int text\+\_\+style\+\_\+t\+::i\+\_\+shadow\+\_\+alpha}
+
+The transparency of the shadow. 0x00 is fully opaque, 0x\+FF fully transparent \mbox{\Hypertarget{structtext__style__t_a3683079cf56fdbb5c90f0289d65eb3b7}\label{structtext__style__t_a3683079cf56fdbb5c90f0289d65eb3b7}} 
+\index{text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}!i\+\_\+shadow\+\_\+color@{i\+\_\+shadow\+\_\+color}}
+\index{i\+\_\+shadow\+\_\+color@{i\+\_\+shadow\+\_\+color}!text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+shadow\+\_\+color}{i\_shadow\_color}}
+{\footnotesize\ttfamily int text\+\_\+style\+\_\+t\+::i\+\_\+shadow\+\_\+color}
+
+The color of the shadow 0x\+R\+R\+G\+G\+BB \mbox{\Hypertarget{structtext__style__t_a9aff4ee5643cffe0508cdbb867980127}\label{structtext__style__t_a9aff4ee5643cffe0508cdbb867980127}} 
+\index{text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}!i\+\_\+shadow\+\_\+width@{i\+\_\+shadow\+\_\+width}}
+\index{i\+\_\+shadow\+\_\+width@{i\+\_\+shadow\+\_\+width}!text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+shadow\+\_\+width}{i\_shadow\_width}}
+{\footnotesize\ttfamily int text\+\_\+style\+\_\+t\+::i\+\_\+shadow\+\_\+width}
+
+The width of the shadow in pixels \mbox{\Hypertarget{structtext__style__t_a2280d36ffa825efb34586276be989ca0}\label{structtext__style__t_a2280d36ffa825efb34586276be989ca0}} 
+\index{text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}!i\+\_\+spacing@{i\+\_\+spacing}}
+\index{i\+\_\+spacing@{i\+\_\+spacing}!text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+spacing}{i\_spacing}}
+{\footnotesize\ttfamily int text\+\_\+style\+\_\+t\+::i\+\_\+spacing}
+
+The spaceing between glyphs in pixels \mbox{\Hypertarget{structtext__style__t_a5eed3da14743434cdd9f3ad856b0057a}\label{structtext__style__t_a5eed3da14743434cdd9f3ad856b0057a}} 
+\index{text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}!i\+\_\+style\+\_\+flags@{i\+\_\+style\+\_\+flags}}
+\index{i\+\_\+style\+\_\+flags@{i\+\_\+style\+\_\+flags}!text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+style\+\_\+flags}{i\_style\_flags}}
+{\footnotesize\ttfamily int text\+\_\+style\+\_\+t\+::i\+\_\+style\+\_\+flags}
+
+Formatting style flags \mbox{\Hypertarget{structtext__style__t_a638ddc05711093db5ce4b05870c19b1e}\label{structtext__style__t_a638ddc05711093db5ce4b05870c19b1e}} 
+\index{text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}!psz\+\_\+fontname@{psz\+\_\+fontname}}
+\index{psz\+\_\+fontname@{psz\+\_\+fontname}!text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}}
+\subsubsection{\texorpdfstring{psz\+\_\+fontname}{psz\_fontname}}
+{\footnotesize\ttfamily char$\ast$ text\+\_\+style\+\_\+t\+::psz\+\_\+fontname}
+
+The name of the font \mbox{\Hypertarget{structtext__style__t_a9c58ccd12a4cb539c8547f3f8d2ac007}\label{structtext__style__t_a9c58ccd12a4cb539c8547f3f8d2ac007}} 
+\index{text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}!psz\+\_\+monofontname@{psz\+\_\+monofontname}}
+\index{psz\+\_\+monofontname@{psz\+\_\+monofontname}!text\+\_\+style\+\_\+t@{text\+\_\+style\+\_\+t}}
+\subsubsection{\texorpdfstring{psz\+\_\+monofontname}{psz\_monofontname}}
+{\footnotesize\ttfamily char$\ast$ text\+\_\+style\+\_\+t\+::psz\+\_\+monofontname}
+
+The name of the mono font 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/include/vlc/plugins/vlc\+\_\+text\+\_\+style.\+h\end{DoxyCompactItemize}

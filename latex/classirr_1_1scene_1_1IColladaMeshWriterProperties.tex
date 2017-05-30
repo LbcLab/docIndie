@@ -42,6 +42,31 @@ virtual bool \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties_af24d1
 virtual \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} $\ast$ \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties_ac6d9e1583642ac777471bd9225d72007}{get\+Mesh} (\hyperlink{classirr_1_1scene_1_1ISceneNode}{irr\+::scene\+::\+I\+Scene\+Node} $\ast$node)=0
 \begin{DoxyCompactList}\small\item\em Return the mesh for the given node. If it has no mesh or shouldn\textquotesingle{}t export it\textquotesingle{}s mesh you can return 0 in which case only the transformation matrix of the node will be used. \end{DoxyCompactList}\item 
 virtual bool \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties_a9c10df4dc3602efbba6a47b34e2f8f4b}{use\+Node\+Material} (const \hyperlink{classirr_1_1scene_1_1ISceneNode}{scene\+::\+I\+Scene\+Node} $\ast$node) const =0
+\begin{DoxyCompactList}\small\item\em Return if the node has it\textquotesingle{}s own material overwriting the mesh-\/materials. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_abc0fb19092b53bdf48be8cc97a2af63b}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_abc0fb19092b53bdf48be8cc97a2af63b}} 
+virtual \hyperlink{namespaceirr_1_1scene_a9ec31e84e05295892488296b0741e2b1}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+T\+E\+C\+H\+N\+I\+Q\+U\+E\+\_\+\+FX} \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties_abc0fb19092b53bdf48be8cc97a2af63b}{get\+Technique\+Fx} (const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&material) const =0
+\begin{DoxyCompactList}\small\item\em Which lighting model should be used in the technique (FX) section when exporting effects (materials) \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties_a171287213537036be889a36ae4896c0e}{get\+Texture\+Idx} (const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&material, \hyperlink{namespaceirr_1_1scene_a6204218341c6b449d879cd8367b2f8d8}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+S\+A\+M\+P\+L\+ER} cs) const =0
+\begin{DoxyCompactList}\small\item\em Which texture index should be used when writing the texture of the given sampler color. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7e}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+I\+R\+R\+\_\+\+C\+O\+L\+OR} \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties_ab347c50cc9b291625d051a919d8772ab}{get\+Color\+Mapping} (const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&material, \hyperlink{namespaceirr_1_1scene_a6204218341c6b449d879cd8367b2f8d8}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+S\+A\+M\+P\+L\+ER} cs) const =0
+\begin{DoxyCompactList}\small\item\em Return which color from Irrlicht should be used for the color requested by collada. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties_a8028af2323dab63df4bdfeb292ec48cd}{get\+Custom\+Color} (const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&material, \hyperlink{namespaceirr_1_1scene_a6204218341c6b449d879cd8367b2f8d8}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+S\+A\+M\+P\+L\+ER} cs) const =0
+\begin{DoxyCompactList}\small\item\em Return custom colors for certain color types requested by collada. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_1_1scene_af7dadd5b96b683cfe1800f343c4f6619}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+FX} \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties_a0d934ae86d3e587ae22f74d775bbfa36}{get\+Transparent\+Fx} (const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&material) const =0
+\begin{DoxyCompactList}\small\item\em Return the transparence color interpretation. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties_ac547e1f89f4655751ecd570ad70d010b}{get\+Transparency} (const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&material) const =0
+\begin{DoxyCompactList}\small\item\em Transparency value for that material. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties_ad880b5fc91114049b20347a31199b2a9}{get\+Reflectivity} (const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&material) const =0
+\begin{DoxyCompactList}\small\item\em Reflectivity value for that material. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties_ab7ec58f708ebebe941246e6c78b0691d}{get\+Index\+Of\+Refraction} (const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&material) const =0
+\begin{DoxyCompactList}\small\item\em Return index of refraction for that material. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_af24d1c12b3f4168407c078bd7fc3dc82}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_af24d1c12b3f4168407c078bd7fc3dc82}} 
+virtual bool \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties_af24d1c12b3f4168407c078bd7fc3dc82}{is\+Exportable} (const \hyperlink{classirr_1_1scene_1_1ISceneNode}{irr\+::scene\+::\+I\+Scene\+Node} $\ast$node) const =0
+\begin{DoxyCompactList}\small\item\em Should node be used in scene export? (only needed for scene-\/writing, ignored in mesh-\/writing) By default all visible nodes are exported. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_ac6d9e1583642ac777471bd9225d72007}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_ac6d9e1583642ac777471bd9225d72007}} 
+virtual \hyperlink{classirr_1_1scene_1_1IMesh}{I\+Mesh} $\ast$ \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties_ac6d9e1583642ac777471bd9225d72007}{get\+Mesh} (\hyperlink{classirr_1_1scene_1_1ISceneNode}{irr\+::scene\+::\+I\+Scene\+Node} $\ast$node)=0
+\begin{DoxyCompactList}\small\item\em Return the mesh for the given node. If it has no mesh or shouldn\textquotesingle{}t export it\textquotesingle{}s mesh you can return 0 in which case only the transformation matrix of the node will be used. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1scene_1_1IColladaMeshWriterProperties_a9c10df4dc3602efbba6a47b34e2f8f4b}{use\+Node\+Material} (const \hyperlink{classirr_1_1scene_1_1ISceneNode}{scene\+::\+I\+Scene\+Node} $\ast$node) const =0
 \begin{DoxyCompactList}\small\item\em Return if the node has it\textquotesingle{}s own material overwriting the mesh-\/materials. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -53,7 +78,17 @@ Callback interface for properties which can be used to influence collada writing
 \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_ab347c50cc9b291625d051a919d8772ab}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_ab347c50cc9b291625d051a919d8772ab}} 
 \index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}!get\+Color\+Mapping@{get\+Color\+Mapping}}
 \index{get\+Color\+Mapping@{get\+Color\+Mapping}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}}
-\subsubsection{\texorpdfstring{get\+Color\+Mapping()}{getColorMapping()}}
+\subsubsection{\texorpdfstring{get\+Color\+Mapping()}{getColorMapping()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7e}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+I\+R\+R\+\_\+\+C\+O\+L\+OR} irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties\+::get\+Color\+Mapping (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&}]{material,  }\item[{\hyperlink{namespaceirr_1_1scene_a6204218341c6b449d879cd8367b2f8d8}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+S\+A\+M\+P\+L\+ER}}]{cs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return which color from Irrlicht should be used for the color requested by collada. 
+
+Note that collada allows exporting either texture or color, not both. So color mapping is only checked if we have no valid texture already. By default we try to return best fits when possible. For example E\+C\+C\+S\+\_\+\+D\+I\+F\+F\+U\+SE is mapped to E\+C\+I\+C\+\_\+\+D\+I\+F\+F\+U\+SE. When E\+C\+I\+C\+\_\+\+C\+U\+S\+T\+OM is returned then the result of get\+Custom\+Color will be used. \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_ab347c50cc9b291625d051a919d8772ab}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_ab347c50cc9b291625d051a919d8772ab}} 
+\index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}!get\+Color\+Mapping@{get\+Color\+Mapping}}
+\index{get\+Color\+Mapping@{get\+Color\+Mapping}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}}
+\subsubsection{\texorpdfstring{get\+Color\+Mapping()}{getColorMapping()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1scene_a61cba210038d6d843b81d9282f1cac7e}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+I\+R\+R\+\_\+\+C\+O\+L\+OR} irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties\+::get\+Color\+Mapping (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&}]{material,  }\item[{\hyperlink{namespaceirr_1_1scene_a6204218341c6b449d879cd8367b2f8d8}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+S\+A\+M\+P\+L\+ER}}]{cs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -63,7 +98,17 @@ Return which color from Irrlicht should be used for the color requested by colla
 Note that collada allows exporting either texture or color, not both. So color mapping is only checked if we have no valid texture already. By default we try to return best fits when possible. For example E\+C\+C\+S\+\_\+\+D\+I\+F\+F\+U\+SE is mapped to E\+C\+I\+C\+\_\+\+D\+I\+F\+F\+U\+SE. When E\+C\+I\+C\+\_\+\+C\+U\+S\+T\+OM is returned then the result of get\+Custom\+Color will be used. \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_a8028af2323dab63df4bdfeb292ec48cd}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_a8028af2323dab63df4bdfeb292ec48cd}} 
 \index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}!get\+Custom\+Color@{get\+Custom\+Color}}
 \index{get\+Custom\+Color@{get\+Custom\+Color}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}}
-\subsubsection{\texorpdfstring{get\+Custom\+Color()}{getCustomColor()}}
+\subsubsection{\texorpdfstring{get\+Custom\+Color()}{getCustomColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties\+::get\+Custom\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&}]{material,  }\item[{\hyperlink{namespaceirr_1_1scene_a6204218341c6b449d879cd8367b2f8d8}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+S\+A\+M\+P\+L\+ER}}]{cs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return custom colors for certain color types requested by collada. 
+
+Only used when get\+Color\+Mapping returns E\+C\+I\+C\+\_\+\+C\+U\+S\+T\+OM for the same paramters. \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_a8028af2323dab63df4bdfeb292ec48cd}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_a8028af2323dab63df4bdfeb292ec48cd}} 
+\index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}!get\+Custom\+Color@{get\+Custom\+Color}}
+\index{get\+Custom\+Color@{get\+Custom\+Color}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}}
+\subsubsection{\texorpdfstring{get\+Custom\+Color()}{getCustomColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties\+::get\+Custom\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&}]{material,  }\item[{\hyperlink{namespaceirr_1_1scene_a6204218341c6b449d879cd8367b2f8d8}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+S\+A\+M\+P\+L\+ER}}]{cs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -73,7 +118,20 @@ Return custom colors for certain color types requested by collada.
 Only used when get\+Color\+Mapping returns E\+C\+I\+C\+\_\+\+C\+U\+S\+T\+OM for the same paramters. \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_ab7ec58f708ebebe941246e6c78b0691d}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_ab7ec58f708ebebe941246e6c78b0691d}} 
 \index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}!get\+Index\+Of\+Refraction@{get\+Index\+Of\+Refraction}}
 \index{get\+Index\+Of\+Refraction@{get\+Index\+Of\+Refraction}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}}
-\subsubsection{\texorpdfstring{get\+Index\+Of\+Refraction()}{getIndexOfRefraction()}}
+\subsubsection{\texorpdfstring{get\+Index\+Of\+Refraction()}{getIndexOfRefraction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties\+::get\+Index\+Of\+Refraction (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&}]{material }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return index of refraction for that material. 
+
+By default we don\textquotesingle{}t write that. \begin{DoxyReturn}{Returns}
+a value greater equal 0.\+f to write $<$index\+\_\+of\+\_\+refraction$>$ when it is lesser than 0 nothing will be written 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_ab7ec58f708ebebe941246e6c78b0691d}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_ab7ec58f708ebebe941246e6c78b0691d}} 
+\index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}!get\+Index\+Of\+Refraction@{get\+Index\+Of\+Refraction}}
+\index{get\+Index\+Of\+Refraction@{get\+Index\+Of\+Refraction}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}}
+\subsubsection{\texorpdfstring{get\+Index\+Of\+Refraction()}{getIndexOfRefraction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties\+::get\+Index\+Of\+Refraction (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&}]{material }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -86,7 +144,20 @@ a value greater equal 0.\+f to write $<$index\+\_\+of\+\_\+refraction$>$ when it
 \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_ad880b5fc91114049b20347a31199b2a9}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_ad880b5fc91114049b20347a31199b2a9}} 
 \index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}!get\+Reflectivity@{get\+Reflectivity}}
 \index{get\+Reflectivity@{get\+Reflectivity}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}}
-\subsubsection{\texorpdfstring{get\+Reflectivity()}{getReflectivity()}}
+\subsubsection{\texorpdfstring{get\+Reflectivity()}{getReflectivity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties\+::get\+Reflectivity (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&}]{material }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reflectivity value for that material. 
+
+The amount of perfect mirror reflection to be added to the reflected light \begin{DoxyReturn}{Returns}
+0.\+0 -\/ 1.\+0 for reflectivity and element is not written at all when $<$ 0.\+f 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_ad880b5fc91114049b20347a31199b2a9}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_ad880b5fc91114049b20347a31199b2a9}} 
+\index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}!get\+Reflectivity@{get\+Reflectivity}}
+\index{get\+Reflectivity@{get\+Reflectivity}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}}
+\subsubsection{\texorpdfstring{get\+Reflectivity()}{getReflectivity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties\+::get\+Reflectivity (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&}]{material }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -99,7 +170,20 @@ The amount of perfect mirror reflection to be added to the reflected light \begi
 \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_a171287213537036be889a36ae4896c0e}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_a171287213537036be889a36ae4896c0e}} 
 \index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}!get\+Texture\+Idx@{get\+Texture\+Idx}}
 \index{get\+Texture\+Idx@{get\+Texture\+Idx}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}}
-\subsubsection{\texorpdfstring{get\+Texture\+Idx()}{getTextureIdx()}}
+\subsubsection{\texorpdfstring{get\+Texture\+Idx()}{getTextureIdx()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties\+::get\+Texture\+Idx (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&}]{material,  }\item[{\hyperlink{namespaceirr_1_1scene_a6204218341c6b449d879cd8367b2f8d8}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+S\+A\+M\+P\+L\+ER}}]{cs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Which texture index should be used when writing the texture of the given sampler color. 
+
+\begin{DoxyReturn}{Returns}
+the index to the texture-\/layer or -\/1 if that texture should never be exported Note\+: for E\+C\+C\+S\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT by default the alpha channel is used, if you want to use R\+GB you have to set also the E\+C\+O\+F\+\_\+\+R\+G\+B\+\_\+\+Z\+E\+RO flag in get\+Transparent\+Fx. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_a171287213537036be889a36ae4896c0e}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_a171287213537036be889a36ae4896c0e}} 
+\index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}!get\+Texture\+Idx@{get\+Texture\+Idx}}
+\index{get\+Texture\+Idx@{get\+Texture\+Idx}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}}
+\subsubsection{\texorpdfstring{get\+Texture\+Idx()}{getTextureIdx()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties\+::get\+Texture\+Idx (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&}]{material,  }\item[{\hyperlink{namespaceirr_1_1scene_a6204218341c6b449d879cd8367b2f8d8}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+S\+A\+M\+P\+L\+ER}}]{cs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -112,7 +196,20 @@ the index to the texture-\/layer or -\/1 if that texture should never be exporte
 \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_ac547e1f89f4655751ecd570ad70d010b}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_ac547e1f89f4655751ecd570ad70d010b}} 
 \index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}!get\+Transparency@{get\+Transparency}}
 \index{get\+Transparency@{get\+Transparency}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}}
-\subsubsection{\texorpdfstring{get\+Transparency()}{getTransparency()}}
+\subsubsection{\texorpdfstring{get\+Transparency()}{getTransparency()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties\+::get\+Transparency (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&}]{material }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Transparency value for that material. 
+
+This value is additional to transparent settings, if both are set they will be multiplicated. \begin{DoxyReturn}{Returns}
+1.\+0 for fully transparent, 0.\+0 for not transparent and not written at all when $<$ 0.\+f 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_ac547e1f89f4655751ecd570ad70d010b}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_ac547e1f89f4655751ecd570ad70d010b}} 
+\index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}!get\+Transparency@{get\+Transparency}}
+\index{get\+Transparency@{get\+Transparency}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}}
+\subsubsection{\texorpdfstring{get\+Transparency()}{getTransparency()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_a0277be98d67dc26ff93b1a6a1d086b07}{f32} irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties\+::get\+Transparency (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&}]{material }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -125,7 +222,17 @@ This value is additional to transparent settings, if both are set they will be m
 \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_a0d934ae86d3e587ae22f74d775bbfa36}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_a0d934ae86d3e587ae22f74d775bbfa36}} 
 \index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}!get\+Transparent\+Fx@{get\+Transparent\+Fx}}
 \index{get\+Transparent\+Fx@{get\+Transparent\+Fx}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}}
-\subsubsection{\texorpdfstring{get\+Transparent\+Fx()}{getTransparentFx()}}
+\subsubsection{\texorpdfstring{get\+Transparent\+Fx()}{getTransparentFx()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1scene_af7dadd5b96b683cfe1800f343c4f6619}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+FX} irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties\+::get\+Transparent\+Fx (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&}]{material }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the transparence color interpretation. 
+
+Not this is only about E\+C\+C\+S\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT and does not affect get\+Transparency. \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_a0d934ae86d3e587ae22f74d775bbfa36}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_a0d934ae86d3e587ae22f74d775bbfa36}} 
+\index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}!get\+Transparent\+Fx@{get\+Transparent\+Fx}}
+\index{get\+Transparent\+Fx@{get\+Transparent\+Fx}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}}
+\subsubsection{\texorpdfstring{get\+Transparent\+Fx()}{getTransparentFx()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_1_1scene_af7dadd5b96b683cfe1800f343c4f6619}{E\+\_\+\+C\+O\+L\+L\+A\+D\+A\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+FX} irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties\+::get\+Transparent\+Fx (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1video_1_1SMaterial}{video\+::\+S\+Material} \&}]{material }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -135,7 +242,20 @@ Return the transparence color interpretation.
 Not this is only about E\+C\+C\+S\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT and does not affect get\+Transparency. \mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_a9c10df4dc3602efbba6a47b34e2f8f4b}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_a9c10df4dc3602efbba6a47b34e2f8f4b}} 
 \index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}!use\+Node\+Material@{use\+Node\+Material}}
 \index{use\+Node\+Material@{use\+Node\+Material}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}}
-\subsubsection{\texorpdfstring{use\+Node\+Material()}{useNodeMaterial()}}
+\subsubsection{\texorpdfstring{use\+Node\+Material()}{useNodeMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties\+::use\+Node\+Material (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1scene_1_1ISceneNode}{scene\+::\+I\+Scene\+Node} $\ast$}]{node }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return if the node has it\textquotesingle{}s own material overwriting the mesh-\/materials. 
+
+Usually true except for mesh-\/nodes which have is\+Read\+Only\+Materials set. This is mostly important for naming (as \hyperlink{classirr_1_1scene_1_1ISceneNode_a1f44d8cf753b2e4c17c90d4fc2ed05b2}{I\+Scene\+Node\+::get\+Material()} already returns the correct material). You have to override it when exporting custom scenenodes with own materials. \begin{DoxyReturn}{Returns}
+true =$>$ The node\textquotesingle{}s own material is used, false =$>$ ignore node material and use the one from the mesh 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1scene_1_1IColladaMeshWriterProperties_a9c10df4dc3602efbba6a47b34e2f8f4b}\label{classirr_1_1scene_1_1IColladaMeshWriterProperties_a9c10df4dc3602efbba6a47b34e2f8f4b}} 
+\index{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}!use\+Node\+Material@{use\+Node\+Material}}
+\index{use\+Node\+Material@{use\+Node\+Material}!irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties@{irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties}}
+\subsubsection{\texorpdfstring{use\+Node\+Material()}{useNodeMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual bool irr\+::scene\+::\+I\+Collada\+Mesh\+Writer\+Properties\+::use\+Node\+Material (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1scene_1_1ISceneNode}{scene\+::\+I\+Scene\+Node} $\ast$}]{node }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

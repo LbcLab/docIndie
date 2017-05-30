@@ -1,0 +1,390 @@
+\hypertarget{group__libvlc__log}{}\section{Lib\+V\+LC logging}
+\label{group__libvlc__log}\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{group__libvlc__log_ga2bc7c11ca559e643b90fc4d55f0c131c}{libvlc\+\_\+log\+\_\+cb}) (void $\ast$data, int level, const \hyperlink{structvlc__log__t}{libvlc\+\_\+log\+\_\+t} $\ast$ctx, const char $\ast$fmt, va\+\_\+list args)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__libvlc__log_gafbd0cda573ef789842e1cd36a27a61bd}{libvlc\+\_\+log\+\_\+level} \{ \hyperlink{group__libvlc__log_ggafbd0cda573ef789842e1cd36a27a61bdaf9c82a86ac07470ff2bce574a37c7fd8}{L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+B\+UG} =0, 
+\hyperlink{group__libvlc__log_ggafbd0cda573ef789842e1cd36a27a61bdaadba41359b9572613c9aad1f8d7dcadf}{L\+I\+B\+V\+L\+C\+\_\+\+N\+O\+T\+I\+CE} =2, 
+\hyperlink{group__libvlc__log_ggafbd0cda573ef789842e1cd36a27a61bda808a15b1ed05efe7fe021c84f4d01d08}{L\+I\+B\+V\+L\+C\+\_\+\+W\+A\+R\+N\+I\+NG} =3, 
+\hyperlink{group__libvlc__log_ggafbd0cda573ef789842e1cd36a27a61bda53be6dc6f7aa8d745361db18f1075d6f}{L\+I\+B\+V\+L\+C\+\_\+\+E\+R\+R\+OR} =4
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__log_ga9a01433d5badf4a4e8ba3fe1604da242}{libvlc\+\_\+log\+\_\+get\+\_\+context} (const \hyperlink{structvlc__log__t}{libvlc\+\_\+log\+\_\+t} $\ast$ctx, const char $\ast$$\ast$module, const char $\ast$$\ast$file, unsigned $\ast$line)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__log_ga99ea1a066d2c682cbf0b161f59ea81b5}{libvlc\+\_\+log\+\_\+get\+\_\+object} (const \hyperlink{structvlc__log__t}{libvlc\+\_\+log\+\_\+t} $\ast$ctx, const char $\ast$$\ast$name, const char $\ast$$\ast$header, uintptr\+\_\+t $\ast$id)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__log_ga464c81cbb884ea176ac8c39d50080b17}{libvlc\+\_\+log\+\_\+unset} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__log_ga0f01a3cfa2c13a1253e932af6e0b12c5}{libvlc\+\_\+log\+\_\+set} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$, \hyperlink{group__libvlc__log_ga2bc7c11ca559e643b90fc4d55f0c131c}{libvlc\+\_\+log\+\_\+cb} cb, void $\ast$data)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__log_ga0dbaa5502842d6d4b33469b8c25deec9}{libvlc\+\_\+log\+\_\+set\+\_\+file} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$, F\+I\+LE $\ast$stream)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI unsigned \hyperlink{group__libvlc__log_gac15ede92b2992223f9f6f43b07fe3903}{libvlc\+\_\+get\+\_\+log\+\_\+verbosity} (const \hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__log_ga263f3734e93f4a3a8fa9df3255168c08}{libvlc\+\_\+set\+\_\+log\+\_\+verbosity} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance, unsigned level)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{structvlc__log__t}{libvlc\+\_\+log\+\_\+t} $\ast$ \hyperlink{group__libvlc__log_ga95dd678e1ec9d77855e83b4f45b6d04d}{libvlc\+\_\+log\+\_\+open} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__log_gad67020aad8d82e715d205bff8b17f6c1}{libvlc\+\_\+log\+\_\+close} (\hyperlink{structvlc__log__t}{libvlc\+\_\+log\+\_\+t} $\ast$p\+\_\+log)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI unsigned \hyperlink{group__libvlc__log_gafb00ae60f638b8bbe57029b67eaea8ec}{libvlc\+\_\+log\+\_\+count} (const \hyperlink{structvlc__log__t}{libvlc\+\_\+log\+\_\+t} $\ast$p\+\_\+log)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__log_ga64aa12f17bc9e6ed9c3525cf55573697}{libvlc\+\_\+log\+\_\+clear} (\hyperlink{structvlc__log__t}{libvlc\+\_\+log\+\_\+t} $\ast$p\+\_\+log)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__log_ga5bc36e29d8021e6a8d06223ea2ce2262}{libvlc\+\_\+log\+\_\+iterator\+\_\+t} $\ast$ \hyperlink{group__libvlc__log_gadd31c491e4085daa56015f07cfbc5005}{libvlc\+\_\+log\+\_\+get\+\_\+iterator} (const \hyperlink{structvlc__log__t}{libvlc\+\_\+log\+\_\+t} $\ast$p\+\_\+log)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__log_ga4aff14f443b823c7c4c7dd7badefbd58}{libvlc\+\_\+log\+\_\+iterator\+\_\+free} (\hyperlink{group__libvlc__log_ga5bc36e29d8021e6a8d06223ea2ce2262}{libvlc\+\_\+log\+\_\+iterator\+\_\+t} $\ast$p\+\_\+iter)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__log_ga2bd68048a0d546807e8c91ba78c83e50}{libvlc\+\_\+log\+\_\+iterator\+\_\+has\+\_\+next} (const \hyperlink{group__libvlc__log_ga5bc36e29d8021e6a8d06223ea2ce2262}{libvlc\+\_\+log\+\_\+iterator\+\_\+t} $\ast$p\+\_\+iter)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+log\+\_\+message\+\_\+t $\ast$ \hyperlink{group__libvlc__log_ga144d0134b80f6e09e977ab051289a59d}{libvlc\+\_\+log\+\_\+iterator\+\_\+next} (\hyperlink{group__libvlc__log_ga5bc36e29d8021e6a8d06223ea2ce2262}{libvlc\+\_\+log\+\_\+iterator\+\_\+t} $\ast$p\+\_\+iter, libvlc\+\_\+log\+\_\+message\+\_\+t $\ast$p\+\_\+buf)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{group__libvlc__log_ga5bc36e29d8021e6a8d06223ea2ce2262}{libvlc\+\_\+log\+\_\+iterator\+\_\+t} \hyperlink{group__libvlc__log_ga5bc36e29d8021e6a8d06223ea2ce2262}{libvlc\+\_\+log\+\_\+iterator\+\_\+t}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+libvlc\+\_\+log\+\_\+$\ast$ functions provide access to the Lib\+V\+LC messages log. This is used for logging and debugging. 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__libvlc__log_ga2bc7c11ca559e643b90fc4d55f0c131c}\label{group__libvlc__log_ga2bc7c11ca559e643b90fc4d55f0c131c}} 
+\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!libvlc\+\_\+log\+\_\+cb@{libvlc\+\_\+log\+\_\+cb}}
+\index{libvlc\+\_\+log\+\_\+cb@{libvlc\+\_\+log\+\_\+cb}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+log\+\_\+cb}{libvlc\_log\_cb}}
+{\footnotesize\ttfamily typedef void($\ast$ libvlc\+\_\+log\+\_\+cb) (void $\ast$data, int level, const \hyperlink{structvlc__log__t}{libvlc\+\_\+log\+\_\+t} $\ast$ctx, const char $\ast$fmt, va\+\_\+list args)}
+
+Callback prototype for Lib\+V\+LC log message handler. 
+\begin{DoxyParams}{Parameters}
+{\em data} & data pointer as given to \hyperlink{group__libvlc__log_ga0f01a3cfa2c13a1253e932af6e0b12c5}{libvlc\+\_\+log\+\_\+set()} \\
+\hline
+{\em level} & message level (enum libvlc\+\_\+log\+\_\+level) \\
+\hline
+{\em ctx} & message context (meta-\/information about the message) \\
+\hline
+{\em fmt} & printf() format string (as defined by I\+SO C11) \\
+\hline
+{\em args} & variable argument list for the format \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Log message handlers {\bfseries must} be thread-\/safe. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+The message context pointer, the format string parameters and the variable arguments are only valid until the callback returns. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{group__libvlc__log_ga5bc36e29d8021e6a8d06223ea2ce2262}\label{group__libvlc__log_ga5bc36e29d8021e6a8d06223ea2ce2262}} 
+\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!libvlc\+\_\+log\+\_\+iterator\+\_\+t@{libvlc\+\_\+log\+\_\+iterator\+\_\+t}}
+\index{libvlc\+\_\+log\+\_\+iterator\+\_\+t@{libvlc\+\_\+log\+\_\+iterator\+\_\+t}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+log\+\_\+iterator\+\_\+t}{libvlc\_log\_iterator\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{group__libvlc__log_ga5bc36e29d8021e6a8d06223ea2ce2262}{libvlc\+\_\+log\+\_\+iterator\+\_\+t} \hyperlink{group__libvlc__log_ga5bc36e29d8021e6a8d06223ea2ce2262}{libvlc\+\_\+log\+\_\+iterator\+\_\+t}}
+
+This structure is opaque. It represents a libvlc log iterator 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__libvlc__log_gafbd0cda573ef789842e1cd36a27a61bd}\label{group__libvlc__log_gafbd0cda573ef789842e1cd36a27a61bd}} 
+\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!libvlc\+\_\+log\+\_\+level@{libvlc\+\_\+log\+\_\+level}}
+\index{libvlc\+\_\+log\+\_\+level@{libvlc\+\_\+log\+\_\+level}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+log\+\_\+level}{libvlc\_log\_level}}
+{\footnotesize\ttfamily enum \hyperlink{group__libvlc__log_gafbd0cda573ef789842e1cd36a27a61bd}{libvlc\+\_\+log\+\_\+level}}
+
+Logging messages level. \begin{DoxyNote}{Note}
+Future Lib\+V\+LC versions may define new levels. 
+\end{DoxyNote}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+B\+UG@{L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+B\+UG}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+B\+UG@{L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+B\+UG}}}\mbox{\Hypertarget{group__libvlc__log_ggafbd0cda573ef789842e1cd36a27a61bdaf9c82a86ac07470ff2bce574a37c7fd8}\label{group__libvlc__log_ggafbd0cda573ef789842e1cd36a27a61bdaf9c82a86ac07470ff2bce574a37c7fd8}} 
+L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+B\+UG&Debug message \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+I\+B\+V\+L\+C\+\_\+\+N\+O\+T\+I\+CE@{L\+I\+B\+V\+L\+C\+\_\+\+N\+O\+T\+I\+CE}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!L\+I\+B\+V\+L\+C\+\_\+\+N\+O\+T\+I\+CE@{L\+I\+B\+V\+L\+C\+\_\+\+N\+O\+T\+I\+CE}}}\mbox{\Hypertarget{group__libvlc__log_ggafbd0cda573ef789842e1cd36a27a61bdaadba41359b9572613c9aad1f8d7dcadf}\label{group__libvlc__log_ggafbd0cda573ef789842e1cd36a27a61bdaadba41359b9572613c9aad1f8d7dcadf}} 
+L\+I\+B\+V\+L\+C\+\_\+\+N\+O\+T\+I\+CE&Important informational message \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+I\+B\+V\+L\+C\+\_\+\+W\+A\+R\+N\+I\+NG@{L\+I\+B\+V\+L\+C\+\_\+\+W\+A\+R\+N\+I\+NG}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!L\+I\+B\+V\+L\+C\+\_\+\+W\+A\+R\+N\+I\+NG@{L\+I\+B\+V\+L\+C\+\_\+\+W\+A\+R\+N\+I\+NG}}}\mbox{\Hypertarget{group__libvlc__log_ggafbd0cda573ef789842e1cd36a27a61bda808a15b1ed05efe7fe021c84f4d01d08}\label{group__libvlc__log_ggafbd0cda573ef789842e1cd36a27a61bda808a15b1ed05efe7fe021c84f4d01d08}} 
+L\+I\+B\+V\+L\+C\+\_\+\+W\+A\+R\+N\+I\+NG&Warning (potential error) message \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+I\+B\+V\+L\+C\+\_\+\+E\+R\+R\+OR@{L\+I\+B\+V\+L\+C\+\_\+\+E\+R\+R\+OR}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!L\+I\+B\+V\+L\+C\+\_\+\+E\+R\+R\+OR@{L\+I\+B\+V\+L\+C\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{group__libvlc__log_ggafbd0cda573ef789842e1cd36a27a61bda53be6dc6f7aa8d745361db18f1075d6f}\label{group__libvlc__log_ggafbd0cda573ef789842e1cd36a27a61bda53be6dc6f7aa8d745361db18f1075d6f}} 
+L\+I\+B\+V\+L\+C\+\_\+\+E\+R\+R\+OR&Error message \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__libvlc__log_gac15ede92b2992223f9f6f43b07fe3903}\label{group__libvlc__log_gac15ede92b2992223f9f6f43b07fe3903}} 
+\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!libvlc\+\_\+get\+\_\+log\+\_\+verbosity@{libvlc\+\_\+get\+\_\+log\+\_\+verbosity}}
+\index{libvlc\+\_\+get\+\_\+log\+\_\+verbosity@{libvlc\+\_\+get\+\_\+log\+\_\+verbosity}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+get\+\_\+log\+\_\+verbosity()}{libvlc\_get\_log\_verbosity()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI unsigned libvlc\+\_\+get\+\_\+log\+\_\+verbosity (\begin{DoxyParamCaption}\item[{const \hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance }\end{DoxyParamCaption})}
+
+Always returns minus one. This function is only provided for backward compatibility.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & ignored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+always -\/1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__log_ga64aa12f17bc9e6ed9c3525cf55573697}\label{group__libvlc__log_ga64aa12f17bc9e6ed9c3525cf55573697}} 
+\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!libvlc\+\_\+log\+\_\+clear@{libvlc\+\_\+log\+\_\+clear}}
+\index{libvlc\+\_\+log\+\_\+clear@{libvlc\+\_\+log\+\_\+clear}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+log\+\_\+clear()}{libvlc\_log\_clear()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+log\+\_\+clear (\begin{DoxyParamCaption}\item[{\hyperlink{structvlc__log__t}{libvlc\+\_\+log\+\_\+t} $\ast$}]{p\+\_\+log }\end{DoxyParamCaption})}
+
+This function does nothing. It is only provided for backward compatibility.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+log} & ignored \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__log_gad67020aad8d82e715d205bff8b17f6c1}\label{group__libvlc__log_gad67020aad8d82e715d205bff8b17f6c1}} 
+\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!libvlc\+\_\+log\+\_\+close@{libvlc\+\_\+log\+\_\+close}}
+\index{libvlc\+\_\+log\+\_\+close@{libvlc\+\_\+log\+\_\+close}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+log\+\_\+close()}{libvlc\_log\_close()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+log\+\_\+close (\begin{DoxyParamCaption}\item[{\hyperlink{structvlc__log__t}{libvlc\+\_\+log\+\_\+t} $\ast$}]{p\+\_\+log }\end{DoxyParamCaption})}
+
+Frees memory allocated by \hyperlink{group__libvlc__log_ga95dd678e1ec9d77855e83b4f45b6d04d}{libvlc\+\_\+log\+\_\+open()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+log} & libvlc log instance or N\+U\+LL \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__log_gafb00ae60f638b8bbe57029b67eaea8ec}\label{group__libvlc__log_gafb00ae60f638b8bbe57029b67eaea8ec}} 
+\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!libvlc\+\_\+log\+\_\+count@{libvlc\+\_\+log\+\_\+count}}
+\index{libvlc\+\_\+log\+\_\+count@{libvlc\+\_\+log\+\_\+count}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+log\+\_\+count()}{libvlc\_log\_count()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI unsigned libvlc\+\_\+log\+\_\+count (\begin{DoxyParamCaption}\item[{const \hyperlink{structvlc__log__t}{libvlc\+\_\+log\+\_\+t} $\ast$}]{p\+\_\+log }\end{DoxyParamCaption})}
+
+Always returns zero. This function is only provided for backward compatibility.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+log} & ignored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+always zero 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__log_ga9a01433d5badf4a4e8ba3fe1604da242}\label{group__libvlc__log_ga9a01433d5badf4a4e8ba3fe1604da242}} 
+\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!libvlc\+\_\+log\+\_\+get\+\_\+context@{libvlc\+\_\+log\+\_\+get\+\_\+context}}
+\index{libvlc\+\_\+log\+\_\+get\+\_\+context@{libvlc\+\_\+log\+\_\+get\+\_\+context}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+log\+\_\+get\+\_\+context()}{libvlc\_log\_get\_context()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+log\+\_\+get\+\_\+context (\begin{DoxyParamCaption}\item[{const \hyperlink{structvlc__log__t}{libvlc\+\_\+log\+\_\+t} $\ast$}]{ctx,  }\item[{const char $\ast$$\ast$}]{module,  }\item[{const char $\ast$$\ast$}]{file,  }\item[{unsigned $\ast$}]{line }\end{DoxyParamCaption})}
+
+Gets debugging information about a log message\+: the name of the V\+LC module emitting the message and the message location within the source code.
+
+The returned module name and file name will be N\+U\+LL if unknown. The returned line number will similarly be zero if unknown.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & message context (as passed to the \hyperlink{group__libvlc__log_ga2bc7c11ca559e643b90fc4d55f0c131c}{libvlc\+\_\+log\+\_\+cb} callback) \\
+\hline
+{\em module} & module name storage (or N\+U\+LL) \mbox{[}O\+UT\mbox{]} \\
+\hline
+{\em file} & source code file name storage (or N\+U\+LL) \mbox{[}O\+UT\mbox{]} \\
+\hline
+{\em line} & source code file line number storage (or N\+U\+LL) \mbox{[}O\+UT\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The returned module name and source code file name, if non-\/\+N\+U\+LL, are only valid until the logging callback returns.
+\end{DoxyWarning}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+1.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__log_gadd31c491e4085daa56015f07cfbc5005}\label{group__libvlc__log_gadd31c491e4085daa56015f07cfbc5005}} 
+\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!libvlc\+\_\+log\+\_\+get\+\_\+iterator@{libvlc\+\_\+log\+\_\+get\+\_\+iterator}}
+\index{libvlc\+\_\+log\+\_\+get\+\_\+iterator@{libvlc\+\_\+log\+\_\+get\+\_\+iterator}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+log\+\_\+get\+\_\+iterator()}{libvlc\_log\_get\_iterator()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{group__libvlc__log_ga5bc36e29d8021e6a8d06223ea2ce2262}{libvlc\+\_\+log\+\_\+iterator\+\_\+t}$\ast$ libvlc\+\_\+log\+\_\+get\+\_\+iterator (\begin{DoxyParamCaption}\item[{const \hyperlink{structvlc__log__t}{libvlc\+\_\+log\+\_\+t} $\ast$}]{p\+\_\+log }\end{DoxyParamCaption})}
+
+This function does nothing useful. It is only provided for backward compatibility.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+log} & ignored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an unique pointer or N\+U\+LL on error or if the parameter was N\+U\+LL 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__log_ga99ea1a066d2c682cbf0b161f59ea81b5}\label{group__libvlc__log_ga99ea1a066d2c682cbf0b161f59ea81b5}} 
+\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!libvlc\+\_\+log\+\_\+get\+\_\+object@{libvlc\+\_\+log\+\_\+get\+\_\+object}}
+\index{libvlc\+\_\+log\+\_\+get\+\_\+object@{libvlc\+\_\+log\+\_\+get\+\_\+object}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+log\+\_\+get\+\_\+object()}{libvlc\_log\_get\_object()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+log\+\_\+get\+\_\+object (\begin{DoxyParamCaption}\item[{const \hyperlink{structvlc__log__t}{libvlc\+\_\+log\+\_\+t} $\ast$}]{ctx,  }\item[{const char $\ast$$\ast$}]{name,  }\item[{const char $\ast$$\ast$}]{header,  }\item[{uintptr\+\_\+t $\ast$}]{id }\end{DoxyParamCaption})}
+
+Gets V\+LC object information about a log message\+: the type name of the V\+LC object emitting the message, the object header if any and a temporaly-\/unique object identifier. This information is mainly meant for {\bfseries manual} troubleshooting.
+
+The returned type name may be \char`\"{}generic\char`\"{} if unknown, but it cannot be N\+U\+LL. The returned header will be N\+U\+LL if unset; in current versions, the header is used to distinguish for V\+LM inputs. The returned object ID will be zero if the message is not associated with any V\+LC object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & message context (as passed to the \hyperlink{group__libvlc__log_ga2bc7c11ca559e643b90fc4d55f0c131c}{libvlc\+\_\+log\+\_\+cb} callback) \\
+\hline
+{\em name} & object name storage (or N\+U\+LL) \mbox{[}O\+UT\mbox{]} \\
+\hline
+{\em header} & object header (or N\+U\+LL) \mbox{[}O\+UT\mbox{]} \\
+\hline
+{\em line} & source code file line number storage (or N\+U\+LL) \mbox{[}O\+UT\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The returned module name and source code file name, if non-\/\+N\+U\+LL, are only valid until the logging callback returns.
+\end{DoxyWarning}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+1.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__log_ga4aff14f443b823c7c4c7dd7badefbd58}\label{group__libvlc__log_ga4aff14f443b823c7c4c7dd7badefbd58}} 
+\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!libvlc\+\_\+log\+\_\+iterator\+\_\+free@{libvlc\+\_\+log\+\_\+iterator\+\_\+free}}
+\index{libvlc\+\_\+log\+\_\+iterator\+\_\+free@{libvlc\+\_\+log\+\_\+iterator\+\_\+free}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+log\+\_\+iterator\+\_\+free()}{libvlc\_log\_iterator\_free()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+log\+\_\+iterator\+\_\+free (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__log_ga5bc36e29d8021e6a8d06223ea2ce2262}{libvlc\+\_\+log\+\_\+iterator\+\_\+t} $\ast$}]{p\+\_\+iter }\end{DoxyParamCaption})}
+
+Frees memory allocated by \hyperlink{group__libvlc__log_gadd31c491e4085daa56015f07cfbc5005}{libvlc\+\_\+log\+\_\+get\+\_\+iterator()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+iter} & libvlc log iterator or N\+U\+LL \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__log_ga2bd68048a0d546807e8c91ba78c83e50}\label{group__libvlc__log_ga2bd68048a0d546807e8c91ba78c83e50}} 
+\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!libvlc\+\_\+log\+\_\+iterator\+\_\+has\+\_\+next@{libvlc\+\_\+log\+\_\+iterator\+\_\+has\+\_\+next}}
+\index{libvlc\+\_\+log\+\_\+iterator\+\_\+has\+\_\+next@{libvlc\+\_\+log\+\_\+iterator\+\_\+has\+\_\+next}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+log\+\_\+iterator\+\_\+has\+\_\+next()}{libvlc\_log\_iterator\_has\_next()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+log\+\_\+iterator\+\_\+has\+\_\+next (\begin{DoxyParamCaption}\item[{const \hyperlink{group__libvlc__log_ga5bc36e29d8021e6a8d06223ea2ce2262}{libvlc\+\_\+log\+\_\+iterator\+\_\+t} $\ast$}]{p\+\_\+iter }\end{DoxyParamCaption})}
+
+Always returns zero. This function is only provided for backward compatibility.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+iter} & ignored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+always zero 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__log_ga144d0134b80f6e09e977ab051289a59d}\label{group__libvlc__log_ga144d0134b80f6e09e977ab051289a59d}} 
+\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!libvlc\+\_\+log\+\_\+iterator\+\_\+next@{libvlc\+\_\+log\+\_\+iterator\+\_\+next}}
+\index{libvlc\+\_\+log\+\_\+iterator\+\_\+next@{libvlc\+\_\+log\+\_\+iterator\+\_\+next}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+log\+\_\+iterator\+\_\+next()}{libvlc\_log\_iterator\_next()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+log\+\_\+message\+\_\+t$\ast$ libvlc\+\_\+log\+\_\+iterator\+\_\+next (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__log_ga5bc36e29d8021e6a8d06223ea2ce2262}{libvlc\+\_\+log\+\_\+iterator\+\_\+t} $\ast$}]{p\+\_\+iter,  }\item[{libvlc\+\_\+log\+\_\+message\+\_\+t $\ast$}]{p\+\_\+buf }\end{DoxyParamCaption})}
+
+Always returns N\+U\+LL. This function is only provided for backward compatibility.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+iter} & libvlc log iterator or N\+U\+LL \\
+\hline
+{\em p\+\_\+buf} & ignored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+always N\+U\+LL 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__log_ga95dd678e1ec9d77855e83b4f45b6d04d}\label{group__libvlc__log_ga95dd678e1ec9d77855e83b4f45b6d04d}} 
+\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!libvlc\+\_\+log\+\_\+open@{libvlc\+\_\+log\+\_\+open}}
+\index{libvlc\+\_\+log\+\_\+open@{libvlc\+\_\+log\+\_\+open}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+log\+\_\+open()}{libvlc\_log\_open()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI \hyperlink{structvlc__log__t}{libvlc\+\_\+log\+\_\+t}$\ast$ libvlc\+\_\+log\+\_\+open (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance }\end{DoxyParamCaption})}
+
+This function does nothing useful. It is only provided for backward compatibility.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & libvlc instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an unique pointer or N\+U\+LL on error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__log_ga0f01a3cfa2c13a1253e932af6e0b12c5}\label{group__libvlc__log_ga0f01a3cfa2c13a1253e932af6e0b12c5}} 
+\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!libvlc\+\_\+log\+\_\+set@{libvlc\+\_\+log\+\_\+set}}
+\index{libvlc\+\_\+log\+\_\+set@{libvlc\+\_\+log\+\_\+set}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+log\+\_\+set()}{libvlc\_log\_set()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+log\+\_\+set (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{,  }\item[{\hyperlink{group__libvlc__log_ga2bc7c11ca559e643b90fc4d55f0c131c}{libvlc\+\_\+log\+\_\+cb}}]{cb,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})}
+
+Sets the logging callback for a Lib\+V\+LC instance. This function is thread-\/safe\+: it will wait for any pending callbacks invocation to complete.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cb} & callback function pointer \\
+\hline
+{\em data} & opaque data pointer for the callback function\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Some log messages (especially debug) are emitted by Lib\+V\+LC while is being initialized. These messages cannot be captured with this interface.
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+A deadlock may occur if this function is called from the callback.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & libvlc instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+1.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__log_ga0dbaa5502842d6d4b33469b8c25deec9}\label{group__libvlc__log_ga0dbaa5502842d6d4b33469b8c25deec9}} 
+\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!libvlc\+\_\+log\+\_\+set\+\_\+file@{libvlc\+\_\+log\+\_\+set\+\_\+file}}
+\index{libvlc\+\_\+log\+\_\+set\+\_\+file@{libvlc\+\_\+log\+\_\+set\+\_\+file}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+log\+\_\+set\+\_\+file()}{libvlc\_log\_set\_file()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+log\+\_\+set\+\_\+file (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{,  }\item[{F\+I\+LE $\ast$}]{stream }\end{DoxyParamCaption})}
+
+Sets up logging to a file. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & libvlc instance \\
+\hline
+{\em stream} & F\+I\+LE pointer opened for writing (the F\+I\+LE pointer must remain valid until \hyperlink{group__libvlc__log_ga464c81cbb884ea176ac8c39d50080b17}{libvlc\+\_\+log\+\_\+unset()}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+1.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__log_ga464c81cbb884ea176ac8c39d50080b17}\label{group__libvlc__log_ga464c81cbb884ea176ac8c39d50080b17}} 
+\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!libvlc\+\_\+log\+\_\+unset@{libvlc\+\_\+log\+\_\+unset}}
+\index{libvlc\+\_\+log\+\_\+unset@{libvlc\+\_\+log\+\_\+unset}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+log\+\_\+unset()}{libvlc\_log\_unset()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+log\+\_\+unset (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Unsets the logging callback for a Lib\+V\+LC instance. This is rarely needed\+: the callback is implicitly unset when the instance is destroyed. This function will wait for any pending callbacks invocation to complete (causing a deadlock if called from within the callback).
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & libvlc instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+Lib\+V\+LC 2.\+1.\+0 or later 
+\end{DoxyVersion}
+\mbox{\Hypertarget{group__libvlc__log_ga263f3734e93f4a3a8fa9df3255168c08}\label{group__libvlc__log_ga263f3734e93f4a3a8fa9df3255168c08}} 
+\index{Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}!libvlc\+\_\+set\+\_\+log\+\_\+verbosity@{libvlc\+\_\+set\+\_\+log\+\_\+verbosity}}
+\index{libvlc\+\_\+set\+\_\+log\+\_\+verbosity@{libvlc\+\_\+set\+\_\+log\+\_\+verbosity}!Lib\+V\+L\+C logging@{Lib\+V\+L\+C logging}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+set\+\_\+log\+\_\+verbosity()}{libvlc\_set\_log\_verbosity()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+set\+\_\+log\+\_\+verbosity (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance,  }\item[{unsigned}]{level }\end{DoxyParamCaption})}
+
+This function does nothing. It is only provided for backward compatibility.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & ignored \\
+\hline
+{\em level} & ignored \\
+\hline
+\end{DoxyParams}

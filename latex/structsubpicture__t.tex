@@ -1,0 +1,137 @@
+\hypertarget{structsubpicture__t}{}\section{subpicture\+\_\+t Struct Reference}
+\label{structsubpicture__t}\index{subpicture\+\_\+t@{subpicture\+\_\+t}}
+
+
+{\ttfamily \#include $<$vlc\+\_\+subpicture.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structsubpicture__region__t}{subpicture\+\_\+region\+\_\+t} $\ast$ \hyperlink{structsubpicture__t_ad091daa3477dc3603d83471a786824a1}{p\+\_\+region}
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Channel ID}\par
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structsubpicture__t_acb53f3c2070e95b25fc80b69adc5723c}{i\+\_\+channel}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Type and flags}\par
+{\em Should N\+OT be modified except by the vout thread }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structsubpicture__t_a9a317cd04e6bf507f3bdaced4a9fd92d}\label{structsubpicture__t_a9a317cd04e6bf507f3bdaced4a9fd92d}} 
+int64\+\_\+t {\bfseries i\+\_\+order}
+\item 
+\hyperlink{structsubpicture__t}{subpicture\+\_\+t} $\ast$ \hyperlink{structsubpicture__t_a54d10f8d93fc0f176d32c53c59dbb04a}{p\+\_\+next}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Date properties}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} \hyperlink{structsubpicture__t_a4d7b8388139d7d8a1ad0ad9354d4700b}{i\+\_\+start}
+\item 
+\hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} \hyperlink{structsubpicture__t_a92078f5d576cdcd89056b16ed1c9007e}{i\+\_\+stop}
+\item 
+bool \hyperlink{structsubpicture__t_a7b1150266a7532d908effb27edff79bb}{b\+\_\+ephemer}
+\item 
+bool \hyperlink{structsubpicture__t_a84f0d741899c94122875aa3b16c41b2b}{b\+\_\+fade}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Display properties}\par
+{\em These properties are only indicative and may be changed by the video output thread, or simply ignored depending of the subtitle type. }\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structsubpicture__t_a98a594fc9692d734dc8e13e7494827b0}{b\+\_\+subtitle}
+\item 
+bool \hyperlink{structsubpicture__t_af1e57a6804dc53ca4187ee2107abea56}{b\+\_\+absolute}
+\item 
+int \hyperlink{structsubpicture__t_af926c85504ebd196ed0afea2f367fa53}{i\+\_\+original\+\_\+picture\+\_\+width}
+\item 
+int \hyperlink{structsubpicture__t_aa8454e69113492d1497c82000376dc01}{i\+\_\+original\+\_\+picture\+\_\+height}
+\item 
+int \hyperlink{structsubpicture__t_a89bea0de7693c445807c939c325752ba}{i\+\_\+alpha}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Video subtitle
+
+Any subtitle destined to be displayed by a video output thread should be stored in this structure from it\textquotesingle{}s creation to it\textquotesingle{}s effective display. Subtitle type and flags should only be modified by the output thread. Note that an empty subtitle M\+U\+ST have its flags set to 0. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structsubpicture__t_af1e57a6804dc53ca4187ee2107abea56}\label{structsubpicture__t_af1e57a6804dc53ca4187ee2107abea56}} 
+\index{subpicture\+\_\+t@{subpicture\+\_\+t}!b\+\_\+absolute@{b\+\_\+absolute}}
+\index{b\+\_\+absolute@{b\+\_\+absolute}!subpicture\+\_\+t@{subpicture\+\_\+t}}
+\subsubsection{\texorpdfstring{b\+\_\+absolute}{b\_absolute}}
+{\footnotesize\ttfamily bool subpicture\+\_\+t\+::b\+\_\+absolute}
+
+position is absolute \mbox{\Hypertarget{structsubpicture__t_a7b1150266a7532d908effb27edff79bb}\label{structsubpicture__t_a7b1150266a7532d908effb27edff79bb}} 
+\index{subpicture\+\_\+t@{subpicture\+\_\+t}!b\+\_\+ephemer@{b\+\_\+ephemer}}
+\index{b\+\_\+ephemer@{b\+\_\+ephemer}!subpicture\+\_\+t@{subpicture\+\_\+t}}
+\subsubsection{\texorpdfstring{b\+\_\+ephemer}{b\_ephemer}}
+{\footnotesize\ttfamily bool subpicture\+\_\+t\+::b\+\_\+ephemer}
+
+If this flag is set to true the subtitle will be displayed untill the next one appear \mbox{\Hypertarget{structsubpicture__t_a84f0d741899c94122875aa3b16c41b2b}\label{structsubpicture__t_a84f0d741899c94122875aa3b16c41b2b}} 
+\index{subpicture\+\_\+t@{subpicture\+\_\+t}!b\+\_\+fade@{b\+\_\+fade}}
+\index{b\+\_\+fade@{b\+\_\+fade}!subpicture\+\_\+t@{subpicture\+\_\+t}}
+\subsubsection{\texorpdfstring{b\+\_\+fade}{b\_fade}}
+{\footnotesize\ttfamily bool subpicture\+\_\+t\+::b\+\_\+fade}
+
+enable fading \mbox{\Hypertarget{structsubpicture__t_a98a594fc9692d734dc8e13e7494827b0}\label{structsubpicture__t_a98a594fc9692d734dc8e13e7494827b0}} 
+\index{subpicture\+\_\+t@{subpicture\+\_\+t}!b\+\_\+subtitle@{b\+\_\+subtitle}}
+\index{b\+\_\+subtitle@{b\+\_\+subtitle}!subpicture\+\_\+t@{subpicture\+\_\+t}}
+\subsubsection{\texorpdfstring{b\+\_\+subtitle}{b\_subtitle}}
+{\footnotesize\ttfamily bool subpicture\+\_\+t\+::b\+\_\+subtitle}
+
+the picture is a movie subtitle \mbox{\Hypertarget{structsubpicture__t_a89bea0de7693c445807c939c325752ba}\label{structsubpicture__t_a89bea0de7693c445807c939c325752ba}} 
+\index{subpicture\+\_\+t@{subpicture\+\_\+t}!i\+\_\+alpha@{i\+\_\+alpha}}
+\index{i\+\_\+alpha@{i\+\_\+alpha}!subpicture\+\_\+t@{subpicture\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+alpha}{i\_alpha}}
+{\footnotesize\ttfamily int subpicture\+\_\+t\+::i\+\_\+alpha}
+
+transparency \mbox{\Hypertarget{structsubpicture__t_acb53f3c2070e95b25fc80b69adc5723c}\label{structsubpicture__t_acb53f3c2070e95b25fc80b69adc5723c}} 
+\index{subpicture\+\_\+t@{subpicture\+\_\+t}!i\+\_\+channel@{i\+\_\+channel}}
+\index{i\+\_\+channel@{i\+\_\+channel}!subpicture\+\_\+t@{subpicture\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+channel}{i\_channel}}
+{\footnotesize\ttfamily int subpicture\+\_\+t\+::i\+\_\+channel}
+
+subpicture channel ID \mbox{\Hypertarget{structsubpicture__t_aa8454e69113492d1497c82000376dc01}\label{structsubpicture__t_aa8454e69113492d1497c82000376dc01}} 
+\index{subpicture\+\_\+t@{subpicture\+\_\+t}!i\+\_\+original\+\_\+picture\+\_\+height@{i\+\_\+original\+\_\+picture\+\_\+height}}
+\index{i\+\_\+original\+\_\+picture\+\_\+height@{i\+\_\+original\+\_\+picture\+\_\+height}!subpicture\+\_\+t@{subpicture\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+original\+\_\+picture\+\_\+height}{i\_original\_picture\_height}}
+{\footnotesize\ttfamily int subpicture\+\_\+t\+::i\+\_\+original\+\_\+picture\+\_\+height}
+
+original height of the movie \mbox{\Hypertarget{structsubpicture__t_af926c85504ebd196ed0afea2f367fa53}\label{structsubpicture__t_af926c85504ebd196ed0afea2f367fa53}} 
+\index{subpicture\+\_\+t@{subpicture\+\_\+t}!i\+\_\+original\+\_\+picture\+\_\+width@{i\+\_\+original\+\_\+picture\+\_\+width}}
+\index{i\+\_\+original\+\_\+picture\+\_\+width@{i\+\_\+original\+\_\+picture\+\_\+width}!subpicture\+\_\+t@{subpicture\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+original\+\_\+picture\+\_\+width}{i\_original\_picture\_width}}
+{\footnotesize\ttfamily int subpicture\+\_\+t\+::i\+\_\+original\+\_\+picture\+\_\+width}
+
+original width of the movie \mbox{\Hypertarget{structsubpicture__t_a4d7b8388139d7d8a1ad0ad9354d4700b}\label{structsubpicture__t_a4d7b8388139d7d8a1ad0ad9354d4700b}} 
+\index{subpicture\+\_\+t@{subpicture\+\_\+t}!i\+\_\+start@{i\+\_\+start}}
+\index{i\+\_\+start@{i\+\_\+start}!subpicture\+\_\+t@{subpicture\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+start}{i\_start}}
+{\footnotesize\ttfamily \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} subpicture\+\_\+t\+::i\+\_\+start}
+
+beginning of display date \mbox{\Hypertarget{structsubpicture__t_a92078f5d576cdcd89056b16ed1c9007e}\label{structsubpicture__t_a92078f5d576cdcd89056b16ed1c9007e}} 
+\index{subpicture\+\_\+t@{subpicture\+\_\+t}!i\+\_\+stop@{i\+\_\+stop}}
+\index{i\+\_\+stop@{i\+\_\+stop}!subpicture\+\_\+t@{subpicture\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+stop}{i\_stop}}
+{\footnotesize\ttfamily \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} subpicture\+\_\+t\+::i\+\_\+stop}
+
+end of display date \mbox{\Hypertarget{structsubpicture__t_a54d10f8d93fc0f176d32c53c59dbb04a}\label{structsubpicture__t_a54d10f8d93fc0f176d32c53c59dbb04a}} 
+\index{subpicture\+\_\+t@{subpicture\+\_\+t}!p\+\_\+next@{p\+\_\+next}}
+\index{p\+\_\+next@{p\+\_\+next}!subpicture\+\_\+t@{subpicture\+\_\+t}}
+\subsubsection{\texorpdfstring{p\+\_\+next}{p\_next}}
+{\footnotesize\ttfamily \hyperlink{structsubpicture__t}{subpicture\+\_\+t}$\ast$ subpicture\+\_\+t\+::p\+\_\+next}
+
+an increasing unique number next subtitle to be displayed \mbox{\Hypertarget{structsubpicture__t_ad091daa3477dc3603d83471a786824a1}\label{structsubpicture__t_ad091daa3477dc3603d83471a786824a1}} 
+\index{subpicture\+\_\+t@{subpicture\+\_\+t}!p\+\_\+region@{p\+\_\+region}}
+\index{p\+\_\+region@{p\+\_\+region}!subpicture\+\_\+t@{subpicture\+\_\+t}}
+\subsubsection{\texorpdfstring{p\+\_\+region}{p\_region}}
+{\footnotesize\ttfamily \hyperlink{structsubpicture__region__t}{subpicture\+\_\+region\+\_\+t}$\ast$ subpicture\+\_\+t\+::p\+\_\+region}
+
+region list composing this subtitle 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/include/vlc/plugins/\hyperlink{vlc__subpicture_8h}{vlc\+\_\+subpicture.\+h}\end{DoxyCompactItemize}

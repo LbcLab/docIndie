@@ -1,0 +1,82 @@
+\hypertarget{vlc__vout__window_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+vout\+\_\+window.h File Reference}
+\label{vlc__vout__window_8h}\index{lib/include/vlc/plugins/vlc\+\_\+vout\+\_\+window.\+h@{lib/include/vlc/plugins/vlc\+\_\+vout\+\_\+window.\+h}}
+{\ttfamily \#include $<$vlc\+\_\+common.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structvout__window__t}{vout\+\_\+window\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum 
+\item 
+enum 
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structvout__window__t}{vout\+\_\+window\+\_\+t} $\ast$ \hyperlink{vlc__vout__window_8h_a745f2f49b74e7f8d7d8c80b8414ce918}{vout\+\_\+window\+\_\+\+New} (\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$, const char $\ast$module, const vout\+\_\+window\+\_\+cfg\+\_\+t $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__vout__window_8h_ac389463700818c12baff35d9c8bcdaa1}{vout\+\_\+window\+\_\+\+Delete} (\hyperlink{structvout__window__t}{vout\+\_\+window\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{vlc__vout__window_8h_a369b3467fd728a2fe53b923ef8ac2595}{vout\+\_\+window\+\_\+\+Control} (\hyperlink{structvout__window__t}{vout\+\_\+window\+\_\+t} $\ast$, int query,...)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines vout windows structures and functions in vlc 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{vlc__vout__window_8h_a1b7b7893d940926615b39239ac05829d}\label{vlc__vout__window_8h_a1b7b7893d940926615b39239ac05829d}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\hyperlink{classWindow}{Window} handle type \mbox{\Hypertarget{vlc__vout__window_8h_a098384b0034af0daa7c9c5c82b563567}\label{vlc__vout__window_8h_a098384b0034af0daa7c9c5c82b563567}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+Control query for \hyperlink{structvout__window__t}{vout\+\_\+window\+\_\+t} 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{vlc__vout__window_8h_a369b3467fd728a2fe53b923ef8ac2595}\label{vlc__vout__window_8h_a369b3467fd728a2fe53b923ef8ac2595}} 
+\index{vlc\+\_\+vout\+\_\+window.\+h@{vlc\+\_\+vout\+\_\+window.\+h}!vout\+\_\+window\+\_\+\+Control@{vout\+\_\+window\+\_\+\+Control}}
+\index{vout\+\_\+window\+\_\+\+Control@{vout\+\_\+window\+\_\+\+Control}!vlc\+\_\+vout\+\_\+window.\+h@{vlc\+\_\+vout\+\_\+window.\+h}}
+\subsubsection{\texorpdfstring{vout\+\_\+window\+\_\+\+Control()}{vout\_window\_Control()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI int vout\+\_\+window\+\_\+\+Control (\begin{DoxyParamCaption}\item[{\hyperlink{structvout__window__t}{vout\+\_\+window\+\_\+t} $\ast$}]{,  }\item[{int}]{query,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+Reconfigures a window.
+
+\begin{DoxyNote}{Note}
+The vout\+\_\+window\+\_\+$\ast$ wrappers should be used instead of this function.
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+The caller must own the window, as \hyperlink{structvout__window__t}{vout\+\_\+window\+\_\+t} is not thread safe. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{vlc__vout__window_8h_ac389463700818c12baff35d9c8bcdaa1}\label{vlc__vout__window_8h_ac389463700818c12baff35d9c8bcdaa1}} 
+\index{vlc\+\_\+vout\+\_\+window.\+h@{vlc\+\_\+vout\+\_\+window.\+h}!vout\+\_\+window\+\_\+\+Delete@{vout\+\_\+window\+\_\+\+Delete}}
+\index{vout\+\_\+window\+\_\+\+Delete@{vout\+\_\+window\+\_\+\+Delete}!vlc\+\_\+vout\+\_\+window.\+h@{vlc\+\_\+vout\+\_\+window.\+h}}
+\subsubsection{\texorpdfstring{vout\+\_\+window\+\_\+\+Delete()}{vout\_window\_Delete()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void vout\+\_\+window\+\_\+\+Delete (\begin{DoxyParamCaption}\item[{\hyperlink{structvout__window__t}{vout\+\_\+window\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Deletes a window created by \hyperlink{vlc__vout__window_8h_a745f2f49b74e7f8d7d8c80b8414ce918}{vout\+\_\+window\+\_\+\+New()}.
+
+\begin{DoxyNote}{Note}
+See \hyperlink{vlc__vout__window_8h_a745f2f49b74e7f8d7d8c80b8414ce918}{vout\+\_\+window\+\_\+\+New()} about window recycling. 
+\end{DoxyNote}
+\mbox{\Hypertarget{vlc__vout__window_8h_a745f2f49b74e7f8d7d8c80b8414ce918}\label{vlc__vout__window_8h_a745f2f49b74e7f8d7d8c80b8414ce918}} 
+\index{vlc\+\_\+vout\+\_\+window.\+h@{vlc\+\_\+vout\+\_\+window.\+h}!vout\+\_\+window\+\_\+\+New@{vout\+\_\+window\+\_\+\+New}}
+\index{vout\+\_\+window\+\_\+\+New@{vout\+\_\+window\+\_\+\+New}!vlc\+\_\+vout\+\_\+window.\+h@{vlc\+\_\+vout\+\_\+window.\+h}}
+\subsubsection{\texorpdfstring{vout\+\_\+window\+\_\+\+New()}{vout\_window\_New()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structvout__window__t}{vout\+\_\+window\+\_\+t}$\ast$ vout\+\_\+window\+\_\+\+New (\begin{DoxyParamCaption}\item[{\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$}]{,  }\item[{const char $\ast$}]{module,  }\item[{const vout\+\_\+window\+\_\+cfg\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+Creates a new window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em module} & plugin name (usually \char`\"{}\$window\char`\"{}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If you are inside a \char`\"{}vout display\char`\"{}, you must use / vout\+\_\+display\+\_\+\+New\+Window() and vout\+\_\+display\+\_\+\+Delete\+Window() instead. This enables recycling windows. 
+\end{DoxyNote}

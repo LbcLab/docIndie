@@ -1,0 +1,22 @@
+\hypertarget{group__libvlc__clock}{}\section{Lib\+V\+LC time}
+\label{group__libvlc__clock}\index{Lib\+V\+L\+C time@{Lib\+V\+L\+C time}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int64\+\_\+t \hyperlink{group__libvlc__clock_ga38fa16aeec0d1e6a7d872526200f1957}{libvlc\+\_\+clock} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+These functions provide access to the Lib\+V\+LC time/clock. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__libvlc__clock_ga38fa16aeec0d1e6a7d872526200f1957}\label{group__libvlc__clock_ga38fa16aeec0d1e6a7d872526200f1957}} 
+\index{Lib\+V\+L\+C time@{Lib\+V\+L\+C time}!libvlc\+\_\+clock@{libvlc\+\_\+clock}}
+\index{libvlc\+\_\+clock@{libvlc\+\_\+clock}!Lib\+V\+L\+C time@{Lib\+V\+L\+C time}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+clock()}{libvlc\_clock()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int64\+\_\+t libvlc\+\_\+clock (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Return the current time as defined by Lib\+V\+LC. The unit is the microsecond. Time increases monotonically (regardless of time zone changes and R\+TC adjustements). The origin is arbitrary but consistent across the whole system (e.\+g. the system uptim, the time since the system was booted). \begin{DoxyNote}{Note}
+On systems that support it, the P\+O\+S\+IX monotonic clock is used. 
+\end{DoxyNote}

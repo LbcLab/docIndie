@@ -1,0 +1,95 @@
+\hypertarget{group__libvlc__media__library}{}\section{Lib\+V\+LC media library}
+\label{group__libvlc__media__library}\index{Lib\+V\+L\+C media library@{Lib\+V\+L\+C media library}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+library\+\_\+t $\ast$ \hyperlink{group__libvlc__media__library_gaa1ae63d96da4224df7d3cdf4ceee37df}{libvlc\+\_\+media\+\_\+library\+\_\+new} (\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$p\+\_\+instance)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__library_ga334af602d7829cd26e6a0591fff5bf6d}{libvlc\+\_\+media\+\_\+library\+\_\+release} (libvlc\+\_\+media\+\_\+library\+\_\+t $\ast$p\+\_\+mlib)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__media__library_gaecb327371dd64fbd23e77637b32a8091}{libvlc\+\_\+media\+\_\+library\+\_\+retain} (libvlc\+\_\+media\+\_\+library\+\_\+t $\ast$p\+\_\+mlib)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int \hyperlink{group__libvlc__media__library_gaffa7ef77393064821c02c9203031945f}{libvlc\+\_\+media\+\_\+library\+\_\+load} (libvlc\+\_\+media\+\_\+library\+\_\+t $\ast$p\+\_\+mlib)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+list\+\_\+t $\ast$ \hyperlink{group__libvlc__media__library_gad20c729c7f90d6295bf8a0e350977892}{libvlc\+\_\+media\+\_\+library\+\_\+media\+\_\+list} (libvlc\+\_\+media\+\_\+library\+\_\+t $\ast$p\+\_\+mlib)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__libvlc__media__library_gaffa7ef77393064821c02c9203031945f}\label{group__libvlc__media__library_gaffa7ef77393064821c02c9203031945f}} 
+\index{Lib\+V\+L\+C media library@{Lib\+V\+L\+C media library}!libvlc\+\_\+media\+\_\+library\+\_\+load@{libvlc\+\_\+media\+\_\+library\+\_\+load}}
+\index{libvlc\+\_\+media\+\_\+library\+\_\+load@{libvlc\+\_\+media\+\_\+library\+\_\+load}!Lib\+V\+L\+C media library@{Lib\+V\+L\+C media library}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+library\+\_\+load()}{libvlc\_media\_library\_load()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI int libvlc\+\_\+media\+\_\+library\+\_\+load (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+library\+\_\+t $\ast$}]{p\+\_\+mlib }\end{DoxyParamCaption})}
+
+Load media library.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mlib} & media library object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, -\/1 on error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__library_gad20c729c7f90d6295bf8a0e350977892}\label{group__libvlc__media__library_gad20c729c7f90d6295bf8a0e350977892}} 
+\index{Lib\+V\+L\+C media library@{Lib\+V\+L\+C media library}!libvlc\+\_\+media\+\_\+library\+\_\+media\+\_\+list@{libvlc\+\_\+media\+\_\+library\+\_\+media\+\_\+list}}
+\index{libvlc\+\_\+media\+\_\+library\+\_\+media\+\_\+list@{libvlc\+\_\+media\+\_\+library\+\_\+media\+\_\+list}!Lib\+V\+L\+C media library@{Lib\+V\+L\+C media library}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+library\+\_\+media\+\_\+list()}{libvlc\_media\_library\_media\_list()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+list\+\_\+t$\ast$ libvlc\+\_\+media\+\_\+library\+\_\+media\+\_\+list (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+library\+\_\+t $\ast$}]{p\+\_\+mlib }\end{DoxyParamCaption})}
+
+Get media library subitems.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mlib} & media library object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+media list subitems 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__library_gaa1ae63d96da4224df7d3cdf4ceee37df}\label{group__libvlc__media__library_gaa1ae63d96da4224df7d3cdf4ceee37df}} 
+\index{Lib\+V\+L\+C media library@{Lib\+V\+L\+C media library}!libvlc\+\_\+media\+\_\+library\+\_\+new@{libvlc\+\_\+media\+\_\+library\+\_\+new}}
+\index{libvlc\+\_\+media\+\_\+library\+\_\+new@{libvlc\+\_\+media\+\_\+library\+\_\+new}!Lib\+V\+L\+C media library@{Lib\+V\+L\+C media library}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+library\+\_\+new()}{libvlc\_media\_library\_new()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI libvlc\+\_\+media\+\_\+library\+\_\+t$\ast$ libvlc\+\_\+media\+\_\+library\+\_\+new (\begin{DoxyParamCaption}\item[{\hyperlink{group__libvlc__core_ga316d739a80da4678206c79f4d6c2e284}{libvlc\+\_\+instance\+\_\+t} $\ast$}]{p\+\_\+instance }\end{DoxyParamCaption})}
+
+Create an new Media Library object
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+instance} & the libvlc instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new object or N\+U\+LL on error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__media__library_ga334af602d7829cd26e6a0591fff5bf6d}\label{group__libvlc__media__library_ga334af602d7829cd26e6a0591fff5bf6d}} 
+\index{Lib\+V\+L\+C media library@{Lib\+V\+L\+C media library}!libvlc\+\_\+media\+\_\+library\+\_\+release@{libvlc\+\_\+media\+\_\+library\+\_\+release}}
+\index{libvlc\+\_\+media\+\_\+library\+\_\+release@{libvlc\+\_\+media\+\_\+library\+\_\+release}!Lib\+V\+L\+C media library@{Lib\+V\+L\+C media library}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+library\+\_\+release()}{libvlc\_media\_library\_release()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+library\+\_\+release (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+library\+\_\+t $\ast$}]{p\+\_\+mlib }\end{DoxyParamCaption})}
+
+Release media library object. This functions decrements the reference count of the media library object. If it reaches 0, then the object will be released.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mlib} & media library object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__libvlc__media__library_gaecb327371dd64fbd23e77637b32a8091}\label{group__libvlc__media__library_gaecb327371dd64fbd23e77637b32a8091}} 
+\index{Lib\+V\+L\+C media library@{Lib\+V\+L\+C media library}!libvlc\+\_\+media\+\_\+library\+\_\+retain@{libvlc\+\_\+media\+\_\+library\+\_\+retain}}
+\index{libvlc\+\_\+media\+\_\+library\+\_\+retain@{libvlc\+\_\+media\+\_\+library\+\_\+retain}!Lib\+V\+L\+C media library@{Lib\+V\+L\+C media library}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+media\+\_\+library\+\_\+retain()}{libvlc\_media\_library\_retain()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+media\+\_\+library\+\_\+retain (\begin{DoxyParamCaption}\item[{libvlc\+\_\+media\+\_\+library\+\_\+t $\ast$}]{p\+\_\+mlib }\end{DoxyParamCaption})}
+
+Retain a reference to a media library object. This function will increment the reference counting for this object. Use \hyperlink{group__libvlc__media__library_ga334af602d7829cd26e6a0591fff5bf6d}{libvlc\+\_\+media\+\_\+library\+\_\+release()} to decrement the reference count.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+mlib} & media library object \\
+\hline
+\end{DoxyParams}

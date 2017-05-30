@@ -1,0 +1,96 @@
+\hypertarget{vlc__configuration_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+configuration.h File Reference}
+\label{vlc__configuration_8h}\index{lib/include/vlc/plugins/vlc\+\_\+configuration.\+h@{lib/include/vlc/plugins/vlc\+\_\+configuration.\+h}}
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__configuration_8h_ad6f6ab86fcdd462f98a5b982999ee469}{config\+\_\+\+Chain\+Parse} (\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$, const char $\ast$psz\+\_\+prefix, const char $\ast$const $\ast$ppsz\+\_\+options, config\+\_\+chain\+\_\+t $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI const char $\ast$ \hyperlink{vlc__configuration_8h_a6b8948030dd0b0364c85ce631dbb53f2}{config\+\_\+\+Chain\+Parse\+Options} (config\+\_\+chain\+\_\+t $\ast$$\ast$pp\+\_\+cfg, const char $\ast$ppsz\+\_\+opts)
+\item 
+V\+L\+C\+\_\+\+A\+PI char $\ast$ \hyperlink{vlc__configuration_8h_afd56649a27f8bdc8fce0f7062609c2e6}{config\+\_\+\+Chain\+Create} (char $\ast$$\ast$ppsz\+\_\+name, config\+\_\+chain\+\_\+t $\ast$$\ast$pp\+\_\+cfg, const char $\ast$psz\+\_\+string) V\+L\+C\+\_\+\+U\+S\+ED V\+L\+C\+\_\+\+M\+A\+L\+L\+OC
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__configuration_8h_a273b45b0ce1becb4297ffdb95c0c3cee}{config\+\_\+\+Chain\+Destroy} (config\+\_\+chain\+\_\+t $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI config\+\_\+chain\+\_\+t $\ast$ \hyperlink{vlc__configuration_8h_ac618790b06ea3f496164b281327b90a5}{config\+\_\+\+Chain\+Duplicate} (const config\+\_\+chain\+\_\+t $\ast$) V\+L\+C\+\_\+\+U\+S\+ED V\+L\+C\+\_\+\+M\+A\+L\+L\+OC
+\item 
+V\+L\+C\+\_\+\+A\+PI char $\ast$ \hyperlink{vlc__configuration_8h_aaa365b4a30045351c5701bdd3d13ef64}{config\+\_\+\+String\+Unescape} (char $\ast$psz\+\_\+string)
+\item 
+V\+L\+C\+\_\+\+A\+PI char $\ast$ \hyperlink{vlc__configuration_8h_a01cfa5e7ff319ff5b68f4a098ceb3ef0}{config\+\_\+\+String\+Escape} (const char $\ast$psz\+\_\+string) V\+L\+C\+\_\+\+U\+S\+ED V\+L\+C\+\_\+\+M\+A\+L\+L\+OC
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file describes the programming interface for the configuration module. It includes functions allowing to declare, get or set configuration options. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{vlc__configuration_8h_afd56649a27f8bdc8fce0f7062609c2e6}\label{vlc__configuration_8h_afd56649a27f8bdc8fce0f7062609c2e6}} 
+\index{vlc\+\_\+configuration.\+h@{vlc\+\_\+configuration.\+h}!config\+\_\+\+Chain\+Create@{config\+\_\+\+Chain\+Create}}
+\index{config\+\_\+\+Chain\+Create@{config\+\_\+\+Chain\+Create}!vlc\+\_\+configuration.\+h@{vlc\+\_\+configuration.\+h}}
+\subsubsection{\texorpdfstring{config\+\_\+\+Chain\+Create()}{config\_ChainCreate()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI char$\ast$ config\+\_\+\+Chain\+Create (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{ppsz\+\_\+name,  }\item[{config\+\_\+chain\+\_\+t $\ast$$\ast$}]{pp\+\_\+cfg,  }\item[{const char $\ast$}]{psz\+\_\+string }\end{DoxyParamCaption})}
+
+This function will parse a configuration string (psz\+\_\+string) and
+\begin{DoxyItemize}
+\item set the module name ($\ast$ppsz\+\_\+name)
+\item set all options for this module in a chained list ($\ast$pp\+\_\+cfg)
+\item returns a pointer on the next module if any.
+\end{DoxyItemize}
+
+The string format is module\{option=$\ast$,option=$\ast$\}\mbox{[}\+:modulenext\{option=$\ast$,...\}\mbox{]}
+
+The options values are unescaped using config\+\_\+\+String\+Unescape. \mbox{\Hypertarget{vlc__configuration_8h_a273b45b0ce1becb4297ffdb95c0c3cee}\label{vlc__configuration_8h_a273b45b0ce1becb4297ffdb95c0c3cee}} 
+\index{vlc\+\_\+configuration.\+h@{vlc\+\_\+configuration.\+h}!config\+\_\+\+Chain\+Destroy@{config\+\_\+\+Chain\+Destroy}}
+\index{config\+\_\+\+Chain\+Destroy@{config\+\_\+\+Chain\+Destroy}!vlc\+\_\+configuration.\+h@{vlc\+\_\+configuration.\+h}}
+\subsubsection{\texorpdfstring{config\+\_\+\+Chain\+Destroy()}{config\_ChainDestroy()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void config\+\_\+\+Chain\+Destroy (\begin{DoxyParamCaption}\item[{config\+\_\+chain\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function will release a linked list of config\+\_\+chain\+\_\+t (Including the head) \mbox{\Hypertarget{vlc__configuration_8h_ac618790b06ea3f496164b281327b90a5}\label{vlc__configuration_8h_ac618790b06ea3f496164b281327b90a5}} 
+\index{vlc\+\_\+configuration.\+h@{vlc\+\_\+configuration.\+h}!config\+\_\+\+Chain\+Duplicate@{config\+\_\+\+Chain\+Duplicate}}
+\index{config\+\_\+\+Chain\+Duplicate@{config\+\_\+\+Chain\+Duplicate}!vlc\+\_\+configuration.\+h@{vlc\+\_\+configuration.\+h}}
+\subsubsection{\texorpdfstring{config\+\_\+\+Chain\+Duplicate()}{config\_ChainDuplicate()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI config\+\_\+chain\+\_\+t$\ast$ config\+\_\+\+Chain\+Duplicate (\begin{DoxyParamCaption}\item[{const config\+\_\+chain\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function will duplicate a linked list of config\+\_\+chain\+\_\+t \mbox{\Hypertarget{vlc__configuration_8h_ad6f6ab86fcdd462f98a5b982999ee469}\label{vlc__configuration_8h_ad6f6ab86fcdd462f98a5b982999ee469}} 
+\index{vlc\+\_\+configuration.\+h@{vlc\+\_\+configuration.\+h}!config\+\_\+\+Chain\+Parse@{config\+\_\+\+Chain\+Parse}}
+\index{config\+\_\+\+Chain\+Parse@{config\+\_\+\+Chain\+Parse}!vlc\+\_\+configuration.\+h@{vlc\+\_\+configuration.\+h}}
+\subsubsection{\texorpdfstring{config\+\_\+\+Chain\+Parse()}{config\_ChainParse()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void config\+\_\+\+Chain\+Parse (\begin{DoxyParamCaption}\item[{\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$}]{,  }\item[{const char $\ast$}]{psz\+\_\+prefix,  }\item[{const char $\ast$const $\ast$}]{ppsz\+\_\+options,  }\item[{config\+\_\+chain\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function will
+\begin{DoxyItemize}
+\item create all options in the array ppsz\+\_\+options (var\+\_\+\+Create).
+\item parse the given linked list of config\+\_\+chain\+\_\+t and set the value (var\+\_\+\+Set).
+\end{DoxyItemize}
+
+The option names will be created by adding the psz\+\_\+prefix prefix. \mbox{\Hypertarget{vlc__configuration_8h_a6b8948030dd0b0364c85ce631dbb53f2}\label{vlc__configuration_8h_a6b8948030dd0b0364c85ce631dbb53f2}} 
+\index{vlc\+\_\+configuration.\+h@{vlc\+\_\+configuration.\+h}!config\+\_\+\+Chain\+Parse\+Options@{config\+\_\+\+Chain\+Parse\+Options}}
+\index{config\+\_\+\+Chain\+Parse\+Options@{config\+\_\+\+Chain\+Parse\+Options}!vlc\+\_\+configuration.\+h@{vlc\+\_\+configuration.\+h}}
+\subsubsection{\texorpdfstring{config\+\_\+\+Chain\+Parse\+Options()}{config\_ChainParseOptions()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI const char$\ast$ config\+\_\+\+Chain\+Parse\+Options (\begin{DoxyParamCaption}\item[{config\+\_\+chain\+\_\+t $\ast$$\ast$}]{pp\+\_\+cfg,  }\item[{const char $\ast$}]{ppsz\+\_\+opts }\end{DoxyParamCaption})}
+
+This function will parse a configuration string (psz\+\_\+opts) and
+\begin{DoxyItemize}
+\item set all options for this module in a chained list ($\ast$pp\+\_\+cfg)
+\item returns a pointer on the next module if any.
+\end{DoxyItemize}
+
+The string format is module\{option=$\ast$,option=$\ast$\}
+
+The options values are unescaped using config\+\_\+\+String\+Unescape. \mbox{\Hypertarget{vlc__configuration_8h_a01cfa5e7ff319ff5b68f4a098ceb3ef0}\label{vlc__configuration_8h_a01cfa5e7ff319ff5b68f4a098ceb3ef0}} 
+\index{vlc\+\_\+configuration.\+h@{vlc\+\_\+configuration.\+h}!config\+\_\+\+String\+Escape@{config\+\_\+\+String\+Escape}}
+\index{config\+\_\+\+String\+Escape@{config\+\_\+\+String\+Escape}!vlc\+\_\+configuration.\+h@{vlc\+\_\+configuration.\+h}}
+\subsubsection{\texorpdfstring{config\+\_\+\+String\+Escape()}{config\_StringEscape()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI char$\ast$ config\+\_\+\+String\+Escape (\begin{DoxyParamCaption}\item[{const char $\ast$}]{psz\+\_\+string }\end{DoxyParamCaption})}
+
+This function will escape a string that can be unescaped by config\+\_\+\+String\+Unescape. The returned value is allocated by it. You have to free it once you do not need it anymore (unlike config\+\_\+\+String\+Unescape). If N\+U\+LL is given as parameter nothing will be done (N\+U\+LL will be returned).
+
+The escaped characters are \textquotesingle{} " and \textbackslash{} \mbox{\Hypertarget{vlc__configuration_8h_aaa365b4a30045351c5701bdd3d13ef64}\label{vlc__configuration_8h_aaa365b4a30045351c5701bdd3d13ef64}} 
+\index{vlc\+\_\+configuration.\+h@{vlc\+\_\+configuration.\+h}!config\+\_\+\+String\+Unescape@{config\+\_\+\+String\+Unescape}}
+\index{config\+\_\+\+String\+Unescape@{config\+\_\+\+String\+Unescape}!vlc\+\_\+configuration.\+h@{vlc\+\_\+configuration.\+h}}
+\subsubsection{\texorpdfstring{config\+\_\+\+String\+Unescape()}{config\_StringUnescape()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI char$\ast$ config\+\_\+\+String\+Unescape (\begin{DoxyParamCaption}\item[{char $\ast$}]{psz\+\_\+string }\end{DoxyParamCaption})}
+
+This function will unescape a string in place and will return a pointer on the given string. No memory is allocated by it (unlike config\+\_\+\+String\+Escape). If N\+U\+LL is given as parameter nothing will be done (N\+U\+LL will be returned).
+
+The following sequences will be unescaped (only one time)\+: \textbackslash{} \textbackslash{}\textquotesingle{} and " 

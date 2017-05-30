@@ -12,14 +12,14 @@ A particle affector which attracts or detracts particles.
 Inheritance diagram for irr\+:\+:scene\+:\+:I\+Particle\+Attraction\+Affector\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{classirr_1_1scene_1_1IParticleAttractionAffector}
+\includegraphics[height=1.555556cm]{classirr_1_1scene_1_1IParticleAttractionAffector}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classirr_1_1scene_1_1IParticleAttractionAffector_a135e26063faa04fb0aae701454239ac7}\label{classirr_1_1scene_1_1IParticleAttractionAffector_a135e26063faa04fb0aae701454239ac7}} 
-virtual void \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_a135e26063faa04fb0aae701454239ac7}{set\+Point} (const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \&point)=0
+virtual void \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_a135e26063faa04fb0aae701454239ac7}{set\+Point} (const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&point)=0
 \begin{DoxyCompactList}\small\item\em Set the point that particles will attract to. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1scene_1_1IParticleAttractionAffector_a73dcbb5f7bc6c050255f7d005c904cd1}\label{classirr_1_1scene_1_1IParticleAttractionAffector_a73dcbb5f7bc6c050255f7d005c904cd1}} 
 virtual void \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_a73dcbb5f7bc6c050255f7d005c904cd1}{set\+Attract} (bool attract)=0
@@ -34,7 +34,40 @@ virtual void \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_a7a0452
 virtual void \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_a49f368cac233d59458dee1b73dec833d}{set\+AffectZ} (bool \hyperlink{classirr_1_1scene_1_1IParticleAffector_a87fb9116bb1a4d3ea075c59f3e2d1dbc}{affect})=0
 \begin{DoxyCompactList}\small\item\em Set whether or not this will affect particles in the Z direction. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1scene_1_1IParticleAttractionAffector_a170e9d369460225b11ed3f8cfe1e426b}\label{classirr_1_1scene_1_1IParticleAttractionAffector_a170e9d369460225b11ed3f8cfe1e426b}} 
-virtual const \hyperlink{namespaceirr_1_1core_a06f169d08b5c429f5575acb7edbad811}{core\+::vector3df} \& \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_a170e9d369460225b11ed3f8cfe1e426b}{get\+Point} () const =0
+virtual const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \& \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_a170e9d369460225b11ed3f8cfe1e426b}{get\+Point} () const =0
+\begin{DoxyCompactList}\small\item\em Get the point that particles are attracted to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IParticleAttractionAffector_a860d078586d99905c261804a857d9ff8}\label{classirr_1_1scene_1_1IParticleAttractionAffector_a860d078586d99905c261804a857d9ff8}} 
+virtual bool \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_a860d078586d99905c261804a857d9ff8}{get\+Attract} () const =0
+\begin{DoxyCompactList}\small\item\em Get whether or not the particles are attracting or detracting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IParticleAttractionAffector_a8ccecdafff68056bbb4348256875e7cb}\label{classirr_1_1scene_1_1IParticleAttractionAffector_a8ccecdafff68056bbb4348256875e7cb}} 
+virtual bool \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_a8ccecdafff68056bbb4348256875e7cb}{get\+AffectX} () const =0
+\begin{DoxyCompactList}\small\item\em Get whether or not the particles X position are affected. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IParticleAttractionAffector_a06a2872adddd7bfca9f79325563dd799}\label{classirr_1_1scene_1_1IParticleAttractionAffector_a06a2872adddd7bfca9f79325563dd799}} 
+virtual bool \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_a06a2872adddd7bfca9f79325563dd799}{get\+AffectY} () const =0
+\begin{DoxyCompactList}\small\item\em Get whether or not the particles Y position are affected. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IParticleAttractionAffector_a71c62c5cd7e871eef76fca9a686e15fc}\label{classirr_1_1scene_1_1IParticleAttractionAffector_a71c62c5cd7e871eef76fca9a686e15fc}} 
+virtual bool \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_a71c62c5cd7e871eef76fca9a686e15fc}{get\+AffectZ} () const =0
+\begin{DoxyCompactList}\small\item\em Get whether or not the particles Z position are affected. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IParticleAttractionAffector_a3040cb5bc4ec7eef2472be5d7d787e46}\label{classirr_1_1scene_1_1IParticleAttractionAffector_a3040cb5bc4ec7eef2472be5d7d787e46}} 
+virtual \hyperlink{namespaceirr_1_1scene_a34c0f9475cfcbda8b50ad816a046010b}{E\+\_\+\+P\+A\+R\+T\+I\+C\+L\+E\+\_\+\+A\+F\+F\+E\+C\+T\+O\+R\+\_\+\+T\+Y\+PE} \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_a3040cb5bc4ec7eef2472be5d7d787e46}{get\+Type} () const
+\begin{DoxyCompactList}\small\item\em Get emitter type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IParticleAttractionAffector_a135e26063faa04fb0aae701454239ac7}\label{classirr_1_1scene_1_1IParticleAttractionAffector_a135e26063faa04fb0aae701454239ac7}} 
+virtual void \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_a135e26063faa04fb0aae701454239ac7}{set\+Point} (const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \&point)=0
+\begin{DoxyCompactList}\small\item\em Set the point that particles will attract to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IParticleAttractionAffector_a73dcbb5f7bc6c050255f7d005c904cd1}\label{classirr_1_1scene_1_1IParticleAttractionAffector_a73dcbb5f7bc6c050255f7d005c904cd1}} 
+virtual void \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_a73dcbb5f7bc6c050255f7d005c904cd1}{set\+Attract} (bool attract)=0
+\begin{DoxyCompactList}\small\item\em Set whether or not the particles are attracting or detracting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IParticleAttractionAffector_adb3f5cd7d9eff5af6ec6c43f25e0511b}\label{classirr_1_1scene_1_1IParticleAttractionAffector_adb3f5cd7d9eff5af6ec6c43f25e0511b}} 
+virtual void \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_adb3f5cd7d9eff5af6ec6c43f25e0511b}{set\+AffectX} (bool \hyperlink{classirr_1_1scene_1_1IParticleAffector_a87fb9116bb1a4d3ea075c59f3e2d1dbc}{affect})=0
+\begin{DoxyCompactList}\small\item\em Set whether or not this will affect particles in the X direction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IParticleAttractionAffector_a7a0452f7602cb027cad43b510fadc37c}\label{classirr_1_1scene_1_1IParticleAttractionAffector_a7a0452f7602cb027cad43b510fadc37c}} 
+virtual void \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_a7a0452f7602cb027cad43b510fadc37c}{set\+AffectY} (bool \hyperlink{classirr_1_1scene_1_1IParticleAffector_a87fb9116bb1a4d3ea075c59f3e2d1dbc}{affect})=0
+\begin{DoxyCompactList}\small\item\em Set whether or not this will affect particles in the Y direction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IParticleAttractionAffector_a49f368cac233d59458dee1b73dec833d}\label{classirr_1_1scene_1_1IParticleAttractionAffector_a49f368cac233d59458dee1b73dec833d}} 
+virtual void \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_a49f368cac233d59458dee1b73dec833d}{set\+AffectZ} (bool \hyperlink{classirr_1_1scene_1_1IParticleAffector_a87fb9116bb1a4d3ea075c59f3e2d1dbc}{affect})=0
+\begin{DoxyCompactList}\small\item\em Set whether or not this will affect particles in the Z direction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1scene_1_1IParticleAttractionAffector_a170e9d369460225b11ed3f8cfe1e426b}\label{classirr_1_1scene_1_1IParticleAttractionAffector_a170e9d369460225b11ed3f8cfe1e426b}} 
+virtual const \hyperlink{namespaceirr_1_1core_ae6e2b2a6c552833ebbd5b7463d03586b}{core\+::vector3df} \& \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_a170e9d369460225b11ed3f8cfe1e426b}{get\+Point} () const =0
 \begin{DoxyCompactList}\small\item\em Get the point that particles are attracted to. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1scene_1_1IParticleAttractionAffector_a860d078586d99905c261804a857d9ff8}\label{classirr_1_1scene_1_1IParticleAttractionAffector_a860d078586d99905c261804a857d9ff8}} 
 virtual bool \hyperlink{classirr_1_1scene_1_1IParticleAttractionAffector_a860d078586d99905c261804a857d9ff8}{get\+Attract} () const =0

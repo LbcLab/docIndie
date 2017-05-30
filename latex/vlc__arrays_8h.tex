@@ -1,0 +1,79 @@
+\hypertarget{vlc__arrays_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+arrays.h File Reference}
+\label{vlc__arrays_8h}\index{lib/include/vlc/plugins/vlc\+\_\+arrays.\+h@{lib/include/vlc/plugins/vlc\+\_\+arrays.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vlc__arrays_8h_ac03bb1a69662983c905b81fe9ad844fc}{I\+N\+S\+E\+R\+T\+\_\+\+E\+L\+EM}(p\+\_\+ar,  i\+\_\+oldsize,  i\+\_\+pos,  elem)
+\item 
+\#define \hyperlink{vlc__arrays_8h_a798779b0c5d504a0a81f61adeae70855}{B\+S\+E\+A\+R\+CH}(entries,  count,  elem,  zetype,  key,  answer)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines functions, structures and macros for handling arrays in vlc 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{vlc__arrays_8h_a798779b0c5d504a0a81f61adeae70855}\label{vlc__arrays_8h_a798779b0c5d504a0a81f61adeae70855}} 
+\index{vlc\+\_\+arrays.\+h@{vlc\+\_\+arrays.\+h}!B\+S\+E\+A\+R\+CH@{B\+S\+E\+A\+R\+CH}}
+\index{B\+S\+E\+A\+R\+CH@{B\+S\+E\+A\+R\+CH}!vlc\+\_\+arrays.\+h@{vlc\+\_\+arrays.\+h}}
+\subsubsection{\texorpdfstring{B\+S\+E\+A\+R\+CH}{BSEARCH}}
+{\footnotesize\ttfamily \#define B\+S\+E\+A\+R\+CH(\begin{DoxyParamCaption}\item[{}]{entries,  }\item[{}]{count,  }\item[{}]{elem,  }\item[{}]{zetype,  }\item[{}]{key,  }\item[{}]{answer }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{  \(\backslash\)
+    int low = 0, high = count - 1;   \(\backslash\)
+    answer = -1; \(\backslash\)
+    while( low <= high ) \{\(\backslash\)
+        int mid = (low + high ) / 2; \textcolor{comment}{/* Just don't care about 2^30 tables */} \(\backslash\)
+        zetype mid\_val = entries[mid] elem;\(\backslash\)
+        if( mid\_val < key ) \(\backslash\)
+            low = mid + 1; \(\backslash\)
+        else \textcolor{keywordflow}{if} ( mid\_val > key ) \(\backslash\)
+            high = mid -1;  \(\backslash\)
+        else    \(\backslash\)
+        \{   \(\backslash\)
+            answer = mid;  \textcolor{keywordflow}{break};   \(\backslash\)
+        \}\(\backslash\)
+    \} \(\backslash\)
+ \} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+Binary search in a sorted array. The key must be comparable by $<$ and $>$ 
+\begin{DoxyParams}{Parameters}
+{\em entries} & array of entries \\
+\hline
+{\em count} & number of entries \\
+\hline
+{\em elem} & key to check within an entry (like .id, or -\/$>$i\+\_\+id) \\
+\hline
+{\em zetype} & type of the key \\
+\hline
+{\em key} & value of the key \\
+\hline
+{\em answer} & index of answer within the array. -\/1 if not found \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{vlc__arrays_8h_ac03bb1a69662983c905b81fe9ad844fc}\label{vlc__arrays_8h_ac03bb1a69662983c905b81fe9ad844fc}} 
+\index{vlc\+\_\+arrays.\+h@{vlc\+\_\+arrays.\+h}!I\+N\+S\+E\+R\+T\+\_\+\+E\+L\+EM@{I\+N\+S\+E\+R\+T\+\_\+\+E\+L\+EM}}
+\index{I\+N\+S\+E\+R\+T\+\_\+\+E\+L\+EM@{I\+N\+S\+E\+R\+T\+\_\+\+E\+L\+EM}!vlc\+\_\+arrays.\+h@{vlc\+\_\+arrays.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+S\+E\+R\+T\+\_\+\+E\+L\+EM}{INSERT\_ELEM}}
+{\footnotesize\ttfamily \#define I\+N\+S\+E\+R\+T\+\_\+\+E\+L\+EM(\begin{DoxyParamCaption}\item[{}]{p\+\_\+ar,  }\item[{}]{i\+\_\+oldsize,  }\item[{}]{i\+\_\+pos,  }\item[{}]{elem }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do}                                                                        \(\backslash\)
+    \{                                                                         \(\backslash\)
+        if( !(i\_oldsize) ) (p\_ar) = NULL;                                       \(\backslash\)
+        (p\_ar) = realloc( p\_ar, ((i\_oldsize) + 1) * \textcolor{keyword}{sizeof}(*(p\_ar)) ); \(\backslash\)
+        if( !(p\_ar) ) abort();                                                \(\backslash\)
+        if( (i\_oldsize) - (i\_pos) )                                           \(\backslash\)
+        \{                                                                     \(\backslash\)
+            memmove( (p\_ar) + (i\_pos) + 1, (p\_ar) + (i\_pos),                  \(\backslash\)
+                     ((i\_oldsize) - (i\_pos)) * \textcolor{keyword}{sizeof}( *(p\_ar) ) );           \(\backslash\)
+        \}                                                                     \(\backslash\)
+        (p\_ar)[(i\_pos)] = elem;                                                 \(\backslash\)
+        (i\_oldsize)++;                                                        \(\backslash\)
+    \}                                                                         \(\backslash\)
+    while( 0 )
+\end{DoxyCode}
+Simple dynamic array handling. Array is realloced at each insert/removal 

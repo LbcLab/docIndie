@@ -1,0 +1,88 @@
+\hypertarget{vlc__services__discovery_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+services\+\_\+discovery.h File Reference}
+\label{vlc__services__discovery_8h}\index{lib/include/vlc/plugins/vlc\+\_\+services\+\_\+discovery.\+h@{lib/include/vlc/plugins/vlc\+\_\+services\+\_\+discovery.\+h}}
+{\ttfamily \#include $<$vlc\+\_\+input.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+events.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+probe.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structservices__discovery__t}{services\+\_\+discovery\+\_\+t}
+\item 
+struct \hyperlink{structservices__discovery__descriptor__t}{services\+\_\+discovery\+\_\+descriptor\+\_\+t}
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{vlc__services__discovery_8h_a2191edc6418d6573bbfb1d08af6e1855}{services\+\_\+discovery\+\_\+category\+\_\+e} \{ \hyperlink{vlc__services__discovery_8h_a2191edc6418d6573bbfb1d08af6e1855a6a6bc3df5886da780b2d067b437e5359}{S\+D\+\_\+\+C\+A\+T\+\_\+\+D\+E\+V\+I\+C\+ES} = 1, 
+\hyperlink{vlc__services__discovery_8h_a2191edc6418d6573bbfb1d08af6e1855a55feadf993411a07e417911f01384ace}{S\+D\+\_\+\+C\+A\+T\+\_\+\+L\+AN}, 
+\hyperlink{vlc__services__discovery_8h_a2191edc6418d6573bbfb1d08af6e1855a1ae50463f59c12beed8ac080a073bd0e}{S\+D\+\_\+\+C\+A\+T\+\_\+\+I\+N\+T\+E\+R\+N\+ET}, 
+\hyperlink{vlc__services__discovery_8h_a2191edc6418d6573bbfb1d08af6e1855a678fade7b149af961475ba508a7cae07}{S\+D\+\_\+\+C\+A\+T\+\_\+\+M\+Y\+C\+O\+M\+P\+U\+T\+ER}
+ \}
+\item 
+enum \hyperlink{vlc__services__discovery_8h_a921bb104d6f034e60446f6b67bad95e8}{services\+\_\+discovery\+\_\+command\+\_\+e} \{ \hyperlink{vlc__services__discovery_8h_a921bb104d6f034e60446f6b67bad95e8a2bad73904272ccd4cfeaac35260c3b12}{S\+D\+\_\+\+C\+M\+D\+\_\+\+S\+E\+A\+R\+CH} = 1, 
+\hyperlink{vlc__services__discovery_8h_a921bb104d6f034e60446f6b67bad95e8ae417ae3dff7ddc9142117ecac477db0e}{S\+D\+\_\+\+C\+M\+D\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR}
+ \}
+\item 
+enum \hyperlink{vlc__services__discovery_8h_a58ca66b6ff376c94d1c4fe847bcab409}{services\+\_\+discovery\+\_\+capability\+\_\+e} \{ \hyperlink{vlc__services__discovery_8h_a58ca66b6ff376c94d1c4fe847bcab409ae7e068496551531937585acac2b2f589}{S\+D\+\_\+\+C\+A\+P\+\_\+\+S\+E\+A\+R\+CH} = 1
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file lists functions and structures for service discovery (SD) in vlc 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{vlc__services__discovery_8h_a58ca66b6ff376c94d1c4fe847bcab409}\label{vlc__services__discovery_8h_a58ca66b6ff376c94d1c4fe847bcab409}} 
+\index{vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}!services\+\_\+discovery\+\_\+capability\+\_\+e@{services\+\_\+discovery\+\_\+capability\+\_\+e}}
+\index{services\+\_\+discovery\+\_\+capability\+\_\+e@{services\+\_\+discovery\+\_\+capability\+\_\+e}!vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}}
+\subsubsection{\texorpdfstring{services\+\_\+discovery\+\_\+capability\+\_\+e}{services\_discovery\_capability\_e}}
+{\footnotesize\ttfamily enum \hyperlink{vlc__services__discovery_8h_a58ca66b6ff376c94d1c4fe847bcab409}{services\+\_\+discovery\+\_\+capability\+\_\+e}}
+
+Service discovery capabilities \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+D\+\_\+\+C\+A\+P\+\_\+\+S\+E\+A\+R\+CH@{S\+D\+\_\+\+C\+A\+P\+\_\+\+S\+E\+A\+R\+CH}!vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}}\index{vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}!S\+D\+\_\+\+C\+A\+P\+\_\+\+S\+E\+A\+R\+CH@{S\+D\+\_\+\+C\+A\+P\+\_\+\+S\+E\+A\+R\+CH}}}\mbox{\Hypertarget{vlc__services__discovery_8h_a58ca66b6ff376c94d1c4fe847bcab409ae7e068496551531937585acac2b2f589}\label{vlc__services__discovery_8h_a58ca66b6ff376c94d1c4fe847bcab409ae7e068496551531937585acac2b2f589}} 
+S\+D\+\_\+\+C\+A\+P\+\_\+\+S\+E\+A\+R\+CH&One can search in the SD \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{vlc__services__discovery_8h_a2191edc6418d6573bbfb1d08af6e1855}\label{vlc__services__discovery_8h_a2191edc6418d6573bbfb1d08af6e1855}} 
+\index{vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}!services\+\_\+discovery\+\_\+category\+\_\+e@{services\+\_\+discovery\+\_\+category\+\_\+e}}
+\index{services\+\_\+discovery\+\_\+category\+\_\+e@{services\+\_\+discovery\+\_\+category\+\_\+e}!vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}}
+\subsubsection{\texorpdfstring{services\+\_\+discovery\+\_\+category\+\_\+e}{services\_discovery\_category\_e}}
+{\footnotesize\ttfamily enum \hyperlink{vlc__services__discovery_8h_a2191edc6418d6573bbfb1d08af6e1855}{services\+\_\+discovery\+\_\+category\+\_\+e}}
+
+Service discovery categories \begin{DoxySeeAlso}{See also}
+vlc\+\_\+sd\+\_\+probe\+\_\+\+Add 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+D\+\_\+\+C\+A\+T\+\_\+\+D\+E\+V\+I\+C\+ES@{S\+D\+\_\+\+C\+A\+T\+\_\+\+D\+E\+V\+I\+C\+ES}!vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}}\index{vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}!S\+D\+\_\+\+C\+A\+T\+\_\+\+D\+E\+V\+I\+C\+ES@{S\+D\+\_\+\+C\+A\+T\+\_\+\+D\+E\+V\+I\+C\+ES}}}\mbox{\Hypertarget{vlc__services__discovery_8h_a2191edc6418d6573bbfb1d08af6e1855a6a6bc3df5886da780b2d067b437e5359}\label{vlc__services__discovery_8h_a2191edc6418d6573bbfb1d08af6e1855a6a6bc3df5886da780b2d067b437e5359}} 
+S\+D\+\_\+\+C\+A\+T\+\_\+\+D\+E\+V\+I\+C\+ES&Devices, like portable music players \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+D\+\_\+\+C\+A\+T\+\_\+\+L\+AN@{S\+D\+\_\+\+C\+A\+T\+\_\+\+L\+AN}!vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}}\index{vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}!S\+D\+\_\+\+C\+A\+T\+\_\+\+L\+AN@{S\+D\+\_\+\+C\+A\+T\+\_\+\+L\+AN}}}\mbox{\Hypertarget{vlc__services__discovery_8h_a2191edc6418d6573bbfb1d08af6e1855a55feadf993411a07e417911f01384ace}\label{vlc__services__discovery_8h_a2191edc6418d6573bbfb1d08af6e1855a55feadf993411a07e417911f01384ace}} 
+S\+D\+\_\+\+C\+A\+T\+\_\+\+L\+AN&L\+A\+N/\+W\+AN services, like Upnp or S\+AP \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+D\+\_\+\+C\+A\+T\+\_\+\+I\+N\+T\+E\+R\+N\+ET@{S\+D\+\_\+\+C\+A\+T\+\_\+\+I\+N\+T\+E\+R\+N\+ET}!vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}}\index{vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}!S\+D\+\_\+\+C\+A\+T\+\_\+\+I\+N\+T\+E\+R\+N\+ET@{S\+D\+\_\+\+C\+A\+T\+\_\+\+I\+N\+T\+E\+R\+N\+ET}}}\mbox{\Hypertarget{vlc__services__discovery_8h_a2191edc6418d6573bbfb1d08af6e1855a1ae50463f59c12beed8ac080a073bd0e}\label{vlc__services__discovery_8h_a2191edc6418d6573bbfb1d08af6e1855a1ae50463f59c12beed8ac080a073bd0e}} 
+S\+D\+\_\+\+C\+A\+T\+\_\+\+I\+N\+T\+E\+R\+N\+ET&Internet or Website channels services \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+D\+\_\+\+C\+A\+T\+\_\+\+M\+Y\+C\+O\+M\+P\+U\+T\+ER@{S\+D\+\_\+\+C\+A\+T\+\_\+\+M\+Y\+C\+O\+M\+P\+U\+T\+ER}!vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}}\index{vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}!S\+D\+\_\+\+C\+A\+T\+\_\+\+M\+Y\+C\+O\+M\+P\+U\+T\+ER@{S\+D\+\_\+\+C\+A\+T\+\_\+\+M\+Y\+C\+O\+M\+P\+U\+T\+ER}}}\mbox{\Hypertarget{vlc__services__discovery_8h_a2191edc6418d6573bbfb1d08af6e1855a678fade7b149af961475ba508a7cae07}\label{vlc__services__discovery_8h_a2191edc6418d6573bbfb1d08af6e1855a678fade7b149af961475ba508a7cae07}} 
+S\+D\+\_\+\+C\+A\+T\+\_\+\+M\+Y\+C\+O\+M\+P\+U\+T\+ER&Computer services, like Discs or Apps \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{vlc__services__discovery_8h_a921bb104d6f034e60446f6b67bad95e8}\label{vlc__services__discovery_8h_a921bb104d6f034e60446f6b67bad95e8}} 
+\index{vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}!services\+\_\+discovery\+\_\+command\+\_\+e@{services\+\_\+discovery\+\_\+command\+\_\+e}}
+\index{services\+\_\+discovery\+\_\+command\+\_\+e@{services\+\_\+discovery\+\_\+command\+\_\+e}!vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}}
+\subsubsection{\texorpdfstring{services\+\_\+discovery\+\_\+command\+\_\+e}{services\_discovery\_command\_e}}
+{\footnotesize\ttfamily enum \hyperlink{vlc__services__discovery_8h_a921bb104d6f034e60446f6b67bad95e8}{services\+\_\+discovery\+\_\+command\+\_\+e}}
+
+Service discovery control commands \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+D\+\_\+\+C\+M\+D\+\_\+\+S\+E\+A\+R\+CH@{S\+D\+\_\+\+C\+M\+D\+\_\+\+S\+E\+A\+R\+CH}!vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}}\index{vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}!S\+D\+\_\+\+C\+M\+D\+\_\+\+S\+E\+A\+R\+CH@{S\+D\+\_\+\+C\+M\+D\+\_\+\+S\+E\+A\+R\+CH}}}\mbox{\Hypertarget{vlc__services__discovery_8h_a921bb104d6f034e60446f6b67bad95e8a2bad73904272ccd4cfeaac35260c3b12}\label{vlc__services__discovery_8h_a921bb104d6f034e60446f6b67bad95e8a2bad73904272ccd4cfeaac35260c3b12}} 
+S\+D\+\_\+\+C\+M\+D\+\_\+\+S\+E\+A\+R\+CH&arg1 = query \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+D\+\_\+\+C\+M\+D\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR@{S\+D\+\_\+\+C\+M\+D\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR}!vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}}\index{vlc\+\_\+services\+\_\+discovery.\+h@{vlc\+\_\+services\+\_\+discovery.\+h}!S\+D\+\_\+\+C\+M\+D\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR@{S\+D\+\_\+\+C\+M\+D\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR}}}\mbox{\Hypertarget{vlc__services__discovery_8h_a921bb104d6f034e60446f6b67bad95e8ae417ae3dff7ddc9142117ecac477db0e}\label{vlc__services__discovery_8h_a921bb104d6f034e60446f6b67bad95e8ae417ae3dff7ddc9142117ecac477db0e}} 
+S\+D\+\_\+\+C\+M\+D\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+OR&arg1 = services\+\_\+discovery\+\_\+descriptor\+\_\+t$\ast$ \\
+\hline
+
+\end{DoxyEnumFields}

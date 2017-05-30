@@ -1,0 +1,158 @@
+\hypertarget{vlc__input__item_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+input\+\_\+item.h File Reference}
+\label{vlc__input__item_8h}\index{lib/include/vlc/plugins/vlc\+\_\+input\+\_\+item.\+h@{lib/include/vlc/plugins/vlc\+\_\+input\+\_\+item.\+h}}
+{\ttfamily \#include $<$vlc\+\_\+meta.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+epg.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+events.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vlc__input__item_8h_a8b4358d984798d97fb5f2999ed3f74d2}{input\+\_\+item\+\_\+\+New}(a,  b)~\hyperlink{vlc__input__item_8h_a185993fe26006808c7c7248c46f35e6a}{input\+\_\+item\+\_\+\+New\+Ext}( a, b, 0, N\+U\+LL, 0, -\/1 )
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{vlc__input__item_8h_a6396490392dfadfc18554f9777d98209}{input\+\_\+item\+\_\+option\+\_\+e} 
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__input__item_8h_a5ece755946acc45d9c0d362dda5e604c}{input\+\_\+item\+\_\+\+Post\+Sub\+Item} (input\+\_\+item\+\_\+t $\ast$p\+\_\+parent, input\+\_\+item\+\_\+t $\ast$p\+\_\+child)
+\item 
+V\+L\+C\+\_\+\+A\+PI input\+\_\+item\+\_\+node\+\_\+t $\ast$ \hyperlink{vlc__input__item_8h_a4338645b4b9366a64df1a989a58d454b}{input\+\_\+item\+\_\+node\+\_\+\+Create} (input\+\_\+item\+\_\+t $\ast$p\+\_\+input) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI input\+\_\+item\+\_\+node\+\_\+t $\ast$ \hyperlink{vlc__input__item_8h_aa22e2fbd3dbceefbeb424d7afaf7a5b5}{input\+\_\+item\+\_\+node\+\_\+\+Append\+Item} (input\+\_\+item\+\_\+node\+\_\+t $\ast$p\+\_\+node, input\+\_\+item\+\_\+t $\ast$p\+\_\+item)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__input__item_8h_a2a4014ab867bd004391fbd3a8f6b7ab8}{input\+\_\+item\+\_\+node\+\_\+\+Append\+Node} (input\+\_\+item\+\_\+node\+\_\+t $\ast$p\+\_\+parent, input\+\_\+item\+\_\+node\+\_\+t $\ast$p\+\_\+child)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__input__item_8h_add140c08c6fc921e36584ec66fda33d2}{input\+\_\+item\+\_\+node\+\_\+\+Delete} (input\+\_\+item\+\_\+node\+\_\+t $\ast$p\+\_\+node)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__input__item_8h_aa3c6287f5b218585954cb3eb72018921}{input\+\_\+item\+\_\+node\+\_\+\+Post\+And\+Delete} (input\+\_\+item\+\_\+node\+\_\+t $\ast$p\+\_\+node)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{vlc__input__item_8h_ab0a74ffd05e816e9456651b07067ebcd}{input\+\_\+item\+\_\+\+Add\+Option} (input\+\_\+item\+\_\+t $\ast$, const char $\ast$, unsigned i\+\_\+flags)
+\item 
+V\+L\+C\+\_\+\+A\+PI input\+\_\+item\+\_\+t $\ast$ \hyperlink{vlc__input__item_8h_abb81509877a7d905bcb1875fa3af3306}{input\+\_\+item\+\_\+\+New\+With\+Type} (const char $\ast$psz\+\_\+uri, const char $\ast$psz\+\_\+name, int i\+\_\+options, const char $\ast$const $\ast$ppsz\+\_\+options, unsigned i\+\_\+option\+\_\+flags, \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} i\+\_\+duration, int i\+\_\+type) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI input\+\_\+item\+\_\+t $\ast$ \hyperlink{vlc__input__item_8h_a185993fe26006808c7c7248c46f35e6a}{input\+\_\+item\+\_\+\+New\+Ext} (const char $\ast$psz\+\_\+uri, const char $\ast$psz\+\_\+name, int i\+\_\+options, const char $\ast$const $\ast$ppsz\+\_\+options, unsigned i\+\_\+option\+\_\+flags, \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} i\+\_\+duration) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI input\+\_\+item\+\_\+t $\ast$ \hyperlink{vlc__input__item_8h_a66e39a145e53352f974aa9c40f8caa91}{input\+\_\+item\+\_\+\+Copy} (input\+\_\+item\+\_\+t $\ast$) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI input\+\_\+item\+\_\+t $\ast$ \hyperlink{vlc__input__item_8h_a336db81f871f4e9f4f657b945ee29200}{input\+\_\+item\+\_\+\+Hold} (input\+\_\+item\+\_\+t $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__input__item_8h_a59fc6c3da287d4b0f5857e7c8498d256}{input\+\_\+item\+\_\+\+Release} (input\+\_\+item\+\_\+t $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines functions, structures and enums for input items in vlc 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{vlc__input__item_8h_a8b4358d984798d97fb5f2999ed3f74d2}\label{vlc__input__item_8h_a8b4358d984798d97fb5f2999ed3f74d2}} 
+\index{vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}!input\+\_\+item\+\_\+\+New@{input\+\_\+item\+\_\+\+New}}
+\index{input\+\_\+item\+\_\+\+New@{input\+\_\+item\+\_\+\+New}!vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+item\+\_\+\+New}{input\_item\_New}}
+{\footnotesize\ttfamily \#define input\+\_\+item\+\_\+\+New(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~\hyperlink{vlc__input__item_8h_a185993fe26006808c7c7248c46f35e6a}{input\+\_\+item\+\_\+\+New\+Ext}( a, b, 0, N\+U\+LL, 0, -\/1 )}
+
+This function creates a new input\+\_\+item\+\_\+t with the provided information.
+
+Provided for convenience. 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{vlc__input__item_8h_a6396490392dfadfc18554f9777d98209}\label{vlc__input__item_8h_a6396490392dfadfc18554f9777d98209}} 
+\index{vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}!input\+\_\+item\+\_\+option\+\_\+e@{input\+\_\+item\+\_\+option\+\_\+e}}
+\index{input\+\_\+item\+\_\+option\+\_\+e@{input\+\_\+item\+\_\+option\+\_\+e}!vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+item\+\_\+option\+\_\+e}{input\_item\_option\_e}}
+{\footnotesize\ttfamily enum \hyperlink{vlc__input__item_8h_a6396490392dfadfc18554f9777d98209}{input\+\_\+item\+\_\+option\+\_\+e}}
+
+Option flags 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{vlc__input__item_8h_ab0a74ffd05e816e9456651b07067ebcd}\label{vlc__input__item_8h_ab0a74ffd05e816e9456651b07067ebcd}} 
+\index{vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}!input\+\_\+item\+\_\+\+Add\+Option@{input\+\_\+item\+\_\+\+Add\+Option}}
+\index{input\+\_\+item\+\_\+\+Add\+Option@{input\+\_\+item\+\_\+\+Add\+Option}!vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+item\+\_\+\+Add\+Option()}{input\_item\_AddOption()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI int input\+\_\+item\+\_\+\+Add\+Option (\begin{DoxyParamCaption}\item[{input\+\_\+item\+\_\+t $\ast$}]{,  }\item[{const char $\ast$}]{,  }\item[{unsigned}]{i\+\_\+flags }\end{DoxyParamCaption})}
+
+This function allows to add an option to an existing input\+\_\+item\+\_\+t. \mbox{\Hypertarget{vlc__input__item_8h_a66e39a145e53352f974aa9c40f8caa91}\label{vlc__input__item_8h_a66e39a145e53352f974aa9c40f8caa91}} 
+\index{vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}!input\+\_\+item\+\_\+\+Copy@{input\+\_\+item\+\_\+\+Copy}}
+\index{input\+\_\+item\+\_\+\+Copy@{input\+\_\+item\+\_\+\+Copy}!vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+item\+\_\+\+Copy()}{input\_item\_Copy()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI input\+\_\+item\+\_\+t$\ast$ input\+\_\+item\+\_\+\+Copy (\begin{DoxyParamCaption}\item[{input\+\_\+item\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function creates a new input\+\_\+item\+\_\+t as a copy of another. \mbox{\Hypertarget{vlc__input__item_8h_a336db81f871f4e9f4f657b945ee29200}\label{vlc__input__item_8h_a336db81f871f4e9f4f657b945ee29200}} 
+\index{vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}!input\+\_\+item\+\_\+\+Hold@{input\+\_\+item\+\_\+\+Hold}}
+\index{input\+\_\+item\+\_\+\+Hold@{input\+\_\+item\+\_\+\+Hold}!vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+item\+\_\+\+Hold()}{input\_item\_Hold()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI input\+\_\+item\+\_\+t$\ast$ input\+\_\+item\+\_\+\+Hold (\begin{DoxyParamCaption}\item[{input\+\_\+item\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+Holds an input item, i.\+e. creates a new reference. \mbox{\Hypertarget{vlc__input__item_8h_a185993fe26006808c7c7248c46f35e6a}\label{vlc__input__item_8h_a185993fe26006808c7c7248c46f35e6a}} 
+\index{vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}!input\+\_\+item\+\_\+\+New\+Ext@{input\+\_\+item\+\_\+\+New\+Ext}}
+\index{input\+\_\+item\+\_\+\+New\+Ext@{input\+\_\+item\+\_\+\+New\+Ext}!vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+item\+\_\+\+New\+Ext()}{input\_item\_NewExt()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI input\+\_\+item\+\_\+t$\ast$ input\+\_\+item\+\_\+\+New\+Ext (\begin{DoxyParamCaption}\item[{const char $\ast$}]{psz\+\_\+uri,  }\item[{const char $\ast$}]{psz\+\_\+name,  }\item[{int}]{i\+\_\+options,  }\item[{const char $\ast$const $\ast$}]{ppsz\+\_\+options,  }\item[{unsigned}]{i\+\_\+option\+\_\+flags,  }\item[{\hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t}}]{i\+\_\+duration }\end{DoxyParamCaption})}
+
+This function creates a new input\+\_\+item\+\_\+t with the provided information.
+
+Provided for convenience. \mbox{\Hypertarget{vlc__input__item_8h_abb81509877a7d905bcb1875fa3af3306}\label{vlc__input__item_8h_abb81509877a7d905bcb1875fa3af3306}} 
+\index{vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}!input\+\_\+item\+\_\+\+New\+With\+Type@{input\+\_\+item\+\_\+\+New\+With\+Type}}
+\index{input\+\_\+item\+\_\+\+New\+With\+Type@{input\+\_\+item\+\_\+\+New\+With\+Type}!vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+item\+\_\+\+New\+With\+Type()}{input\_item\_NewWithType()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI input\+\_\+item\+\_\+t$\ast$ input\+\_\+item\+\_\+\+New\+With\+Type (\begin{DoxyParamCaption}\item[{const char $\ast$}]{psz\+\_\+uri,  }\item[{const char $\ast$}]{psz\+\_\+name,  }\item[{int}]{i\+\_\+options,  }\item[{const char $\ast$const $\ast$}]{ppsz\+\_\+options,  }\item[{unsigned}]{i\+\_\+option\+\_\+flags,  }\item[{\hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t}}]{i\+\_\+duration,  }\item[{int}]{i\+\_\+type }\end{DoxyParamCaption})}
+
+This function creates a new input\+\_\+item\+\_\+t with the provided information.
+
+X\+XX You may also use input\+\_\+item\+\_\+\+New or input\+\_\+item\+\_\+\+New\+Ext as they need less arguments. \mbox{\Hypertarget{vlc__input__item_8h_aa22e2fbd3dbceefbeb424d7afaf7a5b5}\label{vlc__input__item_8h_aa22e2fbd3dbceefbeb424d7afaf7a5b5}} 
+\index{vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}!input\+\_\+item\+\_\+node\+\_\+\+Append\+Item@{input\+\_\+item\+\_\+node\+\_\+\+Append\+Item}}
+\index{input\+\_\+item\+\_\+node\+\_\+\+Append\+Item@{input\+\_\+item\+\_\+node\+\_\+\+Append\+Item}!vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+item\+\_\+node\+\_\+\+Append\+Item()}{input\_item\_node\_AppendItem()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI input\+\_\+item\+\_\+node\+\_\+t$\ast$ input\+\_\+item\+\_\+node\+\_\+\+Append\+Item (\begin{DoxyParamCaption}\item[{input\+\_\+item\+\_\+node\+\_\+t $\ast$}]{p\+\_\+node,  }\item[{input\+\_\+item\+\_\+t $\ast$}]{p\+\_\+item }\end{DoxyParamCaption})}
+
+Add a new child node to this parent node that will point to this subitem. \mbox{\Hypertarget{vlc__input__item_8h_a2a4014ab867bd004391fbd3a8f6b7ab8}\label{vlc__input__item_8h_a2a4014ab867bd004391fbd3a8f6b7ab8}} 
+\index{vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}!input\+\_\+item\+\_\+node\+\_\+\+Append\+Node@{input\+\_\+item\+\_\+node\+\_\+\+Append\+Node}}
+\index{input\+\_\+item\+\_\+node\+\_\+\+Append\+Node@{input\+\_\+item\+\_\+node\+\_\+\+Append\+Node}!vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+item\+\_\+node\+\_\+\+Append\+Node()}{input\_item\_node\_AppendNode()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void input\+\_\+item\+\_\+node\+\_\+\+Append\+Node (\begin{DoxyParamCaption}\item[{input\+\_\+item\+\_\+node\+\_\+t $\ast$}]{p\+\_\+parent,  }\item[{input\+\_\+item\+\_\+node\+\_\+t $\ast$}]{p\+\_\+child }\end{DoxyParamCaption})}
+
+Add an already created node to children of this parent node. \mbox{\Hypertarget{vlc__input__item_8h_a4338645b4b9366a64df1a989a58d454b}\label{vlc__input__item_8h_a4338645b4b9366a64df1a989a58d454b}} 
+\index{vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}!input\+\_\+item\+\_\+node\+\_\+\+Create@{input\+\_\+item\+\_\+node\+\_\+\+Create}}
+\index{input\+\_\+item\+\_\+node\+\_\+\+Create@{input\+\_\+item\+\_\+node\+\_\+\+Create}!vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+item\+\_\+node\+\_\+\+Create()}{input\_item\_node\_Create()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI input\+\_\+item\+\_\+node\+\_\+t$\ast$ input\+\_\+item\+\_\+node\+\_\+\+Create (\begin{DoxyParamCaption}\item[{input\+\_\+item\+\_\+t $\ast$}]{p\+\_\+input }\end{DoxyParamCaption})}
+
+Start adding multiple subitems.
+
+Create a root node to hold a tree of subitems for given item \mbox{\Hypertarget{vlc__input__item_8h_add140c08c6fc921e36584ec66fda33d2}\label{vlc__input__item_8h_add140c08c6fc921e36584ec66fda33d2}} 
+\index{vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}!input\+\_\+item\+\_\+node\+\_\+\+Delete@{input\+\_\+item\+\_\+node\+\_\+\+Delete}}
+\index{input\+\_\+item\+\_\+node\+\_\+\+Delete@{input\+\_\+item\+\_\+node\+\_\+\+Delete}!vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+item\+\_\+node\+\_\+\+Delete()}{input\_item\_node\_Delete()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void input\+\_\+item\+\_\+node\+\_\+\+Delete (\begin{DoxyParamCaption}\item[{input\+\_\+item\+\_\+node\+\_\+t $\ast$}]{p\+\_\+node }\end{DoxyParamCaption})}
+
+Delete a node created with \hyperlink{vlc__input__item_8h_a4338645b4b9366a64df1a989a58d454b}{input\+\_\+item\+\_\+node\+\_\+\+Create()} and all its children. \mbox{\Hypertarget{vlc__input__item_8h_aa3c6287f5b218585954cb3eb72018921}\label{vlc__input__item_8h_aa3c6287f5b218585954cb3eb72018921}} 
+\index{vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}!input\+\_\+item\+\_\+node\+\_\+\+Post\+And\+Delete@{input\+\_\+item\+\_\+node\+\_\+\+Post\+And\+Delete}}
+\index{input\+\_\+item\+\_\+node\+\_\+\+Post\+And\+Delete@{input\+\_\+item\+\_\+node\+\_\+\+Post\+And\+Delete}!vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+item\+\_\+node\+\_\+\+Post\+And\+Delete()}{input\_item\_node\_PostAndDelete()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void input\+\_\+item\+\_\+node\+\_\+\+Post\+And\+Delete (\begin{DoxyParamCaption}\item[{input\+\_\+item\+\_\+node\+\_\+t $\ast$}]{p\+\_\+node }\end{DoxyParamCaption})}
+
+End adding multiple subitems.
+
+Sends a vlc\+\_\+\+Input\+Item\+Sub\+Item\+Tree\+Added event to notify that the item pointed to by the given root node has created new subitems that are pointed to by all the children of the node.
+
+Also sends vlc\+\_\+\+Input\+Item\+Sub\+Item\+Added event for every child under the given root node;
+
+In the end deletes the node and all its children nodes. \mbox{\Hypertarget{vlc__input__item_8h_a5ece755946acc45d9c0d362dda5e604c}\label{vlc__input__item_8h_a5ece755946acc45d9c0d362dda5e604c}} 
+\index{vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}!input\+\_\+item\+\_\+\+Post\+Sub\+Item@{input\+\_\+item\+\_\+\+Post\+Sub\+Item}}
+\index{input\+\_\+item\+\_\+\+Post\+Sub\+Item@{input\+\_\+item\+\_\+\+Post\+Sub\+Item}!vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+item\+\_\+\+Post\+Sub\+Item()}{input\_item\_PostSubItem()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void input\+\_\+item\+\_\+\+Post\+Sub\+Item (\begin{DoxyParamCaption}\item[{input\+\_\+item\+\_\+t $\ast$}]{p\+\_\+parent,  }\item[{input\+\_\+item\+\_\+t $\ast$}]{p\+\_\+child }\end{DoxyParamCaption})}
+
+Add one subitem to this item
+
+This won\textquotesingle{}t hold the item, but can tell to interested third parties Like the playlist, that there is a new sub item. With this design It is not the input item\textquotesingle{}s responsability to keep all the ref of the input item children.
+
+Sends a vlc\+\_\+\+Input\+Item\+Sub\+Item\+Tree\+Added and a vlc\+\_\+\+Input\+Item\+Sub\+Item\+Added event \mbox{\Hypertarget{vlc__input__item_8h_a59fc6c3da287d4b0f5857e7c8498d256}\label{vlc__input__item_8h_a59fc6c3da287d4b0f5857e7c8498d256}} 
+\index{vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}!input\+\_\+item\+\_\+\+Release@{input\+\_\+item\+\_\+\+Release}}
+\index{input\+\_\+item\+\_\+\+Release@{input\+\_\+item\+\_\+\+Release}!vlc\+\_\+input\+\_\+item.\+h@{vlc\+\_\+input\+\_\+item.\+h}}
+\subsubsection{\texorpdfstring{input\+\_\+item\+\_\+\+Release()}{input\_item\_Release()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void input\+\_\+item\+\_\+\+Release (\begin{DoxyParamCaption}\item[{input\+\_\+item\+\_\+t $\ast$}]{ }\end{DoxyParamCaption})}
+
+Releases an input item, i.\+e. decrements its reference counter. 

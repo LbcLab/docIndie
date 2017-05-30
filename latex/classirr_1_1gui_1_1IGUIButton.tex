@@ -12,12 +12,63 @@ G\+UI \hyperlink{classButton}{Button} interface.
 Inheritance diagram for irr\+:\+:gui\+:\+:I\+G\+U\+I\+Button\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{classirr_1_1gui_1_1IGUIButton}
+\includegraphics[height=4.038462cm]{classirr_1_1gui_1_1IGUIButton}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_a9ce8f3172c2c82269c2cf6a650ccaaa8}\label{classirr_1_1gui_1_1IGUIButton_a9ce8f3172c2c82269c2cf6a650ccaaa8}} 
+\hyperlink{classirr_1_1gui_1_1IGUIButton_a9ce8f3172c2c82269c2cf6a650ccaaa8}{I\+G\+U\+I\+Button} (\hyperlink{classirr_1_1gui_1_1IGUIEnvironment}{I\+G\+U\+I\+Environment} $\ast$environment, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ rectangle)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIButton_ab63c3536bd2eb92e9ebec8ea3a381ec1}{set\+Override\+Font} (\hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font} $\ast$font=0)=0
+\begin{DoxyCompactList}\small\item\em Sets another skin independent font. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIButton_adbc27c7589bf22d2a7fa676401358578}{get\+Override\+Font} (void) const =0
+\begin{DoxyCompactList}\small\item\em Gets the override font (if any) \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIButton_a1caa9253c284c3e3366733bf7805d762}{get\+Active\+Font} () const =0
+\begin{DoxyCompactList}\small\item\em Get the font which is used right now for drawing. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIButton_af233578beb34ba115b0197731e34a3f1}{set\+Image} (\hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$image=0)=0
+\begin{DoxyCompactList}\small\item\em Sets an image which should be displayed on the button when it is in normal state. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIButton_a205490ec6b4978afe9d3f6a4aed92b50}{set\+Image} (\hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$image, const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&pos)=0
+\begin{DoxyCompactList}\small\item\em Sets a background image for the button when it is in normal state. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIButton_a10389917530aa2f4a3008330c0695aad}{set\+Pressed\+Image} (\hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$image=0)=0
+\begin{DoxyCompactList}\small\item\em Sets a background image for the button when it is in pressed state. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIButton_a08019647ec3e08984d795b3c564d457e}{set\+Pressed\+Image} (\hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$image, const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&pos)=0
+\begin{DoxyCompactList}\small\item\em Sets an image which should be displayed on the button when it is in pressed state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_a0570cc64a1445866a0c8123c0209c83d}\label{classirr_1_1gui_1_1IGUIButton_a0570cc64a1445866a0c8123c0209c83d}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIButton_a0570cc64a1445866a0c8123c0209c83d}{set\+Sprite\+Bank} (\hyperlink{classirr_1_1gui_1_1IGUISpriteBank}{I\+G\+U\+I\+Sprite\+Bank} $\ast$bank=0)=0
+\begin{DoxyCompactList}\small\item\em Sets the sprite bank used by the button. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIButton_a26c5f05e922b0fc1b5790a001fd04b78}{set\+Sprite} (\hyperlink{namespaceirr_1_1gui_a2520445dec46e00684645ef8053aebb5}{E\+G\+U\+I\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+TE} state, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} index, \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} color=\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}(255, 255, 255, 255), bool loop=false)=0
+\begin{DoxyCompactList}\small\item\em Sets the animated sprite for a specific button state. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIButton_a992775637ba91f5267c4c04d5889fc6d}{set\+Is\+Push\+Button} (bool \hyperlink{classirr_1_1gui_1_1IGUIButton_abb12a92ba70d1fe738655d04ef73734f}{is\+Push\+Button}=true)=0
+\begin{DoxyCompactList}\small\item\em Sets if the button should behave like a push button. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_a2508fb292fab222bcebdeae0f9874348}\label{classirr_1_1gui_1_1IGUIButton_a2508fb292fab222bcebdeae0f9874348}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIButton_a2508fb292fab222bcebdeae0f9874348}{set\+Pressed} (bool pressed=true)=0
+\begin{DoxyCompactList}\small\item\em Sets the pressed state of the button if this is a pushbutton. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_a2621bd10a5eb91fa14037feb9378c252}\label{classirr_1_1gui_1_1IGUIButton_a2621bd10a5eb91fa14037feb9378c252}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIButton_a2621bd10a5eb91fa14037feb9378c252}{is\+Pressed} () const =0
+\begin{DoxyCompactList}\small\item\em Returns if the button is currently pressed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_a3d7727e7807e8b71dae6f81a44737e8a}\label{classirr_1_1gui_1_1IGUIButton_a3d7727e7807e8b71dae6f81a44737e8a}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIButton_a3d7727e7807e8b71dae6f81a44737e8a}{set\+Use\+Alpha\+Channel} (bool use\+Alpha\+Channel=true)=0
+\begin{DoxyCompactList}\small\item\em Sets if the alpha channel should be used for drawing background images on the button (default is false) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_af4cb47805f2a296506b8a0b4cb65fddf}\label{classirr_1_1gui_1_1IGUIButton_af4cb47805f2a296506b8a0b4cb65fddf}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIButton_af4cb47805f2a296506b8a0b4cb65fddf}{is\+Alpha\+Channel\+Used} () const =0
+\begin{DoxyCompactList}\small\item\em Returns if the alpha channel should be used for drawing background images on the button. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_abb12a92ba70d1fe738655d04ef73734f}\label{classirr_1_1gui_1_1IGUIButton_abb12a92ba70d1fe738655d04ef73734f}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIButton_abb12a92ba70d1fe738655d04ef73734f}{is\+Push\+Button} () const =0
+\begin{DoxyCompactList}\small\item\em Returns whether the button is a push button. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_aa6e68e5335f67472bde80b530b6d31fd}\label{classirr_1_1gui_1_1IGUIButton_aa6e68e5335f67472bde80b530b6d31fd}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIButton_aa6e68e5335f67472bde80b530b6d31fd}{set\+Draw\+Border} (bool border=true)=0
+\begin{DoxyCompactList}\small\item\em Sets if the button should use the skin to draw its border and button face (default is true) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_af2e1cee431cc5f90cede3820719625f1}\label{classirr_1_1gui_1_1IGUIButton_af2e1cee431cc5f90cede3820719625f1}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIButton_af2e1cee431cc5f90cede3820719625f1}{is\+Drawing\+Border} () const =0
+\begin{DoxyCompactList}\small\item\em Returns if the border and button face are being drawn using the skin. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_ae0767cb927c7974e19eaa3e5ca52bf1f}\label{classirr_1_1gui_1_1IGUIButton_ae0767cb927c7974e19eaa3e5ca52bf1f}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIButton_ae0767cb927c7974e19eaa3e5ca52bf1f}{set\+Scale\+Image} (bool scale\+Image=true)=0
+\begin{DoxyCompactList}\small\item\em Sets if the button should scale the button images to fit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_af2660457dae6def0b34d4748e96c653a}\label{classirr_1_1gui_1_1IGUIButton_af2660457dae6def0b34d4748e96c653a}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIButton_af2660457dae6def0b34d4748e96c653a}{is\+Scaling\+Image} () const =0
+\begin{DoxyCompactList}\small\item\em Checks whether the button scales the used images. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_a9ce8f3172c2c82269c2cf6a650ccaaa8}\label{classirr_1_1gui_1_1IGUIButton_a9ce8f3172c2c82269c2cf6a650ccaaa8}} 
 \hyperlink{classirr_1_1gui_1_1IGUIButton_a9ce8f3172c2c82269c2cf6a650ccaaa8}{I\+G\+U\+I\+Button} (\hyperlink{classirr_1_1gui_1_1IGUIEnvironment}{I\+G\+U\+I\+Environment} $\ast$environment, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ rectangle)
 \begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
@@ -86,7 +137,17 @@ G\+UI \hyperlink{classButton}{Button} interface.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_a1caa9253c284c3e3366733bf7805d762}\label{classirr_1_1gui_1_1IGUIButton_a1caa9253c284c3e3366733bf7805d762}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}!get\+Active\+Font@{get\+Active\+Font}}
 \index{get\+Active\+Font@{get\+Active\+Font}!irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}}
-\subsubsection{\texorpdfstring{get\+Active\+Font()}{getActiveFont()}}
+\subsubsection{\texorpdfstring{get\+Active\+Font()}{getActiveFont()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Button\+::get\+Active\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the font which is used right now for drawing. 
+
+Currently this is the override font when one is set and the font of the active skin otherwise \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_a1caa9253c284c3e3366733bf7805d762}\label{classirr_1_1gui_1_1IGUIButton_a1caa9253c284c3e3366733bf7805d762}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}!get\+Active\+Font@{get\+Active\+Font}}
+\index{get\+Active\+Font@{get\+Active\+Font}!irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}}
+\subsubsection{\texorpdfstring{get\+Active\+Font()}{getActiveFont()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Button\+::get\+Active\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -96,7 +157,20 @@ Get the font which is used right now for drawing.
 Currently this is the override font when one is set and the font of the active skin otherwise \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_adbc27c7589bf22d2a7fa676401358578}\label{classirr_1_1gui_1_1IGUIButton_adbc27c7589bf22d2a7fa676401358578}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}!get\+Override\+Font@{get\+Override\+Font}}
 \index{get\+Override\+Font@{get\+Override\+Font}!irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}}
-\subsubsection{\texorpdfstring{get\+Override\+Font()}{getOverrideFont()}}
+\subsubsection{\texorpdfstring{get\+Override\+Font()}{getOverrideFont()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Button\+::get\+Override\+Font (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the override font (if any) 
+
+\begin{DoxyReturn}{Returns}
+The override font (may be 0) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_adbc27c7589bf22d2a7fa676401358578}\label{classirr_1_1gui_1_1IGUIButton_adbc27c7589bf22d2a7fa676401358578}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}!get\+Override\+Font@{get\+Override\+Font}}
+\index{get\+Override\+Font@{get\+Override\+Font}!irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}}
+\subsubsection{\texorpdfstring{get\+Override\+Font()}{getOverrideFont()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Button\+::get\+Override\+Font (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -109,7 +183,22 @@ The override font (may be 0)
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_af233578beb34ba115b0197731e34a3f1}\label{classirr_1_1gui_1_1IGUIButton_af233578beb34ba115b0197731e34a3f1}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}!set\+Image@{set\+Image}}
 \index{set\+Image@{set\+Image}!irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}}
-\subsubsection{\texorpdfstring{set\+Image()}{setImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{set\+Image()}{setImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Button\+::set\+Image (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$}]{image = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets an image which should be displayed on the button when it is in normal state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & \hyperlink{classImage}{Image} to be displayed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_af233578beb34ba115b0197731e34a3f1}\label{classirr_1_1gui_1_1IGUIButton_af233578beb34ba115b0197731e34a3f1}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}!set\+Image@{set\+Image}}
+\index{set\+Image@{set\+Image}!irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}}
+\subsubsection{\texorpdfstring{set\+Image()}{setImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Button\+::set\+Image (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$}]{image = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -124,7 +213,24 @@ Sets an image which should be displayed on the button when it is in normal state
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_a205490ec6b4978afe9d3f6a4aed92b50}\label{classirr_1_1gui_1_1IGUIButton_a205490ec6b4978afe9d3f6a4aed92b50}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}!set\+Image@{set\+Image}}
 \index{set\+Image@{set\+Image}!irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}}
-\subsubsection{\texorpdfstring{set\+Image()}{setImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{set\+Image()}{setImage()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Button\+::set\+Image (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$}]{image,  }\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets a background image for the button when it is in normal state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & Texture containing the image to be displayed \\
+\hline
+{\em pos} & Position in the texture, where the image is located \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_a205490ec6b4978afe9d3f6a4aed92b50}\label{classirr_1_1gui_1_1IGUIButton_a205490ec6b4978afe9d3f6a4aed92b50}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}!set\+Image@{set\+Image}}
+\index{set\+Image@{set\+Image}!irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}}
+\subsubsection{\texorpdfstring{set\+Image()}{setImage()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Button\+::set\+Image (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$}]{image,  }\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -141,7 +247,17 @@ Sets a background image for the button when it is in normal state.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_a992775637ba91f5267c4c04d5889fc6d}\label{classirr_1_1gui_1_1IGUIButton_a992775637ba91f5267c4c04d5889fc6d}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}!set\+Is\+Push\+Button@{set\+Is\+Push\+Button}}
 \index{set\+Is\+Push\+Button@{set\+Is\+Push\+Button}!irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}}
-\subsubsection{\texorpdfstring{set\+Is\+Push\+Button()}{setIsPushButton()}}
+\subsubsection{\texorpdfstring{set\+Is\+Push\+Button()}{setIsPushButton()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Button\+::set\+Is\+Push\+Button (\begin{DoxyParamCaption}\item[{bool}]{is\+Push\+Button = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets if the button should behave like a push button. 
+
+Which means it can be in two states\+: Normal or Pressed. With a click on the button, the user can change the state of the button. \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_a992775637ba91f5267c4c04d5889fc6d}\label{classirr_1_1gui_1_1IGUIButton_a992775637ba91f5267c4c04d5889fc6d}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}!set\+Is\+Push\+Button@{set\+Is\+Push\+Button}}
+\index{set\+Is\+Push\+Button@{set\+Is\+Push\+Button}!irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}}
+\subsubsection{\texorpdfstring{set\+Is\+Push\+Button()}{setIsPushButton()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Button\+::set\+Is\+Push\+Button (\begin{DoxyParamCaption}\item[{bool}]{is\+Push\+Button = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -151,7 +267,22 @@ Sets if the button should behave like a push button.
 Which means it can be in two states\+: Normal or Pressed. With a click on the button, the user can change the state of the button. \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_ab63c3536bd2eb92e9ebec8ea3a381ec1}\label{classirr_1_1gui_1_1IGUIButton_ab63c3536bd2eb92e9ebec8ea3a381ec1}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}!set\+Override\+Font@{set\+Override\+Font}}
 \index{set\+Override\+Font@{set\+Override\+Font}!irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}}
-\subsubsection{\texorpdfstring{set\+Override\+Font()}{setOverrideFont()}}
+\subsubsection{\texorpdfstring{set\+Override\+Font()}{setOverrideFont()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Button\+::set\+Override\+Font (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font} $\ast$}]{font = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets another skin independent font. 
+
+If this is set to zero, the button uses the font of the skin. 
+\begin{DoxyParams}{Parameters}
+{\em font} & New font to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_ab63c3536bd2eb92e9ebec8ea3a381ec1}\label{classirr_1_1gui_1_1IGUIButton_ab63c3536bd2eb92e9ebec8ea3a381ec1}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}!set\+Override\+Font@{set\+Override\+Font}}
+\index{set\+Override\+Font@{set\+Override\+Font}!irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}}
+\subsubsection{\texorpdfstring{set\+Override\+Font()}{setOverrideFont()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Button\+::set\+Override\+Font (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font} $\ast$}]{font = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -166,7 +297,22 @@ If this is set to zero, the button uses the font of the skin.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_a10389917530aa2f4a3008330c0695aad}\label{classirr_1_1gui_1_1IGUIButton_a10389917530aa2f4a3008330c0695aad}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}!set\+Pressed\+Image@{set\+Pressed\+Image}}
 \index{set\+Pressed\+Image@{set\+Pressed\+Image}!irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}}
-\subsubsection{\texorpdfstring{set\+Pressed\+Image()}{setPressedImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{set\+Pressed\+Image()}{setPressedImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Button\+::set\+Pressed\+Image (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$}]{image = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets a background image for the button when it is in pressed state. 
+
+If no images is specified for the pressed state via \hyperlink{classirr_1_1gui_1_1IGUIButton_a10389917530aa2f4a3008330c0695aad}{set\+Pressed\+Image()}, this image is also drawn in pressed state. 
+\begin{DoxyParams}{Parameters}
+{\em image} & \hyperlink{classImage}{Image} to be displayed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_a10389917530aa2f4a3008330c0695aad}\label{classirr_1_1gui_1_1IGUIButton_a10389917530aa2f4a3008330c0695aad}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}!set\+Pressed\+Image@{set\+Pressed\+Image}}
+\index{set\+Pressed\+Image@{set\+Pressed\+Image}!irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}}
+\subsubsection{\texorpdfstring{set\+Pressed\+Image()}{setPressedImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Button\+::set\+Pressed\+Image (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$}]{image = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -181,7 +327,24 @@ If no images is specified for the pressed state via \hyperlink{classirr_1_1gui_1
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_a08019647ec3e08984d795b3c564d457e}\label{classirr_1_1gui_1_1IGUIButton_a08019647ec3e08984d795b3c564d457e}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}!set\+Pressed\+Image@{set\+Pressed\+Image}}
 \index{set\+Pressed\+Image@{set\+Pressed\+Image}!irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}}
-\subsubsection{\texorpdfstring{set\+Pressed\+Image()}{setPressedImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{set\+Pressed\+Image()}{setPressedImage()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Button\+::set\+Pressed\+Image (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$}]{image,  }\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets an image which should be displayed on the button when it is in pressed state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & Texture containing the image to be displayed \\
+\hline
+{\em pos} & Position in the texture, where the image is located \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_a08019647ec3e08984d795b3c564d457e}\label{classirr_1_1gui_1_1IGUIButton_a08019647ec3e08984d795b3c564d457e}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}!set\+Pressed\+Image@{set\+Pressed\+Image}}
+\index{set\+Pressed\+Image@{set\+Pressed\+Image}!irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}}
+\subsubsection{\texorpdfstring{set\+Pressed\+Image()}{setPressedImage()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Button\+::set\+Pressed\+Image (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1video_1_1ITexture}{video\+::\+I\+Texture} $\ast$}]{image,  }\item[{const \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -198,7 +361,30 @@ Sets an image which should be displayed on the button when it is in pressed stat
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_a26c5f05e922b0fc1b5790a001fd04b78}\label{classirr_1_1gui_1_1IGUIButton_a26c5f05e922b0fc1b5790a001fd04b78}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}!set\+Sprite@{set\+Sprite}}
 \index{set\+Sprite@{set\+Sprite}!irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}}
-\subsubsection{\texorpdfstring{set\+Sprite()}{setSprite()}}
+\subsubsection{\texorpdfstring{set\+Sprite()}{setSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Button\+::set\+Sprite (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1gui_a2520445dec46e00684645ef8053aebb5}{E\+G\+U\+I\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+TE}}]{state,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{index,  }\item[{\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}}]{color = {\ttfamily \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}(255,~255,~255,~255)},  }\item[{bool}]{loop = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the animated sprite for a specific button state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Number of the sprite within the sprite bank, use -\/1 for no sprite \\
+\hline
+{\em state} & State of the button to set the sprite for \\
+\hline
+{\em index} & The sprite number from the current sprite bank \\
+\hline
+{\em color} & The color of the sprite \\
+\hline
+{\em loop} & True if the animation should loop, false if not \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIButton_a26c5f05e922b0fc1b5790a001fd04b78}\label{classirr_1_1gui_1_1IGUIButton_a26c5f05e922b0fc1b5790a001fd04b78}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}!set\+Sprite@{set\+Sprite}}
+\index{set\+Sprite@{set\+Sprite}!irr\+::gui\+::\+I\+G\+U\+I\+Button@{irr\+::gui\+::\+I\+G\+U\+I\+Button}}
+\subsubsection{\texorpdfstring{set\+Sprite()}{setSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Button\+::set\+Sprite (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1gui_a2520445dec46e00684645ef8053aebb5}{E\+G\+U\+I\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+S\+T\+A\+TE}}]{state,  }\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{index,  }\item[{\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}}]{color = {\ttfamily \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}(255,~255,~255,~255)},  }\item[{bool}]{loop = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

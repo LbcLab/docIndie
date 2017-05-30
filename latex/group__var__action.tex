@@ -1,0 +1,56 @@
+\hypertarget{group__var__action}{}\section{Variable actions}
+\label{group__var__action}\index{Variable actions@{Variable actions}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__var__action_ga08c33437e933c36bf8a4f9161bd747cb}{V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+M\+IN}~0x0010
+\item 
+\#define \hyperlink{group__var__action_ga84caef649e4a7adda139b76590d04270}{V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+M\+AX}~0x0011
+\item 
+\#define \hyperlink{group__var__action_ga37ba0bdb5c00c3bd042eb1efe0c751b1}{V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+V\+A\+L\+UE}~0x0013
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+These are the different actions that can be used with var\+\_\+\+Change(). The parameters given are the meaning of the two last parameters of var\+\_\+\+Change() when this action is being used. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__var__action_ga84caef649e4a7adda139b76590d04270}\label{group__var__action_ga84caef649e4a7adda139b76590d04270}} 
+\index{Variable actions@{Variable actions}!V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+M\+AX@{V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+M\+AX}}
+\index{V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+M\+AX@{V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+M\+AX}!Variable actions@{Variable actions}}
+\subsubsection{\texorpdfstring{V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+M\+AX}{VLC\_VAR\_SETMAX}}
+{\footnotesize\ttfamily \#define V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+M\+AX~0x0011}
+
+Set the maximum value of this variable 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+val} & The new maximum value \\
+\hline
+{\em p\+\_\+val2} & Unused \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__var__action_ga08c33437e933c36bf8a4f9161bd747cb}\label{group__var__action_ga08c33437e933c36bf8a4f9161bd747cb}} 
+\index{Variable actions@{Variable actions}!V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+M\+IN@{V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+M\+IN}}
+\index{V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+M\+IN@{V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+M\+IN}!Variable actions@{Variable actions}}
+\subsubsection{\texorpdfstring{V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+M\+IN}{VLC\_VAR\_SETMIN}}
+{\footnotesize\ttfamily \#define V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+M\+IN~0x0010}
+
+Set the minimum value of this variable 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+val} & The new minimum value \\
+\hline
+{\em p\+\_\+val2} & Unused \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__var__action_ga37ba0bdb5c00c3bd042eb1efe0c751b1}\label{group__var__action_ga37ba0bdb5c00c3bd042eb1efe0c751b1}} 
+\index{Variable actions@{Variable actions}!V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+V\+A\+L\+UE@{V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+V\+A\+L\+UE}}
+\index{V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+V\+A\+L\+UE@{V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+V\+A\+L\+UE}!Variable actions@{Variable actions}}
+\subsubsection{\texorpdfstring{V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+V\+A\+L\+UE}{VLC\_VAR\_SETVALUE}}
+{\footnotesize\ttfamily \#define V\+L\+C\+\_\+\+V\+A\+R\+\_\+\+S\+E\+T\+V\+A\+L\+UE~0x0013}
+
+Set the value of this variable without triggering any callbacks 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+val} & The new value \\
+\hline
+{\em p\+\_\+val2} & Unused \\
+\hline
+\end{DoxyParams}

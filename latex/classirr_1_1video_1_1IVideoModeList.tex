@@ -29,6 +29,18 @@ virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperli
 virtual const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \& \hyperlink{classirr_1_1video_1_1IVideoModeList_ade99f99922307c1d539bdd35834361fa}{get\+Desktop\+Resolution} () const =0
 \begin{DoxyCompactList}\small\item\em Get current desktop screen resolution. \end{DoxyCompactList}\item 
 virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1video_1_1IVideoModeList_a15869ac6919f6f29d2a25fcf13b6dd45}{get\+Desktop\+Depth} () const =0
+\begin{DoxyCompactList}\small\item\em Get the pixel depth of a video mode in bits. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1video_1_1IVideoModeList_a84326f1c6faa1cbbb6f90bdac66714dd}{get\+Video\+Mode\+Count} () const =0
+\begin{DoxyCompactList}\small\item\em Gets amount of video modes in the list. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \hyperlink{classirr_1_1video_1_1IVideoModeList_af8409c756780c3566c94596cf7f94fc3}{get\+Video\+Mode\+Resolution} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} mode\+Number) const =0
+\begin{DoxyCompactList}\small\item\em Get the screen size of a video mode in pixels. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \hyperlink{classirr_1_1video_1_1IVideoModeList_aa06b5905ac9c04fb38a17bf798fccc9b}{get\+Video\+Mode\+Resolution} (const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \&min\+Size, const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \&max\+Size) const =0
+\begin{DoxyCompactList}\small\item\em Get a supported screen size with certain constraints. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1video_1_1IVideoModeList_ae3f4b101eacbebe78d6a2e1a3f2e713d}{get\+Video\+Mode\+Depth} (\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} mode\+Number) const =0
+\begin{DoxyCompactList}\small\item\em Get the pixel depth of a video mode in bits. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \& \hyperlink{classirr_1_1video_1_1IVideoModeList_ade99f99922307c1d539bdd35834361fa}{get\+Desktop\+Resolution} () const =0
+\begin{DoxyCompactList}\small\item\em Get current desktop screen resolution. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1video_1_1IVideoModeList_a15869ac6919f6f29d2a25fcf13b6dd45}{get\+Desktop\+Depth} () const =0
 \begin{DoxyCompactList}\small\item\em Get the pixel depth of a video mode in bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -42,7 +54,20 @@ You can get a list via \hyperlink{classirr_1_1IrrlichtDevice_a8872867a5ad728a467
 \mbox{\Hypertarget{classirr_1_1video_1_1IVideoModeList_a15869ac6919f6f29d2a25fcf13b6dd45}\label{classirr_1_1video_1_1IVideoModeList_a15869ac6919f6f29d2a25fcf13b6dd45}} 
 \index{irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}!get\+Desktop\+Depth@{get\+Desktop\+Depth}}
 \index{get\+Desktop\+Depth@{get\+Desktop\+Depth}!irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}}
-\subsubsection{\texorpdfstring{get\+Desktop\+Depth()}{getDesktopDepth()}}
+\subsubsection{\texorpdfstring{get\+Desktop\+Depth()}{getDesktopDepth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::video\+::\+I\+Video\+Mode\+List\+::get\+Desktop\+Depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the pixel depth of a video mode in bits. 
+
+\begin{DoxyReturn}{Returns}
+Size of each pixel of the current desktop video mode in bits. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1IVideoModeList_a15869ac6919f6f29d2a25fcf13b6dd45}\label{classirr_1_1video_1_1IVideoModeList_a15869ac6919f6f29d2a25fcf13b6dd45}} 
+\index{irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}!get\+Desktop\+Depth@{get\+Desktop\+Depth}}
+\index{get\+Desktop\+Depth@{get\+Desktop\+Depth}!irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}}
+\subsubsection{\texorpdfstring{get\+Desktop\+Depth()}{getDesktopDepth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::video\+::\+I\+Video\+Mode\+List\+::get\+Desktop\+Depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -55,7 +80,20 @@ Size of each pixel of the current desktop video mode in bits.
 \mbox{\Hypertarget{classirr_1_1video_1_1IVideoModeList_ade99f99922307c1d539bdd35834361fa}\label{classirr_1_1video_1_1IVideoModeList_ade99f99922307c1d539bdd35834361fa}} 
 \index{irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}!get\+Desktop\+Resolution@{get\+Desktop\+Resolution}}
 \index{get\+Desktop\+Resolution@{get\+Desktop\+Resolution}!irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}}
-\subsubsection{\texorpdfstring{get\+Desktop\+Resolution()}{getDesktopResolution()}}
+\subsubsection{\texorpdfstring{get\+Desktop\+Resolution()}{getDesktopResolution()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}$>$\& irr\+::video\+::\+I\+Video\+Mode\+List\+::get\+Desktop\+Resolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get current desktop screen resolution. 
+
+\begin{DoxyReturn}{Returns}
+Size of screen in pixels of the current desktop video mode. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1IVideoModeList_ade99f99922307c1d539bdd35834361fa}\label{classirr_1_1video_1_1IVideoModeList_ade99f99922307c1d539bdd35834361fa}} 
+\index{irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}!get\+Desktop\+Resolution@{get\+Desktop\+Resolution}}
+\index{get\+Desktop\+Resolution@{get\+Desktop\+Resolution}!irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}}
+\subsubsection{\texorpdfstring{get\+Desktop\+Resolution()}{getDesktopResolution()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}$>$\& irr\+::video\+::\+I\+Video\+Mode\+List\+::get\+Desktop\+Resolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -68,7 +106,20 @@ Size of screen in pixels of the current desktop video mode.
 \mbox{\Hypertarget{classirr_1_1video_1_1IVideoModeList_a84326f1c6faa1cbbb6f90bdac66714dd}\label{classirr_1_1video_1_1IVideoModeList_a84326f1c6faa1cbbb6f90bdac66714dd}} 
 \index{irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}!get\+Video\+Mode\+Count@{get\+Video\+Mode\+Count}}
 \index{get\+Video\+Mode\+Count@{get\+Video\+Mode\+Count}!irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}}
-\subsubsection{\texorpdfstring{get\+Video\+Mode\+Count()}{getVideoModeCount()}}
+\subsubsection{\texorpdfstring{get\+Video\+Mode\+Count()}{getVideoModeCount()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::video\+::\+I\+Video\+Mode\+List\+::get\+Video\+Mode\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets amount of video modes in the list. 
+
+\begin{DoxyReturn}{Returns}
+Returns amount of video modes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1IVideoModeList_a84326f1c6faa1cbbb6f90bdac66714dd}\label{classirr_1_1video_1_1IVideoModeList_a84326f1c6faa1cbbb6f90bdac66714dd}} 
+\index{irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}!get\+Video\+Mode\+Count@{get\+Video\+Mode\+Count}}
+\index{get\+Video\+Mode\+Count@{get\+Video\+Mode\+Count}!irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}}
+\subsubsection{\texorpdfstring{get\+Video\+Mode\+Count()}{getVideoModeCount()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::video\+::\+I\+Video\+Mode\+List\+::get\+Video\+Mode\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -81,7 +132,25 @@ Returns amount of video modes.
 \mbox{\Hypertarget{classirr_1_1video_1_1IVideoModeList_ae3f4b101eacbebe78d6a2e1a3f2e713d}\label{classirr_1_1video_1_1IVideoModeList_ae3f4b101eacbebe78d6a2e1a3f2e713d}} 
 \index{irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}!get\+Video\+Mode\+Depth@{get\+Video\+Mode\+Depth}}
 \index{get\+Video\+Mode\+Depth@{get\+Video\+Mode\+Depth}!irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}}
-\subsubsection{\texorpdfstring{get\+Video\+Mode\+Depth()}{getVideoModeDepth()}}
+\subsubsection{\texorpdfstring{get\+Video\+Mode\+Depth()}{getVideoModeDepth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::video\+::\+I\+Video\+Mode\+List\+::get\+Video\+Mode\+Depth (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{mode\+Number }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the pixel depth of a video mode in bits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode\+Number} & zero based index of the video mode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Size of each pixel of the specified video mode in bits. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1IVideoModeList_ae3f4b101eacbebe78d6a2e1a3f2e713d}\label{classirr_1_1video_1_1IVideoModeList_ae3f4b101eacbebe78d6a2e1a3f2e713d}} 
+\index{irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}!get\+Video\+Mode\+Depth@{get\+Video\+Mode\+Depth}}
+\index{get\+Video\+Mode\+Depth@{get\+Video\+Mode\+Depth}!irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}}
+\subsubsection{\texorpdfstring{get\+Video\+Mode\+Depth()}{getVideoModeDepth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::video\+::\+I\+Video\+Mode\+List\+::get\+Video\+Mode\+Depth (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{mode\+Number }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -99,7 +168,25 @@ Size of each pixel of the specified video mode in bits.
 \mbox{\Hypertarget{classirr_1_1video_1_1IVideoModeList_af8409c756780c3566c94596cf7f94fc3}\label{classirr_1_1video_1_1IVideoModeList_af8409c756780c3566c94596cf7f94fc3}} 
 \index{irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}!get\+Video\+Mode\+Resolution@{get\+Video\+Mode\+Resolution}}
 \index{get\+Video\+Mode\+Resolution@{get\+Video\+Mode\+Resolution}!irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}}
-\subsubsection{\texorpdfstring{get\+Video\+Mode\+Resolution()}{getVideoModeResolution()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{get\+Video\+Mode\+Resolution()}{getVideoModeResolution()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}$>$ irr\+::video\+::\+I\+Video\+Mode\+List\+::get\+Video\+Mode\+Resolution (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{mode\+Number }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the screen size of a video mode in pixels. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode\+Number} & zero based index of the video mode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Size of screen in pixels of the specified video mode. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1IVideoModeList_af8409c756780c3566c94596cf7f94fc3}\label{classirr_1_1video_1_1IVideoModeList_af8409c756780c3566c94596cf7f94fc3}} 
+\index{irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}!get\+Video\+Mode\+Resolution@{get\+Video\+Mode\+Resolution}}
+\index{get\+Video\+Mode\+Resolution@{get\+Video\+Mode\+Resolution}!irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}}
+\subsubsection{\texorpdfstring{get\+Video\+Mode\+Resolution()}{getVideoModeResolution()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}$>$ irr\+::video\+::\+I\+Video\+Mode\+List\+::get\+Video\+Mode\+Resolution (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32}}]{mode\+Number }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -117,7 +204,27 @@ Size of screen in pixels of the specified video mode.
 \mbox{\Hypertarget{classirr_1_1video_1_1IVideoModeList_aa06b5905ac9c04fb38a17bf798fccc9b}\label{classirr_1_1video_1_1IVideoModeList_aa06b5905ac9c04fb38a17bf798fccc9b}} 
 \index{irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}!get\+Video\+Mode\+Resolution@{get\+Video\+Mode\+Resolution}}
 \index{get\+Video\+Mode\+Resolution@{get\+Video\+Mode\+Resolution}!irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}}
-\subsubsection{\texorpdfstring{get\+Video\+Mode\+Resolution()}{getVideoModeResolution()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{get\+Video\+Mode\+Resolution()}{getVideoModeResolution()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}$>$ irr\+::video\+::\+I\+Video\+Mode\+List\+::get\+Video\+Mode\+Resolution (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \&}]{min\+Size,  }\item[{const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \&}]{max\+Size }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get a supported screen size with certain constraints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+Size} & Minimum dimensions required. \\
+\hline
+{\em max\+Size} & Maximum dimensions allowed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Size of screen in pixels which matches the requirements. as good as possible. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1video_1_1IVideoModeList_aa06b5905ac9c04fb38a17bf798fccc9b}\label{classirr_1_1video_1_1IVideoModeList_aa06b5905ac9c04fb38a17bf798fccc9b}} 
+\index{irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}!get\+Video\+Mode\+Resolution@{get\+Video\+Mode\+Resolution}}
+\index{get\+Video\+Mode\+Resolution@{get\+Video\+Mode\+Resolution}!irr\+::video\+::\+I\+Video\+Mode\+List@{irr\+::video\+::\+I\+Video\+Mode\+List}}
+\subsubsection{\texorpdfstring{get\+Video\+Mode\+Resolution()}{getVideoModeResolution()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$\hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32}$>$ irr\+::video\+::\+I\+Video\+Mode\+List\+::get\+Video\+Mode\+Resolution (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \&}]{min\+Size,  }\item[{const \hyperlink{classirr_1_1core_1_1dimension2d}{core\+::dimension2d}$<$ \hyperlink{namespaceirr_a0416a53257075833e7002efd0a18e804}{u32} $>$ \&}]{max\+Size }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

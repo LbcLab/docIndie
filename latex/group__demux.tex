@@ -1,0 +1,38 @@
+\hypertarget{group__demux}{}\section{Demux}
+\label{group__demux}\index{Demux@{Demux}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI decoder\+\_\+t $\ast$ \hyperlink{group__demux_ga918379bccc4f76159fefd3230890e09e}{demux\+\_\+\+Packetizer\+New} (demux\+\_\+t $\ast$p\+\_\+demux, es\+\_\+format\+\_\+t $\ast$p\+\_\+fmt, const char $\ast$psz\+\_\+msg) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__demux_ga67bbb8bff77333e401f3aece9ce180e8}{demux\+\_\+\+Packetizer\+Destroy} (decoder\+\_\+t $\ast$p\+\_\+packetizer)
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structinput__thread__t}{input\+\_\+thread\+\_\+t} $\ast$ \hyperlink{group__demux_ga2903ac467ec14cffe740584d0091c246}{demux\+\_\+\+Get\+Parent\+Input} (demux\+\_\+t $\ast$p\+\_\+demux) V\+L\+C\+\_\+\+U\+S\+ED
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__demux_ga2903ac467ec14cffe740584d0091c246}\label{group__demux_ga2903ac467ec14cffe740584d0091c246}} 
+\index{Demux@{Demux}!demux\+\_\+\+Get\+Parent\+Input@{demux\+\_\+\+Get\+Parent\+Input}}
+\index{demux\+\_\+\+Get\+Parent\+Input@{demux\+\_\+\+Get\+Parent\+Input}!Demux@{Demux}}
+\subsubsection{\texorpdfstring{demux\+\_\+\+Get\+Parent\+Input()}{demux\_GetParentInput()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structinput__thread__t}{input\+\_\+thread\+\_\+t}$\ast$ demux\+\_\+\+Get\+Parent\+Input (\begin{DoxyParamCaption}\item[{demux\+\_\+t $\ast$}]{p\+\_\+demux }\end{DoxyParamCaption})}
+
+This function will return the parent input of this demux. It is retained. Can return N\+U\+LL. \mbox{\Hypertarget{group__demux_ga67bbb8bff77333e401f3aece9ce180e8}\label{group__demux_ga67bbb8bff77333e401f3aece9ce180e8}} 
+\index{Demux@{Demux}!demux\+\_\+\+Packetizer\+Destroy@{demux\+\_\+\+Packetizer\+Destroy}}
+\index{demux\+\_\+\+Packetizer\+Destroy@{demux\+\_\+\+Packetizer\+Destroy}!Demux@{Demux}}
+\subsubsection{\texorpdfstring{demux\+\_\+\+Packetizer\+Destroy()}{demux\_PacketizerDestroy()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void demux\+\_\+\+Packetizer\+Destroy (\begin{DoxyParamCaption}\item[{decoder\+\_\+t $\ast$}]{p\+\_\+packetizer }\end{DoxyParamCaption})}
+
+This function will destroy a packetizer create by demux\+\_\+\+Packetizer\+New. \mbox{\Hypertarget{group__demux_ga918379bccc4f76159fefd3230890e09e}\label{group__demux_ga918379bccc4f76159fefd3230890e09e}} 
+\index{Demux@{Demux}!demux\+\_\+\+Packetizer\+New@{demux\+\_\+\+Packetizer\+New}}
+\index{demux\+\_\+\+Packetizer\+New@{demux\+\_\+\+Packetizer\+New}!Demux@{Demux}}
+\subsubsection{\texorpdfstring{demux\+\_\+\+Packetizer\+New()}{demux\_PacketizerNew()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI decoder\+\_\+t$\ast$ demux\+\_\+\+Packetizer\+New (\begin{DoxyParamCaption}\item[{demux\+\_\+t $\ast$}]{p\+\_\+demux,  }\item[{es\+\_\+format\+\_\+t $\ast$}]{p\+\_\+fmt,  }\item[{const char $\ast$}]{psz\+\_\+msg }\end{DoxyParamCaption})}
+
+This function will create a packetizer suitable for a demuxer that parses elementary stream.
+
+The provided es\+\_\+format\+\_\+t will be cleaned on error or by demux\+\_\+\+Packetizer\+Destroy. 

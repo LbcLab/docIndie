@@ -76,15 +76,80 @@ position2d$<$ T $>$ \hyperlink{classirr_1_1core_1_1rect_adf7b75a834fde75f5932f2a
 void \hyperlink{classirr_1_1core_1_1rect_a0b7496319a32ceda640c730f5822f1ef}{add\+Internal\+Point} (const position2d$<$ T $>$ \&p)
 \begin{DoxyCompactList}\small\item\em Adds a point to the rectangle. \end{DoxyCompactList}\item 
 void \hyperlink{classirr_1_1core_1_1rect_a25b80222bc003a238fa8f5157bdb8b9d}{add\+Internal\+Point} (T x, T y)
+\begin{DoxyCompactList}\small\item\em Adds a point to the bounding rectangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_a04c79e7af6ff14b62e569628c4f83e44}\label{classirr_1_1core_1_1rect_a04c79e7af6ff14b62e569628c4f83e44}} 
+\hyperlink{classirr_1_1core_1_1rect_a04c79e7af6ff14b62e569628c4f83e44}{rect} ()
+\begin{DoxyCompactList}\small\item\em Default constructor creating empty rectangle at (0,0) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_af7d59f53cd24d5f9f587896160ece50a}\label{classirr_1_1core_1_1rect_af7d59f53cd24d5f9f587896160ece50a}} 
+\hyperlink{classirr_1_1core_1_1rect_af7d59f53cd24d5f9f587896160ece50a}{rect} (T x, T y, T x2, T y2)
+\begin{DoxyCompactList}\small\item\em Constructor with two corners. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_a8f207109cebad893de44b01cc67e9e34}\label{classirr_1_1core_1_1rect_a8f207109cebad893de44b01cc67e9e34}} 
+\hyperlink{classirr_1_1core_1_1rect_a8f207109cebad893de44b01cc67e9e34}{rect} (const position2d$<$ T $>$ \&upper\+Left, const position2d$<$ T $>$ \&lower\+Right)
+\begin{DoxyCompactList}\small\item\em Constructor with two corners. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_a54526b73a11cf90a4f4ff0c6d1556fcc}\label{classirr_1_1core_1_1rect_a54526b73a11cf90a4f4ff0c6d1556fcc}} 
+{\footnotesize template$<$class U $>$ }\\\hyperlink{classirr_1_1core_1_1rect_a54526b73a11cf90a4f4ff0c6d1556fcc}{rect} (const position2d$<$ T $>$ \&pos, const \hyperlink{classirr_1_1core_1_1dimension2d}{dimension2d}$<$ U $>$ \&size)
+\begin{DoxyCompactList}\small\item\em Constructor with upper left corner and dimension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_ac6afa4c2102eb30bbb0cbd0615a9b533}\label{classirr_1_1core_1_1rect_ac6afa4c2102eb30bbb0cbd0615a9b533}} 
+\hyperlink{classirr_1_1core_1_1rect}{rect}$<$ T $>$ \hyperlink{classirr_1_1core_1_1rect_ac6afa4c2102eb30bbb0cbd0615a9b533}{operator+} (const position2d$<$ T $>$ \&pos) const
+\begin{DoxyCompactList}\small\item\em move right by given numbers \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_a4f4f1c3c3321d1ca5e9f617ebf47421c}\label{classirr_1_1core_1_1rect_a4f4f1c3c3321d1ca5e9f617ebf47421c}} 
+\hyperlink{classirr_1_1core_1_1rect}{rect}$<$ T $>$ \& \hyperlink{classirr_1_1core_1_1rect_a4f4f1c3c3321d1ca5e9f617ebf47421c}{operator+=} (const position2d$<$ T $>$ \&pos)
+\begin{DoxyCompactList}\small\item\em move right by given numbers \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_ae65c0f6e91a4d575eb3d332ce571a416}\label{classirr_1_1core_1_1rect_ae65c0f6e91a4d575eb3d332ce571a416}} 
+\hyperlink{classirr_1_1core_1_1rect}{rect}$<$ T $>$ \hyperlink{classirr_1_1core_1_1rect_ae65c0f6e91a4d575eb3d332ce571a416}{operator-\/} (const position2d$<$ T $>$ \&pos) const
+\begin{DoxyCompactList}\small\item\em move left by given numbers \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_a3ef4f6f13ec79c3d5745df3a76f9e1e1}\label{classirr_1_1core_1_1rect_a3ef4f6f13ec79c3d5745df3a76f9e1e1}} 
+\hyperlink{classirr_1_1core_1_1rect}{rect}$<$ T $>$ \& \hyperlink{classirr_1_1core_1_1rect_a3ef4f6f13ec79c3d5745df3a76f9e1e1}{operator-\/=} (const position2d$<$ T $>$ \&pos)
+\begin{DoxyCompactList}\small\item\em move left by given numbers \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_a2753c5716b6618caff8c6b7aded30c90}\label{classirr_1_1core_1_1rect_a2753c5716b6618caff8c6b7aded30c90}} 
+bool \hyperlink{classirr_1_1core_1_1rect_a2753c5716b6618caff8c6b7aded30c90}{operator==} (const \hyperlink{classirr_1_1core_1_1rect}{rect}$<$ T $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em equality operator \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_ad5ffad1c869006645af9a10e8bc7b905}\label{classirr_1_1core_1_1rect_ad5ffad1c869006645af9a10e8bc7b905}} 
+bool \hyperlink{classirr_1_1core_1_1rect_ad5ffad1c869006645af9a10e8bc7b905}{operator!=} (const \hyperlink{classirr_1_1core_1_1rect}{rect}$<$ T $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em inequality operator \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_a8af20faabcbf8880c1846a16e604c921}\label{classirr_1_1core_1_1rect_a8af20faabcbf8880c1846a16e604c921}} 
+bool \hyperlink{classirr_1_1core_1_1rect_a8af20faabcbf8880c1846a16e604c921}{operator$<$} (const \hyperlink{classirr_1_1core_1_1rect}{rect}$<$ T $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em compares size of rectangles \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_a1a9c505a1eb91ccb3e3915c61f9fb26d}\label{classirr_1_1core_1_1rect_a1a9c505a1eb91ccb3e3915c61f9fb26d}} 
+T \hyperlink{classirr_1_1core_1_1rect_a1a9c505a1eb91ccb3e3915c61f9fb26d}{get\+Area} () const
+\begin{DoxyCompactList}\small\item\em Returns size of rectangle. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1rect_a34c84ad8ff423a4b657eedbcd112afb3}{is\+Point\+Inside} (const position2d$<$ T $>$ \&pos) const
+\begin{DoxyCompactList}\small\item\em Returns if a 2d point is within this rectangle. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1rect_ab94b7d9da434c7b08761426e296c2f3e}{is\+Rect\+Collided} (const \hyperlink{classirr_1_1core_1_1rect}{rect}$<$ T $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Check if the rectangle collides with another rectangle. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1rect_a86645d45a8bed1a3539bba9865e93de4}{clip\+Against} (const \hyperlink{classirr_1_1core_1_1rect}{rect}$<$ T $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Clips this rectangle with another one. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1rect_a4515d2a1349dc805775854a422465f63}{constrain\+To} (const \hyperlink{classirr_1_1core_1_1rect}{rect}$<$ T $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Moves this rectangle to fit inside another one. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_ad5dcae186b85b938d42b59c91bfeb9a5}\label{classirr_1_1core_1_1rect_ad5dcae186b85b938d42b59c91bfeb9a5}} 
+T \hyperlink{classirr_1_1core_1_1rect_ad5dcae186b85b938d42b59c91bfeb9a5}{get\+Width} () const
+\begin{DoxyCompactList}\small\item\em Get width of rectangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_ad43b325eeb165c553a58f34efb2ee961}\label{classirr_1_1core_1_1rect_ad43b325eeb165c553a58f34efb2ee961}} 
+T \hyperlink{classirr_1_1core_1_1rect_ad43b325eeb165c553a58f34efb2ee961}{get\+Height} () const
+\begin{DoxyCompactList}\small\item\em Get height of rectangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_a45c7665e74aed626bb5c01729f206775}\label{classirr_1_1core_1_1rect_a45c7665e74aed626bb5c01729f206775}} 
+void \hyperlink{classirr_1_1core_1_1rect_a45c7665e74aed626bb5c01729f206775}{repair} ()
+\begin{DoxyCompactList}\small\item\em If the lower right corner of the rect is smaller then the upper left, the points are swapped. \end{DoxyCompactList}\item 
+bool \hyperlink{classirr_1_1core_1_1rect_ad2f5052c13cffb08f6ce8649296ec9df}{is\+Valid} () const
+\begin{DoxyCompactList}\small\item\em Returns if the rect is valid to draw. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_adf7b75a834fde75f5932f2a89a3d75cd}\label{classirr_1_1core_1_1rect_adf7b75a834fde75f5932f2a89a3d75cd}} 
+position2d$<$ T $>$ \hyperlink{classirr_1_1core_1_1rect_adf7b75a834fde75f5932f2a89a3d75cd}{get\+Center} () const
+\begin{DoxyCompactList}\small\item\em Get the center of the rectangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_aa5e0bf0e6474c1603c735a63843833fa}\label{classirr_1_1core_1_1rect_aa5e0bf0e6474c1603c735a63843833fa}} 
+\hyperlink{classirr_1_1core_1_1dimension2d}{dimension2d}$<$ T $>$ \hyperlink{classirr_1_1core_1_1rect_aa5e0bf0e6474c1603c735a63843833fa}{get\+Size} () const
+\begin{DoxyCompactList}\small\item\em Get the dimensions of the rectangle. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1rect_a0b7496319a32ceda640c730f5822f1ef}{add\+Internal\+Point} (const position2d$<$ T $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Adds a point to the rectangle. \end{DoxyCompactList}\item 
+void \hyperlink{classirr_1_1core_1_1rect_a25b80222bc003a238fa8f5157bdb8b9d}{add\+Internal\+Point} (T x, T y)
 \begin{DoxyCompactList}\small\item\em Adds a point to the bounding rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classirr_1_1core_1_1rect_abd47b3a4967b2153e58984d964af6573}\label{classirr_1_1core_1_1rect_abd47b3a4967b2153e58984d964af6573}} 
-position2d$<$ T $>$ \hyperlink{classirr_1_1core_1_1rect_abd47b3a4967b2153e58984d964af6573}{Upper\+Left\+Corner}
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_a674e94363e2ea168082444a3af0f0b30}\label{classirr_1_1core_1_1rect_a674e94363e2ea168082444a3af0f0b30}} 
+position2d$<$ T $>$ \hyperlink{classirr_1_1core_1_1rect_a674e94363e2ea168082444a3af0f0b30}{Upper\+Left\+Corner}
 \begin{DoxyCompactList}\small\item\em Upper left corner. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classirr_1_1core_1_1rect_aa7c7e38bbff5f32992f69b36fc8cec1e}\label{classirr_1_1core_1_1rect_aa7c7e38bbff5f32992f69b36fc8cec1e}} 
-position2d$<$ T $>$ \hyperlink{classirr_1_1core_1_1rect_aa7c7e38bbff5f32992f69b36fc8cec1e}{Lower\+Right\+Corner}
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_aea0da4523c5daa08a0644682a425684e}\label{classirr_1_1core_1_1rect_aea0da4523c5daa08a0644682a425684e}} 
+position2d$<$ T $>$ \hyperlink{classirr_1_1core_1_1rect_aea0da4523c5daa08a0644682a425684e}{Lower\+Right\+Corner}
 \begin{DoxyCompactList}\small\item\em Lower right corner. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -102,7 +167,23 @@ Coordinates are (0,0) for top-\/left corner, and increasing to the right and to 
 \mbox{\Hypertarget{classirr_1_1core_1_1rect_a0b7496319a32ceda640c730f5822f1ef}\label{classirr_1_1core_1_1rect_a0b7496319a32ceda640c730f5822f1ef}} 
 \index{irr\+::core\+::rect@{irr\+::core\+::rect}!add\+Internal\+Point@{add\+Internal\+Point}}
 \index{add\+Internal\+Point@{add\+Internal\+Point}!irr\+::core\+::rect@{irr\+::core\+::rect}}
-\subsubsection{\texorpdfstring{add\+Internal\+Point()}{addInternalPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{add\+Internal\+Point()}{addInternalPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classirr_1_1core_1_1rect}{irr\+::core\+::rect}$<$ T $>$\+::add\+Internal\+Point (\begin{DoxyParamCaption}\item[{const position2d$<$ T $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a point to the rectangle. 
+
+Causes the rectangle to grow bigger if point is outside of the box 
+\begin{DoxyParams}{Parameters}
+{\em p} & Point to add to the box. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_a0b7496319a32ceda640c730f5822f1ef}\label{classirr_1_1core_1_1rect_a0b7496319a32ceda640c730f5822f1ef}} 
+\index{irr\+::core\+::rect@{irr\+::core\+::rect}!add\+Internal\+Point@{add\+Internal\+Point}}
+\index{add\+Internal\+Point@{add\+Internal\+Point}!irr\+::core\+::rect@{irr\+::core\+::rect}}
+\subsubsection{\texorpdfstring{add\+Internal\+Point()}{addInternalPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 void \hyperlink{classirr_1_1core_1_1rect}{irr\+::core\+::rect}$<$ T $>$\+::add\+Internal\+Point (\begin{DoxyParamCaption}\item[{const position2d$<$ T $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -118,7 +199,25 @@ Causes the rectangle to grow bigger if point is outside of the box
 \mbox{\Hypertarget{classirr_1_1core_1_1rect_a25b80222bc003a238fa8f5157bdb8b9d}\label{classirr_1_1core_1_1rect_a25b80222bc003a238fa8f5157bdb8b9d}} 
 \index{irr\+::core\+::rect@{irr\+::core\+::rect}!add\+Internal\+Point@{add\+Internal\+Point}}
 \index{add\+Internal\+Point@{add\+Internal\+Point}!irr\+::core\+::rect@{irr\+::core\+::rect}}
-\subsubsection{\texorpdfstring{add\+Internal\+Point()}{addInternalPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{add\+Internal\+Point()}{addInternalPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classirr_1_1core_1_1rect}{irr\+::core\+::rect}$<$ T $>$\+::add\+Internal\+Point (\begin{DoxyParamCaption}\item[{T}]{x,  }\item[{T}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a point to the bounding rectangle. 
+
+Causes the rectangle to grow bigger if point is outside of the box 
+\begin{DoxyParams}{Parameters}
+{\em x} & X-\/\+Coordinate of the point to add to this box. \\
+\hline
+{\em y} & Y-\/\+Coordinate of the point to add to this box. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_a25b80222bc003a238fa8f5157bdb8b9d}\label{classirr_1_1core_1_1rect_a25b80222bc003a238fa8f5157bdb8b9d}} 
+\index{irr\+::core\+::rect@{irr\+::core\+::rect}!add\+Internal\+Point@{add\+Internal\+Point}}
+\index{add\+Internal\+Point@{add\+Internal\+Point}!irr\+::core\+::rect@{irr\+::core\+::rect}}
+\subsubsection{\texorpdfstring{add\+Internal\+Point()}{addInternalPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 void \hyperlink{classirr_1_1core_1_1rect}{irr\+::core\+::rect}$<$ T $>$\+::add\+Internal\+Point (\begin{DoxyParamCaption}\item[{T}]{x,  }\item[{T}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -136,7 +235,23 @@ Causes the rectangle to grow bigger if point is outside of the box
 \mbox{\Hypertarget{classirr_1_1core_1_1rect_a86645d45a8bed1a3539bba9865e93de4}\label{classirr_1_1core_1_1rect_a86645d45a8bed1a3539bba9865e93de4}} 
 \index{irr\+::core\+::rect@{irr\+::core\+::rect}!clip\+Against@{clip\+Against}}
 \index{clip\+Against@{clip\+Against}!irr\+::core\+::rect@{irr\+::core\+::rect}}
-\subsubsection{\texorpdfstring{clip\+Against()}{clipAgainst()}}
+\subsubsection{\texorpdfstring{clip\+Against()}{clipAgainst()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classirr_1_1core_1_1rect}{irr\+::core\+::rect}$<$ T $>$\+::clip\+Against (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1rect}{rect}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Clips this rectangle with another one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Rectangle to clip with \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_a86645d45a8bed1a3539bba9865e93de4}\label{classirr_1_1core_1_1rect_a86645d45a8bed1a3539bba9865e93de4}} 
+\index{irr\+::core\+::rect@{irr\+::core\+::rect}!clip\+Against@{clip\+Against}}
+\index{clip\+Against@{clip\+Against}!irr\+::core\+::rect@{irr\+::core\+::rect}}
+\subsubsection{\texorpdfstring{clip\+Against()}{clipAgainst()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 void \hyperlink{classirr_1_1core_1_1rect}{irr\+::core\+::rect}$<$ T $>$\+::clip\+Against (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1rect}{rect}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -152,7 +267,21 @@ Clips this rectangle with another one.
 \mbox{\Hypertarget{classirr_1_1core_1_1rect_a4515d2a1349dc805775854a422465f63}\label{classirr_1_1core_1_1rect_a4515d2a1349dc805775854a422465f63}} 
 \index{irr\+::core\+::rect@{irr\+::core\+::rect}!constrain\+To@{constrain\+To}}
 \index{constrain\+To@{constrain\+To}!irr\+::core\+::rect@{irr\+::core\+::rect}}
-\subsubsection{\texorpdfstring{constrain\+To()}{constrainTo()}}
+\subsubsection{\texorpdfstring{constrain\+To()}{constrainTo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classirr_1_1core_1_1rect}{irr\+::core\+::rect}$<$ T $>$\+::constrain\+To (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1rect}{rect}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Moves this rectangle to fit inside another one. 
+
+\begin{DoxyReturn}{Returns}
+True on success, false if not possible 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_a4515d2a1349dc805775854a422465f63}\label{classirr_1_1core_1_1rect_a4515d2a1349dc805775854a422465f63}} 
+\index{irr\+::core\+::rect@{irr\+::core\+::rect}!constrain\+To@{constrain\+To}}
+\index{constrain\+To@{constrain\+To}!irr\+::core\+::rect@{irr\+::core\+::rect}}
+\subsubsection{\texorpdfstring{constrain\+To()}{constrainTo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 bool \hyperlink{classirr_1_1core_1_1rect}{irr\+::core\+::rect}$<$ T $>$\+::constrain\+To (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1rect}{rect}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -166,7 +295,26 @@ True on success, false if not possible
 \mbox{\Hypertarget{classirr_1_1core_1_1rect_a34c84ad8ff423a4b657eedbcd112afb3}\label{classirr_1_1core_1_1rect_a34c84ad8ff423a4b657eedbcd112afb3}} 
 \index{irr\+::core\+::rect@{irr\+::core\+::rect}!is\+Point\+Inside@{is\+Point\+Inside}}
 \index{is\+Point\+Inside@{is\+Point\+Inside}!irr\+::core\+::rect@{irr\+::core\+::rect}}
-\subsubsection{\texorpdfstring{is\+Point\+Inside()}{isPointInside()}}
+\subsubsection{\texorpdfstring{is\+Point\+Inside()}{isPointInside()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classirr_1_1core_1_1rect}{irr\+::core\+::rect}$<$ T $>$\+::is\+Point\+Inside (\begin{DoxyParamCaption}\item[{const position2d$<$ T $>$ \&}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns if a 2d point is within this rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Position to test if it lies within this rectangle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the position is within the rectangle, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_a34c84ad8ff423a4b657eedbcd112afb3}\label{classirr_1_1core_1_1rect_a34c84ad8ff423a4b657eedbcd112afb3}} 
+\index{irr\+::core\+::rect@{irr\+::core\+::rect}!is\+Point\+Inside@{is\+Point\+Inside}}
+\index{is\+Point\+Inside@{is\+Point\+Inside}!irr\+::core\+::rect@{irr\+::core\+::rect}}
+\subsubsection{\texorpdfstring{is\+Point\+Inside()}{isPointInside()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 bool \hyperlink{classirr_1_1core_1_1rect}{irr\+::core\+::rect}$<$ T $>$\+::is\+Point\+Inside (\begin{DoxyParamCaption}\item[{const position2d$<$ T $>$ \&}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -185,7 +333,26 @@ True if the position is within the rectangle, false if not.
 \mbox{\Hypertarget{classirr_1_1core_1_1rect_ab94b7d9da434c7b08761426e296c2f3e}\label{classirr_1_1core_1_1rect_ab94b7d9da434c7b08761426e296c2f3e}} 
 \index{irr\+::core\+::rect@{irr\+::core\+::rect}!is\+Rect\+Collided@{is\+Rect\+Collided}}
 \index{is\+Rect\+Collided@{is\+Rect\+Collided}!irr\+::core\+::rect@{irr\+::core\+::rect}}
-\subsubsection{\texorpdfstring{is\+Rect\+Collided()}{isRectCollided()}}
+\subsubsection{\texorpdfstring{is\+Rect\+Collided()}{isRectCollided()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classirr_1_1core_1_1rect}{irr\+::core\+::rect}$<$ T $>$\+::is\+Rect\+Collided (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1rect}{rect}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the rectangle collides with another rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Rectangle to test collision with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the rectangles collide. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1core_1_1rect_ab94b7d9da434c7b08761426e296c2f3e}\label{classirr_1_1core_1_1rect_ab94b7d9da434c7b08761426e296c2f3e}} 
+\index{irr\+::core\+::rect@{irr\+::core\+::rect}!is\+Rect\+Collided@{is\+Rect\+Collided}}
+\index{is\+Rect\+Collided@{is\+Rect\+Collided}!irr\+::core\+::rect@{irr\+::core\+::rect}}
+\subsubsection{\texorpdfstring{is\+Rect\+Collided()}{isRectCollided()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 bool \hyperlink{classirr_1_1core_1_1rect}{irr\+::core\+::rect}$<$ T $>$\+::is\+Rect\+Collided (\begin{DoxyParamCaption}\item[{const \hyperlink{classirr_1_1core_1_1rect}{rect}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -204,7 +371,18 @@ True if the rectangles collide.
 \mbox{\Hypertarget{classirr_1_1core_1_1rect_ad2f5052c13cffb08f6ce8649296ec9df}\label{classirr_1_1core_1_1rect_ad2f5052c13cffb08f6ce8649296ec9df}} 
 \index{irr\+::core\+::rect@{irr\+::core\+::rect}!is\+Valid@{is\+Valid}}
 \index{is\+Valid@{is\+Valid}!irr\+::core\+::rect@{irr\+::core\+::rect}}
-\subsubsection{\texorpdfstring{is\+Valid()}{isValid()}}
+\subsubsection{\texorpdfstring{is\+Valid()}{isValid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classirr_1_1core_1_1rect}{irr\+::core\+::rect}$<$ T $>$\+::is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns if the rect is valid to draw. 
+
+It would be invalid if the Upper\+Left\+Corner is lower or more right than the Lower\+Right\+Corner. \mbox{\Hypertarget{classirr_1_1core_1_1rect_ad2f5052c13cffb08f6ce8649296ec9df}\label{classirr_1_1core_1_1rect_ad2f5052c13cffb08f6ce8649296ec9df}} 
+\index{irr\+::core\+::rect@{irr\+::core\+::rect}!is\+Valid@{is\+Valid}}
+\index{is\+Valid@{is\+Valid}!irr\+::core\+::rect@{irr\+::core\+::rect}}
+\subsubsection{\texorpdfstring{is\+Valid()}{isValid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$class T$>$ \\
 bool \hyperlink{classirr_1_1core_1_1rect}{irr\+::core\+::rect}$<$ T $>$\+::is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 

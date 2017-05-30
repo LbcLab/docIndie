@@ -1,0 +1,68 @@
+\hypertarget{group__libvlc__error}{}\section{Lib\+V\+LC error handling}
+\label{group__libvlc__error}\index{Lib\+V\+L\+C error handling@{Lib\+V\+L\+C error handling}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI const char $\ast$ \hyperlink{group__libvlc__error_ga659961a8e857b904a6a9f249e550b2b1}{libvlc\+\_\+errmsg} (void)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void \hyperlink{group__libvlc__error_ga8b96349dae8fbb24049edee86a8d3517}{libvlc\+\_\+clearerr} (void)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI const char $\ast$ \hyperlink{group__libvlc__error_ga9ad774cb360961ad4ebf4f4b4c548157}{libvlc\+\_\+vprinterr} (const char $\ast$fmt, va\+\_\+list ap)
+\item 
+L\+I\+B\+V\+L\+C\+\_\+\+A\+PI const char $\ast$ \hyperlink{group__libvlc__error_gaf3a4bb86d2cca57f0e22651f8d65696a}{libvlc\+\_\+printerr} (const char $\ast$fmt,...)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__libvlc__error_ga8b96349dae8fbb24049edee86a8d3517}\label{group__libvlc__error_ga8b96349dae8fbb24049edee86a8d3517}} 
+\index{Lib\+V\+L\+C error handling@{Lib\+V\+L\+C error handling}!libvlc\+\_\+clearerr@{libvlc\+\_\+clearerr}}
+\index{libvlc\+\_\+clearerr@{libvlc\+\_\+clearerr}!Lib\+V\+L\+C error handling@{Lib\+V\+L\+C error handling}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+clearerr()}{libvlc\_clearerr()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI void libvlc\+\_\+clearerr (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Clears the Lib\+V\+LC error status for the current thread. This is optional. By default, the error status is automatically overridden when a new error occurs, and destroyed when the thread exits. \mbox{\Hypertarget{group__libvlc__error_ga659961a8e857b904a6a9f249e550b2b1}\label{group__libvlc__error_ga659961a8e857b904a6a9f249e550b2b1}} 
+\index{Lib\+V\+L\+C error handling@{Lib\+V\+L\+C error handling}!libvlc\+\_\+errmsg@{libvlc\+\_\+errmsg}}
+\index{libvlc\+\_\+errmsg@{libvlc\+\_\+errmsg}!Lib\+V\+L\+C error handling@{Lib\+V\+L\+C error handling}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+errmsg()}{libvlc\_errmsg()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI const char$\ast$ libvlc\+\_\+errmsg (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+A human-\/readable error message for the last Lib\+V\+LC error in the calling thread. The resulting string is valid until another error occurs (at least until the next Lib\+V\+LC call).
+
+\begin{DoxyWarning}{Warning}
+This will be N\+U\+LL if there was no error. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{group__libvlc__error_gaf3a4bb86d2cca57f0e22651f8d65696a}\label{group__libvlc__error_gaf3a4bb86d2cca57f0e22651f8d65696a}} 
+\index{Lib\+V\+L\+C error handling@{Lib\+V\+L\+C error handling}!libvlc\+\_\+printerr@{libvlc\+\_\+printerr}}
+\index{libvlc\+\_\+printerr@{libvlc\+\_\+printerr}!Lib\+V\+L\+C error handling@{Lib\+V\+L\+C error handling}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+printerr()}{libvlc\_printerr()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI const char$\ast$ libvlc\+\_\+printerr (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+Sets the Lib\+V\+LC error status and message for the current thread. Any previous error is overridden. 
+\begin{DoxyParams}{Parameters}
+{\em fmt} & the format string \\
+\hline
+{\em args} & the arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a nul terminated string in any case 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__libvlc__error_ga9ad774cb360961ad4ebf4f4b4c548157}\label{group__libvlc__error_ga9ad774cb360961ad4ebf4f4b4c548157}} 
+\index{Lib\+V\+L\+C error handling@{Lib\+V\+L\+C error handling}!libvlc\+\_\+vprinterr@{libvlc\+\_\+vprinterr}}
+\index{libvlc\+\_\+vprinterr@{libvlc\+\_\+vprinterr}!Lib\+V\+L\+C error handling@{Lib\+V\+L\+C error handling}}
+\subsubsection{\texorpdfstring{libvlc\+\_\+vprinterr()}{libvlc\_vprinterr()}}
+{\footnotesize\ttfamily L\+I\+B\+V\+L\+C\+\_\+\+A\+PI const char$\ast$ libvlc\+\_\+vprinterr (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fmt,  }\item[{va\+\_\+list}]{ap }\end{DoxyParamCaption})}
+
+Sets the Lib\+V\+LC error status and message for the current thread. Any previous error is overridden. 
+\begin{DoxyParams}{Parameters}
+{\em fmt} & the format string \\
+\hline
+{\em ap} & the arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a nul terminated string in any case 
+\end{DoxyReturn}

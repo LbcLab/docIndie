@@ -12,12 +12,65 @@ Multi or single line text label.
 Inheritance diagram for irr\+:\+:gui\+:\+:I\+G\+U\+I\+Static\+Text\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{classirr_1_1gui_1_1IGUIStaticText}
+\includegraphics[height=4.038462cm]{classirr_1_1gui_1_1IGUIStaticText}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a80f93a4419ad85a0f9aadfbdd26aa87d}\label{classirr_1_1gui_1_1IGUIStaticText_a80f93a4419ad85a0f9aadfbdd26aa87d}} 
+\hyperlink{classirr_1_1gui_1_1IGUIStaticText_a80f93a4419ad85a0f9aadfbdd26aa87d}{I\+G\+U\+I\+Static\+Text} (\hyperlink{classirr_1_1gui_1_1IGUIEnvironment}{I\+G\+U\+I\+Environment} $\ast$environment, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ rectangle)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIStaticText_ae3f65780d10979eb323ee7310cff7396}{set\+Override\+Font} (\hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font} $\ast$font=0)=0
+\begin{DoxyCompactList}\small\item\em Sets another skin independent font. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIStaticText_a581f18f3ffe650246125988b3b7dc44e}{get\+Override\+Font} (void) const =0
+\begin{DoxyCompactList}\small\item\em Gets the override font (if any) \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font} $\ast$ \hyperlink{classirr_1_1gui_1_1IGUIStaticText_aef001eb5d0e13b5b6d1efead606605c2}{get\+Active\+Font} () const =0
+\begin{DoxyCompactList}\small\item\em Get the font which is used right now for drawing. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIStaticText_aadc1f0e10e4b298944e6dcfd49e54009}{set\+Override\+Color} (\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} color)=0
+\begin{DoxyCompactList}\small\item\em Sets another color for the text. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} \hyperlink{classirr_1_1gui_1_1IGUIStaticText_a9c4c43f262efd02a113da79bedb973e1}{get\+Override\+Color} (void) const =0
+\begin{DoxyCompactList}\small\item\em Gets the override color. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIStaticText_ae1f432263d4c638b0441f8b993f301bc}{enable\+Override\+Color} (bool enable)=0
+\begin{DoxyCompactList}\small\item\em Sets if the static text should use the overide color or the color in the gui skin. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIStaticText_a67b17803b8ad73e8d687b23ad38db37e}{is\+Override\+Color\+Enabled} (void) const =0
+\begin{DoxyCompactList}\small\item\em Checks if an override color is enabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_afe9b39a38851b8d4056a35e3d62996d6}\label{classirr_1_1gui_1_1IGUIStaticText_afe9b39a38851b8d4056a35e3d62996d6}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIStaticText_afe9b39a38851b8d4056a35e3d62996d6}{set\+Background\+Color} (\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} color)=0
+\begin{DoxyCompactList}\small\item\em Sets another color for the background. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_aed8ab71280b2c1787c62565d199c0c34}\label{classirr_1_1gui_1_1IGUIStaticText_aed8ab71280b2c1787c62565d199c0c34}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIStaticText_aed8ab71280b2c1787c62565d199c0c34}{set\+Draw\+Background} (bool \hyperlink{classirr_1_1gui_1_1IGUIElement_a1ef7eeaff67b8a9f4f37cacdc7e54be2}{draw})=0
+\begin{DoxyCompactList}\small\item\em Sets whether to draw the background. \end{DoxyCompactList}\item 
+virtual \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} \hyperlink{classirr_1_1gui_1_1IGUIStaticText_a7149fff0b2c4159503f114807e0b0a83}{get\+Background\+Color} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the background color. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIStaticText_ab6da7f10a72d023729d12c85e2926aec}{is\+Draw\+Background\+Enabled} () const =0
+\begin{DoxyCompactList}\small\item\em Checks if background drawing is enabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a48e8662debdf36b4eb3319a5fee937c6}\label{classirr_1_1gui_1_1IGUIStaticText_a48e8662debdf36b4eb3319a5fee937c6}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIStaticText_a48e8662debdf36b4eb3319a5fee937c6}{set\+Draw\+Border} (bool \hyperlink{classirr_1_1gui_1_1IGUIElement_a1ef7eeaff67b8a9f4f37cacdc7e54be2}{draw})=0
+\begin{DoxyCompactList}\small\item\em Sets whether to draw the border. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIStaticText_a52478a36f77cfbc62e1f57a486e0a083}{is\+Draw\+Border\+Enabled} () const =0
+\begin{DoxyCompactList}\small\item\em Checks if border drawing is enabled. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIStaticText_ad8635f1247971277543cfff6e1fa9277}{set\+Text\+Alignment} (\hyperlink{namespaceirr_1_1gui_a19eb5fb40e67f108cb16aba922ddaa2d}{E\+G\+U\+I\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT} horizontal, \hyperlink{namespaceirr_1_1gui_a19eb5fb40e67f108cb16aba922ddaa2d}{E\+G\+U\+I\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT} vertical)=0
+\begin{DoxyCompactList}\small\item\em Sets text justification mode. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIStaticText_a2a47bc2f85ced3efc1d007c5bd61f906}{set\+Word\+Wrap} (bool enable)=0
+\begin{DoxyCompactList}\small\item\em Enables or disables word wrap for using the static text as multiline text control. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIStaticText_a42d7fbdb196414a1d95146b53e6a3528}{is\+Word\+Wrap\+Enabled} (void) const =0
+\begin{DoxyCompactList}\small\item\em Checks if word wrap is enabled. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUIStaticText_a88e90c238601f17e1f0b0d79c7dc1004}{get\+Text\+Height} () const =0
+\begin{DoxyCompactList}\small\item\em Returns the height of the text in pixels when it is drawn. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} \hyperlink{classirr_1_1gui_1_1IGUIStaticText_adcfbe869b6c0ab409bbde51d4cba7e5d}{get\+Text\+Width} (void) const =0
+\begin{DoxyCompactList}\small\item\em Returns the width of the current text, in the current font. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_aaec565b5b45581470d4e524c2efac1b6}\label{classirr_1_1gui_1_1IGUIStaticText_aaec565b5b45581470d4e524c2efac1b6}} 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIStaticText_aaec565b5b45581470d4e524c2efac1b6}{set\+Text\+Restrained\+Inside} (bool restrained\+Inside)=0
+\begin{DoxyCompactList}\small\item\em Set whether the text in this label should be clipped if it goes outside bounds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a90823f5df79cfd4e2e3a20f38bc3b65a}\label{classirr_1_1gui_1_1IGUIStaticText_a90823f5df79cfd4e2e3a20f38bc3b65a}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIStaticText_a90823f5df79cfd4e2e3a20f38bc3b65a}{is\+Text\+Restrained\+Inside} () const =0
+\begin{DoxyCompactList}\small\item\em Checks if the text in this label should be clipped if it goes outside bounds. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classirr_1_1gui_1_1IGUIStaticText_a43cee247cf34faa30851f4e8c10b2367}{set\+Right\+To\+Left} (bool rtl)=0
+\begin{DoxyCompactList}\small\item\em Set whether the string should be interpreted as right-\/to-\/left (R\+TL) text. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a750a43d48f16d0e89aa28a0175a06ff6}\label{classirr_1_1gui_1_1IGUIStaticText_a750a43d48f16d0e89aa28a0175a06ff6}} 
+virtual bool \hyperlink{classirr_1_1gui_1_1IGUIStaticText_a750a43d48f16d0e89aa28a0175a06ff6}{is\+Right\+To\+Left} () const =0
+\begin{DoxyCompactList}\small\item\em Checks whether the text in this element should be interpreted as right-\/to-\/left. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a80f93a4419ad85a0f9aadfbdd26aa87d}\label{classirr_1_1gui_1_1IGUIStaticText_a80f93a4419ad85a0f9aadfbdd26aa87d}} 
 \hyperlink{classirr_1_1gui_1_1IGUIStaticText_a80f93a4419ad85a0f9aadfbdd26aa87d}{I\+G\+U\+I\+Static\+Text} (\hyperlink{classirr_1_1gui_1_1IGUIEnvironment}{I\+G\+U\+I\+Environment} $\ast$environment, \hyperlink{classirr_1_1gui_1_1IGUIElement}{I\+G\+U\+I\+Element} $\ast$parent, \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} id, \hyperlink{classirr_1_1core_1_1rect}{core\+::rect}$<$ \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} $>$ rectangle)
 \begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
@@ -81,7 +134,22 @@ Multi or single line text label.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_ae1f432263d4c638b0441f8b993f301bc}\label{classirr_1_1gui_1_1IGUIStaticText_ae1f432263d4c638b0441f8b993f301bc}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!enable\+Override\+Color@{enable\+Override\+Color}}
 \index{enable\+Override\+Color@{enable\+Override\+Color}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
-\subsubsection{\texorpdfstring{enable\+Override\+Color()}{enableOverrideColor()}}
+\subsubsection{\texorpdfstring{enable\+Override\+Color()}{enableOverrideColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::enable\+Override\+Color (\begin{DoxyParamCaption}\item[{bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets if the static text should use the overide color or the color in the gui skin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & If set to true, the override color, which can be set with \hyperlink{classirr_1_1gui_1_1IGUIStaticText_aadc1f0e10e4b298944e6dcfd49e54009}{I\+G\+U\+I\+Static\+Text\+::set\+Override\+Color} is used, otherwise the E\+G\+D\+C\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+T\+E\+XT color of the skin. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_ae1f432263d4c638b0441f8b993f301bc}\label{classirr_1_1gui_1_1IGUIStaticText_ae1f432263d4c638b0441f8b993f301bc}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!enable\+Override\+Color@{enable\+Override\+Color}}
+\index{enable\+Override\+Color@{enable\+Override\+Color}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
+\subsubsection{\texorpdfstring{enable\+Override\+Color()}{enableOverrideColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::enable\+Override\+Color (\begin{DoxyParamCaption}\item[{bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -96,7 +164,17 @@ Sets if the static text should use the overide color or the color in the gui ski
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_aef001eb5d0e13b5b6d1efead606605c2}\label{classirr_1_1gui_1_1IGUIStaticText_aef001eb5d0e13b5b6d1efead606605c2}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!get\+Active\+Font@{get\+Active\+Font}}
 \index{get\+Active\+Font@{get\+Active\+Font}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
-\subsubsection{\texorpdfstring{get\+Active\+Font()}{getActiveFont()}}
+\subsubsection{\texorpdfstring{get\+Active\+Font()}{getActiveFont()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::get\+Active\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the font which is used right now for drawing. 
+
+Currently this is the override font when one is set and the font of the active skin otherwise \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_aef001eb5d0e13b5b6d1efead606605c2}\label{classirr_1_1gui_1_1IGUIStaticText_aef001eb5d0e13b5b6d1efead606605c2}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!get\+Active\+Font@{get\+Active\+Font}}
+\index{get\+Active\+Font@{get\+Active\+Font}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
+\subsubsection{\texorpdfstring{get\+Active\+Font()}{getActiveFont()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::get\+Active\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -106,7 +184,20 @@ Get the font which is used right now for drawing.
 Currently this is the override font when one is set and the font of the active skin otherwise \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a7149fff0b2c4159503f114807e0b0a83}\label{classirr_1_1gui_1_1IGUIStaticText_a7149fff0b2c4159503f114807e0b0a83}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!get\+Background\+Color@{get\+Background\+Color}}
 \index{get\+Background\+Color@{get\+Background\+Color}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
-\subsubsection{\texorpdfstring{get\+Background\+Color()}{getBackgroundColor()}}
+\subsubsection{\texorpdfstring{get\+Background\+Color()}{getBackgroundColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::get\+Background\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the background color. 
+
+\begin{DoxyReturn}{Returns}
+\+: The background color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a7149fff0b2c4159503f114807e0b0a83}\label{classirr_1_1gui_1_1IGUIStaticText_a7149fff0b2c4159503f114807e0b0a83}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!get\+Background\+Color@{get\+Background\+Color}}
+\index{get\+Background\+Color@{get\+Background\+Color}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
+\subsubsection{\texorpdfstring{get\+Background\+Color()}{getBackgroundColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::get\+Background\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -119,7 +210,20 @@ Gets the background color.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a9c4c43f262efd02a113da79bedb973e1}\label{classirr_1_1gui_1_1IGUIStaticText_a9c4c43f262efd02a113da79bedb973e1}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!get\+Override\+Color@{get\+Override\+Color}}
 \index{get\+Override\+Color@{get\+Override\+Color}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
-\subsubsection{\texorpdfstring{get\+Override\+Color()}{getOverrideColor()}}
+\subsubsection{\texorpdfstring{get\+Override\+Color()}{getOverrideColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::get\+Override\+Color (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the override color. 
+
+\begin{DoxyReturn}{Returns}
+\+: The override color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a9c4c43f262efd02a113da79bedb973e1}\label{classirr_1_1gui_1_1IGUIStaticText_a9c4c43f262efd02a113da79bedb973e1}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!get\+Override\+Color@{get\+Override\+Color}}
+\index{get\+Override\+Color@{get\+Override\+Color}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
+\subsubsection{\texorpdfstring{get\+Override\+Color()}{getOverrideColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color} irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::get\+Override\+Color (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -132,7 +236,20 @@ Gets the override color.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a581f18f3ffe650246125988b3b7dc44e}\label{classirr_1_1gui_1_1IGUIStaticText_a581f18f3ffe650246125988b3b7dc44e}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!get\+Override\+Font@{get\+Override\+Font}}
 \index{get\+Override\+Font@{get\+Override\+Font}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
-\subsubsection{\texorpdfstring{get\+Override\+Font()}{getOverrideFont()}}
+\subsubsection{\texorpdfstring{get\+Override\+Font()}{getOverrideFont()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::get\+Override\+Font (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the override font (if any) 
+
+\begin{DoxyReturn}{Returns}
+The override font (may be 0) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a581f18f3ffe650246125988b3b7dc44e}\label{classirr_1_1gui_1_1IGUIStaticText_a581f18f3ffe650246125988b3b7dc44e}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!get\+Override\+Font@{get\+Override\+Font}}
+\index{get\+Override\+Font@{get\+Override\+Font}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
+\subsubsection{\texorpdfstring{get\+Override\+Font()}{getOverrideFont()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font}$\ast$ irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::get\+Override\+Font (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -145,7 +262,20 @@ The override font (may be 0)
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a88e90c238601f17e1f0b0d79c7dc1004}\label{classirr_1_1gui_1_1IGUIStaticText_a88e90c238601f17e1f0b0d79c7dc1004}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!get\+Text\+Height@{get\+Text\+Height}}
 \index{get\+Text\+Height@{get\+Text\+Height}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
-\subsubsection{\texorpdfstring{get\+Text\+Height()}{getTextHeight()}}
+\subsubsection{\texorpdfstring{get\+Text\+Height()}{getTextHeight()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::get\+Text\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the height of the text in pixels when it is drawn. 
+
+This is useful for adjusting the layout of gui elements based on the height of the multiline text in this element. \begin{DoxyReturn}{Returns}
+Height of text in pixels. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a88e90c238601f17e1f0b0d79c7dc1004}\label{classirr_1_1gui_1_1IGUIStaticText_a88e90c238601f17e1f0b0d79c7dc1004}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!get\+Text\+Height@{get\+Text\+Height}}
+\index{get\+Text\+Height@{get\+Text\+Height}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
+\subsubsection{\texorpdfstring{get\+Text\+Height()}{getTextHeight()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::get\+Text\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -158,7 +288,20 @@ Height of text in pixels.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_adcfbe869b6c0ab409bbde51d4cba7e5d}\label{classirr_1_1gui_1_1IGUIStaticText_adcfbe869b6c0ab409bbde51d4cba7e5d}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!get\+Text\+Width@{get\+Text\+Width}}
 \index{get\+Text\+Width@{get\+Text\+Width}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
-\subsubsection{\texorpdfstring{get\+Text\+Width()}{getTextWidth()}}
+\subsubsection{\texorpdfstring{get\+Text\+Width()}{getTextWidth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::get\+Text\+Width (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the width of the current text, in the current font. 
+
+If the text is broken, this returns the width of the widest line \begin{DoxyReturn}{Returns}
+The width of the text, or the widest broken line. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_adcfbe869b6c0ab409bbde51d4cba7e5d}\label{classirr_1_1gui_1_1IGUIStaticText_adcfbe869b6c0ab409bbde51d4cba7e5d}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!get\+Text\+Width@{get\+Text\+Width}}
+\index{get\+Text\+Width@{get\+Text\+Width}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
+\subsubsection{\texorpdfstring{get\+Text\+Width()}{getTextWidth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual \hyperlink{namespaceirr_ac66849b7a6ed16e30ebede579f9b47c6}{s32} irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::get\+Text\+Width (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -171,7 +314,20 @@ The width of the text, or the widest broken line.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_ab6da7f10a72d023729d12c85e2926aec}\label{classirr_1_1gui_1_1IGUIStaticText_ab6da7f10a72d023729d12c85e2926aec}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!is\+Draw\+Background\+Enabled@{is\+Draw\+Background\+Enabled}}
 \index{is\+Draw\+Background\+Enabled@{is\+Draw\+Background\+Enabled}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
-\subsubsection{\texorpdfstring{is\+Draw\+Background\+Enabled()}{isDrawBackgroundEnabled()}}
+\subsubsection{\texorpdfstring{is\+Draw\+Background\+Enabled()}{isDrawBackgroundEnabled()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::is\+Draw\+Background\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Checks if background drawing is enabled. 
+
+\begin{DoxyReturn}{Returns}
+true if background drawing is enabled, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_ab6da7f10a72d023729d12c85e2926aec}\label{classirr_1_1gui_1_1IGUIStaticText_ab6da7f10a72d023729d12c85e2926aec}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!is\+Draw\+Background\+Enabled@{is\+Draw\+Background\+Enabled}}
+\index{is\+Draw\+Background\+Enabled@{is\+Draw\+Background\+Enabled}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
+\subsubsection{\texorpdfstring{is\+Draw\+Background\+Enabled()}{isDrawBackgroundEnabled()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::is\+Draw\+Background\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -184,7 +340,20 @@ true if background drawing is enabled, false otherwise
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a52478a36f77cfbc62e1f57a486e0a083}\label{classirr_1_1gui_1_1IGUIStaticText_a52478a36f77cfbc62e1f57a486e0a083}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!is\+Draw\+Border\+Enabled@{is\+Draw\+Border\+Enabled}}
 \index{is\+Draw\+Border\+Enabled@{is\+Draw\+Border\+Enabled}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
-\subsubsection{\texorpdfstring{is\+Draw\+Border\+Enabled()}{isDrawBorderEnabled()}}
+\subsubsection{\texorpdfstring{is\+Draw\+Border\+Enabled()}{isDrawBorderEnabled()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::is\+Draw\+Border\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Checks if border drawing is enabled. 
+
+\begin{DoxyReturn}{Returns}
+true if border drawing is enabled, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a52478a36f77cfbc62e1f57a486e0a083}\label{classirr_1_1gui_1_1IGUIStaticText_a52478a36f77cfbc62e1f57a486e0a083}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!is\+Draw\+Border\+Enabled@{is\+Draw\+Border\+Enabled}}
+\index{is\+Draw\+Border\+Enabled@{is\+Draw\+Border\+Enabled}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
+\subsubsection{\texorpdfstring{is\+Draw\+Border\+Enabled()}{isDrawBorderEnabled()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::is\+Draw\+Border\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -197,7 +366,20 @@ true if border drawing is enabled, false otherwise
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a67b17803b8ad73e8d687b23ad38db37e}\label{classirr_1_1gui_1_1IGUIStaticText_a67b17803b8ad73e8d687b23ad38db37e}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!is\+Override\+Color\+Enabled@{is\+Override\+Color\+Enabled}}
 \index{is\+Override\+Color\+Enabled@{is\+Override\+Color\+Enabled}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
-\subsubsection{\texorpdfstring{is\+Override\+Color\+Enabled()}{isOverrideColorEnabled()}}
+\subsubsection{\texorpdfstring{is\+Override\+Color\+Enabled()}{isOverrideColorEnabled()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::is\+Override\+Color\+Enabled (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Checks if an override color is enabled. 
+
+\begin{DoxyReturn}{Returns}
+true if the override color is enabled, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a67b17803b8ad73e8d687b23ad38db37e}\label{classirr_1_1gui_1_1IGUIStaticText_a67b17803b8ad73e8d687b23ad38db37e}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!is\+Override\+Color\+Enabled@{is\+Override\+Color\+Enabled}}
+\index{is\+Override\+Color\+Enabled@{is\+Override\+Color\+Enabled}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
+\subsubsection{\texorpdfstring{is\+Override\+Color\+Enabled()}{isOverrideColorEnabled()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::is\+Override\+Color\+Enabled (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -210,7 +392,20 @@ true if the override color is enabled, false otherwise
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a42d7fbdb196414a1d95146b53e6a3528}\label{classirr_1_1gui_1_1IGUIStaticText_a42d7fbdb196414a1d95146b53e6a3528}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!is\+Word\+Wrap\+Enabled@{is\+Word\+Wrap\+Enabled}}
 \index{is\+Word\+Wrap\+Enabled@{is\+Word\+Wrap\+Enabled}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
-\subsubsection{\texorpdfstring{is\+Word\+Wrap\+Enabled()}{isWordWrapEnabled()}}
+\subsubsection{\texorpdfstring{is\+Word\+Wrap\+Enabled()}{isWordWrapEnabled()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::is\+Word\+Wrap\+Enabled (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Checks if word wrap is enabled. 
+
+\begin{DoxyReturn}{Returns}
+true if word wrap is enabled, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a42d7fbdb196414a1d95146b53e6a3528}\label{classirr_1_1gui_1_1IGUIStaticText_a42d7fbdb196414a1d95146b53e6a3528}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!is\+Word\+Wrap\+Enabled@{is\+Word\+Wrap\+Enabled}}
+\index{is\+Word\+Wrap\+Enabled@{is\+Word\+Wrap\+Enabled}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
+\subsubsection{\texorpdfstring{is\+Word\+Wrap\+Enabled()}{isWordWrapEnabled()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual bool irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::is\+Word\+Wrap\+Enabled (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -223,7 +418,22 @@ true if word wrap is enabled, false otherwise
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_aadc1f0e10e4b298944e6dcfd49e54009}\label{classirr_1_1gui_1_1IGUIStaticText_aadc1f0e10e4b298944e6dcfd49e54009}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!set\+Override\+Color@{set\+Override\+Color}}
 \index{set\+Override\+Color@{set\+Override\+Color}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
-\subsubsection{\texorpdfstring{set\+Override\+Color()}{setOverrideColor()}}
+\subsubsection{\texorpdfstring{set\+Override\+Color()}{setOverrideColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::set\+Override\+Color (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets another color for the text. 
+
+If set, the static text does not use the E\+G\+D\+C\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+T\+E\+XT color defined in the skin, but the set color instead. You don\textquotesingle{}t need to call I\+G\+U\+I\+Static\+Text\+::enable\+Overrride\+Color(true) after this, this is done by this function. If you set a color, and you want the text displayed with the color of the skin again, call I\+G\+U\+I\+Static\+Text\+::enable\+Override\+Color(false); 
+\begin{DoxyParams}{Parameters}
+{\em color} & New color of the text. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_aadc1f0e10e4b298944e6dcfd49e54009}\label{classirr_1_1gui_1_1IGUIStaticText_aadc1f0e10e4b298944e6dcfd49e54009}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!set\+Override\+Color@{set\+Override\+Color}}
+\index{set\+Override\+Color@{set\+Override\+Color}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
+\subsubsection{\texorpdfstring{set\+Override\+Color()}{setOverrideColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::set\+Override\+Color (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1video_1_1SColor}{video\+::\+S\+Color}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -238,7 +448,22 @@ If set, the static text does not use the E\+G\+D\+C\+\_\+\+B\+U\+T\+T\+O\+N\+\_\
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_ae3f65780d10979eb323ee7310cff7396}\label{classirr_1_1gui_1_1IGUIStaticText_ae3f65780d10979eb323ee7310cff7396}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!set\+Override\+Font@{set\+Override\+Font}}
 \index{set\+Override\+Font@{set\+Override\+Font}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
-\subsubsection{\texorpdfstring{set\+Override\+Font()}{setOverrideFont()}}
+\subsubsection{\texorpdfstring{set\+Override\+Font()}{setOverrideFont()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::set\+Override\+Font (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font} $\ast$}]{font = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets another skin independent font. 
+
+If this is set to zero, the button uses the font of the skin. 
+\begin{DoxyParams}{Parameters}
+{\em font} & New font to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_ae3f65780d10979eb323ee7310cff7396}\label{classirr_1_1gui_1_1IGUIStaticText_ae3f65780d10979eb323ee7310cff7396}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!set\+Override\+Font@{set\+Override\+Font}}
+\index{set\+Override\+Font@{set\+Override\+Font}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
+\subsubsection{\texorpdfstring{set\+Override\+Font()}{setOverrideFont()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::set\+Override\+Font (\begin{DoxyParamCaption}\item[{\hyperlink{classirr_1_1gui_1_1IGUIFont}{I\+G\+U\+I\+Font} $\ast$}]{font = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -253,7 +478,20 @@ If this is set to zero, the button uses the font of the skin.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a43cee247cf34faa30851f4e8c10b2367}\label{classirr_1_1gui_1_1IGUIStaticText_a43cee247cf34faa30851f4e8c10b2367}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!set\+Right\+To\+Left@{set\+Right\+To\+Left}}
 \index{set\+Right\+To\+Left@{set\+Right\+To\+Left}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
-\subsubsection{\texorpdfstring{set\+Right\+To\+Left()}{setRightToLeft()}}
+\subsubsection{\texorpdfstring{set\+Right\+To\+Left()}{setRightToLeft()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::set\+Right\+To\+Left (\begin{DoxyParamCaption}\item[{bool}]{rtl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set whether the string should be interpreted as right-\/to-\/left (R\+TL) text. 
+
+\begin{DoxyNote}{Note}
+This component does not implement the Unicode bidi standard, the text of the component should be already R\+TL if you call this. The main difference when R\+TL is enabled is that the linebreaks for multiline elements are performed starting from the end. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a43cee247cf34faa30851f4e8c10b2367}\label{classirr_1_1gui_1_1IGUIStaticText_a43cee247cf34faa30851f4e8c10b2367}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!set\+Right\+To\+Left@{set\+Right\+To\+Left}}
+\index{set\+Right\+To\+Left@{set\+Right\+To\+Left}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
+\subsubsection{\texorpdfstring{set\+Right\+To\+Left()}{setRightToLeft()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::set\+Right\+To\+Left (\begin{DoxyParamCaption}\item[{bool}]{rtl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -266,7 +504,24 @@ This component does not implement the Unicode bidi standard, the text of the com
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_ad8635f1247971277543cfff6e1fa9277}\label{classirr_1_1gui_1_1IGUIStaticText_ad8635f1247971277543cfff6e1fa9277}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!set\+Text\+Alignment@{set\+Text\+Alignment}}
 \index{set\+Text\+Alignment@{set\+Text\+Alignment}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
-\subsubsection{\texorpdfstring{set\+Text\+Alignment()}{setTextAlignment()}}
+\subsubsection{\texorpdfstring{set\+Text\+Alignment()}{setTextAlignment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::set\+Text\+Alignment (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1gui_a19eb5fb40e67f108cb16aba922ddaa2d}{E\+G\+U\+I\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT}}]{horizontal,  }\item[{\hyperlink{namespaceirr_1_1gui_a19eb5fb40e67f108cb16aba922ddaa2d}{E\+G\+U\+I\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT}}]{vertical }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets text justification mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em horizontal} & E\+G\+U\+I\+A\+\_\+\+U\+P\+P\+E\+R\+L\+E\+FT for left justified (default), E\+G\+U\+I\+A\+\_\+\+L\+O\+W\+E\+E\+R\+R\+I\+G\+HT for right justified, or E\+G\+U\+I\+A\+\_\+\+C\+E\+N\+T\+ER for centered text. \\
+\hline
+{\em vertical} & E\+G\+U\+I\+A\+\_\+\+U\+P\+P\+E\+R\+L\+E\+FT to align with top edge, E\+G\+U\+I\+A\+\_\+\+L\+O\+W\+E\+E\+R\+R\+I\+G\+HT for bottom edge, or E\+G\+U\+I\+A\+\_\+\+C\+E\+N\+T\+ER for centered text (default). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_ad8635f1247971277543cfff6e1fa9277}\label{classirr_1_1gui_1_1IGUIStaticText_ad8635f1247971277543cfff6e1fa9277}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!set\+Text\+Alignment@{set\+Text\+Alignment}}
+\index{set\+Text\+Alignment@{set\+Text\+Alignment}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
+\subsubsection{\texorpdfstring{set\+Text\+Alignment()}{setTextAlignment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::set\+Text\+Alignment (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceirr_1_1gui_a19eb5fb40e67f108cb16aba922ddaa2d}{E\+G\+U\+I\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT}}]{horizontal,  }\item[{\hyperlink{namespaceirr_1_1gui_a19eb5fb40e67f108cb16aba922ddaa2d}{E\+G\+U\+I\+\_\+\+A\+L\+I\+G\+N\+M\+E\+NT}}]{vertical }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
@@ -283,7 +538,22 @@ Sets text justification mode.
 \mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a2a47bc2f85ced3efc1d007c5bd61f906}\label{classirr_1_1gui_1_1IGUIStaticText_a2a47bc2f85ced3efc1d007c5bd61f906}} 
 \index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!set\+Word\+Wrap@{set\+Word\+Wrap}}
 \index{set\+Word\+Wrap@{set\+Word\+Wrap}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
-\subsubsection{\texorpdfstring{set\+Word\+Wrap()}{setWordWrap()}}
+\subsubsection{\texorpdfstring{set\+Word\+Wrap()}{setWordWrap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::set\+Word\+Wrap (\begin{DoxyParamCaption}\item[{bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Enables or disables word wrap for using the static text as multiline text control. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & If set to true, words going over one line are broken on to the next line. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classirr_1_1gui_1_1IGUIStaticText_a2a47bc2f85ced3efc1d007c5bd61f906}\label{classirr_1_1gui_1_1IGUIStaticText_a2a47bc2f85ced3efc1d007c5bd61f906}} 
+\index{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}!set\+Word\+Wrap@{set\+Word\+Wrap}}
+\index{set\+Word\+Wrap@{set\+Word\+Wrap}!irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text@{irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text}}
+\subsubsection{\texorpdfstring{set\+Word\+Wrap()}{setWordWrap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void irr\+::gui\+::\+I\+G\+U\+I\+Static\+Text\+::set\+Word\+Wrap (\begin{DoxyParamCaption}\item[{bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 

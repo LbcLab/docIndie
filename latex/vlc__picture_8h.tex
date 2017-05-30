@@ -1,0 +1,206 @@
+\hypertarget{vlc__picture_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+picture.h File Reference}
+\label{vlc__picture_8h}\index{lib/include/vlc/plugins/vlc\+\_\+picture.\+h@{lib/include/vlc/plugins/vlc\+\_\+picture.\+h}}
+{\ttfamily \#include $<$vlc\+\_\+es.\+h$>$}\newline
+{\ttfamily \#include $<$vlc\+\_\+atomic.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structplane__t}{plane\+\_\+t}
+\item 
+struct \hyperlink{structpicture__t}{picture\+\_\+t}
+\item 
+struct \hyperlink{structpicture__resource__t}{picture\+\_\+resource\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vlc__picture_8h_a7c01aa52d32a00e326ed109475556094}{P\+I\+C\+T\+U\+R\+E\+\_\+\+P\+L\+A\+N\+E\+\_\+\+M\+AX}~(V\+O\+U\+T\+\_\+\+M\+A\+X\+\_\+\+P\+L\+A\+N\+ES)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structplane__t}{plane\+\_\+t} \hyperlink{vlc__picture_8h_acc3bf80e659f31e9f578c6decfdccc61}{plane\+\_\+t}
+\item 
+typedef struct \hyperlink{vlc__picture_8h_a973efa0ba8f22898ebc5b41e77077c2f}{picture\+\_\+gc\+\_\+sys\+\_\+t} \hyperlink{vlc__picture_8h_a973efa0ba8f22898ebc5b41e77077c2f}{picture\+\_\+gc\+\_\+sys\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$ \hyperlink{vlc__picture_8h_a2a3c71ccf8b0830aef75d1ae62ae6a3a}{picture\+\_\+\+New} (\hyperlink{vlc__common_8h_af49f89d0f752bc9cff142e43b1bd634d}{vlc\+\_\+fourcc\+\_\+t} i\+\_\+chroma, int i\+\_\+width, int i\+\_\+height, int i\+\_\+sar\+\_\+num, int i\+\_\+sar\+\_\+den) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$ \hyperlink{vlc__picture_8h_af53d56abcd39591dbb88ded292f6bb02}{picture\+\_\+\+New\+From\+Format} (const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$p\+\_\+fmt) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$ \hyperlink{vlc__picture_8h_a25fd1fbd6dd65029c37bc2a2a408144b}{picture\+\_\+\+New\+From\+Resource} (const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$, const \hyperlink{structpicture__resource__t}{picture\+\_\+resource\+\_\+t} $\ast$) V\+L\+C\+\_\+\+U\+S\+ED
+\item 
+V\+L\+C\+\_\+\+A\+PI \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$ \hyperlink{vlc__picture_8h_afbde8bf7c8f3eabe2ec9f7d7d49ab74b}{picture\+\_\+\+Hold} (\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$p\+\_\+picture)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__picture_8h_ac6d35f6432c90cfbe6d0aa93759bed5a}{picture\+\_\+\+Release} (\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$p\+\_\+picture)
+\item 
+V\+L\+C\+\_\+\+A\+PI bool \hyperlink{vlc__picture_8h_ad0f33094aa6ebabd389b342f029e238a}{picture\+\_\+\+Is\+Referenced} (\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$p\+\_\+picture)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__picture_8h_a4a04e110aba4790fc6849e8c87323369}{picture\+\_\+\+Copy\+Properties} (\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$p\+\_\+dst, const \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$p\+\_\+src)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__picture_8h_af3d7f845253f1fd7dacc4761efa613d8}{picture\+\_\+\+Reset} (\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__picture_8h_a280ab3b897a337ab36e053396794a286}{picture\+\_\+\+Copy\+Pixels} (\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$p\+\_\+dst, const \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$p\+\_\+src)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__picture_8h_ac7b76a18a01c6b725489100ad8a2cce2}{picture\+\_\+\+Copy} (\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$p\+\_\+dst, const \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$p\+\_\+src)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{vlc__picture_8h_ae88265abd8385a8ea05f4ee066c2264b}{picture\+\_\+\+Export} (\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$p\+\_\+obj, block\+\_\+t $\ast$$\ast$pp\+\_\+image, \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$p\+\_\+fmt, \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$p\+\_\+picture, \hyperlink{vlc__common_8h_af49f89d0f752bc9cff142e43b1bd634d}{vlc\+\_\+fourcc\+\_\+t} i\+\_\+format, int i\+\_\+override\+\_\+width, int i\+\_\+override\+\_\+height)
+\item 
+V\+L\+C\+\_\+\+A\+PI int \hyperlink{vlc__picture_8h_af8fe0f842a334e2bc2aeba0106110e9b}{picture\+\_\+\+Setup} (\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$, const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$)
+\item 
+V\+L\+C\+\_\+\+A\+PI unsigned \hyperlink{vlc__picture_8h_a5ceafd0a2f9ac2816ddf168b79d01b05}{picture\+\_\+\+Blend\+Subpicture} (\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$, \hyperlink{structfilter__t}{filter\+\_\+t} $\ast$p\+\_\+blend, \hyperlink{structsubpicture__t}{subpicture\+\_\+t} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines picture structures and functions in vlc 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{vlc__picture_8h_a7c01aa52d32a00e326ed109475556094}\label{vlc__picture_8h_a7c01aa52d32a00e326ed109475556094}} 
+\index{vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}!P\+I\+C\+T\+U\+R\+E\+\_\+\+P\+L\+A\+N\+E\+\_\+\+M\+AX@{P\+I\+C\+T\+U\+R\+E\+\_\+\+P\+L\+A\+N\+E\+\_\+\+M\+AX}}
+\index{P\+I\+C\+T\+U\+R\+E\+\_\+\+P\+L\+A\+N\+E\+\_\+\+M\+AX@{P\+I\+C\+T\+U\+R\+E\+\_\+\+P\+L\+A\+N\+E\+\_\+\+M\+AX}!vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}}
+\subsubsection{\texorpdfstring{P\+I\+C\+T\+U\+R\+E\+\_\+\+P\+L\+A\+N\+E\+\_\+\+M\+AX}{PICTURE\_PLANE\_MAX}}
+{\footnotesize\ttfamily \#define P\+I\+C\+T\+U\+R\+E\+\_\+\+P\+L\+A\+N\+E\+\_\+\+M\+AX~(V\+O\+U\+T\+\_\+\+M\+A\+X\+\_\+\+P\+L\+A\+N\+ES)}
+
+Maximum number of plane for a picture 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{vlc__picture_8h_a973efa0ba8f22898ebc5b41e77077c2f}\label{vlc__picture_8h_a973efa0ba8f22898ebc5b41e77077c2f}} 
+\index{vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}!picture\+\_\+gc\+\_\+sys\+\_\+t@{picture\+\_\+gc\+\_\+sys\+\_\+t}}
+\index{picture\+\_\+gc\+\_\+sys\+\_\+t@{picture\+\_\+gc\+\_\+sys\+\_\+t}!vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+gc\+\_\+sys\+\_\+t}{picture\_gc\_sys\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{vlc__picture_8h_a973efa0ba8f22898ebc5b41e77077c2f}{picture\+\_\+gc\+\_\+sys\+\_\+t} \hyperlink{vlc__picture_8h_a973efa0ba8f22898ebc5b41e77077c2f}{picture\+\_\+gc\+\_\+sys\+\_\+t}}
+
+A private definition to help overloading picture release \mbox{\Hypertarget{vlc__picture_8h_acc3bf80e659f31e9f578c6decfdccc61}\label{vlc__picture_8h_acc3bf80e659f31e9f578c6decfdccc61}} 
+\index{vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}!plane\+\_\+t@{plane\+\_\+t}}
+\index{plane\+\_\+t@{plane\+\_\+t}!vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}}
+\subsubsection{\texorpdfstring{plane\+\_\+t}{plane\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structplane__t}{plane\+\_\+t}  \hyperlink{structplane__t}{plane\+\_\+t}}
+
+Description of a planar graphic field 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{vlc__picture_8h_a5ceafd0a2f9ac2816ddf168b79d01b05}\label{vlc__picture_8h_a5ceafd0a2f9ac2816ddf168b79d01b05}} 
+\index{vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}!picture\+\_\+\+Blend\+Subpicture@{picture\+\_\+\+Blend\+Subpicture}}
+\index{picture\+\_\+\+Blend\+Subpicture@{picture\+\_\+\+Blend\+Subpicture}!vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+\+Blend\+Subpicture()}{picture\_BlendSubpicture()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI unsigned picture\+\_\+\+Blend\+Subpicture (\begin{DoxyParamCaption}\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{,  }\item[{\hyperlink{structfilter__t}{filter\+\_\+t} $\ast$}]{p\+\_\+blend,  }\item[{\hyperlink{structsubpicture__t}{subpicture\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function will blend a given subpicture onto a picture.
+
+The subpicture and all its region must\+:
+\begin{DoxyItemize}
+\item be absolute.
+\item not be ephemere.
+\item not have the fade flag.
+\item contains only picture (no text rendering). \begin{DoxyReturn}{Returns}
+the number of region(s) succesfully blent 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\mbox{\Hypertarget{vlc__picture_8h_ac7b76a18a01c6b725489100ad8a2cce2}\label{vlc__picture_8h_ac7b76a18a01c6b725489100ad8a2cce2}} 
+\index{vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}!picture\+\_\+\+Copy@{picture\+\_\+\+Copy}}
+\index{picture\+\_\+\+Copy@{picture\+\_\+\+Copy}!vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+\+Copy()}{picture\_Copy()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void picture\+\_\+\+Copy (\begin{DoxyParamCaption}\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{p\+\_\+dst,  }\item[{const \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{p\+\_\+src }\end{DoxyParamCaption})}
+
+This function will copy both picture dynamic properties and pixels. You have to notice that sometime a simple picture\+\_\+\+Hold may do what you want without the copy overhead. Provided for convenience.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+dst} & pointer to the destination picture. \\
+\hline
+{\em p\+\_\+src} & pointer to the source picture. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{vlc__picture_8h_a280ab3b897a337ab36e053396794a286}\label{vlc__picture_8h_a280ab3b897a337ab36e053396794a286}} 
+\index{vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}!picture\+\_\+\+Copy\+Pixels@{picture\+\_\+\+Copy\+Pixels}}
+\index{picture\+\_\+\+Copy\+Pixels@{picture\+\_\+\+Copy\+Pixels}!vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+\+Copy\+Pixels()}{picture\_CopyPixels()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void picture\+\_\+\+Copy\+Pixels (\begin{DoxyParamCaption}\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{p\+\_\+dst,  }\item[{const \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{p\+\_\+src }\end{DoxyParamCaption})}
+
+This function will copy the picture pixels. You can safely copy between pictures that do not have the same size, only the compatible(smaller) part will be copied. \mbox{\Hypertarget{vlc__picture_8h_a4a04e110aba4790fc6849e8c87323369}\label{vlc__picture_8h_a4a04e110aba4790fc6849e8c87323369}} 
+\index{vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}!picture\+\_\+\+Copy\+Properties@{picture\+\_\+\+Copy\+Properties}}
+\index{picture\+\_\+\+Copy\+Properties@{picture\+\_\+\+Copy\+Properties}!vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+\+Copy\+Properties()}{picture\_CopyProperties()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void picture\+\_\+\+Copy\+Properties (\begin{DoxyParamCaption}\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{p\+\_\+dst,  }\item[{const \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{p\+\_\+src }\end{DoxyParamCaption})}
+
+This function will copy all picture dynamic properties. \mbox{\Hypertarget{vlc__picture_8h_ae88265abd8385a8ea05f4ee066c2264b}\label{vlc__picture_8h_ae88265abd8385a8ea05f4ee066c2264b}} 
+\index{vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}!picture\+\_\+\+Export@{picture\+\_\+\+Export}}
+\index{picture\+\_\+\+Export@{picture\+\_\+\+Export}!vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+\+Export()}{picture\_Export()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI int picture\+\_\+\+Export (\begin{DoxyParamCaption}\item[{\hyperlink{structvlc__object__t}{vlc\+\_\+object\+\_\+t} $\ast$}]{p\+\_\+obj,  }\item[{block\+\_\+t $\ast$$\ast$}]{pp\+\_\+image,  }\item[{\hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{p\+\_\+fmt,  }\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{p\+\_\+picture,  }\item[{\hyperlink{vlc__common_8h_af49f89d0f752bc9cff142e43b1bd634d}{vlc\+\_\+fourcc\+\_\+t}}]{i\+\_\+format,  }\item[{int}]{i\+\_\+override\+\_\+width,  }\item[{int}]{i\+\_\+override\+\_\+height }\end{DoxyParamCaption})}
+
+This function will export a picture to an encoded bitstream.
+
+pp\+\_\+image will contain the encoded bitstream in psz\+\_\+format format.
+
+p\+\_\+fmt can be N\+U\+LL otherwise it will be set with the format used for the picture before encoding.
+
+i\+\_\+override\+\_\+width/height allow to override the width and/or the height of the picture to be encoded\+:
+\begin{DoxyItemize}
+\item if strictly lower than 0, the original dimension will be used.
+\item if equal to 0, it will be deduced from the other dimension which must be different to 0.
+\item if strictly higher than 0, it will override the dimension. If at most one of them is $>$ 0 then the picture aspect ratio will be kept. 
+\end{DoxyItemize}\mbox{\Hypertarget{vlc__picture_8h_afbde8bf7c8f3eabe2ec9f7d7d49ab74b}\label{vlc__picture_8h_afbde8bf7c8f3eabe2ec9f7d7d49ab74b}} 
+\index{vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}!picture\+\_\+\+Hold@{picture\+\_\+\+Hold}}
+\index{picture\+\_\+\+Hold@{picture\+\_\+\+Hold}!vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+\+Hold()}{picture\_Hold()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structpicture__t}{picture\+\_\+t}$\ast$ picture\+\_\+\+Hold (\begin{DoxyParamCaption}\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{p\+\_\+picture }\end{DoxyParamCaption})}
+
+This function will increase the picture reference count. It will not have any effect on picture obtained from vout
+
+It returns the given picture for convenience. \mbox{\Hypertarget{vlc__picture_8h_ad0f33094aa6ebabd389b342f029e238a}\label{vlc__picture_8h_ad0f33094aa6ebabd389b342f029e238a}} 
+\index{vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}!picture\+\_\+\+Is\+Referenced@{picture\+\_\+\+Is\+Referenced}}
+\index{picture\+\_\+\+Is\+Referenced@{picture\+\_\+\+Is\+Referenced}!vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+\+Is\+Referenced()}{picture\_IsReferenced()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI bool picture\+\_\+\+Is\+Referenced (\begin{DoxyParamCaption}\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{p\+\_\+picture }\end{DoxyParamCaption})}
+
+This function will return true if you are not the only owner of the picture.
+
+It is only valid if it is created using picture\+\_\+\+New. \mbox{\Hypertarget{vlc__picture_8h_a2a3c71ccf8b0830aef75d1ae62ae6a3a}\label{vlc__picture_8h_a2a3c71ccf8b0830aef75d1ae62ae6a3a}} 
+\index{vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}!picture\+\_\+\+New@{picture\+\_\+\+New}}
+\index{picture\+\_\+\+New@{picture\+\_\+\+New}!vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+\+New()}{picture\_New()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structpicture__t}{picture\+\_\+t}$\ast$ picture\+\_\+\+New (\begin{DoxyParamCaption}\item[{\hyperlink{vlc__common_8h_af49f89d0f752bc9cff142e43b1bd634d}{vlc\+\_\+fourcc\+\_\+t}}]{i\+\_\+chroma,  }\item[{int}]{i\+\_\+width,  }\item[{int}]{i\+\_\+height,  }\item[{int}]{i\+\_\+sar\+\_\+num,  }\item[{int}]{i\+\_\+sar\+\_\+den }\end{DoxyParamCaption})}
+
+This function will create a new picture. The picture created will implement a default release management compatible with picture\+\_\+\+Hold and picture\+\_\+\+Release. This default management will release p\+\_\+sys, gc.\+p\+\_\+sys fields if non N\+U\+LL. \mbox{\Hypertarget{vlc__picture_8h_af53d56abcd39591dbb88ded292f6bb02}\label{vlc__picture_8h_af53d56abcd39591dbb88ded292f6bb02}} 
+\index{vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}!picture\+\_\+\+New\+From\+Format@{picture\+\_\+\+New\+From\+Format}}
+\index{picture\+\_\+\+New\+From\+Format@{picture\+\_\+\+New\+From\+Format}!vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+\+New\+From\+Format()}{picture\_NewFromFormat()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structpicture__t}{picture\+\_\+t}$\ast$ picture\+\_\+\+New\+From\+Format (\begin{DoxyParamCaption}\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{p\+\_\+fmt }\end{DoxyParamCaption})}
+
+This function will create a new picture using the given format.
+
+When possible, it is preferred to use this function over picture\+\_\+\+New as more information about the format is kept. \mbox{\Hypertarget{vlc__picture_8h_a25fd1fbd6dd65029c37bc2a2a408144b}\label{vlc__picture_8h_a25fd1fbd6dd65029c37bc2a2a408144b}} 
+\index{vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}!picture\+\_\+\+New\+From\+Resource@{picture\+\_\+\+New\+From\+Resource}}
+\index{picture\+\_\+\+New\+From\+Resource@{picture\+\_\+\+New\+From\+Resource}!vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+\+New\+From\+Resource()}{picture\_NewFromResource()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI \hyperlink{structpicture__t}{picture\+\_\+t}$\ast$ picture\+\_\+\+New\+From\+Resource (\begin{DoxyParamCaption}\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{,  }\item[{const \hyperlink{structpicture__resource__t}{picture\+\_\+resource\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function will create a new picture using the provided resource.
+
+If the resource is N\+U\+LL then a plain picture\+\_\+\+New\+From\+Format is returned. \mbox{\Hypertarget{vlc__picture_8h_ac6d35f6432c90cfbe6d0aa93759bed5a}\label{vlc__picture_8h_ac6d35f6432c90cfbe6d0aa93759bed5a}} 
+\index{vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}!picture\+\_\+\+Release@{picture\+\_\+\+Release}}
+\index{picture\+\_\+\+Release@{picture\+\_\+\+Release}!vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+\+Release()}{picture\_Release()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void picture\+\_\+\+Release (\begin{DoxyParamCaption}\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{p\+\_\+picture }\end{DoxyParamCaption})}
+
+This function will release a picture. It will not have any effect on picture obtained from vout \mbox{\Hypertarget{vlc__picture_8h_af3d7f845253f1fd7dacc4761efa613d8}\label{vlc__picture_8h_af3d7f845253f1fd7dacc4761efa613d8}} 
+\index{vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}!picture\+\_\+\+Reset@{picture\+\_\+\+Reset}}
+\index{picture\+\_\+\+Reset@{picture\+\_\+\+Reset}!vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+\+Reset()}{picture\_Reset()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void picture\+\_\+\+Reset (\begin{DoxyParamCaption}\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function will reset a picture information (properties and quantizers). It is sometimes useful for reusing pictures (like from a pool). \mbox{\Hypertarget{vlc__picture_8h_af8fe0f842a334e2bc2aeba0106110e9b}\label{vlc__picture_8h_af8fe0f842a334e2bc2aeba0106110e9b}} 
+\index{vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}!picture\+\_\+\+Setup@{picture\+\_\+\+Setup}}
+\index{picture\+\_\+\+Setup@{picture\+\_\+\+Setup}!vlc\+\_\+picture.\+h@{vlc\+\_\+picture.\+h}}
+\subsubsection{\texorpdfstring{picture\+\_\+\+Setup()}{picture\_Setup()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI int picture\+\_\+\+Setup (\begin{DoxyParamCaption}\item[{\hyperlink{structpicture__t}{picture\+\_\+t} $\ast$}]{,  }\item[{const \hyperlink{structvideo__format__t}{video\+\_\+format\+\_\+t} $\ast$}]{ }\end{DoxyParamCaption})}
+
+This function will setup all fields of a \hyperlink{structpicture__t}{picture\+\_\+t} without allocating any memory. X\+XX The memory must already be initialized. It does not need to be released.
+
+It will return V\+L\+C\+\_\+\+E\+G\+E\+N\+E\+R\+IC if the core does not understand the requested format.
+
+It can be useful to get the properties of planes. 

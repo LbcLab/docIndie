@@ -1,0 +1,123 @@
+\hypertarget{structpicture__t}{}\section{picture\+\_\+t Struct Reference}
+\label{structpicture__t}\index{picture\+\_\+t@{picture\+\_\+t}}
+
+
+{\ttfamily \#include $<$vlc\+\_\+picture.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structvideo__format__t}{video\+\_\+frame\+\_\+format\+\_\+t} \hyperlink{structpicture__t_a72ac7f1bbca75864dbcd39f4125639de}{format}
+\item 
+\hyperlink{structplane__t}{plane\+\_\+t} \hyperlink{structpicture__t_af31189ca20dbc6790415f499fb90ecd0}{p} \mbox{[}\hyperlink{vlc__picture_8h_a7c01aa52d32a00e326ed109475556094}{P\+I\+C\+T\+U\+R\+E\+\_\+\+P\+L\+A\+N\+E\+\_\+\+M\+AX}\mbox{]}
+\item 
+int \hyperlink{structpicture__t_a12306fa911b2406709ae39a3c1cd8564}{i\+\_\+planes}
+\item 
+picture\+\_\+sys\+\_\+t $\ast$ \hyperlink{structpicture__t_a142c5b32188e3c5f5ba11612ddb92f01}{p\+\_\+sys}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\} \hyperlink{structpicture__t_a2273f9c1364e15297b25164d27193acf}{gc}\\
+
+\end{tabbing}\item 
+struct \hyperlink{structpicture__t}{picture\+\_\+t} $\ast$ \hyperlink{structpicture__t_a24e14541fe992251a5f88a0f2dae9c7d}{p\+\_\+next}
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Picture management properties}\par
+{\em These properties can be modified using the video output thread A\+PI, but should never be written directly }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} \hyperlink{structpicture__t_a8a6e012c14177a7ddab81f88508da5a4}{date}
+\item 
+\mbox{\Hypertarget{structpicture__t_ab75b2558bc630566d49adc71b0561ece}\label{structpicture__t_ab75b2558bc630566d49adc71b0561ece}} 
+bool {\bfseries b\+\_\+force}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Picture dynamic properties}\par
+{\em Those properties can be changed by the decoder }\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structpicture__t_a479a8722843907e92418b6c9186f30ee}{b\+\_\+progressive}
+\item 
+bool \hyperlink{structpicture__t_a21c778fba96912ad30bd8b6242ce5f99}{b\+\_\+top\+\_\+field\+\_\+first}
+\item 
+unsigned int \hyperlink{structpicture__t_a0a35d4f969c33945d785743de590e5d5}{i\+\_\+nb\+\_\+fields}
+\item 
+void $\ast$ \hyperlink{structpicture__t_a3c8b72660e630a92591a2798ad2d0661}{context}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Video picture 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structpicture__t_a479a8722843907e92418b6c9186f30ee}\label{structpicture__t_a479a8722843907e92418b6c9186f30ee}} 
+\index{picture\+\_\+t@{picture\+\_\+t}!b\+\_\+progressive@{b\+\_\+progressive}}
+\index{b\+\_\+progressive@{b\+\_\+progressive}!picture\+\_\+t@{picture\+\_\+t}}
+\subsubsection{\texorpdfstring{b\+\_\+progressive}{b\_progressive}}
+{\footnotesize\ttfamily bool picture\+\_\+t\+::b\+\_\+progressive}
+
+is it a progressive frame ? \mbox{\Hypertarget{structpicture__t_a21c778fba96912ad30bd8b6242ce5f99}\label{structpicture__t_a21c778fba96912ad30bd8b6242ce5f99}} 
+\index{picture\+\_\+t@{picture\+\_\+t}!b\+\_\+top\+\_\+field\+\_\+first@{b\+\_\+top\+\_\+field\+\_\+first}}
+\index{b\+\_\+top\+\_\+field\+\_\+first@{b\+\_\+top\+\_\+field\+\_\+first}!picture\+\_\+t@{picture\+\_\+t}}
+\subsubsection{\texorpdfstring{b\+\_\+top\+\_\+field\+\_\+first}{b\_top\_field\_first}}
+{\footnotesize\ttfamily bool picture\+\_\+t\+::b\+\_\+top\+\_\+field\+\_\+first}
+
+which field is first \mbox{\Hypertarget{structpicture__t_a3c8b72660e630a92591a2798ad2d0661}\label{structpicture__t_a3c8b72660e630a92591a2798ad2d0661}} 
+\index{picture\+\_\+t@{picture\+\_\+t}!context@{context}}
+\index{context@{context}!picture\+\_\+t@{picture\+\_\+t}}
+\subsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily void$\ast$ picture\+\_\+t\+::context}
+
+video format-\/specific data pointer, must point to a (void ($\ast$)(void$\ast$)) pointer to free the context \mbox{\Hypertarget{structpicture__t_a8a6e012c14177a7ddab81f88508da5a4}\label{structpicture__t_a8a6e012c14177a7ddab81f88508da5a4}} 
+\index{picture\+\_\+t@{picture\+\_\+t}!date@{date}}
+\index{date@{date}!picture\+\_\+t@{picture\+\_\+t}}
+\subsubsection{\texorpdfstring{date}{date}}
+{\footnotesize\ttfamily \hyperlink{vlc__common_8h_a996e47c5ea061215703c26738351279e}{mtime\+\_\+t} picture\+\_\+t\+::date}
+
+display date \mbox{\Hypertarget{structpicture__t_a72ac7f1bbca75864dbcd39f4125639de}\label{structpicture__t_a72ac7f1bbca75864dbcd39f4125639de}} 
+\index{picture\+\_\+t@{picture\+\_\+t}!format@{format}}
+\index{format@{format}!picture\+\_\+t@{picture\+\_\+t}}
+\subsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily \hyperlink{structvideo__format__t}{video\+\_\+frame\+\_\+format\+\_\+t} picture\+\_\+t\+::format}
+
+The properties of the picture \mbox{\Hypertarget{structpicture__t_a2273f9c1364e15297b25164d27193acf}\label{structpicture__t_a2273f9c1364e15297b25164d27193acf}} 
+\index{picture\+\_\+t@{picture\+\_\+t}!gc@{gc}}
+\index{gc@{gc}!picture\+\_\+t@{picture\+\_\+t}}
+\subsubsection{\texorpdfstring{gc}{gc}}
+{\footnotesize\ttfamily struct \{ ... \}   picture\+\_\+t\+::gc}
+
+This way the picture\+\_\+\+Release can be overloaded \mbox{\Hypertarget{structpicture__t_a0a35d4f969c33945d785743de590e5d5}\label{structpicture__t_a0a35d4f969c33945d785743de590e5d5}} 
+\index{picture\+\_\+t@{picture\+\_\+t}!i\+\_\+nb\+\_\+fields@{i\+\_\+nb\+\_\+fields}}
+\index{i\+\_\+nb\+\_\+fields@{i\+\_\+nb\+\_\+fields}!picture\+\_\+t@{picture\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+nb\+\_\+fields}{i\_nb\_fields}}
+{\footnotesize\ttfamily unsigned int picture\+\_\+t\+::i\+\_\+nb\+\_\+fields}
+
+\subsection*{of displayed fields}\mbox{\Hypertarget{structpicture__t_a12306fa911b2406709ae39a3c1cd8564}\label{structpicture__t_a12306fa911b2406709ae39a3c1cd8564}} 
+\index{picture\+\_\+t@{picture\+\_\+t}!i\+\_\+planes@{i\+\_\+planes}}
+\index{i\+\_\+planes@{i\+\_\+planes}!picture\+\_\+t@{picture\+\_\+t}}
+\subsubsection{\texorpdfstring{i\+\_\+planes}{i\_planes}}
+{\footnotesize\ttfamily int picture\+\_\+t\+::i\+\_\+planes}
+
+number of allocated planes \mbox{\Hypertarget{structpicture__t_af31189ca20dbc6790415f499fb90ecd0}\label{structpicture__t_af31189ca20dbc6790415f499fb90ecd0}} 
+\index{picture\+\_\+t@{picture\+\_\+t}!p@{p}}
+\index{p@{p}!picture\+\_\+t@{picture\+\_\+t}}
+\subsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \hyperlink{structplane__t}{plane\+\_\+t} picture\+\_\+t\+::p\mbox{[}\hyperlink{vlc__picture_8h_a7c01aa52d32a00e326ed109475556094}{P\+I\+C\+T\+U\+R\+E\+\_\+\+P\+L\+A\+N\+E\+\_\+\+M\+AX}\mbox{]}}
+
+description of the planes \mbox{\Hypertarget{structpicture__t_a24e14541fe992251a5f88a0f2dae9c7d}\label{structpicture__t_a24e14541fe992251a5f88a0f2dae9c7d}} 
+\index{picture\+\_\+t@{picture\+\_\+t}!p\+\_\+next@{p\+\_\+next}}
+\index{p\+\_\+next@{p\+\_\+next}!picture\+\_\+t@{picture\+\_\+t}}
+\subsubsection{\texorpdfstring{p\+\_\+next}{p\_next}}
+{\footnotesize\ttfamily struct \hyperlink{structpicture__t}{picture\+\_\+t}$\ast$ picture\+\_\+t\+::p\+\_\+next}
+
+Next picture in a F\+I\+FO a pictures \mbox{\Hypertarget{structpicture__t_a142c5b32188e3c5f5ba11612ddb92f01}\label{structpicture__t_a142c5b32188e3c5f5ba11612ddb92f01}} 
+\index{picture\+\_\+t@{picture\+\_\+t}!p\+\_\+sys@{p\+\_\+sys}}
+\index{p\+\_\+sys@{p\+\_\+sys}!picture\+\_\+t@{picture\+\_\+t}}
+\subsubsection{\texorpdfstring{p\+\_\+sys}{p\_sys}}
+{\footnotesize\ttfamily picture\+\_\+sys\+\_\+t$\ast$ picture\+\_\+t\+::p\+\_\+sys}
+
+Private data -\/ the video output plugin might want to put stuff here to keep track of the picture 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/include/vlc/plugins/\hyperlink{vlc__picture_8h}{vlc\+\_\+picture.\+h}\end{DoxyCompactItemize}

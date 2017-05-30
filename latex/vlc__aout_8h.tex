@@ -1,0 +1,75 @@
+\hypertarget{vlc__aout_8h}{}\section{lib/include/vlc/plugins/vlc\+\_\+aout.h File Reference}
+\label{vlc__aout_8h}\index{lib/include/vlc/plugins/vlc\+\_\+aout.\+h@{lib/include/vlc/plugins/vlc\+\_\+aout.\+h}}
+{\ttfamily \#include \char`\"{}vlc\+\_\+es.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vlc\+\_\+block.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structaudio__output}{audio\+\_\+output}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vlc__aout_8h_ae1b40326b9ed3d3950412dafd9920bb0}{A\+O\+U\+T\+\_\+\+M\+A\+X\+\_\+\+P\+T\+S\+\_\+\+A\+D\+V\+A\+N\+CE}~(C\+L\+O\+C\+K\+\_\+\+F\+R\+EQ / 25)
+\item 
+\#define \hyperlink{vlc__aout_8h_a22e6cdffa959cff0d8907c59b98e0f8a}{A\+O\+U\+T\+\_\+\+M\+A\+X\+\_\+\+P\+T\+S\+\_\+\+D\+E\+L\+AY}~(3 $\ast$ C\+L\+O\+C\+K\+\_\+\+F\+R\+EQ / 50)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+V\+L\+C\+\_\+\+A\+PI unsigned \hyperlink{vlc__aout_8h_a4af190c5ecee734b0528b877ba959fd7}{aout\+\_\+\+Check\+Channel\+Reorder} (const uint32\+\_\+t $\ast$, const uint32\+\_\+t $\ast$, uint32\+\_\+t mask, uint8\+\_\+t $\ast$table)
+\item 
+V\+L\+C\+\_\+\+A\+PI bool \hyperlink{vlc__aout_8h_a7fb5221cf23c31bee3dc0ab37c3b3020}{aout\+\_\+\+Check\+Channel\+Extraction} (int $\ast$pi\+\_\+selection, uint32\+\_\+t $\ast$pi\+\_\+layout, int $\ast$pi\+\_\+channels, const uint32\+\_\+t pi\+\_\+order\+\_\+dst\mbox{[}A\+O\+U\+T\+\_\+\+C\+H\+A\+N\+\_\+\+M\+AX\mbox{]}, const uint32\+\_\+t $\ast$pi\+\_\+order\+\_\+src, int i\+\_\+channels)
+\item 
+V\+L\+C\+\_\+\+A\+PI void \hyperlink{vlc__aout_8h_a0c8443a1ff71bb3b1b91780140d21ddb}{aout\+\_\+\+Channel\+Extract} (void $\ast$p\+\_\+dst, int i\+\_\+dst\+\_\+channels, const void $\ast$p\+\_\+src, int i\+\_\+src\+\_\+channels, int i\+\_\+sample\+\_\+count, const int $\ast$pi\+\_\+selection, int i\+\_\+bits\+\_\+per\+\_\+sample)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines functions, structures and macros for audio output object 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{vlc__aout_8h_ae1b40326b9ed3d3950412dafd9920bb0}\label{vlc__aout_8h_ae1b40326b9ed3d3950412dafd9920bb0}} 
+\index{vlc\+\_\+aout.\+h@{vlc\+\_\+aout.\+h}!A\+O\+U\+T\+\_\+\+M\+A\+X\+\_\+\+P\+T\+S\+\_\+\+A\+D\+V\+A\+N\+CE@{A\+O\+U\+T\+\_\+\+M\+A\+X\+\_\+\+P\+T\+S\+\_\+\+A\+D\+V\+A\+N\+CE}}
+\index{A\+O\+U\+T\+\_\+\+M\+A\+X\+\_\+\+P\+T\+S\+\_\+\+A\+D\+V\+A\+N\+CE@{A\+O\+U\+T\+\_\+\+M\+A\+X\+\_\+\+P\+T\+S\+\_\+\+A\+D\+V\+A\+N\+CE}!vlc\+\_\+aout.\+h@{vlc\+\_\+aout.\+h}}
+\subsubsection{\texorpdfstring{A\+O\+U\+T\+\_\+\+M\+A\+X\+\_\+\+P\+T\+S\+\_\+\+A\+D\+V\+A\+N\+CE}{AOUT\_MAX\_PTS\_ADVANCE}}
+{\footnotesize\ttfamily \#define A\+O\+U\+T\+\_\+\+M\+A\+X\+\_\+\+P\+T\+S\+\_\+\+A\+D\+V\+A\+N\+CE~(C\+L\+O\+C\+K\+\_\+\+F\+R\+EQ / 25)}
+
+Maximum advance of actual audio playback time to coded P\+TS, above which downsampling will be performed \mbox{\Hypertarget{vlc__aout_8h_a22e6cdffa959cff0d8907c59b98e0f8a}\label{vlc__aout_8h_a22e6cdffa959cff0d8907c59b98e0f8a}} 
+\index{vlc\+\_\+aout.\+h@{vlc\+\_\+aout.\+h}!A\+O\+U\+T\+\_\+\+M\+A\+X\+\_\+\+P\+T\+S\+\_\+\+D\+E\+L\+AY@{A\+O\+U\+T\+\_\+\+M\+A\+X\+\_\+\+P\+T\+S\+\_\+\+D\+E\+L\+AY}}
+\index{A\+O\+U\+T\+\_\+\+M\+A\+X\+\_\+\+P\+T\+S\+\_\+\+D\+E\+L\+AY@{A\+O\+U\+T\+\_\+\+M\+A\+X\+\_\+\+P\+T\+S\+\_\+\+D\+E\+L\+AY}!vlc\+\_\+aout.\+h@{vlc\+\_\+aout.\+h}}
+\subsubsection{\texorpdfstring{A\+O\+U\+T\+\_\+\+M\+A\+X\+\_\+\+P\+T\+S\+\_\+\+D\+E\+L\+AY}{AOUT\_MAX\_PTS\_DELAY}}
+{\footnotesize\ttfamily \#define A\+O\+U\+T\+\_\+\+M\+A\+X\+\_\+\+P\+T\+S\+\_\+\+D\+E\+L\+AY~(3 $\ast$ C\+L\+O\+C\+K\+\_\+\+F\+R\+EQ / 50)}
+
+Maximum delay of actual audio playback time from coded P\+TS, above which upsampling will be performed 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{vlc__aout_8h_a0c8443a1ff71bb3b1b91780140d21ddb}\label{vlc__aout_8h_a0c8443a1ff71bb3b1b91780140d21ddb}} 
+\index{vlc\+\_\+aout.\+h@{vlc\+\_\+aout.\+h}!aout\+\_\+\+Channel\+Extract@{aout\+\_\+\+Channel\+Extract}}
+\index{aout\+\_\+\+Channel\+Extract@{aout\+\_\+\+Channel\+Extract}!vlc\+\_\+aout.\+h@{vlc\+\_\+aout.\+h}}
+\subsubsection{\texorpdfstring{aout\+\_\+\+Channel\+Extract()}{aout\_ChannelExtract()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI void aout\+\_\+\+Channel\+Extract (\begin{DoxyParamCaption}\item[{void $\ast$}]{p\+\_\+dst,  }\item[{int}]{i\+\_\+dst\+\_\+channels,  }\item[{const void $\ast$}]{p\+\_\+src,  }\item[{int}]{i\+\_\+src\+\_\+channels,  }\item[{int}]{i\+\_\+sample\+\_\+count,  }\item[{const int $\ast$}]{pi\+\_\+selection,  }\item[{int}]{i\+\_\+bits\+\_\+per\+\_\+sample }\end{DoxyParamCaption})}
+
+Do the actual channels extraction using the parameters created by aout\+\_\+\+Check\+Channel\+Extraction.
+
+X\+XX this function does not work in place (p\+\_\+dst and p\+\_\+src must not overlap). X\+XX Only 8, 16, 24, 32, 64 bits per sample are supported. \mbox{\Hypertarget{vlc__aout_8h_a7fb5221cf23c31bee3dc0ab37c3b3020}\label{vlc__aout_8h_a7fb5221cf23c31bee3dc0ab37c3b3020}} 
+\index{vlc\+\_\+aout.\+h@{vlc\+\_\+aout.\+h}!aout\+\_\+\+Check\+Channel\+Extraction@{aout\+\_\+\+Check\+Channel\+Extraction}}
+\index{aout\+\_\+\+Check\+Channel\+Extraction@{aout\+\_\+\+Check\+Channel\+Extraction}!vlc\+\_\+aout.\+h@{vlc\+\_\+aout.\+h}}
+\subsubsection{\texorpdfstring{aout\+\_\+\+Check\+Channel\+Extraction()}{aout\_CheckChannelExtraction()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI bool aout\+\_\+\+Check\+Channel\+Extraction (\begin{DoxyParamCaption}\item[{int $\ast$}]{pi\+\_\+selection,  }\item[{uint32\+\_\+t $\ast$}]{pi\+\_\+layout,  }\item[{int $\ast$}]{pi\+\_\+channels,  }\item[{const uint32\+\_\+t}]{pi\+\_\+order\+\_\+dst\mbox{[}\+A\+O\+U\+T\+\_\+\+C\+H\+A\+N\+\_\+\+M\+A\+X\mbox{]},  }\item[{const uint32\+\_\+t $\ast$}]{pi\+\_\+order\+\_\+src,  }\item[{int}]{i\+\_\+channels }\end{DoxyParamCaption})}
+
+This function will compute the extraction parameter into pi\+\_\+selection to go from i\+\_\+channels with their type given by pi\+\_\+order\+\_\+src\mbox{[}\mbox{]} into the order describe by pi\+\_\+order\+\_\+dst. It will also set \+:
+\begin{DoxyItemize}
+\item $\ast$pi\+\_\+channels as the number of channels that will be extracted which is lower (in case of non understood channels type) or equal to i\+\_\+channels.
+\item the layout of the channels ($\ast$pi\+\_\+layout).
+\end{DoxyItemize}
+
+It will return true if channel extraction is really needed, in which case aout\+\_\+\+Channel\+Extract must be used
+
+X\+XX It must be used when the source may have channel type not understood by V\+LC. In this case the channel type pi\+\_\+order\+\_\+src\mbox{[}\mbox{]} must be set to 0. X\+XX It must also be used if multiple channels have the same type. \mbox{\Hypertarget{vlc__aout_8h_a4af190c5ecee734b0528b877ba959fd7}\label{vlc__aout_8h_a4af190c5ecee734b0528b877ba959fd7}} 
+\index{vlc\+\_\+aout.\+h@{vlc\+\_\+aout.\+h}!aout\+\_\+\+Check\+Channel\+Reorder@{aout\+\_\+\+Check\+Channel\+Reorder}}
+\index{aout\+\_\+\+Check\+Channel\+Reorder@{aout\+\_\+\+Check\+Channel\+Reorder}!vlc\+\_\+aout.\+h@{vlc\+\_\+aout.\+h}}
+\subsubsection{\texorpdfstring{aout\+\_\+\+Check\+Channel\+Reorder()}{aout\_CheckChannelReorder()}}
+{\footnotesize\ttfamily V\+L\+C\+\_\+\+A\+PI unsigned aout\+\_\+\+Check\+Channel\+Reorder (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t $\ast$}]{,  }\item[{const uint32\+\_\+t $\ast$}]{,  }\item[{uint32\+\_\+t}]{mask,  }\item[{uint8\+\_\+t $\ast$}]{table }\end{DoxyParamCaption})}
+
+This function computes the reordering needed to go from pi\+\_\+chan\+\_\+order\+\_\+in to pi\+\_\+chan\+\_\+order\+\_\+out. If pi\+\_\+chan\+\_\+order\+\_\+in or pi\+\_\+chan\+\_\+order\+\_\+out is N\+U\+LL, it will assume that vlc internal (W\+G4) order is requested. 
