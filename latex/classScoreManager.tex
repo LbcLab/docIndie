@@ -14,21 +14,21 @@ The \hyperlink{classScoreManager}{Score\+Manager} class.
 \item 
 \hyperlink{classScoreManager_a4f3866ff832127664543349da5c4fbf4}{Score\+Manager} ()
 \begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
-void \hyperlink{classScoreManager_a3644cf37cdce0983dc8ed3005222e55a}{load\+Scores} (std\+::string)
+void \hyperlink{classScoreManager_a4c345e9d06ef6f7fb937c43fa51dddd5}{load\+Scores} (std\+::string file\+Name)
 \begin{DoxyCompactList}\small\item\em Allow you to load a score sheet (from a previous session) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classScoreManager_aa3f390fe5076324b2d457de0c43af59f}\label{classScoreManager_aa3f390fe5076324b2d457de0c43af59f}} 
 void \hyperlink{classScoreManager_aa3f390fe5076324b2d457de0c43af59f}{save\+Scores} () const
 \begin{DoxyCompactList}\small\item\em Allow you to save the score contained in the object. \end{DoxyCompactList}\item 
-void \hyperlink{classScoreManager_a93810ab5b58af22f8af96db0787363b8}{create\+File} (std\+::string)
+void \hyperlink{classScoreManager_abbe17770ef85b2575fd14acf90a0bc9f}{create\+File} (std\+::string file\+Name)
 \begin{DoxyCompactList}\small\item\em Create an empty score file. \end{DoxyCompactList}\item 
-void \hyperlink{classScoreManager_a2597a2f7d0786295a6ee3445502a6d6f}{add\+Score} (std\+::string, std\+::size\+\_\+t)
+void \hyperlink{classScoreManager_a9fba97d65a88e67a2d219d2ba36af111}{add\+Score} (std\+::string player\+Name, std\+::size\+\_\+t player\+Score)
 \begin{DoxyCompactList}\small\item\em Add a score. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classScoreManager_ad0c38dd0a27a82230d09f29ce3d12349}\label{classScoreManager_ad0c38dd0a27a82230d09f29ce3d12349}} 
 const std\+::vector$<$ config\+::\+Score $>$ \& \hyperlink{classScoreManager_ad0c38dd0a27a82230d09f29ce3d12349}{get\+Top\+Scores} ()
 \begin{DoxyCompactList}\small\item\em Get the 10 best scores. \end{DoxyCompactList}\item 
-std\+::size\+\_\+t \hyperlink{classScoreManager_a9d529f071418d69a2b1745673d9d83b2}{get\+Player\+Score} (std\+::string) const
+std\+::size\+\_\+t \hyperlink{classScoreManager_abc6c1d76fdcc17f1b8ebe4c7bf5550e2}{get\+Player\+Score} (std\+::string name) const
 \begin{DoxyCompactList}\small\item\em Get score for a specifique player. \end{DoxyCompactList}\item 
-void \hyperlink{classScoreManager_a16c1e33b2972b9609b6d568dc8b7a3b0}{change\+Score} (std\+::string, std\+::size\+\_\+t)
+void \hyperlink{classScoreManager_a01a80dda216fa5b83b58bca8de49114e}{change\+Score} (std\+::string name, std\+::size\+\_\+t score)
 \begin{DoxyCompactList}\small\item\em Change score for a specifique player. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -54,7 +54,7 @@ The constructor.
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classScoreManager_a2597a2f7d0786295a6ee3445502a6d6f}\label{classScoreManager_a2597a2f7d0786295a6ee3445502a6d6f}} 
+\mbox{\Hypertarget{classScoreManager_a9fba97d65a88e67a2d219d2ba36af111}\label{classScoreManager_a9fba97d65a88e67a2d219d2ba36af111}} 
 \index{Score\+Manager@{Score\+Manager}!add\+Score@{add\+Score}}
 \index{add\+Score@{add\+Score}!Score\+Manager@{Score\+Manager}}
 \subsubsection{\texorpdfstring{add\+Score()}{addScore()}}
@@ -66,14 +66,16 @@ Add a score.
 
 
 \begin{DoxyParams}{Parameters}
-{\em 1.} & Player name 2. Is score \\
+{\em player\+Name} & player name \\
+\hline
+{\em player\+Score} & player score \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classScoreManager_a16c1e33b2972b9609b6d568dc8b7a3b0}\label{classScoreManager_a16c1e33b2972b9609b6d568dc8b7a3b0}} 
+\mbox{\Hypertarget{classScoreManager_a01a80dda216fa5b83b58bca8de49114e}\label{classScoreManager_a01a80dda216fa5b83b58bca8de49114e}} 
 \index{Score\+Manager@{Score\+Manager}!change\+Score@{change\+Score}}
 \index{change\+Score@{change\+Score}!Score\+Manager@{Score\+Manager}}
 \subsubsection{\texorpdfstring{change\+Score()}{changeScore()}}
-{\footnotesize\ttfamily void Score\+Manager\+::change\+Score (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::size\+\_\+t}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Score\+Manager\+::change\+Score (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::size\+\_\+t}]{score }\end{DoxyParamCaption})}
 
 
 
@@ -81,10 +83,12 @@ Change score for a specifique player.
 
 
 \begin{DoxyParams}{Parameters}
-{\em 1.} & Player name 2. New score \\
+{\em name} & Player name \\
+\hline
+{\em score} & Player new score \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classScoreManager_a93810ab5b58af22f8af96db0787363b8}\label{classScoreManager_a93810ab5b58af22f8af96db0787363b8}} 
+\mbox{\Hypertarget{classScoreManager_abbe17770ef85b2575fd14acf90a0bc9f}\label{classScoreManager_abbe17770ef85b2575fd14acf90a0bc9f}} 
 \index{Score\+Manager@{Score\+Manager}!create\+File@{create\+File}}
 \index{create\+File@{create\+File}!Score\+Manager@{Score\+Manager}}
 \subsubsection{\texorpdfstring{create\+File()}{createFile()}}
@@ -96,10 +100,10 @@ Create an empty score file.
 
 
 \begin{DoxyParams}{Parameters}
-{\em Path} & to the score file \\
+{\em file\+Name} & Path to the score file \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classScoreManager_a9d529f071418d69a2b1745673d9d83b2}\label{classScoreManager_a9d529f071418d69a2b1745673d9d83b2}} 
+\mbox{\Hypertarget{classScoreManager_abc6c1d76fdcc17f1b8ebe4c7bf5550e2}\label{classScoreManager_abc6c1d76fdcc17f1b8ebe4c7bf5550e2}} 
 \index{Score\+Manager@{Score\+Manager}!get\+Player\+Score@{get\+Player\+Score}}
 \index{get\+Player\+Score@{get\+Player\+Score}!Score\+Manager@{Score\+Manager}}
 \subsubsection{\texorpdfstring{get\+Player\+Score()}{getPlayerScore()}}
@@ -111,10 +115,10 @@ Get score for a specifique player.
 
 
 \begin{DoxyParams}{Parameters}
-{\em Player} & name \\
+{\em name} & player name \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classScoreManager_a3644cf37cdce0983dc8ed3005222e55a}\label{classScoreManager_a3644cf37cdce0983dc8ed3005222e55a}} 
+\mbox{\Hypertarget{classScoreManager_a4c345e9d06ef6f7fb937c43fa51dddd5}\label{classScoreManager_a4c345e9d06ef6f7fb937c43fa51dddd5}} 
 \index{Score\+Manager@{Score\+Manager}!load\+Scores@{load\+Scores}}
 \index{load\+Scores@{load\+Scores}!Score\+Manager@{Score\+Manager}}
 \subsubsection{\texorpdfstring{load\+Scores()}{loadScores()}}
@@ -126,7 +130,7 @@ Allow you to load a score sheet (from a previous session)
 
 
 \begin{DoxyParams}{Parameters}
-{\em The} & path to the score file \\
+{\em file\+Name} & The path to the score file \\
 \hline
 \end{DoxyParams}
 

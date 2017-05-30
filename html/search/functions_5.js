@@ -15,7 +15,7 @@ var searchData=
   ['getmappath',['getMapPath',['../classMap.html#a47f72d481d0ed624dfd03e63ebd281e5',1,'Map']]],
   ['getmodel',['getModel',['../classAObject.html#a3ffaa331c1842c5bf782c9a0343474bc',1,'AObject::getModel()'],['../classModelsManager.html#aecbaab73572634a9e5cbc035b25864e1',1,'ModelsManager::getModel()']]],
   ['getplayers',['getPlayers',['../classGameNewScene.html#a6aa753c0f281a3e1f0ed06fe10e070f4',1,'GameNewScene']]],
-  ['getplayerscore',['getPlayerScore',['../classScoreManager.html#a9d529f071418d69a2b1745673d9d83b2',1,'ScoreManager']]],
+  ['getplayerscore',['getPlayerScore',['../classScoreManager.html#abc6c1d76fdcc17f1b8ebe4c7bf5550e2',1,'ScoreManager']]],
   ['getscores',['getScores',['../classScoreScene.html#af82d6c841dc42c42d83202d2c7ddf8c9',1,'ScoreScene']]],
   ['getseverity',['getSeverity',['../classerror_1_1Exception.html#a05f9c8eecf03bb0ca05d5fe2ec7fb36a',1,'error::Exception']]],
   ['gettopscores',['getTopScores',['../classScoreManager.html#ad0c38dd0a27a82230d09f29ce3d12349',1,'ScoreManager']]],
