@@ -92,8 +92,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3382c1519f85b695a1d98b492207c339"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel3d.html#a3382c1519f85b695a1d98b492207c339">Model3d</a> (const String &amp;fileXML, const Vector3d &amp;position, const Vector3d &amp;rotation, Float scale=1, size_t animationSpeed=4)</td></tr>
 <tr class="memdesc:a3382c1519f85b695a1d98b492207c339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a3382c1519f85b695a1d98b492207c339">More...</a><br /></td></tr>
 <tr class="separator:a3382c1519f85b695a1d98b492207c339"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a4ec3be34c901538574d99d95a46b04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel3d.html#a7a4ec3be34c901538574d99d95a46b04">~Model3d</a> ()</td></tr>
-<tr class="memdesc:a7a4ec3be34c901538574d99d95a46b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a7a4ec3be34c901538574d99d95a46b04">More...</a><br /></td></tr>
+<tr class="memitem:a7a4ec3be34c901538574d99d95a46b04"><td class="memItemLeft" align="right" valign="top"><a id="a7a4ec3be34c901538574d99d95a46b04"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel3d.html#a7a4ec3be34c901538574d99d95a46b04">~Model3d</a> ()</td></tr>
+<tr class="memdesc:a7a4ec3be34c901538574d99d95a46b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:a7a4ec3be34c901538574d99d95a46b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae02d86ac82ec9f435cf1ebe668f3a6dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel3d.html#ae02d86ac82ec9f435cf1ebe668f3a6dd">print</a> (<a class="el" href="classWindow.html">Window</a> *win)</td></tr>
 <tr class="memdesc:ae02d86ac82ec9f435cf1ebe668f3a6dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the model 3d into the window.  <a href="#ae02d86ac82ec9f435cf1ebe668f3a6dd">More...</a><br /></td></tr>
@@ -154,33 +155,16 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructor. </p>
-<p>Build the class.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">1)</td><td>'fileXML' path to the xml file who describe the model. 2) 'position' the position in the space where the model will be print. 3) 'rotation' the rotation of the model in the space. 4) 'scale' an additionnal scale coefficient for the model. </td></tr>
+    <tr><td class="paramname">fileXML</td><td>Path to the xml file who describe the model. </td></tr>
+    <tr><td class="paramname">position</td><td>The position in the space where the model will be print. </td></tr>
+    <tr><td class="paramname">rotation</td><td>The rotation of the model in the space. </td></tr>
+    <tr><td class="paramname">scale</td><td>An additionnal scale coefficient for the model. </td></tr>
+    <tr><td class="paramname">animationSpeed</td><td><a class="el" href="structModel3d_1_1Animation.html" title="Represent a model&#39;s animation. ">Animation</a> speed </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a7a4ec3be34c901538574d99d95a46b04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a4ec3be34c901538574d99d95a46b04">&#9670;&nbsp;</a></span>~Model3d()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Model3d::~Model3d </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Destructor. </p>
-<p>Destroy the class. </p>
 
 </div>
 </div>
@@ -212,7 +196,7 @@ Public Member Functions</h2></td></tr>
 <p>Print the model 3d into the window. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">'window'</td><td>the window where the model 3d will be print. </td></tr>
+    <tr><td class="paramname">win</td><td>The window where the model 3d will be print. </td></tr>
   </table>
   </dd>
 </dl>
@@ -240,7 +224,7 @@ Public Member Functions</h2></td></tr>
 <p>Allow to change the current animated mesh of the model. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">'name'</td><td>of the animation that will be load. </td></tr>
+    <tr><td class="paramname">name</td><td>Name of the animation that will be load. </td></tr>
   </table>
   </dd>
 </dl>
