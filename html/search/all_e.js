@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['videoconfig',['videoConfig',['../classConfigManager.html#a1e0dbb8563b71871e6c68abce5620cd0',1,'ConfigManager']]]
+  ['text',['Text',['../classText.html',1,'Text'],['../classText.html#a00ba9f4a2c3ca172e17433d2ceda4d55',1,'Text::Text()']]],
+  ['text_2ehh',['Text.hh',['../Text_8hh.html',1,'']]],
+  ['to_5fwstring',['to_WString',['../classScoreScene.html#a7cd50a0bd9be501c08f3f2855d61830e',1,'ScoreScene']]]
 ];

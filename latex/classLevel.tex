@@ -18,8 +18,8 @@ Inheritance diagram for Level\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classLevel_a1cddef79da66a80002686199a847543f}\label{classLevel_a1cddef79da66a80002686199a847543f}} 
-\hyperlink{classLevel_a1cddef79da66a80002686199a847543f}{Level} (const W\+String \&map\+Path, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ A\+Hero $>$ $>$ players=std\+::vector$<$ std\+::shared\+\_\+ptr$<$ A\+Hero $>$ $>$(), std\+::vector$<$ std\+::shared\+\_\+ptr$<$ A\+Monster $>$ $>$ monsters=std\+::vector$<$ std\+::shared\+\_\+ptr$<$ A\+Monster $>$ $>$(), std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classAPickable}{A\+Pickable} $>$ $>$ objects=std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classAPickable}{A\+Pickable} $>$ $>$())
+\mbox{\Hypertarget{classLevel_a449da6ec6c9863a35c94d2fcb2755433}\label{classLevel_a449da6ec6c9863a35c94d2fcb2755433}} 
+\hyperlink{classLevel_a449da6ec6c9863a35c94d2fcb2755433}{Level} (const W\+String \&map\+Path)
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLevel_a249eac1e8f19ff44134efa5e986feaca}\label{classLevel_a249eac1e8f19ff44134efa5e986feaca}} 
 \hyperlink{classLevel_a249eac1e8f19ff44134efa5e986feaca}{$\sim$\+Level} ()
@@ -28,7 +28,8 @@ void \hyperlink{classLevel_ac679a141274c19107c288fe40b967e95}{move\+Player} (con
 \begin{DoxyCompactList}\small\item\em Change the player\textquotesingle{}s position by adding the position passed as parameter. \end{DoxyCompactList}\item 
 void \hyperlink{classLevel_aa88db36cd824320cb599d913603dc2a3}{load\+Level} ()
 \item 
-void \hyperlink{classLevel_ab8311fe64b7957d627053359331b0b6b}{print} (\hyperlink{classWindow}{Window} $\ast$win)
+\mbox{\Hypertarget{classLevel_a5188de55912386ca786cdbe093ca2af4}\label{classLevel_a5188de55912386ca786cdbe093ca2af4}} 
+void \hyperlink{classLevel_a5188de55912386ca786cdbe093ca2af4}{print} ()
 \begin{DoxyCompactList}\small\item\em print objects such as A\+Hero, A\+Monster \hyperlink{classAPickable}{A\+Pickable}, ... \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -65,25 +66,6 @@ Change the player\textquotesingle{}s position by adding the position passed as p
 {\em position} & The player\textquotesingle{}s id who will move. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classLevel_ab8311fe64b7957d627053359331b0b6b}\label{classLevel_ab8311fe64b7957d627053359331b0b6b}} 
-\index{Level@{Level}!print@{print}}
-\index{print@{print}!Level@{Level}}
-\subsubsection{\texorpdfstring{print()}{print()}}
-{\footnotesize\ttfamily void Level\+::print (\begin{DoxyParamCaption}\item[{\hyperlink{classWindow}{Window} $\ast$}]{win }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-print objects such as A\+Hero, A\+Monster \hyperlink{classAPickable}{A\+Pickable}, ... 
-
-
-\begin{DoxyParams}{Parameters}
-{\em win} & The window that handles scene manager \\
-\hline
-\end{DoxyParams}
-
-
-Implements \hyperlink{classIWidget_a0cfa49a402e9bb31808a715e048ab2f4}{I\+Widget}.
-
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

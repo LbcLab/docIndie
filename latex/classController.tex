@@ -1,0 +1,157 @@
+\hypertarget{classController}{}\section{Controller Class Reference}
+\label{classController}\index{Controller@{Controller}}
+
+
+Use to handle \hyperlink{classController}{Controller} Event.  
+
+
+
+
+{\ttfamily \#include $<$Controller.\+hh$>$}
+
+
+
+Inherits I\+Event\+Receiver.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classController_ac4a14971762c0d091606211711762273}{Controller} (const irr\+::u32 controller\+ID, const irr\+::u32 player\+ID)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classController_a0ab87934c4f7a266cfdb86e0f36bc1b5}{$\sim$\+Controller} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classController_a81b6f6d728022c92b064866759a7d4d9}{On\+Event} (const irr\+::\+S\+Event \&event)
+\begin{DoxyCompactList}\small\item\em On\+Event. \end{DoxyCompactList}\item 
+const irr\+::\+S\+Event\+::\+S\+Joystick\+Event \& \hyperlink{classController_a43d5202e40ae827029fdca587d0bfeab}{get\+Joystick\+State} (void) const
+\begin{DoxyCompactList}\small\item\em get\+Joystick\+State \end{DoxyCompactList}\item 
+irr\+::core\+::array$<$ irr\+::\+S\+Joystick\+Info $>$ \& \hyperlink{classController_a1d628add26120f35d2dc53eabaa34d4b}{get\+Joystick\+Info} (void)
+\begin{DoxyCompactList}\small\item\em get\+Joystick\+Info \end{DoxyCompactList}\item 
+void \hyperlink{classController_a3e855bf7e018e2659ecb3d0e13a7f39c}{notify\+Event\+Manager} (void)
+\begin{DoxyCompactList}\small\item\em notify\+Event\+Manager \end{DoxyCompactList}\item 
+irr\+::u32 \hyperlink{classController_a76891bd0871480c92f45c597c3eddf93}{get\+Player\+ID} (void) const
+\begin{DoxyCompactList}\small\item\em get\+Player\+ID \end{DoxyCompactList}\item 
+irr\+::u32 \hyperlink{classController_ab2294a9b730b80216705b7e9ae36a5bd}{get\+Controller\+ID} (void) const
+\begin{DoxyCompactList}\small\item\em get\+Controller\+ID \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Use to handle \hyperlink{classController}{Controller} Event. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classController_ac4a14971762c0d091606211711762273}\label{classController_ac4a14971762c0d091606211711762273}} 
+\index{Controller@{Controller}!Controller@{Controller}}
+\index{Controller@{Controller}!Controller@{Controller}}
+\subsubsection{\texorpdfstring{Controller()}{Controller()}}
+{\footnotesize\ttfamily Controller\+::\+Controller (\begin{DoxyParamCaption}\item[{const irr\+::u32}]{controller\+ID,  }\item[{const irr\+::u32}]{player\+ID }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Build the class
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller\+ID} & Define the id of controller\\
+\hline
+{\em player\+ID} & Define the id of player \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classController_a0ab87934c4f7a266cfdb86e0f36bc1b5}\label{classController_a0ab87934c4f7a266cfdb86e0f36bc1b5}} 
+\index{Controller@{Controller}!````~Controller@{$\sim$\+Controller}}
+\index{````~Controller@{$\sim$\+Controller}!Controller@{Controller}}
+\subsubsection{\texorpdfstring{$\sim$\+Controller()}{~Controller()}}
+{\footnotesize\ttfamily Controller\+::$\sim$\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Destruct the class 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classController_ab2294a9b730b80216705b7e9ae36a5bd}\label{classController_ab2294a9b730b80216705b7e9ae36a5bd}} 
+\index{Controller@{Controller}!get\+Controller\+ID@{get\+Controller\+ID}}
+\index{get\+Controller\+ID@{get\+Controller\+ID}!Controller@{Controller}}
+\subsubsection{\texorpdfstring{get\+Controller\+I\+D()}{getControllerID()}}
+{\footnotesize\ttfamily Unsigned\+Int Controller\+::get\+Controller\+ID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Controller\+ID 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+controller\+ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classController_a1d628add26120f35d2dc53eabaa34d4b}\label{classController_a1d628add26120f35d2dc53eabaa34d4b}} 
+\index{Controller@{Controller}!get\+Joystick\+Info@{get\+Joystick\+Info}}
+\index{get\+Joystick\+Info@{get\+Joystick\+Info}!Controller@{Controller}}
+\subsubsection{\texorpdfstring{get\+Joystick\+Info()}{getJoystickInfo()}}
+{\footnotesize\ttfamily irr\+::core\+::array$<$irr\+::\+S\+Joystick\+Info$>$\& Controller\+::get\+Joystick\+Info (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+get\+Joystick\+Info 
+
+\begin{DoxyReturn}{Returns}
+the \+\_\+joystick\+Info 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classController_a43d5202e40ae827029fdca587d0bfeab}\label{classController_a43d5202e40ae827029fdca587d0bfeab}} 
+\index{Controller@{Controller}!get\+Joystick\+State@{get\+Joystick\+State}}
+\index{get\+Joystick\+State@{get\+Joystick\+State}!Controller@{Controller}}
+\subsubsection{\texorpdfstring{get\+Joystick\+State()}{getJoystickState()}}
+{\footnotesize\ttfamily const irr\+::\+S\+Event\+::\+S\+Joystick\+Event\& Controller\+::get\+Joystick\+State (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Joystick\+State 
+
+\begin{DoxyReturn}{Returns}
+the state of \+\_\+joystick\+State 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classController_a76891bd0871480c92f45c597c3eddf93}\label{classController_a76891bd0871480c92f45c597c3eddf93}} 
+\index{Controller@{Controller}!get\+Player\+ID@{get\+Player\+ID}}
+\index{get\+Player\+ID@{get\+Player\+ID}!Controller@{Controller}}
+\subsubsection{\texorpdfstring{get\+Player\+I\+D()}{getPlayerID()}}
+{\footnotesize\ttfamily Unsigned\+Int Controller\+::get\+Player\+ID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Player\+ID 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+player\+ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classController_a3e855bf7e018e2659ecb3d0e13a7f39c}\label{classController_a3e855bf7e018e2659ecb3d0e13a7f39c}} 
+\index{Controller@{Controller}!notify\+Event\+Manager@{notify\+Event\+Manager}}
+\index{notify\+Event\+Manager@{notify\+Event\+Manager}!Controller@{Controller}}
+\subsubsection{\texorpdfstring{notify\+Event\+Manager()}{notifyEventManager()}}
+{\footnotesize\ttfamily void Controller\+::notify\+Event\+Manager (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+notify\+Event\+Manager 
+
+Add the event to the Event\+Manager queue \mbox{\Hypertarget{classController_a81b6f6d728022c92b064866759a7d4d9}\label{classController_a81b6f6d728022c92b064866759a7d4d9}} 
+\index{Controller@{Controller}!On\+Event@{On\+Event}}
+\index{On\+Event@{On\+Event}!Controller@{Controller}}
+\subsubsection{\texorpdfstring{On\+Event()}{OnEvent()}}
+{\footnotesize\ttfamily bool Controller\+::\+On\+Event (\begin{DoxyParamCaption}\item[{const irr\+::\+S\+Event \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+On\+Event. 
+
+Handle the event
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Event sent by irrlicht \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/event/\hyperlink{Controller_8hh}{Controller.\+hh}\item 
+src/event/Controller.\+cpp\end{DoxyCompactItemize}

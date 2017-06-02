@@ -16,13 +16,10 @@ Represent the window that will print some scene (view of the application).
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 \hyperlink{classWindow_a245d821e6016fa1f6970ccbbedd635f6}{$\sim$\+Window} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
-void \hyperlink{classWindow_ac9150ac221e5569e677586d5a1123518}{add\+Scene} (const String \&name, const std\+::shared\+\_\+ptr$<$ \hyperlink{classAScene}{A\+Scene} $>$ \&scene)
-\begin{DoxyCompactList}\small\item\em Allow the user to add a scene in the window. \end{DoxyCompactList}\item 
-void \hyperlink{classWindow_a9e73c1dc8b22cdf16e6446af6f7ade48}{print\+Scene} (const String \&name)
+\mbox{\Hypertarget{classWindow_a859f97c29b98a58809d485f0cf5d36d7}\label{classWindow_a859f97c29b98a58809d485f0cf5d36d7}} 
+void \hyperlink{classWindow_a859f97c29b98a58809d485f0cf5d36d7}{print\+Scene} ()
 \begin{DoxyCompactList}\small\item\em Allow the user to print a scene in the window. \end{DoxyCompactList}\item 
-void \hyperlink{classWindow_ad3a1ead02eca314e2df94e3e932fb5ae}{delete\+Scene} (const String \&name)
-\begin{DoxyCompactList}\small\item\em Allow the user ti delete a scene in the window. \end{DoxyCompactList}\item 
-void \hyperlink{classWindow_a3342dc02339a5974d5c6fcefd91d0cbf}{set\+Current\+Scene} (const String \&scene\+Name)
+void \hyperlink{classWindow_ac2515da6ca76f5f4466c7421e95cddfe}{set\+Current\+Scene} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classAScene}{A\+Scene} $>$ \&scene)
 \begin{DoxyCompactList}\small\item\em Set the current scene that will be print. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classWindow_af1b2a635ce47d9e841445b8b866a3b28}\label{classWindow_af1b2a635ce47d9e841445b8b866a3b28}} 
 void \hyperlink{classWindow_af1b2a635ce47d9e841445b8b866a3b28}{change\+Scene} ()
@@ -32,7 +29,9 @@ void \hyperlink{classWindow_a35055c04498121d39741bfcd5082705b}{close} ()
 \begin{DoxyCompactList}\small\item\em Close the window. \end{DoxyCompactList}\item 
 bool \hyperlink{classWindow_a761d614931fb5a5daa70e4f580c3e78e}{is\+Open} () const
 \begin{DoxyCompactList}\small\item\em Getter on the open\textquotesingle{}s statement of the window. \end{DoxyCompactList}\item 
-void \hyperlink{classWindow_a9c9f1fd6ebc2b93f16ca870487a4a4c6}{loop} (const String \&scene\+Name)
+bool \hyperlink{classWindow_a53329abfc23df8a908ce7002c88dc244}{is\+Running} () const
+\begin{DoxyCompactList}\small\item\em Getter on the open\textquotesingle{}s statement of the window. \end{DoxyCompactList}\item 
+void \hyperlink{classWindow_a2b026b4d11c9a67b5103921de251cd46}{loop} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classAScene}{A\+Scene} $>$ \&scene)
 \begin{DoxyCompactList}\small\item\em Keep the window open util the end of the program\textquotesingle{}s execution. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -70,38 +69,6 @@ Destructor.
 Destroy the class. 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classWindow_ac9150ac221e5569e677586d5a1123518}\label{classWindow_ac9150ac221e5569e677586d5a1123518}} 
-\index{Window@{Window}!add\+Scene@{add\+Scene}}
-\index{add\+Scene@{add\+Scene}!Window@{Window}}
-\subsubsection{\texorpdfstring{add\+Scene()}{addScene()}}
-{\footnotesize\ttfamily void Window\+::add\+Scene (\begin{DoxyParamCaption}\item[{const String \&}]{name,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{classAScene}{A\+Scene} $>$ \&}]{scene }\end{DoxyParamCaption})}
-
-
-
-Allow the user to add a scene in the window. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em name} & The name of the scene that will be add. \\
-\hline
-{\em scene} & Reference to a smart pointer on the scene that will be add. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classWindow_ad3a1ead02eca314e2df94e3e932fb5ae}\label{classWindow_ad3a1ead02eca314e2df94e3e932fb5ae}} 
-\index{Window@{Window}!delete\+Scene@{delete\+Scene}}
-\index{delete\+Scene@{delete\+Scene}!Window@{Window}}
-\subsubsection{\texorpdfstring{delete\+Scene()}{deleteScene()}}
-{\footnotesize\ttfamily void Window\+::delete\+Scene (\begin{DoxyParamCaption}\item[{const String \&}]{name }\end{DoxyParamCaption})}
-
-
-
-Allow the user ti delete a scene in the window. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em \textquotesingle{}name\textquotesingle{}} & the name of the scene that will be delete. \\
-\hline
-\end{DoxyParams}
 \mbox{\Hypertarget{classWindow_a761d614931fb5a5daa70e4f580c3e78e}\label{classWindow_a761d614931fb5a5daa70e4f580c3e78e}} 
 \index{Window@{Window}!is\+Open@{is\+Open}}
 \index{is\+Open@{is\+Open}!Window@{Window}}
@@ -115,11 +82,24 @@ Getter on the open\textquotesingle{}s statement of the window.
 \begin{DoxyReturn}{Returns}
 True if the window is open, else false. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classWindow_a9c9f1fd6ebc2b93f16ca870487a4a4c6}\label{classWindow_a9c9f1fd6ebc2b93f16ca870487a4a4c6}} 
+\mbox{\Hypertarget{classWindow_a53329abfc23df8a908ce7002c88dc244}\label{classWindow_a53329abfc23df8a908ce7002c88dc244}} 
+\index{Window@{Window}!is\+Running@{is\+Running}}
+\index{is\+Running@{is\+Running}!Window@{Window}}
+\subsubsection{\texorpdfstring{is\+Running()}{isRunning()}}
+{\footnotesize\ttfamily bool Window\+::is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter on the open\textquotesingle{}s statement of the window. 
+
+\begin{DoxyReturn}{Returns}
+True if the window is running, else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWindow_a2b026b4d11c9a67b5103921de251cd46}\label{classWindow_a2b026b4d11c9a67b5103921de251cd46}} 
 \index{Window@{Window}!loop@{loop}}
 \index{loop@{loop}!Window@{Window}}
 \subsubsection{\texorpdfstring{loop()}{loop()}}
-{\footnotesize\ttfamily void Window\+::loop (\begin{DoxyParamCaption}\item[{const String \&}]{scene\+Name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Window\+::loop (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{classAScene}{A\+Scene} $>$ \&}]{scene }\end{DoxyParamCaption})}
 
 
 
@@ -127,29 +107,14 @@ Keep the window open util the end of the program\textquotesingle{}s execution.
 
 
 \begin{DoxyParams}{Parameters}
-{\em \textquotesingle{}scene\+Name\textquotesingle{}} & the scene\textquotesingle{}s name that will be launch at the begin of the program\textquotesingle{}s execution. \\
+{\em scene} & the scene\textquotesingle{}s name that will be launch at the begin of the program\textquotesingle{}s execution. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classWindow_a9e73c1dc8b22cdf16e6446af6f7ade48}\label{classWindow_a9e73c1dc8b22cdf16e6446af6f7ade48}} 
-\index{Window@{Window}!print\+Scene@{print\+Scene}}
-\index{print\+Scene@{print\+Scene}!Window@{Window}}
-\subsubsection{\texorpdfstring{print\+Scene()}{printScene()}}
-{\footnotesize\ttfamily void Window\+::print\+Scene (\begin{DoxyParamCaption}\item[{const String \&}]{name }\end{DoxyParamCaption})}
-
-
-
-Allow the user to print a scene in the window. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em \textquotesingle{}name\textquotesingle{}} & the name of the scene that will be print. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classWindow_a3342dc02339a5974d5c6fcefd91d0cbf}\label{classWindow_a3342dc02339a5974d5c6fcefd91d0cbf}} 
+\mbox{\Hypertarget{classWindow_ac2515da6ca76f5f4466c7421e95cddfe}\label{classWindow_ac2515da6ca76f5f4466c7421e95cddfe}} 
 \index{Window@{Window}!set\+Current\+Scene@{set\+Current\+Scene}}
 \index{set\+Current\+Scene@{set\+Current\+Scene}!Window@{Window}}
 \subsubsection{\texorpdfstring{set\+Current\+Scene()}{setCurrentScene()}}
-{\footnotesize\ttfamily void Window\+::set\+Current\+Scene (\begin{DoxyParamCaption}\item[{const String \&}]{scene\+Name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Window\+::set\+Current\+Scene (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{classAScene}{A\+Scene} $>$ \&}]{scene }\end{DoxyParamCaption})}
 
 
 
@@ -157,7 +122,7 @@ Set the current scene that will be print.
 
 
 \begin{DoxyParams}{Parameters}
-{\em \textquotesingle{}scene\+Name\textquotesingle{}} & the name of the scene that will be set as the current scene. \\
+{\em scene} & the name of the scene that will be set as the current scene. \\
 \hline
 \end{DoxyParams}
 

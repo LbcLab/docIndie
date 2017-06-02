@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['addscene',['addScene',['../classWindow.html#ac9150ac221e5569e677586d5a1123518',1,'Window']]],
   ['addscore',['addScore',['../classScoreManager.html#a9fba97d65a88e67a2d219d2ba36af111',1,'ScoreManager']]],
   ['addwidget',['addWidget',['../classAScene.html#aa711b6068dd8dee262160eedfd96ad02',1,'AScene']]],
   ['aobject',['AObject',['../classAObject.html#a12a7789fca6342e9ff5c52c7cfd465d1',1,'AObject']]],

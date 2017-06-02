@@ -1,0 +1,130 @@
+\hypertarget{classKeyboard}{}\section{Keyboard Class Reference}
+\label{classKeyboard}\index{Keyboard@{Keyboard}}
+
+
+Handle client keyboard event.  
+
+
+
+
+{\ttfamily \#include $<$Keyboard.\+hh$>$}
+
+
+
+Inherits I\+Event\+Receiver.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classKeyboard_abb54d55e7d65dd6ef017352fdf5570c6}{Keyboard} (const irr\+::u32 keyboard\+ID, const irr\+::u32 player\+ID, config\+::\+Control\+Player control)
+\begin{DoxyCompactList}\small\item\em Contructor. \end{DoxyCompactList}\item 
+\hyperlink{classKeyboard_af6a99ec66c8c722a45b967bf79167038}{$\sim$\+Keyboard} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classKeyboard_ad6974153a0c29b55c1b8765d0d6ccbfa}{On\+Event} (const irr\+::\+S\+Event \&event)
+\begin{DoxyCompactList}\small\item\em On\+Event. \end{DoxyCompactList}\item 
+void \hyperlink{classKeyboard_a6c6492921a44b4a4ab7e96566381353c}{notify\+Event\+Manager} (const irr\+::\+S\+Event \&event)
+\begin{DoxyCompactList}\small\item\em notify\+Event\+Manager \end{DoxyCompactList}\item 
+irr\+::u32 \hyperlink{classKeyboard_ac8fe530866f42dd3a62ea66054bc148b}{get\+Player\+ID} (void) const
+\begin{DoxyCompactList}\small\item\em get\+Player\+ID \end{DoxyCompactList}\item 
+irr\+::u32 \hyperlink{classKeyboard_a8bc4a7d865e268c0d126aa3f0a913bbb}{get\+Keyboard\+ID} (void) const
+\begin{DoxyCompactList}\small\item\em get\+Keyboard\+ID \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handle client keyboard event. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classKeyboard_abb54d55e7d65dd6ef017352fdf5570c6}\label{classKeyboard_abb54d55e7d65dd6ef017352fdf5570c6}} 
+\index{Keyboard@{Keyboard}!Keyboard@{Keyboard}}
+\index{Keyboard@{Keyboard}!Keyboard@{Keyboard}}
+\subsubsection{\texorpdfstring{Keyboard()}{Keyboard()}}
+{\footnotesize\ttfamily Keyboard\+::\+Keyboard (\begin{DoxyParamCaption}\item[{const irr\+::u32}]{keyboard\+ID,  }\item[{const irr\+::u32}]{player\+ID,  }\item[{config\+::\+Control\+Player}]{control }\end{DoxyParamCaption})}
+
+
+
+Contructor. 
+
+Build the class
+
+
+\begin{DoxyParams}{Parameters}
+{\em keyboard\+ID} & Define the id of keyboard\\
+\hline
+{\em player\+ID} & Define the id of player\\
+\hline
+{\em control} & Link the control to the \hyperlink{classKeyboard}{Keyboard} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classKeyboard_af6a99ec66c8c722a45b967bf79167038}\label{classKeyboard_af6a99ec66c8c722a45b967bf79167038}} 
+\index{Keyboard@{Keyboard}!````~Keyboard@{$\sim$\+Keyboard}}
+\index{````~Keyboard@{$\sim$\+Keyboard}!Keyboard@{Keyboard}}
+\subsubsection{\texorpdfstring{$\sim$\+Keyboard()}{~Keyboard()}}
+{\footnotesize\ttfamily Keyboard\+::$\sim$\+Keyboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Destroy the class 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classKeyboard_a8bc4a7d865e268c0d126aa3f0a913bbb}\label{classKeyboard_a8bc4a7d865e268c0d126aa3f0a913bbb}} 
+\index{Keyboard@{Keyboard}!get\+Keyboard\+ID@{get\+Keyboard\+ID}}
+\index{get\+Keyboard\+ID@{get\+Keyboard\+ID}!Keyboard@{Keyboard}}
+\subsubsection{\texorpdfstring{get\+Keyboard\+I\+D()}{getKeyboardID()}}
+{\footnotesize\ttfamily Unsigned\+Int Keyboard\+::get\+Keyboard\+ID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Keyboard\+ID 
+
+Return \+\_\+keyboard\+ID \mbox{\Hypertarget{classKeyboard_ac8fe530866f42dd3a62ea66054bc148b}\label{classKeyboard_ac8fe530866f42dd3a62ea66054bc148b}} 
+\index{Keyboard@{Keyboard}!get\+Player\+ID@{get\+Player\+ID}}
+\index{get\+Player\+ID@{get\+Player\+ID}!Keyboard@{Keyboard}}
+\subsubsection{\texorpdfstring{get\+Player\+I\+D()}{getPlayerID()}}
+{\footnotesize\ttfamily Unsigned\+Int Keyboard\+::get\+Player\+ID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Player\+ID 
+
+Return \+\_\+playeriD \mbox{\Hypertarget{classKeyboard_a6c6492921a44b4a4ab7e96566381353c}\label{classKeyboard_a6c6492921a44b4a4ab7e96566381353c}} 
+\index{Keyboard@{Keyboard}!notify\+Event\+Manager@{notify\+Event\+Manager}}
+\index{notify\+Event\+Manager@{notify\+Event\+Manager}!Keyboard@{Keyboard}}
+\subsubsection{\texorpdfstring{notify\+Event\+Manager()}{notifyEventManager()}}
+{\footnotesize\ttfamily void Keyboard\+::notify\+Event\+Manager (\begin{DoxyParamCaption}\item[{const irr\+::\+S\+Event \&}]{event }\end{DoxyParamCaption})}
+
+
+
+notify\+Event\+Manager 
+
+Handle the event and send the event in the Queue
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & event sent by Onevent \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classKeyboard_ad6974153a0c29b55c1b8765d0d6ccbfa}\label{classKeyboard_ad6974153a0c29b55c1b8765d0d6ccbfa}} 
+\index{Keyboard@{Keyboard}!On\+Event@{On\+Event}}
+\index{On\+Event@{On\+Event}!Keyboard@{Keyboard}}
+\subsubsection{\texorpdfstring{On\+Event()}{OnEvent()}}
+{\footnotesize\ttfamily bool Keyboard\+::\+On\+Event (\begin{DoxyParamCaption}\item[{const irr\+::\+S\+Event \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+On\+Event. 
+
+Call the notify manager
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & event sent by irrlicht \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/event/\hyperlink{Keyboard_8hh}{Keyboard.\+hh}\item 
+src/event/Keyboard.\+cpp\end{DoxyCompactItemize}

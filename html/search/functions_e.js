@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['what',['what',['../classerror_1_1Exception.html#a30163f5666745344a3aeba609727fb5a',1,'error::Exception']]],
-  ['window',['Window',['../classWindow.html#a25fd6af55e81b781b132166f77daf77e',1,'Window']]]
+  ['text',['Text',['../classText.html#a00ba9f4a2c3ca172e17433d2ceda4d55',1,'Text']]],
+  ['to_5fwstring',['to_WString',['../classScoreScene.html#a7cd50a0bd9be501c08f3f2855d61830e',1,'ScoreScene']]]
 ];
