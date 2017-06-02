@@ -12,14 +12,14 @@ where cameras behaviour is defined
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classCamera_a4ffc956956f49716d7fa3bff2591cd3a}{Camera} (irr\+::scene\+::\+I\+Camera\+Scene\+Node $\ast$const cam)
+\hyperlink{classCamera_a09f1f6b6619c3d82e9a7f4b6d6942783}{Camera} (irr\+::scene\+::\+I\+Camera\+Scene\+Node $\ast$cam=N\+U\+LL)
 \begin{DoxyCompactList}\small\item\em instanciate \hyperlink{classCamera}{Camera} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classCamera_ad1897942d0ccf91052386388a497349f}\label{classCamera_ad1897942d0ccf91052386388a497349f}} 
 \hyperlink{classCamera_ad1897942d0ccf91052386388a497349f}{$\sim$\+Camera} ()
 \begin{DoxyCompactList}\small\item\em Destructor... \end{DoxyCompactList}\item 
-void \hyperlink{classCamera_ad7d58a7f1ab2b31f120a0bdad677b300}{change\+Position} (irr\+::core\+::vector3df move)
+void \hyperlink{classCamera_a8d0d954a835c256c3dd6fa627c65b53f}{change\+Position} (Vector3d move)
 \begin{DoxyCompactList}\small\item\em change absolute camera position \end{DoxyCompactList}\item 
-void \hyperlink{classCamera_a8c11f289be05671191a4f91288155685}{change\+Sight} (irr\+::core\+::vector3df new\+Target)
+void \hyperlink{classCamera_ae8cb8b8dd19b4b3a1d4fe64c60615b03}{change\+Sight} (Vector3d new\+Target)
 \begin{DoxyCompactList}\small\item\em change camera sight \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -27,11 +27,11 @@ void \hyperlink{classCamera_a8c11f289be05671191a4f91288155685}{change\+Sight} (i
 where cameras behaviour is defined 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classCamera_a4ffc956956f49716d7fa3bff2591cd3a}\label{classCamera_a4ffc956956f49716d7fa3bff2591cd3a}} 
+\mbox{\Hypertarget{classCamera_a09f1f6b6619c3d82e9a7f4b6d6942783}\label{classCamera_a09f1f6b6619c3d82e9a7f4b6d6942783}} 
 \index{Camera@{Camera}!Camera@{Camera}}
 \index{Camera@{Camera}!Camera@{Camera}}
 \subsubsection{\texorpdfstring{Camera()}{Camera()}}
-{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{irr\+::scene\+::\+I\+Camera\+Scene\+Node $\ast$const}]{cam }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{irr\+::scene\+::\+I\+Camera\+Scene\+Node $\ast$}]{cam = {\ttfamily NULL} }\end{DoxyParamCaption})}
 
 
 
@@ -45,11 +45,11 @@ instanciate \hyperlink{classCamera}{Camera}
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classCamera_ad7d58a7f1ab2b31f120a0bdad677b300}\label{classCamera_ad7d58a7f1ab2b31f120a0bdad677b300}} 
+\mbox{\Hypertarget{classCamera_a8d0d954a835c256c3dd6fa627c65b53f}\label{classCamera_a8d0d954a835c256c3dd6fa627c65b53f}} 
 \index{Camera@{Camera}!change\+Position@{change\+Position}}
 \index{change\+Position@{change\+Position}!Camera@{Camera}}
 \subsubsection{\texorpdfstring{change\+Position()}{changePosition()}}
-{\footnotesize\ttfamily void Camera\+::change\+Position (\begin{DoxyParamCaption}\item[{irr\+::core\+::vector3df}]{move }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Camera\+::change\+Position (\begin{DoxyParamCaption}\item[{Vector3d}]{move }\end{DoxyParamCaption})}
 
 
 
@@ -60,11 +60,11 @@ change absolute camera position
 {\em move} & \+: irrlicht 3D vector to positions camera \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classCamera_a8c11f289be05671191a4f91288155685}\label{classCamera_a8c11f289be05671191a4f91288155685}} 
+\mbox{\Hypertarget{classCamera_ae8cb8b8dd19b4b3a1d4fe64c60615b03}\label{classCamera_ae8cb8b8dd19b4b3a1d4fe64c60615b03}} 
 \index{Camera@{Camera}!change\+Sight@{change\+Sight}}
 \index{change\+Sight@{change\+Sight}!Camera@{Camera}}
 \subsubsection{\texorpdfstring{change\+Sight()}{changeSight()}}
-{\footnotesize\ttfamily void Camera\+::change\+Sight (\begin{DoxyParamCaption}\item[{irr\+::core\+::vector3df}]{new\+Target }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Camera\+::change\+Sight (\begin{DoxyParamCaption}\item[{Vector3d}]{new\+Target }\end{DoxyParamCaption})}
 
 
 

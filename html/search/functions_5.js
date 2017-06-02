@@ -4,7 +4,7 @@ var searchData=
   ['gameloadscene',['GameLoadScene',['../classGameLoadScene.html#a225786d3826577aa3743164b6262dc2b',1,'GameLoadScene']]],
   ['gamemenureceiver',['GameMenuReceiver',['../classGameMenuReceiver.html#a5dd735dbdeddd9f11a999c9f0c4210e8',1,'GameMenuReceiver']]],
   ['gamemenuscene',['GameMenuScene',['../classGameMenuScene.html#a990633f8037ab2691f0aca251f3d89ee',1,'GameMenuScene']]],
-  ['gamenewreceiver',['GameNewReceiver',['../classGameNewReceiver.html#a41816905e385ac8e17849d599106b930',1,'GameNewReceiver']]],
+  ['gamenewreceiver',['GameNewReceiver',['../classGameNewReceiver.html#a8f506ac1b4d6841b446ad239b615c079',1,'GameNewReceiver']]],
   ['gamenewscene',['GameNewScene',['../classGameNewScene.html#af482b13a2d9e315ef39a6e41293bf4fb',1,'GameNewScene']]],
   ['gameonlinescene',['GameOnlineScene',['../classGameOnlineScene.html#a057362d043c386aa2b6789baf548fa09',1,'GameOnlineScene']]],
   ['gamesimulationscene',['GameSimulationScene',['../classGameSimulationScene.html#a6983b2c511d45278121bcf62151fbb19',1,'GameSimulationScene']]],

@@ -11,7 +11,7 @@ var searchData=
   ['scorescene_2ehh',['ScoreScene.hh',['../ScoreScene_8hh.html',1,'']]],
   ['setcurrentanim',['setCurrentAnim',['../classModel3d.html#a29eeaa6769b0c21268f4704ac2d404b7',1,'Model3d']]],
   ['setcurrentscene',['setCurrentScene',['../classWindow.html#ac2515da6ca76f5f4466c7421e95cddfe',1,'Window']]],
-  ['setgravity',['setGravity',['../classGravity.html#adc8738cabe1e73c29697f7065d1273e0',1,'Gravity']]],
+  ['setgravity',['setGravity',['../classGravity.html#ad908c8b212d4239cfb504560f5e24fd6',1,'Gravity']]],
   ['setlevel',['setLevel',['../classGame.html#a9b3ac5684d403e8b6ecdc83f268c420f',1,'Game']]],
   ['setposition',['setPosition',['../classAObject.html#ab4a2dc3dad1a54ff80d59c42a51479fb',1,'AObject']]],
   ['setrotation',['setRotation',['../classAObject.html#a38ba628dcec6be910ce9d3c9f0de0de7',1,'AObject']]],

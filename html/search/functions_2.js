@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['camera',['Camera',['../classCamera.html#a4ffc956956f49716d7fa3bff2591cd3a',1,'Camera']]],
-  ['changeposition',['changePosition',['../classCamera.html#ad7d58a7f1ab2b31f120a0bdad677b300',1,'Camera']]],
+  ['camera',['Camera',['../classCamera.html#a09f1f6b6619c3d82e9a7f4b6d6942783',1,'Camera']]],
+  ['changeposition',['changePosition',['../classCamera.html#a8d0d954a835c256c3dd6fa627c65b53f',1,'Camera']]],
   ['changescene',['changeScene',['../classWindow.html#af1b2a635ce47d9e841445b8b866a3b28',1,'Window']]],
   ['changescore',['changeScore',['../classScoreManager.html#a01a80dda216fa5b83b58bca8de49114e',1,'ScoreManager']]],
-  ['changesight',['changeSight',['../classCamera.html#a8c11f289be05671191a4f91288155685',1,'Camera']]],
+  ['changesight',['changeSight',['../classCamera.html#ae8cb8b8dd19b4b3a1d4fe64c60615b03',1,'Camera']]],
   ['close',['close',['../classWindow.html#a35055c04498121d39741bfcd5082705b',1,'Window']]],
   ['configmanager',['ConfigManager',['../classConfigManager.html#a7d3d7c10423d969f7544509f6fcca32f',1,'ConfigManager']]],
   ['controller',['Controller',['../classController.html#ac4a14971762c0d091606211711762273',1,'Controller']]],
