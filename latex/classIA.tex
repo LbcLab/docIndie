@@ -19,7 +19,9 @@ represents the AI that is implemented in Ninja Gauntlet
 \begin{DoxyCompactList}\small\item\em Destructs the AI. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classIA_a81df51f46b3b30ff6bece457d094b3fc}\label{classIA_a81df51f46b3b30ff6bece457d094b3fc}} 
 void \hyperlink{classIA_a81df51f46b3b30ff6bece457d094b3fc}{play} (void) const
-\begin{DoxyCompactList}\small\item\em Calculates the net action of the AI This calls the loop() function defined in the lua script. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Calculates the net action of the AI This calls the loop() function defined in the lua script. \end{DoxyCompactList}\item 
+void \hyperlink{classIA_ac2e4429cbb6cfba8c5f1b99d04275ce5}{change\+Direction} (int x, int y)
+\begin{DoxyCompactList}\small\item\em change AI direction \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -28,7 +30,19 @@ static int \hyperlink{classIA_a1d8f2d91effd6eab9610763bb324d8cd}{get\+Life} (lua
 \begin{DoxyCompactList}\small\item\em Accessor on AI life. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classIA_af8df32744539390d12d6748f0edf0311}\label{classIA_af8df32744539390d12d6748f0edf0311}} 
 static int \hyperlink{classIA_af8df32744539390d12d6748f0edf0311}{ping} (lua\+\_\+\+State $\ast$state)
-\begin{DoxyCompactList}\small\item\em debug function It will list parameters you passed through it \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em debug function It will list parameters you passed through it \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIA_a2ed64a5d1cf26fba609bf2208622957c}\label{classIA_a2ed64a5d1cf26fba609bf2208622957c}} 
+static int \hyperlink{classIA_a2ed64a5d1cf26fba609bf2208622957c}{get\+Nearest\+Player} (lua\+\_\+\+State $\ast$state)
+\begin{DoxyCompactList}\small\item\em get the id of the nearest player \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIA_a23d578bd33cd4260b9381116d5979c2e}\label{classIA_a23d578bd33cd4260b9381116d5979c2e}} 
+static int \hyperlink{classIA_a23d578bd33cd4260b9381116d5979c2e}{move} (lua\+\_\+\+State $\ast$state)
+\begin{DoxyCompactList}\small\item\em move AI in a direction \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIA_a7b69140525af0e287742977cd803927f}\label{classIA_a7b69140525af0e287742977cd803927f}} 
+static int \hyperlink{classIA_a7b69140525af0e287742977cd803927f}{follow\+Player} (lua\+\_\+\+State $\ast$state)
+\begin{DoxyCompactList}\small\item\em follow a player giving its id \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIA_a528b38ddf9f67ec6d226969360adab46}\label{classIA_a528b38ddf9f67ec6d226969360adab46}} 
+static int \hyperlink{classIA_a528b38ddf9f67ec6d226969360adab46}{get\+Position} (lua\+\_\+\+State $\ast$state)
+\begin{DoxyCompactList}\small\item\em get AI position \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -48,6 +62,26 @@ Constructs the AI.
 
 \begin{DoxyParams}{Parameters}
 {\em path} & The path of the related lua script \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classIA_ac2e4429cbb6cfba8c5f1b99d04275ce5}\label{classIA_ac2e4429cbb6cfba8c5f1b99d04275ce5}} 
+\index{IA@{IA}!change\+Direction@{change\+Direction}}
+\index{change\+Direction@{change\+Direction}!IA@{IA}}
+\subsubsection{\texorpdfstring{change\+Direction()}{changeDirection()}}
+{\footnotesize\ttfamily void I\+A\+::change\+Direction (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+change AI direction 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The absciss \\
+\hline
+{\em y} & The ordinate \\
 \hline
 \end{DoxyParams}
 

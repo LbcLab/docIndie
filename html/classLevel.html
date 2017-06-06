@@ -93,6 +93,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7fbf2259277a0be256738886cd82796a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel.html#a7fbf2259277a0be256738886cd82796a">changeDirection</a> (const UnsignedInt &amp;playerID, const Vector3d &amp;position, Float moveVertical, Float moveHorizontal)</td></tr>
 <tr class="memdesc:a7fbf2259277a0be256738886cd82796a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the player's position by adding the position passed as parameter.  <a href="#a7fbf2259277a0be256738886cd82796a">More...</a><br /></td></tr>
 <tr class="separator:a7fbf2259277a0be256738886cd82796a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce4503fce6dd9f1a96036a50743d6c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel.html#a0ce4503fce6dd9f1a96036a50743d6c6">isDeadPlayer</a> (const UnsignedInt &amp;playerID)</td></tr>
+<tr class="memdesc:a0ce4503fce6dd9f1a96036a50743d6c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the player's life.  <a href="#a0ce4503fce6dd9f1a96036a50743d6c6">More...</a><br /></td></tr>
+<tr class="separator:a0ce4503fce6dd9f1a96036a50743d6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5188de55912386ca786cdbe093ca2af4"><td class="memItemLeft" align="right" valign="top"><a id="a5188de55912386ca786cdbe093ca2af4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel.html#a5188de55912386ca786cdbe093ca2af4">print</a> ()</td></tr>
 <tr class="memdesc:a5188de55912386ca786cdbe093ca2af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">print objects such as AHero, AMonster <a class="el" href="classAPickable.html" title="Create a pickable AObject. ">APickable</a>, ... <br /></td></tr>
@@ -153,6 +156,32 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   <table class="params">
     <tr><td class="paramname">playerID</td><td>The player's id who will move. </td></tr>
     <tr><td class="paramname">position</td><td>The player's id who will move. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0ce4503fce6dd9f1a96036a50743d6c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ce4503fce6dd9f1a96036a50743d6c6">&#9670;&nbsp;</a></span>isDeadPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Level::isDeadPlayer </td>
+          <td>(</td>
+          <td class="paramtype">const UnsignedInt &amp;&#160;</td>
+          <td class="paramname"><em>playerID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check the player's life. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playerID</td><td>The player's id who have to be checked </td></tr>
   </table>
   </dd>
 </dl>

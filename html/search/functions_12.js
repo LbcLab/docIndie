@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['what',['what',['../classerror_1_1Exception.html#a30163f5666745344a3aeba609727fb5a',1,'error::Exception']]],
-  ['window',['Window',['../classWindow.html#a25fd6af55e81b781b132166f77daf77e',1,'Window']]]
+  ['update',['update',['../classAScene.html#a5f13212b503601ef58b8387b36c5796c',1,'AScene::update()'],['../classGameSimulationScene.html#ad8aa00e84395730039cfb6ef926917ea',1,'GameSimulationScene::update()']]],
+  ['updatecamera',['updateCamera',['../classAScene.html#a3d7821a7bff4304027e22b27bebf4088',1,'AScene::updateCamera()'],['../classGameSimulationScene.html#aae1a8d0e8d3f8b1cc51c9291b96c52ec',1,'GameSimulationScene::updateCamera()'],['../classIntroScene.html#aea7d58d3aab09737644be7d3f049338e',1,'IntroScene::updateCamera()']]]
 ];

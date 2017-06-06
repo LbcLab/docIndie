@@ -15,6 +15,7 @@ var searchData=
   ['introscene',['IntroScene',['../classIntroScene.html',1,'IntroScene'],['../classIntroScene.html#a3691b51409f65b40f0c84008e49ef32b',1,'IntroScene::IntroScene()']]],
   ['introscene_2ehh',['IntroScene.hh',['../IntroScene_8hh.html',1,'']]],
   ['inventory_2ehh',['Inventory.hh',['../Inventory_8hh.html',1,'']]],
+  ['isdeadplayer',['isDeadPlayer',['../classLevel.html#a0ce4503fce6dd9f1a96036a50743d6c6',1,'Level']]],
   ['isopen',['isOpen',['../classWindow.html#a761d614931fb5a5daa70e4f580c3e78e',1,'Window']]],
   ['isrunning',['isRunning',['../classWindow.html#a53329abfc23df8a908ce7002c88dc244',1,'Window']]],
   ['iwidget',['IWidget',['../classIWidget.html',1,'']]],

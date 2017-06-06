@@ -13,5 +13,6 @@ var searchData=
   ['modelsmanager',['ModelsManager',['../classModelsManager.html',1,'ModelsManager'],['../classModelsManager.html#a48f911933ce0a38aa78667e34e8098f4',1,'ModelsManager::ModelsManager()']]],
   ['modelsmanager_2ehh',['ModelsManager.hh',['../ModelsManager_8hh.html',1,'']]],
   ['monk_2ehh',['Monk.hh',['../Monk_8hh.html',1,'']]],
+  ['move',['move',['../classIA.html#a23d578bd33cd4260b9381116d5979c2e',1,'IA']]],
   ['muscledmutant_2ehh',['MuscledMutant.hh',['../MuscledMutant_8hh.html',1,'']]]
 ];
