@@ -38,6 +38,7 @@ var searchData=
   ['getplayers',['getPlayers',['../classGameNewScene.html#a2fb7cacfacbf5c565c3e2f98bd06aec4',1,'GameNewScene']]],
   ['getplayersconfigurations',['getPlayersConfigurations',['../classGameNewScene.html#a8ec7d1675e6be7490aee15126d8f2026',1,'GameNewScene']]],
   ['getplayerscore',['getPlayerScore',['../classScoreManager.html#abc6c1d76fdcc17f1b8ebe4c7bf5550e2',1,'ScoreManager']]],
+  ['getposition',['getPosition',['../classModel3d.html#ac40de3ff1527b92c7eadc80766c87824',1,'Model3d']]],
   ['getsavesnames',['getSavesNames',['../classSaveManager.html#aa6efa1546ec4f0d2d0212cbf49f3fb3a',1,'SaveManager']]],
   ['getscores',['getScores',['../classScoreScene.html#af82d6c841dc42c42d83202d2c7ddf8c9',1,'ScoreScene']]],
   ['getseverity',['getSeverity',['../classerror_1_1Exception.html#a05f9c8eecf03bb0ca05d5fe2ec7fb36a',1,'error::Exception']]],

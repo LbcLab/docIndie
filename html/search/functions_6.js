@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['handleais',['handleAIs',['../classAIManager.html#a2222883bde2aaa534202f2bf1366e18d',1,'AIManager']]]
+  ['handle',['handle',['../classAIManager.html#aeb412f42b60c126594377d739440b632',1,'AIManager']]]
 ];

@@ -1,8 +1,9 @@
 var searchData=
 [
   ['acharacter_2ehh',['ACharacter.hh',['../ACharacter_8hh.html',1,'']]],
-  ['addai',['addAI',['../classAIManager.html#aa50f2de11ad8c59ec56a505579565165',1,'AIManager']]],
+  ['add',['add',['../classAIManager.html#a4722a3719db2ff5ee2f754b539ee2c17',1,'AIManager']]],
   ['addmonsters',['addMonsters',['../classGameSimulationScene.html#a4ca88431209fea3a0050e0e5b63b60eb',1,'GameSimulationScene']]],
+  ['addobjects',['addObjects',['../classGameSimulationScene.html#a6bfca51ab0bb01f29c395aa3ab6448fc',1,'GameSimulationScene']]],
   ['addplayers',['addPlayers',['../classGameSimulationScene.html#a5712662af6ebc293ba8a58e5a717a921',1,'GameSimulationScene']]],
   ['addscore',['addScore',['../classScoreManager.html#a9fba97d65a88e67a2d219d2ba36af111',1,'ScoreManager']]],
   ['addwidget',['addWidget',['../classAScene.html#aa711b6068dd8dee262160eedfd96ad02',1,'AScene']]],

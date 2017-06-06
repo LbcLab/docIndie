@@ -7,6 +7,7 @@ var searchData=
   ['changescene',['changeScene',['../classWindow.html#af1b2a635ce47d9e841445b8b866a3b28',1,'Window']]],
   ['changescore',['changeScore',['../classScoreManager.html#a01a80dda216fa5b83b58bca8de49114e',1,'ScoreManager']]],
   ['changesight',['changeSight',['../classCamera.html#ae8cb8b8dd19b4b3a1d4fe64c60615b03',1,'Camera']]],
+  ['clear',['clear',['../classAIManager.html#a332f87ed903a2437cb9694bd79fd593e',1,'AIManager']]],
   ['click',['click',['../classButton.html#aab1887f1acb0b960b6a7df8bad915551',1,'Button::click()'],['../classIWidget.html#aad57c02a26653bff50e9db5910bd6b04',1,'IWidget::click()']]],
   ['close',['close',['../classWindow.html#a35055c04498121d39741bfcd5082705b',1,'Window']]],
   ['configmanager',['ConfigManager',['../classConfigManager.html',1,'ConfigManager'],['../classConfigManager.html#a7d3d7c10423d969f7544509f6fcca32f',1,'ConfigManager::ConfigManager()']]],
