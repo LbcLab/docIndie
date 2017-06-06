@@ -73,85 +73,72 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab8bb791be648b9b91db44aa11f6e8e14"><td class="memItemLeft" align="right" valign="top"><a id="ab8bb791be648b9b91db44aa11f6e8e14"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#ab8bb791be648b9b91db44aa11f6e8e14">SaveManager</a> ()</td></tr>
-<tr class="memdesc:ab8bb791be648b9b91db44aa11f6e8e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor. <br /></td></tr>
-<tr class="separator:ab8bb791be648b9b91db44aa11f6e8e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0661d6a8f9c0330755a8e03f8631992"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classLevel.html">Level</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#aa0661d6a8f9c0330755a8e03f8631992">loadLevel</a> (const String &amp;levelName)</td></tr>
-<tr class="memdesc:aa0661d6a8f9c0330755a8e03f8631992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow you to load a game previously save.  <a href="#aa0661d6a8f9c0330755a8e03f8631992">More...</a><br /></td></tr>
-<tr class="separator:aa0661d6a8f9c0330755a8e03f8631992"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fd6a2e996ee848bfec385a288f44461"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#a3fd6a2e996ee848bfec385a288f44461">saveLevel</a> (const std::shared_ptr&lt; <a class="el" href="classLevel.html">Level</a> &gt; &amp;level, const String &amp;fileName)</td></tr>
-<tr class="memdesc:a3fd6a2e996ee848bfec385a288f44461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow you to save the object <a class="el" href="classGame.html" title="The Game class. ">Game</a> passed as parameter during the construction.  <a href="#a3fd6a2e996ee848bfec385a288f44461">More...</a><br /></td></tr>
-<tr class="separator:a3fd6a2e996ee848bfec385a288f44461"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94d97899e285c0bbd46f4fdb42767f79"><td class="memItemLeft" align="right" valign="top"><a id="a94d97899e285c0bbd46f4fdb42767f79"></a>
-const std::shared_ptr&lt; <a class="el" href="classGame.html">Game</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#a94d97899e285c0bbd46f4fdb42767f79">getGame</a> () const</td></tr>
-<tr class="memdesc:a94d97899e285c0bbd46f4fdb42767f79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter on the game's variable. <br /></td></tr>
-<tr class="separator:a94d97899e285c0bbd46f4fdb42767f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe4905980e87fcd68e10471d7cf3cbc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#a9fe4905980e87fcd68e10471d7cf3cbc">SaveManager</a> (const std::string &amp;)</td></tr>
+<tr class="memdesc:a9fe4905980e87fcd68e10471d7cf3cbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="#a9fe4905980e87fcd68e10471d7cf3cbc">More...</a><br /></td></tr>
+<tr class="separator:a9fe4905980e87fcd68e10471d7cf3cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab9679d2cd11cef0b0710fdbbdf9bf7"><td class="memItemLeft" align="right" valign="top"><a id="a1ab9679d2cd11cef0b0710fdbbdf9bf7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#a1ab9679d2cd11cef0b0710fdbbdf9bf7">loadGames</a> ()</td></tr>
+<tr class="memdesc:a1ab9679d2cd11cef0b0710fdbbdf9bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow you to load a game previously save. <br /></td></tr>
+<tr class="separator:a1ab9679d2cd11cef0b0710fdbbdf9bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43beb7dd453f37de97c3a8de3b1142ab"><td class="memItemLeft" align="right" valign="top"><a id="a43beb7dd453f37de97c3a8de3b1142ab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#a43beb7dd453f37de97c3a8de3b1142ab">saveGames</a> ()</td></tr>
+<tr class="memdesc:a43beb7dd453f37de97c3a8de3b1142ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow you to save all the games previously load. <br /></td></tr>
+<tr class="separator:a43beb7dd453f37de97c3a8de3b1142ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b950ce71223640fe56e8d404fe3cd2f"><td class="memItemLeft" align="right" valign="top"><a id="a7b950ce71223640fe56e8d404fe3cd2f"></a>
+const std::shared_ptr&lt; <a class="el" href="classGame.html">Game</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#a7b950ce71223640fe56e8d404fe3cd2f">getGame</a> ()</td></tr>
+<tr class="memdesc:a7b950ce71223640fe56e8d404fe3cd2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointeur to the current game. <br /></td></tr>
+<tr class="separator:a7b950ce71223640fe56e8d404fe3cd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6efa1546ec4f0d2d0212cbf49f3fb3a"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#aa6efa1546ec4f0d2d0212cbf49f3fb3a">getSavesNames</a> ()</td></tr>
+<tr class="memdesc:aa6efa1546ec4f0d2d0212cbf49f3fb3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow you to get the names of all the saves.  <a href="#aa6efa1546ec4f0d2d0212cbf49f3fb3a">More...</a><br /></td></tr>
+<tr class="separator:aa6efa1546ec4f0d2d0212cbf49f3fb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classSaveManager.html" title="The SaveManager class. ">SaveManager</a> class. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa0661d6a8f9c0330755a8e03f8631992"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0661d6a8f9c0330755a8e03f8631992">&#9670;&nbsp;</a></span>loadLevel()</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9fe4905980e87fcd68e10471d7cf3cbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fe4905980e87fcd68e10471d7cf3cbc">&#9670;&nbsp;</a></span>SaveManager()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classLevel.html">Level</a> &gt; SaveManager::loadLevel </td>
+          <td class="memname">SaveManager::SaveManager </td>
           <td>(</td>
-          <td class="paramtype">const String &amp;&#160;</td>
-          <td class="paramname"><em>levelName</em></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>folder</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Allow you to load a game previously save. </p>
+<p>The constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">levelName</td><td>The path to the game's file </td></tr>
+    <tr><td class="paramname">folder</td><td>name The path to the folder were all XML games are </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointeur to a <a class="el" href="classGame.html" title="The Game class. ">Game</a> object </dd></dl>
 
 </div>
 </div>
-<a id="a3fd6a2e996ee848bfec385a288f44461"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fd6a2e996ee848bfec385a288f44461">&#9670;&nbsp;</a></span>saveLevel()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa6efa1546ec4f0d2d0212cbf49f3fb3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6efa1546ec4f0d2d0212cbf49f3fb3a">&#9670;&nbsp;</a></span>getSavesNames()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SaveManager::saveLevel </td>
+          <td class="memname">const std::vector&lt; std::string &gt; &amp; SaveManager::getSavesNames </td>
           <td>(</td>
-          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classLevel.html">Level</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>level</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">const String &amp;&#160;</td>
-          <td class="paramname"><em>fileName</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Allow you to save the object <a class="el" href="classGame.html" title="The Game class. ">Game</a> passed as parameter during the construction. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">level</td><td>Reference to smart pointer that points to level to be saved </td></tr>
-    <tr><td class="paramname">fileName</td><td>Filename path where to save </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Allow you to get the names of all the saves. </p>
+<dl class="section return"><dt>Returns</dt><dd>A vector with all the names </dd></dl>
 
 </div>
 </div>

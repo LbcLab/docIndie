@@ -18,25 +18,28 @@ Inheritance diagram for Button\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classButton_a5729094ff8ec4ce3e64e6691c297983c}{Button} (const Rect \&rect, const wchar\+\_\+t $\ast$text, const wchar\+\_\+t $\ast$tooltext, enum indie\+::\+G\+U\+I\+Button\+Id id, const wchar\+\_\+t $\ast$background=L\char`\"{}assets/menus/transparent.\+png\char`\"{})
+\hyperlink{classButton_a63f049e58e9871b0060446080ef5deba}{Button} (const Rect \&rect, const wchar\+\_\+t $\ast$text, const wchar\+\_\+t $\ast$tooltext, enum indie\+::\+G\+U\+I\+Button\+Id id, const wchar\+\_\+t $\ast$background\+Up=L\char`\"{}assets/menus/transparent.\+png\char`\"{}, const wchar\+\_\+t $\ast$background\+Down=L\char`\"{}assets/menus/transparent.\+png\char`\"{}, bool is\+Up=true)
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classButton_a2a001eb9c3cc8ae54768a850dd345002}\label{classButton_a2a001eb9c3cc8ae54768a850dd345002}} 
 \hyperlink{classButton_a2a001eb9c3cc8ae54768a850dd345002}{$\sim$\+Button} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classButton_a614921b7355d17e6074b44fa34862c6e}\label{classButton_a614921b7355d17e6074b44fa34862c6e}} 
 void \hyperlink{classButton_a614921b7355d17e6074b44fa34862c6e}{print} ()
-\begin{DoxyCompactList}\small\item\em Print the button into the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Print the button into the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_aab1887f1acb0b960b6a7df8bad915551}\label{classButton_aab1887f1acb0b960b6a7df8bad915551}} 
+void \hyperlink{classButton_aab1887f1acb0b960b6a7df8bad915551}{click} (const bool \&up)
+\begin{DoxyCompactList}\small\item\em Callback function for click. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Represent a button in the user interface. 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classButton_a5729094ff8ec4ce3e64e6691c297983c}\label{classButton_a5729094ff8ec4ce3e64e6691c297983c}} 
+\mbox{\Hypertarget{classButton_a63f049e58e9871b0060446080ef5deba}\label{classButton_a63f049e58e9871b0060446080ef5deba}} 
 \index{Button@{Button}!Button@{Button}}
 \index{Button@{Button}!Button@{Button}}
 \subsubsection{\texorpdfstring{Button()}{Button()}}
-{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{const Rect \&}]{rect,  }\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{const wchar\+\_\+t $\ast$}]{tooltext,  }\item[{enum indie\+::\+G\+U\+I\+Button\+Id}]{id,  }\item[{const wchar\+\_\+t $\ast$}]{background = {\ttfamily L\char`\"{}assets/menus/transparent.png\char`\"{}} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{const Rect \&}]{rect,  }\item[{const wchar\+\_\+t $\ast$}]{text,  }\item[{const wchar\+\_\+t $\ast$}]{tooltext,  }\item[{enum indie\+::\+G\+U\+I\+Button\+Id}]{id,  }\item[{const wchar\+\_\+t $\ast$}]{background\+Up = {\ttfamily L\char`\"{}assets/menus/transparent.png\char`\"{}},  }\item[{const wchar\+\_\+t $\ast$}]{background\+Down = {\ttfamily L\char`\"{}assets/menus/transparent.png\char`\"{}},  }\item[{bool}]{is\+Up = {\ttfamily true} }\end{DoxyParamCaption})}
 
 
 

@@ -24,10 +24,8 @@ Inheritance diagram for Level\+:\begin{figure}[H]
 \mbox{\Hypertarget{classLevel_a249eac1e8f19ff44134efa5e986feaca}\label{classLevel_a249eac1e8f19ff44134efa5e986feaca}} 
 \hyperlink{classLevel_a249eac1e8f19ff44134efa5e986feaca}{$\sim$\+Level} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
-void \hyperlink{classLevel_a11e0cf9684245fb8ed9b880f7924b38a}{move\+Player} (const Unsigned\+Int \&player\+ID, const Vector3d \&position, Float move\+Vertical, Float move\+Horizontal)
+void \hyperlink{classLevel_a7fbf2259277a0be256738886cd82796a}{change\+Direction} (const Unsigned\+Int \&player\+ID, const Vector3d \&position, Float move\+Vertical, Float move\+Horizontal)
 \begin{DoxyCompactList}\small\item\em Change the player\textquotesingle{}s position by adding the position passed as parameter. \end{DoxyCompactList}\item 
-void \hyperlink{classLevel_aa88db36cd824320cb599d913603dc2a3}{load\+Level} ()
-\item 
 \mbox{\Hypertarget{classLevel_a5188de55912386ca786cdbe093ca2af4}\label{classLevel_a5188de55912386ca786cdbe093ca2af4}} 
 void \hyperlink{classLevel_a5188de55912386ca786cdbe093ca2af4}{print} ()
 \begin{DoxyCompactList}\small\item\em print objects such as A\+Hero, A\+Monster \hyperlink{classAPickable}{A\+Pickable}, ... \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -37,23 +35,11 @@ void \hyperlink{classLevel_a5188de55912386ca786cdbe093ca2af4}{print} ()
 Represent a game\textquotesingle{}s level. 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classLevel_aa88db36cd824320cb599d913603dc2a3}\label{classLevel_aa88db36cd824320cb599d913603dc2a3}} 
-\index{Level@{Level}!load\+Level@{load\+Level}}
-\index{load\+Level@{load\+Level}!Level@{Level}}
-\subsubsection{\texorpdfstring{load\+Level()}{loadLevel()}}
-{\footnotesize\ttfamily void Level\+::load\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-load level according to X\+ML file xml is loaded thankfully to level\+Number Loading \+:
-\begin{DoxyItemize}
-\item map
-\item player
-\item monsters
-\item pickable objects 
-\end{DoxyItemize}\mbox{\Hypertarget{classLevel_a11e0cf9684245fb8ed9b880f7924b38a}\label{classLevel_a11e0cf9684245fb8ed9b880f7924b38a}} 
-\index{Level@{Level}!move\+Player@{move\+Player}}
-\index{move\+Player@{move\+Player}!Level@{Level}}
-\subsubsection{\texorpdfstring{move\+Player()}{movePlayer()}}
-{\footnotesize\ttfamily void Level\+::move\+Player (\begin{DoxyParamCaption}\item[{const Unsigned\+Int \&}]{player\+ID,  }\item[{const Vector3d \&}]{position,  }\item[{Float}]{move\+Vertical,  }\item[{Float}]{move\+Horizontal }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classLevel_a7fbf2259277a0be256738886cd82796a}\label{classLevel_a7fbf2259277a0be256738886cd82796a}} 
+\index{Level@{Level}!change\+Direction@{change\+Direction}}
+\index{change\+Direction@{change\+Direction}!Level@{Level}}
+\subsubsection{\texorpdfstring{change\+Direction()}{changeDirection()}}
+{\footnotesize\ttfamily void Level\+::change\+Direction (\begin{DoxyParamCaption}\item[{const Unsigned\+Int \&}]{player\+ID,  }\item[{const Vector3d \&}]{position,  }\item[{Float}]{move\+Vertical,  }\item[{Float}]{move\+Horizontal }\end{DoxyParamCaption})}
 
 
 

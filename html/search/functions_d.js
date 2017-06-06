@@ -1,15 +1,10 @@
 var searchData=
 [
-  ['saveconfig',['saveConfig',['../classConfigManager.html#a178e051860792271e9b1ec4434776f91',1,'ConfigManager']]],
-  ['savelevel',['saveLevel',['../classSaveManager.html#a3fd6a2e996ee848bfec385a288f44461',1,'SaveManager']]],
-  ['savemanager',['SaveManager',['../classSaveManager.html#ab8bb791be648b9b91db44aa11f6e8e14',1,'SaveManager']]],
-  ['savescores',['saveScores',['../classScoreManager.html#aa3f390fe5076324b2d457de0c43af59f',1,'ScoreManager']]],
-  ['scoremanager',['ScoreManager',['../classScoreManager.html#a4f3866ff832127664543349da5c4fbf4',1,'ScoreManager']]],
-  ['scorescene',['ScoreScene',['../classScoreScene.html#a832799285cf03c37c18c83d0adde2baa',1,'ScoreScene']]],
-  ['setcurrentanim',['setCurrentAnim',['../classModel3d.html#a29eeaa6769b0c21268f4704ac2d404b7',1,'Model3d']]],
-  ['setcurrentscene',['setCurrentScene',['../classWindow.html#ac2515da6ca76f5f4466c7421e95cddfe',1,'Window']]],
-  ['setgravity',['setGravity',['../classGravity.html#ad908c8b212d4239cfb504560f5e24fd6',1,'Gravity']]],
-  ['setlevel',['setLevel',['../classGame.html#a9b3ac5684d403e8b6ecdc83f268c420f',1,'Game']]],
-  ['setposition',['setPosition',['../classAObject.html#ab4a2dc3dad1a54ff80d59c42a51479fb',1,'AObject']]],
-  ['setrotation',['setRotation',['../classAObject.html#a38ba628dcec6be910ce9d3c9f0de0de7',1,'AObject']]]
+  ['ping',['ping',['../classIA.html#af8df32744539390d12d6748f0edf0311',1,'IA']]],
+  ['play',['play',['../classIA.html#a81df51f46b3b30ff6bece457d094b3fc',1,'IA']]],
+  ['playanimation',['playAnimation',['../classModel3d.html#a108ab9c13b7ae24cc1711c2e97fbc625',1,'Model3d']]],
+  ['playanimationsound',['playAnimationSound',['../classModel3d.html#a6ce79286c43bd4a6852c544bdad8ee18',1,'Model3d']]],
+  ['potion',['Potion',['../classPotion.html#ae01585e2601f88d03debb1a675d5bc06',1,'Potion']]],
+  ['print',['print',['../classLevel.html#a5188de55912386ca786cdbe093ca2af4',1,'Level::print()'],['../classMap.html#a9c6dc88a70dcf25e3371d8bc4ec35ad0',1,'Map::print()'],['../classAObject.html#aebbd61ad13e23fa7787a5cdf12acd4ca',1,'AObject::print()'],['../classAScene.html#a0170b6a47bb2cc189bfacb432a0b4332',1,'AScene::print()'],['../classButton.html#a614921b7355d17e6074b44fa34862c6e',1,'Button::print()'],['../classImage.html#a1c98ca475ce45aaa71e8a91a2a781ff5',1,'Image::print()'],['../classIWidget.html#ad59738ae1350ed490fdbe07cd1ab4daa',1,'IWidget::print()'],['../classModel3d.html#ab1d6c9347c05323f85e5decb7e73cd1e',1,'Model3d::print()'],['../classText.html#a351b37eb3f9f6fd591992245fcb72067',1,'Text::print()']]],
+  ['printscene',['printScene',['../classWindow.html#a859f97c29b98a58809d485f0cf5d36d7',1,'Window']]]
 ];

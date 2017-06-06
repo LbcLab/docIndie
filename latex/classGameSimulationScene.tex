@@ -18,16 +18,31 @@ Inheritance diagram for Game\+Simulation\+Scene\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGameSimulationScene_a6983b2c511d45278121bcf62151fbb19}\label{classGameSimulationScene_a6983b2c511d45278121bcf62151fbb19}} 
-\hyperlink{classGameSimulationScene_a6983b2c511d45278121bcf62151fbb19}{Game\+Simulation\+Scene} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classLevel}{Level} $>$ \&level)
+\mbox{\Hypertarget{classGameSimulationScene_a979dd106ca106b60542b77eaa99b43bf}\label{classGameSimulationScene_a979dd106ca106b60542b77eaa99b43bf}} 
+\hyperlink{classGameSimulationScene_a979dd106ca106b60542b77eaa99b43bf}{Game\+Simulation\+Scene} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classLevel}{Level} $>$ \&level, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ Player\+Configuration $>$ $>$ \&configurations)
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGameSimulationScene_af45f3e7f70376e59a6f320f21ce2897b}\label{classGameSimulationScene_af45f3e7f70376e59a6f320f21ce2897b}} 
 \hyperlink{classGameSimulationScene_af45f3e7f70376e59a6f320f21ce2897b}{$\sim$\+Game\+Simulation\+Scene} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameSimulationScene_aae1a8d0e8d3f8b1cc51c9291b96c52ec}\label{classGameSimulationScene_aae1a8d0e8d3f8b1cc51c9291b96c52ec}} 
 void \hyperlink{classGameSimulationScene_aae1a8d0e8d3f8b1cc51c9291b96c52ec}{update\+Camera} ()
 \begin{DoxyCompactList}\small\item\em Update camera\textquotesingle{}s position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameSimulationScene_ad8aa00e84395730039cfb6ef926917ea}\label{classGameSimulationScene_ad8aa00e84395730039cfb6ef926917ea}} 
+void \hyperlink{classGameSimulationScene_ad8aa00e84395730039cfb6ef926917ea}{update} ()
+\begin{DoxyCompactList}\small\item\em Update the scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameSimulationScene_a3a942f77be9bdb23ff0486e356f4792e}\label{classGameSimulationScene_a3a942f77be9bdb23ff0486e356f4792e}} 
+void \hyperlink{classGameSimulationScene_a3a942f77be9bdb23ff0486e356f4792e}{refresh\+Gui} ()
+\begin{DoxyCompactList}\small\item\em Refresh the scene\textquotesingle{}s G\+UI. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameSimulationScene_a4ca88431209fea3a0050e0e5b63b60eb}\label{classGameSimulationScene_a4ca88431209fea3a0050e0e5b63b60eb}} 
+void \hyperlink{classGameSimulationScene_a4ca88431209fea3a0050e0e5b63b60eb}{add\+Monsters} ()
+\begin{DoxyCompactList}\small\item\em Add the players on the scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameSimulationScene_a5712662af6ebc293ba8a58e5a717a921}\label{classGameSimulationScene_a5712662af6ebc293ba8a58e5a717a921}} 
+void \hyperlink{classGameSimulationScene_a5712662af6ebc293ba8a58e5a717a921}{add\+Players} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ Player\+Configuration $>$ $>$ \&configurations)
+\begin{DoxyCompactList}\small\item\em Add the players on the scene. \end{DoxyCompactList}\item 
 irr\+::\+I\+Event\+Receiver $\ast$ \hyperlink{classGameSimulationScene_a048b2a937caff3af7b4d54f8bd404ec1}{get\+Event\+Receiver} () const
-\begin{DoxyCompactList}\small\item\em Allow the user to implemente the event callback class for each scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Allow the user to implemente the event callback class for each scene. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classGameSimulationScene_a34377bab69b7a81e50f3d2c42596c574}{set\+Pause\+Mode} (bool val)
+\begin{DoxyCompactList}\small\item\em Change the current pause\textquotesingle{}s mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -51,24 +66,24 @@ the event.
 
 Implements \hyperlink{classAScene_af521e5e6d30a5d2e5d30eb333e4d3abd}{A\+Scene}.
 
-\mbox{\Hypertarget{classGameSimulationScene_aae1a8d0e8d3f8b1cc51c9291b96c52ec}\label{classGameSimulationScene_aae1a8d0e8d3f8b1cc51c9291b96c52ec}} 
-\index{Game\+Simulation\+Scene@{Game\+Simulation\+Scene}!update\+Camera@{update\+Camera}}
-\index{update\+Camera@{update\+Camera}!Game\+Simulation\+Scene@{Game\+Simulation\+Scene}}
-\subsubsection{\texorpdfstring{update\+Camera()}{updateCamera()}}
-{\footnotesize\ttfamily void Game\+Simulation\+Scene\+::update\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\mbox{\Hypertarget{classGameSimulationScene_a34377bab69b7a81e50f3d2c42596c574}\label{classGameSimulationScene_a34377bab69b7a81e50f3d2c42596c574}} 
+\index{Game\+Simulation\+Scene@{Game\+Simulation\+Scene}!set\+Pause\+Mode@{set\+Pause\+Mode}}
+\index{set\+Pause\+Mode@{set\+Pause\+Mode}!Game\+Simulation\+Scene@{Game\+Simulation\+Scene}}
+\subsubsection{\texorpdfstring{set\+Pause\+Mode()}{setPauseMode()}}
+{\footnotesize\ttfamily void Game\+Simulation\+Scene\+::set\+Pause\+Mode (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Update camera\textquotesingle{}s position. 
+Change the current pause\textquotesingle{}s mode. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em win} & The window who contain the camera. \\
+{\em val} & New value of pause\textquotesingle{}s mode. \\
 \hline
 \end{DoxyParams}
 
 
-Reimplemented from \hyperlink{classAScene_a0dd794c952276ec6c65a7e64fdec17cd}{A\+Scene}.
+Reimplemented from \hyperlink{classAScene_a7ff45d7a24796f52d815c00770900339}{A\+Scene}.
 
 
 

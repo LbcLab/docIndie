@@ -82,9 +82,9 @@ Inheritance diagram for Button:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5729094ff8ec4ce3e64e6691c297983c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classButton.html#a5729094ff8ec4ce3e64e6691c297983c">Button</a> (const Rect &amp;rect, const wchar_t *text, const wchar_t *tooltext, enum indie::GUIButtonId id, const wchar_t *background=L&quot;assets/menus/transparent.png&quot;)</td></tr>
-<tr class="memdesc:a5729094ff8ec4ce3e64e6691c297983c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a5729094ff8ec4ce3e64e6691c297983c">More...</a><br /></td></tr>
-<tr class="separator:a5729094ff8ec4ce3e64e6691c297983c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f049e58e9871b0060446080ef5deba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classButton.html#a63f049e58e9871b0060446080ef5deba">Button</a> (const Rect &amp;rect, const wchar_t *text, const wchar_t *tooltext, enum indie::GUIButtonId id, const wchar_t *backgroundUp=L&quot;assets/menus/transparent.png&quot;, const wchar_t *backgroundDown=L&quot;assets/menus/transparent.png&quot;, bool isUp=true)</td></tr>
+<tr class="memdesc:a63f049e58e9871b0060446080ef5deba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a63f049e58e9871b0060446080ef5deba">More...</a><br /></td></tr>
+<tr class="separator:a63f049e58e9871b0060446080ef5deba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a001eb9c3cc8ae54768a850dd345002"><td class="memItemLeft" align="right" valign="top"><a id="a2a001eb9c3cc8ae54768a850dd345002"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classButton.html#a2a001eb9c3cc8ae54768a850dd345002">~Button</a> ()</td></tr>
 <tr class="memdesc:a2a001eb9c3cc8ae54768a850dd345002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
@@ -93,6 +93,10 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classButton.html#a614921b7355d17e6074b44fa34862c6e">print</a> ()</td></tr>
 <tr class="memdesc:a614921b7355d17e6074b44fa34862c6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the button into the window. <br /></td></tr>
 <tr class="separator:a614921b7355d17e6074b44fa34862c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab1887f1acb0b960b6a7df8bad915551"><td class="memItemLeft" align="right" valign="top"><a id="aab1887f1acb0b960b6a7df8bad915551"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classButton.html#aab1887f1acb0b960b6a7df8bad915551">click</a> (const bool &amp;up)</td></tr>
+<tr class="memdesc:aab1887f1acb0b960b6a7df8bad915551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for click. <br /></td></tr>
+<tr class="separator:aab1887f1acb0b960b6a7df8bad915551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classIWidget"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classIWidget')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classIWidget.html">IWidget</a></td></tr>
 <tr class="memitem:ad733ed972c58c5c6268b57e2f4381666 inherit pub_methods_classIWidget"><td class="memItemLeft" align="right" valign="top"><a id="ad733ed972c58c5c6268b57e2f4381666"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIWidget.html#ad733ed972c58c5c6268b57e2f4381666">~IWidget</a> ()</td></tr>
@@ -102,8 +106,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represent a button in the user interface. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5729094ff8ec4ce3e64e6691c297983c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5729094ff8ec4ce3e64e6691c297983c">&#9670;&nbsp;</a></span>Button()</h2>
+<a id="a63f049e58e9871b0060446080ef5deba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63f049e58e9871b0060446080ef5deba">&#9670;&nbsp;</a></span>Button()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,7 +140,19 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const wchar_t *&#160;</td>
-          <td class="paramname"><em>background</em> = <code>L&quot;assets/menus/transparent.png&quot;</code>&#160;</td>
+          <td class="paramname"><em>backgroundUp</em> = <code>L&quot;assets/menus/transparent.png&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>backgroundDown</em> = <code>L&quot;assets/menus/transparent.png&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isUp</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>

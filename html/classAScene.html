@@ -105,19 +105,29 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAScene.html#a0170b6a47bb2cc189bfacb432a0b4332">print</a> ()</td></tr>
 <tr class="memdesc:a0170b6a47bb2cc189bfacb432a0b4332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print all the scene's widgets into the <a class="el" href="classWindow.html" title="Represent the window that will print some scene (view of the application). ">Window</a>. <br /></td></tr>
 <tr class="separator:a0170b6a47bb2cc189bfacb432a0b4332"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dd794c952276ec6c65a7e64fdec17cd"><td class="memItemLeft" align="right" valign="top"><a id="a0dd794c952276ec6c65a7e64fdec17cd"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAScene.html#a0dd794c952276ec6c65a7e64fdec17cd">updateCamera</a> ()</td></tr>
-<tr class="memdesc:a0dd794c952276ec6c65a7e64fdec17cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update camera. <br /></td></tr>
-<tr class="separator:a0dd794c952276ec6c65a7e64fdec17cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f13212b503601ef58b8387b36c5796c"><td class="memItemLeft" align="right" valign="top"><a id="a5f13212b503601ef58b8387b36c5796c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAScene.html#a5f13212b503601ef58b8387b36c5796c">update</a> ()</td></tr>
+<tr class="memdesc:a5f13212b503601ef58b8387b36c5796c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the scene. <br /></td></tr>
+<tr class="separator:a5f13212b503601ef58b8387b36c5796c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d7821a7bff4304027e22b27bebf4088"><td class="memItemLeft" align="right" valign="top"><a id="a3d7821a7bff4304027e22b27bebf4088"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAScene.html#a3d7821a7bff4304027e22b27bebf4088">updateCamera</a> ()</td></tr>
+<tr class="memdesc:a3d7821a7bff4304027e22b27bebf4088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the camera. <br /></td></tr>
+<tr class="separator:a3d7821a7bff4304027e22b27bebf4088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa711b6068dd8dee262160eedfd96ad02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAScene.html#aa711b6068dd8dee262160eedfd96ad02">addWidget</a> (const std::shared_ptr&lt; <a class="el" href="classIWidget.html">IWidget</a> &gt; &amp;widget, Int id=-1)</td></tr>
 <tr class="memdesc:aa711b6068dd8dee262160eedfd96ad02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the user to add texts, images, buttons, checkboxs or 3d models into the scene.  <a href="#aa711b6068dd8dee262160eedfd96ad02">More...</a><br /></td></tr>
 <tr class="separator:aa711b6068dd8dee262160eedfd96ad02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04796ae4f8cfdf49f7e3295c29fc97cc"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classIWidget.html">IWidget</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAScene.html#a04796ae4f8cfdf49f7e3295c29fc97cc">getWidget</a> (Int id=-1)</td></tr>
+<tr class="memdesc:a04796ae4f8cfdf49f7e3295c29fc97cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the user to get texts, images, buttons, checkboxs or 3d models into the scene.  <a href="#a04796ae4f8cfdf49f7e3295c29fc97cc">More...</a><br /></td></tr>
+<tr class="separator:a04796ae4f8cfdf49f7e3295c29fc97cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2b0ac8cd74a8523c76b681a34b5f5b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAScene.html#ad2b0ac8cd74a8523c76b681a34b5f5b4">delWidget</a> (Int id)</td></tr>
 <tr class="memdesc:ad2b0ac8cd74a8523c76b681a34b5f5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the user to delete texts, images, buttons, checkboxs or 3d models into the scene.  <a href="#ad2b0ac8cd74a8523c76b681a34b5f5b4">More...</a><br /></td></tr>
 <tr class="separator:ad2b0ac8cd74a8523c76b681a34b5f5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af521e5e6d30a5d2e5d30eb333e4d3abd"><td class="memItemLeft" align="right" valign="top">virtual irr::IEventReceiver *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAScene.html#af521e5e6d30a5d2e5d30eb333e4d3abd">getEventReceiver</a> () const =0</td></tr>
 <tr class="memdesc:af521e5e6d30a5d2e5d30eb333e4d3abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the user to implemente the event callback class for each scene.  <a href="#af521e5e6d30a5d2e5d30eb333e4d3abd">More...</a><br /></td></tr>
 <tr class="separator:af521e5e6d30a5d2e5d30eb333e4d3abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff45d7a24796f52d815c00770900339"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAScene.html#a7ff45d7a24796f52d815c00770900339">setPauseMode</a> (bool val)</td></tr>
+<tr class="memdesc:a7ff45d7a24796f52d815c00770900339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current pause's mode.  <a href="#a7ff45d7a24796f52d815c00770900339">More...</a><br /></td></tr>
+<tr class="separator:a7ff45d7a24796f52d815c00770900339"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represent the window's scene that will print some widget/object of the scene : buttons, images, etc... </p>
@@ -152,7 +162,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">widget</td><td>The widget to add in the scene. </td></tr>
-    <tr><td class="paramname">id</td><td>The id of thy widget </td></tr>
+    <tr><td class="paramname">id</td><td>The id of the widget </td></tr>
   </table>
   </dd>
 </dl>
@@ -212,7 +222,69 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Allow the user to implemente the event callback class for each scene. </p>
 <dl class="section return"><dt>Returns</dt><dd>The events' receiver of the scene. </dd></dl>
 
-<p>Implemented in <a class="el" href="classMainScene.html#af9fbc6337aa6ff42447c702e91e77237">MainScene</a>, <a class="el" href="classGameOnlineScene.html#a00ce9773db4f1886fc463b023cbf63f9">GameOnlineScene</a>, <a class="el" href="classIntroScene.html#acabf925dab7b2a346edd398445cd5800">IntroScene</a>, <a class="el" href="classLegendScene.html#ab11340ae844c04d704f28e1ef188deae">LegendScene</a>, <a class="el" href="classOptionScene.html#a8848b9040ee7fd9c1d05a22181c5e053">OptionScene</a>, <a class="el" href="classOptionVideoScene.html#a84625e871c5176d7abc77a7f12c1472a">OptionVideoScene</a>, <a class="el" href="classGameSimulationScene.html#a048b2a937caff3af7b4d54f8bd404ec1">GameSimulationScene</a>, <a class="el" href="classOptionSoundScene.html#ac71da65763f0db4b05fc32444308b677">OptionSoundScene</a>, <a class="el" href="classGameLoadScene.html#a81807790ad65bd2cf97a1e543cae2b74">GameLoadScene</a>, <a class="el" href="classGameMenuScene.html#adcb01430b24486c4e5d0157fc32d7611">GameMenuScene</a>, <a class="el" href="classGameNewScene.html#a21c27ef3ea1923d975683e1bcdd134fa">GameNewScene</a>, and <a class="el" href="classScoreScene.html#ae398ba58a33b3605a0c71265202534e2">ScoreScene</a>.</p>
+<p>Implemented in <a class="el" href="classGameSimulationScene.html#a048b2a937caff3af7b4d54f8bd404ec1">GameSimulationScene</a>, <a class="el" href="classGameNewScene.html#a21c27ef3ea1923d975683e1bcdd134fa">GameNewScene</a>, <a class="el" href="classScoreScene.html#ae398ba58a33b3605a0c71265202534e2">ScoreScene</a>, <a class="el" href="classGameOnlineScene.html#a00ce9773db4f1886fc463b023cbf63f9">GameOnlineScene</a>, <a class="el" href="classIntroScene.html#acabf925dab7b2a346edd398445cd5800">IntroScene</a>, <a class="el" href="classGameLoadScene.html#a81807790ad65bd2cf97a1e543cae2b74">GameLoadScene</a>, <a class="el" href="classGameMenuScene.html#adcb01430b24486c4e5d0157fc32d7611">GameMenuScene</a>, <a class="el" href="classLegendScene.html#ab11340ae844c04d704f28e1ef188deae">LegendScene</a>, <a class="el" href="classMainScene.html#af9fbc6337aa6ff42447c702e91e77237">MainScene</a>, <a class="el" href="classOptionScene.html#a8848b9040ee7fd9c1d05a22181c5e053">OptionScene</a>, <a class="el" href="classOptionSoundScene.html#ac71da65763f0db4b05fc32444308b677">OptionSoundScene</a>, and <a class="el" href="classOptionVideoScene.html#a84625e871c5176d7abc77a7f12c1472a">OptionVideoScene</a>.</p>
+
+</div>
+</div>
+<a id="a04796ae4f8cfdf49f7e3295c29fc97cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04796ae4f8cfdf49f7e3295c29fc97cc">&#9670;&nbsp;</a></span>getWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classIWidget.html">IWidget</a> &gt; AScene::getWidget </td>
+          <td>(</td>
+          <td class="paramtype">Int&#160;</td>
+          <td class="paramname"><em>id</em> = <code>-1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allow the user to get texts, images, buttons, checkboxs or 3d models into the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The id of the widget </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7ff45d7a24796f52d815c00770900339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ff45d7a24796f52d815c00770900339">&#9670;&nbsp;</a></span>setPauseMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AScene::setPauseMode </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Change the current pause's mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>New value of pause's mode. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="classGameSimulationScene.html#a34377bab69b7a81e50f3d2c42596c574">GameSimulationScene</a>.</p>
 
 </div>
 </div>

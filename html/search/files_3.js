@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['exception_2ehh',['Exception.hh',['../Exception_8hh.html',1,'']]]
+  ['door_2ehh',['Door.hh',['../Door_8hh.html',1,'']]],
+  ['dualdagger_2ehh',['DualDagger.hh',['../DualDagger_8hh.html',1,'']]]
 ];

@@ -16,17 +16,15 @@ Inherits I\+Event\+Receiver.
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classKeyboard_abb54d55e7d65dd6ef017352fdf5570c6}{Keyboard} (const irr\+::u32 keyboard\+ID, const irr\+::u32 player\+ID, \hyperlink{structconfig_1_1ControlPlayer}{config\+::\+Control\+Player} control)
+\hyperlink{classKeyboard_a36dbaafc28d5f7852da6c5f2fb4063e0}{Keyboard} (const Unsigned\+Int keyboard\+ID, const Unsigned\+Int player\+ID, \hyperlink{structconfig_1_1ControlPlayer}{config\+::\+Control\+Player} control)
 \begin{DoxyCompactList}\small\item\em Contructor. \end{DoxyCompactList}\item 
 \hyperlink{classKeyboard_af6a99ec66c8c722a45b967bf79167038}{$\sim$\+Keyboard} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
 virtual bool \hyperlink{classKeyboard_ad6974153a0c29b55c1b8765d0d6ccbfa}{On\+Event} (const irr\+::\+S\+Event \&event)
 \begin{DoxyCompactList}\small\item\em On\+Event. \end{DoxyCompactList}\item 
-void \hyperlink{classKeyboard_a6c6492921a44b4a4ab7e96566381353c}{notify\+Event\+Manager} (const irr\+::\+S\+Event \&event)
-\begin{DoxyCompactList}\small\item\em notify\+Event\+Manager \end{DoxyCompactList}\item 
-irr\+::u32 \hyperlink{classKeyboard_ac8fe530866f42dd3a62ea66054bc148b}{get\+Player\+ID} (void) const
+Unsigned\+Int \hyperlink{classKeyboard_ac8fe530866f42dd3a62ea66054bc148b}{get\+Player\+ID} (void) const
 \begin{DoxyCompactList}\small\item\em get\+Player\+ID \end{DoxyCompactList}\item 
-irr\+::u32 \hyperlink{classKeyboard_a8bc4a7d865e268c0d126aa3f0a913bbb}{get\+Keyboard\+ID} (void) const
+Unsigned\+Int \hyperlink{classKeyboard_a8bc4a7d865e268c0d126aa3f0a913bbb}{get\+Keyboard\+ID} (void) const
 \begin{DoxyCompactList}\small\item\em get\+Keyboard\+ID \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -34,11 +32,11 @@ irr\+::u32 \hyperlink{classKeyboard_a8bc4a7d865e268c0d126aa3f0a913bbb}{get\+Keyb
 Handle client keyboard event. 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classKeyboard_abb54d55e7d65dd6ef017352fdf5570c6}\label{classKeyboard_abb54d55e7d65dd6ef017352fdf5570c6}} 
+\mbox{\Hypertarget{classKeyboard_a36dbaafc28d5f7852da6c5f2fb4063e0}\label{classKeyboard_a36dbaafc28d5f7852da6c5f2fb4063e0}} 
 \index{Keyboard@{Keyboard}!Keyboard@{Keyboard}}
 \index{Keyboard@{Keyboard}!Keyboard@{Keyboard}}
 \subsubsection{\texorpdfstring{Keyboard()}{Keyboard()}}
-{\footnotesize\ttfamily Keyboard\+::\+Keyboard (\begin{DoxyParamCaption}\item[{const irr\+::u32}]{keyboard\+ID,  }\item[{const irr\+::u32}]{player\+ID,  }\item[{\hyperlink{structconfig_1_1ControlPlayer}{config\+::\+Control\+Player}}]{control }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Keyboard\+::\+Keyboard (\begin{DoxyParamCaption}\item[{const Unsigned\+Int}]{keyboard\+ID,  }\item[{const Unsigned\+Int}]{player\+ID,  }\item[{\hyperlink{structconfig_1_1ControlPlayer}{config\+::\+Control\+Player}}]{control }\end{DoxyParamCaption})}
 
 
 
@@ -88,24 +86,7 @@ Return \+\_\+keyboard\+ID \mbox{\Hypertarget{classKeyboard_ac8fe530866f42dd3a62e
 
 get\+Player\+ID 
 
-Return \+\_\+playeriD \mbox{\Hypertarget{classKeyboard_a6c6492921a44b4a4ab7e96566381353c}\label{classKeyboard_a6c6492921a44b4a4ab7e96566381353c}} 
-\index{Keyboard@{Keyboard}!notify\+Event\+Manager@{notify\+Event\+Manager}}
-\index{notify\+Event\+Manager@{notify\+Event\+Manager}!Keyboard@{Keyboard}}
-\subsubsection{\texorpdfstring{notify\+Event\+Manager()}{notifyEventManager()}}
-{\footnotesize\ttfamily void Keyboard\+::notify\+Event\+Manager (\begin{DoxyParamCaption}\item[{const irr\+::\+S\+Event \&}]{event }\end{DoxyParamCaption})}
-
-
-
-notify\+Event\+Manager 
-
-Handle the event and send the event in the Queue
-
-
-\begin{DoxyParams}{Parameters}
-{\em event} & event sent by Onevent \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classKeyboard_ad6974153a0c29b55c1b8765d0d6ccbfa}\label{classKeyboard_ad6974153a0c29b55c1b8765d0d6ccbfa}} 
+Return \+\_\+playeriD \mbox{\Hypertarget{classKeyboard_ad6974153a0c29b55c1b8765d0d6ccbfa}\label{classKeyboard_ad6974153a0c29b55c1b8765d0d6ccbfa}} 
 \index{Keyboard@{Keyboard}!On\+Event@{On\+Event}}
 \index{On\+Event@{On\+Event}!Keyboard@{Keyboard}}
 \subsubsection{\texorpdfstring{On\+Event()}{OnEvent()}}

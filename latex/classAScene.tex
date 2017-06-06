@@ -27,15 +27,22 @@ Inheritance diagram for A\+Scene\+:\begin{figure}[H]
 \mbox{\Hypertarget{classAScene_a0170b6a47bb2cc189bfacb432a0b4332}\label{classAScene_a0170b6a47bb2cc189bfacb432a0b4332}} 
 void \hyperlink{classAScene_a0170b6a47bb2cc189bfacb432a0b4332}{print} ()
 \begin{DoxyCompactList}\small\item\em Print all the scene\textquotesingle{}s widgets into the \hyperlink{classWindow}{Window}. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classAScene_a0dd794c952276ec6c65a7e64fdec17cd}\label{classAScene_a0dd794c952276ec6c65a7e64fdec17cd}} 
-virtual void \hyperlink{classAScene_a0dd794c952276ec6c65a7e64fdec17cd}{update\+Camera} ()
-\begin{DoxyCompactList}\small\item\em Update camera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAScene_a5f13212b503601ef58b8387b36c5796c}\label{classAScene_a5f13212b503601ef58b8387b36c5796c}} 
+virtual void \hyperlink{classAScene_a5f13212b503601ef58b8387b36c5796c}{update} ()
+\begin{DoxyCompactList}\small\item\em Update the scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAScene_a3d7821a7bff4304027e22b27bebf4088}\label{classAScene_a3d7821a7bff4304027e22b27bebf4088}} 
+virtual void \hyperlink{classAScene_a3d7821a7bff4304027e22b27bebf4088}{update\+Camera} ()
+\begin{DoxyCompactList}\small\item\em Update the camera. \end{DoxyCompactList}\item 
 void \hyperlink{classAScene_aa711b6068dd8dee262160eedfd96ad02}{add\+Widget} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classIWidget}{I\+Widget} $>$ \&widget, Int id=-\/1)
 \begin{DoxyCompactList}\small\item\em Allow the user to add texts, images, buttons, checkboxs or 3d models into the scene. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classIWidget}{I\+Widget} $>$ \hyperlink{classAScene_a04796ae4f8cfdf49f7e3295c29fc97cc}{get\+Widget} (Int id=-\/1)
+\begin{DoxyCompactList}\small\item\em Allow the user to get texts, images, buttons, checkboxs or 3d models into the scene. \end{DoxyCompactList}\item 
 void \hyperlink{classAScene_ad2b0ac8cd74a8523c76b681a34b5f5b4}{del\+Widget} (Int id)
 \begin{DoxyCompactList}\small\item\em Allow the user to delete texts, images, buttons, checkboxs or 3d models into the scene. \end{DoxyCompactList}\item 
 virtual irr\+::\+I\+Event\+Receiver $\ast$ \hyperlink{classAScene_af521e5e6d30a5d2e5d30eb333e4d3abd}{get\+Event\+Receiver} () const =0
-\begin{DoxyCompactList}\small\item\em Allow the user to implemente the event callback class for each scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Allow the user to implemente the event callback class for each scene. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classAScene_a7ff45d7a24796f52d815c00770900339}{set\+Pause\+Mode} (bool val)
+\begin{DoxyCompactList}\small\item\em Change the current pause\textquotesingle{}s mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -56,7 +63,7 @@ Allow the user to add texts, images, buttons, checkboxs or 3d models into the sc
 \begin{DoxyParams}{Parameters}
 {\em widget} & The widget to add in the scene. \\
 \hline
-{\em id} & The id of thy widget \\
+{\em id} & The id of the widget \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classAScene_ad2b0ac8cd74a8523c76b681a34b5f5b4}\label{classAScene_ad2b0ac8cd74a8523c76b681a34b5f5b4}} 
@@ -91,7 +98,41 @@ The events\textquotesingle{} receiver of the scene.
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{classMainScene_af9fbc6337aa6ff42447c702e91e77237}{Main\+Scene}, \hyperlink{classGameOnlineScene_a00ce9773db4f1886fc463b023cbf63f9}{Game\+Online\+Scene}, \hyperlink{classIntroScene_acabf925dab7b2a346edd398445cd5800}{Intro\+Scene}, \hyperlink{classLegendScene_ab11340ae844c04d704f28e1ef188deae}{Legend\+Scene}, \hyperlink{classOptionScene_a8848b9040ee7fd9c1d05a22181c5e053}{Option\+Scene}, \hyperlink{classOptionVideoScene_a84625e871c5176d7abc77a7f12c1472a}{Option\+Video\+Scene}, \hyperlink{classGameSimulationScene_a048b2a937caff3af7b4d54f8bd404ec1}{Game\+Simulation\+Scene}, \hyperlink{classOptionSoundScene_ac71da65763f0db4b05fc32444308b677}{Option\+Sound\+Scene}, \hyperlink{classGameLoadScene_a81807790ad65bd2cf97a1e543cae2b74}{Game\+Load\+Scene}, \hyperlink{classGameMenuScene_adcb01430b24486c4e5d0157fc32d7611}{Game\+Menu\+Scene}, \hyperlink{classGameNewScene_a21c27ef3ea1923d975683e1bcdd134fa}{Game\+New\+Scene}, and \hyperlink{classScoreScene_ae398ba58a33b3605a0c71265202534e2}{Score\+Scene}.
+Implemented in \hyperlink{classGameSimulationScene_a048b2a937caff3af7b4d54f8bd404ec1}{Game\+Simulation\+Scene}, \hyperlink{classGameNewScene_a21c27ef3ea1923d975683e1bcdd134fa}{Game\+New\+Scene}, \hyperlink{classScoreScene_ae398ba58a33b3605a0c71265202534e2}{Score\+Scene}, \hyperlink{classGameOnlineScene_a00ce9773db4f1886fc463b023cbf63f9}{Game\+Online\+Scene}, \hyperlink{classIntroScene_acabf925dab7b2a346edd398445cd5800}{Intro\+Scene}, \hyperlink{classGameLoadScene_a81807790ad65bd2cf97a1e543cae2b74}{Game\+Load\+Scene}, \hyperlink{classGameMenuScene_adcb01430b24486c4e5d0157fc32d7611}{Game\+Menu\+Scene}, \hyperlink{classLegendScene_ab11340ae844c04d704f28e1ef188deae}{Legend\+Scene}, \hyperlink{classMainScene_af9fbc6337aa6ff42447c702e91e77237}{Main\+Scene}, \hyperlink{classOptionScene_a8848b9040ee7fd9c1d05a22181c5e053}{Option\+Scene}, \hyperlink{classOptionSoundScene_ac71da65763f0db4b05fc32444308b677}{Option\+Sound\+Scene}, and \hyperlink{classOptionVideoScene_a84625e871c5176d7abc77a7f12c1472a}{Option\+Video\+Scene}.
+
+\mbox{\Hypertarget{classAScene_a04796ae4f8cfdf49f7e3295c29fc97cc}\label{classAScene_a04796ae4f8cfdf49f7e3295c29fc97cc}} 
+\index{A\+Scene@{A\+Scene}!get\+Widget@{get\+Widget}}
+\index{get\+Widget@{get\+Widget}!A\+Scene@{A\+Scene}}
+\subsubsection{\texorpdfstring{get\+Widget()}{getWidget()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classIWidget}{I\+Widget} $>$ A\+Scene\+::get\+Widget (\begin{DoxyParamCaption}\item[{Int}]{id = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Allow the user to get texts, images, buttons, checkboxs or 3d models into the scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the widget \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAScene_a7ff45d7a24796f52d815c00770900339}\label{classAScene_a7ff45d7a24796f52d815c00770900339}} 
+\index{A\+Scene@{A\+Scene}!set\+Pause\+Mode@{set\+Pause\+Mode}}
+\index{set\+Pause\+Mode@{set\+Pause\+Mode}!A\+Scene@{A\+Scene}}
+\subsubsection{\texorpdfstring{set\+Pause\+Mode()}{setPauseMode()}}
+{\footnotesize\ttfamily void A\+Scene\+::set\+Pause\+Mode (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Change the current pause\textquotesingle{}s mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & New value of pause\textquotesingle{}s mode. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classGameSimulationScene_a34377bab69b7a81e50f3d2c42596c574}{Game\+Simulation\+Scene}.
 
 
 
