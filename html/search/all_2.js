@@ -2,7 +2,7 @@ var searchData=
 [
   ['camera',['Camera',['../classCamera.html',1,'Camera'],['../classCamera.html#a09f1f6b6619c3d82e9a7f4b6d6942783',1,'Camera::Camera()']]],
   ['camera_2ehh',['Camera.hh',['../Camera_8hh.html',1,'']]],
-  ['changedirection',['changeDirection',['../classIA.html#ac2e4429cbb6cfba8c5f1b99d04275ce5',1,'IA::changeDirection()'],['../classLevel.html#a7fbf2259277a0be256738886cd82796a',1,'Level::changeDirection()']]],
+  ['changedirection',['changeDirection',['../classLevel.html#a7fbf2259277a0be256738886cd82796a',1,'Level']]],
   ['changeposition',['changePosition',['../classCamera.html#a8d0d954a835c256c3dd6fa627c65b53f',1,'Camera']]],
   ['changescene',['changeScene',['../classWindow.html#af1b2a635ce47d9e841445b8b866a3b28',1,'Window']]],
   ['changescore',['changeScore',['../classScoreManager.html#a01a80dda216fa5b83b58bca8de49114e',1,'ScoreManager']]],

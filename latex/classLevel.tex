@@ -26,6 +26,10 @@ Inheritance diagram for Level\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
 void \hyperlink{classLevel_a7fbf2259277a0be256738886cd82796a}{change\+Direction} (const Unsigned\+Int \&player\+ID, const Vector3d \&position, Float move\+Vertical, Float move\+Horizontal)
 \begin{DoxyCompactList}\small\item\em Change the player\textquotesingle{}s position by adding the position passed as parameter. \end{DoxyCompactList}\item 
+void \hyperlink{classLevel_a2330b2345dcf859700874c29b1f524e0}{set\+Anim\+Player} (const Unsigned\+Int \&player\+ID, String name)
+\begin{DoxyCompactList}\small\item\em Assign animation to player. \end{DoxyCompactList}\item 
+void \hyperlink{classLevel_ad31dd05f4278c778da85e79a0fd04430}{simulate\+Player\+Attack} (const Unsigned\+Int \&player\+ID)
+\begin{DoxyCompactList}\small\item\em attack player \end{DoxyCompactList}\item 
 bool \hyperlink{classLevel_a0ce4503fce6dd9f1a96036a50743d6c6}{is\+Dead\+Player} (const Unsigned\+Int \&player\+ID)
 \begin{DoxyCompactList}\small\item\em Check the player\textquotesingle{}s life. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLevel_a5188de55912386ca786cdbe093ca2af4}\label{classLevel_a5188de55912386ca786cdbe093ca2af4}} 
@@ -53,6 +57,10 @@ Change the player\textquotesingle{}s position by adding the position passed as p
 \hline
 {\em position} & The player\textquotesingle{}s id who will move. \\
 \hline
+{\em move\+Vertical} & vertical shift \\
+\hline
+{\em move\+Horizontal} & horizontal shift \\
+\hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classLevel_a0ce4503fce6dd9f1a96036a50743d6c6}\label{classLevel_a0ce4503fce6dd9f1a96036a50743d6c6}} 
 \index{Level@{Level}!is\+Dead\+Player@{is\+Dead\+Player}}
@@ -67,6 +75,38 @@ Check the player\textquotesingle{}s life.
 
 \begin{DoxyParams}{Parameters}
 {\em player\+ID} & The player\textquotesingle{}s id who have to be checked \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLevel_a2330b2345dcf859700874c29b1f524e0}\label{classLevel_a2330b2345dcf859700874c29b1f524e0}} 
+\index{Level@{Level}!set\+Anim\+Player@{set\+Anim\+Player}}
+\index{set\+Anim\+Player@{set\+Anim\+Player}!Level@{Level}}
+\subsubsection{\texorpdfstring{set\+Anim\+Player()}{setAnimPlayer()}}
+{\footnotesize\ttfamily void Level\+::set\+Anim\+Player (\begin{DoxyParamCaption}\item[{const Unsigned\+Int \&}]{player\+ID,  }\item[{String}]{name }\end{DoxyParamCaption})}
+
+
+
+Assign animation to player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+ID} & player identifier \\
+\hline
+{\em name} & path of the animation file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLevel_ad31dd05f4278c778da85e79a0fd04430}\label{classLevel_ad31dd05f4278c778da85e79a0fd04430}} 
+\index{Level@{Level}!simulate\+Player\+Attack@{simulate\+Player\+Attack}}
+\index{simulate\+Player\+Attack@{simulate\+Player\+Attack}!Level@{Level}}
+\subsubsection{\texorpdfstring{simulate\+Player\+Attack()}{simulatePlayerAttack()}}
+{\footnotesize\ttfamily void Level\+::simulate\+Player\+Attack (\begin{DoxyParamCaption}\item[{const Unsigned\+Int \&}]{player\+ID }\end{DoxyParamCaption})}
+
+
+
+attack player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+ID} & target player identifier \\
 \hline
 \end{DoxyParams}
 

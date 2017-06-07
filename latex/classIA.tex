@@ -17,11 +17,12 @@ represents the AI that is implemented in Ninja Gauntlet
 \mbox{\Hypertarget{classIA_a67d4dd285ae5169239348432bab9ad0e}\label{classIA_a67d4dd285ae5169239348432bab9ad0e}} 
 \hyperlink{classIA_a67d4dd285ae5169239348432bab9ad0e}{$\sim$\+IA} ()
 \begin{DoxyCompactList}\small\item\em Destructs the AI. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIA_af500668744c1eaa6345db6d062e463fc}\label{classIA_af500668744c1eaa6345db6d062e463fc}} 
+void \hyperlink{classIA_af500668744c1eaa6345db6d062e463fc}{setup} (void)
+\begin{DoxyCompactList}\small\item\em Setup AI, reach global variables in lua script. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classIA_a81df51f46b3b30ff6bece457d094b3fc}\label{classIA_a81df51f46b3b30ff6bece457d094b3fc}} 
 void \hyperlink{classIA_a81df51f46b3b30ff6bece457d094b3fc}{play} (void) const
-\begin{DoxyCompactList}\small\item\em Calculates the net action of the AI This calls the loop() function defined in the lua script. \end{DoxyCompactList}\item 
-void \hyperlink{classIA_ac2e4429cbb6cfba8c5f1b99d04275ce5}{change\+Direction} (int x, int y)
-\begin{DoxyCompactList}\small\item\em change AI direction \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Calculates the net action of the AI This calls the loop() function defined in the lua script. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -42,7 +43,10 @@ static int \hyperlink{classIA_a7b69140525af0e287742977cd803927f}{follow\+Player}
 \begin{DoxyCompactList}\small\item\em follow a player giving its id \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classIA_a528b38ddf9f67ec6d226969360adab46}\label{classIA_a528b38ddf9f67ec6d226969360adab46}} 
 static int \hyperlink{classIA_a528b38ddf9f67ec6d226969360adab46}{get\+Position} (lua\+\_\+\+State $\ast$state)
-\begin{DoxyCompactList}\small\item\em get AI position \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em get AI position \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIA_aeedb20926ec98fd6f9d3686399640793}\label{classIA_aeedb20926ec98fd6f9d3686399640793}} 
+static int \hyperlink{classIA_aeedb20926ec98fd6f9d3686399640793}{get\+Distance\+From\+Player} (lua\+\_\+\+State $\ast$state)
+\begin{DoxyCompactList}\small\item\em get distance between bot and player (giving its id) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -63,25 +67,7 @@ Constructs the AI.
 \begin{DoxyParams}{Parameters}
 {\em path} & The path of the related lua script \\
 \hline
-\end{DoxyParams}
-
-
-\subsection{Member Function Documentation}
-\mbox{\Hypertarget{classIA_ac2e4429cbb6cfba8c5f1b99d04275ce5}\label{classIA_ac2e4429cbb6cfba8c5f1b99d04275ce5}} 
-\index{IA@{IA}!change\+Direction@{change\+Direction}}
-\index{change\+Direction@{change\+Direction}!IA@{IA}}
-\subsubsection{\texorpdfstring{change\+Direction()}{changeDirection()}}
-{\footnotesize\ttfamily void I\+A\+::change\+Direction (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
-
-
-
-change AI direction 
-
-
-\begin{DoxyParams}{Parameters}
-{\em x} & The absciss \\
-\hline
-{\em y} & The ordinate \\
+{\em bot} & The character related to the ai \\
 \hline
 \end{DoxyParams}
 

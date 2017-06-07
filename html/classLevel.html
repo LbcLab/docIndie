@@ -93,6 +93,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7fbf2259277a0be256738886cd82796a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel.html#a7fbf2259277a0be256738886cd82796a">changeDirection</a> (const UnsignedInt &amp;playerID, const Vector3d &amp;position, Float moveVertical, Float moveHorizontal)</td></tr>
 <tr class="memdesc:a7fbf2259277a0be256738886cd82796a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the player's position by adding the position passed as parameter.  <a href="#a7fbf2259277a0be256738886cd82796a">More...</a><br /></td></tr>
 <tr class="separator:a7fbf2259277a0be256738886cd82796a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2330b2345dcf859700874c29b1f524e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel.html#a2330b2345dcf859700874c29b1f524e0">setAnimPlayer</a> (const UnsignedInt &amp;playerID, String name)</td></tr>
+<tr class="memdesc:a2330b2345dcf859700874c29b1f524e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign animation to player.  <a href="#a2330b2345dcf859700874c29b1f524e0">More...</a><br /></td></tr>
+<tr class="separator:a2330b2345dcf859700874c29b1f524e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad31dd05f4278c778da85e79a0fd04430"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel.html#ad31dd05f4278c778da85e79a0fd04430">simulatePlayerAttack</a> (const UnsignedInt &amp;playerID)</td></tr>
+<tr class="memdesc:ad31dd05f4278c778da85e79a0fd04430"><td class="mdescLeft">&#160;</td><td class="mdescRight">attack player  <a href="#ad31dd05f4278c778da85e79a0fd04430">More...</a><br /></td></tr>
+<tr class="separator:ad31dd05f4278c778da85e79a0fd04430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ce4503fce6dd9f1a96036a50743d6c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel.html#a0ce4503fce6dd9f1a96036a50743d6c6">isDeadPlayer</a> (const UnsignedInt &amp;playerID)</td></tr>
 <tr class="memdesc:a0ce4503fce6dd9f1a96036a50743d6c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the player's life.  <a href="#a0ce4503fce6dd9f1a96036a50743d6c6">More...</a><br /></td></tr>
 <tr class="separator:a0ce4503fce6dd9f1a96036a50743d6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,6 +115,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIWidget.html#aad57c02a26653bff50e9db5910bd6b04">click</a> (const bool &amp;action)</td></tr>
 <tr class="memdesc:aad57c02a26653bff50e9db5910bd6b04 inherit pub_methods_classIWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for click. <br /></td></tr>
 <tr class="separator:aad57c02a26653bff50e9db5910bd6b04 inherit pub_methods_classIWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b3b29421e5b1857c17a3e8999b55121 inherit pub_methods_classIWidget"><td class="memItemLeft" align="right" valign="top"><a id="a3b3b29421e5b1857c17a3e8999b55121"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIWidget.html#a3b3b29421e5b1857c17a3e8999b55121">updateInfo</a> ()</td></tr>
+<tr class="memdesc:a3b3b29421e5b1857c17a3e8999b55121 inherit pub_methods_classIWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updating function for players. <br /></td></tr>
+<tr class="separator:a3b3b29421e5b1857c17a3e8999b55121 inherit pub_methods_classIWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represent a game's level. </p>
@@ -156,6 +166,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   <table class="params">
     <tr><td class="paramname">playerID</td><td>The player's id who will move. </td></tr>
     <tr><td class="paramname">position</td><td>The player's id who will move. </td></tr>
+    <tr><td class="paramname">moveVertical</td><td>vertical shift </td></tr>
+    <tr><td class="paramname">moveHorizontal</td><td>horizontal shift </td></tr>
   </table>
   </dd>
 </dl>
@@ -182,6 +194,69 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">playerID</td><td>The player's id who have to be checked </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2330b2345dcf859700874c29b1f524e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2330b2345dcf859700874c29b1f524e0">&#9670;&nbsp;</a></span>setAnimPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Level::setAnimPlayer </td>
+          <td>(</td>
+          <td class="paramtype">const UnsignedInt &amp;&#160;</td>
+          <td class="paramname"><em>playerID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assign animation to player. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playerID</td><td>player identifier </td></tr>
+    <tr><td class="paramname">name</td><td>path of the animation file </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad31dd05f4278c778da85e79a0fd04430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad31dd05f4278c778da85e79a0fd04430">&#9670;&nbsp;</a></span>simulatePlayerAttack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Level::simulatePlayerAttack </td>
+          <td>(</td>
+          <td class="paramtype">const UnsignedInt &amp;&#160;</td>
+          <td class="paramname"><em>playerID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>attack player </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playerID</td><td>target player identifier </td></tr>
   </table>
   </dd>
 </dl>

@@ -83,6 +83,9 @@ Inheritance diagram for Model3d:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structModel3d_1_1Animation.html">Animation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represent a model's animation.  <a href="structModel3d_1_1Animation.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structModel3d_1_1AnimationSetting.html">AnimationSetting</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represent a model's animation's setting.  <a href="structModel3d_1_1AnimationSetting.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,10 +113,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel3d.html#ac40de3ff1527b92c7eadc80766c87824">getPosition</a> (void) const</td></tr>
 <tr class="memdesc:ac40de3ff1527b92c7eadc80766c87824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the model's position. <br /></td></tr>
 <tr class="separator:ac40de3ff1527b92c7eadc80766c87824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10401849cf36b84946774602e73c7ac9"><td class="memItemLeft" align="right" valign="top"><a id="a10401849cf36b84946774602e73c7ac9"></a>
+Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel3d.html#a10401849cf36b84946774602e73c7ac9">getRotation</a> (void) const</td></tr>
+<tr class="memdesc:a10401849cf36b84946774602e73c7ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the model's rotation. <br /></td></tr>
+<tr class="separator:a10401849cf36b84946774602e73c7ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc3c185a679687b4bf483f89eb2c20a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel3d.html#adc3c185a679687b4bf483f89eb2c20a9">setRotation</a> (const Vector3d &amp;rot)</td></tr>
 <tr class="memdesc:adc3c185a679687b4bf483f89eb2c20a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the model's position.  <a href="#adc3c185a679687b4bf483f89eb2c20a9">More...</a><br /></td></tr>
 <tr class="separator:adc3c185a679687b4bf483f89eb2c20a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a108ab9c13b7ae24cc1711c2e97fbc625"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel3d.html#a108ab9c13b7ae24cc1711c2e97fbc625">playAnimation</a> (const std::shared_ptr&lt; Animation &gt; &amp;anim)</td></tr>
+<tr class="memitem:a108ab9c13b7ae24cc1711c2e97fbc625"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel3d.html#a108ab9c13b7ae24cc1711c2e97fbc625">playAnimation</a> (const std::shared_ptr&lt; <a class="el" href="structModel3d_1_1Animation.html">Animation</a> &gt; &amp;anim)</td></tr>
 <tr class="memdesc:a108ab9c13b7ae24cc1711c2e97fbc625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play the annimation.  <a href="#a108ab9c13b7ae24cc1711c2e97fbc625">More...</a><br /></td></tr>
 <tr class="separator:a108ab9c13b7ae24cc1711c2e97fbc625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ce79286c43bd4a6852c544bdad8ee18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel3d.html#a6ce79286c43bd4a6852c544bdad8ee18">playAnimationSound</a> (const std::string &amp;sound)</td></tr>
@@ -132,6 +139,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIWidget.html#aad57c02a26653bff50e9db5910bd6b04">click</a> (const bool &amp;action)</td></tr>
 <tr class="memdesc:aad57c02a26653bff50e9db5910bd6b04 inherit pub_methods_classIWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for click. <br /></td></tr>
 <tr class="separator:aad57c02a26653bff50e9db5910bd6b04 inherit pub_methods_classIWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b3b29421e5b1857c17a3e8999b55121 inherit pub_methods_classIWidget"><td class="memItemLeft" align="right" valign="top"><a id="a3b3b29421e5b1857c17a3e8999b55121"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIWidget.html#a3b3b29421e5b1857c17a3e8999b55121">updateInfo</a> ()</td></tr>
+<tr class="memdesc:a3b3b29421e5b1857c17a3e8999b55121 inherit pub_methods_classIWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updating function for players. <br /></td></tr>
+<tr class="separator:a3b3b29421e5b1857c17a3e8999b55121 inherit pub_methods_classIWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represent a model 3d in the user interface. </p>
@@ -187,7 +198,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
     <tr><td class="paramname">position</td><td>The position in the space where the model will be print. </td></tr>
     <tr><td class="paramname">rotation</td><td>The rotation of the model in the space. </td></tr>
     <tr><td class="paramname">scale</td><td>An additionnal scale coefficient for the model. </td></tr>
-    <tr><td class="paramname">animationSpeed</td><td>Animation speed </td></tr>
+    <tr><td class="paramname">animationSpeed</td><td><a class="el" href="structModel3d_1_1Animation.html" title="Represent a model&#39;s animation. ">Animation</a> speed </td></tr>
   </table>
   </dd>
 </dl>
@@ -204,7 +215,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="memname">void Model3d::playAnimation </td>
           <td>(</td>
-          <td class="paramtype">const std::shared_ptr&lt; Animation &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="structModel3d_1_1Animation.html">Animation</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>anim</em></td><td>)</td>
           <td></td>
         </tr>
@@ -240,7 +251,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Play the annimation's sound. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>The sound's name. </td></tr>
+    <tr><td class="paramname">sound</td><td>The sound's name. </td></tr>
   </table>
   </dd>
 </dl>
@@ -292,7 +303,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Set the model's position. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>The position to set. </td></tr>
+    <tr><td class="paramname">pos</td><td>The position to set. </td></tr>
   </table>
   </dd>
 </dl>
@@ -318,7 +329,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Set the model's position. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>The rotation to set. </td></tr>
+    <tr><td class="paramname">rot</td><td>The rotation to set. </td></tr>
   </table>
   </dd>
 </dl>

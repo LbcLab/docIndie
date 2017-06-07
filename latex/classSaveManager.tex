@@ -12,10 +12,10 @@ The \hyperlink{classSaveManager}{Save\+Manager} class.
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classSaveManager_a9fe4905980e87fcd68e10471d7cf3cbc}{Save\+Manager} (const std\+::string \&)
+\mbox{\Hypertarget{classSaveManager_ab8bb791be648b9b91db44aa11f6e8e14}\label{classSaveManager_ab8bb791be648b9b91db44aa11f6e8e14}} 
+\hyperlink{classSaveManager_ab8bb791be648b9b91db44aa11f6e8e14}{Save\+Manager} ()
 \begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classSaveManager_a1ab9679d2cd11cef0b0710fdbbdf9bf7}\label{classSaveManager_a1ab9679d2cd11cef0b0710fdbbdf9bf7}} 
-void \hyperlink{classSaveManager_a1ab9679d2cd11cef0b0710fdbbdf9bf7}{load\+Games} ()
+void \hyperlink{classSaveManager_a96c17debbf9765e8c71e74010621585f}{load\+Games} (std\+::string folder)
 \begin{DoxyCompactList}\small\item\em Allow you to load a game previously save. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classSaveManager_a43beb7dd453f37de97c3a8de3b1142ab}\label{classSaveManager_a43beb7dd453f37de97c3a8de3b1142ab}} 
 void \hyperlink{classSaveManager_a43beb7dd453f37de97c3a8de3b1142ab}{save\+Games} ()
@@ -23,37 +23,19 @@ void \hyperlink{classSaveManager_a43beb7dd453f37de97c3a8de3b1142ab}{save\+Games}
 \mbox{\Hypertarget{classSaveManager_a7b950ce71223640fe56e8d404fe3cd2f}\label{classSaveManager_a7b950ce71223640fe56e8d404fe3cd2f}} 
 const std\+::shared\+\_\+ptr$<$ \hyperlink{classGame}{Game} $>$ \hyperlink{classSaveManager_a7b950ce71223640fe56e8d404fe3cd2f}{get\+Game} ()
 \begin{DoxyCompactList}\small\item\em Return a pointeur to the current game. \end{DoxyCompactList}\item 
-const std\+::vector$<$ std\+::string $>$ \& \hyperlink{classSaveManager_aa6efa1546ec4f0d2d0212cbf49f3fb3a}{get\+Saves\+Names} ()
+const std\+::shared\+\_\+ptr$<$ std\+::vector$<$ std\+::string $>$ $>$ \hyperlink{classSaveManager_a335611df31b6a1eccb5c7df73bc2e778}{get\+Saves\+Names} ()
 \begin{DoxyCompactList}\small\item\em Allow you to get the names of all the saves. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 The \hyperlink{classSaveManager}{Save\+Manager} class. 
 
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classSaveManager_a9fe4905980e87fcd68e10471d7cf3cbc}\label{classSaveManager_a9fe4905980e87fcd68e10471d7cf3cbc}} 
-\index{Save\+Manager@{Save\+Manager}!Save\+Manager@{Save\+Manager}}
-\index{Save\+Manager@{Save\+Manager}!Save\+Manager@{Save\+Manager}}
-\subsubsection{\texorpdfstring{Save\+Manager()}{SaveManager()}}
-{\footnotesize\ttfamily Save\+Manager\+::\+Save\+Manager (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{folder }\end{DoxyParamCaption})}
-
-
-
-The constructor. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em folder} & name The path to the folder were all X\+ML games are \\
-\hline
-\end{DoxyParams}
-
-
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classSaveManager_aa6efa1546ec4f0d2d0212cbf49f3fb3a}\label{classSaveManager_aa6efa1546ec4f0d2d0212cbf49f3fb3a}} 
+\mbox{\Hypertarget{classSaveManager_a335611df31b6a1eccb5c7df73bc2e778}\label{classSaveManager_a335611df31b6a1eccb5c7df73bc2e778}} 
 \index{Save\+Manager@{Save\+Manager}!get\+Saves\+Names@{get\+Saves\+Names}}
 \index{get\+Saves\+Names@{get\+Saves\+Names}!Save\+Manager@{Save\+Manager}}
 \subsubsection{\texorpdfstring{get\+Saves\+Names()}{getSavesNames()}}
-{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& Save\+Manager\+::get\+Saves\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$ std\+::vector$<$ std\+::string $>$ $>$ Save\+Manager\+::get\+Saves\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -62,6 +44,21 @@ Allow you to get the names of all the saves.
 \begin{DoxyReturn}{Returns}
 A vector with all the names 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classSaveManager_a96c17debbf9765e8c71e74010621585f}\label{classSaveManager_a96c17debbf9765e8c71e74010621585f}} 
+\index{Save\+Manager@{Save\+Manager}!load\+Games@{load\+Games}}
+\index{load\+Games@{load\+Games}!Save\+Manager@{Save\+Manager}}
+\subsubsection{\texorpdfstring{load\+Games()}{loadGames()}}
+{\footnotesize\ttfamily void Save\+Manager\+::load\+Games (\begin{DoxyParamCaption}\item[{std\+::string}]{folder }\end{DoxyParamCaption})}
+
+
+
+Allow you to load a game previously save. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em folder} & Path to a folders were all the xml are \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

@@ -18,6 +18,8 @@ Inheritance diagram for Model3d\+:\begin{figure}[H]
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
+struct \hyperlink{structModel3d_1_1Animation}{Animation}
+\begin{DoxyCompactList}\small\item\em Represent a model\textquotesingle{}s animation. \end{DoxyCompactList}\item 
 struct \hyperlink{structModel3d_1_1AnimationSetting}{Animation\+Setting}
 \begin{DoxyCompactList}\small\item\em Represent a model\textquotesingle{}s animation\textquotesingle{}s setting. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
@@ -38,9 +40,12 @@ void \hyperlink{classModel3d_a971b77ce978903443e71187ceafa1528}{set\+Position} (
 \mbox{\Hypertarget{classModel3d_ac40de3ff1527b92c7eadc80766c87824}\label{classModel3d_ac40de3ff1527b92c7eadc80766c87824}} 
 Vector3d \hyperlink{classModel3d_ac40de3ff1527b92c7eadc80766c87824}{get\+Position} (void) const
 \begin{DoxyCompactList}\small\item\em Get the model\textquotesingle{}s position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classModel3d_a10401849cf36b84946774602e73c7ac9}\label{classModel3d_a10401849cf36b84946774602e73c7ac9}} 
+Vector3d \hyperlink{classModel3d_a10401849cf36b84946774602e73c7ac9}{get\+Rotation} (void) const
+\begin{DoxyCompactList}\small\item\em Get the model\textquotesingle{}s rotation. \end{DoxyCompactList}\item 
 void \hyperlink{classModel3d_adc3c185a679687b4bf483f89eb2c20a9}{set\+Rotation} (const Vector3d \&rot)
 \begin{DoxyCompactList}\small\item\em Set the model\textquotesingle{}s position. \end{DoxyCompactList}\item 
-void \hyperlink{classModel3d_a108ab9c13b7ae24cc1711c2e97fbc625}{play\+Animation} (const std\+::shared\+\_\+ptr$<$ Animation $>$ \&anim)
+void \hyperlink{classModel3d_a108ab9c13b7ae24cc1711c2e97fbc625}{play\+Animation} (const std\+::shared\+\_\+ptr$<$ \hyperlink{structModel3d_1_1Animation}{Animation} $>$ \&anim)
 \begin{DoxyCompactList}\small\item\em Play the annimation. \end{DoxyCompactList}\item 
 void \hyperlink{classModel3d_a6ce79286c43bd4a6852c544bdad8ee18}{play\+Animation\+Sound} (const std\+::string \&sound)
 \begin{DoxyCompactList}\small\item\em Play the annimation\textquotesingle{}s sound. \end{DoxyCompactList}\item 
@@ -73,7 +78,7 @@ Constructor.
 \hline
 {\em scale} & An additionnal scale coefficient for the model. \\
 \hline
-{\em animation\+Speed} & Animation speed \\
+{\em animation\+Speed} & \hyperlink{structModel3d_1_1Animation}{Animation} speed \\
 \hline
 \end{DoxyParams}
 
@@ -83,7 +88,7 @@ Constructor.
 \index{Model3d@{Model3d}!play\+Animation@{play\+Animation}}
 \index{play\+Animation@{play\+Animation}!Model3d@{Model3d}}
 \subsubsection{\texorpdfstring{play\+Animation()}{playAnimation()}}
-{\footnotesize\ttfamily void Model3d\+::play\+Animation (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ Animation $>$ \&}]{anim }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Model3d\+::play\+Animation (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{structModel3d_1_1Animation}{Animation} $>$ \&}]{anim }\end{DoxyParamCaption})}
 
 
 
@@ -106,7 +111,7 @@ Play the annimation\textquotesingle{}s sound.
 
 
 \begin{DoxyParams}{Parameters}
-{\em name} & The sound\textquotesingle{}s name. \\
+{\em sound} & The sound\textquotesingle{}s name. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classModel3d_a29eeaa6769b0c21268f4704ac2d404b7}\label{classModel3d_a29eeaa6769b0c21268f4704ac2d404b7}} 
@@ -136,7 +141,7 @@ Set the model\textquotesingle{}s position.
 
 
 \begin{DoxyParams}{Parameters}
-{\em name} & The position to set. \\
+{\em pos} & The position to set. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classModel3d_adc3c185a679687b4bf483f89eb2c20a9}\label{classModel3d_adc3c185a679687b4bf483f89eb2c20a9}} 
@@ -151,7 +156,7 @@ Set the model\textquotesingle{}s position.
 
 
 \begin{DoxyParams}{Parameters}
-{\em name} & The rotation to set. \\
+{\em rot} & The rotation to set. \\
 \hline
 \end{DoxyParams}
 
