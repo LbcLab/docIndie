@@ -22,6 +22,13 @@ Inheritance diagram for Game\+New\+Scene\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 \hyperlink{classGameNewScene_a3df0ff81012d3f7dbd08c7367be22fdf}{$\sim$\+Game\+New\+Scene} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classGameNewScene_a59826abb850ba5d561a42865efb6a17a}{add\+Pillar} (const Vector3d \&pos)
+\begin{DoxyCompactList}\small\item\em Add a model 3d of pillar at the position pass as parameter. \end{DoxyCompactList}\item 
+void \hyperlink{classGameNewScene_a91e4754cf941c9ef80f539eab3f87ada}{print\+Pack\+Of\+Button} (Int shift\+\_\+x, Int shift\+\_\+y, Int index, indie\+::\+G\+U\+I\+Button\+Id id\+Arrow\+Right, indie\+::\+G\+U\+I\+Button\+Id id\+Arrow\+Left, indie\+::\+G\+U\+I\+Button\+Id id\+Ninja, indie\+::\+G\+U\+I\+Button\+Id id\+Robot, indie\+::\+G\+U\+I\+Button\+Id id\+Cross, indie\+::\+G\+U\+I\+Button\+Id id\+Manette, indie\+::\+G\+U\+I\+Button\+Id id\+Keyboard)
+\begin{DoxyCompactList}\small\item\em Print a pack of button. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameNewScene_a767d5e79b8a91b63ae3494e0df86ce22}\label{classGameNewScene_a767d5e79b8a91b63ae3494e0df86ce22}} 
+void \hyperlink{classGameNewScene_a767d5e79b8a91b63ae3494e0df86ce22}{print\+Water} ()
+\begin{DoxyCompactList}\small\item\em Print the water on the bottom of the scene. \end{DoxyCompactList}\item 
 irr\+::\+I\+Event\+Receiver $\ast$ \hyperlink{classGameNewScene_a21c27ef3ea1923d975683e1bcdd134fa}{get\+Event\+Receiver} () const
 \begin{DoxyCompactList}\small\item\em Allow the user to implemente the event callback class for each scene. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGameNewScene_a2fb7cacfacbf5c565c3e2f98bd06aec4}\label{classGameNewScene_a2fb7cacfacbf5c565c3e2f98bd06aec4}} 
@@ -59,6 +66,21 @@ Destructor.
 Destroy the class. 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGameNewScene_a59826abb850ba5d561a42865efb6a17a}\label{classGameNewScene_a59826abb850ba5d561a42865efb6a17a}} 
+\index{Game\+New\+Scene@{Game\+New\+Scene}!add\+Pillar@{add\+Pillar}}
+\index{add\+Pillar@{add\+Pillar}!Game\+New\+Scene@{Game\+New\+Scene}}
+\subsubsection{\texorpdfstring{add\+Pillar()}{addPillar()}}
+{\footnotesize\ttfamily void Game\+New\+Scene\+::add\+Pillar (\begin{DoxyParamCaption}\item[{const Vector3d \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+Add a model 3d of pillar at the position pass as parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position where the pillar will appear. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classGameNewScene_a21c27ef3ea1923d975683e1bcdd134fa}\label{classGameNewScene_a21c27ef3ea1923d975683e1bcdd134fa}} 
 \index{Game\+New\+Scene@{Game\+New\+Scene}!get\+Event\+Receiver@{get\+Event\+Receiver}}
 \index{get\+Event\+Receiver@{get\+Event\+Receiver}!Game\+New\+Scene@{Game\+New\+Scene}}
@@ -73,6 +95,35 @@ Return the event.
 
 Implements \hyperlink{classAScene_af521e5e6d30a5d2e5d30eb333e4d3abd}{A\+Scene}.
 
+\mbox{\Hypertarget{classGameNewScene_a91e4754cf941c9ef80f539eab3f87ada}\label{classGameNewScene_a91e4754cf941c9ef80f539eab3f87ada}} 
+\index{Game\+New\+Scene@{Game\+New\+Scene}!print\+Pack\+Of\+Button@{print\+Pack\+Of\+Button}}
+\index{print\+Pack\+Of\+Button@{print\+Pack\+Of\+Button}!Game\+New\+Scene@{Game\+New\+Scene}}
+\subsubsection{\texorpdfstring{print\+Pack\+Of\+Button()}{printPackOfButton()}}
+{\footnotesize\ttfamily void Game\+New\+Scene\+::print\+Pack\+Of\+Button (\begin{DoxyParamCaption}\item[{Int}]{shift\+\_\+x,  }\item[{Int}]{shift\+\_\+y,  }\item[{Int}]{index,  }\item[{indie\+::\+G\+U\+I\+Button\+Id}]{id\+Arrow\+Right,  }\item[{indie\+::\+G\+U\+I\+Button\+Id}]{id\+Arrow\+Left,  }\item[{indie\+::\+G\+U\+I\+Button\+Id}]{id\+Ninja,  }\item[{indie\+::\+G\+U\+I\+Button\+Id}]{id\+Robot,  }\item[{indie\+::\+G\+U\+I\+Button\+Id}]{id\+Cross,  }\item[{indie\+::\+G\+U\+I\+Button\+Id}]{id\+Manette,  }\item[{indie\+::\+G\+U\+I\+Button\+Id}]{id\+Keyboard }\end{DoxyParamCaption})}
+
+
+
+Print a pack of button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shift\+\_\+x} & The x\textquotesingle{}s position where the pack will appear. \\
+\hline
+{\em shift\+\_\+y} & The y\textquotesingle{}s position where the pack will appear. \\
+\hline
+{\em index} & The index of the pack. \\
+\hline
+{\em id\+Ninja} & The id for the callback when someone press the Ninja\textquotesingle{}s button. \\
+\hline
+{\em id\+Robot} & The id for the callback when someone press the Robot\textquotesingle{}s button. \\
+\hline
+{\em id\+Cross} & The id for the callback when someone press the Cross\textquotesingle{}s button. \\
+\hline
+{\em id\+Manette} & The id for the callback when someone press the Manette\textquotesingle{}s button. \\
+\hline
+{\em id\+Keyboard} & The id for the callback when someone press the \hyperlink{classKeyboard}{Keyboard}\textquotesingle{}s button. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

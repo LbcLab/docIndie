@@ -1,7 +1,8 @@
 var searchData=
 [
+  ['saveallgames',['saveAllGames',['../classSaveManager.html#abdc44f23de421540c0a201083eccc327',1,'SaveManager']]],
   ['saveconfig',['saveConfig',['../classConfigManager.html#a178e051860792271e9b1ec4434776f91',1,'ConfigManager']]],
-  ['savegames',['saveGames',['../classSaveManager.html#a43beb7dd453f37de97c3a8de3b1142ab',1,'SaveManager']]],
+  ['savegame',['saveGame',['../classSaveManager.html#a6f5a49208d165ccaf6ef619f7005da55',1,'SaveManager']]],
   ['savemanager',['SaveManager',['../classSaveManager.html',1,'SaveManager'],['../classSaveManager.html#ab8bb791be648b9b91db44aa11f6e8e14',1,'SaveManager::SaveManager()']]],
   ['savemanager_2ehh',['SaveManager.hh',['../SaveManager_8hh.html',1,'']]],
   ['savescores',['saveScores',['../classScoreManager.html#aa3f390fe5076324b2d457de0c43af59f',1,'ScoreManager']]],

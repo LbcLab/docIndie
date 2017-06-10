@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['refreshgui',['refreshGui',['../classGameSimulationScene.html#a3a942f77be9bdb23ff0486e356f4792e',1,'GameSimulationScene']]]
+  ['refreshgui',['refreshGui',['../classAScene.html#a39a67b761f9c0508f3f358f00fa941a1',1,'AScene']]],
+  ['refreshscene',['refreshScene',['../classAScene.html#a94eb6d219e423c298a4c8339df47671c',1,'AScene']]]
 ];
