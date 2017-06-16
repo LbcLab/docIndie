@@ -18,15 +18,15 @@ Inheritance diagram for Level\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classLevel_a449da6ec6c9863a35c94d2fcb2755433}\label{classLevel_a449da6ec6c9863a35c94d2fcb2755433}} 
-\hyperlink{classLevel_a449da6ec6c9863a35c94d2fcb2755433}{Level} (const W\+String \&map\+Path)
+\mbox{\Hypertarget{classLevel_a1192fe26a12ee85ba164dbc1df4ba8c3}\label{classLevel_a1192fe26a12ee85ba164dbc1df4ba8c3}} 
+\hyperlink{classLevel_a1192fe26a12ee85ba164dbc1df4ba8c3}{Level} (const int \&id)
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classLevel_a249eac1e8f19ff44134efa5e986feaca}\label{classLevel_a249eac1e8f19ff44134efa5e986feaca}} 
 \hyperlink{classLevel_a249eac1e8f19ff44134efa5e986feaca}{$\sim$\+Level} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
 void \hyperlink{classLevel_a7fbf2259277a0be256738886cd82796a}{change\+Direction} (const Unsigned\+Int \&player\+ID, const Vector3d \&position, Float move\+Vertical, Float move\+Horizontal)
 \begin{DoxyCompactList}\small\item\em Change the player\textquotesingle{}s position by adding the position passed as parameter. \end{DoxyCompactList}\item 
-void \hyperlink{classLevel_a2330b2345dcf859700874c29b1f524e0}{set\+Anim\+Player} (const Unsigned\+Int \&player\+ID, String name)
+bool \hyperlink{classLevel_ad3c2dcaeba48a4da763c1b9b6d23d248}{set\+Anim\+Player} (const Unsigned\+Int \&player\+ID, String name)
 \begin{DoxyCompactList}\small\item\em Assign animation to player. \end{DoxyCompactList}\item 
 void \hyperlink{classLevel_ad31dd05f4278c778da85e79a0fd04430}{simulate\+Player\+Attack} (const Unsigned\+Int \&player\+ID)
 \begin{DoxyCompactList}\small\item\em attack player \end{DoxyCompactList}\item 
@@ -77,11 +77,11 @@ Check the player\textquotesingle{}s life.
 {\em player\+ID} & The player\textquotesingle{}s id who have to be checked \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classLevel_a2330b2345dcf859700874c29b1f524e0}\label{classLevel_a2330b2345dcf859700874c29b1f524e0}} 
+\mbox{\Hypertarget{classLevel_ad3c2dcaeba48a4da763c1b9b6d23d248}\label{classLevel_ad3c2dcaeba48a4da763c1b9b6d23d248}} 
 \index{Level@{Level}!set\+Anim\+Player@{set\+Anim\+Player}}
 \index{set\+Anim\+Player@{set\+Anim\+Player}!Level@{Level}}
 \subsubsection{\texorpdfstring{set\+Anim\+Player()}{setAnimPlayer()}}
-{\footnotesize\ttfamily void Level\+::set\+Anim\+Player (\begin{DoxyParamCaption}\item[{const Unsigned\+Int \&}]{player\+ID,  }\item[{String}]{name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Level\+::set\+Anim\+Player (\begin{DoxyParamCaption}\item[{const Unsigned\+Int \&}]{player\+ID,  }\item[{String}]{name }\end{DoxyParamCaption})}
 
 
 

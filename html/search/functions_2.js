@@ -13,5 +13,6 @@ var searchData=
   ['controller',['Controller',['../classController.html#af2b33f3f5b26f33b9d226d24d3fd5e84',1,'Controller']]],
   ['controlmanager',['ControlManager',['../classControlManager.html#ac47df3d59d665fa9e6201677689ddf6a',1,'ControlManager']]],
   ['coremanager',['CoreManager',['../classCoreManager.html#a0147fc3a8a8fca6b1f464d8b1257a304',1,'CoreManager']]],
-  ['createfile',['createFile',['../classConfigManager.html#af78f80706b5a300a738c3fde04c9c91b',1,'ConfigManager::createFile()'],['../classScoreManager.html#abbe17770ef85b2575fd14acf90a0bc9f',1,'ScoreManager::createFile()']]]
+  ['createfile',['createFile',['../classConfigManager.html#af78f80706b5a300a738c3fde04c9c91b',1,'ConfigManager::createFile()'],['../classScoreManager.html#abbe17770ef85b2575fd14acf90a0bc9f',1,'ScoreManager::createFile()']]],
+  ['current',['current',['../classDate.html#a49fb653adf893d1480edd57200f77eea',1,'Date']]]
 ];

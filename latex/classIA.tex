@@ -20,8 +20,8 @@ represents the AI that is implemented in Ninja Gauntlet
 \mbox{\Hypertarget{classIA_af500668744c1eaa6345db6d062e463fc}\label{classIA_af500668744c1eaa6345db6d062e463fc}} 
 void \hyperlink{classIA_af500668744c1eaa6345db6d062e463fc}{setup} (void)
 \begin{DoxyCompactList}\small\item\em Setup AI, reach global variables in lua script. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classIA_a81df51f46b3b30ff6bece457d094b3fc}\label{classIA_a81df51f46b3b30ff6bece457d094b3fc}} 
-void \hyperlink{classIA_a81df51f46b3b30ff6bece457d094b3fc}{play} (void) const
+\mbox{\Hypertarget{classIA_a9638e8dda4767df32fc06504eb257d65}\label{classIA_a9638e8dda4767df32fc06504eb257d65}} 
+void \hyperlink{classIA_a9638e8dda4767df32fc06504eb257d65}{play} (void)
 \begin{DoxyCompactList}\small\item\em Calculates the net action of the AI This calls the loop() function defined in the lua script. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -29,24 +29,36 @@ void \hyperlink{classIA_a81df51f46b3b30ff6bece457d094b3fc}{play} (void) const
 \mbox{\Hypertarget{classIA_a1d8f2d91effd6eab9610763bb324d8cd}\label{classIA_a1d8f2d91effd6eab9610763bb324d8cd}} 
 static int \hyperlink{classIA_a1d8f2d91effd6eab9610763bb324d8cd}{get\+Life} (lua\+\_\+\+State $\ast$state)
 \begin{DoxyCompactList}\small\item\em Accessor on AI life. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIA_abc157e865ccb6efd7335375fda49d786}\label{classIA_abc157e865ccb6efd7335375fda49d786}} 
+static int \hyperlink{classIA_abc157e865ccb6efd7335375fda49d786}{get\+Id} (lua\+\_\+\+State $\ast$state)
+\begin{DoxyCompactList}\small\item\em Accessor on AI id. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classIA_af8df32744539390d12d6748f0edf0311}\label{classIA_af8df32744539390d12d6748f0edf0311}} 
 static int \hyperlink{classIA_af8df32744539390d12d6748f0edf0311}{ping} (lua\+\_\+\+State $\ast$state)
 \begin{DoxyCompactList}\small\item\em debug function It will list parameters you passed through it \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classIA_a2ed64a5d1cf26fba609bf2208622957c}\label{classIA_a2ed64a5d1cf26fba609bf2208622957c}} 
-static int \hyperlink{classIA_a2ed64a5d1cf26fba609bf2208622957c}{get\+Nearest\+Player} (lua\+\_\+\+State $\ast$state)
-\begin{DoxyCompactList}\small\item\em get the id of the nearest player \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIA_aef22b49b556a328632d509f8336e715b}\label{classIA_aef22b49b556a328632d509f8336e715b}} 
+static int \hyperlink{classIA_aef22b49b556a328632d509f8336e715b}{get\+Nearest\+Ally} (lua\+\_\+\+State $\ast$state)
+\begin{DoxyCompactList}\small\item\em get the id of the nearest ally player \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIA_affcf8babde7e30cbb605a75160465209}\label{classIA_affcf8babde7e30cbb605a75160465209}} 
+static int \hyperlink{classIA_affcf8babde7e30cbb605a75160465209}{get\+Nearest\+Ninja} (lua\+\_\+\+State $\ast$state)
+\begin{DoxyCompactList}\small\item\em get the id of the nearest enemy \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classIA_a23d578bd33cd4260b9381116d5979c2e}\label{classIA_a23d578bd33cd4260b9381116d5979c2e}} 
 static int \hyperlink{classIA_a23d578bd33cd4260b9381116d5979c2e}{move} (lua\+\_\+\+State $\ast$state)
 \begin{DoxyCompactList}\small\item\em move AI in a direction \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classIA_a7b69140525af0e287742977cd803927f}\label{classIA_a7b69140525af0e287742977cd803927f}} 
 static int \hyperlink{classIA_a7b69140525af0e287742977cd803927f}{follow\+Player} (lua\+\_\+\+State $\ast$state)
 \begin{DoxyCompactList}\small\item\em follow a player giving its id \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIA_ab01d8d14b0e5fdb8f66c23f001370cfa}\label{classIA_ab01d8d14b0e5fdb8f66c23f001370cfa}} 
+static int \hyperlink{classIA_ab01d8d14b0e5fdb8f66c23f001370cfa}{follow\+Monster} (lua\+\_\+\+State $\ast$state)
+\begin{DoxyCompactList}\small\item\em follow a monster giving its id \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classIA_a528b38ddf9f67ec6d226969360adab46}\label{classIA_a528b38ddf9f67ec6d226969360adab46}} 
 static int \hyperlink{classIA_a528b38ddf9f67ec6d226969360adab46}{get\+Position} (lua\+\_\+\+State $\ast$state)
 \begin{DoxyCompactList}\small\item\em get AI position \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classIA_aeedb20926ec98fd6f9d3686399640793}\label{classIA_aeedb20926ec98fd6f9d3686399640793}} 
 static int \hyperlink{classIA_aeedb20926ec98fd6f9d3686399640793}{get\+Distance\+From\+Player} (lua\+\_\+\+State $\ast$state)
 \begin{DoxyCompactList}\small\item\em get distance between bot and player (giving its id) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIA_aec6be85641e599edb2482686d99e5d57}\label{classIA_aec6be85641e599edb2482686d99e5d57}} 
+static int \hyperlink{classIA_aec6be85641e599edb2482686d99e5d57}{get\+Distance\+From\+Monster} (lua\+\_\+\+State $\ast$state)
+\begin{DoxyCompactList}\small\item\em get distance from monster \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classIA_a6044bd4c6e63449603d37b8ba3484b01}\label{classIA_a6044bd4c6e63449603d37b8ba3484b01}} 
 static int \hyperlink{classIA_a6044bd4c6e63449603d37b8ba3484b01}{get\+Player\+Position} (lua\+\_\+\+State $\ast$state)
 \begin{DoxyCompactList}\small\item\em accessor on player position \end{DoxyCompactList}\item 
@@ -55,7 +67,10 @@ static int \hyperlink{classIA_a091c6a4f9655a77588c803e5f73c0ff6}{get\+Player\+Li
 \begin{DoxyCompactList}\small\item\em accessor on the current players I\+Ds \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classIA_a3c0cefad0fafba85e286b3dcc6866a18}\label{classIA_a3c0cefad0fafba85e286b3dcc6866a18}} 
 static int \hyperlink{classIA_a3c0cefad0fafba85e286b3dcc6866a18}{attack} (lua\+\_\+\+State $\ast$state)
-\begin{DoxyCompactList}\small\item\em AI attack in front of it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em AI attack in front of it. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIA_a80d41191c72e03f55a7547893aff9c68}\label{classIA_a80d41191c72e03f55a7547893aff9c68}} 
+static int \hyperlink{classIA_a80d41191c72e03f55a7547893aff9c68}{get\+Nearest\+Enemy} (lua\+\_\+\+State $\ast$state)
+\begin{DoxyCompactList}\small\item\em get nearest monster position \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}

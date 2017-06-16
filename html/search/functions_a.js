@@ -1,7 +1,7 @@
 var searchData=
 [
   ['legendscene',['LegendScene',['../classLegendScene.html#a33a4d96e0e320724e60d565dec448e38',1,'LegendScene']]],
-  ['level',['Level',['../classLevel.html#a449da6ec6c9863a35c94d2fcb2755433',1,'Level']]],
+  ['level',['Level',['../classLevel.html#a1192fe26a12ee85ba164dbc1df4ba8c3',1,'Level']]],
   ['loadconfig',['loadConfig',['../classConfigManager.html#aabe7403d71337e1984dff31f450c413b',1,'ConfigManager']]],
   ['loadgames',['loadGames',['../classSaveManager.html#a96c17debbf9765e8c71e74010621585f',1,'SaveManager']]],
   ['loadmap',['loadMap',['../classMap.html#ae085956bff7ba817bb82fc37bb8231df',1,'Map']]],

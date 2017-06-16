@@ -1,0 +1,43 @@
+\hypertarget{classDate}{}\section{Date Class Reference}
+\label{classDate}\index{Date@{Date}}
+
+
+\hyperlink{classDate}{Date} and time related stuff.  
+
+
+
+
+{\ttfamily \#include $<$Date.\+hh$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string const \hyperlink{classDate_a49fb653adf893d1480edd57200f77eea}{current} (std\+::string fmt)
+\begin{DoxyCompactList}\small\item\em get current date/time \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classDate}{Date} and time related stuff. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDate_a49fb653adf893d1480edd57200f77eea}\label{classDate_a49fb653adf893d1480edd57200f77eea}} 
+\index{Date@{Date}!current@{current}}
+\index{current@{current}!Date@{Date}}
+\subsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily std\+::string const Date\+::current (\begin{DoxyParamCaption}\item[{std\+::string}]{fmt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+get current date/time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fmt} & date format you want to get. strftime() format.\\
+\hline
+\end{DoxyParams}
+Exemple \+: std\+::cout $<$$<$ \hyperlink{classDate_a49fb653adf893d1480edd57200f77eea}{Date\+::current}(\char`\"{}\%\+Y-\/\%m-\/\%d.\%\+X\char`\"{}) $<$$<$ std\+::endl; 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/tools/\hyperlink{Date_8hh}{Date.\+hh}\item 
+src/tools/\hyperlink{Date_8cpp}{Date.\+cpp}\end{DoxyCompactItemize}

@@ -82,10 +82,10 @@ Inheritance diagram for Level:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a449da6ec6c9863a35c94d2fcb2755433"><td class="memItemLeft" align="right" valign="top"><a id="a449da6ec6c9863a35c94d2fcb2755433"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel.html#a449da6ec6c9863a35c94d2fcb2755433">Level</a> (const WString &amp;mapPath)</td></tr>
-<tr class="memdesc:a449da6ec6c9863a35c94d2fcb2755433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
-<tr class="separator:a449da6ec6c9863a35c94d2fcb2755433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1192fe26a12ee85ba164dbc1df4ba8c3"><td class="memItemLeft" align="right" valign="top"><a id="a1192fe26a12ee85ba164dbc1df4ba8c3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel.html#a1192fe26a12ee85ba164dbc1df4ba8c3">Level</a> (const int &amp;id)</td></tr>
+<tr class="memdesc:a1192fe26a12ee85ba164dbc1df4ba8c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="separator:a1192fe26a12ee85ba164dbc1df4ba8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a249eac1e8f19ff44134efa5e986feaca"><td class="memItemLeft" align="right" valign="top"><a id="a249eac1e8f19ff44134efa5e986feaca"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel.html#a249eac1e8f19ff44134efa5e986feaca">~Level</a> ()</td></tr>
 <tr class="memdesc:a249eac1e8f19ff44134efa5e986feaca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
@@ -93,9 +93,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7fbf2259277a0be256738886cd82796a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel.html#a7fbf2259277a0be256738886cd82796a">changeDirection</a> (const UnsignedInt &amp;playerID, const Vector3d &amp;position, Float moveVertical, Float moveHorizontal)</td></tr>
 <tr class="memdesc:a7fbf2259277a0be256738886cd82796a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the player's position by adding the position passed as parameter.  <a href="#a7fbf2259277a0be256738886cd82796a">More...</a><br /></td></tr>
 <tr class="separator:a7fbf2259277a0be256738886cd82796a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2330b2345dcf859700874c29b1f524e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel.html#a2330b2345dcf859700874c29b1f524e0">setAnimPlayer</a> (const UnsignedInt &amp;playerID, String name)</td></tr>
-<tr class="memdesc:a2330b2345dcf859700874c29b1f524e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign animation to player.  <a href="#a2330b2345dcf859700874c29b1f524e0">More...</a><br /></td></tr>
-<tr class="separator:a2330b2345dcf859700874c29b1f524e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c2dcaeba48a4da763c1b9b6d23d248"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel.html#ad3c2dcaeba48a4da763c1b9b6d23d248">setAnimPlayer</a> (const UnsignedInt &amp;playerID, String name)</td></tr>
+<tr class="memdesc:ad3c2dcaeba48a4da763c1b9b6d23d248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign animation to player.  <a href="#ad3c2dcaeba48a4da763c1b9b6d23d248">More...</a><br /></td></tr>
+<tr class="separator:ad3c2dcaeba48a4da763c1b9b6d23d248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad31dd05f4278c778da85e79a0fd04430"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLevel.html#ad31dd05f4278c778da85e79a0fd04430">simulatePlayerAttack</a> (const UnsignedInt &amp;playerID)</td></tr>
 <tr class="memdesc:ad31dd05f4278c778da85e79a0fd04430"><td class="mdescLeft">&#160;</td><td class="mdescRight">attack player  <a href="#ad31dd05f4278c778da85e79a0fd04430">More...</a><br /></td></tr>
 <tr class="separator:ad31dd05f4278c778da85e79a0fd04430"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,14 +200,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="a2330b2345dcf859700874c29b1f524e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2330b2345dcf859700874c29b1f524e0">&#9670;&nbsp;</a></span>setAnimPlayer()</h2>
+<a id="ad3c2dcaeba48a4da763c1b9b6d23d248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3c2dcaeba48a4da763c1b9b6d23d248">&#9670;&nbsp;</a></span>setAnimPlayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Level::setAnimPlayer </td>
+          <td class="memname">bool Level::setAnimPlayer </td>
           <td>(</td>
           <td class="paramtype">const UnsignedInt &amp;&#160;</td>
           <td class="paramname"><em>playerID</em>, </td>

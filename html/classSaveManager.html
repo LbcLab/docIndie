@@ -80,6 +80,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a96c17debbf9765e8c71e74010621585f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#a96c17debbf9765e8c71e74010621585f">loadGames</a> (std::string folder)</td></tr>
 <tr class="memdesc:a96c17debbf9765e8c71e74010621585f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow you to load a game previously save.  <a href="#a96c17debbf9765e8c71e74010621585f">More...</a><br /></td></tr>
 <tr class="separator:a96c17debbf9765e8c71e74010621585f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c1a5baae9f5b60ff8b1dfe4b8a7525e"><td class="memItemLeft" align="right" valign="top"><a id="a1c1a5baae9f5b60ff8b1dfe4b8a7525e"></a>
+std::vector&lt; std::shared_ptr&lt; SaveManager::MapConfig &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#a1c1a5baae9f5b60ff8b1dfe4b8a7525e">getMapConfig</a> (std::string)</td></tr>
+<tr class="memdesc:a1c1a5baae9f5b60ff8b1dfe4b8a7525e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the informations about all the levels. <br /></td></tr>
+<tr class="separator:a1c1a5baae9f5b60ff8b1dfe4b8a7525e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdc44f23de421540c0a201083eccc327"><td class="memItemLeft" align="right" valign="top"><a id="abdc44f23de421540c0a201083eccc327"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#abdc44f23de421540c0a201083eccc327">saveAllGames</a> ()</td></tr>
 <tr class="memdesc:abdc44f23de421540c0a201083eccc327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow you to save all the games previously load. <br /></td></tr>
@@ -92,10 +96,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 const std::shared_ptr&lt; <a class="el" href="classGame.html">Game</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#a7b950ce71223640fe56e8d404fe3cd2f">getGame</a> ()</td></tr>
 <tr class="memdesc:a7b950ce71223640fe56e8d404fe3cd2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointeur to the current game. <br /></td></tr>
 <tr class="separator:a7b950ce71223640fe56e8d404fe3cd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab71d9799fb6766b0946c06fddd9c50fa"><td class="memItemLeft" align="right" valign="top"><a id="ab71d9799fb6766b0946c06fddd9c50fa"></a>
-const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classGame.html">Game</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#ab71d9799fb6766b0946c06fddd9c50fa">getGames</a> ()</td></tr>
-<tr class="memdesc:ab71d9799fb6766b0946c06fddd9c50fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a vector with all the games. <br /></td></tr>
-<tr class="separator:ab71d9799fb6766b0946c06fddd9c50fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a491eadac88e265ed32f54cfd722968d7"><td class="memItemLeft" align="right" valign="top"><a id="a491eadac88e265ed32f54cfd722968d7"></a>
+const std::map&lt; std::shared_ptr&lt; <a class="el" href="classGame.html">Game</a> &gt;, std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#a491eadac88e265ed32f54cfd722968d7">getGames</a> ()</td></tr>
+<tr class="memdesc:a491eadac88e265ed32f54cfd722968d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a vector with all the games. <br /></td></tr>
+<tr class="separator:a491eadac88e265ed32f54cfd722968d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a335611df31b6a1eccb5c7df73bc2e778"><td class="memItemLeft" align="right" valign="top">const std::shared_ptr&lt; std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSaveManager.html#a335611df31b6a1eccb5c7df73bc2e778">getSavesNames</a> ()</td></tr>
 <tr class="memdesc:a335611df31b6a1eccb5c7df73bc2e778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow you to get the names of all the saves.  <a href="#a335611df31b6a1eccb5c7df73bc2e778">More...</a><br /></td></tr>
 <tr class="separator:a335611df31b6a1eccb5c7df73bc2e778"><td class="memSeparator" colspan="2">&#160;</td></tr>
