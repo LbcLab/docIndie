@@ -5,7 +5,7 @@ var searchData=
   ['savegame',['saveGame',['../classSaveManager.html#a6f5a49208d165ccaf6ef619f7005da55',1,'SaveManager']]],
   ['savemanager',['SaveManager',['../classSaveManager.html',1,'SaveManager'],['../classSaveManager.html#ab8bb791be648b9b91db44aa11f6e8e14',1,'SaveManager::SaveManager()']]],
   ['savemanager_2ehh',['SaveManager.hh',['../SaveManager_8hh.html',1,'']]],
-  ['savescores',['saveScores',['../classScoreManager.html#a2cbb9e5e0f1062aecb034157b05defa2',1,'ScoreManager']]],
+  ['savescores',['saveScores',['../classGameSimulationScene.html#afbe27c807e95e6a58f601e8ed3e7cf93',1,'GameSimulationScene::saveScores()'],['../classScoreManager.html#a2cbb9e5e0f1062aecb034157b05defa2',1,'ScoreManager::saveScores()']]],
   ['scoremanager',['ScoreManager',['../classScoreManager.html',1,'ScoreManager'],['../classScoreManager.html#a4f3866ff832127664543349da5c4fbf4',1,'ScoreManager::ScoreManager()']]],
   ['scoremanager_2ehh',['ScoreManager.hh',['../ScoreManager_8hh.html',1,'']]],
   ['scorereceiver_2ehh',['ScoreReceiver.hh',['../ScoreReceiver_8hh.html',1,'']]],
